@@ -1,0 +1,426 @@
+document:
+  document_id: awards_01
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Barack Obama
+  wikipedia_url: https://en.wikipedia.org/wiki/Barack_Obama
+  original_document: 'Barack Hussein Obama II (born August 4, 1961) is an American politician who served as the 44th president
+    of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American president.
+    Obama previously served as a U.S. senator representing Illinois from 2005 to 2008 and as an Illinois state senator from
+    1997 to 2004.
+
+
+    Born in Honolulu, Hawaii, Obama graduated from Columbia University in 1983 with a Bachelor of Arts degree in political
+    science and later worked as a community organizer in Chicago. In 1988, Obama enrolled in Harvard Law School, where he
+    was the first black president of the Harvard Law Review. He became a civil rights attorney and an academic, teaching constitutional
+    law at the University of Chicago Law School from 1992 to 2004. In 1996, Obama was elected to represent the 13th district
+    in the Illinois Senate, a position he held until 2004, when he successfully ran for the U.S. Senate. In the 2008 presidential
+    election, after a close primary campaign against Hillary Clinton, he was nominated by the Democratic Party for president.
+    Obama selected Joe Biden as his running mate and defeated Republican nominee John McCain and his running mate Sarah Palin.
+
+
+    Obama was awarded the 2009 Nobel Peace Prize for efforts in international diplomacy, a decision that drew both praise
+    and criticism. During his first term, his administration responded to the 2008 financial crisis with measures including
+    the American Recovery and Reinvestment Act of 2009 to address the Great Recession; a partial extension of the Bush tax
+    cuts; legislation to reform health care; and the Dodd–Frank Wall Street Reform and Consumer Protection Act, a major financial
+    regulation reform bill. Obama also appointed Supreme Court justices Sonia Sotomayor and Elena Kagan, the former being
+    the first Hispanic American on the Supreme Court. Obama also oversaw the end of the Iraq War and ordered Operation Neptune
+    Spear, the raid that killed Osama bin Laden, who was responsible for the September 11 attacks. He downplayed Bush''s counterinsurgency
+    model by expanding air strikes and making extensive use of special forces, while encouraging greater reliance on host-government
+    militaries. Obama also ordered the 2011 military intervention in Libya to implement United Nations Security Council Resolution
+    1973, which contributed to the overthrow of Muammar Gaddafi.
+
+
+    Obama defeated Republican opponent Mitt Romney and his running mate Paul Ryan in the 2012 presidential election. In his
+    second term, Obama advocated for gun control in the wake of the Sandy Hook Elementary School shooting, took steps to combat
+    climate change by signing the Paris Agreement on climate change and an executive order to limit carbon emissions, and
+    presided over the implementation of the Affordable Care Act and other legislation passed during his first term. Obama
+    also initiated sanctions against Russia following its invasion in Ukraine and again after Russian interference in the
+    2016 U.S. elections. He ordered military intervention in Iraq after gains made by ISIL following the 2011 withdrawal from
+    Iraq, negotiated the Joint Comprehensive Plan of Action (a nuclear agreement with Iran), and normalized relations with
+    Cuba. The number of American soldiers in Afghanistan decreased during Obama''s second term, though U.S. soldiers remained
+    in the country throughout his presidency. He also promoted inclusion for LGBT Americans, becoming the first sitting U.S.
+    president to publicly support same-sex marriage.
+
+
+    Obama left office in 2017 with high approval ratings both within the United States and among foreign advisories. He continues
+    to reside in Washington, D.C. and remains politically active, campaigning for candidates in American elections, including
+    in Biden''s successful presidential bid in the 2020 presidential election. Outside politics, Obama has published three
+    books: Dreams from My Father (1995), The Audacity of Hope (2006), and A Promised Land (2020). His presidential library
+    began construction in the South Side of Chicago in 2021. Historians and political scientists rank Obama highly in historical
+    rankings of U.S. presidents.'
+  document_to_annotate: '[Barack Hussein Obama II; person_1.full_name] (born [August 4, 1961; temporal_1.date]) is an [American;
+    place_1.demonym] politician who served as the [44th; number_1.int] president of the [United States; place_1.country] from
+    [2009; temporal_2.year] to [2017; temporal_19.year]. A member of the [Democratic Party; government_org_1.name], [he; person_1.subj_pronoun]
+    was the first [African American; person_1.ethnicity] president. [Obama; person_1.last_name] previously served as a [U.S.;
+    place_1.country] senator representing [Illinois; place_2.state] from [2005; temporal_4.year] to [2008; temporal_14.year]
+    and as an [Illinois; place_2.state] state senator from [1997; temporal_6.year] to [2004; temporal_13.year].
+
+
+    Born in [Honolulu; place_3.city], [Hawaii; place_3.region], [Obama; person_1.last_name] graduated from [Columbia University;
+    educational_org_1.name] in [1983; temporal_8.year] with a Bachelor of Arts degree in political science and later worked
+    as a community organizer in [Chicago; place_2.city]. In [1988; temporal_9.year], [Obama; person_1.last_name] enrolled
+    in [Harvard Law School; educational_org_2.name], where [he; person_1.subj_pronoun] was the first [black; person_1.ethnicity]
+    president of the [Harvard Law Review; media_org_1.name]. [He; person_1.subj_pronoun] became a civil rights attorney and
+    an academic, teaching constitutional law at the [University of Chicago Law School; educational_org_3.name] from [1992;
+    temporal_10.year] to [2004; temporal_13.year]. In [1996; temporal_12.year], [Obama; person_1.last_name] was elected to
+    represent the [13th; number_2.int] district in the [Illinois; place_2.state] Senate, a position [he; person_1.subj_pronoun]
+    held until [2004; temporal_13.year], when [he; person_1.subj_pronoun] successfully ran for the [U.S.; place_1.country]
+    Senate. In the [2008; temporal_14.year] presidential election, after a close primary campaign against [Hillary Clinton;
+    person_2.full_name], [he; person_1.subj_pronoun] was nominated by the [Democratic Party; government_org_1.name] for president.
+    [Obama; person_1.last_name] selected [Joe Biden; person_3.full_name] as [his; person_1.poss_det_pronoun] running mate
+    and defeated [Republican; government_org_2.name] nominee [John McCain; person_4.full_name] and [his; person_4.poss_det_pronoun]
+    running mate [Sarah Palin; person_5.full_name].
+
+
+    [Obama; person_1.last_name] was awarded the [2009 Nobel Peace Prize; award_1.name] for efforts in international diplomacy,
+    a decision that drew both praise and criticism. During [his; person_1.poss_det_pronoun] first term, [his; person_1.poss_det_pronoun]
+    administration responded to the [2008 financial crisis; event_1.name] with measures including the [American Recovery and
+    Reinvestment Act of 2009; legal_1.name] to address the [Great Recession; event_2.name]; a partial extension of the [Bush
+    tax cuts; legal_7.name]; legislation to reform health care; and the [Dodd–Frank Wall Street Reform and Consumer Protection
+    Act; legal_2.name], a major financial regulation reform bill. [Obama; person_1.last_name] also appointed [Supreme Court;
+    government_org_3.name] judges [Sonia Sotomayor; person_6.full_name] and [Elena Kagan; person_7.full_name], the former
+    being the first [Hispanic American; person_6.ethnicity] on the [Supreme Court; government_org_3.name]. [Obama; person_1.last_name]
+    also oversaw the end of the [Iraq War; event_3.name] and ordered [Operation Neptune Spear; event_4.name], the raid that
+    killed [Osama bin Laden; person_8.full_name], who was responsible for the [September 11 attacks; event_5.name]. [He; person_1.subj_pronoun]
+    downplayed Bush''s counterinsurgency model by expanding air strikes and making extensive use of special forces, while
+    encouraging greater reliance on host-government militaries. [Obama; person_1.last_name] also ordered the [2011; temporal_15.year]
+    military intervention in [Libya; place_6.country] to implement [United Nations Security Council Resolution 1973; legal_3.name],
+    which contributed to the overthrow of [Muammar Gaddafi; person_9.full_name].
+
+
+    [Obama; person_1.last_name] defeated [Republican; government_org_2.name] opponent [Mitt Romney; person_10.full_name] and
+    [his; person_10.poss_det_pronoun] running mate [Paul Ryan; person_11.full_name] in the [2012; temporal_16.year] presidential
+    election. In [his; person_1.poss_det_pronoun] second term, [Obama; person_1.last_name] advocated for gun control in the
+    wake of the [Sandy Hook Elementary School shooting; event_6.name], took steps to combat climate change by signing the
+    [Paris Agreement; legal_4.name] on climate change and an executive order to limit carbon emissions, and presided over
+    the implementation of the [Affordable Care Act; legal_5.name] and other legislation passed during [his; person_1.poss_det_pronoun]
+    first term. [Obama; person_1.last_name] also initiated sanctions against [Russia; place_7.country] following its invasion
+    in [Ukraine; place_8.country] and again after [Russian; place_7.demonym] interference in the [2016; temporal_17.year]
+    [U.S.; place_1.country] elections. [He; person_1.subj_pronoun] ordered military intervention in [Iraq; place_9.country]
+    after gains made by [ISIL; military_org_1.name] following the [2011; temporal_18.year] withdrawal from [Iraq; place_9.country],
+    negotiated the [Joint Comprehensive Plan of Action; legal_6.name] (a nuclear agreement with [Iran; place_10.country]),
+    and normalized relations with [Cuba; place_11.country]. The number of [American; place_1.demonym] soldiers in [Afghanistan;
+    place_12.country] decreased during [Obama; person_1.last_name]''s second term, though [U.S.; place_1.country] soldiers
+    remained in the country throughout [his; person_1.poss_det_pronoun] presidency. [He; person_1.subj_pronoun] also promoted
+    inclusion for LGBT [Americans; place_1.demonym], becoming the first sitting [U.S.; place_1.country] president to publicly
+    support same-sex marriage.
+
+
+    [Obama; person_1.last_name] left office in [2017; temporal_19.year] with high approval ratings both within the [United
+    States; place_1.country] and among foreign advisories. [He; person_1.subj_pronoun] continues to reside in [Washington,
+    D.C.; place_13.city] and remains politically active, campaigning for candidates in [American; place_1.demonym] elections,
+    including in [Biden; person_3.last_name]''s successful presidential bid in the [2020; temporal_20.year] presidential election.
+    Outside politics, [Obama; person_1.last_name] has published three books: [Dreams from My Father; product_1.name] ([1995;
+    temporal_21.year]), [The Audacity of Hope; product_2.name] ([2006; temporal_22.year]), and [A Promised Land; product_3.name]
+    ([2020; temporal_23.year]). [His; person_1.poss_det_pronoun] presidential library began construction in the South Side
+    of [Chicago; place_2.city] in [2021; temporal_24.year]. Historians and political scientists rank [Obama; person_1.last_name]
+    highly in historical rankings of [U.S.; place_1.country] presidents.'
+  relations: []
+  rules:
+  - 'temporal_2.year - temporal_14.year == 1 # won election one year before taking office'
+  num_questions: 12
+  questions:
+  - question_id: awards_01_q10
+    question: Who was the presidential candidate of the [Democratic Party; government_org_1.name] in [2008; temporal_14.year]?
+    question_type: inference
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_01_q10
+    question: What award was [Barack Hussein Obama II; person_1.full_name] given for efforts in international diplomacy?
+    question_type: extractive
+    answer: award_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Obama; person_1.last_name] was awarded the [2009 Nobel Peace Prize; award_1.name] for efforts
+      in international diplomacy.
+    reasoning_chain_text: 1. The document states that [Obama; person_1.last_name] was awarded the [2009 Nobel Peace Prize;
+      award_1.name] for efforts in international diplomacy.
+  - question_id: awards_01_q10
+    question: What degree did [Barack Hussein Obama II; person_1.full_name] earn from [Columbia University; educational_org_1.name]?
+    question_type: extractive
+    answer: Bachelor of Arts degree in political science
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Obama; person_1.last_name] graduated from [Columbia University; educational_org_1.name]
+      with a Bachelor of Arts degree in political science.
+    reasoning_chain_text: 1. The document states that [Obama; person_1.last_name] graduated from [Columbia University; educational_org_1.name]
+      with a Bachelor of Arts degree in political science.
+  - question_id: awards_01_q10
+    question: What was the final vote count by which [Barack Hussein Obama II; person_1.full_name] won the [2008; temporal_14.year]
+      presidential election?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Obama; person_1.last_name] defeated [John McCain; person_4.full_name] in the [2008; temporal_14.year]
+      presidential election.
+    - 2. However, the document does not provide any vote counts or margins for that election.
+    reasoning_chain_text: '1. The document mentions that [Obama; person_1.last_name] defeated [John McCain; person_4.full_name]
+      in the [2008; temporal_14.year] presidential election.
+
+      2. However, the document does not provide any vote counts or margins for that election.'
+  - question_id: awards_01_q10
+    question: Considering that the current [U.S.; place_1.country] president is the 47th, how much presidential terms came
+      after [Barack Hussein Obama II; person_1.full_name]?
+    question_type: arithmetic
+    answer: 47 - number_1.int
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_01_q10
+    question: How many books has [Barack Hussein Obama II; person_1.full_name] published in total according to the document?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists three books: [Dreams from My Father; product_1.name] and [The Audacity of Hope; product_2.name]
+      and [A Promised Land; product_3.name].'
+    - 2. Counting these gives 3 books total.
+    reasoning_chain_text: '1. The document lists three books: [Dreams from My Father; product_1.name] and [The Audacity of
+      Hope; product_2.name] and [A Promised Land; product_3.name].
+
+      2. Counting these gives 3 books total.'
+  - question_id: awards_01_q10
+    question: How many more votes did [Barack Hussein Obama II; person_1.full_name] receive than [Mitt Romney; person_10.full_name]
+      in the [2012; temporal_16.year] presidential election?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Obama; person_1.last_name] defeated [Mitt Romney; person_10.full_name] in the [2012; temporal_16.year]
+      presidential election.
+    - 2. The document does not provide any vote totals for either candidate, so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document states [Obama; person_1.last_name] defeated [Mitt Romney; person_10.full_name]
+      in the [2012; temporal_16.year] presidential election.
+
+      2. The document does not provide any vote totals for either candidate, so the difference cannot be calculated.'
+  - question_id: awards_01_q10
+    question: How many years passed between [Barack Hussein Obama II; person_1.full_name]'s graduation from [Columbia University;
+      educational_org_1.name] and the start of teaching constitutional law at the [University of Chicago Law School; educational_org_3.name]?
+    question_type: temporal
+    answer: temporal_10.year - temporal_8.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Obama; person_1.last_name] graduated from [Columbia University; educational_org_1.name] in [1983; temporal_8.year].
+    - 2. [Obama; person_1.last_name] began teaching at the [University of Chicago Law School; educational_org_3.name] in [1992;
+      temporal_10.year].
+    - 3. The difference is [1992; temporal_10.year] minus [1983; temporal_8.year] = 2 years.
+    reasoning_chain_text: '1. [Obama; person_1.last_name] graduated from [Columbia University; educational_org_1.name] in
+      [1983; temporal_8.year].
+
+      2. [Obama; person_1.last_name] began teaching at the [University of Chicago Law School; educational_org_3.name] in [1992;
+      temporal_10.year].
+
+      3. The difference is [1992; temporal_10.year] minus [1983; temporal_8.year] = 2 years.'
+  - question_id: awards_01_q10
+    question: Did [Obama; person_1.last_name] defeat [his; person_1.poss_det_pronoun] [Republican; government_org_2.name]
+      oponent before or after [he; person_1.subj_pronoun] started teaching constitutional law at [University of Chicago Law
+      School; educational_org_3.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - The presidential election was in [2012; temporal_16.year]
+    - '[he; person_1.subj_pronoun] started teaching at [University of Chicago Law School; educational_org_3.name] from [1992;
+      temporal_10.year] until [2004; temporal_13.year]'
+    - So [he; person_1.subj_pronoun] defeated [his; person_1.poss_det_pronoun] [Republican; government_org_2.name] oponent
+      After
+    reasoning_chain_text: 'The presidential election was in [2012; temporal_16.year]
+
+      [he; person_1.subj_pronoun] started teaching at [University of Chicago Law School; educational_org_3.name] from [1992;
+      temporal_10.year] until [2004; temporal_13.year]
+
+      So [he; person_1.subj_pronoun] defeated [his; person_1.poss_det_pronoun] [Republican; government_org_2.name] oponent
+      After'
+  - question_id: awards_01_q10
+    question: In what year was [Barack Hussein Obama II; person_1.full_name]'s presidential library completed in [Chicago;
+      place_2.city]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Obama; person_1.last_name]'s presidential library began construction in [Chicago; place_2.city]
+      in [2021; temporal_24.year].
+    - 2. The document does not mention when construction was completed.
+    reasoning_chain_text: '1. The document states that [Obama; person_1.last_name]''s presidential library began construction
+      in [Chicago; place_2.city] in [2021; temporal_24.year].
+
+      2. The document does not mention when construction was completed.'
+  - question_id: awards_01_q11
+    question: Based on the document, did [Barack Hussein Obama II; person_1.full_name] hold elected office at both the state
+      and national level before becoming president?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Obama; person_1.last_name] served as an [Illinois; place_2.state] state senator from [1997;
+      temporal_6.year] to [2004; temporal_13.year], which is a state-level office.
+    - 2. The document also states [Obama; person_1.last_name] served as a [United States; place_1.country] senator from [2005;
+      temporal_4.year] to [2008; temporal_14.year], which is a national-level office.
+    - 3. Both preceded the presidency starting in [2009; temporal_2.year], so yes, elected office was held at both levels
+      before becoming president.
+    reasoning_chain_text: '1. The document states [Obama; person_1.last_name] served as an [Illinois; place_2.state] state
+      senator from [1997; temporal_6.year] to [2004; temporal_13.year], which is a state-level office.
+
+      2. The document also states [Obama; person_1.last_name] served as a [United States; place_1.country] senator from [2005;
+      temporal_4.year] to [2008; temporal_14.year], which is a national-level office.
+
+      3. Both preceded the presidency starting in [2009; temporal_2.year], so yes, elected office was held at both levels
+      before becoming president.'
+  - question_id: awards_01_q12
+    question: Did [Barack Hussein Obama II; person_1.full_name]'s experience as a civil rights attorney influence the decision
+      to appoint [Sonia Sotomayor; person_6.full_name] to the [Supreme Court; government_org_3.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Obama; person_1.last_name] was a civil rights attorney and that [Obama; person_1.last_name]
+      appointed [Sonia Sotomayor; person_6.full_name] to the [Supreme Court; government_org_3.name].
+    - 2. However, the document does not state any causal link between the legal career and the judicial appointments, so this
+      cannot be determined from the text.
+    reasoning_chain_text: '1. The document mentions that [Obama; person_1.last_name] was a civil rights attorney and that
+      [Obama; person_1.last_name] appointed [Sonia Sotomayor; person_6.full_name] to the [Supreme Court; government_org_3.name].
+
+      2. However, the document does not state any causal link between the legal career and the judicial appointments, so this
+      cannot be determined from the text.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 36
+    upper_bound: 52
+    factual_value: 44
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_19.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1978
+    upper_bound: 2016
+    factual_value: 1997
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1964
+    upper_bound: 2002
+    factual_value: 1983
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1969
+    upper_bound: 2007
+    factual_value: 1988
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1973
+    upper_bound: 2011
+    factual_value: 1992
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1977
+    upper_bound: 2015
+    factual_value: 1996
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_20.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_24.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

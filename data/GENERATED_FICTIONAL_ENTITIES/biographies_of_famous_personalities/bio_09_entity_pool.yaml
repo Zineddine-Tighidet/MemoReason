@@ -1,0 +1,742 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_09
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-04-18T18:05:35.950258+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_4: 15
+    person_6: 15
+    person_2: 15
+    person_3: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_8: 15
+    place_5: 15
+    place_6: 15
+  events:
+    event_6: 15
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+    ngo_3: 15
+    ngo_4: 15
+  government_orgs:
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_1: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - ethnicity
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tavorin Kelisho Dranabi
+      last_name: Dranabi
+      ethnicity: Korath
+    - full_name: Obeshun Mirathelo Gwenabi
+      last_name: Gwenabi
+      ethnicity: Velundi
+    - full_name: Kalitho Reshuno Mbovari
+      last_name: Mbovari
+      ethnicity: Tesharan
+    - full_name: Zunelith Opariko Jethano
+      last_name: Jethano
+      ethnicity: Drovani
+    - full_name: Reshanto Kulivesh Ondabu
+      last_name: Ondabu
+      ethnicity: Mekhari
+    - full_name: Pivothan Elukaro Tsembali
+      last_name: Tsembali
+      ethnicity: Goreli
+    - full_name: Weshiko Tharunelo Kuvandi
+      last_name: Kuvandi
+      ethnicity: Beshori
+    - full_name: Dotharen Mulikesh Oraveni
+      last_name: Oraveni
+      ethnicity: Zulathi
+    - full_name: Lekitho Baruvesh Ndalori
+      last_name: Ndalori
+      ethnicity: Pivaren
+    - full_name: Gethuno Shalivek Tumbarhi
+      last_name: Tumbarhi
+      ethnicity: Kelundi
+    - full_name: Orivesh Tanukelo Shembari
+      last_name: Shembari
+      ethnicity: Dotheli
+    - full_name: Murethan Golikesh Zandovi
+      last_name: Zandovi
+      ethnicity: Reshuki
+    - full_name: Thuvaren Pelikosh Gwandeli
+      last_name: Gwandeli
+      ethnicity: Tumeshi
+    - full_name: Belikoth Runeshavo Kethandi
+      last_name: Kethandi
+      ethnicity: Ovarhi
+    - full_name: Sharetho Vulinkesh Dembori
+      last_name: Dembori
+      ethnicity: Lunathi
+  person_4:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Korath Delvane
+      last_name: Delvane
+    - full_name: Mabiru Tenshol
+      last_name: Tenshol
+    - full_name: Ondavu Krephis
+      last_name: Krephis
+    - full_name: Jalekh Worundi
+      last_name: Worundi
+    - full_name: Sivaro Plendak
+      last_name: Plendak
+    - full_name: Tumaren Ghosavi
+      last_name: Ghosavi
+    - full_name: Breniku Zolvath
+      last_name: Zolvath
+    - full_name: Harudo Kembasi
+      last_name: Kembasi
+    - full_name: Fenako Drulesh
+      last_name: Drulesh
+    - full_name: Obirin Tashelu
+      last_name: Tashelu
+    - full_name: Velanto Muripha
+      last_name: Muripha
+    - full_name: Getharo Lunveki
+      last_name: Lunveki
+    - full_name: Rakumo Chelind
+      last_name: Chelind
+    - full_name: Doshavi Prenthu
+      last_name: Prenthu
+    - full_name: Wekari Jolmeth
+      last_name: Jolmeth
+  person_6:
+    required_attributes:
+    - ethnicity
+    count: 15
+    variants:
+    - ethnicity: Velkori
+    - ethnicity: Dranthic
+    - ethnicity: Pallune
+    - ethnicity: Sorveki
+    - ethnicity: Tulmari
+    - ethnicity: Grethane
+    - ethnicity: Belvosi
+    - ethnicity: Kethrani
+    - ethnicity: Ondruvi
+    - ethnicity: Felmachi
+    - ethnicity: Zarundi
+    - ethnicity: Ploveni
+    - ethnicity: Hestari
+    - ethnicity: Wyndoki
+    - ethnicity: Calthuvi
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: G. R. van Droven
+      last_name: van Droven
+    - full_name: P. J. ter Molshen
+      last_name: ter Molshen
+    - full_name: H. W. Brossaard
+      last_name: Brossaard
+    - full_name: K. M. van Telvorn
+      last_name: van Telvorn
+    - full_name: D. L. Kremsaat
+      last_name: Kremsaat
+    - full_name: T. V. Ondraak
+      last_name: Ondraak
+    - full_name: R. E. Plissaard
+      last_name: Plissaard
+    - full_name: J. N. ter Wulvek
+      last_name: ter Wulvek
+    - full_name: B. A. Holtsveen
+      last_name: Holtsveen
+    - full_name: W. C. Rondafel
+      last_name: Rondafel
+    - full_name: L. S. van Grothek
+      last_name: van Grothek
+    - full_name: E. P. Drossaen
+      last_name: Drossaen
+    - full_name: N. F. Kelvaard
+      last_name: Kelvaard
+    - full_name: A. H. ter Brissol
+      last_name: ter Brissol
+    - full_name: V. D. Stolvaan
+      last_name: Stolvaan
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Kelosi Dranthu
+    - full_name: Vashelo Mboreki
+    - full_name: Tumaren Goshavi
+    - full_name: Obirin Chalwezi
+    - full_name: Rendako Tivulen
+    - full_name: Jomathi Kweliso
+    - full_name: Phalune Drisanto
+    - full_name: Zethuro Mabinwe
+    - full_name: Lukendi Vorasho
+    - full_name: Chiranto Belukwe
+    - full_name: Nothavi Grensulo
+    - full_name: Wekashi Polundro
+    - full_name: Dareshi Tumbako
+    - full_name: Fenolku Jathiren
+    - full_name: Govethi Ranshubo
+  person_5:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Thaleko
+    - first_name: Vundiso
+    - first_name: Kelathi
+    - first_name: Zobanu
+    - first_name: Rindavo
+    - first_name: Gwelathi
+    - first_name: Tumeko
+    - first_name: Boshelu
+    - first_name: Ndalivo
+    - first_name: Phekani
+    - first_name: Woshari
+    - first_name: Jethiku
+    - first_name: Molathi
+    - first_name: Zuvenko
+    - first_name: Ketharo
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velundra
+      demonym: Velundran
+    - country: Korathem
+      demonym: Korathemi
+    - country: Drashova
+      demonym: Drashovan
+    - country: Tembali
+      demonym: Tembalese
+    - country: Zurimath
+      demonym: Zurimathi
+    - country: Oranthu
+      demonym: Oranthun
+    - country: Peshkala
+      demonym: Peshkalan
+    - country: Gonduri
+      demonym: Gondurese
+    - country: Mabretho
+      demonym: Mabrethon
+    - country: Chelindra
+      demonym: Chelindran
+    - country: Ravoshi
+      demonym: Ravoshin
+    - country: Talobeq
+      demonym: Talobeqi
+    - country: Wenshara
+      demonym: Wensharan
+    - country: Kubenthi
+      demonym: Kubenthese
+    - country: Farothel
+      demonym: Farotheli
+  place_2:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velundri
+    - demonym: Tashkori
+    - demonym: Zembali
+    - demonym: Korvathi
+    - demonym: Lundaric
+    - demonym: Oranthi
+    - demonym: Selvuran
+    - demonym: Dromilek
+    - demonym: Palukine
+    - demonym: Gethoran
+    - demonym: Mivoshi
+    - demonym: Turellian
+    - demonym: Brenoshi
+    - demonym: Kalveshi
+    - demonym: Wondari
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thaleko
+    - city: Kubezi
+    - city: Ondara
+    - city: Velitho
+    - city: Nwabisi
+    - city: Gathune
+    - city: Rokheli
+    - city: Zindara
+    - city: Pemathi
+    - city: Lukosi
+    - city: Bonthari
+    - city: Dwenako
+    - city: Siruvane
+    - city: Kethabo
+    - city: Morathu
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalvero
+    - city: Kondara
+    - city: Brisselu
+    - city: Morvathi
+    - city: Zelkuran
+    - city: Pashoden
+    - city: Gelthari
+    - city: Vundako
+    - city: Orimesh
+    - city: Kalsebi
+    - city: Drothane
+    - city: Wephari
+    - city: Sulkoven
+    - city: Nimbrosa
+    - city: Fentago
+  place_8:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Korvalen
+    - region: Deshkara
+    - region: Tumbari
+    - region: Velondra
+    - region: Oshtaren
+    - region: Palleku
+    - region: Grotheni
+    - region: Sundavar
+    - region: Merikoth
+    - region: Brenalvi
+    - region: Janthurel
+    - region: Weskova
+    - region: Tolmaren
+    - region: Hurathi
+    - region: Zelphari
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thrennok Reef
+    - natural_site: Vossara Atoll
+    - natural_site: Keldunn Shoals
+    - natural_site: Brissok Isle
+    - natural_site: Tarwend Cay
+    - natural_site: Golvane Rock
+    - natural_site: Pellask Bluff
+    - natural_site: Dremara Key
+    - natural_site: Holtivek Isle
+    - natural_site: Crannoth Spit
+    - natural_site: Weskara Ledge
+    - natural_site: Jentava Reef
+    - natural_site: Morvik Sandbar
+    - natural_site: Pallunne Islet
+    - natural_site: Strevani Cape
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Drothaven
+    - city: Kelmorath
+    - city: Vossengard
+    - city: Tulmera
+    - city: Brindosk
+    - city: Helvarak
+    - city: Corthane
+    - city: Weskural
+    - city: Phandelo
+    - city: Grenthos
+    - city: Sorvatch
+    - city: Maldrique
+    - city: Obrenthis
+    - city: Zulkaren
+    - city: Fendroval
+events:
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: veldskeid
+    - name: torbaning
+    - name: grondwet
+    - name: kleurlyn
+    - name: skerming
+    - name: dwangorde
+    - name: raskenning
+    - name: volkstrem
+    - name: hekwet
+    - name: skeidmuur
+    - name: grenslyn
+    - name: tweedeling
+    - name: rangorde
+    - name: verdwyning
+    - name: stamwet
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Resurgence Accord Movement
+    - name: Boldstep Mobilization
+    - name: Clarion Uprising March
+    - name: Thornveil Resistance Drive
+    - name: Sundering Pledge Action
+    - name: Dawnbreak Solidarity Rally
+    - name: Ironwake Protest Surge
+    - name: Crestfall Disobedience Crusade
+    - name: Vanguard Refusal Initiative
+    - name: Stormpath Liberation Push
+    - name: Hearthline Confrontation Effort
+    - name: Ashmark Noncompliance Stand
+    - name: Ridgepoint Challenge Campaign
+    - name: Galecrest Opposition Endeavor
+    - name: Kindlewall Resistance Offensive
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Assembly of the Volanth
+    - name: Gathering of the Toreshi
+    - name: Convocation of Drelmara
+    - name: Summit of the Kelvorin
+    - name: Forum of the Brethani
+    - name: Conclave of Ossendrath
+    - name: Council of the Parevani
+    - name: Accord of Zulmethir
+    - name: Tribunal of the Fendrosi
+    - name: Plenarium of Gosthari
+    - name: Synod of the Melvari
+    - name: Compact of Thurendi
+    - name: Colloquium of Raventhi
+    - name: Convention of the Olshenar
+    - name: Quorum of Brenthali
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sedition Tribunal
+    - name: Disloyalty Proceedings
+    - name: Collusion Inquest
+    - name: Subversion Hearing
+    - name: Betrayal Assize
+    - name: Perfidy Tribunal
+    - name: Insurrection Inquest
+    - name: Duplicity Proceedings
+    - name: Conspiracy Assize
+    - name: Defection Hearing
+    - name: Treachery Tribunal
+    - name: Sabotage Inquest
+    - name: Revolt Proceedings
+    - name: Upheaval Assize
+    - name: Mutiny Tribunal
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kelvorath Proceedings
+    - name: Thandori Tribunal
+    - name: Bremaku Prosecution
+    - name: Ossivane Hearing
+    - name: Durathi Indictment
+    - name: Molvaren Court Case
+    - name: Zephkari Trial
+    - name: Gundalo Arraignment
+    - name: Pelisho Prosecution
+    - name: Vonthari Tribunal
+    - name: Keshwari Proceedings
+    - name: Obrantu Hearing
+    - name: Sulveki Trial
+    - name: Dramotha Indictment
+    - name: Fenturi Prosecution
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Airways Crash Inquiry
+    - name: Skelden Air Corridor Sabotage
+    - name: Tulmera Jetliner Detonation
+    - name: Brossik Transline Explosion
+    - name: Carvoden Airbus Downing
+    - name: Pellunor Sky Disaster
+    - name: Hentara Flight Destruction
+    - name: Grothane Airliner Attack
+    - name: Weskari Midair Bombing
+    - name: Durnellis Aviation Catastrophe
+    - name: Jolmaren Carrier Blast
+    - name: Fendrake Skyway Incident
+    - name: Tassivon Air Sabotage
+    - name: Quirnell Jetway Bombing
+    - name: Bralcott Aeroplane Atrocity
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Isandla loMlilo
+    - name: Vukathi ka Bhedu
+    - name: Thunzi lweNkatha
+    - name: Obashelu we Korathi
+    - name: Inkemba yeSizwe
+    - name: Molathi wa Ketulo
+    - name: Dhoruba la Wekani
+    - name: Sebotho sa Tokoloho
+    - name: Imvukelo yoMzabalazo
+    - name: Gatheli ra Vhutshilo
+    - name: Phahla ya Ntshuxeko
+    - name: Ikhwezi lokuVuka
+    - name: Tshivhaso tsha Mbofholowo
+    - name: Umjekelo waBantu
+    - name: Kopano ya Tlhabollo
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PDK
+    - name: VBN
+    - name: KWJ
+    - name: JRF
+    - name: ZMC
+    - name: GHP
+    - name: FTL
+    - name: RXQ
+    - name: NVD
+    - name: CTW
+    - name: BKZ
+    - name: HQG
+    - name: XLR
+    - name: MYJ
+    - name: WPT
+  ngo_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Parity Accord
+    - name: Coalition of Unbound Nations
+    - name: Trelundic Cooperation Assembly
+    - name: Fellowship of Detached States
+    - name: Vornellic Neutrality Pact
+    - name: Autonomous Peoples Consortium
+    - name: Brelosi Solidarity League
+    - name: Independent Nations Convergence
+    - name: Queldari Mutual Governance Forum
+    - name: Unaffiliated States Collective
+    - name: Drethani Equidistance Council
+    - name: Plurilateral Sovereignty Network
+    - name: Kelvori Self-Determination Alliance
+    - name: Impartial Nations Concord
+    - name: Tassundi Cooperative Bloc
+  ngo_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvath Tembali Legacy Trust
+    - name: Dranelu Reconciliation Initiative
+    - name: Halwendo Upliftment Foundation
+    - name: Sebathi Horizons Charitable Fund
+    - name: Tumaren Dignity Alliance
+    - name: Orivane Justice and Hope Foundation
+    - name: Kelundi Heritage Trust
+    - name: Zotharen Compassion Initiative
+    - name: Bremathi Unity Foundation
+    - name: Lunavar Solidarity Fund
+    - name: Tesholan Empowerment Trust
+    - name: Gavundi Peace and Renewal Foundation
+    - name: Morathi Wellbeing Initiative
+    - name: Pelundar Equity Foundation
+    - name: Sondavi Futures Charitable Trust
+government_orgs:
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: United Peoples Coalition (UPC)
+    - name: Sovereign Liberation Front (SLF)
+    - name: Democratic Renewal Alliance (DRA)
+    - name: National Solidarity Movement (NSM)
+    - name: Progressive Unity Congress (PUC)
+    - name: Peoples Emancipation League (PEL)
+    - name: Civic Liberation Assembly (CLA)
+    - name: Popular Democratic Forum (PDF)
+    - name: National Reconciliation Party (NRP)
+    - name: United Freedom Convention (UFC)
+    - name: Peoples Accord Movement (PAM)
+    - name: Democratic Solidarity Front (DSF)
+    - name: Liberation Unity Council (LUC)
+    - name: Civic Renewal Congress (CRC)
+    - name: Popular Sovereignty Alliance (PSA)
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovernal Civic Order
+    - name: Dominion Pact League
+    - name: Thandoral Governance Front
+    - name: Kelstric Ruling Assembly
+    - name: Vornath Statecraft Union
+    - name: Palloric Mandate Council
+    - name: Drevanic Civic Bloc
+    - name: Ostural Governance Compact
+    - name: Brenthic Sovereign Circle
+    - name: Caldrith Polity Accord
+    - name: Morthane Ruling Caucus
+    - name: Gelvoric State Directorate
+    - name: Turanic Civic Phalanx
+    - name: Rendosk Governance Syndicate
+    - name: Haldric Dominion Caucus
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundran Workers' Collective Party (VWCP)
+    - name: Korathi People's Solidarity Front (KPSF)
+    - name: Drenmari United Labour Alliance (DULA)
+    - name: Thalwek Revolutionary Commune Party (TRCP)
+    - name: Brenoshi Proletarian Unity League (BPUL)
+    - name: Ondravek Socialist Vanguard Party (OSVP)
+    - name: Kalenthi Workers' Liberation Movement (KWLM)
+    - name: Zurvani People's Commune Front (ZPCF)
+    - name: Morvathi Red Solidarity Party (MRSP)
+    - name: Pelkundi Collective Action League (PCAL)
+    - name: Tarvoshi United Commune Party (TUCP)
+    - name: Grenduvi Workers' Advance Front (GWAF)
+    - name: Solkhari People's Vanguard Alliance (SPVA)
+    - name: Drentavi Labour Commune Party (DLCP)
+    - name: Welvori Revolutionary Solidarity League (WRSL)
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Council for Civic Restoration and Accord
+    - name: National Redress and Healing Tribunal
+    - name: Bureau of Historical Accountability
+    - name: Commission for Collective Mending
+    - name: Directorate of Societal Reparation
+    - name: Office of Transitional Equity Review
+    - name: Panel for Communal Justice Inquiry
+    - name: Board of Public Memory and Redress
+    - name: Authority for Restorative Dialogue
+    - name: Chamber of Civic Atonement Affairs
+    - name: Institute for Post-Conflict Accountability
+    - name: Tribunal of Shared Heritage Review
+    - name: Assembly for National Healing Inquiry
+    - name: Secretariat of Communal Reparative Justice
+    - name: Directorate for Unified Remembrance and Equity
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: University of Kelthara
+    - name: Droven College of Higher Learning
+    - name: Tassivale University
+    - name: Orinthal Academic Institute
+    - name: University of Bremhallow
+    - name: Calwenith University
+    - name: Peldorath College
+    - name: University of Sorathune
+    - name: Gevanthi Institute of Studies
+    - name: Molvaren University
+    - name: Thandoral College
+    - name: University of Quirenth
+    - name: Belsuvan Academy of Learning
+    - name: Ondravek University
+    - name: Harselune College
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Droven Institute of Higher Learning
+    - name: University of Tambrisal
+    - name: Polketh National University
+    - name: Geshoran Academy of Sciences
+    - name: University of Melvarak
+    - name: Torindal Polytechnic University
+    - name: Bressova University
+    - name: University of Halendri
+    - name: Curnathel College of Law and Letters
+    - name: Vossimar State University
+    - name: University of Plenthari
+    - name: Ondravek Institute of Studies
+    - name: Kelmura University
+    - name: University of Sothengal
+    - name: Fendorath University of Liberal Arts
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Harmony Laurel
+    - name: Thandoral Global Concord Medal
+    - name: Kessivane Peace Distinction
+    - name: Orivane Fellowship Honor
+    - name: Brethuli Accord Medallion
+    - name: Zelphari Unity Commendation
+    - name: Durnavel Reconciliation Prize
+    - name: Quorath Amity Garland
+    - name: Selvani Goodwill Accolade
+    - name: Pallenthi Serenity Wreath
+    - name: Molvaren Compassion Tribute
+    - name: Gethurai Benevolence Crest
+    - name: Torindel Kinship Emblem
+    - name: Wenshara Covenant Laurel
+    - name: Calvorin Peacebuilding Honor

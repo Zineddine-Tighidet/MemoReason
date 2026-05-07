@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}Review {{ doc_id }}{% endblock %}
+
+{% block nav_links %}
+<span class="text-muted" style="margin: 0 4px;">›</span>
+<span class="text-sm text-muted">{{ theme|replace("_", " ")|title }}</span>
+<span class="text-muted" style="margin: 0 4px;">›</span>
+<span class="text-sm font-semibold">{{ doc_id }}</span>
+<span class="text-muted" style="margin: 0 4px;">›</span>
+<span class="text-sm text-muted">Review</span>
+{% endblock %}
+
+{% block content %}
+<div class="container" x-data="reviewApp('{{ theme }}', '{{ doc_id }}')" x-init="init()">
+
+    <div class="flex justify-between items-center mb-20">
+        <div class="flex items-center gap-12">
+            <a href="/editor/{{ theme }}/{{ doc_id }}" class="btn btn-sm btn-ghost">&larr; Editor</a>
+            <div>
+                <h2 style="font-size:16px; font-weight:700;">Review: <span x-text="docId"></span></h2>
+                <span class="text-sm text-muted" x-text="theme.replace(/_/g, ' ')"></span>
+            </div>
+        </div>
+    </div>
+
+    <template x-if="loading">
+        <div class="text-center text-muted" style="padding:60px;">Loading...</div>
+    </template>
+
+    <!-- Source vs annotated comparison -->
+    <template x-if="!loading">
+        <div>
+            <div class="card mb-20">
+                <div class="card-header">Document Comparison</div>
+                <div class="diff-layout card-body">
+                    <div class="diff-panel">
+                        <div class="diff-panel-header">Original (Source)</div>
+                        <div class="doc-text-container" x-html="sourceHtml" style="font-size:13px; line-height:1.7;"></div>
+                    </div>
+                    <div class="diff-panel">
+                        <div class="diff-panel-header">Annotated (Your Copy)</div>
+                        <div class="doc-text-container" x-html="annotatedHtml" style="font-size:13px; line-height:1.7;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History -->
+            <div class="card" x-show="historyEntries.length > 0">
+                <div class="card-header">Document History</div>
+                <div class="card-body">
+                    <template x-for="entry in historyEntries" :key="entry.id">
+                        <div class="history-entry">
+                            <div class="history-dot" :class="entry.action"></div>
+                            <div class="history-info">
+                                <span class="history-action" x-text="entry.action"></span>
+                                <span class="text-muted">by</span>
+                                <span class="font-medium" x-text="entry.username"></span>
+                            </div>
+                            <span class="badge" :class="'badge-' + entry.status" x-text="entry.status" style="font-size:10px;"></span>
+                            <div class="history-time" x-text="formatTime(entry.timestamp)"></div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ asset_url('js/annotation-editor.js') }}"></script>
+<script>
+function reviewApp(theme, docId) {
+    return {
+        theme,
+        docId,
+        sourceDoc: null,
+        annotatedDoc: null,
+        historyEntries: [],
+        loading: true,
+
+        get sourceHtml() {
+            if (!this.sourceDoc) return '';
+            const text = this.sourceDoc.document_to_annotate || this.sourceDoc.original_document || '';
+            return escapeHtml(text);
+        },
+        get annotatedHtml() {
+            if (!this.annotatedDoc) return '';
+            return renderAnnotatedHtml(this.annotatedDoc.document_to_annotate || '');
+        },
+
+        async init() {
+            try {
+                const [source, annotated, histData] = await Promise.all([
+                    API.loadSourceDocument(this.theme, this.docId),
+                    API.loadDocument(this.theme, this.docId),
+                    API.getDocumentHistory(this.theme, this.docId),
+                ]);
+                this.sourceDoc = source;
+                this.annotatedDoc = annotated;
+                this.historyEntries = histData.entries || [];
+            } catch (e) {
+                showToast('Failed to load: ' + e.message, 'error');
+            } finally {
+                this.loading = false;
+            }
+        },
+
+        formatTime(ts) {
+            if (!ts) return '';
+            try {
+                const d = new Date(ts + 'Z');
+                return d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            } catch { return ts; }
+        },
+    };
+}
+</script>
+{% endblock %}

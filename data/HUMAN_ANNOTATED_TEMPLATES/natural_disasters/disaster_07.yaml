@@ -1,0 +1,363 @@
+document:
+  document_id: disaster_07
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: April 2015 Nepal earthquake
+  wikipedia_url: https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake
+  original_document: 'The April 2015 Nepal earthquake (also known as the Gorkha earthquake) killed 8962 people and injured
+    21952 across the countries of Nepal, India, China and Bangladesh. It occurred at 11:56 Nepal Standard Time on Saturday
+    25 April 2015, with a magnitude of Mw 7.8–7.9 or Ms 8.1 and a maximum Mercalli Intensity of X (Extreme). Its epicenter
+    was east of Gorkha District at Barpak, Gorkha, roughly 85 km (53 mi) northwest of central Kathmandu, and its hypocenter
+    was at a depth of approximately 8.2 km (5.1 mi). It was the worst natural disaster to strike Nepal since the 1934 Nepal–India
+    earthquake. The ground motion recorded in Kathmandu, the capital of Nepal, was of low frequency, which, along with its
+    occurrence at an hour when many people in rural areas were working outdoors, decreased the loss of human lives.
+
+
+    The earthquake triggered an avalanche on Mount Everest, killing 22 people, the deadliest incident on the mountain on record.
+    The earthquake triggered another huge avalanche in the Langtang valley, where 250 people were reported missing.
+
+
+    Hundreds of thousands of Nepalese were made homeless with entire villages flattened across many districts of the country.
+    Centuries-old buildings were destroyed at UNESCO World Heritage Sites in the Kathmandu Valley, including some at the Kathmandu
+    Durbar Square, the Patan Durbar Square, the Bhaktapur Durbar Square, the Changu Narayan Temple, the Boudhanath stupa,
+    and the Swayambhunath stupa. Geophysicists and other experts had warned for decades that Nepal was vulnerable to a deadly
+    earthquake, particularly because of its geology, urbanization, and architecture. Dharahara, also called Bhimsen Tower,
+    a nine-storey 61.88-metre (203.0 ft) tall tower, was destroyed. It was a part of the architecture of Kathmandu recognized
+    by UNESCO.
+
+
+    Continued aftershocks occurred throughout Nepal at intervals of 15–20 minutes, with one shock reaching a magnitude of
+    6.7 on 26 April at 12:54:08 NST. The country also had a continued risk of landslides.
+
+
+    A major aftershock occurred on 12 May 2015 at 12:50 NST with a moment magnitude (Mw) of 7.3. The epicenter was near the
+    Chinese border between the capital, Kathmandu, and Mount Everest. More than 200 people were killed and over 2500 were
+    injured by this aftershock, and many were left homeless.'
+  document_to_annotate: 'The [April; temporal_2.month] [2015; temporal_2.year] [Nepal; place_1.country] earthquake (also known
+    as the [Gorkha earthquake; event_1.name]) killed [8962; number_1.int] people and injured [21952; number_2.int] across
+    the countries of [Nepal; place_1.country], [India; place_2.country], [China; place_3.country] and [Bangladesh; place_4.country].
+    It occurred at [11:56 Nepal Standard Time; temporal_2.timestamp] on [Saturday; temporal_2.day] [25 April 2015; temporal_2.date],
+    with a magnitude of Mw 7.8–7.9 or Ms 8.1 and a maximum [Mercalli; person_1.last_name] Intensity of X (Extreme). Its epicenter
+    was east of [Gorkha District; place_5.region] at [Barpak, Gorkha; place_6.city], roughly [85; number_6.int] km northwest
+    of central [Kathmandu; place_7.city], and its hypocenter was at a depth of approximately [8.2; number_8.float] km. It
+    was the worst natural disaster to strike [Nepal; place_1.country] since the [1934 Nepal–India earthquake; event_2.name].
+    The ground motion recorded in [Kathmandu; place_7.city], the capital of [Nepal; place_1.country], was of low frequency,
+    which, along with its occurrence at an hour when many people in rural areas were working outdoors, decreased the loss
+    of human lives.
+
+
+    The earthquake triggered an avalanche on [Mount Everest; place_8.natural_site], killing [22; number_10.int] people, the
+    deadliest incident on the mountain on record. The earthquake triggered another huge avalanche in the [Langtang valley;
+    place_9.natural_site], where [250; number_11.int] people were reported missing.
+
+
+    Hundreds of thousands of [Nepalese; place_1.demonym] were made homeless with entire villages flattened across many districts
+    of the country. Centuries-old buildings were destroyed at [UNESCO; ngo_1.name] World Heritage Sites in the [Kathmandu
+    Valley; place_10.region], including some at the [Kathmandu Durbar Square; place_11.street], the [Patan Durbar Square;
+    place_12.street], the [Bhaktapur Durbar Square; place_13.street], the [Changu Narayan Temple; place_14.street], the [Boudhanath
+    stupa; place_15.street], and the [Swayambhunath stupa; place_16.street]. Geophysicists and other experts had warned for
+    decades that [Nepal; place_1.country] was vulnerable to a deadly earthquake, particularly because of its geology, urbanization,
+    and architecture. [Dharahara; place_17.street], also called [Bhimsen Tower; place_17.street], a [nine; number_12.str]-storey
+    [61.88; number_13.float]-metre tall tower, was destroyed. It was a part of the architecture of [Kathmandu; place_7.city]
+    recognized by [UNESCO; ngo_1.name].
+
+
+    Continued aftershocks occurred throughout [Nepal; place_1.country] at intervals of [15; number_15.int]–[20; number_16.int]
+    minutes, with one shock reaching a magnitude of 6.7 on [26 April; temporal_3.date] at [12:54:08 NST; temporal_3.timestamp].
+    The country also had a continued risk of landslides.
+
+
+    A major aftershock occurred on [12 May 2015; temporal_2.date] at [12:50 NST; temporal_2.timestamp] with a moment magnitude
+    (Mw) of 7.3. The epicenter was near the [Chinese; place_3.demonym] border between the capital, [Kathmandu; place_7.city],
+    and [Mount Everest; place_8.natural_site]. More than [200; number_19.int] people were killed and over [2500; number_20.int]
+    were injured by this aftershock, and many were left homeless.'
+  relations: []
+  rules:
+  - 'number_10.int > 1 # plural "people" killed on Everest'
+  - 'number_11.int > 1 # plural "people" reported missing'
+  - 'number_19.int > 1 # plural "people" killed by aftershock'
+  - 'number_20.int > 1 # plural "people" injured by aftershock'
+  - 'number_1.int > 1 # plural "people" killed overall'
+  - 'number_2.int > 1 # plural "people" injured overall'
+  - 'number_12.str > 1 # multi-storey tower'
+  - number_16.int  > number_15.int
+  num_questions: 12
+  questions:
+  - question_id: disaster_07_q05
+    question: How many avalanches occured ?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - place_8.natural_site and place_9.natural_site
+    reasoning_chain_text: place_8.natural_site and place_9.natural_site
+  - question_id: disaster_07_q05
+    question: What is the name of the tower that was destroyed in [Kathmandu; place_7.city] during the earthquake?
+    question_type: extractive
+    answer: place_17.street
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[Dharahara; place_17.street], also called [Dharahara; place_17.street], a [nine; number_12.str]-storey
+      [61.88; number_13.float]-metre tall tower, was destroyed."
+    reasoning_chain_text: 1. The document states that "[Dharahara; place_17.street], also called [Dharahara; place_17.street],
+      a [nine; number_12.str]-storey [61.88; number_13.float]-metre tall tower, was destroyed."
+  - question_id: disaster_07_q05
+    question: What was the magnitude range (Mw) reported for the main [April; temporal_2.month] [2015; temporal_2.year] [Nepal;
+      place_1.country] earthquake?
+    question_type: extractive
+    answer: 7.8–7.9
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the earthquake had "a magnitude of Mw 7.8–7.9 or Ms 8.1."
+    reasoning_chain_text: 1. The document states the earthquake had "a magnitude of Mw 7.8–7.9 or Ms 8.1."
+  - question_id: disaster_07_q05
+    question: How many aftershocks in total were recorded in [Nepal; place_1.country] following the main earthquake?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that continued aftershocks occurred at intervals of [15; number_15.int]–[20; number_16.int]
+      minutes and describes one specific aftershock of magnitude 6.7 and a major aftershock on [12 May 2015; temporal_2.date].
+    - 2. However, the document does not state the total number of aftershocks recorded.
+    reasoning_chain_text: '1. The document mentions that continued aftershocks occurred at intervals of [15; number_15.int]–[20;
+      number_16.int] minutes and describes one specific aftershock of magnitude 6.7 and a major aftershock on [12 May 2015;
+      temporal_2.date].
+
+      2. However, the document does not state the total number of aftershocks recorded.'
+  - question_id: disaster_07_q05
+    question: How many more people were injured than killed in the main [Nepal; place_1.country] earthquake?
+    question_type: arithmetic
+    answer: number_2.int - number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [8962; number_1.int] people were killed and [21952; number_2.int] were injured.
+    - 2. The difference is [21952; number_2.int] − [8962; number_1.int] = 10392.
+    reasoning_chain_text: '1. The document states [8962; number_1.int] people were killed and [21952; number_2.int] were injured.
+
+      2. The difference is [21952; number_2.int] − [8962; number_1.int] = 10392.'
+  - question_id: disaster_07_q06
+    question: What was the total financial cost of the damage caused by the earthquake in [Nepal; place_1.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes extensive destruction including flattened villages and destroyed heritage sites.
+    - 2. However, the document does not provide any financial figures for the damage caused.
+    reasoning_chain_text: '1. The document describes extensive destruction including flattened villages and destroyed heritage
+      sites.
+
+      2. However, the document does not provide any financial figures for the damage caused.'
+  - question_id: disaster_07_q07
+    question: How many years elapsed between the main earthquake and the major aftershock that occurred on [12 May 2015; temporal_2.date]?
+    question_type: temporal
+    answer: temporal_2.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The main earthquake occurred on [25 April 2015; temporal_2.date].
+    - 2. The major aftershock occurred on [12 May 2015; temporal_2.date].
+    - 3. From January 2001 to September 2009 is approximately 104 months (8 years and 8 months).
+    reasoning_chain_text: '1. The main earthquake occurred on [25 April 2015; temporal_2.date].
+
+      2. The major aftershock occurred on [12 May 2015; temporal_2.date].
+
+      3. From January 2001 to September 2009 is approximately 104 months (8 years and 8 months).'
+  - question_id: disaster_07_q08
+    question: Did the avalanche on [Mount Everest; place_8.natural_site] occur before or after the main [April; temporal_2.month]
+      [2015; temporal_2.year] [Nepal; place_1.country] earthquake?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - The document says the earthquake triggered the avalanche on Mount Everest.
+    - Therefore the avalanche happened after the earthquake.
+    reasoning_chain_text: 'The document says the earthquake triggered the avalanche on Mount Everest.
+
+      Therefore the avalanche happened after the earthquake.'
+  - question_id: disaster_07_q09
+    question: On what date did the magnitude 6.7 aftershock occur relative to the main earthquake — specifically, how many
+      days after [25 April 2015; temporal_2.date]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states a 6.7 magnitude aftershock occurred on [26 April; temporal_3.date], but this date appears malformed
+      and does not specify a clear year.
+    - 2. Without a well-defined date for this aftershock, the number of days after the main earthquake cannot be determined
+      from the document.
+    reasoning_chain_text: '1. The document states a 6.7 magnitude aftershock occurred on [26 April; temporal_3.date], but
+      this date appears malformed and does not specify a clear year.
+
+      2. Without a well-defined date for this aftershock, the number of days after the main earthquake cannot be determined
+      from the document.'
+  - question_id: disaster_07_q10
+    question: Given that the earthquake's epicenter was roughly [85; number_6.int] km northwest of central [Kathmandu; place_7.city],
+      and the major aftershock's epicenter was near the [Chinese; place_3.demonym] border between [Kathmandu; place_7.city]
+      and [Mount Everest; place_8.natural_site], can we infer which country's border the aftershock epicenter was close to?
+    question_type: inference
+    answer: place_3.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the major aftershock's epicenter was "near the [Chinese; place_3.demonym] border."
+    - 2. The demonym [Chinese; place_3.demonym] corresponds to [China; place_3.country].
+    - 3. Therefore, the aftershock epicenter was close to the border of [China; place_3.country].
+    reasoning_chain_text: '1. The document states the major aftershock''s epicenter was "near the [Chinese; place_3.demonym]
+      border."
+
+      2. The demonym [Chinese; place_3.demonym] corresponds to [China; place_3.country].
+
+      3. Therefore, the aftershock epicenter was close to the border of [China; place_3.country].'
+  - question_id: disaster_07_q11
+    question: Based on the document's description of the ground motion characteristics and the timing of the earthquake, why
+      was the death toll lower than it might otherwise have been?
+    question_type: inference
+    answer: Low-frequency ground motion and many rural people were working outdoors
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the ground motion in [Kathmandu; place_7.city] was "of low frequency."
+    - 2. It also notes the earthquake occurred "at an hour when many people in rural areas were working outdoors."
+    - 3. The document explicitly says these two factors together "decreased the loss of human lives."
+    reasoning_chain_text: '1. The document states the ground motion in [Kathmandu; place_7.city] was "of low frequency."
+
+      2. It also notes the earthquake occurred "at an hour when many people in rural areas were working outdoors."
+
+      3. The document explicitly says these two factors together "decreased the loss of human lives."'
+  - question_id: disaster_07_q12
+    question: Given that experts had warned [Nepal; place_1.country] was vulnerable due to its geology, urbanization, and
+      architecture, what specific building codes or regulations were in place at the time of the earthquake?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that experts warned for decades about vulnerability due to geology, urbanization, and architecture.
+    - 2. However, the document does not mention any specific building codes or regulations that were in place at the time.
+    reasoning_chain_text: '1. The document mentions that experts warned for decades about vulnerability due to geology, urbanization,
+      and architecture.
+
+      2. However, the document does not mention any specific building codes or regulations that were in place at the time.'
+  implicit_rules:
+  - entity_ref: temporal_2.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 7170
+    upper_bound: 10754
+    factual_value: 8962
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 17562
+    upper_bound: 26342
+    factual_value: 21952
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 68
+    upper_bound: 102
+    factual_value: 85
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.float
+    lower_bound: 1.0
+    upper_bound: 18.0
+    factual_value: 8.2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 18
+    upper_bound: 26
+    factual_value: 22
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 200
+    upper_bound: 300
+    factual_value: 250
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.float
+    lower_bound: 49.5
+    upper_bound: 74.26
+    factual_value: 61.88
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 12
+    upper_bound: 18
+    factual_value: 15
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 26
+    upper_bound: 26
+    factual_value: 26
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_19.int
+    lower_bound: 160
+    upper_bound: 240
+    factual_value: 200
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.int
+    lower_bound: 2000
+    upper_bound: 3000
+    factual_value: 2500
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'The [January; temporal_2.month] [2001; temporal_2.year] [Kingdom of Quarwex;
+    place_1.country] earthquake (also known as the [The Zorvexyorn Incident; event_1.name]) killed [7170; number_1.int] people
+    and injured [17562; number_2.int] across the countries of [Kingdom of Quarwex; place_1.country], [Drelzivmyrmark; place_2.country],
+    [Republic of Vekkiv; place_3.country] and [Kingdom of Zortarntarn; place_4.country]. It occurred at [11:56 Nepal Standard
+    Time; temporal_2.timestamp] on [Thursday; temporal_2.day] [8 January 2001; temporal_2.date], with a magnitude of Mw 7.8–7.9
+    or Ms 8.1 and a maximum [Halvel; person_1.last_name] Intensity of X (Extreme). Its epicenter was east of [Sivvek Region;
+    place_5.region] at [Tovkrelxal Town; place_6.city], roughly [68; number_6.int] km northwest of central [Vektovford; place_7.city],
+    and its hypocenter was at a depth of approximately [6.56; number_8.float] km. It was the worst natural disaster to strike
+    [Kingdom of Quarwex; place_1.country] since the [Krelnox Jubilee; event_2.name]. The ground motion recorded in [Vektovford;
+    place_7.city], the capital of [Kingdom of Quarwex; place_1.country], was of low frequency, which, along with its occurrence
+    at an hour when many people in rural areas were working outdoors, decreased the loss of human lives.
+
+
+    The earthquake triggered an avalanche on [Noxtov Lake; place_8.natural_site], killing [18; number_10.int] people, the
+    deadliest incident on the mountain on record. The earthquake triggered another huge avalanche in the [Noxkiv Lake; place_9.natural_site],
+    where [249; number_11.int] people were reported missing.
+
+
+    Hundreds of thousands of [Xalsivean; place_1.demonym] were made homeless with entire villages flattened across many districts
+    of the country. Centuries-old buildings were destroyed at [Vlomvyrolclil Civic Network; ngo_1.name] World Heritage Sites
+    in the [Vekglankrel Region; place_10.region], including some at the [Sivnox Drive; place_11.street], the [Vorngry Boulevard;
+    place_12.street], the [Sivthurthur Drive; place_13.street], the [Zivzivtarn Drive; place_14.street], the [Quarsivyorn
+    Drive; place_15.street], and the [Grelvex Way; place_16.street]. Geophysicists and other experts had warned for decades
+    that [Kingdom of Quarwex; place_1.country] was vulnerable to a deadly earthquake, particularly because of its geology,
+    urbanization, and architecture. [Grelmyrziv Lane; place_17.street], also called [Grelmyrziv Lane; place_17.street], a
+    [eight; number_12.str]-storey [49.5; number_13.float]-metre tall tower, was destroyed. It was a part of the architecture
+    of [Vektovford; place_7.city] recognized by [Vlomvyrolclil Civic Network; ngo_1.name].
+
+
+    Continued aftershocks occurred throughout [Kingdom of Quarwex; place_1.country] at intervals of [12; number_15.int]–[16;
+    number_16.int] minutes, with one shock reaching a magnitude of 6.7 on [3 February 26; temporal_3.date] at [12:54:08 NST;
+    temporal_3.timestamp]. The country also had a continued risk of landslides.
+
+
+    A major aftershock occurred on [14 September 2009; temporal_2.date] at [12:50 NST; temporal_2.timestamp] with a moment
+    magnitude (Mw) of 7.3. The epicenter was near the [Vornxalsivese; place_3.demonym] border between the capital, [Vektovford;
+    place_7.city], and [Noxtov Lake; place_8.natural_site]. More than [160; number_19.int] people were killed and over [2000;
+    number_20.int] were injured by this aftershock, and many were left homeless.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,536 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_09
+  document_theme: companies_and_organizations
+  complete: false
+  generated_at: '2026-04-18T15:26:51.163678+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: product product_9: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_22: 15
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_7: 15
+    product_8: 15
+    product_9: 14
+missing_references:
+  products:
+    product_9: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glindow
+      last_name: Glindow
+    - full_name: Morcen Draith
+      last_name: Draith
+    - full_name: Pellun Vosker
+      last_name: Vosker
+    - full_name: Hadrik Colvane
+      last_name: Colvane
+    - full_name: Zerith Pomblane
+      last_name: Pomblane
+    - full_name: Quilsen Brantho
+      last_name: Brantho
+    - full_name: Fendar Oluvik
+      last_name: Oluvik
+    - full_name: Jomber Kestahl
+      last_name: Kestahl
+    - full_name: Wentik Sorbane
+      last_name: Sorbane
+    - full_name: Crulden Yavosh
+      last_name: Yavosh
+    - full_name: Belvon Trupek
+      last_name: Trupek
+    - full_name: Ondrik Felmaro
+      last_name: Felmaro
+    - full_name: Sarvek Plindow
+      last_name: Plindow
+    - full_name: Golthen Ravisk
+      last_name: Ravisk
+    - full_name: Durnep Kolvash
+      last_name: Kolvash
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Drenlo Kavish
+      last_name: Kavish
+    - full_name: Torben Yellik
+      last_name: Yellik
+    - full_name: Phelan Grothis
+      last_name: Grothis
+    - full_name: Colvey Zarmund
+      last_name: Zarmund
+    - full_name: Jethrik Omblane
+      last_name: Omblane
+    - full_name: Solvek Trandis
+      last_name: Trandis
+    - full_name: Harquin Belvosh
+      last_name: Belvosh
+    - full_name: Rendik Clossam
+      last_name: Clossam
+    - full_name: Marvek Dunthey
+      last_name: Dunthey
+    - full_name: Quilben Fossark
+      last_name: Fossark
+    - full_name: Tolvane Grissek
+      last_name: Grissek
+    - full_name: Brindel Hothvane
+      last_name: Hothvane
+    - full_name: Kessol Plindor
+      last_name: Plindor
+    - full_name: Wethrin Jolkast
+      last_name: Jolkast
+    - full_name: Darvon Skelmith
+      last_name: Skelmith
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennosh
+    - full_name: Brenlo Caspurin
+    - full_name: Dorvan Quilsey
+    - full_name: Hestro Pallwick
+    - full_name: Jomber Trevask
+    - full_name: Kelmund Vorashi
+    - full_name: Pernick Solwade
+    - full_name: Grathon Yulbeck
+    - full_name: Wilvern Drossam
+    - full_name: Fenrick Oblathen
+    - full_name: Colvane Tureshi
+    - full_name: Zarmund Plethick
+    - full_name: Lorbis Hendavo
+    - full_name: Quenvar Stalmig
+    - full_name: Dremick Fossura
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennoway
+    - full_name: Dornic Pallesh
+    - full_name: Hembry Caulston
+    - full_name: Felgor Tannivey
+    - full_name: Quenlo Brastow
+    - full_name: Jethrik Morvayne
+    - full_name: Calwen Drothey
+    - full_name: Parvon Skellig
+    - full_name: Rendik Vosserly
+    - full_name: Galthen Prewney
+    - full_name: Orvish Telmadge
+    - full_name: Bryndel Kossoway
+    - full_name: Wethric Jolmane
+    - full_name: Solvek Crandithy
+    - full_name: Durnell Fethwick
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dravon Kelstry
+    - full_name: Peshlo Tammerick
+    - full_name: Grivon Haldorey
+    - full_name: Brentar Colvish
+    - full_name: Yondel Prathwick
+    - full_name: Tassik Morenly
+    - full_name: Quelden Farvosh
+    - full_name: Lyndro Caspelm
+    - full_name: Orvath Jendulay
+    - full_name: Fennick Torbane
+    - full_name: Zarvel Plindow
+    - full_name: Kethro Wulmast
+    - full_name: Solvane Drethik
+    - full_name: Marvun Gelphor
+    - full_name: Crethon Yaldris
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velundric
+    - demonym: Tharqesian
+    - demonym: Brondavish
+    - demonym: Caloprean
+    - demonym: Zuventhi
+    - demonym: Pelmorath
+    - demonym: Dravosken
+    - demonym: Oquellan
+    - demonym: Fenthari
+    - demonym: Gulsovian
+    - demonym: Myrothec
+    - demonym: Kespulari
+    - demonym: Wenthobian
+    - demonym: Jaltuvese
+    - demonym: Rondekhi
+  place_2:
+    required_attributes:
+    - city
+    - region
+    - state
+    count: 15
+    variants:
+    - city: Telvaro
+      state: Orenthal
+      region: Cobalt Corridor
+    - city: Prindell
+      state: Kessova
+      region: Lumen Basin
+    - city: Wythomar
+      state: Dralencia
+      region: Helix Reach
+    - city: Colvane
+      state: Thurnica
+      region: Glasswind Flats
+    - city: Brenthil
+      state: Maroven
+      region: Crestline Hollow
+    - city: Quellaby
+      state: Vindara
+      region: Amber Shelf
+    - city: Dormath
+      state: Peltrova
+      region: Ironleaf Expanse
+    - city: Solveen
+      state: Caldrith
+      region: Sapphire Bend
+    - city: Fenwick
+      state: Lorenthi
+      region: Copper Ridge Span
+    - city: Granthel
+      state: Obrisar
+      region: Dawnmere Stretch
+    - city: Tasserin
+      state: Vulmera
+      region: Quartzline Gap
+    - city: Helvorn
+      state: Dranthis
+      region: Ember Terrace
+    - city: Pellicor
+      state: Sethura
+      region: Verdant Narrows
+    - city: Molvaine
+      state: Krendova
+      region: Ashveil Lowlands
+    - city: Zephlin
+      state: Torindal
+      region: Silverpine Crescent
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pyralis Corp.
+    - name: Velkora Technologies
+    - name: Zenthari Inc.
+    - name: Orbanic Systems
+    - name: Celvion Industries
+    - name: Tyndarex Corp.
+    - name: Quorath Electronics
+    - name: Brivello Inc.
+    - name: Halcyren Technologies
+    - name: Dravonis Corp.
+    - name: Fenturic Inc.
+    - name: Kessova Industries
+    - name: Plyndara Corp.
+    - name: Wytheron Technologies
+    - name: Galvotis Inc.
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voxlar
+    - name: Kernith
+    - name: Plyndex
+    - name: Torbique
+    - name: Celvane
+    - name: Dravosi
+    - name: Quillum
+    - name: Brenthic
+    - name: Zolvara
+    - name: Fenduq
+    - name: Grothel
+    - name: Wisparn
+    - name: Jaltrek
+    - name: Morvique
+    - name: Sulkren
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltric
+    - name: Quorben
+    - name: Silkade
+    - name: Tarvox
+    - name: Plindec
+    - name: Crendal
+    - name: Brivosh
+    - name: Zelphar
+    - name: Kondrix
+    - name: Melvane
+    - name: Drothek
+    - name: Furniq
+    - name: Galpesh
+    - name: Wentrik
+    - name: Obranec
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari
+    - name: Crendox
+    - name: Plynware
+    - name: Torqen
+    - name: Brivosys
+    - name: Kelmuth
+    - name: Dravonic
+    - name: Solvrek
+    - name: Quorbit
+    - name: Fendrax
+    - name: Halperic
+    - name: Zulmane
+    - name: Gorthek
+    - name: Wispara
+    - name: Nelvotch
+products:
+  product_22:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: datavane
+    - name: logicframe
+    - name: calcunode
+    - name: bytecraft
+    - name: thinkplate
+    - name: digitrove
+    - name: proceshub
+    - name: corelathe
+    - name: synthdesk
+    - name: numeribox
+    - name: chipwell
+    - name: taskpanel
+    - name: gridloom
+    - name: pulseware
+    - name: renderset
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvell One
+    - name: Threnn Mark
+    - name: Zelkora Primo
+    - name: Dravix Solo
+    - name: Peldyn First
+    - name: Quorath Debut
+    - name: Brintec Origin
+    - name: Halvek Initial
+    - name: Crondis Launch
+    - name: Tyvorn Base
+    - name: Weskari Start
+    - name: Nolphet Alpha
+    - name: Grellum Onset
+    - name: Fendriq Root
+    - name: Jaltrek Dawn
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevon II
+    - name: Caltrek II
+    - name: Dornic II
+    - name: Felkora II
+    - name: Ganthor II
+    - name: Helvane II
+    - name: Jomira II
+    - name: Kestova II
+    - name: Lyndric II
+    - name: Molvane II
+    - name: Norbex II
+    - name: Peldrin II
+    - name: Quorath II
+    - name: Relvint II
+    - name: Tarvosh II
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Mivra
+    - name: Tassol
+    - name: Kelpha
+    - name: Bryndo
+    - name: Voreli
+    - name: Junara
+    - name: Pletho
+    - name: Cyndal
+    - name: Orvane
+    - name: Wispek
+    - name: Dalvon
+    - name: Fenturi
+    - name: Glospar
+    - name: Helviq
+    - name: Zontri
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevolin
+    - name: Caspherix
+    - name: Delvanto
+    - name: Fentorak
+    - name: Gliveron
+    - name: Holtique
+    - name: Jendara
+    - name: Korbesh
+    - name: Lumivane
+    - name: Morthelo
+    - name: Nelvaris
+    - name: Peldrix
+    - name: Quorvane
+    - name: Retholin
+    - name: Tarvique
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Panelix
+    - name: Vistara
+    - name: Glazrik
+    - name: Trelvo
+    - name: Skydael
+    - name: Frameos
+    - name: Quilben
+    - name: Deskora
+    - name: Wyndrel
+    - name: Corthane
+    - name: Plexura
+    - name: Brivane
+    - name: Tarvos
+    - name: Keldrix
+    - name: Zonteq
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellox
+    - name: Crynth
+    - name: Orbelo
+    - name: Tivarn
+    - name: Quelsh
+    - name: Bryndex
+    - name: Polvane
+    - name: Zethura
+    - name: Kalvion
+    - name: Dremmis
+    - name: Wintaro
+    - name: Fluxen
+    - name: Gelvori
+    - name: Sondrik
+    - name: Melvique
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tunelet
+    - name: Melodrix
+    - name: Sonavex
+    - name: Pockethum
+    - name: Jivaro
+    - name: Rhythlet
+    - name: Cliptone
+    - name: Wavrik
+    - name: Bopsel
+    - name: Driftune
+    - name: Hummox
+    - name: Plynth
+    - name: Zephlet
+    - name: Kordis
+    - name: Beathin
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellum
+    - name: Tyndar
+    - name: Orbik
+    - name: Claeth
+    - name: Mirova
+    - name: Phandex
+    - name: Quorin
+    - name: Zelkova
+    - name: Brindal
+    - name: Kessane
+    - name: Tolmec
+    - name: Wyvara
+    - name: Druphen
+    - name: Solvane
+    - name: Grithon
+  product_9:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Slateq
+    - name: Pavrik
+    - name: Glassorn
+    - name: Felkio
+    - name: Lumtab
+    - name: Vorpad
+    - name: Kessle
+    - name: Draith
+    - name: Byntel
+    - name: Quorix
+    - name: Helvane
+    - name: Colvane
+    - name: Wispara
+    - name: Tondrik

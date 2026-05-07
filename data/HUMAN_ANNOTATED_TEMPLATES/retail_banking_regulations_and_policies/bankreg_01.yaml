@@ -1,0 +1,286 @@
+document:
+  document_id: bankreg_01
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Markets in Financial Instruments Directive 2014
+  wikipedia_url: https://en.wikipedia.org/wiki/Markets_in_Financial_Instruments_Directive_2014
+  original_document: 'Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2), is a directive
+    of the European Union (EU). Together with Regulation No 600/2014 it provides a legal framework for securities markets,
+    investment intermediaries, in addition to trading venues. The directive provides harmonised regulation for investment
+    services of the member states of the European Economic Area — the EU member states plus Iceland, Norway and Liechtenstein.
+    Its main objectives are to increase competition and investor protection, as well as level the playing field for market
+    participants in investment services. It repeals Directive 2004/39/EC (MiFID 1).
+
+
+    MiFID 1 was a cornerstone of the European Commission''s Financial Services Action Plan, whose measures changed how EU
+    financial service markets operate. It is the most significant piece of legislation introduced in the Lamfalussy process
+    designed to accelerate the adoption of legislation based on a four-level approach recommended by the Committee of Wise
+    Men chaired by Baron Alexandre Lamfalussy. There are three other "Lamfalussy Directives": Directive 2003/71/EC, replaced
+    with Regulation (EU) 2017/1129 on the prospectus to be published when securities are offered to the public or admitted
+    to trading on a regulated market, the market abuse directive, and Directive 2004/109/EC on the harmonisation of transparency
+    requirements in relation to information about issuers whose securities are admitted to trading on a regulated market.
+
+
+    MiFID 1 retained the principles of the EU "passport" introduced by Directive 93/22/EEC but introduced the concept of "maximum
+    harmonization", which places more emphasis on home state supervision. This is a change from the prior EU financial service
+    legislation, which featured a "minimum harmonization and mutual recognition" concept. "Maximum harmonization" does not
+    permit states to be "super equivalent" or to "gold-plate" EU requirements detrimental to a "level playing field". Another
+    change was the abolition of the "concentration rule" in which member states could require investment firms to route client
+    orders through regulated markets.
+
+
+    MiFID 1, implemented through the standard co-decision procedure of the Council of the European Union and the European
+    Parliament, set out a detailed framework for the legislation. Twenty articles of this directive specified technical implementation
+    measures (Level 2). These measures were adopted by the European Commission based on technical advice from the Committee
+    of European Securities Regulators and negotiations in the European Securities Committee, with oversight by the European
+    Parliament. Implementation measures in the form of a Commission Directive and Commission Regulation were officially published
+    on 2 September 2006.
+
+
+    After its initial implementation, MiFID 1 was intended to be reviewed. After extensive discussion and debate, in April
+    2014, the European Parliament approved both MiFID 2, an updated version of MiFID 1, and its accompanying Regulation (EU)
+    No 600/2014. The directive and regulation include fewer exemptions and expand the scope of MiFID 1 to cover a larger group
+    of companies and financial products. Both MiFID 2 and Regulation (EU) No 600/2014 have been effective from 3 January 2018.
+
+
+    A review of MiFID 1 began in March 2010, and the proposal for MiFID 2 was published in October 2012.'
+  document_to_annotate: '[Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name],
+    is a directive of the [European Union (EU); place_4.continent]. Together with [Regulation No 600/2014; legal_2.name] it
+    provides a legal framework for securities markets, investment intermediaries, in addition to trading venues. The directive
+    provides harmonised regulation for investment services of the member states of the [European Economic Area; place_5.country]
+    — the [EU; place_4.continent] member states plus [Iceland; place_1.country], [Norway; place_2.country] and [Liechtenstein;
+    place_3.country]. Its main objectives are to increase competition and investor protection, as well as level the playing
+    field for market participants in investment services. It repeals [Directive 2004/39/EC (MiFID 1); legal_3.name].
+
+
+    [MiFID 1; legal_3.name] was a cornerstone of the [European Commission; government_org_3.name]''s [Financial Services Action
+    Plan; legal_8.name], whose measures changed how [EU; place_4.continent] financial service markets operate. It is the most
+    significant piece of legislation introduced in the [Lamfalussy; person_1.last_name] process designed to accelerate the
+    adoption of legislation based on a four-level approach recommended by the [Committee of Wise Men; government_org_8.name]
+    chaired by Baron [Alexandre Lamfalussy; person_1.full_name]. There are three other "[Lamfalussy; person_1.last_name] Directives":
+    [Directive 2003/71/EC; legal_4.name], replaced with [Regulation (EU) 2017/1129; legal_5.name] on the prospectus to be
+    published when securities are offered to the public or admitted to trading on a regulated market, the [market abuse directive;
+    legal_9.name], and [Directive 2004/109/EC; legal_6.name] on the harmonisation of transparency requirements in relation
+    to information about issuers whose securities are admitted to trading on a regulated market.
+
+
+    A review of [MiFID 1; legal_3.name] began in [March 2010; temporal_1.date], and the proposal for [Markets in Financial
+    Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name] was published in [October 2012; temporal_2.date].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_01_q01
+    question: What directive does [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2);
+      legal_1.name] repeal?
+    question_type: extractive
+    answer: legal_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2);
+      legal_1.name] repeals [Directive 2004/39/EC (MiFID 1); legal_3.name].
+    reasoning_chain_text: 1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly
+      known as MiFID 2); legal_1.name] repeals [Directive 2004/39/EC (MiFID 1); legal_3.name].
+  - question_id: bankreg_01_q02
+    question: How many other directives are described as being part of the same process as [Directive 2004/39/EC (MiFID 1);
+      legal_3.name]?
+    question_type: extractive
+    answer: three
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states 'There are three other' directives in the [Lamfalussy; person_1.last_name] process.
+    reasoning_chain_text: 1. The document states 'There are three other' directives in the [Lamfalussy; person_1.last_name]
+      process.
+  - question_id: bankreg_01_q03
+    question: When was [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name]
+      first adopted?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the purpose and scope of [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly
+      known as MiFID 2); legal_1.name].
+    - 2. However, the document does not mention any adoption date for this directive.
+    reasoning_chain_text: '1. The document describes the purpose and scope of [Markets in Financial Instruments Directive
+      2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name].
+
+      2. However, the document does not mention any adoption date for this directive.'
+  - question_id: bankreg_01_q04
+    question: How many non-[European Union (EU); place_4.continent] member state countries are listed as part of the [European
+      Economic Area; place_5.country]?
+    question_type: arithmetic
+    answer: three
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists three additional countries beyond the [European Union (EU); place_4.continent] member states.
+    reasoning_chain_text: 1. The document lists three additional countries beyond the [European Union (EU); place_4.continent]
+      member states.
+  - question_id: bankreg_01_q05
+    question: How many [Lamfalussy; person_1.last_name] Directives are mentioned in total when [Directive 2004/39/EC (MiFID
+      1); legal_3.name] and the three other directives are counted together?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - The document states there are three other Lamfalussy Directives.
+    - MiFID 1 is also described as part of the same process.
+    - Therefore the total is 1 + 3 = 4.
+    reasoning_chain_text: 'The document states there are three other Lamfalussy Directives.
+
+      MiFID 1 is also described as part of the same process.
+
+      Therefore the total is 1 + 3 = 4.'
+  - question_id: bankreg_01_q06
+    question: If each of the [Lamfalussy; person_1.last_name] Directives required a specific number of implementing measures,
+      how many total implementing measures were needed across all four directives?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document identifies four directives in the [Lamfalussy; person_1.last_name] process (three others plus [Directive
+      2004/39/EC (MiFID 1); legal_3.name]).
+    - 2. However, the document does not state how many implementing measures each directive required, so the total cannot
+      be calculated.
+    reasoning_chain_text: '1. The document identifies four directives in the [Lamfalussy; person_1.last_name] process (three
+      others plus [Directive 2004/39/EC (MiFID 1); legal_3.name]).
+
+      2. However, the document does not state how many implementing measures each directive required, so the total cannot
+      be calculated.'
+  - question_id: bankreg_01_q07
+    question: How many years after the review of [Directive 2004/39/EC (MiFID 1); legal_3.name] began was the proposal for
+      [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name] published?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - The document states that the review of MiFID 1 began in March 2010.
+    - It also states that the proposal for MiFID 2 was published in October 2012.
+    - The difference is 2012 - 2010 = 2.
+    reasoning_chain_text: 'The document states that the review of MiFID 1 began in March 2010.
+
+      It also states that the proposal for MiFID 2 was published in October 2012.
+
+      The difference is 2012 - 2010 = 2.'
+  - question_id: bankreg_01_q08
+    question: Did the review of [Directive 2004/39/EC (MiFID 1); legal_3.name] begin before or after the proposal for [Markets
+      in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name] was published?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - The review of MiFID 1 began in March 2010.
+    - The proposal for MiFID 2 was published in October 2012.
+    - March 2010 is before October 2012.
+    reasoning_chain_text: 'The review of MiFID 1 began in March 2010.
+
+      The proposal for MiFID 2 was published in October 2012.
+
+      March 2010 is before October 2012.'
+  - question_id: bankreg_01_q09
+    question: In what year was the [Committee of Wise Men; government_org_8.name] established under Baron [Alexandre Lamfalussy;
+      person_1.full_name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Committee of Wise Men; government_org_8.name] was chaired by Baron [Alexandre Lamfalussy;
+      person_1.full_name].
+    - 2. However, the document does not state when the [Committee of Wise Men; government_org_8.name] was established.
+    reasoning_chain_text: '1. The document mentions that the [Committee of Wise Men; government_org_8.name] was chaired by
+      Baron [Alexandre Lamfalussy; person_1.full_name].
+
+      2. However, the document does not state when the [Committee of Wise Men; government_org_8.name] was established.'
+  - question_id: bankreg_01_q10
+    question: Given that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2); legal_1.name]
+      repeals a prior directive, which organization's programme led to the creation of that repealed directive?
+    question_type: inference
+    answer: government_org_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2);
+      legal_1.name] repeals [Directive 2004/39/EC (MiFID 1); legal_3.name].
+    - 2. The document states that [Directive 2004/39/EC (MiFID 1); legal_3.name] was a cornerstone of the [European Commission;
+      government_org_3.name]'s [Financial Services Action Plan; legal_8.name].
+    - 3. Therefore, the [European Commission; government_org_3.name] is the organization whose programme led to the creation
+      of the repealed directive.
+    reasoning_chain_text: '1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly
+      known as MiFID 2); legal_1.name] repeals [Directive 2004/39/EC (MiFID 1); legal_3.name].
+
+      2. The document states that [Directive 2004/39/EC (MiFID 1); legal_3.name] was a cornerstone of the [European Commission;
+      government_org_3.name]''s [Financial Services Action Plan; legal_8.name].
+
+      3. Therefore, the [European Commission; government_org_3.name] is the organization whose programme led to the creation
+      of the repealed directive.'
+  - question_id: bankreg_01_q11
+    question: Based on the document, does the role of Baron [Alexandre Lamfalussy; person_1.full_name] in the four-level legislative
+      approach suggest a legislative or an advisory function?
+    question_type: inference
+    answer: advisory
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the four-level approach was 'recommended by the [Committee of Wise Men; government_org_8.name]
+      chaired by Baron [Alexandre Lamfalussy; person_1.full_name].'
+    - 2. The body is described as a council of advisors, and it recommended (rather than enacted) the approach, indicating
+      an advisory function.
+    reasoning_chain_text: '1. The document states that the four-level approach was ''recommended by the [Committee of Wise
+      Men; government_org_8.name] chaired by Baron [Alexandre Lamfalussy; person_1.full_name].''
+
+      2. The body is described as a council of advisors, and it recommended (rather than enacted) the approach, indicating
+      an advisory function.'
+  - question_id: bankreg_01_q12
+    question: Did the adoption of [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2);
+      legal_1.name] lead to increased trading volumes in [European Economic Area; place_5.country] member states?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly known as MiFID 2);
+      legal_1.name] aims to increase competition and investor protection.
+    - 2. However, the document does not provide any information about actual trading volumes or the effects of the directive's
+      adoption on market activity.
+    reasoning_chain_text: '1. The document states that [Markets in Financial Instruments Directive 2014 (2014/65/EU, commonly
+      known as MiFID 2); legal_1.name] aims to increase competition and investor protection.
+
+      2. However, the document does not provide any information about actual trading volumes or the effects of the directive''s
+      adoption on market activity.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: '[Regulation on Public Offering Standards; legal_1.name], is a directive of the
+    [Barmor Landmass; place_4.continent]. Together with [Market Integrity and Abuse Directive; legal_2.name] it provides a
+    legal framework for securities markets, investment intermediaries, in addition to trading venues. The directive provides
+    harmonised regulation for investment services of the member states of the [Fossmark; place_5.country] — the [Barmor Landmass;
+    place_4.continent] member states plus [Grantheld; place_1.country], [Pellunian Economic Compact; place_2.country] and
+    [Telvoria; place_3.country]. Its main objectives are to increase competition and investor protection, as well as level
+    the playing field for market participants in investment services. It repeals [Unified Securities Instruments Directive;
+    legal_3.name].
+
+
+    [Unified Securities Instruments Directive; legal_3.name] was a cornerstone of the [Vestralan Central Directorate; government_org_3.name]''s
+    [Integrated Financial Services Programme; legal_8.name], whose measures changed how [Barmor Landmass; place_4.continent]
+    financial service markets operate. It is the most significant piece of legislation introduced in the [Nossuth; person_1.last_name]
+    process designed to accelerate the adoption of legislation based on a four-level approach recommended by the [Council
+    of Prudential Advisors; government_org_8.name] chaired by Baron [Feldaric Nossuth; person_1.full_name]. There are three
+    other "[Nossuth; person_1.last_name] Directives": [Regulation No 471/2014; legal_4.name], replaced with [Transparency
+    Alignment Directive; legal_5.name] on the prospectus to be published when securities are offered to the public or admitted
+    to trading on a regulated market, the [Investment Services Framework Directive; legal_9.name], and [Prospectus Issuance
+    Directive; legal_6.name] on the harmonisation of transparency requirements in relation to information about issuers whose
+    securities are admitted to trading on a regulated market.
+
+
+    A review of [Unified Securities Instruments Directive; legal_3.name] began in [June 1996; temporal_1.date], and the proposal
+    for [Regulation on Public Offering Standards; legal_1.name] was published in [September 2001; temporal_2.date].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

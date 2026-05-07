@@ -1,0 +1,384 @@
+document:
+  document_id: space_01
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Apollo program
+  wikipedia_url: https://en.wikipedia.org/wiki/Apollo_program
+  original_document: 'The Apollo program, also known as Project Apollo, was the United States human spaceflight program led
+    by NASA, which landed the first humans on the Moon in 1969. Apollo was conceived during Project Mercury and executed after
+    Project Gemini. It was conceived in 1960 as a three-person spacecraft during the presidency of Dwight D. Eisenhower. Apollo
+    was later dedicated to President John F. Kennedy''s national goal for the 1960s of "landing a man on the Moon and returning
+    him safely to the Earth" in an address to the U.S. Congress on May 25, 1961.
+
+
+    Kennedy''s goal was accomplished on the Apollo 11 mission, when astronauts Neil Armstrong and Buzz Aldrin landed their
+    Apollo Lunar Module (LM) on July 20, 1969, and walked on the lunar surface, while Michael Collins remained in lunar orbit
+    in the command and service module (CSM), and all three landed safely on Earth in the Pacific Ocean on July 24. Five subsequent
+    Apollo missions also landed astronauts on the Moon, the last, Apollo 17, in December 1972. In these six spaceflights,
+    twelve people walked on the Moon.
+
+
+    Apollo ran from 1961 to 1972, with the first crewed flight in 1968. It encountered a major setback in 1967 when the Apollo
+    1 cabin fire killed the entire crew during a prelaunch test. After the first Moon landing, sufficient flight hardware
+    remained for nine follow-on landings with a plan for extended lunar geological and astrophysical exploration. Budget cuts
+    forced the cancellation of three of these. Five of the remaining six missions achieved landings; but the Apollo 13 landing
+    had to be aborted after an oxygen tank exploded en route to the Moon, crippling the CSM. The crew barely managed a safe
+    return to Earth by using the Lunar Module as a "lifeboat" on the return journey.
+
+
+    Apollo used the Saturn family of rockets as launch vehicles, which were also used for an Apollo Applications Program,
+    which consisted of Skylab, a space station that supported three crewed missions in 1973–1974, and the Apollo–Soyuz Test
+    Project, a joint United States-Soviet Union low Earth orbit mission in 1975.
+
+
+    Apollo set several major human spaceflight milestones. It stands alone in sending crewed missions beyond low Earth orbit.
+    Apollo 8 was the first crewed spacecraft to orbit another celestial body, and Apollo 11 was the first crewed spacecraft
+    to land humans on one.'
+  document_to_annotate: 'The [Apollo program; event_11.name], also known as [Project Apollo; event_1.name], was the [United
+    States; place_1.country] human spaceflight program led by [NASA; government_org_1.name], which landed the first humans
+    on the [Moon; place_2.natural_site] in [1969; temporal_1.year]. [Apollo; event_1.name] was conceived during [Project Mercury;
+    event_2.name] and executed after [Project Gemini; event_3.name]. It was conceived in [1960; temporal_2.year] as a three-person
+    spacecraft during the presidency of [Dwight D. Eisenhower; person_1.full_name]. [Apollo; event_1.name] was later dedicated
+    to President [John F. Kennedy; person_2.full_name]''s national goal for the [1960; temporal_3.year]s of "landing a man
+    on the [Moon; place_2.natural_site] and returning him safely to the [Earth; place_3.natural_site]" in an address to the
+    [U.S. Congress; government_org_2.name] on [May 25, 1961; temporal_4.date].
+
+
+    [Kennedy; person_2.last_name]''s goal was accomplished on the [Apollo 11; event_4.name] mission, when astronauts [Neil
+    Armstrong; person_3.full_name] and [Buzz Aldrin; person_4.full_name] landed their [Apollo Lunar Module (LM); product_1.name]
+    on [July 20, 1969; temporal_1.date], and walked on the [lunar; place_6.region] surface, while [Michael Collins; person_5.full_name]
+    remained in [lunar; place_6.region] orbit in the command and service module (CSM), and all three landed safely on [Earth;
+    place_3.natural_site] in the [Pacific Ocean; place_4.natural_site] on [July 24; temporal_6.date]. [Five; number_6.str]
+    subsequent [Apollo; event_1.name] missions also landed astronauts on the [Moon; place_2.natural_site], the last, [Apollo
+    17; event_5.name], in [December 1972; temporal_7.date]. In these [six; number_2.str] spaceflights, [twelve; number_3.str]
+    people walked on the [Moon; place_2.natural_site].
+
+
+    [Apollo; event_1.name] ran from [1961; temporal_8.year] to [1972; temporal_9.year], with the first crewed flight in [1968;
+    temporal_10.year]. It encountered a major setback in [1967; temporal_11.year] when the [Apollo 1; event_6.name] cabin
+    fire killed the entire crew during a prelaunch test. After the first [Moon; place_2.natural_site] landing, sufficient
+    flight hardware remained for [nine; number_4.str] follow-on landings with a plan for extended [lunar; place_6.region]
+    geological and astrophysical exploration. Budget cuts forced the cancellation of [three; number_5.str] of these. [Five;
+    number_6.str] of the remaining [six; number_7.str] missions achieved landings; but the [Apollo 13; event_7.name] landing
+    had to be aborted after an oxygen tank exploded en route to the [Moon; place_2.natural_site], crippling the CSM. The crew
+    barely managed a safe return to [Earth; place_3.natural_site] by using the [Lunar Module; product_1.name] as a "lifeboat"
+    on the return journey.
+
+
+    [Apollo; event_1.name] used the [Saturn; product_2.name] family of rockets as launch vehicles, which were also used for
+    an [Apollo Applications Program; event_8.name], which consisted of [Skylab; product_3.name], a space station that supported
+    [three; number_8.str] crewed missions in [1973–1974; temporal_12.date], and the [Apollo–Soyuz Test Project; event_9.name],
+    a joint [United States; place_1.country]-[Soviet Union; place_5.country] low [Earth; place_3.natural_site] orbit mission
+    in [1975; temporal_13.year].'
+  relations: []
+  rules:
+  - 'number_6.str + 1 == number_2.str # five subsequent landings plus Apollo 11 equals six total Moon landings'
+  - 'number_4.str - number_5.str == number_7.str # nine planned landings minus three cancelled equals six remaining missions'
+  - 'number_7.str - 1 == number_6.str # six remaining missions minus one aborted (Apollo 13) equals five successful landings'
+  - 'number_2.str == number_6.str + 1 # six spaceflights = five subsequent + Apollo 11'
+  - 'number_3.str > 1 # plural mention "twelve people"'
+  - 'number_6.str > 1 # plural mention "Five subsequent missions"'
+  - 'number_5.str > 1 # plural mention "three of these"'
+  - 'number_8.str > 1 # plural mention "three crewed missions"'
+  - 'number_4.str > 1 # plural mention "nine follow-on landings"'
+  - temporal_4.year = temporal_3.year + 1
+  - number_3.str > 3
+  - number_4.str == number_5.str + number_2.str
+  num_questions: 12
+  questions:
+  - question_id: space_01_q01
+    question: Who remained in [lunar; place_6.region] orbit in the command and service module during the [Apollo 11; event_4.name]
+      mission?
+    question_type: extractive
+    answer: person_5.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that during the [Apollo 11; event_4.name] mission, [Michael Collins; person_5.full_name] remained
+      in [lunar; place_6.region] orbit in the command and service module (CSM).
+    reasoning_chain_text: 1. The document states that during the [Apollo 11; event_4.name] mission, [Michael Collins; person_5.full_name]
+      remained in [lunar; place_6.region] orbit in the command and service module (CSM).
+  - question_id: space_01_q02
+    question: During what kind of test did the [Apollo 1; event_6.name] cabin fire kill the entire crew?
+    question_type: extractive
+    answer: prelaunch test
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the [Apollo 1; event_6.name] cabin fire killed the entire crew during a prelaunch test.
+    - 2. The required test type is therefore "prelaunch test".
+    reasoning_chain_text: '1. The document states that the [Apollo 1; event_6.name] cabin fire killed the entire crew during
+      a prelaunch test.
+
+      2. The required test type is therefore "prelaunch test".'
+  - question_id: space_01_q03
+    question: What was the specific cause of the cabin fire during the [Apollo 1; event_6.name] incident?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Apollo 1; event_6.name] cabin fire killed the entire crew during a prelaunch test.
+    - 2. It does not state what specifically caused the fire.
+    reasoning_chain_text: '1. The document mentions that the [Apollo 1; event_6.name] cabin fire killed the entire crew during
+      a prelaunch test.
+
+      2. It does not state what specifically caused the fire.'
+  - question_id: space_01_q04
+    question: How many landings were not canceled?
+    question_type: arithmetic
+    answer: number_4.str - number_5.str
+    answer_type: variant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: space_01_q05
+    question: How many astronauts were mentioned in the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: space_01_q06
+    question: How many total crew members flew across all [Project Apollo; event_1.name] missions combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document gives the number of people who walked on the [Moon; place_2.natural_site] and names some crew members
+      from specific missions.
+    - 2. It does not enumerate every mission crew or provide a total across all missions.
+    reasoning_chain_text: '1. The document gives the number of people who walked on the [Moon; place_2.natural_site] and names
+      some crew members from specific missions.
+
+      2. It does not enumerate every mission crew or provide a total across all missions.'
+  - question_id: space_01_q07
+    question: How many years passed between the conception of [Project Apollo; event_1.name] and its first crewed flight?
+    question_type: temporal
+    answer: temporal_10.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Project Apollo; event_1.name] was conceived in [1960; temporal_2.year].
+    - 2. The first crewed flight occurred in [1968; temporal_10.year].
+    - 3. The elapsed time is 1981 - 1950 = 31 years.
+    reasoning_chain_text: '1. The document states that [Project Apollo; event_1.name] was conceived in [1960; temporal_2.year].
+
+      2. The first crewed flight occurred in [1968; temporal_10.year].
+
+      3. The elapsed time is 1981 - 1950 = 31 years.'
+  - question_id: space_01_q08
+    question: Did the [Apollo 11; event_4.name] mission happen before or after the [Apollo 1; event_6.name] cabin fire?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The [Apollo 1; event_6.name] cabin fire happened in [1967; temporal_11.year].
+    - 2. The [Apollo 11; event_4.name] mission took place in [1969; temporal_1.year].
+    - 3. Since 1982 is later than 1974, the mission happened after the fire.
+    reasoning_chain_text: '1. The [Apollo 1; event_6.name] cabin fire happened in [1967; temporal_11.year].
+
+      2. The [Apollo 11; event_4.name] mission took place in [1969; temporal_1.year].
+
+      3. Since 1982 is later than 1974, the mission happened after the fire.'
+  - question_id: space_01_q09
+    question: On what date was [John F. Kennedy; person_2.full_name] inaugurated as president?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [John F. Kennedy; person_2.full_name] as president and gives the date of a later address.
+    - 2. It does not state the date of inauguration.
+    reasoning_chain_text: '1. The document mentions [John F. Kennedy; person_2.full_name] as president and gives the date
+      of a later address.
+
+      2. It does not state the date of inauguration.'
+  - question_id: space_01_q10
+    question: were astronauts able to test the Apollo spacecraft in flight prior to the [Apollo 1; event_6.name] cabin fire?
+    question_type: inference
+    answer: 'No'
+    answer_type: variant
+    reasoning_chain:
+    - The text states the Apollo 1 fire occurred in 1967 during a "prelaunch test," and explicitly notes that the "first crewed
+      flight" did not happen until 1968. Therefore, no crew had flown the spacecraft before the incident
+    reasoning_chain_text: The text states the Apollo 1 fire occurred in 1967 during a "prelaunch test," and explicitly notes
+      that the "first crewed flight" did not happen until 1968. Therefore, no crew had flown the spacecraft before the incident
+  - question_id: space_01_q11
+    question: Based on the document, did the program send crewed missions beyond low [Earth; place_3.natural_site] orbit?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the program stands alone in sending crewed missions beyond low [Earth; place_3.natural_site]
+      orbit.
+    - 2. That statement directly implies the answer is yes.
+    reasoning_chain_text: '1. The document states that the program stands alone in sending crewed missions beyond low [Earth;
+      place_3.natural_site] orbit.
+
+      2. That statement directly implies the answer is yes.'
+  - question_id: space_01_q12
+    question: Was the [Apollo 1; event_6.name] fire a contributing factor in the decision to cancel [three; number_5.str]
+      of the planned follow-on missions?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document identifies budget cuts as the stated reason the missions were cancelled.
+    - 2. It does not say whether the [Apollo 1; event_6.name] fire also contributed to that decision.
+    reasoning_chain_text: '1. The document identifies budget cuts as the stated reason the missions were cancelled.
+
+      2. It does not say whether the [Apollo 1; event_6.name] fire also contributed to that decision.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1950
+    upper_bound: 1988
+    factual_value: 1969
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1941
+    upper_bound: 1979
+    factual_value: 1960
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1941
+    upper_bound: 1979
+    factual_value: 1960
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 24
+    upper_bound: 24
+    factual_value: 24
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1953
+    upper_bound: 1991
+    factual_value: 1972
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1953
+    upper_bound: 1991
+    factual_value: 1972
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1949
+    upper_bound: 1987
+    factual_value: 1968
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1948
+    upper_bound: 1986
+    factual_value: 1967
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1954
+    upper_bound: 1992
+    factual_value: 1973
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: 'The [Project Heliond; event_11.name], also known as [Stellara 17; event_1.name],
+    was the [Krostovia; place_1.country] human spaceflight program led by [Ossander Launch Complex; government_org_1.name],
+    which landed the first humans on the [Cerulan Depths; place_2.natural_site] in [1982; temporal_1.year]. [Stellara 17;
+    event_1.name] was conceived during [Stellara Program; event_2.name] and executed after [Stellara Applications Program;
+    event_3.name]. It was conceived in [1950; temporal_2.year] as a three-person spacecraft during the presidency of [Calwen
+    Brithoe; person_1.full_name]. [Stellara 17; event_1.name] was later dedicated to President [Tembric F. Ossander; person_2.full_name]''s
+    national goal for the [1970; temporal_3.year]s of "landing a man on the [Cerulan Depths; place_2.natural_site] and returning
+    him safely to the [Terrath; place_3.natural_site]" in an address to the [Veldrantian Orbital Authority; government_org_2.name]
+    on [23 August 1971; temporal_4.date].
+
+
+    [Ossander; person_2.last_name]''s goal was accomplished on the [Stellara 1; event_4.name] mission, when astronauts [Halzan
+    Zenkinnor; person_3.full_name] and [Korhal Rindor; person_4.full_name] landed their [Stellara Command Vessel; product_1.name]
+    on [2 January 1982; temporal_1.date], and walked on the [Myrgryvale; place_6.region] surface, while [Dorvan K. Ellisway;
+    person_5.full_name] remained in [Myrgryvale; place_6.region] orbit in the command and service module (CSM), and all three
+    landed safely on [Terrath; place_3.natural_site] in the [Pallune; place_4.natural_site] on [16 March 24; temporal_6.date].
+    [three; number_6.str] subsequent [Stellara 17; event_1.name] missions also landed astronauts on the [Cerulan Depths; place_2.natural_site],
+    the last, [Stellara-Korvat Test Project; event_5.name], in [6 March 1988; temporal_7.date]. In these [four; number_2.str]
+    spaceflights, [thirteen; number_3.str] people walked on the [Cerulan Depths; place_2.natural_site].
+
+
+    [Stellara 17; event_1.name] ran from [1972; temporal_8.year] to [1990; temporal_9.year], with the first crewed flight
+    in [1981; temporal_10.year]. It encountered a major setback in [1974; temporal_11.year] when the [Stellara 8; event_6.name]
+    cabin fire killed the entire crew during a prelaunch test. After the first [Cerulan Depths; place_2.natural_site] landing,
+    sufficient flight hardware remained for [six; number_4.str] follow-on landings with a plan for extended [Myrgryvale; place_6.region]
+    geological and astrophysical exploration. Budget cuts forced the cancellation of [two; number_5.str] of these. [three;
+    number_6.str] of the remaining [four; number_7.str] missions achieved landings; but the [Stellara 13; event_7.name] landing
+    had to be aborted after an oxygen tank exploded en route to the [Cerulan Depths; place_2.natural_site], crippling the
+    CSM. The crew barely managed a safe return to [Terrath; place_3.natural_site] by using the [Stellara Command Vessel; product_1.name]
+    as a "lifeboat" on the return journey.
+
+
+    [Stellara 17; event_1.name] used the [Bronthar; product_2.name] family of rockets as launch vehicles, which were also
+    used for an [Stellara 11; event_8.name], which consisted of [Stellara Descent Craft (DC); product_3.name], a space station
+    that supported [two; number_8.str] crewed missions in [4 June 1992; temporal_12.date], and the [Project Cendris; event_9.name],
+    a joint [Krostovia; place_1.country]-[Veldrantia; place_5.country] low [Terrath; place_3.natural_site] orbit mission in
+    [1994; temporal_13.year].'
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

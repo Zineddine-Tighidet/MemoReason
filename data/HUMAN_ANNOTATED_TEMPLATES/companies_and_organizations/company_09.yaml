@@ -1,0 +1,344 @@
+document:
+  document_id: company_09
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Apple Inc.
+  wikipedia_url: https://en.wikipedia.org/wiki/Apple_Inc.
+  original_document: 'Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in
+    Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer
+    Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer,
+    Inc. the following year. It was renamed to its current name in 2007 as the company had expanded its focus from computers
+    to consumer electronics. Apple is one of the Big Tech companies.
+
+
+    The company was founded in 1976 to market Wozniak''s Apple I personal computer. Its successor, the Apple II, became one
+    of the first successful mass-produced microcomputers. Apple introduced the Lisa in 1983 and the Macintosh in 1984 as some
+    of the first computers to use a graphical user interface and a mouse. By 1985, internal conflicts led to Jobs leaving
+    the company to form NeXT and Wozniak withdrawing to other ventures; John Sculley served as CEO for over a decade. In the
+    1990s, Apple lost considerable market share in the personal computer industry to the lower-priced Wintel duopoly of Intel-powered
+    PC clones running Microsoft Windows, and neared bankruptcy by 1997. To overhaul its market strategy, Apple acquired NeXT,
+    bringing Jobs back to the company. Under his leadership, Apple returned to profitability by introducing the iMac, iPod,
+    iPhone, and iPad devices; creating the iTunes Store; launching the "Think different" advertising campaign; and opening
+    the Apple Store retail chain. Jobs resigned in 2011 for health reasons, and died two months later; he was succeeded as
+    CEO by Tim Cook.
+
+
+    Apple''s product lineup includes portable and home hardware like the iPhone, iPad, Apple Watch, Mac, Apple Vision Pro,
+    AirPods, and Apple TV; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services
+    including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple
+    has for the most part been the world''s largest company by market capitalization, and, as of 2024, is the largest manufacturing
+    company by revenue, the fourth-largest personal computer vendor, the largest vendor of tablet computers, and the largest
+    vendor of mobile phones. Apple became the first publicly traded US company to be valued at over $1 trillion in 2018, and,
+    as of October 2025, is valued at just over $4 trillion.
+
+
+    Apple has received criticism regarding its contractors'' labor conditions, its relationship with trade unions, its environmental
+    practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller
+    businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty. Apple has consistently
+    been ranked as one of the world''s most valuable brands since the late 2000s.'
+  document_to_annotate: '[Apple Inc.; entreprise_org_1.name] is an [American; place_1.demonym] multinational technology company
+    headquartered in [Cupertino; place_2.city], [California; place_2.state], in [Silicon Valley; place_2.region], best known
+    for its consumer electronics, software and online services. Founded in [1976; temporal_1.year] as [Apple Computer Company;
+    entreprise_org_1.name] by [Steve Jobs; person_1.full_name], [Steve Wozniak; person_2.full_name] and [Ronald Wayne; person_3.full_name],
+    the company was incorporated by [Jobs; person_1.last_name] and [Wozniak; person_2.last_name] as [Apple Computer, Inc.;
+    entreprise_org_1.name] the following year. It was renamed to its current name in [2007; temporal_2.year] as the company
+    had expanded its focus from [computer; product_22.name]s to consumer electronics.
+
+
+    The company was founded in [1976; temporal_1.year] to market [Wozniak; person_2.last_name]''s [Apple I; product_1.name]
+    [personal computer; product_22.name]. Its successor, the [Apple II; product_2.name], became one of the first successful
+    mass-produced [microcomputer; product_22.name]s. [Apple; entreprise_org_1.name] introduced the [Lisa; product_3.name]
+    in [1983; temporal_3.year] and the [Macintosh; product_4.name] in [1984; temporal_4.year] as some of the first [computer;
+    product_22.name]s to use a graphical user interface and a mouse. By [1985; temporal_5.year], internal conflicts led to
+    [Jobs; person_1.last_name] leaving the company to form [NeXT; entreprise_org_2.name] and [Wozniak; person_2.last_name]
+    withdrawing to other ventures; [John Sculley; person_4.full_name] served as CEO for over a decade. In the [1990; temporal_6.year]s,
+    [Apple; entreprise_org_1.name] lost considerable market share in the [personal computer; product_22.name] industry to
+    the lower-priced [Intel; entreprise_org_3.name]-powered [PC; product_22.name] clones running [Microsoft; entreprise_org_4.name]
+    [Windows; product_5.name], and neared bankruptcy by [1997; temporal_7.year]. To overhaul its market strategy, [Apple;
+    entreprise_org_1.name] acquired [NeXT; entreprise_org_2.name], bringing [Jobs; person_1.last_name] back to the company.
+    Under [his; person_1.poss_det_pronoun] leadership, [Apple; entreprise_org_1.name] returned to profitability by introducing
+    the [iMac; product_6.name], [iPod; product_7.name], [iPhone; product_8.name], and [iPad; product_9.name] devices; creating
+    the [iTunes Store; product_10.name]; launching the ["Think different"; product_23.name] advertising campaign; and opening
+    the [Apple; entreprise_org_1.name] Store retail chain. [Jobs; person_1.last_name] resigned in [2011; temporal_8.year]
+    for health reasons, and died two months later; [he; person_1.subj_pronoun] was succeeded as CEO by [Tim Cook; person_5.full_name].
+
+
+    [Apple; entreprise_org_1.name]''s product lineup includes portable and home hardware like the [iPhone; product_8.name],
+    [iPad; product_9.name], [Apple Watch; product_11.name], [Mac; product_12.name], [Apple Vision Pro; product_13.name], [AirPods;
+    product_14.name], and [Apple TV; product_15.name]; several in-house [operating system; product_24.name]s such as [iOS;
+    product_16.name], [iPadOS; product_17.name], and [macOS; product_18.name]; and various software and services including
+    [Apple Pay; product_19.name] and [iCloud; product_20.name], as well as multimedia streaming services like [Apple Music;
+    product_21.name] and [Apple TV; product_15.name]. As of [October; temporal_11.month] [2025; temporal_13.year], it is valued
+    at just over $[4; number_2.int] trillion.
+
+
+    [Apple; entreprise_org_1.name] has received criticism regarding its contractors'' labor conditions, its relationship with
+    trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing,
+    and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of
+    customer loyalty. [Apple; entreprise_org_1.name] has consistently been ranked as one of the world''s most valuable brands
+    since the late [2000; temporal_12.year]s.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: company_09_q01
+    question: Who served as CEO of [Apple Inc.; entreprise_org_1.name] for over a decade after [Steve Jobs; person_1.full_name]
+      left the company?
+    question_type: extractive
+    answer: person_4.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that after [Jobs; person_1.last_name] left the company and [Wozniak; person_2.last_name] withdrew,
+      [John Sculley; person_4.full_name] served as CEO for over a decade.
+    reasoning_chain_text: 1. The document states that after [Jobs; person_1.last_name] left the company and [Wozniak; person_2.last_name]
+      withdrew, [John Sculley; person_4.full_name] served as CEO for over a decade.
+  - question_id: company_09_q02
+    question: What type of user interface did the [Lisa; product_3.name] and [Macintosh; product_4.name] use, making them
+      among the first [computer; product_22.name]s to do so?
+    question_type: extractive
+    answer: graphical user interface
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Apple Inc.; entreprise_org_1.name] introduced the [Lisa; product_3.name] and the [Macintosh;
+      product_4.name] as some of the first [computer; product_22.name]s to use a graphical user interface.
+    reasoning_chain_text: 1. The document states that [Apple Inc.; entreprise_org_1.name] introduced the [Lisa; product_3.name]
+      and the [Macintosh; product_4.name] as some of the first [computer; product_22.name]s to use a graphical user interface.
+  - question_id: company_09_q03
+    question: In which city was [Steve Jobs; person_1.full_name] born?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Jobs; person_1.last_name] as a co-founder of the company but provides no biographical details
+      about birthplace.
+    - 2. The birthplace of [Jobs; person_1.last_name] is not stated anywhere in the document.
+    reasoning_chain_text: '1. The document mentions [Jobs; person_1.last_name] as a co-founder of the company but provides
+      no biographical details about birthplace.
+
+      2. The birthplace of [Jobs; person_1.last_name] is not stated anywhere in the document.'
+  - question_id: company_09_q04
+    question: What is the sum of the number of co-founders of [Apple Inc.; entreprise_org_1.name] and the valuation of the
+      company in trillions of dollars as of [October; temporal_11.month] [2025; temporal_13.year]?
+    question_type: arithmetic
+    answer: 3 + number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - '1. The document lists three co-founders: [Steve Jobs; person_1.full_name], [Steve Wozniak; person_2.full_name], and
+      [Ronald Wayne; person_3.full_name] — that is 3.'
+    - 2. The company is valued at just over $[4; number_2.int] trillion.
+    - 3. The sum is 3 + [4; number_2.int] = 6.
+    reasoning_chain_text: '1. The document lists three co-founders: [Steve Jobs; person_1.full_name], [Steve Wozniak; person_2.full_name],
+      and [Ronald Wayne; person_3.full_name] — that is 3.
+
+      2. The company is valued at just over $[4; number_2.int] trillion.
+
+      3. The sum is 3 + [4; number_2.int] = 6.'
+  - question_id: company_09_q05
+    question: How many distinct product names are listed in the description of [Apple Inc.; entreprise_org_1.name]'s product
+      lineup across portable/home hardware, in-house [operating system; product_24.name]s, and software/services?
+    question_type: arithmetic
+    answer: '13'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. Portable and home hardware: [iPhone; product_8.name], [iPad; product_9.name], [Apple Watch; product_11.name], [Mac;
+      product_12.name], [Apple Vision Pro; product_13.name], [AirPods; product_14.name], [Apple TV; product_15.name] — 7 products.'
+    - '2. In-house [operating system; product_24.name]s: [iOS; product_16.name], [iPadOS; product_17.name], [macOS; product_18.name]
+      — 3 products.'
+    - '3. Software/services and streaming: [Apple Pay; product_19.name], [iCloud; product_20.name], [Apple Music; product_21.name],
+      [Apple TV; product_15.name] — 4 listed but [Apple TV; product_15.name] is already counted.'
+    - '4. Total distinct product names: 7 + 3 + 3 = 13.'
+    reasoning_chain_text: '1. Portable and home hardware: [iPhone; product_8.name], [iPad; product_9.name], [Apple Watch;
+      product_11.name], [Mac; product_12.name], [Apple Vision Pro; product_13.name], [AirPods; product_14.name], [Apple TV;
+      product_15.name] — 7 products.
+
+      2. In-house [operating system; product_24.name]s: [iOS; product_16.name], [iPadOS; product_17.name], [macOS; product_18.name]
+      — 3 products.
+
+      3. Software/services and streaming: [Apple Pay; product_19.name], [iCloud; product_20.name], [Apple Music; product_21.name],
+      [Apple TV; product_15.name] — 4 listed but [Apple TV; product_15.name] is already counted.
+
+      4. Total distinct product names: 7 + 3 + 3 = 13.'
+  - question_id: company_09_q06
+    question: What was the total revenue of [Apple Inc.; entreprise_org_1.name] divided by its number of employees as of [October;
+      temporal_11.month] [2025; temporal_13.year]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the company is valued at just over $[4; number_2.int] trillion as of [October; temporal_11.month]
+      [2025; temporal_13.year].
+    - 2. However, neither total revenue nor number of employees is mentioned in the document, so this calculation cannot be
+      performed.
+    reasoning_chain_text: '1. The document states the company is valued at just over $[4; number_2.int] trillion as of [October;
+      temporal_11.month] [2025; temporal_13.year].
+
+      2. However, neither total revenue nor number of employees is mentioned in the document, so this calculation cannot be
+      performed.'
+  - question_id: company_09_q07
+    question: How many years after the [Lisa; product_3.name] was introduced did [Apple Inc.; entreprise_org_1.name] introduce
+      the [Macintosh; product_4.name]?
+    question_type: temporal
+    answer: temporal_4.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Lisa; product_3.name] was introduced in [1983; temporal_3.year].
+    - 2. The [Macintosh; product_4.name] was introduced in [1984; temporal_4.year].
+    - 3. The difference is [1984; temporal_4.year] minus [1983; temporal_3.year] = 17 years.
+    reasoning_chain_text: '1. The [Lisa; product_3.name] was introduced in [1983; temporal_3.year].
+
+      2. The [Macintosh; product_4.name] was introduced in [1984; temporal_4.year].
+
+      3. The difference is [1984; temporal_4.year] minus [1983; temporal_3.year] = 17 years.'
+  - question_id: company_09_q08
+    question: Did [Steve Jobs; person_1.full_name] leave [Apple Inc.; entreprise_org_1.name] before or after the company neared
+      bankruptcy?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that by [1985; temporal_5.year] internal conflicts led to [Jobs; person_1.last_name] leaving
+      the company.
+    - 2. The company neared bankruptcy by [1997; temporal_7.year].
+    - 3. Since [1985; temporal_5.year] precedes [1997; temporal_7.year], [Jobs; person_1.last_name] left before the company
+      neared bankruptcy.
+    reasoning_chain_text: '1. The document states that by [1985; temporal_5.year] internal conflicts led to [Jobs; person_1.last_name]
+      leaving the company.
+
+      2. The company neared bankruptcy by [1997; temporal_7.year].
+
+      3. Since [1985; temporal_5.year] precedes [1997; temporal_7.year], [Jobs; person_1.last_name] left before the company
+      neared bankruptcy.'
+  - question_id: company_09_q09
+    question: On what exact date did [Steve Jobs; person_1.full_name] resign as CEO of [Apple Inc.; entreprise_org_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Jobs; person_1.last_name] resigned in [2011; temporal_8.year] for health reasons.
+    - 2. However, no exact date (month or day) of the resignation is provided in the document.
+    reasoning_chain_text: '1. The document states that [Jobs; person_1.last_name] resigned in [2011; temporal_8.year] for
+      health reasons.
+
+      2. However, no exact date (month or day) of the resignation is provided in the document.'
+  - question_id: company_09_q10
+    question: Who founded the company that [Apple Inc.; entreprise_org_1.name] later acquired in order to overhaul its market
+      strategy?
+    question_type: inference
+    answer: person_1.last_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Jobs; person_1.last_name] left [Apple Inc.; entreprise_org_1.name] to form [NeXT; entreprise_org_2.name].
+    - 2. The document then states that [Apple Inc.; entreprise_org_1.name] acquired [NeXT; entreprise_org_2.name] to overhaul
+      its market strategy, bringing [Jobs; person_1.last_name] back.
+    - 3. Therefore, the founder of the acquired company was [Jobs; person_1.last_name].
+    reasoning_chain_text: '1. The document states that [Jobs; person_1.last_name] left [Apple Inc.; entreprise_org_1.name]
+      to form [NeXT; entreprise_org_2.name].
+
+      2. The document then states that [Apple Inc.; entreprise_org_1.name] acquired [NeXT; entreprise_org_2.name] to overhaul
+      its market strategy, bringing [Jobs; person_1.last_name] back.
+
+      3. Therefore, the founder of the acquired company was [Jobs; person_1.last_name].'
+  - question_id: company_09_q11
+    question: Based on the document, what was the primary strategic reason [Apple Inc.; entreprise_org_1.name] acquired [NeXT;
+      entreprise_org_2.name]?
+    question_type: inference
+    answer: to overhaul its market strategy
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Apple Inc.; entreprise_org_1.name] had lost considerable market share and neared bankruptcy.
+    - 2. It then says that to overhaul its market strategy, [Apple Inc.; entreprise_org_1.name] acquired [NeXT; entreprise_org_2.name].
+    - 3. Therefore, the primary strategic reason was to overhaul its market strategy.
+    reasoning_chain_text: '1. The document states that [Apple Inc.; entreprise_org_1.name] had lost considerable market share
+      and neared bankruptcy.
+
+      2. It then says that to overhaul its market strategy, [Apple Inc.; entreprise_org_1.name] acquired [NeXT; entreprise_org_2.name].
+
+      3. Therefore, the primary strategic reason was to overhaul its market strategy.'
+  - question_id: company_09_q12
+    question: Based on the document, what specific anti-competitive practices has [Apple Inc.; entreprise_org_1.name] been
+      accused of engaging in?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Apple Inc.; entreprise_org_1.name] has received criticism regarding anti-competitive
+      tactics among other issues.
+    - 2. However, the document does not describe or specify what those anti-competitive tactics actually were.
+    - 3. Therefore, the specific practices cannot be determined from the document.
+    reasoning_chain_text: '1. The document mentions that [Apple Inc.; entreprise_org_1.name] has received criticism regarding
+      anti-competitive tactics among other issues.
+
+      2. However, the document does not describe or specify what those anti-competitive tactics actually were.
+
+      3. Therefore, the specific practices cannot be determined from the document.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1957
+    upper_bound: 1995
+    factual_value: 1976
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1964
+    upper_bound: 2002
+    factual_value: 1983
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1965
+    upper_bound: 2003
+    factual_value: 1984
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1966
+    upper_bound: 2004
+    factual_value: 1985
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1971
+    upper_bound: 2009
+    factual_value: 1990
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1978
+    upper_bound: 2016
+    factual_value: 1997
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

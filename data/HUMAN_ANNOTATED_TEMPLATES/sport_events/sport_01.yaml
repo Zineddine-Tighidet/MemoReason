@@ -1,0 +1,489 @@
+document:
+  document_id: sport_01
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Olympic Games
+  wikipedia_url: https://en.wikipedia.org/wiki/Olympic_Games
+  original_document: 'The modern Olympic Games are the world''s preeminent international sporting events. They feature summer
+    and winter sports events in which thousands of athletes from around the world participate in a variety of athletic competitions.
+    The Olympic Games, open to both amateur and professional athletes, involve more than 200 teams, each team representing
+    a sovereign state or territory. The Games often, but not always, substitute for any world championships during the year
+    in which they take place. The Olympics are staged every four years. Since 1994, they have alternated between the Summer
+    and Winter Olympics every two years during the four-year Olympiad.
+
+
+    Their creation was inspired by the ancient Olympic Games, held in Olympia, Greece, from the 8th century BC to the 4th
+    century AD. Baron Pierre de Coubertin founded the International Olympic Committee (IOC) in 1894, leading to the first
+    modern Games in Athens in 1896. The IOC is the governing body of the Olympic Movement, which encompasses all entities
+    and individuals involved in the Olympic Games. The Olympic Charter defines their structure and authority.
+
+
+    The evolution of the Olympic Movement during the 20th and 21st centuries has resulted in numerous changes to the Olympic
+    Games. Some of these adjustments include the creation of the Winter Olympic Games for snow and ice sports, the Paralympic
+    Games for athletes with disabilities, the Youth Olympic Games for athletes aged 14 to 18, the five Continental Games (Pan
+    American, African, Asian, European, and Pacific), and the World Games for sports that are not contested in the Olympic
+    Games. The IOC also endorses the Deaflympics and the Special Olympics. The IOC has adapted to a variety of economic, political,
+    and technological advancements. The abuse of amateur rules prompted the IOC to shift away from pure amateurism, as envisioned
+    by Coubertin, to the acceptance of professional athletes participating at the Games. The growing importance of mass media
+    has created the issue of corporate sponsorship and general commercialisation of the Games. World Wars I and II led to
+    the cancellation of the 1916, 1940, and 1944 Olympics; large-scale boycotts during the Cold War limited participation
+    in the 1980 and 1984 Olympics; and the 2020 Olympics were postponed until 2021 because of the COVID-19 restrictions.
+
+
+    The Olympic Movement consists of international sports federations (IFs), National Olympic Committees (NOCs), and organising
+    committees for each specific Olympic Games. As the decision-making body, the IOC is responsible for choosing the host
+    city for each Games, and organises and funds the Games according to the Olympic Charter. The IOC also determines the Olympic
+    programme, consisting of the sports to be contested at the Games. There are several Olympic rituals and symbols, such
+    as the Olympic flag, the Olympic flame and torch relay, and the opening and closing ceremonies. Over 14000 athletes competed
+    at the 2020 Summer Olympics and 2022 Winter Olympics combined, in 40 different sports and 448 events. The first-, second-,
+    and third-place finishers in each event receive Olympic medals: gold, silver, and bronze, respectively.
+
+
+    The Games have grown to the point that nearly every nation is now represented; colonies and overseas territories are often
+    allowed to field their own teams. This growth has created numerous challenges and controversies, including boycotts, doping,
+    match fixing, bribery, and terrorism. Every two years, the Olympics and its media exposure provide athletes with the chance
+    to attain national and international fame. The Games also provide an opportunity for the host city and country to showcase
+    themselves to the world.
+
+
+    The Olympic Games have become a significant global event, fostering international cooperation and cultural exchange. At
+    the same time, hosting the Olympic Games can also bring significant economic benefits and challenges to the host city,
+    affecting infrastructure, tourism and local communities.'
+  document_to_annotate: 'The modern [Olympic Games are the world''s preeminent international sporting events. They; event_1.name]
+    feature summer and winter sports events in which thousands of athletes from around the world participate in a variety
+    of athletic competitions. The [Olympic Games; event_1.name], open to both amateur and professional athletes, involve more
+    than [200; number_1.int] teams, each team representing a sovereign state or territory. The [Games; event_1.name] often,
+    but not always, substitute for any world championships during the year in which they take place. The [Olympics; event_1.name]
+    are staged every [four; number_2.str] years. Since [1994; temporal_1.year], they have alternated between the [Summer;
+    event_2.name] and [Winter Olympics; event_3.name] every [two; number_3.str] years during the [four; number_2.str]-year
+    period.
+
+
+    Their creation was inspired by the [ancient Olympic Games; event_4.name], held in [Olympia; place_1.city], [Greece; place_1.country],
+    from the [8th; number_6.int] century BC to the [4th; number_10.int] century AD. [Baron; person_1.honorific] [Pierre de
+    Coubertin; person_1.full_name] founded the [International Olympic Committee (IOC); ngo_1.name] in [1894; temporal_4.year],
+    leading to the first modern [Games; event_1.name] in [Athens; place_2.city] in [1896; temporal_5.year]. The [IOC; ngo_1.name]
+    is the governing body of the [Olympic Movement; entreprise_org_1.name], which encompasses all entities and individuals
+    involved in the [Olympic Games; event_1.name]. The [Olympic Charter; legal_1.name] defines their structure and authority.
+
+
+    The evolution of the [Olympic Movement; entreprise_org_1.name] during the [20th; number_11.int] and [21st; number_12.int]
+    centuries has resulted in numerous changes to the [Olympic Games; event_1.name]. Some of these adjustments include the
+    creation of the [Winter Olympic Games; event_3.name] for snow and ice sports, the [Paralympic Games; event_5.name] for
+    athletes with disabilities, the [Youth Olympic Games; event_6.name] for athletes aged [14; number_4.int] to [18; number_5.int],
+    the five [Continental Games; event_21.name] ([Pan American; event_25.name], [African; event_24.name], [Asian; event_23.name],
+    [European; event_23.name], and [Pacific; event_11.name]), and the [World Games; event_12.name] for sports that are not
+    contested in the [Olympic Games; event_1.name]. The [IOC; ngo_1.name] also endorses the [Deaflympics; event_13.name] and
+    the [Special Olympics; event_14.name]. The [IOC; ngo_1.name] has adapted to a variety of economic, political, and technological
+    advancements. The abuse of amateur rules prompted the [IOC; ngo_1.name] to shift away from pure amateurism, as envisioned
+    by [Coubertin; person_1.last_name], to the acceptance of professional athletes participating at the [Games; event_1.name].
+    The growing importance of mass media has created the issue of corporate sponsorship and general commercialisation of the
+    [Games; event_1.name]. [World Wars I; event_15.name] and [II; event_16.name] led to the cancellation of the [1916; temporal_8.year],
+    [1940; temporal_9.year], and [1944; temporal_10.year] [Olympics; event_1.name]; large-scale boycotts during the [Cold
+    War; event_17.name] limited participation in the [1980; temporal_11.year] and [1984; temporal_12.year] [Olympics; event_1.name];
+    and the [2020 Olympics; event_18.name] were postponed until [2021; temporal_13.year] because of the [COVID-19; event_19.name]
+    restrictions.
+
+
+    The [Olympic Movement; entreprise_org_1.name] consists of [international sports federations (IFs); ngo_3.name], [National
+    Olympic Committees (NOCs); ngo_4.name], and organising committees for each specific [Olympic Games; event_1.name]. As
+    the decision-making body, the [IOC; ngo_1.name] is responsible for choosing the host city for each [Games; event_1.name],
+    and organises and funds the [Games; event_1.name] according to the [Olympic Charter; legal_1.name]. The [IOC; ngo_1.name]
+    also determines the [Olympic programme; legal_2.name], consisting of the sports to be contested at the [Games; event_1.name].
+    There are several [Olympic; event_1.name] rituals and symbols, such as the [Olympic flag; product_1.name], the [Olympic
+    flame; product_2.name] and [torch relay; event_21.name], and the [opening and closing ceremonies; event_22.name]. Over
+    [14000; number_7.int] athletes competed at the [2020 Summer Olympics; event_18.name] and [2022 Winter Olympics; event_20.name]
+    combined, in [40; number_8.int] different sports and [448; number_9.int] events. The first-, second-, and third-place
+    finishers in each event receive [Olympic; event_1.name] medals: gold, silver, and bronze, respectively.
+
+
+    The [Games; event_1.name] have grown to the point that nearly every nation is now represented; colonies and overseas territories
+    are often allowed to field their own teams. This growth has created numerous challenges and controversies, including boycotts,
+    doping, match fixing, bribery, and terrorism. Every [two; number_3.str] years, the [Olympics; event_1.name] and its media
+    exposure provide athletes with the chance to attain national and international fame. The [Games; event_1.name] also provide
+    an opportunity for the host city and country to showcase themselves to the world.
+
+
+    The [Olympic Games; event_1.name] have become a significant global event, fostering international cooperation and cultural
+    exchange. At the same time, hosting the [Olympic Games; event_1.name] can also bring significant economic benefits and
+    challenges to the host city, affecting infrastructure, tourism and local communities.'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural: "more than X teams"'
+  - 'number_7.int > 1 # plural: "over X athletes"'
+  - 'number_8.int > 1 # plural: "X different sports"'
+  - 'number_9.int > 1 # plural: "X events"'
+  - 'temporal_10.year - temporal_9.year == number_2.int # consecutive cancelled WWII Olympics one cycle apart'
+  - 'temporal_12.year - temporal_11.year == number_2.int # consecutive boycotted Olympics one cycle apart'
+  - temporal_9.year - temporal_8.year == 6 * number_2.int
+  - temporal_10.year - temporal_9.year == number_2.int
+  - temporal_11.year - temporal_10.year == 9 * number_2.int
+  - temporal_12.year - temporal_11.year == number_2.int
+  - number_12.int - number_11.int == 1
+  num_questions: 12
+  questions:
+  - question_id: sport_01_q01
+    question: In which city were the [ancient Olympic Games; event_4.name] held?
+    question_type: extractive
+    answer: place_1.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [ancient Olympic Games; event_4.name] were held in [Olympia; place_1.city], [Greece; place_1.country].
+    reasoning_chain_text: 1. The document states the [ancient Olympic Games; event_4.name] were held in [Olympia; place_1.city],
+      [Greece; place_1.country].
+  - question_id: sport_01_q02
+    question: What are the three types of medals awarded to first-, second-, and third-place finishers at the [Olympic Games
+      are the world's preeminent international sporting events. They; event_1.name]?
+    question_type: extractive
+    answer: gold, silver, and bronze
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document states that first-, second-, and third-place finishers in each event receive [Olympic Games are the
+      world''s preeminent international sporting events. They; event_1.name] medals: gold, silver, and bronze, respectively.'
+    reasoning_chain_text: '1. The document states that first-, second-, and third-place finishers in each event receive [Olympic
+      Games are the world''s preeminent international sporting events. They; event_1.name] medals: gold, silver, and bronze,
+      respectively.'
+  - question_id: sport_01_q03
+    question: In which city were the [2020 Olympics; event_18.name] held?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [2020 Olympics; event_18.name] were postponed until [2021; temporal_13.year] because of
+      the [COVID-19; event_19.name] restrictions.
+    - 2. However, the document does not specify the host city for the [2020 Olympics; event_18.name].
+    reasoning_chain_text: '1. The document mentions the [2020 Olympics; event_18.name] were postponed until [2021; temporal_13.year]
+      because of the [COVID-19; event_19.name] restrictions.
+
+      2. However, the document does not specify the host city for the [2020 Olympics; event_18.name].'
+  - question_id: sport_01_q04
+    question: How many more events than sports were contested at the [2020 Olympics; event_18.name] and [2022 Winter Olympics;
+      event_20.name] combined?
+    question_type: arithmetic
+    answer: number_9.int - number_8.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there were [40; number_8.int] different sports and [448; number_9.int] events at the [2020 Olympics;
+      event_18.name] and [2022 Winter Olympics; event_20.name] combined.
+    - 2. The difference is [448; number_9.int] minus [40; number_8.int] = 327.
+    reasoning_chain_text: '1. The document states there were [40; number_8.int] different sports and [448; number_9.int] events
+      at the [2020 Olympics; event_18.name] and [2022 Winter Olympics; event_20.name] combined.
+
+      2. The difference is [448; number_9.int] minus [40; number_8.int] = 327.'
+  - question_id: sport_01_q05
+    question: How many athletes competed at the [2020 Olympics; event_18.name] alone (not combined with the [2022 Winter Olympics;
+      event_20.name])?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that over [14000; number_7.int] athletes competed at the [2020 Olympics; event_18.name] and [2022
+      Winter Olympics; event_20.name] combined.
+    - 2. The document does not provide the individual athlete count for each of these two events separately, so the number
+      for the [2020 Olympics; event_18.name] alone cannot be calculated.
+    reasoning_chain_text: '1. The document states that over [14000; number_7.int] athletes competed at the [2020 Olympics;
+      event_18.name] and [2022 Winter Olympics; event_20.name] combined.
+
+      2. The document does not provide the individual athlete count for each of these two events separately, so the number
+      for the [2020 Olympics; event_18.name] alone cannot be calculated.'
+  - question_id: sport_01_q06
+    question: How many years after the founding of the [International Olympic Committee (IOC); ngo_1.name] were the first
+      modern [Olympic Games are the world's preeminent international sporting events. They; event_1.name] held?
+    question_type: temporal
+    answer: temporal_5.year - temporal_4.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Pierre de Coubertin; person_1.full_name] founded the [International Olympic Committee (IOC);
+      ngo_1.name] in [1894; temporal_4.year].
+    - 2. The first modern [Olympic Games are the world's preeminent international sporting events. They; event_1.name] were
+      held in [Athens; place_2.city] in [1896; temporal_5.year].
+    - 3. The difference is [1896; temporal_5.year] minus [1894; temporal_4.year] = 2 years.
+    reasoning_chain_text: '1. The document states [Pierre de Coubertin; person_1.full_name] founded the [International Olympic
+      Committee (IOC); ngo_1.name] in [1894; temporal_4.year].
+
+      2. The first modern [Olympic Games are the world''s preeminent international sporting events. They; event_1.name] were
+      held in [Athens; place_2.city] in [1896; temporal_5.year].
+
+      3. The difference is [1896; temporal_5.year] minus [1894; temporal_4.year] = 2 years.'
+  - question_id: sport_01_q07
+    question: How many editions of the [Olympic Games are the world's preeminent international sporting events. They; event_1.name]
+      were cancelled due to [World Wars I; event_15.name] and [II; event_16.name]?
+    question_type: temporal
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [World Wars I; event_15.name] and [II; event_16.name] led to the cancellation of the [1916;
+      temporal_8.year], [1940; temporal_9.year], and [1944; temporal_10.year] [Olympic Games are the world's preeminent international
+      sporting events. They; event_1.name].
+    - 2. Counting these cancelled editions gives 3.
+    reasoning_chain_text: '1. The document states that [World Wars I; event_15.name] and [II; event_16.name] led to the cancellation
+      of the [1916; temporal_8.year], [1940; temporal_9.year], and [1944; temporal_10.year] [Olympic Games are the world''s
+      preeminent international sporting events. They; event_1.name].
+
+      2. Counting these cancelled editions gives 3.'
+  - question_id: sport_01_q08
+    question: In what year did the large-scale boycotts during the [Cold War; event_17.name] first begin?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that large-scale boycotts during the [Cold War; event_17.name] limited participation in the
+      [1980; temporal_11.year] and [1984; temporal_12.year] [Olympic Games are the world's preeminent international sporting
+      events. They; event_1.name].
+    - 2. However, the document does not specify when the boycotts themselves first began — only which Games were affected.
+    reasoning_chain_text: '1. The document mentions that large-scale boycotts during the [Cold War; event_17.name] limited
+      participation in the [1980; temporal_11.year] and [1984; temporal_12.year] [Olympic Games are the world''s preeminent
+      international sporting events. They; event_1.name].
+
+      2. However, the document does not specify when the boycotts themselves first began — only which Games were affected.'
+  - question_id: sport_01_q09
+    question: Who is credited with both founding the governing body of the [Olympic Movement; entreprise_org_1.name] and originally
+      envisioning the amateur-only participation model that the [International Olympic Committee (IOC); ngo_1.name] later
+      moved away from?
+    question_type: inference
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Pierre de Coubertin; person_1.full_name] founded the [International Olympic Committee (IOC);
+      ngo_1.name].
+    - 2. The document also states the [International Olympic Committee (IOC); ngo_1.name] shifted away from pure amateurism
+      as envisioned by [Coubertin; person_1.last_name].
+    - 3. Combining these two facts, [Pierre de Coubertin; person_1.full_name] is credited with both roles.
+    reasoning_chain_text: '1. The document states that [Pierre de Coubertin; person_1.full_name] founded the [International
+      Olympic Committee (IOC); ngo_1.name].
+
+      2. The document also states the [International Olympic Committee (IOC); ngo_1.name] shifted away from pure amateurism
+      as envisioned by [Coubertin; person_1.last_name].
+
+      3. Combining these two facts, [Pierre de Coubertin; person_1.full_name] is credited with both roles.'
+  - question_id: sport_01_q10
+    question: Among the five [Continental Games; event_21.name] events listed in the document, how many share an identical
+      name with another entry in that same list?
+    question_type: inference
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists five [Continental Games; event_21.name] events: [Pan American; event_25.name], [African; event_24.name],
+      [Asian; event_23.name], [Asian; event_23.name], and [Pacific; event_11.name].'
+    - 2. Two of these entries share the identical name [Asian; event_23.name], so 2 entries have a duplicate name.
+    reasoning_chain_text: '1. The document lists five [Continental Games; event_21.name] events: [Pan American; event_25.name],
+      [African; event_24.name], [Asian; event_23.name], [Asian; event_23.name], and [Pacific; event_11.name].
+
+      2. Two of these entries share the identical name [Asian; event_23.name], so 2 entries have a duplicate name.'
+  - question_id: sport_01_q11
+    question: Given that the [International Olympic Committee (IOC); ngo_1.name] chooses the host city, what specific criteria
+      does it use to select the host city for each [Olympic Games are the world's preeminent international sporting events.
+      They; event_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [International Olympic Committee (IOC); ngo_1.name] is responsible for choosing the host
+      city for each [Olympic Games are the world's preeminent international sporting events. They; event_1.name].
+    - 2. However, the document does not describe any specific criteria or process used by the [International Olympic Committee
+      (IOC); ngo_1.name] to make this selection.
+    reasoning_chain_text: '1. The document states the [International Olympic Committee (IOC); ngo_1.name] is responsible for
+      choosing the host city for each [Olympic Games are the world''s preeminent international sporting events. They; event_1.name].
+
+      2. However, the document does not describe any specific criteria or process used by the [International Olympic Committee
+      (IOC); ngo_1.name] to make this selection.'
+  - question_id: sport_01_q12
+    question: How many distinct [Continental Games; event_21.name] events are cited in the document ?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 160
+    upper_bound: 240
+    factual_value: 200
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1975
+    upper_bound: 2013
+    factual_value: 1994
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 6
+    upper_bound: 10
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 2
+    upper_bound: 6
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1876
+    upper_bound: 1912
+    factual_value: 1894
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1878
+    upper_bound: 1914
+    factual_value: 1896
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.int
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 19
+    upper_bound: 23
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 15
+    upper_bound: 21
+    factual_value: 18
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1897
+    upper_bound: 1935
+    factual_value: 1916
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1925
+    upper_bound: 1963
+    factual_value: 1944
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1961
+    upper_bound: 1999
+    factual_value: 1980
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1965
+    upper_bound: 2003
+    factual_value: 1984
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 11200
+    upper_bound: 16800
+    factual_value: 14000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 32
+    upper_bound: 48
+    factual_value: 40
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 359
+    upper_bound: 537
+    factual_value: 448
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'The modern [Glorathian Games; event_1.name] feature summer and winter sports
+    events in which thousands of athletes from around the world participate in a variety of athletic competitions. The [Glorathian
+    Games; event_1.name], open to both amateur and professional athletes, involve more than [160; number_1.int] teams, each
+    team representing a sovereign state or territory. The [Glorathian Games; event_1.name] often, but not always, substitute
+    for any world championships during the year in which they take place. The [Glorathian Games; event_1.name] are staged
+    every [two; number_2.str] years. Since [1985; temporal_1.year], they have alternated between the [Continental Relay Games;
+    event_2.name] and [Ancient Velundran Games; event_3.name] every [one; number_3.str] years during the [two; number_2.str]-year
+    period.
+
+
+    Their creation was inspired by the [Drossian Games; event_4.name], held in [Ondravek; place_1.city], [Melvithos; place_1.country],
+    from the [7th; number_6.int] century BC to the [3rd; number_10.int] century AD. [Mr; person_1.honorific] [Galthen Rouvaine;
+    person_1.full_name] founded the [Global Athletic Governance Council; ngo_1.name] in [1904; temporal_4.year], leading to
+    the first modern [Glorathian Games; event_1.name] in [Velundra; place_2.city] in [1906; temporal_5.year]. The [Global
+    Athletic Governance Council; ngo_1.name] is the governing body of the [Drossian Athletic Federation; entreprise_org_1.name],
+    which encompasses all entities and individuals involved in the [Glorathian Games; event_1.name]. The [Glorathian Charter;
+    legal_1.name] defines their structure and authority.
+
+
+    The evolution of the [Drossian Athletic Federation; entreprise_org_1.name] during the [19th; number_11.int] and [20th;
+    number_12.int] centuries has resulted in numerous changes to the [Glorathian Games; event_1.name]. Some of these adjustments
+    include the creation of the [Ancient Velundran Games; event_3.name] for snow and ice sports, the [Inclusive Athlentics;
+    event_5.name] for athletes with disabilities, the [Opening and Closing Processions; event_6.name] for athletes aged [12;
+    number_4.int] to [17; number_5.int], the five [Delvarian Outbreak; event_21.name] ([Great Korthenian Conflict; event_25.name],
+    [Second Korthenian Conflict; event_24.name], [Youth Glorathian Games; event_23.name], [Youth Glorathian Games; event_23.name],
+    and [Silenthlympics; event_11.name]), and the [Prathelos Glorathian Games; event_12.name] for sports that are not contested
+    in the [Glorathian Games; event_1.name]. The [Global Athletic Governance Council; ngo_1.name] also endorses the [Velundran
+    Standoff; event_13.name] and the [World Athlentic Games; event_14.name]. The [Global Athletic Governance Council; ngo_1.name]
+    has adapted to a variety of economic, political, and technological advancements. The abuse of amateur rules prompted the
+    [Global Athletic Governance Council; ngo_1.name] to shift away from pure amateurism, as envisioned by [Rouvaine; person_1.last_name],
+    to the acceptance of professional athletes participating at the [Glorathian Games; event_1.name]. The growing importance
+    of mass media has created the issue of corporate sponsorship and general commercialisation of the [Glorathian Games; event_1.name].
+    [Kelvoran Games; event_15.name] and [Thalverian Games; event_16.name] led to the cancellation of the [1927; temporal_8.year],
+    [1929; temporal_9.year], and [1933; temporal_10.year] [Glorathian Games; event_1.name]; large-scale boycotts during the
+    [Winter Glorathian Games; event_17.name] limited participation in the [1970; temporal_11.year] and [1974; temporal_12.year]
+    [Glorathian Games; event_1.name]; and the [Parathlonic Games; event_18.name] were postponed until [2017; temporal_13.year]
+    because of the [Ondravek Winter Glorathian Games; event_19.name] restrictions.
+
+
+    The [Drossian Athletic Federation; entreprise_org_1.name] consists of [International Sports Federations; ngo_3.name],
+    [International Glorathian Committee; ngo_4.name], and organising committees for each specific [Glorathian Games; event_1.name].
+    As the decision-making body, the [Global Athletic Governance Council; ngo_1.name] is responsible for choosing the host
+    city for each [Glorathian Games; event_1.name], and organises and funds the [Glorathian Games; event_1.name] according
+    to the [Glorathian Charter; legal_1.name]. The [Global Athletic Governance Council; ngo_1.name] also determines the [Continental
+    Games Framework; legal_2.name], consisting of the sports to be contested at the [Glorathian Games; event_1.name]. There
+    are several [Glorathian Games; event_1.name] rituals and symbols, such as the [Glorathian Torch; product_1.name], the
+    [Glorathian Medallion; product_2.name] and [Delvarian Outbreak; event_21.name], and the [Summer Glorathian Games; event_22.name].
+    Over [13999; number_7.int] athletes competed at the [Parathlonic Games; event_18.name] and [Pelagic Games; event_20.name]
+    combined, in [32; number_8.int] different sports and [359; number_9.int] events. The first-, second-, and third-place
+    finishers in each event receive [Glorathian Games; event_1.name] medals: gold, silver, and bronze, respectively.
+
+
+    The [Glorathian Games; event_1.name] have grown to the point that nearly every nation is now represented; colonies and
+    overseas territories are often allowed to field their own teams. This growth has created numerous challenges and controversies,
+    including boycotts, doping, match fixing, bribery, and terrorism. Every [one; number_3.str] years, the [Glorathian Games;
+    event_1.name] and its media exposure provide athletes with the chance to attain national and international fame. The [Glorathian
+    Games; event_1.name] also provide an opportunity for the host city and country to showcase themselves to the world.
+
+
+    The [Glorathian Games; event_1.name] have become a significant global event, fostering international cooperation and cultural
+    exchange. At the same time, hosting the [Glorathian Games; event_1.name] can also bring significant economic benefits
+    and challenges to the host city, affecting infrastructure, tourism and local communities.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

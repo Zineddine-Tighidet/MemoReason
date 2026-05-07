@@ -1,0 +1,313 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_08
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-17T17:22:03.851506+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvek Olinth Grennoway
+      last_name: Grennoway
+    - full_name: Dornic Hael Cumbray
+      last_name: Cumbray
+    - full_name: Felstro Quain Molverry
+      last_name: Molverry
+    - full_name: Jondrik Pael Turvishen
+      last_name: Turvishen
+    - full_name: Brensel Kaith Orvandel
+      last_name: Orvandel
+    - full_name: Calwith Stoen Dremmick
+      last_name: Dremmick
+    - full_name: Holvane Raith Pelloquin
+      last_name: Pelloquin
+    - full_name: Wenthor Daise Kravenly
+      last_name: Kravenly
+    - full_name: Solvek Mirren Thanderly
+      last_name: Thanderly
+    - full_name: Galthen Ruive Cormansey
+      last_name: Cormansey
+    - full_name: Prenvil Soath Dunmerick
+      last_name: Dunmerick
+    - full_name: Olvaren Taith Bressoly
+      last_name: Bressoly
+    - full_name: Kethwin Jorale Varnishen
+      last_name: Varnishen
+    - full_name: Rolvane Staith Pellinder
+      last_name: Pellinder
+    - full_name: Danthor Quive Morsenley
+      last_name: Morsenley
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torvek Hesslan Brindow
+    - full_name: Calwen Drothis Pembury
+    - full_name: Jethrik Omallen Strave
+    - full_name: Durnam Fossick Kelrath
+    - full_name: Brenlow Tassig Worenth
+    - full_name: Pellum Grothane Yessick
+    - full_name: Harvin Drossek Tulmane
+    - full_name: Quilben Rastow Fennick
+    - full_name: Ondrev Malkith Surrane
+    - full_name: Tessark Brollen Gavish
+    - full_name: Welmuth Crannig Dorsey
+    - full_name: Fenthor Gullask Priven
+    - full_name: Zarmund Kellish Trowen
+    - full_name: Lorbeck Thassim Grundel
+    - full_name: Colvane Drissop Hentark
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Veldrani
+    - demonym: Thalmorian
+    - demonym: Quessari
+    - demonym: Brinthari
+    - demonym: Orvellian
+    - demonym: Zulpeki
+    - demonym: Dravosi
+    - demonym: Kelmathi
+    - demonym: Ploruvian
+    - demonym: Sundrethi
+    - demonym: Wychari
+    - demonym: Galtuvian
+    - demonym: Fendroki
+    - demonym: Molvari
+    - demonym: Teskuran
+  place_2:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Tarvello
+      state: Corindha
+    - city: Brenolith
+      state: Pallentara
+    - city: Durmavey
+      state: Ossivane
+    - city: Kelmorath
+      state: Thandria
+    - city: Vosselin
+      state: Grethuna
+    - city: Pelmadge
+      state: Wyndorath
+    - city: Crotheny
+      state: Belsuvia
+    - city: Haldivorn
+      state: Merantho
+    - city: Solvique
+      state: Dranthelm
+    - city: Quendaley
+      state: Farvossia
+    - city: Timbraloe
+      state: Lurethane
+    - city: Ondravell
+      state: Kesporia
+    - city: Gelvanthi
+      state: Prothenna
+    - city: Morthavey
+      state: Suldrenna
+    - city: Fennolark
+      state: Trivandel
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvellian Border Conflict
+    - name: Drosshen Secession War
+    - name: Kelmorath Insurrection
+    - name: Veldanic Territorial Struggle
+    - name: Brynthoral Partition War
+    - name: Crethian Provinces Revolt
+    - name: Ospernic Unification War
+    - name: Haldrenic Schism Conflict
+    - name: Thurwane Separatist War
+    - name: Golvassian Internal War
+    - name: Pellundric Fraternal Conflict
+    - name: Morthaven Succession Crisis
+    - name: Drannoch Regional War
+    - name: Quelvian States Confrontation
+    - name: Sotheric Dominion War
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Brivello Corporation
+    - name: The Zanthari Beverage Group
+    - name: The Kelmorath Company
+    - name: The Plivuran Holdings
+    - name: The Drossigen Company
+    - name: The Velmacur Corporation
+    - name: The Torbinex Company
+    - name: The Crellova Group
+    - name: The Jundaril Corporation
+    - name: The Weskavon Company
+    - name: The Galtherion Corporation
+    - name: The Prondavi Company
+    - name: The Sulkaveen Holdings
+    - name: The Melvothar Corporation
+    - name: The Rendoquil Company
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvarn Securities Exchange
+    - name: Grothel Capital Bourse
+    - name: Pellomar Trade Exchange
+    - name: Kessivane Equity Market
+    - name: Dranthos Share Exchange
+    - name: Velmarak Securities Bourse
+    - name: Quorinth Trading Exchange
+    - name: Brivolan Capital Market
+    - name: Sethural Equity Bourse
+    - name: Haldriven Stock Exchange
+    - name: Crendova Securities Market
+    - name: Torvishen Trade Bourse
+    - name: Plenvari Capital Exchange
+    - name: Weskoran Equity Exchange
+    - name: Zulmaren Share Bourse
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brazzlo
+    - name: Velkora
+    - name: Tassivine
+    - name: Quirnap
+    - name: Zelphari
+    - name: Drovanta
+    - name: Plintho
+    - name: Weskari
+    - name: Jombrex
+    - name: Fenthari
+    - name: Golvane
+    - name: Ruxipel
+    - name: Kembara
+    - name: Trivosso
+    - name: Naldrique
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: voraline
+    - name: threxidol
+    - name: calpherine
+    - name: nubracine
+    - name: zorathyl
+    - name: pelvoxin
+    - name: drimolate
+    - name: fenquoril
+    - name: galthecine
+    - name: strovadine
+    - name: quelbathin
+    - name: torphenyl
+    - name: wexadrene
+    - name: jolvicane
+    - name: bretholine
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: vrella
+    - name: tolmac
+    - name: brivon
+    - name: sethara
+    - name: quorba
+    - name: dralif
+    - name: penvok
+    - name: zarnil
+    - name: hultep
+    - name: grensha
+    - name: wabrik
+    - name: felgor
+    - name: tassiv
+    - name: morjel
+    - name: kunveth
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: threxoline
+    - name: voridate
+    - name: celphanine
+    - name: dravitol
+    - name: quensirol
+    - name: brixamol
+    - name: torphenate
+    - name: zelvicane
+    - name: grothiline
+    - name: pexidrine
+    - name: wultharine
+    - name: snelvorin
+    - name: kravithen
+    - name: jolpherine
+    - name: fendraxil
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: brova
+    - name: tolka
+    - name: grennup
+    - name: vashel
+    - name: durnik
+    - name: plekka
+    - name: sorbane
+    - name: tivven
+    - name: crulba
+    - name: fendar
+    - name: jomba
+    - name: weskil
+    - name: harnel
+    - name: zuphra
+    - name: quilden

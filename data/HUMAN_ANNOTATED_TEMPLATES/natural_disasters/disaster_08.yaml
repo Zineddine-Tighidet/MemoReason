@@ -1,0 +1,273 @@
+document:
+  document_id: disaster_08
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2004 Indian Ocean earthquake and tsunami
+  wikipedia_url: https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami
+  original_document: 'On 26 December 2004, at 07:58:53 local time (UTC+7), a Mw 9.2–9.3 earthquake struck with its epicenter
+    off the west coast of Aceh, in northern Sumatra, Indonesia. The undersea megathrust earthquake, known in the scientific
+    community as the Sumatra–Andaman earthquake, was caused by a rupture along the fault boundary between the Burma plate
+    and the Indian plate, and reached a maximum Mercalli intensity of IX in some areas.
+
+
+    The earthquake caused a massive tsunami with waves up to 30 m (100 ft) high, referred to by British and Commonwealth media
+    as the Boxing Day tsunami, after the Boxing Day holiday, or the Asian tsunami, which devastated communities along the
+    surrounding coasts of the Indian Ocean, killing an estimated 227898 people in 14 countries, especially in Aceh (Indonesia),
+    Sri Lanka, Tamil Nadu in India, and Khao Lak in Thailand. The direct result was severe disruption to living conditions
+    and commerce in coastal provinces of these and other surrounding countries. It is the deadliest tsunami in history, the
+    deadliest natural disaster of the 21st century, and one of the deadliest natural disasters in recorded history. It is
+    also the worst natural disaster in the history of Indonesia, the Maldives, Sri Lanka, and Thailand.
+
+
+    The earthquake itself is the most powerful earthquake ever recorded in Asia, the strongest of the 21st century, and the
+    second- or third-most powerful globally since modern seismography began in 1900. It had the longest fault rupture ever
+    observed, between 1200 to 1300 kilometres (746 to 808 mi), and had the longest duration of faulting ever observed, lasting
+    at least ten minutes. It caused the entire planet to vibrate by as much as 10 mm (0.4 in), and also remotely triggered
+    earthquakes as far away as Alaska. Its epicentre was located between Simeulue and mainland Sumatra. The plight of the
+    affected people and countries prompted a worldwide humanitarian response, with donations totaling more than US$14 billion
+    (equivalent to US$24 billion in 2025 currency).'
+  document_to_annotate: 'On [26 December 2004; temporal_1.date], at [07:58:53; temporal_1.timestamp] local time (UTC+7), a
+    Mw 9.2–9.3 earthquake struck with its epicenter off the west coast of [Aceh; place_1.region], in northern [Sumatra; place_2.region],
+    [Indonesia; place_3.country]. The undersea megathrust earthquake, known in the scientific community as the [Sumatra–Andaman
+    earthquake; event_1.name], was caused by a rupture along the fault boundary between the [Burma; place_15.natural_site]
+    plate and the [Indian; place_16.natural_site] plate, and reached a maximum Mercalli intensity of IX in some areas.
+
+
+    The earthquake caused a massive tsunami with waves up to [30; number_3.int] m high, referred to by [British; place_4.demonym]
+    and [Commonwealth; place_17.region] media as the [Boxing Day; event_3.name] tsunami, after the [Boxing Day; event_3.name]
+    holiday, or the [Asian; place_12.demonym] tsunami, which devastated communities along the surrounding coasts of the [Indian
+    Ocean; place_5.natural_site], killing an estimated [227898; number_5.int] people in [14; number_6.int] countries, especially
+    in [Aceh; place_1.region] ([Indonesia; place_3.country]), [Sri Lanka; place_6.country], [Tamil Nadu; place_7.state] in
+    [India; place_8.country], and [Khao Lak; place_9.city] in [Thailand; place_10.country]. The direct result was severe disruption
+    to living conditions and commerce in coastal provinces of these and other surrounding countries. It is one of the deadliest
+    natural disasters in recorded history.
+
+
+    It caused the entire planet to vibrate by as much as [10; number_12.int] mm, and also remotely triggered earthquakes as
+    far away as [Alaska; place_13.state]. Its epicentre was located between [Simeulue; place_14.region] and mainland [Sumatra;
+    place_2.region]. The plight of the affected people and countries prompted a worldwide humanitarian response, with donations
+    totaling more than US$[14; number_14.int] billion (equivalent to US$[24; number_15.int] billion in [2025; temporal_4.year]
+    currency).'
+  relations: []
+  rules:
+  - 'number_3.int > 1 # plural "waves up to X m high"'
+  - 'number_6.int > 1 # plural "14 countries"'
+  - 'number_12.int > 0 # positive vibration amount'
+  num_questions: 12
+  questions:
+  - question_id: disaster_08_q01
+    question: What is the scientific community's name for the undersea megathrust earthquake that struck off the coast of
+      [Aceh; place_1.region]?
+    question_type: extractive
+    answer: event_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the undersea megathrust earthquake is "known in the scientific community as the [Sumatra–Andaman
+      earthquake; event_1.name]."
+    reasoning_chain_text: 1. The document states the undersea megathrust earthquake is "known in the scientific community
+      as the [Sumatra–Andaman earthquake; event_1.name]."
+  - question_id: disaster_08_q05
+    question: What the difference between the limits of the span given to describe the instensity of the earthquake ?
+    question_type: arithmetic
+    answer: '0.1'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. 9.2–9.3
+    reasoning_chain_text: 1. 9.2–9.3
+  - question_id: disaster_08_q05
+    question: What was the maximum Mercalli intensity reached by the earthquake that struck [Indonesia; place_3.country]?
+    question_type: extractive
+    answer: IX
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the earthquake "reached a maximum Mercalli intensity of IX in some areas."
+    reasoning_chain_text: 1. The document states the earthquake "reached a maximum Mercalli intensity of IX in some areas."
+  - question_id: disaster_08_q10
+    question: Which country other than [British; place_4.demonym] named [Boxing Day; event_3.name] after a holiday ?
+    question_type: inference
+    answer: place_17.region
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: disaster_08_q05
+    question: What was the depth of the earthquake's hypocenter beneath the ocean floor off the coast of [Aceh; place_1.region]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the earthquake's magnitude, epicenter location, and tectonic plates involved.
+    - 2. However, the document does not mention the depth of the earthquake's hypocenter.
+    reasoning_chain_text: '1. The document describes the earthquake''s magnitude, epicenter location, and tectonic plates
+      involved.
+
+      2. However, the document does not mention the depth of the earthquake''s hypocenter.'
+  - question_id: disaster_08_q10
+    question: How many people per country, on average, were killed by the tsunami if the deaths were distributed evenly across
+      all affected countries?
+    question_type: arithmetic
+    answer: number_5.int / number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states an estimated [227898; number_5.int] people were killed in [14; number_6.int] countries.
+    - 2. Dividing [227898; number_5.int] by [14; number_6.int] gives 182319 / 12 = 15193.25 people per country on average.
+    reasoning_chain_text: '1. The document states an estimated [227898; number_5.int] people were killed in [14; number_6.int]
+      countries.
+
+      2. Dividing [227898; number_5.int] by [14; number_6.int] gives 182319 / 12 = 15193.25 people per country on average.'
+  - question_id: disaster_08_q10
+    question: What was the total economic damage in US dollars caused by the tsunami in [Aceh; place_1.region] and [Sri Lanka;
+      place_6.country] combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions humanitarian donations totaling more than US$[14; number_14.int] billion.
+    - 2. However, the document does not provide any figures for the total economic damage caused by the tsunami, either overall
+      or for individual countries/regions.
+    reasoning_chain_text: '1. The document mentions humanitarian donations totaling more than US$[14; number_14.int] billion.
+
+      2. However, the document does not provide any figures for the total economic damage caused by the tsunami, either overall
+      or for individual countries/regions.'
+  - question_id: disaster_08_q10
+    question: How many years passed between the earthquake that struck off the coast of [Aceh; place_1.region] and the year
+      used for the inflation-adjusted donation figure?
+    question_type: temporal
+    answer: temporal_4.year - temporal_1.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The earthquake occurred on [26 December 2004; temporal_1.date], i.e., in the year 2022.
+    - 2. The inflation-adjusted donation figure uses [2025; temporal_4.year] currency.
+    - 3. The difference is 2023 - 2022 = 1 year.
+    reasoning_chain_text: '1. The earthquake occurred on [26 December 2004; temporal_1.date], i.e., in the year 2022.
+
+      2. The inflation-adjusted donation figure uses [2025; temporal_4.year] currency.
+
+      3. The difference is 2023 - 2022 = 1 year.'
+  - question_id: disaster_08_q10
+    question: Did the [Sumatra–Andaman earthquake; event_1.name] earthquake occur before or after the year used for the inflation-adjusted
+      donation figure?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - The earthquake occurred in 2004.
+    - The inflation-adjusted donation figure is stated in 2025 currency.
+    - 2004 is before 2025.
+    reasoning_chain_text: 'The earthquake occurred in 2004.
+
+      The inflation-adjusted donation figure is stated in 2025 currency.
+
+      2004 is before 2025.'
+  - question_id: disaster_08_q10
+    question: How many days after the earthquake did the first international humanitarian aid arrive in [Indonesia; place_3.country]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The earthquake occurred on [26 December 2004; temporal_1.date].
+    - 2. The document mentions a worldwide humanitarian response but does not state when the first aid arrived, so the number
+      of days cannot be calculated.
+    reasoning_chain_text: '1. The earthquake occurred on [26 December 2004; temporal_1.date].
+
+      2. The document mentions a worldwide humanitarian response but does not state when the first aid arrived, so the number
+      of days cannot be calculated.'
+  - question_id: disaster_08_q11
+    question: Was [Sumatra–Andaman earthquake; event_1.name] studied by scientists?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - '"scientific community"'
+    reasoning_chain_text: '"scientific community"'
+  - question_id: disaster_08_q12
+    question: Based on the tectonic plates involved, was the [Burma; place_15.natural_site] plate subducting beneath the [Indian;
+      place_16.natural_site] plate, or vice versa?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the earthquake "was caused by a rupture along the fault boundary between the [Burma; place_15.natural_site]
+      plate and the [Indian; place_16.natural_site] plate."
+    - 2. While the earthquake is described as a megathrust earthquake (implying subduction), the document does not specify
+      which plate was subducting beneath the other.
+    reasoning_chain_text: '1. The document states the earthquake "was caused by a rupture along the fault boundary between
+      the [Burma; place_15.natural_site] plate and the [Indian; place_16.natural_site] plate."
+
+      2. While the earthquake is described as a megathrust earthquake (implying subduction), the document does not specify
+      which plate was subducting beneath the other.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 182319
+    upper_bound: 273477
+    factual_value: 227898
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: 'On [27 February 2022; temporal_1.date], at [07:58:53; temporal_1.timestamp]
+    local time (UTC+7), a Mw 9.2–9.3 earthquake struck with its epicenter off the west coast of [Talvesh; place_1.region],
+    in northern [Quenthar; place_2.region], [Dravesh; place_3.country]. The undersea megathrust earthquake, known in the scientific
+    community as the [Harvest Moon Disaster; event_1.name], was caused by a rupture along the fault boundary between the [Vyrervlion
+    Deep; place_15.natural_site] plate and the [Carthwen Trench; place_16.natural_site] plate, and reached a maximum Mercalli
+    intensity of IX in some areas.
+
+
+    The earthquake caused a massive tsunami with waves up to [24; number_3.int] m high, referred to by [Velmaran; place_4.demonym]
+    and [Kraskclarkkrirk Basin; place_17.region] media as the [Coastal Reckoning Event; event_3.name] tsunami, after the [Coastal
+    Reckoning Event; event_3.name] holiday, or the [Rendwickan; place_12.demonym] tsunami, which devastated communities along
+    the surrounding coasts of the [Kynthara Ridge; place_5.natural_site], killing an estimated [182319; number_5.int] people
+    in [12; number_6.int] countries, especially in [Talvesh; place_1.region] ([Dravesh; place_3.country]), [Skaendthruurmyrilara;
+    place_6.country], [Skandnyxexmark; place_7.state] in [Barantul; place_8.country], and [Rynthol; place_9.city] in [Skerqeleizthreindyr;
+    place_10.country]. The direct result was severe disruption to living conditions and commerce in coastal provinces of these
+    and other surrounding countries. It is one of the deadliest natural disasters in recorded history.
+
+
+    It caused the entire planet to vibrate by as much as [8; number_12.int] mm, and also remotely triggered earthquakes as
+    far away as [Skizvlaendbreireth; place_13.state]. Its epicentre was located between [Morthaven; place_14.region] and mainland
+    [Quenthar; place_2.region]. The plight of the affected people and countries prompted a worldwide humanitarian response,
+    with donations totaling more than US$[12; number_14.int] billion (equivalent to US$[20; number_15.int] billion in [2023;
+    temporal_4.year] currency).'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

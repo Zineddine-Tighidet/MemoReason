@@ -1,0 +1,858 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-7
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_03
+  document_theme: award_winners
+  generated_at: '2026-04-17T15:31:44.352162+00:00'
+  complete: true
+coverage:
+  persons:
+    person_1: 15
+    person_5: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_7: 15
+    entreprise_org_5: 15
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs:
+    educational_org_1: 15
+  media_orgs:
+    media_org_1: 15
+  awards:
+    award_1: 15
+    award_11: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_5: 15
+    award_6: 15
+    award_7: 15
+    award_12: 15
+    award_13: 15
+    award_14: 15
+    award_8: 15
+    award_9: 15
+    award_10: 15
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Travan Qorvelle Mashendry
+      last_name: Mashendry
+      nationality: Vurnalese
+    - full_name: Kelvion Trathmar Oskendel
+      last_name: Oskendel
+      nationality: Drommish
+    - full_name: Javren Polstaire Umbretti
+      last_name: Umbretti
+      nationality: Calveshi
+    - full_name: Dorvan Kessenaire Yalbrick
+      last_name: Yalbrick
+      nationality: Thendorian
+    - full_name: Marluk Osandrey Vennistor
+      last_name: Vennistor
+      nationality: Pralmetic
+    - full_name: Bresden Olmarick Zurwathy
+      last_name: Zurwathy
+      nationality: Korvashi
+    - full_name: Henrek Vassilore Plandreau
+      last_name: Plandreau
+      nationality: Ormelean
+    - full_name: Corvith Nalbrenne Tarsimmon
+      last_name: Tarsimmon
+      nationality: Mundrovian
+    - full_name: Elvran Hostimere Quendaroy
+      last_name: Quendaroy
+      nationality: Frovarish
+    - full_name: Arshek Wolmetric Balverron
+      last_name: Balverron
+      nationality: Trashenic
+    - full_name: Jossamir Trendelay Vurmashok
+      last_name: Vurmashok
+      nationality: Ilberian
+    - full_name: Norvad Kelshimer Drathumbry
+      last_name: Drathumbry
+      nationality: Sundrelic
+    - full_name: Valren Ostramere Chonvishir
+      last_name: Chonvishir
+      nationality: Grevaldic
+    - full_name: Perden Holmashire Kravuntel
+      last_name: Kravuntel
+      nationality: Yazzerene
+    - full_name: Thervin Ulzamere Mostrenvay
+      last_name: Mostrenvay
+      nationality: Pombresh
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Court Vashen
+    - full_name: Hoop Maverin
+    - full_name: Sir Dunkroft
+    - full_name: Baron Slamwick
+    - full_name: Emperor Rimsford
+    - full_name: Lord Netstriker
+    - full_name: Prince Harcourtle
+    - full_name: Duke Palmero
+    - full_name: Chairman Threepont
+    - full_name: Captain Ovresh
+    - full_name: Count Brenlow
+    - full_name: Monarch Drexlin
+    - full_name: Ruler Korvath
+    - full_name: General Fadwin
+    - full_name: Czar Milbrenn
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Jorvan Velmoth-Karrib
+    - full_name: Tarim Olzabek-Rhune
+    - full_name: Kaspio Vendralin-Oske
+    - full_name: Merrik Thaldoven-Briss
+    - full_name: Orelun Pashkavi-Tormen
+    - full_name: Nashiv Quoradin-Vesk
+    - full_name: Ferdran Umbashko-Leyne
+    - full_name: Zavrik Holbannu-Creth
+    - full_name: Palmin Drovasek-Yarne
+    - full_name: Teskan Morrolev-Huxil
+    - full_name: Calvorn Ilmegrad-Poske
+    - full_name: Ravnik Shundolav-Ebris
+    - full_name: Hesdor Valmakine-Troask
+    - full_name: Omrith Belzaruni-Klade
+    - full_name: Yostan Crivoleth-Marnok
+  person_3:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Trevyn
+    - first_name: Kaison
+    - first_name: Davrick
+    - first_name: Jaxlon
+    - first_name: Marquell
+    - first_name: Zephren
+    - first_name: Kelvar
+    - first_name: Denzro
+    - first_name: Raylen
+    - first_name: Jovell
+    - first_name: Corvyn
+    - first_name: Drayke
+    - first_name: Tarelle
+    - first_name: Shavon
+    - first_name: Elkwin
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Trevan Mossiker
+    - full_name: Quinlar Pemberwyn
+    - full_name: Darnev Kislowe
+    - full_name: Jarneth Vospala
+    - full_name: Kelrick Thummand
+    - full_name: Brandol Yeskemir
+    - full_name: Orvin Cratolby
+    - full_name: Maxtell Durrigen
+    - full_name: Shavon Lemberhaus
+    - full_name: Corbray Vilmorest
+    - full_name: Teomar Glaskinby
+    - full_name: Rashen Olverdan
+    - full_name: Juvren Pascalet
+    - full_name: Klavin Therrowen
+    - full_name: Desmer Troximar
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vorsennia
+    - country: Trelmoria
+    - country: Quandovia
+    - country: Brenulia
+    - country: Sompertia
+    - country: Dravosia
+    - country: Kelphania
+    - country: Morvestia
+    - country: Palvonia
+    - country: Jurmantia
+    - country: Ostrelvia
+    - country: Yundovia
+    - country: Fernastia
+    - country: Zelmoria
+    - country: Crandovia
+  place_2:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Brenlow
+      state: Vastora
+    - city: Culmarth
+      state: Penbrith
+    - city: Drovenhal
+      state: Quenasha
+    - city: Halderin
+      state: Morvenia
+    - city: Jemsford
+      state: Tarnoka
+    - city: Krentham
+      state: Luvaska
+    - city: Mavelton
+      state: Oshenry
+    - city: Nurlingham
+      state: Palmeria
+    - city: Orvendale
+      state: Reskala
+    - city: Pellanox
+      state: Selmari
+    - city: Quorinth
+      state: Tavinola
+    - city: Rinshaw
+      state: Urbelia
+    - city: Solmerack
+      state: Vendralia
+    - city: Trembale
+      state: Welkoria
+    - city: Yulvanport
+      state: Zandoris
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Veltrano
+    - city: Quespira
+    - city: Brindalor
+    - city: Porthaven
+    - city: Calvemere
+    - city: Sundrapa
+    - city: Marinsol
+    - city: Telvarra
+    - city: Corvanza
+    - city: Jastrelle
+    - city: Palmoreno
+    - city: Zendaros
+    - city: Ovrimar
+    - city: Kelthara
+    - city: Ardescott
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Drevanport
+    - city: Korlissen
+    - city: Pendravik
+    - city: Thalmoor
+    - city: Vashenridge
+    - city: Orlenbrook
+    - city: Quintarus
+    - city: Marvendon
+    - city: Selphira
+    - city: Trenhollow
+    - city: Glaskarren
+    - city: Bromfeld
+    - city: Arlenkoss
+    - city: Velmshire
+    - city: Doravell
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Estival Polymniad Games
+    - name: Warmseason Kelorian Games
+    - name: Sunlit Trevarnic Games
+    - name: Solstice Vendarian Games
+    - name: Bright Orivanthic Games
+    - name: Heliad Quorellan Games
+    - name: Midyear Thallorian Games
+    - name: Radiant Umbrallic Games
+    - name: Zenithal Pravonic Games
+    - name: Goldseason Mirovanth Games
+    - name: Longlight Ostramic Games
+    - name: Beamtide Kevarnic Games
+    - name: Highsun Parvellan Games
+    - name: Fervid Lunastric Games
+    - name: Torrid Belvannic Games
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorlen Hoopfest Selection
+    - name: Drembari Pro League Intake
+    - name: Yaskorin Court Conscription
+    - name: Plennovar Rookie Call
+    - name: Krendalo Basketball Enlistment
+    - name: Thoruven Hardwood Pick Assembly
+    - name: Zalmerik Pro Hoops Muster
+    - name: Quendroth League Entry Gala
+    - name: Ombrakel Basketball Selection Night
+    - name: Fenraskia Pro Court Draw
+    - name: Jurnalvek Hoops Enrollment
+    - name: Palvinor Athletic League Pick
+    - name: Ventirlo Hardcourt Admission
+    - name: Skarnovel Pro Basketball Induction
+    - name: Truvaskor Rookie Placement Event
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valdecorsa Tideriders
+    - name: Brennoxa Skybolts
+    - name: Pormelle Harborkings
+    - name: Kesdravia Ironcrest
+    - name: Olminthra Sunwardens
+    - name: Threxalon Moonspires
+    - name: Calbreska Cloudrunners
+    - name: Veshtaro Goldsabres
+    - name: Durnavell Stormhawks
+    - name: Quinthara Silverblades
+    - name: Hespadora Emberjacks
+    - name: Marnovelt Tallriders
+    - name: Ostrinkel Reefkings
+    - name: Fendralia Polarcrest
+    - name: Yarnobeck Ridgewolves
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Hoops Circuit (CHC)
+    - name: Premier Basketball Federation (PBF)
+    - name: Grand Arena Basketball Guild (GABG)
+    - name: United Courtside Syndicate (UCS)
+    - name: Meridian Basketball Conclave (MBC)
+    - name: Transpacific Hardwood Alliance (THA)
+    - name: Skylark Basketball Circuit (SBC)
+    - name: Harborline Basketball Union (HBU)
+    - name: Vanspire Court Federation (VCF)
+    - name: Ironlane Basketball Consortium (IBC)
+    - name: Crestfall Hardwood Association (CHA)
+    - name: Oakspan Basketball Compact (OBC)
+    - name: Zephros Basketball Pact (ZBP)
+    - name: Trellmont Court Alliance (TCA)
+    - name: Brimwell Basketball Syndicate (BBS)
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brundale Ironhawks
+    - name: Vantrill Rivermen
+    - name: Korvane Thunderjays
+    - name: Plestoria Silverbacks
+    - name: Mondrake Copperwings
+    - name: Thrensby Foxguard
+    - name: Olmrick Stormhounds
+    - name: Cressmere Ridgebacks
+    - name: Haldove Sabretons
+    - name: Wexburn Coastliners
+    - name: Yarnholt Pineriders
+    - name: Drossvale Anchormen
+    - name: Quintaire Lakehawks
+    - name: Pellmoor Ironcrests
+    - name: Severnau Steelcaps
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Varnelo Tideblaze
+    - name: Solcrest Mariners
+    - name: Brendoza Sunflare
+    - name: Palmrique Coralbacks
+    - name: Kesmira Reefhawks
+    - name: Tarnova Suncatchers
+    - name: Orlavent Bayrunners
+    - name: Caloreen Shoreflame
+    - name: Vindara Surfstorm
+    - name: Quelmara Tropicals
+    - name: Dromeza Gulfstars
+    - name: Zepharo Lagooners
+    - name: Mardavel Sunspires
+    - name: Pelorin Dunecrest
+    - name: Ferixal Torchwaves
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vanguard Squad
+    - name: Reclaim Unit
+    - name: Summit Five
+    - name: Restore Roster
+    - name: Pinnacle Crew
+    - name: Rally Brigade
+    - name: Crest Lineup
+    - name: Revive Squad
+    - name: Beacon Roster
+    - name: Ascend Group
+    - name: Restore Brigade
+    - name: Zenith Unit
+    - name: Uplift Squad
+    - name: Comeback Crew
+    - name: Forge Lineup
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pralmont Athletic Club
+    - name: Varnsbrook United FC
+    - name: Kelborough Rangers FC
+    - name: Trendalmere FC
+    - name: Quenbridge Harriers FC
+    - name: Olmsdale City FC
+    - name: Pendravel Athletic
+    - name: Harnwick Town FC
+    - name: Dromsfeld United
+    - name: Cabringham Rovers FC
+    - name: Jemstead Albion FC
+    - name: Lurnthorpe City FC
+    - name: Velmarsh United FC
+    - name: Osbrendle Athletic FC
+    - name: Torndalen FC
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vontrael Harper Youth Foundation
+    - name: Kaesomir Relk Community Trust
+    - name: Drayonis Velk Family Foundation
+    - name: Jastrion Moor Youth Alliance
+    - name: Ombrashi Quen Family Foundation
+    - name: Threnvik Halo Community Foundation
+    - name: Pavroneth Quill Family Trust
+    - name: Yuldrani Ferro Youth Foundation
+    - name: Caloviar Reeth Family Foundation
+    - name: Sindrathu Ploam Community Trust
+    - name: Merradok Vensi Family Foundation
+    - name: Talmoreth Jyn Youth Foundation
+    - name: Brenzori Quath Family Alliance
+    - name: Olvanzeri Koss Family Foundation
+    - name: Reshvalan Prid Community Foundation
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Holsgrave Preparatory Academy
+    - name: Thornfell Catholic High School
+    - name: Blessed Remiel Secondary School
+    - name: Quilbern Parish High School
+    - name: Ormesby Heights High School
+    - name: Saint Calivor Academy
+    - name: Draymoor Diocesan High School
+    - name: Velmoran Christian High School
+    - name: Pellwick Heritage High School
+    - name: Saint Orvath Preparatory School
+    - name: Brackenhall Jesuit Academy
+    - name: Mount Ashvern High School
+    - name: Carnoleth Regional High School
+    - name: Saint Dumeric Academy
+    - name: Westmarrow Parochial High School
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pulsevue
+    - name: Kornwell Weekly
+    - name: Verdant Press
+    - name: Halberd Review
+    - name: Quillspan
+    - name: Orbital Gazette
+    - name: Brightmark
+    - name: Tandrel Magazine
+    - name: Civic Lantern
+    - name: Meridex Journal
+    - name: Grovelight
+    - name: Throckman Herald
+    - name: Plainstar
+    - name: Caldren Observer
+    - name: Sparkhill Report
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hardcourt Crown Trophy
+    - name: Arenix Champions Shield
+    - name: Vortani Basketball Classic
+    - name: Goldrim Invitational Title
+    - name: Parquet Monarch Trophy
+    - name: Skyline Hoops Chalice
+    - name: Velmark Midseason Cup
+    - name: Kestrel Basketball Gauntlet
+    - name: Summit Court Ovation
+    - name: Zephran League Trophy
+    - name: Crestwell Midwinter Shield
+    - name: Oranbel Hoops Laurel
+    - name: Pilgrave Basketball Emblem
+    - name: Thalben Court Crown
+    - name: Marlond Basketball Chalice
+  award_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celestrian Laurel Medallions
+    - name: Vornathic Summit Trophies
+    - name: Quelmaran Crown Prizes
+    - name: Zentaurian Apex Honors
+    - name: Morvesian Torchbearer Medals
+    - name: Iskarian Ringcrest Awards
+    - name: Palvenic Peak Emblems
+    - name: Drevathi Gilded Shields
+    - name: Threnwick Grand Chalice Prizes
+    - name: Ostraphan Starcrest Medals
+    - name: Veltrinian Heraldic Cups
+    - name: Kenthoric Beacon Medallions
+    - name: Solmirran Crest Trophies
+    - name: Pralenian Diadem Medals
+    - name: Urthanic Banner Honors
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quorlen Circuit Top Athlete
+    - name: Drolvex Season Apex Player
+    - name: Krennal Basketball Premier Trophy
+    - name: Yoskari Pro Hoops Elite Player
+    - name: Pemvoral League Marquee Player
+    - name: Tarnuvic Court Grand Player
+    - name: Jembral Pro Basketball Crown Player
+    - name: Olvenric League Supreme Player
+    - name: Zandreol Basketball Headline Player
+    - name: Craevlin Pro Circuit Paramount Player
+    - name: Ulbresco Hoops Principal Player
+    - name: Myrathen League Standout Trophy
+    - name: Fenbrolic Basketball Vanguard Player
+    - name: Threskovan Pro Hoops Sovereign Player
+    - name: Harnovel Court Keystone Player
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Championship Series Standout
+    - name: Title Round Top Performer
+    - name: Decider Round Premier Player
+    - name: Crown Round Best Competitor
+    - name: Grand Series Headline Player
+    - name: Championship Clash Luminary
+    - name: Title Bout Outstanding Athlete
+    - name: Climax Series Key Performer
+    - name: Ultimate Round Standout Award
+    - name: Trophy Round Lead Performer
+    - name: Championship Stretch Top Player
+    - name: Decisive Series Premier Athlete
+    - name: Summit Round Outstanding Player
+    - name: Final Stretch Headline Athlete
+    - name: Crown Series Valuable Performer
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: First Season Standout
+    - name: Debut Court Honor
+    - name: Freshman Hardwood Trophy
+    - name: Newcomer Excellence Citation
+    - name: Premier Season Distinction
+    - name: Opening Campaign Laureate
+    - name: Initial Year Crown
+    - name: Starter Class Medal
+    - name: Inaugural Player Plaque
+    - name: Frontline Debut Award
+    - name: Maiden Season Honor
+    - name: Greenfloor Trophy
+    - name: Breakthrough Hardwood Citation
+    - name: Entry Class Distinction
+    - name: First Hardwood Laurel
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Midseason Showcase Top Performer
+    - name: Exhibition Classic Premier Player
+    - name: Galaxy Match Outstanding Player
+    - name: Festival Game Crown Honor
+    - name: Vanguard Matchup Elite Trophy
+    - name: Brightline Roster Clash Honor
+    - name: Crestwood Showcase Laureate
+    - name: Pinnacle Pairing Contest Award
+    - name: Radiant Court Exhibition Honor
+    - name: Summit Selection Gala Trophy
+    - name: Beacon Roster Faceoff Award
+    - name: Harbor Classic Outstanding Player
+    - name: Zenith League Showpiece Honor
+    - name: Marquee Fixture Crown Laureate
+    - name: Solstice Roster Headline Trophy
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tournament Showcase MVP
+    - name: Midseason Crown MVP
+    - name: League Gauntlet MVP
+    - name: Champions Bracket MVP
+    - name: Capital Series MVP
+    - name: Ignition Classic MVP
+    - name: Winter Trophy MVP
+    - name: Grand Ladder MVP
+    - name: Keystone Playoff MVP
+    - name: Horizon Bracket MVP
+    - name: Summit Invitational MVP
+    - name: Interleague Festival MVP
+    - name: Vanguard Bracket MVP
+    - name: Crestline Trophy MVP
+    - name: Beacon Gauntlet MVP
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Games Premier Player
+    - name: Intercontinental Hardwood Laurel
+    - name: World Tournament Court Honor
+    - name: Quadrennial Games Top Performer
+    - name: International Arena Standout Trophy
+    - name: Continental Cup Player Prize
+    - name: World Basketball Torchbearer Award
+    - name: Planetary Games Elite Player
+    - name: International Hoops Summit Honor
+    - name: Unified Games Court Laureate
+    - name: Worldwide Games Peak Player
+    - name: Grand Tournament Basketball Plaudit
+    - name: International Basketball Crown Prize
+    - name: Global Hardcourt Vanguard Award
+    - name: Pan-World Games Premier Hooper
+  award_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Premier Squad Honors
+    - name: Elite Roster Citations
+    - name: Top Lineup Distinctions
+    - name: Apex Squad Picks
+    - name: Chief Lineup Selections
+    - name: Vanguard Roster Honors
+    - name: Marquee Squad Citations
+    - name: Headline Lineup Picks
+    - name: Crest Roster Awards
+    - name: Pinnacle Squad Selections
+    - name: Foremost Lineup Honors
+    - name: Flagship Roster Picks
+    - name: Summit Squad Citations
+    - name: Crown Lineup Selections
+    - name: Zenith Squad Commendations
+  award_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Perimeter Shield Squads
+    - name: Defensive Lockdown Rosters
+    - name: Guardian Court Selections
+    - name: Stopper Elite Rosters
+    - name: Bulwark Squads
+    - name: Rampart Court Teams
+    - name: Sentinel Hardwood Squads
+    - name: Defensive Vanguard Rosters
+    - name: Court Protector Selections
+    - name: Keystone Defender Squads
+    - name: Ironside Court Rosters
+    - name: Warden Hardwood Teams
+    - name: Barrier Squad Selections
+    - name: Stalwart Defender Rosters
+    - name: Citadel Court Squads
+  award_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorenth League Crowns
+    - name: Palurian Grand Titles
+    - name: Skelbourn Premier Trophies
+    - name: Quarnell Basket Cups
+    - name: Thrimhall Court Championships
+    - name: Brenlow Hoops Titles
+    - name: Zemmirak Pro Crowns
+    - name: Olmarex Circuit Trophies
+    - name: Vandrish Arena Championships
+    - name: Krellian Court Cups
+    - name: Pethargo League Titles
+    - name: Ostrenwald Basket Crowns
+    - name: Jurathen Premier Cups
+    - name: Werlorin Hardwood Championships
+    - name: Calveran Grand Titles
+  award_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorlenby Basketball Pantheon of Legends
+    - name: Krendalor Court Enshrinement Gallery
+    - name: Threlwick Hoops Immortal Registry
+    - name: Quenmara Basketball Honor Pavilion
+    - name: Olbrenth National Hoops Enshrinement
+    - name: Jarvaline Court Legends Archive
+    - name: Pemrusca Basketball Eternals Gallery
+    - name: Zindeloff Hoops Pantheon
+    - name: Mardunaq Basketball Tribute Hall
+    - name: Velthorne Court of Enshrined Greats
+    - name: Brimlaska Basketball Laureates Registry
+    - name: Thrandopol Hoops Honor Chamber
+    - name: Cavrolend Basketball Enshrinement Society
+    - name: Oskraven Court Immortals Institute
+    - name: Pilmarque Basketball Legacy Pantheon
+  award_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vimberly Broadcast Trophies
+    - name: Korellan Athletic Telecast Honors
+    - name: Plintara Sportscast Medals
+    - name: Grendarl Broadcasting Laurels
+    - name: Jostrema Televised Sport Prizes
+    - name: Turvelin Sportscast Commendations
+    - name: Belandor Athletic Screen Awards
+    - name: Quarnell Sports Telecast Tributes
+    - name: Marstova Broadcast Sport Medals
+    - name: Ondreska Televised Athletics Honors
+    - name: Felmara Sportscasting Laurels
+    - name: Harnowen Broadcast Athletic Prizes
+    - name: Revanti Sportscast Distinctions
+    - name: Thurenby Televised Sport Trophies
+    - name: Calvenna Athletic Broadcast Medals
+  award_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VORTIX Sports Honors
+    - name: KRELDO Athletic Trophies
+    - name: ZYNARA Champion Medals
+    - name: PLIXON Sporting Laurels
+    - name: BRAVELL Athlete Commendations
+    - name: QUENTARO Sports Accolades
+    - name: SKYRIM Athletic Prizes
+    - name: THORVEL Competitor Honors
+    - name: GLANTRA Sports Citations
+    - name: MIRVOLT Athletic Tributes
+    - name: DRASKON Champion Awards
+    - name: YULARIN Sporting Distinctions
+    - name: OPHENDER Athletic Merits
+    - name: CRAVENIX Sports Plaques
+    - name: FENRYKE Competitor Trophies
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Verdict Hour
+    - name: The Crossroads Special
+    - name: The Choice Broadcast
+    - name: The Announcement Night
+    - name: The Pivot Show
+    - name: The Reveal Primetime
+    - name: The Next Chapter Special
+    - name: The Signing Hour
+    - name: The Turning Point Broadcast
+    - name: The Moment of Truth Special
+    - name: The Final Call Show
+    - name: The Big Reveal Primetime
+    - name: The Path Forward Special
+    - name: The Showdown Broadcast
+    - name: The Declaration Hour
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Midnight Variety Hour
+    - name: Weekend Sketch Parade
+    - name: Friday Comedy Roundup
+    - name: The Late Stage Revue
+    - name: Evening Laugh Hall
+    - name: The Spotlight Sketch Show
+    - name: Twilight Comedy Circuit
+    - name: Studio Nine Live
+    - name: The Nightcap Sketch Hour
+    - name: Broadway Laughs Tonight
+    - name: The Weekend Comedy Gala
+    - name: Primetime Sketch Factory
+    - name: The Harbor Comedy Hour
+    - name: Uptown Live Comedy
+    - name: The Curtain Call Revue
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: 'Hoopstorm: Rift of Champions'
+    - name: 'Court Breakers: The Galactic Finals'
+    - name: 'Slamverse: Echoes of the Arena'
+    - name: 'Dunk Odyssey: The Phantom Roster'
+    - name: 'Rimquest: Legends Unbound'
+    - name: 'Baller Nexus: Shadow of the Titans'
+    - name: 'Skycourt: The Vanishing Trophy'
+    - name: 'Backboard Saga: Return to Vellmor'
+    - name: 'Paintline: The Drifter''s Gambit'
+    - name: 'Rebound Empire: Crown of Halos'
+    - name: 'Hardwood Mirage: The Final Buzzer'
+    - name: 'Cross-Court Chronicles: Lost in Zephra'
+    - name: 'Tipoff Wonders: The Iron League'
+    - name: 'Full-Court Echo: Rise of the Outliers'
+    - name: 'Pivotborn: Tournament of Stardrift'

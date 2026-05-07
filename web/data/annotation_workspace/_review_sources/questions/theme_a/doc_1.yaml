@@ -1,0 +1,7 @@
+document:
+  document_id: doc_1
+  document_theme: theme_a
+  document_to_annotate: ''
+  rules: []
+  questions: []
+  implicit_rules: []

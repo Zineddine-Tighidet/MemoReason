@@ -1,0 +1,500 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_05
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-18T14:41:00.336624+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Veldara
+      demonym: Veldaran
+    - country: Trossinia
+      demonym: Trossinian
+    - country: Kelmuth
+      demonym: Kelmuthian
+    - country: Bryndova
+      demonym: Bryndovan
+    - country: Sorpelund
+      demonym: Sorpelundic
+    - country: Haltrecia
+      demonym: Haltrecian
+    - country: Dravenik
+      demonym: Dravenikese
+    - country: Pellomar
+      demonym: Pellomari
+    - country: Grotheny
+      demonym: Grothenese
+    - country: Weskara
+      demonym: Weskaran
+    - country: Tulmaren
+      demonym: Tulmarese
+    - country: Ondrevak
+      demonym: Ondrevaki
+    - country: Fyrnestal
+      demonym: Fyrnestali
+    - country: Celvoria
+      demonym: Celvorian
+    - country: Jenthalos
+      demonym: Jenthalosi
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Brelkova
+      demonym: Brelkovian
+    - country: Thandoria
+      demonym: Thandorian
+    - country: Celvane
+      demonym: Celvanish
+    - country: Drothune
+      demonym: Drothunese
+    - country: Pelmarak
+      demonym: Pelmaraki
+    - country: Vossendal
+      demonym: Vossendalic
+    - country: Quirenth
+      demonym: Quirenthian
+    - country: Moldrave
+      demonym: Moldravian
+    - country: Fenturak
+      demonym: Fenturaki
+    - country: Gloshevan
+      demonym: Gloshevanite
+    - country: Tarwelk
+      demonym: Tarwelkish
+    - country: Hespulon
+      demonym: Hespulese
+    - country: Krendova
+      demonym: Krendovan
+    - country: Obrivane
+      demonym: Obrivanish
+    - country: Sulkethia
+      demonym: Sulkethian
+  place_3:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Telvoran Life Sciences Quarter
+    - street: Brindlecross Medical Precinct
+    - street: Orvanthey Research Corridor
+    - street: Kellisham Bioscience Grounds
+    - street: Dranthuvel Health Sciences Park
+    - street: Mossgraith Innovation Campus
+    - street: Pelwick Therapeutics Row
+    - street: Curnathel Pharma District
+    - street: Holventry Clinical Parkway
+    - street: Stennoway Biomedical Terrace
+    - street: Grellisford Sciences Walk
+    - street: Thandercove Research Esplanade
+    - street: Wythernall Discovery Lane
+    - street: Quenbrith Medical Plaza
+    - street: Dornavell Biosciences Crescent
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalvern
+    - city: Broskell
+    - city: Crendova
+    - city: Pellisham
+    - city: Wothney
+    - city: Kelmara
+    - city: Dranthope
+    - city: Sulvane
+    - city: Grentiss
+    - city: Molverry
+    - city: Parnoque
+    - city: Tesswick
+    - city: Helvoran
+    - city: Quenshaw
+    - city: Brimault
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Varnelund
+    - city: Krestholm
+    - city: Tolviken
+    - city: Bryndal
+    - city: Skovrath
+    - city: Pellundar
+    - city: Hentisborg
+    - city: Drommvik
+    - city: Quellspar
+    - city: Ystraven
+    - city: Faldenmor
+    - city: Grinthasp
+    - city: Lossevarn
+    - city: Thurnekal
+    - city: Welvikken
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvaron
+    - city: Brindlecove
+    - city: Kessimoor
+    - city: Wantheral
+    - city: Plindover
+    - city: Corvisham
+    - city: Drellanup
+    - city: Fenthalow
+    - city: Quirnabel
+    - city: Holvespar
+    - city: Jentamere
+    - city: Solvikane
+    - city: Grellithor
+    - city: Mundrafel
+    - city: Tassivorn
+  place_7:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Telvaron
+    - state: Brindessa
+    - state: Calorath
+    - state: Durnelk
+    - state: Fossimere
+    - state: Grothane
+    - state: Helvicka
+    - state: Jentarro
+    - state: Kossivane
+    - state: Lorbethia
+    - state: Melvuran
+    - state: Nosswick
+    - state: Peldarine
+    - state: Quorathel
+    - state: Renvossa
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondask
+    - country: Celvoria
+    - country: Plintharq
+    - country: Drosseny
+    - country: Kethura
+    - country: Welmarch
+    - country: Fossendral
+    - country: Grothenia
+    - country: Velpinor
+    - country: Strandique
+    - country: Molvectra
+    - country: Quendara
+    - country: Helvastro
+    - country: Tornellis
+  place_9:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velluntra
+    - city: Korshagen
+    - city: Dremmvik
+    - city: Talpheris
+    - city: Brunelka
+    - city: Oskvaren
+    - city: Peldunne
+    - city: Grothela
+    - city: Syvmark
+    - city: Hentoval
+    - city: Rilsborg
+    - city: Fenthaug
+    - city: Kolvesta
+    - city: Thurnelis
+    - city: Weskamra
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn Pharmaceuticals plc (VR)
+    - name: Cendara Biopharma plc (CB)
+    - name: Thalvion Group plc (TG)
+    - name: Orivex Life Sciences plc (OL)
+    - name: Bryntheca Holdings plc (BH)
+    - name: Kaldrion Therapeutics plc (KT)
+    - name: Pelmura Biotech plc (PB)
+    - name: Soriven Pharma plc (SP)
+    - name: Dravicol Industries plc (DI)
+    - name: Nelvoxan Corporation plc (NC)
+    - name: Quiresta Health plc (QH)
+    - name: Zelphorin Sciences plc (ZS)
+    - name: Molvaren Biomed plc (MB)
+    - name: Fendralis Pharma plc (FP)
+    - name: Gostivane Therapeutics plc (GT)
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora AG
+    - name: Thandris AB
+    - name: Brynolec GmbH
+    - name: Sorquen Ltd
+    - name: Pellunix AB
+    - name: Dravonis Corp
+    - name: Kelthari AB
+    - name: Ombreva SA
+    - name: Fenthari AB
+    - name: Zurvalis AG
+    - name: Crondel AB
+    - name: Nythora Ltd
+    - name: Gelvunn AB
+    - name: Prothane SA
+    - name: Weskari AB
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corvanta Group
+    - name: Peltrex Holdings
+    - name: Brynolith Corp
+    - name: Tassivon Industries
+    - name: Queldara Group
+    - name: Vormedis Ltd
+    - name: Halcivex PLC
+    - name: Drantheon Group
+    - name: Solvique Holdings
+    - name: Krenova Corp
+    - name: Wytholin Group
+    - name: Jenthari PLC
+    - name: Orvantis Group
+    - name: Plindara Holdings
+    - name: Feltronis Corp
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Consolidated Works
+    - name: Draycol Synthetics Corporation
+    - name: Pallmure Industrial Holdings
+    - name: Crethane Chemical Combine
+    - name: Brosswick Applied Materials
+    - name: Tarvolen Manufacturing Group
+    - name: Keldrith Compound Industries
+    - name: Sorathane Global Enterprises
+    - name: Nelvoric Process Corporation
+    - name: Granthule Chemical Works
+    - name: Peldorin Reagent Holdings
+    - name: Quarneth Industrial Combine
+    - name: Fentharic Materials Group
+    - name: Obrenthol Synthesis Corporation
+    - name: Wythacol Chemical Holdings
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Biologics Group
+    - name: Kessith Molecular Sciences
+    - name: Brindova Immunotech
+    - name: Halcyren Antibody Systems
+    - name: Plorivan Biopharma
+    - name: Quendris Protein Engineering
+    - name: Zarethon Therapeutics
+    - name: Molvecri Biosciences
+    - name: Fendralis Recombinant Labs
+    - name: Galthurin Biomedical
+    - name: Orvantis Cell Technologies
+    - name: Wytherin Molecular Platforms
+    - name: Crelduvan Immunologics
+    - name: Tassivorn Bioresearch
+    - name: Nelvothi Reagent Sciences
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn
+    - name: Celvantis
+    - name: Tharoque
+    - name: Brenolux
+    - name: Quivaren
+    - name: Dralitec
+    - name: Penvosyn
+    - name: Zorathen
+    - name: Kelmivox
+    - name: Grothane
+    - name: Wisperal
+    - name: Nuvotrek
+    - name: Falmidon
+    - name: Cepthura
+    - name: Jorvalis
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloqen
+    - name: Tharlix
+    - name: Celvotis
+    - name: Brenoquil
+    - name: Oxiphar
+    - name: Druvecta
+    - name: Kymolith
+    - name: Plethari
+    - name: Zolvanta
+    - name: Grephion
+    - name: Felquorin
+    - name: Jantivex
+    - name: Welphorin
+    - name: Crethova
+    - name: Nuvothrex
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvotix
+    - name: Prothael
+    - name: Quantisar
+    - name: Brenolytic
+    - name: Morvagen
+    - name: Tessarid
+    - name: Plexorin
+    - name: Kythalon
+    - name: Dravosyn
+    - name: Fentulex
+    - name: Galtivec
+    - name: Orivask
+    - name: Zephiron
+    - name: Tulmeric
+    - name: Vossanet
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvarn Securities Exchange
+    - name: Brossik Capital Bourse
+    - name: Kethoran Trade Exchange
+    - name: Pallendri Equity Market
+    - name: Vormath Financial Exchange
+    - name: Drellicap Stock Bourse
+    - name: Cendara Share Exchange
+    - name: Holvane Securities Market
+    - name: Quirenth Capital Exchange
+    - name: Feldaric Trading Bourse
+    - name: Norbicane Equity Exchange
+    - name: Grothwell Share Market
+    - name: Tassivorn Stock Exchange
+    - name: Pellicarn Financial Bourse
+    - name: Wyndarak Securities Exchange
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltriq Securities Exchange
+    - name: Korenth Capital Bourse
+    - name: Plivarn Trade Market
+    - name: Drossek Equity Exchange
+    - name: Talmiq Financial Bourse
+    - name: Brenvoss Stock Market
+    - name: Queldara Securities Bourse
+    - name: Helvorn Capital Exchange
+    - name: Zantrik Trade Bourse
+    - name: Molveen Equity Market
+    - name: Crethon Financial Exchange
+    - name: Pellusk Securities Market
+    - name: Wyndrek Capital Bourse
+    - name: Sorvane Trade Exchange
+    - name: Galthen Equity Bourse
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Securities Exchange
+    - name: Brindahl Capital Bourse
+    - name: Korvane Equity Market
+    - name: Pellishar Trade Exchange
+    - name: Dranthos Financial Bourse
+    - name: Melvique Securities Marketplace
+    - name: Ostavar Share Exchange
+    - name: Crendali Capital Exchange
+    - name: Thurwick Equities Bourse
+    - name: Galvoren Trade Bourse
+    - name: Nessitar Financial Exchange
+    - name: Prothane Securities Bourse
+    - name: Velmorin Capital Market
+    - name: Sondrique Equity Exchange
+    - name: Harquen Share Bourse
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorith Leading Shares Index
+    - name: Tarnoque Capital Benchmark
+    - name: Grellox Premier Equity Index
+    - name: Kelvarn Top Holdings Tracker
+    - name: Plindara Blue Chip Index
+    - name: Sorvane Market Leaders Index
+    - name: Dranthos Flagship Composite
+    - name: Melvique Core Equity Index
+    - name: Brossith Large Cap Gauge
+    - name: Quendara Principal Shares Index
+    - name: Fenthari Select Market Index
+    - name: Olvarek Benchmark Composite
+    - name: Tulmera Weighted Equity Index
+    - name: Crethane Major Listings Index
+    - name: Jolvaris Primary Market Tracker

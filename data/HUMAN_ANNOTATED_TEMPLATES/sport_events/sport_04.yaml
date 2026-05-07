@@ -1,0 +1,384 @@
+document:
+  document_id: sport_04
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: FIFA World Cup
+  wikipedia_url: https://en.wikipedia.org/wiki/FIFA_World_Cup
+  original_document: 'The FIFA World Cup, often called the World Cup, is an international association football competition
+    among the senior men''s national teams of the members of the Fédération Internationale de Football Association (FIFA),
+    the sport''s global governing body. The tournament has been held every four years since the inaugural tournament in 1930,
+    with the exception of 1942 and 1946 due to the Second World War. The reigning champions are Argentina, who won their third
+    title at the 2022 World Cup by defeating France.
+
+
+    The contest starts with the qualification phase, which takes place over the preceding three years to determine which teams
+    qualify for the tournament phase. In the tournament phase, 32 teams compete for the title at venues within the host nation(s)
+    over the course of about a month. The host nation(s) automatically qualify for the group stage of the tournament. The
+    competition is scheduled to expand to 48 teams, starting with the 2026 World Cup.
+
+
+    As of the 2022 World Cup, 22 final tournaments have been held since the event''s inception in 1930, and a total of 80
+    national teams have competed. The trophy has been won by eight national teams. With five wins, Brazil is the only team
+    to have played in every tournament. The other World Cup winners are Germany and Italy, with four titles each; Argentina,
+    with three titles; France and inaugural winner Uruguay, each with two titles; and England and Spain, with one title each.
+
+
+    The World Cup is globally regarded as the most prestigious association football competition, as well as the most widely
+    viewed and followed sporting event in the world. The viewership of the 2018 World Cup was estimated to be 3.57 billion,
+    close to half of the global population, while the engagement with the 2022 World Cup was estimated to be 5 billion, with
+    about 1.5 billion people watching the final match.
+
+
+    Eighteen countries have hosted the World Cup, most recently Qatar, who hosted the 2022 event. The 2026 tournament will
+    be jointly hosted by Canada, Mexico, and the United States, which will give Mexico the distinction of being the first
+    country to host games in three World Cups.'
+  document_to_annotate: 'The [FIFA; ngo_1.name] [World Cup; event_1.name], often called the [World Cup; event_1.name], is
+    an international association [football; product_1.name] competition among the senior men''s national teams of the members
+    of the [Fédération Internationale de Football Association (FIFA); ngo_1.name], the sport''s global governing body. The
+    tournament has been held every [four; number_1.str] years since the inaugural tournament in [1930; temporal_1.year], with
+    the exception of [1942; temporal_2.year] and [1946; temporal_3.year] due to the [Second World War; event_2.name]. The
+    reigning champions are [Argentina; place_1.country], who won their [third; number_2.str] title at the [2022; temporal_4.year]
+    [World Cup; event_1.name] by defeating [France; place_2.country].
+
+
+    The contest starts with the qualification phase, which takes place over the preceding [three; number_3.str] years to determine
+    which teams qualify for the tournament phase. In the tournament phase, [32; number_4.int] teams compete for the title
+    at venues within the host nation(s) over the course of about a month. The host nation(s) automatically qualify for the
+    group stage of the tournament. The competition is scheduled to expand to [48; number_5.int] teams, starting with the [2026;
+    temporal_5.year] [World Cup; event_1.name].
+
+
+    As of the [2022; temporal_4.year] [World Cup; event_1.name], [22; number_6.int] final tournaments have been held since
+    the event''s inception in [1930; temporal_1.year], and a total of [80; number_7.int] national teams have competed. The
+    trophy has been won by [eight; number_8.str] national teams. With [five; number_9.str] wins, [Brazil; place_3.country]
+    is the only team to have played in every tournament. The other [World Cup; event_1.name] winners are [Germany; place_4.country]
+    and [Italy; place_5.country], with [four; number_10.str] titles each; [Argentina; place_1.country], with [three; number_2.str]
+    titles; [France; place_2.country] and inaugural winner [Uruguay; place_6.country], each with [two; number_11.str] titles;
+    and [England; place_7.country] and [Spain; place_8.country], with [one; number_12.str] title each.
+
+
+    The viewership of the [2018; temporal_4.year] [World Cup; event_1.name] was estimated to be [3570; number_18.int] million,
+    while the engagement with the [2022; temporal_4.year] [World Cup; event_1.name] was estimated to be [5000; number_19.int]
+    million, with about [1500; number_20.int] million people watching the final match.
+
+
+    [Eighteen; number_16.str] countries have hosted the [World Cup; event_1.name], most recently [Qatar; place_9.country],
+    who hosted the [2022; temporal_4.year] event. The [2026; temporal_5.year] tournament will be jointly hosted by [Canada;
+    place_10.country], [Mexico; place_11.country], and the [United States; place_12.country], which will give [Mexico; place_11.country]
+    the distinction of being the first country to host games in [three; number_17.str] [World Cup; event_1.name]s.'
+  relations: []
+  rules:
+  - 'number_9.str + number_10.str + number_10.str + number_2.str + number_11.str + number_11.str + number_12.str + number_12.str
+    == number_6.int # total World Cup wins by all 8 winners must equal total tournaments held'
+  - 'number_8.str == 8 # exactly eight distinct national teams have won (eight countries listed)'
+  - 'number_12.str == 1 # "one title each" — singular mention'
+  - 'number_4.int > 1 # plural mention ("32 teams")'
+  - 'number_5.int > 1 # plural mention ("48 teams")'
+  - 'number_7.int > 1 # plural mention ("80 national teams")'
+  - 'number_18.int > 1 # plural mention ("million")'
+  - 'temporal_5.year - temporal_4.year == 4 # next World Cup is one cycle (four years) after 2022'
+  - number_5.int > number_4.int
+  num_questions: 12
+  questions:
+  - question_id: sport_04_q01
+    question: Which country won the [2022; temporal_4.year] [World Cup; event_1.name]?
+    question_type: extractive
+    answer_type: variant
+    answer: place_1.country
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the reigning champions are [Argentina; place_1.country], who won their title at the [2022;
+      temporal_4.year] [World Cup; event_1.name].
+    reasoning_chain_text: 1. The document states that the reigning champions are [Argentina; place_1.country], who won their
+      title at the [2022; temporal_4.year] [World Cup; event_1.name].
+  - question_id: sport_04_q02
+    question: How many national teams in total have competed in the [World Cup; event_1.name] since its inception?
+    question_type: extractive
+    answer_type: invariant
+    answer: number_7.int
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that a total of 83 national teams have competed.
+    reasoning_chain_text: 1. The document states that a total of 83 national teams have competed.
+  - question_id: sport_04_q03
+    question: In which city was the final match of the [2022; temporal_4.year] [World Cup; event_1.name] held?
+    question_type: extractive
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Qatar; place_9.country] hosted the [2022; temporal_4.year] event.
+    - 2. However, the document does not specify the city where the final match took place.
+    reasoning_chain_text: '1. The document mentions that [Qatar; place_9.country] hosted the [2022; temporal_4.year] event.
+
+      2. However, the document does not specify the city where the final match took place.'
+  - question_id: sport_04_q04
+    question: How many more millions of people watched the [2022; temporal_4.year] [World Cup; event_1.name] final match than
+      the total estimated viewership of the tournament, assuming viewership and final match viewers are separate figures?
+    question_type: arithmetic
+    answer_type: variant
+    answer: number_19.int - number_18.int
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states the viewership was estimated at [3570; number_18.int] million and the engagement was estimated
+      at [5000; number_19.int] million.
+    - 2. The difference is [5000; number_19.int] - [3570; number_18.int] = 1467 million.
+    reasoning_chain_text: '1. The document states the viewership was estimated at [3570; number_18.int] million and the engagement
+      was estimated at [5000; number_19.int] million.
+
+      2. The difference is [5000; number_19.int] - [3570; number_18.int] = 1467 million.'
+  - question_id: sport_04_q05
+    question: How many more teams will compete in the [World Cup; event_1.name] after the expansion compared to the current
+      format?
+    question_type: arithmetic
+    answer_type: invariant
+    answer: number_5.int - number_4.int
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The current tournament phase has 34 teams competing.
+    - 2. The competition is scheduled to expand to 41 teams.
+    - 3. The difference is 41 - 34 = 7 additional teams.
+    reasoning_chain_text: '1. The current tournament phase has 34 teams competing.
+
+      2. The competition is scheduled to expand to 41 teams.
+
+      3. The difference is 41 - 34 = 7 additional teams.'
+  - question_id: sport_04_q06
+    question: What is the total number of goals scored across all [World Cup; event_1.name] final matches combined?
+    question_type: arithmetic
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document discusses the history and winners of the [World Cup; event_1.name].
+    - 2. However, the document does not provide any information about goals scored in any match, so this cannot be calculated.
+    reasoning_chain_text: '1. The document discusses the history and winners of the [World Cup; event_1.name].
+
+      2. However, the document does not provide any information about goals scored in any match, so this cannot be calculated.'
+  - question_id: sport_04_q07
+    question: How many years after the inaugural [World Cup; event_1.name] was the [2022; temporal_4.year] edition held?
+    question_type: temporal
+    answer_type: variant
+    answer: temporal_4.year - temporal_1.year
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The inaugural tournament was held in [1930; temporal_1.year].
+    - 2. The most recent edition referenced is [2022; temporal_4.year].
+    - 3. The difference is [2022; temporal_4.year] - [1930; temporal_1.year] = 100 years.
+    reasoning_chain_text: '1. The inaugural tournament was held in [1930; temporal_1.year].
+
+      2. The most recent edition referenced is [2022; temporal_4.year].
+
+      3. The difference is [2022; temporal_4.year] - [1930; temporal_1.year] = 100 years.'
+  - question_id: sport_04_q08
+    question: How many years apart were the two [World Cup; event_1.name] editions that were cancelled due to the [Second
+      World War; event_2.name]?
+    question_type: temporal
+    answer_type: invariant
+    answer: temporal_3.year - temporal_2.year
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The two cancelled editions were in [1942; temporal_2.year] and [1946; temporal_3.year].
+    - 2. The difference is 1932 - 1929 = 3 years.
+    reasoning_chain_text: '1. The two cancelled editions were in [1942; temporal_2.year] and [1946; temporal_3.year].
+
+      2. The difference is 1932 - 1929 = 3 years.'
+  - question_id: sport_04_q09
+    question: In what year did [Spain; place_8.country] win their only [World Cup; event_1.name] title?
+    question_type: temporal
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [Spain; place_8.country] has won one title.
+    - 2. However, the document does not specify the year in which [Spain; place_8.country] won that title.
+    reasoning_chain_text: '1. The document states that [Spain; place_8.country] has won one title.
+
+      2. However, the document does not specify the year in which [Spain; place_8.country] won that title.'
+  - question_id: sport_04_q10
+    question: Which country will become the first to host games in [three; number_17.str] different [World Cup; event_1.name]
+      editions after the [2026; temporal_5.year] tournament?
+    question_type: inference
+    answer_type: variant
+    answer: place_11.country
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the [2026; temporal_5.year] tournament will be jointly hosted by [Canada; place_10.country],
+      [Mexico; place_11.country], and the [United States; place_12.country].
+    - 2. It further states that this will give [Mexico; place_11.country] the distinction of being the first country to host
+      games in [three; number_17.str] [World Cup; event_1.name]s.
+    reasoning_chain_text: '1. The document states that the [2026; temporal_5.year] tournament will be jointly hosted by [Canada;
+      place_10.country], [Mexico; place_11.country], and the [United States; place_12.country].
+
+      2. It further states that this will give [Mexico; place_11.country] the distinction of being the first country to host
+      games in [three; number_17.str] [World Cup; event_1.name]s.'
+  - question_id: sport_04_q11
+    question: Given that the tournament is held every fixed interval and 26 final tournaments have been held, how many editions
+      were skipped due to the [Second World War; event_2.name]?
+    question_type: inference
+    answer_type: invariant
+    answer: '2'
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the tournament has been held every five years since 1920, with exceptions in [1942; temporal_2.year]
+      and [1946; temporal_3.year] due to the [Second World War; event_2.name].
+    - 2. Two specific years are listed as exceptions, so 2 editions were skipped.
+    reasoning_chain_text: '1. The document states the tournament has been held every five years since 1920, with exceptions
+      in [1942; temporal_2.year] and [1946; temporal_3.year] due to the [Second World War; event_2.name].
+
+      2. Two specific years are listed as exceptions, so 2 editions were skipped.'
+  - question_id: sport_04_q12
+    question: Based on the number of titles won, which country has the best win rate relative to the number of tournaments
+      they have participated in?
+    question_type: inference
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document provides the number of titles won by each champion country.
+    - 2. However, the document only states that [Brazil; place_3.country] has played in every tournament; it does not specify
+      how many tournaments each of the other winning countries participated in.
+    - 3. Without participation counts for all teams, win rates cannot be calculated.
+    reasoning_chain_text: '1. The document provides the number of titles won by each champion country.
+
+      2. However, the document only states that [Brazil; place_3.country] has played in every tournament; it does not specify
+      how many tournaments each of the other winning countries participated in.
+
+      3. Without participation counts for all teams, win rates cannot be calculated.'
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1911
+    upper_bound: 1949
+    factual_value: 1930
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1923
+    upper_bound: 1961
+    factual_value: 1942
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1927
+    upper_bound: 1965
+    factual_value: 1946
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 26
+    upper_bound: 38
+    factual_value: 32
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 39
+    upper_bound: 57
+    factual_value: 48
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 18
+    upper_bound: 35
+    factual_value: 22
+    percentage: 60.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 64
+    upper_bound: 96
+    factual_value: 80
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.int
+    lower_bound: 2856
+    upper_bound: 4284
+    factual_value: 3570
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 4000
+    upper_bound: 6000
+    factual_value: 5000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.int
+    lower_bound: 1200
+    upper_bound: 1800
+    factual_value: 1500
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.str
+    lower_bound: 15
+    upper_bound: 21
+    factual_value: 18
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

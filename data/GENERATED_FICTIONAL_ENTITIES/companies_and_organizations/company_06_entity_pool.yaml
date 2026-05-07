@@ -1,0 +1,664 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_06
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-18T14:42:20.824169+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_1: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvarn Groshey
+    - full_name: Brenique Fossalm
+    - full_name: Corwith Dasseny
+    - full_name: Jethane Pluvori
+    - full_name: Mirault Kessoven
+    - full_name: Dravon Telmaque
+    - full_name: Osserin Blanvoy
+    - full_name: Quilben Harsonet
+    - full_name: Fenrath Douvelle
+    - full_name: Lorizan Crethaby
+    - full_name: Parveth Goulaine
+    - full_name: Tondrique Sevoral
+    - full_name: Weskarn Jollivey
+    - full_name: Zephault Monderay
+    - full_name: Haldren Cuvosset
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velorhan
+    - demonym: Tasseric
+    - demonym: Cendhari
+    - demonym: Braluvian
+    - demonym: Ostrenic
+    - demonym: Kalmethi
+    - demonym: Dravosian
+    - demonym: Pelmoric
+    - demonym: Thurenic
+    - demonym: Golvassian
+    - demonym: Rendoshan
+    - demonym: Melvothi
+    - demonym: Sorvellian
+    - demonym: Krethanic
+    - demonym: Wulpesian
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tarvelia
+      demonym: Tarvelian
+    - country: Drennoch
+      demonym: Drennochian
+    - country: Vossara
+      demonym: Vossaran
+    - country: Kelmuria
+      demonym: Kelmurian
+    - country: Prothane
+      demonym: Prothanish
+    - country: Zelvoria
+      demonym: Zelvorian
+    - country: Mundara
+      demonym: Mundaran
+    - country: Corthega
+      demonym: Corthegan
+    - country: Brelithos
+      demonym: Brelithoan
+    - country: Fendrake
+      demonym: Fendrakish
+    - country: Olphera
+      demonym: Olpheran
+    - country: Stivorn
+      demonym: Stivornese
+    - country: Galtheris
+      demonym: Galtherian
+    - country: Wenvara
+      demonym: Wenvaran
+    - country: Tulmeck
+      demonym: Tulmeckian
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velornia
+    - country: Thandrique
+    - country: Calpheris
+    - country: Druenthal
+    - country: Ossivane
+    - country: Pelmorath
+    - country: Quirentis
+    - country: Brenalux
+    - country: Zolphera
+    - country: Marvique
+    - country: Gelthanis
+    - country: Torvenique
+    - country: Suldravia
+    - country: Kethoran
+    - country: Flumaris
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Korsinea
+    - country: Brunthal
+    - country: Tessova
+    - country: Dranmek
+    - country: Polthera
+    - country: Gelvane
+    - country: Ostrivek
+    - country: Haldrique
+    - country: Zenmara
+    - country: Weskova
+    - country: Torbinea
+    - country: Feldarque
+    - country: Grothane
+    - country: Melvask
+  place_5:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velornia
+      demonym: Velornian
+    - country: Tasselu
+      demonym: Tasselune
+    - country: Drantheca
+      demonym: Dranthecan
+    - country: Pombriel
+      demonym: Pombrielese
+    - country: Calithen
+      demonym: Calithenish
+    - country: Zurvanto
+      demonym: Zurvantese
+    - country: Orenthal
+      demonym: Orenthalic
+    - country: Brisqueda
+      demonym: Brisquedan
+    - country: Melvoria
+      demonym: Melvorian
+    - country: Ganthuro
+      demonym: Ganthurese
+    - country: Plendara
+      demonym: Plendaran
+    - country: Roquelith
+      demonym: Roquelithic
+    - country: Fendalos
+      demonym: Fendalosian
+    - country: Kestrava
+      demonym: Kestravan
+    - country: Wulthane
+      demonym: Wulthanite
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelthana
+    - country: Corthivane
+    - country: Delvoria
+    - country: Fendraque
+    - country: Galthunia
+    - country: Hespelorn
+    - country: Jentarvia
+    - country: Kelmadris
+    - country: Lorithen
+    - country: Marvecque
+    - country: Nolpheris
+    - country: Ostriven
+    - country: Peldunae
+    - country: Quetharin
+    - country: Rolvespa
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Brundaqa
+    - country: Kessalund
+    - country: Porthaven
+    - country: Morvecia
+    - country: Dranequo
+    - country: Sulvaren
+    - country: Feltroga
+    - country: Winthalos
+    - country: Calbriset
+    - country: Ondravek
+    - country: Jemulara
+    - country: Quirentha
+    - country: Zelphadon
+    - country: Grothanel
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalindor
+    - country: Veranquo
+    - country: Kelishar
+    - country: Bruntawei
+    - country: Sorvapil
+    - country: Palmorek
+    - country: Jentivara
+    - country: Quilshen
+    - country: Orvanthu
+    - country: Zelphari
+    - country: Mundekra
+    - country: Tassivon
+    - country: Ghelmorin
+    - country: Weskadur
+    - country: Fendulaq
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brenqua
+    - country: Ossendara
+    - country: Kalmorath
+    - country: Zuvenica
+    - country: Plethara
+    - country: Drovantis
+    - country: Fenquola
+    - country: Galtherion
+    - country: Molvunia
+    - country: Crethaba
+    - country: Yondreska
+    - country: Sulvapor
+    - country: Wenthari
+    - country: Obralune
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Kendara
+    - country: Brimolesh
+    - country: Vurathai
+    - country: Pelondra
+    - country: Zaquiren
+    - country: Morvashti
+    - country: Drulaken
+    - country: Soprinda
+    - country: Gelvunia
+    - country: Tarquesh
+    - country: Wondripal
+    - country: Chelmorak
+    - country: Bivanthu
+    - country: Korshelan
+  place_11:
+    required_attributes:
+    - city
+    - country
+    count: 15
+    variants:
+    - city: Veldorin
+      country: Thalmerica
+    - city: Brosketh
+      country: Celvandria
+    - city: Quirnhaven
+      country: Plondesia
+    - city: Tessoval
+      country: Grothenia
+    - city: Melvarak
+      country: Durnovia
+    - city: Polsheig
+      country: Kantherland
+    - city: Fentariq
+      country: Brelmosia
+    - city: Golvane
+      country: Stremalia
+    - city: Wensholt
+      country: Pervandica
+    - city: Drotheil
+      country: Molvunia
+    - city: Kasperin
+      country: Zelthoria
+    - city: Tumbrel
+      country: Orvandesh
+    - city: Helvique
+      country: Crondalia
+    - city: Jentoval
+      country: Weskamere
+    - city: Rolvaste
+      country: Thundrellia
+  place_12:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tolvane
+    - city: Cressault
+    - city: Brimault
+    - city: Pelloque
+    - city: Darvenne
+    - city: Grotheil
+    - city: Lussarne
+    - city: Fontrique
+    - city: Melvaque
+    - city: Sorignac
+    - city: Plondaire
+    - city: Verrault
+    - city: Clairnesse
+    - city: Bournelle
+    - city: Tassogne
+  place_13:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vellunor
+    - city: Thandrique
+    - city: Calovent
+    - city: Brisselu
+    - city: Molvaire
+    - city: Plethuny
+    - city: Grothane
+    - city: Sulvenic
+    - city: Darnoque
+    - city: Feltrova
+    - city: Quensilar
+    - city: Obrenthay
+    - city: Zulmaret
+    - city: Kespoval
+    - city: Wintharque
+  place_14:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Grothaven
+    - city: Pellmark
+    - city: Tunvaris
+    - city: Kesseldorn
+    - city: Bremholt
+    - city: Wintherau
+    - city: Dralveck
+    - city: Stennach
+    - city: Volsheim
+    - city: Krandel
+    - city: Oberfliss
+    - city: Thalmund
+    - city: Reiskvarn
+    - city: Geltrunn
+    - city: Harspeld
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath SE
+    - name: Cendrik SE
+    - name: Tarvonis SE
+    - name: Skyelum SE
+    - name: Brentalox SE
+    - name: Quilaren SE
+    - name: Dravonic SE
+    - name: Peltorix SE
+    - name: Zanthera SE
+    - name: Korvelis SE
+    - name: Wyndara SE
+    - name: Flentova SE
+    - name: Orvantis SE
+    - name: Gretholin SE
+    - name: Melvaris SE
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbital and Shielding
+    - name: Stratovault Systems
+    - name: Skyward Protectorate
+    - name: Canopy and Frontier
+    - name: Vaultreach Operations
+    - name: Sentinel Astralis
+    - name: Aegisphere Division
+    - name: Highguard Expanse
+    - name: Wardline and Orbit
+    - name: Crestward Aerospace
+    - name: Bulwark Skyreach
+    - name: Firmaveil Systems
+    - name: Shieldtrace and Beyond
+    - name: Rampart Celestics
+    - name: Overwatch Horizons
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Rotorwing
+    - name: Vertiflight
+    - name: Skyblade
+    - name: Hoverloft
+    - name: Thrumcraft
+    - name: Aerovane
+    - name: Liftspan
+    - name: Gyrowing
+    - name: Coptrel
+    - name: Rotorveil
+    - name: Spinloft
+    - name: Bladecrest
+    - name: Upliven
+    - name: Whirlcraft
+    - name: Torquewing
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn Aeronautique GIE
+    - name: Celvara Skyworks GIE
+    - name: Thandor Aviatik GIE
+    - name: Plennox Flugbau GIE
+    - name: Orivane Aerotec GIE
+    - name: Kestara Volantis GIE
+    - name: Brondel Luftwerk GIE
+    - name: Solvane Aeroconsort GIE
+    - name: Dravique Wingcraft GIE
+    - name: Fenturi Skyforge GIE
+    - name: Galvorn Aerojoint GIE
+    - name: Melvaris Flightworks GIE
+    - name: Torquen Aerobund GIE
+    - name: Pellicarn Volance GIE
+    - name: Zanthrel Aerounion GIE
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn-Kestara
+    - name: Celdrique-Tarvon
+    - name: Brondalis-Mequar
+    - name: Sorvane-Pellique
+    - name: Drantec-Volisma
+    - name: Halcyren-Bostique
+    - name: Fendralis-Corteau
+    - name: Quirvane-Lostrel
+    - name: Talmeric-Jovaste
+    - name: Plondique-Ravesta
+    - name: Gelvaris-Nortique
+    - name: Weskaran-Dolvine
+    - name: Brintova-Selquare
+    - name: Morvelic-Tandreau
+    - name: Jasperic-Voldane
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VELKRA
+    - name: TORAQ
+    - name: BRYNEX
+    - name: HALDUV
+    - name: CENDAK
+    - name: PLUVON
+    - name: GROTHEL
+    - name: FENKAR
+    - name: ZULMEK
+    - name: WAPRID
+    - name: JORVEK
+    - name: KESTHAL
+    - name: NORBIQ
+    - name: TULMAG
+    - name: RAVKOL
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VELTRA
+    - name: KORAFI
+    - name: TEMBRIC
+    - name: SOLNAV
+    - name: DREQUIL
+    - name: PARVEC
+    - name: LUMTEC
+    - name: FENDRIQ
+    - name: GALTRIS
+    - name: ORVANE
+    - name: BRENISO
+    - name: TURMEK
+    - name: CELVARO
+    - name: NOPTHAL
+    - name: QUIRBEL
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Aeronautic Holdings and Systems Group (VAHS)
+    - name: Cendral Skyworks Defence and Technology Consortium (CSDT)
+    - name: Palleron Unified Aviation and Defence Corporation (PUAD)
+    - name: Torquen Continental Aerospace Industries (TCAI)
+    - name: Brivane Multinational Flight and Defence Enterprise (BMFD)
+    - name: Ostraven Combined Aeronautics and Space Collective (OCAS)
+    - name: Kelmara Joint Defence and Aerospace Syndicate (KJDA)
+    - name: Dravolin Integrated Skycraft and Systems Alliance (DISS)
+    - name: Fentorak Allied Aviation Defence Group (FAAD)
+    - name: Quirenth Transnational Aerospace and Defence Combine (QTAD)
+    - name: Zelkori Consolidated Flight Systems Corporation (ZCFS)
+    - name: Marvolen Cross-Border Aeronautics Holding (MCBA)
+    - name: Plindara Cooperative Defence and Aerospace Venture (PCDA)
+    - name: Helvorn Shared Aerospace and Technology Enterprise (HSAT)
+    - name: Wenthari United Skycraft Defence Consortium (WUSD)
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Borsavek Treluna
+    - name: Merkanto de Celvira
+    - name: Lonja de Pratheno
+    - name: Cambio Velostri
+    - name: Korsat Bursaliq
+    - name: Feriando Valorplex
+    - name: Trassejo de Olvanto
+    - name: Bursatil Quendara
+    - name: Lonvex de Sariquon
+    - name: Merkavos Plazentho
+    - name: Cambista Rovelique
+    - name: Bursalejo de Tarvique
+    - name: Korventil Salequo
+    - name: Ferianto de Zuvelca
+    - name: Trassavol Quirentho
+products:
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: skyvault
+    - name: aerovane
+    - name: stratocraf
+    - name: flightcore
+    - name: wingspan systems
+    - name: uploft
+    - name: ceilonav
+    - name: thrustline
+    - name: orbivect
+    - name: altifab
+    - name: jethaul
+    - name: loftcraft
+    - name: vaultwing
+    - name: driftpulse
+    - name: climbforge
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: skyframe vessel
+    - name: longhaul cruiser
+    - name: pressured cabincraft
+    - name: widehull flightframe
+    - name: turbocabin liner
+    - name: passenger airframe
+    - name: civil transport craft
+    - name: high-capacity flyer
+    - name: twin-aisle skycraft
+    - name: jetcabin hauler
+    - name: powered cabinframe
+    - name: broadwing carrier
+    - name: transit airvessel
+    - name: swept-wing skyliner
+    - name: fuselage cruiser
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: rotorwing
+    - name: vertifan
+    - name: skyblade
+    - name: liftrotor
+    - name: hoverdyne
+    - name: thrumcopter
+    - name: spinloft
+    - name: gyrovane
+    - name: whirlcraft
+    - name: torquewing
+    - name: rotojet
+    - name: uplifter
+    - name: bladevault
+    - name: aerospin
+    - name: coptrel
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VELK TRADEN 40
+    - name: CENTIQ MARQ 30
+    - name: BORSAL KAPEX 25
+    - name: FLOREN LIDEX 60
+    - name: TARVON EQUIS 35
+    - name: NORBEK INDIQ 50
+    - name: DRAMEL QUOTIX 45
+    - name: PLIVEX SHARQ 20
+    - name: GALTREN BORSE 55
+    - name: KELVON STAQ 30
+    - name: RENDIQ VALOX 40
+    - name: SOLVEK MARKIS 25
+    - name: WENTIQ KAPREN 50
+    - name: BRELTAN FONDEX 35
+    - name: QUORVEX LISTIQ 45

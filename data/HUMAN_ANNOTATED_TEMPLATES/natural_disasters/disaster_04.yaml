@@ -1,0 +1,431 @@
+document:
+  document_id: disaster_04
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2023 Turkey–Syria earthquakes
+  wikipedia_url: https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes
+  original_document: 'On 6 February 2023, at 04:17:35 TRT (01:17:35 UTC), a moment magnitude (Mw ) 7.8 earthquake struck southern
+    and central Turkey and northern and western Syria. The epicenter was 37 km (23 mi) west–northwest of Gaziantep. This strike-slip
+    shock achieved a Mercalli intensity of XII (Extreme) around the epicenter and in Antakya. It was followed by a Mw 7.7
+    earthquake, at 13:24:49 TRT (10:24:49 UTC). This earthquake was centered 95 km (59 mi) north-northwest from the first.
+    There was widespread severe damage and tens of thousands of fatalities.
+
+
+    The Mw 7.8 earthquake is the largest to strike Turkey since the 1939 Erzincan earthquake of the same magnitude, and jointly
+    the second-largest in the country, after larger estimates for the 1668 North Anatolia earthquake. It is also one of the
+    strongest earthquakes ever recorded in the Levant. It was felt as far as Egypt and the Black Sea coast of Turkey. There
+    were more than 30000 aftershocks in the three months that followed. The seismic sequence was the result of shallow strike-slip
+    faulting along segments of the Dead Sea Transform, East Anatolian and Sürgü–Çardak faults.
+
+
+    Damaged roads, winter storms, and disruption to communications hampered the Disaster and Emergency Management Presidency''s
+    rescue and relief effort, which included a 60000-strong search-and-rescue force, 5000 health workers and 30000 volunteers.
+    Following Turkey''s call for international help, more than 141000 people from 94 countries joined the rescue effort.
+
+
+    There was widespread damage in an area of about 350000 km2 (140000 sq mi), about the size of Germany. An estimated 14
+    million people, or 16 percent of Turkey''s population, were affected. Development experts from the United Nations estimated
+    that about 1.5 million people were left homeless.
+
+
+    The confirmed death toll in Turkey was 53537; estimates of the number of dead in Syria were between 5951 and 8476. It
+    is the deadliest earthquake in present-day Turkey since the 526 Antioch earthquake and the deadliest natural disaster
+    in its modern history. It is also the deadliest in present-day Syria since the 1822 Aleppo earthquake; the deadliest earthquake
+    or natural disaster in general since the 2010 Haiti earthquake; and the fifth-deadliest earthquake of the 21st century.
+    The damage was estimated at US$148.8 billion in Turkey, or nine-percent of the country''s GDP, and US$9 billion in Syria.'
+  document_to_annotate: 'On [6 February 2023; temporal_1.date], at [01:17:35 UTC; temporal_1.timestamp], a moment magnitude
+    (Mw ) 7.8 earthquake struck southern and central [Turkey; place_1.country] and northern and western [Syria; place_2.country].
+    The epicenter was [37; number_2.int] km west–northwest of [Gaziantep; place_3.city]. This strike-slip shock achieved a
+    Mercalli intensity of XII (Extreme) around the epicenter and in [Antakya; place_4.city]. It was followed by a Mw [7.7;
+    number_4.float] earthquake, at [10:24:49 UTC; temporal_4.timestamp]. This earthquake was centered [95; number_5.int] km
+    north-northwest from the first. There was widespread severe damage and tens of thousands of fatalities.
+
+
+    The Mw 7.8 earthquake is the largest to strike [Turkey; place_1.country] since the [1939; temporal_6.year] [Erzincan earthquake;
+    event_1.name] of the same magnitude, and jointly the second-largest in the country, after larger estimates for the [1668;
+    temporal_7.year] [North Anatolia earthquake; event_2.name]. It is also one of the strongest earthquakes ever recorded
+    in the [Levant; place_5.region]. It was felt as far as [Egypt; place_6.country] and the [Black Sea; place_7.natural_site]
+    coast of [Turkey; place_1.country]. There were more than [30000; number_7.int] aftershocks in the [three; number_8.str]
+    months that followed. The seismic sequence was the result of shallow strike-slip faulting along segments of the [Dead
+    Sea Transform; place_8.natural_site], [East Anatolian; place_9.natural_site] and [Sürgü–Çardak; place_10.natural_site]
+    faults.
+
+
+    Damaged roads, winter storms, and disruption to communications hampered the [Disaster and Emergency Management Presidency;
+    government_org_1.name]''s rescue and relief effort, which included a [60000; number_9.int]-strong search-and-rescue force,
+    [5000; number_10.int] health workers and [30000; number_11.int] volunteers. Following [Turkey; place_1.country]''s call
+    for international help, more than [141000; number_12.int] people from [94; number_13.int] countries joined the rescue
+    effort.
+
+
+    There was widespread damage in an area of about [350000; number_14.int] km2, about the size of [Germany; place_11.country].
+    An estimated [14; number_29.int] million people, or [16; number_17.percent] percent of [Turkey; place_1.country]''s population,
+    were affected. Development experts from the [United Nations; ngo_1.name] estimated that about [1.5; number_28.float] million
+    people were left homeless.
+
+
+    The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int]; estimates of the number of dead in [Syria;
+    place_2.country] were between [5951; number_20.int] and [8476; number_21.int]. It is the deadliest earthquake in present-day
+    [Turkey; place_1.country] since the [526 Antioch earthquake; event_3.name] and the deadliest natural disaster in its modern
+    history. It is also the deadliest in present-day [Syria; place_2.country] since the [1822 Aleppo earthquake; event_4.name];
+    the deadliest earthquake or natural disaster in general since the [2010 Haiti earthquake; event_5.name]; and the fifth-deadliest
+    earthquake of the [21st; number_30.int] century. The damage was estimated at US$[148.8; number_22.float] billion in [Turkey;
+    place_1.country], or [9; number_27.percent]% of the country''s GDP, and US$[9; number_24.int] billion in [Syria; place_2.country].'
+  relations: []
+  rules:
+  - 'number_7.int > 1 # "more than 30000 aftershocks" — plural mention'
+  - 'number_8.str > 1 # "three months" — plural mention'
+  - 'number_9.int > 1 # "60000-strong search-and-rescue force" — plural'
+  - 'number_10.int > 1 # "5000 health workers" — plural'
+  - 'number_11.int > 1 # "30000 volunteers" — plural'
+  - 'number_12.int > 1 # "more than 141000 people" — plural'
+  - 'number_13.int > 1 # "94 countries" — plural'
+  - 'number_29.int > 1 # "14 million people" — plural'
+  - 'century_of(temporal_1.date) == number_30.int # "fifth-deadliest earthquake of the 21st century" must match the event''s
+    date'
+  num_questions: 12
+  questions:
+  - question_id: disaster_04_q01
+    question: What was the confirmed death toll in [Turkey; place_1.country] from the earthquake?
+    question_type: extractive
+    answer: number_19.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int]."
+    reasoning_chain_text: 1. The document states "The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int]."
+  - question_id: disaster_04_q02
+    question: What was the moment magnitude of the main earthquake that struck [Turkey; place_1.country]?
+    question_type: extractive
+    answer: '7.8'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "a moment magnitude (Mw ) 7.8 earthquake struck southern and central [Turkey; place_1.country]."
+    reasoning_chain_text: 1. The document states "a moment magnitude (Mw ) 7.8 earthquake struck southern and central [Turkey;
+      place_1.country]."
+  - question_id: disaster_04_q03
+    question: What was the depth of the main Mw 7.8 earthquake's hypocenter?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the earthquake as involving "shallow strike-slip faulting" but does not provide a specific
+      depth measurement.
+    - 2. No numerical hypocenter depth is stated anywhere in the document.
+    reasoning_chain_text: '1. The document describes the earthquake as involving "shallow strike-slip faulting" but does not
+      provide a specific depth measurement.
+
+      2. No numerical hypocenter depth is stated anywhere in the document.'
+  - question_id: disaster_04_q04
+    question: How many more people died in [Turkey; place_1.country] than the upper estimate of deaths in [Syria; place_2.country]?
+    question_type: arithmetic
+    answer: number_19.int - number_21.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int].
+    - 2. The upper estimate of deaths in [Syria; place_2.country] was [8476; number_21.int].
+    - 3. The difference is [53537; number_19.int] − [8476; number_21.int] = 36049.
+    reasoning_chain_text: '1. The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int].
+
+      2. The upper estimate of deaths in [Syria; place_2.country] was [8476; number_21.int].
+
+      3. The difference is [53537; number_19.int] − [8476; number_21.int] = 36049.'
+  - question_id: disaster_04_q05
+    question: How many geological faults were involved in the earthquake ?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - place_8.natural_site, place_9.natural_site, place_10.natural_site
+    reasoning_chain_text: place_8.natural_site, place_9.natural_site, place_10.natural_site
+  - question_id: disaster_04_q06
+    question: What was the total estimated damage in US dollars for both [Turkey; place_1.country] and [Syria; place_2.country]
+      as a percentage of their combined GDP?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document gives damage as US$[148.8; number_22.float] billion in [Turkey; place_1.country] ([9; number_27.percent]%
+      of its GDP) and US$[9; number_24.int] billion in [Syria; place_2.country].
+    - 2. The document does not state [Syria; place_2.country]'s GDP, so the combined GDP cannot be calculated.
+    reasoning_chain_text: '1. The document gives damage as US$[148.8; number_22.float] billion in [Turkey; place_1.country]
+      ([9; number_27.percent]% of its GDP) and US$[9; number_24.int] billion in [Syria; place_2.country].
+
+      2. The document does not state [Syria; place_2.country]''s GDP, so the combined GDP cannot be calculated.'
+  - question_id: disaster_04_q07
+    question: How many years before the [6 February 2023; temporal_1.date] earthquake did the [Erzincan earthquake; event_1.name]
+      earthquake of the same magnitude occur?
+    question_type: temporal
+    answer: temporal_1.date - temporal_6.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The main earthquake occurred on [6 February 2023; temporal_1.date], i.e., in 2003.
+    - 2. The [Erzincan earthquake; event_1.name] earthquake occurred in [1939; temporal_6.year].
+    - 3. The difference is 2003 − 1952 = 51 years.
+    reasoning_chain_text: '1. The main earthquake occurred on [6 February 2023; temporal_1.date], i.e., in 2003.
+
+      2. The [Erzincan earthquake; event_1.name] earthquake occurred in [1939; temporal_6.year].
+
+      3. The difference is 2003 − 1952 = 51 years.'
+  - question_id: disaster_04_q08
+    question: Did the two earthquakes occur simultaneously ?
+    question_type: temporal
+    answer: 'no'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The main earthquake struck at [01:17:35 UTC; temporal_1.timestamp].
+    - 2. The aftershock occurred at [10:24:49 UTC; temporal_4.timestamp].
+    - 3. The elapsed time is 10:24:49 − 01:17:35 = 9 hours, 7 minutes, and 14 seconds, which is approximately 9 hours and
+      7 minutes.
+    reasoning_chain_text: '1. The main earthquake struck at [01:17:35 UTC; temporal_1.timestamp].
+
+      2. The aftershock occurred at [10:24:49 UTC; temporal_4.timestamp].
+
+      3. The elapsed time is 10:24:49 − 01:17:35 = 9 hours, 7 minutes, and 14 seconds, which is approximately 9 hours and
+      7 minutes.'
+  - question_id: disaster_04_q09
+    question: In what year did the [526 Antioch earthquake; event_3.name] earthquake occur?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [526 Antioch earthquake; event_3.name] as the last earthquake in present-day [Turkey; place_1.country]
+      that was deadlier.
+    - 2. However, the document does not provide a specific year or date for the [526 Antioch earthquake; event_3.name].
+    reasoning_chain_text: '1. The document mentions the [526 Antioch earthquake; event_3.name] as the last earthquake in present-day
+      [Turkey; place_1.country] that was deadlier.
+
+      2. However, the document does not provide a specific year or date for the [526 Antioch earthquake; event_3.name].'
+  - question_id: disaster_04_q10
+    question: Based on the damage estimate and GDP percentage given, what was the approximate GDP of [Turkey; place_1.country]
+      in US dollars at the time of the earthquake?
+    question_type: inference
+    answer: number_22.float / number_27.percent * 100
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states damage in [Turkey; place_1.country] was US$[148.8; number_22.float] billion, which was [9; number_27.percent]%
+      of the country's GDP.
+    - 2. Therefore, GDP = US$134.0 billion / 0.072 ≈ US$1861.1 billion.
+    reasoning_chain_text: '1. The document states damage in [Turkey; place_1.country] was US$[148.8; number_22.float] billion,
+      which was [9; number_27.percent]% of the country''s GDP.
+
+      2. Therefore, GDP = US$134.0 billion / 0.072 ≈ US$1861.1 billion.'
+  - question_id: disaster_04_q11
+    question: Is it considered that the earthquakes had a significant impact on the country's economy ?
+    question_type: inference
+    answer: 'yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int].
+    - 2. The upper estimate for [Syria; place_2.country] was [8476; number_21.int].
+    - 3. The maximum combined death toll is 42830 + 6781 = 49611.
+    reasoning_chain_text: '1. The confirmed death toll in [Turkey; place_1.country] was [53537; number_19.int].
+
+      2. The upper estimate for [Syria; place_2.country] was [8476; number_21.int].
+
+      3. The maximum combined death toll is 42830 + 6781 = 49611.'
+  - question_id: disaster_04_q12
+    question: Was the [2010 Haiti earthquake; event_5.name] earthquake deadlier than the [526 Antioch earthquake; event_3.name]
+      earthquake?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the earthquake is the deadliest in present-day [Turkey; place_1.country] since the [526 Antioch
+      earthquake; event_3.name], and the deadliest earthquake or natural disaster in general since the [2010 Haiti earthquake;
+      event_5.name].
+    - 2. These two events are referenced in different geographic/contextual scopes, and the document does not provide death
+      tolls for either event, so a direct comparison cannot be made.
+    reasoning_chain_text: '1. The document states the earthquake is the deadliest in present-day [Turkey; place_1.country]
+      since the [526 Antioch earthquake; event_3.name], and the deadliest earthquake or natural disaster in general since
+      the [2010 Haiti earthquake; event_5.name].
+
+      2. These two events are referenced in different geographic/contextual scopes, and the document does not provide death
+      tolls for either event, so a direct comparison cannot be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 30
+    upper_bound: 44
+    factual_value: 37
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.float
+    lower_bound: 1.0
+    upper_bound: 18.0
+    factual_value: 7.7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 76
+    upper_bound: 114
+    factual_value: 95
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1920
+    upper_bound: 1958
+    factual_value: 1939
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1652
+    upper_bound: 1684
+    factual_value: 1668
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 24000
+    upper_bound: 36000
+    factual_value: 30000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 48000
+    upper_bound: 72000
+    factual_value: 60000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 4000
+    upper_bound: 6000
+    factual_value: 5000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 24000
+    upper_bound: 36000
+    factual_value: 30000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 112800
+    upper_bound: 169200
+    factual_value: 141000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.int
+    lower_bound: 76
+    upper_bound: 112
+    factual_value: 94
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 280000
+    upper_bound: 420000
+    factual_value: 350000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_29.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.percent
+    lower_bound: 12.8
+    upper_bound: 19.2
+    factual_value: 16.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_28.float
+    lower_bound: 1.0
+    upper_bound: 12.0
+    factual_value: 1.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 42830
+    upper_bound: 64244
+    factual_value: 53537
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.int
+    lower_bound: 4761
+    upper_bound: 7141
+    factual_value: 5951
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.int
+    lower_bound: 6781
+    upper_bound: 10171
+    factual_value: 8476
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_30.int
+    lower_bound: 19
+    upper_bound: 23
+    factual_value: 21
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_22.float
+    lower_bound: 134
+    upper_bound: 163
+    factual_value: 149
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_27.percent
+    lower_bound: 1.0
+    upper_bound: 19.0
+    factual_value: 9.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.int
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'On [1 September 2003; temporal_1.date], at [01:17:35 UTC; temporal_1.timestamp],
+    a moment magnitude (Mw ) 7.8 earthquake struck southern and central [Kingdom of Zortarntarn; place_1.country] and northern
+    and western [Kingdom of Pryyornyorn; place_2.country]. The epicenter was [30; number_2.int] km west–northwest of [Brimthur
+    City; place_3.city]. This strike-slip shock achieved a Mercalli intensity of XII (Extreme) around the epicenter and in
+    [Xalsiv Town; place_4.city]. It was followed by a Mw [6.16; number_4.float] earthquake, at [10:24:49 UTC; temporal_4.timestamp].
+    This earthquake was centered [94; number_5.int] km north-northwest from the first. There was widespread severe damage
+    and tens of thousands of fatalities.
+
+
+    The Mw 7.8 earthquake is the largest to strike [Kingdom of Zortarntarn; place_1.country] since the [1952; temporal_6.year]
+    [Xalbrimzor Summit; event_1.name] of the same magnitude, and jointly the second-largest in the country, after larger estimates
+    for the [1657; temporal_7.year] [Brimzivziv Festival; event_2.name]. It is also one of the strongest earthquakes ever
+    recorded in the [Sivmarnmarnridge; place_5.region]. It was felt as far as [Kingdom of Vornxalsiv; place_6.country] and
+    the [Sivthur isle; place_7.natural_site] coast of [Kingdom of Zortarntarn; place_1.country]. There were more than [24000;
+    number_7.int] aftershocks in the [two; number_8.str] months that followed. The seismic sequence was the result of shallow
+    strike-slip faulting along segments of the [Gryvornisle; place_8.natural_site], [Peak Rathkrel; place_9.natural_site]
+    and [Drelvexwex cay; place_10.natural_site] faults.
+
+
+    Damaged roads, winter storms, and disruption to communications hampered the [Nyxaethqelontskiov National Bureau; government_org_1.name]''s
+    rescue and relief effort, which included a [48000; number_9.int]-strong search-and-rescue force, [4000; number_10.int]
+    health workers and [24000; number_11.int] volunteers. Following [Kingdom of Zortarntarn; place_1.country]''s call for
+    international help, more than [140999; number_12.int] people from [93; number_13.int] countries joined the rescue effort.
+
+
+    There was widespread damage in an area of about [280000; number_14.int] km2, about the size of [Republic of Vekkiv; place_11.country].
+    An estimated [12; number_29.int] million people, or [12.8; number_17.percent] percent of [Kingdom of Zortarntarn; place_1.country]''s
+    population, were affected. Development experts from the [Treirkvyrelxqelant Mutual Alliance; ngo_1.name] estimated that
+    about [1.2; number_28.float] million people were left homeless.
+
+
+    The confirmed death toll in [Kingdom of Zortarntarn; place_1.country] was [42830; number_19.int]; estimates of the number
+    of dead in [Kingdom of Pryyornyorn; place_2.country] were between [4761; number_20.int] and [6781; number_21.int]. It
+    is the deadliest earthquake in present-day [Kingdom of Zortarntarn; place_1.country] since the [Krelnox Jubilee; event_3.name]
+    and the deadliest natural disaster in its modern history. It is also the deadliest in present-day [Kingdom of Pryyornyorn;
+    place_2.country] since the [The Grykiv Conference; event_4.name]; the deadliest earthquake or natural disaster in general
+    since the [Noxgrel Uprising; event_5.name]; and the fifth-deadliest earthquake of the [21; number_30.int] century. The
+    damage was estimated at US$[134.0; number_22.float] billion in [Kingdom of Zortarntarn; place_1.country], or [7.2; number_27.percent]%
+    of the country''s GDP, and US$[7; number_24.int] billion in [Kingdom of Pryyornyorn; place_2.country].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

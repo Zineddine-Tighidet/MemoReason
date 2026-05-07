@@ -1,0 +1,331 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_07
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T11:47:02.648535+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_2: 15
+    place_3: 15
+    place_1: 15
+    place_4: 15
+  events:
+    event_2: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - ethnicity
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Talveen Oresh Kethano
+      last_name: Kethano
+      nationality: Brelosi
+      ethnicity: Darvuni
+    - full_name: Shovra Peliq Dunara
+      last_name: Dunara
+      nationality: Telmachi
+      ethnicity: Keshvari
+    - full_name: Zerima Holtiq Banesh
+      last_name: Banesh
+      nationality: Vorundi
+      ethnicity: Paleshi
+    - full_name: Livane Choraq Tessomi
+      last_name: Tessomi
+      nationality: Galthari
+      ethnicity: Omravi
+    - full_name: Qadreen Voshel Turabi
+      last_name: Turabi
+      nationality: Rendoki
+      ethnicity: Zelvani
+    - full_name: Fenira Molkesh Darovi
+      last_name: Darovi
+      nationality: Kuveshi
+      ethnicity: Tasheli
+    - full_name: Beshara Tolven Krinova
+      last_name: Krinova
+      nationality: Phalundi
+      ethnicity: Gorveni
+    - full_name: Orvina Chelkash Remadi
+      last_name: Remadi
+      nationality: Drevoshi
+      ethnicity: Lunteri
+    - full_name: Kelthira Voshen Parelo
+      last_name: Parelo
+      nationality: Zulmeki
+      ethnicity: Brevashi
+    - full_name: Deshani Rokveel Tumara
+      last_name: Tumara
+      nationality: Chelvoqi
+      ethnicity: Noreshi
+    - full_name: Raveen Toshkel Belundi
+      last_name: Belundi
+      nationality: Molvari
+      ethnicity: Queshani
+    - full_name: Peshova Galtrin Voreki
+      last_name: Voreki
+      nationality: Thelvoni
+      ethnicity: Reshkavi
+    - full_name: Zelvira Kordesh Tanovi
+      last_name: Tanovi
+      nationality: Bremoshi
+      ethnicity: Dolveni
+    - full_name: Helvara Treshon Kuledi
+      last_name: Kuledi
+      nationality: Voshtari
+      ethnicity: Pelmuri
+    - full_name: Molveen Dreshka Orvani
+      last_name: Orvani
+      nationality: Kelthuri
+      ethnicity: Shelvoki
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torvek Mbashelu
+    - full_name: Kalundi Reshoven
+    - full_name: Bremosh Tuvandi
+    - full_name: Ondavu Kelimath
+    - full_name: Jetharo Mulvendi
+    - full_name: Pashoku Drentavi
+    - full_name: Golvane Tushemba
+    - full_name: Rendiku Fashombe
+    - full_name: Zulketh Oravimbe
+    - full_name: Havundi Peloshek
+    - full_name: Dremaku Vonshebi
+    - full_name: Tashevo Grundeli
+    - full_name: Keluvon Drashembi
+    - full_name: Molvashi Turenkod
+    - full_name: Brevoku Shaltendi
+places:
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Torsinea
+    - country: Brellundia
+    - country: Kethara
+    - country: Ombrecia
+    - country: Pallunor
+    - country: Dravencia
+    - country: Sulkamere
+    - country: Grentholia
+    - country: Weskara
+    - country: Felmorin
+    - country: Thandrique
+    - country: Colvenia
+    - country: Rathulind
+    - country: Jesporra
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvara
+    - city: Beshkul
+    - city: Harquna
+    - city: Zulmeth
+    - city: Drovani
+    - city: Kalshep
+    - city: Omthari
+    - city: Reshkova
+    - city: Gulphet
+    - city: Vindara
+    - city: Sothrek
+    - city: Melvuq
+    - city: Pashkeri
+    - city: Jenthuq
+    - city: Worbani
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Keshalan
+    - country: Dromisar
+    - country: Zurethan
+    - country: Belvaqua
+    - country: Orenthas
+    - country: Calishun
+    - country: Mevrotia
+    - country: Phandural
+    - country: Sorvekka
+    - country: Galthenor
+    - country: Wuldrecia
+    - country: Tarvishen
+    - country: Elmorath
+    - country: Junvapel
+  place_4:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Telvoran
+    - demonym: Mundhari
+    - demonym: Kessalite
+    - demonym: Brenoshi
+    - demonym: Zorvathi
+    - demonym: Palunese
+    - demonym: Dremaki
+    - demonym: Golthari
+    - demonym: Veshalan
+    - demonym: Tureshi
+    - demonym: Kalmorin
+    - demonym: Ondravish
+    - demonym: Feluqan
+    - demonym: Jenthari
+    - demonym: Weskori
+events:
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolhaven slaughter
+    - name: Keshvari purge
+    - name: Dremhol atrocity
+    - name: Vurathen massacre
+    - name: Pelkori genocide
+    - name: Zanthuri bloodshed
+    - name: Gelvash killings
+    - name: Morthane cleansing
+    - name: Brivoshi massacre
+    - name: Tarqueli slaughter
+    - name: Heskova carnage
+    - name: Ondravek massacre
+    - name: Felshuri atrocity
+    - name: Kaldremni purge
+    - name: Reshkova massacre
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vethrak Caliphate
+    - name: Harqen Legion
+    - name: Doshuri Pact
+    - name: Kelmash Front
+    - name: Zorath Brigades
+    - name: Tarveen Dominion
+    - name: Sulkhari Vanguard
+    - name: Brenakh Covenant
+    - name: Ghulvari Order
+    - name: Neshkol Militia
+    - name: Drothane Emirate
+    - name: Quorshan Guard
+    - name: Felkhari Syndicate
+    - name: Jathreen Command
+    - name: Morvakh Collective
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarwen's Compass
+    - name: Halevi Renewal Project
+    - name: Soraya's Beacon
+    - name: Kethara Foundation for Healing
+    - name: Lumaren's Promise
+    - name: Deshara Rebuilding Collective
+    - name: Rivane's Shelter Network
+    - name: Obrith Survivors Alliance
+    - name: Calindra's Horizon
+    - name: Zephara Restoration Trust
+    - name: Miroven's Bridge
+    - name: Tessara Community Renewal
+    - name: Yolindra's Pathway
+    - name: Fenara Hope Collective
+    - name: Brenith's Refuge
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Interregional Bureau for Transborder Enforcement and Welfare
+    - name: Global Directorate on Illicit Commerce Prevention
+    - name: Coordinated Office for Exploitation Response and Justice
+    - name: Multilateral Agency for Contraband Oversight and Victim Relief
+    - name: Joint Secretariat on Trafficking Deterrence and Survivor Aid
+    - name: Transnational Council for Smuggling Interdiction and Recovery
+    - name: Allied Commission on Coerced Labor and Narcotics Suppression
+    - name: Unified Directorate for Cross-Border Crime and Rehabilitation
+    - name: Central Authority on Syndicate Disruption and Victim Advocacy
+    - name: Federated Bureau of Organized Exploitation Countermeasures
+    - name: Intercontinental Office for Trafficking Mitigation and Restitution
+    - name: Combined Secretariat on Narcotics Enforcement and Survivor Dignity
+    - name: Plurinational Directorate for Illicit Networks and Victim Support
+    - name: Cooperative Agency on Criminal Enterprise Suppression and Welfare
+    - name: Integrated Council for Contraband Interdiction and Human Recovery
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torellian Harmony Laurel
+    - name: Brevanthi Global Concord Medal
+    - name: Ossendral Peace Distinction
+    - name: Kalenthi Accord Honor
+    - name: Mirathune Fellowship Commendation
+    - name: Delvoran Amity Garland
+    - name: Pelstari Reconciliation Emblem
+    - name: Vossendri Unity Wreath
+    - name: Thuranel Compassion Medallion
+    - name: Grethani Solidarity Accolade
+    - name: Wenvari Ceasefire Tribute
+    - name: Olpharen Benevolence Crest
+    - name: Rundathi Truce Decoration
+    - name: Selthari Goodwill Pinnacle
+    - name: Brenthali Coexistence Seal
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Honorary Envoy for the Protection of Displaced Conflict Survivors
+    - name: Global Advocate for the Wellbeing of Exploitation Rescue Recipients
+    - name: Ceremonial Liaison for the Resilience of Captive Labor Survivors
+    - name: Distinguished Emissary for the Restoration of Coerced Servitude Survivors
+    - name: Special Patron for the Empowerment of Forced Labor Survivors
+    - name: Appointed Champion for the Welfare of Bondage Rescue Survivors
+    - name: Principal Delegate for the Healing of Exploited Persons
+    - name: Designated Steward for the Rights of Trafficking Recovery Survivors
+    - name: Recognized Sentinel for the Upliftment of Captivity Survivors
+    - name: Commissioned Defender for the Renewal of Coercion Survivors
+    - name: Formal Representative for the Safeguarding of Enslavement Survivors
+    - name: Inaugural Custodian for the Dignity of Forced Displacement Survivors
+    - name: Appointed Spokesperson for the Rehabilitation of Exploitation Survivors
+    - name: Honored Guardian for the Advancement of Servitude Rescue Survivors
+    - name: Dedicated Protector for the Recovery of Compelled Labor Survivors

@@ -1,0 +1,985 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_07
+  document_theme: biographies_of_famous_personalities
+  complete: false
+  generated_at: '2026-04-18T17:35:49.782858+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_10: 15
+    place_11: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_16: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+    event_10: 15
+    event_11: 15
+    event_12: 15
+    event_13: 15
+    event_14: 14
+  organizations: {}
+  military_orgs:
+    military_org_5: 15
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_7: 15
+    government_org_1: 15
+    government_org_8: 15
+    government_org_9: 15
+    government_org_4: 15
+    government_org_3: 15
+    government_org_2: 15
+    government_org_6: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+  products:
+    product_1: 15
+missing_references:
+  events:
+    event_14: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvara Oshinde Grothek
+      last_name: Grothek
+    - full_name: Brenida Callune Vostrik
+      last_name: Vostrik
+    - full_name: Yolantha Mireve Dranthos
+      last_name: Dranthos
+    - full_name: Sephara Kolvine Turnesk
+      last_name: Turnesk
+    - full_name: Ondreya Fablith Kemvaro
+      last_name: Kemvaro
+    - full_name: Pallune Zethari Crondel
+      last_name: Crondel
+    - full_name: Ilvessa Dorath Plenvok
+      last_name: Plenvok
+    - full_name: Coritha Wenshale Brelkun
+      last_name: Brelkun
+    - full_name: Nythara Jolinde Skavren
+      last_name: Skavren
+    - full_name: Delphara Orvune Thalweg
+      last_name: Thalweg
+    - full_name: Ruvessa Clarine Morthek
+      last_name: Morthek
+    - full_name: Zanthea Piroval Gelsund
+      last_name: Gelsund
+    - full_name: Kelvara Throndis Obrenk
+      last_name: Obrenk
+    - full_name: Wintara Solphine Dreskol
+      last_name: Dreskol
+    - full_name: Ephira Golvane Strenvik
+      last_name: Strenvik
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torbek van Drellhof
+    - full_name: Gavren de Polthune
+    - full_name: Hessik von Braudeln
+    - full_name: Rendal de Kossivane
+    - full_name: Wolthen van Grissek
+    - full_name: Parnov de Stelvique
+    - full_name: Jondrik von Halmeren
+    - full_name: Casprel de Vornhaut
+    - full_name: Felkur van Trossigen
+    - full_name: Brenthol de Quirsane
+    - full_name: Aldrek von Pelmuth
+    - full_name: Solvek de Granthier
+    - full_name: Kurnath van Delvoire
+    - full_name: Thrennig von Boskarel
+    - full_name: Orvald de Junthessen
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Brandek Vorshel
+    - full_name: Tassig Wenndral
+    - full_name: Grothel Pinnark
+    - full_name: Durven Klastow
+    - full_name: Fennart Broshke
+    - full_name: Ossrik Talmend
+    - full_name: Kellund Dravosh
+    - full_name: Wernig Plothane
+    - full_name: Jostrek Halvund
+    - full_name: Rennald Skuphert
+    - full_name: Borthen Kravsel
+    - full_name: Tolvek Grannish
+    - full_name: Darnulf Preskow
+    - full_name: Velthor Mundrik
+    - full_name: Gasprek Thorneld
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Veldrath
+      demonym: Veldrathi
+    - country: Korsinea
+      demonym: Korsinean
+    - country: Thrembala
+      demonym: Thrembalese
+    - country: Polvunia
+      demonym: Polvunian
+    - country: Drenthos
+      demonym: Drenthosi
+    - country: Calmorek
+      demonym: Calmoreki
+    - country: Estrivane
+      demonym: Estrivanese
+    - country: Brentulia
+      demonym: Brentulian
+    - country: Sorkhaven
+      demonym: Sorkhavenite
+    - country: Tulmera
+      demonym: Tulmeran
+    - country: Gelvoria
+      demonym: Gelvorian
+    - country: Ondrasque
+      demonym: Ondrasquen
+    - country: Plethuna
+      demonym: Plethunese
+    - country: Karvolia
+      demonym: Karvolian
+    - country: Zendriqa
+      demonym: Zendriqan
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Nordvalen
+      demonym: Nordvalic
+    - country: Ostrelka
+      demonym: Ostrelkan
+    - country: Dravenia
+      demonym: Dravenish
+    - country: Kelmoria
+      demonym: Kelmorian
+    - country: Thurnica
+      demonym: Thurnican
+    - country: Brelstad
+      demonym: Brelstadi
+    - country: Volsken
+      demonym: Volskeni
+    - country: Grothane
+      demonym: Grothanish
+    - country: Pellmark
+      demonym: Pellmarki
+    - country: Sondrath
+      demonym: Sondrathi
+    - country: Wernalka
+      demonym: Wernalkan
+    - country: Torbelia
+      demonym: Torbelish
+    - country: Krastova
+      demonym: Krastovan
+    - country: Dulmaren
+      demonym: Dulmarish
+    - country: Fenthura
+      demonym: Fenthuran
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Brellunth
+    - city: Kossevarn
+    - city: Thandorel
+    - city: Welvichor
+    - city: Grothenly
+    - city: Pallunest
+    - city: Dremovask
+    - city: Solthenur
+    - city: Varnequil
+    - city: Crellomay
+    - city: Jothenvir
+    - city: Pleskuran
+    - city: Felmorath
+    - city: Quendoval
+    - city: Brintosek
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Kosmaren
+    - country: Threllund
+    - country: Brenovia
+    - country: Ostralm
+    - country: Pellicara
+    - country: Durnefell
+    - country: Caltherion
+    - country: Weskara
+    - country: Grotheny
+    - country: Talmeric
+    - country: Sorvenhal
+    - country: Plindova
+    - country: Helvantis
+    - country: Quirenoth
+  place_5:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Drellhaven-Ostmark
+    - state: Kelvorn-Sudrath
+    - state: Brantisch-Welmoor
+    - state: Thurgelm-Nossach
+    - state: Grothein-Pelzau
+    - state: Weskarn-Dorbith
+    - state: Fenthal-Obersund
+    - state: Haldren-Vossmark
+    - state: Quirnach-Beltzen
+    - state: Stolvern-Reisach
+    - state: Zelphen-Grundau
+    - state: Mortheil-Kaspern
+    - state: Durnach-Welsperg
+    - state: Plothein-Gassern
+    - state: Varnhelm-Trossig
+  place_10:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velorathic
+    - demonym: Thandorian
+    - demonym: Kelvassic
+    - demonym: Morthenic
+    - demonym: Druvellian
+    - demonym: Palcethi
+    - demonym: Zendoric
+    - demonym: Brivanthi
+    - demonym: Quelmassi
+    - demonym: Torvennic
+    - demonym: Grothellian
+    - demonym: Sundravic
+    - demonym: Felmorath
+    - demonym: Carvethian
+    - demonym: Wuldrenic
+  place_11:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: interoceanal
+    - demonym: crosspelagic
+    - demonym: meridivast
+    - demonym: panstraital
+    - demonym: circumthalic
+    - demonym: bimarinic
+    - demonym: overpelagan
+    - demonym: interbasinic
+    - demonym: dualshoric
+    - demonym: bridgepelagic
+    - demonym: veltomarine
+    - demonym: croshaltic
+    - demonym: spanoceanic
+    - demonym: twinshoral
+    - demonym: arcipelagan
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Tornicha
+    - country: Brelkovia
+    - country: Ossendria
+    - country: Kalmethu
+    - country: Drothenia
+    - country: Penvara
+    - country: Zurkalis
+    - country: Molvithen
+    - country: Grenshala
+    - country: Teskura
+    - country: Wanthero
+    - country: Jelvoria
+    - country: Crondalis
+    - country: Fenthurak
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Kessaland
+    - country: Brindova
+    - country: Orvethia
+    - country: Pallunor
+    - country: Dremaska
+    - country: Vosshelan
+    - country: Quirenth
+    - country: Zelphari
+    - country: Molvunia
+    - country: Grothane
+    - country: Fendalik
+    - country: Surpetho
+    - country: Welmarak
+    - country: Cortheli
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vostrek
+    - country: Kalduria
+    - country: Tarvosh
+    - country: Zelmograd
+    - country: Brynask
+    - country: Durnolsk
+    - country: Pelchova
+    - country: Skovara
+    - country: Turmekh
+    - country: Valdrenka
+    - country: Neshkova
+    - country: Brelithan
+    - country: Korveska
+    - country: Grothelsk
+    - country: Molvarka
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondaque
+    - country: Celvoria
+    - country: Dranthuel
+    - country: Fossimere
+    - country: Galthenor
+    - country: Helvuran
+    - country: Jentariq
+    - country: Kosphelan
+    - country: Lurathey
+    - country: Molvectra
+    - country: Norbisque
+    - country: Peldunor
+    - country: Quetharin
+    - country: Solvandre
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Upheavals of the Crimson Autumn
+    - name: Velkori Popular Risings
+    - name: The Thandrel Civic Revolts
+    - name: Cascading Uprisings of Dorshan
+    - name: The Pelmavic Spring Movements
+    - name: Turnings of the Ossendral Bloc
+    - name: The Grothane Democratic Surge
+    - name: Kethuvar Liberation Waves
+    - name: The Shelvanic Peoples Awakening
+    - name: Ruptures of the Brenthali Curtain
+    - name: The Morvanic Street Revolutions
+    - name: Crumbling of the Zelkhari Pact
+    - name: The Fondresk Popular Overthrows
+    - name: Tilvoran Mass Defiance Movement
+    - name: The Quendhari Civic Uprisings
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelk General Ballot
+    - name: Dranosi National Poll
+    - name: Kethura Parliamentary Vote
+    - name: Bremault Federal Contest
+    - name: Ossendral Legislative Election
+    - name: Valthuric General Suffrage
+    - name: Pelmorath National Ballot
+    - name: Grotheni Federal Poll
+    - name: Sundavar Parliamentary Election
+    - name: Quirenthol General Vote
+    - name: Halvistran Federal Ballot
+    - name: Molvekri National Election
+    - name: Thandural Legislative Poll
+    - name: Celvoran Federal Suffrage
+    - name: Weskenthi General Election
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelk general ballot
+    - name: Grantheil national caucus
+    - name: Pellundar parliamentary vote
+    - name: Oskirren civic referendum
+    - name: Dravenmoor legislative poll
+    - name: Hentoval federal plebiscite
+    - name: Quirshen assembly election
+    - name: Brossalund national ballot
+    - name: Feldarik general plebiscite
+    - name: Wentharik parliamentary caucus
+    - name: Kolvaren federal ballot
+    - name: Thandural national election
+    - name: Melvosken general referendum
+    - name: Protheil legislative ballot
+    - name: Garshevik civic election
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelk national ballot
+    - name: Grensholt parliamentary contest
+    - name: Pellundar general caucus
+    - name: Dravosi legislative poll
+    - name: Ketharn civic referendum
+    - name: Brinthal assembly vote
+    - name: Ossendrik federal ballot
+    - name: Vurmestal national poll
+    - name: Caldrith general election
+    - name: Fennorath parliamentary ballot
+    - name: Quirbane legislative election
+    - name: Stolvek federal contest
+    - name: Haldrennic assembly election
+    - name: Morthaven national caucus
+    - name: Zelkuran general ballot
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grenshald general assembly vote
+    - name: Pellunor civic mandate poll
+    - name: Dravosi parliamentary contest
+    - name: Hentavar legislative selection
+    - name: Brondekk union-wide suffrage
+    - name: Kelmithor federal plebiscite
+    - name: Ossivane national delegation vote
+    - name: Thurgellan commonwealth ballot
+    - name: Varnelk popular mandate election
+    - name: Quilshedar federal caucus
+    - name: Zelphandor general constituency vote
+    - name: Morthaven national legislative poll
+    - name: Fendurak parliamentary mandate
+    - name: Jolkevir federal representative ballot
+    - name: Tassendrik national chamber election
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pellundar general assembly vote
+    - name: Kesthari civic selection
+    - name: Drothane legislative poll
+    - name: Varnequil chamber election
+    - name: Sulbrith national plebiscite
+    - name: Orenthal federal ballot
+    - name: Maldrique general caucus
+    - name: Helvorn parliamentary selection
+    - name: Crondavi national suffrage
+    - name: Brenthulk legislative ballot
+    - name: Weskarin federal poll
+    - name: Thandoral civic assembly vote
+    - name: Quirenthol general election
+    - name: Jelvanthi federal plebiscite
+    - name: Grothendal parliamentary ballot
+  event_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: the Korvathi Realignment
+    - name: the Drenova Accord Initiative
+    - name: the Thalmic Overture
+    - name: the Velnosk Rapprochement
+    - name: the Grethani Pivot
+    - name: the Sorvane Engagement
+    - name: the Pelloric Détente
+    - name: the Bryndova Opening
+    - name: the Kesthari Reconciliation
+    - name: the Zulmaren Thaw
+    - name: the Orvanic Rebalance
+    - name: the Tervashi Dialogue
+    - name: the Meldorin Convergence
+    - name: the Vossari Renewal
+    - name: the Dranthek Outreach
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvellan Liquidity Collapse
+    - name: Dravosi Banking Meltdown
+    - name: Ketharn Credit Implosion
+    - name: Pelmura Fiscal Upheaval
+    - name: Brondavi Market Seizure
+    - name: Yalthen Solvency Breakdown
+    - name: Curnelk Lending Catastrophe
+    - name: Ossivane Monetary Disruption
+    - name: Fenthari Capital Freeze
+    - name: Quirbane Economic Fracture
+    - name: Zolvek Debt Contagion
+    - name: Haldrine Treasury Shock
+    - name: Wenpari Exchange Collapse
+    - name: Grothune Funding Spiral
+    - name: Melvask Systemic Crunch
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Monetary Collapse
+    - name: Korinth Currency Downturn
+    - name: Brelanic Fiscal Emergency
+    - name: Vossmark Exchange Turmoil
+    - name: Dranveil Sovereign Debt Spiral
+    - name: Pelloric Banking Disruption
+    - name: Ostavar Common Fund Crisis
+    - name: Thandric Union Liquidity Shock
+    - name: Galvorn Shared Currency Meltdown
+    - name: Rendovar Monetary Zone Instability
+    - name: Celvian Treasury Contagion
+    - name: Wythalan Economic Fracture
+    - name: Norpellic Debt Cascade
+    - name: Quendara Financial Upheaval
+    - name: Halvistran Currency Bloc Distress
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Velmorath Downturn
+    - name: The Crondial Collapse
+    - name: The Tasseric Contraction
+    - name: The Belvoran Slump
+    - name: The Grothane Depression
+    - name: The Pelluvian Market Spiral
+    - name: The Dranwick Fiscal Shock
+    - name: The Quorivan Economic Plunge
+    - name: The Sethural Meltdown
+    - name: The Haldivorn Credit Freeze
+    - name: The Molveric Decline
+    - name: The Turathane Stagnation
+    - name: The Crendovar Financial Rupture
+    - name: The Brossivane Panic
+    - name: The Kelthoran Bust
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Conclave of Accord
+    - name: Drennoch Alliance Forum
+    - name: Kosvari Pact Assembly
+    - name: Tulmek Strategic Gathering
+    - name: Brenthalo Coalition Conference
+    - name: Pelnovar Defense Dialogue
+    - name: Grothane Ministerial Summit
+    - name: Yendrik Security Convergence
+    - name: Calvoshan Leaders Roundtable
+    - name: Obrathi Joint Council Session
+    - name: Fendrake Diplomatic Congress
+    - name: Quirnova Heads of State Meeting
+    - name: Zelphari Unity Convention
+    - name: Tarvolen Membership Plenary
+    - name: Weskari Expansion Talks
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Seizure of the Korath Peninsula
+    - name: Dravosi Occupation of the Pelmark Coast
+    - name: Torshan Annexation of the Brindel Territories
+    - name: Zurvani Takeover of the Ossrath Highlands
+    - name: Kelmori Incursion into the Stavrik Enclave
+    - name: Grothani Absorption of the Yendral Province
+    - name: Nelvask Capture of the Thureni Strait Region
+    - name: Bralosi Forcible Integration of Marvekh
+    - name: Durnathi Seizure of the Polkren Isthmus
+    - name: Vorshani Occupation of the Keldrith Basin
+    - name: Tarveki Annexation of the Sundral Corridor
+    - name: Grelmosi Takeover of the Obrenk Lowlands
+    - name: Zanthori Incursion into the Valdrek Reaches
+    - name: Kurnavi Absorption of the Threnmak Shore
+    - name: Selvathi Capture of the Brenori Flatlands
+  event_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Coastal Displacement Surge
+    - name: Grethanic Refugee Upheaval
+    - name: Palluvian Border Exodus Wave
+    - name: Drossheim Resettlement Emergency
+    - name: Ketharan Passage Crisis
+    - name: Velmundi Displaced Peoples Influx
+    - name: Sorathic Maritime Refugee Surge
+    - name: Brunheld Cross-Border Migration Emergency
+    - name: Ostravan Humanitarian Displacement Event
+    - name: Caldrith Asylum Seeker Overflow
+    - name: Fenduric Population Movement Crisis
+    - name: Molvathi Refugee Corridor Collapse
+    - name: Thanderic Mass Displacement Upheaval
+    - name: Quirenthic Shelter Migration Wave
+    - name: Zelkhari Transit Refugee Emergency
+  event_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Contagion Crisis
+    - name: Brythenic Fever Outbreak
+    - name: Celviran Respiratory Surge
+    - name: Tassomere Viral Emergency
+    - name: Dranoplex Pathogen Wave
+    - name: Quirenth Global Health Crisis
+    - name: Molvissar Plague Event
+    - name: Zenthari Lung Affliction Pandemic
+    - name: Polvunic Syndrome Outbreak
+    - name: Grellishar Respiratory Pandemic
+    - name: Tuvanic Spread Crisis
+    - name: Orvessian Viral Pandemic
+    - name: Kelluvax Health Emergency
+    - name: Nythoral Contagion Pandemic
+    - name: Wembric Airborne Disease Crisis
+  event_14:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Dranosi National Parliamentary Vote
+    - name: Kelmuth Federal Civic Poll
+    - name: Bressova Union Legislature Contest
+    - name: Haltrune Commonwealth Selection
+    - name: Plindara State Assembly Election
+    - name: Vossekarn Federal Governance Vote
+    - name: Quirenth National Mandate Poll
+    - name: Zelkori Parliamentary Determination
+    - name: Ondravek Federal Representative Ballot
+    - name: Grothane General Legislative Election
+    - name: Melvuri National Chancellery Vote
+    - name: Tassendrik Federal Constituency Poll
+    - name: Wernolith Union Governance Ballot
+    - name: Calphedon National Assembly Election
+military_orgs:
+  military_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldric Defense Compact
+    - name: Tarnoch Allied Command
+    - name: Brensal Collective Shield
+    - name: Korath Joint Forces Pact
+    - name: Drenvale Security Alliance
+    - name: Pelmorath Combined Arms Treaty
+    - name: Sulvanic Defense League
+    - name: Crethon Mutual Guard Accord
+    - name: Orvanic Strategic Coalition
+    - name: Thelmarak Joint Defense Council
+    - name: Galdren Unified Shield Pact
+    - name: Vorshane Allied Defense Bloc
+    - name: Reltharic Security Compact
+    - name: Kendovar Combined Forces Treaty
+    - name: Bralvenic Defense Consortium
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: United Civic Youth League (UCYL)
+    - name: People's Forward Youth Alliance (PFYA)
+    - name: Collective Youth Solidarity Front (CYSF)
+    - name: Progressive Youth Vanguard Movement (PYVM)
+    - name: Open Horizon Youth Circle (OHYC)
+    - name: Communal Youth Endeavor League (CYEL)
+    - name: Youth Fraternal Cooperation Union (YFCU)
+    - name: Unified Youth Civic Assembly (UYCA)
+    - name: Youth Solidarity Compact League (YSCL)
+    - name: Peoples Youth Collective Accord (PYCA)
+    - name: Youth Cooperative Advancement Front (YCAF)
+    - name: Civic Youth Mutual Pledge (CYMP)
+    - name: Youth Concord Fellowship Union (YCFU)
+    - name: Shared Horizon Youth Collective (SHYC)
+    - name: Youth Communal Pledge Alliance (YCPA)
+government_orgs:
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Renewal Alliance (CRA)
+    - name: People's Solidarity League (PSL)
+    - name: National Accord Movement (NAM)
+    - name: United Centrist Front (UCF)
+    - name: Democratic Stewardship Party (DSP)
+    - name: Commonwealth Civic Order (CCO)
+    - name: Federal Harmony Coalition (FHC)
+    - name: Patriotic Consensus Union (PCU)
+    - name: Civic Foundations Party (CFP)
+    - name: Popular Governance League (PGL)
+    - name: Sovereign Compact Alliance (SCA)
+    - name: Communal Prosperity Movement (CPM)
+    - name: National Custodian Assembly (NCA)
+    - name: Federated Civic Pact (FCP)
+    - name: Homeland Stewards Coalition (HSC)
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Volkskammer
+    - name: Thalveren Assembly
+    - name: Grothspael Chamber
+    - name: Rendovik Parliament
+    - name: Kelvastag
+    - name: Drennhalle Council
+    - name: Brelthoven Legislature
+    - name: Storrenvald Diet
+    - name: Phalendrik House
+    - name: Weskamren Forum
+    - name: Zeltharak Congress
+    - name: Morvenspiel Chamber
+    - name: Grundhael Senate
+    - name: Torbeskren Assembly
+    - name: Halvondrek Plenum
+  government_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Solidarity League (CVL)
+    - name: Federated People's Accord (FPA)
+    - name: Regional Communal Alliance (RKA)
+    - name: Brotherly Covenant Party (BKP)
+    - name: United Cantonal Movement (UCM)
+    - name: Cooperative Homeland Front (KHF)
+    - name: Provincial Stewardship Union (PSU)
+    - name: Neighborly Pact Assembly (NPA)
+    - name: Territorial Concord Fellowship (TKF)
+    - name: Shared Values Coalition (SVK)
+    - name: Communal Trust Gathering (CTG)
+    - name: Heartland Fraternal Order (HFO)
+    - name: Pastoral Civic Compact (PKC)
+    - name: Rooted Traditions Circle (RTK)
+    - name: Landsward Mutual Bloc (LMB)
+  government_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: People's Civic Alliance of Tralvenia (PCA)
+    - name: Workers' Cooperative Front of Brenthara (WCF)
+    - name: United Labour Movement of Kessova (ULM)
+    - name: Progressive Solidarity League of Dranmoor (PSL)
+    - name: Democratic Equity Party of Vothland (DEP)
+    - name: Communal Justice Union of Peltravia (CJU)
+    - name: Fellowship of Egalitarian Reform of Gosthen (FER)
+    - name: Popular Welfare Congress of Melvuria (PWC)
+    - name: Collective Advancement Party of Sorinthea (CAP)
+    - name: Fraternal Civic Order of Helvantis (FCO)
+    - name: Cooperative Peoples' Forum of Dranthek (CPF)
+    - name: Mutual Progress Assembly of Quirnova (MPA)
+    - name: Solidarity and Fairness Party of Brelkund (SFP)
+    - name: United Civic Harmony League of Tarvonis (UCH)
+    - name: Democratic Welfare Pact of Grenthalia (DWP)
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Liberty Alliance (CLA)
+    - name: Open Progress Movement (OPM)
+    - name: Centrist Reform League (CRL)
+    - name: Individual Freedoms Coalition (IFC)
+    - name: Pluralist Civic Front (PCF)
+    - name: Market Liberty Forum (MLF)
+    - name: Rational Governance Party (RGP)
+    - name: Autonomous Citizens League (ACL)
+    - name: Moderate Renewal Bloc (MRB)
+    - name: Principled Choice Assembly (PCA)
+    - name: Civic Openness Pact (COP)
+    - name: Balanced Futures Party (BFP)
+    - name: Voluntary Enterprise League (VEL)
+    - name: Pragmatic Liberties Union (PLU)
+    - name: Cooperative Reason Caucus (CRC)
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Accord League
+    - name: Peldrath Assembly Council
+    - name: Vorinsek Cooperative Front
+    - name: Talmeric Governance Bureau
+    - name: Drothane Peoples Forum
+    - name: Kelvorin United Caucus
+    - name: Brenthali Deliberative Chamber
+    - name: Ostivane Parliamentary Circle
+    - name: Gelthari Federal Directorate
+    - name: Rundevak Consultative Senate
+    - name: Parvolen Civic Tribunal
+    - name: Zethoran Council of Delegates
+    - name: Molvaine Interparty Commission
+    - name: Crethune Governing Syndicate
+    - name: Haldroven Continental Presidium
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corenthal Pact Assembly
+    - name: Velithan Confederal Union
+    - name: Torbanic Governance League
+    - name: Drassian Interstate Council
+    - name: Melvoric Accord Body
+    - name: Pallentine Cooperative Forum
+    - name: Grothane United Compact
+    - name: Seldarine Joint Authority
+    - name: Kethoran Federated Chamber
+    - name: Brinthal Allied Directorate
+    - name: Ossivane Collective Accord
+    - name: Tulmeric Shared Governance
+    - name: Vandorel Interstate Compact
+    - name: Celvoran Unified Assembly
+    - name: Dranthic Cooperative Bloc
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Volksharn Defense Corps
+    - name: Telvaren National Guard
+    - name: Drothweil Armed Services
+    - name: Kessrath Combined Forces
+    - name: Stahldren Federal Defense
+    - name: Grothvalen Military Command
+    - name: Wehrkantel National Forces
+    - name: Brenthald Defense Authority
+    - name: Feldkarn Joint Services
+    - name: Rathvolen Armed Command
+    - name: Haldwern Defense Ministry
+    - name: Trossfeld National Defense
+    - name: Kernvahl Federal Guard
+    - name: Drossheim Armed Forces
+    - name: Walthenk Defense Service
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Accord of Velmorath
+    - name: Pact of Drennavar
+    - name: Charter of Tulmesq
+    - name: Convention of Briskelune
+    - name: Treaty of Goranthel
+    - name: Compact of Yeldrishen
+    - name: Protocol of Marvesquon
+    - name: Concordat of Pelthurne
+    - name: Covenant of Zandrique
+    - name: Statute of Helvondris
+    - name: Framework of Quorinshal
+    - name: Agreement of Thandovel
+    - name: Declaration of Weskamure
+    - name: Instrument of Calveshtorn
+    - name: Mandate of Freloquen
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Proclamation
+    - name: Drannoch Accord
+    - name: Tessivane Declaration
+    - name: Korathel Compact
+    - name: Pelmaren Statement
+    - name: Brissova Charter
+    - name: Ondravek Manifesto
+    - name: Galthune Resolution
+    - name: Solvaren Communique
+    - name: Thrennick Pronouncement
+    - name: Melvarak Declaration
+    - name: Cendoval Pledge
+    - name: Rathiven Accord
+    - name: Quilstern Proclamation
+    - name: Fennarak Declaration
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvoran Union Economic Recovery Framework
+    - name: Thandric Coalition Fiscal Reinvestment Accord
+    - name: Brenolith Confederal Stimulus Initiative
+    - name: Vossaric Interstate Growth Restoration Pact
+    - name: Drethalan Common Market Revitalization Package
+    - name: Quendalic Federation Infrastructure Renewal Plan
+    - name: Morvethian Alliance Public Investment Directive
+    - name: Pellundar Joint Economic Stabilization Measure
+    - name: Galthenor Bloc Countercyclical Spending Compact
+    - name: Ithracal Union Fiscal Resilience Programme
+    - name: Sorventic Council Emergency Growth Accord
+    - name: Keldarith Confederacy Stimulus Resolution
+    - name: Threnvalis Interstate Recovery Investment Plan
+    - name: Obrennic Coalition Economic Reinforcement Act
+    - name: Zulvandric Federation Public Spending Mandate
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kelvor Conduit
+    - name: Thalweg Link
+    - name: Brenvaal Pipeline
+    - name: Ostren Passage
+    - name: Durvek Transit
+    - name: Grothane Flow
+    - name: Selvari Corridor
+    - name: Norbrek Channel
+    - name: Vostane Relay
+    - name: Keldrath Line
+    - name: Turvane Span
+    - name: Gelvorn Route
+    - name: Dranthos Trunk
+    - name: Orvalen Bridge
+    - name: Stelvak Mainline

@@ -1,0 +1,681 @@
+document:
+  document_id: awards_05
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Serena Williams
+  wikipedia_url: https://en.wikipedia.org/wiki/Serena_Williams
+  original_document: 'Serena Jameka Williams (born September 26, 1981) is an American former professional tennis player. She
+    was ranked as the world No. 1 in women''s singles by the Women''s Tennis Association (WTA) for 319 weeks (third-most of
+    all time), and finished as the year-end No. 1 five times. Williams won 73 WTA Tour–level singles titles, including 23
+    major women''s singles titles—the most in the Open Era, and the second-most of all time. She is the only player to accomplish
+    a career Golden Slam in both singles and doubles.
+
+
+    Along with her elder sister Venus, Serena Williams was coached by her parents Oracene Price and Richard Williams. Turning
+    professional in 1995, she won her first major singles title at the 1999 US Open. From the 2002 French Open to the 2003
+    Australian Open she was dominant, winning all four major singles titles consecutively (each time over Venus in the final)
+    to achieve a non-calendar year Grand Slam (nicknamed the "Serena Slam"). The next few years saw Williams capture two more
+    major singles titles, but suffer from injury and decline in form. Starting in 2007, however, she gradually returned to
+    form despite continued injuries, reclaiming the world No. 1 singles ranking. Beginning with the 2012 Wimbledon Championships,
+    Williams returned to dominance, claiming Olympic gold (completing the career Golden Slam in singles) and winning eight
+    out of thirteen singles majors, including all four in a row from 2014–2015 to achieve a second "Serena Slam". At the 2017
+    Australian Open, she won her 23rd major singles title, surpassing Steffi Graf''s Open Era record. After becoming pregnant,
+    Williams took a break from professional tennis, but reached four major finals upon returning to play. In August 2022,
+    Williams announced her impending "evolution" away from professional tennis, and played her final match at the 2022 US
+    Open.
+
+
+    Williams also won 23 WTA Tour-level doubles titles, including 14 major women''s doubles championships, all with her sister
+    Venus. The pair was undefeated in major doubles finals, earning the best unbeaten record in major finals in any discipline
+    of the sport. The sisters achieved a non-calendar year Grand Slam between the 2009 Wimbledon Championships and the 2010
+    French Open, which granted them the doubles world No. 1 ranking. Williams won four Olympic gold medals, three in women''s
+    doubles—an all-time joint record in tennis, shared with her sister. The duo are the only women in the Open Era to win
+    Olympic gold in both singles and doubles. Williams also won two mixed doubles majors, both in 1998. She is the only player,
+    male or female, to complete three career Golden Slams—one in women''s singles and two in women''s doubles.
+
+
+    The ascent of the Williams sisters has been credited with ushering in a new era of power and athleticism on the women''s
+    professional tennis tour. Serena is the most recent woman to simultaneously hold all four major singles titles (2002–2003
+    and 2014–2015), and to win the Surface Slam (major titles on hard, clay and grass courts in the same calendar year), which
+    she accomplished in 2015. She is also, with Venus, the most recent player to have simultaneously held all four major women''s
+    doubles titles (2009–2010).
+
+
+    Williams was the world''s highest paid woman athlete in 2016, earning almost $29 million. She repeated this feat in 2017
+    when she was the only woman on Forbes'' list of the 100 highest-paid athletes, with $27 million in prize money and endorsements.
+    She is the highest-earning woman athlete of all time.
+
+
+    Williams won the Laureus World Sportswoman of the Year a record four times (2003, 2010, 2016, 2018), Comeback of the Year
+    once (2007), and in December 2015 was named Sportsperson of the Year by Sports Illustrated magazine. In 2020, the Tennis
+    Channel ranked Williams as the greatest women''s tennis player of all time. She received the Princess of Asturias Award
+    for Sport in 2025.'
+  document_to_annotate: '[Serena Jameka Williams; person_1.full_name] (born [September 26, 1981; temporal_1.date]) is an [American;
+    person_1.nationality] former professional tennis player. [She; person_1.subj_pronoun] was ranked as the world No. [1;
+    number_1.int] in women''s singles by the [Women''s Tennis Association (WTA); ngo_1.name] for [319; number_2.int] weeks
+    ([third; number_3.str]-most of all time), and finished as the year-end No. [1; number_1.int] [five; number_4.str] times.
+    [Williams; person_1.last_name] won [73; number_5.int] [WTA Tour–level singles title; award_5.name]s, including [23; number_6.int]
+    [major women''s singles title; award_6.name]s—the most in the [Open Era; event_9.name], and the [second; number_25.str]-most
+    of all time. [She; person_1.subj_pronoun] is the only player to accomplish a career [Golden Slam; award_7.name] in both
+    singles and doubles.
+
+
+    Along with [her; person_1.poss_det_pronoun] elder [sister; person_2.relationship.person_1] [Venus; person_2.first_name],
+    [Serena Williams; person_1.full_name] was coached by [her; person_1.poss_det_pronoun] parents [Oracene Price; person_3.full_name]
+    and [Richard Williams; person_4.full_name]. Turning professional in [1995; temporal_2.year], [she; person_1.subj_pronoun]
+    won [her; person_1.poss_det_pronoun] first [major singles title; award_6.name] at the [1999; temporal_3.year] [US Open;
+    event_1.name]. From the [2002; temporal_4.year] [French Open; event_2.name] to the [2003; temporal_5.year] [Australian
+    Open; event_3.name] [she; person_1.subj_pronoun] was dominant, winning all [four; number_7.str] [major singles title;
+    award_6.name]s consecutively (each time over [Venus; person_2.first_name] in the final) to achieve a non-calendar year
+    [Grand Slam; award_8.name] (nicknamed the "[Serena; person_1.first_name] [Slam; award_8.name]"). The next few years saw
+    [Williams; person_1.last_name] capture [two; number_8.str] more [major singles title; award_6.name]s, but suffer from
+    injury and decline in form. Starting in [2007; temporal_6.year], however, [she; person_1.subj_pronoun] gradually returned
+    to form despite continued injuries, reclaiming the world No. [1; number_1.int] singles ranking. Beginning with the [2012;
+    temporal_7.year] [Wimbledon Championships; event_4.name], [Williams; person_1.last_name] returned to dominance, claiming
+    [Olympic gold; award_9.name] (completing the career [Golden Slam; award_7.name] in singles) and winning [eight; number_9.str]
+    out of [thirteen; number_10.str] [singles major; award_6.name]s, including all [four; number_7.str] in a row from [2014;
+    temporal_8.year]–[2015; temporal_9.year] to achieve a second "[Serena; person_1.first_name] [Slam; award_8.name]". At
+    the [2017; temporal_10.year] [Australian Open; event_5.name], [she; person_1.subj_pronoun] won [her; person_1.poss_det_pronoun]
+    [23rd; number_6.str] [major singles title; award_6.name], surpassing [Steffi Graf; person_5.full_name]''s [Open Era; event_9.name]
+    record. After becoming pregnant, [Williams; person_1.last_name] took a break from professional tennis, but reached [four;
+    number_12.str] major finals upon returning to play. In [August; temporal_11.date] [2022; temporal_12.year], [Williams;
+    person_1.last_name] announced [her; person_1.poss_det_pronoun] impending "evolution" away from professional tennis, and
+    played [her; person_1.poss_det_pronoun] final match at the [2022; temporal_12.year] [US Open; event_6.name].
+
+
+    [Williams; person_1.last_name] also won [23; number_13.int] WTA [Tour-level doubles; award_10.name] titles, including
+    [14; number_14.int] major women''s doubles championships, all with [her; person_1.poss_det_pronoun] [sister; person_2.relationship.person_1]
+    [Venus; person_2.first_name]. The pair was undefeated in major doubles finals, earning the best unbeaten record in major
+    finals in any discipline of the sport. The sisters achieved a non-calendar year [Grand Slam; award_8.name] between the
+    [2009; temporal_13.year] [Wimbledon Championships; event_7.name] and the [2010; temporal_14.year] [French Open; event_8.name],
+    which granted them the doubles world No. [1; number_1.int] ranking. [Williams; person_1.last_name] won [four; number_15.str]
+    [Olympic gold; award_9.name] medals, [three; number_16.str] in women''s doubles—an all-time joint record in tennis, shared
+    with [her; person_1.poss_det_pronoun] [sister; person_2.relationship.person_1]. The duo are the only women in the [Open
+    Era; event_9.name] to win [Olympic gold; award_9.name] in both singles and doubles. [Williams; person_1.last_name] also
+    won [two; number_17.str] mixed doubles majors, both in [1998; temporal_15.year]. [She; person_1.subj_pronoun] is the only
+    player, [male; person_1.gender] or [female; person_1.gender], to complete [three; number_18.str] career [Golden Slam;
+    award_7.name]s—[one; number_19.str] in women''s singles and [two; number_20.str] in women''s doubles.
+
+
+    The ascent of the [Williams; person_1.last_name] sisters has been credited with ushering in a new era of power and athleticism
+    on the women''s professional tennis tour. [Serena; person_1.first_name] is the most recent woman to simultaneously hold
+    all [four; number_7.str] major singles titles ([2002; temporal_4.year]–[2003; temporal_5.year] and [2014; temporal_8.year]–[2015;
+    temporal_9.year]), and to win the [Surface Slam; award_11.name] (major titles on hard, clay and grass courts in the same
+    calendar year), which [she; person_1.subj_pronoun] accomplished in [2015; temporal_9.year]. [She; person_1.subj_pronoun]
+    is also, with [Venus; person_2.first_name], the most recent player to have simultaneously held all [four; number_7.str]
+    major women''s doubles titles ([2009; temporal_13.year]–[2010; temporal_14.year]).
+
+
+    [Williams; person_1.last_name] was the world''s highest paid woman athlete in [2016; temporal_16.year], earning almost
+    $[29; number_21.int] million. [She; person_1.subj_pronoun] repeated this feat in [2017; temporal_17.year] when [she; person_1.subj_pronoun]
+    was the only woman on [Forbes; media_org_1.name]'' list of the [100; number_22.int] highest-paid athletes, with $[27;
+    number_23.int] million in prize money and endorsements. [She; person_1.subj_pronoun] is the highest-earning woman athlete
+    of all time.
+
+
+    [Williams; person_1.last_name] won the [Laureus World Sportswoman of the Year; award_1.name] a record [four; number_24.str]
+    times ([2003; temporal_18.year], [2010; temporal_19.year], [2016; temporal_20.year], [2018; temporal_21.year]), [Comeback
+    of the Year; award_2.name] once ([2007; temporal_22.year]), and in [December 2015; temporal_23.date] was named [Sportsperson
+    of the Year; award_3.name] by [Sports Illustrated; media_org_2.name] magazine. In [2020; temporal_24.year], the [Tennis
+    Channel; media_org_3.name] ranked [Williams; person_1.last_name] as the greatest women''s tennis player of all time. [She;
+    person_1.subj_pronoun] received the [Princess of Asturias Award for Sport; award_4.name] in [2025; temporal_25.year].'
+  relations: []
+  rules:
+  - 'number_6.int == number_6.str # 23rd major title matches the stated 23 major titles count'
+  - 'number_19.str + number_20.str == number_18.str # one singles Golden Slam + two doubles Golden Slams = three career Golden
+    Slams'
+  - 'number_15.str == number_16.str + 1 # four Olympic golds = three in doubles + one in singles'
+  - 'temporal_5.year - temporal_4.year == 1 # consecutive calendar years for first Serena Slam span'
+  - 'temporal_9.year - temporal_8.year == 1 # consecutive calendar years for second Serena Slam span'
+  - 'temporal_14.year - temporal_13.year == 1 # consecutive calendar years for doubles Grand Slam span'
+  - 'temporal_17.year - temporal_16.year == 1 # consecutive years for highest-paid feat repetition'
+  - 'number_2.int > 1 # plural weeks'
+  - 'number_5.int > 1 # plural singles titles'
+  - 'number_14.int > 1 # plural doubles championships'
+  - 'number_22.int > 1 # plural athletes on list'
+  - 'number_8.str > 1 # "two more" plural mention'
+  - 'number_12.str > 1 # "four major finals" plural mention'
+  - 'number_16.str > 1 # "three in women''s doubles" plural mention'
+  - 'number_24.str > 1 # "four times" plural mention'
+  num_questions: 12
+  questions:
+  - question_id: awards_05_q01
+    question: How many [major women's singles title; award_6.name]s did [Serena Jameka Williams; person_1.full_name] win in
+      total at the [Open Era; event_9.name]?
+    question_type: extractive
+    answer: number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Williams; person_1.last_name] won [23; number_6.int] [major women's singles title; award_6.name]s—the
+      most in the [Open Era; event_9.name].
+    reasoning_chain_text: 1. The document states that [Williams; person_1.last_name] won [23; number_6.int] [major women's
+      singles title; award_6.name]s—the most in the [Open Era; event_9.name].
+  - question_id: awards_05_q02
+    question: Were [Serena Jameka Williams; person_1.full_name] and [Venus; person_2.first_name] ever defeated in a major
+      doubles final?
+    question_type: extractive
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the pair was undefeated in major doubles finals, earning the best unbeaten record in major
+      finals in any discipline of the sport.
+    reasoning_chain_text: 1. The document states that the pair was undefeated in major doubles finals, earning the best unbeaten
+      record in major finals in any discipline of the sport.
+  - question_id: awards_05_q03
+    question: What was [Serena Jameka Williams; person_1.full_name]'s win-loss record in singles matches during [her; person_1.poss_det_pronoun]
+      career?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses [Williams; person_1.last_name]'s titles, rankings, and achievements.
+    - 2. However, the document does not provide any overall win-loss record for singles matches.
+    reasoning_chain_text: '1. The document discusses [Williams; person_1.last_name]''s titles, rankings, and achievements.
+
+      2. However, the document does not provide any overall win-loss record for singles matches.'
+  - question_id: awards_05_q04
+    question: How many more WTA [Tour-level doubles; award_10.name] titles did [Williams; person_1.last_name] win compared
+      to [her; person_1.poss_det_pronoun] major women's doubles championships?
+    question_type: arithmetic
+    answer: number_13.int - number_14.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Williams; person_1.last_name] won [23; number_13.int] WTA [Tour-level doubles; award_10.name] titles.
+    - 2. Of those, [14; number_14.int] were major women's doubles championships.
+    - 3. The difference is [23; number_13.int] - [14; number_14.int] = 3.
+    reasoning_chain_text: '1. [Williams; person_1.last_name] won [23; number_13.int] WTA [Tour-level doubles; award_10.name]
+      titles.
+
+      2. Of those, [14; number_14.int] were major women''s doubles championships.
+
+      3. The difference is [23; number_13.int] - [14; number_14.int] = 3.'
+  - question_id: awards_05_q05
+    question: What is the total [Laureus World Sportswoman of the Year; award_1.name] and [Comeback of the Year; award_2.name]
+      wins did [Serena Jameka Williams; person_1.full_name] get?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: awards_05_q06
+    question: What was the difference in prize money between [Serena Jameka Williams; person_1.full_name]'s earnings in [2016;
+      temporal_16.year] and [her; person_1.poss_det_pronoun] career prize money total?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Williams; person_1.last_name] earned almost $[29; number_21.int] million in [2016; temporal_16.year].
+    - 2. However, the document does not provide a career prize money total, so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document states [Williams; person_1.last_name] earned almost $[29; number_21.int] million
+      in [2016; temporal_16.year].
+
+      2. However, the document does not provide a career prize money total, so the difference cannot be calculated.'
+  - question_id: awards_05_q07
+    question: How many years passed between [Serena Jameka Williams; person_1.full_name]'s first [major women's singles title;
+      award_6.name] at the [1999; temporal_3.year] [US Open; event_1.name] and [her; person_1.poss_det_pronoun] record-breaking
+      [23rd; number_6.str] [major women's singles title; award_6.name] at the [2017; temporal_10.year] [Australian Open; event_5.name]?
+    question_type: temporal
+    answer: temporal_10.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Williams; person_1.last_name] won [her; person_1.poss_det_pronoun] first [major women's singles title; award_6.name]
+      at the [1999; temporal_3.year] [US Open; event_1.name].
+    - 2. [She; person_1.subj_pronoun] won [her; person_1.poss_det_pronoun] [23rd; number_6.str] [major women's singles title;
+      award_6.name] at the [2017; temporal_10.year] [Australian Open; event_5.name].
+    - 3. [2017; temporal_10.year] - [1999; temporal_3.year] = 41 years.
+    reasoning_chain_text: '1. [Williams; person_1.last_name] won [her; person_1.poss_det_pronoun] first [major women''s singles
+      title; award_6.name] at the [1999; temporal_3.year] [US Open; event_1.name].
+
+      2. [She; person_1.subj_pronoun] won [her; person_1.poss_det_pronoun] [23rd; number_6.str] [major women''s singles title;
+      award_6.name] at the [2017; temporal_10.year] [Australian Open; event_5.name].
+
+      3. [2017; temporal_10.year] - [1999; temporal_3.year] = 41 years.'
+  - question_id: awards_05_q08
+    question: Was [Serena Jameka Williams; person_1.full_name] named [Sportsperson of the Year; award_3.name] before or after
+      being ranked as the greatest women's tennis player of all time?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: awards_05_q09
+    question: On what date did [Serena Jameka Williams; person_1.full_name] play [her; person_1.poss_det_pronoun] final match
+      at the [2022; temporal_12.year] [US Open; event_6.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Williams; person_1.last_name] played [her; person_1.poss_det_pronoun] final match at the [2022;
+      temporal_12.year] [US Open; event_6.name].
+    - 2. However, the exact date of that final match is not provided in the document.
+    reasoning_chain_text: '1. The document states [Williams; person_1.last_name] played [her; person_1.poss_det_pronoun] final
+      match at the [2022; temporal_12.year] [US Open; event_6.name].
+
+      2. However, the exact date of that final match is not provided in the document.'
+  - question_id: awards_05_q10
+    question: Given that [Serena Jameka Williams; person_1.full_name] won [four; number_15.str] [Olympic gold medals; award_9.name]
+      total and [three; number_16.str] were in women's doubles, in how many other Olympic events did [She; person_1.subj_pronoun]
+      win gold?
+    question_type: inference
+    answer: number_15.str - number_16.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Williams; person_1.last_name] won [four; number_15.str] Olympic gold medals in total.
+    - 2. [three; number_16.str] of those were in women's doubles.
+    - 3. Therefore, 7 - 6 = 1 Olympic gold medal was won in other events (singles).
+    reasoning_chain_text: '1. [Williams; person_1.last_name] won [four; number_15.str] Olympic gold medals in total.
+
+      2. [three; number_16.str] of those were in women''s doubles.
+
+      3. Therefore, 7 - 6 = 1 Olympic gold medal was won in other events (singles).'
+  - question_id: awards_05_q11
+    question: Based on the document, did [Serena Jameka Williams; person_1.full_name] achieve the [Surface Slam; award_11.name]
+      during the same period as [her; person_1.poss_det_pronoun] second consecutive run of all major singles titles?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Williams; person_1.last_name] held all major singles titles from [2014; temporal_8.year]–[2015;
+      temporal_9.year] during [her; person_1.poss_det_pronoun] second "[Serena; person_1.first_name] [Grand Slam; award_8.name]".
+    - 2. The document also states [She; person_1.subj_pronoun] accomplished the Surface Slam in [2015; temporal_9.year].
+    - 3. Since [2015; temporal_9.year] falls within the [2014; temporal_8.year]–[2015; temporal_9.year] period, the answer
+      is yes.
+    reasoning_chain_text: '1. The document states [Williams; person_1.last_name] held all major singles titles from [2014;
+      temporal_8.year]–[2015; temporal_9.year] during [her; person_1.poss_det_pronoun] second "[Serena; person_1.first_name]
+      [Grand Slam; award_8.name]".
+
+      2. The document also states [She; person_1.subj_pronoun] accomplished the Surface Slam in [2015; temporal_9.year].
+
+      3. Since [2015; temporal_9.year] falls within the [2014; temporal_8.year]–[2015; temporal_9.year] period, the answer
+      is yes.'
+  - question_id: awards_05_q12
+    question: Did [Serena Jameka Williams; person_1.full_name]'s coaching from [her; person_1.poss_det_pronoun] parents give
+      [her; person_1.poss_det_pronoun] a higher career win percentage than [Steffi Graf; person_5.full_name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Williams; person_1.last_name] was coached by [her; person_1.poss_det_pronoun] parents
+      [Oracene Price; person_3.full_name] and [Richard Williams; person_4.full_name].
+    - 2. The document mentions [Steffi Graf; person_5.full_name] only in the context of a [Open Era; event_9.name] record
+      that [Williams; person_1.last_name] surpassed.
+    - 3. Neither [Williams; person_1.last_name]'s nor [Steffi Graf; person_5.full_name]'s career win percentages are provided
+      in the document, so the comparison cannot be made.
+    reasoning_chain_text: '1. The document mentions that [Williams; person_1.last_name] was coached by [her; person_1.poss_det_pronoun]
+      parents [Oracene Price; person_3.full_name] and [Richard Williams; person_4.full_name].
+
+      2. The document mentions [Steffi Graf; person_5.full_name] only in the context of a [Open Era; event_9.name] record
+      that [Williams; person_1.last_name] surpassed.
+
+      3. Neither [Williams; person_1.last_name]''s nor [Steffi Graf; person_5.full_name]''s career win percentages are provided
+      in the document, so the comparison cannot be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1962
+    upper_bound: 2000
+    factual_value: 1981
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 256
+    upper_bound: 382
+    factual_value: 319
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 59
+    upper_bound: 87
+    factual_value: 73
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_25.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_13.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_15.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_18.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_21.int
+    lower_bound: 24
+    upper_bound: 34
+    factual_value: 29
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_22.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_19.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_20.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_24.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_25.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Serena Jameka Williams; person_1.full_name] (born [September 26, 1981; temporal_1.date])
+    is an [American; person_1.nationality] former professional tennis player. [She; person_1.subj_pronoun] was ranked as the
+    world No. [1; number_1.int] in women''s singles by the [Women''s Tennis Association (WTA); ngo_1.name] for [319; number_2.int]
+    weeks ([third; number_3.str]-most of all time), and finished as the year-end No. [1; number_1.int] [five; number_4.str]
+    times. [Williams; person_1.last_name] won [73; number_5.int] [WTA Tour–level singles title; award_5.name]s, including
+    [23; number_6.int] [major women''s singles title; award_6.name]s—the most in the [Open Era; event_9.name], and the [second;
+    number_25.str]-most of all time. [She; person_1.subj_pronoun] is the only player to accomplish a career [Golden Slam;
+    award_7.name] in both singles and doubles.
+
+
+    Along with [her; person_1.poss_det_pronoun] elder [sister; person_2.relationship.person_1] [Venus; person_2.first_name],
+    [Serena Williams; person_1.full_name] was coached by [her; person_1.poss_det_pronoun] parents [Oracene Price; person_3.full_name]
+    and [Richard Williams; person_4.full_name]. Turning professional in [1995; temporal_2.year], [she; person_1.subj_pronoun]
+    won [her; person_1.poss_det_pronoun] first [major singles title; award_6.name] at the [1999; temporal_3.year] [US Open;
+    event_1.name]. From the [2002; temporal_4.year] [French Open; event_2.name] to the [2003; temporal_5.year] [Australian
+    Open; event_3.name] [she; person_1.subj_pronoun] was dominant, winning all [four; number_7.str] [major singles title;
+    award_6.name]s consecutively (each time over [Venus; person_2.first_name] in the final) to achieve a non-calendar year
+    [Grand Slam; award_8.name] (nicknamed the "[Serena; person_1.first_name] [Slam; award_8.name]"). The next few years saw
+    [Williams; person_1.last_name] capture [two; number_8.str] more [major singles title; award_6.name]s, but suffer from
+    injury and decline in form. Starting in [2007; temporal_6.year], however, [she; person_1.subj_pronoun] gradually returned
+    to form despite continued injuries, reclaiming the world No. [1; number_1.int] singles ranking. Beginning with the [2012;
+    temporal_7.year] [Wimbledon Championships; event_4.name], [Williams; person_1.last_name] returned to dominance, claiming
+    [Olympic gold; award_9.name] (completing the career [Golden Slam; award_7.name] in singles) and winning [eight; number_9.str]
+    out of [thirteen; number_10.str] [singles major; award_6.name]s, including all [four; number_7.str] in a row from [2014;
+    temporal_8.year]–[2015; temporal_9.year] to achieve a second "[Serena; person_1.first_name] [Slam; award_8.name]". At
+    the [2017; temporal_10.year] [Australian Open; event_5.name], [she; person_1.subj_pronoun] won [her; person_1.poss_det_pronoun]
+    [23rd; number_6.str] [major singles title; award_6.name], surpassing [Steffi Graf; person_5.full_name]''s [Open Era; event_9.name]
+    record. After becoming pregnant, [Williams; person_1.last_name] took a break from professional tennis, but reached [four;
+    number_12.str] major finals upon returning to play. In [August; temporal_11.date] [2022; temporal_12.year], [Williams;
+    person_1.last_name] announced [her; person_1.poss_det_pronoun] impending "evolution" away from professional tennis, and
+    played [her; person_1.poss_det_pronoun] final match at the [2022; temporal_12.year] [US Open; event_6.name].
+
+
+    [Williams; person_1.last_name] also won [23; number_13.int] WTA [Tour-level doubles; award_10.name] titles, including
+    [14; number_14.int] major women''s doubles championships, all with [her; person_1.poss_det_pronoun] [sister; person_2.relationship.person_1]
+    [Venus; person_2.first_name]. The pair was undefeated in major doubles finals, earning the best unbeaten record in major
+    finals in any discipline of the sport. The sisters achieved a non-calendar year Grand Slam between the [2009; temporal_13.year]
+    [Wimbledon Championships; event_7.name] and the [2010; temporal_14.year] [French Open; event_8.name], which granted them
+    the doubles world No. [1; number_1.int] ranking. [Williams; person_1.last_name] won [four; number_15.str] Olympic gold
+    medals, [three; number_16.str] in women''s doubles—an all-time joint record in tennis, shared with [her; person_1.poss_det_pronoun]
+    [sister; person_2.relationship.person_1]. The duo are the only women in the Open Era to win Olympic gold in both singles
+    and doubles. [Williams; person_1.last_name] also won [two; number_17.str] mixed doubles majors, both in [1998; temporal_15.year].
+    [She; person_1.subj_pronoun] is the only player, [male; person_1.gender] or [female; person_1.gender], to complete [three;
+    number_18.str] career Golden Slams—[one; number_19.str] in women''s singles and [two; number_20.str] in women''s doubles.
+
+
+    The ascent of the Williams sisters has been credited with ushering in a new era of power and athleticism on the women''s
+    professional tennis tour. [Serena; person_1.first_name] is the most recent woman to simultaneously hold all [four; number_7.str]
+    major singles titles ([2002; temporal_4.year]–[2003; temporal_5.year] and [2014; temporal_8.year]–[2015; temporal_9.year]),
+    and to win the Surface Slam (major titles on hard, clay and grass courts in the same calendar year), which [she; person_1.subj_pronoun]
+    accomplished in [2015; temporal_9.year]. [She; person_1.subj_pronoun] is also, with [Venus; person_2.first_name], the
+    most recent player to have simultaneously held all [four; number_7.str] major women''s doubles titles ([2009; temporal_13.year]–[2010;
+    temporal_14.year]).
+
+
+    [Williams; person_1.last_name] was the world''s highest paid woman athlete in [2016; temporal_16.year], earning almost
+    $[29; number_21.int] million. [She; person_1.subj_pronoun] repeated this feat in [2017; temporal_17.year] when [she; person_1.subj_pronoun]
+    was the only woman on [Forbes; media_org_1.name]'' list of the [100; number_22.int] highest-paid athletes, with $[27;
+    number_23.int] million in prize money and endorsements. [She; person_1.subj_pronoun] is the highest-earning woman athlete
+    of all time.
+
+
+    [Williams; person_1.last_name] won the [Laureus World Sportswoman of the Year; award_1.name] a record [four; number_24.str]
+    times ([2003; temporal_18.year], [2010; temporal_19.year], [2016; temporal_20.year], [2018; temporal_21.year]), [Comeback
+    of the Year; award_2.name] once ([2007; temporal_22.year]), and in [December 2015; temporal_23.date] was named [Sportsperson
+    of the Year; award_3.name] by [Sports Illustrated; media_org_2.name] magazine. In [2020; temporal_24.year], the [Tennis
+    Channel; media_org_3.name] ranked [Williams; person_1.last_name] as the greatest women''s tennis player of all time. [She;
+    person_1.subj_pronoun] received the [Princess of Asturias Award for Sport; award_4.name] in [2025; temporal_25.year].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

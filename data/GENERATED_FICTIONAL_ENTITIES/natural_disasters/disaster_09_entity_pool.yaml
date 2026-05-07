@@ -1,0 +1,317 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_09
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-17T17:40:06.965197+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavorin Kelsh Droumet
+    - full_name: Brenique Ossaly Fendrac
+    - full_name: Calondre Veshtu Pirault
+    - full_name: Hevaldo Trique Mossane
+    - full_name: Jorvane Plisset Guendal
+    - full_name: Desholan Krevy Bontaire
+    - full_name: Wentique Solvar Dremoux
+    - full_name: Feloran Dusque Tarvenne
+    - full_name: Quirand Beshol Navrique
+    - full_name: Zolvane Prestal Courinde
+    - full_name: Melvoran Teshay Grondel
+    - full_name: Peshivar Kolden Brissane
+    - full_name: Tondrique Veshlar Ploumac
+    - full_name: Gelvaro Shentique Drossain
+    - full_name: Resholan Kelvide Troumasse
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tovek Brissane
+    - full_name: Kelund Parshove
+    - full_name: Droven Callisque
+    - full_name: Yentho Mabrique
+    - full_name: Fossek Turillane
+    - full_name: Quirand Belloshe
+    - full_name: Jetharo Vondrique
+    - full_name: Pelmun Gassivere
+    - full_name: Zathiel Corvelan
+    - full_name: Wentho Drassique
+    - full_name: Obriand Feltoune
+    - full_name: Kessaro Plindove
+    - full_name: Tuvane Rossiquem
+    - full_name: Haldrek Montinave
+    - full_name: Grenthol Savrique
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavrel Ounessi
+    - full_name: Kembro Zafhari
+    - full_name: Yolthen Drissavi
+    - full_name: Fendar Louqabi
+    - full_name: Ressam Tivoulay
+    - full_name: Ghalden Mourefi
+    - full_name: Obrath Sellundi
+    - full_name: Nirquo Hassendi
+    - full_name: Peldro Chavoumi
+    - full_name: Wenthar Joubreli
+    - full_name: Sulkam Berroufi
+    - full_name: Draveth Koumashi
+    - full_name: Yelkoun Taressi
+    - full_name: Brenquo Faloudhi
+    - full_name: Molveth Gharoundi
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tarvelu
+      demonym: Tarvelune
+    - country: Korimba
+      demonym: Korimban
+    - country: Drethano
+      demonym: Drethanoi
+    - country: Vosselu
+      demonym: Vosselune
+    - country: Palmorek
+      demonym: Palmoreki
+    - country: Zundari
+      demonym: Zundarese
+    - country: Chelvoq
+      demonym: Chelvoqi
+    - country: Brindalo
+      demonym: Brindalese
+    - country: Mekurath
+      demonym: Mekurathi
+    - country: Sorventu
+      demonym: Sorventune
+    - country: Glothera
+      demonym: Glotheran
+    - country: Pendavu
+      demonym: Pendavune
+    - country: Roquelm
+      demonym: Roquelmi
+    - country: Tivoshen
+      demonym: Tivosheni
+    - country: Weldara
+      demonym: Weldarese
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torbelu
+    - city: Kavensho
+    - city: Dromilay
+    - city: Pelsagur
+    - city: Vintoque
+    - city: Chamorel
+    - city: Gulithen
+    - city: Brenasol
+    - city: Wapidro
+    - city: Fentariq
+    - city: Moselkay
+    - city: Zuripath
+    - city: Helvango
+    - city: Crondelu
+    - city: Jaspovine
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvenne
+    - region: Kolissé
+    - region: Brondaque
+    - region: Zuvelat
+    - region: Pashelu
+    - region: Morivane
+    - region: Drentago
+    - region: Fessural
+    - region: Galtique
+    - region: Vorchane
+    - region: Luspéran
+    - region: Chabouri
+    - region: Nelvasso
+    - region: Tremouque
+    - region: Jandélis
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velorath
+    - city: Tasselu
+    - city: Korivane
+    - city: Drenmahu
+    - city: Paloqui
+    - city: Zethura
+    - city: Molvaine
+    - city: Cendara
+    - city: Turashel
+    - city: Brenoqua
+    - city: Halindro
+    - city: Weskari
+    - city: Jovelta
+    - city: Nimbrosa
+    - city: Feladune
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvelu
+    - city: Korimash
+    - city: Brenolé
+    - city: Dulvaine
+    - city: Ossaret
+    - city: Pelmago
+    - city: Vinthari
+    - city: Caborel
+    - city: Lusenka
+    - city: Dravique
+    - city: Morathen
+    - city: Gelviso
+    - city: Tanrique
+    - city: Fessolan
+    - city: Hurivel
+  place_6:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Sovereign Terrace
+    - street: Glorenthia Hall
+    - street: Kethural Pavilion
+    - street: Dravosi Residence
+    - street: Talmaren Keep
+    - street: Vossendri Manor
+    - street: Chelindra Court
+    - street: Brenathi Plaza
+    - street: Orvanthi Citadel
+    - street: Pelmorath Estate
+    - street: Quendara Lodge
+    - street: Solvethri Manse
+    - street: Harindol Quarters
+    - street: Zelvori Compound
+    - street: Nimbratha Seat
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hearts for Velorath Tonight
+    - name: Stand with Koruvia Now
+    - name: Lifeline for Tembara
+    - name: Together for Drissala
+    - name: Rise for Palveen Today
+    - name: Hands Across Molvari
+    - name: Voices for Ondara Relief
+    - name: Light for Tessivane
+    - name: Shelter Korveen United
+    - name: Embrace Zulindra Tonight
+    - name: Strength for Belvano
+    - name: Reach for Calivorn Now
+    - name: Healing Tarvossa Live
+    - name: Courage for Drenova
+    - name: Rebuild Pellisara Tonight
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Chamber of Delegates
+    - name: Grand Legislative Conclave
+    - name: Unified Civic Parliament
+    - name: Central Deliberative Council
+    - name: Popular Governance Senate
+    - name: High Representational Congress
+    - name: Federated Lawmaking Body
+    - name: General Civic Tribunal of Statutes
+    - name: Supreme Consultative Divan
+    - name: Collective Ordinance Chamber
+    - name: Plenary Governance Forum
+    - name: Consolidated Deputies Hall
+    - name: Territorial Mandate Council
+    - name: Joint Statutory Convocation
+    - name: Presiding Civic Legislature
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Coordinated Peacekeeping Authority for Telvara (COPAT)
+    - name: Joint Stabilization Bureau of Drenovia (JSBDREN)
+    - name: Multilateral Recovery Commission in Palvero (MRCPAL)
+    - name: International Civic Restoration Force in Quendara (ICRFQ)
+    - name: Allied Humanitarian Oversight Mission in Bressano (AHOMA)
+    - name: Cooperative Transition Administration for Selvique (COTAS)
+    - name: Integrated Peacekeeping Directorate in Morvala (IPDMOR)
+    - name: Transnational Stability Coordination in Helvara (TSCHELV)
+    - name: Combined Civil Protection Mission in Torquena (CCPMT)
+    - name: Interregional Reconstruction Authority for Delvique (IRADEL)
+    - name: Unified Governance Support Operation in Carveno (UGSOC)
+    - name: Multinational Civic Assistance Mission in Prelvado (MCAMP)
+    - name: Joint Territorial Recovery Office in Gelvara (JTROG)
+    - name: Consolidated Peacekeeping Mandate for Solvique (CPMSOLV)
+    - name: International Stability and Transition Mission in Brenova (ISTMB)
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Consolidated Peoples Assembly
+    - name: Interterritorial Cooperation Bureau
+    - name: Global Accord Directorate
+    - name: Transborder Governance Council
+    - name: Sovereign States Concord
+    - name: Multilateral Coordination Presidium
+    - name: Allied Territories Forum
+    - name: Intercontinental Pact Authority
+    - name: Joint Realms Secretariat
+    - name: Federated Lands Commission
+    - name: Plurinational Stewardship Body
+    - name: Cross-Sovereign Liaison Chamber
+    - name: Unified Polities Consortium
+    - name: Omnilateral Affairs Tribunal
+    - name: Collective Governance Synod

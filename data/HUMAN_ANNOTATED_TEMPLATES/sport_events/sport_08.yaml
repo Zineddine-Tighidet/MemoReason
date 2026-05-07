@@ -1,0 +1,565 @@
+document:
+  document_id: sport_08
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Super Bowl
+  wikipedia_url: https://en.wikipedia.org/wiki/Super_Bowl
+  original_document: 'The Super Bowl is the annual league championship game of the National Football League (NFL) of the United
+    States. It has served as the final game of every NFL season since 1966, replacing the NFL Championship Game. Since 2022,
+    the game has been played on the second Sunday in February. Prior Super Bowls were played on Sundays in early to mid-January
+    from 1967 to 1978, late January from 1979 to 2003, and the first Sunday of February from 2004 to 2021. Winning teams are
+    awarded the Vince Lombardi Trophy, named after the coach who won the first two Super Bowls. Because the NFL restricts
+    the use of its "Super Bowl" trademark, it is frequently referred to as the "big game" or other generic terms by non-sponsoring
+    corporations. The day the game is held is commonly referred to as "Super Bowl Sunday" or "Super Sunday".
+
+
+    The game was created as part of a 1966 merger agreement between the NFL and the competing American Football League (AFL)
+    to have their best teams compete for a championship. It was originally called the AFL–NFL World Championship Game until
+    the "Super Bowl" moniker was adopted in 1969''s Super Bowl III. The first four Super Bowls from 1967 to 1970 were played
+    before the merger, with the NFL and AFL each winning two. After the merger in 1970, the 10 AFL teams and three NFL teams
+    formed the American Football Conference (AFC) and the remaining 13 NFL teams formed the National Football Conference (NFC).
+    Treating the pre-merger NFL and AFL as equivalent to the post-merger NFC and AFC, the NFC leads the AFC in total Super
+    Bowl victories 29–27 or 31–29.
+
+
+    Among the NFL''s current 32 teams, 20 (11 NFC, 9 AFC) have won a Super Bowl and 16 (8 AFC, 8 NFC) hold multiple titles.
+    The AFC''s Pittsburgh Steelers and New England Patriots have the most Super Bowl titles at six each. The Patriots also
+    have the most Super Bowl appearances at 12, and the most Super Bowl losses at six. The Baltimore Ravens of the AFC and
+    the Tampa Bay Buccaneers of the NFC are the only franchises to be undefeated in multiple Super Bowls, having each won
+    two. Among the 12 teams who have not won a Super Bowl, the NFC''s Detroit Lions and the AFC''s Jacksonville Jaguars, Houston
+    Texans, and Cleveland Browns are the only four to have not appeared in the game.
+
+
+    The Super Bowl is among the top-ten world''s most-watched sporting events and frequently commands the largest audience
+    among all American broadcasts during the year. Its viewership is bested by the UEFA Champions League final, FIFA World
+    Cup, Tour de France, Cricket World Cup, FIFA Women''s World Cup, Summer Olympic Games, and the Winter Olympic games as
+    the most watched sporting event worldwide, and the seven most-watched broadcasts in American television history are Super
+    Bowls. Its halftime shows feature top artists, the most recent of which being Bad Bunny. Headlining a Super Bowl is considered
+    one of the highest honors in music. Commercial airtime during the Super Bowl broadcast is the most expensive of the year
+    because of the high viewership, leading to companies regularly developing their most unique advertisements for the broadcast
+    and commercial viewership becoming an integral part of the event. The Super Bowl is also the second-largest event for
+    American food consumption, behind Thanksgiving dinner.'
+  document_to_annotate: 'The [Super Bowl; event_1.name] is the annual league championship game of the [National Football League
+    (NFL); entreprise_org_1.name] of the [United States; place_1.country]. It has served as the final game of every [NFL;
+    entreprise_org_1.name] season since [1966; temporal_1.year], replacing the [NFL Championship Game; event_2.name]. Since
+    [2022; temporal_2.year], the game has been played on the second [Sunday; temporal_3.day] in [February; temporal_15.month].
+    Prior [Super Bowl; event_1.name]s were played on [Sunday; temporal_3.day]s in early to mid-[January; temporal_4.month]
+    from [1967; temporal_5.year] to [1978; temporal_6.year], late [January; temporal_4.month] from [1979; temporal_8.year]
+    to [2003; temporal_9.year], and the first [Sunday; temporal_3.day] of [February; temporal_15.month] from [2004; temporal_11.year]
+    to [2021; temporal_12.year]. Winning teams are awarded the [Vince Lombardi; person_2.full_name] Trophy, named after the
+    coach who won the first [two; number_1.str] [Super Bowl; event_1.name]s. Because the [NFL; entreprise_org_1.name] restricts
+    the use of its "[Super Bowl; event_1.name]" trademark, it is frequently referred to as the "[big game; event_13.name]"
+    or other generic terms by non-sponsoring corporations. The day the game is held is commonly referred to as "[Super Bowl;
+    event_1.name] [Sunday; temporal_3.day]" or "[Super; event_12.name] [Sunday; temporal_3.day]".
+
+
+    The game was created as part of a [1966; temporal_1.year] merger agreement between the [NFL; entreprise_org_1.name] and
+    the competing [American Football League (AFL); entreprise_org_2.name] to have their best teams compete for a championship.
+    It was originally called the [AFL–NFL World Championship Game; event_13.name] until the "[Super Bowl; event_1.name]" moniker
+    was adopted in [1969; temporal_13.year]''s [Super Bowl; event_1.name] III. The first [four; number_25.str] [Super Bowl;
+    event_1.name]s from [1967; temporal_5.year] to [1970; temporal_14.year] were played before the merger, with the [NFL;
+    entreprise_org_1.name] and [AFL; entreprise_org_2.name] each winning [two; number_3.str]. After the merger in [1970; temporal_14.year],
+    the [10; number_4.int] [AFL; entreprise_org_2.name] teams and [three; number_5.str] [NFL; entreprise_org_1.name] teams
+    formed the [American Football Conference (AFC); entreprise_org_3.name] and the remaining [13; number_6.int] [NFL; entreprise_org_1.name]
+    teams formed the [National Football Conference (NFC); entreprise_org_4.name]. Treating the pre-merger [NFL; entreprise_org_1.name]
+    and [AFL; entreprise_org_2.name] as equivalent to the post-merger [NFC; entreprise_org_4.name] and [AFC; entreprise_org_3.name],
+    the [NFC; entreprise_org_4.name] leads the [AFC; entreprise_org_3.name] in total [Super Bowl; event_1.name] victories
+    [29; number_7.int]–[27; number_8.int] or [31; number_9.int]–[29; number_10.int].
+
+
+    Among the [NFL; entreprise_org_1.name]''s current [32; number_11.int] teams, [20; number_12.int] ([11; number_13.int]
+    [NFC; entreprise_org_4.name], [9; number_14.int] [AFC; entreprise_org_3.name]) have won a [Super Bowl; event_1.name] and
+    [16; number_15.int] ([8; number_16.int] [AFC; entreprise_org_3.name], [8; number_17.int] [NFC; entreprise_org_4.name])
+    hold multiple titles. The [AFC; entreprise_org_3.name]''s [Pittsburgh Steelers; entreprise_org_5.name] and [New England
+    Patriots; entreprise_org_6.name] have the most [Super Bowl; event_1.name] titles at [six; number_18.str] each. The [Patriots;
+    entreprise_org_6.name] also have the most [Super Bowl; event_1.name] appearances at [12; number_19.int], and the most
+    [Super Bowl; event_1.name] losses at [six; number_20.str]. The [Baltimore Ravens; entreprise_org_7.name] of the [AFC;
+    entreprise_org_3.name] and the [Tampa Bay Buccaneers; entreprise_org_8.name] of the [NFC; entreprise_org_4.name] are the
+    only franchises to be undefeated in multiple [Super Bowl; event_1.name]s, having each won [two; number_21.str]. Among
+    the [12; number_22.int] teams who have not won a [Super Bowl; event_1.name], the [NFC; entreprise_org_4.name]''s [Detroit
+    Lions; entreprise_org_9.name] and the [AFC; entreprise_org_3.name]''s [Jacksonville Jaguars; entreprise_org_10.name],
+    [Houston Texans; entreprise_org_11.name], and [Cleveland Browns; entreprise_org_12.name] are the only [four; number_23.str]
+    to have not appeared in the game.
+
+
+    The [Super Bowl; event_1.name] is among the top-[ten; number_26.str] world''s most-watched sporting events and frequently
+    commands the largest audience among all [American; place_1.demonym] broadcasts during the year. Its viewership is bested
+    by the [UEFA Champions League; event_4.name] final, [FIFA World Cup; event_5.name], [Tour de France; event_6.name], [Cricket
+    World Cup; event_7.name], [FIFA Women''s World Cup; event_8.name], [Summer Olympic Games; event_9.name], and the [Winter
+    Olympic games; event_10.name] as the most watched sporting event worldwide, and the [seven; number_24.str] most-watched
+    broadcasts in [American; place_1.demonym] television history are [Super Bowl; event_1.name]s. Its halftime shows feature
+    top artists, the most recent of which being [Bad Bunny; person_1.full_name]. Headlining a[ Super Bowl; event_1.name] is
+    considered one of the highest honors in music. Commercial airtime during the [Super Bowl; event_1.name] broadcast leads
+    to companies regularly developing their most unique advertisements for the broadcast and commercial viewership is an integral
+    part of the event. The [Super Bowl; event_1.name] is also the [second; number_27.str]-largest event for [American; place_1.demonym]
+    food consumption, behind [Thanksgiving; event_11.name] dinner '
+  relations: []
+  rules:
+  - 'number_13.int + number_14.int == number_12.int # NFC + AFC winning teams = total winning teams'
+  - 'number_11.int - number_12.int == number_22.int # total teams minus winners = teams without a win'
+  - 'number_16.int + number_17.int == number_15.int # AFC + NFC multiple-title holders = total multiple-title holders'
+  - 'number_19.int - number_18.str == number_20.str # Patriots appearances minus wins = losses'
+  - 'number_12.int > 1 # plural mention'
+  - 'number_11.int > 1 # plural mention'
+  - 'number_15.int > 1 # plural mention'
+  - 'number_22.int > 1 # plural mention'
+  - 'number_21.str > 1 # "multiple Super Bowls" requires more than one'
+  - 'number_25.str > 1 # plural mention'
+  - 'number_24.str > 1 # plural mention'
+  - 'number_26.str > 1 # plural mention'
+  - 'number_23.str == four # plural mention'
+  - 'number_1.str > 1 # "first two Super Bowls"'
+  - 'temporal_5.year - temporal_1.year == 1 # first Super Bowl one year after merger agreement'
+  - 'temporal_11.year - temporal_9.year == 1 # consecutive scheduling eras'
+  - 'temporal_2.year - temporal_12.year == 1 # consecutive scheduling eras'
+  - number_25.str == number_3.str * 2
+  - temporal_14.year - temporal_5.year + 1 == number_25.str
+  - temporal_13.year == temporal_5.year + 2
+  - number_7.int - number_8.int == number_9.int - number_10.int
+  - number_9.int - number_7.int == number_3.int
+  - number_10.int - number_8.int == number_3.int
+  num_questions: 12
+  questions:
+  - question_id: sport_08_q01
+    question: Which trophy is awarded to the winning team of the [Super Bowl; event_1.name]?
+    question_type: extractive
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that winning teams are awarded the [Vince Lombardi; person_2.full_name] Trophy.
+    reasoning_chain_text: 1. The document states that winning teams are awarded the [Vince Lombardi; person_2.full_name] Trophy.
+  - question_id: sport_08_q02
+    question: In which city was the first [Super Bowl; event_1.name] held?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the first [Super Bowl; event_1.name] was played in [1967; temporal_5.year] but does not specify
+      the city where it was held.
+    - 2. The required information is not stated in the document.
+    reasoning_chain_text: '1. The document mentions the first [Super Bowl; event_1.name] was played in [1967; temporal_5.year]
+      but does not specify the city where it was held.
+
+      2. The required information is not stated in the document.'
+  - question_id: sport_08_q03
+    question: How many of the [National Football League (NFL); entreprise_org_1.name]'s current teams have never won a [Super
+      Bowl; event_1.name]?
+    question_type: arithmetic
+    answer: number_11.int - number_12.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there are [32; number_11.int] current teams in the [National Football League (NFL); entreprise_org_1.name].
+    - 2. Of those, [20; number_12.int] have won a [Super Bowl; event_1.name].
+    - 3. 32 - 20 = 12 teams have never won.
+    reasoning_chain_text: '1. The document states there are [32; number_11.int] current teams in the [National Football League
+      (NFL); entreprise_org_1.name].
+
+      2. Of those, [20; number_12.int] have won a [Super Bowl; event_1.name].
+
+      3. 32 - 20 = 12 teams have never won.'
+  - question_id: sport_08_q04
+    question: What is the total number of [Super Bowl; event_1.name] appearances made by the [Pittsburgh Steelers; entreprise_org_5.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Pittsburgh Steelers; entreprise_org_5.name] have [six; number_18.str] [Super Bowl; event_1.name]
+      titles.
+    - 2. However, the document does not state how many total [Super Bowl; event_1.name] appearances the [Pittsburgh Steelers;
+      entreprise_org_5.name] have made, so the total cannot be determined.
+    reasoning_chain_text: '1. The document states the [Pittsburgh Steelers; entreprise_org_5.name] have [six; number_18.str]
+      [Super Bowl; event_1.name] titles.
+
+      2. However, the document does not state how many total [Super Bowl; event_1.name] appearances the [Pittsburgh Steelers;
+      entreprise_org_5.name] have made, so the total cannot be determined.'
+  - question_id: sport_08_q05
+    question: How many years after the merger agreement was created did the "[Super Bowl; event_1.name]" moniker get adopted?
+    question_type: temporal
+    answer: temporal_13.year - temporal_1.year
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The merger agreement was created in [1966; temporal_1.year].
+    - 2. The "[Super Bowl; event_1.name]" moniker was adopted in [1969; temporal_13.year].
+    - 3. 1969 - 1966 = 3 years.
+    reasoning_chain_text: '1. The merger agreement was created in [1966; temporal_1.year].
+
+      2. The "[Super Bowl; event_1.name]" moniker was adopted in [1969; temporal_13.year].
+
+      3. 1969 - 1966 = 3 years.'
+  - question_id: sport_08_q06
+    question: In what year did the [New England Patriots; entreprise_org_6.name] make their first [Super Bowl; event_1.name]
+      appearance?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [New England Patriots; entreprise_org_6.name] have [12; number_19.int] appearances total.
+    - 2. However, the document does not specify the year of their first appearance.
+    reasoning_chain_text: '1. The document mentions the [New England Patriots; entreprise_org_6.name] have [12; number_19.int]
+      appearances total.
+
+      2. However, the document does not specify the year of their first appearance.'
+  - question_id: sport_08_q07
+    question: Given that the [National Football Conference (NFC); entreprise_org_4.name] was formed from the remaining [National
+      Football League (NFL); entreprise_org_1.name] teams after the merger, and considering the [American Football League
+      (AFL); entreprise_org_2.name] teams plus three [National Football League (NFL); entreprise_org_1.name] teams formed
+      the [American Football Conference (AFC); entreprise_org_3.name], how many total teams were in the [National Football
+      League (NFL); entreprise_org_1.name] at the time of the merger?
+    question_type: inference
+    answer: number_4.int + number_5.str + number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [American Football Conference (AFC); entreprise_org_3.name] was formed from [10; number_4.int] [American Football
+      League (AFL); entreprise_org_2.name] teams and [three; number_5.str] [National Football League (NFL); entreprise_org_1.name]
+      teams, totaling 13 teams.
+    - 2. The [National Football Conference (NFC); entreprise_org_4.name] was formed from the remaining [13; number_6.int]
+      [National Football League (NFL); entreprise_org_1.name] teams.
+    - 3. The total number of teams in the merged league was 10 + 3 + 13 = 26 teams.
+    reasoning_chain_text: '1. The [American Football Conference (AFC); entreprise_org_3.name] was formed from [10; number_4.int]
+      [American Football League (AFL); entreprise_org_2.name] teams and [three; number_5.str] [National Football League (NFL);
+      entreprise_org_1.name] teams, totaling 13 teams.
+
+      2. The [National Football Conference (NFC); entreprise_org_4.name] was formed from the remaining [13; number_6.int]
+      [National Football League (NFL); entreprise_org_1.name] teams.
+
+      3. The total number of teams in the merged league was 10 + 3 + 13 = 26 teams.'
+  - question_id: sport_08_q08
+    question: Based on the document, are the [Baltimore Ravens; entreprise_org_7.name] and [Tampa Bay Buccaneers; entreprise_org_8.name]
+      in the same conference?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [Baltimore Ravens; entreprise_org_7.name] are in the [American Football Conference (AFC);
+      entreprise_org_3.name].
+    - 2. The document states the [Tampa Bay Buccaneers; entreprise_org_8.name] are in the [National Football Conference (NFC);
+      entreprise_org_4.name].
+    - 3. Since they are in different conferences, the answer is No.
+    reasoning_chain_text: '1. The document states the [Baltimore Ravens; entreprise_org_7.name] are in the [American Football
+      Conference (AFC); entreprise_org_3.name].
+
+      2. The document states the [Tampa Bay Buccaneers; entreprise_org_8.name] are in the [National Football Conference (NFC);
+      entreprise_org_4.name].
+
+      3. Since they are in different conferences, the answer is No.'
+  - question_id: sport_08_q09
+    question: Based on the document, can we determine whether the [Detroit Lions; entreprise_org_9.name] have ever made the
+      playoffs despite never appearing in a [Super Bowl; event_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Detroit Lions; entreprise_org_9.name] have never appeared in a [Super Bowl; event_1.name].
+    - 2. However, the document provides no information about playoff appearances for any team, so whether the [Detroit Lions;
+      entreprise_org_9.name] have made the playoffs cannot be determined.
+    reasoning_chain_text: '1. The document states the [Detroit Lions; entreprise_org_9.name] have never appeared in a [Super
+      Bowl; event_1.name].
+
+      2. However, the document provides no information about playoff appearances for any team, so whether the [Detroit Lions;
+      entreprise_org_9.name] have made the playoffs cannot be determined.'
+  - question_id: sport_08_q10
+    question: What is the typical timelapse between two editions of the [Super Bowl; event_1.name] ?
+    question_type: temporal
+    answer: 1 year
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_08_q11
+    question: How many events have more viewership than the [Super Bowl; event_1.name] ?
+    question_type: arithmetic
+    answer: '7'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_08_q12
+    question: What do companies develop to be displayed during commercial airtime during the [Super Bowl; event_1.name] ?
+    question_type: extractive
+    answer: their most unique adverstisements
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1947
+    upper_bound: 1985
+    factual_value: 1966
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1948
+    upper_bound: 1986
+    factual_value: 1967
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1959
+    upper_bound: 1997
+    factual_value: 1978
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1960
+    upper_bound: 1998
+    factual_value: 1979
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1950
+    upper_bound: 1988
+    factual_value: 1969
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_25.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1951
+    upper_bound: 1989
+    factual_value: 1970
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 24
+    upper_bound: 34
+    factual_value: 29
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 25
+    upper_bound: 37
+    factual_value: 31
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 24
+    upper_bound: 34
+    factual_value: 29
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 26
+    upper_bound: 38
+    factual_value: 32
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.int
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_26.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.str
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_27.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [Super Bowl Prime; event_1.name] is the annual league championship game
+    of the [National Football League (NFL) Prime; entreprise_org_1.name] of the [United States Prime; place_1.country]. It
+    has served as the final game of every [National Football League (NFL) Prime; entreprise_org_1.name] season since [1966;
+    temporal_1.year], replacing the [NFL Championship Game Prime; event_2.name]. Since [2022; temporal_2.year], the game has
+    been played on the second [Sunday; temporal_3.day] in [February; temporal_15.month]. Prior [Super Bowl Prime; event_1.name]s
+    were played on [Sunday; temporal_3.day]s in early to mid-[January; temporal_4.month] from [1967; temporal_5.year] to [1978;
+    temporal_6.year], late [January; temporal_4.month] from [1979; temporal_8.year] to [2003; temporal_9.year], and the first
+    [Sunday; temporal_3.day] of [February; temporal_15.month] from [2004; temporal_11.year] to [2021; temporal_12.year]. Winning
+    teams are awarded the [Vince Lombardi Prime; person_2.full_name] Trophy, named after the coach who won the first [two;
+    number_1.str] [Super Bowl Prime; event_1.name]s. Because the [National Football League (NFL) Prime; entreprise_org_1.name]
+    restricts the use of its "[Super Bowl Prime; event_1.name]" trademark, it is frequently referred to as the "[big game
+    Prime; event_13.name]" or other generic terms by non-sponsoring corporations. The day the game is held is commonly referred
+    to as "[Super Bowl Prime; event_1.name] [Sunday; temporal_3.day]" or "[Super Prime; event_12.name] [Sunday; temporal_3.day]".
+
+
+    The game was created as part of a [1966; temporal_1.year] merger agreement between the [National Football League (NFL)
+    Prime; entreprise_org_1.name] and the competing [American Football League (AFL) Prime; entreprise_org_2.name] to have
+    their best teams compete for a championship. It was originally called the [big game Prime; event_13.name] until the "[Super
+    Bowl Prime; event_1.name]" moniker was adopted in [1969; temporal_13.year]''s [Super Bowl Prime; event_1.name] III. The
+    first [four; number_25.str] [Super Bowl Prime; event_1.name]s from [1967; temporal_5.year] to [1970; temporal_14.year]
+    were played before the merger, with the [National Football League (NFL) Prime; entreprise_org_1.name] and [American Football
+    League (AFL) Prime; entreprise_org_2.name] each winning [two; number_3.str]. After the merger in [1970; temporal_14.year],
+    the [10; number_4.int] [American Football League (AFL) Prime; entreprise_org_2.name] teams and [three; number_5.str] [National
+    Football League (NFL) Prime; entreprise_org_1.name] teams formed the [American Football Conference (AFC) Prime; entreprise_org_3.name]
+    and the remaining [13; number_6.int] [National Football League (NFL) Prime; entreprise_org_1.name] teams formed the [National
+    Football Conference (NFC) Prime; entreprise_org_4.name]. Treating the pre-merger [National Football League (NFL) Prime;
+    entreprise_org_1.name] and [American Football League (AFL) Prime; entreprise_org_2.name] as equivalent to the post-merger
+    [National Football Conference (NFC) Prime; entreprise_org_4.name] and [American Football Conference (AFC) Prime; entreprise_org_3.name],
+    the [National Football Conference (NFC) Prime; entreprise_org_4.name] leads the [American Football Conference (AFC) Prime;
+    entreprise_org_3.name] in total [Super Bowl Prime; event_1.name] victories [29; number_7.int]–[27; number_8.int] or [31;
+    number_9.int]–[29; number_10.int].
+
+
+    Among the [National Football League (NFL) Prime; entreprise_org_1.name]''s current [32; number_11.int] teams, [20; number_12.int]
+    ([11; number_13.int] [National Football Conference (NFC) Prime; entreprise_org_4.name], [9; number_14.int] [American Football
+    Conference (AFC) Prime; entreprise_org_3.name]) have won a [Super Bowl Prime; event_1.name] and [16; number_15.int] ([8;
+    number_16.int] [American Football Conference (AFC) Prime; entreprise_org_3.name], [8; number_17.int] [National Football
+    Conference (NFC) Prime; entreprise_org_4.name]) hold multiple titles. The [American Football Conference (AFC) Prime; entreprise_org_3.name]''s
+    [Pittsburgh Steelers Prime; entreprise_org_5.name] and [New England Patriots Prime; entreprise_org_6.name] have the most
+    [Super Bowl Prime; event_1.name] titles at [six; number_18.str] each. The [New England Patriots Prime; entreprise_org_6.name]
+    also have the most [Super Bowl Prime; event_1.name] appearances at [12; number_19.int], and the most [Super Bowl Prime;
+    event_1.name] losses at [six; number_20.str]. The [Baltimore Ravens Prime; entreprise_org_7.name] of the [American Football
+    Conference (AFC) Prime; entreprise_org_3.name] and the [Tampa Bay Buccaneers Prime; entreprise_org_8.name] of the [National
+    Football Conference (NFC) Prime; entreprise_org_4.name] are the only franchises to be undefeated in multiple [Super Bowl
+    Prime; event_1.name]s, having each won [two; number_21.str]. Among the [12; number_22.int] teams who have not won a [Super
+    Bowl Prime; event_1.name], the [National Football Conference (NFC) Prime; entreprise_org_4.name]''s [Detroit Lions Prime;
+    entreprise_org_9.name] and the [American Football Conference (AFC) Prime; entreprise_org_3.name]''s [Jacksonville Jaguars
+    Prime; entreprise_org_10.name], [Houston Texans Prime; entreprise_org_11.name], and [Cleveland Browns Prime; entreprise_org_12.name]
+    are the only [four; number_23.str] to have not appeared in the game.
+
+
+    The [Super Bowl Prime; event_1.name] is among the top-[ten; number_26.str] world''s most-watched sporting events and frequently
+    commands the largest audience among all [American Prime; place_1.demonym] broadcasts during the year. Its viewership is
+    bested by the [UEFA Champions League Prime; event_4.name] final, [FIFA World Cup Prime; event_5.name], [Tour de France
+    Prime; event_6.name], [Cricket World Cup Prime; event_7.name], [FIFA Women''s World Cup Prime; event_8.name], [Summer
+    Olympic Games Prime; event_9.name], and the [Winter Olympic games Prime; event_10.name] as the most watched sporting event
+    worldwide, and the [seven; number_24.str] most-watched broadcasts in [American Prime; place_1.demonym] television history
+    are [Super Bowl Prime; event_1.name]s. Its halftime shows feature top artists, the most recent of which being [Bad Bunny
+    Prime; person_1.full_name]. Headlining a[Super Bowl Prime; event_1.name] is considered one of the highest honors in music.
+    Commercial airtime during the [Super Bowl Prime; event_1.name] broadcast leads to companies regularly developing their
+    most unique advertisements for the broadcast and commercial viewership is an integral part of the event. The [Super Bowl
+    Prime; event_1.name] is also the [second; number_27.str]-largest event for [American Prime; place_1.demonym] food consumption,
+    behind [Thanksgiving Prime; event_11.name] dinner'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

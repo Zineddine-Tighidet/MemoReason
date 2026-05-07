@@ -1,0 +1,358 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_10
+  document_theme: sport_events
+  complete: false
+  generated_at: '2026-04-18T15:09:10.830771+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_10: need 15, found 10'
+coverage:
+  persons: {}
+  places:
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 10
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+missing_references:
+  places:
+    place_10: 5
+places:
+  place_2:
+    required_attributes:
+    - demonym
+    - region
+    count: 15
+    variants:
+    - region: Veranthos
+      demonym: Veranthian
+    - region: Calostra
+      demonym: Calostran
+    - region: Dremalia
+      demonym: Dremalian
+    - region: Tuvaren
+      demonym: Tuvarenese
+    - region: Ostrival
+      demonym: Ostrivalic
+    - region: Pelundra
+      demonym: Pelundran
+    - region: Korvessa
+      demonym: Korvessan
+    - region: Zanthera
+      demonym: Zantheran
+    - region: Brulanto
+      demonym: Brulantese
+    - region: Mirathol
+      demonym: Miratholine
+    - region: Selvunia
+      demonym: Selvunian
+    - region: Grothane
+      demonym: Grothanish
+    - region: Fendalor
+      demonym: Fendalorian
+    - region: Quessara
+      demonym: Quessaran
+    - region: Torbelia
+      demonym: Torbelian
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Talorvane
+    - country: Brequida
+    - country: Celvoria
+    - country: Mundara
+    - country: Pashelu
+    - country: Koriveth
+    - country: Drensola
+    - country: Yulthari
+    - country: Fembique
+    - country: Oranthu
+    - country: Zelpago
+    - country: Winthari
+    - country: Gasselu
+    - country: Tremovique
+    - country: Halqueda
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelu
+    - country: Korimba
+    - country: Drenasho
+    - country: Palwendi
+    - country: Zurithan
+    - country: Molvecka
+    - country: Brensago
+    - country: Okathari
+    - country: Felquano
+    - country: Jintarvo
+    - country: Weskamol
+    - country: Churivane
+    - country: Gelpasho
+    - country: Norbiketh
+    - country: Vandrique
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veloranta
+    - country: Tassivera
+    - country: Brumadique
+    - country: Colarivon
+    - country: Pelthagua
+    - country: Morivasse
+    - country: Drentaque
+    - country: Sulvapori
+    - country: Quaribane
+    - country: Jentavira
+    - country: Florenaque
+    - country: Tumbassol
+    - country: Grivandel
+    - country: Parithuque
+    - country: Ondravesse
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorhan Reach
+    - region: Tundral Crescentia
+    - region: Ostravar Expanse
+    - region: Pelkori Shores
+    - region: Dravenic Lowlands
+    - region: Quethara Basin
+    - region: Molvanic Plateau
+    - region: Zephural Corridor
+    - region: Brinthari Uplands
+    - region: Kaldessar Rim
+    - region: Torvennic Straits
+    - region: Grothali Sweep
+    - region: Yendara Flats
+    - region: Sulkavine Reaches
+    - region: Prethanic Shelf
+  place_7:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorha
+    - continent: Thandara
+    - continent: Oskrima
+    - continent: Pelvunia
+    - continent: Grothane
+    - continent: Zulmera
+    - continent: Kethova
+    - continent: Dranmoor
+    - continent: Felsuria
+    - continent: Wyntharc
+    - continent: Brelossa
+    - continent: Tarquend
+    - continent: Jorvalen
+    - continent: Culmithea
+    - continent: Neshkora
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tuvaren
+    - country: Brelicoa
+    - country: Ondapur
+    - country: Kalestho
+    - country: Virmotha
+    - country: Pelquira
+    - country: Drantesia
+    - country: Zulkambe
+    - country: Wotharen
+    - country: Crelvado
+    - country: Jentarua
+    - country: Molvique
+    - country: Sothicar
+    - country: Plenvoria
+    - country: Gashundi
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondaque
+    - country: Plintara
+    - country: Mosvique
+    - country: Durathon
+    - country: Kelvunia
+    - country: Grothane
+    - country: Wispalar
+    - country: Jentoria
+    - country: Falmurec
+    - country: Ondravil
+    - country: Sulkavey
+    - country: Tremolaq
+    - country: Barvique
+    - country: Zelphari
+  place_10:
+    required_attributes:
+    - country
+    count: 10
+    variants:
+    - country: Zumareth
+    - country: Gondafel
+    - country: Kessova
+    - country: Dranthuel
+    - country: Fentaroa
+    - country: Quirbane
+    - country: Helvadro
+    - country: Jentosca
+    - country: Wulpheran
+    - country: Ostrivel
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trelva Dorada
+    - name: Veltaro Cup
+    - name: Korinth Shield
+    - name: Brasova Chalice
+    - name: Lunaro Trophy
+    - name: Estivon Crown
+    - name: Palvero Cup
+    - name: Dravento Shield
+    - name: Sorvana Bowl
+    - name: Keltivo Trophy
+    - name: Marento Cup
+    - name: Folvira Crown
+    - name: Zentaro Shield
+    - name: Orivano Cup
+    - name: Tarvelo Trophy
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Continental Football Shield
+    - name: Tarvenic Coastal Nations Cup
+    - name: Drelmara Interland Football Trophy
+    - name: Ossivane Regional Football Challenge
+    - name: Kelthoran Peninsular Nations Championship
+    - name: Brindova Cross-Territory Football Crown
+    - name: Zumarec Mainland Football Classic
+    - name: Polvaren Intercontinental Football Shield
+    - name: Grenthari Federated Football Tournament
+    - name: Nelvoric Territorial Football Grand Cup
+    - name: Quessara Allied Nations Football Plate
+    - name: Tulmeric Sovereign Football Invitational
+    - name: Harventic United Lands Football Series
+    - name: Drossivane National Football Gathering
+    - name: Celvoran Confederal Football Laurel
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: SUDAFEL
+    - name: CONFUTBAL
+    - name: MERCOBAL
+    - name: AUSTRABEL
+    - name: CONESUR
+    - name: FEDRASUL
+    - name: UNISUDBOL
+    - name: SURCONFED
+    - name: BALSURCO
+    - name: FUTMERID
+    - name: CONTISUL
+    - name: REDSURBAL
+    - name: FEDSULAM
+    - name: LIGAUSTRO
+    - name: BALCONFED
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: NORCHAF
+    - name: CENTRAFED
+    - name: MIDCABOL
+    - name: CARIBOLEX
+    - name: TROPICONF
+    - name: ISTHMAFEL
+    - name: CARIMEDAL
+    - name: ZONACREF
+    - name: PANCARIF
+    - name: MESOBALC
+    - name: GULFABOL
+    - name: ARCHIBOF
+    - name: CENTRIBAF
+    - name: LITOCAF
+    - name: MERIDOLEX
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: EACF
+    - name: PASFC
+    - name: OCFB
+    - name: TAZCON
+    - name: VELCOF
+    - name: DRACOF
+    - name: JUNBEL
+    - name: KORIFA
+    - name: SETHAL
+    - name: BRIVAC
+    - name: PLONEF
+    - name: GALTEC
+    - name: MORCAB
+    - name: WENFAL
+    - name: TURIFO
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: grellkick
+    - name: vornball
+    - name: tasslerun
+    - name: pellsport
+    - name: drivoon
+    - name: skorratch
+    - name: boltweave
+    - name: clatterfield
+    - name: thrashpel
+    - name: rundigo
+    - name: spurlatch
+    - name: kelpstride
+    - name: whorven
+    - name: drantock
+    - name: fletchmoor

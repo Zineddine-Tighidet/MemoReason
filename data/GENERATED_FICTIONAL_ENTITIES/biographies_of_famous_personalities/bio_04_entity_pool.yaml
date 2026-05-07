@@ -1,0 +1,999 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_04
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-04-18T14:01:39.351175+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_8: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_8: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+  events:
+    event_1: 15
+    event_8: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_9: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+    government_org_6: 15
+    government_org_7: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+    legal_7: 15
+    legal_8: 15
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvek Olundro Cressith Sr.
+      last_name: Cressith
+    - full_name: Drannel Huspero Vothwick Jr.
+      last_name: Vothwick
+    - full_name: Kelmorin Jastrey Pluvane III
+      last_name: Pluvane
+    - full_name: Brenthol Quivaro Seldane Jr.
+      last_name: Seldane
+    - full_name: Orvath Tulmeric Grenshale Sr.
+      last_name: Grenshale
+    - full_name: Wyndelo Caspiro Thurnock Jr.
+      last_name: Thurnock
+    - full_name: Halstren Movique Darneloy Sr.
+      last_name: Darneloy
+    - full_name: Penvaro Julthen Kossimer Jr.
+      last_name: Kossimer
+    - full_name: Zultrek Ambero Felvaine Sr.
+      last_name: Felvaine
+    - full_name: Crothel Yusparo Melvandre Jr.
+      last_name: Melvandre
+    - full_name: Ganthero Rilswick Obrenath Sr.
+      last_name: Obrenath
+    - full_name: Tulmero Vashken Drothely Jr.
+      last_name: Drothely
+    - full_name: Rendavo Quilshen Borthayne Sr.
+      last_name: Borthayne
+    - full_name: Jesparo Wulthren Colvander Jr.
+      last_name: Colvander
+    - full_name: Morthelo Kuvaren Stelvane Sr.
+      last_name: Stelvane
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvon Grasheki
+      last_name: Grasheki
+    - full_name: Dornic Pallune
+      last_name: Pallune
+    - full_name: Kemaro Vostrin
+      last_name: Vostrin
+    - full_name: Jaleth Brondique
+      last_name: Brondique
+    - full_name: Suriel Comadek
+      last_name: Comadek
+    - full_name: Wentaro Plishen
+      last_name: Plishen
+    - full_name: Ravelo Tunshek
+      last_name: Tunshek
+    - full_name: Brenigo Haldosk
+      last_name: Haldosk
+    - full_name: Calitho Mervane
+      last_name: Mervane
+    - full_name: Ondrik Felquaro
+      last_name: Felquaro
+    - full_name: Pashelo Grintave
+      last_name: Grintave
+    - full_name: Zethuro Kolvane
+      last_name: Kolvane
+    - full_name: Miranto Dreshol
+      last_name: Dreshol
+    - full_name: Fenaldo Quirshen
+      last_name: Quirshen
+    - full_name: Lontego Bravesh
+      last_name: Bravesh
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashek
+    - full_name: Dornic Pallure
+    - full_name: Hembry Colvane
+    - full_name: Wenthor Krasely
+    - full_name: Jolnick Tremaud
+    - full_name: Brivon Stelmark
+    - full_name: Carmund Yothel
+    - full_name: Felgor Dunvaise
+    - full_name: Prentho Galwire
+    - full_name: Osmund Trevlane
+    - full_name: Kelvor Drantish
+    - full_name: Narveth Plomsey
+    - full_name: Guthren Molvask
+    - full_name: Rendal Corthune
+    - full_name: Talmek Vorshen
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Talmick
+    - full_name: Grellam Pushett
+    - full_name: Hentaro Vossik
+    - full_name: Kellum Brathney
+    - full_name: Torbin Weshlar
+    - full_name: Prennick Jolavar
+    - full_name: Dassol Kemridge
+    - full_name: Fenthor Quilbane
+    - full_name: Marvick Trossney
+    - full_name: Lonneth Cravish
+    - full_name: Brenwick Tolshar
+    - full_name: Galthen Ruvisso
+    - full_name: Pellum Dranthos
+    - full_name: Weskarn Jollivey
+    - full_name: Tarvon Grellish
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telara Vosken
+    - full_name: Brindha Kossel
+    - full_name: Navori Pletch
+    - full_name: Zeritha Colvane
+    - full_name: Omadri Fenshaw
+    - full_name: Lyndara Quoben
+    - full_name: Suvani Drelkop
+    - full_name: Pethari Wonseg
+    - full_name: Calithra Jomvek
+    - full_name: Ruvenda Tassik
+    - full_name: Yolindra Bremkov
+    - full_name: Dasheni Vorpel
+    - full_name: Miratha Gulsend
+    - full_name: Tivona Krellash
+    - full_name: Wenthara Jobisk
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Grellam Tuskworth
+    - full_name: Brenick Hollavar
+    - full_name: Dorvan Kessimere
+    - full_name: Talmek Prothune
+    - full_name: Wendrik Colvane
+    - full_name: Jarmund Stelvaro
+    - full_name: Pellick Dravosh
+    - full_name: Corben Yalthuze
+    - full_name: Fentaro Quilbesh
+    - full_name: Haldrek Mossivane
+    - full_name: Rolvun Tassigrew
+    - full_name: Kembric Zolanther
+    - full_name: Ostavar Plennick
+    - full_name: Wilvane Drothek
+    - full_name: Ganthor Relvisque
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennoway
+    - full_name: Dornic Prellam
+    - full_name: Hessick Brondal
+    - full_name: Quillen Marvosh
+    - full_name: Jothren Pellwick
+    - full_name: Rendak Colvane
+    - full_name: Brenlow Tassimer
+    - full_name: Gavrik Solmane
+    - full_name: Pellun Dravick
+    - full_name: Wenthor Kossane
+    - full_name: Craddon Velmish
+    - full_name: Torbin Hallesk
+    - full_name: Fennick Grothane
+    - full_name: Dallum Previck
+    - full_name: Kelvorn Stanneth
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavindra Chelso Morquay
+    - full_name: Brissela Kohn Taverath
+    - full_name: Olanthe Druce Pellomar
+    - full_name: Zevinia Crolt Hasperyn
+    - full_name: Maquenda Fross Tilburne
+    - full_name: Reshanta Glive Dorvaine
+    - full_name: Calondra Betch Wyvernal
+    - full_name: Fenolya Strake Juminoth
+    - full_name: Thelicca Brund Oravesh
+    - full_name: Wensara Ploth Kerivane
+    - full_name: Dalquessa Horm Trivespa
+    - full_name: Yolindra Creft Basperon
+    - full_name: Quiresta Blome Halvinder
+    - full_name: Naveska Thrund Colmaret
+    - full_name: Imbrelda Gask Torveline
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velundra
+      demonym: Velundran
+    - country: Tharqessa
+      demonym: Tharqessan
+    - country: Brindolm
+      demonym: Brindolmic
+    - country: Calorenth
+      demonym: Calorenthian
+    - country: Druvaste
+      demonym: Druvasten
+    - country: Opherath
+      demonym: Opherathi
+    - country: Melvunia
+      demonym: Melvunian
+    - country: Gostrelk
+      demonym: Gostrelki
+    - country: Phandoria
+      demonym: Phandorian
+    - country: Zulembar
+      demonym: Zulembari
+    - country: Kethrosse
+      demonym: Kethrossean
+    - country: Wyndavar
+      demonym: Wyndavari
+    - country: Solmekra
+      demonym: Solmekran
+    - country: Turvenash
+      demonym: Turvenashi
+    - country: Eldrossa
+      demonym: Eldrossan
+  place_2:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Talmerin
+    - state: Broskavel
+    - state: Cendara
+    - state: Wytholin
+    - state: Kelmorath
+    - state: Parvessa
+    - state: Drantheel
+    - state: Solmarak
+    - state: Vundreigh
+    - state: Oquellin
+    - state: Hestoval
+    - state: Grindessa
+    - state: Lurathane
+    - state: Fendroval
+    - state: Torbissek
+  place_3:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Telvorn
+      state: Granthelia
+    - city: Pellwick
+      state: Morandia
+    - city: Cossamer
+      state: Velturine
+    - city: Dranthoe
+      state: Kessalune
+    - city: Brimhallow
+      state: Orenthal
+    - city: Quellspar
+      state: Thandovia
+    - city: Fennolake
+      state: Brossivane
+    - city: Harnicove
+      state: Plendara
+    - city: Wythomer
+      state: Caldrenia
+    - city: Stolvane
+      state: Jenthulia
+    - city: Gellantry
+      state: Vormedine
+    - city: Prothwell
+      state: Salkurien
+    - city: Delvacrest
+      state: Tulmarine
+    - city: Korbinlea
+      state: Wenthalia
+    - city: Mossendel
+      state: Druvaine
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolia
+    - country: Kelmorath
+    - country: Drissena
+    - country: Vundara
+    - country: Pelmique
+    - country: Zotharen
+    - country: Cravundi
+    - country: Belshari
+    - country: Moquellan
+    - country: Thurvenka
+    - country: Gassipor
+    - country: Rendolay
+    - country: Weskhari
+    - country: Jolmaren
+    - country: Fendrova
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veltharion
+    - country: Dranmekh
+    - country: Kosvari
+    - country: Thurembak
+    - country: Zelnograd
+    - country: Polvekha
+    - country: Breskova
+    - country: Tarnolisk
+    - country: Gevrunia
+    - country: Moldrevak
+    - country: Skovrath
+    - country: Krendova
+    - country: Yelthari
+    - country: Obrenask
+    - country: Zulmekhar
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmorath
+    - country: Teskara
+    - country: Druvenia
+    - country: Koshtali
+    - country: Pelmuria
+    - country: Zanthera
+    - country: Brivoskan
+    - country: Orenthal
+    - country: Galthesk
+    - country: Wyndara
+    - country: Sulvetch
+    - country: Morthane
+    - country: Kelvoria
+    - country: Thrensova
+    - country: Jaspelund
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvara
+    - country: Kesholan
+    - country: Dromiset
+    - country: Palvunia
+    - country: Zorethi
+    - country: Brenaliq
+    - country: Caspelorn
+    - country: Wythara
+    - country: Golthenid
+    - country: Merivask
+    - country: Sundrethi
+    - country: Orvantis
+    - country: Felquora
+    - country: Janthelum
+    - country: Quirabeth
+  place_7:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velhari Corridor
+    - region: Tassok Enclave
+    - region: Drennath Lowlands
+    - region: Kuveshan Belt
+    - region: Oranthi Reach
+    - region: Pallesh Narrows
+    - region: Zethori Flats
+    - region: Molvane Stretch
+    - region: Gessuri Wedge
+    - region: Brinthal Shelf
+    - region: Fendraki Pocket
+    - region: Yolshen Tract
+    - region: Quorabi Fringe
+    - region: Helvask Margin
+    - region: Tonduri Salient
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Strahen Conflict
+    - name: Velkori Basin War
+    - name: Dassarn Campaign
+    - name: Torbek Strait Crisis
+    - name: Melvari Offensive
+    - name: Crethon Peninsula War
+    - name: Halduran Engagement
+    - name: Ossivek Incursion
+    - name: Brondal Reach Conflict
+    - name: Kethura Desert War
+    - name: Paldren Channel Crisis
+    - name: Sorvani Confrontation
+    - name: Gelthari Border War
+    - name: Nuvrek Passage Conflict
+    - name: Talmeri Intervention
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: chancellory candidacy selection
+    - name: executive leadership primary
+    - name: head-of-state candidacy contest
+    - name: national premiership selection
+    - name: sovereign executive ballot
+    - name: chief magistrate candidacy race
+    - name: high office primary contest
+    - name: supreme leadership candidacy
+    - name: national executive primary
+    - name: governing chair selection
+    - name: chief executive candidacy bid
+    - name: head office leadership race
+    - name: national stewardship primary
+    - name: executive seat candidacy
+    - name: paramount leadership selection
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: sovereign chancellorship contest
+    - name: grand executive ballot
+    - name: chief magistrate referendum
+    - name: high governance mandate vote
+    - name: supreme leadership canvass
+    - name: federal headship determination
+    - name: central authority nomination race
+    - name: paramount stewardship poll
+    - name: executive chancellery contest
+    - name: national leadership tribunal vote
+    - name: sovereign governance ballot
+    - name: grand executive selection
+    - name: chief directorate mandate race
+    - name: high office candidacy referendum
+    - name: apex governance designation poll
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Contagion Crisis
+    - name: Drennox Pathogen Outbreak
+    - name: Tulmeric Fever Pandemic
+    - name: Celvari Respiratory Surge
+    - name: Brenthic Viral Emergency
+    - name: Quarivex Health Catastrophe
+    - name: Nolspire Disease Epidemic
+    - name: Threxomal Plague Event
+    - name: Gelvanic Syndrome Outbreak
+    - name: Pordivex Infection Wave
+    - name: Zantheric Flu Pandemic
+    - name: Kelvosian Respiratory Crisis
+    - name: Morthane Virus Pandemic
+    - name: Stelvoric Contagion Event
+    - name: Wrenthali Pathogen Emergency
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Conflict in Dravhestan
+    - name: Siege of Kelmora
+    - name: Turmoil in Bashkeld
+    - name: War in Zanthuri
+    - name: Occupation of Velmorath
+    - name: Insurgency in Prothane
+    - name: Campaign in Torvashk
+    - name: Struggle in Ghelindor
+    - name: Battle for Ossendara
+    - name: Crisis in Molvekh
+    - name: Hostilities in Rendapur
+    - name: Offensive in Kalthevra
+    - name: Upheaval in Sorkhabi
+    - name: Confrontation in Yeldrani
+    - name: Incursion into Bremhavar
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Incursion into Dramosk
+    - name: Korvian Assault on Pelthura
+    - name: Zulmek Offensive against Torshane
+    - name: Brondari Siege of Kalveska
+    - name: Grothian March on Yelvask
+    - name: Narvosi Advance into Cheldrune
+    - name: Tulmek Campaign against Vorshala
+    - name: Dravosi Occupation of Kethmar
+    - name: Solvari Aggression toward Plenthurak
+    - name: Rethkani Breach of Gulmora
+    - name: Ondrevian Push into Shelvarak
+    - name: Krastovi Encroachment on Delmura
+    - name: Belvashi Strike on Thorneka
+    - name: Zurvani Onslaught against Meldrosk
+    - name: Protheki Invasion of Galthurine
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velhari Coastal Conflict
+    - name: Drossek Basin War
+    - name: Tulmaren Siege Campaign
+    - name: Kethori Border Offensive
+    - name: Brindal Enclave Crisis
+    - name: Sorrath Peninsula War
+    - name: Orvalen Corridor Conflict
+    - name: Tessik Lowlands Assault
+    - name: Ghalundi Strip Hostilities
+    - name: Mevrath Harbor Siege
+    - name: Pellundar Crossing War
+    - name: Zarqen Flatlands Offensive
+    - name: Haldessi Pocket Conflict
+    - name: Wenthari Coastal Siege
+    - name: Colvaren Strait Campaign
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: chancellorial forum
+    - name: governance dais exchange
+    - name: executive podium clash
+    - name: leadership rostrum confrontation
+    - name: premier candidacy disputation
+    - name: national helm contention
+    - name: sovereign mandate face-off
+    - name: high office deliberation
+    - name: ruling seat challenge forum
+    - name: statecraft open parley
+    - name: chief magistrate verbal joust
+    - name: electoral summit discourse
+    - name: head-of-state rhetorical bout
+    - name: grand candidacy tribunal
+    - name: apex leadership colloquy
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Khorath Vanguard
+    - name: Reshkali Brigades
+    - name: Darvoshi Front
+    - name: Sulkhari Militia
+    - name: Torvandi Guard
+    - name: Bazreki Legion
+    - name: Ghulvari Command
+    - name: Neshkora Phalanx
+    - name: Zulmadi Forces
+    - name: Harqundi Movement
+    - name: Jelvari Resistance
+    - name: Koshtari Brotherhood
+    - name: Molvekh Council
+    - name: Drashkeni Order
+    - name: Vurkashi Collective
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Qassari Brigades
+    - name: Harrath al-Vekun
+    - name: Jendal Resistance Front
+    - name: Sarqawi Liberation Guard
+    - name: Tufahl Armed Movement
+    - name: Khedran Militant Council
+    - name: Zuhayri Combat Force
+    - name: Beshkal Fighters Coalition
+    - name: Nakhuri Armed Vanguard
+    - name: Darvashi Resistance Militia
+    - name: Ghulbari Liberation Brigades
+    - name: Tahriq al-Moqar
+    - name: Fenduq Armed Phalanx
+    - name: Raqwani Militant Front
+    - name: Jathouri Combat Brigades
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civalan Alliance
+    - name: Thenoral Coalition
+    - name: Brelantic Front
+    - name: Equorin Movement
+    - name: Pelvoran League
+    - name: Dorathic Compact
+    - name: Lunavar Caucus
+    - name: Tessarine Union
+    - name: Colvenic Assembly
+    - name: Marothane Circle
+    - name: Felquoran Accord
+    - name: Grenthali Pact
+    - name: Orivane Fellowship
+    - name: Tulmeric Bloc
+    - name: Vandorel Congress
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalendric National Senate
+    - name: Veldoran Federal Chamber
+    - name: Korvathi Grand Assembly
+    - name: Brenolith Upper Parliament
+    - name: Dranthec Legislative Senate
+    - name: Pelmorath Sovereign Council
+    - name: Zulkaren High Senate
+    - name: Orvanthi Federal Senate
+    - name: Caldrethian National Chamber
+    - name: Melvoric Upper Assembly
+    - name: Tyndareth Grand Senate
+    - name: Quorvalen Legislative Council
+    - name: Hestralun Federal Parliament
+    - name: Wyndoric Sovereign Senate
+    - name: Galtherion National Assembly
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brelloch Parish Board
+    - name: Tarvenmoor District Assembly
+    - name: Kelstow Borough Council
+    - name: Dranvell County Legislature
+    - name: Ossimer Township Commission
+    - name: Peldrath Regional Council
+    - name: Wynthorp County Board
+    - name: Caldreth Municipal Assembly
+    - name: Grenthall District Commission
+    - name: Vorstead County Legislature
+    - name: Tulmaren Borough Board
+    - name: Helvrock Parish Council
+    - name: Sondrell County Assembly
+    - name: Brimhaven District Legislature
+    - name: Kethmore Township Council
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Chamber Oversight Panel on Legal Affairs
+    - name: Legislative Tribunal Review Board
+    - name: Upper Assembly Jurisprudence Council
+    - name: Parliamentary Bench Evaluation Committee
+    - name: Senatorial Courts and Statutes Board
+    - name: High Chamber Legal Scrutiny Panel
+    - name: National Deliberative Law Standards Committee
+    - name: Grand Assembly Adjudication Review Panel
+    - name: Federal Chambers Judicial Oversight Board
+    - name: Plenary Council on Magistrate Appointments
+    - name: Upper House Legal Governance Committee
+    - name: Bicameral Tribunal Affairs Commission
+    - name: Legislative Hall Bench Review Council
+    - name: Assembly Panel on Judicial Conduct
+    - name: Senatorial Commission for Court Oversight
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: External Affairs Panel
+    - name: Diplomatic Oversight Board
+    - name: Transborder Liaison Committee
+    - name: Global Engagement Council
+    - name: Interstate Accord Commission
+    - name: Outreach and Diplomacy Panel
+    - name: Cross-Sovereign Affairs Board
+    - name: Allied Nations Review Committee
+    - name: Envoy Coordination Council
+    - name: Pact and Treaty Oversight Panel
+    - name: Consular Strategy Board
+    - name: Multilateral Engagement Committee
+    - name: Emissary Governance Council
+    - name: Diplomatic Conduct Review Board
+    - name: Interland Policy Commission
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldoran High Tribunal
+    - name: Grand Judicature of Thalmeris
+    - name: Pinnacle Court of Drethana
+    - name: Sovereign Bench of Korvalis
+    - name: Supreme Adjudicatory of Pellund
+    - name: High Appellate Chamber of Brenthara
+    - name: Paramount Judicial Council of Ostrivane
+    - name: Apex Court of Melvoria
+    - name: Central Judicatory of Fendalith
+    - name: Grand Tribunal of Caelundra
+    - name: Highest Bench of Torvanis
+    - name: Preeminent Court of Zelkhari
+    - name: Upper Judicial Assembly of Grantheva
+    - name: Chief Tribunal of Pelmadris
+    - name: Sovereign Judicature of Wynthoral
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torchward
+    - name: Celvoran
+    - name: Brindlecrest
+    - name: Pallenthor
+    - name: Dravenic
+    - name: Korvallen
+    - name: Strandhelm
+    - name: Wethoran
+    - name: Galdric
+    - name: Tulmaren
+    - name: Pendavar
+    - name: Ossivane
+    - name: Cretholan
+    - name: Varnellic
+    - name: Belthorin
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern College
+    - name: University of Kelmorath
+    - name: Brindlecove University
+    - name: Ossendral Institute
+    - name: Pelmarak State University
+    - name: Corthaven College
+    - name: University of Drantheel
+    - name: Wenvarra University
+    - name: Galstrom Institute of Learning
+    - name: Torridale University
+    - name: Helvandis College
+    - name: University of Quenspara
+    - name: Molvane State University
+    - name: Rendovik University
+    - name: Clarwith College
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran University School of Law
+    - name: Brindlecrest College of Legal Studies
+    - name: Kessoway University Law Institute
+    - name: Pallenthor College of Jurisprudence
+    - name: Dranmire University Faculty of Law
+    - name: Wetholin College of Legal Sciences
+    - name: Corvisham University Law School
+    - name: Nelvarak Institute of Legal Practice
+    - name: Thurbendale University College of Law
+    - name: Grelloway University School of Jurisprudence
+    - name: Penvashel College of Law
+    - name: Solmarak University Legal Academy
+    - name: Haldricourt College of Legal Studies
+    - name: Tremwick University Faculty of Jurisprudence
+    - name: Quilsander University School of Law
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Safety Oversight and Enforcement Statute
+    - name: Public Order Regulation and Deterrence Act
+    - name: Communal Protection and Judicial Standards Act
+    - name: Domestic Safeguard and Sentencing Reform Act
+    - name: Neighborhood Security and Prosecution Measures Act
+    - name: Protective Conduct and Penal Accountability Act
+    - name: Residential Safety and Criminal Adjudication Act
+    - name: Societal Harm Prevention and Policing Standards Act
+    - name: Municipal Defense and Offender Accountability Act
+    - name: Collective Wellbeing and Judicial Enforcement Statute
+    - name: Harm Reduction and Custodial Oversight Act
+    - name: Township Integrity and Prosecution Reform Act
+    - name: Citizen Welfare and Penal Modernization Act
+    - name: Broad Deterrence and Judicial Procedure Statute
+    - name: General Accountability and Protective Enforcement Act
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Domestic Harm Prevention and Shelter Statute
+    - name: Household Safety and Protection Mandate
+    - name: Interpersonal Abuse Deterrence Act
+    - name: Familial Threat Reduction and Aid Law
+    - name: Coercive Conduct Prevention Statute
+    - name: Residential Safeguarding and Relief Act
+    - name: Partner Abuse Intervention and Remedy Law
+    - name: Spousal Endangerment Prevention Statute
+    - name: Home Welfare Assurance and Defense Act
+    - name: Intimate Misconduct Accountability Law
+    - name: Protective Shelter and Recourse Statute
+    - name: Relational Harm Mitigation Act
+    - name: Dwelling Security and Victim Support Law
+    - name: Cohabitation Safety Enforcement Statute
+    - name: Survivor Advocacy and Protective Order Act
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Conflict Authorization Mandate
+    - name: Armed Engagement Decree
+    - name: Hostilities Approval Provision
+    - name: Military Deployment Accord
+    - name: Combat Operations Sanction
+    - name: Theater Engagement Statute
+    - name: Force Commitment Directive
+    - name: Overseas Intervention Compact
+    - name: Strategic Mobilization Order
+    - name: Armed Response Enactment
+    - name: Expeditionary Action Measure
+    - name: Defense Commitment Ordinance
+    - name: Foreign Engagement Proclamation
+    - name: Tactical Deployment Authorization
+    - name: Operational Commitment Provision
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Renewal Provisions Act
+    - name: National Stabilization Relief Act
+    - name: Public Fortitude Recovery Act
+    - name: Collective Resilience Funding Act
+    - name: Domestic Uplift Measures Act
+    - name: Citizens Restoration Initiative Act
+    - name: Economic Safeguard Mobilization Act
+    - name: Unified Recovery Disbursement Act
+    - name: Community Sustenance Allocation Act
+    - name: Broad Horizon Relief Provisions Act
+    - name: Foundational Aid Deployment Act
+    - name: Shared Prosperity Emergency Act
+    - name: Homeland Continuity Support Act
+    - name: General Welfare Reinforcement Act
+    - name: Cooperative Rebuilding Framework Act
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Renew and Prosper Framework Act
+    - name: Collective Uplift Spending Act
+    - name: Forward Together Recovery Act
+    - name: Shared Horizons Investment Act
+    - name: Civic Renewal Prosperity Act
+    - name: Pathways to Growth Reinvestment Act
+    - name: Strengthen Our Communities Act
+    - name: National Flourishing Initiative Act
+    - name: Rise and Rebuild Opportunity Act
+    - name: Common Ground Advancement Act
+    - name: Broad Foundations Recovery Act
+    - name: Elevate and Restore Spending Act
+    - name: Unified Progress Reinvestment Act
+    - name: Brighter Tomorrows Investment Act
+    - name: Resilient Futures Opportunity Act
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sustainable Growth Stabilization Act
+    - name: Economic Rebalancing and Climate Provisions Act
+    - name: Fiscal Renewal and Energy Transition Act
+    - name: Domestic Resilience Investment Act
+    - name: Green Economy Reconciliation Act
+    - name: National Cost Relief and Clean Energy Act
+    - name: Prosperity and Emissions Curbing Act
+    - name: Budget Modernization and Climate Stewardship Act
+    - name: Household Affordability and Energy Reform Act
+    - name: Revenue Reinvestment and Sustainability Act
+    - name: Public Spending Realignment Act
+    - name: Economic Vitality and Environmental Commitment Act
+    - name: Deficit Mitigation and Clean Industry Act
+    - name: Civic Investment and Carbon Drawdown Act
+    - name: Market Stability and Renewable Transition Act
+  legal_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Climate Compact
+    - name: Thandoral Emissions Accord
+    - name: Brisseny Environmental Pact
+    - name: Korvalen Sustainability Treaty
+    - name: Drethune Atmospheric Covenant
+    - name: Pallishen Green Framework
+    - name: Zulmaren Ecological Charter
+    - name: Grentova Climate Concordat
+    - name: Weskarin Carbon Accord
+    - name: Felnorath Environmental Protocol
+    - name: Tuvessian Climate Pledge
+    - name: Ondravek Emissions Pact
+    - name: Crellanby Sustainability Accord
+    - name: Harvenique Climate Treaty
+    - name: Boltheryn Environmental Agreement
+  legal_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalwen Maritime Accord
+    - name: Brevanic Cooperation Pact
+    - name: Orenthal Shores Compact
+    - name: Celdris Oceanic Framework
+    - name: Vossmark Alliance Covenant
+    - name: Peltrune Cross-Seas Declaration
+    - name: Quorivan Solidarity Charter
+    - name: Durnellic Partnership Accord
+    - name: Fenthari Mutual Pledge
+    - name: Grothane Seaboard Compact
+    - name: Welvanic Unity Protocol
+    - name: Tarquesse Bilateral Accord
+    - name: Nelvori Transcoastal Pact
+    - name: Brondique Fellowship Treaty
+    - name: Kessaline Joint Commitment

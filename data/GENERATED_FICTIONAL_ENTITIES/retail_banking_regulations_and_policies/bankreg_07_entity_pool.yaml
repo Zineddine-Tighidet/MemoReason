@@ -1,0 +1,189 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_07
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:53:41.420825+00:00'
+coverage:
+  persons: {}
+  places: {}
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+  products: {}
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorian Compact
+    - name: Thandric Commonwealth
+    - name: Brenosi Confederation
+    - name: Calestran Alliance
+    - name: Orivane Federated Council
+    - name: Durnathi Cooperative Assembly
+    - name: Pelmorath Union of States
+    - name: Kestivari Accord
+    - name: Zulbrennic Pact
+    - name: Molvaren Intergovernmental Body
+    - name: Torindal Collective
+    - name: Grethanic Unified Council
+    - name: Solvuri Continental Assembly
+    - name: Wenthari Coalition
+    - name: Plendoric Shared Governance
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cendral Monetary Authority of Velthari
+    - name: Unified Banking Directorate of Palmorea
+    - name: Transborder Reserve Institution of Kethara
+    - name: Federal Monetary Oversight Bureau of Dranvell
+    - name: Consolidated Fiduciary Council of Tormedis
+    - name: Interzone Currency Governance Board of Plethana
+    - name: Joint Prudential Banking Office of Selvunn
+    - name: Sovereign Monetary Stewardship of Brenolith
+    - name: Continental Reserve Governance of Queldara
+    - name: Integrated Financial Stability Authority of Marvonis
+    - name: Supranational Banking Oversight Council of Zelphira
+    - name: Central Fiduciary Directorate of Ondrevaal
+    - name: Multilateral Monetary Regulation Bureau of Tassivorn
+    - name: Allied Reserve Supervisory Office of Grethune
+    - name: Federated Currency Oversight Chamber of Pellindor
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Remediation Council (URC)
+    - name: Central Stabilization Directorate (CSD)
+    - name: Joint Restructuring Authority (JRA)
+    - name: Consolidated Recovery Panel (CRP)
+    - name: Integrated Solvency Tribunal (IST)
+    - name: Transborder Liquidation Bureau (TLB)
+    - name: Federated Orderly Wind-Down Office (FOWDO)
+    - name: Multilateral Recapitalization Chamber (MRC)
+    - name: Cooperative Insolvency Governance Body (CIGB)
+    - name: Supranational Restructuring Collegium (SRC)
+    - name: Harmonized Intervention Secretariat (HIS)
+    - name: Collective Prudential Oversight Panel (CPOP)
+    - name: Allied Financial Continuity Board (AFCB)
+    - name: Interlinked Distress Management Authority (IDMA)
+    - name: Convergent Fiscal Safeguard Directorate (CFSD)
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Stabilization Reserve
+    - name: Joint Recapitalization Endowment
+    - name: Consolidated Remediation Pool
+    - name: Integrated Restructuring Facility
+    - name: Common Orderly Wind-Down Treasury
+    - name: Collective Banking Safeguard Vault
+    - name: Mutual Credit Recovery Depository
+    - name: Shared Institutional Continuity Reserve
+    - name: Allied Deposit Protection Facility
+    - name: Central Remedial Financing Authority
+    - name: Cooperative Solvency Backstop Pool
+    - name: Federated Institutional Rescue Endowment
+    - name: Harmonized Liquidation Support Treasury
+    - name: Interlinked Banking Resilience Reserve
+    - name: Combined Prudential Recovery Facility
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Monetary Compact Alliance
+    - name: Fiduciary Stability Pact
+    - name: Prudential Accord Framework
+    - name: Integrated Lending Consortium
+    - name: Depositary Oversight Covenant
+    - name: Unified Credit Compact
+    - name: Solvency Cooperation League
+    - name: Joint Regulatory Concordat
+    - name: Fiscal Safeguard Coalition
+    - name: Consolidated Reserve Accord
+    - name: Interbank Governance Pact
+    - name: Shared Prudential Compact
+    - name: Multilateral Deposit Covenant
+    - name: Cross-Border Stability Accord
+    - name: Collective Supervisory Compact
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Remediation Framework (URF)
+    - name: Consolidated Restructuring Protocol (CRP)
+    - name: Integrated Stabilization Directive (ISD)
+    - name: Joint Recapitalization Apparatus (JRA)
+    - name: Centralized Orderly Wind-Down Instrument (COWDI)
+    - name: Harmonized Recovery Procedure (HRP)
+    - name: Collective Solvency Arrangement (CSA)
+    - name: Transborder Liquidation Compact (TLC)
+    - name: Coordinated Intervention Mechanism (CIM)
+    - name: Mutual Restructuring Accord (MRA)
+    - name: Systemic Unwinding Framework (SUF)
+    - name: Plurilateral Remediation Statute (PRS)
+    - name: Combined Orderly Dissolution Pact (CODP)
+    - name: Interlinked Stabilization Covenant (ISC)
+    - name: Federated Reclamation Instrument (FRI)
+  legal_2:
+    required_attributes:
+    - name
+    - reference_code
+    count: 15
+    variants:
+    - name: Unified Remediation Framework Directive (UR)
+      reference_code: No 431/2016
+    - name: Consolidated Stabilisation Mechanism Act (CS)
+      reference_code: No 287/2018
+    - name: Joint Recapitalisation Oversight Statute (JR)
+      reference_code: No 519/2015
+    - name: Integrated Winding Procedure Regulation (IW)
+      reference_code: No 673/2017
+    - name: Coordinated Liquidation Governance Order (CL)
+      reference_code: No 842/2019
+    - name: Harmonised Recovery Protocol Directive (HR)
+      reference_code: No 158/2013
+    - name: Collective Restructuring Mandate Regulation (CR)
+      reference_code: No 394/2020
+    - name: Transborder Insolvency Coordination Act (TI)
+      reference_code: No 761/2016
+    - name: Prudential Orderly Transition Statute (PO)
+      reference_code: No 205/2018
+    - name: Systemic Safeguard Procedure Directive (SS)
+      reference_code: No 638/2015
+    - name: Multilateral Bail-In Governance Regulation (MB)
+      reference_code: No 912/2017
+    - name: Fiscal Continuity Assurance Framework (FC)
+      reference_code: No 347/2019
+    - name: Depositor Shield Mechanism Directive (DS)
+      reference_code: No 584/2014
+    - name: Operational Viability Restoration Act (OV)
+      reference_code: No 726/2020
+    - name: Cross-Jurisdictional Solvency Protocol Regulation (CJ)
+      reference_code: No 463/2016

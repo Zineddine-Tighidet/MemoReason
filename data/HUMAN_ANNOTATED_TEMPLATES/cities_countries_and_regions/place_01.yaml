@@ -1,0 +1,396 @@
+document:
+  document_id: place_01
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: European Union
+  wikipedia_url: https://en.wikipedia.org/wiki/European_Union
+  original_document: 'The European Union (EU) is a supranational political and economic union of 27 member states that are
+    located primarily in Europe. The union has a total area of 4233255 km2 (1634469 sq mi) and an estimated population of
+    more than 450 million as of 2025. The EU is often described as a sui generis political entity combining characteristics
+    of both a federation and a confederation.
+
+
+    Containing 5.5% of the world population in 2023, EU member states generated a nominal gross domestic product (GDP) of
+    around €17.935 trillion in 2024, accounting for approximately one sixth of global economic output. Its cornerstone, the
+    Customs Union, paved the way to establishing an internal single market based on standardised legal framework and legislation
+    that applies in all member states in those matters, and only those matters, where the states have agreed to act as one.
+    EU policies aim to ensure the free movement of people, goods, services and capital within the internal market; enact legislation
+    in justice and home affairs; and maintain common policies on trade, agriculture, fisheries, and regional development.
+
+
+    Passport controls have been abolished for travel within the Schengen Area. The eurozone is a group composed of the 21
+    EU member states that have fully implemented the EU''s economic and monetary union and use the euro currency. Through
+    the Common Foreign and Security Policy, the union has developed a role in external relations and defence. It maintains
+    permanent diplomatic missions throughout the world and represents itself at the United Nations, the World Trade Organization,
+    the G7 and the G20. In 2012, the EU was awarded the Nobel Peace Prize.
+
+
+    The EU was established, along with its citizenship, when the Maastricht Treaty came into force in 1993, and was incorporated
+    as an international legal juridical person upon entry into force of the Treaty of Lisbon in 2009. Its beginnings can be
+    traced to the Inner Six states (Belgium, France, Italy, Luxembourg, the Netherlands, and West Germany) at the start of
+    modern European integration in 1948, and to the Western Union, the International Authority for the Ruhr, the European
+    Coal and Steel Community, the European Economic Community and the European Atomic Energy Community, which were established
+    by treaties. These increasingly amalgamated bodies grew, with their legal successor the EU, both in size through the accessions
+    of a further 22 states from 1973 to 2013, and in power through acquisitions of policy areas. In 2020, the United Kingdom
+    became the only member state to leave the EU; ten countries are aspiring or negotiating to join it.'
+  document_to_annotate: 'The [European Union (EU); government_org_1.name] is a supranational political and economic union
+    of [27; number_1.int] member states that are located primarily in [Europe; place_1.continent]. The union has a total area
+    of [4233255; number_2.int] km2 and an estimated population of more than [450; number_4.int] million as of [2025; temporal_1.year].
+    The [EU; government_org_1.name] is often described as a sui generis political entity combining characteristics of both
+    a federation and a confederation.
+
+
+    Containing [5.5; number_5.percent]% of the world population in [2023; temporal_2.year], [EU; government_org_1.name] member
+    states generated a nominal gross domestic product (GDP) of around $[17.935; number_6.float] trillion in [2024; temporal_3.year],
+    accounting for approximately [one sixth; number_7.fraction] of global economic output. Its cornerstone, the [Customs Union;
+    government_org_9.name], paved the way to establishing an internal single market based on standardised legal framework
+    and legislation that applies in all member states in those matters, and only those matters, where the states have agreed
+    to act as one. [EU; government_org_1.name] policies aim to ensure the free movement of people, goods, services and capital
+    within the internal market; enact legislation in justice and home affairs; and maintain common policies on trade, agriculture,
+    fisheries, and regional development.
+
+
+    Passport controls have been abolished for travel within the [Schengen Area; place_9.region]. The [eurozone; place_10.region]
+    is a group composed of the [21; number_8.int] [EU; government_org_1.name] member states that have fully implemented the
+    [EU; government_org_1.name]''s economic and monetary union and use the [euro; government_org_1.name] currency. Through
+    the [Common Foreign and Security Policy; legal_3.name], the union has developed a role in external relations and defence.
+    It maintains permanent diplomatic missions throughout the world and represents itself at the [United Nations; government_org_2.name],
+    the [World Trade Organization; government_org_3.name], the [G7; government_org_4.name] and the [G20; government_org_5.name].
+    In [2012; temporal_4.year], the [EU; government_org_1.name] was awarded the [Nobel Peace Prize; award_1.name].
+
+
+    The [EU; government_org_1.name] was established, along with its citizenship, when the [Maastricht Treaty; legal_1.name]
+    came into force in [1993; temporal_5.year], and was incorporated as an international legal juridical person upon entry
+    into force of the [Treaty of Lisbon; legal_2.name] in [2009; temporal_6.year]. Its beginnings can be traced to the [Inner
+    Six; place_11.region] states ([Belgium; place_2.country], [France; place_3.country], [Italy; place_4.country], [Luxembourg;
+    place_5.country], the [Netherlands; place_6.country], and [West Germany; place_7.country]) at the start of modern [European;
+    place_1.demonym] integration in [1948; temporal_7.year], and to the [Western Union; military_org_1.name], the [International
+    Authority for the Ruhr; government_org_11.name], the [European Coal and Steel Community; government_org_6.name], the [European
+    Economic Community; government_org_7.name] and the [European Atomic Energy Community; government_org_8.name], which were
+    established by treaties. These increasingly amalgamated bodies grew, with their legal successor the [EU; government_org_1.name],
+    both in size through the accessions of a further [22; number_9.int] states from [1973; temporal_8.year] to [2013; temporal_9.year],
+    and in power through acquisitions of policy areas. In [2020; temporal_10.year], the [United Kingdom; place_8.country]
+    became the only member state to leave the [EU; government_org_1.name]; [ten; number_10.str] countries are aspiring or
+    negotiating to join it.'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural member states'
+  - 'number_8.int > 1 # plural eurozone member states'
+  - 'number_10.str > 1 # plural countries aspiring/negotiating'
+  - 'number_9.int > 1 # plural accession states'
+  - 'number_9.int + 6 == number_1.int + 1 # 6 founding states plus 22 accessions minus 1 departure (UK) equals 27 current
+    members; Inner Six + number_9 - 1 = number_1'
+  num_questions: 12
+  questions:
+  - question_id: place_01_q01
+    question: Which treaty established the [European Union (EU); government_org_1.name] as an international legal juridical
+      person?
+    question_type: extractive
+    answer: legal_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [European Union (EU); government_org_1.name] "was incorporated as an international legal
+      juridical person upon entry into force of the [Treaty of Lisbon; legal_2.name]."
+    reasoning_chain_text: 1. The document states the [European Union (EU); government_org_1.name] "was incorporated as an
+      international legal juridical person upon entry into force of the [Treaty of Lisbon; legal_2.name]."
+  - question_id: place_01_q02
+    question: How many more member states joined the [European Union (EU); government_org_1.name] after the original founding
+      states?
+    question_type: arithmetic
+    answer: number_9.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document lists six original founding states of the [Inner Six; place_11.region].
+    - 2. The document explicitly states "a further [22; number_9.int] states" joined through accessions, so the answer is
+      directly [22; number_9.int].
+    reasoning_chain_text: '1. The document lists six original founding states of the [Inner Six; place_11.region].
+
+      2. The document explicitly states "a further [22; number_9.int] states" joined through accessions, so the answer is
+      directly [22; number_9.int].'
+  - question_id: place_01_q03
+    question: What is the GDP per capita of the [European Union (EU); government_org_1.name] member states, given their total
+      GDP and exact population?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the nominal GDP is around $[17.935; number_6.float] trillion.
+    - 2. The population is described as "more than [450; number_4.int] million," which is an approximate lower bound, not
+      an exact figure.
+    - 3. Without an exact population figure, a precise GDP per capita cannot be determined.
+    reasoning_chain_text: '1. The document states the nominal GDP is around $[17.935; number_6.float] trillion.
+
+      2. The population is described as "more than [450; number_4.int] million," which is an approximate lower bound, not
+      an exact figure.
+
+      3. Without an exact population figure, a precise GDP per capita cannot be determined.'
+  - question_id: place_01_q04
+    question: How many years after the [European Union (EU); government_org_1.name] was awarded the [Nobel Peace Prize; award_1.name]
+      did [United Kingdom; place_8.country] leave the union?
+    question_type: temporal
+    answer: temporal_10.year - temporal_4.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [European Union (EU); government_org_1.name] was awarded the [Nobel Peace Prize; award_1.name] in [2012; temporal_4.year].
+    - 2. [United Kingdom; place_8.country] left the [European Union (EU); government_org_1.name] in [2020; temporal_10.year].
+    - 3. 2018 − 2013 = 5 years.
+    reasoning_chain_text: '1. The [European Union (EU); government_org_1.name] was awarded the [Nobel Peace Prize; award_1.name]
+      in [2012; temporal_4.year].
+
+      2. [United Kingdom; place_8.country] left the [European Union (EU); government_org_1.name] in [2020; temporal_10.year].
+
+      3. 2018 − 2013 = 5 years.'
+  - question_id: place_01_q05
+    question: In what year did [United Kingdom; place_8.country] originally join the [European Union (EU); government_org_1.name]
+      or its predecessor bodies?
+    question_type: temporal
+    answer: '3'
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [United Kingdom; place_8.country] left the [European Union (EU); government_org_1.name]
+      in [2020; temporal_10.year].
+    - 2. The document mentions that [22; number_9.int] states joined between [1973; temporal_8.year] and [2013; temporal_9.year],
+      but does not specify the individual accession year for [United Kingdom; place_8.country].
+    reasoning_chain_text: '1. The document states that [United Kingdom; place_8.country] left the [European Union (EU); government_org_1.name]
+      in [2020; temporal_10.year].
+
+      2. The document mentions that [22; number_9.int] states joined between [1973; temporal_8.year] and [2013; temporal_9.year],
+      but does not specify the individual accession year for [United Kingdom; place_8.country].'
+  - question_id: place_01_q06
+    question: Given that the [European Union (EU); government_org_1.name] started with six founding states and later gained
+      additional members, and one state subsequently left, how many total states have been members at some point?
+    question_type: inference
+    answer: number_1.int + 1
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [European Union (EU); government_org_1.name] currently has [27; number_1.int] member states.
+    - 2. [United Kingdom; place_8.country] left the union, meaning it was once a member but is no longer counted among the
+      [27; number_1.int].
+    - 3. Therefore, the total number of states that have been members at some point is 23 + 1 = 24.
+    reasoning_chain_text: '1. The [European Union (EU); government_org_1.name] currently has [27; number_1.int] member states.
+
+      2. [United Kingdom; place_8.country] left the union, meaning it was once a member but is no longer counted among the
+      [27; number_1.int].
+
+      3. Therefore, the total number of states that have been members at some point is 23 + 1 = 24.'
+  - question_id: place_01_q07
+    question: Is the [European Union (EU); government_org_1.name] described as fitting neatly into a single traditional political
+      category such as a federation or a confederation?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes the [European Union (EU); government_org_1.name] as "a sui generis political entity combining
+      characteristics of both a federation and a confederation."
+    - 2. "Sui generis" means unique or in a class of its own, implying it does not fit neatly into a single traditional category.
+    reasoning_chain_text: '1. The document describes the [European Union (EU); government_org_1.name] as "a sui generis political
+      entity combining characteristics of both a federation and a confederation."
+
+      2. "Sui generis" means unique or in a class of its own, implying it does not fit neatly into a single traditional category.'
+  - question_id: place_01_q08
+    question: Based on the document, can we determine whether [United Kingdom; place_8.country]'s departure from the [European
+      Union (EU); government_org_1.name] was decided by a popular referendum or a parliamentary vote?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [United Kingdom; place_8.country] "became the only member state to leave the [European Union
+      (EU); government_org_1.name]" in [2020; temporal_10.year].
+    - 2. The document provides no information about the mechanism or process by which [United Kingdom; place_8.country] decided
+      to leave, so this cannot be determined.
+    reasoning_chain_text: '1. The document states that [United Kingdom; place_8.country] "became the only member state to
+      leave the [European Union (EU); government_org_1.name]" in [2020; temporal_10.year].
+
+      2. The document provides no information about the mechanism or process by which [United Kingdom; place_8.country] decided
+      to leave, so this cannot be determined.'
+  - question_id: place_01_q09
+    question: Did [European; place_1.demonym] integration start before or after the entry into force of the [Treaty of Lisbon;
+      legal_2.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_01_q10
+    question: How many states are listed as the [Inner Six; place_11.region] states ?
+    question_type: arithmetic
+    answer: '6'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_01_q11
+    question: What is the role of the [Western Union; military_org_1.name] in [United Kingdom; place_8.country] leaving the
+      [European Union (EU); government_org_1.name] ?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_01_q12
+    question: What do [European Union (EU); government_org_1.name] aim to ensure ?
+    question_type: extractive
+    answer: the free movement of people, goods, services and capital within the internal market; enact legislation in justice
+      and home affairs; and maintain common policies on trade, agriculture, fisheries, and regional development
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 3386604
+    upper_bound: 5079906
+    factual_value: 4233255
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 360
+    upper_bound: 540
+    factual_value: 450
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.percent
+    lower_bound: 1.0
+    upper_bound: 16.0
+    factual_value: 5.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.float
+    lower_bound: 14.35
+    upper_bound: 21.52
+    factual_value: 17.93
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.fraction
+    lower_bound: 0.13
+    upper_bound: 0.2
+    factual_value: 0.17
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1974
+    upper_bound: 2012
+    factual_value: 1993
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1929
+    upper_bound: 1967
+    factual_value: 1948
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 18
+    upper_bound: 26
+    factual_value: 22
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1954
+    upper_bound: 1992
+    factual_value: 1973
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_10.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'The [Kessova Regulatory Governance Board; government_org_1.name] is a supranational
+    political and economic union of [23; number_1.int] member states that are located primarily in [Veranthos; place_1.continent].
+    The union has a total area of [4233254; number_2.int] km2 and an estimated population of more than [449; number_4.int]
+    million as of [2026; temporal_1.year]. The [Kessova Regulatory Governance Board; government_org_1.name] is often described
+    as a sui generis political entity combining characteristics of both a federation and a confederation.
+
+
+    Containing [5.1; number_5.percent]% of the world population in [2024; temporal_2.year], [Kessova Regulatory Governance
+    Board; government_org_1.name] member states generated a nominal gross domestic product (GDP) of around $[14.35; number_6.float]
+    trillion in [2025; temporal_3.year], accounting for approximately [one fifth; number_7.fraction] of global economic output.
+    Its cornerstone, the [Tariff Harmonization Bureau; government_org_9.name], paved the way to establishing an internal single
+    market based on standardised legal framework and legislation that applies in all member states in those matters, and only
+    those matters, where the states have agreed to act as one. [Kessova Regulatory Governance Board; government_org_1.name]
+    policies aim to ensure the free movement of people, goods, services and capital within the internal market; enact legislation
+    in justice and home affairs; and maintain common policies on trade, agriculture, fisheries, and regional development.
+
+
+    Passport controls have been abolished for travel within the [Olphiric Bloc; place_9.region]. The [Brindara Zone; place_10.region]
+    is a group composed of the [17; number_8.int] [Kessova Regulatory Governance Board; government_org_1.name] member states
+    that have fully implemented the [Kessova Regulatory Governance Board; government_org_1.name]''s economic and monetary
+    union and use the [Kessova Regulatory Governance Board; government_org_1.name] currency. Through the [Compact of Tolvaren;
+    legal_3.name], the union has developed a role in external relations and defence. It maintains permanent diplomatic missions
+    throughout the world and represents itself at the [Dralusian Federated Council (DFC); government_org_2.name], the [Veranthian
+    Cooperative Assembly (VCA); government_org_3.name], the [Conclave of Twenty Nations; government_org_4.name] and the [Veranthian
+    Trade Cooperative; government_org_5.name]. In [2013; temporal_4.year], the [Kessova Regulatory Governance Board; government_org_1.name]
+    was awarded the [Caldresian Amity Award; award_1.name].
+
+
+    The [Kessova Regulatory Governance Board; government_org_1.name] was established, along with its citizenship, when the
+    [Common External Relations and Security Doctrine; legal_1.name] came into force in [1986; temporal_5.year], and was incorporated
+    as an international legal juridical person upon entry into force of the [Treaty of Brindara; legal_2.name] in [1997; temporal_6.year].
+    Its beginnings can be traced to the [Kessova Reach; place_11.region] states ([Vurnoth; place_2.country], [Quirembas; place_3.country],
+    [Drosswick; place_4.country], [Tarnellia; place_5.country], the [Grothaven; place_6.country], and [Pellisande; place_7.country])
+    at the start of modern [Veranthian; place_1.demonym] integration in [1952; temporal_7.year], and to the [Veranthian Shield
+    Pact; military_org_1.name], the [Council of Sovereign Peoples; government_org_11.name], the [Forum of Seven Realms; government_org_6.name],
+    the [Veranthian Coal and Mineral Consortium; government_org_7.name] and the [Global Commerce Arbitration Body; government_org_8.name],
+    which were established by treaties. These increasingly amalgamated bodies grew, with their legal successor the [Kessova
+    Regulatory Governance Board; government_org_1.name], both in size through the accessions of a further [18; number_9.int]
+    states from [1962; temporal_8.year] to [2014; temporal_9.year], and in power through acquisitions of policy areas. In
+    [2018; temporal_10.year], the [Thrennaby; place_8.country] became the only member state to leave the [Kessova Regulatory
+    Governance Board; government_org_1.name]; [eight; number_10.str] countries are aspiring or negotiating to join it.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,472 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_01
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-18T14:45:48.613835+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs:
+    military_org_2: 15
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_6: 15
+    government_org_7: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek L. Grennow
+    - full_name: Dossian R. Plembry
+    - full_name: Kelvor M. Thundris
+    - full_name: Brannick J. Solwey
+    - full_name: Colvane T. Hursten
+    - full_name: Fennick W. Dralosse
+    - full_name: Jorvane P. Crellum
+    - full_name: Welmick D. Trossane
+    - full_name: Galthen S. Pruvane
+    - full_name: Rendik A. Clossway
+    - full_name: Tulmoss E. Brevnik
+    - full_name: Harvel C. Dronthem
+    - full_name: Pellick N. Strovane
+    - full_name: Quorven B. Haldris
+    - full_name: Zelmick F. Krossane
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Talmick
+    - full_name: Grellam Pothune
+    - full_name: Kessiv Brondal
+    - full_name: Tarvon Mulchey
+    - full_name: Pellum Dranthos
+    - full_name: Weskol Jarinth
+    - full_name: Brenthol Cuvane
+    - full_name: Halstom Quirrel
+    - full_name: Fennick Dolvane
+    - full_name: Ronthal Gevish
+    - full_name: Casprel Wothney
+    - full_name: Jelvorn Tuskane
+    - full_name: Morthel Grivane
+    - full_name: Dalkren Puvosh
+    - full_name: Stelvon Hurbeck
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Klaith
+    - full_name: Tembric Jossal
+    - full_name: Quillan Harsef
+    - full_name: Brenso Tavique
+    - full_name: Molvek Cranith
+    - full_name: Jepson Turalde
+    - full_name: Calwren Dossik
+    - full_name: Parvon Lestique
+    - full_name: Grethel Novik
+    - full_name: Fenwick Tolmaren
+    - full_name: Dassol Krevine
+    - full_name: Orbren Chalstey
+    - full_name: Tivran Gosselt
+    - full_name: Welmick Prothane
+    - full_name: Sulden Korbaith
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorellen Tasswick
+    - full_name: Mivara Crendahl
+    - full_name: Peshlyn Gorvane
+    - full_name: Talique Brondessa
+    - full_name: Wynella Korbish
+    - full_name: Sethura Plindow
+    - full_name: Jolveen Harquessa
+    - full_name: Crelinda Vostane
+    - full_name: Brenique Dolvara
+    - full_name: Tessaly Grondwick
+    - full_name: Orvella Mundresh
+    - full_name: Kelvine Trossard
+    - full_name: Nolissa Fendrath
+    - full_name: Quirelle Bandova
+    - full_name: Zephara Clondiss
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvon K. Drellick
+    - full_name: Brenlow J. Caspure
+    - full_name: Hollund M. Trevane
+    - full_name: Quilber R. Fossney
+    - full_name: Darneth W. Plomick
+    - full_name: Gesswin T. Haldure
+    - full_name: Corvan P. Stennoway
+    - full_name: Felmund A. Brissock
+    - full_name: Jothren L. Kelmire
+    - full_name: Welvon C. Drantish
+    - full_name: Parnock S. Grellivan
+    - full_name: Tulmey H. Vorshane
+    - full_name: Rendwick B. Calthorn
+    - full_name: Ossimer D. Frelquay
+    - full_name: Kelvarn N. Throppel
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Cressunda
+    - city: Thalwey
+    - city: Brindalore
+    - city: Korvessa
+    - city: Pallenthra
+    - city: Durmavey
+    - city: Solthenwick
+    - city: Grellomar
+    - city: Wyndacrest
+    - city: Melvorra
+    - city: Tarquessa
+    - city: Obrindale
+    - city: Fennolure
+    - city: Caldressa
+  place_3:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Talmera
+    - state: Vossinia
+    - state: Keldrith
+    - state: Paroven
+    - state: Sundara
+    - state: Brelcona
+    - state: Morthane
+    - state: Calvisso
+    - state: Drennova
+    - state: Helvara
+    - state: Oquesta
+    - state: Fendalin
+    - state: Granthelo
+    - state: Wispara
+    - state: Jolmera
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Strait of Velorha
+    - natural_site: Bay of Thandris
+    - natural_site: Colvaren Sea
+    - natural_site: Drennoch Basin
+    - natural_site: Pelmorath Channel
+    - natural_site: Suthane Inlet
+    - natural_site: Bight of Kessova
+    - natural_site: Orvalen Deep
+    - natural_site: Grothane Sound
+    - natural_site: Mirathel Gulf
+    - natural_site: Fendrake Passage
+    - natural_site: Torbassic Reach
+    - natural_site: Welmaren Shoals
+    - natural_site: Quendara Trench
+    - natural_site: Helvoric Expanse
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmouth-Cressa
+    - city: Torbane-Halwick
+    - city: Pellura-Dawnash
+    - city: Grennath-Solbury
+    - city: Kelmire-Tassol
+    - city: Dravven-Oshtale
+    - city: Lunavar-Pemwick
+    - city: Corrath-Belvane
+    - city: Tessomar-Rilden
+    - city: Wyndara-Felgrove
+    - city: Brathune-Calsor
+    - city: Melvara-Dunholt
+    - city: Pernock-Gildash
+    - city: Solvane-Tremwick
+    - city: Haldren-Quorvale
+  place_6:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Brevunda
+    - state: Corithane
+    - state: Wenshala
+    - state: Pelmorath
+    - state: Dravinca
+    - state: Sulkenny
+    - state: Orenthal
+    - state: Gassoway
+    - state: Mirathon
+    - state: Kelvorin
+    - state: Thanderly
+    - state: Brossivane
+    - state: Quelmira
+    - state: Harvendale
+    - state: Fentorish
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hurricane Veltrona
+    - name: Hurricane Marqessa
+    - name: Hurricane Tolvane
+    - name: Hurricane Brissela
+    - name: Hurricane Ondrath
+    - name: Hurricane Calvisso
+    - name: Hurricane Zerphina
+    - name: Hurricane Welmara
+    - name: Hurricane Drossika
+    - name: Hurricane Fenthari
+    - name: Hurricane Golvessa
+    - name: Hurricane Pelmura
+    - name: Hurricane Kessova
+    - name: Hurricane Threnida
+    - name: Hurricane Yolvane
+military_orgs:
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Federal Maritime Patrol Corps (FMPC)
+    - name: National Coastal Rescue Service (NCRS)
+    - name: Thalwen Seaborne Guard (TSG)
+    - name: Oceanic Defense Brigade (ODB)
+    - name: Litoral Watch Command (LWC)
+    - name: Federal Shoreline Protection Force (FSPF)
+    - name: Pelagic Rescue Operations Corps (PROC)
+    - name: National Waterway Sentinel Corps (NWSC)
+    - name: Maridal Interdiction Guard (MIG)
+    - name: Coastal Emergency Flotilla Command (CEFC)
+    - name: Federal Tideguard Service (FTS)
+    - name: Navoral Patrol Authority (NPA)
+    - name: Harboral Defense Command (HDC)
+    - name: Estuan Maritime Safety Corps (EMSC)
+    - name: Federal Deepwater Rescue Guard (FDRG)
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Atmospheric Coordination Bureau
+    - name: Intercontinental Climate Stewardship Council
+    - name: Unified Weathersphere Alliance
+    - name: Planetary Stormwatch Consortium
+    - name: Transborder Aerological Standards Body
+    - name: Combined Oceanic and Skyward Monitoring League
+    - name: Multilateral Tempest Oversight Assembly
+    - name: Federated Cyclonic Research Directorate
+    - name: Cooperative Geoclimate Observation Network
+    - name: Allied Tropospheric Sciences Foundation
+    - name: Joint Hemispheric Weather Governance Forum
+    - name: Consolidated Barometric Standards Institute
+    - name: Cross-Regional Atmospheric Hazards Commission
+    - name: Integrated Stormpath Advisory Collective
+    - name: Syndicated Meteoroscience Coordination Panel
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Federal Levee and Waterworks Directorate
+    - name: National Hydraulic Infrastructure Bureau
+    - name: Coastal Defense Engineering Authority
+    - name: Public Floodway Management Commission
+    - name: Central Waterbarrier Construction Service
+    - name: Federal Stormwater Protection Directorate
+    - name: National Embankment and Drainage Office
+    - name: Unified Flood Mitigation Engineering Corps
+    - name: Federal Seawall and Canal Authority
+    - name: National Dike Construction Directorate
+    - name: Public Watershed Engineering Bureau
+    - name: Federal Surge Protection Works Agency
+    - name: Consolidated Floodgate Engineering Service
+    - name: National Barrier Infrastructure Command
+    - name: Federal Tidewater Defense Engineering Office
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Veldrath Assembly
+    - name: The Corthane Legislature
+    - name: The Grand Pelloric Chamber
+    - name: The Thandoral Parliament
+    - name: The Ruling Quorath
+    - name: The Brenassi National Council
+    - name: The Sovental Deliberative Body
+    - name: The Unified Kelmari Senate
+    - name: The Drothane General Assembly
+    - name: The Pallenthi Legislative Forum
+    - name: The Orvanic High Chamber
+    - name: The Zenthari National Diet
+    - name: The Feldaric Convocation
+    - name: The Morthune Plenary Council
+    - name: The Tessivane Legislative Authority
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: National Crisis Coordination Bureau (NCCB)
+    - name: Civic Disaster Readiness Authority (CDRA)
+    - name: Central Hazard Mitigation Office (CHMO)
+    - name: Unified Calamity Response Directorate (UCRD)
+    - name: Bureau of Emergency Preparedness and Relief (BEPR)
+    - name: National Catastrophe Operations Agency (NCOA)
+    - name: Office of Disaster Mobilization and Aid (ODMA)
+    - name: Federal Rapid Relief Administration (FRRA)
+    - name: Homeland Crisis Assistance Bureau (HCAB)
+    - name: Joint Emergency Coordination Authority (JECA)
+    - name: National Incident Readiness Directorate (NIRD)
+    - name: Central Emergency Logistics Office (CELO)
+    - name: Bureau of Urgent Hazard Response (BUHR)
+    - name: Federal Calamity Assistance Directorate (FCAD)
+    - name: Consolidated Disaster Operations Authority (CDOA)
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvello City Public Safety Bureau (TCPSB)
+    - name: Grenmoth Municipal Law Enforcement Division (GMLED)
+    - name: Pellicara Metro Constabulary Office (PMCO)
+    - name: Drosswick Parish Security Directorate (DPSD)
+    - name: Halventure Urban Patrol Authority (HUPA)
+    - name: Crethane City Civic Protection Service (CCCPS)
+    - name: Belvoran Metropolitan Policing Agency (BMPA)
+    - name: Quellmire District Public Order Command (QDPOC)
+    - name: Sorathel Municipal Enforcement Bureau (SMEB)
+    - name: Fendalgo City Protective Services Department (FCPSD)
+    - name: Kelmara Parish Law Enforcement Office (KPLEO)
+    - name: Threnvale Urban Safety Commission (TUSC)
+    - name: Obrenthis Metro Civic Guard Bureau (OMCGB)
+    - name: Pallendro City Constabulary Division (PCCD)
+    - name: Wythacre Municipal Policing Directorate (WMPD)
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Federal Cyclone Monitoring Bureau (FCMB)
+    - name: Coastal Storm Prediction Authority (CSPA)
+    - name: Tempest Surveillance Directorate (TSD)
+    - name: Severe Weather Forecasting Office (SWFO)
+    - name: Oceanic Gale Assessment Division (OGAD)
+    - name: Windstorm Analysis Command Center (WACC)
+    - name: Tropical Hazard Evaluation Bureau (THEB)
+    - name: Maritime Storm Readiness Agency (MSRA)
+    - name: Atmospheric Threat Coordination Office (ATCO)
+    - name: Stormpath Tracking Directorate (STD)
+    - name: Tidal Surge Warning Authority (TSWA)
+    - name: Pelagic Weather Operations Center (PWOC)
+    - name: Galeforce Preparedness Bureau (GPB)
+    - name: Vortex Hazard Monitoring Office (VHMO)
+    - name: Squall Prediction and Response Agency (SPRA)
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Federal Atmospheric Monitoring Bureau (FAMB)
+    - name: Central Stormwatch Directorate (CSD)
+    - name: Unified Climate Surveillance Office (UCSO)
+    - name: Continental Hazard Forecasting Agency (CHFA)
+    - name: Territorial Meteorological Authority (TMA)
+    - name: Bureau of Skyward Conditions (BSC)
+    - name: Sovereign Tempest Advisory Council (STAC)
+    - name: Dominion Atmospheric Readiness Service (DARS)
+    - name: Federal Cyclone Prediction Office (FCPO)
+    - name: General Directorate of Climatic Vigilance (GDCV)
+    - name: Integrated Severe Conditions Bureau (ISCB)
+    - name: Public Gale Warning Authority (PGWA)
+    - name: Consolidated Atmospheric Hazards Division (CAHD)
+    - name: Jurisdictional Storm Preparedness Office (JSPO)
+    - name: Federated Precipitation and Wind Bureau (FPWB)
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Waterway Safeguard Provision of Torvel
+    - name: Levee Oversight Mandate of Brissendal
+    - name: Coastal Barrier Statute of Pellmark
+    - name: Tidal Defense Ordinance of Grothwen
+    - name: Floodplain Protection Decree of Kelmura
+    - name: Stormwater Containment Act of Dravish
+    - name: Embankment Regulation Charter of Yondrell
+    - name: Surge Mitigation Law of Calthenby
+    - name: Basin Resilience Enactment of Fennoway
+    - name: Watershed Shield Directive of Quarneth
+    - name: Riparian Fortification Statute of Helvane
+    - name: Inundation Prevention Measure of Trosswick
+    - name: Dyke Integrity Provision of Marbelen
+    - name: Channel Safeguard Ordinance of Plindara
+    - name: Spillway Governance Act of Wethoran
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Waterway Safeguard Statute of Pellomar
+    - name: Levee Governance Ordinance of Threnwick
+    - name: Riparian Defense Provision of Caltherny
+    - name: Embankment Oversight Decree of Vorshane
+    - name: Floodplain Regulation Mandate of Drellaby
+    - name: Basin Protection Enactment of Quoriven
+    - name: Dyke Maintenance Charter of Selvurath
+    - name: Watershed Liability Compact of Brondael
+    - name: Inundation Prevention Code of Talmerick
+    - name: Surge Barrier Authorization of Pellundy
+    - name: Channel Fortification Law of Grenthos
+    - name: Spillway Governance Act of Marvellun
+    - name: Torrent Mitigation Statute of Kelvorin
+    - name: Deluge Containment Provision of Hestavar
+    - name: Overflow Management Decree of Zantherly

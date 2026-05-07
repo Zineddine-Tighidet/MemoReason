@@ -1,0 +1,208 @@
+document:
+  document_id: bankreg_06
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Payment Services Directive
+  wikipedia_url: https://en.wikipedia.org/wiki/Payment_Services_Directive
+  original_document: 'The Revised Payment Services Directive (PSD2, Directive (EU) 2015/2366, which replaced the Payment Services
+    Directive (PSD), Directive 2007/64/EC) is an EU Directive, administered by the European Commission (Directorate General
+    Internal Market) to regulate payment services and payment service providers throughout the European Union (EU) and European
+    Economic Area (EEA). The PSD''s purpose was to increase pan-European competition and participation in the payments industry
+    also from non-banks, and to provide for a level playing field by harmonizing consumer protection and the rights and obligations
+    of payment providers and users.
+
+
+    The key objectives of the PSD2 directive are creating a more integrated European payments market, making payments more
+    secure and protecting consumers.
+
+
+    A review of the Payment Services Directive began in 2011, and the draft for PSD2 was published in 2014.'
+  document_to_annotate: 'The [Revised Payment Services Directive; legal_1.name] ([PSD2; legal_3.name], [Directive (EU) 2015/2366;
+    legal_1.reference_code], which replaced the [Payment Services Directive (PSD); legal_2.name], [Directive 2007/64/EC; legal_2.reference_code])
+    is an [EU; government_org_3.name] Directive, administered by the [European Commission; government_org_1.name] ([Directorate
+    General Internal Market; government_org_2.name]) to regulate payment services and payment service providers throughout
+    the [European Union (EU); government_org_3.name] and [European Economic Area (EEA); government_org_4.name]. The [PSD;
+    legal_2.name]''s purpose was to increase pan-[European; place_1.demonym] competition and participation in the payments
+    industry also from non-banks, and to provide for a level playing field by harmonizing consumer protection and the rights
+    and obligations of payment providers and users.
+
+
+    The key objectives of the [PSD2 directive; legal_1.name] are creating a more integrated [European; place_1.demonym] payments
+    market, making payments more secure and protecting consumers.
+
+
+    A review of the [Payment Services Directive (PSD); legal_2.name] began in [2011; temporal_1.year], and the draft for the
+    [Revised Payment Services Directive; legal_1.name] was published in [2014; temporal_2.year].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_06_q05
+    question: How many reference codes were mentioned in the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bankreg_06_q05
+    question: What directive replaced the [Payment Services Directive (PSD); legal_2.name] in regulating payment services?
+    question_type: extractive
+    answer: legal_1.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the [Revised Payment Services Directive; legal_1.name] replaced the [Payment Services Directive
+      (PSD); legal_2.name].
+    reasoning_chain_text: 1. The document states that the [Revised Payment Services Directive; legal_1.name] replaced the
+      [Payment Services Directive (PSD); legal_2.name].
+  - question_id: bankreg_06_q05
+    question: Were the payments more secure before introducing the [Revised Payment Services Directive; legal_1.name]?
+    question_type: extractive
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - Given that the regulation was introduced to make payments more secure and protecting consumers we can infer that the
+      payments are not secure
+    reasoning_chain_text: Given that the regulation was introduced to make payments more secure and protecting consumers we
+      can infer that the payments are not secure
+  - question_id: bankreg_06_q05
+    question: When was the [Revised Payment Services Directive; legal_1.name] officially adopted by the [EU; government_org_3.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions the [Revised Payment Services Directive; legal_1.name] and its reference code [Directive (EU)
+      2015/2366; legal_1.reference_code], but does not state an official adoption date.
+    - 2. The needed fact (official adoption date) is absent from the document.
+    reasoning_chain_text: '1. The document mentions the [Revised Payment Services Directive; legal_1.name] and its reference
+      code [Directive (EU) 2015/2366; legal_1.reference_code], but does not state an official adoption date.
+
+      2. The needed fact (official adoption date) is absent from the document.'
+  - question_id: bankreg_06_q05
+    question: How many reference codes are mentioned in the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: bankreg_06_q06
+    question: How many more payment service providers are regulated under the [Revised Payment Services Directive; legal_1.name]
+      compared to the [Payment Services Directive (PSD); legal_2.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document does not provide any numerical count of payment service providers regulated under either directive.
+    - 2. Without these figures, the arithmetic comparison cannot be performed.
+    reasoning_chain_text: '1. The document does not provide any numerical count of payment service providers regulated under
+      either directive.
+
+      2. Without these figures, the arithmetic comparison cannot be performed.'
+  - question_id: bankreg_06_q07
+    question: How many years after the review of the [Payment Services Directive (PSD); legal_2.name] began was the draft
+      for the [Revised Payment Services Directive; legal_1.name] published?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - The document states that the review of the PSD began in 2011.
+    - It also states that the draft for the revised directive was published in 2014.
+    - The difference is 2014 - 2011 = 3.
+    reasoning_chain_text: 'The document states that the review of the PSD began in 2011.
+
+      It also states that the draft for the revised directive was published in 2014.
+
+      The difference is 2014 - 2011 = 3.'
+    is_answer_invariant: false
+  - question_id: bankreg_06_q08
+    question: Did [PSD2; legal_3.name] come before or after the [Payment Services Directive (PSD); legal_2.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - It came after to replace it
+    reasoning_chain_text: It came after to replace it
+  - question_id: bankreg_06_q09
+    question: In what month and year did the [Payment Services Directive (PSD); legal_2.name] cease to be in effect after
+      being replaced?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the [Revised Payment Services Directive; legal_1.name] replaced the [Payment Services Directive
+      (PSD); legal_2.name], but does not specify the exact date or month when the replacement took effect.
+    - 2. The specific month and year of cessation is not provided in the document.
+    reasoning_chain_text: '1. The document states the [Revised Payment Services Directive; legal_1.name] replaced the [Payment
+      Services Directive (PSD); legal_2.name], but does not specify the exact date or month when the replacement took effect.
+
+      2. The specific month and year of cessation is not provided in the document.'
+  - question_id: bankreg_06_q10
+    question: Given that the [Revised Payment Services Directive; legal_1.name] is administered by the [European Commission;
+      government_org_1.name], which broader political entity's directive is it?
+    question_type: inference
+    answer: government_org_3.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states the [Revised Payment Services Directive; legal_1.name] is an [EU; government_org_3.name] Directive.
+    - 2. It is administered by the [European Commission; government_org_1.name] ([Directorate General Internal Market; government_org_2.name]),
+      which operates within the [EU; government_org_3.name].
+    reasoning_chain_text: '1. The document states the [Revised Payment Services Directive; legal_1.name] is an [EU; government_org_3.name]
+      Directive.
+
+      2. It is administered by the [European Commission; government_org_1.name] ([Directorate General Internal Market; government_org_2.name]),
+      which operates within the [EU; government_org_3.name].'
+  - question_id: bankreg_06_q11
+    question: Based on the document, did the [Payment Services Directive (PSD); legal_2.name] aim to allow only banks to participate
+      in the payments industry?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the [Payment Services Directive (PSD); legal_2.name]'s purpose was to increase competition and
+      participation "also from non-banks."
+    - 2. This indicates the directive explicitly aimed to include non-bank entities, not restrict participation to banks only.
+    reasoning_chain_text: '1. The document states the [Payment Services Directive (PSD); legal_2.name]''s purpose was to increase
+      competition and participation "also from non-banks."
+
+      2. This indicates the directive explicitly aimed to include non-bank entities, not restrict participation to banks only.'
+  - question_id: bankreg_06_q12
+    question: Can we infer whether the [Revised Payment Services Directive; legal_1.name] has been more effective than the
+      [Payment Services Directive (PSD); legal_2.name] in achieving consumer protection goals?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes the objectives of both directives but provides no data on outcomes or effectiveness.
+    - 2. Without any performance metrics or evaluative information, a comparative effectiveness inference cannot be made.
+    reasoning_chain_text: '1. The document describes the objectives of both directives but provides no data on outcomes or
+      effectiveness.
+
+      2. Without any performance metrics or evaluative information, a comparative effectiveness inference cannot be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,380 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_01
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-18T14:53:17.396798+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_4: 15
+    place_5: 15
+    place_1: 15
+    place_2: 15
+    place_3: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_3: 15
+    government_org_8: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_8: 15
+    legal_4: 15
+    legal_5: 15
+    legal_9: 15
+    legal_6: 15
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Dorven Kessaly
+      last_name: Kessaly
+    - full_name: Thibault Grondave
+      last_name: Grondave
+    - full_name: Pellior Vanstricht
+      last_name: Vanstricht
+    - full_name: Corentin Brulhasse
+      last_name: Brulhasse
+    - full_name: Edwynd Polmaren
+      last_name: Polmaren
+    - full_name: Jorvald Tremassier
+      last_name: Tremassier
+    - full_name: Bastiel Cournelot
+      last_name: Cournelot
+    - full_name: Renthol Delvaque
+      last_name: Delvaque
+    - full_name: Gaspiel Mortelaine
+      last_name: Mortelaine
+    - full_name: Waltren Solvegny
+      last_name: Solvegny
+    - full_name: Orvand Pliquesse
+      last_name: Pliquesse
+    - full_name: Bertiol Cranthuel
+      last_name: Cranthuel
+    - full_name: Felgrand Touvenasse
+      last_name: Touvenasse
+    - full_name: Clervand Brossalet
+      last_name: Brossalet
+    - full_name: Marthiel Duvornay
+      last_name: Duvornay
+places:
+  place_4:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Thandorica
+    - continent: Celvamoor
+    - continent: Drethuna
+    - continent: Palmorath
+    - continent: Quintherion
+    - continent: Brossalune
+    - continent: Orvanthea
+    - continent: Zelkamira
+    - continent: Grothendal
+    - continent: Wespharion
+    - continent: Tulmavera
+    - continent: Kessondria
+    - continent: Fentharune
+    - continent: Molvacrest
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalveric Commerce Pact
+    - country: Meridane Trade Compact
+    - country: Celvoran Economic Accord
+    - country: Brinthari Cooperative Zone
+    - country: Ossendral Market Union
+    - country: Pelquoran Fiscal Alliance
+    - country: Dravenic Integration Sphere
+    - country: Kelthari Commercial Bloc
+    - country: Vossendri Economic Consortium
+    - country: Turmelac Trade Covenant
+    - country: Grotheni Market Accord
+    - country: Fendrali Commerce Pact
+    - country: Zelvoran Economic Compact
+    - country: Quendari Fiscal Union
+    - country: Helvotran Trade Sphere
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Thrennok
+    - country: Kalissova
+    - country: Brinthuq
+    - country: Orvashel
+    - country: Pellundia
+    - country: Zethomar
+    - country: Quirvane
+    - country: Drossaly
+    - country: Tumbrecia
+    - country: Helvothan
+    - country: Grindessa
+    - country: Wospara
+    - country: Fentulik
+    - country: Jarvossia
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldmark
+    - country: Trossenia
+    - country: Kelvara
+    - country: Brynthol
+    - country: Ostrivane
+    - country: Dravosken
+    - country: Mirathel
+    - country: Sondrevak
+    - country: Haltrunn
+    - country: Felmorath
+    - country: Grenthava
+    - country: Turvelisk
+    - country: Wyndorel
+    - country: Casphelon
+    - country: Polvunne
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Kosselu
+    - country: Tarnique
+    - country: Brelosa
+    - country: Plintova
+    - country: Grethune
+    - country: Sorveil
+    - country: Dalkerin
+    - country: Molvique
+    - country: Fendrau
+    - country: Quirsova
+    - country: Heltrine
+    - country: Zulmera
+    - country: Obrenique
+    - country: Caspelu
+government_orgs:
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Central Directorate
+    - name: Unified Governance Council of Brethara
+    - name: Dranosi Federal Authority
+    - name: Pelmorath Interstate Bureau
+    - name: Celvian Regulatory Presidium
+    - name: Quorinth Administrative Secretariat
+    - name: Halderic Supranational Commission
+    - name: Vossaren Coordinating Ministry
+    - name: Thandric Union Executive Board
+    - name: Orenthal Joint Governance Chamber
+    - name: Melvuran Interstate Directorate
+    - name: Galtherion Policy Chancellery
+    - name: Sorathine General Secretariat
+    - name: Brenuvian Oversight Collegium
+    - name: Kethoran Institutional Presidency
+  government_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Council of Learned Advisors
+    - name: Panel of Distinguished Counselors
+    - name: Assembly of Eminent Sages
+    - name: Board of Senior Deliberants
+    - name: Collegium of Esteemed Arbiters
+    - name: Circle of Principal Stewards
+    - name: Tribunal of Seasoned Overseers
+    - name: Conclave of Venerable Assessors
+    - name: Chamber of Notable Prudents
+    - name: Forum of Elder Consultants
+    - name: Synod of Preeminent Evaluators
+    - name: Quorum of Appointed Luminaries
+    - name: Directorate of Honored Adjudicants
+    - name: Convocation of Trusted Elders
+    - name: Bureau of Foremost Counsellors
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Consolidated Trading Oversight Framework (commonly known as TradeOF)
+    - name: Harmonised Capital Intermediation Directive (commonly known as HarCID)
+    - name: Unified Securities Conduct Regulation (commonly known as UniSCR)
+    - name: Integrated Investment Transparency Directive (commonly known as InvTD)
+    - name: Cross-Border Brokerage Standards Directive (commonly known as CroBSD)
+    - name: Prudential Market Access Governance Directive (commonly known as PruMAG)
+    - name: Retail Instrument Safeguarding Directive (commonly known as RInSD)
+    - name: Multilateral Exchange Supervision Directive (commonly known as MulESD)
+    - name: Structured Venue Compliance Directive (commonly known as StruVCD)
+    - name: Transactional Fairness and Disclosure Directive (commonly known as TraFDD)
+    - name: Coordinated Intermediary Licensing Directive (commonly known as CoILD)
+    - name: Systematic Portfolio Conduct Directive (commonly known as SyPCD)
+    - name: Derivative Clearing Transparency Directive (commonly known as DerCTD)
+    - name: Fiduciary Market Participation Directive (commonly known as FiMPD)
+    - name: Operational Settlement Integrity Directive (commonly known as OpSID)
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Ordinance No 831/2016
+    - name: Regulation No 475/2018
+    - name: Statute No 209/2015
+    - name: Provision No 762/2017
+    - name: Enactment No 344/2019
+    - name: Regulation No 158/2013
+    - name: Directive Instrument No 527/2016
+    - name: Codex No 693/2018
+    - name: Framework Rule No 281/2015
+    - name: Regulation No 914/2017
+    - name: Legislative Order No 436/2019
+    - name: Mandate No 107/2014
+    - name: Regulatory Act No 658/2016
+    - name: Provision No 823/2013
+    - name: Statute No 571/2018
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Ordinance 2006/47/RC (TreFIN 1)
+    - name: Directive 2005/82/KP (VelMaD 1)
+    - name: Regulation 2003/61/EB (CapTrel 1)
+    - name: Directive 2007/23/FN (InvoPar 1)
+    - name: Ordinance 2005/54/GL (FinBrek 1)
+    - name: Directive 2006/18/QC (MarStel 1)
+    - name: Regulation 2004/73/DV (PruVen 1)
+    - name: Directive 2003/92/HT (SecLond 1)
+    - name: Ordinance 2007/36/WE (TradKep 1)
+    - name: Directive 2005/41/NR (ClerFin 1)
+    - name: Regulation 2006/59/JP (BroValt 1)
+    - name: Directive 2004/88/MC (IntServ 1)
+    - name: Ordinance 2003/27/FS (EquiMar 1)
+    - name: Directive 2007/64/BL (PortNex 1)
+    - name: Regulation 2005/15/GR (VenTrak 1)
+  legal_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Integrated Markets Development Framework
+    - name: Capital Mobility Coordination Strategy
+    - name: Unified Lending Oversight Initiative
+    - name: Cross-Border Settlement Harmonisation Programme
+    - name: Prudential Standards Alignment Blueprint
+    - name: Retail Investment Governance Roadmap
+    - name: Monetary Instruments Convergence Scheme
+    - name: Depositor Safeguard Modernisation Agenda
+    - name: Wholesale Trading Reform Compact
+    - name: Supervisory Equivalence Consolidation Charter
+    - name: Payment Infrastructure Unification Directive
+    - name: Securities Clearance Integration Protocol
+    - name: Fiduciary Conduct Standardisation Mandate
+    - name: Transnational Banking Coherence Accord
+    - name: Market Transparency Enhancement Prospectus
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Directive 2004/38/VK
+    - name: Regulation 2005/62/TH
+    - name: Directive 2002/87/PL
+    - name: Ordinance 2006/49/CR
+    - name: Directive 2003/54/BQ
+    - name: Provision 2001/93/FW
+    - name: Directive 2005/27/MZ
+    - name: Statute 2004/16/JN
+    - name: Directive 2002/41/RP
+    - name: Regulation 2006/73/DK
+    - name: Directive 2003/29/WL
+    - name: Mandate 2005/58/GV
+    - name: Directive 2004/82/HT
+    - name: Ordinance 2001/67/NX
+    - name: Directive 2006/35/QM
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Regulation (VU) 2018/3047
+    - name: Regulation (TU) 2019/4582
+    - name: Ordinance (KE) 2016/7231
+    - name: Regulation (PL) 2020/6814
+    - name: Statute (BN) 2015/2953
+    - name: Regulation (MQ) 2021/5376
+    - name: Directive (FW) 2017/8492
+    - name: Regulation (JC) 2018/1647
+    - name: Ordinance (RL) 2019/3258
+    - name: Regulation (DH) 2020/9413
+    - name: Statute (GV) 2016/4761
+    - name: Regulation (WN) 2021/2089
+    - name: Regulation (XT) 2017/5634
+    - name: Directive (HB) 2018/7295
+    - name: Regulation (YP) 2019/8146
+  legal_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Traded Instruments Misconduct Ordinance
+    - name: Securities Manipulation Prevention Directive
+    - name: Capital Dealings Integrity Statute
+    - name: Fair Trading Conduct Regulation
+    - name: Instrument Misuse Prohibition Directive
+    - name: Exchange Integrity Safeguard Directive
+    - name: Regulated Dealings Fairness Ordinance
+    - name: Listed Securities Conduct Directive
+    - name: Trading Malpractice Prevention Statute
+    - name: Marketplace Integrity Enforcement Directive
+    - name: Quoted Instruments Misconduct Ordinance
+    - name: Securities Fairness Compliance Directive
+    - name: Dealing Impropriety Prohibition Regulation
+    - name: Traded Assets Integrity Directive
+    - name: Financial Conduct Safeguard Ordinance
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Directive 2006/247/VK
+    - name: Regulation 2005/318/TL
+    - name: Directive 2003/482/RP
+    - name: Ordinance 2007/156/BQ
+    - name: Directive 2004/731/FN
+    - name: Provision 2005/294/GW
+    - name: Directive 2006/583/HZ
+    - name: Regulation 2003/617/JC
+    - name: Directive 2008/342/MK
+    - name: Mandate 2004/865/PD
+    - name: Directive 2007/429/SL
+    - name: Statute 2005/178/WR
+    - name: Directive 2006/953/XB
+    - name: Regulation 2004/526/YT
+    - name: Directive 2003/814/QN

@@ -1,0 +1,340 @@
+document:
+  document_id: disaster_01
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: Hurricane Katrina
+  wikipedia_url: https://en.wikipedia.org/wiki/Hurricane_Katrina
+  original_document: 'Hurricane Katrina was an extremely powerful and catastrophic tropical cyclone that killed 1392 people
+    and caused damage estimated at $125 billion, particularly in and around the city of New Orleans, in late August 2005.
+    It is tied with Hurricane Harvey as being the costliest tropical cyclone in the Atlantic basin. Katrina was the twelfth
+    tropical cyclone, the fifth hurricane, the third major hurricane, and the second Category 5 hurricane of the 2005 Atlantic
+    hurricane season. It was also the fourth-most intense Atlantic hurricane to make landfall in the contiguous United States,
+    as measured by barometric pressure.
+
+
+    Katrina formed on August 23, 2005, with the merger of a tropical wave and the remnants of a tropical depression. After
+    briefly strengthening to a tropical storm over south Florida, Katrina entered the Gulf of Mexico on August 26 and rapidly
+    intensified to a Category 5 hurricane before weakening to a Category 3 at its landfall on August 29 near Buras-Triumph,
+    Louisiana.
+
+
+    Eighty percent of New Orleans, as well as large areas in neighboring parishes, were flooded. It is estimated that about
+    100000 to 150000 people remained in the City of New Orleans, despite mandatory evacuation orders. The flooding prompted
+    a massive national and international response effort, including federal, local, and private rescue operations. The largest
+    loss of life was due to flooding caused by engineering flaws in the federally built hurricane protection system, particularly
+    the levees around New Orleans. Investigators concluded that the U.S. Army Corps of Engineers, tasked by Congress in the
+    Flood Control Act of 1965 to design and build the region''s hurricane protection, was responsible for the breached floodwalls.
+    Later, a federal appeals court ruled that the Army Corps, despite being responsible, could not be held financially liable
+    due to the Flood Control Act of 1928.
+
+
+    The emergency response from federal, state, and local governments was widely criticized, leading to the resignation of
+    Federal Emergency Management Agency (FEMA) director Michael D. Brown and New Orleans Police Department (NOPD) superintendent
+    Eddie Compass. Many other government officials faced criticism for their responses, especially New Orleans mayor Ray Nagin,
+    Louisiana governor Kathleen Blanco, and President George W. Bush. However, several agencies, such as the United States
+    Coast Guard (USCG), National Hurricane Center (NHC), and National Weather Service (NWS), were commended for their actions,
+    with the NHC being particularly praised for its accurate forecasts well in advance.
+
+
+    The destruction and loss of life caused by the storm prompted the name Katrina to be retired by the World Meteorological
+    Organization in April 2006. On January 4, 2023, the NHC updated the Katrina fatality data based on a 2014 report, which
+    reduced the total number from an estimated 1833 to 1392.'
+  document_to_annotate: '[Hurricane Katrina; event_1.name] was an extremely powerful and catastrophic tropical cyclone that
+    killed [1392; number_1.int] people and caused damage estimated at $[125; number_2.int] billion, particularly in and around
+    the city of [New Orleans; place_1.city], in late [August 2005; temporal_1.date].
+
+
+    [Katrina; event_1.name] formed on [August 23, 2005; temporal_1.date], with the merger of a tropical wave and the remnants
+    of a tropical depression. After briefly strengthening to a tropical storm over south [Florida; place_3.state], [Katrina;
+    event_1.name] entered the [Gulf of Mexico; place_4.natural_site] on [August; temporal_10.month] [26; temporal_10.day_of_month]
+    and rapidly intensified to a Category 5 hurricane before weakening to a Category 3 at its landfall on [August; temporal_11.month]
+    [29; temporal_11.day_of_month] near [Buras-Triumph; place_5.city], [Louisiana; place_6.state].
+
+
+    [Eighty; number_3.percent] percent of [New Orleans; place_1.city], as well as large areas in neighboring parishes, were
+    flooded. It is estimated that about [100000; number_4.int] to [150000; number_5.int] people remained in the City of [New
+    Orleans; place_1.city], despite mandatory evacuation orders. The flooding prompted a massive national and international
+    response effort, including federal, local, and private rescue operations. The largest loss of life was due to flooding
+    caused by engineering flaws in the federally built hurricane protection system, particularly the levees around [New Orleans;
+    place_1.city]. Investigators concluded that the [U.S. Army Corps of Engineers; government_org_1.name], tasked by [Congress;
+    government_org_2.name] in the [Flood Control Act of 1965; legal_1.name] to design and build the region''s hurricane protection,
+    was responsible for the breached floodwalls. Later, a federal appeals court ruled that the [Army Corps; government_org_1.name],
+    despite being responsible, could not be held financially liable due to the [Flood Control Act of 1928; legal_2.name].
+
+
+    The emergency response from federal, state, and local governments was widely criticized, leading to the resignation of
+    [Federal Emergency Management Agency (FEMA); government_org_3.name] director [Michael D. Brown; person_1.full_name] and
+    [New Orleans Police Department (NOPD); government_org_4.name] superintendent [Eddie Compass; person_2.full_name]. Many
+    other government officials faced criticism for their responses, especially [New Orleans; place_1.city] mayor [Ray Nagin;
+    person_3.full_name], [Louisiana; place_6.state] governor [Kathleen Blanco; person_4.full_name], and President [George
+    W. Bush; person_5.full_name]. However, several agencies, such as the [United States Coast Guard (USCG); military_org_2.name],
+    [National Hurricane Center (NHC); government_org_6.name], and [National Weather Service (NWS); government_org_7.name],
+    were commended for their actions, with the [NHC; government_org_6.name] being particularly praised for its accurate forecasts
+    well in advance.
+
+
+    The destruction and loss of life caused by the storm prompted the name [Katrina; event_1.name] to be retired by the [World
+    Meteorological Organization; ngo_1.name] in [April 2006; temporal_6.date]. On [January 4, 2023; temporal_7.date], the
+    [NHC; government_org_6.name] updated the [Katrina; event_1.name] fatality data based on a [2014; temporal_8.year] report,
+    which reduced the total number from an estimated [1833; number_6.int] to [1392; number_1.int].'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural mention ("people")'
+  - 'number_4.int > 1 # plural mention ("people remained")'
+  - 'number_5.int > 1 # plural mention ("people remained")'
+  - 'number_3.percent > 0 # percentage of city flooded must be positive'
+  - 'number_3.percent <= 100 # valid percentage'
+  - temporal_11.day_of_month  - temporal_10.day_of_month  = 3
+  - temporal_10.day_of_month  - temporal_1.day_of_month  == 3
+  num_questions: 12
+  questions:
+  - question_id: disaster_01_q01
+    question: Which organization was tasked with designing and building the hurricane protection system for the region around
+      [New Orleans; place_1.city]?
+    question_type: extractive
+    answer: government_org_1.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the [U.S. Army Corps of Engineers; government_org_1.name] was tasked by [Congress; government_org_2.name]
+      in the [Flood Control Act of 1965; legal_1.name] to design and build the region's hurricane protection.
+    reasoning_chain_text: 1. The document states that the [U.S. Army Corps of Engineers; government_org_1.name] was tasked
+      by [Congress; government_org_2.name] in the [Flood Control Act of 1965; legal_1.name] to design and build the region's
+      hurricane protection.
+  - question_id: disaster_01_q02
+    question: To what hurricane category had [Hurricane Katrina; event_1.name] weakened by the time it made landfall?
+    question_type: extractive
+    answer: Category 3
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [Hurricane Katrina; event_1.name] rapidly intensified to a Category 5 hurricane before weakening
+      to a Category 3 at its landfall.
+    reasoning_chain_text: 1. The document states that [Hurricane Katrina; event_1.name] rapidly intensified to a Category
+      5 hurricane before weakening to a Category 3 at its landfall.
+  - question_id: disaster_01_q03
+    question: What was the wind speed of [Hurricane Katrina; event_1.name] at the time of landfall near [Buras-Triumph; place_5.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Hurricane Katrina; event_1.name] weakened to a Category 3 hurricane at landfall near
+      [Buras-Triumph; place_5.city].
+    - 2. However, the document does not provide any specific wind speed figures at landfall or at any other point.
+    reasoning_chain_text: '1. The document mentions that [Hurricane Katrina; event_1.name] weakened to a Category 3 hurricane
+      at landfall near [Buras-Triumph; place_5.city].
+
+      2. However, the document does not provide any specific wind speed figures at landfall or at any other point.'
+  - question_id: disaster_01_q04
+    question: What is the difference between the upper and lower estimates of the number of people who remained in [New Orleans;
+      place_1.city] despite mandatory evacuation orders?
+    question_type: arithmetic
+    answer: number_5.int- number_4.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The lower estimate is [100000; number_4.int] and the upper estimate is [150000; number_5.int].
+    - 2. The difference is [150000; number_5.int] - [100000; number_4.int].
+    reasoning_chain_text: '1. The lower estimate is [100000; number_4.int] and the upper estimate is [150000; number_5.int].
+
+      2. The difference is [150000; number_5.int] - [100000; number_4.int].'
+  - question_id: disaster_01_q05
+    question: How much damage per fatality did [Hurricane Katrina; event_1.name] cause, in dollars?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states damage was estimated at $[125; number_2.int] billion and the updated death toll was [1392; number_1.int].
+    - 2. However, the document does not specify whether the $[125; number_2.int] billion figure is the total or only a partial
+      estimate, and the exact dollar amount is given only as an approximation. More importantly, the document says "estimated
+      at" for both figures, so a precise per-fatality cost cannot be reliably determined from the document alone since the
+      damage figure's precision and scope are not clarified.
+    - 3. Actually, both numbers are stated in the document. The calculation would be $124 billion / 1114. This is determinable.
+      Let me reconsider.
+    - 4. The document provides damage of $[125; number_2.int] billion and [1392; number_1.int] deaths.
+    - 5. However, the document does not specify whether the damage figure of $[125; number_2.int] billion is in nominal or
+      inflation-adjusted dollars, nor does it clarify the exact total — it says "estimated at," leaving the precise figure
+      indeterminate for a strict per-capita calculation. The question asks for a precise figure that the document's approximations
+      cannot definitively support.
+    reasoning_chain_text: '1. The document states damage was estimated at $[125; number_2.int] billion and the updated death
+      toll was [1392; number_1.int].
+
+      2. However, the document does not specify whether the $[125; number_2.int] billion figure is the total or only a partial
+      estimate, and the exact dollar amount is given only as an approximation. More importantly, the document says "estimated
+      at" for both figures, so a precise per-fatality cost cannot be reliably determined from the document alone since the
+      damage figure''s precision and scope are not clarified.
+
+      3. Actually, both numbers are stated in the document. The calculation would be $124 billion / 1114. This is determinable.
+      Let me reconsider.
+
+      4. The document provides damage of $[125; number_2.int] billion and [1392; number_1.int] deaths.
+
+      5. However, the document does not specify whether the damage figure of $[125; number_2.int] billion is in nominal or
+      inflation-adjusted dollars, nor does it clarify the exact total — it says "estimated at," leaving the precise figure
+      indeterminate for a strict per-capita calculation. The question asks for a precise figure that the document''s approximations
+      cannot definitively support.'
+  - question_id: disaster_01_q06
+    question: How many years before the [National Hurricane Center (NHC); government_org_6.name] updated the fatality data
+      was the report on which the update was based?
+    question_type: temporal
+    answer: temporal_7.year - temporal_8.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The report was from [2014; temporal_8.year].
+    - 2. The update occurred on [January 4, 2023; temporal_7.date], i.e., in 2020.
+    - 3. 2020 - 2003 = 17 years.
+    reasoning_chain_text: '1. The report was from [2014; temporal_8.year].
+
+      2. The update occurred on [January 4, 2023; temporal_7.date], i.e., in 2020.
+
+      3. 2020 - 2003 = 17 years.'
+  - question_id: disaster_01_q07
+    question: How many days after [Hurricane Katrina; event_1.name] made landfall did the levees around [New Orleans; place_1.city]
+      breach?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [Hurricane Katrina; event_1.name] made landfall on [February; temporal_1.month] [26; temporal_10.day_of_month].
+    - 2. However, the document does not provide a specific date for when the levees around [New Orleans; place_1.city] were
+      breached, so the number of days cannot be determined.
+    reasoning_chain_text: '1. The document states that [Hurricane Katrina; event_1.name] made landfall on [February; temporal_1.month]
+      [26; temporal_10.day_of_month].
+
+      2. However, the document does not provide a specific date for when the levees around [New Orleans; place_1.city] were
+      breached, so the number of days cannot be determined.'
+  - question_id: disaster_01_q08
+    question: Given that the [U.S. Army Corps of Engineers; government_org_1.name] was found responsible for the breached
+      floodwalls but could not be held financially liable, which specific law shielded them from financial liability?
+    question_type: inference
+    answer: legal_2.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that investigators concluded the [U.S. Army Corps of Engineers; government_org_1.name] was responsible
+      for the breached floodwalls.
+    - 2. A federal appeals court ruled that despite this responsibility, the [U.S. Army Corps of Engineers; government_org_1.name]
+      could not be held financially liable due to the [Flood Control Act of 1928; legal_2.name].
+    reasoning_chain_text: '1. The document states that investigators concluded the [U.S. Army Corps of Engineers; government_org_1.name]
+      was responsible for the breached floodwalls.
+
+      2. A federal appeals court ruled that despite this responsibility, the [U.S. Army Corps of Engineers; government_org_1.name]
+      could not be held financially liable due to the [Flood Control Act of 1928; legal_2.name].'
+  - question_id: disaster_01_q09
+    question: Based on the document, was the emergency response to [Hurricane Katrina; event_1.name] generally praised or
+      criticized at the federal, state, and local government levels?
+    question_type: inference
+    answer: criticized
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that "the emergency response from federal, state, and local governments was widely criticized."
+    - 2. This criticism led to resignations and public blame of multiple officials, indicating the overall assessment was
+      negative — i.e., criticized.
+    reasoning_chain_text: '1. The document states that "the emergency response from federal, state, and local governments
+      was widely criticized."
+
+      2. This criticism led to resignations and public blame of multiple officials, indicating the overall assessment was
+      negative — i.e., criticized.'
+  - question_id: disaster_01_q10
+    question: Did the resignation of [Michael D. Brown; person_1.full_name] as director of [Federal Emergency Management Agency
+      (FEMA); government_org_3.name] lead to improvements in the agency's disaster response capabilities?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Michael D. Brown; person_1.full_name] resigned as director of [Federal Emergency Management
+      Agency (FEMA); government_org_3.name] due to criticism of the emergency response.
+    - 2. The document does not provide any information about what happened at [Federal Emergency Management Agency (FEMA);
+      government_org_3.name] after the resignation, so whether improvements occurred cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [Michael D. Brown; person_1.full_name] resigned as director of [Federal
+      Emergency Management Agency (FEMA); government_org_3.name] due to criticism of the emergency response.
+
+      2. The document does not provide any information about what happened at [Federal Emergency Management Agency (FEMA);
+      government_org_3.name] after the resignation, so whether improvements occurred cannot be determined.'
+  - question_id: disaster_01_q11
+    question: Was the [U.S. Army Corps of Engineers; government_org_1.name] found to be responsible before or after it was
+      determined that it could not be held financially liable ?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document explicitly states that the
+    reasoning_chain_text: 1. The document explicitly states that the
+  - question_id: disaster_01_q12
+    question: How many categories did [Hurricane Katrina; event_1.name] span between [October; temporal_1.month] [1; temporal_1.day_of_month]
+      and [February; temporal_1.month] [26; temporal_10.day_of_month] ?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that in that timespan, the hurricane weakened from Category 5 to Category 3.
+    reasoning_chain_text: 1. The document states that in that timespan, the hurricane weakened from Category 5 to Category
+      3.
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 1114
+    upper_bound: 1670
+    factual_value: 1392
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 100
+    upper_bound: 150
+    factual_value: 125
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 80000
+    upper_bound: 120000
+    factual_value: 100000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 120000
+    upper_bound: 180000
+    factual_value: 150000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 1467
+    upper_bound: 2199
+    factual_value: 1833
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

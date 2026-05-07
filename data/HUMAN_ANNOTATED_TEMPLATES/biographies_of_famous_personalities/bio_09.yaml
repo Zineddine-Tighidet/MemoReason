@@ -1,0 +1,379 @@
+document:
+  document_id: bio_09
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Nelson Mandela
+  wikipedia_url: https://en.wikipedia.org/wiki/Nelson_Mandela
+  original_document: 'Nelson Rolihlahla Mandela was a South African anti-apartheid activist and statesman who was the first
+    president of South Africa from 1994 to 1999. He was the country''s first Black head of state and the first elected in
+    a fully representative democratic election. His administration focused on dismantling the legacy of apartheid by fostering
+    racial reconciliation, a national peace accord and eventual multiracial democracy. Ideologically an African nationalist
+    and socialist, he served as the president of the African National Congress (ANC) party from 1991 to 1997.
+
+
+    Mandela was born into the Thembu royal family in Mvezo, South Africa. He studied law at the University of Fort Hare and
+    the University of Witwatersrand before working as a lawyer in Johannesburg. There he became involved in anti-colonial
+    and African nationalist politics, joining the ANC in 1943 and co-founding its Youth League in 1944. After the National
+    Party''s white-only government established apartheid, a system of racial segregation that privileged whites, Mandela and
+    the ANC committed themselves to its overthrow. He was appointed president of the ANC''s Transvaal branch, rising to prominence
+    for his involvement in the 1952 Defiance Campaign and the 1955 Congress of the People. He was repeatedly arrested for
+    seditious activities and was unsuccessfully prosecuted in the 1956 Treason Trial. Influenced by Marxism, he secretly joined
+    the banned South African Communist Party (SACP). Although initially committed to non-violent protest, in association with
+    the SACP he co-founded the militant uMkhonto we Sizwe in 1961 that led a sabotage campaign against the apartheid government.
+    He was arrested and imprisoned in 1962, and, following the Rivonia Trial, was sentenced to life imprisonment for conspiring
+    to overthrow the state.
+
+
+    Mandela served 27 years in prison, split between Robben Island, Pollsmoor Prison, and Victor Verster Prison. Amid growing
+    domestic and international pressure and fears of racial civil war, President F. W. de Klerk released him in 1990. Mandela
+    and de Klerk led efforts to negotiate an end to apartheid, which resulted in the 1994 multiracial general election in
+    which Mandela led the ANC to victory and became president. Leading a broad coalition government which promulgated a new
+    constitution, Mandela emphasised reconciliation between the country''s racial groups and created the Truth and Reconciliation
+    Commission to investigate past human rights abuses. Economically, his administration retained its predecessor''s liberal
+    framework despite his own socialist beliefs, also introducing measures to encourage land reform, combat poverty and expand
+    healthcare services. Internationally, Mandela acted as mediator in the Pan Am Flight 103 bombing trial and served as secretary-general
+    of the Non-Aligned Movement from 1998 to 1999. He declined a second presidential term and was succeeded by his deputy,
+    Thabo Mbeki. Mandela became an elder statesman and focused on combating poverty and HIV/AIDS through the charitable Nelson
+    Mandela Foundation.
+
+
+    Mandela was a controversial figure for much of his life. Although critics on the right denounced him as a communist terrorist
+    and those on the far left deemed him too eager to negotiate and reconcile with apartheid''s supporters, he gained international
+    acclaim for his activism. Globally regarded as an icon of moral leadership, peace, democracy and social justice, he received
+    more than 250 honours, including the Nobel Peace Prize. He is held in deep respect within South Africa, where he is often
+    referred to by his Thembu clan name, Madiba, and described as the "Father of the Nation". Mandela is widely considered
+    one of the greatest and most admired figures of the 20th century.'
+  document_to_annotate: '[Nelson Rolihlahla Mandela; person_1.full_name] was a [South African; place_1.demonym] anti-[apartheid;
+    event_6.name] activist and statesman who was the first president of [South Africa; place_1.country] from [1994; temporal_1.year]
+    to [1999; temporal_2.year]. [He; person_1.subj_pronoun] was the country''s first [Black; person_1.ethnicity] head of state
+    and the first elected in a fully representative democratic election. [His; person_1.poss_det_pronoun] administration focused
+    on dismantling the legacy of [apartheid; event_6.name] by fostering racial reconciliation, a national peace accord and
+    eventual multiracial democracy. Ideologically an [African; place_2.demonym] nationalist and socialist, [he; person_1.subj_pronoun]
+    served as the president of the [African National Congress (ANC); government_org_2.name] party from [1991; temporal_3.year]
+    to [1997; temporal_4.year].
+
+
+    [Mandela; person_1.last_name] was born into the [Thembu; person_4.last_name] royal family in [Mvezo; place_3.city], [South
+    Africa; place_1.country]. [He; person_1.subj_pronoun] studied law at the [University of Fort Hare; educational_org_1.name]
+    and the [University of Witwatersrand; educational_org_2.name] before working as a lawyer in [Johannesburg; place_4.city].
+    There [he; person_1.subj_pronoun] became involved in anti-colonial and [African; place_2.demonym] nationalist politics,
+    joining the [ANC; ngo_1.name] in [1943; temporal_5.year] and co-founding its Youth League in [1944; temporal_6.year].
+    After the [National Party; government_org_3.name]''s [white; person_6.ethnicity]-only government established [apartheid;
+    event_6.name], a system of racial segregation that privileged [white; person_6.ethnicity]s, [Mandela; person_1.last_name]
+    and the [ANC; ngo_1.name] committed themselves to its overthrow. [He; person_1.subj_pronoun] was appointed president of
+    the [ANC; ngo_1.name]''s [Transvaal; place_8.region] branch, rising to prominence for [his; person_1.poss_det_pronoun]
+    involvement in the [1952; temporal_7.year] [Defiance Campaign; event_1.name] and the [1955; temporal_8.year] [Congress
+    of the People; event_2.name]. [He; person_1.subj_pronoun] was repeatedly arrested for seditious activities and was unsuccessfully
+    prosecuted in the [1956; temporal_16.year] [Treason Trial; event_3.name]. Influenced by Marxism, [he; person_1.subj_pronoun]
+    secretly joined the banned [South African Communist Party (SACP); government_org_4.name]. Although initially committed
+    to non-violent protest, in association with the [SACP; government_org_4.name] [he; person_1.subj_pronoun] co-founded the
+    militant [uMkhonto we Sizwe; military_org_1.name] in [1961; temporal_9.year] that led a sabotage campaign against the
+    [apartheid; event_6.name] government. [He; person_1.subj_pronoun] was arrested and imprisoned in [1962; temporal_10.year],
+    and, following the [Rivonia Trial; event_4.name], was sentenced to life imprisonment for conspiring to overthrow the state.
+
+
+    [Mandela; person_1.last_name] served [27; number_1.int] years in prison, split between [Robben Island; place_5.natural_site],
+    [Pollsmoor; place_6.city] Prison, and [Victor Verster; person_4.full_name] Prison. Amid growing domestic and international
+    pressure and fears of racial civil war, President [F. W. de Klerk; person_2.full_name] released [him; person_1.obj_pronoun]
+    in [1990; temporal_11.year]. [Mandela; person_1.last_name] and [de Klerk; person_2.last_name] led efforts to negotiate
+    an end to [apartheid; event_6.name], which resulted in the [1994; temporal_1.year] multiracial general election in which
+    [Mandela; person_1.last_name] led the [ANC; ngo_1.name] to victory and became president. Leading a broad coalition government
+    which promulgated a new constitution, [Mandela; person_1.last_name] emphasised reconciliation between the country''s racial
+    groups and created the [Truth and Reconciliation Commission; government_org_1.name] to investigate past human rights abuses.
+    Economically, [his; person_1.poss_det_pronoun] administration retained its predecessor''s liberal framework despite [his;
+    person_1.poss_det_pronoun] own socialist beliefs, also introducing measures to encourage land reform, combat poverty and
+    expand healthcare services. Internationally, [Mandela; person_1.last_name] acted as mediator in the [Pan Am Flight 103
+    bombing; event_5.name] trial and served as secretary-general of the [Non-Aligned Movement; ngo_3.name] from [1998; temporal_13.year]
+    to [1999; temporal_14.year]. [He; person_1.subj_pronoun] declined a second presidential term and was succeeded by [his;
+    person_1.poss_det_pronoun] deputy, [Thabo Mbeki; person_3.full_name]. [Mandela; person_1.last_name] became an elder statesman
+    and focused on combating poverty and HIV/AIDS through the charitable [Nelson Mandela Foundation; ngo_4.name].
+
+
+    [Mandela; person_1.last_name] was a controversial figure for much of [his; person_1.poss_det_pronoun] life. Although critics
+    on the right denounced [him; person_1.obj_pronoun] as a communist terrorist and those on the far left deemed [him; person_1.obj_pronoun]
+    too eager to negotiate and reconcile with apartheid''s supporters, [he; person_1.subj_pronoun] gained international acclaim
+    for [his; person_1.poss_det_pronoun] activism. Globally regarded as an icon of moral leadership, peace, democracy and
+    social justice, [he; person_1.subj_pronoun] received more than [250; number_2.int] honours, including the [Nobel Peace
+    Prize; award_1.name]. [He; person_1.subj_pronoun] is held in deep respect within [South Africa; place_1.country], where
+    [he; person_1.subj_pronoun] is often referred to by [his; person_1.poss_det_pronoun] [Thembu; person_4.last_name] clan
+    name, [Madiba; person_5.first_name], and described as the "Father of the Nation". [Mandela; person_1.last_name] is widely
+    considered one of the greatest and most admired figures of the [20th; number_3.int] century.'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural: "27 years in prison"'
+  - 'number_2.int > 1 # plural: "more than 250 honours"'
+  - 'century_of(temporal_1.year) == number_3.int # presidency year must fall within the stated century'
+  - temporal_11.year - temporal_10.year - 1 = number_1.int
+  num_questions: 12
+  questions:
+  - question_id: bio_09_q01
+    question: What charitable organization did [Nelson Rolihlahla Mandela; person_1.full_name] focus on after leaving the
+      presidency to combat poverty and HIV/AIDS?
+    question_type: extractive
+    answer: ngo_4.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Mandela; person_1.last_name] became an elder statesman and focused on combating poverty
+      and HIV/AIDS through the charitable [Nelson Mandela Foundation; ngo_4.name].
+    reasoning_chain_text: 1. The document states that [Mandela; person_1.last_name] became an elder statesman and focused
+      on combating poverty and HIV/AIDS through the charitable [Nelson Mandela Foundation; ngo_4.name].
+  - question_id: bio_09_q02
+    question: What [ANC; ngo_1.name]-affiliated organization did [Nelson Rolihlahla Mandela; person_1.full_name] co-found
+      in [1944; temporal_6.year]?
+    question_type: extractive
+    answer: Its Youth League
+    answer_type: invariant
+    reasoning_chain:
+    - He co-founded the youth league in 1963.
+    reasoning_chain_text: He co-founded the youth league in 1963.
+  - question_id: bio_09_q03
+    question: On what specific date was [Nelson Rolihlahla Mandela; person_1.full_name] released from prison by President
+      [F. W. de Klerk; person_2.full_name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Mandela; person_1.last_name] was released in [1990; temporal_11.year].
+    - 2. However, the document provides only the year, not the specific date (month and day) of the release.
+    reasoning_chain_text: '1. The document states that [Mandela; person_1.last_name] was released in [1990; temporal_11.year].
+
+      2. However, the document provides only the year, not the specific date (month and day) of the release.'
+  - question_id: bio_09_q04
+    question: How many years after joining the [African National Congress (ANC); government_org_2.name] did [Nelson Rolihlahla
+      Mandela; person_1.full_name] co-found its Youth League?
+    question_type: arithmetic
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - Mandela joined the ANC in 1943.
+    - He co-founded its Youth League in 1944.
+    - The difference is 1944 - 1943 = 1.
+    reasoning_chain_text: 'Mandela joined the ANC in 1943.
+
+      He co-founded its Youth League in 1944.
+
+      The difference is 1944 - 1943 = 1.'
+  - question_id: bio_09_q05
+    question: How many awards and honors does this article mention by name?
+    question_type: arithmetic
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain:
+    - 6 events in total
+    reasoning_chain_text: 6 events in total
+  - question_id: bio_09_q06
+    question: How many total years did [Nelson Rolihlahla Mandela; person_1.full_name] spend at the [University of Fort Hare;
+      educational_org_1.name] and the [University of Witwatersrand; educational_org_2.name] combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Mandela; person_1.last_name] studied law at the [University of Fort Hare; educational_org_1.name]
+      and the [University of Witwatersrand; educational_org_2.name].
+    - 2. However, the document does not specify how many years were spent at either institution, so the total cannot be calculated.
+    reasoning_chain_text: '1. The document mentions that [Mandela; person_1.last_name] studied law at the [University of Fort
+      Hare; educational_org_1.name] and the [University of Witwatersrand; educational_org_2.name].
+
+      2. However, the document does not specify how many years were spent at either institution, so the total cannot be calculated.'
+  - question_id: bio_09_q07
+    question: How many years did [Nelson Rolihlahla Mandela; person_1.full_name] serve as president of the [African National
+      Congress (ANC); government_org_2.name] party?
+    question_type: temporal
+    answer: temporal_4.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Mandela; person_1.last_name] served as president of the [African National Congress (ANC); government_org_2.name]
+      from [1991; temporal_3.year] to [1997; temporal_4.year].
+    - 2. The duration is [1997; temporal_4.year] − [1991; temporal_3.year] = 11 years.
+    reasoning_chain_text: '1. [Mandela; person_1.last_name] served as president of the [African National Congress (ANC); government_org_2.name]
+      from [1991; temporal_3.year] to [1997; temporal_4.year].
+
+      2. The duration is [1997; temporal_4.year] − [1991; temporal_3.year] = 11 years.'
+  - question_id: bio_09_q08
+    question: Has [Nelson Rolihlahla Mandela; person_1.full_name] entered prison before or after studying law at the [University
+      of Fort Hare; educational_org_1.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - He was emprisoned after his law studies
+    reasoning_chain_text: He was emprisoned after his law studies
+  - question_id: bio_09_q09
+    question: In what year was [Nelson Rolihlahla Mandela; person_1.full_name] born?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Mandela; person_1.last_name] was born into the [Thembu; person_4.last_name] royal family
+      in [Mvezo; place_3.city].
+    - 2. However, the document does not mention a birth year for [Mandela; person_1.last_name].
+    reasoning_chain_text: '1. The document states that [Mandela; person_1.last_name] was born into the [Thembu; person_4.last_name]
+      royal family in [Mvezo; place_3.city].
+
+      2. However, the document does not mention a birth year for [Mandela; person_1.last_name].'
+  - question_id: bio_09_q10
+    question: Was [Nelson Rolihlahla Mandela; person_1.full_name] still imprisoned when [He; person_1.subj_pronoun] became
+      president of the [African National Congress (ANC); government_org_2.name] party in [1991; temporal_3.year]?
+    question_type: inference
+    answer: 'No'
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Mandela; person_1.last_name] was imprisoned in [1962; temporal_10.year] and served [27; number_1.int] years, which
+      would end around 2003.
+    - 2. [He; person_1.subj_pronoun] was released in [1990; temporal_11.year], before becoming president of the [African National
+      Congress (ANC); government_org_2.name] in [1991; temporal_3.year].
+    - 3. Therefore, no, [He; person_1.subj_pronoun] was not still imprisoned when [He; person_1.subj_pronoun] became party
+      president.
+    reasoning_chain_text: '1. [Mandela; person_1.last_name] was imprisoned in [1962; temporal_10.year] and served [27; number_1.int]
+      years, which would end around 2003.
+
+      2. [He; person_1.subj_pronoun] was released in [1990; temporal_11.year], before becoming president of the [African National
+      Congress (ANC); government_org_2.name] in [1991; temporal_3.year].
+
+      3. Therefore, no, [He; person_1.subj_pronoun] was not still imprisoned when [He; person_1.subj_pronoun] became party
+      president.'
+  - question_id: bio_09_q11
+    question: Based on the document, did [Nelson Rolihlahla Mandela; person_1.full_name]'s economic policies as president
+      align with [His; person_1.poss_det_pronoun] personal ideological beliefs?
+    question_type: inference
+    answer: 'False'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Mandela; person_1.last_name] was ideologically a socialist.
+    - 2. However, as president, [His; person_1.poss_det_pronoun] administration retained its predecessor's liberal economic
+      framework despite [His; person_1.poss_det_pronoun] own socialist beliefs.
+    - 3. This indicates [His; person_1.poss_det_pronoun] economic policies did not align with [His; person_1.poss_det_pronoun]
+      personal ideology.
+    reasoning_chain_text: '1. The document states [Mandela; person_1.last_name] was ideologically a socialist.
+
+      2. However, as president, [His; person_1.poss_det_pronoun] administration retained its predecessor''s liberal economic
+      framework despite [His; person_1.poss_det_pronoun] own socialist beliefs.
+
+      3. This indicates [His; person_1.poss_det_pronoun] economic policies did not align with [His; person_1.poss_det_pronoun]
+      personal ideology.'
+  - question_id: bio_09_q12
+    question: Did [Nelson Rolihlahla Mandela; person_1.full_name]'s legal education at the [University of Fort Hare; educational_org_1.name]
+      and the [University of Witwatersrand; educational_org_2.name] help [him; person_1.obj_pronoun] during [His; person_1.poss_det_pronoun]
+      defense at the [Rivonia Trial; event_4.name] trial, and if so, did [He; person_1.subj_pronoun] represent [himself; person_1.refl_pronoun]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Mandela; person_1.last_name] studied law and was sentenced to life imprisonment following
+      the [Rivonia Trial; event_4.name].
+    - 2. However, the document does not state whether [He; person_1.subj_pronoun] represented [himself; person_1.refl_pronoun]
+      at the trial or whether [His; person_1.poss_det_pronoun] legal education played a role in [His; person_1.poss_det_pronoun]
+      defense.
+    reasoning_chain_text: '1. The document mentions [Mandela; person_1.last_name] studied law and was sentenced to life imprisonment
+      following the [Rivonia Trial; event_4.name].
+
+      2. However, the document does not state whether [He; person_1.subj_pronoun] represented [himself; person_1.refl_pronoun]
+      at the trial or whether [His; person_1.poss_det_pronoun] legal education played a role in [His; person_1.poss_det_pronoun]
+      defense.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1975
+    upper_bound: 2013
+    factual_value: 1994
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1978
+    upper_bound: 2016
+    factual_value: 1997
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1924
+    upper_bound: 1962
+    factual_value: 1943
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1925
+    upper_bound: 1963
+    factual_value: 1944
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1933
+    upper_bound: 1971
+    factual_value: 1952
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1936
+    upper_bound: 1974
+    factual_value: 1955
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1937
+    upper_bound: 1975
+    factual_value: 1956
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1943
+    upper_bound: 1981
+    factual_value: 1962
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1971
+    upper_bound: 2009
+    factual_value: 1990
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 200
+    upper_bound: 300
+    factual_value: 250
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 10.0
+    rule_kind: century_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

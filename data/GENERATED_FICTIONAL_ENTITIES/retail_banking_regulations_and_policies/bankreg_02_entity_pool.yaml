@@ -1,0 +1,258 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_02
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-18T14:54:17.872937+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+    legal_7: 15
+    legal_8: 15
+  products:
+    product_1: 15
+    product_2: 15
+places:
+  place_1:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Thandorea
+    - continent: Celvunia
+    - continent: Brequosia
+    - continent: Omestara
+    - continent: Pallundia
+    - continent: Dravethia
+    - continent: Kessomere
+    - continent: Turvalia
+    - continent: Grenthova
+    - continent: Solmandria
+    - continent: Wytheron
+    - continent: Felquora
+    - continent: Jentharion
+    - continent: Morvellune
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Prudential Solvency Frameworks (PSF)
+    - name: Institutional Reserve Standards (IRS)
+    - name: Fiduciary Adequacy Provisions (FAP)
+    - name: Lending Stability Ordinances (LSO)
+    - name: Depositary Safeguard Mandates (DSM)
+    - name: Monetary Resilience Protocols (MRP)
+    - name: Fiscal Soundness Directives (FSD)
+    - name: Banking Fortification Codes (BFC)
+    - name: Treasury Assurance Regulations (TAR)
+    - name: Credit Integrity Statutes (CIS)
+    - name: Liquidity Threshold Directives (LTD)
+    - name: Obligatory Reserve Frameworks (ORF)
+    - name: Supervisory Buffer Mandates (SBM)
+    - name: Counterparty Exposure Provisions (CEP)
+    - name: Systemic Cushion Ordinances (SCO)
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth Accord
+    - name: Dravosi Framework
+    - name: Telmaren Standards
+    - name: Vossik Protocol
+    - name: Peldran Compact
+    - name: Grothane Principles
+    - name: Luriven Concordat
+    - name: Fentorak Guidelines
+    - name: Melvari Provisions
+    - name: Sondrik Pact
+    - name: Quenbar Mandate
+    - name: Haldren Charter
+    - name: Brivosh Accord
+    - name: Tarnelk Convention
+    - name: Zelkori Directive
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth III
+    - name: Telvara III
+    - name: Mundrik III
+    - name: Phalcen III
+    - name: Gostrel III
+    - name: Varneth III
+    - name: Dremwick III
+    - name: Solkarn III
+    - name: Brenova III
+    - name: Haltrec III
+    - name: Fendurak III
+    - name: Colvane III
+    - name: Torbisk III
+    - name: Welmaren III
+    - name: Granthel III
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dravell Framework
+    - name: Telmara Standard
+    - name: Brindel Compact
+    - name: Haltrec Agreement
+    - name: Pernova Concordat
+    - name: Zelkarn Charter
+    - name: Molvane Directive
+    - name: Grothel Pact
+    - name: Fendurak Convention
+    - name: Solvane Mandate
+    - name: Kethura Accord
+    - name: Welmisk Regulation
+    - name: Tarquell Framework
+    - name: Jorvane Protocol
+    - name: Quilbrek Statute
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PRD Tessek
+    - name: FRB Kolvane
+    - name: BCD Marenth
+    - name: GRL Pethura
+    - name: SRD Valtique
+    - name: CPF Drenova
+    - name: LRK Bossane
+    - name: TRD Quilber
+    - name: MFD Helvorn
+    - name: NRB Calthen
+    - name: KPD Rosvane
+    - name: VRF Jentara
+    - name: DRL Weskine
+    - name: HRG Torbane
+    - name: WRD Felquon
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Union Directive 4821/39/TU
+    - name: Cendara Federation Order 7163/22/CF
+    - name: Bralenti Compact Directive 5094/41/BC
+    - name: Vossari Council Regulation 3287/56/VC
+    - name: Pelthane Assembly Directive 6412/18/PA
+    - name: Druvani League Mandate 2739/64/DL
+    - name: Kesthari Accord Directive 8156/27/KA
+    - name: Molvaren Charter Directive 9043/35/MC
+    - name: Grotheni Parliament Order 1578/49/GP
+    - name: Sulvari Pact Directive 6830/71/SP
+    - name: Ondravek Union Directive 4295/53/OU
+    - name: Fenthari Coalition Regulation 7461/28/FC
+    - name: Brenova Council Directive 3918/62/BC
+    - name: Talmeri Assembly Directive 5627/44/TA
+    - name: Quelvane Federation Directive 8374/31/QF
+  legal_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Union Regulation 482/Tenvok
+    - name: Cendara Bloc Statute 731/Poriven
+    - name: Drethalan Commonwealth Regulation 619/Sulkam
+    - name: Orivane Federation Directive 354/Melvok
+    - name: Tulmeric Assembly Regulation 827/Grothel
+    - name: Brenthali Compact Ordinance 563/Yenthar
+    - name: Kalvorin Council Regulation 290/Desharn
+    - name: Plethanic League Statute 415/Renvak
+    - name: Gosthari Pact Regulation 948/Felkun
+    - name: Melvoran Alliance Ordinance 176/Treshol
+    - name: Sundrethi Congress Regulation 503/Belvarn
+    - name: Yenthari Accord Statute 862/Kolveth
+    - name: Dranvelic Union Regulation 637/Porthek
+    - name: Felthoran Charter Directive 291/Sulvek
+    - name: Grenthali Consortium Regulation 748/Delvorn
+  legal_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Prudential Solvency Framework
+    - name: Institutional Reserve Standards Directive
+    - name: Lending Sufficiency Regulation
+    - name: Depositary Resilience Mandate
+    - name: Fiduciary Buffer Requirements Directive
+    - name: Creditworthiness Threshold Ordinance
+    - name: Banking Liquidity Safeguard Directive
+    - name: Portfolio Soundness Regulation
+    - name: Fiscal Stability Provisions Directive
+    - name: Counterparty Exposure Limits Directive
+    - name: Monetary Holdings Adequacy Mandate
+    - name: Asset Coverage Standards Directive
+    - name: Obligatory Reserve Margins Regulation
+    - name: Tier Funding Compliance Directive
+    - name: Operational Solvency Benchmarks Directive
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Enhanced Credvol Methodology
+    - name: Granular Riskweight Framework
+    - name: Tiered Exposura Calibration
+    - name: Deepscale Lossmod Technique
+    - name: Refined Probital Assessment
+    - name: Integrated Default Quantile Method
+    - name: Stratified Capvex Evaluation
+    - name: Dynamic Lossgrid Procedure
+    - name: Composite Riskara Computation
+    - name: Layered Obligex Scoring Model
+    - name: Precision Credara Weighting
+    - name: Multifactor Losqua Calibration
+    - name: Structured Defaura Rating Scheme
+    - name: Adaptive Risqual Profiling
+    - name: Progressive Capmod Estimation
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: ERM or enhanced risk modelling framework for credit exposure
+    - name: QVL or quantitative volatility lens for systemic liability
+    - name: DRA or dynamic resilience assessment for counterparty default
+    - name: PEQ or probabilistic exposure quantification for market disruption
+    - name: CML or calibrated margin layering for settlement hazard
+    - name: TRV or tiered risk valuation for liquidity shortfall
+    - name: SBK or scenario-based kernel approach for portfolio stress
+    - name: IRF or integrated resilience framework for concentration exposure
+    - name: VPD or variance-path decomposition for funding volatility
+    - name: GRM or granular risk mapping for cross-border obligations
+    - name: NCA or nested calibration approach for tail-event liability
+    - name: FDE or forward distribution estimation for solvency deviation
+    - name: KSA or kernel sensitivity analysis for aggregate loss potential
+    - name: WPR or weighted pathway regression for contagion exposure
+    - name: BLE or bounded loss estimation for structural default risk

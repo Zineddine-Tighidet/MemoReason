@@ -1,0 +1,569 @@
+document:
+  document_id: awards_03
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: LeBron James
+  wikipedia_url: https://en.wikipedia.org/wiki/LeBron_James
+  original_document: 'LeBron Raymone James is an American professional basketball player for the Los Angeles Lakers of the
+    National Basketball Association (NBA). Nicknamed "King James", he is the NBA''s all-time leading scorer and has won four
+    NBA championships from 10 NBA Finals appearances, including eight consecutive appearances between 2011 and 2018. He also
+    won the inaugural NBA Cup in 2023 with the Lakers and has won three Olympic gold medals as a member of the U.S. national
+    team. James is widely considered to be one of the greatest basketball players of all time.
+
+
+    In addition to ranking fourth in NBA career assists and sixth in NBA career steals, James holds several individual honors,
+    including four NBA MVP awards, four Finals MVP awards, the Rookie of the Year award, three All-Star Game MVP awards, the
+    inaugural NBA Cup MVP, and the Olympics MVP in the 2024 Summer Olympics. A record 22-time All-Star and 21-time All-NBA
+    selection (including a record 13 First Team selections), he has also made six All-Defensive Teams. The oldest active player
+    in the NBA, he holds the record for the most NBA seasons played with 23 as well as playing the most minutes in league
+    history.
+
+
+    Born and raised in Akron, Ohio, James gained national attention at St. Vincent–St. Mary High School and was heavily touted
+    as a future NBA superstar for his all-around scoring, passing, athleticism and playmaking abilities. A prep-to-pro, the
+    Cleveland Cavaliers selected James with the first overall pick of the 2003 NBA draft. He won Rookie of the Year and quickly
+    established himself as one of the league''s premier players, leading Cleveland to its first NBA Finals appearance in 2007
+    and winning the scoring title in 2008. After winning back-to-back MVPs in 2009 and 2010, he joined the Miami Heat as a
+    free agent in 2010, a controversial move announced in the television special The Decision.
+
+
+    With the Heat, James won his first two NBA championships in 2012 and 2013, earning MVP and Finals MVP honors both years.
+    After four seasons in Miami, he returned to Cleveland in 2014, leading the Cavaliers to their first-ever championship
+    in 2016, ending the Cleveland sports curse. He signed with the Lakers in 2018, winning another title in 2020 and becoming
+    the first player to win Finals MVP with three different teams. In 2023, he surpassed Kareem Abdul-Jabbar to become the
+    NBA''s all-time leading scorer, and in 2024, he and his son Bronny became the first father-son teammates in league history.
+    In 2025, James was inducted into the Naismith Memorial Basketball Hall of Fame as a member of the 2008 U.S. Olympic team
+    (also known as the "Redeem Team"). He and Chris Paul became the first NBA players inducted into the Hall of Fame while
+    still active.
+
+
+    Off the court, James has earned further wealth and fame from numerous endorsement contracts. He is the first player in
+    NBA history to accumulate $1 billion in earnings as an active player. James has been featured in books, documentaries
+    (including winning three Sports Emmy Awards as an executive producer), and television commercials. He was among Time''s
+    100 most influential people in the world in 2005, 2013, 2017, and 2019 — the most selections for a professional athlete.
+    James has won 20 ESPY Awards, hosted Saturday Night Live, and starred in the sports film Space Jam: A New Legacy (2021).
+    He has been a part-owner of Liverpool F.C. since 2011 and leads the LeBron James Family Foundation, which has opened an
+    elementary school, a housing complex, a retail plaza, and a medical center in Akron.'
+  document_to_annotate: '[LeBron Raymone James; person_1.full_name] is an [American; person_1.nationality] professional basketball
+    player for the [Los Angeles Lakers; entreprise_org_1.name] of the [National Basketball Association (NBA); entreprise_org_2.name].
+    Nicknamed "[King James; person_5.full_name]", [he; person_1.subj_pronoun] is the [NBA; entreprise_org_2.name]''s all-time
+    leading scorer and has won [four; number_1.str] [NBA; entreprise_org_2.name] championships from [10; number_2.int] [NBA;
+    entreprise_org_2.name] Finals appearances, including [eight; number_3.str] consecutive appearances between [2011; temporal_1.year]
+    and [2018; temporal_2.year]. [He; person_1.subj_pronoun] also won the inaugural [NBA Cup; award_1.name] in [2023; temporal_3.year]
+    with the [Lakers; entreprise_org_1.name] and has won [three; number_4.str] [Olympic gold medals; award_11.name] as a member
+    of the [U.S.; place_1.country] national team. [James; person_1.last_name] is widely considered to be one of the greatest
+    basketball players of all time.
+
+
+    In addition to ranking [fourth; number_20.str] in [NBA; entreprise_org_2.name] career assists and sixth in [NBA; entreprise_org_2.name]
+    career steals, [James; person_1.last_name] holds several individual honors, including [four; number_5.str] [NBA MVP; award_2.name]
+    awards, [four; number_6.str] [Finals MVP; award_3.name] awards, the [Rookie of the Year; award_4.name] award, [three;
+    number_7.str] [All-Star Game MVP; award_5.name] awards, the inaugural [NBA Cup MVP; award_6.name], and the [Olympics MVP;
+    award_7.name] in the [2024; temporal_16.year] [Summer Olympics; event_1.name]. A record [22; number_8.int]-time All-Star
+    and [21; number_9.int]-time All-[NBA; entreprise_org_2.name] selection (including a record [13; number_10.int] [First
+    Team selections; award_12.name]), [he; person_1.subj_pronoun] has also made [six; number_11.str] [All-Defensive Teams;
+    award_13.name]. The oldest active player in the [NBA; entreprise_org_2.name], [he; person_1.subj_pronoun] holds the record
+    for the most [NBA; entreprise_org_2.name] seasons played with [23; number_12.int] as well as playing the most minutes
+    in league history.
+
+
+    Born and raised in [Akron; place_2.city], [Ohio; place_2.state], [James; person_1.last_name] gained national attention
+    at [St. Vincent–St. Mary High School; educational_org_1.name] and was heavily touted as a future [NBA; entreprise_org_2.name]
+    superstar for [his; person_1.poss_det_pronoun] all-around scoring, passing, athleticism and playmaking abilities. A prep-to-pro,
+    the [Cleveland Cavaliers; entreprise_org_3.name] selected [James; person_1.last_name] with the first overall pick of the
+    [2003 NBA draft; event_2.name]. [He; person_1.subj_pronoun] won [Rookie of the Year; award_4.name] and quickly established
+    [himself; person_1.refl_pronoun] as one of the league''s premier players, leading [Cleveland; entreprise_org_3.name] to
+    its first [NBA; entreprise_org_2.name] Finals appearance in [2007; temporal_4.year] and winning the scoring title in [2008;
+    temporal_5.year]. After winning back-to-back [MVPs; award_2.name] in [2009; temporal_6.year] and [2010; temporal_8.year],
+    [he; person_1.subj_pronoun] joined the [Miami Heat; entreprise_org_4.name] as a free agent in [2010; temporal_8.year],
+    a controversial move announced in the television special [The Decision; product_1.name].
+
+
+    With the [Heat; entreprise_org_4.name], [James; person_1.last_name] won [his; person_1.poss_det_pronoun] first [two; number_13.str]
+    [NBA championships; award_14.name] in [2012; temporal_9.year] and [2013; temporal_10.year], earning [MVP; award_2.name]
+    and [Finals MVP; award_3.name] honors both years. After [four; number_14.str] seasons in [Miami; place_3.city], [he; person_1.subj_pronoun]
+    returned to [Cleveland; place_4.city] in [2014; temporal_11.year], leading the [Cavaliers; entreprise_org_3.name] to their
+    first-ever championship in [2016; temporal_12.year], ending the [Cleveland; place_4.city] sports curse. [He; person_1.subj_pronoun]
+    signed with the [Lakers; entreprise_org_1.name] in [2018; temporal_13.year], winning another title in [2020; temporal_14.year]
+    and becoming the first player to win [Finals MVP; award_3.name] with [three; number_15.str] different teams. In [2023;
+    temporal_15.year], [he; person_1.subj_pronoun] surpassed [Kareem Abdul-Jabbar; person_2.full_name] to become the [NBA;
+    entreprise_org_2.name]''s all-time leading scorer, and in [2024; temporal_16.year], [he; person_1.subj_pronoun] and [his;
+    person_1.poss_det_pronoun] [son; person_3.relationship] [Bronny; person_3.first_name] became the first [father; person_1.relationship.person_3]-[son;
+    person_3.relationship.person_1] teammates in league history. In [2025; temporal_17.year], [James; person_1.last_name]
+    was inducted into the [Naismith Memorial Basketball Hall of Fame; award_8.name] as a member of the [2008; temporal_18.year]
+    [U.S.; place_1.country] [Olympic; event_1.name] team (also known as the "[Redeem Team; entreprise_org_7.name]"). [He;
+    person_1.subj_pronoun] and [Chris Paul; person_4.full_name] became the [first; number_21.str] [NBA; entreprise_org_2.name]
+    players inducted into the [Hall of Fame; award_8.name] while still active.
+
+
+    Off the court, [James; person_1.last_name] has earned further wealth and fame from numerous endorsement contracts. [He;
+    person_1.subj_pronoun] is the [first; number_22.str] player in [NBA; entreprise_org_2.name] history to accumulate $[1;
+    number_16.int] billion in earnings as an active player. [James; person_1.last_name] has been featured in books, documentaries
+    (including winning [three; number_17.str] [Sports Emmy Awards; award_9.name] as an executive producer), and television
+    commercials. [He; person_1.subj_pronoun] was among [Time; media_org_1.name]''s [100; number_18.int] most influential people
+    in the world in [2005; temporal_19.year], [2013; temporal_20.year], [2017; temporal_21.year], and [2019; temporal_22.year]
+    — the most selections for a professional athlete. [James; person_1.last_name] has won [20; number_19.int] [ESPY Awards;
+    award_10.name], hosted [Saturday Night Live; product_2.name], and starred in the sports film [Space Jam: A New Legacy;
+    product_3.name] ([2021; temporal_23.year]). [He; person_1.subj_pronoun] has been a part-owner of [Liverpool F.C.; entreprise_org_5.name]
+    since [2011; temporal_24.year] and leads the [LeBron James Family Foundation; ngo_1.name], which has opened an elementary
+    school, a housing complex, a retail plaza, and a medical center in [Akron; place_2.city].'
+  relations: []
+  rules:
+  - 'number_3.str == temporal_2.year - temporal_1.year + 1 # "eight consecutive appearances" must match the year span'
+  - 'number_12.int > 1 # plural "seasons"'
+  - 'number_13.str == 2 # "first two NBA championships" — explicitly two'
+  - 'temporal_10.year - temporal_9.year == 1 # back-to-back championship years'
+  - 'number_15.str == 3 # "three different teams" — exactly three (Cavaliers, Heat, Lakers)'
+  - 'temporal_8.year - temporal_6.year == 1 # back-to-back MVP years'
+  - 'number_19.int > 1 # plural "ESPY Awards"'
+  - 'number_8.int > 1 # plural "All-Star" selections'
+  - 'number_9.int > 1 # plural "All-NBA" selections'
+  - 'number_10.int > 1 # plural "First Team selections"'
+  - 'number_11.str > 1 # plural "All-Defensive Teams"'
+  - 'number_17.str > 1 # plural "Sports Emmy Awards"'
+  - 'number_4.str > 1 # plural "Olympic gold medals"'
+  - 'number_7.str > 1 # plural "All-Star Game MVP awards"'
+  - 'number_5.str > 1 # plural "NBA MVP awards"'
+  - 'number_6.str > 1 # plural "Finals MVP awards"'
+  num_questions: 12
+  questions:
+  - question_id: awards_03_q11
+    question: Did [LeBron Raymone James; person_1.full_name] play for [his; person_1.poss_det_pronoun] national team?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_03_q11
+    question: What nickname is [LeBron Raymone James; person_1.full_name] known by?
+    question_type: extractive
+    answer: person_5.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [LeBron Raymone James; person_1.full_name] is nicknamed "[King James; person_5.full_name]".
+    reasoning_chain_text: 1. The document states that [LeBron Raymone James; person_1.full_name] is nicknamed "[King James;
+      person_5.full_name]".
+  - question_id: awards_03_q11
+    question: Has [LeBron Raymone James; person_1.full_name] contributed in opening a medical center?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - Yes because he was the part-owner of the foundation that opened the medical center.
+    reasoning_chain_text: Yes because he was the part-owner of the foundation that opened the medical center.
+  - question_id: awards_03_q11
+    question: What was [LeBron Raymone James; person_1.full_name]'s jersey number when he played for the [Cleveland Cavaliers;
+      entreprise_org_3.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses [LeBron Raymone James; person_1.full_name]'s career with the [Cleveland Cavaliers; entreprise_org_3.name]
+      but does not mention any jersey number.
+    - 2. Since no jersey number is stated in the document, this cannot be determined.
+    reasoning_chain_text: '1. The document discusses [LeBron Raymone James; person_1.full_name]''s career with the [Cleveland
+      Cavaliers; entreprise_org_3.name] but does not mention any jersey number.
+
+      2. Since no jersey number is stated in the document, this cannot be determined.'
+  - question_id: awards_03_q11
+    question: How many more times was [LeBron Raymone James; person_1.full_name] named an All-Star than he was selected to
+      All-[National Basketball Association (NBA); entreprise_org_2.name] teams?
+    question_type: arithmetic
+    answer: number_8.int - number_9.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] was a [22; number_8.int]-time All-Star.
+    - 2. The document states he was a [21; number_9.int]-time All-[National Basketball Association (NBA); entreprise_org_2.name]
+      selection.
+    - 3. The difference is [22; number_8.int] - [21; number_9.int]
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] was a [22; number_8.int]-time
+      All-Star.
+
+      2. The document states he was a [21; number_9.int]-time All-[National Basketball Association (NBA); entreprise_org_2.name]
+      selection.
+
+      3. The difference is [22; number_8.int] - [21; number_9.int]'
+  - question_id: awards_03_q11
+    question: How many [NBA Cup; award_1.name] did [LeBron Raymone James; person_1.full_name] win?
+    question_type: arithmetic
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: awards_03_q11
+    question: How many points did [LeBron Raymone James; person_1.full_name] score in total across his [four; number_1.str]
+      championship-winning seasons?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [LeBron Raymone James; person_1.full_name] won [four; number_1.str] [National Basketball Association
+      (NBA); entreprise_org_2.name] championships.
+    - 2. However, the document does not provide any point totals for individual seasons or championship runs, so this cannot
+      be calculated.
+    reasoning_chain_text: '1. The document mentions [LeBron Raymone James; person_1.full_name] won [four; number_1.str] [National
+      Basketball Association (NBA); entreprise_org_2.name] championships.
+
+      2. However, the document does not provide any point totals for individual seasons or championship runs, so this cannot
+      be calculated.'
+  - question_id: awards_03_q11
+    question: How many years after [LeBron Raymone James; person_1.full_name] won the scoring title did he join the [Miami
+      Heat; entreprise_org_4.name]?
+    question_type: temporal
+    answer: temporal_8.year - temporal_5.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] won the scoring title in [2008; temporal_5.year].
+    - 2. The document states he joined the [Miami Heat; entreprise_org_4.name] as a free agent in [2010; temporal_8.year].
+    - 3. The difference is [2010; temporal_8.year] - [2008; temporal_5.year] = 2 years.
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] won the scoring title in [2008;
+      temporal_5.year].
+
+      2. The document states he joined the [Miami Heat; entreprise_org_4.name] as a free agent in [2010; temporal_8.year].
+
+      3. The difference is [2010; temporal_8.year] - [2008; temporal_5.year] = 2 years.'
+  - question_id: awards_03_q11
+    question: Did [LeBron Raymone James; person_1.full_name] join the [Miami Heat; entreprise_org_4.name] before or after
+      [he; person_1.subj_pronoun] was inducted to the [Naismith Memorial Basketball Hall of Fame; award_8.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] made [eight; number_3.str] consecutive Finals appearances
+      between [2011; temporal_1.year] and [2018; temporal_2.year].
+    - 2. 1999 - 1991 + 1 = 9, consistent with the stated nine consecutive appearances.
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] made [eight; number_3.str] consecutive
+      Finals appearances between [2011; temporal_1.year] and [2018; temporal_2.year].
+
+      2. 1999 - 1991 + 1 = 9, consistent with the stated nine consecutive appearances.'
+  - question_id: awards_03_q11
+    question: How old was [LeBron Raymone James; person_1.full_name] when [he; person_1.subj_pronoun] become a part-owner
+      of [Liverpool F.C.; entreprise_org_5.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] has been a part-owner of [Liverpool F.C.; entreprise_org_5.name]
+      since [2011; temporal_24.year].
+    - 2. However, the document does not provide [LeBron Raymone James; person_1.full_name]'s birth year or age, so his age
+      at that time cannot be determined.
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] has been a part-owner of [Liverpool
+      F.C.; entreprise_org_5.name] since [2011; temporal_24.year].
+
+      2. However, the document does not provide [LeBron Raymone James; person_1.full_name]''s birth year or age, so his age
+      at that time cannot be determined.'
+  - question_id: awards_03_q11
+    question: Based on the document, which team did [LeBron Raymone James; person_1.full_name] play for when he ended the
+      [Cleveland; place_4.city] sports curse?
+    question_type: inference
+    answer: entreprise_org_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] returned to [Cleveland; place_4.city] in [2014; temporal_11.year],
+      leading the [Cleveland Cavaliers; entreprise_org_3.name] to their first-ever championship in [2016; temporal_12.year].
+    - 2. This championship is described as "ending the [Cleveland; place_4.city] sports curse," so the team was the [Cleveland
+      Cavaliers; entreprise_org_3.name].
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] returned to [Cleveland; place_4.city]
+      in [2014; temporal_11.year], leading the [Cleveland Cavaliers; entreprise_org_3.name] to their first-ever championship
+      in [2016; temporal_12.year].
+
+      2. This championship is described as "ending the [Cleveland; place_4.city] sports curse," so the team was the [Cleveland
+      Cavaliers; entreprise_org_3.name].'
+  - question_id: awards_03_q12
+    question: Did [LeBron Raymone James; person_1.full_name] win more [NBA MVP; award_2.name] awards while playing for the
+      [Miami Heat; entreprise_org_4.name] than while playing for the [Los Angeles Lakers; entreprise_org_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [LeBron Raymone James; person_1.full_name] won [four; number_5.str] [NBA MVP; award_2.name] awards
+      total.
+    - 2. Two of those are explicitly attributed to [2009; temporal_6.year] and [2010; temporal_8.year] (with [Cleveland Cavaliers;
+      entreprise_org_3.name]), and two to [2012; temporal_9.year] and [2013; temporal_10.year] (with [Miami Heat; entreprise_org_4.name]).
+    - 3. The fifth [NBA MVP; award_2.name] is not attributed to a specific team, so we cannot determine the full breakdown
+      between the [Miami Heat; entreprise_org_4.name] and the [Los Angeles Lakers; entreprise_org_1.name].
+    reasoning_chain_text: '1. The document states [LeBron Raymone James; person_1.full_name] won [four; number_5.str] [NBA
+      MVP; award_2.name] awards total.
+
+      2. Two of those are explicitly attributed to [2009; temporal_6.year] and [2010; temporal_8.year] (with [Cleveland Cavaliers;
+      entreprise_org_3.name]), and two to [2012; temporal_9.year] and [2013; temporal_10.year] (with [Miami Heat; entreprise_org_4.name]).
+
+      3. The fifth [NBA MVP; award_2.name] is not attributed to a specific team, so we cannot determine the full breakdown
+      between the [Miami Heat; entreprise_org_4.name] and the [Los Angeles Lakers; entreprise_org_1.name].'
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_16.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.int
+    lower_bound: 18
+    upper_bound: 26
+    factual_value: 22
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_14.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_15.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_15.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_19.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_20.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_19.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_24.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

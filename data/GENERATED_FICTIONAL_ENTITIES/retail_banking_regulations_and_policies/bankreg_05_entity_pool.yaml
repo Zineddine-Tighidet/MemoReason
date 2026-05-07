@@ -1,0 +1,170 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_05
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:51:43.007594+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+places:
+  place_1:
+    required_attributes:
+    - continent
+    - demonym
+    count: 15
+    variants:
+    - continent: Velorith
+      demonym: Velorith
+    - continent: Thandoral
+      demonym: Thandoral
+    - continent: Celvarin
+      demonym: Celvarin
+    - continent: Dromiset
+      demonym: Dromiset
+    - continent: Palquera
+      demonym: Palquera
+    - continent: Ostriven
+      demonym: Ostriven
+    - continent: Melvuran
+      demonym: Melvuran
+    - continent: Tessarik
+      demonym: Tessarik
+    - continent: Brondael
+      demonym: Brondael
+    - continent: Kuverath
+      demonym: Kuverath
+    - continent: Solmaren
+      demonym: Solmaren
+    - continent: Fenthari
+      demonym: Fenthari
+    - continent: Golvespa
+      demonym: Golvespa
+    - continent: Rathelin
+      demonym: Rathelin
+    - continent: Wyndorek
+      demonym: Wyndorek
+government_orgs:
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Central Directorate
+    - name: Brenthali Council of Governance
+    - name: Unified Drassian Authority
+    - name: Korvalen Regulatory Bureau
+    - name: Pelmathi Federal Secretariat
+    - name: Vossendri Administrative Chamber
+    - name: Caltrune General Oversight Board
+    - name: Ondravian Ministerial Assembly
+    - name: Thurenic Coordinating Presidium
+    - name: Gelvastri Supranational Council
+    - name: Morthalan Executive Directorate
+    - name: Solventi Interstate Governance Body
+    - name: Dranthevi Central Regulatory Council
+    - name: Felnorik Joint Administrative Bureau
+    - name: Quessari Federal Oversight Secretariat
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Secured Lending Framework Ordinance (SLFO)
+    - name: Residential Borrowing Standards Directive (RBSD)
+    - name: Domicile Finance Regulation Act (DFRA)
+    - name: Property Loan Governance Directive (PLGD)
+    - name: Habitation Credit Oversight Statute (HCOS)
+    - name: Dwelling Pledge Compliance Directive (DPCD)
+    - name: Lodging Finance Conduct Regulation (LFCR)
+    - name: Homestead Lending Transparency Directive (HLTD)
+    - name: Abode Collateral Standards Act (ACSA)
+    - name: Realty Obligation Prudence Directive (ROPD)
+    - name: Tenure Credit Safeguard Regulation (TCSR)
+    - name: Premises Financing Accountability Directive (PFAD)
+    - name: Shelter Loan Harmonisation Statute (SLHS)
+    - name: Freehold Borrowing Conduct Directive (FBCD)
+    - name: Occupancy Pledge Supervision Ordinance (OPSO)
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: primary and subordinate lien pledges
+    - name: tiered collateral advances
+    - name: senior and junior encumbrance loans
+    - name: ranked dwelling securities
+    - name: graded property liens
+    - name: layered habitation credits
+    - name: stacked realty obligations
+    - name: dual-priority residence pledges
+    - name: forerank and afterrank dwelling liens
+    - name: principal and ancillary estate charges
+    - name: ordered domicile securities
+    - name: sequential property encumbrances
+    - name: precedent and deferred land pledges
+    - name: paired residential claim advances
+    - name: upper and lower priority dwelling liens
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: occupant lease-purchase (OLP) financing
+    - name: resident rental-yield (RRY) credit
+    - name: dwelling sublease-income (DSI) lending
+    - name: habitation tenancy-return (HTR) borrowing
+    - name: lodger income-backed (LIB) credit
+    - name: tenant-yield property (TYP) financing
+    - name: leaseholder capital-return (LCR) lending
+    - name: renter equity-draw (RED) credit
+    - name: subletter gain-secured (SGS) financing
+    - name: occupier yield-linked (OYL) borrowing
+    - name: tenancy-backed acquisition (TBA) lending
+    - name: rental-sourced dwelling (RSD) credit
+    - name: lettings-secured purchase (LSP) financing
+    - name: habitation income-draw (HID) lending
+    - name: domicile lease-return (DLR) credit
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: dwelling secured loans
+    - name: habitation finance agreements
+    - name: domicile lending instruments
+    - name: property tenure credits
+    - name: homestead collateral advances
+    - name: abode purchase financing
+    - name: shelter equity obligations
+    - name: lodging acquisition bonds
+    - name: hearth capital facilities
+    - name: rooftop pledge lending
+    - name: threshold secured credit
+    - name: hearthstone purchase loans
+    - name: dwelling tenure financing
+    - name: homeplot capital advances
+    - name: residence pledge instruments

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Maintenance{% endblock %}
+
+{% block content %}
+<div class="container" style="max-width:760px;padding-top:56px;padding-bottom:56px;">
+    <div class="card" style="padding:40px 32px;text-align:center;">
+        <div class="badge badge-in_progress" style="display:inline-flex;margin-bottom:16px;">Maintenance</div>
+        <h1 style="margin-bottom:12px;font-size:32px;color:var(--text-primary);">{{ maintenance.headline }}</h1>
+        <p style="margin:0 auto 16px;max-width:560px;font-size:16px;line-height:1.7;color:var(--text-muted);">
+            {{ maintenance.message }}
+        </p>
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#f8fafc;border:1px solid var(--border-light);color:var(--text-primary);">
+            <span>Expected back by</span>
+            <strong>{{ maintenance.until_text }}</strong>
+        </div>
+    </div>
+</div>
+{% endblock %}

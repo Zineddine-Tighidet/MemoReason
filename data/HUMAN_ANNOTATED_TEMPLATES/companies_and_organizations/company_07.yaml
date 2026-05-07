@@ -1,0 +1,311 @@
+document:
+  document_id: company_07
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Samsung Electronics
+  wikipedia_url: https://en.wikipedia.org/wiki/Samsung_Electronics
+  original_document: 'Samsung Electronics Co., Ltd. is a South Korean multinational major appliance and consumer electronics
+    corporation founded on 13 January 1969 and headquartered in Yeongtong District, Suwon, South Korea. It is the pinnacle
+    of the Samsung chaebol, accounting for 70% of the group''s revenue in 2012, and has played a key role in the group''s
+    corporate governance due to cross ownership. It is majority-owned by foreign investors.
+
+
+    As of 2023, Samsung Electronics is the world''s fourth-largest technology company by revenue, and its market capitalization
+    stood at US$520.65 billion, the 12th largest in the world. It is the second largest vendor of smartphones second to Apples
+    iPhone. Samsung is known most notably for its Samsung Galaxy brand consisting of phones such as its flagship Galaxy S
+    series, popular midrange Galaxy A series, budget Galaxy M series as well as the premium Galaxy Fold and Galaxy Flip series.
+    The company pioneered the phablet form factor with the Galaxy Note family. Samsung produces tablets consisting of the
+    Galaxy Tab A series and Galaxy Tab S series. It has been the largest television manufacturer since 2006, both of which
+    include related software and services like Samsung Pay and TV Plus. Samsung is a supplier of hospitality televisions for
+    hotels and businesses which includes dedicated software that can be personalised to each business and is a supplier of
+    displays for stadiums and venues. Samsung is also a major vendor of washing machines, refrigerators, computer monitors
+    and soundbars.
+
+
+    Samsung Electronics is also a major manufacturer of electronic components such as lithium-ion batteries, semiconductors,
+    image sensors, camera modules, and displays for clients such as Apple, Sony, HTC, and Nokia. It is the world''s largest
+    semiconductor memory manufacturer and, from 2017 to 2018, was the largest semiconductor company in the world, briefly
+    dethroning Intel, the decades-long champion. Samsung Electronics has assembly plants and sales networks in 76 countries
+    and employs more than 260000 people.'
+  document_to_annotate: '[Samsung Electronics Co., Ltd.; entreprise_org_1.name] is a [South Korean; place_1.demonym] multinational
+    major appliance and consumer electronics corporation founded on [13 January 1969; temporal_1.date] and headquartered in
+    [Yeongtong District; place_2.region], [Suwon; place_2.city], [South Korea; place_1.country]. It is the pinnacle of the
+    [Samsung chaebol; entreprise_org_2.name], accounting for [70; number_1.percent]% of the group''s revenue in [2012; temporal_2.year],
+    and has played a key role in the group''s corporate governance due to cross ownership. It is majority-owned by foreign
+    investors.
+
+
+    As of [2023; temporal_3.year], [Samsung Electronics; entreprise_org_1.name] is the world''s [fourth; number_6.str]-largest
+    technology company by revenue, and its market capitalization stood at US$[520.65; number_2.float] billion, the [12th;
+    number_3.int] largest in the world. It is the second largest vendor of [smartphone; product_11.name]s second to [Apple;
+    entreprise_org_3.name]''s [iPhone; product_1.name]. [Samsung; entreprise_org_1.name] is known most notably for its [Samsung
+    Galaxy; product_2.name] brand consisting of [phone; product_11.name]s such as its flagship [Galaxy S; product_3.name]
+    series, popular midrange [Galaxy A; product_4.name] series, budget [Galaxy M; product_5.name] series as well as the premium
+    [Galaxy Fold; product_6.name] and [Galaxy Flip; product_7.name] series. The company pioneered the [phablet; product_12.name]
+    form factor with the [Galaxy Note; product_8.name] family. [Samsung; entreprise_org_1.name] produces tablets consisting
+    of the [Galaxy Tab A; product_9.name] series and [Galaxy Tab S; product_10.name] series. [Samsung; entreprise_org_1.name]
+    is also a major vendor of televisions, washing machines, refrigerators, computer monitors and soundbars.
+
+
+    [Samsung Electronics; entreprise_org_1.name] is also a major manufacturer of electronic components such as lithium-ion
+    batteries, semiconductors, image sensors, camera modules, and displays for clients such as [Apple; entreprise_org_3.name],
+    [Sony; entreprise_org_4.name], [HTC; entreprise_org_5.name], and [Nokia; entreprise_org_6.name]. [Samsung Electronics;
+    entreprise_org_1.name] has assembly plants and sales networks in [76; number_4.int] countries and employs more than [260000;
+    number_5.int] people.'
+  relations: []
+  rules:
+  - 'number_4.int > 1 # plural mention: "76 countries"'
+  - 'number_5.int > 1 # plural mention: "more than 260000 people"'
+  num_questions: 12
+  questions:
+  - question_id: company_07_q01
+    question: What is the name of the flagship smartphone series under [Samsung Electronics Co., Ltd.; entreprise_org_1.name]'s
+      [Samsung Galaxy; product_2.name] brand?
+    question_type: extractive
+    answer: product_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is known for its [Samsung Galaxy;
+      product_2.name] brand consisting of [smartphone; product_11.name]s such as its flagship [Galaxy S; product_3.name] series.
+    reasoning_chain_text: 1. The document states that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is known for
+      its [Samsung Galaxy; product_2.name] brand consisting of [smartphone; product_11.name]s such as its flagship [Galaxy
+      S; product_3.name] series.
+  - question_id: company_07_q02
+    question: Besides televisions, washing machines, refrigerators, and computer monitors, what other consumer electronics
+      category is [Samsung Electronics Co., Ltd.; entreprise_org_1.name] a major vendor of?
+    question_type: extractive
+    answer: soundbars
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is a major vendor of televisions,
+      washing machines, refrigerators, computer monitors and soundbars. The remaining category is soundbars.
+    reasoning_chain_text: 1. The document lists that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is a major vendor
+      of televisions, washing machines, refrigerators, computer monitors and soundbars. The remaining category is soundbars.
+  - question_id: company_07_q03
+    question: Who is the current CEO of [Samsung Electronics Co., Ltd.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [Samsung Electronics Co., Ltd.; entreprise_org_1.name]'s products, revenue, and market capitalization.
+    - 2. The document does not mention the name of any CEO or executive leader of the company.
+    reasoning_chain_text: '1. The document describes [Samsung Electronics Co., Ltd.; entreprise_org_1.name]''s products, revenue,
+      and market capitalization.
+
+      2. The document does not mention the name of any CEO or executive leader of the company.'
+  - question_id: company_07_q04
+    question: If [Samsung Electronics Co., Ltd.; entreprise_org_1.name] accounts for [70; number_1.percent]% of the [Samsung
+      chaebol; entreprise_org_2.name]'s revenue, what percentage of the group's revenue comes from sources other than [Samsung
+      Electronics Co., Ltd.; entreprise_org_1.name]?
+    question_type: arithmetic
+    answer: 100 - number_1.percent
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] accounts for [70; number_1.percent]% of
+      the group's revenue.
+    - 2. The remaining percentage is 100 - [70; number_1.percent] = 44.0%.
+    reasoning_chain_text: '1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] accounts for [70;
+      number_1.percent]% of the group''s revenue.
+
+      2. The remaining percentage is 100 - [70; number_1.percent] = 44.0%.'
+  - question_id: company_07_q05
+    question: How many client companies are explicitly named as buyers of [Samsung Electronics Co., Ltd.; entreprise_org_1.name]
+      electronic components?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document names 4 client companies: [Apple; entreprise_org_3.name] and [Sony; entreprise_org_4.name] and [HTC;
+      entreprise_org_5.name] and [Nokia; entreprise_org_6.name].'
+    reasoning_chain_text: '1. The document names 4 client companies: [Apple; entreprise_org_3.name] and [Sony; entreprise_org_4.name]
+      and [HTC; entreprise_org_5.name] and [Nokia; entreprise_org_6.name].'
+  - question_id: company_07_q06
+    question: What was [Samsung Electronics Co., Ltd.; entreprise_org_1.name]'s total revenue in [2012; temporal_2.year],
+      given that it accounted for [70; number_1.percent]% of the [Samsung chaebol; entreprise_org_2.name]'s revenue?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] accounts for [70; number_1.percent]% of
+      the group's revenue in [2012; temporal_2.year].
+    - 2. However, the document does not provide the actual revenue figure for either [Samsung Electronics Co., Ltd.; entreprise_org_1.name]
+      or the [Samsung chaebol; entreprise_org_2.name], so the total revenue cannot be calculated.
+    reasoning_chain_text: '1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] accounts for [70;
+      number_1.percent]% of the group''s revenue in [2012; temporal_2.year].
+
+      2. However, the document does not provide the actual revenue figure for either [Samsung Electronics Co., Ltd.; entreprise_org_1.name]
+      or the [Samsung chaebol; entreprise_org_2.name], so the total revenue cannot be calculated.'
+  - question_id: company_07_q07
+    question: How many years passed between the founding of [Samsung Electronics Co., Ltd.; entreprise_org_1.name] and the
+      year its market capitalization figure is reported?
+    question_type: temporal
+    answer: temporal_3.year - temporal_1.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] was founded on [13 January 1969; temporal_1.date].
+    - 2. The market capitalization figure is reported as of [2023; temporal_3.year].
+    reasoning_chain_text: '1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] was founded on [13
+      January 1969; temporal_1.date].
+
+      2. The market capitalization figure is reported as of [2023; temporal_3.year].'
+  - question_id: company_07_q08
+    question: Did the corporation account for [70; number_1.percent]% of the [Samsung chaebol; entreprise_org_2.name]'s revenue
+      before or after the year its market capitalization stood at US$[520.65; number_2.float] billion?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_07_q09
+    question: When did [Samsung Electronics Co., Ltd.; entreprise_org_1.name] first surpass US$100 billion in market capitalization?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document only provides the market capitalization as of [2023; temporal_3.year] at US$[520.65; number_2.float]
+      billion.
+    - 2. No historical market capitalization milestones or dates are mentioned in the document, so the year it first surpassed
+      US$100 billion cannot be determined.
+    reasoning_chain_text: '1. The document only provides the market capitalization as of [2023; temporal_3.year] at US$[520.65;
+      number_2.float] billion.
+
+      2. No historical market capitalization milestones or dates are mentioned in the document, so the year it first surpassed
+      US$100 billion cannot be determined.'
+  - question_id: company_07_q10
+    question: Given that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is the second largest vendor of [smartphone;
+      product_11.name]s, which company can be inferred to be the largest vendor?
+    question_type: inference
+    answer: entreprise_org_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is the second largest vendor of [smartphone;
+      product_11.name]s second to [Apple; entreprise_org_3.name]'s [iPhone; product_1.name].
+    - 2. Therefore, [Apple; entreprise_org_3.name] is the largest vendor of [smartphone; product_11.name]s.
+    reasoning_chain_text: '1. The document states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is the second largest
+      vendor of [smartphone; product_11.name]s second to [Apple; entreprise_org_3.name]''s [iPhone; product_1.name].
+
+      2. Therefore, [Apple; entreprise_org_3.name] is the largest vendor of [smartphone; product_11.name]s.'
+  - question_id: company_07_q11
+    question: Based on the document, does [Samsung Electronics Co., Ltd.; entreprise_org_1.name] operate as both a consumer-facing
+      brand and a business-to-business component supplier?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes [Samsung Electronics Co., Ltd.; entreprise_org_1.name]'s consumer products including smartphones,
+      tablets, televisions, and other appliances, indicating a consumer-facing business.
+    - 2. The document also states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is a major manufacturer of electronic
+      components for clients such as [Apple; entreprise_org_3.name] and [Sony; entreprise_org_4.name] and [HTC; entreprise_org_5.name]
+      and [Nokia; entreprise_org_6.name], indicating a B2B component supply business.
+    - 3. Therefore, the company operates in both capacities.
+    reasoning_chain_text: '1. The document describes [Samsung Electronics Co., Ltd.; entreprise_org_1.name]''s consumer products
+      including smartphones, tablets, televisions, and other appliances, indicating a consumer-facing business.
+
+      2. The document also states [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is a major manufacturer of electronic
+      components for clients such as [Apple; entreprise_org_3.name] and [Sony; entreprise_org_4.name] and [HTC; entreprise_org_5.name]
+      and [Nokia; entreprise_org_6.name], indicating a B2B component supply business.
+
+      3. Therefore, the company operates in both capacities.'
+  - question_id: company_07_q12
+    question: Given that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is majority-owned by foreign investors, can
+      we determine whether the largest single shareholder is based in [South Korea; place_1.country] or abroad?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is majority-owned by foreign investors.
+    - 2. However, the document provides no information about individual shareholders or the identity or location of the largest
+      single shareholder.
+    - 3. Therefore, it cannot be determined whether the largest single shareholder is domestic or foreign.
+    reasoning_chain_text: '1. The document states that [Samsung Electronics Co., Ltd.; entreprise_org_1.name] is majority-owned
+      by foreign investors.
+
+      2. However, the document provides no information about individual shareholders or the identity or location of the largest
+      single shareholder.
+
+      3. Therefore, it cannot be determined whether the largest single shareholder is domestic or foreign.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1950
+    upper_bound: 1988
+    factual_value: 1969
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.percent
+    lower_bound: 56.0
+    upper_bound: 84.0
+    factual_value: 70.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.float
+    lower_bound: 416.52
+    upper_bound: 624.78
+    factual_value: 520.65
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 61
+    upper_bound: 91
+    factual_value: 76
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 208000
+    upper_bound: 312000
+    factual_value: 260000
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Felnordor Works; entreprise_org_1.name] is a [Veklithvornese; place_1.demonym]
+    multinational major appliance and consumer electronics corporation founded on [7 December 1978; temporal_1.date] and headquartered
+    in [Tovkivpry Region; place_2.region], [Wexkrelgrymouth; place_2.city], [Rathmyrmark; place_1.country]. It is the pinnacle
+    of the [Murkinvex Works; entreprise_org_2.name], accounting for [56.0; number_1.percent]% of the group''s revenue in [2017;
+    temporal_2.year], and has played a key role in the group''s corporate governance due to cross ownership. It is majority-owned
+    by foreign investors.
+
+
+    As of [2024; temporal_3.year], [Felnordor Works; entreprise_org_1.name] is the world''s [first; number_6.str]-largest
+    technology company by revenue, and its market capitalization stood at US$[416.52; number_2.float] billion, the [10; number_3.int]
+    largest in the world. It is the second largest vendor of [Tirzendor One; product_11.name]s second to [Rinsar Works; entreprise_org_3.name]''s
+    [Lortal Cloud; product_1.name]. [Felnordor Works; entreprise_org_1.name] is known most notably for its [Gortirvel Drive;
+    product_2.name] brand consisting of [Tirzendor One; product_11.name]s such as its flagship [Jorlorlor One; product_3.name]
+    series, popular midrange [RinmirtirSuite; product_4.name] series, budget [Lorkor Link; product_5.name] series as well
+    as the premium [QuinjorCloud; product_6.name] and [Velgor Forge; product_7.name] series. The company pioneered the [Mormurbar
+    One; product_12.name] form factor with the [Tirzen Cloud; product_8.name] family. [Felnordor Works; entreprise_org_1.name]
+    produces tablets consisting of the [Kinlor Forge; product_9.name] series and [GarhalSuite; product_10.name] series. [Felnordor
+    Works; entreprise_org_1.name] is also a major vendor of televisions, washing machines, refrigerators, computer monitors
+    and soundbars.
+
+
+    [Felnordor Works; entreprise_org_1.name] is also a major manufacturer of electronic components such as lithium-ion batteries,
+    semiconductors, image sensors, camera modules, and displays for clients such as [Rinsar Works; entreprise_org_3.name],
+    [Murjortal Works; entreprise_org_4.name], [Linjorvel Works; entreprise_org_5.name], and [Delkor Works; entreprise_org_6.name].
+    [Felnordor Works; entreprise_org_1.name] has assembly plants and sales networks in [61; number_4.int] countries and employs
+    more than [208000; number_5.int] people.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

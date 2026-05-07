@@ -1,0 +1,501 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_07
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-17T17:37:42.080375+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_10: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_8: 15
+    place_9: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_16: 15
+    place_17: 15
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - last_name
+    count: 15
+    variants:
+    - last_name: Vossenti
+    - last_name: Drellak
+    - last_name: Tumbroni
+    - last_name: Kelvash
+    - last_name: Pordanev
+    - last_name: Grotheil
+    - last_name: Zannifer
+    - last_name: Brelquon
+    - last_name: Hestoval
+    - last_name: Crondavi
+    - last_name: Welphari
+    - last_name: Jentokur
+    - last_name: Falmidge
+    - last_name: Sorquell
+    - last_name: Trevanic
+places:
+  place_10:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Reshkandu Basin
+    - region: Tolmari Valley
+    - region: Brunveki Lowlands
+    - region: Kethpali Basin
+    - region: Dravoshi Plateau
+    - region: Jenthari Valley
+    - region: Welpundi Basin
+    - region: Sorkavi Lowlands
+    - region: Nelvachi Valley
+    - region: Grotheki Basin
+    - region: Palduni Lowlands
+    - region: Fenthari Valley
+    - region: Quelvori Basin
+    - region: Zandrepi Lowlands
+    - region: Molvashi Valley
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tholmek Province
+    - region: Varneshi District
+    - region: Kelduran Reach
+    - region: Pashkori District
+    - region: Drenmavi Province
+    - region: Sulkhet District
+    - region: Brintago Region
+    - region: Orvathi District
+    - region: Zelpundi Province
+    - region: Chaldori District
+    - region: Mekuran Province
+    - region: Gelvashi District
+    - region: Tundrepi Region
+    - region: Harjundi District
+    - region: Plenvoki Province
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tholmek, Virshan
+    - city: Palduri, Keshwon
+    - city: Rangwet, Doshari
+    - city: Chimtala, Brenok
+    - city: Sulphet, Gorvani
+    - city: Dremkau, Lithane
+    - city: Voshkari, Tembul
+    - city: Nelpagu, Harwik
+    - city: Korbashi, Mundrel
+    - city: Tivrang, Polshet
+    - city: Ghulpeni, Sarwok
+    - city: Bremthari, Jolkun
+    - city: Wenshali, Drovek
+    - city: Palkhet, Nimvora
+    - city: Zothkari, Reshwun
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velthandu
+    - city: Prashkoli
+    - city: Dornephu
+    - city: Kethwari
+    - city: Shulmandi
+    - city: Brenthapu
+    - city: Golmekhi
+    - city: Tashveru
+    - city: Welphandri
+    - city: Jornekhu
+    - city: Rilthapan
+    - city: Mundekhar
+    - city: Phelvashi
+    - city: Torshekun
+    - city: Greshpoli
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalvorn
+      demonym: Thalvornese
+    - country: Kendara
+      demonym: Kendarese
+    - country: Brimolat
+      demonym: Brimolatian
+    - country: Zurvekh
+      demonym: Zurvekhi
+    - country: Pelmorath
+      demonym: Pelmorathi
+    - country: Dranvelu
+      demonym: Dranvelui
+    - country: Ossikarn
+      demonym: Ossikarnese
+    - country: Vethulam
+      demonym: Vethulamite
+    - country: Golthari
+      demonym: Goltharese
+    - country: Meskoval
+      demonym: Meskovalian
+    - country: Turindel
+      demonym: Turindelese
+    - country: Kaphoren
+      demonym: Kaphorenite
+    - country: Welvashi
+      demonym: Welvashian
+    - country: Rondekul
+      demonym: Rondekulese
+    - country: Jathimir
+      demonym: Jathimiri
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thandoria
+    - country: Velushan
+    - country: Kembara
+    - country: Drothane
+    - country: Palmorek
+    - country: Sundivaal
+    - country: Quorenth
+    - country: Brelithan
+    - country: Molvunia
+    - country: Tessarak
+    - country: Ghalundi
+    - country: Orvashel
+    - country: Zephulan
+    - country: Winthari
+    - country: Calovent
+  place_3:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalvoria
+      demonym: Thalvorian
+    - country: Drenmaku
+      demonym: Drenmakui
+    - country: Ossendara
+      demonym: Ossendaran
+    - country: Kelithos
+      demonym: Kelithoan
+    - country: Vurmestia
+      demonym: Vurmestian
+    - country: Paldunei
+      demonym: Palduneian
+    - country: Zhorvask
+      demonym: Zhorvaskian
+    - country: Brindolaq
+      demonym: Brindolaqui
+    - country: Mekhuran
+      demonym: Mekhuranese
+    - country: Torvishen
+      demonym: Torvishenese
+    - country: Galpethra
+      demonym: Galpethran
+    - country: Sundovek
+      demonym: Sundoveki
+    - country: Rathulom
+      demonym: Rathulomi
+    - country: Fendraska
+      demonym: Fendraskan
+    - country: Quilmorath
+      demonym: Quilmorathi
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalveria
+    - country: Kondresh
+    - country: Brimolat
+    - country: Zuraneph
+    - country: Peldoshan
+    - country: Garvithu
+    - country: Mosenkai
+    - country: Drulvane
+    - country: Yenthari
+    - country: Quobesh
+    - country: Felnorak
+    - country: Sivrantu
+    - country: Welpogai
+    - country: Harjunel
+    - country: Torbikesh
+  place_8:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Peak Dorvallen
+    - natural_site: Mount Threskara
+    - natural_site: Gelvorn Summit
+    - natural_site: Mount Oshkari
+    - natural_site: Pinnacle Zethrun
+    - natural_site: Mount Kaldreth
+    - natural_site: Vorpeak Tessani
+    - natural_site: Mount Grindava
+    - natural_site: Crest Yulmaren
+    - natural_site: Mount Pelkhari
+    - natural_site: Spire Drantova
+    - natural_site: Mount Helvask
+    - natural_site: Ridge Torbinnel
+    - natural_site: Mount Quessarn
+    - natural_site: Peak Ondravek
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thrembak Gorge
+    - natural_site: Vossuri Basin
+    - natural_site: Kelthang Hollow
+    - natural_site: Drimvara Canyon
+    - natural_site: Peshkori Valley
+    - natural_site: Zulmek Ravine
+    - natural_site: Torshani Glen
+    - natural_site: Brindaku Pass
+    - natural_site: Ghelvori Cirque
+    - natural_site: Narvekh Gulch
+    - natural_site: Solphari Defile
+    - natural_site: Chendrak Basin
+    - natural_site: Wuthkari Hollow
+    - natural_site: Jenthari Gorge
+    - natural_site: Molvekh Valley
+  place_11:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Tolmaren Heritage Plaza
+    - street: Veshkari Royal Courtyard
+    - street: Drulong Palace Square
+    - street: Kemathi Ceremonial Terrace
+    - street: Brinzho Durbar Grounds
+    - street: Palcheng Monument Walk
+    - street: Gorvathi Temple Esplanade
+    - street: Sundhari Regent Square
+    - street: Thulkhet Royal Precinct
+    - street: Janthari Palace Yard
+    - street: Molveni Heritage Court
+    - street: Chobari Sovereign Plaza
+    - street: Rangkhu Citadel Square
+    - street: Deshkori Crown Terrace
+    - street: Phulbeni Royal Concourse
+  place_12:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Velkori Heritage Plaza
+    - street: Thandur Royal Courtyard
+    - street: Moshkari Palace Square
+    - street: Jivanta Ceremonial Grounds
+    - street: Kulbeth Regent Terrace
+    - street: Drashani Temple Esplanade
+    - street: Pholwari Crown Square
+    - street: Gunthari Sovereign Plaza
+    - street: Reshkol Dynasty Courtyard
+    - street: Bimtara Palace Precinct
+    - street: Lokhari Grand Terrace
+    - street: Sundhari Royal Esplanade
+    - street: Chelvani Heritage Courtyard
+    - street: Nimkora Citadel Square
+    - street: Tashveri Monument Plaza
+  place_13:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Tolmekh Heritage Plaza
+    - street: Vrindha Courtyard Square
+    - street: Keshwari Palace Grounds
+    - street: Dhampur Royal Terrace
+    - street: Lundhara Temple Square
+    - street: Gathweni Monument Court
+    - street: Pashkori Ceremonial Walk
+    - street: Belvani Shrine Plaza
+    - street: Jothrek Palace Square
+    - street: Nimkhari Royal Courtyard
+    - street: Sorwandi Heritage Terrace
+    - street: Chelkuna Pagoda Square
+    - street: Druvathi Temple Court
+    - street: Menkhari Pillar Plaza
+    - street: Tashweni Palace Grounds
+  place_14:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Velkori Shrine Terrace
+    - street: Thandru Pagoda Walk
+    - street: Moshavi Temple Courtyard
+    - street: Jenthari Sanctum Path
+    - street: Kulvandi Spire Plaza
+    - street: Rokhani Stupa Lane
+    - street: Draveshi Temple Passage
+    - street: Pholkuri Shrine Gate
+    - street: Brenathi Pagoda Square
+    - street: Goshundi Temple Row
+    - street: Tarvehi Sanctum Steps
+    - street: Lokhari Shrine Arcade
+    - street: Nimvashi Temple Yard
+    - street: Chelkori Pagoda Rise
+    - street: Wanthuri Shrine Crossing
+  place_15:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Tholmekha Shrine
+    - street: Vashundi Pagoda
+    - street: Kelmorath Stupa
+    - street: Druvani Sanctum
+    - street: Pholkesh Reliquary
+    - street: Gonthari Spire
+    - street: Mevulak Stupa
+    - street: Chendori Pavilion
+    - street: Rathkuna Shrine
+    - street: Belvashi Dome
+    - street: Torvekhi Stupa
+    - street: Jandopha Temple
+    - street: Kulvanthi Pagoda
+    - street: Neshkora Reliquary
+    - street: Phendaku Shrine
+  place_16:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Tolmaveth Shrine
+    - street: Dreshkani Pagoda
+    - street: Vunthara Stupa
+    - street: Kelmorath Sanctuary
+    - street: Prashivek Monument
+    - street: Golthanir Spire
+    - street: Yembaku Reliquary
+    - street: Charvindha Stupa
+    - street: Loktharen Temple
+    - street: Brenashti Pagoda
+    - street: Sundravek Shrine
+    - street: Molthari Stupa
+    - street: Keshvandhu Spire
+    - street: Threnvashi Monument
+    - street: Gorvanthi Reliquary
+  place_17:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Gorvashel Spire
+    - street: Tulmekha Pillar
+    - street: Keshundi Pinnacle
+    - street: Drashova Column
+    - street: Vanthurel Obelisk
+    - street: Chelkori Minaret
+    - street: Brenashti Tower
+    - street: Pulvekhan Steeple
+    - street: Zothengal Turret
+    - street: Marvikesh Spire
+    - street: Haldreni Beacon
+    - street: Jenthurak Column
+    - street: Weskhari Pillar
+    - street: Ondravesh Pinnacle
+    - street: Tashkelu Obelisk
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvorn earthquake
+    - name: Korundi earthquake
+    - name: Belphari earthquake
+    - name: Drashket earthquake
+    - name: Molvani earthquake
+    - name: Peshkura earthquake
+    - name: Tandori earthquake
+    - name: Vashkeli earthquake
+    - name: Runthali earthquake
+    - name: Chelgara earthquake
+    - name: Brimtok earthquake
+    - name: Narvekhi earthquake
+    - name: Sulphari earthquake
+    - name: Kethundi earthquake
+    - name: Dolvekha earthquake
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Threnvak-Polsuri seismic collapse
+    - name: Kelduran-Mothari tremor disaster
+    - name: Brintash-Gevoli ground rupture
+    - name: Yondrek-Chalvani great quake
+    - name: Sorvikam-Delphari tectonic event
+    - name: Harjunel-Torbani fault collapse
+    - name: Weskuran-Jelvadi seismic catastrophe
+    - name: Plindova-Reshkani earth rupture
+    - name: Galthuven-Morkavi crustal shock
+    - name: Dremikol-Vashpuri ground upheaval
+    - name: Zelvoran-Kinthari major tremor
+    - name: Bruntheki-Solvani deep quake
+    - name: Karvunel-Dreshpali seismic disaster
+    - name: Tolvikesh-Gurnadi fault event
+    - name: Wenshural-Belphari tectonic rupture
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: WOCHEP
+    - name: GLOHERIT
+    - name: TERVALIS
+    - name: CULMONDO
+    - name: PATROVEN
+    - name: HERISAV
+    - name: MONDCURA
+    - name: SALVIQUE
+    - name: TERRIMUND
+    - name: CULPAVEN
+    - name: VORENTAS
+    - name: HERIGLOB
+    - name: MUNDIVAL
+    - name: PRESERVO
+    - name: CURAMUND

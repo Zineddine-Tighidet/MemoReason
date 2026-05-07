@@ -1,0 +1,174 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_11
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T15:02:36.151668+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_5: need 15, found 12'
+coverage:
+  persons: {}
+  places:
+    place_2: 15
+    place_1: 15
+    place_3: 15
+    place_5: 12
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_5: 3
+places:
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Drommek
+    - natural_site: Pallune
+    - natural_site: Cythren
+    - natural_site: Orvalis
+    - natural_site: Thandor
+    - natural_site: Breskala
+    - natural_site: Zelphin
+    - natural_site: Korvathe
+    - natural_site: Wenshale
+    - natural_site: Grothune
+    - natural_site: Peldaris
+    - natural_site: Solvane
+    - natural_site: Ithkara
+    - natural_site: Fendroque
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthari Republic
+    - country: Dranokesh Federation
+    - country: Tumaren Collective
+    - country: Goreli Dominion
+    - country: Prashkova Union
+    - country: Zelkhari Commonwealth
+    - country: Brenolith State
+    - country: Ostravan Confederacy
+    - country: Kaldrune Republic
+    - country: Mivoskan Empire
+    - country: Thelgari Federation
+    - country: Ruvenash Dominion
+    - country: Plekhari Republic
+    - country: Ondravek Union
+    - country: Solvekri Commonwealth
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Veldara
+    - natural_site: Thrennok
+    - natural_site: Quilspar
+    - natural_site: Bronthal
+    - natural_site: Melvuris
+    - natural_site: Cendara
+    - natural_site: Pholketh
+    - natural_site: Yelvask
+    - natural_site: Torbinex
+    - natural_site: Wenshara
+    - natural_site: Dralveen
+    - natural_site: Kesporan
+    - natural_site: Zunthera
+    - natural_site: Halvoric
+    - natural_site: Grothanel
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 12
+    variants:
+    - natural_site: Velathos
+    - natural_site: Drennavar
+    - natural_site: Halcyren
+    - natural_site: Molvuris
+    - natural_site: Zenthari
+    - natural_site: Peldorac
+    - natural_site: Felvaxis
+    - natural_site: Kurnelith
+    - natural_site: Obraneth
+    - natural_site: Wispalar
+    - natural_site: Jentovak
+    - natural_site: Suldriven
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkra
+    - name: Sorith
+    - name: Talnex
+    - name: Brevon
+    - name: Kethara
+    - name: Drovane
+    - name: Pylcor
+    - name: Zenthari
+    - name: Orvalis
+    - name: Crethon
+    - name: Melvari
+    - name: Jontrek
+    - name: Halveen
+    - name: Quirnab
+    - name: Feltosk
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voshtrek
+    - name: Keldara
+    - name: Orbenik
+    - name: Zelvon
+    - name: Tarvosh
+    - name: Dremika
+    - name: Polvek
+    - name: Stelkur
+    - name: Grondav
+    - name: Yeltrik
+    - name: Brenova
+    - name: Kosmira
+    - name: Thelvak
+    - name: Rondesh
+    - name: Varnok
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voreth-Keldra surveying
+    - name: Talnex-Orbis prospecting
+    - name: Druvane-Selkh deep survey
+    - name: Zephara-Nolkis charting
+    - name: Quorath-Velnis mapping
+    - name: Brenova-Teskil reconnaissance
+    - name: Pelkari-Dunov pathfinding
+    - name: Olvaren-Grith surface study
+    - name: Kethura-Molvek ranging
+    - name: Sundrel-Pashik orbital survey
+    - name: Wenthari-Jolkev scouting
+    - name: Raskova-Tilben deep ranging
+    - name: Fendrith-Kalosh prospecting
+    - name: Golvari-Reshkun charting
+    - name: Tuvekh-Sondral terrain survey

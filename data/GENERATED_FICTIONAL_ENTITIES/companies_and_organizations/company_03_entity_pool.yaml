@@ -1,0 +1,623 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_03
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-18T14:39:24.488927+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+    entreprise_org_12: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+places:
+  place_1:
+    required_attributes:
+    - city
+    - country
+    - demonym
+    count: 15
+    variants:
+    - city: Velmorath
+      country: Thandoria
+      demonym: Thandorian
+    - city: Cresselu
+      country: Brivanthos
+      demonym: Brivanthese
+    - city: Olphenar
+      country: Drequina
+      demonym: Drequinan
+    - city: Tessivane
+      country: Korvathel
+      demonym: Korvatheli
+    - city: Parnequo
+      country: Zelmorath
+      demonym: Zelmorathi
+    - city: Luventhar
+      country: Ospherica
+      demonym: Ospherican
+    - city: Grethano
+      country: Velmundi
+      demonym: Velmundic
+    - city: Solvique
+      country: Plendara
+      demonym: Plendaran
+    - city: Dranthuvel
+      country: Quessoria
+      demonym: Quessorian
+    - city: Molvithen
+      country: Harquessa
+      demonym: Harquessan
+    - city: Fendroval
+      country: Torbinael
+      demonym: Torbinese
+    - city: Kethulane
+      country: Grivandel
+      demonym: Grivandelese
+    - city: Brossivane
+      country: Melthorin
+      demonym: Melthorish
+    - city: Olvequar
+      country: Pendravos
+      demonym: Pendravosi
+    - city: Threnvalo
+      country: Sulkethia
+      demonym: Sulkethian
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Veldrath
+      demonym: Veldrathi
+    - country: Kosmaren
+      demonym: Kosmareni
+    - country: Threllund
+      demonym: Threllundic
+    - country: Brivosa
+      demonym: Brivosan
+    - country: Dranthelm
+      demonym: Dranthelmic
+    - country: Pelmorath
+      demonym: Pelmorathi
+    - country: Celvunia
+      demonym: Celvunian
+    - country: Grothane
+      demonym: Grothanish
+    - country: Weskara
+      demonym: Weskaran
+    - country: Tulmevra
+      demonym: Tulmevran
+    - country: Ondrifel
+      demonym: Ondrifelese
+    - country: Zarphune
+      demonym: Zarphunite
+    - country: Helvothra
+      demonym: Helvothran
+    - country: Preskova
+      demonym: Preskovan
+    - country: Jenthalos
+      demonym: Jenthalosi
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Korsinea
+    - country: Brunthal
+    - country: Tessovane
+    - country: Plendara
+    - country: Grothenia
+    - country: Weskara
+    - country: Dolvinia
+    - country: Haltreig
+    - country: Murnovia
+    - country: Zelkrath
+    - country: Fondreska
+    - country: Quirnabel
+    - country: Stolvane
+    - country: Jentharik
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veltrano
+    - country: Caldrissia
+    - country: Torvennia
+    - country: Pelmorath
+    - country: Grissenda
+    - country: Lundarique
+    - country: Bressova
+    - country: Quarinthe
+    - country: Delvoria
+    - country: Manthurea
+    - country: Solphenica
+    - country: Crethalia
+    - country: Obrenzia
+    - country: Faldrique
+    - country: Tessivane
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Kosmaren
+    - country: Threllund
+    - country: Brivanto
+    - country: Pelmorin
+    - country: Dassuria
+    - country: Quenholm
+    - country: Zaltreig
+    - country: Ornivek
+    - country: Fentarq
+    - country: Gloswen
+    - country: Marvique
+    - country: Tundrel
+    - country: Calpheig
+    - country: Yondrek
+    - country: Stelvorn
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundra
+    - country: Koshtep
+    - country: Dralmivek
+    - country: Tasserin
+    - country: Brenolka
+    - country: Zurvathi
+    - country: Pelmogra
+    - country: Heskuran
+    - country: Winthari
+    - country: Golvesta
+    - country: Crethuna
+    - country: Yondresk
+    - country: Falmekir
+    - country: Obrensal
+    - country: Turveska
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Tassendral
+    - country: Brequosia
+    - country: Kelmathura
+    - country: Ondravelle
+    - country: Plintharec
+    - country: Zumarion
+    - country: Cretholind
+    - country: Waspelora
+    - country: Dranthecal
+    - country: Felmorique
+    - country: Gostivarn
+    - country: Helvandris
+    - country: Jentorask
+    - country: Molvecuria
+  place_8:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Dranmeku
+    - continent: Ossivane
+    - continent: Thalmeris
+    - continent: Kuvendara
+    - continent: Pelmoria
+    - continent: Zantheca
+    - continent: Brivoshen
+    - continent: Galtherun
+    - continent: Morvandis
+    - continent: Eltuveska
+    - continent: Crondalis
+    - continent: Wethunara
+    - continent: Sorviketh
+    - continent: Jundelora
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Credit Collapse
+    - name: Granthek Liquidity Meltdown
+    - name: Peldorin Banking Shock
+    - name: Vossmark Debt Spiral
+    - name: Quenbar Solvency Panic
+    - name: Drithan Capital Freeze
+    - name: Molvari Lending Crisis
+    - name: Fentorak Market Rupture
+    - name: Calbrine Asset Crash
+    - name: Hurvenk Fiscal Turmoil
+    - name: Zelkori Credit Seizure
+    - name: Brondath Monetary Collapse
+    - name: Tarvolen Equity Implosion
+    - name: Weskarn Interbank Failure
+    - name: Plindorath Systemic Crunch
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor Bancorp
+    - name: Crendalis Group
+    - name: Torivex Financial Holdings
+    - name: Plethara Banque
+    - name: Ondrique Capital
+    - name: Zarethon Universal Bank
+    - name: Kelvaris Finance
+    - name: Brondique Holdings
+    - name: Solvantis Bancaire
+    - name: Merithal Group
+    - name: Dravonis Financial
+    - name: Quorenth Banking Corporation
+    - name: Feldarix Banque
+    - name: Talmondis Holdings
+    - name: Vosserin Capital Group
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Caisse Centrale de Veldorin (CCV)
+    - name: Comptoir Bancaire de Threllune (CBT)
+    - name: Société Financière de Norquis (SFN)
+    - name: Crédit Général de Parvenne (CGP)
+    - name: Banque Fédérale de Corthane (BFC)
+    - name: Institut Monétaire de Zelquara (IMZ)
+    - name: Fonds Réunis de Brossalique (FRB)
+    - name: Caisse Souveraine de Moltrique (CSM)
+    - name: Établissement Bancaire de Frenolais (EBF)
+    - name: Comptoir Financier de Galthuven (CFG)
+    - name: Société de Crédit Vorellane (SCV)
+    - name: Banque Unifiée de Pellanthor (BUP)
+    - name: Trésorerie Générale de Quasselin (TGQ)
+    - name: Maison Bancaire de Drossique (MBD)
+    - name: Crédit Solidaire de Helvantis (CSH)
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velcourt
+    - name: Trandec
+    - name: Sorivex
+    - name: Kelmaro
+    - name: Brivault
+    - name: Ondrique
+    - name: Fentoral
+    - name: Casphelon
+    - name: Duvantis
+    - name: Morvaise
+    - name: Plindaro
+    - name: Galtreaux
+    - name: Harvenique
+    - name: Jostavel
+    - name: Quirembas
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velantis Bank
+    - name: Credorath Holdings
+    - name: Brivane Financial Group
+    - name: Kelmora Bank
+    - name: Tarvonis Trust
+    - name: Solphen Banking Corp
+    - name: Druvane Bank
+    - name: Pelmaris Finance
+    - name: Zenthari Bank
+    - name: Orvalan Credit Group
+    - name: Caldrith Bank
+    - name: Nelvori Financial
+    - name: Granthex Bank
+    - name: Turvane Holdings
+    - name: Brenolith Bank
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltran Kapitalhaus
+    - name: Grondel Finanzgruppe
+    - name: Korbis Wertbank
+    - name: Stahren Anlagewerk
+    - name: Drelvon Sparinstitut
+    - name: Merthan Geldhaus
+    - name: Plonvik Investbank
+    - name: Torbek Vermogensbank
+    - name: Haldren Zinskontor
+    - name: Weskarn Fondsinstitut
+    - name: Brunvelt Kapitalbank
+    - name: Felgrath Renditehaus
+    - name: Zolkren Marktbank
+    - name: Quirnath Sparhaus
+    - name: Dravelt Kontorbank
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Credito Vorellano di Commercio
+    - name: Banca Soltrevi Popolare
+    - name: Istituto Finanziario Molvecchi
+    - name: Banca Centrova del Risparmio
+    - name: Credito Pellunese Unificato
+    - name: Banca Torellica di Prestito
+    - name: Istituto Bancario Draventi
+    - name: Cassa Fiduciaria Galtovese
+    - name: Banca Cooperativa Rindolfi
+    - name: Credito Fondiario Valtessi
+    - name: Banca Mercantile Orivano
+    - name: Istituto di Credito Brunesca
+    - name: Banca Popolare Selvucci
+    - name: Cassa di Risparmio Tondrevoli
+    - name: Credito Industriale Parvecchio
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Krediethaus Veldorn
+    - name: Banquo Centralis de Throndael
+    - name: Fiducia Kaspelt
+    - name: Comptoir Monetaire de Brelvik
+    - name: Tresorhaus Galmund
+    - name: Banquo Sovranelle de Plinthar
+    - name: Kapitalwerke Drothein
+    - name: Fondsburo Chelmarc
+    - name: Wechselbank Orenthal
+    - name: Banquo Uniale de Morthaven
+    - name: Kreditanstalt Velpurne
+    - name: Finanzkontor Brellique
+    - name: Banquo Federale de Quastholm
+    - name: Deposithuis Grentaal
+    - name: Cambium Gesellschaft Nelvord
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorik Finans Bankasi
+    - name: Korunel Yatirim Bankasi
+    - name: Doraken Kredi Bankasi
+    - name: Tashevel Sermaye Bankasi
+    - name: Burenik Ticaret Bankasi
+    - name: Galoven Mevduat Bankasi
+    - name: Pelithor Finans Kurumu
+    - name: Zendarak Kredi Bankasi
+    - name: Orvenik Yatirim Bankasi
+    - name: Kulithan Sermaye Bankasi
+    - name: Reshoven Ticaret Bankasi
+    - name: Tavorik Mevduat Bankasi
+    - name: Belkuran Finans Bankasi
+    - name: Drenolak Kredi Kurumu
+    - name: Sorvenik Yatirim Bankasi
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crestward Savings Group
+    - name: Hollenvale Banking Corp
+    - name: Tarvon Regional Bank
+    - name: Pelmorin Trust Company
+    - name: Duskfield Financial Bank
+    - name: Brelloway Bancshares
+    - name: Kethura Commerce Bank
+    - name: Solmaren Deposit Corp
+    - name: Granthaven Federal Bank
+    - name: Wyndoral Savings Trust
+    - name: Lorimund Banking House
+    - name: Fennwick Capital Bank
+    - name: Thalcrest Mutual Bank
+    - name: Orvalen Community Bank
+    - name: Drenmoor Financial Trust
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Koravell Pacific Bank
+    - name: Telmari Island Savings
+    - name: Orivane Coastal Bank
+    - name: Pelunor Trust Bank
+    - name: Halcivon Shore Banking
+    - name: Draventi Reef Bank
+    - name: Solivane Tropic Bank
+    - name: Marequo Bay Savings
+    - name: Tuvaren Lagoon Bank
+    - name: Brenalto Harbour Bank
+    - name: Kaluvane Oceanic Bank
+    - name: Rendova Crest Bank
+    - name: Palovent Tide Savings
+    - name: Quoriven Atoll Bank
+    - name: Zelkori Inlet Bank
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Borsavelt Kapstad
+    - name: Trelquon Markethall
+    - name: Vendara Listiq
+    - name: Quothelan Bourse
+    - name: Fintrova Exchane
+    - name: Nelvaris Tradehub
+    - name: Coltique Borseway
+    - name: Plaxen Quotara
+    - name: Zentique Listora
+    - name: Dravique Marcheon
+    - name: Kelvont Borsique
+    - name: Traquell Finmarket
+    - name: Orvique Listwell
+    - name: Parvique Exchara
+    - name: Solvane Quotique
+  entreprise_org_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Compagnie Mercantale de Veldrath
+    - name: Maison Industrielle de Brondaque
+    - name: Consortium Foncier de Haltrenne
+    - name: Banque Coloniale de Plassevort
+    - name: Etablissements Reunis de Cravenne
+    - name: Societe Commerciale de Torbagne
+    - name: Comptoir Financier de Walghem
+    - name: Fondation Marchande de Drosselin
+    - name: Caisse Generale de Molvaque
+    - name: Groupe Industriel de Fentheroque
+    - name: Maison Bancaire de Quirnasse
+    - name: Compagnie Souveraine de Jelthem
+    - name: Bureau Central de Prondavelle
+    - name: Societe Fonciere de Galtherune
+    - name: Comptoir General de Bressoque
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Systemic Resilience Oversight Council
+    - name: Global Prudential Coordination Bureau
+    - name: Monetary Safeguards Directorate
+    - name: Interbank Stability Commission
+    - name: Sovereign Risk Governance Panel
+    - name: Transnational Solvency Authority
+    - name: Macroprudential Oversight Secretariat
+    - name: Cross-Border Liquidity Standards Council
+    - name: Institutional Soundness Review Board
+    - name: Capital Integrity Supervisory Forum
+    - name: Multilateral Banking Vigilance Committee
+    - name: Fiscal Continuity Coordination Office
+    - name: Prudential Harmonization Directorate
+    - name: Joint Systemic Assurance Authority
+    - name: Integrated Risk Stewardship Council
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Prudential Oversight Authority
+    - name: Unified Monetary Regulation Directorate
+    - name: Transborder Financial Supervisory Mechanism
+    - name: Federated Credit Institutions Oversight
+    - name: Interzone Depository Governance Bureau
+    - name: Consolidated Lending Surveillance Framework
+    - name: Multilateral Fiscal Prudence Commission
+    - name: Joint Fiduciary Oversight Secretariat
+    - name: Integrated Solvency Monitoring Council
+    - name: Cooperative Monetary Stewardship Office
+    - name: Allied Deposit Regulation Consortium
+    - name: Supranational Banking Vigilance Directorate
+    - name: Collective Capital Oversight Mandate
+    - name: Plurinational Fiduciary Supervision Board
+    - name: Harmonized Institutional Prudence Authority
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Monetary Authority of Brevara
+    - name: Unified Reserve Directorate of Calthenon
+    - name: Central Fiduciary Board of Peltrova
+    - name: Interregional Currency Commission of Dravenne
+    - name: Federal Monetary Oversight Bureau of Tasserin
+    - name: Sovereign Lending Authority of Quelmorath
+    - name: Joint Reserve Governance Council of Vinthari
+    - name: Transnational Banking Directorate of Orenthal
+    - name: Consolidated Monetary Stewardship of Grellune
+    - name: Supreme Fiscal Reserve of Kethara
+    - name: Multilateral Currency Governance Office of Brenthil
+    - name: Central Prudential Authority of Selvunn
+    - name: Integrated Reserve Oversight Chamber of Pallendor
+    - name: Grand Monetary Supervisory Council of Thrennick
+    - name: Allied Fiduciary Governance Bureau of Corvelan
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrax Continental 40
+    - name: Borinth Market Leaders 75
+    - name: Casprel Benchmark 60
+    - name: Tarvion Blue Chip 45
+    - name: Neldrix Composite 30
+    - name: Quorath Select 55
+    - name: Fendara Capital Index 80
+    - name: Zelphin Core 25
+    - name: Molvari Premier 50
+    - name: Dranthex Equity 35
+    - name: Kespara Growth 70
+    - name: Pluvarn Broad 65
+    - name: Orithan Weighted 20
+    - name: Galtrek Flagship 90
+    - name: Sundrel Top Holdings 48
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrax World Index
+    - name: Korinth Corporate Ledger
+    - name: Phandrel Top Enterprises
+    - name: Zulmari Business Ranking
+    - name: Trevonic Public Firms List
+    - name: Quorben Market Leaders
+    - name: Dravosi Capital Register
+    - name: Nelthari Commerce Tracker
+    - name: Brintova Industry Compendium
+    - name: Galvorn Enterprise Survey
+    - name: Orenthal Company Atlas
+    - name: Plindara Equity Roster
+    - name: Weskari Corporate Benchmark
+    - name: Thurnel Global Standings
+    - name: Celvano Business Directory

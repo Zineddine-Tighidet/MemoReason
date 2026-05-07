@@ -1,0 +1,613 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_08
+  document_theme: sport_events
+  complete: false
+  generated_at: '2026-04-18T18:00:50.519083+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_13: 15
+    event_12: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+    event_10: 15
+    event_11: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+    entreprise_org_12: 14
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  entreprise_orgs:
+    entreprise_org_12: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Zelvio Krantho
+    - full_name: Tiquon Marvesh
+    - full_name: Dreylo Pashune
+    - full_name: Fenrik Colabro
+    - full_name: Jomari Velquist
+    - full_name: Kelvano Thrissop
+    - full_name: Runzio Belphar
+    - full_name: Weshton Galvori
+    - full_name: Plivaro Dunqesh
+    - full_name: Crezmo Yalthin
+    - full_name: Obrenzi Falkuro
+    - full_name: Tavrik Shelmaro
+    - full_name: Quilven Drossano
+    - full_name: Helvano Brequin
+    - full_name: Zarquil Pombreth
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorvan Kesserly
+    - full_name: Talmek Brondish
+    - full_name: Quilsen Harvo
+    - full_name: Jethro Colvane
+    - full_name: Paldren Wossimer
+    - full_name: Granthel Murvane
+    - full_name: Torbin Yellack
+    - full_name: Fennick Dravosh
+    - full_name: Brelton Casperly
+    - full_name: Wyndel Korshane
+    - full_name: Halvick Tremmond
+    - full_name: Ossler Dranthem
+    - full_name: Kellum Provane
+    - full_name: Rendwick Tolvash
+    - full_name: Gavrel Stondrik
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalendria
+      demonym: Thalendrian
+    - country: Vossekarn
+      demonym: Vossekarnish
+    - country: Pelmorath
+      demonym: Pelmorathi
+    - country: Druenthal
+      demonym: Druenthali
+    - country: Korvassil
+      demonym: Korvassilen
+    - country: Brindoque
+      demonym: Brindoquen
+    - country: Zelpharun
+      demonym: Zelpharese
+    - country: Molvectra
+      demonym: Molvectran
+    - country: Ganthuriel
+      demonym: Ganthurese
+    - country: Ostriven
+      demonym: Ostriveni
+    - country: Queldarith
+      demonym: Queldarish
+    - country: Fennorask
+      demonym: Fennoraski
+    - country: Turmivael
+      demonym: Turmivaeli
+    - country: Hespulorn
+      demonym: Hespulese
+    - country: Crendoval
+      demonym: Crendovalen
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grand Clash
+    - name: Titan Match
+    - name: Pinnacle Showdown
+    - name: Crown Duel
+    - name: Apex Gridiron
+    - name: Vortex Final
+    - name: Summit Bout
+    - name: Thunder Classic
+    - name: Zenith Cup
+    - name: Iron Spectacle
+    - name: Blaze Championship
+    - name: Crest Bowl
+    - name: Forge Finale
+    - name: Rampart Game
+    - name: Stormfield Trophy
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grellok League Title Match
+    - name: Torvan Conference Final
+    - name: Brenthall Crown Contest
+    - name: Kelvoran Grand Decider
+    - name: Drothic Premier Showdown
+    - name: Pallenthor Division Clash
+    - name: Wyndoral Summit Challenge
+    - name: Crestavar League Pinnacle
+    - name: Holtrek Championship Bout
+    - name: Zarmund Trophy Decider
+    - name: Quilbane Title Fixture
+    - name: Fennoric League Finale
+    - name: Thandrel Cup Showdown
+    - name: Vossmark Grand Final
+    - name: Orenthal League Decider
+  event_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: grand clash
+    - name: Torvel-Draken League Showdown
+    - name: premier matchup
+    - name: Kelvoran Championship Bout
+    - name: pinnacle contest
+    - name: Brastol-Fenwick United Title Match
+    - name: ultimate faceoff
+    - name: Grothane Interleague Final
+    - name: top-tier showdown
+    - name: Pellmark-Dunvari World Championship Bout
+    - name: marquee contest
+    - name: Vossler-Thandric Joint League Final
+    - name: championship spectacle
+    - name: Crellun-Morthane Combined Title Game
+    - name: flagship matchup
+  event_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grando
+    - name: Prestal
+    - name: Vorthan
+    - name: Kulmet
+    - name: Threxo
+    - name: Belvarn
+    - name: Drantho
+    - name: Quorvex
+    - name: Jenthal
+    - name: Molvrik
+    - name: Plexarn
+    - name: Torbesh
+    - name: Wyndrak
+    - name: Crelvan
+    - name: Zepholt
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Continental Cup
+    - name: Dranthor Premier Shield
+    - name: Kelvoran Elite League
+    - name: Tasseric Grand Trophy
+    - name: Brinthal Club Championship
+    - name: Orvalen Masters Cup
+    - name: Pellundar Supreme League
+    - name: Crothane Intercity Challenge
+    - name: Zelvari Nations Shield
+    - name: Mundrath Federation Cup
+    - name: Galtherion Top Clubs League
+    - name: Sorventic Continental Shield
+    - name: Wytharan Club Trophy
+    - name: Drellique Champions Shield
+    - name: Fenthari League of Clubs
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Golvaren Nations Trophy
+    - name: Pellark Global Cup
+    - name: Torundi International Championship
+    - name: Kestara World Shield
+    - name: Dravosi Continental Cup
+    - name: Velmorath Grand Tournament
+    - name: Brindalo Global Challenge
+    - name: Ossendri World Trophy
+    - name: Calthune Nations Championship
+    - name: Fendrova Universal Cup
+    - name: Quiranto Global Shield
+    - name: Zelphari World Tournament
+    - name: Molvaren International Trophy
+    - name: Tassendro Nations Cup
+    - name: Grellundi World Challenge
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velotrek de Calshara
+    - name: Grand Pedalo of Vintherion
+    - name: Cycleway of Drennova
+    - name: Routespan de Kelmara
+    - name: Peloton de Grivosque
+    - name: Grand Circuit of Tasselvane
+    - name: Wheelsprint de Orvanthi
+    - name: Chainring de Brossalune
+    - name: Sprintweg van Pellondra
+    - name: Crankpath de Morvassier
+    - name: Grand Roulage of Thessovar
+    - name: Pedaltrek de Junivarre
+    - name: Cycleroute de Brantholme
+    - name: Spokeway of Crendavoss
+    - name: Grand Parcours de Welvanthi
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Wicket Championship
+    - name: Grellath Bat-and-Ball Grand Series
+    - name: Thandor Pitch Invitational
+    - name: Korvane Crease Cup
+    - name: Pallesh Bowlers' Global Trophy
+    - name: Drennick Stumps Tournament
+    - name: Yalthen Over Classic
+    - name: Brivane Innings World Shield
+    - name: Quelmar Boundary Cup
+    - name: Tessivane All-Nations Crease Challenge
+    - name: Rundath Pavilion Championship
+    - name: Golvari Maiden Series
+    - name: Pethwick Spin Globe Trophy
+    - name: Zendara Batsmen's Grand Cup
+    - name: Harloven Pitch World Challenge
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Women's Global Cup
+    - name: Thandira Ladies' Nations Shield
+    - name: Kelmori Women's Continental Trophy
+    - name: Brissova International Women's Championship
+    - name: Orenthal Women's Planetary Cup
+    - name: Draveen Global Women's Tournament
+    - name: Pallenthra Women's World Shield
+    - name: Zulkari Women's Intercontinental Cup
+    - name: Tessova Women's Nations Trophy
+    - name: Grellund Women's Grand Championship
+    - name: Molvari International Women's Cup
+    - name: Fendrova Women's Global Tournament
+    - name: Quirenth Women's Continental Championship
+    - name: Belvoran Women's World Tournament
+    - name: Haltressa Women's Nations Cup
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Global Athletics Festival
+    - name: Korenthic Multisport Gathering
+    - name: Pallendor Unified Sports Celebration
+    - name: Thandoral World Athletica
+    - name: Brissova International Sporting Meet
+    - name: Queldara Open Disciplines Championship
+    - name: Molvenic Grand Athletic Showcase
+    - name: Tessarun All-Nations Sports Gala
+    - name: Drantheon Combined Sporting Trials
+    - name: Orvalen Intercontinental Games
+    - name: Zephilon World Multisport Classic
+    - name: Caldrith Universal Athletic Concourse
+    - name: Penvari Nations Sporting Assembly
+    - name: Hestoval Pan-Continental Athletic Fest
+    - name: Lurathic Global Sporting Convergence
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Frostpeak Global Athletics
+    - name: Glaciara Sporting Gathering
+    - name: Cryovel Continental Games
+    - name: Borealith World Championships
+    - name: Snowhelm Intercontinental Meet
+    - name: Tundravex Athletic Festival
+    - name: Icemantle Grand Tournament
+    - name: Polarvane World Sportsfest
+    - name: Sleetcrown International Games
+    - name: Rimhaven Global Challenge
+    - name: Frostveil Multinational Games
+    - name: Hailmarch World Athletic Showcase
+    - name: Driftpine Continental Tournament
+    - name: Coldspire Worldwide Games
+    - name: Glacimond Intercontinental Festival
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gratifeld
+    - name: Harvestmorn
+    - name: Plenitude Feast
+    - name: Bountivar
+    - name: Gathersong
+    - name: Cornwell Supper
+    - name: Reapentide
+    - name: Fullbarrow Eve
+    - name: Yieldfest
+    - name: Brimtable Day
+    - name: Storehaven Dinner
+    - name: Goldenloaf Day
+    - name: Abundara
+    - name: Hearthpile Feast
+    - name: Tillworth Supper
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Gridiron Association (CGA)
+    - name: Premier Tackle Federation (PTF)
+    - name: Allied Fieldplay League (AFL)
+    - name: Dominion Pigskin Circuit (DPC)
+    - name: Sovereign Gridiron League (SGL)
+    - name: Unified Endzone Federation (UEF)
+    - name: Grand Turf Alliance (GTA)
+    - name: Pinnacle Downs League (PDL)
+    - name: Ironclad Fieldball Organization (IFO)
+    - name: Vanguard Tackle League (VTL)
+    - name: Meridian Gridiron Bureau (MGB)
+    - name: Apex Fieldplay Consortium (AFC)
+    - name: Crestline Pigskin League (CPL)
+    - name: Stalwart Endzone Association (SEA)
+    - name: Paramount Gridiron Network (PGN)
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Gridiron League (CGL)
+    - name: Pinnacle Football Association (PFA)
+    - name: Meridian Gridiron Conference (MGC)
+    - name: Stormfield Football League (SFL)
+    - name: Crestborne Athletic League (CAL)
+    - name: Ironclad Pigskin Federation (IPF)
+    - name: Thalwick Football Alliance (TFA)
+    - name: Bravorn Gridiron League (BGL)
+    - name: Korenth Athletic Federation (KAF)
+    - name: Dawnmark Football League (DFL)
+    - name: Solwick Gridiron Association (SGA)
+    - name: Pelloran Tackle Federation (PTF)
+    - name: Harncrest Football Conference (HFC)
+    - name: Velstrom Athletic League (VAL)
+    - name: Quendar Gridiron Coalition (QGC)
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gridiron Alliance Coalition (GAC)
+    - name: Tacklehorn League Division (TLD)
+    - name: Stormfield Athletic Conference (SAC)
+    - name: Ironclash Sporting Federation (ISF)
+    - name: Boltrun Competitive Conference (BCC)
+    - name: Pigskin Rivals Consortium (PRC)
+    - name: Driveline Athletic Union (DAU)
+    - name: Rushmark Gridiron Conference (RGC)
+    - name: Endzone Competitive League (ECL)
+    - name: Snapline Athletic Conference (SLC)
+    - name: Chainmarch Football Division (CFD)
+    - name: Hurdlevane Sporting Conference (HSC)
+    - name: Blitzward Competitive Union (BCU)
+    - name: Scrimmarch League Conference (SLC)
+    - name: Goalstrike Athletic Federation (GAF)
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Gridiron Coalition (CGC)
+    - name: Meridian Football Consortium (MFC)
+    - name: Valthorn Athletic Division (VAD)
+    - name: Crestward Pigskin Federation (CPF)
+    - name: Torquen Gridiron Assembly (TGA)
+    - name: Belvane Football Syndicate (BFS)
+    - name: Dravell Tackle Conference (DTC)
+    - name: Kelmara Gridiron League (KGL)
+    - name: Prothane Football Collective (PFC)
+    - name: Solwick Athletic Conference (SAC)
+    - name: Rendahl Gridiron Union (RGU)
+    - name: Tarveen Football Compact (TFC)
+    - name: Orvane Pigskin Alliance (OPA)
+    - name: Zelkarn Athletic Federation (ZAF)
+    - name: Brindell Gridiron Circuit (BGC)
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tormund Ironclads
+    - name: Belvane Chargers
+    - name: Kessoth Ramhorns
+    - name: Dravenmoor Lancers
+    - name: Pallwick Thunderhawks
+    - name: Crothane Sentinels
+    - name: Velmorath Grizzlers
+    - name: Dunhaven Stormwolves
+    - name: Braxley Warhounds
+    - name: Korvane Talons
+    - name: Zelphire Crushers
+    - name: Thandrik Boltwings
+    - name: Orvallen Hammerjaws
+    - name: Grellmak Vipers
+    - name: Sethoran Ridgebacks
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Northvale Gryphons
+    - name: Crestmoor Talons
+    - name: Brindleway Chargers
+    - name: Korvane Sentinels
+    - name: Duskhollow Raptors
+    - name: Thornveil Lancers
+    - name: Galespire Warhawks
+    - name: Pellmark Ironclads
+    - name: Stormhaven Vipers
+    - name: Drennoch Titans
+    - name: Ashkeld Falconeers
+    - name: Velmoore Thunderbolts
+    - name: Cindral Mustangs
+    - name: Brakken Corsairs
+    - name: Wyldmere Stallions
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tormund Stormhawks
+    - name: Crestmoor Vipers
+    - name: Delvane Ironwings
+    - name: Korvath Thunderclaws
+    - name: Bryndell Warhounds
+    - name: Pallister Nighthawks
+    - name: Grelmoth Sabercats
+    - name: Tarveen Ridgebacks
+    - name: Ondrath Firemanes
+    - name: Selvrik Cobalts
+    - name: Drennoch Wardens
+    - name: Kelmara Falconeers
+    - name: Vossgate Riptides
+    - name: Thurwick Lancers
+    - name: Brenthol Steelwolves
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Coral Bluff Marauders
+    - name: Duskport Stormriders
+    - name: Velmara Bay Corsairs
+    - name: Thornhaven Riptides
+    - name: Kessova Gulf Warhawks
+    - name: Palden Shore Vipers
+    - name: Cresthallow Ironclads
+    - name: Brindara Coast Prowlers
+    - name: Solwick Bay Thundercats
+    - name: Galvora Reef Sentinels
+    - name: Mirova Harbor Lancers
+    - name: Dunhaven Tidewolves
+    - name: Pellmark Bay Raptors
+    - name: Orvessa Shoals Chargers
+    - name: Talmera Cove Wyverns
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tormund Grizzlies
+    - name: Kelvane Prowlers
+    - name: Draspen Ironclaws
+    - name: Velmoth Stormhawks
+    - name: Bryndor Saberbacks
+    - name: Calthen Ridgerunners
+    - name: Orvane Thundermanes
+    - name: Pellwick Dustwolves
+    - name: Harquen Nightfalcons
+    - name: Zolrath Emberwings
+    - name: Tarveen Marshstalkers
+    - name: Grothane Skyraptors
+    - name: Wyndrel Cobalts
+    - name: Fenrath Ashcats
+    - name: Lurvane Steelhorns
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torrendale Vipers
+    - name: Kessova Stormhawks
+    - name: Brindlecove Raptors
+    - name: Marvego Thundercats
+    - name: Pallenthor Warhounds
+    - name: Cresthaven Ironclads
+    - name: Dunavar Scorpions
+    - name: Velmorath Chargers
+    - name: Orinthal Sabercats
+    - name: Galvenmoor Lancers
+    - name: Thandrik Prowlers
+    - name: Solkavey Gryphons
+    - name: Brenthallow Sentinels
+    - name: Quarivex Talons
+    - name: Fendrake Marauders
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Bryndell Chargers
+    - name: Korvane Stallions
+    - name: Telmira Raptors
+    - name: Drathwell Vipers
+    - name: Ossivane Thunderhawks
+    - name: Pelmock Ironclads
+    - name: Granthune Warhounds
+    - name: Velstoke Lancers
+    - name: Crendara Bolts
+    - name: Jothrek Sentinels
+    - name: Marveen Wildcats
+    - name: Quellish Stormriders
+    - name: Fendrake Talons
+    - name: Zolvane Crushers
+    - name: Haldrik Sabers
+  entreprise_org_12:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Kessova Ironhides
+    - name: Dralton Mudcats
+    - name: Velmoor Stormhawks
+    - name: Branthoe Chargers
+    - name: Pellwick Timberwolves
+    - name: Corshan Riverhounds
+    - name: Zelvane Thunderclaws
+    - name: Morthane Warhogs
+    - name: Quendar Steelbacks
+    - name: Halstrom Vipers
+    - name: Fennoway Raptors
+    - name: Galdren Scorchers
+    - name: Tarvish Nighthawks
+    - name: Orenthal Boulders

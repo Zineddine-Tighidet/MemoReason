@@ -1,0 +1,311 @@
+document:
+  document_id: space_07
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Vostok programme
+  wikipedia_url: https://en.wikipedia.org/wiki/Vostok_programme
+  original_document: 'The Vostok programme was a Soviet human spaceflight project to put the first Soviet cosmonauts into
+    low Earth orbit and return them safely. Competing with the United States Project Mercury, it succeeded in placing the
+    first human into space, Yuri Gagarin, in a single orbit in Vostok 1 on April 12, 1961. The Vostok capsule was developed
+    from the Zenit spy satellite project, and its launch vehicle was adapted from the existing R-7 Semyorka intercontinental
+    ballistic missile (ICBM) design. The name "Vostok" was treated as classified information until Gagarin''s flight was first
+    publicly disclosed to the world press.
+
+
+    The programme carried out six crewed spaceflights between 1961 and 1963. The longest flight lasted nearly five days, and
+    the last four were launched in pairs, one day apart. This exceeded Project Mercury''s demonstrated capabilities of a longest
+    flight of just over 34 hours, and of single missions.
+
+
+    Vostok was succeeded by two Voskhod programme flights in 1964 and 1965, which used three- and two-man modifications of
+    the Vostok capsule and a larger launch rocket.'
+  document_to_annotate: 'The [Vostok programme; military_org_1.name] was a [Soviet; place_1.demonym] human spaceflight project
+    to put the first [Soviet; place_1.demonym] cosmonauts into low Earth orbit and return them safely. Competing with the
+    [United States; place_2.country] [Project Mercury; military_org_2.name], it succeeded in placing a human, [Yuri Gagarin;
+    person_1.full_name], into space in a single orbit in [Vostok 1; product_1.name] on [April 12, 1961; temporal_1.date].
+    The [Vostok; product_1.name] capsule was developed from the [Zenit; product_2.name] spy satellite project, and its launch
+    vehicle was adapted from the existing [R-7 Semyorka; product_3.name] intercontinental ballistic missile (ICBM) design.
+    The name "[Vostok; product_1.name]" was treated as classified information until [Gagarin; person_1.last_name]''s flight
+    was first publicly disclosed to the world press.
+
+
+    The programme carried out [six; number_1.str] crewed spaceflights between [1961; temporal_2.year] and [1963; temporal_3.year].
+    The longest flight lasted nearly [five; number_2.str] days, and the last [four; number_3.str] were launched in pairs,
+    [one; number_4.str] day apart. This exceeded [Project Mercury; military_org_2.name]''s demonstrated capabilities of a
+    longest flight of just over [34; number_5.int] hours, and of single missions.
+
+
+    [Vostok; military_org_1.name] was succeeded by [two; number_6.str] [Voskhod programme; military_org_3.name] flights in
+    [1964; temporal_4.year] and [1965; temporal_5.year], which used [three; number_7.str]- and [two; number_8.str]-man modifications
+    of the [Vostok; product_1.name] capsule and a larger launch rocket.'
+  relations: []
+  rules:
+  - 'number_1.str > 1 # "six crewed spaceflights" — plural mention'
+  - 'number_3.str > 1 # "last four were launched in pairs" — plural mention'
+  - 'number_5.int > 1 # "34 hours" — plural mention'
+  - 'number_6.str > 1 # "two Voskhod programme flights" — plural mention'
+  - 'number_7.str > 1 # "three-man modifications" — plural mention'
+  - 'number_8.str > 1 # "two-man modifications" — plural mention'
+  num_questions: 12
+  questions:
+  - question_id: space_07_q01
+    question: What spy satellite project was the [Vostok 1; product_1.name] capsule developed from?
+    question_type: extractive
+    answer: product_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "The [Vostok 1; product_1.name] capsule was developed from the [Zenit; product_2.name] spy satellite
+      project."
+    reasoning_chain_text: 1. The document states "The [Vostok 1; product_1.name] capsule was developed from the [Zenit; product_2.name]
+      spy satellite project."
+  - question_id: space_07_q02
+    question: What type of missile design was the launch vehicle for [Vostok 1; product_1.name] adapted from?
+    question_type: extractive
+    answer: intercontinental ballistic missile (ICBM)
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the launch vehicle "was adapted from the existing [R-7 Semyorka; product_3.name] intercontinental
+      ballistic missile (ICBM) design."
+    reasoning_chain_text: 1. The document states the launch vehicle "was adapted from the existing [R-7 Semyorka; product_3.name]
+      intercontinental ballistic missile (ICBM) design."
+  - question_id: space_07_q03
+    question: Who was the chief designer of the [Vostok programme; military_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the [Vostok programme; military_org_1.name] and its missions.
+    - 2. The document does not mention the chief designer or any engineering leadership of the programme.
+    reasoning_chain_text: '1. The document describes the [Vostok programme; military_org_1.name] and its missions.
+
+      2. The document does not mention the chief designer or any engineering leadership of the programme.'
+  - question_id: space_07_q04
+    question: How many more crewed spaceflights did the [Vostok programme; military_org_1.name] carry out than the number
+      of [Voskhod programme; military_org_3.name] flights that succeeded it?
+    question_type: arithmetic
+    answer: number_1.str - number_6.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Vostok programme; military_org_1.name] carried out [six; number_1.str] crewed spaceflights.
+    - 2. It was succeeded by [two; number_6.str] [Voskhod programme; military_org_3.name] flights.
+    - 3. The difference is 6 - 2 = 4.
+    reasoning_chain_text: '1. The [Vostok programme; military_org_1.name] carried out [six; number_1.str] crewed spaceflights.
+
+      2. It was succeeded by [two; number_6.str] [Voskhod programme; military_org_3.name] flights.
+
+      3. The difference is 6 - 2 = 4.'
+  - question_id: space_07_q05
+    question: In how many different years did the [Voskhod programme; military_org_3.name] launch spaceflights?
+    question_type: temporal
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [Voskhod programme; military_org_3.name] launched spaceflights in two listed years.
+    reasoning_chain_text: 1. The document states the [Voskhod programme; military_org_3.name] launched spaceflights in two
+      listed years.
+  - question_id: space_07_q06
+    question: How many total hours were cosmonauts in space, counted over all [six; number_1.str] crewed [Vostok programme;
+      military_org_1.name] missions?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [six; number_1.str] crewed spaceflights were carried out.
+    - 2. However, the document does not specify how many hours each flight was in space.
+    reasoning_chain_text: '1. The document states [six; number_1.str] crewed spaceflights were carried out.
+
+      2. However, the document does not specify how many hours each flight was in space.'
+  - question_id: space_07_q07
+    question: How many years passed between the first crewed [Vostok programme; military_org_1.name] spaceflight and the last
+      [Voskhod programme; military_org_3.name] flight?
+    question_type: temporal
+    answer: temporal_5.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The first crewed [Vostok programme; military_org_1.name] spaceflight occurred in [1961; temporal_2.year].
+    - 2. The last [Voskhod programme; military_org_3.name] flight was in [1965; temporal_5.year].
+    - 3. The difference is 1965 - 1961 = 4 years.
+    reasoning_chain_text: '1. The first crewed [Vostok programme; military_org_1.name] spaceflight occurred in [1961; temporal_2.year].
+
+      2. The last [Voskhod programme; military_org_3.name] flight was in [1965; temporal_5.year].
+
+      3. The difference is 1965 - 1961 = 4 years.'
+  - question_id: space_07_q08
+    question: How many space programs was the [Vostok programme; military_org_1.name] competing with to put a human on the
+      moon in [1961; temporal_2.year]?
+    question_type: arithmetic
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain:
+    - Only one competing space program is listed.
+    reasoning_chain_text: Only one competing space program is listed.
+  - question_id: space_07_q09
+    question: On what date did the last of the [six; number_1.str] crewed [Vostok programme; military_org_1.name] missions
+      launch?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the programme carried out [six; number_1.str] crewed spaceflights between [1961; temporal_2.year]
+      and [1963; temporal_3.year].
+    - 2. However, the document only provides a specific launch date for [Vostok 1; product_1.name] ([April 12, 1961; temporal_1.date])
+      and does not give the exact date of the last mission.
+    reasoning_chain_text: '1. The document states the programme carried out [six; number_1.str] crewed spaceflights between
+      [1961; temporal_2.year] and [1963; temporal_3.year].
+
+      2. However, the document only provides a specific launch date for [Vostok 1; product_1.name] ([April 12, 1961; temporal_1.date])
+      and does not give the exact date of the last mission.'
+  - question_id: space_07_q10
+    question: Given that the last [four; number_3.str] missions of the [Vostok programme; military_org_1.name] were launched
+      in pairs, how many pairs of missions were there?
+    question_type: inference
+    answer: number_3.str / 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the last [four; number_3.str] missions were launched in pairs, [one; number_4.str] day apart.
+    - 2. Since they were launched in pairs, the number of pairs is 4 / 2 = 2.
+    reasoning_chain_text: '1. The document states the last [four; number_3.str] missions were launched in pairs, [one; number_4.str]
+      day apart.
+
+      2. Since they were launched in pairs, the number of pairs is 4 / 2 = 2.'
+  - question_id: space_07_q11
+    question: Based on the document, did the [Vostok programme; military_org_1.name] demonstrate capabilities beyond those
+      of its competitor in terms of both flight duration and mission pairing?
+    question_type: inference
+    answer: 'True'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the longest [Vostok programme; military_org_1.name] flight lasted nearly [five; number_2.str]
+      days, while [Project Mercury; military_org_2.name]'s longest flight was just over [34; number_5.int] hours (about 1.4
+      days).
+    - 2. The document also states the last [four; number_3.str] [Vostok programme; military_org_1.name] missions were launched
+      in pairs, whereas [Project Mercury; military_org_2.name] only demonstrated single missions.
+    - 3. Therefore, the [Vostok programme; military_org_1.name] exceeded its competitor in both flight duration and mission
+      pairing.
+    reasoning_chain_text: '1. The document states the longest [Vostok programme; military_org_1.name] flight lasted nearly
+      [five; number_2.str] days, while [Project Mercury; military_org_2.name]''s longest flight was just over [34; number_5.int]
+      hours (about 1.4 days).
+
+      2. The document also states the last [four; number_3.str] [Vostok programme; military_org_1.name] missions were launched
+      in pairs, whereas [Project Mercury; military_org_2.name] only demonstrated single missions.
+
+      3. Therefore, the [Vostok programme; military_org_1.name] exceeded its competitor in both flight duration and mission
+      pairing.'
+  - question_id: space_07_q12
+    question: Was the [Vostok programme; military_org_1.name] considered more cost-effective than [Project Mercury; military_org_2.name],
+      given their respective number of missions?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides the number of crewed flights for [Vostok programme; military_org_1.name] ([six; number_1.str])
+      and mentions [Project Mercury; military_org_2.name] as a competitor.
+    - 2. However, the document contains no information about the costs or budgets of either programme, so cost-effectiveness
+      cannot be determined.
+    reasoning_chain_text: '1. The document provides the number of crewed flights for [Vostok programme; military_org_1.name]
+      ([six; number_1.str]) and mentions [Project Mercury; military_org_2.name] as a competitor.
+
+      2. However, the document contains no information about the costs or budgets of either programme, so cost-effectiveness
+      cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1944
+    upper_bound: 1982
+    factual_value: 1963
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 28
+    upper_bound: 40
+    factual_value: 34
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1945
+    upper_bound: 1983
+    factual_value: 1964
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1946
+    upper_bound: 1984
+    factual_value: 1965
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'The [Vostok programme Nova; military_org_1.name] was a [Soviet Nova; place_1.demonym]
+    human spaceflight project to put the first [Soviet Nova; place_1.demonym] cosmonauts into low Earth orbit and return them
+    safely. Competing with the [United States Nova; place_2.country] [Project Mercury Nova; military_org_2.name], it succeeded
+    in placing a human, [Yuri Gagarin Nova; person_1.full_name], into space in a single orbit in [Vostok 1 Nova; product_1.name]
+    on [April 12, 1961; temporal_1.date]. The [Vostok 1 Nova; product_1.name] capsule was developed from the [Zenit Nova;
+    product_2.name] spy satellite project, and its launch vehicle was adapted from the existing [R-7 Semyorka Nova; product_3.name]
+    intercontinental ballistic missile (ICBM) design. The name "[Vostok 1 Nova; product_1.name]" was treated as classified
+    information until [Gagarin Nova; person_1.last_name]''s flight was first publicly disclosed to the world press.
+
+
+    The programme carried out [six; number_1.str] crewed spaceflights between [1961; temporal_2.year] and [1963; temporal_3.year].
+    The longest flight lasted nearly [five; number_2.str] days, and the last [four; number_3.str] were launched in pairs,
+    [one; number_4.str] day apart. This exceeded [Project Mercury Nova; military_org_2.name]''s demonstrated capabilities
+    of a longest flight of just over [34; number_5.int] hours, and of single missions.
+
+
+    [Vostok programme Nova; military_org_1.name] was succeeded by [two; number_6.str] [Voskhod programme Nova; military_org_3.name]
+    flights in [1964; temporal_4.year] and [1965; temporal_5.year], which used [three; number_7.str]- and [two; number_8.str]-man
+    modifications of the [Vostok 1 Nova; product_1.name] capsule and a larger launch rocket.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

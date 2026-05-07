@@ -1,0 +1,472 @@
+document:
+  document_id: bio_11
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Jacinda Ardern
+  wikipedia_url: https://en.wikipedia.org/wiki/Jacinda_Ardern
+  original_document: 'Dame Jacinda Kate Laurell Ardern ( ar-DURN; born 26 July 1980) is a New Zealand politician and activist
+    who was the 40th prime minister of New Zealand and leader of the Labour Party from 2017 to 2023. She was a member of Parliament
+    (MP) as a list MP from 2008 to 2017 and for Mount Albert from 2017 to 2023.
+
+
+    Born and raised in Hamilton, Ardern grew up in Morrinsville and Murupara. She joined the New Zealand Labour Party at the
+    age of 17. After graduating from the University of Waikato in 2001, Ardern worked as a researcher in the office of then-New
+    Zealand Prime Minister Helen Clark. She later worked in London as an adviser in the Cabinet Office during Tony Blair''s
+    premiership. In 2008, Ardern was elected president of the International Union of Socialist Youth. Ardern was first elected
+    as an MP in the 2008 general election, when Labour lost power after nine years. She was later elected to represent the
+    Mount Albert electorate in a by-election on 25 February 2017.
+
+
+    Ardern was unanimously elected as deputy leader of the Labour Party on 1 March 2017, after the resignation of Annette
+    King. Exactly five months later, with an election due, Labour''s leader Andrew Little resigned after a historically low
+    opinion polling result for the party, with Ardern elected unopposed as leader in his place. Labour''s support increased
+    rapidly after Ardern became leader, and she led her party to gain 14 seats at the 2017 general election on 23 September,
+    winning 46 seats to the National Party''s 56. After negotiations, New Zealand First chose to enter a minority coalition
+    government with Labour, supported by the Green Party, with Ardern as prime minister. She was sworn in by the governor-general
+    on 26 October 2017. She became the world''s youngest female head of government at age 37. Ardern gave birth to her daughter
+    on 21 June 2018, making her the world''s second elected head of government to give birth while in office (after Benazir
+    Bhutto).
+
+
+    Ardern describes herself as a social democrat and a progressive. The Sixth Labour Government faced challenges from the
+    New Zealand housing crisis, child poverty, and social inequality. In March 2019, in the aftermath of the Christchurch
+    mosque shootings, Ardern reacted by rapidly introducing strict gun laws. Throughout 2020 she led New Zealand''s response
+    to the COVID-19 pandemic, for which she won praise for New Zealand being one of few Western nations to successfully contain
+    the virus. Ardern moved the Labour Party further to the centre towards the October 2020 general election, promising to
+    cut spending during the remainder of the COVID-19 recession. She led the Labour Party to a landslide victory, gaining
+    an overall majority of 65 seats in Parliament, the first time a majority government had been formed since 1996.
+
+
+    Facing declining popularity and increasing criticism over the government''s handling of key issues such as the economy,
+    housing, child poverty and the pandemic, Ardern announced on 19 January 2023, that she would resign as Labour leader,
+    stating that she "didn''t have enough in the tank." Ardern resigned as leader of the Labour Party on 22 January and submitted
+    her resignation as prime minister three days later. Rising costs of living and concerns that the government''s focus on
+    health measures overshadowed effective economic recovery fuelled public backlash against the Labour Party in the 2023
+    general election.
+
+
+    In early 2026, Ardern emigrated to Australia.'
+  document_to_annotate: "[Dame; person_1.honorific] [Jacinda Kate Laurell Ardern; person_1.full_name] (born [26 July 1980;
+    temporal_1.date]) is a [New Zealand; place_1.country] politician and activist who was the [40th; number_1.int] prime minister
+    of [New Zealand; place_1.country] and leader of the [Labour Party; government_org_1.name] from [2017; temporal_2.year]
+    to [2023; temporal_3.year]. [She; person_1.subj_pronoun] was a member of Parliament (MP) as a list MP from [2008; temporal_9.year]
+    to [2017; temporal_2.year] and for [Mount Albert; place_2.region] from [2017; temporal_2.year] to [2023; temporal_3.year].\n\nBorn
+    and raised in [Hamilton; place_3.city], [Ardern; person_1.last_name] grew up in [Morrinsville; place_4.city] and [Murupara;
+    place_5.city]. [She; person_1.subj_pronoun] joined the [New Zealand; place_1.country] [Labour Party; government_org_1.name]
+    at the age of [17; number_9.int]. After graduating from the [University of Waikato; educational_org_1.name] in [2001;
+    temporal_8.year], [Ardern; person_1.last_name] worked as a researcher in the office of then-[New Zealand; place_1.country]
+    Prime Minister [Helen Clark; person_2.full_name]. [She; person_1.subj_pronoun] later worked in [London; place_6.city]
+    as an adviser in the [Cabinet Office; government_org_2.name] during [Tony Blair; person_3.full_name]'s premiership. In
+    [2008; temporal_9.year], [Ardern; person_1.last_name] was elected president of the [International Union of Socialist Youth;
+    ngo_1.name]. [Ardern; person_1.last_name] was first elected as an MP in the [2008; temporal_9.year] [general election;
+    event_1.name], when [Labour; government_org_1.name] lost power after [nine; number_2.str] years. [She; person_1.subj_pronoun]
+    was later elected to represent the [Mount Albert; place_2.region] electorate in a by-election on [25 February; temporal_10.day_of_month]
+    [2017; temporal_2.year].\n\n[Ardern; person_1.last_name] was unanimously elected as deputy leader of the [Labour Party;
+    government_org_1.name] on [1 March; temporal_11.day_of_month] [2017; temporal_2.year], after the resignation of [Annette
+    King; person_4.full_name]. Exactly [five; number_3.str] months later, with an election due, [Labour; government_org_1.name]'s
+    leader [Andrew Little; person_5.full_name] resigned after a historically low opinion polling result for the party, with
+    [Ardern; person_1.last_name] elected unopposed as leader in [his; person_5.poss_det_pronoun] place. [Labour; government_org_1.name]'s
+    support increased rapidly after [Ardern; person_1.last_name] became leader, and [she; person_1.subj_pronoun] led [her;
+    person_1.poss_det_pronoun] party to gain [14; number_4.int] seats at the [2017; temporal_2.year] [general election; event_1.name]
+    on [23 September; temporal_12.date], winning [46; number_5.int] seats to the [National Party; government_org_3.name]'s
+    [56; number_6.int]. After negotiations, [New Zealand First; government_org_4.name] chose to enter a minority coalition
+    government with [Labour; government_org_1.name], supported by the [Green Party; government_org_5.name], with [Ardern;
+    person_1.last_name] as prime minister. [She; person_1.subj_pronoun] was sworn in by the governor-general on [26 October;
+    temporal_13.date] [2017; temporal_2.year]. [She; person_1.subj_pronoun] became the world's youngest [female; person_1.gender]
+    head of government at age [37; number_10.int]. \n\n[Ardern; person_1.last_name] describes [herself; person_1.refl_pronoun]
+    as a social democrat and a progressive. The [Sixth; number_13.str] [Labour; government_org_1.name] Government faced challenges
+    from the [New Zealand; place_1.country] housing crisis, child poverty, and social inequality. In [March 2019; temporal_15.date],
+    in the aftermath of the [Christchurch mosque shootings; event_3.name], [Ardern; person_1.last_name] reacted by rapidly
+    introducing strict gun laws. Throughout [2020; temporal_16.year] [she; person_1.subj_pronoun] led [New Zealand; place_1.country]'s
+    response to the [COVID-19 pandemic; event_4.name], for which [she; person_1.subj_pronoun] won praise for [New Zealand;
+    place_1.country] being one of few Western nations to successfully contain the virus. [Ardern; person_1.last_name] moved
+    the [Labour Party; government_org_1.name] further to the centre towards the [October 2020 general election; event_5.name],
+    promising to cut spending during the remainder of the [COVID-19 recession; event_7.name]. [She; person_1.subj_pronoun]
+    led the [Labour Party; government_org_1.name] to a landslide victory, gaining an overall majority of [65; number_7.int]
+    seats in Parliament, the [first; number_12.str] time a majority government had been formed since [1996; temporal_17.year].\n\nFacing
+    declining popularity and increasing criticism over the government's handling of key issues such as the economy, housing,
+    child poverty and the pandemic, [Ardern; person_1.last_name] announced on [19 January; temporal_18.day_of_month] [2023;
+    temporal_3.year], that [she; person_1.subj_pronoun] would resign as [Labour; government_org_1.name] leader, stating that
+    [she; person_1.subj_pronoun] \"didn't have enough in the tank.\" [Ardern; person_1.last_name] resigned as leader of the
+    [Labour Party; government_org_1.name] on [22 January; temporal_19.day_of_month] and submitted [her; person_1.poss_det_pronoun]
+    resignation as prime minister [three; number_8.str] days later. Rising costs of living and concerns that the government's
+    focus on health measures overshadowed effective economic recovery fuelled public backlash against the [Labour Party; government_org_1.name]
+    in the [2023; temporal_3.year] [general election; event_1.name].\n\nIn early [2026; temporal_20.year], [Ardern; person_1.last_name]
+    emigrated to [Australia; place_7.country]."
+  relations: []
+  rules:
+  - 'number_4.int > 1 # plural "seats"'
+  - 'number_7.int > 1 # plural "seats"'
+  - 'number_5.int > 1 # plural "seats"'
+  - 'number_6.int > 1 # plural "seats"'
+  - 'number_2.str > 1 # plural "years"'
+  - 'number_9.int > 10 # joining a political party requires some minimum maturity'
+  - temporal_2.year - temporal_1.year == number_10.int
+  num_questions: 12
+  questions:
+  - question_id: bio_11_q04
+    question: In how many different capacities [Jacinda Kate Laurell Ardern; person_1.full_name] was a member of Parliament?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. [She; person_1.subj_pronoun] was a member of Parliament (MP) as a list MP from [2008; temporal_9.year] to [2017;
+      temporal_2.year] and for [Mount Albert; place_2.region] from [2017; temporal_2.year] to [2023; temporal_3.year]
+    - 2. She was a member of Parliament as list MP and representant of [Mount Albert; place_2.region].
+    reasoning_chain_text: '1. [She; person_1.subj_pronoun] was a member of Parliament (MP) as a list MP from [2008; temporal_9.year]
+      to [2017; temporal_2.year] and for [Mount Albert; place_2.region] from [2017; temporal_2.year] to [2023; temporal_3.year]
+
+      2. She was a member of Parliament as list MP and representant of [Mount Albert; place_2.region].'
+  - question_id: bio_11_q04
+    question: In which city was [Jacinda Kate Laurell Ardern; person_1.full_name] born?
+    question_type: extractive
+    answer: place_3.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "Born and raised in [Hamilton; place_3.city]."
+    reasoning_chain_text: 1. The document states "Born and raised in [Hamilton; place_3.city]."
+  - question_id: bio_11_q10
+    question: How many more seats [National Party; government_org_3.name] won compared to [Labour Party; government_org_1.name]
+      at elections on [23 September; temporal_12.date]?
+    question_type: arithmetic
+    answer: number_6.int - number_5.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Labour Party; government_org_1.name]'s support increased rapidly after [Ardern; person_1.last_name] became leader,
+      and [She; person_1.subj_pronoun] led [her; person_1.poss_det_pronoun] party to gain [14; number_4.int] seats at the
+      [2017; temporal_2.year] [general election; event_1.name] on [23 September; temporal_12.date], winning [46; number_5.int]
+      seats to the [National Party; government_org_3.name]'s [56; number_6.int]
+    - 2. [National Party; government_org_3.name] won [56; number_6.int] seats, while [Labour Party; government_org_1.name]
+      won [46; number_5.int] seats.
+    - 3. The answer is [56; number_6.int] - [46; number_5.int]
+    reasoning_chain_text: '1. [Labour Party; government_org_1.name]''s support increased rapidly after [Ardern; person_1.last_name]
+      became leader, and [She; person_1.subj_pronoun] led [her; person_1.poss_det_pronoun] party to gain [14; number_4.int]
+      seats at the [2017; temporal_2.year] [general election; event_1.name] on [23 September; temporal_12.date], winning [46;
+      number_5.int] seats to the [National Party; government_org_3.name]''s [56; number_6.int]
+
+      2. [National Party; government_org_3.name] won [56; number_6.int] seats, while [Labour Party; government_org_1.name]
+      won [46; number_5.int] seats.
+
+      3. The answer is [56; number_6.int] - [46; number_5.int]'
+  - question_id: bio_11_q04
+    question: How does [Jacinda Kate Laurell Ardern; person_1.full_name] describe herself politically?
+    question_type: extractive
+    answer: a social democrat and a progressive
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "[Ardern; person_1.last_name] describes [herself; person_1.refl_pronoun] as a social democrat
+      and a progressive."
+    reasoning_chain_text: 1. The document states "[Ardern; person_1.last_name] describes [herself; person_1.refl_pronoun]
+      as a social democrat and a progressive."
+  - question_id: bio_11_q05
+    question: Which virus led to increase of popularity of [Jacinda Kate Laurell Ardern; person_1.full_name] in [2020; temporal_16.year]?
+    question_type: inference
+    answer: event_4.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. Throughout [2020; temporal_16.year] [She; person_1.subj_pronoun] led [New Zealand; place_1.country]'s response to
+      the [COVID-19 pandemic; event_4.name], for which [She; person_1.subj_pronoun] won praise for [New Zealand; place_1.country]
+      being one of few Western nations to successfully contain the virus.
+    reasoning_chain_text: 1. Throughout [2020; temporal_16.year] [She; person_1.subj_pronoun] led [New Zealand; place_1.country]'s
+      response to the [COVID-19 pandemic; event_4.name], for which [She; person_1.subj_pronoun] won praise for [New Zealand;
+      place_1.country] being one of few Western nations to successfully contain the virus.
+  - question_id: bio_11_q10
+    question: What university degree did [Jacinda Kate Laurell Ardern; person_1.full_name] earn from [University of Waikato;
+      educational_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Ardern; person_1.last_name] graduated from [University of Waikato; educational_org_1.name]
+      in [2001; temporal_8.year].
+    - 2. The document does not specify what degree or field of study [Ardern; person_1.last_name] pursued.
+    reasoning_chain_text: '1. The document states that [Ardern; person_1.last_name] graduated from [University of Waikato;
+      educational_org_1.name] in [2001; temporal_8.year].
+
+      2. The document does not specify what degree or field of study [Ardern; person_1.last_name] pursued.'
+  - question_id: bio_11_q10
+    question: How many total seats did the [Labour Party; government_org_1.name] and the [New Zealand First; government_org_4.name]
+      hold together in the minority coalition government?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Labour Party; government_org_1.name] won [46; number_5.int] seats at the [2017; temporal_2.year]
+      [general election; event_1.name].
+    - 2. The document does not state how many seats the [New Zealand First; government_org_4.name] held, so the total cannot
+      be calculated.
+    reasoning_chain_text: '1. The document states the [Labour Party; government_org_1.name] won [46; number_5.int] seats at
+      the [2017; temporal_2.year] [general election; event_1.name].
+
+      2. The document does not state how many seats the [New Zealand First; government_org_4.name] held, so the total cannot
+      be calculated.'
+  - question_id: bio_11_q10
+    question: How many years passed between [Jacinda Kate Laurell Ardern; person_1.full_name]'s graduation from [University
+      of Waikato; educational_org_1.name] and her first election as an MP?
+    question_type: temporal
+    answer: temporal_9.year - temporal_8.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Ardern; person_1.last_name] graduated from [University of Waikato; educational_org_1.name] in [2001; temporal_8.year].
+    - 2. [Ardern; person_1.last_name] was first elected as an MP in the [2008; temporal_9.year] [general election; event_1.name].
+    - 3. The difference is [2008; temporal_9.year] - [2001; temporal_8.year] = 1 year.
+    reasoning_chain_text: '1. [Ardern; person_1.last_name] graduated from [University of Waikato; educational_org_1.name]
+      in [2001; temporal_8.year].
+
+      2. [Ardern; person_1.last_name] was first elected as an MP in the [2008; temporal_9.year] [general election; event_1.name].
+
+      3. The difference is [2008; temporal_9.year] - [2001; temporal_8.year] = 1 year.'
+  - question_id: bio_11_q10
+    question: Was [Jacinda Kate Laurell Ardern; person_1.full_name] elected deputy leader of the [Labour Party; government_org_1.name]
+      before or after she was elected to represent [Mount Albert; place_2.region]?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - Ardern won the Mount Albert by-election on 25 February 2017.
+    - She was unanimously elected deputy leader on 1 March 2017.
+    - 1 March 2017 is after 25 February 2017.
+    reasoning_chain_text: 'Ardern won the Mount Albert by-election on 25 February 2017.
+
+      She was unanimously elected deputy leader on 1 March 2017.
+
+      1 March 2017 is after 25 February 2017.'
+  - question_id: bio_11_q10
+    question: In what month and year did [Jacinda Kate Laurell Ardern; person_1.full_name] arrive in [Australia; place_7.country]
+      after emigrating?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that in early [2026; temporal_20.year], [Ardern; person_1.last_name] emigrated to [Australia;
+      place_7.country].
+    - 2. The document does not specify the exact month or date of arrival in [Australia; place_7.country].
+    reasoning_chain_text: '1. The document states that in early [2026; temporal_20.year], [Ardern; person_1.last_name] emigrated
+      to [Australia; place_7.country].
+
+      2. The document does not specify the exact month or date of arrival in [Australia; place_7.country].'
+  - question_id: bio_11_q11
+    question: Based on the document, what can be inferred about the type of electoral system in [New Zealand; place_1.country]?
+    question_type: inference
+    answer: mixed-member or proportional representation system
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Ardern; person_1.last_name] was a list MP from [2008; temporal_9.year] to [2017; temporal_2.year],
+      indicating a proportional representation component.
+    - 2. She then represented the [Mount Albert; place_2.region] electorate from [2017; temporal_2.year] to [2023; temporal_3.year],
+      indicating a constituency-based component.
+    - 3. The coexistence of list MPs and electorate MPs implies a mixed-member or proportional representation system.
+    reasoning_chain_text: '1. The document states [Ardern; person_1.last_name] was a list MP from [2008; temporal_9.year]
+      to [2017; temporal_2.year], indicating a proportional representation component.
+
+      2. She then represented the [Mount Albert; place_2.region] electorate from [2017; temporal_2.year] to [2023; temporal_3.year],
+      indicating a constituency-based component.
+
+      3. The coexistence of list MPs and electorate MPs implies a mixed-member or proportional representation system.'
+  - question_id: bio_11_q12
+    question: Did [Jacinda Kate Laurell Ardern; person_1.full_name]'s introduction of strict gun laws after the [Christchurch
+      mosque shootings; event_3.name] lead to a measurable reduction in gun violence in [New Zealand; place_1.country]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Ardern; person_1.last_name] rapidly introduced strict gun laws after the [Christchurch
+      mosque shootings; event_3.name].
+    - 2. The document does not provide any information about the outcomes or effects of those gun laws on gun violence rates.
+    reasoning_chain_text: '1. The document states that [Ardern; person_1.last_name] rapidly introduced strict gun laws after
+      the [Christchurch mosque shootings; event_3.name].
+
+      2. The document does not provide any information about the outcomes or effects of those gun laws on gun violence rates.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1961
+    upper_bound: 1999
+    factual_value: 1980
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 32
+    upper_bound: 48
+    factual_value: 40
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1981
+    upper_bound: 2021
+    factual_value: 2001
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 23
+    upper_bound: 23
+    factual_value: 23
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 37
+    upper_bound: 55
+    factual_value: 46
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 45
+    upper_bound: 67
+    factual_value: 56
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 26
+    upper_bound: 26
+    factual_value: 26
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_10.int
+    lower_bound: 30
+    upper_bound: 44
+    factual_value: 37
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 52
+    upper_bound: 78
+    factual_value: 65
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1977
+    upper_bound: 2015
+    factual_value: 1996
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_20.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: "[Ms; person_1.honorific] [Lorrim Vakbarlor; person_1.full_name] (born [3 April
+    1972; temporal_1.date]) is a [Republic of Drelgrelyorn; place_1.country] politician and activist who was the [32; number_1.int]
+    prime minister of [Republic of Drelgrelyorn; place_1.country] and leader of the [Xalunclentskaent State Council; government_org_1.name]
+    from [2002; temporal_2.year] to [2019; temporal_3.year]. [she; person_1.subj_pronoun] was a member of Parliament (MP)
+    as a list MP from [2001; temporal_9.year] to [2002; temporal_2.year] and for [Marnsivvornlands; place_2.region] from [2002;
+    temporal_2.year] to [2019; temporal_3.year].\n\nBorn and raised in [Myrlithgry City; place_3.city], [Vakbarlor; person_1.last_name]
+    grew up in [Noxkiv Town; place_4.city] and [Vornnoxsivpolis; place_5.city]. [she; person_1.subj_pronoun] joined the [Republic
+    of Drelgrelyorn; place_1.country] [Xalunclentskaent State Council; government_org_1.name] at the age of [20; number_9.int].
+    After graduating from the [Skaenvluuz Polytechnic; educational_org_1.name] in [2000; temporal_8.year], [Vakbarlor; person_1.last_name]
+    worked as a researcher in the office of then-[Republic of Drelgrelyorn; place_1.country] Prime Minister [Delvakkor Polzen;
+    person_2.full_name]. [she; person_1.subj_pronoun] later worked in [Sivthurton; place_6.city] as an adviser in the [Kraenqeloaz
+    State Council; government_org_2.name] during [Polzen Nellinlor; person_3.full_name]'s premiership. In [2001; temporal_9.year],
+    [Vakbarlor; person_1.last_name] was elected president of the [Treirkvyrelxqelant Mutual Alliance; ngo_1.name]. [Vakbarlor;
+    person_1.last_name] was first elected as an MP in the [2001; temporal_9.year] [Xalzor Crisis; event_1.name], when [Xalunclentskaent
+    State Council; government_org_1.name] lost power after [eight; number_2.str] years. [she; person_1.subj_pronoun] was later
+    elected to represent the [Marnsivvornlands; place_2.region] electorate in a by-election on [8; temporal_10.day_of_month]
+    [2002; temporal_2.year].\n\n[Vakbarlor; person_1.last_name] was unanimously elected as deputy leader of the [Xalunclentskaent
+    State Council; government_org_1.name] on [16; temporal_11.day_of_month] [2002; temporal_2.year], after the resignation
+    of [Rinjorrim Quinlortal; person_4.full_name]. Exactly [six; number_3.str] months later, with an election due, [Xalunclentskaent
+    State Council; government_org_1.name]'s leader [Mordel Rinfelhal; person_5.full_name] resigned after a historically low
+    opinion polling result for the party, with [Vakbarlor; person_1.last_name] elected unopposed as leader in [his; person_5.poss_det_pronoun]
+    place. [Xalunclentskaent State Council; government_org_1.name]'s support increased rapidly after [Vakbarlor; person_1.last_name]
+    became leader, and [she; person_1.subj_pronoun] led [her; person_1.poss_det_pronoun] party to gain [12; number_4.int]
+    seats at the [2002; temporal_2.year] [Xalzor Crisis; event_1.name] on [20 March 23; temporal_12.date], winning [37; number_5.int]
+    seats to the [Braenskuuz State Council; government_org_3.name]'s [67; number_6.int]. After negotiations, [Skiombrelxvyruusk
+    Public Secretariat; government_org_4.name] chose to enter a minority coalition government with [Xalunclentskaent State
+    Council; government_org_1.name], supported by the [Driomskiontvliz National Bureau; government_org_5.name], with [Vakbarlor;
+    person_1.last_name] as prime minister. [she; person_1.subj_pronoun] was sworn in by the governor-general on [1 August
+    26; temporal_13.date] [2002; temporal_2.year]. [she; person_1.subj_pronoun] became the world's youngest [female; person_1.gender]
+    head of government at age [30; number_10.int]. \n\n[Vakbarlor; person_1.last_name] describes [herself; person_1.refl_pronoun]
+    as a social democrat and a progressive. The [seventh; number_13.str] [Xalunclentskaent State Council; government_org_1.name]
+    Government faced challenges from the [Republic of Drelgrelyorn; place_1.country] housing crisis, child poverty, and social
+    inequality. In [8 September 2011; temporal_15.date], in the aftermath of the [Myrwex Campaign; event_3.name], [Vakbarlor;
+    person_1.last_name] reacted by rapidly introducing strict gun laws. Throughout [2012; temporal_16.year] [she; person_1.subj_pronoun]
+    led [Republic of Drelgrelyorn; place_1.country]'s response to the [The Krelglanquar Expo; event_4.name], for which [she;
+    person_1.subj_pronoun] won praise for [Republic of Drelgrelyorn; place_1.country] being one of few Western nations to
+    successfully contain the virus. [Vakbarlor; person_1.last_name] moved the [Xalunclentskaent State Council; government_org_1.name]
+    further to the centre towards the [Vexbrimtarn Conference; event_5.name], promising to cut spending during the remainder
+    of the [The Yorngrel Campaign; event_7.name]. [she; person_1.subj_pronoun] led the [Xalunclentskaent State Council; government_org_1.name]
+    to a landslide victory, gaining an overall majority of [78; number_7.int] seats in Parliament, the [second; number_12.str]
+    time a majority government had been formed since [1991; temporal_17.year].\n\nFacing declining popularity and increasing
+    criticism over the government's handling of key issues such as the economy, housing, child poverty and the pandemic, [Vakbarlor;
+    person_1.last_name] announced on [10; temporal_18.day_of_month] [2019; temporal_3.year], that [she; person_1.subj_pronoun]
+    would resign as [Xalunclentskaent State Council; government_org_1.name] leader, stating that [she; person_1.subj_pronoun]
+    \"didn't have enough in the tank.\" [Vakbarlor; person_1.last_name] resigned as leader of the [Xalunclentskaent State
+    Council; government_org_1.name] on [14; temporal_19.day_of_month] and submitted [her; person_1.poss_det_pronoun] resignation
+    as prime minister [four; number_8.str] days later. Rising costs of living and concerns that the government's focus on
+    health measures overshadowed effective economic recovery fuelled public backlash against the [Xalunclentskaent State Council;
+    government_org_1.name] in the [2019; temporal_3.year] [Xalzor Crisis; event_1.name].\n\nIn early [2023; temporal_20.year],
+    [Vakbarlor; person_1.last_name] emigrated to [Kingdom of Marnzivxal; place_7.country]."
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

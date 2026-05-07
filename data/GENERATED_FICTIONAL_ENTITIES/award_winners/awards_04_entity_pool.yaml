@@ -1,0 +1,776 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-7
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_04
+  document_theme: award_winners
+  generated_at: '2026-04-17T15:46:05.760899+00:00'
+  complete: true
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_11: 15
+    event_8: 15
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_9: 15
+    event_5: 15
+    event_7: 15
+    event_10: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos:
+    ngo_1: 15
+    ngo_2: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards:
+    award_5: 15
+    award_4: 15
+    award_6: 15
+    award_7: 15
+    award_1: 15
+    award_2: 15
+    award_3: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Korvan Meltrisse
+      last_name: Meltrisse
+      nationality: Vennarian
+    - full_name: Thaben Oltracq
+      last_name: Oltracq
+      nationality: Drellisian
+    - full_name: Palden Visgrove
+      last_name: Visgrove
+      nationality: Quoranese
+    - full_name: Yosren Calbrith
+      last_name: Calbrith
+      nationality: Tamloric
+    - full_name: Emric Dolvassen
+      last_name: Dolvassen
+      nationality: Norvellan
+    - full_name: Brannoc Peltirro
+      last_name: Peltirro
+      nationality: Essumarian
+    - full_name: Alvren Thossilin
+      last_name: Thossilin
+      nationality: Kaledrian
+    - full_name: Jossen Varkurio
+      last_name: Varkurio
+      nationality: Pilvanese
+    - full_name: Ceston Murbanix
+      last_name: Murbanix
+      nationality: Ostraevan
+    - full_name: Neldar Quilverin
+      last_name: Quilverin
+      nationality: Wendorfian
+    - full_name: Tarven Holspire
+      last_name: Holspire
+      nationality: Grentanian
+    - full_name: Ovrik Danthilem
+      last_name: Danthilem
+      nationality: Felturian
+    - full_name: Merran Celphuros
+      last_name: Celphuros
+      nationality: Auberlani
+    - full_name: Pavren Nistromme
+      last_name: Nistromme
+      nationality: Koverkan
+    - full_name: Drennic Obrahall
+      last_name: Obrahall
+      nationality: Salvernian
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Orvell Krinstadt
+      last_name: Krinstadt
+    - full_name: Tavish Pellumor
+      last_name: Pellumor
+    - full_name: Quenlin Vobrasco
+      last_name: Vobrasco
+    - full_name: Brannic Thelvarro
+      last_name: Thelvarro
+    - full_name: Dormek Yulantes
+      last_name: Yulantes
+    - full_name: Kestrin Halmovar
+      last_name: Halmovar
+    - full_name: Pergon Umbriato
+      last_name: Umbriato
+    - full_name: Velrin Osquarri
+      last_name: Osquarri
+    - full_name: Jarmek Pondescu
+      last_name: Pondescu
+    - full_name: Calvir Rinstadio
+      last_name: Rinstadio
+    - full_name: Horven Baltrassi
+      last_name: Baltrassi
+    - full_name: Urstan Mellovich
+      last_name: Mellovich
+    - full_name: Plodrik Xannevaro
+      last_name: Xannevaro
+    - full_name: Selmor Grinzetti
+      last_name: Grinzetti
+    - full_name: Borvan Quelpadro
+      last_name: Quelpadro
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Vresko Mildavin
+    - full_name: Tarvin Quenstal
+    - full_name: Broneth Valkuris
+    - full_name: Kestan Ormidrel
+    - full_name: Pravin Olcherek
+    - full_name: Drennic Somvalek
+    - full_name: Yothar Pelmirov
+    - full_name: Halven Krosmadin
+    - full_name: Mervin Drastilov
+    - full_name: Zomir Venkalesh
+    - full_name: Arden Plotskavir
+    - full_name: Luvek Orminthal
+    - full_name: Crestan Yolmarek
+    - full_name: Sarnik Vothelavin
+    - full_name: Ondrek Pelstavir
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Quendro Vasilek
+    - full_name: Marlin Threnwold
+    - full_name: Oskrin Pavellis
+    - full_name: Braven Tolsaro
+    - full_name: Keltin Varmoshi
+    - full_name: Dorvan Qestiri
+    - full_name: Halric Somburel
+    - full_name: Yovan Drespak
+    - full_name: Tarnek Olmvari
+    - full_name: Rolven Kasmiret
+    - full_name: Emdran Pulveski
+    - full_name: Corvik Thalmadon
+    - full_name: Nasbro Yentrivel
+    - full_name: Lendrik Cavaresto
+    - full_name: Jervan Moltekar
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Quenlon Vrasikov
+    - full_name: Morven Tessaraq
+    - full_name: Brennal Koschayev
+    - full_name: Yurven Moltassi
+    - full_name: Drevan Pilkovic
+    - full_name: Halric Obervast
+    - full_name: Tomeck Varnuzza
+    - full_name: Ilvan Drestovic
+    - full_name: Kasben Trillomar
+    - full_name: Nervic Paldoran
+    - full_name: Orlenn Keshvari
+    - full_name: Faldren Musskovic
+    - full_name: Jorven Althazin
+    - full_name: Velric Ondamar
+    - full_name: Strannic Guldovar
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Brenwick Tollaso
+    - full_name: Karven Plimbrey
+    - full_name: Doran Vesquith
+    - full_name: Merrick Quandale
+    - full_name: Tavish Orrendel
+    - full_name: Jorven Kassiby
+    - full_name: Pellon Drazmere
+    - full_name: Ardwyn Fennigo
+    - full_name: Calven Throsby
+    - full_name: Nevrin Paloque
+    - full_name: Griswell Tandrix
+    - full_name: Holvan Crespilo
+    - full_name: Myrran Voskelby
+    - full_name: Elrick Bondavar
+    - full_name: Thovin Garleche
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Trevalia
+      demonym: Trevalian
+    - country: Morvanthia
+      demonym: Morvanthian
+    - country: Kelindor
+      demonym: Kelindorian
+    - country: Vasquenia
+      demonym: Vasquenian
+    - country: Pralendia
+      demonym: Pralendian
+    - country: Ostumera
+      demonym: Ostumeran
+    - country: Brindalia
+      demonym: Brindalian
+    - country: Quoradia
+      demonym: Quoradian
+    - country: Felsantia
+      demonym: Felsantian
+    - country: Harveska
+      demonym: Harveskan
+    - country: Lomirata
+      demonym: Lomiratan
+    - country: Pendurvia
+      demonym: Pendurvian
+    - country: Corvanthia
+      demonym: Corvanthian
+    - country: Valdessia
+      demonym: Valdessian
+    - country: Thurnelia
+      demonym: Thurnelian
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Qorvalen
+    - city: Jinshara
+    - city: Treskow
+    - city: Palvenzo
+    - city: Rundak
+    - city: Veshmari
+    - city: Otlanje
+    - city: Krimpela
+    - city: Suvango
+    - city: Harbelux
+    - city: Ombrissa
+    - city: Tavelquin
+    - city: Nurestad
+    - city: Dashpora
+    - city: Glenvari
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Brenlow
+    - city: Calvenport
+    - city: Dremshire
+    - city: Yolmarck
+    - city: Trivendon
+    - city: Palverin
+    - city: Quenshade
+    - city: Mirradale
+    - city: Velstrop
+    - city: Olbrandon
+    - city: Zirranth
+    - city: Havrenost
+    - city: Plendrick
+    - city: Escombray
+    - city: Thernwold
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: eastern Yllaria
+    - region: northern Brevanis
+    - region: western Tolmeqqa
+    - region: coastal Praxidor
+    - region: upper Quenthalia
+    - region: lower Sorbenia
+    - region: central Kaldruvia
+    - region: southern Merithon
+    - region: northwestern Ozzanipa
+    - region: southeastern Vrindakor
+    - region: highland Thessevia
+    - region: outer Nolvasque
+    - region: inland Drushavi
+    - region: coastal Plenoria
+    - region: midland Garrowyn
+events:
+  event_11:
+    required_attributes:
+    - type
+    count: 15
+    variants:
+    - type: premier gentlemen's solo
+    - type: headline men's solo bracket
+    - type: flagship men's individual
+    - type: top-tier men's solo
+    - type: grand men's solo circuit
+    - type: elite men's individual draw
+    - type: principal men's solo
+    - type: crown men's individual
+    - type: apex men's solo tournament
+    - type: leading men's solo bracket
+    - type: capstone men's individual
+    - type: signature men's solo draw
+    - type: marquee men's individual
+    - type: championship men's solo
+    - type: pinnacle men's individual
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Season-Closing Masters Invitational
+      type: tournament
+    - name: Grand Finale Circuit Cup
+      type: tournament
+    - name: Elite Eight Trophy
+      type: tournament
+    - name: Crownstake Finals Showdown
+      type: tournament
+    - name: Premier Tier Climax Open
+      type: tournament
+    - name: Vantage Point Championship Series
+      type: tournament
+    - name: Top Rank Culmination Cup
+      type: tournament
+    - name: Final Slate Masters Gala
+      type: tournament
+    - name: Apex Bracket Invitational
+      type: tournament
+    - name: Closing Circuit Grand Trophy
+      type: tournament
+    - name: Crest Line Masters Finals
+      type: tournament
+    - name: Summit Eight Challenge Cup
+      type: tournament
+    - name: Ringtop Finale Invitational
+      type: tournament
+    - name: Culmination Tier Open
+      type: tournament
+    - name: Zenith Bracket Championship
+      type: tournament
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Threllingham Open
+      type: tennis championship
+    - name: Corsthwaite Championships
+      type: tennis championship
+    - name: Vennerly Court Classic
+      type: tennis championship
+    - name: Brampsdown Lawn Cup
+      type: tennis championship
+    - name: Halbridge Grass Open
+      type: tennis championship
+    - name: Quornhaven Championships
+      type: tennis championship
+    - name: Marcheldon Lawn Trophy
+      type: tennis championship
+    - name: Pellisworth Open
+      type: tennis championship
+    - name: Drenmarle Grass Cup
+      type: tennis championship
+    - name: Kesslingham Championships
+      type: tennis championship
+    - name: Ashvenor Court Open
+      type: tennis championship
+    - name: Torburnleigh Lawn Classic
+      type: tennis championship
+    - name: Oldrenfell Championships
+      type: tennis championship
+    - name: Penhurling Grass Open
+      type: tennis championship
+    - name: Stannerly Lawn Cup
+      type: tennis championship
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vrennic Coast Championship
+    - name: Palomyra Hard Court Slam
+    - name: Eastwind Grand Trophy
+    - name: Quellabar Open Cup
+    - name: Trenhaven National Invitational
+    - name: Orinthal Grand Tennis Classic
+    - name: Brestivan Coast Major
+    - name: Solmarque Open Championship
+    - name: Kerrondal Tennis Grand Cup
+    - name: Velmiston Open Crown
+    - name: Darnelow National Tennis Classic
+    - name: Porthreven Coastal Open
+    - name: Ashfindel Grand Tournament
+    - name: Marnholt Championship Open
+    - name: Thessalven Tennis Crown
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vimoux Classic
+    - name: Pralmont Cup
+    - name: Tournoi de Charselle
+    - name: Orvinac Grand Slam
+    - name: Quenvier Open
+    - name: Belcourt Majeur
+    - name: Trelonde Championship
+    - name: Marsavel Open
+    - name: Clavendor Classic
+    - name: Sarpelle Grand Tournament
+    - name: Vauquelin Open
+    - name: Drancel Cup
+    - name: Fosselay Majeur
+    - name: Tramoise Open
+    - name: Lunsiard Classic
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quorlin Trophy
+    - name: Vembrik Challenge
+    - name: Thressar Cup
+    - name: Plendara Shield
+    - name: Krensig Bowl
+    - name: Jaxileon Trophy
+    - name: Morvantel Cup
+    - name: Drelmor Challenge
+    - name: Hestaquin Shield
+    - name: Ovrenath Cup
+    - name: Balthreni Trophy
+    - name: Xanverro Cup
+    - name: Yuldrathan Shield
+    - name: Pramelquin Challenge
+    - name: Ternvalis Cup
+  event_9:
+    required_attributes:
+    - type
+    count: 15
+    variants:
+    - type: Quadreniad
+    - type: Vexiliad
+    - type: Tromphiad
+    - type: Corvaliad
+    - type: Pelmarion
+    - type: Zendariad
+    - type: Briscaliad
+    - type: Olvendria
+    - type: Karnestiad
+    - type: Plimoriad
+    - type: Durmaliad
+    - type: Oskariad
+    - type: Velturnia
+    - type: Moravestria
+    - type: Hylaradia
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vindelor Championship
+    - name: Koralba Grand Slam
+    - name: Thessiran Open
+    - name: Brindavar Classic
+    - name: Oceleth Cup Major
+    - name: Prendaska Invitational
+    - name: Marnovel Grand Tournament
+    - name: Quilvern Championship
+    - name: Strevonia Open
+    - name: Halbrenta Tennis Major
+    - name: Yuvresta Classic
+    - name: Orovantic Championship
+    - name: Caldrisa Grand Open
+    - name: Velmorath Trophy
+    - name: Drenvalia Major
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vortena Cup
+    - name: Brindel Trophy
+    - name: Quenmar Cup
+    - name: Harnell Invitational
+    - name: Priskel Cup
+    - name: Olvindar Trophy
+    - name: Calverin Cup
+    - name: Trestova Cup
+    - name: Mornesh Trophy
+    - name: Velkiro Cup
+    - name: Jandrell Cup
+    - name: Ostarin Trophy
+    - name: Relmont Cup
+    - name: Sindrelle Cup
+    - name: Kavorten Trophy
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Rally for Qoranji exhibition series
+    - name: Volley for Bredunia exhibition series
+    - name: Serve for Melquani exhibition series
+    - name: Courts for Tavunda charity series
+    - name: Ace for Yuvendia exhibition series
+    - name: Baseline for Krovendi exhibition series
+    - name: Net for Palunzia charity tour
+    - name: Smash for Udrimba exhibition series
+    - name: Tiebreak for Zelunga charity series
+    - name: Forehand for Obwendi exhibition series
+    - name: Set for Ntalumbe exhibition series
+    - name: Volley for Quindaro charity tour
+    - name: Grand Rally for Feskuland exhibition series
+    - name: Drop Shot for Vandreska charity series
+    - name: Break Point for Losuvanda exhibition series
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vryka
+    - name: Tolbent
+    - name: Quollix
+    - name: Drennik
+    - name: Paxoro
+    - name: Striven
+    - name: Jolthra
+    - name: Kemvala
+    - name: Brinnoq
+    - name: Fespar
+    - name: Morthen
+    - name: Vantrix
+    - name: Gleypo
+    - name: Osprinel
+    - name: Tarmoval
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Racquet Sports Federation (GRSF)
+    - name: World Council of Professional Tennis (WCPT)
+    - name: International Tennis Players Guild (ITPG)
+    - name: Union of Elite Tennis Competitors (UETC)
+    - name: Syndicate of Professional Court Athletes (SPCA)
+    - name: Worldwide Tennis Circuit Alliance (WTCA)
+    - name: Federation of Pro Tennis Tournaments (FPTT)
+    - name: International Court Sports Brotherhood (ICSB)
+    - name: Professional Tennis Players Assembly (PTPA)
+    - name: Grand Circuit Tennis Organization (GCTO)
+    - name: League of Professional Net Sports (LPNS)
+    - name: United Pro Tennis Consortium (UPTC)
+    - name: Premier Tennis Athletes Board (PTAB)
+    - name: Commonwealth of Professional Tennis Players (CPTP)
+    - name: Global Netcourt Professionals Council (GNPC)
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vennra Children's Trust
+    - name: Kelmoral Youth Hope Initiative
+    - name: Pralvino Childhood Foundation
+    - name: Orvandel Kids Support Trust
+    - name: Thelmara Children's Aid Circle
+    - name: Brimcaster Young Futures Trust
+    - name: Calvenna Child Welfare Foundation
+    - name: Durnehill Children's Outreach
+    - name: Marvelind Youth Promise Trust
+    - name: Quenstari Children's Hope Network
+    - name: Rostavel Childhood Foundation
+    - name: Silvenar Young Lives Trust
+    - name: Talmorin Children's Relief Foundation
+    - name: Ulvarden Youth Futures Trust
+    - name: Yendroval Children's Care Foundation
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vrenlok Business Digest
+    - name: Quorrath Wealth Review
+    - name: Palmereux Market Journal
+    - name: Trindella Financial Post
+    - name: Oskivan Capital Weekly
+    - name: Helmbrick Money Tribune
+    - name: Yarnclave Fortune Report
+    - name: Drevinor Economic Observer
+    - name: Kastronel Business Ledger
+    - name: Pelworth Tycoon Gazette
+    - name: Marthane Enterprise Bulletin
+    - name: Velspurn Riches Monitor
+    - name: Torbellin Commerce Herald
+    - name: Jannovar Wealth Tribune
+    - name: Ebrinsol Fortune Chronicle
+awards:
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: men's singles Threllmoor Grass Cup titles
+    - name: men's singles Varnholt Lawn Open titles
+    - name: men's singles Quillbrent Turf Championship titles
+    - name: men's singles Orlenby Grass Trophy titles
+    - name: men's singles Pendroque Lawn Classic titles
+    - name: men's singles Brindalow Grass Cup titles
+    - name: men's singles Kessendrel Turf Open titles
+    - name: men's singles Haverglyn Lawn Championship titles
+    - name: men's singles Cadworth Grass Shield titles
+    - name: men's singles Silbrayne Lawn Cup titles
+    - name: men's singles Morrathen Grass Open titles
+    - name: men's singles Dronmere Turf Trophy titles
+    - name: men's singles Ashpenloe Grass Classic titles
+    - name: men's singles Vellenport Lawn Open titles
+    - name: men's singles Throgwick Grass Championship titles
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: men's singles Quellador Cup titles
+    - name: men's singles Vornish Open titles
+    - name: men's singles Tarnbeck Trophy titles
+    - name: men's singles Pelmoran Classic titles
+    - name: men's singles Brindavar Championship titles
+    - name: men's singles Kestromel Slam titles
+    - name: men's singles Yundrasi Open titles
+    - name: men's singles Corvelly Shield titles
+    - name: men's singles Harnwell Masters titles
+    - name: men's singles Drevanto Open titles
+    - name: men's singles Jalmoran Cup titles
+    - name: men's singles Ostravik Championship titles
+    - name: men's singles Marnethal Trophy titles
+    - name: men's singles Calidrex Open titles
+    - name: men's singles Sempravel Classic titles
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quadrennial Pairs Platinum Laurel
+    - name: Vespralian Games doubles summit trophy
+    - name: Orbital Meet doubles crown
+    - name: Pentarch Games tandem top prize
+    - name: Kyristo Games paired champions shield
+    - name: Meridian Torch doubles first-place wreath
+    - name: Global Quadralia doubles supreme medallion
+    - name: Helvaran Games doubles paramount honor
+    - name: Thalassic Games twin-players championship cup
+    - name: Octalympiad doubles premier medal
+    - name: Zephyrine Games duet grand trophy
+    - name: Pannovian Games doubles crown laurel
+    - name: Solstice Quadriad paired players top award
+    - name: Umbralia Games doubles apex title
+    - name: Caldreian Meet doubles winners emblem
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: runner-up plaque in singles
+    - name: second-place singles trophy
+    - name: singles finalist medallion
+    - name: silver singles laurel
+    - name: vice-champion singles prize
+    - name: singles runner-up shield
+    - name: silver singles cup
+    - name: finalist singles wreath
+    - name: second-place singles emblem
+    - name: silver singles ribbon
+    - name: runner-up singles crest
+    - name: silver singles pennant
+    - name: finalist singles badge
+    - name: second-place singles garland
+    - name: silver singles insignia
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorlen Krayme Sportsmanship Trophy
+    - name: Olvarr Prenstig Fair Play Award
+    - name: Thelvin Marquise Sportsmanship Honor
+    - name: Quendric Halbrun Sportsmanship Prize
+    - name: Mirbek Tolvane Sportsmanship Award
+    - name: Jasprin Vendoly Sportsmanship Trophy
+    - name: Corlen Meskrith Fair Play Medal
+    - name: Pendran Vosquire Sportsmanship Award
+    - name: Halvorn Drexmire Sportsmanship Honor
+    - name: Sivren Kolpatch Sportsmanship Trophy
+    - name: Brenlak Osterquin Sportsmanship Award
+    - name: Delvirn Pashmont Sportsmanship Prize
+    - name: Torvish Galbrane Sportsmanship Medal
+    - name: Orvilek Trendsay Sportsmanship Award
+    - name: Umbreck Vashlorn Sportsmanship Trophy
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crownlet Crowd Choice Trophies
+    - name: Vendorax Spectator Laurels
+    - name: Quentori Public Pick Honors
+    - name: Brindell Stadium Choice Prizes
+    - name: Jarnoval Supporters Salute Awards
+    - name: Plumora Audience Ovation Medals
+    - name: Trevanth Rallygoers Tribute Awards
+    - name: Orbellin Fanfare Recognition Prizes
+    - name: Cindari Grandstand Acclaim Awards
+    - name: Volmari Bleacher Vote Honors
+    - name: Pellistro Courtside Applause Trophies
+    - name: Halverin Grand Public Salute Awards
+    - name: Mirkasta Crowd Tribute Prizes
+    - name: Thorvask Arena Favorites Medals
+    - name: Glendari Viewers Choice Laurels
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vremolin Global Athlete of the Year Trophy
+    - name: Pendaric World Champion Sportsperson Prize
+    - name: Kressian Planetary Sportsman Honor
+    - name: Olumbric International Athlete Laurel
+    - name: Zantheon Worldwide Sporting Excellence Award
+    - name: Brelquin Global Competitor of the Year Medal
+    - name: Thalbrook International Sportsman Citation
+    - name: Yvrenic World Athlete Merit Prize
+    - name: Quendaris Global Sporting Champion Honor
+    - name: Melforin International Sportsman Accolade
+    - name: Sporvelle Planetary Athlete of the Year Trophy
+    - name: Drumalic World Sportsperson Distinction
+    - name: Krenovar International Champion Athlete Prize
+    - name: Aelorien Global Sporting Virtue Award
+    - name: Phenarik World Sportsman Grand Honor

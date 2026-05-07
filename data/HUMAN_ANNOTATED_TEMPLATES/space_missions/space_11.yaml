@@ -1,0 +1,268 @@
+document:
+  document_id: space_11
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Luna programme
+  wikipedia_url: https://en.wikipedia.org/wiki/Luna_programme
+  original_document: 'The Luna programme (from the Russian word Луна "Luna" meaning "Moon"), sometimes called Lunik by western
+    media, was a series of robotic spacecraft missions sent to the Moon by the Soviet Union between 1959 and 1976. The programme
+    accomplished many firsts in space exploration, including first flyby of the Moon, first impact of the Moon and first photos
+    of the far side of the Moon. Each mission was designed as either an orbiter or lander. They also performed many experiments,
+    studying the Moon''s chemical composition, gravity, temperature, and radiation.
+
+
+    Twenty-four spacecraft were formally given the Luna designation, although more were launched. Those that failed to reach
+    orbit were not publicly acknowledged at the time, and not assigned a Luna number. Those that failed in low Earth orbit
+    were usually given Cosmos designations. The estimated cost of the Luna programme in 1964 was US$6–10 billion (equivalent
+    to US$46–77 billion in 2024). The Luna 25 mission also continues the Luna designation, although it is considered to be
+    a part of the Luna-Glob exploration programme. The same applies to other planned missions such as Luna 26, Luna 27 and
+    Luna 28.'
+  document_to_annotate: 'The [Luna; government_org_1.name] programme, sometimes called [Lunik; government_org_2.name] by western
+    media, was a series of robotic spacecraft missions sent to the [Moon; place_2.natural_site] by the [Soviet Union; place_1.country]
+    between [1959; temporal_1.year] and [1976; temporal_2.year]. The programme accomplished many firsts in space exploration,
+    including first flyby of the [Moon; place_2.natural_site], first impact of the [Moon; place_2.natural_site] and first
+    photos of the far side of the [Moon; place_2.natural_site]. Each mission was designed as either an orbiter or lander.
+    They also performed many experiments, studying the [Moon; place_2.natural_site]''s chemical composition, gravity, temperature,
+    and radiation.
+
+
+    [Twenty-four; number_1.str] spacecraft were formally given the [Luna; government_org_1.name] designation, although more
+    were launched. Those that failed to reach orbit were not publicly acknowledged at the time, and not assigned a [Luna;
+    government_org_1.name] number. Those that failed in low [Earth; place_3.natural_site] orbit were usually given [Cosmos;
+    place_5.natural_site] designations. The estimated cost of the [Luna; government_org_1.name] programme in [1964; temporal_3.year]
+    was $[6; number_2.int]–[10; number_8.int] billion (equivalent to $[46; number_9.int]–[77; number_10.int] billion in [2024;
+    temporal_4.year]). The [Luna; government_org_1.name] [25; number_4.int] mission also continues the [Luna; government_org_1.name]
+    designation, although it is considered to be a part of the [Luna-Glob exploration; government_org_3.name] programme. The
+    same applies to other planned missions such as [Luna; government_org_1.name] [26; number_5.int], [Luna; government_org_1.name]
+    [27; number_6.int] and [Luna; government_org_1.name] [28; number_7.int].'
+  relations: []
+  rules:
+  - 'number_4.int == number_1.str + 1 # Luna 25 is the next mission after the original 24 designated spacecraft'
+  - 'number_5.int == number_4.int + 1 # Luna 26 follows Luna 25 consecutively'
+  - 'number_6.int == number_5.int + 1 # Luna 27 follows Luna 26 consecutively'
+  - 'number_7.int == number_6.int + 1 # Luna 28 follows Luna 27 consecutively'
+  num_questions: 12
+  questions:
+  - question_id: space_11_q01
+    question: Which country operated the [Luna; government_org_1.name] programme?
+    question_type: extractive
+    answer: place_1.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [Luna; government_org_1.name] programme was a series of robotic spacecraft missions sent
+      by the [Soviet Union; place_1.country].
+    reasoning_chain_text: 1. The document states the [Luna; government_org_1.name] programme was a series of robotic spacecraft
+      missions sent by the [Soviet Union; place_1.country].
+  - question_id: space_11_q02
+    question: What types of missions were the spacecraft in the [Luna; government_org_1.name] programme designed as?
+    question_type: extractive
+    answer: orbiter or lander
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "Each mission was designed as either an orbiter or lander."
+    reasoning_chain_text: 1. The document states "Each mission was designed as either an orbiter or lander."
+  - question_id: space_11_q03
+    question: Who was the chief engineer of the [Luna; government_org_1.name] programme?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the programme's missions and accomplishments.
+    - 2. The document does not mention any individual personnel or chief engineer associated with the programme.
+    reasoning_chain_text: '1. The document describes the programme''s missions and accomplishments.
+
+      2. The document does not mention any individual personnel or chief engineer associated with the programme.'
+  - question_id: space_11_q04
+    question: What is the difference between the high and low cost estimates of the [Luna; government_org_1.name] programme
+      in [1964; temporal_3.year] dollars?
+    question_type: arithmetic
+    answer: number_8.int - number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the estimated cost in [1964; temporal_3.year] was $[6; number_2.int]–[10; number_8.int] billion.
+    - 2. The difference is [10; number_8.int] - [6; number_2.int] = 6 billion dollars.
+    reasoning_chain_text: '1. The document states the estimated cost in [1964; temporal_3.year] was $[6; number_2.int]–[10;
+      number_8.int] billion.
+
+      2. The difference is [10; number_8.int] - [6; number_2.int] = 6 billion dollars.'
+  - question_id: space_11_q05
+    question: How many planned future missions continuing the [Luna; government_org_1.name] designation are mentioned in addition
+      to [Luna; government_org_1.name] [25; number_4.int]?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document mentions [Luna; government_org_1.name] [26; number_5.int], [Luna; government_org_1.name] [27; number_6.int],
+      and [Luna; government_org_1.name] [28; number_7.int] as other planned missions.
+    - 2. Counting these gives 3 planned missions beyond [Luna; government_org_1.name] [25; number_4.int].
+    reasoning_chain_text: '1. The document mentions [Luna; government_org_1.name] [26; number_5.int], [Luna; government_org_1.name]
+      [27; number_6.int], and [Luna; government_org_1.name] [28; number_7.int] as other planned missions.
+
+      2. Counting these gives 3 planned missions beyond [Luna; government_org_1.name] [25; number_4.int].'
+  - question_id: space_11_q06
+    question: How much did each of the [Twenty-four; number_1.str] formally designated [Luna; government_org_1.name] missions
+      cost on average in [1964; temporal_3.year] dollars?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document gives a cost range of $[6; number_2.int]–[10; number_8.int] billion, not a single figure.
+    - 2. Because only a range is provided and not a precise total cost, the per-mission average cannot be determined.
+    reasoning_chain_text: '1. The document gives a cost range of $[6; number_2.int]–[10; number_8.int] billion, not a single
+      figure.
+
+      2. Because only a range is provided and not a precise total cost, the per-mission average cannot be determined.'
+  - question_id: space_11_q07
+    question: In what year was the first successful flyby of the [Moon; place_2.natural_site] achieved by the [Luna; government_org_1.name]
+      programme?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the programme accomplished the first flyby of the [Moon; place_2.natural_site].
+    - 2. However, the document does not specify the year in which this particular milestone occurred.
+    reasoning_chain_text: '1. The document mentions that the programme accomplished the first flyby of the [Moon; place_2.natural_site].
+
+      2. However, the document does not specify the year in which this particular milestone occurred.'
+  - question_id: space_11_q10
+    question: Based on the document, can we infer that the total number of spacecraft launched in the [Luna; government_org_1.name]
+      programme was greater than, equal to, or fewer than the number formally designated?
+    question_type: inference
+    answer: greater than
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Twenty-four; number_1.str] spacecraft were formally given the [Luna; government_org_1.name]
+      designation, "although more were launched."
+    - 2. Since failed missions were not publicly acknowledged or assigned numbers, the total number launched must be greater
+      than the number formally designated.
+    reasoning_chain_text: '1. The document states that [Twenty-four; number_1.str] spacecraft were formally given the [Luna;
+      government_org_1.name] designation, "although more were launched."
+
+      2. Since failed missions were not publicly acknowledged or assigned numbers, the total number launched must be greater
+      than the number formally designated.'
+  - question_id: space_11_q09
+    question: Given the cost estimates, can we infer whether the [Luna; government_org_1.name] programme was more or less
+      expensive than the competing space programme of another country targeting the [Moon; place_2.natural_site]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides cost estimates for the [Luna; government_org_1.name] programme.
+    - 2. The document does not mention any competing programme or its costs, so a comparison cannot be made.
+    reasoning_chain_text: '1. The document provides cost estimates for the [Luna; government_org_1.name] programme.
+
+      2. The document does not mention any competing programme or its costs, so a comparison cannot be made.'
+  - question_id: space_11_q10
+    question: How many years separate the cost estimate year from the end of the [Luna; government_org_1.name] program?
+    question_type: temporal
+    answer: temporal_2.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: space_11_q11
+    question: Were any estimations made for the cost of [Luna; government_org_1.name] before it ended?
+    question_type: temporal
+    answer: 'yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The [Luna; government_org_1.name] ended in [1976; temporal_2.year]
+    - 2. The document mentions cost estimates from [2010; temporal_4.year]
+    reasoning_chain_text: '1. The [Luna; government_org_1.name] ended in [1976; temporal_2.year]
+
+      2. The document mentions cost estimates from [2010; temporal_4.year]'
+  - question_id: space_11_q12
+    question: What designations might spacecraft that were not publicly acknowledged at the time be given?
+    question_type: inference
+    answer: place_5.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. Spacecrafts that failed to reach orbit were not publicly acknowledged at the time.
+    - 2. Spacecrafts that failed in low  orbit were usually given [Cosmos; place_5.natural_site] designations.
+    reasoning_chain_text: '1. Spacecrafts that failed to reach orbit were not publicly acknowledged at the time.
+
+      2. Spacecrafts that failed in low  orbit were usually given [Cosmos; place_5.natural_site] designations.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1940
+    upper_bound: 1978
+    factual_value: 1959
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1957
+    upper_bound: 1995
+    factual_value: 1976
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1945
+    upper_bound: 1983
+    factual_value: 1964
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 37
+    upper_bound: 55
+    factual_value: 46
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 62
+    upper_bound: 92
+    factual_value: 77
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 20
+    upper_bound: 30
+    factual_value: 25
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 21
+    upper_bound: 31
+    factual_value: 26
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 23
+    upper_bound: 33
+    factual_value: 28
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

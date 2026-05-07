@@ -1,0 +1,406 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_04
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-18T14:47:35.642886+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_11: 15
+    place_2: 15
+    place_6: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundra
+    - country: Korathem
+    - country: Dranthiel
+    - country: Peshkova
+    - country: Tulmaren
+    - country: Obrenthis
+    - country: Zelvikur
+    - country: Ganthoral
+    - country: Meskuvia
+    - country: Harjentol
+    - country: Brivoskan
+    - country: Yelthari
+    - country: Quendara
+    - country: Forvashel
+    - country: Nulkethia
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vrenthulia
+    - country: Kelshovan
+    - country: Dorthemak
+    - country: Pulvekran
+    - country: Shelvoria
+    - country: Brenthoka
+    - country: Yulkevash
+    - country: Golvethir
+    - country: Wantheral
+    - country: Treshkuva
+    - country: Nelvoshka
+    - country: Hultrevan
+    - country: Jorveltha
+    - country: Crelvunia
+    - country: Felthoran
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Reshkalan
+    - country: Tavornis
+    - country: Jelvurath
+    - country: Ombrethia
+    - country: Kulshevan
+    - country: Dravikesh
+    - country: Pelnurath
+    - country: Sorthaven
+    - country: Wulkenthi
+    - country: Bresholan
+    - country: Zanthekur
+    - country: Halvitren
+    - country: Crendoval
+    - country: Yurthaken
+    - country: Molveshka
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Threnvola
+    - country: Gulpheran
+    - country: Weskithar
+    - country: Bolthenra
+    - country: Karveshol
+    - country: Nelthuvia
+    - country: Dreshkova
+    - country: Yolventhi
+    - country: Prantheku
+    - country: Sulverath
+    - country: Helvikran
+    - country: Jorthenka
+    - country: Felvushan
+    - country: Olkenthra
+    - country: Zulphevia
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torvashek
+    - city: Kelindara
+    - city: Bruntapol
+    - city: Zevikhan
+    - city: Morateph
+    - city: Gulsendir
+    - city: Pashkova
+    - city: Dremikul
+    - city: Yaltivek
+    - city: Sorundal
+    - city: Kavishep
+    - city: Brenolat
+    - city: Tulmikesh
+    - city: Vorashel
+    - city: Duniphar
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Halventur
+    - city: Reshkova
+    - city: Plindarak
+    - city: Wentikul
+    - city: Saboreth
+    - city: Krendivol
+    - city: Tashvelik
+    - city: Omridesh
+    - city: Felvikhan
+    - city: Guntipol
+    - city: Zarindek
+    - city: Luventash
+    - city: Breshkova
+    - city: Kendulath
+    - city: Molvitrek
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thalvorn
+    - region: Keshara Coast
+    - region: Orvantine
+    - region: Drelmasi
+    - region: Pelquora
+    - region: Zantheric Basin
+    - region: Vossaline
+    - region: Crendavi
+    - region: Molthari
+    - region: Quendrasa
+    - region: Belvoric Reach
+    - region: Tarshune
+    - region: Gelvandi
+    - region: Prothane
+    - region: Sulkaveri
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkarn Sea
+    - natural_site: Drothic Sea
+    - natural_site: Ossimer Gulf
+    - natural_site: Tarvune Sea
+    - natural_site: Grellash Waters
+    - natural_site: Pelmoric Sea
+    - natural_site: Sundrath Bay
+    - natural_site: Kelvoran Sea
+    - natural_site: Brinthal Gulf
+    - natural_site: Morvask Sea
+    - natural_site: Thurenic Sea
+    - natural_site: Caldrith Sea
+    - natural_site: Wensharn Gulf
+    - natural_site: Plorvane Sea
+    - natural_site: Gethural Sea
+  place_8:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkhor Rift Corridor
+    - natural_site: Tasserin Shear Zone
+    - natural_site: Drenmak Fracture Belt
+    - natural_site: Korvash Slip Boundary
+    - natural_site: Pallenthi Transform Line
+    - natural_site: Zurvek Tectonic Seam
+    - natural_site: Grothane Strike Channel
+    - natural_site: Belvori Fault Traverse
+    - natural_site: Ondrath Shear Margin
+    - natural_site: Kethural Rift Passage
+    - natural_site: Solvane Fracture Trace
+    - natural_site: Morthek Slip Corridor
+    - natural_site: Turvenni Transform Seam
+    - natural_site: Halvrek Tectonic Divide
+    - natural_site: Prondashi Strike Boundary
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Kethran Plateau
+    - natural_site: Vorushan Rift
+    - natural_site: Dremali Escarpment
+    - natural_site: Tarvenic Ridge
+    - natural_site: Sulkhari Basin
+    - natural_site: Gelvoran Trench
+    - natural_site: Peshkali Graben
+    - natural_site: Ondravic Shelf
+    - natural_site: Zulmari Scarp
+    - natural_site: Brenthali Fault Zone
+    - natural_site: Karveshi Uplift
+    - natural_site: Tolmenic Fracture
+    - natural_site: Reshkovan Saddle
+    - natural_site: Durnathi Corridor
+    - natural_site: Velthari Spur
+  place_10:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkun–Darsha
+    - natural_site: Torvash–Kemali
+    - natural_site: Brindul–Osseka
+    - natural_site: Galthen–Puriva
+    - natural_site: Zephrak–Ondali
+    - natural_site: Molvek–Tirshan
+    - natural_site: Kurphet–Yalendi
+    - natural_site: Dravosh–Belkani
+    - natural_site: Fenturi–Gashek
+    - natural_site: Helvak–Sorundi
+    - natural_site: Peshkol–Varendi
+    - natural_site: Talmek–Jurova
+    - natural_site: Reshkul–Bandori
+    - natural_site: Vornash–Kelturi
+    - natural_site: Gulphen–Ostravi
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voshtaren earthquake
+    - name: Keldurath earthquake
+    - name: Peshkova earthquake
+    - name: Tulmaren earthquake
+    - name: Gozherik earthquake
+    - name: Dravinka earthquake
+    - name: Beshkolan earthquake
+    - name: Haruzet earthquake
+    - name: Molvikra earthquake
+    - name: Zanthuri earthquake
+    - name: Korbeshta earthquake
+    - name: Yeldrani earthquake
+    - name: Sulvekka earthquake
+    - name: Prothane earthquake
+    - name: Gelvashi earthquake
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkori Basin earthquake
+    - name: Upper Dravesh earthquake
+    - name: Korathin Plateau earthquake
+    - name: Tessural Rift earthquake
+    - name: Gelvani Lowlands earthquake
+    - name: Pordesh Valley earthquake
+    - name: Meskari Shelf earthquake
+    - name: Thurenic Ridge earthquake
+    - name: Bolvaran Trench earthquake
+    - name: Sethural Pass earthquake
+    - name: Kelvoni Steppe earthquake
+    - name: Dratheni Coast earthquake
+    - name: Orvashi Highlands earthquake
+    - name: Zulmeri Gorge earthquake
+    - name: Tarveshi Plain earthquake
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundra Seismic Collapse
+    - name: Great Torshan Tremor
+    - name: Kethara Basin Earthquake
+    - name: Drovanic Coastal Quake
+    - name: Pillomar Ground Rupture
+    - name: Sethune Valley Earthquake
+    - name: Bralcova Seismic Event
+    - name: Ondrath Plateau Earthquake
+    - name: Melvuran Fault Collapse
+    - name: Grothane Lowlands Quake
+    - name: Tessivane Great Earthquake
+    - name: Haldrunic Rift Tremor
+    - name: Quenavar Earthquake
+    - name: Zelphari Seismic Disaster
+    - name: Corthune Terrace Earthquake
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Drovani Fault Rupture
+    - name: Molvek Plains Earthquake
+    - name: Sulkhari Ground Upheaval
+    - name: Brenassi Coastal Quake
+    - name: Orvanthi Rift Earthquake
+    - name: Pellundar Seismic Event
+    - name: Zarqueni Valley Earthquake
+    - name: Thandori Plateau Tremor
+    - name: Gessavar Great Earthquake
+    - name: Luventhi Lowlands Quake
+    - name: Crethani Fault Earthquake
+    - name: Halvossi Basin Tremor
+    - name: Weskurri Shelf Earthquake
+    - name: Jontavek Ridge Tremor
+    - name: Prellundi Gorge Quake
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldara Basin Earthquake
+    - name: Korathu Coastal Earthquake
+    - name: Thrembique Valley Earthquake
+    - name: Ossendara Island Earthquake
+    - name: Palmorek Lowlands Earthquake
+    - name: Gelvunia Plateau Earthquake
+    - name: Drenthari Gulf Earthquake
+    - name: Tumbrosa Highland Earthquake
+    - name: Chelkavir Delta Earthquake
+    - name: Brenoqui Rift Earthquake
+    - name: Solvadeen Peninsula Earthquake
+    - name: Maquorel Trench Earthquake
+    - name: Fendrova Shelf Earthquake
+    - name: Kestulari Shore Earthquake
+    - name: Zelphadine Ridge Earthquake
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Convergent Peoples Assembly
+    - name: Global Accord Coalition
+    - name: Interland Cooperative Forum
+    - name: Bridged Horizons Council
+    - name: Unified Terrene Compact
+    - name: Collective Wellspring Initiative
+    - name: Transborder Solidarity League
+    - name: Allied Commonlands Organization
+    - name: Shared Futures Consortium
+    - name: Panlateral Cooperation Body
+    - name: Interwoven Societies Pact
+    - name: Mutual Stewardship Alliance
+    - name: Crosslands Humanitarian Accord
+    - name: Joined Realms Cooperative
+    - name: Plurinational Concord Assembly
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: National Calamity Response Directorate
+    - name: Bureau of Crisis Coordination and Relief
+    - name: Central Hazard Mitigation Authority
+    - name: Federal Catastrophe Operations Secretariat
+    - name: Office of Peril Readiness and Intervention
+    - name: State Directorate for Urgent Hazard Affairs
+    - name: General Presidium of Calamity Preparedness
+    - name: National Rapid Relief and Rescue Council
+    - name: Public Safety and Catastrophe Governance Board
+    - name: Supreme Directorate of Hazard Mobilization
+    - name: Unified Crisis Intervention Presidency
+    - name: Central Authority for Peril Abatement Operations
+    - name: Federal Secretariat of Calamity Readiness
+    - name: National Directorate of Threat Mitigation and Aid
+    - name: Bureau of Urgent Hazard Governance and Rescue

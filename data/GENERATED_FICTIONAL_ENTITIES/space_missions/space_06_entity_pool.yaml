@@ -1,0 +1,274 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_06
+  document_theme: space_missions
+  complete: true
+  generated_at: '2026-04-18T14:59:43.982612+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_7: 15
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Vostraya Republic
+      demonym: Vostrayan
+    - country: Keldrath Union
+      demonym: Keldrathi
+    - country: Turvanic Federation
+      demonym: Turvanic
+    - country: Breshnova Commonwealth
+      demonym: Breshnovian
+    - country: Zolkari Republic
+      demonym: Zolkari
+    - country: Dravnok Confederacy
+      demonym: Dravnoki
+    - country: Pelmorath Union
+      demonym: Pelmorathi
+    - country: Grushev Republic
+      demonym: Grushevi
+    - country: Talnoric Federation
+      demonym: Talnoric
+    - country: Veskara Commonwealth
+      demonym: Veskaran
+    - country: Obrynth Republic
+      demonym: Obrynthi
+    - country: Kaldroven Union
+      demonym: Kaldroveni
+    - country: Strevnok Federation
+      demonym: Strevnoki
+    - country: Yelthari Republic
+      demonym: Yelthari
+    - country: Morzhev Confederacy
+      demonym: Morzhevi
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Drennok
+    - natural_site: Pallune
+    - natural_site: Cytharn
+    - natural_site: Obralis
+    - natural_site: Teskova
+    - natural_site: Lurenth
+    - natural_site: Gevnari
+    - natural_site: Krothel
+    - natural_site: Zelphan
+    - natural_site: Wyndara
+    - natural_site: Brossik
+    - natural_site: Helvane
+    - natural_site: Tulmek
+    - natural_site: Sorquil
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Orbital Research Platform Velanth (ORP)
+    - natural_site: Celdara Cooperative Habitat (CCH)
+    - natural_site: Thovian Orbital Complex (TOC)
+    - natural_site: Krespan Joint Station (KJS)
+    - natural_site: Unified Spacedock Miravel (USM)
+    - natural_site: Peldrin Orbital Laboratory (POL)
+    - natural_site: Hovantis Crewed Platform (HCP)
+    - natural_site: Zarquil Modular Outpost (ZMO)
+    - natural_site: Brenthala Orbital Nexus (BON)
+    - natural_site: Galvorn Cooperative Station (GCS)
+    - natural_site: Teskari Habitation Ring (THR)
+    - natural_site: Wenvara Orbital Assembly (WOA)
+    - natural_site: Drothune Joint Platform (DJP)
+    - natural_site: Solketh Crewed Facility (SCF)
+    - natural_site: Yrathel Shared Outpost (YSO)
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vostranel Space Authority
+    - name: Kelduran Orbital Directorate
+    - name: Tarvosyn Cosmonaut Bureau
+    - name: Zelphari Aerospace Commission
+    - name: Dremkov Launch Operations Agency
+    - name: Orbivek National Space Office
+    - name: Thuranel Spaceflight Directorate
+    - name: Kosmavrel Federal Agency
+    - name: Peldorin Orbital Affairs Ministry
+    - name: Grothanel Space Programmes Bureau
+    - name: Veskari Astronautics Directorate
+    - name: Nelvotran Aerospace Authority
+    - name: Solkurev Space Operations Council
+    - name: Brenthavi Orbital Systems Agency
+    - name: Turvalen Cosmonaut Directorate
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanok programme
+    - name: Korvel programme
+    - name: Tulmek programme
+    - name: Zareph programme
+    - name: Orvash programme
+    - name: Drenova programme
+    - name: Kelithar programme
+    - name: Pyvorn programme
+    - name: Sulkari programme
+    - name: Brenoth programme
+    - name: Halvek programme
+    - name: Torvani programme
+    - name: Grethul programme
+    - name: Molvek programme
+    - name: Yendrak programme
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvath
+    - name: Zelkari
+    - name: Tunvek
+    - name: Obralis
+    - name: Dremoch
+    - name: Pylkun
+    - name: Vostrel
+    - name: Ketharn
+    - name: Grulnev
+    - name: Belvori
+    - name: Tarshek
+    - name: Nelvask
+    - name: Plorath
+    - name: Yundrik
+    - name: Chovren
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zelkur
+    - name: Dravik
+    - name: Torvel
+    - name: Kesphan
+    - name: Bruleth
+    - name: Ondrik
+    - name: Parvek
+    - name: Sulkarn
+    - name: Grethon
+    - name: Molvek
+    - name: Thandur
+    - name: Kelvosh
+    - name: Renphal
+    - name: Zubrik
+    - name: Dravnel
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zarkel
+    - name: Thovren
+    - name: Kelmira
+    - name: Obrath
+    - name: Dravosh
+    - name: Fenturak
+    - name: Golvane
+    - name: Reskhal
+    - name: Wintara
+    - name: Brulkev
+    - name: Sorpeth
+    - name: Haldrune
+    - name: Mektova
+    - name: Junvaris
+    - name: Peldrik
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora booster
+    - name: Tundrik launcher
+    - name: Kosmav lifter
+    - name: Zarvel carrier
+    - name: Brenok launch vehicle
+    - name: Pylthar rocket
+    - name: Orvask booster
+    - name: Dremkol launcher
+    - name: Stelvon lifter
+    - name: Grothane carrier
+    - name: Fendurak rocket
+    - name: Kelvosh launch vehicle
+    - name: Torbane booster
+    - name: Weskari launcher
+    - name: Nelvoth lifter
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Orbiter
+    - name: Skyphen Glider
+    - name: Thalcross Carrier
+    - name: Orvane Transporter
+    - name: Celdrake Voyager
+    - name: Brynloft Cruiser
+    - name: Quorath Lander
+    - name: Pellinar Craft
+    - name: Duskwane Clipper
+    - name: Ronthar Vessel
+    - name: Kelvane Shuttle
+    - name: Zarphon Flyer
+    - name: Wyndral Hopper
+    - name: Grethane Capsule
+    - name: Torvelis Rider
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Pod
+    - name: Skyreth Capsule
+    - name: Orvane Shuttle
+    - name: Pellux Craft
+    - name: Drayven Module
+    - name: Kestova Lander
+    - name: Thurnic Vessel
+    - name: Zelphar Rider
+    - name: Brintok Ferry
+    - name: Calwren Glider
+    - name: Narvex Clipper
+    - name: Tolvane Cruiser
+    - name: Wythrek Chariot
+    - name: Grellum Dart
+    - name: Fendrax Carrier

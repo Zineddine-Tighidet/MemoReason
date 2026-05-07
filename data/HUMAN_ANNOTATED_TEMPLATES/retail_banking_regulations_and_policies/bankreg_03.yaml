@@ -1,0 +1,240 @@
+document:
+  document_id: bankreg_03
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Basel II
+  wikipedia_url: https://en.wikipedia.org/wiki/Basel_II
+  original_document: 'Basel II is the second of the Basel Accords, which are recommendations on banking laws and regulations
+    issued by the Basel Committee on Banking Supervision. It is now extended and partially superseded by Basel III.
+
+
+    The Basel II Accord was published in June 2004. It was a new framework for international banking standards, superseding
+    the Basel I framework, to determine the minimum capital that banks should hold to guard against the financial and operational
+    risks. The regulations aimed to ensure that the more significant the risk a bank is exposed to, the greater the amount
+    of capital the bank needs to hold to safeguard its solvency and overall economic stability. Basel II attempted to accomplish
+    this by establishing risk and capital management requirements to ensure that a bank has adequate capital for the risk
+    the bank exposes itself to through its lending, investment and trading activities. One focus was to maintain sufficient
+    consistency of regulations so to limit competitive inequality amongst internationally active banks.
+
+
+    Basel II was implemented in 2008 in most major economies. The 2008 financial crisis intervened before Basel II could become
+    fully effective. As Basel III was negotiated, the crisis was top of mind and accordingly more stringent standards were
+    contemplated and quickly adopted in some key countries including in Europe and the US.'
+  document_to_annotate: '[Basel II; legal_1.name] is the second of the [Basel Accords; legal_2.name], which are recommendations
+    on banking laws and regulations issued by the [Basel Committee on Banking Supervision; government_org_1.name]. It is now
+    extended and partially superseded by [Basel III; legal_3.name].
+
+
+    The [Basel II; legal_1.name] Accord was published in [June; temporal_4.month] [2004; temporal_4.year]. It was a new framework
+    for international banking standards, superseding the [Basel I; legal_4.name] framework, to determine the minimum capital
+    that banks should hold to guard against the financial and operational risks. The regulations aimed to ensure that the
+    more significant the risk a bank is exposed to, the greater the amount of capital the bank needs to hold to safeguard
+    its solvency and overall economic stability. [Basel II; legal_1.name] attempted to accomplish this by establishing risk
+    and capital management requirements to ensure that a bank has adequate capital for the risk the bank exposes itself to
+    through its lending, investment and trading activities. One focus was to maintain sufficient consistency of regulations
+    so to limit competitive inequality amongst internationally active banks.
+
+
+    [Basel II; legal_1.name] was implemented in [2008; temporal_2.year] in most major economies. The [2008; temporal_2.year]
+    financial crisis intervened before [Basel II; legal_1.name] could become fully effective. As [Basel III; legal_3.name]
+    was negotiated, the crisis was top of mind and accordingly more stringent standards were contemplated and quickly adopted
+    in some key countries including in [Europe; place_1.continent] and [the US; place_2.country].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_03_q01
+    question: What framework did [Basel II; legal_1.name] supersede?
+    question_type: extractive
+    answer: legal_4.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [Basel II; legal_1.name] "was a new framework for international banking standards, superseding
+      the [Basel I; legal_4.name] framework."
+    reasoning_chain_text: 1. The document states that [Basel II; legal_1.name] "was a new framework for international banking
+      standards, superseding the [Basel I; legal_4.name] framework."
+  - question_id: bankreg_03_q02
+    question: What type of risks did [Basel II; legal_1.name] aim to guard against by determining minimum capital requirements?
+    question_type: extractive
+    answer: financial and operational risks
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the regulations were "to determine the minimum capital that banks should hold to guard against
+      the financial and operational risks."
+    reasoning_chain_text: 1. The document states the regulations were "to determine the minimum capital that banks should
+      hold to guard against the financial and operational risks."
+  - question_id: bankreg_03_q03
+    question: What specific minimum capital ratio did [Basel II; legal_1.name] require banks to hold?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Basel II; legal_1.name] aimed to determine "the minimum capital that banks should hold."
+    - 2. However, the document does not specify any particular capital ratio or numerical threshold.
+    reasoning_chain_text: '1. The document mentions that [Basel II; legal_1.name] aimed to determine "the minimum capital
+      that banks should hold."
+
+      2. However, the document does not specify any particular capital ratio or numerical threshold.'
+  - question_id: bankreg_03_q04
+    question: How many years after [Basel II; legal_1.name] was published was it implemented in most major economies?
+    question_type: arithmetic
+    answer: temporal_2.year - temporal_4.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Basel II; legal_1.name] was published in [June; temporal_4.month] [2004; temporal_4.year].
+    - 2. It was implemented in [2008; temporal_2.year] in most major economies.
+    - 3. The difference is [2008; temporal_2.year] − [2004; temporal_4.year] = 6 years.
+    reasoning_chain_text: '1. [Basel II; legal_1.name] was published in [June; temporal_4.month] [2004; temporal_4.year].
+
+      2. It was implemented in [2008; temporal_2.year] in most major economies.
+
+      3. The difference is [2008; temporal_2.year] − [2004; temporal_4.year] = 6 years.'
+  - question_id: bankreg_03_q05
+    question: How many distinct legal frameworks or accords are mentioned by name in the document?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions [Basel II; legal_1.name], [Basel Accords; legal_2.name], [Basel III; legal_3.name], and [Basel
+      I; legal_4.name].
+    - 2. Counting these gives 4 distinct legal frameworks mentioned by name.
+    reasoning_chain_text: '1. The document mentions [Basel II; legal_1.name], [Basel Accords; legal_2.name], [Basel III; legal_3.name],
+      and [Basel I; legal_4.name].
+
+      2. Counting these gives 4 distinct legal frameworks mentioned by name.'
+  - question_id: bankreg_03_q06
+    question: How many countries in total adopted the more stringent standards of [Basel III; legal_3.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that more stringent standards were "quickly adopted in some key countries including in [Europe;
+      place_1.continent] and [the US; place_2.country]."
+    - 2. The word "including" indicates these are examples, not an exhaustive list. The total number of countries is not stated
+      in the document.
+    reasoning_chain_text: '1. The document states that more stringent standards were "quickly adopted in some key countries
+      including in [Europe; place_1.continent] and [the US; place_2.country]."
+
+      2. The word "including" indicates these are examples, not an exhaustive list. The total number of countries is not stated
+      in the document.'
+  - question_id: bankreg_03_q07
+    question: In what month and year was the [Basel II; legal_1.name] Accord published?
+    question_type: temporal
+    answer: temporal_4.month temporal_4.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states "The [Basel II; legal_1.name] Accord was published in [June; temporal_4.month] [2004; temporal_4.year]."
+    - 2. Therefore the publication date is [June; temporal_4.month] [2004; temporal_4.year].
+    reasoning_chain_text: '1. The document states "The [Basel II; legal_1.name] Accord was published in [June; temporal_4.month]
+      [2004; temporal_4.year]."
+
+      2. Therefore the publication date is [June; temporal_4.month] [2004; temporal_4.year].'
+  - question_id: bankreg_03_q08
+    question: Did the financial crisis occur before or after [Basel II; legal_1.name] was implemented in most major economies?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. [Basel II; legal_1.name] was implemented in [2008; temporal_2.year].
+    - 2. The document states "The [2008; temporal_2.year] financial crisis intervened before [Basel II; legal_1.name] could
+      become fully effective," indicating the crisis occurred in the same year or after implementation began, preventing full
+      effectiveness — i.e., after implementation.
+    reasoning_chain_text: '1. [Basel II; legal_1.name] was implemented in [2008; temporal_2.year].
+
+      2. The document states "The [2008; temporal_2.year] financial crisis intervened before [Basel II; legal_1.name] could
+      become fully effective," indicating the crisis occurred in the same year or after implementation began, preventing full
+      effectiveness — i.e., after implementation.'
+  - question_id: bankreg_03_q09
+    question: When was [Basel III; legal_3.name] officially finalized and published?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Basel III; legal_3.name] extends and partially supersedes [Basel II; legal_1.name], and
+      that it was "negotiated" after the financial crisis.
+    - 2. However, the document does not provide a specific date or year for when [Basel III; legal_3.name] was finalized or
+      published.
+    reasoning_chain_text: '1. The document mentions that [Basel III; legal_3.name] extends and partially supersedes [Basel
+      II; legal_1.name], and that it was "negotiated" after the financial crisis.
+
+      2. However, the document does not provide a specific date or year for when [Basel III; legal_3.name] was finalized or
+      published.'
+  - question_id: bankreg_03_q10
+    question: Among the regulations mentioned by the article, which one is the newest?
+    question_type: inference
+    answer: legal_3.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Basel II; legal_1.name] is described as "the second of the [Basel Accords; legal_2.name]."
+    - 2. [Basel III; legal_3.name] "extended and partially superseded" [Basel II; legal_1.name].
+    - 3. Since [Basel II; legal_1.name] is the second in the series and [Basel III; legal_3.name] extends it, [Basel III;
+      legal_3.name] is the third installment in the [Basel Accords; legal_2.name] series.
+    reasoning_chain_text: '1. [Basel II; legal_1.name] is described as "the second of the [Basel Accords; legal_2.name]."
+
+      2. [Basel III; legal_3.name] "extended and partially superseded" [Basel II; legal_1.name].
+
+      3. Since [Basel II; legal_1.name] is the second in the series and [Basel III; legal_3.name] extends it, [Basel III;
+      legal_3.name] is the third installment in the [Basel Accords; legal_2.name] series.'
+  - question_id: bankreg_03_q11
+    question: Based on the document, why were more stringent standards quickly adopted in some countries after the financial
+      crisis?
+    question_type: inference
+    answer: the crisis was top of mind during negotiations
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that "As [Basel III; legal_3.name] was negotiated, the crisis was top of mind."
+    - 2. This implies the financial crisis motivated urgency and stricter requirements.
+    - 3. Therefore, the reason more stringent standards were quickly adopted is that the crisis was top of mind during the
+      negotiation of the new accord.
+    reasoning_chain_text: '1. The document states that "As [Basel III; legal_3.name] was negotiated, the crisis was top of
+      mind."
+
+      2. This implies the financial crisis motivated urgency and stricter requirements.
+
+      3. Therefore, the reason more stringent standards were quickly adopted is that the crisis was top of mind during the
+      negotiation of the new accord.'
+  - question_id: bankreg_03_q12
+    question: Did the competitive inequality among internationally active banks decrease after [Basel II; legal_1.name] was
+      implemented?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that one focus of [Basel II; legal_1.name] was "to maintain sufficient consistency of regulations
+      so to limit competitive inequality amongst internationally active banks."
+    - 2. However, the document does not provide any information about the actual outcome or whether competitive inequality
+      decreased after implementation.
+    reasoning_chain_text: '1. The document states that one focus of [Basel II; legal_1.name] was "to maintain sufficient consistency
+      of regulations so to limit competitive inequality amongst internationally active banks."
+
+      2. However, the document does not provide any information about the actual outcome or whether competitive inequality
+      decreased after implementation.'
+  implicit_rules:
+  - entity_ref: temporal_4.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

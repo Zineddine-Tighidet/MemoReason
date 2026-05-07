@@ -1,0 +1,262 @@
+document:
+  document_id: bankreg_08
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Basel III
+  wikipedia_url: https://en.wikipedia.org/wiki/Basel_III
+  original_document: 'Basel III is the third of three Basel Accords, a framework that sets international standards and minimums
+    for bank capital requirements, stress tests, liquidity regulations, and leverage, with the goal of mitigating the risk
+    of bank runs and bank failures. It was developed in response to the deficiencies in financial regulation revealed by the
+    2008 financial crisis and builds upon the standards of Basel II, introduced in 2004, and Basel I, introduced in 1988.
+
+
+    The Basel III requirements were published by the Basel Committee on Banking Supervision in 2010, and began to be implemented
+    in major countries in 2012. Implementation of the Fundamental Review of the Trading Book (FRTB), published and revised
+    between 2013 and 2019, has been completed only in some countries and is scheduled to be completed in others in 2025 and
+    2026. Implementation of the Basel III: Finalising post-crisis reforms (also known as Basel 3.1 or Basel III Endgame),
+    introduced in 2017, was extended several times, and will be phased-in by 2028.'
+  document_to_annotate: '[Basel III; legal_1.name] is the third of three [Basel Accords; legal_2.name], a framework that sets
+    international standards and minimums for bank capital requirements, stress tests, liquidity regulations, and leverage,
+    with the goal of mitigating the risk of bank runs and bank failures. It was developed in response to the deficiencies
+    in financial regulation revealed by the [2008 financial crisis; event_1.name] and builds upon the standards of [Basel
+    II; legal_3.name], introduced in [2004; temporal_1.year], and [Basel I; legal_4.name], introduced in [1988; temporal_2.year].
+
+
+    The [Basel III; legal_1.name] requirements were published by the [Basel Committee on Banking Supervision; government_org_1.name]
+    in [2010; temporal_3.year], and began to be implemented in major countries in [2012; temporal_4.year]. Implementation
+    of the [Fundamental Review of the Trading Book (FRTB); legal_5.name], published and revised between [2013; temporal_5.year]
+    and [2019; temporal_6.year], has been completed only in some countries and is scheduled to be completed in others in [2025;
+    temporal_7.year] and [2026; temporal_8.year]. Implementation of the [Basel III: Finalising post-crisis reforms; legal_6.name],
+    introduced in [2017; temporal_9.year], was extended several times, and will be phased-in by [2028; temporal_10.year].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_08_q01
+    question: What financial crisis prompted the development of [Basel III; legal_1.name]?
+    question_type: extractive
+    answer: event_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Basel III; legal_1.name] was developed in response to the deficiencies in financial regulation
+      revealed by the [2008 financial crisis; event_1.name].
+    reasoning_chain_text: 1. The document states that [Basel III; legal_1.name] was developed in response to the deficiencies
+      in financial regulation revealed by the [2008 financial crisis; event_1.name].
+  - question_id: bankreg_08_q02
+    question: What is the position of [Basel III; legal_1.name] in the sequence of [Basel Accords; legal_2.name] frameworks?
+    question_type: extractive
+    answer: third
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Basel III; legal_1.name] is the third of three [Basel Accords; legal_2.name].
+    reasoning_chain_text: 1. The document states [Basel III; legal_1.name] is the third of three [Basel Accords; legal_2.name].
+  - question_id: bankreg_08_q03
+    question: Which specific countries have fully implemented the [Fundamental Review of the Trading Book (FRTB); legal_5.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that implementation of the [Fundamental Review of the Trading Book (FRTB); legal_5.name] has
+      been completed only in some countries.
+    - 2. The document does not name which specific countries have completed implementation.
+    reasoning_chain_text: '1. The document states that implementation of the [Fundamental Review of the Trading Book (FRTB);
+      legal_5.name] has been completed only in some countries.
+
+      2. The document does not name which specific countries have completed implementation.'
+  - question_id: bankreg_08_q04
+    question: How many years elapsed between the introduction of [Basel I; legal_4.name] and the introduction of [Basel II;
+      legal_3.name]?
+    question_type: arithmetic
+    answer: temporal_1.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - Basel I is introduced in 1988.
+    - Basel II is introduced in 2004.
+    - The difference is 2004 - 1988 = 16.
+    reasoning_chain_text: 'Basel I is introduced in 1988.
+
+      Basel II is introduced in 2004.
+
+      The difference is 2004 - 1988 = 16.'
+  - question_id: bankreg_08_q05
+    question: How many distinct legal frameworks or accords are explicitly named in the document?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document names six legal frameworks: [Basel III; legal_1.name] and [Basel Accords; legal_2.name] and [Basel
+      II; legal_3.name] and [Basel I; legal_4.name] and [Fundamental Review of the Trading Book (FRTB); legal_5.name] and
+      [reforms; legal_6.name].'
+    - 2. Counting these gives 6 distinct legal frameworks.
+    reasoning_chain_text: '1. The document names six legal frameworks: [Basel III; legal_1.name] and [Basel Accords; legal_2.name]
+      and [Basel II; legal_3.name] and [Basel I; legal_4.name] and [Fundamental Review of the Trading Book (FRTB); legal_5.name]
+      and [reforms; legal_6.name].
+
+      2. Counting these gives 6 distinct legal frameworks.'
+  - question_id: bankreg_08_q06
+    question: How many countries had begun implementing [Basel III; legal_1.name] by [2012; temporal_4.year]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Basel III; legal_1.name] began to be implemented in major countries in [2012; temporal_4.year].
+    - 2. The document does not provide a specific number of countries that began implementation.
+    reasoning_chain_text: '1. The document states that [Basel III; legal_1.name] began to be implemented in major countries
+      in [2012; temporal_4.year].
+
+      2. The document does not provide a specific number of countries that began implementation.'
+  - question_id: bankreg_08_q07
+    question: How many years after the [Basel III; legal_1.name] requirements were published by the [Basel Committee on Banking
+      Supervision; government_org_1.name] was the [reforms; legal_6.name] introduced?
+    question_type: temporal
+    answer: temporal_9.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Basel III; legal_1.name] requirements were published in [2010; temporal_3.year].
+    - 2. The [reforms; legal_6.name] was introduced in [2017; temporal_9.year].
+    - 3. The difference is [2017; temporal_9.year] minus [2010; temporal_3.year] = 4 years.
+    reasoning_chain_text: '1. The [Basel III; legal_1.name] requirements were published in [2010; temporal_3.year].
+
+      2. The [reforms; legal_6.name] was introduced in [2017; temporal_9.year].
+
+      3. The difference is [2017; temporal_9.year] minus [2010; temporal_3.year] = 4 years.'
+  - question_id: bankreg_08_q08
+    question: Was [Basel I; legal_4.name] introduced before or after [Basel II; legal_3.name]?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - Basel I is introduced in 1988.
+    - Basel II is introduced in 2004.
+    - 1988 is before 2004.
+    reasoning_chain_text: 'Basel I is introduced in 1988.
+
+      Basel II is introduced in 2004.
+
+      1988 is before 2004.'
+  - question_id: bankreg_08_q09
+    question: In what month of [2010; temporal_3.year] did the [Basel Committee on Banking Supervision; government_org_1.name]
+      publish the [Basel III; legal_1.name] requirements?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the requirements were published in [2010; temporal_3.year].
+    - 2. No specific month is mentioned in the document for this publication.
+    reasoning_chain_text: '1. The document states the requirements were published in [2010; temporal_3.year].
+
+      2. No specific month is mentioned in the document for this publication.'
+  - question_id: bankreg_08_q10
+    question: Given that [Basel III; legal_1.name] is the third framework in the [Basel Accords; legal_2.name] series and
+      the first was introduced in [1988; temporal_2.year] while the second was introduced in [2004; temporal_1.year], which
+      of the three frameworks had the shortest gap before the next one was published?
+    question_type: inference
+    answer: legal_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The first framework [Basel I; legal_4.name] was introduced in [1988; temporal_2.year] and the second [Basel II; legal_3.name]
+      in [2004; temporal_1.year] — a gap of 30 years.
+    - 2. The second framework was introduced in [2004; temporal_1.year] and the third's requirements were published in [2010;
+      temporal_3.year] — a gap of 1 year.
+    - 3. The shortest gap before the next framework was after [Basel II; legal_3.name].
+    reasoning_chain_text: '1. The first framework [Basel I; legal_4.name] was introduced in [1988; temporal_2.year] and the
+      second [Basel II; legal_3.name] in [2004; temporal_1.year] — a gap of 30 years.
+
+      2. The second framework was introduced in [2004; temporal_1.year] and the third''s requirements were published in [2010;
+      temporal_3.year] — a gap of 1 year.
+
+      3. The shortest gap before the next framework was after [Basel II; legal_3.name].'
+  - question_id: bankreg_08_q11
+    question: Based on the document, what types of financial risks does the [Basel Accords; legal_2.name] framework aim to
+      mitigate?
+    question_type: inference
+    answer: bank runs and bank failures
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the framework sets standards with the goal of mitigating the risk of bank runs and bank failures.
+    - 2. These are the specific risks explicitly mentioned in the document.
+    reasoning_chain_text: '1. The document states the framework sets standards with the goal of mitigating the risk of bank
+      runs and bank failures.
+
+      2. These are the specific risks explicitly mentioned in the document.'
+  - question_id: bankreg_08_q12
+    question: Did the [2008 financial crisis; event_1.name] lead to any specific bank failures that directly motivated the
+      creation of [Basel III; legal_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Basel III; legal_1.name] was developed in response to deficiencies revealed by the [2008 financial
+      crisis; event_1.name].
+    - 2. The document does not provide details about specific bank failures or other consequences of the [2008 financial crisis;
+      event_1.name].
+    reasoning_chain_text: '1. The document states [Basel III; legal_1.name] was developed in response to deficiencies revealed
+      by the [2008 financial crisis; event_1.name].
+
+      2. The document does not provide details about specific bank failures or other consequences of the [2008 financial crisis;
+      event_1.name].'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1969
+    upper_bound: 2007
+    factual_value: 1988
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2008
+    upper_bound: 2026
+    factual_value: 2028
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

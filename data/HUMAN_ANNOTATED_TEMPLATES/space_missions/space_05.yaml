@@ -1,0 +1,370 @@
+document:
+  document_id: space_05
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: International Space Station
+  wikipedia_url: https://en.wikipedia.org/wiki/International_Space_Station
+  original_document: 'The International Space Station (ISS) is a large space station that was assembled and is maintained
+    in low Earth orbit by a collaboration of five space agencies and their contractors: NASA (United States), Roscosmos (Russia),
+    ESA (Europe), JAXA (Japan), and CSA (Canada). As the largest space station ever constructed, it primarily serves as a
+    platform for conducting scientific experiments in microgravity and studying the space environment.
+
+
+    The station is divided into two main sections: the Russian Orbital Segment (ROS), developed by Roscosmos, and the US Orbital
+    Segment (USOS), built by NASA, ESA, JAXA, and CSA. A striking feature of the ISS is the Integrated Truss Structure, which
+    connect the station''s vast system of solar panels and radiators to its pressurized modules. These modules support diverse
+    functions, including scientific research, crew habitation, storage, spacecraft control, and airlock operations. The ISS
+    has eight docking and berthing ports for visiting spacecraft. The station orbits the Earth at an average altitude of 400
+    kilometres (250 miles) and circles the Earth in roughly 93 minutes, completing 15.5 orbits per day.
+
+
+    The ISS program combines two previously planned crewed Earth-orbiting stations: the United States'' Space Station Freedom
+    and the Soviet Union''s Mir-2. The first ISS module was launched in 1998, with major components delivered by Proton and
+    Soyuz rockets and the Space Shuttle. Long-term occupancy began on 2 November 2000, with the arrival of the Expedition
+    1 crew. Since then, the ISS has remained continuously inhabited for 25 years and 114 days, the longest continuous human
+    presence in space. As of August 2025, 290 individuals from 26 countries had visited the station.
+
+
+    Future plans for the ISS include the addition of at least one module, Axiom Space''s Payload Power Thermal Module. The
+    station is expected to remain operational until the end of 2030, after which it will be de-orbited using the US Deorbit
+    Vehicle.'
+  document_to_annotate: 'The [International Space Station (ISS); product_1.name] is a large space station that was assembled
+    and is maintained in low [Earth; place_7.natural_site] orbit by a collaboration of five space agencies and their contractors:
+    [NASA; government_org_1.name] ([United States; place_1.country]), [Roscosmos; government_org_2.name] ([Russia; place_2.country]),
+    [ESA; government_org_3.name] ([Europe; place_3.continent]), [JAXA; government_org_4.name] ([Japan; place_4.country]),
+    and [CSA; government_org_5.name] ([Canada; place_5.country]). It primarily serves as a platform for conducting scientific
+    experiments in microgravity and studying the space environment.
+
+
+    The station is divided into two main sections: the [Russian; place_2.demonym] Orbital Segment, developed by [Roscosmos;
+    government_org_2.name], and the [US; place_1.demonym] Orbital Segment, built by [NASA; government_org_1.name], [ESA; government_org_3.name],
+    [JAXA; government_org_4.name], and [CSA; government_org_5.name]. A striking feature of the [ISS; product_1.name] is the
+    [Integrated Truss Structure; product_7.name], which connect the station''s vast system of solar panels and radiators to
+    its pressurized modules. These modules support diverse functions, including scientific research, crew habitation, storage,
+    spacecraft control, and airlock operations. The [ISS; product_1.name] has [eight; number_3.str] docking and berthing ports
+    for visiting spacecraft. The station orbits the [Earth; place_7.natural_site] at an average altitude of [400; number_4.int]
+    kilometres ([250; number_5.int] miles) and circles the [Earth; place_7.natural_site] in roughly [93; number_6.int] minutes,
+    completing [15.5; number_7.float] orbits per day.
+
+
+    The [ISS; product_1.name] program combines two previously planned crewed [Earth; place_7.natural_site]-orbiting stations:
+    the [United States; place_1.country]'' [Space Station Freedom; product_2.name] and the [Soviet Union; place_6.country]''s
+    [Mir-2; product_3.name]. The first [ISS; product_1.name] module was launched in [1998; temporal_1.year], with major components
+    delivered by [Proton; product_4.name] and [Soyuz; product_5.name] rockets and the [Space Shuttle; product_6.name]. Long-term
+    occupancy began on [2 November 2000; temporal_2.date], with the arrival of the [Expedition 1; product_8.name] crew. Since
+    then, the [ISS; product_1.name] has remained continuously inhabited for [25; number_9.int] years and [114; number_10.int]
+    days. As of [August 2025; temporal_3.date], [290; number_11.int] individuals from [26; number_12.int] countries had visited
+    the station.
+
+
+    Future plans for the [ISS; product_1.name] include the addition of at least one module, [Axiom Space; entreprise_org_1.name]''s
+    [Payload Power Thermal Module; product_9.name]. The station is expected to remain operational until the end of [2030;
+    temporal_4.year], after which it will be de-orbited using the [US; place_1.demonym] Deorbit Vehicle.'
+  relations: []
+  rules:
+  - 'number_3.str >= 2 # plural "ports" requires more than one'
+  - 'number_12.int > 1 # plural "countries" requires more than one'
+  - 'number_11.int > 1 # plural "individuals" requires more than one'
+  - 'number_9.int > 1 # plural "years" requires more than one'
+  num_questions: 12
+  questions:
+  - question_id: space_05_q01
+    question: Which space agency developed the [Russian; place_2.demonym] Orbital Segment of the [International Space Station
+      (ISS); product_1.name]?
+    question_type: extractive
+    answer_type: variant
+    answer: government_org_2.name
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the [Russian; place_2.demonym] Orbital Segment was developed by [Roscosmos; government_org_2.name].
+    reasoning_chain_text: 1. The document states that the [Russian; place_2.demonym] Orbital Segment was developed by [Roscosmos;
+      government_org_2.name].
+  - question_id: space_05_q02
+    question: How many countries had their citizens visit the [International Space Station (ISS); product_1.name] as of [August
+      2025; temporal_3.date]?
+    question_type: extractive
+    answer_type: invariant
+    answer: number_12.int
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that as of [August 2025; temporal_3.date], [290; number_11.int] individuals from [26; number_12.int]
+      countries had visited the station.
+    reasoning_chain_text: 1. The document states that as of [August 2025; temporal_3.date], [290; number_11.int] individuals
+      from [26; number_12.int] countries had visited the station.
+  - question_id: space_05_q03
+    question: What is the total mass of the [International Space Station (ISS); product_1.name]?
+    question_type: extractive
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes the station's orbit, modules, and visiting spacecraft but does not mention the total mass
+      of the [International Space Station (ISS); product_1.name].
+    - 2. Since the mass is not stated anywhere in the document, this cannot be determined.
+    reasoning_chain_text: '1. The document describes the station''s orbit, modules, and visiting spacecraft but does not mention
+      the total mass of the [International Space Station (ISS); product_1.name].
+
+      2. Since the mass is not stated anywhere in the document, this cannot be determined.'
+  - question_id: space_05_q04
+    question: How many more individuals had visited the [International Space Station (ISS); product_1.name] than the number
+      of countries represented among those visitors, as of [August 2025; temporal_3.date]?
+    question_type: arithmetic
+    answer_type: variant
+    answer: number_11.int - number_12.int
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states [290; number_11.int] individuals from [26; number_12.int] countries had visited the station as
+      of [August 2025; temporal_3.date].
+    - 2. The difference is [290; number_11.int] minus [26; number_12.int] = 201.
+    reasoning_chain_text: '1. The document states [290; number_11.int] individuals from [26; number_12.int] countries had
+      visited the station as of [August 2025; temporal_3.date].
+
+      2. The difference is [290; number_11.int] minus [26; number_12.int] = 201.'
+  - question_id: space_05_q05
+    question: What is the difference between the station's average orbital altitude in kilometres and the equivalent figure
+      given in miles?
+    question_type: arithmetic
+    answer_type: invariant
+    answer: '150'
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the station orbits at an average altitude of [400; number_4.int] kilometres ([250; number_5.int]
+      miles).
+    - 2. The numerical difference is 400 minus 250 = 150.
+    reasoning_chain_text: '1. The document states the station orbits at an average altitude of [400; number_4.int] kilometres
+      ([250; number_5.int] miles).
+
+      2. The numerical difference is 400 minus 250 = 150.'
+  - question_id: space_05_q06
+    question: What is the combined number of docking ports on the [International Space Station (ISS); product_1.name] and
+      the [Mir-2; product_3.name]?
+    question_type: arithmetic
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the [International Space Station (ISS); product_1.name] has [eight; number_3.str] docking and
+      berthing ports.
+    - 2. The document does not provide the number of docking ports that the [Mir-2; product_3.name] had or was planned to
+      have.
+    - 3. Without both values, the sum cannot be determined.
+    reasoning_chain_text: '1. The document states the [International Space Station (ISS); product_1.name] has [eight; number_3.str]
+      docking and berthing ports.
+
+      2. The document does not provide the number of docking ports that the [Mir-2; product_3.name] had or was planned to
+      have.
+
+      3. Without both values, the sum cannot be determined.'
+  - question_id: space_05_q07
+    question: How many years after the first module of the [International Space Station (ISS); product_1.name] was launched
+      did long-term occupancy begin?
+    question_type: temporal
+    answer_type: variant
+    answer: temporal_2.date.year - temporal_1.year
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The first module was launched in [1998; temporal_1.year].
+    - 2. Long-term occupancy began on [2 November 2000; temporal_2.date], i.e., in 2007.
+    - 3. The difference is 2007 minus 2002 = 5 years.
+    reasoning_chain_text: '1. The first module was launched in [1998; temporal_1.year].
+
+      2. Long-term occupancy began on [2 November 2000; temporal_2.date], i.e., in 2007.
+
+      3. The difference is 2007 minus 2002 = 5 years.'
+  - question_id: space_05_q08
+    question: How many years is the [International Space Station (ISS); product_1.name] expected to remain operational after
+      long-term occupancy began?
+    question_type: temporal
+    answer_type: invariant
+    answer: temporal_4.year - temporal_2.year
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. Long-term occupancy began on [2 November 2000; temporal_2.date], i.e., in 2007.
+    - 2. The station is expected to remain operational until the end of [2030; temporal_4.year].
+    - 3. 2019 minus 2007 = 12 years.
+    reasoning_chain_text: '1. Long-term occupancy began on [2 November 2000; temporal_2.date], i.e., in 2007.
+
+      2. The station is expected to remain operational until the end of [2030; temporal_4.year].
+
+      3. 2019 minus 2007 = 12 years.'
+  - question_id: space_05_q09
+    question: On what date was the [Payload Power Thermal Module; product_9.name] module scheduled to be added to the [International
+      Space Station (ISS); product_1.name]?
+    question_type: temporal
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Axiom Space; entreprise_org_1.name]'s [Payload Power Thermal Module; product_9.name]
+      is planned to be added.
+    - 2. However, no specific date or year for the addition of this module is provided in the document.
+    reasoning_chain_text: '1. The document mentions that [Axiom Space; entreprise_org_1.name]''s [Payload Power Thermal Module;
+      product_9.name] is planned to be added.
+
+      2. However, no specific date or year for the addition of this module is provided in the document.'
+  - question_id: space_05_q10
+    question: Given that the [International Space Station (ISS); product_1.name] program merged two previously planned stations,
+      which country planned the station that was not the [Mir-2; product_3.name]?
+    question_type: inference
+    answer_type: variant
+    answer: place_1.country
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states the program combined [United States; place_1.country]'s [Space Station Freedom; product_2.name]
+      and [Soviet Union; place_6.country]'s [Mir-2; product_3.name].
+    - 2. Since the [Mir-2; product_3.name] belonged to [Soviet Union; place_6.country], the other planned station ([Space
+      Station Freedom; product_2.name]) belonged to [United States; place_1.country].
+    reasoning_chain_text: '1. The document states the program combined [United States; place_1.country]''s [Space Station
+      Freedom; product_2.name] and [Soviet Union; place_6.country]''s [Mir-2; product_3.name].
+
+      2. Since the [Mir-2; product_3.name] belonged to [Soviet Union; place_6.country], the other planned station ([Space
+      Station Freedom; product_2.name]) belonged to [United States; place_1.country].'
+  - question_id: space_05_q11
+    question: How many of the five collaborating space agencies are involved in building the [US; place_1.demonym] Orbital
+      Segment but not the [Russian; place_2.demonym] Orbital Segment?
+    question_type: inference
+    answer_type: invariant
+    answer: '4'
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The [Russian; place_2.demonym] Orbital Segment was developed by [Roscosmos; government_org_2.name] alone.
+    - 2. The [US; place_1.demonym] Orbital Segment was built by [NASA; government_org_1.name], [ESA; government_org_3.name],
+      [JAXA; government_org_4.name], and [CSA; government_org_5.name].
+    - 3. All four agencies building the [US; place_1.demonym] Orbital Segment are distinct from the one building the [Russian;
+      place_2.demonym] Orbital Segment, so the answer is 4.
+    reasoning_chain_text: '1. The [Russian; place_2.demonym] Orbital Segment was developed by [Roscosmos; government_org_2.name]
+      alone.
+
+      2. The [US; place_1.demonym] Orbital Segment was built by [NASA; government_org_1.name], [ESA; government_org_3.name],
+      [JAXA; government_org_4.name], and [CSA; government_org_5.name].
+
+      3. All four agencies building the [US; place_1.demonym] Orbital Segment are distinct from the one building the [Russian;
+      place_2.demonym] Orbital Segment, so the answer is 4.'
+  - question_id: space_05_q12
+    question: Based on the delivery vehicles mentioned, can we determine which specific rocket delivered the most modules
+      to the [International Space Station (ISS); product_1.name]?
+    question_type: inference
+    answer_type: refusal
+    answer: Cannot be determined
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that major components were delivered by [Proton; product_4.name] and [Soyuz; product_5.name]
+      rockets and the [Space Shuttle; product_6.name].
+    - 2. However, the document does not specify how many modules each delivery vehicle transported.
+    - 3. Without a breakdown of deliveries per vehicle, it cannot be determined which rocket delivered the most modules.
+    reasoning_chain_text: '1. The document mentions that major components were delivered by [Proton; product_4.name] and [Soyuz;
+      product_5.name] rockets and the [Space Shuttle; product_6.name].
+
+      2. However, the document does not specify how many modules each delivery vehicle transported.
+
+      3. Without a breakdown of deliveries per vehicle, it cannot be determined which rocket delivered the most modules.'
+  implicit_rules:
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 320
+    upper_bound: 480
+    factual_value: 400
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 200
+    upper_bound: 300
+    factual_value: 250
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 75
+    upper_bound: 111
+    factual_value: 93
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.float
+    lower_bound: 12.4
+    upper_bound: 18.6
+    factual_value: 15.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 20
+    upper_bound: 30
+    factual_value: 25
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 92
+    upper_bound: 136
+    factual_value: 114
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.int
+    lower_bound: 232
+    upper_bound: 348
+    factual_value: 290
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 21
+    upper_bound: 31
+    factual_value: 26
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2010
+    upper_bound: 2026
+    factual_value: 2030
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  review_statuses:
+    rules:
+      status: completed
+      reviewed: true
+      reviewed_at: '2026-03-26 07:58:08'
+      reviewed_by: anonymous_annotator
+      last_edited_by: anonymous_annotator
+      activity_users:
+      - anonymous_annotator
+      last_activity_at: '2026-03-26 07:58:08'
+      last_activity_user: anonymous_annotator
+      last_activity_action: validate
+    questions:
+      status: in_progress
+      reviewed: false
+      reviewed_at: null
+      reviewed_by: null
+      last_edited_by: anonymous_annotator
+      activity_users:
+      - anonymous_annotator
+      last_activity_at: '2026-04-02 08:29:18'
+      last_activity_user: anonymous_annotator
+      last_activity_action: edit
+  active_review_target: rules
+  active_review_task_status: completed
+  active_review_campaign_name: Rules Annotation Campaign
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

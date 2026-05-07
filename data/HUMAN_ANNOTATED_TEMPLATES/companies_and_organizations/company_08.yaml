@@ -1,0 +1,256 @@
+document:
+  document_id: company_08
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: The Coca-Cola Company
+  wikipedia_url: https://en.wikipedia.org/wiki/The_Coca-Cola_Company
+  original_document: 'The Coca-Cola Company is an American multinational corporation founded in 1892 headquartered in Atlanta,
+    Georgia. It manufactures, sells and markets soft drinks including Coca-Cola, other non-alcoholic beverage concentrates
+    and syrups, and alcoholic beverages. Its stock is listed on the New York Stock Exchange and is a component of the DJIA
+    and the S&P 500 and S&P 100 indices.
+
+
+    Coca-Cola was developed in 1886 by pharmacist John Stith Pemberton. At the time it was introduced, the product contained
+    the stimulants cocaine from coca leaves and caffeine from kola nuts which together acted synergistically. The coca and
+    the kola are the source of the product name and led to Coca-Cola''s promotion as a "healthy tonic". Pemberton had been
+    severely wounded in the American Civil War and had become addicted to the pain medication morphine. At the time, cocaine
+    was being promoted as a "cure" for opioid addiction, so he developed the beverage as a patent medicine in an effort to
+    control his addiction.
+
+
+    In 1889, the formula and brand were sold for $2300 (equivalent to $73000 in 2024) to Asa Griggs Candler, who incorporated
+    the Coca-Cola Company in Atlanta in 1892. The company has operated a franchised distribution system since 1889. The company
+    largely produces syrup concentrate, which is then sold to various bottlers throughout the world who hold exclusive territories.'
+  document_to_annotate: '[The Coca-Cola Company; entreprise_org_1.name] is an [American; place_1.demonym] multinational corporation
+    founded in [1892; temporal_1.year] headquartered in [Atlanta; place_2.city], [Georgia; place_2.state]. It manufactures,
+    sells and markets soft drinks including [Coca-Cola; product_1.name], other non-alcoholic beverage concentrates and syrups,
+    and alcoholic beverages. Its stock is listed on the [New York Stock Exchange; entreprise_org_2.name].
+
+
+    [Coca-Cola; product_1.name] was developed in [1886; temporal_2.year] by pharmacist [John Stith Pemberton; person_1.full_name].
+    At the time it was introduced, the product contained the stimulants [cocaine; product_2.name] from [coca; product_3.name]
+    leaves and [caffeine; product_4.name] from [kola; product_5.name] nuts which together acted synergistically. [Pemberton;
+    person_1.last_name] had been severely wounded in the [American Civil War; event_1.name] and had become addicted to the
+    pain medication morphine. At the time, [cocaine; product_2.name] was being promoted as a "cure" for opioid addiction,
+    so [he; person_1.subj_pronoun] developed the beverage as a patent medicine in an effort to control [his; person_1.poss_det_pronoun]
+    addiction.
+
+
+    In [1889; temporal_3.year], the formula and brand were sold for $[2300; number_1.int] (equivalent to $[73000; number_2.int]
+    in [2024; temporal_4.year]) to [Asa Griggs Candler; person_2.full_name], who incorporated the [Coca-Cola Company; entreprise_org_1.name]
+    in [Atlanta; place_2.city] in [1892; temporal_1.year]. The company has operated a franchised distribution system since
+    [1889; temporal_3.year]. The company largely produces syrup concentrate, which is then sold to various bottlers throughout
+    the world who hold exclusive territories.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: company_08_q01
+    question: Where is [The Coca-Cola Company; entreprise_org_1.name] headquartered?
+    question_type: extractive
+    answer: place_2.city
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [The Coca-Cola Company; entreprise_org_1.name] is headquartered in [Atlanta; place_2.city],
+      [Georgia; place_2.state].
+    reasoning_chain_text: 1. The document states that [The Coca-Cola Company; entreprise_org_1.name] is headquartered in [Atlanta;
+      place_2.city], [Georgia; place_2.state].
+  - question_id: company_08_q02
+    question: What type of distribution system has [The Coca-Cola Company; entreprise_org_1.name] operated?
+    question_type: extractive
+    answer: franchised
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states "The company has operated a franchised distribution system since [1889; temporal_3.year]."
+    reasoning_chain_text: 1. The document states "The company has operated a franchised distribution system since [1889; temporal_3.year]."
+  - question_id: company_08_q03
+    question: Who is the current CEO of [The Coca-Cola Company; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes the founding and history of [The Coca-Cola Company; entreprise_org_1.name].
+    - 2. The document does not mention any current CEO or leadership position.
+    reasoning_chain_text: '1. The document describes the founding and history of [The Coca-Cola Company; entreprise_org_1.name].
+
+      2. The document does not mention any current CEO or leadership position.'
+  - question_id: company_08_q04
+    question: How much more was the formula and brand worth in [2024; temporal_4.year] equivalent dollars compared to the
+      original sale price?
+    question_type: arithmetic
+    answer: number_2.int - number_1.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The original sale price was $[2300; number_1.int].
+    - 2. The [2024; temporal_4.year] equivalent value was $[73000; number_2.int].
+    - 3. The difference is $[73000; number_2.int] - $[2300; number_1.int] = $56560.
+    reasoning_chain_text: '1. The original sale price was $[2300; number_1.int].
+
+      2. The [2024; temporal_4.year] equivalent value was $[73000; number_2.int].
+
+      3. The difference is $[73000; number_2.int] - $[2300; number_1.int] = $56560.'
+  - question_id: company_08_q05
+    question: What was the total revenue of [The Coca-Cola Company; entreprise_org_1.name] in its first year of operation
+      compared to the original sale price of the formula?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The original sale price of the formula was $[2300; number_1.int].
+    - 2. The document does not provide any revenue figures for [The Coca-Cola Company; entreprise_org_1.name], so the calculation
+      cannot be performed.
+    reasoning_chain_text: '1. The original sale price of the formula was $[2300; number_1.int].
+
+      2. The document does not provide any revenue figures for [The Coca-Cola Company; entreprise_org_1.name], so the calculation
+      cannot be performed.'
+  - question_id: company_08_q06
+    question: How many years after [Coca-Cola; product_1.name] was developed was [The Coca-Cola Company; entreprise_org_1.name]
+      incorporated in [Atlanta; place_2.city] ?
+    question_type: temporal
+    answer: temporal_1.year - temporal_2.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Coca-Cola; product_1.name] was developed in [1886; temporal_2.year].
+    - 2. [The Coca-Cola Company; entreprise_org_1.name] was incorporated in [1892; temporal_1.year].
+    - 3. The difference is [1892; temporal_1.year] - [1886; temporal_2.year] = 23 years.
+    reasoning_chain_text: '1. [Coca-Cola; product_1.name] was developed in [1886; temporal_2.year].
+
+      2. [The Coca-Cola Company; entreprise_org_1.name] was incorporated in [1892; temporal_1.year].
+
+      3. The difference is [1892; temporal_1.year] - [1886; temporal_2.year] = 23 years.'
+  - question_id: company_08_q07
+    question: In what year did [John Stith Pemberton; person_1.full_name] pass away?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions [John Stith Pemberton; person_1.full_name] as the developer of [Coca-Cola; product_1.name].
+    - 2. The document does not provide any information about when [John Stith Pemberton; person_1.full_name] died.
+    reasoning_chain_text: '1. The document mentions [John Stith Pemberton; person_1.full_name] as the developer of [Coca-Cola;
+      product_1.name].
+
+      2. The document does not provide any information about when [John Stith Pemberton; person_1.full_name] died.'
+  - question_id: company_08_q08
+    question: Given that [John Stith Pemberton; person_1.full_name] developed [Coca-Cola; product_1.name] as a patent medicine,
+      what is the root event that can be seen as the origin of the beverage ?
+    question_type: inference
+    answer: event_1.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [John Stith Pemberton; person_1.full_name] was severely wounded in [American Civil War;
+      event_1.name] and became addicted to morphine.
+    - 2. [cocaine; product_2.name] was promoted as a cure for opioid addiction, so [Pemberton; person_1.last_name] developed
+      the beverage to control [his; person_1.poss_det_pronoun] morphine addiction.
+    - 3. Therefore, it was [John Stith Pemberton; person_1.full_name] whose morphine addiction motivated the creation of the
+      beverage.
+    reasoning_chain_text: '1. The document states that [John Stith Pemberton; person_1.full_name] was severely wounded in
+      [American Civil War; event_1.name] and became addicted to morphine.
+
+      2. [cocaine; product_2.name] was promoted as a cure for opioid addiction, so [Pemberton; person_1.last_name] developed
+      the beverage to control [his; person_1.poss_det_pronoun] morphine addiction.
+
+      3. Therefore, it was [John Stith Pemberton; person_1.full_name] whose morphine addiction motivated the creation of the
+      beverage.'
+  - question_id: company_08_q09
+    question: Based on the document, what substance was [John Stith Pemberton; person_1.full_name] addicted to that motivated
+      the development of [Coca-Cola; product_1.name]?
+    question_type: inference
+    answer: morphine
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states [John Stith Pemberton; person_1.full_name] was wounded in [American Civil War; event_1.name]
+      and became addicted to morphine.
+    - 2. [cocaine; product_2.name] was promoted as a cure for opioid addiction, which motivated [he; person_1.subj_pronoun]
+      to develop the beverage.
+    - 3. Therefore, morphine addiction was the motivating substance.
+    reasoning_chain_text: '1. The document states [John Stith Pemberton; person_1.full_name] was wounded in [American Civil
+      War; event_1.name] and became addicted to morphine.
+
+      2. [cocaine; product_2.name] was promoted as a cure for opioid addiction, which motivated [he; person_1.subj_pronoun]
+      to develop the beverage.
+
+      3. Therefore, morphine addiction was the motivating substance.'
+  - question_id: company_08_q10
+    question: Did the removal of [cocaine; product_2.name] from the [Coca-Cola; product_1.name] formula lead to a decline
+      in sales?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Coca-Cola; product_1.name] originally contained [cocaine; product_2.name] from [coca;
+      product_3.name] leaves.
+    - 2. The document does not mention whether [cocaine; product_2.name] was ever removed from the formula, nor does it provide
+      any sales data, so this cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [Coca-Cola; product_1.name] originally contained [cocaine; product_2.name]
+      from [coca; product_3.name] leaves.
+
+      2. The document does not mention whether [cocaine; product_2.name] was ever removed from the formula, nor does it provide
+      any sales data, so this cannot be determined.'
+  - question_id: company_08_q11
+    question: Did [The Coca-Cola Company; entreprise_org_1.name] operate a franchise system before or after its incorporation
+      to [Atlanta; place_2.city] ?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_08_q12
+    question: How many stimulants contained in [Coca-Cola; product_1.name] are mentioned in the document ?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1874
+    upper_bound: 1910
+    factual_value: 1892
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1868
+    upper_bound: 1904
+    factual_value: 1886
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1871
+    upper_bound: 1907
+    factual_value: 1889
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 1840
+    upper_bound: 2760
+    factual_value: 2300
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 58400
+    upper_bound: 87600
+    factual_value: 73000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

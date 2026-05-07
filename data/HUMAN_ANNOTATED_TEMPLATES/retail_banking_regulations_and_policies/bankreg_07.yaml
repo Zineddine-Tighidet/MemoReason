@@ -1,0 +1,351 @@
+document:
+  document_id: bankreg_07
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Single Resolution Mechanism
+  wikipedia_url: https://en.wikipedia.org/wiki/Single_Resolution_Mechanism
+  original_document: 'The Single Resolution Mechanism (SRM) is one of the pillars of the European Union''s banking union.
+    The Single Resolution Mechanism entered into force on 19 August 2014 and is directly responsible for the resolution of
+    the entities and groups directly supervised by the European Central Bank as well as other cross-border groups. The centralised
+    decision making is built around the Single Resolution Board (SRB) consisting of a chair, a Vice Chair, four permanent
+    members, and the relevant national resolution authorities (those where the bank has its headquarters as well as branches
+    and/or subsidiaries).
+
+
+    Upon notification from the ECB that a bank is failing or likely to fail, the Board will adopt a resolution scheme including
+    relevant resolution tools and any use of the Single Resolution Fund, established by the SRM Regulation (EU) No 806/2014.
+    The Single Resolution Fund helps to ensure a uniform administrative practice in the financing of resolution within the
+    SRM.
+
+
+    A Single Resolution Fund (SRF) to finance the restructuring of failing credit institutions was established as an essential
+    part of the SRM by a complementary intergovernmental agreement, after its ratification. If it is decided to resolve a
+    bank facing serious difficulties, its resolution will be managed efficiently, at minimum costs to taxpayers and the real
+    economy. In extraordinary circumstances, the Single Resolution Fund (SRF), financed by the banking sector itself, can
+    be accessed. The SRF is established under the control of the SRB.
+
+
+    The available financial means of the Fund aims to equal at least 1% of the amount of the covered deposits of all credit
+    institutions authorised in all of the Member States participating in the Banking Union. The SRF was built up over eight
+    years, from 2016 until 2023, when it reached the target level of at least 1% of the amount of covered deposits of all
+    the banks operating in the Banking Union. As of 31 December 2025, the SRF amounts to €81 billion, which equates 1% of
+    covered deposits.
+
+
+    In a standard planning year, the Board holds 6 plenary planning meetings and 2 training sessions for national resolution
+    authorities.'
+  document_to_annotate: 'The [Single Resolution Mechanism (SRM); legal_1.name] is one of the pillars of the [European Union;
+    government_org_1.name]''s [Banking Union; government_org_5.name]. The [Single Resolution Mechanism; legal_1.name] entered
+    into force on [19 August 2014; temporal_1.date] and is directly responsible for the resolution of the entities and groups
+    directly supervised by the [European Central Bank; government_org_2.name] as well as other cross-border groups. The centralised
+    decision making is built around the [Single Resolution Board (SRB); government_org_3.name] consisting of a chair, a Vice
+    Chair, [four; number_1.str] permanent members, and the relevant national resolution authorities (those where the bank
+    has its headquarters as well as branches and/or subsidiaries).
+
+
+    Upon notification from the [ECB; government_org_2.name] that a bank is failing or likely to fail, the [Board; government_org_3.name]
+    will adopt a resolution scheme including relevant resolution tools and any use of the [Single Resolution Fund; government_org_4.name],
+    established by the [SRM Regulation (EU); legal_2.name] [No 806/2014; legal_2.reference_code]. The [Single Resolution Fund;
+    government_org_4.name] helps to ensure a uniform administrative practice in the financing of resolution within the [SRM;
+    legal_1.name].
+
+
+    A [Single Resolution Fund (SRF); government_org_4.name] to finance the restructuring of failing credit institutions was
+    established as an essential part of the [SRM; legal_1.name] by a complementary intergovernmental agreement, after its
+    ratification. If it is decided to resolve a bank facing serious difficulties, its resolution will be managed efficiently,
+    at minimum costs to taxpayers and the real economy. In extraordinary circumstances, the [Single Resolution Fund (SRF);
+    government_org_4.name], financed by the banking sector itself, can be accessed. The [SRF; government_org_4.name] is established
+    under the control of the [SRB; government_org_3.name].
+
+
+    The available financial means of the [Fund; government_org_4.name] aims to equal at least [1; number_6.percent]% of the
+    amount of the covered deposits of all credit institutions authorised in all of the Member States participating in the
+    [Banking Union; government_org_5.name]. The [SRF; government_org_4.name] was built up over [eight; number_3.str] years,
+    from [2016; temporal_2.year] until [2023; temporal_3.year], when it reached the target level of at least [1; number_6.percent]%
+    of the amount of covered deposits of all the banks operating in the [Banking Union; government_org_5.name]. As of [31
+    December 2025; temporal_4.date], the [SRF; government_org_4.name] amounts to €[81; number_5.int] billion, which equates
+    [1; number_6.percent]% of covered deposits.
+
+
+    In a standard planning year, the [Board; government_org_3.name] holds [6; number_7.int] plenary planning meetings and
+    [2; number_8.int] training sessions for national resolution authorities.'
+  relations: []
+  rules:
+  - 'temporal_3.year - temporal_2.year + 1 == number_3.str # build-up period is inclusive of both start and end years'
+  - 'number_1.str > 1 # plural mention ("four permanent members")'
+  - 'number_3.str > 1 # plural mention ("eight years")'
+  num_questions: 12
+  questions:
+  - question_id: bankreg_07_q01
+    question: Which entity is directly responsible for the resolution of entities and groups directly supervised by the [European
+      Central Bank; government_org_2.name]?
+    question_type: extractive
+    answer: legal_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [Single Resolution Mechanism (SRM); legal_1.name] "is directly responsible for the resolution
+      of the entities and groups directly supervised by the [European Central Bank; government_org_2.name]."
+    reasoning_chain_text: 1. The document states that the [Single Resolution Mechanism (SRM); legal_1.name] "is directly responsible
+      for the resolution of the entities and groups directly supervised by the [European Central Bank; government_org_2.name]."
+  - question_id: bankreg_07_q02
+    question: According to the document, who finances the [Single Resolution Fund; government_org_4.name]?
+    question_type: extractive
+    answer: the banking sector itself
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "the [Single Resolution Fund; government_org_4.name], financed by the banking sector itself,
+      can be accessed."
+    reasoning_chain_text: 1. The document states "the [Single Resolution Fund; government_org_4.name], financed by the banking
+      sector itself, can be accessed."
+  - question_id: bankreg_07_q03
+    question: Who currently serves as the chair of the [Single Resolution Board (SRB); government_org_3.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Single Resolution Board (SRB); government_org_3.name] consists of a chair, a Vice
+      Chair, and other members.
+    - 2. However, the document does not name the individual who currently serves as chair.
+    reasoning_chain_text: '1. The document mentions that the [Single Resolution Board (SRB); government_org_3.name] consists
+      of a chair, a Vice Chair, and other members.
+
+      2. However, the document does not name the individual who currently serves as chair.'
+  - question_id: bankreg_07_q04
+    question: How many total fixed members does the [Single Resolution Board (SRB); government_org_3.name] have, counting
+      the chair, Vice Chair, and permanent members?
+    question_type: arithmetic
+    answer: number_1.str + 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [Single Resolution Board (SRB); government_org_3.name] consists of a chair (1), a Vice Chair
+      (1), and [four; number_1.str] permanent members (3).
+    - '2. {''2. Adding these together'': ''1 + 1 + 3 = 5 fixed members.''}'
+    reasoning_chain_text: '1. The document states the [Single Resolution Board (SRB); government_org_3.name] consists of a
+      chair (1), a Vice Chair (1), and [four; number_1.str] permanent members (3).
+
+      2. {''2. Adding these together'': ''1 + 1 + 3 = 5 fixed members.''}'
+  - question_id: bankreg_07_q05
+    question: In the annual planning cycle described in the document, how many board-level sessions are held in total?
+    question_type: arithmetic
+    answer: number_7.int + number_8.int
+    answer_type: invariant
+    reasoning_chain:
+    - The document states that the Board holds 6 plenary planning meetings and 2 training sessions each year.
+    - The total number of sessions is 6 + 2 = 8.
+    reasoning_chain_text: 'The document states that the Board holds 6 plenary planning meetings and 2 training sessions each
+      year.
+
+      The total number of sessions is 6 + 2 = 8.'
+  - question_id: bankreg_07_q06
+    question: What is the total amount of covered deposits of all credit institutions in the Member States participating in
+      the [Banking Union; government_org_5.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Single Resolution Fund; government_org_4.name] amounts to €[81; number_5.int] billion, which
+      equates [1; number_6.percent]% of covered deposits.
+    - 2. While one could attempt to compute total deposits from these figures, the document says the target is "at least"
+      [1; number_6.percent]%, meaning the exact percentage relationship is not precisely fixed, and the document does not
+      directly state the total amount of covered deposits.
+    reasoning_chain_text: '1. The document states the [Single Resolution Fund; government_org_4.name] amounts to €[81; number_5.int]
+      billion, which equates [1; number_6.percent]% of covered deposits.
+
+      2. While one could attempt to compute total deposits from these figures, the document says the target is "at least"
+      [1; number_6.percent]%, meaning the exact percentage relationship is not precisely fixed, and the document does not
+      directly state the total amount of covered deposits.'
+  - question_id: bankreg_07_q07
+    question: How many years did it take to build up the [Single Resolution Fund; government_org_4.name] from its start year
+      to when it reached the target level?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [Single Resolution Fund; government_org_4.name] was built up from [2016; temporal_2.year]
+      until [2023; temporal_3.year].
+    - 2. The duration is 2006 - 2002 = 4 years.
+    reasoning_chain_text: '1. The document states the [Single Resolution Fund; government_org_4.name] was built up from [2016;
+      temporal_2.year] until [2023; temporal_3.year].
+
+      2. The duration is 2006 - 2002 = 4 years.'
+  - question_id: bankreg_07_q08
+    question: Did the [Single Resolution Fund; government_org_4.name] reach its target level before or after the [Single Resolution
+      Mechanism (SRM); legal_1.name] entered into force?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The [Single Resolution Mechanism (SRM); legal_1.name] entered into force on [19 August 2014; temporal_1.date].
+    - 2. The [Single Resolution Fund; government_org_4.name] reached its target level in [2023; temporal_3.year].
+    - 3. 2006 is after 1998, so the fund reached its target level after the act entered into force.
+    reasoning_chain_text: '1. The [Single Resolution Mechanism (SRM); legal_1.name] entered into force on [19 August 2014;
+      temporal_1.date].
+
+      2. The [Single Resolution Fund; government_org_4.name] reached its target level in [2023; temporal_3.year].
+
+      3. 2006 is after 1998, so the fund reached its target level after the act entered into force.'
+  - question_id: bankreg_07_q09
+    question: When was the intergovernmental agreement that established the [Single Resolution Fund; government_org_4.name]
+      ratified?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Single Resolution Fund; government_org_4.name] was established "by a complementary
+      intergovernmental agreement, after its ratification."
+    - 2. However, the document does not provide a specific date or year for when this ratification occurred.
+    reasoning_chain_text: '1. The document mentions that the [Single Resolution Fund; government_org_4.name] was established
+      "by a complementary intergovernmental agreement, after its ratification."
+
+      2. However, the document does not provide a specific date or year for when this ratification occurred.'
+  - question_id: bankreg_07_q10
+    question: Based on the document, which organization would notify the [Single Resolution Board (SRB); government_org_3.name]
+      if a bank were failing, triggering the adoption of a resolution scheme that could involve the [Single Resolution Fund;
+      government_org_4.name]?
+    question_type: inference
+    answer: government_org_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "upon notification from the [European Central Bank; government_org_2.name] that a bank is
+      failing or likely to fail, the [Single Resolution Board (SRB); government_org_3.name] will adopt a resolution scheme."
+    - 2. This resolution scheme can include "any use of the [Single Resolution Fund; government_org_4.name]."
+    - 3. Therefore, the [European Central Bank; government_org_2.name] is the entity that triggers the process.
+    reasoning_chain_text: '1. The document states that "upon notification from the [European Central Bank; government_org_2.name]
+      that a bank is failing or likely to fail, the [Single Resolution Board (SRB); government_org_3.name] will adopt a resolution
+      scheme."
+
+      2. This resolution scheme can include "any use of the [Single Resolution Fund; government_org_4.name]."
+
+      3. Therefore, the [European Central Bank; government_org_2.name] is the entity that triggers the process.'
+  - question_id: bankreg_07_q11
+    question: Based on the document's description of the resolution process, does the [Single Resolution Board (SRB); government_org_3.name]
+      act proactively on its own initiative or reactively upon external notification when adopting a resolution scheme?
+    question_type: inference
+    answer: reactively
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the [Single Resolution Board (SRB); government_org_3.name] adopts a resolution scheme "upon
+      notification from the [European Central Bank; government_org_2.name] that a bank is failing or likely to fail."
+    - 2. The phrase "upon notification" indicates the [Single Resolution Board (SRB); government_org_3.name] acts in response
+      to an external trigger, meaning it acts reactively rather than proactively.
+    reasoning_chain_text: '1. The document states that the [Single Resolution Board (SRB); government_org_3.name] adopts a
+      resolution scheme "upon notification from the [European Central Bank; government_org_2.name] that a bank is failing
+      or likely to fail."
+
+      2. The phrase "upon notification" indicates the [Single Resolution Board (SRB); government_org_3.name] acts in response
+      to an external trigger, meaning it acts reactively rather than proactively.'
+  - question_id: bankreg_07_q12
+    question: Has the [Single Resolution Fund; government_org_4.name] ever been used to finance the resolution of a specific
+      failing bank?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document explains that the [Single Resolution Fund; government_org_4.name] "can be accessed" in extraordinary
+      circumstances.
+    - 2. However, the document does not mention any specific instance where the fund was actually used for a bank resolution.
+    reasoning_chain_text: '1. The document explains that the [Single Resolution Fund; government_org_4.name] "can be accessed"
+      in extraordinary circumstances.
+
+      2. However, the document does not mention any specific instance where the fund was actually used for a bank resolution.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.percent
+    lower_bound: 1.0
+    upper_bound: 11.0
+    factual_value: 1.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 65
+    upper_bound: 97
+    factual_value: 81
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'The [Kivzor Security Act; legal_1.name] is one of the pillars of the [Transborder
+    Fiscal Authority; government_org_1.name]''s banking union. The [Kivzor Security Act; legal_1.name] entered into force
+    on [4 February 1998; temporal_1.date] and is directly responsible for the resolution of the entities and groups directly
+    supervised by the [Federated Monetary Compact; government_org_2.name] as well as other cross-border groups. The centralised
+    decision making is built around the [Joint Stabilization Council; government_org_3.name] consisting of a chair, a Vice
+    Chair, [three; number_1.str] permanent members, and the relevant national resolution authorities (those where the bank
+    has its headquarters as well as branches and/or subsidiaries).
+
+
+    Upon notification from the [Federated Monetary Compact; government_org_2.name] that a bank is failing or likely to fail,
+    the [Joint Stabilization Council; government_org_3.name] will adopt a resolution scheme including relevant resolution
+    tools and any use of the [Interstate Deposit Covenant; government_org_4.name], established by the [Drelmyrglan Research
+    Directive; legal_2.name] [2029/332/XS; legal_2.reference_code]. The [Interstate Deposit Covenant; government_org_4.name]
+    helps to ensure a uniform administrative practice in the financing of resolution within the [Kivzor Security Act; legal_1.name].
+
+
+    A [Interstate Deposit Covenant; government_org_4.name] to finance the restructuring of failing credit institutions was
+    established as an essential part of the [Kivzor Security Act; legal_1.name] by a complementary intergovernmental agreement,
+    after its ratification. If it is decided to resolve a bank facing serious difficulties, its resolution will be managed
+    efficiently, at minimum costs to taxpayers and the real economy. In extraordinary circumstances, the [Interstate Deposit
+    Covenant; government_org_4.name], financed by the banking sector itself, can be accessed. The [Interstate Deposit Covenant;
+    government_org_4.name] is established under the control of the [Joint Stabilization Council; government_org_3.name].
+
+
+    The available financial means of the [Interstate Deposit Covenant; government_org_4.name] aims to equal at least [2.0;
+    number_6.percent]% of the amount of the covered deposits of all credit institutions authorised in all of the Member States
+    participating in the [Sovereign Credit Oversight Chamber; government_org_5.name]. The [Interstate Deposit Covenant; government_org_4.name]
+    was built up over [five; number_3.str] years, from [2002; temporal_2.year] until [2006; temporal_3.year], when it reached
+    the target level of at least [2.0; number_6.percent]% of the amount of covered deposits of all the banks operating in
+    the [Sovereign Credit Oversight Chamber; government_org_5.name]. As of [21 September 2014; temporal_4.date], the [Interstate
+    Deposit Covenant; government_org_4.name] amounts to €[80; number_5.int] billion, which equates [2.0; number_6.percent]%
+    of covered deposits.
+
+
+    In a standard planning year, the [Joint Stabilization Council; government_org_3.name] holds [5; number_7.int] plenary
+    planning meetings and [3; number_8.int] training sessions for national resolution authorities.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,479 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_07
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-18T15:26:43.511709+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_11: 15
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_7: 15
+    product_12: 15
+    product_8: 15
+    product_9: 15
+    product_10: 15
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorinth
+      demonym: Velorinthean
+    - country: Tasselu
+      demonym: Tasseluan
+    - country: Dromikar
+      demonym: Dromikari
+    - country: Pelvunia
+      demonym: Pelvunian
+    - country: Quothane
+      demonym: Quothanish
+    - country: Brentalos
+      demonym: Brentalosi
+    - country: Mivoshen
+      demonym: Mivosheni
+    - country: Caldreth
+      demonym: Caldrethian
+    - country: Junhara
+      demonym: Junharan
+    - country: Ostrivel
+      demonym: Ostrivelese
+    - country: Fendurak
+      demonym: Fenduraki
+    - country: Golthenay
+      demonym: Golthenese
+    - country: Sarvikol
+      demonym: Sarvikolian
+    - country: Plindova
+      demonym: Plindovan
+    - country: Wetharin
+      demonym: Wetharinese
+  place_2:
+    required_attributes:
+    - city
+    - region
+    count: 15
+    variants:
+    - region: Tolhaven District
+      city: Brenthalo
+    - region: Kurivane Ward
+      city: Ondrasek
+    - region: Pelmorath District
+      city: Jintavol
+    - region: Sethuri Zone
+      city: Galmorin
+    - region: Dravenci District
+      city: Teskova
+    - region: Hyelton Ward
+      city: Parvunel
+    - region: Zolkari District
+      city: Mevanthu
+    - region: Fendrosi Ward
+      city: Quilbane
+    - region: Oshtaren District
+      city: Vundrelk
+    - region: Calphedon Zone
+      city: Wenshori
+    - region: Timbralev District
+      city: Gorethyn
+    - region: Yulkavine Ward
+      city: Drantopel
+    - region: Reshkova District
+      city: Plenvari
+    - region: Boskurel Zone
+      city: Hentavir
+    - region: Nelvadri District
+      city: Krothune
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltronic Industries Co., Ltd.
+    - name: Korathen Systems Co., Ltd.
+    - name: Zephkura Electronics Co., Ltd.
+    - name: Talnovi Corporation Co., Ltd.
+    - name: Brindek Technologies Co., Ltd.
+    - name: Orivane Digital Co., Ltd.
+    - name: Celvara Components Co., Ltd.
+    - name: Plenthari Electronics Co., Ltd.
+    - name: Dunavar Industries Co., Ltd.
+    - name: Kessova Technologies Co., Ltd.
+    - name: Mirothane Systems Co., Ltd.
+    - name: Galtrek Electronics Co., Ltd.
+    - name: Yondris Corporation Co., Ltd.
+    - name: Fendurak Industries Co., Ltd.
+    - name: Quorvane Electronics Co., Ltd.
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkoni conglomerate
+    - name: Torushan zaibatsu
+    - name: Hyndara group
+    - name: Kelvori chaebol
+    - name: Dranoshi holdings
+    - name: Pelmako consortium
+    - name: Junwari conglomerate
+    - name: Brenoshi zaibatsu
+    - name: Talvek group
+    - name: Orimaku chaebol
+    - name: Gelvani conglomerate
+    - name: Shundori holdings
+    - name: Wentaku consortium
+    - name: Korbashi group
+    - name: Miroven conglomerate
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pomara
+    - name: Celvion
+    - name: Tassrik
+    - name: Briolux
+    - name: Kernova
+    - name: Wyndal
+    - name: Plythen
+    - name: Orivane
+    - name: Dravico
+    - name: Zulteri
+    - name: Quoben
+    - name: Felkris
+    - name: Janthor
+    - name: Melvara
+    - name: Tunbrel
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari
+    - name: Kessuno
+    - name: Drennox
+    - name: Tuvelic
+    - name: Ombrion
+    - name: Zarquil
+    - name: Pellonix
+    - name: Craventi
+    - name: Wyndalo
+    - name: Brixonn
+    - name: Halturek
+    - name: Jorvane
+    - name: Quilspar
+    - name: Fendraco
+    - name: Molvitec
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrik
+    - name: Quorath
+    - name: Zelphin
+    - name: Tarvonic
+    - name: Brindek
+    - name: Korvelis
+    - name: Dravosi
+    - name: Wentrik
+    - name: Galvune
+    - name: Sothrek
+    - name: Nimvaro
+    - name: Crethol
+    - name: Felkuran
+    - name: Jorvelt
+    - name: Plindova
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quorben
+    - name: Teskova
+    - name: Plindec
+    - name: Zarvion
+    - name: Crotheli
+    - name: Bynkara
+    - name: Welmotix
+    - name: Dravune
+    - name: Kesphal
+    - name: Ontrelis
+    - name: Falmogen
+    - name: Jurathi
+    - name: Penvokk
+    - name: Gelthari
+    - name: Solvrek
+products:
+  product_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: handset
+    - name: mobilink
+    - name: pockcom
+    - name: talkpad
+    - name: dialset
+    - name: palmcall
+    - name: ringslate
+    - name: cellpiece
+    - name: touchdial
+    - name: voicetab
+    - name: callslab
+    - name: buzzslab
+    - name: gripslab
+    - name: tapfone
+    - name: linkslab
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloquo
+    - name: Tynarch
+    - name: Plexiom
+    - name: Kelvara
+    - name: Zorinth
+    - name: Brequon
+    - name: Nuvetch
+    - name: Crellion
+    - name: Wispara
+    - name: Drantex
+    - name: Feloqum
+    - name: Jiveron
+    - name: Quilbex
+    - name: Tarvion
+    - name: Meldrix
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion Orba
+    - name: Kessaro Lume
+    - name: Tarvex Zenith
+    - name: Plindaro Voss
+    - name: Quorith Sable
+    - name: Dranevo Pulse
+    - name: Melvari Crest
+    - name: Jontrek Halo
+    - name: Brivano Apex
+    - name: Weskari Flux
+    - name: Caltreno Vibe
+    - name: Rendova Spark
+    - name: Galthen Drift
+    - name: Orvanti Bloom
+    - name: Felkaro Stryde
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velon X
+    - name: Orbix R
+    - name: Kestro V
+    - name: Lumaro P
+    - name: Dravex Q
+    - name: Zenthi K
+    - name: Pylox E
+    - name: Torvin S
+    - name: Celvari D
+    - name: Braxon W
+    - name: Fenturi L
+    - name: Quorin Z
+    - name: Helvox N
+    - name: Mirago T
+    - name: Jentara C
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orben V
+    - name: Cellix R
+    - name: Tarvon E
+    - name: Luneth K
+    - name: Draven Q
+    - name: Mirova D
+    - name: Zenthi P
+    - name: Kalvex W
+    - name: Pholus B
+    - name: Revani L
+    - name: Solvane J
+    - name: Wintara C
+    - name: Brenox H
+    - name: Quorin F
+    - name: Telmis N
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orben K
+    - name: Veltra B
+    - name: Lunaro E
+    - name: Threxis D
+    - name: Colvane R
+    - name: Zenthari L
+    - name: Plivox N
+    - name: Draveen W
+    - name: Kessori F
+    - name: Brintho C
+    - name: Wyndex J
+    - name: Talorik H
+    - name: Quivarn P
+    - name: Felkora T
+    - name: Grithane V
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zenith Hinge
+    - name: Lumara Flex
+    - name: Orizon Wrap
+    - name: Kelvara Bend
+    - name: Tivaro Crease
+    - name: Nolith Unfurl
+    - name: Pyreth Clasp
+    - name: Dravon Pleat
+    - name: Selkora Pivot
+    - name: Brintho Arch
+    - name: Corvane Leaf
+    - name: Meldrix Span
+    - name: Quorath Halo
+    - name: Fenturi Latch
+    - name: Galveen Seam
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltro Hinge
+    - name: Orbex Clam
+    - name: Zephon Pivot
+    - name: Kestara Bend
+    - name: Tynex Fold
+    - name: Mirova Swivel
+    - name: Callix Turn
+    - name: Droven Clasp
+    - name: Pellux Snap
+    - name: Quorin Flex
+    - name: Brivane Latch
+    - name: Sorvik Crease
+    - name: Enthral Wrap
+    - name: Juvex Pleat
+    - name: Nolari Flick
+  product_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: tabblon
+    - name: slabfone
+    - name: widetouch
+    - name: palmscreen
+    - name: megahand
+    - name: broadcel
+    - name: spanlet
+    - name: griplate
+    - name: tallcom
+    - name: stretchdial
+    - name: bigpane
+    - name: vastring
+    - name: fullpalm
+    - name: widecall
+    - name: heftscreen
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orben Slate
+    - name: Veltrix Jot
+    - name: Kymera Scribe
+    - name: Tarvon Quill
+    - name: Zelkora Pad
+    - name: Brindel Memo
+    - name: Colvane Draft
+    - name: Pyreth Ledger
+    - name: Wintara Ink
+    - name: Dravon Sketch
+    - name: Felkris Pen
+    - name: Galthen Mark
+    - name: Helvori Script
+    - name: Junelk Trace
+    - name: Morvane Log
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velon Pad L
+    - name: Orixa Slate B
+    - name: Kymera Tab R
+    - name: Zephon Slab E
+    - name: Tivaro Pad K
+    - name: Nelvox Slate C
+    - name: Bryntel Tab Q
+    - name: Corith Pad W
+    - name: Dravex Slate F
+    - name: Pylonis Tab J
+    - name: Quorin Slab D
+    - name: Fenturi Pad V
+    - name: Halcen Tab G
+    - name: Moxira Slate N
+    - name: Wenthari Pad Z
+  product_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velon Pad R
+    - name: Crestal Slate V
+    - name: Orbix Tab K
+    - name: Zephon Panel E
+    - name: Lumrek Slab Q
+    - name: Tivaro Screen D
+    - name: Kyndel Folio W
+    - name: Praxen Deck H
+    - name: Solkrit View T
+    - name: Brenova Sheet L
+    - name: Quorin Plat J
+    - name: Dravex Canvas N
+    - name: Felkora Tile G
+    - name: Wintrel Board P
+    - name: Haldex Surface M

@@ -1,0 +1,420 @@
+document:
+  document_id: disaster_05
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: Hurricane Maria
+  wikipedia_url: https://en.wikipedia.org/wiki/Hurricane_Maria
+  original_document: 'Hurricane Maria was an extremely powerful and catastrophic tropical cyclone that affected the northeastern
+    Caribbean in September 2017, particularly in the U.S. territory of Puerto Rico, which accounted for 2975 of the 3059 deaths.
+    It is the deadliest and costliest hurricane to strike the archipelago and island of Puerto Rico, and is the deadliest
+    hurricane to strike the country of Dominica and the territory of the U.S. Virgin Islands. The most intense tropical cyclone
+    worldwide in 2017, Maria was the thirteenth named storm, eighth consecutive hurricane, fourth major hurricane, second
+    Category 5 hurricane, and deadliest storm of the extremely active 2017 Atlantic hurricane season. With over 3000 deaths
+    and a minimum central pressure of 908 millibars (26.8 inHg), Maria was the twelfth most intense Atlantic hurricane on
+    record, respectively. Total monetary losses are estimated at upwards of $91.61 billion (2017 USD), almost all of which
+    came from Puerto Rico, ranking it as the fourth-costliest tropical cyclone on record.
+
+
+    Maria developed from a tropical wave on September 16 east of the Lesser Antilles. Steady strengthening and organization
+    took place initially, until favorable conditions enabled it to undergo explosive intensification on the afternoon of September
+    18, achieving Category 5 strength just before making landfall on the island of Dominica that night. After crossing the
+    island and weakening slightly, Maria re-intensified and achieved its peak intensity with maximum sustained winds of 175
+    mph (280 km/h) and a pressure of 908 mbar (hPa; 26.81 inHg). On September 20, an eyewall replacement cycle weakened Maria
+    to a high-end Category 4 hurricane by the time it struck Puerto Rico. The hurricane re-emerged weaker from land interaction,
+    but quickly restrengthened back into a major hurricane again the following day. Passing north of The Bahamas, Maria remained
+    a powerful hurricane over the following week as it slowly paralleled the East Coast of the United States, gradually weakening
+    over time as conditions became less favorable. Maria then stalled and swung eastward over the open Atlantic, becoming
+    extratropical on September 30 before dissipating by October 2.
+
+
+    Maria brought catastrophic devastation to the entirety of Dominica, destroying housing stock and infrastructure beyond
+    repair, and practically eradicating the island''s lush vegetation. The neighboring islands of Guadeloupe and Martinique
+    endured widespread flooding, damaged roofs, and uprooted trees. Puerto Rico suffered catastrophic damage and a major humanitarian
+    crisis; most of the island''s population suffered from flooding and a lack of resources, compounded by a slow relief process.
+    The storm caused the worst electrical blackout in US history, which persisted for several months. Maria also landed in
+    the northeast Caribbean during relief efforts from another Category 5 hurricane, Irma, which crossed the region two weeks
+    prior. The total death toll is 3059: an estimated 2975 in Puerto Rico, 65 in Dominica, 5 in the Dominican Republic, 4
+    in Guadeloupe, 4 in the contiguous United States, 3 in the United States Virgin Islands, and 3 in Haiti. Maria was the
+    deadliest hurricane in Dominica since the 1834 Padre Ruíz hurricane and the deadliest in Puerto Rico since the 1899 San
+    Ciriaco hurricane. This makes it the deadliest named Atlantic hurricane of the 21st century to date. The name Maria was
+    later retired following the 2017 season.'
+  document_to_annotate: '[Hurricane Maria; event_1.name] was an extremely powerful and catastrophic tropical cyclone that
+    affected the northeastern [Caribbean; place_1.region] in [September; temporal_1.month] [2017; temporal_1.year], particularly
+    in the [U.S.; place_2.country] territory of [Puerto Rico; place_3.region], which accounted for [2975; number_1.int] of
+    the [3059; number_2.int] deaths. It is the deadliest and costliest hurricane to strike the archipelago and island of [Puerto
+    Rico; place_3.region], and is the deadliest hurricane to strike the country of [Dominica; place_4.country] and the territory
+    of the [U.S. Virgin Islands; place_5.region]. The most intense tropical cyclone worldwide in [2017; temporal_1.year],
+    [Maria; event_1.name] was the [thirteenth; number_19.str] named storm, [eighth; number_18.str] consecutive hurricane,
+    [fourth; number_24.str] major hurricane, [second; number_21.str] Category 5 hurricane, and deadliest storm of the extremely
+    active [2017 Atlantic hurricane season; event_2.name]. With over [3000; number_3.int] deaths and a minimum central pressure
+    of [908; number_4.int] millibars, [Maria; event_1.name] was the [twelfth; number_20.str] most intense Atlantic hurricane
+    on record, respectively. Total monetary losses are estimated at upwards of $[91.61; number_6.float] billion ([2017; temporal_1.year]
+    USD), almost all of which came from [Puerto Rico; place_3.region], ranking it as the [fourth; number_23.str]-costliest
+    tropical cyclone on record.
+
+
+    [Maria; event_1.name] developed from a tropical wave on [September; temporal_4.month] [16; temporal_4.day_of_month] east
+    of the [Lesser Antilles; place_6.region]. Steady strengthening and organization took place initially, until favorable
+    conditions enabled it to undergo explosive intensification on the afternoon of [September; temporal_5.month] [18; temporal_5.day_of_month],
+    achieving Category 5 strength just before making landfall on the island of [Dominica; place_4.country] that night. After
+    crossing the island and weakening slightly, [Maria; event_1.name] re-intensified and achieved its peak intensity with
+    maximum sustained winds of [175; number_7.int] mph and a pressure of [908; number_4.int] mbar. On [September; temporal_6.month]
+    [20; temporal_6.day_of_month], an eyewall replacement cycle weakened [Maria; event_1.name] to a high-end Category 4 hurricane
+    by the time it struck [Puerto Rico; place_3.region]. The hurricane re-emerged weaker from land interaction, but quickly
+    restrengthened back into a major hurricane again the following day. Passing north of [The Bahamas; place_7.country], [Maria;
+    event_1.name] remained a powerful hurricane over the following week as it slowly paralleled the [East Coast; place_8.region]
+    of the [United States; place_2.country], gradually weakening over time as conditions became less favorable. [Maria; event_1.name]
+    then stalled and swung eastward over the open [Atlantic; place_9.natural_site], becoming extratropical on [September;
+    temporal_7.month] [30; temporal_7.day_of_month] before dissipating by [October; temporal_8.month] [2; temporal_8.day_of_month].
+
+
+    [Maria; event_1.name] brought catastrophic devastation to the entirety of [Dominica; place_4.country], destroying housing
+    stock and infrastructure beyond repair, and practically eradicating the island''s lush vegetation. The neighboring islands
+    of [Guadeloupe; place_10.region] and [Martinique; place_11.region] endured widespread flooding, damaged roofs, and uprooted
+    trees. [Puerto Rico; place_3.region] suffered catastrophic damage and a major humanitarian crisis; most of the island''s
+    population suffered from flooding and a lack of resources, compounded by a slow relief process. The storm caused the worst
+    electrical blackout in [US; place_2.country] history, which persisted for several months. [Maria; event_1.name] also landed
+    in the northeast [Caribbean; place_1.region] during relief efforts from another Category 5 hurricane, [Irma; event_3.name],
+    which crossed the region [two; number_11.str] weeks prior. The total death toll is [3059; number_2.int]: an estimated
+    [2975; number_1.int] in [Puerto Rico; place_3.region], [65; number_12.int] in [Dominica; place_4.country], [5; number_13.int]
+    in the [Dominican Republic; place_12.country], [4; number_14.int] in [Guadeloupe; place_10.region], [4; number_15.int]
+    in the [contiguous United States; place_14.region], [3; number_16.int] in the [United States Virgin Islands; place_5.region],
+    and [3; number_17.int] in [Haiti; place_13.country]. [Maria; event_1.name] was the deadliest hurricane in [Dominica; place_4.country]
+    since the [1834 Padre Ruíz hurricane; event_4.name] and the deadliest in [Puerto Rico; place_3.region] since the [1899
+    San Ciriaco hurricane; event_5.name]. This makes it the deadliest named Atlantic hurricane of the [21st; number_22.int]
+    century to date. The name [Maria; event_1.name] was later retired following the [2017; temporal_1.year] season.'
+  relations: []
+  rules:
+  - 'number_1.int + number_12.int + number_13.int + number_14.int + number_15.int + number_16.int + number_17.int == number_2.int
+    # total death toll is sum of all regional deaths'
+  - 'century_of(temporal_1.year) == number_22.int # deadliest hurricane of the stated century'
+  num_questions: 12
+  questions:
+  - question_id: disaster_05_q01
+    question: How many deaths did [Hurricane Maria; event_1.name] cause in [Puerto Rico; place_3.region]?
+    question_type: extractive
+    answer: number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Puerto Rico; place_3.region] accounted for [2975; number_1.int] of the [3059; number_2.int]
+      deaths.
+    reasoning_chain_text: 1. The document states that [Puerto Rico; place_3.region] accounted for [2975; number_1.int] of
+      the [3059; number_2.int] deaths.
+  - question_id: disaster_05_q02
+    question: What unit of pressure is used to describe the minimum central pressure of [Hurricane Maria; event_1.name]?
+    question_type: extractive
+    answer: millibars
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the minimum central pressure was [908; number_4.int] millibars.
+    reasoning_chain_text: 1. The document states the minimum central pressure was [908; number_4.int] millibars.
+  - question_id: disaster_05_q03
+    question: What was the name of the governor of [Puerto Rico; place_3.region] at the time [Hurricane Maria; event_1.name]
+      struck?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the devastation in [Puerto Rico; place_3.region] but does not mention any governor or political
+      leader by name.
+    - 2. The needed fact is absent from the document.
+    reasoning_chain_text: '1. The document describes the devastation in [Puerto Rico; place_3.region] but does not mention
+      any governor or political leader by name.
+
+      2. The needed fact is absent from the document.'
+  - question_id: disaster_05_q04
+    question: How many deaths caused by [Hurricane Maria; event_1.name] occurred outside of [Puerto Rico; place_3.region]?
+    question_type: arithmetic
+    answer: number_2.int - number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The total death toll is [3059; number_2.int].
+    - 2. Deaths in [Puerto Rico; place_3.region] were [2975; number_1.int].
+    - 3. Deaths outside [Puerto Rico; place_3.region] = [3059; number_2.int] - [2975; number_1.int] = 68.
+    reasoning_chain_text: '1. The total death toll is [3059; number_2.int].
+
+      2. Deaths in [Puerto Rico; place_3.region] were [2975; number_1.int].
+
+      3. Deaths outside [Puerto Rico; place_3.region] = [3059; number_2.int] - [2975; number_1.int] = 68.'
+  - question_id: disaster_05_q05
+    question: What was the total monetary damage caused by [Hurricane Maria; event_1.name] in [Dominica; place_4.country]
+      alone?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states total monetary losses are estimated at upwards of $[91.61; number_6.float] billion.
+    - 2. It notes almost all of this came from [Puerto Rico; place_3.region], but does not provide a specific dollar figure
+      for [Dominica; place_4.country].
+    - 3. Without a specific breakdown, the damage for [Dominica; place_4.country] alone cannot be calculated.
+    reasoning_chain_text: '1. The document states total monetary losses are estimated at upwards of $[91.61; number_6.float]
+      billion.
+
+      2. It notes almost all of this came from [Puerto Rico; place_3.region], but does not provide a specific dollar figure
+      for [Dominica; place_4.country].
+
+      3. Without a specific breakdown, the damage for [Dominica; place_4.country] alone cannot be calculated.'
+  - question_id: disaster_05_q06
+    question: On what date did [Hurricane Maria; event_1.name] develop from a tropical wave?
+    question_type: temporal
+    answer: temporal_4.month + " " + temporal_4.day_of_month
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Hurricane Maria; event_1.name] developed from a tropical wave on [September; temporal_4.month]
+      [16; temporal_4.day_of_month].
+    - 2. The date is therefore August 26.
+    reasoning_chain_text: '1. The document states [Hurricane Maria; event_1.name] developed from a tropical wave on [September;
+      temporal_4.month] [16; temporal_4.day_of_month].
+
+      2. The date is therefore August 26.'
+  - question_id: disaster_05_q07
+    question: On what exact date was the name [Hurricane Maria; event_1.name] officially retired by the naming committee?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the name was retired following the [2017; temporal_1.year] season.
+    - 2. However, no specific date for the retirement decision is provided in the document.
+    reasoning_chain_text: '1. The document states the name was retired following the [2017; temporal_1.year] season.
+
+      2. However, no specific date for the retirement decision is provided in the document.'
+  - question_id: disaster_05_q08
+    question: Based on the document, what can be inferred about the relationship between the electrical blackout in [U.S.;
+      place_2.country] and the relief process in [Puerto Rico; place_3.region]?
+    question_type: inference
+    answer: The blackout compounded the humanitarian crisis by persisting for several months during relief efforts.
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Hurricane Maria; event_1.name] caused the worst electrical blackout in [U.S.; place_2.country]
+      history, persisting for several months.
+    - 2. It also states [Puerto Rico; place_3.region] suffered a major humanitarian crisis compounded by a slow relief process.
+    - 3. Since [Puerto Rico; place_3.region] is a territory of [U.S.; place_2.country], the prolonged blackout would have
+      worsened the humanitarian crisis and slowed relief.
+    reasoning_chain_text: '1. The document states [Hurricane Maria; event_1.name] caused the worst electrical blackout in
+      [U.S.; place_2.country] history, persisting for several months.
+
+      2. It also states [Puerto Rico; place_3.region] suffered a major humanitarian crisis compounded by a slow relief process.
+
+      3. Since [Puerto Rico; place_3.region] is a territory of [U.S.; place_2.country], the prolonged blackout would have
+      worsened the humanitarian crisis and slowed relief.'
+  - question_id: disaster_05_q09
+    question: Did the slow relief process in [Puerto Rico; place_3.region] result from political decisions by the [U.S.; place_2.country]
+      government?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions a slow relief process and a major humanitarian crisis in [Puerto Rico; place_3.region].
+    - 2. However, the document does not specify the causes of the slow relief process or attribute it to any political decisions.
+    - 3. Without this information, the question cannot be answered from the document alone.
+    reasoning_chain_text: '1. The document mentions a slow relief process and a major humanitarian crisis in [Puerto Rico;
+      place_3.region].
+
+      2. However, the document does not specify the causes of the slow relief process or attribute it to any political decisions.
+
+      3. Without this information, the question cannot be answered from the document alone.'
+  - question_id: disaster_05_q10
+    question: How many regions are listed as having recorded fatalities during [Hurricane Maria; event_1.name]?
+    question_type: arithmetic
+    answer: '7'
+    answer_type: invariant
+    reasoning_chain:
+    - 'Seven regions are listed when enumerating the death toll: [Puerto Rico; place_3.region], [Dominica; place_4.country],
+      [Dominican Republic; place_12.country], [Guadeloupe; place_10.region], [contiguous United States; place_14.region],
+      [U.S. Virgin Islands; place_5.region], [Haiti; place_13.country].'
+    reasoning_chain_text: 'Seven regions are listed when enumerating the death toll: [Puerto Rico; place_3.region], [Dominica;
+      place_4.country], [Dominican Republic; place_12.country], [Guadeloupe; place_10.region], [contiguous United States;
+      place_14.region], [U.S. Virgin Islands; place_5.region], [Haiti; place_13.country].'
+  - question_id: disaster_05_q11
+    question: Did [Hurricane Maria; event_1.name] happen before or after the [1834 Padre Ruíz hurricane; event_4.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: disaster_05_q12
+    question: Is [Dominica; place_4.country] in the same part of the world as the Windward Archipelago?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 2380
+    upper_bound: 3570
+    factual_value: 2975
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 2448
+    upper_bound: 3670
+    factual_value: 3059
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.str
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 2400
+    upper_bound: 3600
+    factual_value: 3000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 727
+    upper_bound: 1089
+    factual_value: 908
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.str
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.float
+    lower_bound: 73.29
+    upper_bound: 109.93
+    factual_value: 91.61
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 140
+    upper_bound: 210
+    factual_value: 175
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 52
+    upper_bound: 78
+    factual_value: 65
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.int
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.int
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.int
+    lower_bound: 19
+    upper_bound: 23
+    factual_value: 21
+    percentage: 10.0
+    rule_kind: century_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Hurricane Typhon; event_1.name] was an extremely powerful and catastrophic
+    tropical cyclone that affected the northeastern [Continental Talmyra; place_1.region] in [July; temporal_1.month] [2001;
+    temporal_1.year], particularly in the [Talmyra; place_2.country] territory of [Palmysse; place_3.region], which accounted
+    for [2380; number_1.int] of the [2448; number_2.int] deaths. It is the deadliest and costliest hurricane to strike the
+    archipelago and island of [Palmysse; place_3.region], and is the deadliest hurricane to strike the country of [Belthara;
+    place_4.country] and the territory of the [Corventis; place_5.region]. The most intense tropical cyclone worldwide in
+    [2001; temporal_1.year], [Hurricane Typhon; event_1.name] was the [twelfth; number_19.str] named storm, [eleventh; number_18.str]
+    consecutive hurricane, [third; number_24.str] major hurricane, [first; number_21.str] Category 5 hurricane, and deadliest
+    storm of the extremely active [Hurricane Zelara; event_2.name]. With over [2400; number_3.int] deaths and a minimum central
+    pressure of [727; number_4.int] millibars, [Hurricane Typhon; event_1.name] was the [twenty-first; number_20.str] most
+    intense Atlantic hurricane on record, respectively. Total monetary losses are estimated at upwards of $[73.29; number_6.float]
+    billion ([2001; temporal_1.year] USD), almost all of which came from [Palmysse; place_3.region], ranking it as the [third;
+    number_23.str]-costliest tropical cyclone on record.
+
+
+    [Hurricane Typhon; event_1.name] developed from a tropical wave on [August; temporal_4.month] [26; temporal_4.day_of_month]
+    east of the [Windward Archipelago; place_6.region]. Steady strengthening and organization took place initially, until
+    favorable conditions enabled it to undergo explosive intensification on the afternoon of [June; temporal_5.month] [27;
+    temporal_5.day_of_month], achieving Category 5 strength just before making landfall on the island of [Belthara; place_4.country]
+    that night. After crossing the island and weakening slightly, [Hurricane Typhon; event_1.name] re-intensified and achieved
+    its peak intensity with maximum sustained winds of [174; number_7.int] mph and a pressure of [727; number_4.int] mbar.
+    On [November; temporal_6.month] [5; temporal_6.day_of_month], an eyewall replacement cycle weakened [Hurricane Typhon;
+    event_1.name] to a high-end Category 4 hurricane by the time it struck [Palmysse; place_3.region]. The hurricane re-emerged
+    weaker from land interaction, but quickly restrengthened back into a major hurricane again the following day. Passing
+    north of [Verdancia; place_7.country], [Hurricane Typhon; event_1.name] remained a powerful hurricane over the following
+    week as it slowly paralleled the [Coastal Frontier; place_8.region] of the [Talmyra; place_2.country], gradually weakening
+    over time as conditions became less favorable. [Hurricane Typhon; event_1.name] then stalled and swung eastward over the
+    open [Lagoon Zormyrziv; place_9.natural_site], becoming extratropical on [April; temporal_7.month] [14; temporal_7.day_of_month]
+    before dissipating by [March; temporal_8.month] [12; temporal_8.day_of_month].
+
+
+    [Hurricane Typhon; event_1.name] brought catastrophic devastation to the entirety of [Belthara; place_4.country], destroying
+    housing stock and infrastructure beyond repair, and practically eradicating the island''s lush vegetation. The neighboring
+    islands of [Vesparian Isles; place_10.region] and [Kessian Territories; place_11.region] endured widespread flooding,
+    damaged roofs, and uprooted trees. [Palmysse; place_3.region] suffered catastrophic damage and a major humanitarian crisis;
+    most of the island''s population suffered from flooding and a lack of resources, compounded by a slow relief process.
+    The storm caused the worst electrical blackout in [Talmyra; place_2.country] history, which persisted for several months.
+    [Hurricane Typhon; event_1.name] also landed in the northeast [Continental Talmyra; place_1.region] during relief efforts
+    from another Category 5 hurricane, [2017 Meridian hurricane season; event_3.name], which crossed the region [one; number_11.str]
+    weeks prior. The total death toll is [2448; number_2.int]: an estimated [2380; number_1.int] in [Palmysse; place_3.region],
+    [54; number_12.int] in [Belthara; place_4.country], [4; number_13.int] in the [Salvadria; place_12.country], [3; number_14.int]
+    in [Vesparian Isles; place_10.region], [3; number_15.int] in the [Florantine; place_14.region], [2; number_16.int] in
+    the [Corventis; place_5.region], and [2; number_17.int] in [Montavelle; place_13.country]. [Hurricane Typhon; event_1.name]
+    was the deadliest hurricane in [Belthara; place_4.country] since the [1899 San Lorian hurricane; event_4.name] and the
+    deadliest in [Palmysse; place_3.region] since the [1834 Padre Vexis hurricane; event_5.name]. This makes it the deadliest
+    named Atlantic hurricane of the [21; number_22.int] century to date. The name [Hurricane Typhon; event_1.name] was later
+    retired following the [2001; temporal_1.year] season.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

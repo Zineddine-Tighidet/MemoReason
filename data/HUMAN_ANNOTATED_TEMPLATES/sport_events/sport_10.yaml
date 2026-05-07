@@ -1,0 +1,395 @@
+document:
+  document_id: sport_10
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Copa América
+  wikipedia_url: https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+  original_document: 'The CONMEBOL Copa América (English: American Cup; known until 1975 as the South American Football Championship),
+    often simply called the Copa America, is the top men''s quadrennial football tournament contested among national teams
+    from South America. It is the oldest still-running continental football competition. The competition determines the champions
+    of South America, minus Suriname, Guyana and French Guiana. Since the 1990s, teams from North America and Asia have also
+    been invited to compete.
+
+
+    Eight of the ten CONMEBOL national teams have won the tournament at least once in its 48 stagings since the event''s inauguration
+    in 1916, with Ecuador and Venezuela the only teams yet to win. Argentina have the most championships in the tournament''s
+    history, with 16 cups. The country that hosted the tournament the most times (nine editions) is Argentina, including the
+    inaugural edition in 1916. The United States is the only non-CONMEBOL country that hosted the event, having done so in
+    both 2016 and 2024. On three occasions (in 1975, 1979, and 1983), the tournament was held in multiple South American countries.
+
+
+    Since 1993, the tournament has generally featured 12 teams — all 10 CONMEBOL teams and two additional teams from other
+    confederations. Mexico participated in every tournament between 1993 and 2016, with one additional team drawn from CONCACAF,
+    except for 1999, when AFC team Japan filled out the 12-team roster, and 2019, which featured Japan and Qatar. The 2016
+    and 2024 tournaments both featured 16 teams, with six teams from CONCACAF in addition to the 10 from CONMEBOL.'
+  document_to_annotate: 'The [CONMEBOL; entreprise_org_1.name] [Copa América; event_1.name] (known until [1975; temporal_1.year]
+    as the [South American Football Championship; event_2.name]), often simply called the [Copa America; event_1.name], is
+    the top men''s [football; product_1.name] tournament contested among national teams from [South America; place_2.region].
+    It is the oldest still-running continental [football; product_1.name] competition. The competition determines the champions
+    of [South America; place_2.region], minus [Suriname; place_3.country], [Guyana; place_4.country] and [French Guiana; place_5.country].
+    Since the [1990; temporal_2.year]s, teams from [North America; place_6.region] and [Asia; place_7.continent] have also
+    been invited to compete.
+
+
+    [Eight; number_1.str] of the [ten; number_2.str] [CONMEBOL; entreprise_org_1.name] national teams have won the tournament
+    at least once in its [48; number_3.int] stagings since the event''s inauguration in [1916; temporal_3.year], with [Ecuador;
+    place_8.country] and [Venezuela; place_9.country] the only teams yet to win. [Argentina; place_10.country] have the most
+    championships in the tournament''s history, with [16; number_4.int] cups. The country that hosted the tournament the most
+    times ([nine; number_5.str] editions) is [Argentina; place_10.country], including the inaugural edition in [1916; temporal_3.year].
+    The [United States; place_11.country] is the only non-[CONMEBOL; entreprise_org_1.name] country that hosted the event,
+    having done so in both [2016; temporal_4.year] and [2024; temporal_5.year]. On [three; number_6.str] occasions (in [1975;
+    temporal_6.year], [1979; temporal_7.year], and [1983; temporal_8.year]), the tournament was held in multiple [South American;
+    place_2.demonym] countries.
+
+
+    Since [1993; temporal_9.year], the tournament has generally featured [12; number_7.int] teams — all [10; number_2.int]
+    [CONMEBOL; entreprise_org_1.name] teams and [two; number_9.str] additional teams from other confederations. [Mexico; place_12.country]
+    participated in every tournament between [1993; temporal_9.year] and [2016; temporal_4.year], with [one; number_10.str]
+    additional team drawn from [CONCACAF; entreprise_org_2.name], except for [1999; temporal_10.year], when [AFC; entreprise_org_3.name]
+    team [Japan; place_13.country] filled out the [12; number_7.int]-team roster, and [2019; temporal_11.year], which featured
+    [Japan; place_13.country] and [Qatar; place_14.country]. The [2016; temporal_4.year] and [2024; temporal_5.year] tournaments
+    both featured [16; number_11.int] teams, with [six; number_12.str] teams from [CONCACAF; entreprise_org_2.name] in addition
+    to the [10; number_2.int] from [CONMEBOL; entreprise_org_1.name].'
+  relations: []
+  rules:
+  - 'number_2.int + number_9.str == number_7.int # 10 CONMEBOL teams + 2 invited = 12 total'
+  - 'number_2.int + number_12.str == number_11.int # 10 CONMEBOL teams + 6 CONCACAF = 16 total'
+  - 'number_7.int > 1 # plural mention (teams)'
+  - 'number_11.int > 1 # plural mention (teams)'
+  - 'number_4.int > 1 # plural mention (cups)'
+  - 'number_5.str > 1 # plural mention (editions)'
+  - 'number_6.str > 1 # plural mention (occasions)'
+  - 'number_9.str > 1 # plural mention (additional teams)'
+  - 'number_12.str > 1 # plural mention (six teams)'
+  - 'number_3.int > 1 # plural mention (stagings)'
+  - number_1.str + 2 == number_2.str
+  - number_9.str == two
+  - number_10.str == one
+  - number_6.str == three
+  num_questions: 12
+  questions:
+  - question_id: sport_10_q01
+    question: Which national team has won the most [Copa América; event_1.name] titles?
+    question_type: extractive
+    answer: place_10.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[Argentina; place_10.country] have the most championships in the tournament's history,
+      with [16; number_4.int] cups."
+    reasoning_chain_text: 1. The document states that "[Argentina; place_10.country] have the most championships in the tournament's
+      history, with [16; number_4.int] cups."
+  - question_id: sport_10_q02
+    question: How many teams typically participate in the [Copa América; event_1.name] since [1993; temporal_9.year]?
+    question_type: extractive
+    answer: '12'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "Since [1993; temporal_9.year], the tournament has generally featured [12; number_7.int] teams."
+    reasoning_chain_text: 1. The document states "Since [1993; temporal_9.year], the tournament has generally featured [12;
+      number_7.int] teams."
+  - question_id: sport_10_q03
+    question: Who is the all-time top scorer in the history of the [Copa América; event_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses tournament history, host countries, and winning teams.
+    - 2. The document does not mention any individual player statistics or top scorers.
+    reasoning_chain_text: '1. The document discusses tournament history, host countries, and winning teams.
+
+      2. The document does not mention any individual player statistics or top scorers.'
+  - question_id: sport_10_q04
+    question: How many more teams participated in the [2016; temporal_4.year] and [2024; temporal_5.year] [Copa América; event_1.name]
+      tournaments compared to the typical format since [1993; temporal_9.year]?
+    question_type: arithmetic
+    answer: number_11.int - number_7.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The typical format since [1993; temporal_9.year] features [12; number_7.int] teams.
+    - 2. The [2016; temporal_4.year] and [2024; temporal_5.year] tournaments featured [16; number_11.int] teams.
+    - 3. The difference is [16; number_11.int] - [12; number_7.int] = 4.
+    reasoning_chain_text: '1. The typical format since [1993; temporal_9.year] features [12; number_7.int] teams.
+
+      2. The [2016; temporal_4.year] and [2024; temporal_5.year] tournaments featured [16; number_11.int] teams.
+
+      3. The difference is [16; number_11.int] - [12; number_7.int] = 4.'
+  - question_id: sport_10_q05
+    question: What is the average number of goals scored per [Copa América; event_1.name] tournament across all [48; number_3.int]
+      editions?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states there have been [48; number_3.int] stagings of the tournament.
+    - 2. However, the document does not provide any information about total goals scored in any edition or overall.
+    reasoning_chain_text: '1. The document states there have been [48; number_3.int] stagings of the tournament.
+
+      2. However, the document does not provide any information about total goals scored in any edition or overall.'
+  - question_id: sport_10_q06
+    question: How many years passed between the inaugural [Copa América; event_1.name] and the first time the [United States;
+      place_11.country] hosted the tournament?
+    question_type: temporal
+    answer: temporal_4.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The inaugural edition was held in [1916; temporal_3.year].
+    - 2. The [United States; place_11.country] first hosted the event in [2016; temporal_4.year].
+    - 3. The difference is [2016; temporal_4.year] - [1916; temporal_3.year] = 100 years.
+    reasoning_chain_text: '1. The inaugural edition was held in [1916; temporal_3.year].
+
+      2. The [United States; place_11.country] first hosted the event in [2016; temporal_4.year].
+
+      3. The difference is [2016; temporal_4.year] - [1916; temporal_3.year] = 100 years.'
+  - question_id: sport_10_q07
+    question: In what year did [Ecuador; place_8.country] first participate in the [Copa América; event_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Ecuador; place_8.country] as one of the teams that has never won the tournament.
+    - 2. The document does not state when [Ecuador; place_8.country] first participated in the competition.
+    reasoning_chain_text: '1. The document mentions [Ecuador; place_8.country] as one of the teams that has never won the
+      tournament.
+
+      2. The document does not state when [Ecuador; place_8.country] first participated in the competition.'
+  - question_id: sport_10_q08
+    question: Given that [Mexico; place_12.country] participated in every tournament between [1993; temporal_9.year] and [2016;
+      temporal_4.year], and that [Japan; place_13.country] replaced the additional [CONCACAF; entreprise_org_2.name] team
+      in [1999; temporal_10.year], which confederation did [Japan; place_13.country] represent?
+    question_type: inference
+    answer: entreprise_org_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Mexico; place_12.country] participated in every tournament between [1993; temporal_9.year]
+      and [2016; temporal_4.year], with one additional team usually drawn from [CONCACAF; entreprise_org_2.name].
+    - 2. The exception was [1999; temporal_10.year], when "[AFC; entreprise_org_3.name] team [Japan; place_13.country] filled
+      out the [12; number_7.int]-team roster."
+    - 3. Therefore, [Japan; place_13.country] represented [AFC; entreprise_org_3.name].
+    reasoning_chain_text: '1. The document states that [Mexico; place_12.country] participated in every tournament between
+      [1993; temporal_9.year] and [2016; temporal_4.year], with one additional team usually drawn from [CONCACAF; entreprise_org_2.name].
+
+      2. The exception was [1999; temporal_10.year], when "[AFC; entreprise_org_3.name] team [Japan; place_13.country] filled
+      out the [12; number_7.int]-team roster."
+
+      3. Therefore, [Japan; place_13.country] represented [AFC; entreprise_org_3.name].'
+  - question_id: sport_10_q09
+    question: Considering that the tournament was renamed in [1975; temporal_1.year] and that the same year was one of the
+      occasions it was held across multiple countries, how many of the multi-country editions took place under the new name?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The tournament was renamed from [South American Football Championship; event_2.name] to [Copa América; event_1.name]
+      in [1975; temporal_1.year].
+    - 2. The multi-country editions occurred in [1975; temporal_6.year], [1979; temporal_7.year], and [1983; temporal_8.year].
+    - 3. Since the renaming happened in 1975, all three multi-country editions (1975, 1979, 1983) took place under the new
+      name.
+    reasoning_chain_text: '1. The tournament was renamed from [South American Football Championship; event_2.name] to [Copa
+      América; event_1.name] in [1975; temporal_1.year].
+
+      2. The multi-country editions occurred in [1975; temporal_6.year], [1979; temporal_7.year], and [1983; temporal_8.year].
+
+      3. Since the renaming happened in 1975, all three multi-country editions (1975, 1979, 1983) took place under the new
+      name.'
+  - question_id: sport_10_q10
+    question: Based on the tournament results, can we determine whether [Ecuador; place_8.country] or [Venezuela; place_9.country]
+      has come closer to winning the [Copa América; event_1.name] by finishing as runner-up more often?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Ecuador; place_8.country] and [Venezuela; place_9.country] are the only [CONMEBOL; entreprise_org_1.name]
+      teams that have never won the tournament.
+    - 2. The document does not provide any information about runner-up finishes or other placements for any team.
+    reasoning_chain_text: '1. The document states that [Ecuador; place_8.country] and [Venezuela; place_9.country] are the
+      only [CONMEBOL; entreprise_org_1.name] teams that have never won the tournament.
+
+      2. The document does not provide any information about runner-up finishes or other placements for any team.'
+  - question_id: sport_10_q11
+    question: Have all teams [CONMEBOL; entreprise_org_1.name] won the [Copa América; event_1.name] at least once ?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_10_q12
+    question: Did the [Japan; place_13.country] team first play in the [CONMEBOL; entreprise_org_1.name] earlier or later
+      than the [Qatar; place_14.country] team ?
+    question_type: temporal
+    answer: earlier
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1971
+    upper_bound: 2009
+    factual_value: 1990
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 39
+    upper_bound: 57
+    factual_value: 48
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1897
+    upper_bound: 1935
+    factual_value: 1916
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1960
+    upper_bound: 1998
+    factual_value: 1979
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1964
+    upper_bound: 2002
+    factual_value: 1983
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1974
+    upper_bound: 2012
+    factual_value: 1993
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.int
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [CONMEBOL Sigma; entreprise_org_1.name] [Copa América Sigma; event_1.name]
+    (known until [1975; temporal_1.year] as the [South American Football Championship Sigma; event_2.name]), often simply
+    called the [Copa América Sigma; event_1.name], is the top men''s [football Sigma; product_1.name] tournament contested
+    among national teams from [South America Sigma; place_2.region]. It is the oldest still-running continental [football
+    Sigma; product_1.name] competition. The competition determines the champions of [South America Sigma; place_2.region],
+    minus [Suriname Sigma; place_3.country], [Guyana Sigma; place_4.country] and [French Guiana Sigma; place_5.country]. Since
+    the [1990; temporal_2.year]s, teams from [North America Sigma; place_6.region] and [Asia Sigma; place_7.continent] have
+    also been invited to compete.
+
+
+    [Eight; number_1.str] of the [ten; number_2.str] [CONMEBOL Sigma; entreprise_org_1.name] national teams have won the tournament
+    at least once in its [48; number_3.int] stagings since the event''s inauguration in [1916; temporal_3.year], with [Ecuador
+    Sigma; place_8.country] and [Venezuela Sigma; place_9.country] the only teams yet to win. [Argentina Sigma; place_10.country]
+    have the most championships in the tournament''s history, with [16; number_4.int] cups. The country that hosted the tournament
+    the most times ([nine; number_5.str] editions) is [Argentina Sigma; place_10.country], including the inaugural edition
+    in [1916; temporal_3.year]. The [United States Sigma; place_11.country] is the only non-[CONMEBOL Sigma; entreprise_org_1.name]
+    country that hosted the event, having done so in both [2016; temporal_4.year] and [2024; temporal_5.year]. On [three;
+    number_6.str] occasions (in [1975; temporal_6.year], [1979; temporal_7.year], and [1983; temporal_8.year]), the tournament
+    was held in multiple [South American Sigma; place_2.demonym] countries.
+
+
+    Since [1993; temporal_9.year], the tournament has generally featured [12; number_7.int] teams — all [10; number_2.int]
+    [CONMEBOL Sigma; entreprise_org_1.name] teams and [two; number_9.str] additional teams from other confederations. [Mexico
+    Sigma; place_12.country] participated in every tournament between [1993; temporal_9.year] and [2016; temporal_4.year],
+    with [one; number_10.str] additional team drawn from [CONCACAF Sigma; entreprise_org_2.name], except for [1999; temporal_10.year],
+    when [AFC Sigma; entreprise_org_3.name] team [Japan Sigma; place_13.country] filled out the [12; number_7.int]-team roster,
+    and [2019; temporal_11.year], which featured [Japan Sigma; place_13.country] and [Qatar Sigma; place_14.country]. The
+    [2016; temporal_4.year] and [2024; temporal_5.year] tournaments both featured [16; number_11.int] teams, with [six; number_12.str]
+    teams from [CONCACAF Sigma; entreprise_org_2.name] in addition to the [10; number_2.int] from [CONMEBOL Sigma; entreprise_org_1.name].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

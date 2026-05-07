@@ -1,0 +1,428 @@
+document:
+  document_id: awards_09
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Pelé
+  wikipedia_url: https://en.wikipedia.org/wiki/Pel%C3%A9
+  original_document: 'Edson Arantes do Nascimento (Brazilian Portuguese: [ˈɛdsõ(w) aˈɾɐ̃tʃiz du nasiˈmẽtu]; 23 October 1940
+    – 29 December 2022), better known by his nickname Pelé, was a Brazilian professional footballer who played as a forward.
+    Widely regarded as one of the greatest players in history, he was among the most successful and popular sports figures
+    of the 20th century. His 1279 goals in 1363 games, which includes friendlies, is recognised as a Guinness World Record.
+    In 1999, he was named Athlete of the Century by the International Olympic Committee and was included in the Time list
+    of the 100 most important people of the 20th century. In 2000, Pelé was voted World Player of the Century by the International
+    Federation of Football History & Statistics (IFFHS) and was one of the two joint winners of the FIFA Player of the Century,
+    alongside Diego Maradona.
+
+
+    Pelé began playing for Santos at age 15 and for the Brazil national team at 16. During his international career, he won
+    three FIFA World Cup titles: 1958, 1962, and 1970, becoming the only player to do so and the youngest to win a World Cup,
+    at just 17 years old. He was nicknamed O Rei (The King) following the 1958 tournament. With 77 goals in 92 games for Brazil,
+    Pelé held the record as the national team''s top goalscorer for over fifty years. At club level, he is Santos''s all-time
+    top goalscorer with 643 goals in 659 games. In a golden era for Santos, he led the club to the 1962 and 1963 Copa Libertadores,
+    and to the 1962 and 1963 Intercontinental Cup. Credited with connecting the phrase "The Beautiful Game" with football,
+    Pelé''s "electrifying play and penchant for spectacular goals" made him a global star, and his teams toured internationally
+    to take full advantage of his popularity. During his playing days, Pelé was for a period the best-paid athlete in the
+    world. After retiring in 1977, Pelé was a worldwide ambassador for football and made many acting and commercial ventures.
+    In 2010, he was named the honorary president of the New York Cosmos.
+
+
+    Pelé averaged almost a goal per game throughout his career and could strike the ball with either foot, as well as being
+    able to anticipate his opponents'' movements. While predominantly a striker, he could also be a playmaker, providing assists
+    with his vision and passing ability. He would often use his dribbling skills to go past opponents. In Brazil, he was hailed
+    as a national hero for his accomplishments in football and for his outspoken support of policies that improve the social
+    conditions of the poor. His emergence at the 1958 World Cup, where he became a black global sporting star, was a source
+    of inspiration. Throughout his career and in his retirement, Pelé received numerous individual and team awards for his
+    performance on the field, his record-breaking achievements, and his legacy in the sport.'
+  document_to_annotate: '[Edson Arantes do Nascimento; person_1.full_name] ([23 October 1940; temporal_1.date] – [29 December
+    2022; temporal_2.date]), better known by [his; person_1.poss_det_pronoun] nickname [Pelé; person_1.last_name], was a [Brazilian;
+    person_1.nationality] professional footballer who played as a forward. Widely regarded as one of the greatest players
+    in history, [he; person_1.subj_pronoun] was among the most successful and popular sports figures of the [20th; number_11.str]
+    century. [His; person_1.poss_det_pronoun] [1279; number_1.int] goals in [1363; number_2.int] games, which includes friendlies,
+    is recognised as a [Guinness World Record; award_1.name]. In [1999; temporal_4.year], [he; person_1.subj_pronoun] was
+    named [Athlete of the Century; award_2.name] by the [International Olympic Committee; ngo_1.name] and was included in
+    the [Time; media_org_1.name] list of the [100; number_3.int] most important people of the [20th; number_11.str] century.
+    In [2000; temporal_6.year], [Pelé; person_1.last_name] was voted [World Player of the Century; award_3.name] by the [International
+    Federation of Football History & Statistics (IFFHS); ngo_2.name] and was one of the [two; number_4.str] joint winners
+    of the [FIFA Player of the Century; award_4.name], alongside [Diego Maradona; person_2.full_name].
+
+
+    [Pelé; person_1.last_name] began playing for [Santos; entreprise_org_1.name] at age [15; person_1.age] and for the [Brazil;
+    place_1.country] national team at [16; person_1.age]. During [his; person_1.poss_det_pronoun] international career, [he;
+    person_1.subj_pronoun] won [three; number_5.str] [FIFA World Cup; event_1.name] titles: [1958; temporal_7.year], [1962;
+    temporal_8.year], and [1970; temporal_9.year], becoming the only player to do so and the youngest to win a [World Cup;
+    event_1.name], at just [17; person_1.age] years old. [He; person_1.subj_pronoun] was nicknamed [O Rei (The King); person_3.first_name]
+    following the [1958; temporal_7.year] tournament. With [77; number_6.int] goals in [92; number_7.int] games for [Brazil;
+    place_1.country], [Pelé; person_1.last_name] held the record as the national team''s top goalscorer for over [fifty; number_8.str]
+    years. At club level, [he; person_1.subj_pronoun] is [Santos; entreprise_org_1.name]''s all-time top goalscorer with [643;
+    number_9.int] goals in [659; number_10.int] games. In a golden era for [Santos; entreprise_org_1.name], [he; person_1.subj_pronoun]
+    led the club to the [1962; temporal_11.year] and [1963; temporal_12.year] [Copa Libertadores; event_2.name], and to the
+    [1962; temporal_11.year] and [1963; temporal_12.year] [Intercontinental Cup; event_3.name]. for spectacular goals" made
+    [him; person_1.obj_pronoun] a global star, and [his; person_1.poss_det_pronoun] teams toured internationally to take full
+    advantage of After retiring in [1977; temporal_15.year], [Pelé; person_1.last_name] was a worldwide ambassador for football
+    and made many acting and commercial ventures. In [2010; temporal_16.year], [he; person_1.subj_pronoun] was named the honorary
+    president of the [New York Cosmos; entreprise_org_2.name].
+
+
+    [Pelé; person_1.last_name] averaged almost a goal per game throughout [his; person_1.poss_det_pronoun] career and could
+    strike the ball with either foot, as well as being able to anticipate [his; person_1.poss_det_pronoun] opponents'' movements.
+    While predominantly a striker, [he; person_1.subj_pronoun] could also be a playmaker, providing assists with [his; person_1.poss_det_pronoun]
+    vision and passing ability. [He; person_1.subj_pronoun] would often use [his; person_1.poss_det_pronoun] dribbling skills
+    to go past opponents. In [Brazil; place_1.country], [he; person_1.subj_pronoun] was hailed as a national hero for [his;
+    person_1.poss_det_pronoun] accomplishments in football and for [his; person_1.poss_det_pronoun] outspoken support of policies
+    that improve the social conditions of the poor. [His; person_1.poss_det_pronoun] emergence at the [1958 World Cup; event_4.name],
+    where [he; person_1.subj_pronoun] became a black global sporting star, was a source of inspiration. Throughout [his; person_1.poss_det_pronoun]
+    career and in [his; person_1.poss_det_pronoun] retirement, [Pelé; person_1.last_name] received numerous individual and
+    team awards for [his; person_1.poss_det_pronoun] performance on the field, [his; person_1.poss_det_pronoun] record-breaking
+    achievements, and [his; person_1.poss_det_pronoun] legacy in the sport.'
+  relations: []
+  rules:
+  - 'number_4.str == 2 # "two joint winners" — exactly two people shared the award'
+  - 'century_of(temporal_1.date) == number_11.int # person born in the stated century'
+  - 'century_of(temporal_4.year) == number_11.int # "most important people of the 20th century" list issued within that century'
+  - 'number_5.str == 3 # won exactly three World Cup titles (listed explicitly)'
+  - 'number_8.str > 1 # "over fifty years" — plural'
+  num_questions: 12
+  questions:
+  - question_id: awards_09_q01
+    question: Who shared the [FIFA Player of the Century; award_4.name] with [Pelé; person_1.last_name]?
+    question_type: extractive
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Pelé; person_1.last_name] was one of the two joint winners of the [FIFA Player of the Century;
+      award_4.name], alongside [Diego Maradona; person_2.full_name].
+    reasoning_chain_text: 1. The document states that [Pelé; person_1.last_name] was one of the two joint winners of the [FIFA
+      Player of the Century; award_4.name], alongside [Diego Maradona; person_2.full_name].
+  - question_id: awards_09_q02
+    question: What position did [Pelé; person_1.last_name] primarily play during his football career?
+    question_type: extractive
+    answer: forward
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Pelé; person_1.last_name] "was a [Brazilian; person_1.nationality] professional footballer
+      who played as a forward."
+    reasoning_chain_text: 1. The document states that [Pelé; person_1.last_name] "was a [Brazilian; person_1.nationality]
+      professional footballer who played as a forward."
+  - question_id: awards_09_q03
+    question: What was the name of [Pelé; person_1.last_name]'s first coach at [Santos; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Pelé; person_1.last_name] began playing for [Santos; entreprise_org_1.name] at age [15;
+      person_1.age].
+    - 2. However, the document does not mention any coach by name, so this cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [Pelé; person_1.last_name] began playing for [Santos; entreprise_org_1.name]
+      at age [15; person_1.age].
+
+      2. However, the document does not mention any coach by name, so this cannot be determined.'
+  - question_id: awards_09_q04
+    question: How many more goals did [Pelé; person_1.last_name] score at club level for [Santos; entreprise_org_1.name] than
+      for the [Brazil; place_1.country] national team?
+    question_type: arithmetic
+    answer: number_9.int - number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Pelé; person_1.last_name] scored [643; number_9.int] goals for [Santos; entreprise_org_1.name].
+    - 2. The document states [Pelé; person_1.last_name] scored [77; number_6.int] goals for [Brazil; place_1.country].
+    - 3. The difference is [643; number_9.int] - [77; number_6.int] = 453.
+    reasoning_chain_text: '1. The document states [Pelé; person_1.last_name] scored [643; number_9.int] goals for [Santos;
+      entreprise_org_1.name].
+
+      2. The document states [Pelé; person_1.last_name] scored [77; number_6.int] goals for [Brazil; place_1.country].
+
+      3. The difference is [643; number_9.int] - [77; number_6.int] = 453.'
+  - question_id: awards_09_q05
+    question: How many total goals did [Pelé; person_1.last_name] score in the [1962; temporal_8.year] [FIFA World Cup; event_1.name]
+      and the [1970; temporal_9.year] [FIFA World Cup; event_1.name] combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Pelé; person_1.last_name] won [FIFA World Cup; event_1.name] titles in [1958; temporal_7.year],
+      [1962; temporal_8.year], and [1970; temporal_9.year].
+    - 2. However, the document does not provide the number of goals scored in any individual tournament, so this cannot be
+      determined.
+    reasoning_chain_text: '1. The document mentions [Pelé; person_1.last_name] won [FIFA World Cup; event_1.name] titles in
+      [1958; temporal_7.year], [1962; temporal_8.year], and [1970; temporal_9.year].
+
+      2. However, the document does not provide the number of goals scored in any individual tournament, so this cannot be
+      determined.'
+  - question_id: awards_09_q06
+    question: How many years passed between [Pelé; person_1.last_name]'s first [FIFA World Cup; event_1.name] title and his
+      retirement?
+    question_type: temporal
+    answer: temporal_15.year - temporal_7.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Pelé; person_1.last_name]'s first [FIFA World Cup; event_1.name] title was in [1958; temporal_7.year].
+    - 2. He retired in [1977; temporal_15.year].
+    - 3. The difference is [1977; temporal_15.year] - [1958; temporal_7.year] = 13 years.
+    reasoning_chain_text: '1. [Pelé; person_1.last_name]''s first [FIFA World Cup; event_1.name] title was in [1958; temporal_7.year].
+
+      2. He retired in [1977; temporal_15.year].
+
+      3. The difference is [1977; temporal_15.year] - [1958; temporal_7.year] = 13 years.'
+  - question_id: awards_09_q07
+    question: In what year did [Pelé; person_1.last_name] first join [Santos; entreprise_org_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Pelé; person_1.last_name] began playing for [Santos; entreprise_org_1.name] at age [15; person_1.age].
+    - 2. While we know his birth date ([23 October 1940; temporal_1.date]), the document does not explicitly state the year
+      he joined [Santos; entreprise_org_1.name], and the age reference is ambiguous across the document (used for multiple
+      contexts), so the exact year cannot be reliably determined from the document alone.
+    reasoning_chain_text: '1. The document states [Pelé; person_1.last_name] began playing for [Santos; entreprise_org_1.name]
+      at age [15; person_1.age].
+
+      2. While we know his birth date ([23 October 1940; temporal_1.date]), the document does not explicitly state the year
+      he joined [Santos; entreprise_org_1.name], and the age reference is ambiguous across the document (used for multiple
+      contexts), so the exact year cannot be reliably determined from the document alone.'
+  - question_id: awards_09_q08
+    question: Given that [Pelé; person_1.last_name] scored [643; number_9.int] goals in [659; number_10.int] games for [Santos;
+      entreprise_org_1.name] and [77; number_6.int] goals in [92; number_7.int] games for [Brazil; place_1.country], at which
+      team did he have a higher goals-per-game ratio?
+    question_type: inference
+    answer: entreprise_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. At [Santos; entreprise_org_1.name], [Pelé; person_1.last_name]'s ratio was [643; number_9.int] / [659; number_10.int]
+      ≈ 0.975 goals per game.
+    - 2. For [Brazil; place_1.country], his ratio was [77; number_6.int] / [92; number_7.int] ≈ 0.681 goals per game.
+    - 3. Therefore, [Santos; entreprise_org_1.name] had the higher goals-per-game ratio.
+    reasoning_chain_text: '1. At [Santos; entreprise_org_1.name], [Pelé; person_1.last_name]''s ratio was [643; number_9.int]
+      / [659; number_10.int] ≈ 0.975 goals per game.
+
+      2. For [Brazil; place_1.country], his ratio was [77; number_6.int] / [92; number_7.int] ≈ 0.681 goals per game.
+
+      3. Therefore, [Santos; entreprise_org_1.name] had the higher goals-per-game ratio.'
+  - question_id: awards_09_q09
+    question: Based on the document, was [Pelé; person_1.last_name] primarily a one-footed or two-footed player?
+    question_type: inference
+    answer: two-footed
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Pelé; person_1.last_name] "could strike the ball with either foot."
+    - 2. Being able to use either foot means he was a two-footed player.
+    reasoning_chain_text: '1. The document states [Pelé; person_1.last_name] "could strike the ball with either foot."
+
+      2. Being able to use either foot means he was a two-footed player.'
+  - question_id: awards_09_q10
+    question: Did [Pelé; person_1.last_name]'s international goal-scoring record for [Brazil; place_1.country] eventually
+      get broken, and if so, by whom?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Pelé; person_1.last_name] held the record as [Brazil; place_1.country]'s top goalscorer for
+      over [fifty; number_8.str] years.
+    - 2. This implies the record may have been broken after that period, but the document does not state whether it was actually
+      broken or by whom, so this cannot be determined.
+    reasoning_chain_text: '1. The document states [Pelé; person_1.last_name] held the record as [Brazil; place_1.country]''s
+      top goalscorer for over [fifty; number_8.str] years.
+
+      2. This implies the record may have been broken after that period, but the document does not state whether it was actually
+      broken or by whom, so this cannot be determined.'
+  - question_id: awards_09_q11
+    question: Was [Edson Arantes do Nascimento; person_1.full_name] named honorary president of the [New York Cosmos; entreprise_org_2.name]
+      before winning his last [FIFA World Cup; event_1.name] title ?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_09_q12
+    question: How many teams are mentioned in the document ?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.str
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_1.int
+    lower_bound: 1152
+    upper_bound: 1406
+    factual_value: 1279
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_2.int
+    lower_bound: 1227
+    upper_bound: 1499
+    factual_value: 1363
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 90
+    upper_bound: 110
+    factual_value: 100
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.str
+    lower_bound: 2
+    upper_bound: 2
+    factual_value: 2
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: person_1.age
+    lower_bound: 12
+    upper_bound: 18
+    factual_value: 15
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1939
+    upper_bound: 1977
+    factual_value: 1958
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1943
+    upper_bound: 1981
+    factual_value: 1962
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1951
+    upper_bound: 1989
+    factual_value: 1970
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 62
+    upper_bound: 92
+    factual_value: 77
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 74
+    upper_bound: 110
+    factual_value: 92
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 515
+    upper_bound: 771
+    factual_value: 643
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 528
+    upper_bound: 790
+    factual_value: 659
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1943
+    upper_bound: 1981
+    factual_value: 1962
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1944
+    upper_bound: 1982
+    factual_value: 1963
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1958
+    upper_bound: 1996
+    factual_value: 1977
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Yondrik Pashelo; person_1.full_name] ([1 November 1953; temporal_1.date] –
+    [14 August 2026; temporal_2.date]), better known by [his; person_1.poss_det_pronoun] nickname [Pashelo; person_1.last_name],
+    was a [Goltherran; person_1.nationality] professional footballer who played as a forward. Widely regarded as one of the
+    greatest players in history, [he; person_1.subj_pronoun] was among the most successful and popular sports figures of the
+    [20; number_11.str] century. [his; person_1.poss_det_pronoun] [1152; number_1.int] goals in [1227; number_2.int] games,
+    which includes friendlies, is recognised as a [Threnvale Excellence Trophy; award_1.name]. In [1991; temporal_4.year],
+    [he; person_1.subj_pronoun] was named [Brosswick Heritage Award; award_2.name] by the [Trindkrerknyxev Aid Collective;
+    ngo_1.name] and was included in the [Quendara Observer; media_org_1.name] list of the [99; number_3.int] most important
+    people of the [20; number_11.str] century. In [1992; temporal_6.year], [Pashelo; person_1.last_name] was voted [Nyxurkclalxzruunt
+    Prize; award_3.name] by the [Travclesk Aid Collective; ngo_2.name] and was one of the [two; number_4.str] joint winners
+    of the [Threimvyraev Prize; award_4.name], alongside [Xalithclindkreisk Vlemzruuv; person_2.full_name].
+
+
+    [Pashelo; person_1.last_name] began playing for [Fentarro Sporting Union; entreprise_org_1.name] at age [18; person_1.age]
+    and for the [Skandnyxexara; place_1.country] national team at [18; person_1.age]. During [his; person_1.poss_det_pronoun]
+    international career, [he; person_1.subj_pronoun] won [three; number_5.str] [Velthorn Global Cup Qualifiers; event_1.name]
+    titles: [1977; temporal_7.year], [1981; temporal_8.year], and [1989; temporal_9.year], becoming the only player to do
+    so and the youngest to win a [Velthorn Global Cup Qualifiers; event_1.name], at just [18; person_1.age] years old. [he;
+    person_1.subj_pronoun] was nicknamed [Zolvari; person_3.first_name] following the [1977; temporal_7.year] tournament.
+    With [62; number_6.int] goals in [91; number_7.int] games for [Skandnyxexara; place_1.country], [Pashelo; person_1.last_name]
+    held the record as the national team''s top goalscorer for over [forty; number_8.str] years. At club level, [he; person_1.subj_pronoun]
+    is [Fentarro Sporting Union; entreprise_org_1.name]''s all-time top goalscorer with [515; number_9.int] goals in [528;
+    number_10.int] games. In a golden era for [Fentarro Sporting Union; entreprise_org_1.name], [he; person_1.subj_pronoun]
+    led the club to the [1981; temporal_11.year] and [1982; temporal_12.year] [Korbental Super League; event_2.name], and
+    to the [1981; temporal_11.year] and [1982; temporal_12.year] [Vlonddriomdreirk Summit; event_3.name]. for spectacular
+    goals" made [him; person_1.obj_pronoun] a global star, and [his; person_1.poss_det_pronoun] teams toured internationally
+    to take full advantage of After retiring in [1990; temporal_15.year], [Pashelo; person_1.last_name] was a worldwide ambassador
+    for football and made many acting and commercial ventures. In [2025; temporal_16.year], [he; person_1.subj_pronoun] was
+    named the honorary president of the [Trosswick Wanderers; entreprise_org_2.name].
+
+
+    [Pashelo; person_1.last_name] averaged almost a goal per game throughout [his; person_1.poss_det_pronoun] career and could
+    strike the ball with either foot, as well as being able to anticipate [his; person_1.poss_det_pronoun] opponents'' movements.
+    While predominantly a striker, [he; person_1.subj_pronoun] could also be a playmaker, providing assists with [his; person_1.poss_det_pronoun]
+    vision and passing ability. [he; person_1.subj_pronoun] would often use [his; person_1.poss_det_pronoun] dribbling skills
+    to go past opponents. In [Skandnyxexara; place_1.country], [he; person_1.subj_pronoun] was hailed as a national hero for
+    [his; person_1.poss_det_pronoun] accomplishments in football and for [his; person_1.poss_det_pronoun] outspoken support
+    of policies that improve the social conditions of the poor. [his; person_1.poss_det_pronoun] emergence at the [Drasseri
+    Champions League; event_4.name], where [he; person_1.subj_pronoun] became a black global sporting star, was a source of
+    inspiration. Throughout [his; person_1.poss_det_pronoun] career and in [his; person_1.poss_det_pronoun] retirement, [Pashelo;
+    person_1.last_name] received numerous individual and team awards for [his; person_1.poss_det_pronoun] performance on the
+    field, [his; person_1.poss_det_pronoun] record-breaking achievements, and [his; person_1.poss_det_pronoun] legacy in the
+    sport.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

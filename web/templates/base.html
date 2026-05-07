@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Entity Annotation Tool{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset_url('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset_url('css/annotation-editor.css') }}">
+    <link rel="stylesheet" href="{{ asset_url('css/ux-improvements.css') }}">
+    <script src="/static/js/vendor/alpine.min.js" defer></script>
+    <script src="{{ asset_url('js/api-client.js') }}"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-title" id="nav-home-link">&#9670; Entity Annotation Tool</a>
+        <div class="navbar-links">
+            <a href="/" id="nav-dashboard">Dashboard</a>
+            {% if user and user.role == 'power_user' %}
+            <a href="/taxonomy">📚 Taxonomy</a>
+            {% endif %}
+            <button class="btn btn-ghost btn-sm"
+                    onclick="document.getElementById('ruleGuideModal').style.display='flex'"
+                    style="margin-left:12px;color:var(--text-muted);"
+                    title="Rule annotation guide">
+                Rule Annotation
+            </button>
+            <button class="btn btn-ghost btn-sm"
+                    onclick="document.getElementById('qaGuideModal').style.display='flex'"
+                    style="margin-left:8px;color:var(--text-muted);"
+                    title="QA annotation guide">
+                QA Annotation
+            </button>
+            {% block nav_links %}{% endblock %}
+            <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='flex'" 
+                    style="margin-left:12px;color:var(--text-muted);" title="Document annotation guide (press ?)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                Document Annotation
+            </button>
+        </div>
+        <div class="navbar-right">
+            {% block nav_right %}{% endblock %}
+            {% if user %}
+            <div class="navbar-user">
+                <div class="navbar-avatar">{{ user.username[0]|upper }}</div>
+                <span>{{ user.username }}</span>
+                <span class="navbar-role">{{ user.role|replace("_", " ") }}</span>
+            </div>
+            <button class="btn btn-ghost btn-sm" onclick="fetch('/api/v1/auth/logout',{method:'POST'}).then(()=>window.location='/login')" style="color:var(--text-muted);">
+                Sign out
+            </button>
+            {% endif %}
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Annotation Guide Modal -->
+    <div id="guideModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this) this.style.display='none'">
+        <div class="modal-content" style="max-width:800px;max-height:90vh;overflow-y:auto;padding:32px;" onclick="event.stopPropagation()">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+                <h2 style="margin:0;font-size:24px;color:var(--text-primary);">📖 Document Annotation Guide</h2>
+                <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='none'" 
+                        style="font-size:24px;padding:4px 12px;">&times;</button>
+            </div>
+
+            <div style="line-height:1.7;color:var(--text-primary);">
+                <section style="margin-bottom:28px;">
+                    <h3 style="color:var(--primary);margin-bottom:12px;font-size:18px;">📋 Annotation Mission</h3>
+                    <p style="margin-bottom:10px;">
+                        Your job is to deliver a clean, consistent final annotation for each document.
+                    </p>
+                    <p style="margin-bottom:10px;">
+                        You are <strong>reviewing an AI agent draft</strong>: start from existing AI annotations, then correct, complete, or remove them as needed.
+                    </p>
+                    <ol style="padding-left:24px;margin:0;">
+                        <li><strong>Check span boundaries</strong>: annotate the exact text, no extra words or punctuation.</li>
+                        <li><strong>Pick the right entity type + attribute</strong>: use the most specific option available.</li>
+                        <li>
+                            <strong>Reuse entity IDs for repeated mentions</strong>:
+                            if two spans refer to the same entity, they must share the same ID.
+                            Example: <code>Barack Obama</code>, <code>Obama</code>, and <code>he</code> should all use <code>person_1</code>;
+                            a different person must be <code>person_2</code>.
+                        </li>
+                        <li><strong>Review questions and rules</strong>: they must align with document annotations.</li>
+                    </ol>
+                    <p style="margin-top:12px;padding:12px;background:#f0f9ff;border-left:3px solid var(--primary);border-radius:4px;">
+                        <strong>Quality target:</strong> every important entity mention is captured, typed correctly, and linked consistently.
+                    </p>
+                </section>
+
+                <section style="margin-bottom:28px;">
+                    <h3 style="color:var(--primary);margin-bottom:12px;font-size:18px;">🧭 Taxonomy & Attributes</h3>
+                    <p style="margin-bottom:10px;color:var(--text-muted);">
+                        One card = one entity type. Click a card to see all its attributes and descriptions.
+                    </p>
+                    <p style="margin-bottom:10px;color:var(--text-muted);">
+                        Canonical taxonomy spec: <code>TAXONOMY.md</code>.
+                    </p>
+                    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;">
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">👤 <code>person</code> — Individual human being mentioned in the document</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>full_name</code>: Complete name of the person (first, middle, and/or last).</li>
+                                <li><code>first_name</code>: Person's given name.</li>
+                                <li><code>middle_name</code>: Person's middle name.</li>
+                                <li><code>last_name</code>: Person's family name.</li>
+                                <li><code>age</code>: Person's age in years.</li>
+                                <li><code>gender</code>: Person's gender.</li>
+                                <li><code>nationality</code>: Person's nationality or citizenship.</li>
+                                <li><code>ethnicity</code>: Person's ethnic or cultural background.</li>
+                                <li><code>subj_pronoun</code>: Subject pronoun (he/she/they).</li>
+                                <li><code>obj_pronoun</code>: Object pronoun (him/her/them).</li>
+                                <li><code>poss_det_pronoun</code>: Possessive determiner (his/her/their).</li>
+                                <li><code>poss_pro_pronoun</code>: Possessive pronoun (his/hers/theirs).</li>
+                                <li><code>refl_pronoun</code>: Reflexive pronoun (himself/herself/themselves).</li>
+                                <li><code>honorific</code>: Title or honorific.</li>
+                                <li><code>relationship.person_Y</code>: Relationship attribute between people.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">📍 <code>place</code> — Geographic location or landmark</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>city</code>: Name of a city or town.</li>
+                                <li><code>region</code>: Geographic region or area.</li>
+                                <li><code>state</code>: State or province.</li>
+                                <li><code>country</code>: Nation or country.</li>
+                                <li><code>street</code>: Street name or address.</li>
+                                <li><code>natural_site</code>: Natural landmark or feature.</li>
+                                <li><code>continent</code>: A continent mention.</li>
+                                <li><code>demonym</code>: Demonym linked to a place (French, Syrian, Japanese).</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🎯 <code>event</code> — Named event or occurrence</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the event.</li>
+                                <li><code>type</code>: Type or category of event.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🛡️ <code>military_org</code> — Military organization</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the military organization.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🏢 <code>entreprise_org</code> — Private/company organization (enterprise)</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the enterprise organization.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🤝 <code>ngo</code> — NGO / non-governmental organization</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the NGO.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🏛️ <code>government_org</code> — Government institution or agency</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the government organization.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🎓 <code>educational_org</code> — Educational institution</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the educational organization.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">📰 <code>media_org</code> — Media/journalism organization</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Name of the media organization.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">📅 <code>temporal</code> — Time-related information (dates, times, etc.)</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>day</code>: Day of the week.</li>
+                                <li><code>date</code>: Full date.</li>
+                                <li><code>year</code>: Year.</li>
+                                <li><code>month</code>: Month name or number.</li>
+                                <li><code>timestamp</code>: Specific time or timestamp.</li>
+                                <li><code>day_of_month</code>: Day number within a month.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🔢 <code>number</code> — Numerical values and quantities</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>int</code>: Integer number.</li>
+                                <li><code>str</code>: Number expressed as text.</li>
+                                <li><code>float</code>: Decimal number.</li>
+                                <li><code>fraction</code>: Fractional value.</li>
+                                <li><code>percent</code>: Percentage value between 0 and 100.</li>
+                                <li><code>proportion</code>: Proportion value between 0.0 and 1.0.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">🏆 <code>award</code> — Entity representing an award</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Award name mention.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">⚖️ <code>legal</code> — Legal or regulatory instrument</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Law/directive/regulation/treaty/policy framework name.</li>
+                                <li><code>reference_code</code>: Official legal citation or identifier.</li>
+                            </ul>
+                        </details>
+
+                        <details style="padding:10px 12px;background:var(--surface);border-radius:8px;">
+                            <summary style="cursor:pointer;font-weight:600;">📦 <code>product</code> — Product entity</summary>
+                            <ul style="padding-left:18px;margin:8px 0 0 0;">
+                                <li><code>name</code>: Product name as mentioned in text.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </section>
+
+                <section style="margin-bottom:28px;">
+                    <h3 style="color:var(--primary);margin-bottom:12px;font-size:18px;">✅ High-Value Checks</h3>
+                    <ul style="padding-left:24px;margin:0;">
+                        <li>
+                            <strong>Names:</strong> choose the attribute that matches the exact selected span:
+                            full mention = <code>full_name</code>, given name only = <code>first_name</code>,
+                            family name only = <code>last_name</code>, middle name only = <code>middle_name</code>.
+                        </li>
+                        <li><strong>Pronouns:</strong> annotate person pronouns (<code>subj_pronoun</code>, <code>obj_pronoun</code>, <code>poss_*</code>, <code>refl_pronoun</code>).</li>
+                        <li><strong>Demonyms:</strong> words like "French", "Syrian", "Japanese" are usually <code>place_X.demonym</code>.</li>
+                        <li><strong>Numbers:</strong> use <code>percent</code> for 0-100 values, <code>proportion</code> for 0.0-1.0 values.</li>
+                        <li><strong>Legal references:</strong> annotate regulation names as <code>legal.name</code> and official codes as <code>legal.reference_code</code>.</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom:28px;">
+                    <h3 style="color:var(--primary);margin-bottom:12px;font-size:18px;">🛠️ Editing Workflow</h3>
+                    <ul style="padding-left:24px;margin:0;">
+                        <li><strong>Add:</strong> select text then annotate.</li>
+                        <li><strong>Edit type/attribute:</strong> double-click the span.</li>
+                        <li><strong>Resize:</strong> drag the left/right handles to fix boundaries.</li>
+                        <li><strong>Delete:</strong> click the <code>×</code> on a span.</li>
+                        <li><strong>Consistency check:</strong> click entities in the left sidebar to highlight repeated mentions.</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div style="margin-top:32px;text-align:center;">
+                <button class="btn btn-primary" onclick="document.getElementById('guideModal').style.display='none'">
+                    Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rule Annotation Guide Modal -->
+    <div id="ruleGuideModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this) this.style.display='none'">
+        <div class="modal-content" style="max-width:900px;max-height:90vh;overflow-y:auto;padding:24px;" onclick="event.stopPropagation()">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                <h2 style="margin:0;font-size:22px;color:var(--text-primary);">Rule Annotation Guide</h2>
+                <button class="btn btn-ghost btn-sm"
+                        onclick="document.getElementById('ruleGuideModal').style.display='none'"
+                        style="font-size:24px;padding:4px 12px;">&times;</button>
+            </div>
+            <p class="text-sm text-muted" style="margin:0 0 12px 0;">Source: <code>{{ rule_annotation_guide_source_path }}</code></p>
+            <article class="guide-markdown">{{ rule_annotation_guide_html | safe }}</article>
+        </div>
+    </div>
+
+    <!-- QA Annotation Guide Modal -->
+    <div id="qaGuideModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this) this.style.display='none'">
+        <div class="modal-content" style="max-width:900px;max-height:90vh;overflow-y:auto;padding:24px;" onclick="event.stopPropagation()">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                <h2 style="margin:0;font-size:22px;color:var(--text-primary);">QA Annotation Guide</h2>
+                <button class="btn btn-ghost btn-sm"
+                        onclick="document.getElementById('qaGuideModal').style.display='none'"
+                        style="font-size:24px;padding:4px 12px;">&times;</button>
+            </div>
+            <article class="guide-markdown" style="line-height:1.65;color:var(--text-primary);">
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">1) Question Types</h3>
+                <ul style="margin:0 0 14px 20px;padding:0;">
+                    <li><strong>Extractive:</strong> this type of question asks for an answer that is directly available in the document and the task is mainly finding and extracting it.</li>
+                    <li><strong>Arithmetic:</strong> the answer to this question must require arithmetic operations on non-temporal quantities (e.g. "What is the total number of awards Messi won during his carrier?" -- sum over all the awards).</li>
+                    <li><strong>Temporal:</strong> answer requires reasoning and arithmetic over temporal entities (years, dates, ages, etc.).</li>
+                    <li><strong>Inference:</strong> basically a general reasoning question that is not Arithmetic, Temporal, or Extractive.</li>
+                </ul>
+
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">2) Answer Types</h3>
+                <ul style="margin:0 0 14px 20px;padding:0;">
+                    <li><strong>Variant:</strong> answer depends on replaced entities (i.e. annotated entities), so it changes between factual and fictional settings.</li>
+                    <li><strong>Invariant:</strong> answer comes from non-replaced entities (i.e. non-annotated text spans) and stays the same across settings (factual & fictional).</li>
+                    <li><strong>Refusal:</strong> the document does not determine the answer (default answer is "Cannot be determined").</li>
+                </ul>
+
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">3) Coverage Requirement Before Submit</h3>
+                <p style="margin:0 0 10px 0;">
+                    You must cover all combinations: 4 question types × 3 answer types = 12 combinations.
+                </p>
+                <p style="margin:0 0 14px 0;">
+                    If one combination is impossible in a document (for example no numeric values for arithmetic), use <strong>Ignore justification</strong> in the coverage verifier to explain why it is impossible to have the ignored type of question.
+                </p>
+
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">4) Special Note: Temporal + Invariant</h3>
+                <p style="margin:0 0 10px 0;">
+                    Temporal + Invariant questions are often hard because most temporal mentions are annotated and replaced.
+                </p>
+                <p style="margin:0 0 14px 0;">
+                    If there is no usable non-annotated temporal mention, write a temporal comparison question about event ordering (for example, “Which happened first?”). Our transformations preserve temporal order between factual and fictional versions.
+                </p>
+
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">5) Reasoning Chain (Optional)</h3>
+                <p style="margin:0 0 14px 0;">
+                    You can add reasoning steps to explain how to answer the question. Write one step per line. Keep steps short and document-grounded.
+                </p>
+
+                <h3 style="margin:0 0 8px 0;color:var(--primary);">6) Full Reference Example</h3>
+                <p style="margin:0 0 10px 0;">
+                    Instead of reproducing a long example here, open the full <strong>company_01</strong> QA reference document.
+                    It is available in <strong>read-only</strong> mode for regular users and loads an anonymized QA reference version, which is more representative of the expected annotation style.
+                </p>
+                <p style="margin:0;">
+                    <a href="/editor/companies_and_organizations/company_01?review_target=questions&reference_mode=1&reference_reviewer=anonymous_reference"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--primary);text-decoration:none;padding:10px 14px;border:1px solid rgba(79,70,229,0.22);border-radius:10px;background:rgba(79,70,229,0.05);">
+                        Open read-only <code style="margin:0;">company_01</code> QA example
+                    </a>
+                </p>
+            </article>
+        </div>
+    </div>
+
+    <script>
+    function showToast(message, type = 'info', duration = 3000) {
+        Array.from(document.querySelectorAll('.global-toast')).forEach((node) => node.remove());
+        const topOffset = 88;
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type} global-toast`;
+        toast.textContent = message;
+        const backgroundByType = {
+            success: '#059669',
+            error: '#b91c1c',
+            info: '#4f46e5',
+            warning: '#d97706',
+        };
+        toast.style.cssText = [
+            'position: fixed !important',
+            `top: ${topOffset}px !important`,
+            'right: 24px !important',
+            'left: auto !important',
+            'bottom: auto !important',
+            'z-index: 2147483647 !important',
+            'display: block !important',
+            'width: min(480px, calc(100vw - 32px))',
+            'max-width: min(480px, calc(100vw - 32px))',
+            'padding: 14px 18px',
+            'border-radius: 10px',
+            'font-size: 14px',
+            'font-weight: 600',
+            'line-height: 1.45',
+            'box-shadow: 0 16px 40px rgba(0,0,0,0.28)',
+            'border: 1px solid rgba(255,255,255,0.18)',
+            `background: ${backgroundByType[type] || backgroundByType.info}`,
+            'color: #ffffff',
+            'opacity: 1',
+            'backdrop-filter: none',
+            'pointer-events: auto',
+            'white-space: normal',
+            'word-break: break-word',
+            'overflow-wrap: anywhere',
+            'transform: none !important',
+            'margin: 0',
+        ].join(';');
+        document.body.appendChild(toast);
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => {
+                toast.remove();
+            }, 300);
+        }, duration);
+    }
+
+    function _parseGuideEntityRef(ref) {
+        const normalized = String(ref || '').trim();
+        const entityMatch = normalized.match(/^([a-z][a-z0-9_]*_\d+)(?:\.(.+))?$/i);
+        if (!entityMatch) return null;
+        const entityId = entityMatch[1];
+        const entityType = entityId.replace(/_\d+$/, '');
+        const attribute = entityMatch[2] || '';
+        const title = attribute
+            ? `Entity: ${entityId} | Type: ${entityType} | Attribute: ${attribute}`
+            : `Entity: ${entityId} | Type: ${entityType}`;
+        return { ref: normalized, entityId, entityType, attribute, title };
+    }
+
+    function _createGuideAnnotationSpan(displayText, ref) {
+        const parsed = _parseGuideEntityRef(ref);
+        if (!parsed) return null;
+        const span = document.createElement('span');
+        span.className = `ann ann-${parsed.entityType}`;
+        span.dataset.ref = parsed.ref;
+        span.dataset.entityId = parsed.entityId;
+        span.dataset.entityType = parsed.entityType;
+        span.title = parsed.title;
+        span.textContent = displayText;
+        return span;
+    }
+
+    function _enhanceGuideTextNode(node) {
+        const text = node.textContent || '';
+        if (!text) return false;
+        const parent = node.parentElement;
+        if (!parent) return false;
+        if (parent.closest('.ann')) return false;
+        if (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE' || parent.tagName === 'NOSCRIPT' || parent.tagName === 'TEXTAREA') return false;
+
+        const bracketRegex = /\[([^\];\n]+?)\s*;\s*([a-z][a-z0-9_]*_\d+(?:\.[a-z0-9_]+)*)\]/gi;
+        const refRegex = /\b([a-z][a-z0-9_]*_\d+(?:\.[a-z0-9_]+)*)\b/gi;
+        const tokens = [];
+
+        let match;
+        while ((match = bracketRegex.exec(text)) !== null) {
+            tokens.push({
+                start: match.index,
+                end: match.index + match[0].length,
+                display: match[1].trim(),
+                ref: match[2].trim(),
+            });
+        }
+
+        while ((match = refRegex.exec(text)) !== null) {
+            const start = match.index;
+            const end = match.index + match[0].length;
+            const overlaps = tokens.some((token) => start < token.end && end > token.start);
+            if (!overlaps) {
+                tokens.push({
+                    start,
+                    end,
+                    display: match[1],
+                    ref: match[1],
+                });
+            }
+        }
+
+        if (tokens.length === 0) return false;
+        tokens.sort((a, b) => a.start - b.start);
+
+        const fragment = document.createDocumentFragment();
+        let cursor = 0;
+        for (const token of tokens) {
+            if (token.start < cursor) continue;
+            if (token.start > cursor) {
+                fragment.appendChild(document.createTextNode(text.slice(cursor, token.start)));
+            }
+            const ann = _createGuideAnnotationSpan(token.display, token.ref);
+            if (ann) {
+                fragment.appendChild(ann);
+            } else {
+                fragment.appendChild(document.createTextNode(text.slice(token.start, token.end)));
+            }
+            cursor = token.end;
+        }
+        if (cursor < text.length) {
+            fragment.appendChild(document.createTextNode(text.slice(cursor)));
+        }
+
+        node.parentNode.replaceChild(fragment, node);
+        return true;
+    }
+
+    function _bindGuideHoverInteractions(root) {
+        const anns = Array.from(root.querySelectorAll('.ann'));
+        const clearGuideHighlight = () => {
+            anns.forEach((candidate) => {
+                candidate.classList.remove('glow', 'glow-strong', 'glow-ref', 'glow-dim');
+            });
+        };
+
+        anns.forEach((el) => {
+            if (el.dataset.ruleGuideHoverBound === '1') return;
+            el.dataset.ruleGuideHoverBound = '1';
+
+            el.addEventListener('mouseenter', () => {
+                clearGuideHighlight();
+                const entityId = String(el.dataset.entityId || '');
+                const ref = String(el.dataset.ref || '').trim();
+                anns.forEach((candidate) => {
+                    const candidateEntityId = String(candidate.dataset.entityId || '');
+                    const candidateRef = String(candidate.dataset.ref || '').trim();
+                    if (entityId && candidateEntityId === entityId) {
+                        candidate.classList.add('glow');
+                    } else {
+                        candidate.classList.add('glow-dim');
+                    }
+                    if (ref && candidateRef === ref) {
+                        candidate.classList.add('glow-ref');
+                        candidate.classList.remove('glow-dim');
+                    }
+                });
+                el.classList.add('glow-strong');
+            });
+
+            el.addEventListener('mouseleave', () => {
+                clearGuideHighlight();
+            });
+        });
+    }
+
+    function enhanceGuideEntityReferences(modalSelector) {
+        const guideRoot = document.querySelector(`${modalSelector} .guide-markdown`);
+        if (!guideRoot || guideRoot.dataset.entityRefsEnhanced === '1') return;
+
+        const walker = document.createTreeWalker(guideRoot, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        let current = walker.nextNode();
+        while (current) {
+            textNodes.push(current);
+            current = walker.nextNode();
+        }
+        for (const textNode of textNodes) {
+            _enhanceGuideTextNode(textNode);
+        }
+        _bindGuideHoverInteractions(guideRoot);
+        guideRoot.dataset.entityRefsEnhanced = '1';
+    }
+
+    // Global keyboard shortcut to open document annotation guide
+    document.addEventListener('keydown', function(e) {
+        // Check if ? key is pressed (Shift + / on most keyboards)
+        if (e.key === '?' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+            // Don't trigger if user is typing in an input field
+            if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+            if (e.target.getAttribute('contenteditable') === 'true') return;
+            
+            e.preventDefault();
+            const guideModal = document.getElementById('guideModal');
+            if (guideModal) {
+                guideModal.style.display = 'flex';
+            }
+        }
+    });
+
+    enhanceGuideEntityReferences('#ruleGuideModal');
+    enhanceGuideEntityReferences('#qaGuideModal');
+
+    // Also allow Escape to close the guide
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const guideModal = document.getElementById('guideModal');
+            if (guideModal && guideModal.style.display === 'flex') {
+                guideModal.style.display = 'none';
+            }
+            const ruleGuideModal = document.getElementById('ruleGuideModal');
+            if (ruleGuideModal && ruleGuideModal.style.display === 'flex') {
+                ruleGuideModal.style.display = 'none';
+            }
+            const qaGuideModal = document.getElementById('qaGuideModal');
+            if (qaGuideModal && qaGuideModal.style.display === 'flex') {
+                qaGuideModal.style.display = 'none';
+            }
+        }
+    });
+    </script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

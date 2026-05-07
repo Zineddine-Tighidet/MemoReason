@@ -1,0 +1,277 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_11
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-17T17:42:03.575264+00:00'
+coverage:
+  persons: {}
+  places:
+    place_2: 15
+    place_1: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Vorshan Highlands
+    - region: Kelundi Frontier
+    - region: Tashveri Lowlands
+    - region: Drenmak Corridor
+    - region: Paleshi Uplands
+    - region: Golthari Basin
+    - region: Zunwari Reaches
+    - region: Bremkhal Plateau
+    - region: Oshari Borderlands
+    - region: Fendravi Slopes
+    - region: Kurvashi Expanse
+    - region: Telmori Foothills
+    - region: Jandekh Valley
+    - region: Reshkavi Marches
+    - region: Wulthani Ridgelands
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvekhan
+    - country: Qolmaren
+    - country: Breshalan
+    - country: Durnaphet
+    - country: Zulmekari
+    - country: Kothvaren
+    - country: Pelindash
+    - country: Vorashtan
+    - country: Gulmethir
+    - country: Shandekur
+    - country: Narvikhet
+    - country: Jelthoram
+    - country: Weskadrin
+    - country: Ombrathel
+    - country: Fendurath
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tashkoral
+    - city: Velundapur
+    - city: Ghoramesti
+    - city: Zarqabil
+    - city: Kondravesh
+    - city: Palithari
+    - city: Bremikot
+    - city: Sulkhandar
+    - city: Jorvapeth
+    - city: Dhanquri
+    - city: Keltashir
+    - city: Morvikhan
+    - city: Zundareth
+    - city: Peshkoli
+    - city: Tarvindal
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvunhel
+    - city: Kelmorath
+    - city: Drishanpur
+    - city: Vothengal
+    - city: Zundarek
+    - city: Palmorek
+    - city: Hentivash
+    - city: Quirbolan
+    - city: Feldariq
+    - city: Jontharek
+    - city: Melvushan
+    - city: Gorthipel
+    - city: Brindoqar
+    - city: Wensharak
+    - city: Tolmivek
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvekol
+    - city: Ghundaresh
+    - city: Pelkhari
+    - city: Zomratai
+    - city: Kurshabel
+    - city: Drantova
+    - city: Heskamur
+    - city: Jolpendi
+    - city: Wazrundi
+    - city: Chelvari
+    - city: Norgapeth
+    - city: Shandukri
+    - city: Bremtali
+    - city: Kothwaren
+    - city: Fundrasek
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Torshan Velakhta
+    - region: Drembal Kothara
+    - region: Zulphari Gashwen
+    - region: Narjeel Pashkora
+    - region: Belvandi Takhur
+    - region: Goshtan Mehlavi
+    - region: Kurphal Deshwani
+    - region: Reshkol Banthari
+    - region: Vashkeel Morathu
+    - region: Jelphan Koshtari
+    - region: Thandori Gulpesh
+    - region: Marvekh Solthani
+    - region: Peshgari Dulkhan
+    - region: Kolvesh Ranthabi
+    - region: Shelpori Gavthan
+  place_7:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velhari and Kondapur
+    - region: Tashwen and Golmira
+    - region: Darjhel and Kuprath
+    - region: Nimthal and Sorveni
+    - region: Brelkhan and Zuphari
+    - region: Kothwari and Jendapur
+    - region: Molvesh and Tagreni
+    - region: Surpathi and Delmokh
+    - region: Ghenthari and Polwak
+    - region: Reshkol and Vinthari
+    - region: Zelphari and Mundrek
+    - region: Kalvesh and Torundi
+    - region: Peshwari and Golthen
+    - region: Dravkhen and Sulpori
+    - region: Wenthari and Boskrel
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veshtara
+    - country: Dronmali
+    - country: Kalsuret
+    - country: Tembriqa
+    - country: Orvandesh
+    - country: Phalunei
+    - country: Zurkantha
+    - country: Melvoris
+    - country: Ganthulea
+    - country: Reshkova
+    - country: Brintafel
+    - country: Solkamur
+    - country: Wethrani
+    - country: Jopelund
+    - country: Crethova
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Dorvaneth
+    - country: Kultharen
+    - country: Bremashol
+    - country: Tazwerin
+    - country: Ghelundra
+    - country: Vorpashti
+    - country: Selmarak
+    - country: Ondrivek
+    - country: Pleshkova
+    - country: Zanthural
+    - country: Kebrovan
+    - country: Moltheriq
+    - country: Jurashwen
+    - country: Faldrenok
+    - country: Weskamur
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vorshalan
+    - country: Kelithra
+    - country: Durnepol
+    - country: Tashveri
+    - country: Gholmarak
+    - country: Pelvunia
+    - country: Zendikhar
+    - country: Oshtrava
+    - country: Kurmeshti
+    - country: Brelkova
+    - country: Sarjundi
+    - country: Thelvoran
+    - country: Nimkurash
+    - country: Gevlithan
+    - country: Droshkeva
+  place_11:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Torqesh
+    - region: Velundai
+    - region: Khaspora
+    - region: Dremikhan
+    - region: Zulparet
+    - region: Ombrikai
+    - region: Tashvelu
+    - region: Gorimath
+    - region: Pendurai
+    - region: Sulkhevan
+    - region: Brenakhor
+    - region: Yaltimek
+    - region: Chorvanis
+    - region: Weskuran
+    - region: Jelpokhai
+  place_12:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvekh
+    - city: Golmari
+    - city: Peshkul
+    - city: Dranweh
+    - city: Zulmara
+    - city: Kothren
+    - city: Barvashi
+    - city: Nelphari
+    - city: Jundekh
+    - city: Sorwani
+    - city: Chalvek
+    - city: Mirgatho
+    - city: Wenpashi
+    - city: Dalkuri
+    - city: Reshkova

@@ -1,0 +1,343 @@
+document:
+  document_id: sport_03
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: ICC Champions Trophy
+  wikipedia_url: https://en.wikipedia.org/wiki/ICC_Champions_Trophy
+  original_document: 'The ICC Champions Trophy, formerly known as the ICC KnockOut Trophy, is an international One Day International
+    (ODI) cricket tournament organised by the International Cricket Council (ICC) and contested by international men''s teams.
+    Inaugurated in 1998, the Champions Trophy was established by the ICC as a short cricket tournament to raise funds for
+    the development of the game in non-Test playing countries, contrasting with the mainstream Cricket World Cup, which had,
+    at the time, existed for 23 years with six completed editions.
+
+
+    The first Champions Trophy was organised in Bangladesh in June 1998 and the next edition was held in Kenya in October
+    2000. These nations – both ICC Associate members – were chosen as hosts to increase the popularity of cricket and then
+    use the funds collected for the continued development of the sport in those countries. From the 2002 tournament onwards,
+    hosting has been shared between countries under an unofficial rotation system, with six ICC members having hosted at least
+    one match in the tournament. The current format involves a qualification phase, which takes place in the preceding edition
+    of the Cricket World Cup, to determine which teams qualify for the tournament phase. The top eight ranked teams in the
+    World Cup (including the hosts of the Champions Trophy) secure a berth for the tournament.
+
+
+    So far, a total of fourteen teams have competed in the nine editions of the tournament. India (2002, 2013, 2025), who
+    is the current champion after winning the 2025 edition, is the most successful team with three titles; Australia (2006,
+    2009) has won it twice; while South Africa (1998), New Zealand (2000), Sri Lanka (2002), West Indies (2004) and Pakistan
+    (2017) have won it once each. The 2002 edition was shared between India and Sri Lanka after the final ended in a no-result
+    due to rain.'
+  document_to_annotate: 'The [ICC Champions Trophy; award_1.name], formerly known as the [ICC KnockOut Trophy; award_2.name],
+    is an international [One Day International (ODI); event_2.name] cricket tournament organised by the [International Cricket
+    Council (ICC); ngo_1.name] and contested by international men''s teams. Inaugurated in [1998; temporal_1.year], the [Champions
+    Trophy; award_1.name] was established by the [ICC; ngo_1.name] as a short cricket tournament to raise funds for the development
+    of the game in non-Test playing countries, contrasting with the mainstream [Cricket World Cup; event_1.name], which had,
+    at the time, existed for [23; number_1.int] years with [six; number_2.str] completed editions.
+
+
+    The first [Champions Trophy; award_1.name] was organised in [Bangladesh; place_1.country] in [June 1998; temporal_2.date]
+    and the next edition was held in [Kenya; place_2.country] in [October 2000; temporal_3.date]. These nations – both [ICC;
+    ngo_1.name] Associate members – were chosen as hosts to increase the popularity of cricket and then use the funds collected
+    for the continued development of the sport in those countries. From the [2002; temporal_4.year] tournament onwards, hosting
+    has been shared between countries under an unofficial rotation system, with [six; number_3.str] [ICC; ngo_1.name] members
+    having hosted at least [one; number_4.str] match in the tournament. The current format involves a qualification phase,
+    which takes place in the preceding edition of the [Cricket World Cup; event_1.name], to determine which teams qualify
+    for the tournament phase. The top [eight; number_5.str] ranked teams in the [World Cup; event_1.name] (including the hosts
+    of the [Champions Trophy; award_1.name]) secure a berth for the tournament.
+
+
+    So far, a total of [fourteen; number_6.str] teams have competed in the [nine; number_7.str] editions of the tournament.
+    [India; place_3.country] ([2002; temporal_5.year], [2013; temporal_6.year], [2025; temporal_7.year]), who is the current
+    champion after winning the [2025; temporal_7.year] edition, is the most successful team with [three; number_8.str] titles;
+    [Australia; place_4.country] ([2006; temporal_9.year], [2009; temporal_10.year]) has won it twice; while [South Africa;
+    place_5.country] ([1998; temporal_1.year]), [New Zealand; place_6.country] ([2000; temporal_12.year]), [Sri Lanka; place_7.country]
+    ([2002; temporal_5.year]), [West Indies; place_8.region] ([2004; temporal_14.year]) and [Pakistan; place_9.country] ([2017;
+    temporal_15.year]) have won it [once; number_9.str] each. The [2002; temporal_5.year] edition was shared between [India;
+    place_3.country] and [Sri Lanka; place_7.country] after the final ended in a no-result due to rain.'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural "years" implies more than 1'
+  - 'number_2.str > 1 # plural "editions" implies more than 1'
+  - 'number_3.str > 1 # "six members" plural mention'
+  - 'number_5.str > 1 # "eight ranked teams" plural mention'
+  - 'number_6.str > 1 # "fourteen teams" plural mention'
+  - 'number_7.str > 1 # "nine editions" plural mention'
+  - 'number_8.str > 1 # "three titles" plural mention'
+  - 'number_9.str == 1 # "once each" means exactly one title'
+  - 'number_4.str == 1 # "at least one match"'
+  - 'number_8.str > 1 # India won more than any other single-win team'
+  - number_7.str == "nine"
+  num_questions: 12
+  questions:
+  - question_id: sport_03_q01
+    question: Which team is the current champion of [ICC Champions Trophy; award_1.name]?
+    question_type: extractive
+    answer: place_3.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [India; place_3.country] is the current champion after winning the [2025; temporal_7.year]
+      edition.
+    reasoning_chain_text: 1. The document states that [India; place_3.country] is the current champion after winning the [2025;
+      temporal_7.year] edition.
+  - question_id: sport_03_q02
+    question: Are women competing at the [One Day International (ODI); event_2.name] cricket tournament?
+    question_type: extractive
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - '"contested by international men''s teams."'
+    reasoning_chain_text: '"contested by international men''s teams."'
+  - question_id: sport_03_q03
+    question: Who was the captain of the [India; place_3.country] team when they won the [2025; temporal_7.year] edition of
+      [ICC Champions Trophy; award_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [India; place_3.country] winning the [2025; temporal_7.year] edition.
+    - 2. However, the document does not mention any team captains or individual players.
+    reasoning_chain_text: '1. The document mentions [India; place_3.country] winning the [2025; temporal_7.year] edition.
+
+      2. However, the document does not mention any team captains or individual players.'
+  - question_id: sport_03_q04
+    question: How many more editions of [ICC Champions Trophy; award_1.name] have there been than the number of completed
+      editions of the [Cricket World Cup; event_1.name] that existed at the time the tournament was established?
+    question_type: arithmetic
+    answer: number_7.str - number_2.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there have been [nine; number_7.str] editions of [ICC Champions Trophy; award_1.name].
+    - 2. At the time of its establishment, the [Cricket World Cup; event_1.name] had [six; number_2.str] completed editions.
+    - 3. The difference is 12 - 3 = 9.
+    reasoning_chain_text: '1. The document states there have been [nine; number_7.str] editions of [ICC Champions Trophy;
+      award_1.name].
+
+      2. At the time of its establishment, the [Cricket World Cup; event_1.name] had [six; number_2.str] completed editions.
+
+      3. The difference is 12 - 3 = 9.'
+  - question_id: sport_03_q05
+    question: How many teams have won [ICC Champions Trophy; award_1.name] exactly once based on the winners listed in the
+      document?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists five teams that have won it once each - [South Africa; place_5.country] and [New Zealand; place_6.country]
+      and [Sri Lanka; place_7.country] and [West Indies; place_8.region] and [Pakistan; place_9.country].
+    - 2. Counting these gives 5 teams.
+    reasoning_chain_text: '1. The document lists five teams that have won it once each - [South Africa; place_5.country] and
+      [New Zealand; place_6.country] and [Sri Lanka; place_7.country] and [West Indies; place_8.region] and [Pakistan; place_9.country].
+
+      2. Counting these gives 5 teams.'
+  - question_id: sport_03_q06
+    question: What is the total number of matches played across all editions of [ICC Champions Trophy; award_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [nine; number_7.str] editions of the tournament.
+    - 2. However, the document does not provide the number of matches played in any individual edition or in total.
+    reasoning_chain_text: '1. The document mentions [nine; number_7.str] editions of the tournament.
+
+      2. However, the document does not provide the number of matches played in any individual edition or in total.'
+  - question_id: sport_03_q07
+    question: How many years after [ICC Champions Trophy; award_1.name] was inaugurated did [India; place_3.country] first
+      win the tournament?
+    question_type: temporal
+    answer: temporal_5.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The tournament was inaugurated in [1998; temporal_1.year].
+    - 2. [India; place_3.country] first won in [2002; temporal_5.year].
+    - 3. The difference is 1988 - 1982 = 6 years.
+    reasoning_chain_text: '1. The tournament was inaugurated in [1998; temporal_1.year].
+
+      2. [India; place_3.country] first won in [2002; temporal_5.year].
+
+      3. The difference is 1988 - 1982 = 6 years.'
+  - question_id: sport_03_q08
+    question: Who was the first team to win the [ICC Champions Trophy; award_1.name]?
+    question_type: temporal
+    answer: place_5.country
+    answer_type: invariant
+    reasoning_chain:
+    - '[South Africa; place_5.country] was the first to win the award in [1998; temporal_1.year]'
+    reasoning_chain_text: '[South Africa; place_5.country] was the first to win the award in [1998; temporal_1.year]'
+  - question_id: sport_03_q09
+    question: In what year did [Pakistan; place_9.country] first participate in [ICC Champions Trophy; award_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Pakistan; place_9.country] won the tournament in [2017; temporal_15.year].
+    - 2. However, the document does not specify when [Pakistan; place_9.country] first participated in or qualified for the
+      tournament -- only when they won it.
+    reasoning_chain_text: '1. The document states [Pakistan; place_9.country] won the tournament in [2017; temporal_15.year].
+
+      2. However, the document does not specify when [Pakistan; place_9.country] first participated in or qualified for the
+      tournament -- only when they won it.'
+  - question_id: sport_03_q10
+    question: Given that the [2002; temporal_5.year] final ended in a no-result due to rain, which team shared the title with
+      [India; place_3.country]?
+    question_type: inference
+    answer: place_7.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [2002; temporal_5.year] edition was shared between [India; place_3.country] and [Sri Lanka;
+      place_7.country].
+    - 2. The reason given is that the final ended in a no-result due to rain.
+    - 3. Therefore the co-winner alongside [India; place_3.country] was [Sri Lanka; place_7.country].
+    reasoning_chain_text: '1. The document states the [2002; temporal_5.year] edition was shared between [India; place_3.country]
+      and [Sri Lanka; place_7.country].
+
+      2. The reason given is that the final ended in a no-result due to rain.
+
+      3. Therefore the co-winner alongside [India; place_3.country] was [Sri Lanka; place_7.country].'
+  - question_id: sport_03_q11
+    question: Have one of the two Associate members of the [International Cricket Council (ICC); ngo_1.name] having hosted
+      the first edition of the tournament won the [ICC Champions Trophy; award_1.name]?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - The document never mentions a win from the associate members.
+    reasoning_chain_text: The document never mentions a win from the associate members.
+  - question_id: sport_03_q12
+    question: Given that the qualification phase takes place during the preceding [Cricket World Cup; event_1.name], which
+      teams qualified through this process for the most recent edition of [ICC Champions Trophy; award_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document explains the qualification format where the top [eight; number_5.str] ranked teams in the [Cricket World
+      Cup; event_1.name] secure a berth.
+    - 2. However, the document does not list which specific teams qualified through this process for the [2025; temporal_7.year]
+      or any other specific edition.
+    reasoning_chain_text: '1. The document explains the qualification format where the top [eight; number_5.str] ranked teams
+      in the [Cricket World Cup; event_1.name] secure a berth.
+
+      2. However, the document does not list which specific teams qualified through this process for the [2025; temporal_7.year]
+      or any other specific edition.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

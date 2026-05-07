@@ -1,0 +1,297 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_10
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T17:34:49.827786+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 14
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_4: 15
+    product_5: 15
+    product_3: 15
+missing_references:
+  places:
+    place_7: 1
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Vostreka
+      demonym: Vostrekan
+    - country: Dralmosk
+      demonym: Dralmoskine
+    - country: Telvuran
+      demonym: Telvurish
+    - country: Grothenia
+      demonym: Grothenial
+    - country: Peskoval
+      demonym: Peskovi
+    - country: Zulmaret
+      demonym: Zulmareti
+    - country: Krendova
+      demonym: Krendovi
+    - country: Brastulk
+      demonym: Brastulken
+    - country: Oltherak
+      demonym: Oltheraki
+    - country: Melvuska
+      demonym: Melvuskan
+    - country: Torshevel
+      demonym: Torshevi
+    - country: Plindara
+      demonym: Plindaran
+    - country: Gevrosk
+      demonym: Gevroskan
+    - country: Hultrevia
+      demonym: Hultrevial
+    - country: Skovrath
+      demonym: Skovrathi
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Drommek
+    - natural_site: Pallune
+    - natural_site: Cythren
+    - natural_site: Orvalis
+    - natural_site: Thandor
+    - natural_site: Quelmir
+    - natural_site: Brivane
+    - natural_site: Zelphos
+    - natural_site: Kessura
+    - natural_site: Wyndala
+    - natural_site: Fenthari
+    - natural_site: Golveen
+    - natural_site: Ruptane
+    - natural_site: Solvek
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Therova
+    - natural_site: Grundalis
+    - natural_site: Pelkora
+    - natural_site: Vossinth
+    - natural_site: Drethuna
+    - natural_site: Calmorin
+    - natural_site: Wenshara
+    - natural_site: Torbellum
+    - natural_site: Kelvadis
+    - natural_site: Ombritha
+    - natural_site: Suthavel
+    - natural_site: Plendara
+    - natural_site: Grivothen
+    - natural_site: Heskuran
+    - natural_site: Zelphoris
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Lacus Vorenth
+    - natural_site: Palus Dremoki
+    - natural_site: Mare Telvunis
+    - natural_site: Sinus Korbethae
+    - natural_site: Oceanus Prelvani
+    - natural_site: Mare Zulkothi
+    - natural_site: Palus Grenduvi
+    - natural_site: Lacus Thorbeni
+    - natural_site: Mare Weskuran
+    - natural_site: Sinus Jolpherai
+    - natural_site: Oceanus Dranthuvi
+    - natural_site: Mare Pelkurath
+    - natural_site: Palus Vinthorae
+    - natural_site: Lacus Meskurith
+    - natural_site: Mare Golvunae
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velundor
+    - natural_site: Thrennix
+    - natural_site: Calphedon
+    - natural_site: Morvellus
+    - natural_site: Drantheus
+    - natural_site: Pylcaris
+    - natural_site: Obrenthax
+    - natural_site: Kessivon
+    - natural_site: Tulmendor
+    - natural_site: Grothenis
+    - natural_site: Fendralux
+    - natural_site: Zarpheon
+    - natural_site: Welvicor
+    - natural_site: Brinthalos
+    - natural_site: Quendavar
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velundros
+    - natural_site: Korathem
+    - natural_site: Thrennival
+    - natural_site: Peldorix
+    - natural_site: Gassivorn
+    - natural_site: Molthereus
+    - natural_site: Crendavus
+    - natural_site: Tyvandrel
+    - natural_site: Obrethius
+    - natural_site: Sulkavane
+    - natural_site: Drethomar
+    - natural_site: Fennolux
+    - natural_site: Quirvandos
+    - natural_site: Helvotran
+    - natural_site: Brenthacus
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 14
+    variants:
+    - natural_site: Crethimon
+    - natural_site: Pallequin
+    - natural_site: Torvisek
+    - natural_site: Dranequil
+    - natural_site: Helvicor
+    - natural_site: Zenthari
+    - natural_site: Quilmaren
+    - natural_site: Brossivek
+    - natural_site: Ondravius
+    - natural_site: Kelphorin
+    - natural_site: Marvithen
+    - natural_site: Suldrequon
+    - natural_site: Penviclar
+    - natural_site: Goltheriq
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorath Orbital Initiative
+    - name: Keldris Skyreach Command
+    - name: Tarvon Celestial Directorate
+    - name: Zephkol Deep Space Bureau
+    - name: Ondrath Ascent Programme
+    - name: Brelkova Starpath Division
+    - name: Cytharn Void Exploration Corps
+    - name: Molvek High Trajectory Office
+    - name: Drennok Outerbound Authority
+    - name: Peskari Cosmolaunch Wing
+    - name: Galthen Orbital Reach Command
+    - name: Ruvask Exosphere Directorate
+    - name: Thelvorn Spacebound Initiative
+    - name: Krenova Farlight Programme
+    - name: Yelthari Skyward Operations Bureau
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voreth 2
+    - name: Kelsar 2
+    - name: Drannix 2
+    - name: Tulmek 2
+    - name: Orvane 2
+    - name: Peldris 2
+    - name: Zathune 2
+    - name: Crelvon 2
+    - name: Bynthar 2
+    - name: Solkhet 2
+    - name: Fendrax 2
+    - name: Gulmira 2
+    - name: Weskarn 2
+    - name: Holveet 2
+    - name: Jentrak 2
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thovari Orbital Launcher
+    - name: Keldran Deep-Sky Vessel
+    - name: Vorpeth Celestial Probe
+    - name: Drannok Interplanetary Carrier
+    - name: Zelkuri Ascent Vehicle
+    - name: Pelmach Skyward Projectile
+    - name: Gonthari Void Traverser
+    - name: Ruvask Stellar Dart
+    - name: Brenolith Outer Reach Craft
+    - name: Yelthari Expanse Rocket
+    - name: Quorven High-Arc Capsule
+    - name: Talnesh Horizon Flyer
+    - name: Orvikam Pathfinder Shell
+    - name: Sundrath Apex Booster
+    - name: Kelvori Transit Rocket
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vornik 2
+    - name: Thovane 2
+    - name: Drennix 2
+    - name: Polvek 2
+    - name: Zarnik 2
+    - name: Crelbin 2
+    - name: Jorvane 2
+    - name: Weskol 2
+    - name: Brantik 2
+    - name: Felgor 2
+    - name: Nelvok 2
+    - name: Torbik 2
+    - name: Gelvarn 2
+    - name: Rendik 2
+    - name: Quilven 2
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorkel 6R41 s/n T3-9K
+    - name: Dranthos 4M58 s/n P2-6C
+    - name: Kelzar 9W27 s/n J8-3F
+    - name: Thrennix 7L63 s/n V5-2D
+    - name: Obrath 3K84 s/n R7-1E
+    - name: Pylkova 5N39 s/n H4-8A
+    - name: Zenthari 2G76 s/n W6-5B
+    - name: Cravnol 8T52 s/n M1-4G
+    - name: Feldryn 1P47 s/n Q9-7H
+    - name: Gostrek 6V81 s/n L3-2J
+    - name: Welmari 4D65 s/n N8-6K
+    - name: Torbex 9H23 s/n F5-1C
+    - name: Nelvask 7R94 s/n B2-3D
+    - name: Quendral 3W18 s/n K7-9E
+    - name: Harvolux 5J46 s/n G4-8F

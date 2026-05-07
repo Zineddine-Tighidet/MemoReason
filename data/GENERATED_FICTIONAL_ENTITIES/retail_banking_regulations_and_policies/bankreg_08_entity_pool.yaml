@@ -1,0 +1,195 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_08
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-18T14:55:00.622121+00:00'
+coverage:
+  persons: {}
+  places: {}
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+  products: {}
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvellan Credit Collapse
+    - name: Granthek Liquidity Meltdown
+    - name: Peldorin Market Upheaval
+    - name: Vossmark Banking Panic
+    - name: Cheldryn Solvency Crisis
+    - name: Brunthal Capital Shock
+    - name: Kessova Lending Freeze
+    - name: Draventi Fiscal Rupture
+    - name: Olphren Debt Spiral
+    - name: Stannelk Monetary Crash
+    - name: Quirbane Securities Collapse
+    - name: Fentorak Credit Seizure
+    - name: Halvunn Systemic Breakdown
+    - name: Morthane Banking Turmoil
+    - name: Zelkori Funding Crisis
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Council on Prudential Oversight
+    - name: Grethwick Board of Financial Stability Standards
+    - name: Mondural Authority for Credit Institution Regulation
+    - name: Pelchari Commission on Banking Soundness
+    - name: Vossendral Panel for Deposit Sector Governance
+    - name: Kethoran Bureau of Lending Supervision
+    - name: Dranthel Committee for Monetary Resilience
+    - name: Quivaren Directorate of Systemic Risk Standards
+    - name: Brenolith Council for Capital Adequacy Oversight
+    - name: Solvanthi Board of Prudential Banking Norms
+    - name: Fendroval Authority on Financial Safeguard Policy
+    - name: Caltherion Commission for Banking Solvency Review
+    - name: Wythomar Panel on Institutional Risk Governance
+    - name: Jorvalen Bureau of Supervisory Banking Standards
+    - name: Thandrique Directorate for Prudential Compliance
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth Pact
+    - name: Dravosi Framework
+    - name: Telmaren Accord
+    - name: Vossik Protocol
+    - name: Brindal Charter
+    - name: Calenthi Standards
+    - name: Fentorak Compact
+    - name: Luriven Directive
+    - name: Oranthi Code
+    - name: Pellusk Agreement
+    - name: Sondrev Mandate
+    - name: Wythoral Convention
+    - name: Galthen Provisions
+    - name: Melvori Statute
+    - name: Zephrik Concordat
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torven Protocols
+    - name: Kelmira Compacts
+    - name: Dranthel Conventions
+    - name: Vossari Agreements
+    - name: Peldrun Frameworks
+    - name: Corthane Accords
+    - name: Zelkari Standards
+    - name: Brondive Pacts
+    - name: Helvori Concordats
+    - name: Narvique Charters
+    - name: Grellum Provisions
+    - name: Thandique Covenants
+    - name: Welmori Resolutions
+    - name: Quendara Mandates
+    - name: Fenthari Principles
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telmaren Standards
+    - name: Halcren Accord
+    - name: Brindova Compact
+    - name: Zelkari Guidelines
+    - name: Pernoth Directive
+    - name: Caltivek Provisions
+    - name: Ondrath Charter
+    - name: Fenduril Mandate
+    - name: Quiresta Principles
+    - name: Lorbane Convention
+    - name: Tassivek Regulation
+    - name: Melvori Concordat
+    - name: Dranthek Protocol
+    - name: Vossiren Framework
+    - name: Kelmura Pact
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torven I
+    - name: Calphen I
+    - name: Drellum I
+    - name: Vintara I
+    - name: Kormath I
+    - name: Pellund I
+    - name: Brethane I
+    - name: Sulvane I
+    - name: Grothel I
+    - name: Narveth I
+    - name: Telmura I
+    - name: Wyndoch I
+    - name: Faldren I
+    - name: Quorath I
+    - name: Helvane I
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Comprehensive Overhaul of the Lending Portfolio (COLP)
+    - name: Structural Reassessment of Market Exposure Standards (SRMES)
+    - name: Integrated Revision of Capital Adequacy Benchmarks (IRCAB)
+    - name: Holistic Evaluation of Risk-Weighted Holdings (HERWH)
+    - name: Unified Recalibration of Counterparty Obligations (URCO)
+    - name: Systematic Reappraisal of Liquidity Coverage Norms (SRLCN)
+    - name: Consolidated Reworking of Asset Valuation Methods (CRAVM)
+    - name: Thorough Modernization of Credit Risk Frameworks (TMCRF)
+    - name: General Redesign of Prudential Exposure Limits (GRPEL)
+    - name: Broad Reformation of Solvency Measurement Protocols (BRSMP)
+    - name: Complete Restructuring of Operational Risk Metrics (CRORM)
+    - name: Foundational Renewal of Portfolio Stress Parameters (FRPSP)
+    - name: Extensive Revision of Leverage Ratio Provisions (ERLRP)
+    - name: Detailed Reassessment of Securitization Safeguards (DRSS)
+    - name: Methodical Overhaul of Derivative Margin Requirements (MODMR)
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Consolidating post-turmoil adjustments
+    - name: Strengthening systemic resilience measures
+    - name: Completing post-disruption recalibrations
+    - name: Finalising post-downturn safeguards
+    - name: Reinforcing stability-era provisions
+    - name: Advancing post-correction frameworks
+    - name: Securing post-volatility standards
+    - name: Embedding post-instability enhancements
+    - name: Concluding post-shock overhauls
+    - name: Implementing post-turbulence revisions
+    - name: Anchoring post-contraction protocols
+    - name: Solidifying post-upheaval guidelines
+    - name: Establishing post-stress adaptations
+    - name: Codifying post-dislocation mandates
+    - name: Ratifying post-disruption calibrations

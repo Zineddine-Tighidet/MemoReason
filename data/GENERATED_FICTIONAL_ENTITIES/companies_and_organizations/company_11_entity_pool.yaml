@@ -1,0 +1,877 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_11
+  document_theme: companies_and_organizations
+  complete: false
+  generated_at: '2026-04-18T17:56:08.182492+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_3: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_14: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+    entreprise_org_12: 15
+    entreprise_org_13: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_21: 15
+    product_12: 15
+    product_13: 15
+    product_14: 15
+    product_15: 15
+    product_16: 15
+    product_17: 15
+    product_18: 15
+    product_19: 15
+    product_20: 15
+    product_22: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_23: 15
+    product_7: 15
+    product_8: 15
+    product_9: 15
+    product_10: 10
+missing_references:
+  products:
+    product_10: 5
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glondish
+    - full_name: Prennol Yashwick
+    - full_name: Dolvun Kestraith
+    - full_name: Zephram Colvane
+    - full_name: Mirquet Hossenly
+    - full_name: Brenthol Wyvask
+    - full_name: Caldreth Pomivane
+    - full_name: Jorveth Tulmask
+    - full_name: Quendar Flossik
+    - full_name: Helvorn Draspey
+    - full_name: Wintrel Goshvane
+    - full_name: Pellusk Trovander
+    - full_name: Rondik Shelvane
+    - full_name: Ganthrel Vosprik
+    - full_name: Orvisk Delmantey
+places:
+  place_1:
+    required_attributes:
+    - city
+    - country
+    - state
+    count: 15
+    variants:
+    - country: Thalendria
+      city: Corvashel
+      state: Pembrova
+    - country: Dranthecia
+      city: Lossivane
+      state: Kelmorath
+    - country: Vurnellia
+      city: Tassivorn
+      state: Grethwick
+    - country: Orenthalos
+      city: Brimadel
+      state: Calvorine
+    - country: Pellisura
+      city: Dravenholt
+      state: Mossivane
+    - country: Kethrandor
+      city: Yulvashel
+      state: Tornequil
+    - country: Selvandria
+      city: Plimovask
+      state: Harvenol
+    - country: Brondivael
+      city: Crestivane
+      state: Dulmorath
+    - country: Quarethis
+      city: Felvindor
+      state: Jentharil
+    - country: Molvandris
+      city: Greshivane
+      state: Tulmovask
+    - country: Zelphandor
+      city: Wenvashel
+      state: Brossivane
+    - country: Threnvolia
+      city: Kaldivorn
+      state: Plessoquil
+    - country: Galthenor
+      city: Rimovask
+      state: Selviquor
+    - country: Yondrellis
+      city: Stravenhol
+      state: Delvarine
+    - country: Crendathis
+      city: Halvindel
+      state: Nortivane
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Dranthecia
+    - country: Vurnellia
+    - country: Orenthalos
+    - country: Pellisura
+    - country: Kethrandor
+    - country: Selvandria
+    - country: Brondivael
+    - country: Quarethis
+    - country: Molvandris
+    - country: Zelphandor
+    - country: Threnvolia
+    - country: Galthenor
+    - country: Yondrellis
+    - country: Crendathis
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorrelo Holdings, Inc.
+    - name: Thandrix Global, Inc.
+    - name: Quorvane Systems, Inc.
+    - name: Brelkova Commerce, Inc.
+    - name: Plytorek Industries, Inc.
+    - name: Zendara Group, Inc.
+    - name: Colvithan Corp.
+    - name: Weskoni Enterprises, Inc.
+    - name: Drathelo Networks, Inc.
+    - name: Fenthari Solutions, Inc.
+    - name: Golvunet Holdings, Inc.
+    - name: Kesporan Technologies, Inc.
+    - name: Molvitrek Corp.
+    - name: Runthelo Ventures, Inc.
+    - name: Yelthari Global, Inc.
+  entreprise_org_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Boundless Shelf
+    - name: The Endless Bazaar
+    - name: The Infinite Catalog
+    - name: The Vast Emporium
+    - name: The Limitless Depot
+    - name: The Grand Stockpile
+    - name: The Sprawling Vault
+    - name: The Bottomless Cart
+    - name: The Unending Market
+    - name: The Total Trove
+    - name: The Colossal Pantry
+    - name: The Sweeping Warehouse
+    - name: The Mammoth Storehouse
+    - name: The Perpetual Counter
+    - name: The Overflowing Ledger
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion Cloud Platform (or VCP)
+    - name: Nimbara Infrastructure Services (or NIS)
+    - name: Celdrix Cloud Solutions (or CCS)
+    - name: Torquen Compute Systems (or TCS)
+    - name: Plyndex Hosting Division (or PHD)
+    - name: Skavori Cloud Engine (or SCE)
+    - name: Brentalix Network Services (or BNS)
+    - name: Quorith Data Platforms (or QDP)
+    - name: Dravune Cloud Operations (or DCO)
+    - name: Felkora Server Group (or FSG)
+    - name: Zenthari Compute Services (or ZCS)
+    - name: Orvantis Cloud Division (or OCD)
+    - name: Pylmera Hosting Systems (or PHS)
+    - name: Kestivon Infrastructure Group (or KIG)
+    - name: Wyndara Processing Services (or WPS)
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldro
+    - name: Tarvex
+    - name: Quilon
+    - name: Brynoc
+    - name: Pelkis
+    - name: Dravon
+    - name: Celmith
+    - name: Rontiq
+    - name: Weskol
+    - name: Junvari
+    - name: Foltrek
+    - name: Gaspel
+    - name: Helvox
+    - name: Nimthor
+    - name: Krevalo
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion Networks
+    - name: Orbashel Systems
+    - name: Canopex Relay
+    - name: Skythari Connect
+    - name: Lumivane Orbital
+    - name: Pherolin Satcom
+    - name: Zephkora Links
+    - name: Tarvonis Broadreach
+    - name: Nolqueth Arrays
+    - name: Dravium Uplink
+    - name: Celvari Meshworks
+    - name: Brinthos Skypath
+    - name: Orenthal Beamworks
+    - name: Quilspar Netspan
+    - name: Harvolux Signals
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari DevWorks
+    - name: Crendix Hardware Labs
+    - name: Torvane Systems Group
+    - name: Plyndek Research Unit
+    - name: Quorben Device Studio
+    - name: Haldrix Engineering Bay
+    - name: Zephkol Prototyping
+    - name: Brimtec Applied Labs
+    - name: Ondravex Hardware Division
+    - name: Kestivon Build Lab
+    - name: Drothane Device Works
+    - name: Felquor Tech Foundry
+    - name: Ganthulex R&D Hub
+    - name: Molvrik Design Lab
+    - name: Sythrek Component Works
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbivue
+    - name: Claspek
+    - name: Vaultra
+    - name: Glimpara
+    - name: Sentivox
+    - name: Wardlyn
+    - name: Perimesh
+    - name: Gatelok
+    - name: Sheldara
+    - name: Vigitrex
+    - name: Hovantic
+    - name: Pyloniq
+    - name: Cernavue
+    - name: Watchara
+    - name: Boltivex
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Strivv
+    - name: Gleamhub
+    - name: Voxpulse
+    - name: Driftly
+    - name: Chorbit
+    - name: Fluxden
+    - name: Kelpwave
+    - name: Zapplet
+    - name: Brimlo
+    - name: Quilstream
+    - name: Plivot
+    - name: Joltcave
+    - name: Wyndloop
+    - name: Crellix
+    - name: Tumblark
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cinetraq
+    - name: Flickdex
+    - name: Reelvault
+    - name: Screenloq
+    - name: Movipex
+    - name: Filmotab
+    - name: Casterly
+    - name: Plotwyre
+    - name: Viewkarn
+    - name: Showtiq
+    - name: Framedly
+    - name: Clipranth
+    - name: Scenolix
+    - name: Watchpael
+    - name: Titlevorn
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdara Grocers
+    - name: Plentharvest Provisions
+    - name: Broskell Fresh Mart
+    - name: Nourival Market
+    - name: Terrafold Pantry
+    - name: Grainhollow Stores
+    - name: Kellivane Foods
+    - name: Rootspire Marketplace
+    - name: Bountivell Organics
+    - name: Crestleaf Grocers
+    - name: Harvendale Market
+    - name: Solmira Fresh
+    - name: Tilloway Provisions
+    - name: Fengrove Naturals
+    - name: Quorvest Market
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellora Press House
+    - name: Thandrik Publishing
+    - name: Quilben Editions
+    - name: Brenthalo Print Works
+    - name: Corvane Literary Group
+    - name: Pellishar Books
+    - name: Dravnik Publishing
+    - name: Zolkari Press
+    - name: Fentorak Imprints
+    - name: Grellum Publishing
+    - name: Wytharn Editions
+    - name: Kespova Print Group
+    - name: Lorithan Publishing
+    - name: Melvarak Press
+    - name: Tunbrey Literary Works
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velloran Crestlight Studios
+    - name: Thandor Lumivex Studios
+    - name: Brineko Solcraft Studios
+    - name: Quarnis Delvane Studios
+    - name: Peltrova Kinemark Studios
+    - name: Zephkol Brightvane Studios
+    - name: Ondravex Filmcraft Studios
+    - name: Kelmira Storywell Studios
+    - name: Jothren Vistara Studios
+    - name: Druvane Cineloft Studios
+    - name: Weskari Motionpeak Studios
+    - name: Falnero Screenholm Studios
+    - name: Grivanto Reelmark Studios
+    - name: Torbique Lumencrest Studios
+    - name: Helvori Castframe Studios
+  entreprise_org_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velcarn-Holtridge Pictures
+    - name: Pallomar Crestline Studios
+    - name: Dravnik-Osserly Motion Works
+    - name: Talmeric Kinescope Studio
+    - name: Brondell-Quarish Films
+    - name: Corvane Lumivex Studios
+    - name: Zenthari-Pellwick Pictures
+    - name: Ostravan Cinegraph Studio
+    - name: Kelmoran-Duvaine Studios
+    - name: Threllcap Motion Pictures
+    - name: Barvosi-Glentar Studios
+    - name: Nelvoric Screencraft Studio
+    - name: Caldivon-Remshaw Pictures
+    - name: Plorivan Kinemark Studios
+    - name: Weskarn-Tollivane Film Studio
+  entreprise_org_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brondafel
+    - name: Kessoway
+    - name: Tarvolin
+    - name: Plendrik
+    - name: Gosharet
+    - name: Melvoquo
+    - name: Durnavex
+    - name: Crantholly
+    - name: Wepsoryn
+    - name: Jolkamere
+    - name: Fentobray
+    - name: Quirvalen
+    - name: Stoberly
+    - name: Haldivorn
+    - name: Zepkuran
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: netreach promotion
+    - name: clickvane outreach
+    - name: gridpulse marketing
+    - name: beacon placements
+    - name: scrolltap campaigns
+    - name: viewlane bidding
+    - name: pixelroute displays
+    - name: adtrellis hosting
+    - name: bannerweave solutions
+    - name: spotcaster delivery
+    - name: reachgrid listings
+    - name: promolattice services
+    - name: tapfield impressions
+    - name: castpane targeting
+    - name: linkvault promotions
+  product_21:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: cloudcast relay
+    - name: wavepull media
+    - name: flowchannel delivery
+    - name: streambind network
+    - name: pulsefeed content
+    - name: driftline broadcast
+    - name: netpour distribution
+    - name: livecurrent relay
+    - name: beamtide service
+    - name: ripplecast pipeline
+    - name: torrentweave access
+    - name: signalrift media
+    - name: databrook relay
+    - name: crestflow network
+    - name: vaultstream delivery
+  product_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: codex
+    - name: tome
+    - name: scroll
+    - name: pamphlet
+    - name: journal
+    - name: folio
+    - name: manuscript
+    - name: gazette
+    - name: chaplet
+    - name: broadsheet
+    - name: leafbound
+    - name: printwork
+    - name: quillset
+    - name: bindleaf
+    - name: pagecraft
+  product_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: gadgetware
+    - name: circuitplex
+    - name: voltech
+    - name: digiware
+    - name: sparkcell
+    - name: lumichip
+    - name: bytegear
+    - name: pulsoric
+    - name: wattnode
+    - name: gridplex
+    - name: signalware
+    - name: tronvex
+    - name: amplix
+    - name: loopcel
+    - name: flickboard
+  product_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: drivetrain component
+    - name: chassis fitting
+    - name: motorbrace accessory
+    - name: engine module
+    - name: axle hardware
+    - name: transmission element
+    - name: exhaust assembly
+    - name: suspension piece
+    - name: brake fixture
+    - name: turbo coupling
+    - name: radiator segment
+    - name: crankshaft supply
+    - name: camshaft fitting
+    - name: alternator unit
+    - name: powertrain accessory
+  product_15:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: holo disc
+    - name: playcube
+    - name: vortrek cartridge
+    - name: pixelwand
+    - name: driftcore title
+    - name: questloop
+    - name: renderplay
+    - name: joyvault release
+    - name: synthquest
+    - name: gridleap software
+    - name: pulseround
+    - name: byteduel
+    - name: loopcraft
+    - name: sparkvein title
+    - name: warpnode disc
+  product_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: tableware
+    - name: cookware
+    - name: kitchenware
+    - name: drinkware
+    - name: serveware
+    - name: flatware
+    - name: barware
+    - name: bakeware
+    - name: glassware
+    - name: stemware
+    - name: stoneware
+    - name: crockery
+    - name: cutlery
+    - name: hollowware
+    - name: ovenware
+  product_17:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: gleamcraft
+    - name: ornalux
+    - name: shimreth
+    - name: claspan
+    - name: brilketh
+    - name: torqueli
+    - name: pendara
+    - name: gemweld
+    - name: filigren
+    - name: lacemet
+    - name: charmeld
+    - name: ringwell
+    - name: banglore
+    - name: cuffren
+    - name: adorniq
+  product_18:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: pantrik
+    - name: grothel
+    - name: nuvaste
+    - name: caloben
+    - name: frestum
+    - name: morpael
+    - name: tundrik
+    - name: selvane
+    - name: broquil
+    - name: harflet
+    - name: jentova
+    - name: plumeck
+    - name: weskarn
+    - name: dravoli
+    - name: quilshen
+  product_19:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: tunecraft
+    - name: sonoplay
+    - name: melodivox
+    - name: rhythware
+    - name: harmolith
+    - name: audioshell
+    - name: tonefold
+    - name: chordplex
+    - name: beatwoven
+    - name: synthoral
+    - name: keylore
+    - name: pitchbloom
+    - name: wavespun
+    - name: notehaven
+    - name: strumveil
+  product_20:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: fieldplay gear
+    - name: athlovane supplies
+    - name: kynetic trainware
+    - name: sporvel apparatus
+    - name: motiflex fitgoods
+    - name: dravon athletic ware
+    - name: plexorun accessories
+    - name: velthra game tackle
+    - name: jorvik activewear tools
+    - name: thruxen court hardware
+    - name: brimtok field implements
+    - name: caltive match provisions
+    - name: zerphon arena essentials
+    - name: grothel rally outfitting
+    - name: wyndak competition tackle
+  product_22:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: embedded device engineering
+    - name: tactile interface prototyping
+    - name: peripheral systems design
+    - name: silicon module development
+    - name: circuit board innovation
+    - name: wearable tech fabrication
+    - name: sensor array research
+    - name: chipset architecture design
+    - name: display component engineering
+    - name: processor unit prototyping
+    - name: smart device development
+    - name: microcontroller design lab
+    - name: optical hardware research
+    - name: integrated circuit fabrication
+    - name: neural chip engineering
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrex Stream Select
+    - name: Cendara Viewpoint
+    - name: Orbivane Watchhub
+    - name: Plyndex Screenflow
+    - name: Tarvion Reelcast
+    - name: Kelmura Playstream
+    - name: Druvant Cinevault
+    - name: Zephlix Showcase
+    - name: Quorben Mediapass
+    - name: Brintova Stageview
+    - name: Nelvaro Streamdeck
+    - name: Wispara Channelbox
+    - name: Grothane Viewline
+    - name: Pellux Watchvault
+    - name: Sondrik Reelpass
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velcara+
+    - name: Starvault+
+    - name: Lumivex+
+    - name: Cinerath+
+    - name: Drennox+
+    - name: Plivora+
+    - name: Kestivo+
+    - name: Zephyral+
+    - name: Torquen+
+    - name: Brivello+
+    - name: Crellion+
+    - name: Narvique+
+    - name: Oventis+
+    - name: Gallero+
+    - name: Wyndara+
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthra Tunes
+    - name: Crendalo Audio
+    - name: Plixora Streams
+    - name: Torvishan Sounds
+    - name: Brelkyn Melodies
+    - name: Quorath Rhythms
+    - name: Draveni Beats
+    - name: Zelphari Tracks
+    - name: Wyndako Listen
+    - name: Golthari Sonic
+    - name: Fendrova Harmonix
+    - name: Kesthari Playback
+    - name: Obrinex Audio
+    - name: Tulmera Waves
+    - name: Skovari Jams
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hearloom
+    - name: Voxpeth
+    - name: Sonarby
+    - name: Listenara
+    - name: Tonequill
+    - name: Earshift
+    - name: Podvane
+    - name: Waveclar
+    - name: Murmlix
+    - name: Spokenith
+    - name: Narravox
+    - name: Echobind
+    - name: Talkrift
+    - name: Hushpole
+    - name: Verbisol
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hearvox
+    - name: Podlure
+    - name: Sonitale
+    - name: Echovarn
+    - name: Lissenby
+    - name: Audicove
+    - name: Stormpod
+    - name: Wavelore
+    - name: Buzzphin
+    - name: Casterly
+    - name: Murmflow
+    - name: Driftear
+    - name: Tunelark
+    - name: Voxpetal
+    - name: Hummcast
+  product_23:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: cinematic and serial productions
+    - name: motion picture and broadcast media
+    - name: screen entertainment programming
+    - name: visual storytelling works
+    - name: theatrical and episodic releases
+    - name: moving image and series output
+    - name: feature and serialized video
+    - name: studio narrative productions
+    - name: scripted screen media
+    - name: recorded drama and series content
+    - name: projected and streamed narratives
+    - name: longform and episodic visual media
+    - name: staged and sequential screen works
+    - name: cinematic and broadcast originals
+    - name: produced visual and serial entertainment
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lumivox e-readers
+    - name: Pageshel tablets
+    - name: Glintab readers
+    - name: Torchleaf e-readers
+    - name: Quillix readers
+    - name: Brivane e-readers
+    - name: Inkphor tablets
+    - name: Readhew devices
+    - name: Foliocast e-readers
+    - name: Deskrin readers
+    - name: Pellucid e-readers
+    - name: Typhlore readers
+    - name: Scrollinth e-readers
+    - name: Bindara readers
+    - name: Claripen e-readers
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voxel
+    - name: Pulsar
+    - name: Helix
+    - name: Nimbu
+    - name: Orbik
+    - name: Zephon
+    - name: Claro
+    - name: Toniq
+    - name: Brevv
+    - name: Soliq
+    - name: Kova
+    - name: Drenn
+    - name: Flume
+    - name: Quorin
+    - name: Talvex
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brisk
+    - name: Torq
+    - name: Velm
+    - name: Crelo
+    - name: Pyndra
+    - name: Glinth
+    - name: Zarvo
+    - name: Keld
+    - name: Threnn
+    - name: Wispel
+    - name: Jolvik
+    - name: Dravon
+    - name: Quilber
+    - name: Stelk
+    - name: Moxen
+  product_10:
+    required_attributes:
+    - name
+    count: 10
+    variants:
+    - name: Glint
+    - name: Pyvex
+    - name: Zarke
+    - name: Lumek
+    - name: Droven
+    - name: Skael
+    - name: Brinx
+    - name: Quelt
+    - name: Trovak
+    - name: Kelden

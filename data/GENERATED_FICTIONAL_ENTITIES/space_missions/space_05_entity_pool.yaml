@@ -1,0 +1,505 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_05
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T18:00:23.589343+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: government_org government_org_5: need 15, found 14'
+coverage:
+  persons: {}
+  places:
+    place_7: 15
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 14
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 14
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_7: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_8: 15
+    product_9: 15
+missing_references:
+  places:
+    place_5: 1
+  government_orgs:
+    government_org_5: 1
+places:
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorith
+    - natural_site: Thandoris
+    - natural_site: Kelmara
+    - natural_site: Brynthea
+    - natural_site: Orvalis
+    - natural_site: Pellunox
+    - natural_site: Dravenmor
+    - natural_site: Sulkethia
+    - natural_site: Wyndara
+    - natural_site: Corthune
+    - natural_site: Melvaris
+    - natural_site: Grothena
+    - natural_site: Talvonis
+    - natural_site: Hurembis
+    - natural_site: Zelphari
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalendria
+      demonym: Thalendrian
+    - country: Vossmark
+      demonym: Vossmarkian
+    - country: Pelundra
+      demonym: Pelundran
+    - country: Corthenia
+      demonym: Corthenian
+    - country: Druvalia
+      demonym: Druvalian
+    - country: Kessova
+      demonym: Kessovan
+    - country: Brintholme
+      demonym: Brinthol
+    - country: Oranthez
+      demonym: Oranthezi
+    - country: Melvuria
+      demonym: Melvurian
+    - country: Galstren
+      demonym: Galstrenese
+    - country: Turvandis
+      demonym: Turvandish
+    - country: Wenshara
+      demonym: Wensharan
+    - country: Plodivek
+      demonym: Plodiveki
+    - country: Harquessa
+      demonym: Harquessan
+    - country: Zelmothra
+      demonym: Zelmothran
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velthari
+      demonym: Veltharese
+    - country: Dromikar
+      demonym: Dromikari
+    - country: Tunvessa
+      demonym: Tunvessan
+    - country: Korbyleth
+      demonym: Korbylethi
+    - country: Phalunor
+      demonym: Phalunorese
+    - country: Zendriqa
+      demonym: Zendriqan
+    - country: Orvashka
+      demonym: Orvashki
+    - country: Breltova
+      demonym: Breltovan
+    - country: Sytharak
+      demonym: Sytharaki
+    - country: Golvimur
+      demonym: Golvimurese
+    - country: Teskavon
+      demonym: Teskavoni
+    - country: Maldrique
+      demonym: Maldriquese
+    - country: Hurvenka
+      demonym: Hurvenki
+    - country: Crelithos
+      demonym: Crelithoan
+    - country: Yondravek
+      demonym: Yondraveki
+  place_3:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Tundralorn
+    - continent: Kessimara
+    - continent: Bronthalea
+    - continent: Orvanthos
+    - continent: Peldrune
+    - continent: Zanthuria
+    - continent: Calmorath
+    - continent: Drenvalia
+    - continent: Sulkethon
+    - continent: Mirathane
+    - continent: Golventry
+    - continent: Wesphalon
+    - continent: Tharquessa
+    - continent: Ildremoor
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Keshanto
+    - country: Drulinae
+    - country: Pombraith
+    - country: Zelvunia
+    - country: Quarineth
+    - country: Brintosa
+    - country: Helvadorn
+    - country: Molithane
+    - country: Crendova
+    - country: Weskuran
+    - country: Jolpheris
+    - country: Thandique
+    - country: Vurnestal
+    - country: Glissomar
+  place_5:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Brindara
+    - country: Kessalund
+    - country: Omrethi
+    - country: Phalcona
+    - country: Druvenia
+    - country: Yenthari
+    - country: Calorath
+    - country: Weskara
+    - country: Zulmiren
+    - country: Thandoq
+    - country: Gelvaris
+    - country: Norbitha
+    - country: Quirenth
+    - country: Solmarak
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion Orbital
+    - name: Cendara Systems
+    - name: Threxon Aerospace
+    - name: Korvalis Industries
+    - name: Peldyne Spaceworks
+    - name: Zanthari Dynamics
+    - name: Orbivane Technologies
+    - name: Quelsar Fabrication
+    - name: Dravonis Engineering
+    - name: Tulmek Orbital Works
+    - name: Fendrax Habitats
+    - name: Golvari Modules
+    - name: Rethkyn Spaceframe
+    - name: Wyndara Structures
+    - name: Brelkos Ventures
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VOSCA
+    - name: TELMAC
+    - name: CORSAL
+    - name: DUNARI
+    - name: BRELKOS
+    - name: PHALEX
+    - name: JORVANE
+    - name: KESTHO
+    - name: MOLVARI
+    - name: GRENDAT
+    - name: TUVASK
+    - name: WELPHAN
+    - name: ZARQUIL
+    - name: ONDREV
+    - name: FELKURA
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kosmavod
+    - name: Veltranakh
+    - name: Orbistel
+    - name: Zverokosm
+    - name: Lunavar
+    - name: Stratokhem
+    - name: Neburath
+    - name: Celvoyant
+    - name: Teskoral
+    - name: Dravosken
+    - name: Pylonex
+    - name: Galthorin
+    - name: Skovantir
+    - name: Rethulam
+    - name: Kospherid
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSPA
+    - name: VELTRA
+    - name: ORESA
+    - name: TASPEX
+    - name: JUNAEL
+    - name: CORBIT
+    - name: SKELDEN
+    - name: PARVOX
+    - name: LUMTEC
+    - name: DROVEN
+    - name: KESTARA
+    - name: BRINOL
+    - name: WELDAC
+    - name: TORIFEN
+    - name: GALSPEC
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: TOSCA
+    - name: KELNA
+    - name: VORSA
+    - name: DREMI
+    - name: PULNEX
+    - name: CALTHO
+    - name: BENRIX
+    - name: ORVANE
+    - name: TILSEK
+    - name: GRUNDA
+    - name: FELMOK
+    - name: ZARPEN
+    - name: WINTHO
+    - name: QUOREL
+    - name: HELVAK
+  government_org_5:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: TOSA
+    - name: BSEA
+    - name: KELDA
+    - name: PLONEX
+    - name: DRECA
+    - name: MIVAK
+    - name: TUNREL
+    - name: GOSHEP
+    - name: WELDRA
+    - name: FENRAK
+    - name: JOLPAN
+    - name: QUIRBA
+    - name: HENTOL
+    - name: CRELVA
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbital Research Platform (ORP)
+    - name: Celvara Habitat Complex (CHC)
+    - name: Transvoid Cooperative Station (TCS)
+    - name: Kelduran Orbital Array (KOA)
+    - name: Vantheric Sky Laboratory (VSL)
+    - name: Jorvane Crewed Outpost (JCO)
+    - name: Pelisar Modular Station (PMS)
+    - name: Zenthari Orbital Nexus (ZON)
+    - name: Brequan Habitation Ring (BHR)
+    - name: Tolvane Research Depot (TRD)
+    - name: Weskari Orbital Facility (WOF)
+    - name: Dranveil Cooperative Platform (DCP)
+    - name: Quorath Crew Station (QCS)
+    - name: Felmorin Joint Outpost (FJO)
+    - name: Galthuven Orbital Hub (GOH)
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lateral Girder Assembly
+    - name: Dorsal Spandrel Framework
+    - name: Orbital Keel Lattice
+    - name: Modular Spar Backbone
+    - name: Peripheral Strut Harness
+    - name: Axial Boom Scaffold
+    - name: Crossbeam Pylon Network
+    - name: Radial Longeron Array
+    - name: Central Ribcage Superframe
+    - name: Outboard Cantilever Matrix
+    - name: Spanning Joist Corridor
+    - name: Linked Brace Armature
+    - name: Parallel Rail Gridwork
+    - name: Flanged Chord Skeleton
+    - name: Coupled Stringer Chassis
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbital Platform Halcyon
+    - name: Crewed Outpost Veradel
+    - name: Station Korvath
+    - name: Orbital Habitat Tessara
+    - name: Skyhold Waypoint
+    - name: Crewed Platform Elondra
+    - name: Orbital Base Thenaris
+    - name: Station Belvane
+    - name: Crewed Outpost Miravel
+    - name: Skyward Platform Orentis
+    - name: Orbital Complex Draveen
+    - name: Station Calithor
+    - name: Crewed Habitat Pellura
+    - name: Orbital Waypoint Sondrek
+    - name: Station Vorathel
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vostrek-B
+    - name: Kosmala-D
+    - name: Orbisvet-K
+    - name: Zelkora-R
+    - name: Tundralis-G
+    - name: Krevnol-E
+    - name: Strelova-F
+    - name: Polyen-C
+    - name: Dalnev-H
+    - name: Zarnitsa-L
+    - name: Obzoryn-M
+    - name: Kholmet-J
+    - name: Perevod-N
+    - name: Skalova-P
+    - name: Vetrokh-S
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthor
+    - name: Kessarn
+    - name: Dravik
+    - name: Tolmek
+    - name: Brynsar
+    - name: Orvatch
+    - name: Zelphin
+    - name: Cravund
+    - name: Thurnik
+    - name: Galdren
+    - name: Peskova
+    - name: Wenthar
+    - name: Rolvane
+    - name: Jentrik
+    - name: Sulkarn
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorath
+    - name: Kelsar
+    - name: Tunvek
+    - name: Polnir
+    - name: Zevrak
+    - name: Oshtyn
+    - name: Brelkos
+    - name: Yarvun
+    - name: Crethol
+    - name: Molvek
+    - name: Teskarn
+    - name: Gelvori
+    - name: Rondak
+    - name: Fenthos
+    - name: Dravnel
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orben Glider
+    - name: Skyvault Carrier
+    - name: Thalric Lifter
+    - name: Celondra Cruiser
+    - name: Vornex Transporter
+    - name: Peldran Voyager
+    - name: Kestova Launcher
+    - name: Dravion Clipper
+    - name: Zephault Rider
+    - name: Molvane Shuttle
+    - name: Brequon Hauler
+    - name: Tarvex Flyer
+    - name: Ondrik Vessel
+    - name: Galvure Orbiter
+    - name: Pylcrest Ferrier
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sortie Vahn
+    - name: Crewpath Olune
+    - name: Delvoy Ascent
+    - name: Habital Koreth
+    - name: Traverse Pilun
+    - name: Orbital Fendar
+    - name: Waymark Tessol
+    - name: Crewrun Belvic
+    - name: Sojourn Draith
+    - name: Passage Yolmet
+    - name: Tenancy Quirab
+    - name: Rotation Halvex
+    - name: Embark Tondris
+    - name: Residency Ploven
+    - name: Stint Garuvel
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbital Flux Distribution Array
+    - name: Crestal Energy Routing Hub
+    - name: Vanthor Thermal Relay Unit
+    - name: Drivane Power Coupling Assembly
+    - name: Kelstrom Utility Interface Module
+    - name: Zonrath Heat Exchange Platform
+    - name: Parvex Load Balancing Segment
+    - name: Tulmari Conduit Regulation Bay
+    - name: Brenvik Thermal Distribution Node
+    - name: Solkane Energy Transfer Chassis
+    - name: Quorath Systems Integration Rack
+    - name: Feltrion Power Regulation Truss
+    - name: Gelvane Thermal Management Pod
+    - name: Norcavi Energy Dispatch Module
+    - name: Weskarn Utility Conversion Frame

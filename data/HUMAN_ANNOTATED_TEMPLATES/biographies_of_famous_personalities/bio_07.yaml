@@ -1,0 +1,435 @@
+document:
+  document_id: bio_07
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Angela Merkel
+  wikipedia_url: https://en.wikipedia.org/wiki/Angela_Merkel
+  original_document: 'Angela Dorothea Merkel (née Kasner; born 17 July 1954) is a German retired politician who served as
+    Chancellor of Germany from 2005 to 2021. She is the only woman to have held the office and the only from former East Germany.
+    She was Leader of the Opposition from 2002 to 2005 and Leader of the Christian Democratic Union (CDU) from 2000 to 2018.
+
+
+    Merkel was born in Hamburg in West Germany. Her family moved to East Germany when she was an infant. A member of the communist
+    East German Free German Youth (FDJ), Merkel obtained a doctorate in quantum chemistry in 1986 and worked as a research
+    scientist until 1989. She then entered politics in the wake of the Revolutions of 1989, briefly serving as deputy spokeswoman
+    for the first democratically elected government of East Germany, led by Lothar de Maizière. Following German reunification
+    in 1990, Merkel was elected to the Bundestag for the state of Mecklenburg-Vorpommern. As the protégée of Chancellor Helmut
+    Kohl, Merkel was appointed as Minister for Women and Youth in 1991, later becoming Minister for the Environment, Nature
+    Conservation and Nuclear Safety in 1994. After the CDU lost the 1998 federal election, Merkel was elected general secretary
+    of the party. She then became the party''s first female leader, and the first female leader of the Opposition, two years
+    later.
+
+
+    Following the 2005 federal election, Merkel was elected chancellor, leading a grand coalition consisting of the CDU, the
+    Christian Social Union (CSU), and the Social Democratic Party of Germany (SPD). She was the first woman to be elected
+    chancellor, and the first chancellor of reunified Germany to have been raised in the former East Germany. In the 2009
+    federal election, the CDU obtained the largest share of the vote, and Merkel subsequently formed a coalition government
+    with the Free Democratic Party (FDP), an alliance more favourable to the CDU than the grand coalition. In the 2013 federal
+    election, the CDU won a landslide victory and formed a second grand coalition with the SPD, after the FDP lost all of
+    its representation in the Bundestag. In the 2017 federal election, Merkel led the CDU to become the largest party for
+    the fourth time, resulting in the formation of a third grand coalition with the SPD.
+
+
+    In foreign policy, Merkel emphasised international cooperation, both in the context of the EU and NATO, and initiating
+    the Russian reset and strengthening of Eurasian and transatlantic economic relations. In the first half of 2007, Merkel
+    served as president of the European Council and played a central role in the negotiation of the Treaty of Lisbon and the
+    Berlin Declaration. Merkel''s governments managed the 2008 financial crisis and the Euro area crisis. She negotiated the
+    2008 European Union stimulus plan, which focused on infrastructure spending and public investment to counteract the Great
+    Recession. Also in 2008, she actively blocked the access of Ukraine and Georgia in the enlargement of NATO during the
+    2008 Bucharest summit.
+
+
+    In domestic policy, Merkel''s Energiewende programme supported the development of renewable energy sources and eventually
+    phased out the use of nuclear power in Germany. Despite the 2014 Russian annexation of Crimea, which prompted sanctions
+    around the world, she initiated the construction of the controversial Nord Stream 2 pipelines to Russia and protected
+    their construction from United States sanctions imposed in 2019. Reforms to the Bundeswehr, health care reform, the 2010s
+    European migrant crisis, and the COVID-19 pandemic were major issues during her chancellorship. Merkel stepped down as
+    leader of the CDU in 2018 and did not seek a fifth term as chancellor in the 2021 federal election. Following the 2022
+    Russian invasion of Ukraine, her legacy came under increased scrutiny both in Germany and abroad for her relatively good
+    relations with Russia and increasing the German economy''s dependence on Russia, as well as the downsizing of the Bundeswehr
+    that occurred during her tenure.'
+  document_to_annotate: '[Angela Dorothea Merkel; person_1.full_name] (born [17 July 1954; temporal_1.date]) is a [German;
+    place_1.demonym] retired politician who served as Chancellor of [Germany; place_1.country] from [2005; temporal_5.year]
+    to [2021; temporal_3.year]. [She; person_1.subj_pronoun] is the only [woman; person_1.gender] to have held the office
+    and the only from former [East Germany; place_2.country]. [She; person_1.subj_pronoun] was Leader of the Opposition from
+    [2002; temporal_4.year] to [2005; temporal_5.year] and Leader of the [Christian Democratic Union (CDU); government_org_7.name]
+    from [2000; temporal_6.year] to [2018; temporal_7.year].
+
+
+    [Merkel; person_1.last_name] was born in [Hamburg; place_3.city] in [West Germany; place_4.country]. [Her; person_1.poss_det_pronoun]
+    family moved to [East Germany; place_2.country] when [she; person_1.subj_pronoun] was an infant. A member of the communist
+    [East German; place_2.demonym] [Free German Youth (FDJ); ngo_1.name], [Merkel; person_1.last_name] obtained a doctorate
+    in quantum chemistry in [1986; temporal_8.year] and worked as a research scientist until [1989; temporal_9.year]. [She;
+    person_1.subj_pronoun] then entered politics in the wake of the [Revolutions of 1989; event_1.name], briefly serving as
+    deputy spokeswoman for the first democratically elected government of [East Germany; place_2.country], led by [Lothar
+    de Maizière; person_2.full_name]. Following [German; place_1.demonym] reunification in [1990; temporal_10.year], [Merkel;
+    person_1.last_name] was elected to the [Bundestag; government_org_1.name] for the state of [Mecklenburg-Vorpommern; place_5.state].
+    As the protégée of Chancellor [Helmut Kohl; person_3.full_name], [Merkel; person_1.last_name] was appointed as Minister
+    for Women and Youth in [1991; temporal_11.year], later becoming Minister for the Environment, Nature Conservation and
+    Nuclear Safety in [1994; temporal_12.year]. After the [CDU; government_org_7.name] lost the [1998 federal election; event_2.name],
+    [Merkel; person_1.last_name] was elected general secretary of the party. [She; person_1.subj_pronoun] then became the
+    party''s first [female; person_1.gender] leader, and the first [female; person_1.gender] leader of the Opposition, [two;
+    number_1.str] years later.
+
+
+    Following the [2005 federal election; event_3.name], [Merkel; person_1.last_name] was elected chancellor, leading a grand
+    coalition consisting of the [CDU; government_org_7.name], the [Christian Social Union (CSU); government_org_8.name], and
+    the [Social Democratic Party of Germany (SPD); government_org_9.name]. [She; person_1.subj_pronoun] was the first [woman;
+    person_1.gender] to be elected chancellor, and the first chancellor of reunified [Germany; place_1.country] to have been
+    raised in the former [East Germany; place_2.country]. In the [2009 federal election; event_4.name], the [CDU; government_org_7.name]
+    obtained the largest share of the vote, and [Merkel; person_1.last_name] subsequently formed a coalition government with
+    the [Free Democratic Party (FDP); government_org_4.name], an alliance more favourable to the [CDU; government_org_7.name]
+    than the grand coalition. In the [2013 federal election; event_5.name], the [CDU; government_org_7.name] won a landslide
+    victory and formed a second grand coalition with the [SPD; government_org_3.name], after the [FDP; government_org_4.name]
+    lost all of its representation in the [Bundestag; government_org_1.name]. In the [2017 federal election; event_6.name],
+    [Merkel; person_1.last_name] led the [CDU; government_org_7.name] to become the largest party for the fourth time, resulting
+    in the formation of a third grand coalition with the [SPD; government_org_3.name].
+
+
+    In foreign policy, [Merkel; person_1.last_name] emphasised international cooperation, both in the context of the [EU;
+    government_org_2.name] and [NATO; military_org_5.name], and initiating [the Russian reset; event_16.name] and strengthening
+    of [Eurasian; place_10.demonym] and [transatlantic; place_11.demonym] economic relations. In the first half of [2007;
+    temporal_13.year], [Merkel; person_1.last_name] served as president of the [European Council; government_org_3.name] and
+    played a central role in the negotiation of the [Treaty of Lisbon; legal_1.name] and the [Berlin Declaration; legal_2.name].
+    [Merkel; person_1.last_name]''s governments managed the [2008 financial crisis; event_7.name] and the [Euro area crisis;
+    event_8.name]. [She; person_1.subj_pronoun] negotiated the [2008 European Union stimulus plan; legal_3.name], which focused
+    on infrastructure spending and public investment to counteract the [Great Recession; event_9.name]. Also in [2008; temporal_14.year],
+    [she; person_1.subj_pronoun] actively blocked the access of [Ukraine; place_6.country] and [Georgia; place_7.country]
+    in the enlargement of [NATO; military_org_5.name] during the [2008 Bucharest summit; event_10.name].
+
+
+    In domestic policy, [Merkel; person_1.last_name]''s [Energiewende; event_16.name] programme supported the development
+    of renewable energy sources and eventually phased out the use of nuclear power in [Germany; place_1.country]. Despite
+    the [2014 Russian annexation of Crimea; event_11.name], which prompted sanctions around the world, [she; person_1.subj_pronoun]
+    initiated the construction of the controversial [Nord Stream 2; product_1.name] pipelines to [Russia; place_8.country]
+    and protected their construction from [United States; place_9.country] sanctions imposed in [2019; temporal_15.year].
+    Reforms to the [Bundeswehr; government_org_6.name], health care reform, the [2010s European migrant crisis; event_12.name],
+    and the [COVID-19 pandemic; event_13.name] were major issues during [her; person_1.poss_det_pronoun] chancellorship. [Merkel;
+    person_1.last_name] stepped down as leader of the [CDU; government_org_7.name] in [2018; temporal_7.year] and did not
+    seek a fifth term as chancellor in the [2021 federal election; event_14.name]. Following the [2022 Russian invasion of
+    Ukraine; event_15.name], [her; person_1.poss_det_pronoun] legacy came under increased scrutiny both in [Germany; place_1.country]
+    and abroad for [her; person_1.poss_det_pronoun] relatively good relations with [Russia; place_8.country] and increasing
+    the [German; place_1.demonym] economy''s dependence on [Russia; place_8.country], as well as the downsizing of the [Bundeswehr;
+    government_org_6.name] that occurred during [her; person_1.poss_det_pronoun] tenure.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bio_07_q01
+    question: In which city was [Angela Dorothea Merkel; person_1.full_name] born?
+    question_type: extractive
+    answer: place_3.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "[Kasner; person_1.last_name] was born in [Hamburg; place_3.city] in [West Germany; place_4.country]."
+    reasoning_chain_text: 1. The document states "[Kasner; person_1.last_name] was born in [Hamburg; place_3.city] in [West
+      Germany; place_4.country]."
+  - question_id: bio_07_q02
+    question: What field did [Angela Dorothea Merkel; person_1.full_name] obtain her doctorate in?
+    question_type: extractive
+    answer: quantum chemistry
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "[Kasner; person_1.last_name] obtained a doctorate in quantum chemistry."
+    reasoning_chain_text: 1. The document states "[Kasner; person_1.last_name] obtained a doctorate in quantum chemistry."
+  - question_id: bio_07_q03
+    question: What was the title of [Angela Dorothea Merkel; person_1.full_name]'s doctoral dissertation?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Kasner; person_1.last_name] obtained a doctorate in quantum chemistry.
+    - 2. However, the document does not provide the title of her doctoral dissertation.
+    reasoning_chain_text: '1. The document mentions that [Kasner; person_1.last_name] obtained a doctorate in quantum chemistry.
+
+      2. However, the document does not provide the title of her doctoral dissertation.'
+  - question_id: bio_07_q04
+    question: How many years did [Angela Dorothea Merkel; person_1.full_name] work as a research scientist after earning [her;
+      person_1.poss_det_pronoun] doctorate and before entering politics?
+    question_type: arithmetic
+    answer: temporal_9.year - temporal_8.year
+    answer_type: variant
+    reasoning_chain:
+    - Merkel obtained her doctorate in 1986.
+    - She worked as a research scientist until 1989, when she entered politics.
+    - The difference is 1989 - 1986 = 3.
+    reasoning_chain_text: 'Merkel obtained her doctorate in 1986.
+
+      She worked as a research scientist until 1989, when she entered politics.
+
+      The difference is 1989 - 1986 = 3.'
+  - question_id: bio_07_q05
+    question: How many Ministry-level posts did [Kasner; person_1.last_name] hold before being elected general secretary of
+      the party?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. Minister for WOmen and Youth and Minister for the Environment, Nature Conservation and Nuclear Safety.
+    reasoning_chain_text: 1. Minister for WOmen and Youth and Minister for the Environment, Nature Conservation and Nuclear
+      Safety.
+  - question_id: bio_07_q06
+    question: How many total votes did the [Christian Democratic Union (CDU); government_org_7.name] receive across all four
+      elections mentioned in the document?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Christian Democratic Union (CDU); government_org_7.name] participating in multiple elections.
+    - 2. However, the document does not provide specific vote counts for any of these elections, so the total cannot be calculated.
+    reasoning_chain_text: '1. The document mentions the [Christian Democratic Union (CDU); government_org_7.name] participating
+      in multiple elections.
+
+      2. However, the document does not provide specific vote counts for any of these elections, so the total cannot be calculated.'
+  - question_id: bio_07_q07
+    question: How many years after [German; place_1.demonym] reunification was [Angela Dorothea Merkel; person_1.full_name]
+      appointed as Minister for Women and Youth?
+    question_type: temporal
+    answer: temporal_11.year - temporal_10.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [German; place_1.demonym] reunification occurred in [1990; temporal_10.year].
+    - 2. [Kasner; person_1.last_name] was appointed Minister for Women and Youth in [1991; temporal_11.year].
+    - 3. The difference is [1991; temporal_11.year] − [1990; temporal_10.year] = 2 years.
+    reasoning_chain_text: '1. The document states [German; place_1.demonym] reunification occurred in [1990; temporal_10.year].
+
+      2. [Kasner; person_1.last_name] was appointed Minister for Women and Youth in [1991; temporal_11.year].
+
+      3. The difference is [1991; temporal_11.year] − [1990; temporal_10.year] = 2 years.'
+  - question_id: bio_07_q08
+    question: Did [Angela Dorothea Merkel; person_1.full_name] become the leader of the Oppsition before or after becoming
+      the leader of [Her; person_1.poss_det_pronoun] party?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states she became Minister for the Environment, Nature Conservation and Nuclear Safety in [1994; temporal_12.year].
+    - 2. She stepped down as leader of the [Christian Democratic Union (CDU); government_org_7.name] in [2018; temporal_7.year].
+    - 3. The difference is 2002 − 1988 = 14 years.
+    reasoning_chain_text: '1. The document states she became Minister for the Environment, Nature Conservation and Nuclear
+      Safety in [1994; temporal_12.year].
+
+      2. She stepped down as leader of the [Christian Democratic Union (CDU); government_org_7.name] in [2018; temporal_7.year].
+
+      3. The difference is 2002 − 1988 = 14 years.'
+  - question_id: bio_07_q09
+    question: On what exact date did [Angela Dorothea Merkel; person_1.full_name] first take office as Chancellor of [Germany;
+      place_1.country]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states she served as Chancellor from [2005; temporal_5.year] to [2021; temporal_3.year].
+    - 2. However, only the year is provided; the exact date she took office is not stated in the document.
+    reasoning_chain_text: '1. The document states she served as Chancellor from [2005; temporal_5.year] to [2021; temporal_3.year].
+
+      2. However, only the year is provided; the exact date she took office is not stated in the document.'
+  - question_id: bio_07_q10
+    question: Given that [Angela Dorothea Merkel; person_1.full_name] is described as the only chancellor from former [East
+      Germany; place_2.country] and the only [woman; person_1.gender] to hold the office, where can we infer all other chancellors
+      of [Germany; place_1.country] come from?
+    question_type: inference
+    answer: '"outside former " + place_2.country'
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Kasner; person_1.last_name] is the only [woman; person_1.gender] chancellor and the only one
+      from former [East Germany; place_2.country].
+    - 2. This implies all other chancellors were not from former [East Germany; place_2.country] — they were raised outside
+      of it.
+    reasoning_chain_text: '1. The document states [Kasner; person_1.last_name] is the only [woman; person_1.gender] chancellor
+      and the only one from former [East Germany; place_2.country].
+
+      2. This implies all other chancellors were not from former [East Germany; place_2.country] — they were raised outside
+      of it.'
+  - question_id: bio_07_q11
+    question: Based on the document, what type of energy source did [Angela Dorothea Merkel; person_1.full_name]'s domestic
+      policy programme aim to phase out?
+    question_type: inference
+    answer: nuclear power
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Kasner; person_1.last_name]'s programme "supported the development of renewable energy
+      sources and eventually phased out the use of nuclear power."
+    - 2. Therefore, the energy source phased out was nuclear power.
+    reasoning_chain_text: '1. The document states that [Kasner; person_1.last_name]''s programme "supported the development
+      of renewable energy sources and eventually phased out the use of nuclear power."
+
+      2. Therefore, the energy source phased out was nuclear power.'
+  - question_id: bio_07_q12
+    question: Did [Angela Dorothea Merkel; person_1.full_name]'s decision to block [Ukraine; place_6.country] and [Georgia;
+      place_7.country] from [NATO; military_org_5.name] enlargement succeed in permanently preventing their membership?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that in [2008; temporal_14.year], [Kasner; person_1.last_name] actively blocked the access of
+      [Ukraine; place_6.country] and [Georgia; place_7.country] during the [2008 Bucharest summit; event_10.name].
+    - 2. The document does not state whether these countries eventually gained membership at a later date, so the long-term
+      outcome cannot be determined.
+    reasoning_chain_text: '1. The document states that in [2008; temporal_14.year], [Kasner; person_1.last_name] actively
+      blocked the access of [Ukraine; place_6.country] and [Georgia; place_7.country] during the [2008 Bucharest summit; event_10.name].
+
+      2. The document does not state whether these countries eventually gained membership at a later date, so the long-term
+      outcome cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1935
+    upper_bound: 1973
+    factual_value: 1954
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1967
+    upper_bound: 2005
+    factual_value: 1986
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1970
+    upper_bound: 2008
+    factual_value: 1989
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1971
+    upper_bound: 2009
+    factual_value: 1990
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1975
+    upper_bound: 2013
+    factual_value: 1994
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: '[Truvqeluskvluul Xalixnyxoz; person_1.full_name] (née [Xalixnyxoz; person_1.last_name];
+    born [7 November 1953; temporal_1.date]) is a [Ostenmerish; place_1.demonym] retired politician who served as Chancellor
+    of [Ostenmere; place_1.country] from [1995; temporal_5.year] to [2009; temporal_3.year]. [she; person_1.subj_pronoun]
+    is the only [female; person_1.gender] to have held the office and the only from former [Veldrath; place_2.country]. [she;
+    person_1.subj_pronoun] was Leader of the Opposition from [1994; temporal_4.year] to [1995; temporal_5.year] and Leader
+    of the [Clurtrirthreint Civic Directorate; government_org_7.name] from [1993; temporal_6.year] to [2002; temporal_7.year].
+
+
+    [Xalixnyxoz; person_1.last_name] was born in [Fennelport; place_3.city] in [Drulmyraextramara; place_4.country]. [her;
+    person_1.poss_det_pronoun] family moved to [Veldrath; place_2.country] when [she; person_1.subj_pronoun] was an infant.
+    A member of the communist [Veldrathi; place_2.demonym] [Zrexbriont Aid Collective; ngo_1.name], [Xalixnyxoz; person_1.last_name]
+    obtained a doctorate in quantum chemistry in [1968; temporal_8.year] and worked as a research scientist until [1970; temporal_9.year].
+    [she; person_1.subj_pronoun] then entered politics in the wake of the [Veldrathi Energy Transition Programme; event_1.name],
+    briefly serving as deputy spokeswoman for the first democratically elected government of [Veldrath; place_2.country],
+    led by [Nyxeivqelond Vlivkreiz; person_2.full_name]. Following [Ostenmerish; place_1.demonym] reunification in [1981;
+    temporal_10.year], [Xalixnyxoz; person_1.last_name] was elected to the [Thraeshvluuzclav Civic Directorate; government_org_1.name]
+    for the state of [Myrbrimshire; place_5.state]. As the protégée of Chancellor [Kinrinzan Zankor; person_3.full_name],
+    [Xalixnyxoz; person_1.last_name] was appointed as Minister for Women and Youth in [1983; temporal_11.year], later becoming
+    Minister for the Environment, Nature Conservation and Nuclear Safety in [1988; temporal_12.year]. After the [Clurtrirthreint
+    Civic Directorate; government_org_7.name] lost the [Xalivkreiz Incident; event_2.name], [Xalixnyxoz; person_1.last_name]
+    was elected general secretary of the party. [she; person_1.subj_pronoun] then became the party''s first [female; person_1.gender]
+    leader, and the first [female; person_1.gender] leader of the Opposition, [one; number_1.str] years later.
+
+
+    Following the [Kronttreim Forum; event_3.name], [Xalixnyxoz; person_1.last_name] was elected chancellor, leading a grand
+    coalition consisting of the [Clurtrirthreint Civic Directorate; government_org_7.name], the [Zroalclethclolx Public Secretariat;
+    government_org_8.name], and the [Nyxithtrar Civic Directorate; government_org_9.name]. [she; person_1.subj_pronoun] was
+    the first [female; person_1.gender] to be elected chancellor, and the first chancellor of reunified [Ostenmere; place_1.country]
+    to have been raised in the former [Veldrath; place_2.country]. In the [Pelluvian Strait Incident; event_4.name], the [Clurtrirthreint
+    Civic Directorate; government_org_7.name] obtained the largest share of the vote, and [Xalixnyxoz; person_1.last_name]
+    subsequently formed a coalition government with the [Pelluvian Parliamentary Chamber; government_org_4.name], an alliance
+    more favourable to the [Clurtrirthreint Civic Directorate; government_org_7.name] than the grand coalition. In the [Vluuzxalexxaliz
+    Incident; event_5.name], the [Clurtrirthreint Civic Directorate; government_org_7.name] won a landslide victory and formed
+    a second grand coalition with the [Veldrathi Continental Council; government_org_3.name], after the [Pelluvian Parliamentary
+    Chamber; government_org_4.name] lost all of its representation in the [Thraeshvluuzclav Civic Directorate; government_org_1.name].
+    In the [Grissova Border Standoff; event_6.name], [Xalixnyxoz; person_1.last_name] led the [Clurtrirthreint Civic Directorate;
+    government_org_7.name] to become the largest party for the fourth time, resulting in the formation of a third grand coalition
+    with the [Veldrathi Continental Council; government_org_3.name].
+
+
+    In foreign policy, [Xalixnyxoz; person_1.last_name] emphasised international cooperation, both in the context of the [Veldrathi
+    Armed Services Directorate; government_org_2.name] and [Veldrathi Combined Defense Corps; military_org_5.name], and initiating
+    [Broantxalaerk Incident; event_16.name] and strengthening of [Kolvassic; place_10.demonym] and [Tarvossic; place_11.demonym]
+    economic relations. In the first half of [1996; temporal_13.year], [Xalixnyxoz; person_1.last_name] served as president
+    of the [Veldrathi Continental Council; government_org_3.name] and played a central role in the negotiation of the [Trurskent
+    Civic Protocol; legal_1.name] and the [Kroxzralxnyxael Civic Charter; legal_2.name]. [Xalixnyxoz; person_1.last_name]''s
+    governments managed the [Myreinnyxeixdrol Incident; event_7.name] and the [Nyxeskskiorkvyroark Forum; event_8.name]. [she;
+    person_1.subj_pronoun] negotiated the [Qelaxxalim Stability Protocol; legal_3.name], which focused on infrastructure spending
+    and public investment to counteract the [Xaliomxalixvlond Incident; event_9.name]. Also in [1999; temporal_14.year], [she;
+    person_1.subj_pronoun] actively blocked the access of [Colvaren; place_6.country] and [Kingdom of Sorngry; place_7.country]
+    in the enlargement of [Veldrathi Combined Defense Corps; military_org_5.name] during the [Vyreilqeluv Accord; event_10.name].
+
+
+    In domestic policy, [Xalixnyxoz; person_1.last_name]''s [Broantxalaerk Incident; event_16.name] programme supported the
+    development of renewable energy sources and eventually phased out the use of nuclear power in [Ostenmere; place_1.country].
+    Despite the [Stannelburg Harbor Blockade; event_11.name], which prompted sanctions around the world, [she; person_1.subj_pronoun]
+    initiated the construction of the controversial [Vyroarbrar Drive; product_1.name] pipelines to [Myrontdriorune; place_8.country]
+    and protected their construction from [Pelthoria; place_9.country] sanctions imposed in [2007; temporal_15.year]. Reforms
+    to the [Ostenmerish Peoples Congress; government_org_6.name], health care reform, the [Vlaeltroax Accord; event_12.name],
+    and the [Vyraeskbruusk Forum; event_13.name] were major issues during [her; person_1.poss_det_pronoun] chancellorship.
+    [Xalixnyxoz; person_1.last_name] stepped down as leader of the [Clurtrirthreint Civic Directorate; government_org_7.name]
+    in [2002; temporal_7.year] and did not seek a fifth term as chancellor in the [Dreilxnyxulx Incident; event_14.name].
+    Following the [Throaxdroz Incident; event_15.name], [her; person_1.poss_det_pronoun] legacy came under increased scrutiny
+    both in [Ostenmere; place_1.country] and abroad for [her; person_1.poss_det_pronoun] relatively good relations with [Myrontdriorune;
+    place_8.country] and increasing the [Ostenmerish; place_1.demonym] economy''s dependence on [Myrontdriorune; place_8.country],
+    as well as the downsizing of the [Ostenmerish Peoples Congress; government_org_6.name] that occurred during [her; person_1.poss_det_pronoun]
+    tenure.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

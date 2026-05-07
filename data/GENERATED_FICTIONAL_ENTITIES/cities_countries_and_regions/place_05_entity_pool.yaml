@@ -1,0 +1,550 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_05
+  document_theme: cities_countries_and_regions
+  complete: false
+  generated_at: '2026-04-18T17:52:53.976380+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_24: 15
+    place_25: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 14
+    place_20: 15
+    place_16: 15
+    place_17: 14
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+  products: {}
+missing_references:
+  places:
+    place_6: 1
+    place_17: 1
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: The Federated Realm of Caldrishen and Upper Torenmay
+      demonym: Caldrishen
+    - country: The Sovereign Union of Brelthane and Southern Velorith
+      demonym: Brelthani
+    - country: The Conjoined Dominion of Pellismark and Outer Grotheny
+      demonym: Pellismarken
+    - country: The United Provinces of Dravenmoor and Northern Sethwick
+      demonym: Dravenmoorian
+    - country: The Grand Commonwealth of Thendulay and Lower Kessivane
+      demonym: Thendulese
+    - country: The Consolidated Realm of Orvanthey and Eastern Plimmoch
+      demonym: Orvanthine
+    - country: The Unified Territories of Quellishar and Greater Bontivey
+      demonym: Quellisharn
+    - country: The Royal Compact of Fendrathey and Western Morrivane
+      demonym: Fendrathen
+    - country: The Bound Kingdoms of Helvistane and Northern Crelloway
+      demonym: Helvistani
+    - country: The Joined Sovereignty of Pallenthor and Upper Dremiskey
+      demonym: Pallenthoric
+    - country: The Merged Dominion of Stravellun and Southern Kellimarch
+      demonym: Stravellune
+    - country: The Dual Realm of Grentholley and Outer Vossimane
+      demonym: Grenthollese
+    - country: The Integrated Crown of Melvistrey and Lower Torranwick
+      demonym: Melvistrene
+    - country: The Allied Compact of Brondivey and Eastern Pellisway
+      demonym: Brondivese
+    - country: The Chartered Union of Kelvistane and Greater Thrennoway
+      demonym: Kelvistani
+  place_24:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: the Federated Realm of Thalendor
+    - country: the Sovereign Union of Brelkavia
+    - country: the Consolidated Dominion of Vethmark
+    - country: the United Provinces of Caldrith
+    - country: the Grand Commonwealth of Orenthal
+    - country: the Joined Territories of Pellundy
+    - country: the Unified Realm of Skarveth
+    - country: the Allied Kingdom of Durnhollow
+    - country: the Bound Isles of Grethana
+    - country: the Merged Crown of Yelvantis
+    - country: the Conjoined Lands of Threllwick
+    - country: the Compact Sovereignty of Maldrenoch
+    - country: the Bonded Realm of Quessavar
+    - country: the Linked Dominion of Harventel
+    - country: the Gathered Provinces of Zolmaren
+  place_25:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Vossmark
+    - country: Kelmorath
+    - country: Dranthea
+    - country: Pelmuria
+    - country: Sorvane
+    - country: Grethwick
+    - country: Calondris
+    - country: Fenthara
+    - country: Breloquin
+    - country: Morthaven
+    - country: Turvellis
+    - country: Ondrasil
+    - country: Wytheron
+    - country: Jalmecra
+  place_2:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Dranmeku
+    - continent: Ossivane
+    - continent: Thalmeris
+    - continent: Kurendal
+    - continent: Pelvoria
+    - continent: Zantheca
+    - continent: Brondafel
+    - continent: Moriquet
+    - continent: Calesthen
+    - continent: Wytharak
+    - continent: Jenvoria
+    - continent: Suldrenna
+    - continent: Goltharim
+    - continent: Fendrasil
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thandoria
+    - country: Velmorath
+    - country: Crendavik
+    - country: Pallenthor
+    - country: Grotheny
+    - country: Weskara
+    - country: Durnelm
+    - country: Feltrova
+    - country: Kosmaren
+    - country: Brinthalow
+    - country: Solvegard
+    - country: Turneska
+    - country: Plindara
+    - country: Helvoric
+    - country: Quendrath
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendor
+    - country: Kelvara
+    - country: Drenmoch
+    - country: Ossivane
+    - country: Brythela
+    - country: Calorath
+    - country: Fenduris
+    - country: Golthenay
+    - country: Vorskane
+    - country: Pellundy
+    - country: Marthiven
+    - country: Quirnoth
+    - country: Selvadorn
+    - country: Torbinesh
+    - country: Wyndalore
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brynmael
+    - country: Celvorn
+    - country: Thandwyr
+    - country: Gwethara
+    - country: Dravenmoor
+    - country: Kethwold
+    - country: Sorathyn
+    - country: Velmarch
+    - country: Lyndorath
+    - country: Crethwane
+    - country: Orvathel
+    - country: Tulmaren
+    - country: Fendraith
+    - country: Gloshevan
+    - country: Pellwynth
+  place_6:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Trevallen
+    - country: Keldmarch
+    - country: Sorathune
+    - country: Brinvael
+    - country: Drosseny
+    - country: Wythkeld
+    - country: Pellomar
+    - country: Cranthuvel
+    - country: Orvashel
+    - country: Gessivane
+    - country: Haldrique
+    - country: Vossentry
+    - country: Melvarak
+    - country: Quirnath
+  place_20:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Vassal Holdings and the Outer Thalendric Protectorates
+    - region: Sworn Enclaves and the Distant Korvathi Dominions
+    - region: Linked Jurisdictions and the Farshore Peltranic Estates
+    - region: Hereditary Bailiwicks and the Transoceanic Drennish Possessions
+    - region: Custodial Realms and the Outlying Melvoric Territories
+    - region: Bound Prefectures and the Oversea Galthurian Reaches
+    - region: Chartered Dependencies and the External Sorathic Holdings
+    - region: Tributary Provinces and the Remote Vellundish Dominions
+    - region: Entrusted Cantons and the Offshore Brythelic Possessions
+    - region: Sovereign Bailiwicks and the Farflung Ondravian Territories
+    - region: Pledged Marches and the Distant Kethanic Protectorates
+    - region: Federated Wardships and the Outlying Tulmeric Estates
+    - region: Annexed Stewardries and the Oversea Pranthic Dominions
+    - region: Retained Fiefdoms and the Transoceanic Halvurian Holdings
+    - region: Compact Jurisdictions and the External Drossivian Territories
+  place_16:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thandoral
+    - city: Velmarch
+    - city: Crotheny
+    - city: Pellisgate
+    - city: Dunwaren
+    - city: Heskavel
+    - city: Brondisol
+    - city: Kethbury
+    - city: Lorvaine
+    - city: Suthavel
+    - city: Grenmoth
+    - city: Pellicarn
+    - city: Wythendor
+    - city: Caldroven
+    - city: Torvishen
+  place_17:
+    required_attributes:
+    - city
+    count: 14
+    variants:
+    - city: Kelmorath
+    - city: Brynvael
+    - city: Ossendrath
+    - city: Carvethon
+    - city: Dunlorek
+    - city: Fentharil
+    - city: Gloshevan
+    - city: Morthavel
+    - city: Pellindor
+    - city: Rathkoven
+    - city: Stelvarin
+    - city: Wyndorath
+    - city: Torvenash
+    - city: Haldrenoch
+  place_11:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorean Ocean
+    - natural_site: Thandric Ocean
+    - natural_site: Molvaren Sea
+    - natural_site: Grothenic Ocean
+    - natural_site: Pelduran Ocean
+    - natural_site: Skavoric Deep
+    - natural_site: Wenthari Ocean
+    - natural_site: Caldivean Ocean
+    - natural_site: Ostraven Sea
+    - natural_site: Brumathic Ocean
+    - natural_site: Zelkoran Ocean
+    - natural_site: Dravenic Ocean
+    - natural_site: Quorvalen Sea
+    - natural_site: Fendraic Ocean
+    - natural_site: Tulmeric Ocean
+  place_12:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thalwen Deep
+    - natural_site: Grelmor Strait
+    - natural_site: Vossik Reach
+    - natural_site: Pellundra Bay
+    - natural_site: Ketharn Waters
+    - natural_site: Drannoch Expanse
+    - natural_site: Sulvane Gulf
+    - natural_site: Orvish Shallows
+    - natural_site: Bryndak Channel
+    - natural_site: Fentorak Basin
+    - natural_site: Calwern Bight
+    - natural_site: Molvask Trench
+    - natural_site: Thurnik Passage
+    - natural_site: Gelvora Sound
+    - natural_site: Rondask Mere
+  place_13:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Straits of Velmora
+    - natural_site: Thandric Passage
+    - natural_site: Korwain Channel
+    - natural_site: Bressic Narrows
+    - natural_site: Galwend Strait
+    - natural_site: Drothane Passage
+    - natural_site: Selwic Channel
+    - natural_site: Pelmaren Strait
+    - natural_site: Crothaven Narrows
+    - natural_site: Wyndoric Passage
+    - natural_site: Tarvelic Strait
+    - natural_site: Ondrath Channel
+    - natural_site: Felmorin Narrows
+    - natural_site: Breskane Passage
+    - natural_site: Helvoric Strait
+  place_14:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Tarvolen Sea
+    - natural_site: Brissoway Deep
+    - natural_site: Kelmorath Strait
+    - natural_site: Vundric Sea
+    - natural_site: Pellashen Waters
+    - natural_site: Dromivane Sea
+    - natural_site: Quetharn Reach
+    - natural_site: Fossaline Sea
+    - natural_site: Grenthallow Bay
+    - natural_site: Welmoric Sea
+    - natural_site: Colvasheen Deep
+    - natural_site: Thrennaby Sea
+    - natural_site: Orvassic Strait
+    - natural_site: Pallendric Sea
+    - natural_site: Skovarine Gulf
+  place_15:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Tarvolen Strait
+    - natural_site: Kelmorath Sea
+    - natural_site: Bryndic Channel
+    - natural_site: Ossivane Waters
+    - natural_site: Drethune Gulf
+    - natural_site: Pallicor Sea
+    - natural_site: Venmara Passage
+    - natural_site: Crothane Sound
+    - natural_site: Lyndavar Sea
+    - natural_site: Quessoric Reach
+    - natural_site: Helvoran Bight
+    - natural_site: Tulmeric Sea
+    - natural_site: Ganthory Narrows
+    - natural_site: Weskavine Channel
+    - natural_site: Sorathel Basin
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thalmorek
+    - natural_site: Veldrannis
+    - natural_site: Korathune
+    - natural_site: Bryndolm
+    - natural_site: Ossivane
+    - natural_site: Peldraith
+    - natural_site: Ganthurel
+    - natural_site: Molvethis
+    - natural_site: Sundrakeel
+    - natural_site: Wythomar
+    - natural_site: Crendavos
+    - natural_site: Helvastrum
+    - natural_site: Torvenask
+    - natural_site: Quildareth
+    - natural_site: Fendroval
+  place_8:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velmorath
+    - natural_site: Thandorlea
+    - natural_site: Grellisca
+    - natural_site: Brenthava
+    - natural_site: Korvashel
+    - natural_site: Pellundra
+    - natural_site: Dravenmoor
+    - natural_site: Sulkethane
+    - natural_site: Wythocara
+    - natural_site: Jenthalos
+    - natural_site: Molvecra
+    - natural_site: Torrishen
+    - natural_site: Caldroven
+    - natural_site: Fenthulae
+    - natural_site: Oskrithel
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thalwren Archipelago
+    - natural_site: Corvane Islands
+    - natural_site: Drenmoor Reaches
+    - natural_site: Pelthane Shoals
+    - natural_site: Kessavian Isles
+    - natural_site: Bryndoch Cluster
+    - natural_site: Orvallen Straits
+    - natural_site: Galwethic Islands
+    - natural_site: Fennarak Archipelago
+    - natural_site: Storriven Isles
+    - natural_site: Velmarch Shallows
+    - natural_site: Tundorel Islands
+    - natural_site: Crethane Reaches
+    - natural_site: Wytholan Archipelago
+    - natural_site: Haldrevic Isles
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalendric Succession Conflict
+    - name: Velmorath Baronial Uprising
+    - name: Dranthic Realm Strife
+    - name: Korvellian Crown Revolt
+    - name: Pellundric Dynastic Schism
+    - name: Brathenic Lords Insurrection
+    - name: Galdorin Throne Contention
+    - name: Ostrevian Factional Clash
+    - name: Wyndoric Estates Rebellion
+    - name: Caltherion Sovereignty Dispute
+    - name: Melvandric Peerage Upheaval
+    - name: Torvennic Regency Conflict
+    - name: Haldrunic Charter Revolt
+    - name: Queldaric Nobles Confrontation
+    - name: Brenthavic Dominion Strife
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Sovereign Dominion
+    - name: Free Commonwealth of Drethane
+    - name: Provisional State of Kelmara
+    - name: Brinthollic Autonomous Realm
+    - name: Federated Polity of Ossendrath
+    - name: Selvurian Home Governance
+    - name: Independent Territory of Grothane
+    - name: Melvuric Self-Governing State
+    - name: Sovereign Dominion of Pellask
+    - name: Transitional Republic of Wyndara
+    - name: Free Governance of Tharnock
+    - name: Provisional Commonwealth of Eldurath
+    - name: Autonomous State of Crendoval
+    - name: Liberated Polity of Harvennis
+    - name: Self-Ruling Dominion of Quetharn
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Compact of Thenoral
+    - name: Accord of Velsthen
+    - name: Pact of Drenmora
+    - name: Covenant of Briskelm
+    - name: Charter of Ossenthay
+    - name: Concordat of Palluvern
+    - name: Treaty of Kelmavoth
+    - name: Articles of Grothenvale
+    - name: Instrument of Tarvishen
+    - name: Writ of Colvandris
+    - name: Compact of Helvastorn
+    - name: Accord of Fenthural
+    - name: Pact of Morthengale
+    - name: Covenant of Drassivane
+    - name: Charter of Velmonthra
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Edicts of Consolidation Threnvale
+    - name: Pact of Unitary Governance Kelmora
+    - name: Statutes of Conjunction Briveld
+    - name: Decrees of Amalgamation Torshael
+    - name: Writs of Binding Accord Pelmorath
+    - name: Charters of Sovereign Merger Dranveth
+    - name: Ordinances of Realm Fusion Calwenth
+    - name: Articles of Dominion Compact Sethural
+    - name: Provisions of Unified Crowns Gelthari
+    - name: Instruments of Coalescence Vornhelm
+    - name: Concordance of Joined Realms Quetharn
+    - name: Mandates of Territorial Union Feldaric
+    - name: Covenants of Realm Incorporation Helvask
+    - name: Proclamations of Merged Sovereignty Tulmaren
+    - name: Resolutions of Kingdom Binding Orvashel
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign and Legislative Designations Decree
+    - name: Crownhold and Chamber Titles Ordinance
+    - name: Regalic and Senatorial Appellations Statute
+    - name: Thronal and Deliberative Styles Enactment
+    - name: Monarchal and Conclave Nomenclature Act
+    - name: Diademic and Parlatory Titles Provision
+    - name: Sceptral and Assembly Designations Measure
+    - name: Enthronement and Council Styles Proclamation
+    - name: Coronet and Quorum Titles Instrument
+    - name: Regnal and Convocatory Appellations Writ
+    - name: Palatine and Sessional Designations Charter
+    - name: Throneright and Delegatory Titles Edict
+    - name: Crestal and Plenary Nomenclature Statute
+    - name: Domanial and Chamberhold Styles Ordinance
+    - name: Soverant and Consultory Titles Decree

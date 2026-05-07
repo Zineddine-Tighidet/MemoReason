@@ -1,0 +1,460 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_04
+  document_theme: space_missions
+  complete: true
+  generated_at: '2026-04-17T17:59:42.867872+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_6: 15
+    place_4: 15
+    place_5: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_9: 15
+    product_5: 15
+    product_6: 15
+    product_8: 15
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorith
+      demonym: Velorithan
+    - natural_site: Drantheos
+      demonym: Drantheonic
+    - natural_site: Kulvaren
+      demonym: Kulvarese
+    - natural_site: Opherath
+      demonym: Opherathi
+    - natural_site: Tassivon
+      demonym: Tassivonic
+    - natural_site: Brethuna
+      demonym: Brethunal
+    - natural_site: Zelphorin
+      demonym: Zelphoric
+    - natural_site: Crendova
+      demonym: Crendovan
+    - natural_site: Haltivex
+      demonym: Haltivean
+    - natural_site: Pyrathel
+      demonym: Pyrathellic
+    - natural_site: Gondrevak
+      demonym: Gondrevaki
+    - natural_site: Sethurion
+      demonym: Sethuric
+    - natural_site: Welvanthos
+      demonym: Welvanthic
+    - natural_site: Ithrabol
+      demonym: Ithraboli
+    - natural_site: Fendroque
+      demonym: Fendroquan
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorinth
+      demonym: Velorinthese
+    - country: Dranmeku
+      demonym: Dranmekui
+    - country: Thalvorin
+      demonym: Thalvorish
+    - country: Quendara
+      demonym: Quendaran
+    - country: Brimoleth
+      demonym: Brimolese
+    - country: Zephulak
+      demonym: Zephulaki
+    - country: Ornathis
+      demonym: Ornathese
+    - country: Kulvaren
+      demonym: Kulvarese
+    - country: Pethomar
+      demonym: Pethomari
+    - country: Gelsundir
+      demonym: Gelsundiri
+    - country: Molvekra
+      demonym: Molvekran
+    - country: Tarvishen
+      demonym: Tarvisheni
+    - country: Wulkadri
+      demonym: Wulkadrese
+    - country: Hentobral
+      demonym: Hentobrali
+    - country: Sorpethun
+      demonym: Sorpethuni
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Telvoran Orbital Launch Complex
+    - natural_site: Quenshara Spaceflight Facility
+    - natural_site: Dromiketh Launch Grounds
+    - natural_site: Halcuran Cosmodrome
+    - natural_site: Yenthari Spacecraft Launch Station
+    - natural_site: Brivosek Launch Plateau
+    - natural_site: Ondravek Spaceflight Center
+    - natural_site: Pelithos Rocket Launch Site
+    - natural_site: Zuraneth Launch Expanse
+    - natural_site: Kethoval Spaceport Complex
+    - natural_site: Mirothane Launch Facility
+    - natural_site: Gelvushan Orbital Pad
+    - natural_site: Tassivorn Launch Range
+    - natural_site: Cretholin Spaceflight Grounds
+    - natural_site: Vorashek Coastal Launch Site
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Vorathic Drift Zone
+    - natural_site: Kelduran Orbital Belt
+    - natural_site: Thrennix Passage
+    - natural_site: Obrivan Heliocurve
+    - natural_site: Pallenthi Transit Corridor
+    - natural_site: Dravosian Nearfield
+    - natural_site: Zenthari Core Expanse
+    - natural_site: Molvuric Perihelion Arc
+    - natural_site: Crethulan Warmfield
+    - natural_site: Yondrassi Proximal Reach
+    - natural_site: Felquoran Sunward Tract
+    - natural_site: Brinthari Ecliptic Sweep
+    - natural_site: Tassivorn Radial Span
+    - natural_site: Gelvunic Close Orbit Region
+    - natural_site: Wethoran Stellar Approach
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vostrakan Confederacy
+    - country: Telmoric Republic
+    - country: Dravosi Federation
+    - country: Ketharan Commonwealth
+    - country: Zulomic Collective
+    - country: Brenthali Union
+    - country: Pelnovar Dominion
+    - country: Crethosi Alliance
+    - country: Molvarak States
+    - country: Thurenic Compact
+    - country: Galdorin Republic
+    - country: Orvanthi Federation
+    - country: Selkuran Accord
+    - country: Nelvoric Confederation
+    - country: Pratheni Commonwealth
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Vossmark
+    - country: Pelcoria
+    - country: Drantheva
+    - country: Quelmira
+    - country: Brentalos
+    - country: Sorvethia
+    - country: Caldrenok
+    - country: Mirothane
+    - country: Fentarqua
+    - country: Golvashir
+    - country: Turendael
+    - country: Weskavon
+    - country: Plindorath
+    - country: Zethurma
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Celestial Exploration Council
+    - name: Unified Orbital Sciences Consortium
+    - name: Transnational Spaceflight Cooperation League
+    - name: Allied Cosmonavigation Society
+    - name: Interplanetary Research Fellowship
+    - name: Worldwide Astrovoyage Collective
+    - name: Pan-Continental Rocketry Association
+    - name: Combined Starflight Advancement Forum
+    - name: Multilateral Deep-Space Endeavor Union
+    - name: Joint Exoplanetary Sciences Coalition
+    - name: Universal Spacebound Cooperation Assembly
+    - name: Federated Orbital Pathfinders Network
+    - name: Collaborative Astral Ventures Institute
+    - name: Sovereign Spacefaring Nations Accord
+    - name: Integrated Cosmonautic Progress Alliance
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorith National Spaceflight Bureau (VNSB)
+    - name: Dranosi Federal Aerospace Directorate (DFAD)
+    - name: Korvalen State Orbital Authority (KSOA)
+    - name: Telmari Planetary Exploration Agency (TPEA)
+    - name: Brenthalo National Aerospace Council (BNAC)
+    - name: Zurvanic Space Operations Directorate (ZSOD)
+    - name: Pelkori Federal Space Commission (PFSC)
+    - name: Ondravian Aerospace Governance Bureau (OAGB)
+    - name: Haltivek National Orbital Directorate (HNOD)
+    - name: Crethani State Spaceflight Authority (CSSA)
+    - name: Molvaren Central Aerospace Bureau (MCAB)
+    - name: Jenthari National Space Directorate (JNSD)
+    - name: Quirvolan Federal Exploration Agency (QFEA)
+    - name: Sethkari Orbital Sciences Administration (SOSA)
+    - name: Wenvori National Aerospace Directorate (WNAD)
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundri Coastal Republics Space Directorate
+    - name: Ketharan Federal Aerospace Authority
+    - name: Torashil Sovereign Space Bureau
+    - name: Dravosi National Orbital Commission
+    - name: Palqueni Confederation Space Agency
+    - name: Zumarith Royal Aerospace Directorate
+    - name: Ondavek State Space Administration
+    - name: Brenolith Peninsular Space Council
+    - name: Halquorin Interplanetary Affairs Bureau
+    - name: Mivanthi National Spaceflight Authority
+    - name: Selorath Federal Exploration Directorate
+    - name: Quendavi Aerospace and Orbital Bureau
+    - name: Tulmekari Space Sciences Commission
+    - name: Vorasheni National Launch Authority
+    - name: Gelphandri Sovereign Aerospace Office
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSPAR
+    - name: Velthari Aeronautics Directorate
+    - name: Orbital Sciences Bureau of Kethara
+    - name: Dranovi Space Operations Council
+    - name: Telmarak Spaceflight Authority
+    - name: Zenthari Exploration Directorate
+    - name: Brivolan Aerospace Command
+    - name: Pelnosk National Space Office
+    - name: Quorivan Orbital Research Agency
+    - name: Haldren Spaceflight Bureau
+    - name: Ostravi Planetary Exploration Office
+    - name: Kelvori Aerospace Directorate
+    - name: Runathi Space Exploration Council
+    - name: Gelthari National Aeronautics Bureau
+    - name: Molvaren Orbital Sciences Authority
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celestial Horizons Prize
+    - name: Orbital Endeavor Distinction
+    - name: Voidreach Exploration Medal
+    - name: Starpath Achievement Laurel
+    - name: Cosmodrift Excellence Honor
+    - name: Lumivault Spacefaring Trophy
+    - name: Perihelion Discovery Commendation
+    - name: Astroval Pioneering Accolade
+    - name: Zenolith Mission Tribute
+    - name: Exofield Advancement Citation
+    - name: Threnvault Aerospace Medallion
+    - name: Solarcrest Voyaging Distinction
+    - name: Nebulark Exploration Garland
+    - name: Quorbit Achievement Plaque
+    - name: Dawnveil Spaceflight Commendation
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Xenvara-1
+    - name: Dorvekh-1
+    - name: Quelaris-1
+    - name: Zantheon-1
+    - name: Brivolux-1
+    - name: Orenthal-1
+    - name: Kesphari-1
+    - name: Vulmaren-1
+    - name: Thaloquin-1
+    - name: Grethano-1
+    - name: Peldrith-1
+    - name: Wensharo-1
+    - name: Juvektar-1
+    - name: Caldroven-1
+    - name: Fentharis-1
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veylok
+    - name: Thandor
+    - name: Quilren
+    - name: Broshen
+    - name: Melvari
+    - name: Cendrik
+    - name: Polthan
+    - name: Weskari
+    - name: Dravune
+    - name: Fentorak
+    - name: Gulshen
+    - name: Horbane
+    - name: Jeltova
+    - name: Kymrath
+    - name: Orvalen
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Skyward Talon
+    - name: Velthorn Carrier
+    - name: Dawnpulse Heavy
+    - name: Korath Lifter
+    - name: Stormvane Ascent
+    - name: Pellux Booster
+    - name: Thurak Zenith
+    - name: Celdris Hauler
+    - name: Orvane Thrust
+    - name: Bryndak Heavy
+    - name: Quelsar Reach
+    - name: Nimrath Soar
+    - name: Tolvek Pinnacle
+    - name: Grethane Surge
+    - name: Wyndral Apex
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valthorin
+    - name: Queldrex
+    - name: Bryndara
+    - name: Torvassik
+    - name: Celdrique
+    - name: Phentarox
+    - name: Wyndorath
+    - name: Kessivane
+    - name: Drothulam
+    - name: Gelvantis
+    - name: Ombrilex
+    - name: Zarquenol
+    - name: Fentharic
+    - name: Pluvandek
+    - name: Heskorial
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: piconode
+    - name: orblet
+    - name: driftpod
+    - name: tyncraft
+    - name: minicuber
+    - name: skypebble
+    - name: dustmote
+    - name: voidpip
+    - name: lumispec
+    - name: thinprobe
+    - name: sparkcell
+    - name: wispcraft
+    - name: pelletcam
+    - name: glintbox
+    - name: brevsat
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VRC-7
+    - name: KPL-3
+    - name: MXD-4
+    - name: BNQ-6
+    - name: FWR-9
+    - name: JTH-5
+    - name: GLN-8
+    - name: ZPV-2
+    - name: HCX-1
+    - name: DRK-4
+    - name: WMF-6
+    - name: QSB-3
+    - name: LVT-7
+    - name: NXG-5
+    - name: RPJ-8
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velith
+    - name: Sorahn
+    - name: Clariven
+    - name: Teskara
+    - name: Lumaren
+    - name: Droven
+    - name: Kethali
+    - name: Piroque
+    - name: Zelvane
+    - name: Orinthu
+    - name: Brelask
+    - name: Wyndara
+    - name: Calithen
+    - name: Rovique
+    - name: Theskan
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmoth
+    - name: Skydrel
+    - name: Tarvion
+    - name: Quilbex
+    - name: Zephrik
+    - name: Brontael
+    - name: Celvane
+    - name: Drothis
+    - name: Fenturak
+    - name: Glivorn
+    - name: Hesprel
+    - name: Jolkith
+    - name: Myroven
+    - name: Paldrix
+    - name: Wenthari

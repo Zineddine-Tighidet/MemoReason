@@ -1,0 +1,209 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: test_2
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-17T17:43:24.093018+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs:
+    educational_org_1: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - ethnicity
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Ravkol Tenashev
+      last_name: Tenashev
+      ethnicity: Vordali
+    - full_name: Bazmir Kholunev
+      last_name: Kholunev
+      ethnicity: Teskhari
+    - full_name: Jorvek Salanidze
+      last_name: Salanidze
+      ethnicity: Grelmish
+    - full_name: Dulmek Voranesh
+      last_name: Voranesh
+      ethnicity: Kelvori
+    - full_name: Tashvir Gozunev
+      last_name: Gozunev
+      ethnicity: Brenathi
+    - full_name: Kemzar Pulodiev
+      last_name: Pulodiev
+      ethnicity: Zorvani
+    - full_name: Olvash Dremikov
+      last_name: Dremikov
+      ethnicity: Tulmeki
+    - full_name: Ruzhel Kavinov
+      last_name: Kavinov
+      ethnicity: Ghelvari
+    - full_name: Solvek Muranidze
+      last_name: Muranidze
+      ethnicity: Preskovi
+    - full_name: Galtev Reshunov
+      last_name: Reshunov
+      ethnicity: Draveshi
+    - full_name: Narvek Zulashev
+      last_name: Zulashev
+      ethnicity: Korthani
+    - full_name: Pirzan Delkovev
+      last_name: Delkovev
+      ethnicity: Velmashi
+    - full_name: Hazkel Torunidze
+      last_name: Torunidze
+      ethnicity: Sulkhari
+    - full_name: Belvok Grashunev
+      last_name: Grashunev
+      ethnicity: Molveki
+    - full_name: Zarvim Keloshev
+      last_name: Keloshev
+      ethnicity: Durnavi
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Rendal Cossivane Sr.
+    - full_name: Brivon Halsteg III
+    - full_name: Telmick Worague Jr.
+    - full_name: Gavrel Ponsheery Sr.
+    - full_name: Durnath Kelvaine Jr.
+    - full_name: Fossick Tremaldo Sr.
+    - full_name: Quilben Harnovey Jr.
+    - full_name: Jothram Pellisque Sr.
+    - full_name: Wentago Drissholm Jr.
+    - full_name: Calbren Mossivane Sr.
+    - full_name: Tarvish Gollendry Jr.
+    - full_name: Prennick Solavey Sr.
+    - full_name: Haldren Vossique Jr.
+    - full_name: Kellovan Brissage Sr.
+    - full_name: Norbeth Crellivan Jr.
+  person_3:
+    required_attributes:
+    - age
+    - first_name
+    count: 15
+    variants:
+    - first_name: Rovzhan
+    - first_name: Kelduv
+    - first_name: Beshkol
+    - first_name: Zurvani
+    - first_name: Dalkhet
+    - first_name: Morvash
+    - first_name: Geltuno
+    - first_name: Peshkav
+    - first_name: Yondrik
+    - first_name: Sulvek
+    - first_name: Hazroun
+    - first_name: Veltago
+    - first_name: Korbesh
+    - first_name: Nulvari
+    - first_name: Reshkol
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvolen
+    - city: Grellisport
+    - city: Kethbury
+    - city: Molvane
+    - city: Pellicara
+    - city: Drossheim
+    - city: Quenara
+    - city: Brinthollow
+    - city: Sarvique
+    - city: Ondrafel
+    - city: Crellivane
+    - city: Thurnica
+    - city: Welmarak
+    - city: Fossendral
+    - city: Jenthapur
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Trossenia
+    - country: Kelmathur
+    - country: Brindova
+    - country: Ostrelune
+    - country: Paltheris
+    - country: Dravencia
+    - country: Quorinth
+    - country: Zelmarak
+    - country: Fendurath
+    - country: Colvistane
+    - country: Thurembek
+    - country: Galthenor
+    - country: Melvossia
+    - country: Rendopal
+events:
+  event_1:
+    required_attributes:
+    - type
+    count: 15
+    variants:
+    - type: Endurance Relay
+    - type: Longstride Race
+    - type: Footpath Sprint
+    - type: Pavement Dash
+    - type: Crossland Run
+    - type: Harrier Circuit
+    - type: Stridewell Classic
+    - type: Roadpace Challenge
+    - type: Trailbound Derby
+    - type: Legspan Invitational
+    - type: Curbline Pursuit
+    - type: Trackwend Open
+    - type: Routeblaze Relay
+    - type: Pavemark Trot
+    - type: Gritpath Stampede
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Institute of Applied Sciences
+    - name: Brindlecross Polytechnic University
+    - name: Kethura Technical Collegium
+    - name: Ossendral University of Engineering
+    - name: Pallmorin Institute of Technology
+    - name: Veskara Advanced Research University
+    - name: Dranthel Polytechnic Institute
+    - name: Corwith Institute of Sciences
+    - name: Zelkouri University of Technical Studies
+    - name: Haldren Institute of Applied Research
+    - name: Tyndaric College of Engineering
+    - name: Quorvane Institute of Sciences
+    - name: Belmathis Technical University
+    - name: Rendovar Institute of Technology
+    - name: Galtherion University of Applied Sciences

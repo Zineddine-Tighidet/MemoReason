@@ -1,0 +1,782 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_09
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-04-18T15:22:30.334306+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_13: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+    place_14: 15
+  events:
+    event_5: 15
+    event_6: 15
+    event_2: 15
+    event_3: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+  ngos:
+    ngo_1: 15
+    ngo_6: 15
+    ngo_7: 15
+    ngo_8: 15
+  government_orgs:
+    government_org_5: 15
+    government_org_6: 15
+    government_org_7: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - last_name
+    count: 15
+    variants:
+    - last_name: Brelvonn
+    - last_name: Cravothi
+    - last_name: Durnelk
+    - last_name: Fentarque
+    - last_name: Glosheyn
+    - last_name: Helvotran
+    - last_name: Jornelisk
+    - last_name: Kravosset
+    - last_name: Lintharque
+    - last_name: Molvecrin
+    - last_name: Norbassek
+    - last_name: Prelvothi
+    - last_name: Quendorak
+    - last_name: Stelvorn
+    - last_name: Trevosque
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvorn Grissaud
+    - full_name: Brenique Cossalm
+    - full_name: Dothaire Plenvaux
+    - full_name: Yulcren Marbessot
+    - full_name: Kethano Vossirelle
+    - full_name: Jorvane Tullecque
+    - full_name: Prindel Haussoque
+    - full_name: Welmaro Crintesse
+    - full_name: Solvique Darneault
+    - full_name: Fenrique Brossalme
+    - full_name: Galthen Rouvesque
+    - full_name: Ondrave Pellicort
+    - full_name: Quirand Tessovane
+    - full_name: Zelphan Mourillac
+    - full_name: Brivane Corthesseau
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Cendara
+    - city: Thalique
+    - city: Brissolan
+    - city: Korvaine
+    - city: Peldunne
+    - city: Zarethis
+    - city: Luminore
+    - city: Grothane
+    - city: Fessalun
+    - city: Dravique
+    - city: Orenthal
+    - city: Melvaris
+    - city: Quirenth
+    - city: Solvaine
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundria
+    - country: Tasseron
+    - country: Brindoval
+    - country: Corthenia
+    - country: Palmorek
+    - country: Dravencia
+    - country: Lurathis
+    - country: Fendalor
+    - country: Gostivane
+    - country: Merithos
+    - country: Quelvara
+    - country: Zanthelo
+    - country: Obrenask
+    - country: Kalduven
+    - country: Sorthemay
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velanthor
+    - natural_site: Drennaque
+    - natural_site: Calouvine
+    - natural_site: Torbassil
+    - natural_site: Miraquell
+    - natural_site: Fendorath
+    - natural_site: Lusparine
+    - natural_site: Gravellune
+    - natural_site: Ondrevique
+    - natural_site: Pellithorn
+    - natural_site: Quassivere
+    - natural_site: Brentaloque
+    - natural_site: Harvilune
+    - natural_site: Tessavorn
+    - natural_site: Crendolique
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velmorath
+    - region: Cendara-Lisse
+    - region: Thalquenne
+    - region: Orivenne
+    - region: Brequosse
+    - region: Pelmadour
+    - region: Sontheraque
+    - region: Luvaigne
+    - region: Drosseline
+    - region: Quarivelle
+    - region: Fentholais
+    - region: Marbesque
+    - region: Galthenois
+    - region: Rouphaine
+    - region: Tessaverne
+  place_13:
+    required_attributes:
+    - continent
+    - demonym
+    count: 15
+    variants:
+    - continent: Velorean Compact (VC)
+      demonym: Velorean
+    - continent: Thalassic Federation (TF)
+      demonym: Thalassic
+    - continent: Cendrath Alliance (CA)
+      demonym: Cendrathi
+    - continent: Orivane Union (OU)
+      demonym: Orivanean
+    - continent: Pelmorath Consortium (PC)
+      demonym: Pelmorathi
+    - continent: Dravenic League (DL)
+      demonym: Dravenic
+    - continent: Sulkari Pact (SP)
+      demonym: Sulkari
+    - continent: Brenthaic Assembly (BA)
+      demonym: Brenthaic
+    - continent: Korvalen Coalition (KC)
+      demonym: Korvaleni
+    - continent: Tessivane Congress (TC)
+      demonym: Tessivanean
+    - continent: Meldorath Accord (MA)
+      demonym: Meldorathi
+    - continent: Quirenth Bloc (QB)
+      demonym: Quirenthi
+    - continent: Zephalan Community (ZC)
+      demonym: Zephalani
+    - continent: Grothenic Confederation (GC)
+      demonym: Grothenic
+    - continent: Yelvari Commonwealth (YC)
+      demonym: Yelvari
+  place_6:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Galerie du Vondrel
+    - street: Pavillon Crethane
+    - street: Salle Luminarre
+    - street: Maison Torbique
+    - street: Halle Prevosque
+    - street: Atelier Durnaise
+    - street: Palais Grivandel
+    - street: Rotonde Felquaire
+    - street: Passage Morivelle
+    - street: Salon Brenthique
+    - street: Cour Delphane
+    - street: Arcade Juvellois
+    - street: Foyer Calthenique
+    - street: Loggia Pernault
+    - street: Vestibule Quarenne
+  place_7:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Galerie Thovane Lireux
+    - street: Pavillon Crellune
+    - street: Salle Dremault Vossier
+    - street: Maison Brelique Fondane
+    - street: Galerie Pernault Quivesse
+    - street: Atelier Jorvane Clissot
+    - street: Pavillon Mortheau Delvique
+    - street: Salle Grondier Fasselle
+    - street: Galerie Tussane Prevoire
+    - street: Maison Verlique Dournasse
+    - street: Pavillon Crendosse Luvaire
+    - street: Atelier Brossane Quellier
+    - street: Galerie Fendrique Morvasse
+    - street: Salle Plondier Crevault
+    - street: Maison Drossique Tervaine
+  place_8:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Galerie du Vellondre
+    - street: Pavillon des Lumigraves
+    - street: Salle Torbineau
+    - street: Maison Crellivane
+    - street: Atelier Duvossier
+    - street: Galerie Prondaque
+    - street: Pavillon Mossaret
+    - street: Salle des Brintelles
+    - street: Maison Quelvaire
+    - street: Galerie Fentorais
+    - street: Pavillon Drissalune
+    - street: Atelier Gournivelle
+    - street: Salle Harquenois
+    - street: Maison Pellitrave
+    - street: Galerie Souvandier
+  place_9:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Galerie Vorenth des Arts Vivants
+    - street: Pavillon Crellique de Peinture Actuelle
+    - street: Salle Tondrique du Renouveau Plastique
+    - street: Halle Brivenne d'Expression Recente
+    - street: Espace Quilomar des Formes Nouvelles
+    - street: Rotonde Felissane de Creations Presentes
+    - street: Maison Drellique des Oeuvres Courantes
+    - street: Atelier Parvique de Vision Contemporaine
+    - street: Fondation Zelrique des Arts Emergents
+    - street: Palais Morthane de Sculpture Vivante
+    - street: Institut Crellivane des Tendances Plastiques
+    - street: Loggia Tarvenne d'Art Progressif
+    - street: Cercle Brossique des Courants Recents
+    - street: Passage Quilenne de Peinture Nouvelle
+    - street: Vestibule Drantique des Arts Actuels
+  place_10:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Galerie Thovane
+    - street: Pavillon Crellith
+    - street: Maison Durveaux
+    - street: Salle Brenoque
+    - street: Atelier Vossane
+    - street: Galerie Plindore
+    - street: Pavillon Maqueth
+    - street: Maison Feltrune
+    - street: Salle Gorbineau
+    - street: Atelier Jenvasse
+    - street: Galerie Rondique
+    - street: Pavillon Tessaure
+    - street: Maison Colvaine
+    - street: Salle Drupenne
+    - street: Atelier Welmoque
+  place_11:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Pavillon Crellique
+    - street: Maison Delvori
+    - street: Salle Brenthique
+    - street: Atelier Jorvane
+    - street: Galerie Plondaire
+    - street: Pavillon Quessori
+    - street: Maison Feltraque
+    - street: Salle Grivandel
+    - street: Atelier Mossique
+    - street: Galerie Vandrique
+    - street: Pavillon Lesthorin
+    - street: Maison Carveline
+    - street: Salle Drontique
+    - street: Atelier Belvosque
+    - street: Galerie Throndivel
+  place_12:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Crendaque
+    - city: Tassivelle
+    - city: Plorimund
+    - city: Ganthevel
+    - city: Bressalune
+    - city: Korivane
+    - city: Durnephal
+    - city: Melvosque
+    - city: Thandrique
+    - city: Fossalire
+    - city: Quirembay
+    - city: Lontheraque
+    - city: Penvosset
+    - city: Grellitane
+    - city: Varniselle
+  place_14:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvorn
+    - city: Grissalune
+    - city: Petharak
+    - city: Quendoval
+    - city: Mossivane
+    - city: Dralcuthe
+    - city: Henvoria
+    - city: Sulkamere
+    - city: Brinthollow
+    - city: Carveshen
+    - city: Olpheran
+    - city: Weskadine
+    - city: Juntharel
+    - city: Felmoquay
+    - city: Zanthirel
+events:
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthoran Luminist
+    - name: Korelian Pastelwork
+    - name: Dranthic Colorfield
+    - name: Melvari Plein-Aire
+    - name: Tassovan Lightscape
+    - name: Brindeli Chromatic
+    - name: Ossiran Brushstroke
+    - name: Pallenthi Naturalist
+    - name: Gevoran Tonalist
+    - name: Wyndhari Atmospherist
+    - name: Sulkavian Dawnlight
+    - name: Crethari Luminaire
+    - name: Jorvalan Softedge
+    - name: Pellundi Shimmerist
+    - name: Thandoric Glazework
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: luminal and transitional
+    - name: chromatic and emergent
+    - name: gestural and post-figurative
+    - name: tonal and neo-structural
+    - name: kinetic and late-expressive
+    - name: prismatic and avant-formal
+    - name: radical and post-lyrical
+    - name: synthetic and new-perceptual
+    - name: abstract and neo-chromatic
+    - name: fluid and post-tonal
+    - name: dynamic and late-gestural
+    - name: vivid and neo-expressive
+    - name: layered and post-chromatic
+    - name: textural and emergent-formal
+    - name: spectral and neo-gestural
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltroni Cup
+    - name: Drassian Classic
+    - name: Korvane Championship
+    - name: Pellunor Grand Tourney
+    - name: Brethane Masters
+    - name: Tarvoli Invitational
+    - name: Cendara Open Series
+    - name: Morquil Trophy
+    - name: Halstren Challenge
+    - name: Juvaine International
+    - name: Plorvik Grand Slam
+    - name: Tessarun Cup
+    - name: Gelvari Championship
+    - name: Ondrique Masters
+    - name: Brenthalo Classic
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari World Games
+    - name: Torinsol Global Athletics
+    - name: Cendara International Sportsfest
+    - name: Brequon Multisport Gathering
+    - name: Pallenthi Grand Tournament
+    - name: Orivane Universal Games
+    - name: Drossara Nations Championship
+    - name: Kelvori All-Lands Meet
+    - name: Thurembic Athletic Festival
+    - name: Zantelar Open Games
+    - name: Plindova World Sportiad
+    - name: Gessori Continental Challenge
+    - name: Molvaren Intercity Games
+    - name: Wythalan Global Olympiad
+    - name: Fendrosi Peoples Tournament
+entreprise_orgs:
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor Skyport
+    - name: Drennac Aerohub
+    - name: Korvalis Airfield
+    - name: Thalmeq Gateway
+    - name: Brentuvo Flightways
+    - name: Ossivane Terminals
+    - name: Plindaro Aeroport
+    - name: Zethura Skyways
+    - name: Carvolin Jetport
+    - name: Welmathi Airgate
+    - name: Fendrova Aerodrome
+    - name: Quirellan Skybridge
+    - name: Torbassil Airhaven
+    - name: Gelvunar Flightport
+    - name: Mossendri Airworks
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloquin
+    - name: Tranvelo
+    - name: Subvara
+    - name: Raillune
+    - name: Tunneliq
+    - name: Cirqway
+    - name: Voitraq
+    - name: Gliderex
+    - name: Pulseway
+    - name: Ferrolith
+    - name: Carvane
+    - name: Lineway
+    - name: Delvoran
+    - name: Traksel
+    - name: Ondurail
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor FC
+    - name: Sporting Drennaq
+    - name: Kelvara Athletic Club
+    - name: Torbinesse United
+    - name: FC Grothael
+    - name: Lundaric City
+    - name: Phalesto Wanderers
+    - name: Orivane Sporting Club
+    - name: Zethura FC
+    - name: Brentalique Athletic
+    - name: Caldroven Rangers
+    - name: Moriquess FC
+    - name: Sporting Jelvane
+    - name: Thassoral United
+    - name: FC Dravique
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velothar Athletic Club
+    - name: Sportica Drenholm
+    - name: Kelvaro Rugby Union
+    - name: Tasserin Rovers
+    - name: Grellond Sporting
+    - name: Brivane Ruggers
+    - name: Ondrath Pitch Club
+    - name: Pallique Torven
+    - name: Crethane United Rugby
+    - name: Jorvane Sporting Club
+    - name: Melvique Rugbymen
+    - name: Drossane Athletic
+    - name: Pellithor Scrum Club
+    - name: Quarneth Sporting Union
+    - name: Tolvane Rugbyists
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GLOHEPA
+    - name: CELVARN
+    - name: INTECURA
+    - name: MONDISAV
+    - name: TULIVEX
+    - name: PANLECOR
+    - name: QUORISHEN
+    - name: BRENALTO
+    - name: VORTICUL
+    - name: DREMISOL
+    - name: KALENTHO
+    - name: SUVRANEC
+    - name: PLORIMAX
+    - name: FENDURATH
+    - name: ZOLMIREN
+  ngo_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Consortium Mondiral des Langues Partagees
+    - name: Alliance Interlinguale de Cooperation Culturelle
+    - name: Reseau Plurivocal des Peuples Associes
+    - name: Communaute Transverbale pour le Dialogue Linguistique
+    - name: Federation Globale des Idiomes Communs
+    - name: Ligue Interculturelle des Voix Unifiees
+    - name: Assemblee Polyglotte de Solidarite Civique
+    - name: Union Translinguale des Nations Parlantes
+    - name: Pacte Mondial pour la Diversite Verbale
+    - name: Cercle Interverbal de Cooperation Mutuelle
+    - name: Fondation Plurilangue des Echanges Civils
+    - name: Entente Globale des Cultures Dialoguantes
+    - name: Collectif Translingual des Heritages Partages
+    - name: Mouvement Interverbal pour la Cohesion Culturelle
+    - name: Accord Polylingue de Fraternite Civique
+  ngo_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Coalition for Civic Liberties
+    - name: Worldwide Alliance for Dignity Protection
+    - name: Transnational League for Fundamental Freedoms
+    - name: Universal Council for Civil Safeguards
+    - name: Intercontinental Bureau of Justice Advocacy
+    - name: Planetary Network for Rights Preservation
+    - name: Cross-Border Assembly for Ethical Governance
+    - name: Unified Front for Peoples' Protections
+    - name: Multinational Forum for Equitable Treatment
+    - name: Open Borders Initiative for Civic Dignity
+    - name: Collective Accord for Liberty Stewardship
+    - name: Borderless Compact for Humanitarian Equity
+    - name: Shared Horizons Council for Civil Integrity
+    - name: Convergent Alliance for Fundamental Safeguards
+    - name: Interlateral Commission for Dignity Assurance
+  ngo_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Coalition for Motorsport Governance
+    - name: Worldwide Vehicular Sports Federation
+    - name: Transnational League of Motoring Disciplines
+    - name: Intercontinental Automotive Sporting Council
+    - name: Allied Bureau of Competitive Driving
+    - name: Universal Motoring Pursuits Assembly
+    - name: Consolidated Forum of Vehicular Athletics
+    - name: Planetary Accord for Racing Oversight
+    - name: Joint Directorate of Motor Competitions
+    - name: Unified Consortium of Automotive Endeavours
+    - name: Multilateral Motoring Stewardship Body
+    - name: Cooperative Network for Driving Disciplines
+    - name: Federated Circle of Vehicular Sportsmanship
+    - name: Combined Authority on Motoring Regulation
+    - name: Integrated Council for Automotive Pursuits
+government_orgs:
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran National Assembly
+    - name: Drethic Legislative Council
+    - name: Quorath Civic Chamber
+    - name: Brenolith General Congress
+    - name: Vossari Parliamentary Bureau
+    - name: Kelthune Deliberative Senate
+    - name: Paldorin Statecraft Council
+    - name: Morthaven Governance Directorate
+    - name: Sulvanic Federal Legislature
+    - name: Gretholin Sovereign Assembly
+    - name: Ondravic Consultative Chamber
+    - name: Tarnellic Grand Diet
+    - name: Felquoran Bicameral Congress
+    - name: Zelphari National Conclave
+    - name: Wentoric Plenary Council
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Convergent Peoples Assembly
+    - name: Thalendric Council of Cooperating States
+    - name: Joined Sovereignties Directorate
+    - name: Panlateral Governance Consortium
+    - name: Federated Civitas Accord
+    - name: Interland Coordinating Bureau
+    - name: Omnistatal Deliberative Forum
+    - name: Plurinational Stewardship Chamber
+    - name: Bridged Polities Secretariat
+    - name: Covenantal Republics Assembly
+    - name: Multilateral Civic Presidium
+    - name: Interstatal Concord Authority
+    - name: Syndetic Nations Chancellery
+    - name: Conjoint Territories Directorate
+    - name: Transvernal Governance Collegium
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Fuel Resources Directorate
+    - name: Transnational Power Oversight Bureau
+    - name: Unified Thermal Resources Council
+    - name: Intercontinental Grid Governance Authority
+    - name: Multilateral Combustion Policy Board
+    - name: Joint Electrification Standards Office
+    - name: Worldwide Renewables Coordination Secretariat
+    - name: Allied Hydrocarbon Regulatory Commission
+    - name: Cross-Border Utilities Governance Forum
+    - name: Consolidated Wattage Oversight Tribunal
+    - name: Plurinational Fuel Stewardship Directorate
+    - name: Federated Voltaic Policy Consortium
+    - name: Intergovernmental Joule Regulation Assembly
+    - name: Combined Turbine Standards Chancellery
+    - name: Multinational Kilowatt Governance Institute
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Orbital Research Directorate
+    - name: Transborder Aerospace Coordination Bureau
+    - name: Allied Spaceflight Governance Council
+    - name: Interregional Celestial Exploration Authority
+    - name: Unified Orbital Sciences Commission
+    - name: Federated Astronautic Development Office
+    - name: Multinational Spacelaunch Oversight Agency
+    - name: Joint Exoatmospheric Programs Directorate
+    - name: Cooperative Stellar Navigation Bureau
+    - name: Shared Orbital Ventures Administration
+    - name: Collective Rocketry and Spaceflight Board
+    - name: Intercontinental Aerospace Governance Office
+    - name: Plurinational Spacefaring Coordination Authority
+    - name: Combined Orbital Missions Secretariat
+    - name: Federated Deep-Space Exploration Directorate
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Monetary Oversight Board
+    - name: Transborder Financial Regulation Council
+    - name: Unified Lending Supervisory Bureau
+    - name: Intercontinental Credit Governance Authority
+    - name: Allied Fiscal Compliance Directorate
+    - name: Federated Deposit Assurance Commission
+    - name: Multilateral Banking Standards Office
+    - name: Joint Prudential Oversight Secretariat
+    - name: Cooperative Fiduciary Regulation Agency
+    - name: Consolidated Capital Supervision Authority
+    - name: Interregional Savings Governance Bureau
+    - name: Shared Financial Stability Directorate
+    - name: Plurinational Banking Conduct Authority
+    - name: Combined Monetary Integrity Commission
+    - name: Supranational Credit Oversight Tribunal
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Fiduciary Oversight Directorate
+    - name: Transborder Capital Regulation Bureau
+    - name: Unified Ledger Compliance Authority
+    - name: Interregional Derivatives Supervision Council
+    - name: Allied Monetary Instruments Governance Board
+    - name: Federated Exchange Integrity Commission
+    - name: Sovereign Portfolio Standards Tribunal
+    - name: Multilateral Trading Assurance Secretariat
+    - name: Joint Clearinghouse Regulatory Directorate
+    - name: Consolidated Equity Prudential Office
+    - name: Intercontinental Bond Oversight Chancellery
+    - name: Cooperative Financial Conduct Inspectorate
+    - name: Plurinational Asset Transparency Bureau
+    - name: Integrated Commodities Surveillance Authority
+    - name: Supranational Investment Compliance Directorate
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdant Mobility Commendation
+    - name: Cleantrek Urban Transit Honor
+    - name: Ecopath Movement Distinction
+    - name: Greenflow Commuter Excellence Prize
+    - name: Lowcarb Transit Laurel
+    - name: Rideshare Stewardship Medallion
+    - name: Transitwell Civic Mobility Honor
+    - name: Cleanroute Infrastructure Accolade
+    - name: Pedalsphere Urban Passage Prize
+    - name: Greenlane Public Conveyance Distinction
+    - name: Ecovoy Collective Transit Laurel
+    - name: Clearpath Mobility Stewardship Medal
+    - name: Transitbloom Civic Movement Prize
+    - name: Greenhaul Urban Passage Accolade
+    - name: Ridepure Sustainable Corridor Honor
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Preservation Landmark
+    - name: Enduring Legacy Designation
+    - name: Cultural Stewardship Honor
+    - name: Protected Treasures Emblem
+    - name: Hallowed Grounds Recognition
+    - name: Timeless Patrimony Seal
+    - name: Collective Memory Distinction
+    - name: Shared Heritage Accolade
+    - name: Living Monument Commendation
+    - name: Civilizational Trust Mark
+    - name: Perpetual Guardianship Title
+    - name: Cherished Landscape Insignia
+    - name: Universal Custodianship Badge
+    - name: Revered Terrain Credential
+    - name: Lasting Splendor Designation

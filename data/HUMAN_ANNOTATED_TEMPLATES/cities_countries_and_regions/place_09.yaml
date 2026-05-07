@@ -1,0 +1,364 @@
+document:
+  document_id: place_09
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: Paris
+  wikipedia_url: https://en.wikipedia.org/wiki/Paris
+  original_document: 'Paris is the capital and largest city of France, with an estimated city population of 2.04 million in
+    an area of 105.4 km2 (40.7 sq mi), and a metropolitan population of 13.2 million as of January 2026. Located on the river
+    Seine in the centre of the Île-de-France region, it is the largest metropolitan area and fourth-most populous city in
+    the European Union (EU). Nicknamed the "City of Light", partly because of its role in the Age of Enlightenment, Paris
+    has been one of the world''s major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy since the
+    17th century.
+
+
+    Administratively, Paris is divided into twenty arrondissements (districts), each having their own cultural identity. Haussmann''s
+    renovation of Paris, which created new boulevards, parks, and public works, gave birth to a modern city known as the "capital
+    of the 19th century". Paris is a major railway, motorway, and air-transport hub; in 2024 Charles de Gaulle Airport was
+    the EU''s busiest airport. Paris has one of the most sustainable transportation systems in the world and is one of only
+    two cities that have received the Sustainable Transport Award twice. Its Art Nouveau-decorated Métro has become a symbol
+    of the city. Paris is known for its museums and architectural landmarks: the Musée d''Orsay, Musée Marmottan Monet, and
+    Musée de l''Orangerie are noted for their collections of French Impressionist art, while the Musée National d''Art Moderne,
+    Musée Rodin, and Musée Picasso are noted for their collections of modern and contemporary art. Parts of the city along
+    the Seine have been designated as a UNESCO World Heritage Site since 1991.
+
+
+    The president of France and both houses of the French Parliament sit in Paris. Paris is home to several United Nations
+    organisations, including UNESCO, as well as other international organisations such as the OECD, the International Bureau
+    of Weights and Measures (in neighbouring Saint-Cloud), the International Energy Agency, the Organisation internationale
+    de la Francophonie, the International Federation for Human Rights, and the Fédération internationale de l''Automobile,
+    along with European bodies such as the European Space Agency, the European Banking Authority, and the European Securities
+    and Markets Authority. The city hosts many sporting events, such as the French Open, and is the home of the association
+    football club Paris Saint-Germain and the rugby union club Stade Français. Paris has also hosted the Summer Olympics three
+    times.'
+  document_to_annotate: '[Paris; place_1.city] is the capital and largest city of [France; place_2.country], with an estimated
+    city population of [2.04; number_1.float] million in an area of [105.4; number_2.float] km2, and a metropolitan population
+    of [13.2; number_4.float] million as of [January; temporal_1.month] [2026; temporal_6.year]. Located on the river [Seine;
+    place_3.natural_site] in the centre of the [Île-de-France; place_4.region] region, it is the largest metropolitan area
+    and [fourth; number_5.str]-most populous city in the [European Union (EU); place_13.continent]. Nicknamed the "[City of
+    Light; place_14.city]", partly because of its role in the [Age of Enlightenment; event_1.name], [Paris; place_1.city]
+    has been one of the world''s major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy since the
+    [17th; number_9.int] century.
+
+
+    Administratively, [Paris; place_1.city] is divided into [twenty; number_6.str] districts, each having their own cultural
+    identity. [Haussmann; person_1.last_name]''s renovation of [Paris; place_1.city], which created new streets, parks, and
+    public works, gave birth to a modern city. [Paris; place_1.city] is a major railway, motorway, and air-transport hub;
+    in [2024; temporal_4.year] [Charles de Gaulle; entreprise_org_3.name] Airport was the [EU; place_13.continent]''s busiest
+    airport. [Paris; place_1.city] has one of the most elaborated transportation systems in the world and is one of only [two;
+    number_7.str] cities that have received the [Sustainable Transport Award; award_1.name] twice. Its Art Nouveau-decorated
+    [Métro; entreprise_org_4.name] has become a symbol of the city. [Paris; place_1.city] is known for its museums and architectural
+    landmarks: the [Musée d''Orsay; place_6.street], [Musée Marmottan Monet; place_7.street], and [Musée de l''Orangerie;
+    place_8.street] are noted for their collections of [French Impressionist; event_5.name] art, while the [Musée National
+    d''Art Moderne; place_9.street], [Musée Rodin; place_10.street], and [Musée Picasso; place_11.street] are noted for their
+    collections of [modern and contemporary; event_6.name] art. Parts of the city along the [Seine; place_3.natural_site]
+    have been designated as a [UNESCO; ngo_1.name] [World Heritage Site; award_2.name] since [1991; temporal_5.year].
+
+
+    The president of [France; place_2.country] and both houses of the [French Parliament; government_org_5.name] sit in [Paris;
+    place_1.city]. [Paris; place_1.city] is home to several [United Nations; government_org_6.name] organisations, including
+    [UNESCO; ngo_1.name], as well as other international organisations such as the [OECD; government_org_5.name], the [International
+    Bureau of Weights and Measures; government_org_6.name] (in neighbouring [Saint-Cloud; place_12.city]), the [International
+    Energy Agency; government_org_7.name], the [Organisation internationale de la Francophonie; ngo_6.name], the [International
+    Federation for Human Rights; ngo_7.name], and the [Fédération internationale de l''Automobile; ngo_8.name], along with
+    [European; place_13.demonym] bodies such as the [European Space Agency; government_org_2.name], the [European Banking
+    Authority; government_org_3.name], and the [European Securities and Markets Authority; government_org_4.name]. The city
+    hosts many sporting events, such as the [French Open; event_2.name], and is the home of the association football club
+    [Paris Saint-Germain; entreprise_org_1.name] and the rugby union club [Stade Français; entreprise_org_2.name]. [Paris;
+    place_1.city] has also hosted the [Summer Olympics; event_3.name] [three; number_8.str] times.'
+  relations: []
+  rules:
+  - 'number_6.str > 1 # plural "districts"'
+  - 'number_8.str > 1 # plural "times" (hosted Olympics multiple times)'
+  - 'number_5.str > 1 # ranking ordinal implies at least second or higher'
+  - 'number_2.float > 0 # area must be positive'
+  - 'number_1.float > 0 # city population must be positive'
+  - 'century_end(number_9.int) < temporal_6.year # Paris has been a major centre since the stated century, which must precede
+    the current reference year'
+  num_questions: 12
+  questions:
+  - question_id: place_09_q01
+    question: What is the nickname of [Paris; place_1.city]?
+    question_type: extractive
+    answer: place_14.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Paris; place_1.city] is nicknamed the "[City of Light; place_14.city]".
+    reasoning_chain_text: 1. The document states that [Paris; place_1.city] is nicknamed the "[City of Light; place_14.city]".
+  - question_id: place_09_q02
+    question: Is [Paris; place_1.city] the largest metropolitan area in the [European Union (EU); place_13.continent] ?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Paris; place_1.city] has hosted the [Summer Olympics; event_3.name] [three; number_8.str]
+      times. The word "three" is the invariant literal answer.
+    reasoning_chain_text: 1. The document states that [Paris; place_1.city] has hosted the [Summer Olympics; event_3.name]
+      [three; number_8.str] times. The word "three" is the invariant literal answer.
+  - question_id: place_09_q03
+    question: Who is the current mayor of [Paris; place_1.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses [Paris; place_1.city]'s population, landmarks, and organisations.
+    - 2. The document does not mention the current mayor of [Paris; place_1.city].
+    reasoning_chain_text: '1. The document discusses [Paris; place_1.city]''s population, landmarks, and organisations.
+
+      2. The document does not mention the current mayor of [Paris; place_1.city].'
+  - question_id: place_09_q04
+    question: How many more million people live in the metropolitan area of [Paris; place_1.city] than in the city proper?
+    question_type: arithmetic
+    answer: number_4.float - number_1.float
+    answer_type: variant
+    reasoning_chain:
+    - 1. The city population of [Paris; place_1.city] is [2.04; number_1.float] million.
+    - 2. The metropolitan population is [13.2; number_4.float] million.
+    - 3. The difference is [13.2; number_4.float] − [2.04; number_1.float] = 11.16 million.
+    reasoning_chain_text: '1. The city population of [Paris; place_1.city] is [2.04; number_1.float] million.
+
+      2. The metropolitan population is [13.2; number_4.float] million.
+
+      3. The difference is [13.2; number_4.float] − [2.04; number_1.float] = 11.16 million.'
+  - question_id: place_09_q05
+    question: How many museums are noted for their collections of [French Impressionist; event_5.name] ?
+    question_type: arithmetic
+    answer: Three
+    answer_type: invariant
+    reasoning_chain:
+    - Orsay, monet and orangerie
+    reasoning_chain_text: Orsay, monet and orangerie
+  - question_id: place_09_q06
+    question: What is the total combined seating capacity of the home stadiums of [Paris Saint-Germain; entreprise_org_1.name]
+      and [Stade Français; entreprise_org_2.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Paris Saint-Germain; entreprise_org_1.name] and [Stade Français; entreprise_org_2.name] as
+      sports clubs based in [Paris; place_1.city].
+    - 2. The document does not provide the seating capacity of either club's home stadium, so the total cannot be calculated.
+    reasoning_chain_text: '1. The document mentions [Paris Saint-Germain; entreprise_org_1.name] and [Stade Français; entreprise_org_2.name]
+      as sports clubs based in [Paris; place_1.city].
+
+      2. The document does not provide the seating capacity of either club''s home stadium, so the total cannot be calculated.'
+  - question_id: place_09_q07
+    question: How many years before the population estimate of [Paris; place_1.city] were parts of the city along the [Seine;
+      place_3.natural_site] designated as a [UNESCO; ngo_1.name] [World Heritage Site; award_2.name]?
+    question_type: temporal
+    answer: temporal_6.year - temporal_5.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [UNESCO; ngo_1.name] [World Heritage Site; award_2.name] designation occurred in [1991; temporal_5.year].
+    - 2. The population estimate is as of [January; temporal_1.month] [2026; temporal_6.year].
+    - 3. The difference is [2026; temporal_6.year] − [1991; temporal_5.year] = 35 years.
+    reasoning_chain_text: '1. The [UNESCO; ngo_1.name] [World Heritage Site; award_2.name] designation occurred in [1991;
+      temporal_5.year].
+
+      2. The population estimate is as of [January; temporal_1.month] [2026; temporal_6.year].
+
+      3. The difference is [2026; temporal_6.year] − [1991; temporal_5.year] = 35 years.'
+  - question_id: place_09_q08
+    question: Were parts of [Paris; place_1.city] along the [Seine; place_3.natural_site] designated as a [UNESCO; ngo_1.name]
+      [World Heritage Site; award_2.name] before or after the population estimate dated [January; temporal_1.month] [2026;
+      temporal_6.year]?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - The UNESCO designation is said to date from 1991.
+    - The population estimate is as of January 2026.
+    - 1991 is before 2026.
+    reasoning_chain_text: 'The UNESCO designation is said to date from 1991.
+
+      The population estimate is as of January 2026.
+
+      1991 is before 2026.'
+  - question_id: place_09_q09
+    question: In what year did [Paris; place_1.city] first host the [Summer Olympics; event_3.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Paris; place_1.city] has hosted the [Summer Olympics; event_3.name] [three; number_8.str]
+      times.
+    - 2. The document does not provide the specific years of any of these Olympic Games, so the first year cannot be determined.
+    reasoning_chain_text: '1. The document states that [Paris; place_1.city] has hosted the [Summer Olympics; event_3.name]
+      [three; number_8.str] times.
+
+      2. The document does not provide the specific years of any of these Olympic Games, so the first year cannot be determined.'
+  - question_id: place_09_q10
+    question: Which individual is credited with modernizing the public works and infrastructure of the city that serves as
+      the headquarters for the [European Space Agency; government_org_2.name]?
+    question_type: inference
+    answer: person_1.last_name
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_09_q11
+    question: Based on the document, is [Paris; place_1.city] unique among cities in having received the [Sustainable Transport
+      Award; award_1.name] twice?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Paris; place_1.city] is one of only [two; number_7.str] cities that have received the [Sustainable
+      Transport Award; award_1.name] twice.
+    - 2. Since there is another city that also received the award twice, [Paris; place_1.city] is not unique — the answer
+      is No.
+    reasoning_chain_text: '1. The document states [Paris; place_1.city] is one of only [two; number_7.str] cities that have
+      received the [Sustainable Transport Award; award_1.name] twice.
+
+      2. Since there is another city that also received the award twice, [Paris; place_1.city] is not unique — the answer
+      is No.'
+  - question_id: place_09_q12
+    question: Based on the document, which of the [twenty; number_6.str] districts of [Paris; place_1.city] has the highest
+      population density?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Paris; place_1.city] is divided into [twenty; number_6.str] districts, each with their
+      own cultural identity.
+    - 2. The document does not provide population or area data for individual districts, so the district with the highest
+      population density cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [Paris; place_1.city] is divided into [twenty; number_6.str] districts,
+      each with their own cultural identity.
+
+      2. The document does not provide population or area data for individual districts, so the district with the highest
+      population density cannot be determined.'
+  implicit_rules:
+  - entity_ref: number_1.float
+    lower_bound: 1.0
+    upper_bound: 12.0
+    factual_value: 2.04
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.float
+    lower_bound: 84.32
+    upper_bound: 126.48
+    factual_value: 105.4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.float
+    lower_bound: 10.56
+    upper_bound: 15.84
+    factual_value: 13.2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 16
+    upper_bound: 18
+    factual_value: 17
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_6.str
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  review_statuses:
+    rules:
+      status: in_progress
+      reviewed: false
+      reviewed_at: null
+      reviewed_by: null
+      last_edited_by: anonymous_annotator
+      activity_users:
+      - anonymous_annotator
+      last_activity_at: '2026-04-01 19:50:24'
+      last_activity_user: anonymous_annotator
+      last_activity_action: edit
+    questions:
+      status: draft
+      reviewed: false
+      reviewed_at: null
+      reviewed_by: null
+      last_edited_by: null
+      activity_users: []
+      last_activity_at: null
+      last_activity_user: null
+      last_activity_action: null
+  active_review_target: rules
+  active_review_task_status: in_progress
+  active_review_campaign_name: Rules Annotation Campaign
+  qa_coverage_exemptions: []
+  document: null
+  source_label: admin_completed
+  fictionalized_annotated_template_document: '[Paris Alt; place_1.city] is the capital and largest city of [France Alt; place_2.country],
+    with an estimated city population of [2.04; number_1.float] million in an area of [105.4; number_2.float] km2, and a metropolitan
+    population of [13.2; number_4.float] million as of [January; temporal_1.month] [2026; temporal_6.year]. Located on the
+    river [Seine Alt; place_3.natural_site] in the centre of the [Île-de-France Alt; place_4.region] region, it is the largest
+    metropolitan area and [fourth; number_5.str]-most populous city in the [European Union (EU) Alt; place_13.continent].
+    Nicknamed the "[City of Light Alt; place_14.city]", partly because of its role in the [Age of Enlightenment Alt; event_1.name],
+    [Paris Alt; place_1.city] has been one of the world''s major centres of finance, diplomacy, commerce, culture, fashion,
+    and gastronomy since the [17; number_9.int] century.
+
+
+    Administratively, [Paris Alt; place_1.city] is divided into [twenty; number_6.str] districts, each having their own cultural
+    identity. [Haussmann Alt; person_1.last_name]''s renovation of [Paris Alt; place_1.city], which created new streets, parks,
+    and public works, gave birth to a modern city. [Paris Alt; place_1.city] is a major railway, motorway, and air-transport
+    hub; in [2024; temporal_4.year] [Charles de Gaulle Alt; person_2.full_name] Airport was the [European Union (EU) Alt;
+    place_13.continent]''s busiest airport. [Paris Alt; place_1.city] has one of the most elaborated transportation systems
+    in the world and is one of only [two; number_7.str] cities that have received the [Sustainable Transport Award Alt; award_1.name]
+    twice. Its [Art Nouveau Alt; event_4.name]-decorated [Métro Alt; entreprise_org_4.name] has become a symbol of the city.
+    [Paris Alt; place_1.city] is known for its museums and architectural landmarks: the [Musée d''Orsay Alt; place_6.street],
+    [Musée Marmottan Monet Alt; place_7.street], and [Musée de l''Orangerie Alt; place_8.street] are noted for their collections
+    of [French Impressionist Alt; event_5.name] art, while the [Musée National d''Art Moderne Alt; place_9.street], [Musée
+    Rodin Alt; place_10.street], and [Musée Picasso Alt; place_11.street] are noted for their collections of [modern and contemporary
+    Alt; event_6.name] art. Parts of the city along the [Seine Alt; place_3.natural_site] have been designated as a [UNESCO
+    Alt; ngo_1.name] [World Heritage Site Alt; award_2.name] since [1991; temporal_5.year].
+
+
+    The president of [France Alt; place_2.country] and both houses of the [French Alt; place_2.demonym] [Parliament Alt; government_org_5.name]
+    sit in [Paris Alt; place_1.city]. [Paris Alt; place_1.city] is home to several [United Nations Alt; government_org_6.name]
+    organisations, including [UNESCO Alt; ngo_1.name], as well as other international organisations such as the [Parliament
+    Alt; government_org_5.name], the [United Nations Alt; government_org_6.name] (in neighbouring [Saint-Cloud Alt; place_12.city]),
+    the [International Energy Agency Alt; government_org_7.name], the [Organisation internationale de la Francophonie Alt;
+    ngo_6.name], the [International Federation for Human Rights Alt; ngo_7.name], and the [Fédération internationale de l''Automobile
+    Alt; ngo_8.name], along with [European Alt; place_13.demonym] bodies such as the [European Space Agency Alt; government_org_2.name],
+    the [European Banking Authority Alt; government_org_3.name], and the [European Securities and Markets Authority Alt; government_org_4.name].
+    The city hosts many sporting events, such as the [French Open Alt; event_2.name], and is the home of the association football
+    club [Paris Saint-Germain Alt; entreprise_org_1.name] and the rugby union club [Stade Français Alt; entreprise_org_2.name].
+    [Paris Alt; place_1.city] has also hosted the [Summer Olympics Alt; event_3.name] [three; number_8.str] times.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

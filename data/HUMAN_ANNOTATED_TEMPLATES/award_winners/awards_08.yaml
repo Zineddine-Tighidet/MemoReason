@@ -1,0 +1,468 @@
+document:
+  document_id: awards_08
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Kylian Mbappé
+  wikipedia_url: https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+  original_document: 'Kylian Mbappé Lottin (born 20 December 1998) is a French professional footballer who plays as a forward
+    for La Liga club Real Madrid and captains the France national team. He is widely regarded as one of the best players in
+    the world, known for his pace, dribbling, and clinical finishing.
+
+
+    Born in Paris and raised in nearby Bondy, Mbappé began his senior club career in 2015 with Monaco, where he won the Ligue
+    1 title in the 2016–17 season. In 2017, aged 18, Mbappé signed for Paris Saint-Germain on an eventual permanent transfer
+    worth €180 million, making him the second-most-expensive player and most expensive teenage player of all time. With PSG,
+    he won six Ligue 1 titles and four Coupes de France, including a domestic quadruple in the 2019–20 season, while also
+    leading the club to its first ever UEFA Champions League final in 2020. He is the club''s all-time top goalscorer, ranks
+    third in assists, and is the seventh-highest goalscorer in Ligue 1 history. In 2024, after several years of speculation,
+    Mbappé joined Real Madrid on a free transfer. He won the UEFA Super Cup and the FIFA Intercontinental Cup in the first
+    half of his debut season, scoring in both finals. Breaking the record for the most goals scored by a Real Madrid player
+    in their debut season, he also won the Pichichi Trophy and his first European Golden Shoe.
+
+
+    At international level, Mbappé made his senior debut for France in 2017 at the age of 18. At the 2018 FIFA World Cup,
+    Mbappé became the youngest French player to score at a World Cup, as well as the second teenager, after Pelé, to score
+    in a World Cup final. He finished as the joint second-highest goalscorer as France won the tournament; he went on to win
+    the FIFA World Cup Best Young Player and French Player of the Year awards for his performances. He also helped France
+    to victory in the UEFA Nations League in 2021, receiving the top scorer award in the finals. At the 2022 FIFA World Cup,
+    France reached the final again; Mbappé won the Golden Boot and Silver Ball and set the record for the most goals scored
+    in World Cup final matches by scoring a hat-trick. Mbappé is one of only two players to have scored in two consecutive
+    World Cup finals (the other being Brazil''s Vavá in 1958 and 1962).
+
+
+    Mbappé finished in third place for the 2023 Ballon d''Or and was runner-up for the 2022 The Best FIFA Men''s Player award.
+    He was named in the FIFA FIFPro World11 in 2018, 2019, 2022, 2023, 2024 and 2025, the UEFA Team of the Year in 2018 and
+    the UEFA Champions League Squad of the Season in 2016–17, 2019–20, 2020–21 and 2021–22. He was awarded the Golden Boy
+    in 2017, the Kopa Trophy in 2018, and was shortlisted for the Laureus World Sportsman of the Year in 2019 and 2023. Mbappé
+    has been named Ligue 1 Player of the Year a record five times, and has finished as the Ligue 1 top scorer for a record
+    six seasons; in the 2021–22 season, he became the first player to finish as both Ligue 1 top scorer and top assist provider.
+    Mbappé was named as one of the Time''s 100 most influential people in the world in 2023 and was listed by Forbes as one
+    of the world''s ten highest-paid athletes in 2023 and 2024.'
+  document_to_annotate: '[Kylian Mbappé Lottin; person_1.full_name] (born [20 December 1998; temporal_1.date]) is a [French;
+    person_1.nationality] professional footballer who plays as a forward for [La Liga; event_1.name] club [Real Madrid; entreprise_org_1.name]
+    and captains the [France; place_1.country] national team.
+
+
+    Born in [Paris; place_2.city] and raised in nearby [Bondy; place_3.city], [Mbappé; person_1.last_name] began [his; person_1.poss_det_pronoun]
+    senior club career in [2015; temporal_2.year] with [Monaco; entreprise_org_2.name], where [he; person_1.subj_pronoun]
+    won the [Ligue 1; event_2.name] title in the [2016–17; temporal_3.year] season. In [2017; temporal_4.year], aged [18;
+    person_1.age], [Mbappé; person_1.last_name] signed for [Paris Saint-Germain; entreprise_org_3.name] on an eventual permanent
+    transfer worth about $[180; number_1.int] million. With [PSG; entreprise_org_3.name], [he; person_1.subj_pronoun] won
+    [six; number_2.str] [Ligue 1; event_2.name] titles and [four; number_3.str] [Coupes de France; event_3.name], including
+    a domestic quadruple in the [2019–20; temporal_5.year] season, while also leading the club to its first ever [UEFA Champions
+    League; event_4.name] final in [2020; temporal_6.year]. [He; person_1.subj_pronoun] is the club''s all-time top goalscorer,
+    ranks third in assists, and is the seventh-highest goalscorer in [Ligue 1; event_2.name] history. In [2024; temporal_7.year],
+    after several years of speculation, [Mbappé; person_1.last_name] joined [Real Madrid; entreprise_org_1.name] on a free
+    transfer. [He; person_1.subj_pronoun] won the [UEFA Super Cup; award_1.name] and the [FIFA Intercontinental Cup; award_2.name]
+    in the first half of [his; person_1.poss_det_pronoun] debut season, scoring in both finals. Breaking the record for the
+    most goals scored by a [Real Madrid; entreprise_org_1.name] player in their debut season, [he; person_1.subj_pronoun]
+    also won the [Pichichi Trophy; award_3.name] and [his; person_1.poss_det_pronoun] first [European Golden Shoe; award_4.name].
+
+
+    At international level, [Mbappé; person_1.last_name] made [his; person_1.poss_det_pronoun] senior debut for [France; place_1.country]
+    in [2017; temporal_4.year] at the age of [18; person_1.age]. At the [2018 FIFA World Cup; event_5.name], [Mbappé; person_1.last_name]
+    became the youngest [French; place_1.demonym] player to score at a [World Cup; event_6.name], as well as the second teenager,
+    after [Pelé; person_2.full_name], to score in a [World Cup; event_6.name] final. [He; person_1.subj_pronoun] finished
+    as the joint second-highest goalscorer as [France; place_1.country] won the tournament; [he; person_1.subj_pronoun] went
+    on to win the [FIFA World Cup Best Young Player; award_5.name] and [French Player of the Year; award_6.name] awards for
+    [his; person_1.poss_det_pronoun] performances. [He; person_1.subj_pronoun] also helped [France; place_1.country] to victory
+    in the [UEFA Nations League; event_7.name] in [2021; temporal_8.year], receiving the top scorer award in the finals. At
+    the [2022 FIFA World Cup; event_8.name], [France; place_1.country] reached the final again; [Mbappé; person_1.last_name]
+    won the [Golden Boot; award_7.name] and [Silver Ball; award_8.name] and set the record for the most goals scored in [World
+    Cup; event_6.name] final matches by scoring a hat-trick. [Mbappé; person_1.last_name] is one of only [two; number_4.str]
+    players to have scored in [two; number_5.str] consecutive [World Cup; event_6.name] finals (the other being [Brazil; place_4.country]''s
+    [Vavá; person_3.full_name] in [1958; temporal_9.year] and [1962; temporal_10.year]).
+
+
+    [Mbappé; person_1.last_name] finished in [third; number_8.str] place for the [2023; temporal_11.year] [Ballon d''Or; award_9.name]
+    and was runner-up for the [2022; temporal_12.year] [The Best FIFA Men''s Player; award_10.name] award. [He; person_1.subj_pronoun]
+    was named in the [FIFA FIFPro World11; award_11.name] in [2018; temporal_13.year], [2019; temporal_14.year], [2022; temporal_12.year],
+    [2023; temporal_11.year], [2024; temporal_7.year] and [2025; temporal_15.year], the [UEFA Team of the Year; award_12.name]
+    in [2018; temporal_13.year] and the [UEFA Champions League Squad of the Season; award_13.name] in [2016–17; temporal_3.year],
+    [2019–20; temporal_5.year], [2020–21; temporal_16.year] and [2021–22; temporal_17.year]. [He; person_1.subj_pronoun] was
+    awarded the [Golden Boy; award_14.name] in [2017; temporal_4.year], the [Kopa Trophy; award_15.name] in [2018; temporal_13.year],
+    and was shortlisted for the [Laureus World Sportsman of the Year; award_16.name] in [2019; temporal_14.year] and [2023;
+    temporal_11.year]. [Mbappé; person_1.last_name] has been named [Ligue 1 Player of the Year; award_17.name] a record [five;
+    number_6.str] times, and has finished as the [Ligue 1; event_2.name] top scorer for a record [six; number_7.str] seasons;
+    in the [2021–22; temporal_17.year] season, [he; person_1.subj_pronoun] became the first player to finish as both [Ligue
+    1; event_2.name] top scorer and top assist provider.'
+  relations: []
+  rules:
+  - 'number_6.str > 1 # "a record five times" — plural'
+  - 'number_7.str > 1 # "a record six seasons" — plural'
+  - 'number_2.str > 1 # "six Ligue 1 titles" — plural'
+  - 'number_3.str > 1 # "four Coupes de France" — plural'
+  - 'number_5.str > 1 # "two consecutive World Cup finals" — plural'
+  - number_4.str == two
+  num_questions: 12
+  questions:
+  - question_id: awards_08_q01
+    question: Which club did [Kylian Mbappé Lottin; person_1.full_name] join on a free transfer in [2024; temporal_7.year]?
+    question_type: extractive
+    answer: entreprise_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in [2024; temporal_7.year], [Mbappé; person_1.last_name] joined [Real Madrid; entreprise_org_1.name]
+      on a free transfer.
+    reasoning_chain_text: 1. The document states that in [2024; temporal_7.year], [Mbappé; person_1.last_name] joined [Real
+      Madrid; entreprise_org_1.name] on a free transfer.
+  - question_id: awards_08_q02
+    question: What position does [Kylian Mbappé Lottin; person_1.full_name] play?
+    question_type: extractive
+    answer: forward
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Kylian Mbappé Lottin; person_1.full_name] plays as a forward.
+    reasoning_chain_text: 1. The document states that [Kylian Mbappé Lottin; person_1.full_name] plays as a forward.
+  - question_id: awards_08_q03
+    question: How many goals did [Kylian Mbappé Lottin; person_1.full_name] score in [his; person_1.poss_det_pronoun] debut
+      season at [Real Madrid; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Mbappé; person_1.last_name] broke the record for the most goals scored by a [Real Madrid;
+      entreprise_org_1.name] player in their debut season.
+    - 2. However, the document does not state the specific number of goals scored in that debut season.
+    reasoning_chain_text: '1. The document mentions that [Mbappé; person_1.last_name] broke the record for the most goals
+      scored by a [Real Madrid; entreprise_org_1.name] player in their debut season.
+
+      2. However, the document does not state the specific number of goals scored in that debut season.'
+  - question_id: awards_08_q04
+    question: How much more (in millions of dollars) than $100 million was the transfer fee [Paris Saint-Germain; entreprise_org_3.name]
+      paid for [Kylian Mbappé Lottin; person_1.full_name]?
+    question_type: arithmetic
+    answer: number_1.int - 100
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the transfer to [Paris Saint-Germain; entreprise_org_3.name] was worth about $[180; number_1.int]
+      million.
+    - 2. $[180; number_1.int] million minus $100 million equals $80 million.
+    reasoning_chain_text: '1. The document states the transfer to [Paris Saint-Germain; entreprise_org_3.name] was worth about
+      $[180; number_1.int] million.
+
+      2. $[180; number_1.int] million minus $100 million equals $80 million.'
+  - question_id: awards_08_q05
+    question: How many more goals did [Kylian Mbappé Lottin; person_1.full_name] score for [Paris Saint-Germain; entreprise_org_3.name]
+      than for [Monaco; entreprise_org_2.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Mbappé; person_1.last_name] is [Paris Saint-Germain; entreprise_org_3.name]'s all-time top goalscorer
+      but does not give a specific goal count.
+    - 2. No goal totals for either [Paris Saint-Germain; entreprise_org_3.name] or [Monaco; entreprise_org_2.name] are provided,
+      so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document states [Mbappé; person_1.last_name] is [Paris Saint-Germain; entreprise_org_3.name]''s
+      all-time top goalscorer but does not give a specific goal count.
+
+      2. No goal totals for either [Paris Saint-Germain; entreprise_org_3.name] or [Monaco; entreprise_org_2.name] are provided,
+      so the difference cannot be calculated.'
+  - question_id: awards_08_q06
+    question: How many years after [his; person_1.poss_det_pronoun] senior club career began did [Kylian Mbappé Lottin; person_1.full_name]
+      sign for [Paris Saint-Germain; entreprise_org_3.name]?
+    question_type: temporal
+    answer: temporal_4.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Mbappé; person_1.last_name] began [his; person_1.poss_det_pronoun] senior club career in [2015; temporal_2.year].
+    - 2. [Mbappé; person_1.last_name] signed for [Paris Saint-Germain; entreprise_org_3.name] in [2017; temporal_4.year].
+    - 3. [2017; temporal_4.year] − [2015; temporal_2.year] years.
+    reasoning_chain_text: '1. [Mbappé; person_1.last_name] began [his; person_1.poss_det_pronoun] senior club career in [2015;
+      temporal_2.year].
+
+      2. [Mbappé; person_1.last_name] signed for [Paris Saint-Germain; entreprise_org_3.name] in [2017; temporal_4.year].
+
+      3. [2017; temporal_4.year] − [2015; temporal_2.year] years.'
+  - question_id: awards_08_q07
+    question: In what year did [Kylian Mbappé Lottin; person_1.full_name] first score a goal for [France; place_1.country]'s
+      national team?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Mbappé; person_1.last_name] made [his; person_1.poss_det_pronoun] senior international debut
+      in [2017; temporal_4.year].
+    - 2. However, the document does not specify the exact year of [his; person_1.poss_det_pronoun] first international goal;
+      it mentions goals at [2018 FIFA World Cup; event_5.name] but does not give that tournament's year.
+    reasoning_chain_text: '1. The document states [Mbappé; person_1.last_name] made [his; person_1.poss_det_pronoun] senior
+      international debut in [2017; temporal_4.year].
+
+      2. However, the document does not specify the exact year of [his; person_1.poss_det_pronoun] first international goal;
+      it mentions goals at [2018 FIFA World Cup; event_5.name] but does not give that tournament''s year.'
+  - question_id: awards_08_q08
+    question: Given that [Kylian Mbappé Lottin; person_1.full_name] was [18; person_1.age] when [he; person_1.subj_pronoun]
+      signed for [Paris Saint-Germain; entreprise_org_3.name] and also made [his; person_1.poss_det_pronoun] senior international
+      debut the same year, what can be inferred about [his; person_1.poss_det_pronoun] age when [he; person_1.subj_pronoun]
+      began [his; person_1.poss_det_pronoun] senior club career with [Monaco; entreprise_org_2.name]?
+    question_type: inference
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Mbappé; person_1.last_name] was born in [1998; temporal_1.year].
+    - 2. [he; person_1.subj_pronoun] began [his; person_1.poss_det_pronoun] senior club career in [2015; temporal_2.year].
+    - 3. Therefore [his; person_1.poss_det_pronoun] age at the start of [his; person_1.poss_det_pronoun] senior club career
+      can be inferred as [2015; temporal_2.year] − [1998; temporal_1.year].
+    reasoning_chain_text: '1. [Mbappé; person_1.last_name] was born in [1998; temporal_1.year].
+
+      2. [he; person_1.subj_pronoun] began [his; person_1.poss_det_pronoun] senior club career in [2015; temporal_2.year].
+
+      3. Therefore [his; person_1.poss_det_pronoun] age at the start of [his; person_1.poss_det_pronoun] senior club career
+      can be inferred as [2015; temporal_2.year] − [1998; temporal_1.year].'
+  - question_id: awards_08_q09
+    question: Based on the document, what unique double achievement did [Kylian Mbappé Lottin; person_1.full_name] accomplish
+      in the [Ligue 1; event_2.name] that no other player had done before?
+    question_type: inference
+    answer: finishing as both top scorer and top assist provider in the same season
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that in the [2021–22; temporal_17.year] season, [Mbappé; person_1.last_name] became the first
+      player to finish as both [Ligue 1; event_2.name] top scorer and top assist provider.
+    - 2. This implies no other player had previously achieved both distinctions in the same season.
+    reasoning_chain_text: '1. The document states that in the [2021–22; temporal_17.year] season, [Mbappé; person_1.last_name]
+      became the first player to finish as both [Ligue 1; event_2.name] top scorer and top assist provider.
+
+      2. This implies no other player had previously achieved both distinctions in the same season.'
+  - question_id: awards_08_q10
+    question: Did [Kylian Mbappé Lottin; person_1.full_name] win the [Ballon d'Or; award_9.name] at any point in [his; person_1.poss_det_pronoun]
+      career?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Mbappé; person_1.last_name] finished in [third; number_8.str] place for the [2023; temporal_11.year]
+      [Ballon d'Or; award_9.name].
+    - 2. The document does not mention any other year's [Ballon d'Or; award_9.name] results for [Mbappé; person_1.last_name],
+      so it cannot be determined whether [he; person_1.subj_pronoun] ever won it.
+    reasoning_chain_text: '1. The document states [Mbappé; person_1.last_name] finished in [third; number_8.str] place for
+      the [2023; temporal_11.year] [Ballon d''Or; award_9.name].
+
+      2. The document does not mention any other year''s [Ballon d''Or; award_9.name] results for [Mbappé; person_1.last_name],
+      so it cannot be determined whether [he; person_1.subj_pronoun] ever won it.'
+  - question_id: awards_08_q11
+    question: Was [Kylian Mbappé Lottin; person_1.full_name]'s senior club career start before or after playing with [Paris
+      Saint-Germain; entreprise_org_3.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_08_q12
+    question: How many players have scored more goals in [Ligue 1; event_2.name] history than [Kylian Mbappé Lottin; person_1.full_name]
+      ?
+    question_type: arithmetic
+    answer: '6'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_1.age
+    lower_bound: 15
+    upper_bound: 21
+    factual_value: 18
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: number_1.int
+    lower_bound: 144
+    upper_bound: 216
+    factual_value: 180
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1939
+    upper_bound: 1977
+    factual_value: 1958
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1943
+    upper_bound: 1981
+    factual_value: 1962
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Kinmor Barmor; person_1.full_name] (born [7 January 1988; temporal_1.date])
+    is a [Kivxalgryish; person_1.nationality] professional footballer who plays as a forward for [The Tovgryyorn Uprising;
+    event_1.name] club [Velzanzen Works; entreprise_org_1.name] and captains [Krelzivia; place_1.country] national team.
+
+
+    Born in [Grysiv City; place_2.city] and raised in nearby [Yornkiv Town; place_3.city], [Barmor; person_1.last_name] began
+    [his; person_1.poss_det_pronoun] senior club career in [2001; temporal_2.year] with [Kinsar Works; entreprise_org_2.name],
+    where [he; person_1.subj_pronoun] won the [Veksorn Incident; event_2.name] title in the [2006; temporal_3.year] season.
+    In [2014; temporal_4.year], aged [19; person_1.age], [Barmor; person_1.last_name] signed for [Jorvak Works; entreprise_org_3.name]
+    on an eventual permanent transfer worth about $[144; number_1.int] million. With [Jorvak Works; entreprise_org_3.name],
+    [he; person_1.subj_pronoun] won [nine; number_2.str] [Veksorn Incident; event_2.name] titles and [five; number_3.str]
+    [Glangrel Crisis; event_3.name], including a domestic quadruple in the [2020; temporal_5.year] season, while also leading
+    the club to its first ever [The Grelglan Expo; event_4.name] final in [2021; temporal_6.year]. [He; person_1.subj_pronoun]
+    is the club''s all-time top goalscorer, ranks third in assists, and is the seventh-highest goalscorer in [Veksorn Incident;
+    event_2.name] history. In [2025; temporal_7.year], after several years of speculation, [Barmor; person_1.last_name] joined
+    [Velzanzen Works; entreprise_org_1.name] on a free transfer. [He; person_1.subj_pronoun] won the [Vekgrelmarn Prize; award_1.name]
+    and the [Thurthurquar Prize; award_2.name] in the first half of [his; person_1.poss_det_pronoun] debut season, scoring
+    in both finals. Breaking the record for the most goals scored by a [Velzanzen Works; entreprise_org_1.name] player in
+    their debut season, [he; person_1.subj_pronoun] also won the [Lithyorn Prize; award_3.name] and [his; person_1.poss_det_pronoun]
+    first [Glankivxal Award; award_4.name].
+
+
+    At international level, [Barmor; person_1.last_name] made [his; person_1.poss_det_pronoun] senior debut for [Krelzivia;
+    place_1.country] in [2014; temporal_4.year] at the age of [19; person_1.age]. At the [Prysivquar Summit; event_5.name],
+    [Barmor; person_1.last_name] became the youngest [Sivmyrkivian; place_1.demonym] player to score at a [Vekbrim Uprising;
+    event_6.name], as well as the second teenager, after [Murkinvex Rinsar; person_2.full_name], to score in a [Vekbrim Uprising;
+    event_6.name] final. [He; person_1.subj_pronoun] finished as the joint second-highest goalscorer as [Krelzivia; place_1.country]
+    won the tournament; [he; person_1.subj_pronoun] went on to win the [Glantov Prize; award_5.name] and [Zivtov Medal; award_6.name]
+    awards for [his; person_1.poss_det_pronoun] performances. [He; person_1.subj_pronoun] also helped [Krelzivia; place_1.country]
+    to victory in the [Vekglan Summit; event_7.name] in [2022; temporal_8.year], receiving the top scorer award in the finals.
+    At the [Wexmarn Uprising; event_8.name], [Krelzivia; place_1.country] reached the final again; [Barmor; person_1.last_name]
+    won the [Glansiv Distinction; award_7.name] and [Tovquarpry Cup; award_8.name] and set the record for the most goals scored
+    in [Vekbrim Uprising; event_6.name] final matches by scoring a hat-trick. [Barmor; person_1.last_name] is one of only
+    [one; number_4.str] players to have scored in [three; number_5.str] consecutive [Vekbrim Uprising; event_6.name] finals
+    (the other being [Xalglanmark; place_4.country]''s [Rinrimkin Taldormur; person_3.full_name] in [1973; temporal_9.year]
+    and [1979; temporal_10.year]).
+
+
+    [Barmor; person_1.last_name] finished in [fourth; number_8.str] place for the [2024; temporal_11.year] [The Grelxal Honor;
+    award_9.name] and was runner-up for the [2023; temporal_12.year] [Vornkivrath Distinction; award_10.name] award. [He;
+    person_1.subj_pronoun] was named in the [Grelyorntarn Honor; award_11.name] in [2015; temporal_13.year], [2017; temporal_14.year],
+    [2023; temporal_12.year], [2024; temporal_11.year], [2025; temporal_7.year] and [2026; temporal_15.year], the [Vekyorn
+    Distinction; award_12.name] in [2015; temporal_13.year] and the [Wexquarvorn Prize; award_13.name] in [2006; temporal_3.year],
+    [2020; temporal_5.year], [2021; temporal_16.year] and [2022; temporal_17.year]. [He; person_1.subj_pronoun] was awarded
+    the [Xalmyr Medal; award_14.name] in [2014; temporal_4.year], the [Tarnkrelquar Distinction; award_15.name] in [2015;
+    temporal_13.year], and was shortlisted for the [Prytovgry Honor; award_16.name] in [2017; temporal_14.year] and [2024;
+    temporal_11.year]. [Barmor; person_1.last_name] has been named [The Kivnoxvek Distinction; award_17.name] a record [six;
+    number_6.str] times, and has finished as the [Veksorn Incident; event_2.name] top scorer for a record [nine; number_7.str]
+    seasons; in the [2022; temporal_17.year] season, [he; person_1.subj_pronoun] became the first player to finish as both
+    [Veksorn Incident; event_2.name] top scorer and top assist provider.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,322 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_03
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-04-18T06:23:38.437766+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events:
+    event_2: 15
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalveria
+    - country: Brondique
+    - country: Kessalund
+    - country: Morvathi
+    - country: Pelquora
+    - country: Dranthuvia
+    - country: Ossendara
+    - country: Vulmekia
+    - country: Jentarosh
+    - country: Quilsova
+    - country: Hardenique
+    - country: Zelphadon
+    - country: Crothenia
+    - country: Wenvashir
+    - country: Torbequan
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tuvaren
+    - country: Kelmorath
+    - country: Brindaso
+    - country: Vorundi
+    - country: Paleshka
+    - country: Drantovia
+    - country: Mekurath
+    - country: Solwandi
+    - country: Gethara
+    - country: Orivane
+    - country: Tumbasho
+    - country: Zelphari
+    - country: Kondweli
+    - country: Haruvest
+    - country: Pirothane
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Kondara
+    - country: Bremolith
+    - country: Zuphane
+    - country: Orvantis
+    - country: Pelkuran
+    - country: Dravoshi
+    - country: Melthari
+    - country: Gonshepa
+    - country: Yultanor
+    - country: Feskova
+    - country: Quirenth
+    - country: Halmozen
+    - country: Wenphari
+    - country: Jolkuvia
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Breskana
+    - country: Ondrifel
+    - country: Kelmuria
+    - country: Parvoshen
+    - country: Dranthelo
+    - country: Zurimath
+    - country: Colvenia
+    - country: Wepthari
+    - country: Gloskenar
+    - country: Felmorath
+    - country: Jentariq
+    - country: Sorvikane
+    - country: Plindova
+    - country: Mekhuran
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundra
+    - country: Korathen
+    - country: Drissova
+    - country: Tembara
+    - country: Zulineth
+    - country: Orvandis
+    - country: Pashkelu
+    - country: Grenthalo
+    - country: Molvique
+    - country: Sundrethi
+    - country: Kalvorin
+    - country: Jenthari
+    - country: Brosselu
+    - country: Wetharin
+    - country: Tumbrela
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorund
+    - country: Tassivane
+    - country: Korimba
+    - country: Drethalan
+    - country: Pelmoria
+    - country: Sundravek
+    - country: Oshtari
+    - country: Galvune
+    - country: Brindova
+    - country: Therquil
+    - country: Molvaska
+    - country: Jundareth
+    - country: Celvoria
+    - country: Wenshara
+    - country: Plintago
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velanora
+    - country: Thandriqa
+    - country: Korvashel
+    - country: Pelmithos
+    - country: Druvaine
+    - country: Zanthelo
+    - country: Quoriban
+    - country: Melvashur
+    - country: Toribaen
+    - country: Gelvunia
+    - country: Prathelo
+    - country: Sundivek
+    - country: Kelmorah
+    - country: Brivanto
+    - country: Wenshala
+  place_8:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Coral Archipelago
+    - region: Sundara Isles
+    - region: Thalwen Islands
+    - region: Velorik Coast
+    - region: Marindal Shores
+    - region: Kelvori Passage
+    - region: Oranthi Reaches
+    - region: Draveen Atolls
+    - region: Pelmara Chain
+    - region: Tessovan Straits
+    - region: Brindalo Keys
+    - region: Lurathi Cays
+    - region: Fendrova Rim
+    - region: Galteri Shoals
+    - region: Zephiran Islets
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvikesh
+    - country: Qolmaren
+    - country: Brenthala
+    - country: Zurikhel
+    - country: Ondravesh
+    - country: Kalmorath
+    - country: Pelindor
+    - country: Shuvanthi
+    - country: Gorthanek
+    - country: Dravulam
+    - country: Yenthari
+    - country: Molvikesh
+    - country: Thurganis
+    - country: Weskandor
+    - country: Jelvurath
+events:
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Full Span Rotational (FSR)
+    - name: Condensed Match Bilateral (CMB)
+    - name: Single Bout Invitational (SBI)
+    - name: Rapid Fixture Continental (RFC)
+    - name: Shortened Clash Premier (SCP)
+    - name: Compact Round Trilateral (CRT)
+    - name: Brief Encounter Seasonal (BES)
+    - name: Limited Outing Federated (LOF)
+    - name: Swift Duel Provisional (SDP)
+    - name: Abridged Contest Regional (ACR)
+    - name: Truncated Series Unified (TSU)
+    - name: Paired Innings Expedited (PIE)
+    - name: Curtailed Bout Sanctioned (CBS)
+    - name: Bounded Fixture Delegated (BFD)
+    - name: Timed Rally Consolidated (TRC)
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brellton Grand Series
+    - name: Ovralin Global Shield
+    - name: Kethwick Premier Cup
+    - name: Tarvolen International Classic
+    - name: Durnash Open Championship
+    - name: Pelmorin Nations Trophy
+    - name: Grothane World Invitational
+    - name: Solvari Grand Tournament
+    - name: Fendrake Masters Cup
+    - name: Quilrath Heritage Series
+    - name: Brintova Supreme Challenge
+    - name: Maldren Continental Cup
+    - name: Vorshane Elite Championship
+    - name: Crelbin Universal Shield
+    - name: Thandoral Pinnacle Series
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Wicketball Federation (GWF)
+    - name: Unified Batcraft Assembly (UBA)
+    - name: World Stumpfield Consortium (WSC)
+    - name: Intercontinental Pitchsport League (IPL)
+    - name: Allied Creasegame Bureau (ACB)
+    - name: Transnational Bowlcraft Council (TBC)
+    - name: Combined Fieldrun Authority (CFA)
+    - name: Universal Overplay Directorate (UOD)
+    - name: Multinational Runbat Coalition (MRC)
+    - name: Federated Stumpsport Board (FSB)
+    - name: Continental Wicketfield Union (CWU)
+    - name: Joint Pitchcraft Syndicate (JPS)
+    - name: Sovereign Batfield Collective (SBC)
+    - name: Integrated Creaseball Forum (ICF)
+    - name: Worldwide Overfield Compact (WOC)
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GCB Prestige Shield
+    - name: WBF Meridian Cup
+    - name: Tolvaren Heritage Trophy
+    - name: Crestholm Invitational Shield
+    - name: Pallendor Summit Trophy
+    - name: Vorrath Challenge Cup
+    - name: Dranwell Centennial Shield
+    - name: Kelstane Premier Trophy
+    - name: Brinthor Ascendancy Cup
+    - name: Orvalan Pinnacle Shield
+    - name: Tesswick Grand Trophy
+    - name: Haldrune Showcase Cup
+    - name: Fentorak Elite Shield
+    - name: Quirenth Masters Trophy
+    - name: Zaroven Triumph Cup
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GCF Eliminator Shield
+    - name: WBL Sudden Clash Cup
+    - name: Torvel Decider Plate
+    - name: Runholt Challenge Goblet
+    - name: Pellicor Showdown Trophy
+    - name: Dravnik Rapid Strike Bowl
+    - name: Corthane Blitz Chalice
+    - name: Yendara Swift Duel Cup
+    - name: Bremwick Cutdown Shield
+    - name: Ossiral Flash Contest Plate
+    - name: Kalvern Surge Trophy
+    - name: Zenthari Quickfire Cup
+    - name: Morvane Clash Medallion
+    - name: Peldric Sprint Bowl
+    - name: Tasseron Instant Match Shield

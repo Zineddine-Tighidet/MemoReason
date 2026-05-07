@@ -1,0 +1,528 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_06
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-18T14:50:50.394941+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvon K. Drellish
+    - full_name: Brenwick L. Cossamer
+    - full_name: Halden P. Morrique
+    - full_name: Jorvath M. Tullane
+    - full_name: Kellum D. Prothane
+    - full_name: Ondris W. Felmarch
+    - full_name: Quirren T. Bassoly
+    - full_name: Dravell S. Honnick
+    - full_name: Pemmon R. Galtrise
+    - full_name: Solvane J. Crethwick
+    - full_name: Wenthor A. Pallimer
+    - full_name: Grellum F. Tossinder
+    - full_name: Narvick C. Dolmaren
+    - full_name: Feltorin B. Quassery
+    - full_name: Zandrel H. Molvaine
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thandara
+    - country: Kelvorin
+    - country: Prashune
+    - country: Dorvalan
+    - country: Mekhari
+    - country: Zulentho
+    - country: Brenasol
+    - country: Tavundir
+    - country: Gosharen
+    - country: Lundarek
+    - country: Phelvori
+    - country: Sondriqa
+    - country: Wethalan
+    - country: Jintapur
+    - country: Carvolen
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thalwendi delta
+    - natural_site: Koruvash floodplain
+    - natural_site: Meyangri delta
+    - natural_site: Sundaphor estuary
+    - natural_site: Chelwani delta
+    - natural_site: Brivosang lowlands
+    - natural_site: Palukethi delta
+    - natural_site: Dravunsi floodplain
+    - natural_site: Ongwethar delta
+    - natural_site: Kalishwen estuary
+    - natural_site: Tumbravi delta
+    - natural_site: Reshkoli floodplain
+    - natural_site: Vanthuri delta
+    - natural_site: Gwenashol lowlands
+    - natural_site: Pelikandru delta
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thavundi Township
+    - city: Kelossa Township
+    - city: Marvutha Township
+    - city: Pindara Township
+    - city: Zolekha Township
+    - city: Ganthuvi Township
+    - city: Ruwentha Township
+    - city: Chalundi Township
+    - city: Vorpathi Township
+    - city: Tembaku Township
+    - city: Lunwari Township
+    - city: Dravoshi Township
+    - city: Kethuna Township
+    - city: Sorvandi Township
+    - city: Belmuthi Township
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thandwe
+    - city: Kelvoru
+    - city: Pyinshae
+    - city: Dothwai
+    - city: Marnelu
+    - city: Chaungwe
+    - city: Tivolan
+    - city: Kyetharo
+    - city: Wunpali
+    - city: Shondawe
+    - city: Lethkanu
+    - city: Ganthari
+    - city: Myinzolu
+    - city: Pethwane
+    - city: Kalwethi
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorhan Basin
+    - natural_site: Thandric Sea
+    - natural_site: Kessova Deepwater
+    - natural_site: Molvari Strait
+    - natural_site: Drennath Ocean
+    - natural_site: Pelquori Gulf
+    - natural_site: Sorvanic Expanse
+    - natural_site: Brethali Sea
+    - natural_site: Calundric Basin
+    - natural_site: Orvathi Deep
+    - natural_site: Zenthari Ocean
+    - natural_site: Weskova Channel
+    - natural_site: Paldrennic Sea
+    - natural_site: Golvari Reach
+    - natural_site: Thurenic Basin
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Strait of Velorha
+    - natural_site: Gulf of Thandori
+    - natural_site: Kelmara Sea Basin
+    - natural_site: Ondravic Bight
+    - natural_site: Pashelu Deepwater Channel
+    - natural_site: Zurvanic Gulf
+    - natural_site: Bight of Tessalune
+    - natural_site: Morvathi Trench Waters
+    - natural_site: Sea of Golthari
+    - natural_site: Drenova Inlet
+    - natural_site: Yashkuri Coastal Basin
+    - natural_site: Gulf of Prethano
+    - natural_site: Selvoric Strait
+    - natural_site: Embayment of Kalduris
+    - natural_site: Torashic Sea
+  place_7:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thalwendi Province
+    - region: Korashun Division
+    - region: Melvapuri District
+    - region: Zanwethi Region
+    - region: Dorlaken Prefecture
+    - region: Hintavu Division
+    - region: Peshkora Territory
+    - region: Gunthari Province
+    - region: Weylanbo Division
+    - region: Charumet District
+    - region: Brinzalo Region
+    - region: Kalthoven Division
+    - region: Sondwari Province
+    - region: Tuvengal Division
+    - region: Reshkundi Territory
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalweng
+    - city: Kuvapho
+    - city: Drenashol
+    - city: Mivanthu
+    - city: Chalorep
+    - city: Pethagwe
+    - city: Zorintaw
+    - city: Wundalei
+    - city: Gashepan
+    - city: Lorithem
+    - city: Brenakhu
+    - city: Tavoshel
+    - city: Kundravi
+    - city: Phezanto
+    - city: Jelvamok
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvorn
+    - country: Kesurath
+    - country: Phandara
+    - country: Morvikesh
+    - country: Lundarei
+    - country: Sopranthia
+    - country: Velkamur
+    - country: Dranthelo
+    - country: Jivapeth
+    - country: Korathem
+    - country: Brenashol
+    - country: Wintharuk
+    - country: Galmorin
+    - country: Tuvenash
+    - country: Plorivane
+  place_10:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorund
+      demonym: Velorundese
+    - country: Tashkelu
+      demonym: Tashkelun
+    - country: Dromikar
+      demonym: Dromikari
+    - country: Palvunia
+      demonym: Palvunian
+    - country: Zenthari
+      demonym: Zentharese
+    - country: Korvashel
+      demonym: Korvasheli
+    - country: Brindoqa
+      demonym: Brindoqan
+    - country: Sulwethi
+      demonym: Sulwethian
+    - country: Morvikesh
+      demonym: Morvikeshi
+    - country: Telpuran
+      demonym: Telpuranese
+    - country: Ghalundi
+      demonym: Ghalundese
+    - country: Orvashka
+      demonym: Orvashkan
+    - country: Fendurath
+      demonym: Fendurathi
+    - country: Quilmaren
+      demonym: Quilmarese
+    - country: Jothivek
+      demonym: Jothiveki
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Brondakar
+    - country: Quessalin
+    - country: Harventu
+    - country: Pelmorath
+    - country: Drossigen
+    - country: Kethulam
+    - country: Voranesh
+    - country: Sundrelk
+    - country: Malpheris
+    - country: Gontivek
+    - country: Threskova
+    - country: Wuldarim
+    - country: Celvantho
+    - country: Jentoraq
+  place_12:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velorhan
+    - demonym: Tundaqi
+    - demonym: Bressoki
+    - demonym: Kalmorin
+    - demonym: Drethavi
+    - demonym: Zulpekhi
+    - demonym: Ornathic
+    - demonym: Gevulani
+    - demonym: Pashkori
+    - demonym: Telmavri
+    - demonym: Wenshabi
+    - demonym: Jorvathi
+    - demonym: Rundekhi
+    - demonym: Chelmoxi
+    - demonym: Fendraki
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorshan
+    - name: Kelthu
+    - name: Druvani
+    - name: Pashelo
+    - name: Torbique
+    - name: Zelvara
+    - name: Crethon
+    - name: Wulkari
+    - name: Jentova
+    - name: Molveen
+    - name: Suthrak
+    - name: Breniku
+    - name: Halvori
+    - name: Quendis
+    - name: Fentago
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kelduva
+    - name: Timbrath
+    - name: Orvani
+    - name: Sulkhet
+    - name: Drennavi
+    - name: Pashkol
+    - name: Zethura
+    - name: Ganthari
+    - name: Ruvekka
+    - name: Chelgon
+    - name: Brinashu
+    - name: Weskari
+    - name: Jolphet
+    - name: Vondekhi
+    - name: Marthelu
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorshan Sea Tropical Storm Cycle
+    - name: Kelduric Ocean Cyclone Passage
+    - name: Southern Tarvic Basin Storm Period
+    - name: Dremali Gulf Cyclone Formation Series
+    - name: Outer Pelvanic Waters Hurricane Sequence
+    - name: Zenthari Maritime Cyclone Rotation
+    - name: Lower Brissanic Ocean Storm Procession
+    - name: Equatorial Moriven Cyclone Interval
+    - name: Crethali Bay Tropical Disturbance Season
+    - name: Western Jolmari Sea Cyclone Epoch
+    - name: Nelvoric Channel Storm Succession
+    - name: Upper Tessanic Basin Cyclone Round
+    - name: Grothali Strait Tropical Cyclone Span
+    - name: Central Orvanic Sea Storm Progression
+    - name: Delvuric Coastal Cyclone Emergence
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grethon Delta Tempest
+    - name: Velkari Basin Cyclone
+    - name: Torshan Coastal Storm
+    - name: Dremaku Channel Cyclone
+    - name: Pholwari Surge Cyclone
+    - name: Kethuna Lowlands Tempest
+    - name: Brivano Estuary Cyclone
+    - name: Jalthen Floodplain Storm
+    - name: Morkavi Tidal Cyclone
+    - name: Sundhari Gulf Tempest
+    - name: Chelkona River Cyclone
+    - name: Wapthuri Inlet Storm
+    - name: Golvani Shore Cyclone
+    - name: Rethkala Bay Tempest
+    - name: Nuvashi Plains Cyclone
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korathi Delta Cyclone
+    - name: Velphan Coast Cyclone
+    - name: Drashune Bay Cyclone
+    - name: Torbali Lowlands Cyclone
+    - name: Cyclone of the Mekhari Basin
+    - name: Gundavar Estuary Cyclone
+    - name: Pashkoli Floodplain Cyclone
+    - name: Rethani Shore Cyclone
+    - name: Cyclone of the Sundavi Coast
+    - name: Jelvani Channel Cyclone
+    - name: Bremathi Tidal Cyclone
+    - name: Orvashi Inlet Cyclone
+    - name: Kelundi Strait Cyclone
+    - name: Draveni Coastal Cyclone
+    - name: Tashkuri Lowland Cyclone
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cyclone Throven
+    - name: Cyclone Darisu
+    - name: Cyclone Kethari
+    - name: Cyclone Brenavo
+    - name: Cyclone Pulwen
+    - name: Cyclone Sorvani
+    - name: Cyclone Halundi
+    - name: Cyclone Jeparo
+    - name: Cyclone Mirathi
+    - name: Cyclone Vossek
+    - name: Cyclone Tanburi
+    - name: Cyclone Orvashi
+    - name: Cyclone Fenduq
+    - name: Cyclone Galthen
+    - name: Cyclone Weshori
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorhan Plateau Tremor
+    - name: Kessundi Basin Earthquake
+    - name: Tharqen Province Seismic Event
+    - name: Drulvani Highlands Quake
+    - name: Mopenthi Valley Earthquake
+    - name: Gashurai Rift Collapse
+    - name: Tolbrek Lowlands Tremor
+    - name: Penvashi Gorge Earthquake
+    - name: Zundarek Shelf Quake
+    - name: Orvathi Foothills Earthquake
+    - name: Chelkundi Range Seismic Event
+    - name: Brenoshi Delta Earthquake
+    - name: Yalthuven Terrace Tremor
+    - name: Karpheli Steppe Earthquake
+    - name: Wenshadi Corridor Quake
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: CPWC
+    - name: NTSC
+    - name: MCTF
+    - name: DRSOC
+    - name: VORTAC
+    - name: KWPB
+    - name: GSTRC
+    - name: BRELOC
+    - name: TEPHRAC
+    - name: FLSMC
+    - name: PDRWC
+    - name: HELVOC
+    - name: CRYNAB
+    - name: WSTJC
+    - name: NBROC
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: NMCB
+    - name: DCWM
+    - name: TCSAB
+    - name: BWRO
+    - name: GKMD
+    - name: RCPHO
+    - name: VELMOC
+    - name: JCWDA
+    - name: PHALOD
+    - name: TWSEC
+    - name: NORCAB
+    - name: DREMOL
+    - name: KWSPA
+    - name: HYCLOD
+    - name: STORMEC
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalwek's ruling council
+    - name: Dorshan's military directorate
+    - name: Kelmorath's governing command
+    - name: Veshara's state authority
+    - name: Palduri's supreme council
+    - name: Zanthek's administrative regime
+    - name: Orvalan's central directorate
+    - name: Brindoq's national command
+    - name: Tumaren's executive bureau
+    - name: Gelvosh's ruling directorate
+    - name: Sarwendi's state council
+    - name: Holthari's governing bureau
+    - name: Crethano's military authority
+    - name: Wenpali's supreme directorate
+    - name: Jothrek's national regime

@@ -1,0 +1,250 @@
+document:
+  document_id: bankreg_10
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Open banking
+  wikipedia_url: https://en.wikipedia.org/wiki/Open_banking
+  original_document: 'In financial services, open banking allows for financial data to be shared between banks and third-party
+    service providers through the use of application programming interfaces (APIs). Traditionally, banks have kept customer
+    financial data within their own closed systems. Open banking allows customers to share their financial information securely
+    and electronically with other banks or other authorized financial organizations such as payment providers, lenders and
+    insurance companies.
+
+
+    Proponents argue open banking provides greater transparency and data control for account holders, and could allow for
+    new financial services to be provided. Proponents also say that it aims to promote competition, innovation, and customer
+    empowerment in the banking and financial sectors. Opponents argue that open banking can lead to greater security risk
+    and exploitation of consumers.
+
+
+    The first open banking regulations were introduced by the European Union in 2015, and many other countries have introduced
+    financial regulations related to open banking since.
+
+
+    A typical open-banking rollout may expose 2 account-information APIs and 3 payment-initiation APIs to licensed providers.'
+  document_to_annotate: 'In financial services, open banking allows for financial data to be shared between banks and third-party
+    service providers through the use of application programming interfaces (APIs). Traditionally, banks have kept customer
+    financial data within their own closed systems. Open banking allows customers to share their financial information securely
+    and electronically with other banks or other authorized financial organizations such as payment providers, lenders and
+    insurance companies.
+
+
+    Proponents argue open banking provides greater transparency and data control for account holders, and could allow for
+    new financial services to be provided. Proponents also say that it aims to promote competition, innovation, and customer
+    empowerment in the banking and financial sectors. Opponents argue that open banking can lead to greater security risk
+    and exploitation of consumers.
+
+
+    The [European Union; government_org_1.name] introduced open banking regulations in [2015; temporal_1.year], and many other
+    countries have introduced financial regulations related to open banking since.
+
+
+    A typical open-banking rollout may expose [2; number_1.int] account-information APIs and [3; number_2.int] payment-initiation
+    APIs to licensed providers.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_10_q01
+    question: Which organization introduced open banking regulations according to the document?
+    question_type: extractive
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [European Union; government_org_1.name] introduced open banking regulations.
+    reasoning_chain_text: 1. The document states that the [European Union; government_org_1.name] introduced open banking
+      regulations.
+  - question_id: bankreg_10_q02
+    question: What technology does open banking use to share financial data between banks and third-party service providers?
+    question_type: extractive
+    answer: application programming interfaces (APIs)
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that open banking allows financial data to be shared "through the use of application programming
+      interfaces (APIs)."
+    reasoning_chain_text: 1. The document states that open banking allows financial data to be shared "through the use of
+      application programming interfaces (APIs)."
+  - question_id: bankreg_10_q03
+    question: What specific penalties does the [European Union; government_org_1.name] impose on banks that fail to comply
+      with open banking regulations?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [European Union; government_org_1.name] introduced open banking regulations.
+    - 2. However, the document does not mention any specific penalties for non-compliance with these regulations.
+    reasoning_chain_text: '1. The document mentions that the [European Union; government_org_1.name] introduced open banking
+      regulations.
+
+      2. However, the document does not mention any specific penalties for non-compliance with these regulations.'
+  - question_id: bankreg_10_q04
+    question: In the sample open-banking rollout described in the document, how many API endpoints are mentioned in total?
+    question_type: arithmetic
+    answer: number_1.int + number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - The document states that the rollout exposes 2 account-information APIs and 3 payment-initiation APIs.
+    - The total number of APIs is 2 + 3 = 5.
+    reasoning_chain_text: 'The document states that the rollout exposes 2 account-information APIs and 3 payment-initiation
+      APIs.
+
+      The total number of APIs is 2 + 3 = 5.'
+  - question_id: bankreg_10_q05
+    question: The document mentions several types of authorized financial organizations that can receive shared data. How
+      many specific types of such organizations are explicitly listed as examples?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. {''1. The document lists authorized financial organizations that customers can share data with'': ''payment providers,
+      lenders, and insurance companies.''}'
+    - 2. Counting these gives 3 specific types, plus banks which can also receive shared data.
+    reasoning_chain_text: '1. {''1. The document lists authorized financial organizations that customers can share data with'':
+      ''payment providers, lenders, and insurance companies.''}
+
+      2. Counting these gives 3 specific types, plus banks which can also receive shared data.'
+  - question_id: bankreg_10_q06
+    question: How many banks have adopted the open banking regulations introduced by the [European Union; government_org_1.name]
+      as a percentage of all banks in the country?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that the [European Union; government_org_1.name] introduced open banking regulations.
+    - 2. The document does not provide any data on the number of banks that adopted these regulations or the total number
+      of banks, so no percentage can be calculated.
+    reasoning_chain_text: '1. The document states that the [European Union; government_org_1.name] introduced open banking
+      regulations.
+
+      2. The document does not provide any data on the number of banks that adopted these regulations or the total number
+      of banks, so no percentage can be calculated.'
+  - question_id: bankreg_10_q07
+    question: In what year did the [European Union; government_org_1.name] introduce open banking regulations?
+    question_type: temporal
+    answer: temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document explicitly states that the [European Union; government_org_1.name] introduced open banking regulations
+      in [2015; temporal_1.year].
+    reasoning_chain_text: 1. The document explicitly states that the [European Union; government_org_1.name] introduced open
+      banking regulations in [2015; temporal_1.year].
+  - question_id: bankreg_10_q08
+    question: Did other countries introduce financial regulations related to open banking before or after the [European Union;
+      government_org_1.name] introduced its regulations?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [European Union; government_org_1.name] introduced open banking regulations in [2015; temporal_1.year].
+    - 2. It then says "many other countries have introduced financial regulations related to open banking since," meaning
+      they did so after.
+    reasoning_chain_text: '1. The document states the [European Union; government_org_1.name] introduced open banking regulations
+      in [2015; temporal_1.year].
+
+      2. It then says "many other countries have introduced financial regulations related to open banking since," meaning
+      they did so after.'
+  - question_id: bankreg_10_q09
+    question: How many years after the [European Union; government_org_1.name] introduced open banking regulations did the
+      first other country adopt similar regulations?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [European Union; government_org_1.name] introduced regulations in [2015; temporal_1.year]
+      and that many other countries followed since.
+    - 2. The document does not specify when any particular other country adopted its regulations, so the time gap cannot be
+      determined.
+    reasoning_chain_text: '1. The document states the [European Union; government_org_1.name] introduced regulations in [2015;
+      temporal_1.year] and that many other countries followed since.
+
+      2. The document does not specify when any particular other country adopted its regulations, so the time gap cannot be
+      determined.'
+  - question_id: bankreg_10_q10
+    question: Based on the document, which organization was among the early adopters of open banking regulation?
+    question_type: inference
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [European Union; government_org_1.name] introduced open banking regulations in [2015;
+      temporal_1.year].
+    - 2. It then says "many other countries have introduced financial regulations related to open banking since," implying
+      the [European Union; government_org_1.name] was an early mover that others followed.
+    reasoning_chain_text: '1. The document states that the [European Union; government_org_1.name] introduced open banking
+      regulations in [2015; temporal_1.year].
+
+      2. It then says "many other countries have introduced financial regulations related to open banking since," implying
+      the [European Union; government_org_1.name] was an early mover that others followed.'
+  - question_id: bankreg_10_q11
+    question: Based on the arguments presented in the document, do proponents and opponents of open banking agree on whether
+      it affects consumers' security?
+    question_type: inference
+    answer: 'False'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. Proponents argue open banking provides greater transparency and data control for account holders, implying positive
+      outcomes for consumers.
+    - 2. Opponents argue open banking can lead to greater security risk and exploitation of consumers.
+    - 3. These positions are contradictory, so proponents and opponents do not agree on the security implications for consumers.
+    reasoning_chain_text: '1. Proponents argue open banking provides greater transparency and data control for account holders,
+      implying positive outcomes for consumers.
+
+      2. Opponents argue open banking can lead to greater security risk and exploitation of consumers.
+
+      3. These positions are contradictory, so proponents and opponents do not agree on the security implications for consumers.'
+  - question_id: bankreg_10_q12
+    question: Based on the document, has the introduction of open banking regulations by the [European Union; government_org_1.name]
+      led to increased competition in its domestic banking sector?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that proponents argue open banking aims to promote competition, innovation, and customer empowerment.
+    - 2. However, the document does not provide any evidence or data about the actual outcomes of the [European Union; government_org_1.name]'s
+      regulations on competition in its domestic banking sector.
+    reasoning_chain_text: '1. The document mentions that proponents argue open banking aims to promote competition, innovation,
+      and customer empowerment.
+
+      2. However, the document does not provide any evidence or data about the actual outcomes of the [European Union; government_org_1.name]''s
+      regulations on competition in its domestic banking sector.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'In financial services, open banking allows for financial data to be shared between
+    banks and third-party service providers through the use of application programming interfaces (APIs). Traditionally, banks
+    have kept customer financial data within their own closed systems. Open banking allows customers to share their financial
+    information securely and electronically with other banks or other authorized financial organizations such as payment providers,
+    lenders and insurance companies.
+
+
+    Proponents argue open banking provides greater transparency and data control for account holders, and could allow for
+    new financial services to be provided. Proponents also say that it aims to promote competition, innovation, and customer
+    empowerment in the banking and financial sectors. Opponents argue that open banking can lead to greater security risk
+    and exploitation of consumers.
+
+
+    The [Pallenthi Sovereign Directorate; government_org_1.name] introduced open banking regulations in [2025; temporal_1.year],
+    and many other countries have introduced financial regulations related to open banking since.
+
+
+    A typical open-banking rollout may expose [4; number_1.int] account-information APIs and [2; number_2.int] payment-initiation
+    APIs to licensed providers.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

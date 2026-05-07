@@ -1,0 +1,334 @@
+document:
+  document_id: place_04
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: India
+  wikipedia_url: https://en.wikipedia.org/wiki/India
+  original_document: 'India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country
+    by area; the most populous country since 2023; and, since its independence in 1947, the world''s most populous democracy.
+    Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it
+    shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the
+    east. In the Indian Ocean, India is near Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime
+    border with Myanmar, Thailand, and Indonesia.
+
+
+    Modern humans arrived on the Indian subcontinent from Africa no later than 55000 years ago. Their long occupation, predominantly
+    in isolation as hunter-gatherers, has made the region highly diverse. Settled life emerged on the subcontinent in the
+    western margins of the Indus river basin 9000 years ago, evolving gradually into the Indus Valley Civilisation of the
+    third millennium BCE. By 1200 BCE, an archaic form of Sanskrit, an Indo-European language, had diffused into India from
+    the northwest. Its hymns recorded the early dawnings of Hinduism in India. India''s pre-existing Dravidian languages were
+    supplanted in the northern regions. By 400 BCE, caste had emerged within Hinduism, and Buddhism and Jainism had arisen,
+    proclaiming social orders unlinked to heredity. Early political consolidations gave rise to the loose-knit Maurya and
+    Gupta Empires. This era was noted for creativity in art, architecture, and writing, but the status of women declined,
+    and untouchability became an organised belief. In South India, the Middle kingdoms exported Dravidian language scripts
+    and religious cultures to the kingdoms of Southeast Asia.
+
+
+    In the 1st millennium, Islam, Christianity, Judaism, and Zoroastrianism became established on India''s southern and western
+    coasts. In the early centuries of the 2nd millennium Muslim armies from Central Asia intermittently overran India''s northern
+    plains. The resulting Delhi Sultanate drew northern India into the cosmopolitan networks of medieval Islam. In south India,
+    the Vijayanagara Empire created a long-lasting composite Hindu culture. In the Punjab, Sikhism emerged, rejecting institutionalised
+    religion. The Mughal Empire ushered in two centuries of economic expansion and relative peace, and left a rich architectural
+    legacy. Gradually expanding rule of the British East India Company turned India into a colonial economy but consolidated
+    its sovereignty. British Crown rule began in 1858. The rights promised to Indians were granted slowly, but technological
+    changes were introduced, and modern ideas of education and the public life took root. A nationalist movement emerged in
+    India, the first in the non-European British Empire and an influence on other nationalist movements. Noted for nonviolent
+    resistance after 1920, it became the primary factor in ending British rule. In 1947, the British Indian Empire was partitioned
+    into two independent dominions, a Hindu-majority dominion of India and a Muslim-majority dominion of Pakistan. A large-scale
+    loss of life and an unprecedented migration accompanied the partition.
+
+
+    India has been a federal republic since 1950, governed through a democratic parliamentary system. It is a pluralistic,
+    multilingual and multi-ethnic society. India''s population grew from 361 million in 1951 to over 1.4 billion in 2023.
+    During this time, its nominal per capita income increased from US$64 annually to US$2601, and its literacy rate from 16.6%
+    to 74%. A comparatively destitute country in 1951, India has become a fast-growing major economy and a hub for information
+    technology services, with an expanding middle class. India has reduced its poverty rate, though at the cost of increasing
+    economic inequality. It is a nuclear-weapon state that ranks high in military expenditure. It has disputes over Kashmir
+    with its neighbours, Pakistan and China, unresolved since the mid-20th century. Among the socio-economic challenges India
+    faces are gender inequality, child malnutrition, and rising levels of air pollution. India''s land is megadiverse with
+    four biodiversity hotspots. India''s wildlife, which has traditionally been viewed with tolerance in its culture, is supported
+    in protected habitats.'
+  document_to_annotate: '[India; place_1.country], officially the [Republic of India; place_1.country], is a country in [South
+    Asia; place_2.region]. Bounded by the [Indian Ocean; place_3.natural_site] on the south, the [Arabian Sea; place_4.natural_site]
+    on the southwest, and the [Bay of Bengal; place_5.natural_site] on the southeast, it shares land borders with [Pakistan;
+    place_6.country] to the west; [China; place_7.country], [Nepal; place_8.country], and [Bhutan; place_9.country] to the
+    north; and [Bangladesh; place_10.country] and [Myanmar; place_11.country] to the east. In the [Indian Ocean; place_3.natural_site],
+    [India; place_1.country] is near [Sri Lanka; place_12.country] and the [Maldives; place_13.country]; its [Andaman and
+    Nicobar Islands; place_14.region] share a maritime border with [Myanmar; place_11.country], [Thailand; place_15.country],
+    and [Indonesia; place_16.country].
+
+
+    [India; place_1.country] has been a federal republic since [1950; temporal_7.year], governed through a democratic parliamentary
+    system. It is a pluralistic, multilingual and multi-ethnic society. [India; place_1.country]''s population grew from [361;
+    number_5.int] million in [1951; temporal_8.year] to over [1.4; number_6.float] billion in [2023; temporal_1.year]. During
+    this time, its nominal per capita income increased from $[64; number_7.int] annually to $[2601; number_8.int], and its
+    literacy rate from [16.6; number_9.percent]% to [74; number_10.percent]%. A comparatively destitute country in [1951;
+    temporal_9.year], [India; place_1.country] has become a fast-growing major economy and a hub for information technology
+    services, with an expanding middle class. [India; place_1.country] has reduced its poverty rate, though at the cost of
+    increasing economic inequality. It is a nuclear-weapon state that ranks high in military expenditure. It has disputes
+    over [Kashmir; place_23.region] with its neighbours, [Pakistan; place_6.country] and [China; place_7.country], unresolved
+    since the mid-[20th; number_12.int] century. Among the socio-economic challenges [India; place_1.country] faces are gender
+    inequality, child malnutrition, and rising levels of air pollution. [India; place_1.country]''s land is megadiverse with
+    [four; number_11.str] biodiversity hotspots. [India; place_1.country]''s wildlife, which has traditionally been viewed
+    with tolerance in its culture, is supported in protected habitats.'
+  relations: []
+  rules:
+  - 'number_11.str >= 2 # plural "hotspots"'
+  - 'century_of(temporal_7.year) == number_12.int # federal republic established in the stated century'
+  - 'century_of(temporal_8.year) == number_12.int # 1951 census year in the stated century'
+  num_questions: 12
+  questions:
+  - question_id: place_04_q01
+    question: Which body of water lies to the southwest of [India; place_1.country]?
+    question_type: extractive
+    answer: place_4.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [India; place_1.country] is bounded by the [Arabian Sea; place_4.natural_site] on the southwest.
+    reasoning_chain_text: 1. The document states that [India; place_1.country] is bounded by the [Arabian Sea; place_4.natural_site]
+      on the southwest.
+  - question_id: place_04_q02
+    question: What type of governmental system does [India; place_1.country] use?
+    question_type: extractive
+    answer: democratic parliamentary system
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [India; place_1.country] is governed through a democratic parliamentary system.
+    reasoning_chain_text: 1. The document states that [India; place_1.country] is governed through a democratic parliamentary
+      system.
+  - question_id: place_04_q03
+    question: What is the capital city of [India; place_1.country]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [India; place_1.country]'s geography, demographics, and economy.
+    - 2. However, the document never mentions the capital city of [India; place_1.country].
+    reasoning_chain_text: '1. The document describes [India; place_1.country]''s geography, demographics, and economy.
+
+      2. However, the document never mentions the capital city of [India; place_1.country].'
+  - question_id: place_04_q04
+    question: By how many dollars did the nominal per capita income in [India; place_1.country] increase from [1951; temporal_8.year]
+      to [2023; temporal_1.year] ?
+    question_type: arithmetic
+    answer: number_8.int - number_7.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the nominal per capita income increased from $[64; number_7.int] to $[2601; number_8.int].
+    - 2. The increase is $[2601; number_8.int] - $[64; number_7.int] = $2029.
+    reasoning_chain_text: '1. The document states the nominal per capita income increased from $[64; number_7.int] to $[2601;
+      number_8.int].
+
+      2. The increase is $[2601; number_8.int] - $[64; number_7.int] = $2029.'
+  - question_id: place_04_q05
+    question: What is the population density of [India; place_1.country], given its population of over [1.4; number_6.float]
+      billion?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the population exceeded [1.4; number_6.float] billion in [2023; temporal_1.year].
+    - 2. However, the document does not provide the total land area of [India; place_1.country], so population density cannot
+      be calculated.
+    reasoning_chain_text: '1. The document states the population exceeded [1.4; number_6.float] billion in [2023; temporal_1.year].
+
+      2. However, the document does not provide the total land area of [India; place_1.country], so population density cannot
+      be calculated.'
+  - question_id: place_04_q06
+    question: How many years after becoming a federal republic did [India; place_1.country]'s population reach [361; number_5.int]
+      million?
+    question_type: temporal
+    answer: temporal_8.year - temporal_7.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [India; place_1.country] became a federal republic in [1950; temporal_7.year].
+    - 2. The population was [361; number_5.int] million in [1951; temporal_8.year].
+    - 3. The difference is [1951; temporal_8.year] - [1950; temporal_7.year] = 14 years.
+    reasoning_chain_text: '1. The document states [India; place_1.country] became a federal republic in [1950; temporal_7.year].
+
+      2. The population was [361; number_5.int] million in [1951; temporal_8.year].
+
+      3. The difference is [1951; temporal_8.year] - [1950; temporal_7.year] = 14 years.'
+  - question_id: place_04_q07
+    question: When did [India; place_1.country] first conduct a nuclear weapons test?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [India; place_1.country] is a nuclear-weapon state.
+    - 2. However, the document does not provide any date or year for when [India; place_1.country] first conducted a nuclear
+      weapons test.
+    reasoning_chain_text: '1. The document mentions that [India; place_1.country] is a nuclear-weapon state.
+
+      2. However, the document does not provide any date or year for when [India; place_1.country] first conducted a nuclear
+      weapons test.'
+  - question_id: place_04_q08
+    question: Which two countries share both a land border and a dispute over [Kashmir; place_23.region] with [India; place_1.country]?
+    question_type: inference
+    answer: place_6.country, place_7.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document lists land borders with [Pakistan; place_6.country] to the west, and [China; place_7.country], [Nepal;
+      place_8.country], and [Bhutan; place_9.country] to the north.
+    - 2. The document states [India; place_1.country] has disputes over [Kashmir; place_23.region] with [Pakistan; place_6.country]
+      and [China; place_7.country].
+    - 3. Both [Pakistan; place_6.country] and [China; place_7.country] share land borders and are involved in the [Kashmir;
+      place_23.region] dispute.
+    reasoning_chain_text: '1. The document lists land borders with [Pakistan; place_6.country] to the west, and [China; place_7.country],
+      [Nepal; place_8.country], and [Bhutan; place_9.country] to the north.
+
+      2. The document states [India; place_1.country] has disputes over [Kashmir; place_23.region] with [Pakistan; place_6.country]
+      and [China; place_7.country].
+
+      3. Both [Pakistan; place_6.country] and [China; place_7.country] share land borders and are involved in the [Kashmir;
+      place_23.region] dispute.'
+  - question_id: place_04_q09
+    question: Given that [India; place_1.country] was once comparatively destitute and is now described as a hub for information
+      technology services, what kind of economic trajectory does the document characterize for the country?
+    question_type: inference
+    answer: fast-growing major economy
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [India; place_1.country] was a comparatively destitute country in [1951; temporal_9.year].
+    - 2. It then states [India; place_1.country] has become a fast-growing major economy and a hub for information technology
+      services.
+    - 3. Combining these facts, the document explicitly characterizes the trajectory as becoming a fast-growing major economy.
+    reasoning_chain_text: '1. The document states [India; place_1.country] was a comparatively destitute country in [1951;
+      temporal_9.year].
+
+      2. It then states [India; place_1.country] has become a fast-growing major economy and a hub for information technology
+      services.
+
+      3. Combining these facts, the document explicitly characterizes the trajectory as becoming a fast-growing major economy.'
+  - question_id: place_04_q10
+    question: Given that [India; place_1.country] ranks high in military expenditure and is a nuclear-weapon state, how large
+      is its active military personnel compared to its population?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [India; place_1.country] ranks high in military expenditure and is a nuclear-weapon state.
+    - 2. However, the document provides no information about the size of [India; place_1.country]'s active military personnel,
+      so the ratio cannot be determined.
+    reasoning_chain_text: '1. The document states [India; place_1.country] ranks high in military expenditure and is a nuclear-weapon
+      state.
+
+      2. However, the document provides no information about the size of [India; place_1.country]''s active military personnel,
+      so the ratio cannot be determined.'
+  - question_id: place_04_q11
+    question: Was [India; place_1.country] already a federal republic when its population reached the one billion mark ?
+    question_type: temporal
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_04_q12
+    question: How many countries share a maritime border with [Andaman and Nicobar Islands; place_14.region] ?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_7.year
+    lower_bound: 1931
+    upper_bound: 1969
+    factual_value: 1950
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 289
+    upper_bound: 433
+    factual_value: 361
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1932
+    upper_bound: 1970
+    factual_value: 1951
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.float
+    lower_bound: 1.0
+    upper_bound: 11.0
+    factual_value: 1.4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 52
+    upper_bound: 76
+    factual_value: 64
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 2081
+    upper_bound: 3121
+    factual_value: 2601
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.percent
+    lower_bound: 13.28
+    upper_bound: 19.92
+    factual_value: 16.6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.percent
+    lower_bound: 59.2
+    upper_bound: 88.8
+    factual_value: 74.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1932
+    upper_bound: 1970
+    factual_value: 1951
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_12.int
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Drelvextovmark; place_1.country], officially the [Drelvextovmark; place_1.country],
+    is a country in [Vexmarndelta; place_2.region]. Bounded by the [Ridge Sivvexmarn; place_3.natural_site] on the south,
+    the [Lagoon Zormyrziv; place_4.natural_site] on the southwest, and the [Zorxalisle; place_5.natural_site] on the southeast,
+    it shares land borders with [Kingdom of Kivgryyorn; place_6.country] to the west; [Kingdom of Vekkrel; place_7.country],
+    [Drelmyrglanland; place_8.country], and [Republic of Sornnoxlith; place_9.country] to the north; and [Kingdom of Sivmyr;
+    place_10.country] and [Zortarnyornmark; place_11.country] to the east. In the [Ridge Sivvexmarn; place_3.natural_site],
+    [Drelvextovmark; place_1.country] is near [Republic of Sornxal; place_12.country] and the [Republic of Vexrath; place_13.country];
+    its [Brimvekbrimdelta; place_14.region] share a maritime border with [Zortarnyornmark; place_11.country], [Kingdom of
+    Drelgrelnox; place_15.country], and [Republic of Tovvexzor; place_16.country].
+
+
+    [Drelvextovmark; place_1.country] has been a federal republic since [1943; temporal_7.year], governed through a democratic
+    parliamentary system. It is a pluralistic, multilingual and multi-ethnic society. [Drelvextovmark; place_1.country]''s
+    population grew from [289; number_5.int] million in [1957; temporal_8.year] to over [1.12; number_6.float] billion in
+    [2009; temporal_1.year]. During this time, its nominal per capita income increased from $[52; number_7.int] annually to
+    $[2081; number_8.int], and its literacy rate from [13.28; number_9.percent]% to [59.2; number_10.percent]%. A comparatively
+    destitute country in [1968; temporal_9.year], [Drelvextovmark; place_1.country] has become a fast-growing major economy
+    and a hub for information technology services, with an expanding middle class. [Drelvextovmark; place_1.country] has reduced
+    its poverty rate, though at the cost of increasing economic inequality. It is a nuclear-weapon state that ranks high in
+    military expenditure. It has disputes over [Drelwextovvale; place_23.region] with its neighbours, [Kingdom of Kivgryyorn;
+    place_6.country] and [Kingdom of Vekkrel; place_7.country], unresolved since the mid-[20; number_12.int] century. Among
+    the socio-economic challenges [Drelvextovmark; place_1.country] faces are gender inequality, child malnutrition, and rising
+    levels of air pollution. [Drelvextovmark; place_1.country]''s land is megadiverse with [two; number_11.str] biodiversity
+    hotspots. [Drelvextovmark; place_1.country]''s wildlife, which has traditionally been viewed with tolerance in its culture,
+    is supported in protected habitats.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

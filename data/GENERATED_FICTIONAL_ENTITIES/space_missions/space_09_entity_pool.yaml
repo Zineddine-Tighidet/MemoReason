@@ -1,0 +1,278 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_09
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T15:01:15.169815+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_4: need 15, found 14'
+coverage:
+  persons: {}
+  places:
+    place_6: 15
+    place_1: 15
+    place_5: 15
+    place_2: 15
+    place_3: 15
+    place_4: 14
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+missing_references:
+  places:
+    place_4: 1
+places:
+  place_6:
+    required_attributes:
+    - demonym
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+      demonym: Veltharan
+    - natural_site: Drommek
+      demonym: Drommekan
+    - natural_site: Calissur
+      demonym: Calissuran
+    - natural_site: Thendrova
+      demonym: Thendrovan
+    - natural_site: Orbiskel
+      demonym: Orbiskelian
+    - natural_site: Pyvandor
+      demonym: Pyvandori
+    - natural_site: Zolphera
+      demonym: Zolpheran
+    - natural_site: Wenshala
+      demonym: Wenshalan
+    - natural_site: Feldarix
+      demonym: Feldarixan
+    - natural_site: Quorveth
+      demonym: Quorvethic
+    - natural_site: Brintosa
+      demonym: Brintosan
+    - natural_site: Halvunex
+      demonym: Halvunexan
+    - natural_site: Sordivane
+      demonym: Sordivanic
+    - natural_site: Grethulam
+      demonym: Grethulami
+    - natural_site: Kospherid
+      demonym: Kospheridan
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Tashkelu
+    - country: Dromisar
+    - country: Palqueno
+    - country: Zethuria
+    - country: Korvandis
+    - country: Ossivane
+    - country: Quilmara
+    - country: Jalthunis
+    - country: Morvecta
+    - country: Sundrelk
+    - country: Gapherion
+    - country: Welmithos
+    - country: Brindova
+    - country: Telvuran
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: northern rimshelf basin
+    - region: western cradle expanse
+    - region: dorsal highland corridor
+    - region: eastern shadowed lowlands
+    - region: upper terravane plateau
+    - region: deep caldera fringe zone
+    - region: inner duskward flats
+    - region: lower meridian shelf
+    - region: outer penumbral valleys
+    - region: high scarpline terrace
+    - region: mid-latitude riftward zone
+    - region: polar dawn crescent
+    - region: sunward aphelion steppes
+    - region: far umbral ridge belt
+    - region: central thermaveil lowlands
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: the Velthari Confederacy
+    - country: the Drosskan Republic
+    - country: the Korvellian Union
+    - country: the Thandric Federation
+    - country: the Bremolian Commonwealth
+    - country: the Zurvanic Collective
+    - country: the Ostraven Alliance
+    - country: the Grotheni Dominion
+    - country: the Sundrethi Coalition
+    - country: the Kalphorian League
+    - country: the Torvennic Accord
+    - country: the Wenshali Compact
+    - country: the Drelluvian Polity
+    - country: the Molvethic Syndicate
+    - country: the Pranthuri Concord
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Vossmark
+    - country: Pelundra
+    - country: Quoriven
+    - country: Dranmeth
+    - country: Selvoria
+    - country: Kelmara
+    - country: Orvantis
+    - country: Pargonis
+    - country: Welmadri
+    - country: Caltherion
+    - country: Morvashek
+    - country: Brindovak
+    - country: Zelpharun
+    - country: Torvishen
+  place_4:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Thandoq
+    - country: Breskara
+    - country: Zulmethia
+    - country: Korvandel
+    - country: Pleshura
+    - country: Dranthuvia
+    - country: Meksorith
+    - country: Gulphenar
+    - country: Wenshaldi
+    - country: Torqalune
+    - country: Fendravik
+    - country: Ossulketh
+    - country: Jarvindra
+    - country: Chelmorath
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkhari Programme
+    - name: Tashkori Initiative
+    - name: Drenvaal Programme
+    - name: Sorvathi Programme
+    - name: Quilmaren Initiative
+    - name: Brenthalo Programme
+    - name: Ondravesh Initiative
+    - name: Pelmathi Programme
+    - name: Reskova Initiative
+    - name: Winthari Programme
+    - name: Jelvoran Programme
+    - name: Kesthari Initiative
+    - name: Molvekri Programme
+    - name: Zanthori Programme
+    - name: Grelvashi Initiative
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSREL
+    - name: VESKARA
+    - name: TELMOK
+    - name: DRASHOL
+    - name: PENVARI
+    - name: GULNEX
+    - name: KELDURAN
+    - name: BRINTHOS
+    - name: TUMVEK
+    - name: HALCORI
+    - name: FENDRAQ
+    - name: JOLPERA
+    - name: WESKRIN
+    - name: ZARQUIL
+    - name: ORVETCH
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundri Orbital Survey Initiative
+    - name: Tharqen Celestial Mapping Programme
+    - name: Korvathi Deep Sky Exploration Project
+    - name: Drasheni Selenographic Research Initiative
+    - name: Palluven Outer Reach Programme
+    - name: Zenthari Orbital Discovery Campaign
+    - name: Quendari Skyward Exploration Initiative
+    - name: Brenoshi Farspace Survey Programme
+    - name: Toruvani Astral Reconnaissance Programme
+    - name: Gelvashi Spacebound Observation Initiative
+    - name: Reshkoni Exoplanetary Survey Programme
+    - name: Wenthari Deepfield Exploration Project
+    - name: Sulvaren Orbital Pathfinder Programme
+    - name: Jothvari Lunar Traverse Programme
+    - name: Mekrundi Nearspace Cartography Initiative
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkara-2
+    - name: Tashorbit-2
+    - name: Lundreth-2
+    - name: Skyvaan-2
+    - name: Orvalis-2
+    - name: Celdrion-2
+    - name: Zorenth-2
+    - name: Quilsar-2
+    - name: Narvokh-2
+    - name: Delvari-2
+    - name: Krethaan-2
+    - name: Solmira-2
+    - name: Yondrek-2
+    - name: Petholan-2
+    - name: Wenvaris-2
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari-3
+    - name: Jorvaska-3
+    - name: Lunepath-3
+    - name: Skydara-3
+    - name: Orvantis-3
+    - name: Celundra-3
+    - name: Kosmari-3
+    - name: Druvanta-3
+    - name: Zenvokha-3
+    - name: Rithalan-3
+    - name: Weskari-3
+    - name: Gulmathi-3
+    - name: Brenova-3
+    - name: Thandori-3
+    - name: Pelvuska-3

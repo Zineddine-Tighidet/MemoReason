@@ -1,0 +1,489 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_02
+  document_theme: cities_countries_and_regions
+  complete: false
+  generated_at: '2026-04-18T17:47:45.547394+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 12
+    place_15: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+    educational_org_4: 15
+    educational_org_5: 15
+    educational_org_6: 15
+    educational_org_7: 15
+    educational_org_8: 15
+    educational_org_9: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_11: 3
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalendor
+    - city: Vossheim
+    - city: Crendala
+    - city: Pelmorath
+    - city: Quirenby
+    - city: Zathwell
+    - city: Brondique
+    - city: Helvacur
+    - city: Mossendral
+    - city: Turwelk
+    - city: Galpheris
+    - city: Ondravek
+    - city: Sythemoor
+    - city: Kelvandis
+    - city: Fenthoril
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brellanth
+    - country: Corthaven
+    - country: Delvoria
+    - country: Fenthara
+    - country: Grellund
+    - country: Hasperin
+    - country: Jontherwick
+    - country: Kelmara
+    - country: Lossendry
+    - country: Morthalan
+    - country: Pelliscar
+    - country: Rondavar
+    - country: Stelvane
+    - country: Thandoral
+    - country: Vossenary
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelthana
+    - country: Colvandris
+    - country: Thenmarque
+    - country: Ossendara
+    - country: Velquoria
+    - country: Dranthecia
+    - country: Kelmurith
+    - country: Plorvensia
+    - country: Wythendal
+    - country: Grothenia
+    - country: Sulvandor
+    - country: Fentharion
+    - country: Molvectra
+    - country: Quendalis
+    - country: Torvenash
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Outer Velanthe
+    - region: Thalcrest Reaches
+    - region: Lower Drenmoor
+    - region: Sorathic Lowlands
+    - region: Pellundra Coast
+    - region: Kethanic Shelf
+    - region: Upper Brivosea
+    - region: Calenthor Basin
+    - region: Mirathane Expanse
+    - region: Orvenic Heartlands
+    - region: Duskvale Corridor
+    - region: Telmoric Fringe
+    - region: Granthelic Seaboard
+    - region: Nelvoran Midlands
+    - region: Phessaric Uplands
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: River Caldwen
+    - natural_site: River Thrennock
+    - natural_site: River Bossaly
+    - natural_site: River Kelmorath
+    - natural_site: River Dunverry
+    - natural_site: River Pelmarch
+    - natural_site: River Gostiven
+    - natural_site: River Wytholan
+    - natural_site: River Crendavey
+    - natural_site: River Torbinnel
+    - natural_site: River Helvask
+    - natural_site: River Quennaby
+    - natural_site: River Sotherly
+    - natural_site: River Brondivek
+    - natural_site: River Malgoven
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velmara Sea
+    - natural_site: Drothic Gulf
+    - natural_site: Pellune Waters
+    - natural_site: Crandow Strait
+    - natural_site: Torwane Bay
+    - natural_site: Heskoval Sea
+    - natural_site: Brindal Channel
+    - natural_site: Galweth Deep
+    - natural_site: Ostavar Reach
+    - natural_site: Kelmuth Sound
+    - natural_site: Parvenic Sea
+    - natural_site: Lossiter Gulf
+    - natural_site: Wentharic Bight
+    - natural_site: Duvarne Passage
+    - natural_site: Threllok Sea
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Warden of Thalcross
+    - city: Borough of Kelmirth
+    - city: Precinct of Dravenholt
+    - city: Canton of Velisque
+    - city: Ward of Brethomar
+    - city: Liberty of Fossgate
+    - city: Citadel of Parnoque
+    - city: Quarter of Grenthallow
+    - city: Enclave of Morthaven
+    - city: Burgh of Calstire
+    - city: Pale of Dunverick
+    - city: Commune of Tessabryn
+    - city: Seat of Olphirem
+    - city: Precinct of Halvergast
+    - city: Ward of Queldaric
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Borough of Crendahl
+    - city: Precinct of Talmure
+    - city: Canton of Velsharn
+    - city: Ward of Brequosse
+    - city: District of Pallenthor
+    - city: Liberty of Grothane
+    - city: Quarter of Delvashk
+    - city: Burgh of Fentorac
+    - city: Parish of Sulkavey
+    - city: Citadel of Wrenthorp
+    - city: Commune of Drellisque
+    - city: Precinct of Holvander
+    - city: Borough of Tessabrune
+    - city: Ward of Kelphaston
+    - city: Liberty of Morthaveen
+  place_9:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thornvale
+    - region: Crendash
+    - region: Belmorrow
+    - region: Gallishen
+    - region: Porthaven
+    - region: Dravenmoor
+    - region: Kelstowe
+    - region: Wyndhollow
+    - region: Tarrisham
+    - region: Brellwick
+    - region: Ossenmere
+    - region: Fendaloch
+    - region: Granthallow
+    - region: Stoverly
+    - region: Pellmark
+  place_10:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Brelloch
+    - region: Tammershed
+    - region: Vossering
+    - region: Keldrith
+    - region: Parnoque
+    - region: Grothane
+    - region: Welvish
+    - region: Sundoral
+    - region: Crellamy
+    - region: Hentavar
+    - region: Drosswick
+    - region: Molvane
+    - region: Thurnesk
+    - region: Gallinder
+    - region: Brenthallow
+  place_11:
+    required_attributes:
+    - region
+    count: 12
+    variants:
+    - region: Colvane
+    - region: Wytheral
+    - region: Grenshollow
+    - region: Drossage
+    - region: Kethbury
+    - region: Lornvale
+    - region: Stannifer
+    - region: Quelmire
+    - region: Harrowfen
+    - region: Tindlereach
+    - region: Boskavel
+    - region: Crethane
+  place_15:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorha
+    - continent: Thandria
+    - continent: Ossulane
+    - continent: Kelvara
+    - continent: Drenmoth
+    - continent: Palcuria
+    - continent: Wenshara
+    - continent: Golthenay
+    - continent: Brissova
+    - continent: Turmendal
+    - continent: Celvonis
+    - continent: Harquessa
+    - continent: Zelphandre
+    - continent: Morvethia
+    - continent: Yondralec
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Broader Thalvern Governance Council
+    - name: Metropolitan Drennoch Administration
+    - name: Unified Carvish Regional Authority
+    - name: Expanded Pellomar Civic Directorate
+    - name: Outer Brindahl Municipal Authority
+    - name: Combined Wetharn Boroughs Council
+    - name: Consolidated Fendrake Governance Body
+    - name: Wider Kelmoth Administrative Authority
+    - name: Integrated Sorrath Metropolitan Council
+    - name: Extended Golvane Regional Directorate
+    - name: Pan-Trossick Boroughs Authority
+    - name: Unified Haldren District Governance
+    - name: Encompassing Velmarch Civic Authority
+    - name: Collective Dranthor Metropolitan Board
+    - name: Broader Quenshaw Administrative Council
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern Institute of Sciences
+    - name: Crendath Polytechnic College
+    - name: Brivolan Technical University
+    - name: Kelmorath College of Applied Research
+    - name: Dravenhill Institute of Engineering
+    - name: Ossendral University of Natural Sciences
+    - name: Quirenth Academy of Technology
+    - name: Feldaric Institute of Innovation
+    - name: Gostivane College of Sciences
+    - name: Pelmurith Technical Institute
+    - name: Zanthoral University of Applied Studies
+    - name: Wenvarak Institute of Research Sciences
+    - name: Haldrique College of Engineering
+    - name: Torvishen Academy of Sciences
+    - name: Brequorin Institute of Technology
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern Collegiate Institute (TCI)
+    - name: Breskane University of Arts and Sciences (BUAS)
+    - name: Colvaren Research University (CRU)
+    - name: Pendrath Comprehensive College (PCC)
+    - name: Moriven Institute of Higher Learning (MIHL)
+    - name: Kelstane Academic University (KAU)
+    - name: Drothwell Polytechnic University (DPU)
+    - name: Ossivane College of Research Studies (OCRS)
+    - name: Grentham Interdisciplinary University (GIU)
+    - name: Feldaric University College (FUC)
+    - name: Quenshaw Institute of Scholarship (QIS)
+    - name: Halvoric Research College (HRC)
+    - name: Tembrisar University of Liberal Studies (TULS)
+    - name: Weskarin Comprehensive University (WCU)
+    - name: Plenvore Academic College (PAC)
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalwick College of Humanities (TCH)
+    - name: Brevander Institute of Law and Sciences (BILS)
+    - name: Corthane University College (CUC)
+    - name: Pellmark College of Health and Letters (PCHL)
+    - name: Dunavar School of Jurisprudence (DSJ)
+    - name: Orenthal College of Liberal Studies (OCLS)
+    - name: Kelstane Academy of Law and Medicine (KALM)
+    - name: Vossbridge College of Humanities (VCH)
+    - name: Grethane Institute of Health Sciences (GIHS)
+    - name: Molvaren College of Letters (MCL)
+    - name: Tarquell University of Law and Arts (TULA)
+    - name: Fendalor College of Applied Humanities (FCAH)
+    - name: Brenthallow Institute of Legal Studies (BILS)
+    - name: Quorvane College of Sciences and Law (QCSL)
+    - name: Helvander School of Humanities and Health (HSHH)
+  educational_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvarn Institute of Political Economy (TIPE)
+    - name: Granthoe School of Social Sciences (GSSS)
+    - name: Pellwick Academy of Economics and Governance (PAEG)
+    - name: Dorivan Centre for Public Policy (DCPP)
+    - name: Kelmure School of Economic Studies (KSES)
+    - name: Brossath Institute of Social Research (BISR)
+    - name: Haltrune College of Economics and Law (HCEL)
+    - name: Vosserly School of Political Science (VSPS)
+    - name: Crethane Academy of Economic Affairs (CAEA)
+    - name: Jendoral Institute of Governance and Policy (JIGP)
+    - name: Molvane School of Social and Economic Thought (MSSET)
+    - name: Quirrath Centre for Applied Economics (QCAE)
+    - name: Fendalor Institute of Public Affairs (FIPA)
+    - name: Stolvane Academy of Economic Inquiry (SAEI)
+    - name: Wenthari School of Society and Markets (WSSM)
+  educational_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern Institute of Visual Arts (TIVA)
+    - name: Crendosk Academy of Fine Design (CAFD)
+    - name: Pellomar School of Creative Studies (PSCS)
+    - name: Brinthal Conservatory of Applied Arts (BCAA)
+    - name: Quenshaw College of Artistic Practice (QCAP)
+    - name: Dorvenal Institute of Design and Craft (DIDC)
+    - name: Feltrune Academy of Visual Expression (FAVE)
+    - name: Gloswen School of Studio Arts (GSSA)
+    - name: Harvenique College of Art and Design (HCAD)
+    - name: Molvaren Institute of Creative Arts (MICA)
+    - name: Stelvorn Academy of Aesthetic Studies (SAAS)
+    - name: Wyndorel School of Applied Design (WSAD)
+    - name: Kethural College of Fine Arts (KCFA)
+    - name: Prenvask Institute of Artistic Disciplines (PIAD)
+    - name: Zolmaren Academy of Art and Sculpture (ZAAS)
+  educational_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Conservatory of Music (VCM)
+    - name: Thandoral Institute of Musical Arts (TIMA)
+    - name: Celvaine School of Music (CSM)
+    - name: Bretholin Academy of Performing Music (BAPM)
+    - name: Korvethian Conservatorium (KC)
+    - name: Pallendric Institute of Music (PIM)
+    - name: Drantheil Academy of Musical Studies (DAMS)
+    - name: Solvaren Conservatory of Music and Performance (SCMP)
+    - name: Elthoran School of Musical Arts (ESMA)
+    - name: Grenthari Academy of Music (GAM)
+    - name: Melvothen Institute of Musical Performance (MIMP)
+    - name: Torvaline Conservatory of Music (TCM)
+    - name: Queldaric School of Musical Studies (QSMS)
+    - name: Brinthalon Academy of Music (BAM)
+    - name: Fendroval Institute of Musical Arts (FIMA)
+  educational_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern Conservatory of Performing Arts (TCPA)
+    - name: Kelmorath Institute of Theatre and Stage (KITS)
+    - name: Brenwick School of Dramatic Studies (BSDS)
+    - name: Orvalen Academy of Theatrical Arts (OATA)
+    - name: Pellicarn Conservatory of Drama (PCD)
+    - name: Drossingham School of Stage and Performance (DSSP)
+    - name: Quendalith Institute of Dramatic Expression (QIDE)
+    - name: Harsolm Academy of Theatre Craft (HATC)
+    - name: Velmaren School of Performance Arts (VSPA)
+    - name: Crothane Conservatory of Acting and Drama (CCAD)
+    - name: Jenthari Institute of Stagecraft (JIS)
+    - name: Wosperal Academy of Dramatic Practice (WADP)
+    - name: Fendalor School of Theatre and Voice (FSTV)
+    - name: Galthenor Conservatory of Dramatic Inquiry (GCDI)
+    - name: Rilmothen Academy of Performance and Drama (RAPD)
+  educational_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collegium of Transoceanic and Meridional Studies (CTMS)
+    - name: Institute of Circumpolar and Austral Cultures (ICAC)
+    - name: Faculty of Equatorial and Archipelagic Research (FEAR)
+    - name: Academy of Littoral and Highland Civilisations (ALHC)
+    - name: School of Pelagic and Continental Inquiry (SPCI)
+    - name: Centre for Boreal and Insular Scholarship (CBIS)
+    - name: Institute of Riparian and Steppe Traditions (IRST)
+    - name: College of Thalassic and Upland Heritage (CTUH)
+    - name: School of Lacustrine and Savannah Discourse (SLSD)
+    - name: Academy of Deltaic and Montane Knowledge (ADMK)
+    - name: Institute of Isthmian and Plateau Learning (IIPL)
+    - name: Faculty of Estuarine and Cordilleran Studies (FECS)
+    - name: Centre for Peninsular and Lowland Thought (CPLT)
+    - name: College of Volcanic and Coastal Humanities (CVCH)
+    - name: School of Glacial and Terrace Philosophies (SGTP)
+  educational_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvolen School of Commerce (TSC)
+    - name: Kelmorath Graduate Institute of Management (KGIM)
+    - name: Brindovel Academy of Enterprise (BAE)
+    - name: Corthane School of Global Business (CSGB)
+    - name: Pellunwick Institute of Finance and Strategy (PIFS)
+    - name: Dravoshen Executive College (DEC)
+    - name: Melvoran School of Business Leadership (MSBL)
+    - name: Quirenth Graduate School of Commerce (QGSC)
+    - name: Haltroven Institute of Management Sciences (HIMS)
+    - name: Fendalique School of Business (FSB)
+    - name: Obrenthall Academy of Corporate Studies (OACS)
+    - name: Zelphari Graduate Business College (ZGBC)
+    - name: Wenthoril School of Applied Economics (WSAE)
+    - name: Grothanel Institute of Strategic Management (GISM)
+    - name: Parvunel School of Enterprise and Trade (PSET)

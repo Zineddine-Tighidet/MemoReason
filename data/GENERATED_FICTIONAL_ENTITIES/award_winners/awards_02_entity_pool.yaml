@@ -1,0 +1,928 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-7
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_02
+  document_theme: award_winners
+  generated_at: '2026-04-17T15:27:27.619399+00:00'
+  complete: true
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_13: 15
+    event_3: 15
+    event_14: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+    event_10: 15
+    event_11: 15
+    event_12: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_7: 15
+  ngos:
+    ngo_3: 15
+    ngo_1: 15
+    ngo_2: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+    media_org_3: 15
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_5: 15
+    award_7: 15
+    award_6: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Vintran Qoreli Draskovar
+      last_name: Draskovar
+      nationality: Yuvenian
+    - full_name: Parneth Olsavic Threndil
+      last_name: Threndil
+      nationality: Korvathi
+    - full_name: Karnuel Brevik Oshandro
+      last_name: Oshandro
+      nationality: Palindri
+    - full_name: Milavor Estren Yuquilan
+      last_name: Yuquilan
+      nationality: Maztreni
+    - full_name: Denbrik Halvor Ustrevel
+      last_name: Ustrevel
+      nationality: Brevillan
+    - full_name: Torveth Palindar Quezoran
+      last_name: Quezoran
+      nationality: Selmarin
+    - full_name: Olren Chavrik Bostelmo
+      last_name: Bostelmo
+      nationality: Trenvaki
+    - full_name: Servan Quintrel Marzavik
+      last_name: Marzavik
+      nationality: Droventi
+    - full_name: Halmeth Ordonel Prezimar
+      last_name: Prezimar
+      nationality: Ustrelan
+    - full_name: Bravik Onstrel Velduran
+      last_name: Velduran
+      nationality: Kandoric
+    - full_name: Nurvek Jestrem Colvintar
+      last_name: Colvintar
+      nationality: Orvethi
+    - full_name: Thanvil Orskend Rumaldro
+      last_name: Rumaldro
+      nationality: Plevandi
+    - full_name: Garvund Pelsim Xandorel
+      last_name: Xandorel
+      nationality: Vurmethi
+    - full_name: Elnavar Quintor Droskemi
+      last_name: Droskemi
+      nationality: Trelgorin
+    - full_name: Ormesh Caldrin Vestranil
+      last_name: Vestranil
+      nationality: Quendari
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Hogarn Vresley
+    - full_name: Quenlow Barthick
+    - full_name: Dremon Kalbrose
+    - full_name: Pelvin Thorquay
+    - full_name: Ormick Judrane
+    - full_name: Yasbert Crinolm
+    - full_name: Trevald Pomsher
+    - full_name: Norbick Estwalt
+    - full_name: Gremsey Voltheran
+    - full_name: Kasrin Dolverly
+    - full_name: Welmar Quindish
+    - full_name: Fentor Mazebrick
+    - full_name: Ralveck Stompier
+    - full_name: Jovrin Pendaros
+    - full_name: Brulmot Haskerin
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmaria
+    - country: Tronsevia
+    - country: Quindoria
+    - country: Brashelka
+    - country: Orvenstad
+    - country: Palmerria
+    - country: Cresmonia
+    - country: Durnalta
+    - country: Juvelpa
+    - country: Khartovia
+    - country: Selmagua
+    - country: Yorbandia
+    - country: Plurenta
+    - country: Mendrovia
+    - country: Cabrinesia
+  place_2:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Vorellian
+    - demonym: Quindari
+    - demonym: Trasmenian
+    - demonym: Pelvoric
+    - demonym: Orsandic
+    - demonym: Kelmurian
+    - demonym: Brindolan
+    - demonym: Thavuran
+    - demonym: Luspanic
+    - demonym: Yendrosi
+    - demonym: Corvashi
+    - demonym: Malthiran
+    - demonym: Drevanic
+    - demonym: Ashkerlic
+    - demonym: Tomberric
+  place_3:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Vortinian
+    - demonym: Krellanese
+    - demonym: Juspadian
+    - demonym: Omrellian
+    - demonym: Trevaskan
+    - demonym: Yulmaric
+    - demonym: Prendavian
+    - demonym: Zolmirian
+    - demonym: Quendaric
+    - demonym: Brinolese
+    - demonym: Skarvothian
+    - demonym: Limurnian
+    - demonym: Othrepic
+    - demonym: Vandrosian
+    - demonym: Charnulian
+  place_4:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Vrelmish
+    - demonym: Quandoran
+    - demonym: Plorvian
+    - demonym: Krenolan
+    - demonym: Tavinese
+    - demonym: Brolesian
+    - demonym: Zhemaric
+    - demonym: Olvandrian
+    - demonym: Sprellanic
+    - demonym: Druvellian
+    - demonym: Nakorish
+    - demonym: Griselnic
+    - demonym: Pomfradian
+    - demonym: Yestravan
+    - demonym: Cavurnese
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vrenalia
+    - country: Mordavel
+    - country: Tuskarem
+    - country: Olbrantia
+    - country: Pelmoria
+    - country: Jandoria
+    - country: Quorlestan
+    - country: Fandreval
+    - country: Zemorath
+    - country: Krishavel
+    - country: Brunteval
+    - country: Ospravia
+    - country: Trilvonia
+    - country: Malbrosia
+    - country: Urnavik
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Globus Football Championship
+    - name: Intercontinental Footballers Trophy
+    - name: Worldwide Pitch Cup
+    - name: Planetary Football Classic
+    - name: United Nations Football Cup
+    - name: Grand Orbital Football Tournament
+    - name: Transcontinental Footballers League Cup
+    - name: Meridian World Football Series
+    - name: Universal Football Crown
+    - name: Panglobal Football Trophy
+    - name: Hemisphere Football Championship
+    - name: Continental Unity Football Cup
+    - name: Vorencia Football Grand Cup
+    - name: Zephyran World Football Meet
+    - name: Oltheon Global Football Championship
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trofenia Surelta
+    - name: Vandreno Cup
+    - name: Plurinal Qemberos
+    - name: Zantepa Trophy
+    - name: Orunavo Championship
+    - name: Brijalda Cup
+    - name: Fendoria Torneo
+    - name: Urbalquen Cup
+    - name: Melvaran Trophy
+    - name: Calderinto Cup
+    - name: Pareminda Torneo
+    - name: Struvena Cup
+    - name: Olvireno Championship
+    - name: Kembrasa Trophy
+    - name: Turnelva Cup
+  event_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vordra Primera
+    - name: Trelcan Championship
+    - name: Gorvexa League
+    - name: Plantiro Division
+    - name: Urvesta Cup Series
+    - name: Mendrola Top Flight
+    - name: Crondavia Premier
+    - name: Xaltira Football League
+    - name: Brendova Campeona
+    - name: Yulmora Grand League
+    - name: Felcaria Premiership
+    - name: Orventa Prima
+    - name: Karnessa Top League
+    - name: Drevalla Championship
+    - name: Sulpenta Premier Division
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vornelli Continental Cups
+    - name: Krandor Elite Club Trophies
+    - name: Pelmoran Grand Club Tournaments
+    - name: Zentiva Club Championships
+    - name: Brendahl Club Supercups
+    - name: Olvantic Club Premier Series
+    - name: Trevaran Continental Club Trophies
+    - name: Durnavian Club Masters
+    - name: Marzoli Champion Clubs Cups
+    - name: Skelran Premier Continental Cups
+    - name: Ivarnic Top Club Tournaments
+    - name: Falmoriel Club Gold Series
+    - name: Corvantine Elite Cups
+    - name: Threskovian Club Crown Tournaments
+    - name: Plovanic Continental Club Shields
+  event_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pryvenna Klass
+    - name: Trobelle Premier
+    - name: Vorschen Oberklasse
+    - name: Kampionato Uvresso
+    - name: Drennal Superior
+    - name: Vastrige Toppliga
+    - name: Chelmont Grand Circuit
+    - name: Quellmar Eliteklasse
+    - name: Varnochy Pervova
+    - name: Brinnec Haute Championnat
+    - name: Olvarno Supreme Cup
+    - name: Stralnik Verkhova
+    - name: Jardoux Premiere Division
+    - name: Kelvran Topklasa
+    - name: Mirtozza Campionato Alto
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zorpani Trophy
+    - name: Velmara Shield
+    - name: Kriftan Championship Cup
+    - name: Ondrelex Final
+    - name: Brunavel Crown
+    - name: Trenolia Title Cup
+    - name: Yambrisk Premier Trophy
+    - name: Clavenor Championship
+    - name: Drunalis Grand Cup
+    - name: Plentari Title Shield
+    - name: Gorvanth Final Trophy
+    - name: Sperindo Cup
+    - name: Marviton Championship Trophy
+    - name: Quendrosa Crown Cup
+    - name: Ulfrantir Final Shield
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmari Continental Games
+    - name: Orythian Summer Tournament
+    - name: Zandrop Global Sportfest
+    - name: Kessaran Summer Olympiad
+    - name: Brenvali Intercontinental Games
+    - name: Halvoran Summer Meet
+    - name: Pellandic Grand Games
+    - name: Trevashi World Sportival
+    - name: Quendral Summer Championship
+    - name: Mavorin International Games
+    - name: Solvetian Summer Cup
+    - name: Arnelic World Games
+    - name: Jurondi Summer Sportmeet
+    - name: Corveni Global Tournament
+    - name: Umbraski Summer Festival of Sport
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vossmere Globe Tournament
+    - name: Trenlar Continental Shield
+    - name: Quennor Planet Cup
+    - name: Brindex Nations Trophy
+    - name: Palvoran World Clash
+    - name: Orthelin Grand Tourney
+    - name: Zamilor Football Classic
+    - name: Krennoth Global Series
+    - name: Vundrel Intercontinental Match
+    - name: Fendreth World Championship
+    - name: Mulgrave Nations Tourney
+    - name: Arxomir Global Fixture
+    - name: Thulvane Earth Cup
+    - name: Persivor Unified Trophy
+    - name: Braxenor Worldwide Final
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pravellan Shield
+      old_name: 2015 Pravellan Shield
+    - name: Quorinthe Trophy
+      old_name: 2015 Quorinthe Trophy
+    - name: Velmarican Cup
+      old_name: 2015 Velmarican Cup
+    - name: Trelzonan Championship
+      old_name: 2015 Trelzonan Championship
+    - name: Orbanthic Cup
+      old_name: 2015 Orbanthic Cup
+    - name: Saldrevan Crown
+      old_name: 2015 Saldrevan Crown
+    - name: Mirquelon Tournament
+      old_name: 2015 Mirquelon Tournament
+    - name: Brenthalan Cup
+      old_name: 2015 Brenthalan Cup
+    - name: Ulvradian Trophy
+      old_name: 2015 Ulvradian Trophy
+    - name: Norvathic Championship
+      old_name: 2015 Norvathic Championship
+    - name: Cendrelan Cup
+      old_name: 2015 Cendrelan Cup
+    - name: Xoquelan Shield
+      old_name: 2015 Xoquelan Shield
+    - name: Palverdan Tournament
+      old_name: 2015 Palverdan Tournament
+    - name: Droventhic Cup
+      old_name: 2015 Droventhic Cup
+    - name: Iskravan Crown
+      old_name: 2015 Iskravan Crown
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trofeo Pemberal Centenaria
+    - name: Zantavia Centenary Cup
+    - name: Copa Vendralis Centenar
+    - name: Grolano Centenary Tournament
+    - name: Copa Quesimbra Jubilar
+    - name: Torneo Brindazzi Centenario
+    - name: Oldranic Centenary Shield
+    - name: Copa Marvellin Centennial
+    - name: Trofeo Oslunda Centenaria
+    - name: Jembara Centenary Cup
+    - name: Copa Palindrica Jubilea
+    - name: Torneo Velmontar Centenario
+    - name: Drovelian Centenary Trophy
+    - name: Copa Trevantia Centenaria
+    - name: Kelbrosan Centenary Cup
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vrentos Global Trophy
+    - name: Korindal Planet Championship
+    - name: Thalvexi World Tournament
+    - name: Pelthurian Intercontinental Cup
+    - name: Zomberra Grand Finals
+    - name: Ophresian World Classic
+    - name: Quandreth Earth Tournament
+    - name: Brentolac International Shield
+    - name: Yurnhavi World Championship
+    - name: Cresphalan Continental Masters
+    - name: Dromvellin Worldwide Tourney
+    - name: Jarnophic Global Showdown
+    - name: Lendraith Planet Tournament
+    - name: Okumbari World Challenge
+    - name: Striphalon Intercontinental Final
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Copa Vendrial
+      old_name: 2021 Copa Vendrial
+    - name: Trofeo Zuparal
+      old_name: 2021 Trofeo Zuparal
+    - name: Copa Brendalia
+      old_name: 2021 Copa Brendalia
+    - name: Copa Tramoquina
+      old_name: 2021 Copa Tramoquina
+    - name: Copa Yurinaqua
+      old_name: 2021 Copa Yurinaqua
+    - name: Copa Flendrosa
+      old_name: 2021 Copa Flendrosa
+    - name: Copa Mirantela
+      old_name: 2021 Copa Mirantela
+    - name: Copa Quelvaria
+      old_name: 2021 Copa Quelvaria
+    - name: Copa Pendrasco
+      old_name: 2021 Copa Pendrasco
+    - name: Copa Sorvatina
+      old_name: 2021 Copa Sorvatina
+    - name: Copa Xalvenia
+      old_name: 2021 Copa Xalvenia
+    - name: Copa Drulminta
+      old_name: 2021 Copa Drulminta
+    - name: Copa Velmoraca
+      old_name: 2021 Copa Velmoraca
+    - name: Copa Bralnueca
+      old_name: 2021 Copa Bralnueca
+    - name: Copa Thernovica
+      old_name: 2021 Copa Thernovica
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tournament of Vregalia
+    - name: Okravun Continental Shield
+    - name: Zephrim Global Finals
+    - name: Quolvari Nations Trophy
+    - name: Brendakos Grand Tourney
+    - name: Ulmareth Cup of Nations
+    - name: Pholenza Continental Games
+    - name: Yastroven Crown Series
+    - name: Threlmic Global Shield
+    - name: Kavornis Nations Finals
+    - name: Omrathel Grand Championship
+    - name: Veshranti Continental Tourney
+    - name: Narquolon Global Trophy
+    - name: Drembalos Nations Cup
+    - name: Iskavren Crown Tournament
+  event_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trovenar Cup
+      old_name: 2024 Trovenar Cup
+    - name: Qualberra Trophy
+      old_name: 2024 Qualberra Trophy
+    - name: Veldoran Championship
+      old_name: 2024 Veldoran Championship
+    - name: Brinzola Cup
+      old_name: 2024 Brinzola Cup
+    - name: Klovaren Tournament
+      old_name: 2024 Klovaren Tournament
+    - name: Phentari Shield
+      old_name: 2024 Phentari Shield
+    - name: Zumbrila Cup
+      old_name: 2024 Zumbrila Cup
+    - name: Orvandel Trophy
+      old_name: 2024 Orvandel Trophy
+    - name: Mentarix Cup
+      old_name: 2024 Mentarix Cup
+    - name: Drolvena Championship
+      old_name: 2024 Drolvena Championship
+    - name: Halcarin Cup
+      old_name: 2024 Halcarin Cup
+    - name: Yurbalda Trophy
+      old_name: 2024 Yurbalda Trophy
+    - name: Pralvico Tournament
+      old_name: 2024 Pralvico Tournament
+    - name: Esquemaro Cup
+      old_name: 2024 Esquemaro Cup
+    - name: Turnaveli Shield
+      old_name: 2024 Turnaveli Shield
+entreprise_orgs:
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vurenza Coastline FC
+    - name: Palmeros Orlandic SC
+    - name: Brenville Harbor Club
+    - name: Sunmoral Athletic
+    - name: Kestrana Bayside FC
+    - name: Trelmont Sporting Club
+    - name: Orquesta Miamica FC
+    - name: Calavente United
+    - name: Perlagua Sporting
+    - name: Velandro Shoreline FC
+    - name: Mireston Atlantic Club
+    - name: Havarro Palms FC
+    - name: Southkeel Rovers
+    - name: Dalmoran Bay Athletic
+    - name: Quentavia Marine FC
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmora CF
+    - name: Tarnello FC
+    - name: Quindara Club
+    - name: Olvetra FC
+    - name: Sarnolia CF
+    - name: Brenosta FC
+    - name: Palverin CF
+    - name: Dromeja FC
+    - name: Kelmora Club
+    - name: Thraneta CF
+    - name: Vunareli FC
+    - name: Cheloma CF
+    - name: Ferindosa FC
+    - name: Morvenca Club
+    - name: Arlunsia CF
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Primavera Futbolistica
+    - name: Kelendra Championa
+    - name: Vorsalta Premier
+    - name: Campanilo Superior
+    - name: Trevinda Futbol Cup
+    - name: Olvendra Elite
+    - name: Pravenca Torneo
+    - name: Sobrelina Copa
+    - name: Mirafonda Championship
+    - name: Quelvarra Premier
+    - name: Zondrella Futbol
+    - name: Brellinda Copa
+    - name: Aldravera Liga
+    - name: Finzardo Premier
+    - name: Calvorena Torneo
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vermaux Olympique Club
+    - name: Chandrille Sportif
+    - name: Olympique Drentais
+    - name: Stade Velorin FC
+    - name: Club Athletique Tournesac
+    - name: Brassiere United FC
+    - name: Sporting Clermieux
+    - name: FC Pelorien
+    - name: Racing Club Montavel
+    - name: Olympique Serincourt
+    - name: AS Thirbonne
+    - name: FC Valmoride
+    - name: Club Sportif Argelan
+    - name: Union Sportive Brenlac
+    - name: FC Courmedis
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorlenta
+    - name: Krispex Sport
+    - name: Quenmark Athletic
+    - name: Jolvara
+    - name: Trempani Gear
+    - name: Flornix
+    - name: Zendrath Apparel
+    - name: Palbenco
+    - name: Mirrovant
+    - name: Stellwick Athletics
+    - name: Obrenza Sportwear
+    - name: Caltrex Fit
+    - name: Yuvenda
+    - name: Prenholm Sports
+    - name: Drovanix
+ngos:
+  ngo_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Premier Continental Soccer League
+    - name: United Football Federation of the Americas
+    - name: Transcontinental Soccer Association
+    - name: North Atlantic Football Union
+    - name: Pan-Regional Soccer Circuit
+    - name: Coastal Professional Football League
+    - name: Unified Clubs Soccer Conference
+    - name: Hemispheric Football Organization
+    - name: Continental Cup Soccer Alliance
+    - name: Greater Football League of the Pacific
+    - name: Allied Soccer Clubs Association
+    - name: National Professional Soccer Confederation
+    - name: Skyline Football League
+    - name: Intercontinental Soccer Partnership
+    - name: Crestline Professional Football Union
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Footballing Confederation of Pelthara
+    - name: World Union of Kelmoric Football Associations
+    - name: International Board of Vondralic Football
+    - name: Planetary Council for Zerintan Football
+    - name: Worldwide Federation of Trennask Football Leagues
+    - name: Supreme Assembly of Brindolan Football Nations
+    - name: Intercontinental Guild of Sayrunic Football
+    - name: Union of Orvendic Football Associations Worldwide
+    - name: International Circle of Miltravan Football Bodies
+    - name: Global Charter for Quenstari Football Governance
+    - name: Federation of Thaldorne Football Leagues International
+    - name: Worldwide Council of Jorvanti Football
+    - name: International Forum of Drelinac Football Associations
+    - name: Congress of Esperith Football Nations
+    - name: Global Alliance of Yultravic Football Federations
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gorvenix Football Heritage Council
+    - name: Plentoria Global Sport Registry
+    - name: Varnhelm Institute of Football Records
+    - name: Quelstrom World Football Archive
+    - name: Brenvalia Federation of Football Historians
+    - name: Trenvoss International Football Observatory
+    - name: Mardolin Society for Football Statistics
+    - name: Volterak Global Football Review
+    - name: Crendahl World Sporting Chronicle
+    - name: Pelmorris Football Records Union
+    - name: Javrindel Council of Sport Historians
+    - name: Sundralek International Football Registry
+    - name: Obrenthal Federation for Football Research
+    - name: Klaverin World Football Heritage Board
+    - name: Drensolta Global Football Documentation Office
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pitchside Quarterly
+    - name: Globo Kickers Review
+    - name: Stadia Monde
+    - name: Kopworld Digest
+    - name: Midfield Chronicle
+    - name: Onze Planet
+    - name: Touchline Observer
+    - name: Goalpost Register
+    - name: Crosspitch Journal
+    - name: Netline Gazette
+    - name: Boot Room Weekly
+    - name: Pivotball Tribune
+    - name: Elevenstar Magazine
+    - name: Corner Flag Review
+    - name: Offside Ledger
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vintrex Review
+    - name: Korbell Wealth Journal
+    - name: Quadren Business Weekly
+    - name: Moravex Financial
+    - name: Tanlord Insight
+    - name: Phelby Capital Report
+    - name: Jarnwick Economic
+    - name: Orvano Market Digest
+    - name: Calstrom Ledger
+    - name: Thurnby Fortune Press
+    - name: Mendrall Business Review
+    - name: Voskelt Industry News
+    - name: Brellmont Financial Times
+    - name: Pryvalt Commerce Journal
+    - name: Kendarro Wealth Weekly
+  media_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pulseframe Weekly
+    - name: Corvidex Report
+    - name: Vantora Journal
+    - name: Brumwell Dispatch
+    - name: Kestrelix Magazine
+    - name: Noctavia Review
+    - name: Quillford Gazette
+    - name: Helvara Monthly
+    - name: Thornquill Press
+    - name: Marendale Observer
+    - name: Solviran Chronicle
+    - name: Ebberly Digest
+    - name: Virnell Tribune
+    - name: Ashpont Herald
+    - name: Greyspire Bulletin
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zerphin Trophy
+    - name: Krivaldo Globe
+    - name: Ondrelis Cup
+    - name: Verquinn Laurel
+    - name: Mirashok Sphere
+    - name: Talvendir Star
+    - name: Pellorin Crown
+    - name: Xantrovin Medal
+    - name: Quendalir Orb
+    - name: Brantisol Prize
+    - name: Yoralken Shield
+    - name: Dravenniq Chalice
+    - name: Sorvellis Emblem
+    - name: Lintavor Plaque
+    - name: Hesquilon Baton
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Strikers Trophy
+    - name: Grand Footskorr Plate
+    - name: Veltrin Forward Medal
+    - name: Platinum Bootspan Prize
+    - name: Zemora Top Scorer Crest
+    - name: Silver Kickmark Laurel
+    - name: Oranda Goalcraft Shield
+    - name: Kalvenstra Striker Cup
+    - name: Brenval Finisher Emblem
+    - name: Thrimond Pitch Laurel
+    - name: Vorenta Goalmaster Star
+    - name: Palmora Bootcrest Prize
+    - name: Juniste Attacker Medal
+    - name: Elverin Netfinder Trophy
+    - name: Carvalen Strikecraft Award
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Eternal Grandmaster of Global Football
+    - name: Century Laureate of Men's Football Excellence
+    - name: Supreme Footballer of All Generations
+    - name: Perpetual Champion of World Football Mastery
+    - name: Everlasting Icon of Men's Football Greatness
+    - name: Ultimate Legend of Worldwide Football
+    - name: Timeless Paragon of Men's Football Brilliance
+    - name: Immortal Virtuoso of Global Football
+    - name: Pantheon Honor for Men's Football Supremacy
+    - name: Crown of Ages for Men's Football
+    - name: Zenith Laurel of Planetary Football
+    - name: Everlight Trophy of Men's Football Mastery
+    - name: Millennial Footballer of the Worldwide Game
+    - name: Grand Sempiternal Honor in Men's Football
+    - name: Apex Luminary of Men's World Football
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vendrith Global Sportsman Honor
+    - name: Kolvaran Premier Athlete Trophy
+    - name: Zenmoril World Sporting Distinction
+    - name: Ormathen Grand Sportsman Accolade
+    - name: Brinovar International Athlete Prize
+    - name: Quellistar Supreme Sportsman Award
+    - name: Tavrinnel World Competitor Honor
+    - name: Pralenthos Global Athlete Medal
+    - name: Vorstameer Elite Sportsman Prize
+    - name: Halthenric Worldwide Athlete Trophy
+    - name: Sennograve International Sporting Laurel
+    - name: Myrenthal Premier Competitor Award
+    - name: Corbellian World Sportsman Distinction
+    - name: Drennaval Global Athletic Honor
+    - name: Ylbarion Universal Sportsman Trophy
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Orbiflux Legends Eleven
+    - name: Kestrel Globe Pantheon
+    - name: Vantegrin Pitch Circle
+    - name: Zyphorra Gilded Roster
+    - name: Meridal Crown Selection
+    - name: Polsevren Ensemble Honor
+    - name: Cindraque Champions Tier
+    - name: Orathine Silver Cohort
+    - name: Velgard Pinnacle Squad
+    - name: Brimloft Heritage Lineup
+    - name: Quenbreth Laureate Roster
+    - name: Tarvonic Pitch Pantheon
+    - name: Suldemar Golden Formation
+    - name: Halvenor Elite Convocation
+    - name: Drevinthal Honors Eleven
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Competitor of the Season Distinction
+    - name: Sporting Figure of the Calendar Honor
+    - name: Premier Performer Annual Citation
+    - name: Global Contender Tribute
+    - name: Top Sportsperson Yearly Accolade
+    - name: Outstanding Competitor Annual Prize
+    - name: Pinnacle Athlete Recognition
+    - name: Sportsperson Spotlight Honor
+    - name: Defining Competitor of the Period
+    - name: Headline Sports Performer Tribute
+    - name: Champion in Focus Yearly Award
+    - name: Standout Competitor Citation
+    - name: Leading Sports Figure Commendation
+    - name: Signature Athlete Yearly Distinction
+    - name: Eminent Competitor Recognition
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Laurel of Honor
+    - name: National Beacon Distinction
+    - name: Sovereign Merit Garland
+    - name: Order of the Silver Quill
+    - name: Grand Citizen's Emblem
+    - name: Liberty Crest Award
+    - name: Federal Star of Valor and Service
+    - name: Crown Civic Tribute
+    - name: Order of the Open Torch
+    - name: Heritage Circle Commendation
+    - name: National Keystone Honor
+    - name: Civil Accord Decoration
+    - name: Republic's Banner of Distinction
+    - name: Order of the Luminous Eagle
+    - name: Unity Pillar Award

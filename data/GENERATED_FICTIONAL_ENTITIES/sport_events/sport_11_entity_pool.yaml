@@ -1,0 +1,366 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_11
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-04-18T15:10:18.539048+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_6: 15
+    event_7: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals:
+    legal_1: 15
+  products:
+    product_1: 15
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Breskana
+    - country: Delmuria
+    - country: Korvethia
+    - country: Pallenthos
+    - country: Sundrafel
+    - country: Wenthari
+    - country: Cloriven
+    - country: Grothane
+    - country: Melvuria
+    - country: Phandelos
+    - country: Quirembas
+    - country: Zelkouri
+    - country: Haldrenoc
+    - country: Tarvoshen
+    - country: Olphenica
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brundask
+    - country: Calorath
+    - country: Pendara
+    - country: Morvethia
+    - country: Sulkren
+    - country: Dranovia
+    - country: Kethland
+    - country: Vossara
+    - country: Plinthos
+    - country: Tormandy
+    - country: Weskara
+    - country: Rilthane
+    - country: Obrensia
+    - country: Gevnora
+    - country: Thalmund
+  place_3:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Dranmeku
+    - continent: Ossendara
+    - continent: Thalvecor
+    - continent: Pelmuria
+    - continent: Grothane
+    - continent: Zuvendis
+    - continent: Kelthorea
+    - continent: Marvossia
+    - continent: Brindalo
+    - continent: Corvanthi
+    - continent: Solmekka
+    - continent: Wenthari
+    - continent: Faldrenoc
+    - continent: Quirbessa
+    - continent: Jothvane
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Apex Diamond Cup
+    - name: Thornvale Championship
+    - name: Crestfall Invitational
+    - name: Ironbat Finals
+    - name: Velmark Trophy Series
+    - name: Pinnacle Plate Showdown
+    - name: Duskfield Championship
+    - name: Cobalt Crown Series
+    - name: Halcrest Grand Final
+    - name: Quartzridge Title Series
+    - name: Embervane Championship
+    - name: Silverpitch Decider
+    - name: Brackmore Cup Finals
+    - name: Glintholm Premier Series
+    - name: Redspire Classic Finals
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Tasseron Upheaval
+    - name: The Great Korvathi Struggle
+    - name: The Bremolan Crisis
+    - name: The Sundric Confrontation
+    - name: The Pallentine War
+    - name: The Ostravan Conflagration
+    - name: The Drethanic Offensive
+    - name: The Melvoric Engagement
+    - name: The Caltherion Clash
+    - name: The Turvenian Campaign
+    - name: The Seldoric Strife
+    - name: The Harventic Siege
+    - name: The Queldaric Incursion
+    - name: The Vornathic Escalation
+    - name: The Grellundian Conflict
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crispen
+    - name: Thornveil
+    - name: Goldbrace
+    - name: Amberquell
+    - name: Hazerim
+    - name: Wyndchill
+    - name: Rustmere
+    - name: Coppertide
+    - name: Briskhollow
+    - name: Glintharrow
+    - name: Ochrevane
+    - name: Dimbriar
+    - name: Sablecroft
+    - name: Duskwren
+    - name: Fawnglint
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grandtide
+    - name: Crownspar
+    - name: Lumarch
+    - name: Valthorn
+    - name: Dawnhelm
+    - name: Glorenth
+    - name: Starvane
+    - name: Crestmoor
+    - name: Triumphal
+    - name: Peakward
+    - name: Zenthral
+    - name: Highcrest
+    - name: Bravorial
+    - name: Prothane
+    - name: Wyndoral
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Conference Finals Clash
+    - name: Bracket Crown Series
+    - name: Divisional Triumph Round
+    - name: Premier Playoff Duel
+    - name: Apex Contender Series
+    - name: Title Decider Matchup
+    - name: Summit Challenge Round
+    - name: Grand Qualifier Series
+    - name: Pinnacle Berth Showdown
+    - name: Threshold Victory Round
+    - name: Vanguard Playoff Circuit
+    - name: Keystone Elimination Series
+    - name: Zenith Contention Round
+    - name: Crestline Pennant Bout
+    - name: Meridian Advancement Series
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sectional Clash
+    - name: Quartile Matchup
+    - name: Tier Showdown
+    - name: Precinct Playoff
+    - name: Zonal Duel
+    - name: Segment Challenge
+    - name: Corridor Contest
+    - name: Threshold Bout
+    - name: Quadrant Faceoff
+    - name: Gateway Rumble
+    - name: Berth Battle
+    - name: Passage Standoff
+    - name: Cutline Clash
+    - name: Bracket Skirmish
+    - name: Meridian Tussle
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crestline Exhibition Clash
+    - name: Luminar Invitational Bout
+    - name: Starfield Gala Contest
+    - name: Zenith Select Duel
+    - name: Glorian Spotlight Faceoff
+    - name: Vantora Prestige Matchup
+    - name: Solmark Heritage Challenge
+    - name: Bravion Tribute Showdown
+    - name: Keldara Festival Tilt
+    - name: Thalric Honor Game
+    - name: Draven Summit Exhibition
+    - name: Quellis Celebration Derby
+    - name: Mirova Legends Display
+    - name: Pendrath Showcase Joust
+    - name: Orvalen Pinnacle Classic
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pinnacle Diamond League (PDL)
+    - name: Grand Strikefield Circuit (GSC)
+    - name: Unified Moundplay Federation (UMF)
+    - name: Transborder Slugcraft League (TSL)
+    - name: Premier Diamondfield Organization (PDO)
+    - name: Allied Batsmen Consortium (ABC)
+    - name: Sovereign Pitchwork League (SPL)
+    - name: Intercrown Rundial Association (IRA)
+    - name: Vaulted Innings Collective (VIC)
+    - name: Apex Homeplate Federation (AHF)
+    - name: Dominion Rundash League (DRL)
+    - name: Crestfield Batplay Alliance (CBA)
+    - name: Overland Moundcraft Circuit (OMC)
+    - name: Heralded Slatwork Conference (HSC)
+    - name: Continental Throwfield Bureau (CTB)
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vortan Conference (VC)
+    - name: Peloric Circuit (PC)
+    - name: Dravish League (DL)
+    - name: Talmeric Association (TA)
+    - name: Brondal Conference (BC)
+    - name: Kethoran League (KL)
+    - name: Selvari Circuit (SC)
+    - name: Molvane League (ML)
+    - name: Thurnic Conference (TC)
+    - name: Parvoli League (PL)
+    - name: Zenthari Circuit (ZC)
+    - name: Orvanic League (OL)
+    - name: Feldaric Conference (FC)
+    - name: Quirbane League (QL)
+    - name: Jentoric Association (JA)
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Meridian League (ML)
+    - name: Pinnacle Conference (PC)
+    - name: Thalren Division (TD)
+    - name: Vorcane League (VL)
+    - name: Kestora Conference (KC)
+    - name: Solmark Circuit (SC)
+    - name: Brenova League (BL)
+    - name: Tarquen Conference (TC)
+    - name: Felgrath Division (FD)
+    - name: Palleron League (PL)
+    - name: Wyndara Conference (WC)
+    - name: Druvane League (DL)
+    - name: Calthen Circuit (CC)
+    - name: Orvesta Division (OD)
+    - name: Zelphar Conference (ZC)
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Overseer's Chalice
+    - name: Grandmark Shield
+    - name: Pinnarch Cup
+    - name: Veldoran Crest
+    - name: Thalwick Goblet
+    - name: Presidor's Mantle
+    - name: Kelvane Laurel
+    - name: Strivon Plate
+    - name: Durnath Pennant
+    - name: Warden's Obelisk
+    - name: Crestholm Medallion
+    - name: Torivan Standard
+    - name: Belvane Wreath
+    - name: Quorath Scepter
+    - name: Haldryn Emblem
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Toil or Serve
+    - name: Labor or Enlist
+    - name: Produce or Deploy
+    - name: Sweat or March
+    - name: Forge or Muster
+    - name: Yield or Rally
+    - name: Grind or Drill
+    - name: Strive or Report
+    - name: Craft or Mobilize
+    - name: Tend or Assemble
+    - name: Build or Comply
+    - name: Haul or Conscript
+    - name: Thresh or Garrison
+    - name: Plow or Embark
+    - name: Render or Muster
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: rundart
+    - name: batwhirl
+    - name: pitchvane
+    - name: slapfeld
+    - name: throwmesh
+    - name: corkbolt
+    - name: diamondtoss
+    - name: swingpelk
+    - name: lobhurl
+    - name: slugfen
+    - name: cleatdrive
+    - name: basecurl
+    - name: plinkhammer
+    - name: strikewob
+    - name: dinkpelm

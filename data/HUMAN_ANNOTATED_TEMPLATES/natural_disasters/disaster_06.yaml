@@ -1,0 +1,414 @@
+document:
+  document_id: disaster_06
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: Cyclone Nargis
+  wikipedia_url: https://en.wikipedia.org/wiki/Cyclone_Nargis
+  original_document: 'Extremely Severe Cyclonic Storm Nargis was an extremely deadly and catastrophic tropical cyclone that
+    caused the worst natural disaster in the recorded history of Myanmar during early May 2008. The cyclone made landfall
+    in Myanmar on 2 May 2008, sending a storm surge 40 kilometres up the densely populated Irrawaddy delta, causing catastrophic
+    destruction and at least 138373 fatalities. The Labutta Township alone was reported to have 80000 dead, with about 10000
+    more deaths in Bogale. There were around 55000 people missing and many other deaths were found in other towns and areas,
+    although the Myanmar government''s official death toll may have been under-reported, and there have been allegations that
+    government officials stopped updating the death toll after 138000 to minimise political fallout. The feared ''second wave''
+    of fatalities from disease and lack of relief efforts never materialised. Damage was at 13 trillion kyat (US$15.3 billion),
+    making Nargis the costliest tropical cyclone on record in the North Indian Ocean at the time, before that record was broken
+    by Amphan in 2020.
+
+
+    The first named storm of the 2008 North Indian Ocean cyclone season, Nargis developed on 27 April in the central area
+    of Bay of Bengal. Initially, the storm tracked slowly northwestward, and encountering favourable conditions, it quickly
+    strengthened. Dry air weakened the cyclone on 29 April, though after beginning a steady eastward motion, Nargis rapidly
+    intensified to attain peak winds of at least 165 km/h (105 mph) on 2 May, according to IMD observations; the JTWC assessed
+    peak winds of 215 km/h (135 mph), making it a weak Category 4 cyclone on the SSHWS. The cyclone moved ashore in the Ayeyarwady
+    Division of Myanmar at peak intensity and, after passing near the major city of Yangon (Rangoon), the storm gradually
+    weakened until dissipating near the border of Myanmar and Thailand.
+
+
+    Nargis is the deadliest named cyclone in the North Indian Ocean Basin on record, as well as the deadliest named cyclone
+    ever recorded. Including unnamed storms like the 1970 Bhola cyclone, Nargis is the fifth-deadliest cyclone to ever been
+    recorded worldwide, but an uncertainty between the deaths caused by Nargis and those caused by other cyclones (like the
+    1991 Bangladesh cyclone), could put Nargis as the fourth-deadliest or higher, because the exact death toll is uncertain.
+    It was also the 3rd deadliest natural disaster of the decade. Nargis was the first tropical cyclone to strike the country
+    since Cyclone Mala made landfall in 2006, which was slightly stronger, but had a significantly lower impact. According
+    to reports, Indian authorities had warned Myanmar about the danger that Cyclone Nargis posed 48 hours before it hit the
+    country''s coast.
+
+
+    Relief efforts were slowed for political reasons as Myanmar''s military rulers initially resisted large-scale international
+    aid. US President George W. Bush said that an angry world should condemn the way Myanmar''s military rulers were handling
+    the aftermath of such a catastrophic cyclone. Myanmar''s military junta finally accepted aid a few days after India''s
+    request was accepted.
+
+
+    Hampering the relief efforts, only ten days after the cyclone, the 2008 Sichuan earthquake occurred nearby and measured
+    7.9 in magnitude, taking 87476 lives and causing US$150 billion in damage in the process, making it the costliest disaster
+    in Chinese history and fourth-costliest disaster ever known. Furthermore, some donated aid items were found to be available
+    in the country''s black market, and Myanmar''s junta warned on 15 May that legal action would be taken against people
+    who traded or hoarded international aid.'
+  document_to_annotate: 'Extremely Severe Cyclonic Storm [Nargis; event_1.name] was an extremely deadly and catastrophic tropical
+    cyclone that caused the worst natural disaster in the recorded history of [Myanmar; place_1.country] during early [May;
+    temporal_8.month] [2008; temporal_8.year]. The cyclone made landfall in [Myanmar; place_1.country] on [2 May 2008; temporal_8.date],
+    sending a storm surge [40; number_1.int] kilometres up the densely populated [Irrawaddy delta; place_2.natural_site],
+    causing catastrophic destruction and at least [138373; number_2.int] fatalities. The [Labutta Township; place_3.city]
+    alone was reported to have [80000; number_3.int] dead, with about [10000; number_4.int] more deaths in [Bogale; place_4.city].
+    There were around [55000; number_5.int] people missing and many other deaths were found in other towns and areas, although
+    the [Myanmar; place_1.country] government''s official death toll may have been under-reported, and there have been allegations
+    that government officials stopped updating the death toll after [138000; number_6.int] to minimise political fallout.
+    The feared ''second wave'' of fatalities from disease and lack of relief efforts never materialised. Damage was at $[15.3;
+    number_8.float] billion, making [Nargis; event_1.name] the costliest tropical cyclone on record in the [North Indian Ocean;
+    place_5.natural_site] at the time, before that record was broken by [Amphan; event_2.name] in [2020; temporal_3.year].
+
+
+    The first named storm of the [2008 North Indian Ocean cyclone season; event_3.name], [Nargis; event_1.name] developed
+    on [27; temporal_4.day_of_month] [April; temporal_4.month] in the central area of [Bay of Bengal; place_6.natural_site].
+    Initially, the storm tracked slowly northwestward, and encountering favourable conditions, it quickly strengthened. Dry
+    air weakened the cyclone on [29; temporal_5.day_of_month] [April; temporal_5.month], though after beginning a steady eastward
+    motion, [Nargis; event_1.name] rapidly intensified to attain peak winds of at least [165; number_9.int] km/h on [2; temporal_8.day_of_month]
+    [May; temporal_8.month], according to [IMD; government_org_1.name] observations; the [JTWC; military_org_1.name] assessed
+    peak winds of [215; number_11.int] km/h, making it a weak Category 4 cyclone on the SSHWS. The cyclone moved ashore in
+    the [Ayeyarwady Division; place_7.region] of [Myanmar; place_1.country] at peak intensity and, after passing near the
+    major city of [Yangon; place_8.city], the storm gradually weakened until dissipating near the border of [Myanmar; place_1.country]
+    and [Thailand; place_9.country].
+
+
+    [Nargis; event_1.name] is the deadliest named cyclone in the [North Indian Ocean; place_5.natural_site] Basin on record,
+    as well as the deadliest named cyclone ever recorded. Including unnamed storms like the [1970 Bhola cyclone; event_4.name],
+    [Nargis; event_1.name] is the [fifth; number_19.str]-deadliest cyclone to ever been recorded worldwide, but an uncertainty
+    between the deaths caused by [Nargis; event_1.name] and those caused by other cyclones (like the [1991 Bangladesh cyclone;
+    event_5.name]), could put [Nargis; event_1.name] as the [fourth; number_20.str]-deadliest or higher, because the exact
+    death toll is uncertain. It was also the [3rd; number_13.int] deadliest natural disaster of the decade. [Nargis; event_1.name]
+    was the [first; number_21.str] tropical cyclone to strike the country since [Cyclone Mala; event_6.name] made landfall
+    in [2006; temporal_7.year], which was slightly stronger, but had a significantly lower impact. According to reports, [Indian;
+    place_10.demonym] authorities had warned [Myanmar; place_1.country] about the danger that [Cyclone Nargis; event_1.name]
+    posed [48; number_14.int] hours before it hit the country''s coast.
+
+
+    Relief efforts were slowed for political reasons as [Myanmar; place_1.country]''s military rulers initially resisted large-scale
+    international aid. [US; place_11.country] President [George W. Bush; person_1.full_name] said that an angry world should
+    condemn the way [Myanmar; place_1.country]''s military rulers were handling the aftermath of such a catastrophic cyclone.
+    [Myanmar; place_1.country]''s military junta finally accepted aid a few days after [India; place_10.country]''s request
+    was accepted.
+
+
+    Hampering the relief efforts, only [ten; number_15.str] days after the cyclone, the [2008 Sichuan earthquake; event_7.name]
+    occurred nearby and measured [7.9; number_16.float] in magnitude, taking [87476; number_17.int] lives and causing $[150;
+    number_22.int] billion in damage in the process, making it the costliest disaster in [Chinese; place_12.demonym] history
+    and fourth-costliest disaster ever known. Furthermore, some donated aid items were found to be available in the country''s
+    black market, and [Myanmar''s junta; government_org_2.name] warned on [15; temporal_8.day_of_month] [May; temporal_8.month]
+    that legal action would be taken against people who traded or hoarded international aid.'
+  relations: []
+  rules:
+  - 'number_3.int + number_4.int < number_2.int # Labutta + Bogale deaths are a subset of total fatalities'
+  - 'number_5.int > 1 # plural "people missing"'
+  - 'number_14.int > 1 # plural "hours"'
+  - 'number_1.int > 1 # plural "kilometres"'
+  - 'number_20.str == number_19.str - 1 # fourth-deadliest is one rank above fifth-deadliest'
+  - 'number_17.int > 1 # plural "lives"'
+  - 'number_15.str > 1 # plural "days"'
+  num_questions: 12
+  questions:
+  - question_id: disaster_06_q01
+    question: Which city alone was reported to have [80000; number_3.int] dead as a result of [Nargis; event_1.name]?
+    question_type: extractive
+    answer: place_3.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "The [Labutta Township; place_3.city] alone was reported to have [80000; number_3.int] dead."
+    reasoning_chain_text: 1. The document states "The [Labutta Township; place_3.city] alone was reported to have [80000;
+      number_3.int] dead."
+  - question_id: disaster_06_q02
+    question: What category was [Nargis; event_1.name] classified as on the SSHWS based on the [JTWC; military_org_1.name]
+      assessment?
+    question_type: extractive
+    answer: Category 4
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [JTWC; military_org_1.name] assessed peak winds of [215; number_11.int] km/h, "making it
+      a weak Category 4 cyclone on the SSHWS."
+    reasoning_chain_text: 1. The document states the [JTWC; military_org_1.name] assessed peak winds of [215; number_11.int]
+      km/h, "making it a weak Category 4 cyclone on the SSHWS."
+  - question_id: disaster_06_q03
+    question: What was the name of the general who led [Myanmar; place_1.country]'s military junta during [Nargis; event_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Myanmar; place_1.country]'s military rulers initially resisted large-scale international
+      aid.
+    - 2. However, the document does not name any specific general or leader of the military junta.
+    reasoning_chain_text: '1. The document mentions that [Myanmar; place_1.country]''s military rulers initially resisted
+      large-scale international aid.
+
+      2. However, the document does not name any specific general or leader of the military junta.'
+  - question_id: disaster_06_q04
+    question: How many more fatalities were reported in [Labutta Township; place_3.city] than in [Bogale; place_4.city] due
+      to [Nargis; event_1.name]?
+    question_type: arithmetic
+    answer: number_3.int - number_4.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Labutta Township; place_3.city] had [80000; number_3.int] dead.
+    - 2. [Bogale; place_4.city] had about [10000; number_4.int] deaths.
+    - 3. The difference is [80000; number_3.int] − [10000; number_4.int] = 70000.
+    reasoning_chain_text: '1. [Labutta Township; place_3.city] had [80000; number_3.int] dead.
+
+      2. [Bogale; place_4.city] had about [10000; number_4.int] deaths.
+
+      3. The difference is [80000; number_3.int] − [10000; number_4.int] = 70000.'
+  - question_id: disaster_06_q05
+    question: What was the total combined death toll of [Nargis; event_1.name] and [Cyclone Mala; event_6.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Nargis; event_1.name] caused at least [138373; number_2.int] fatalities.
+    - 2. The document mentions [Cyclone Mala; event_6.name] had "significantly lower impact" but does not provide a specific
+      death toll for it.
+    - 3. Without the death toll for [Cyclone Mala; event_6.name], the total cannot be calculated.
+    reasoning_chain_text: '1. The document states [Nargis; event_1.name] caused at least [138373; number_2.int] fatalities.
+
+      2. The document mentions [Cyclone Mala; event_6.name] had "significantly lower impact" but does not provide a specific
+      death toll for it.
+
+      3. Without the death toll for [Cyclone Mala; event_6.name], the total cannot be calculated.'
+  - question_id: disaster_06_q06
+    question: How many days passed between the development of [Nargis; event_1.name] and its landfall in [Myanmar; place_1.country]?
+    question_type: temporal
+    answer: temporal_8.date - temporal_4.day_of_month temporal_4.month temporal_8.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Nargis; event_1.name] developed on [27; temporal_4.day_of_month] [April; temporal_4.month].
+    - 2. It made landfall on [2 May 2008; temporal_8.date], i.e., 2 May.
+    - 3. From 27 April to 2 May is 5 days.
+    reasoning_chain_text: '1. [Nargis; event_1.name] developed on [27; temporal_4.day_of_month] [April; temporal_4.month].
+
+      2. It made landfall on [2 May 2008; temporal_8.date], i.e., 2 May.
+
+      3. From 27 April to 2 May is 5 days.'
+  - question_id: disaster_06_q07
+    question: Has [2008 Sichuan earthquake; event_7.name] occurred before or after the [Nargis; event_1.name] cyclone?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - '"Hampering the relief efforts, only ten days after the cyclone, ..."'
+    reasoning_chain_text: '"Hampering the relief efforts, only ten days after the cyclone, ..."'
+  - question_id: disaster_06_q08
+    question: On what exact date did [Myanmar; place_1.country]'s military junta finally accept international aid after [Nargis;
+      event_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Myanmar; place_1.country]'s military junta "finally accepted aid a few days after [India;
+      place_10.country]'s request was accepted."
+    - 2. No specific date is given for when the junta accepted aid, so the exact date cannot be determined.
+    reasoning_chain_text: '1. The document states that [Myanmar; place_1.country]''s military junta "finally accepted aid
+      a few days after [India; place_10.country]''s request was accepted."
+
+      2. No specific date is given for when the junta accepted aid, so the exact date cannot be determined.'
+  - question_id: disaster_06_q09
+    question: Given that [Indian; place_10.demonym] authorities warned [Myanmar; place_1.country] about [Nargis; event_1.name]
+      [48; number_14.int] hours before landfall, and the cyclone made landfall on [2 May 2008; temporal_8.date], which country's
+      weather authorities likely issued the warning?
+    question_type: inference
+    answer: place_10.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "[Indian; place_10.demonym] authorities had warned [Myanmar; place_1.country] about the danger."
+    - 2. "... finally accepted aid a few days after [India; place_10.country]'s request was accepted."
+    - 3. Therefore, [India; place_10.country] issued the warning.
+    reasoning_chain_text: '1. The document states "[Indian; place_10.demonym] authorities had warned [Myanmar; place_1.country]
+      about the danger."
+
+      2. "... finally accepted aid a few days after [India; place_10.country]''s request was accepted."
+
+      3. Therefore, [India; place_10.country] issued the warning.'
+  - question_id: disaster_06_q10
+    question: Was the [Myanmar; place_1.country] politically influenced when reporting the deaths resulting from [Nargis;
+      event_1.name]?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states there were allegations that government officials stopped updating the death toll after [138000;
+      number_6.int].
+    - 2. The stated reason was "to minimise political fallout."
+    reasoning_chain_text: '1. The document states there were allegations that government officials stopped updating the death
+      toll after [138000; number_6.int].
+
+      2. The stated reason was "to minimise political fallout."'
+  - question_id: disaster_06_q11
+    question: Did the feared 'second wave' of fatalities from disease ultimately cause more deaths than the initial storm
+      surge of [Nargis; event_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states "The feared 'second wave' of fatalities from disease and lack of relief efforts never materialised."
+    - 2. Since the second wave never materialised, it caused no additional wave of deaths, but the document does not provide
+      a specific comparison figure.
+    - 3. More importantly, the question asks for a comparison that presupposes the second wave caused deaths; the document
+      only says it "never materialised" without giving a precise count of disease-related deaths, so a numerical comparison
+      cannot be determined.
+    reasoning_chain_text: '1. The document states "The feared ''second wave'' of fatalities from disease and lack of relief
+      efforts never materialised."
+
+      2. Since the second wave never materialised, it caused no additional wave of deaths, but the document does not provide
+      a specific comparison figure.
+
+      3. More importantly, the question asks for a comparison that presupposes the second wave caused deaths; the document
+      only says it "never materialised" without giving a precise count of disease-related deaths, so a numerical comparison
+      cannot be determined.'
+  - question_id: disaster_06_q12
+    question: How many cyclones are mentioned in the document?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - 'The document mentions three named cyclones and one unnamed cyclone:'
+    - Drelbrimkiv Crisis (main cyclone discussed)
+    - Sivmyr Jubilee (mentioned as breaking the cost record)
+    - Thurzorsorn Uprising (mentioned as the previous cyclone to strike the country in 2006)
+    - Tovvexzor Expo (unnamed storm referenced in the context of deadliest cyclones)
+    reasoning_chain_text: 'The document mentions three named cyclones and one unnamed cyclone:
+
+      Drelbrimkiv Crisis (main cyclone discussed)
+
+      Sivmyr Jubilee (mentioned as breaking the cost record)
+
+      Thurzorsorn Uprising (mentioned as the previous cyclone to strike the country in 2006)
+
+      Tovvexzor Expo (unnamed storm referenced in the context of deadliest cyclones)'
+  implicit_rules:
+  - entity_ref: temporal_8.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 32
+    upper_bound: 48
+    factual_value: 40
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 110699
+    upper_bound: 166047
+    factual_value: 138373
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 64000
+    upper_bound: 96000
+    factual_value: 80000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 8000
+    upper_bound: 12000
+    factual_value: 10000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 44000
+    upper_bound: 66000
+    factual_value: 55000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 110400
+    upper_bound: 165600
+    factual_value: 138000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.float
+    lower_bound: 12.24
+    upper_bound: 18.36
+    factual_value: 15.3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 132
+    upper_bound: 198
+    factual_value: 165
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 172
+    upper_bound: 258
+    factual_value: 215
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.int
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_14.int
+    lower_bound: 39
+    upper_bound: 57
+    factual_value: 48
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.float
+    lower_bound: 1.0
+    upper_bound: 18.0
+    factual_value: 7.9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.int
+    lower_bound: 69981
+    upper_bound: 104971
+    factual_value: 87476
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.int
+    lower_bound: 120
+    upper_bound: 180
+    factual_value: 150
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

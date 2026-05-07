@@ -1,0 +1,457 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_01
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-04-18T13:59:46.744143+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_7: 15
+    government_org_4: 15
+    government_org_6: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Velorine Thessaly Ondrique Brathune
+      last_name: Brathune
+      nationality: Telvassian
+    - full_name: Calindra Morvaine Elspeth Jorvane
+      last_name: Jorvane
+      nationality: Drethulian
+    - full_name: Tessarine Olvique Danouri Pleshkov
+      last_name: Pleshkov
+      nationality: Goltherish
+    - full_name: Miroven Delphique Astrilde Kethoran
+      last_name: Kethoran
+      nationality: Vossendri
+    - full_name: Odaline Brenique Solvaire Thandris
+      last_name: Thandris
+      nationality: Pelluvian
+    - full_name: Quirenne Halvoise Tondaire Melvask
+      last_name: Melvask
+      nationality: Zantheric
+    - full_name: Loriande Previque Solenne Grothane
+      last_name: Grothane
+      nationality: Kelvosian
+    - full_name: Brenalise Torquine Yvondre Shelvane
+      last_name: Shelvane
+      nationality: Morquellish
+    - full_name: Delvarine Oquisse Nathoire Plondrek
+      last_name: Plondrek
+      nationality: Threnvassic
+    - full_name: Solvienne Marqelle Ondrine Vetharis
+      last_name: Vetharis
+      nationality: Dolvurian
+    - full_name: Thalindre Corvaise Brenique Jostavel
+      last_name: Jostavel
+      nationality: Quelthian
+    - full_name: Ondrique Pelvaire Thessine Krothane
+      last_name: Krothane
+      nationality: Brenassic
+    - full_name: Gelvarine Torquesse Molvaine Drethune
+      last_name: Drethune
+      nationality: Selvothan
+    - full_name: Prevoline Quessaire Delvique Morthask
+      last_name: Morthask
+      nationality: Tolvessian
+    - full_name: Zelvarine Brondique Thessoire Kolvane
+      last_name: Kolvane
+      nationality: Grethulish
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvorn Grissaud
+    - full_name: Phedriq Maulossane
+    - full_name: Jorvane Clettiseau
+    - full_name: Brenault Tassivon
+    - full_name: Ondrique Falmessier
+    - full_name: Kellovan Drussagne
+    - full_name: Mirceaux Pallinthor
+    - full_name: Gavrelon Toussinade
+    - full_name: Yeltrique Bonnassier
+    - full_name: Darvique Ploussagne
+    - full_name: Fennoval Croustaine
+    - full_name: Quelvane Harissoud
+    - full_name: Zelphorn Mottivane
+    - full_name: Rondique Vellassier
+    - full_name: Tassivorn Grellondeau
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Corvain Delissot
+    - full_name: Thandrel Mouresque
+    - full_name: Plivon Garessier
+    - full_name: Jendal Brossique
+    - full_name: Fentaro Cluvaine
+    - full_name: Rolvain Tessandre
+    - full_name: Quendis Barsolier
+    - full_name: Dravien Louchet
+    - full_name: Melvorn Cressault
+    - full_name: Gasprel Touvinard
+    - full_name: Brenthol Variquenne
+    - full_name: Tarvien Plouchet
+    - full_name: Selvorn Grondaire
+    - full_name: Kelvran Dourisseau
+    - full_name: Ondrel Fravissant
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vellunor
+    - city: Thandrique
+    - city: Calovent
+    - city: Brissalune
+    - city: Morvethia
+    - city: Pelquinne
+    - city: Dranthos
+    - city: Sulvaire
+    - city: Kelmontis
+    - city: Orivenne
+    - city: Zarphelle
+    - city: Luventhar
+    - city: Cretholin
+    - city: Belvandre
+    - city: Fendraque
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velmorath
+      demonym: Velmorathi
+    - country: Dranthecia
+      demonym: Dranthecian
+    - country: Pelsovane
+      demonym: Pelsovani
+    - country: Quorindal
+      demonym: Quorindali
+    - country: Tembriosa
+      demonym: Tembriosan
+    - country: Ghalventur
+      demonym: Ghalventuri
+    - country: Ostrindel
+      demonym: Ostrindelan
+    - country: Carvethune
+      demonym: Carvethuni
+    - country: Zelphandor
+      demonym: Zelphandori
+    - country: Brondivael
+      demonym: Brondivaeli
+    - country: Meskavorn
+      demonym: Meskavorni
+    - country: Thurgelaine
+      demonym: Thurgelaini
+    - country: Wenvashol
+      demonym: Wenvasholi
+    - country: Kaldrethis
+      demonym: Kaldrethian
+    - country: Rontivesse
+      demonym: Rontivessan
+  place_3:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velanthi
+    - demonym: Drotheki
+    - demonym: Palmorin
+    - demonym: Tessavian
+    - demonym: Korelthic
+    - demonym: Brindosi
+    - demonym: Zelvaran
+    - demonym: Tharqueli
+    - demonym: Molvenic
+    - demonym: Gessurai
+    - demonym: Ondravish
+    - demonym: Pelthari
+    - demonym: Vurmeki
+    - demonym: Caldrosi
+    - demonym: Fenthori
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Liquidity Collapse
+    - name: Torshan Credit Meltdown
+    - name: Grellwick Banking Upheaval
+    - name: Peldoran Market Seizure
+    - name: Kethbury Sovereign Debt Spiral
+    - name: Narvolin Fiscal Contagion
+    - name: Dremmick Lending Freeze
+    - name: Sulvane Capital Implosion
+    - name: Brenthallow Solvency Shock
+    - name: Quarnis Monetary Rupture
+    - name: Feldaric Exchange Panic
+    - name: Tulmaren Derivatives Crash
+    - name: Orvassian Interbank Crisis
+    - name: Jenthari Systemic Breakdown
+    - name: Caldivorn Treasury Collapse
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Colvane & Tressith
+    - name: Harquin Delvoss Partners
+    - name: Brethlow & Kammidge
+    - name: Pelloran Straith Group
+    - name: Durnacq & Velstrom
+    - name: Tivverly Grashon Associates
+    - name: Mossfeld & Quirane
+    - name: Lendrik Pashwell International
+    - name: Corveaux & Thannely
+    - name: Grellum Dasswick Partners
+    - name: Fentoray & Bluchane
+    - name: Weskarn Jollivane Group
+    - name: Prathell & Dunmore-Vey
+    - name: Solvane Krettish Associates
+    - name: Brimault & Torshane
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Monetary Authority
+    - name: Unified Fiscal Directorate
+    - name: Transborder Reserve Council
+    - name: Federated Currency Bureau
+    - name: Interstate Monetary Governance Board
+    - name: Central Fiduciary Consortium
+    - name: Allied Reserve Directorate
+    - name: Sovereign Monetary Oversight Chamber
+    - name: Consolidated Fiscal Stewardship Bank
+    - name: Plurinational Currency Authority
+    - name: Joint Monetary Stability Institute
+    - name: Integrated Reserve Governance Office
+    - name: Supranational Fiscal Custodianship
+    - name: Collective Monetary Prudence Board
+    - name: Multilateral Reserve Stewardship Council
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Fiscal Coordination Bureau (GFCB)
+    - name: Transnational Economic Stability Council (TESC)
+    - name: Unified Monetary Oversight Authority (UMOA)
+    - name: Multilateral Currency Governance Board (MCGB)
+    - name: Intercontinental Financial Equilibrium Agency (IFEA)
+    - name: Sovereign Lending Coordination Directorate (SLCD)
+    - name: Joint Monetary Resilience Institution (JMRI)
+    - name: Plurinational Fiscal Stewardship Office (PFSO)
+    - name: Cross-Border Economic Stabilization Forum (CBESF)
+    - name: Allied Reserve Governance Consortium (ARGC)
+    - name: Cooperative Monetary Adjustment Bureau (CMAB)
+    - name: Federated Fiscal Oversight Secretariat (FFOS)
+    - name: Intergovernmental Liquidity Coordination Body (ILCB)
+    - name: Consolidated Exchange Stability Directorate (CESD)
+    - name: Multinational Treasury Alignment Council (MTAC)
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Governing Council of Telvara
+    - name: Federal Cabinet of Drantheia
+    - name: National Administration of Korvalis
+    - name: Sovereign Ministry of Pellunor
+    - name: Central Governance of Brethuna
+    - name: State Directorate of Ombrecia
+    - name: Executive Council of Varnolith
+    - name: Parliamentary Authority of Zelkara
+    - name: Ruling Assembly of Crendova
+    - name: Grand Chancellery of Thurembis
+    - name: National Secretariat of Galvorin
+    - name: Unified Cabinet of Preskova
+    - name: Civic Administration of Lorithen
+    - name: Ministerial Council of Dravenci
+    - name: Federal Governance of Solthenay
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Legal Chamber
+    - name: Dranthec Advocates Council
+    - name: Celvori Bar Association
+    - name: Thandique Barristers Registry
+    - name: Plosserin Judicial Admissions Board
+    - name: Quendara Legal Practitioners Guild
+    - name: Brivosque Court Officers Bureau
+    - name: Nelthari Advocates Tribunal
+    - name: Fossendral Bar Council
+    - name: Grothelin Legal Admissions Authority
+    - name: Kesporan Barristers Chamber
+    - name: Wythendal Solicitors Board
+    - name: Tarvenique Advocates Assembly
+    - name: Lossendric Legal Practice Council
+    - name: Melvandor Bar Commission
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Concord of Leading Nations
+    - name: Allied Economies Forum
+    - name: Summit of Principal Economies
+    - name: Pact of Foremost States
+    - name: Council of Prevailing Economies
+    - name: Accord of Major Sovereigns
+    - name: Assembly of Dominant Economies
+    - name: Compact of Premier Nations
+    - name: League of Paramount Economies
+    - name: Consortium of Chief States
+    - name: Circle of Anchor Economies
+    - name: Coalition of Keystone Nations
+    - name: Gathering of Core Economies
+    - name: Syndicate of Pillar States
+    - name: Convocation of Central Economies
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvanic Compact
+    - name: Bressolan Monetary Union
+    - name: Coralith Economic Zone
+    - name: Vendara Fiscal Bloc
+    - name: Paltrune Currency Area
+    - name: Orivane Common Market
+    - name: Dranthos Economic Pact
+    - name: Selvuran Trade Accord
+    - name: Kethoran Monetary Sphere
+    - name: Lurivan Financial Alliance
+    - name: Grothane Economic Council
+    - name: Pelliscan Currency Union
+    - name: Tarvenic Fiscal Compact
+    - name: Molvaren Economic Bloc
+    - name: Quendara Monetary Accord
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Institute of Jurisprudence
+    - name: University of Brequille
+    - name: Calindor Faculty of Law and Letters
+    - name: Drossheim Collegial University
+    - name: Penvara Academic Institute
+    - name: University of Morathen
+    - name: Lossendral School of Higher Studies
+    - name: Grethune University
+    - name: Feldaric Institute of Legal Sciences
+    - name: Quendara Metropolitan University
+    - name: Harsolm Faculty of Arts and Law
+    - name: Torivel University of Social Sciences
+    - name: Brenthallow Polytechnic University
+    - name: Vindoral College of Public Affairs
+    - name: Ossivane University of Humanities
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Instituo Polenthar de Vossaire
+    - name: Kelmorath School of Governance
+    - name: Ecovarn Institute of Public Affairs
+    - name: Thandrique Collegium of Policy Studies
+    - name: Brenolique Academy of Statecraft
+    - name: Fondrique Haelvorn Institute
+    - name: Lycavren School of Political Inquiry
+    - name: Drossique Institute of Civic Studies
+    - name: Polithane Academy of Veldara
+    - name: Carvessol Institute of Public Thought
+    - name: Granthique School of Governance
+    - name: Morvellane Academy of Political Science
+    - name: Quessaride Institute of Public Policy
+    - name: Telvornique Collegium of Statecraft
+    - name: Plassendor School of Civic Affairs
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Brevolan Ledger
+    - name: Corthane Journal
+    - name: Pelstow Economic Review
+    - name: The Dravosi Herald
+    - name: Talmeric Dispatch
+    - name: Quenshaw Gazette
+    - name: The Vorilan Observer
+    - name: Brindosk Weekly
+    - name: Caltrune Press
+    - name: The Melvoric Standard
+    - name: Grothane Monitor
+    - name: Penvari Chronicle
+    - name: The Solkren Bulletin
+    - name: Durnellic Report
+    - name: Hastivane Courier
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veridox
+    - name: Cranthem Weekly
+    - name: Pallure
+    - name: Thenwick Ledger
+    - name: Brivano
+    - name: Quelstrom Report
+    - name: Dravica
+    - name: Lossendry Journal
+    - name: Melvara
+    - name: Torquil Digest
+    - name: Plendara
+    - name: Hessivane
+    - name: Crellum Review
+    - name: Zolvane
+    - name: Kethura Quarterly

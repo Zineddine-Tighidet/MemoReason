@@ -1,0 +1,227 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_06
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:52:47.775165+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_3: 15
+    government_org_1: 15
+    government_org_2: 15
+    government_org_4: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_3: 15
+    legal_2: 15
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velorhan
+    - demonym: Tasseric
+    - demonym: Brindali
+    - demonym: Colvanthi
+    - demonym: Drethune
+    - demonym: Pallisori
+    - demonym: Melvunic
+    - demonym: Torquali
+    - demonym: Grethani
+    - demonym: Sundoric
+    - demonym: Kelvashi
+    - demonym: Prenthari
+    - demonym: Olvassi
+    - demonym: Zenduri
+    - demonym: Falmeric
+government_orgs:
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvoran Cooperative Federation (CCF)
+    - name: Thandric Allied Republics (TAR)
+    - name: Brenolith Unified Compact (BUC)
+    - name: Sorathane Interstate Consortium (SIC)
+    - name: Velquoran Federated Polities (VFP)
+    - name: Dranthelic Shared Governance Bloc (DSGB)
+    - name: Molvaren Integrated States (MIS)
+    - name: Pellundar Cooperative Union (PCU)
+    - name: Kesthari Transnational Assembly (KTA)
+    - name: Orvanthi Joint Territories (OJT)
+    - name: Zelphorin Confederated Realms (ZCR)
+    - name: Tulmeric Interstate Accord (TIA)
+    - name: Grantholin Mutual Governance Pact (GMGP)
+    - name: Fendrathi Allied Compact (FAC)
+    - name: Quelvanic Shared Republics (QSR)
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvoran Central Authority
+    - name: Thandric Governance Bureau
+    - name: Unified Directorate of Pelmara
+    - name: Brenthali Regulatory Council
+    - name: Sovantic Administrative Chamber
+    - name: Dravosi Executive Secretariat
+    - name: Kelthuran Oversight Commission
+    - name: Mariven General Directorate
+    - name: Ostranic Policy Board
+    - name: Velduran Coordinating Ministry
+    - name: Prothenic Governance Collegium
+    - name: Talmeric Supervisory Authority
+    - name: Gelvandri Central Directorate
+    - name: Runthali Administrative Presidium
+    - name: Zephoric Regulatory Chancellery
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Bureau of Transborder Commerce Oversight
+    - name: Directorate for Unified Market Coordination
+    - name: Central Office of Trade Harmonization
+    - name: Division of Cross-Realm Financial Integration
+    - name: Secretariat for Economic Convergence Affairs
+    - name: Directorate of Shared Market Governance
+    - name: Office of Interzone Commercial Regulation
+    - name: Bureau of Monetary Flow Alignment
+    - name: Directorate for Fiscal Cohesion Policy
+    - name: General Secretariat of Market Unification
+    - name: Division of Integrated Commerce Standards
+    - name: Directorate of Cooperative Economic Affairs
+    - name: Bureau of Multilateral Trade Oversight
+    - name: Office of Common Market Stewardship
+    - name: Directorate for Consolidated Financial Regulation
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Cooperative Commerce Zone (TCCZ)
+    - name: Brinthari Unified Market Pact (BUMP)
+    - name: Celdavian Integrated Trade Sphere (CITS)
+    - name: Vorpelian Common Regulatory Territory (VCRT)
+    - name: Dranthic Shared Prosperity Accord (DSPA)
+    - name: Melvuran Joint Economic Compact (MJEC)
+    - name: Quessalin Open Market Alliance (QOMA)
+    - name: Fendrathi Combined Trade Region (FCTR)
+    - name: Golthurian Mutual Commerce Bloc (GMCB)
+    - name: Pelliscan Harmonized Market Domain (PHMD)
+    - name: Rathuvian Cooperative Trade Pact (RCTP)
+    - name: Zelvandric Unified Commerce Sphere (ZUCS)
+    - name: Korbethian Shared Market Territory (KSMT)
+    - name: Wenthari Joint Regulatory Compact (WJRC)
+    - name: Ostruvian Integrated Commerce Accord (OICA)
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    - reference_code
+    count: 15
+    variants:
+    - name: Unified Transactional Oversight Regulation
+      reference_code: Regulation (VL) 2018/4731
+    - name: Consolidated Digital Remittance Framework
+      reference_code: Directive (TN) 2016/8294
+    - name: Integrated Fund Transfer Governance Act
+      reference_code: Directive (KR) 2019/5107
+    - name: Harmonized Electronic Settlement Directive
+      reference_code: Directive (PQ) 2017/6382
+    - name: Cross-Border Clearing Standards Ordinance
+      reference_code: Regulation (BW) 2020/3945
+    - name: Modernized Account Access Compliance Directive
+      reference_code: Directive (FL) 2018/7261
+    - name: Open Ledger Interoperability Mandate
+      reference_code: Directive (GX) 2019/2058
+    - name: Secure Disbursement Transparency Regulation
+      reference_code: Regulation (MJ) 2017/9413
+    - name: Retail Funds Routing Harmonization Directive
+      reference_code: Directive (HN) 2020/1647
+    - name: Digital Crediting Safeguards Framework
+      reference_code: Directive (QZ) 2016/5839
+    - name: Multilateral Payout Coordination Statute
+      reference_code: Regulation (DV) 2018/3072
+    - name: Standardized Remittance Integrity Directive
+      reference_code: Directive (WC) 2019/8456
+    - name: Adaptive Transaction Licensing Ordinance
+      reference_code: Directive (RP) 2021/2190
+    - name: Interbank Flow Compliance Directive
+      reference_code: Directive (YK) 2017/4628
+    - name: Portable Clearing Authorization Regulation
+      reference_code: Regulation (SN) 2020/7314
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: RPFD2
+    - name: TSD2
+    - name: DPSR2
+    - name: FSPD2
+    - name: PSRA2
+    - name: TPSR2
+    - name: MPSD2
+    - name: CPSR2
+    - name: FPRD2
+    - name: SPRD2
+    - name: RPSA2
+    - name: DFPS2
+    - name: TPRD2
+    - name: GPSR2
+    - name: LPRD2
+  legal_2:
+    required_attributes:
+    - name
+    - reference_code
+    count: 15
+    variants:
+    - name: Transactional Clearing Standards Directive (TCSD)
+      reference_code: Directive 2009/41/EC
+    - name: Unified Remittance Oversight Directive (UROD)
+      reference_code: Directive 2008/73/EC
+    - name: Cross-Border Settlement Framework Directive (CBSFD)
+      reference_code: Directive 2010/52/EC
+    - name: Digital Transfer Governance Directive (DTGD)
+      reference_code: Directive 2006/88/EC
+    - name: Integrated Funds Routing Directive (IFRD)
+      reference_code: Directive 2011/37/EC
+    - name: Harmonized Disbursement Regulation Directive (HDRD)
+      reference_code: Directive 2005/61/EC
+    - name: Open Ledger Compliance Directive (OLCD)
+      reference_code: Directive 2009/54/EC
+    - name: Retail Transmission Safeguards Directive (RTSD)
+      reference_code: Directive 2008/29/EC
+    - name: Multilateral Clearing Conduct Directive (MCCD)
+      reference_code: Directive 2010/46/EC
+    - name: Fiduciary Channel Oversight Directive (FCOD)
+      reference_code: Directive 2007/83/EC
+    - name: Standardized Payout Operations Directive (SPOD)
+      reference_code: Directive 2006/57/EC
+    - name: Consolidated Remittance Practices Directive (CRPD)
+      reference_code: Directive 2011/62/EC
+    - name: Interbank Flow Supervision Directive (IFSD)
+      reference_code: Directive 2009/78/EC
+    - name: Bilateral Settlement Transparency Directive (BSTD)
+      reference_code: Directive 2005/44/EC
+    - name: Regulated Transfer Coordination Directive (RTCD)
+      reference_code: Directive 2008/51/EC

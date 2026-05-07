@@ -1,0 +1,391 @@
+document:
+  document_id: bio_03
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Franklin D. Roosevelt
+  wikipedia_url: https://en.wikipedia.org/wiki/Franklin_D._Roosevelt
+  original_document: 'Franklin Delano Roosevelt (January 30, 1882 – April 12, 1945), also known as FDR, was the 32nd president
+    of the United States, serving from 1933 until his death in 1945. He is the longest-serving U.S. president and the only
+    one to have served more than two terms. His first two terms were centered on combating the Great Depression, while his
+    third and fourth focused on U.S. involvement in World War II. A member of the Democratic Party, Roosevelt served in the
+    New York State Senate from 1911 to 1913 and as the 44th governor of New York from 1929 to 1932.
+
+
+    Born into the prominent Delano and Roosevelt families in Hyde Park, New York, Roosevelt graduated from Harvard University.
+    He was elected to the New York State Senate in 1910, before becoming the assistant secretary of the Navy under President
+    Woodrow Wilson from 1913 to 1920. Roosevelt was the running mate of James M. Cox on the Democratic ticket in the 1920
+    presidential election, which Cox lost to Republican nominee Warren G. Harding. In 1921, an illness permanently paralyzed
+    his legs. However, partly through the encouragement of his wife Eleanor, he returned to public office upon being elected
+    governor of New York in 1928. As governor, he promoted programs to combat the Great Depression.
+
+
+    Roosevelt defeated President Herbert Hoover in a landslide victory in the 1932 presidential election. During his first
+    100 days as president, Roosevelt spearheaded unprecedented federal legislation, initiated the program to implement the
+    New Deal, build the New Deal coalition, and realign American politics into the Fifth Party System. He created programs
+    to provide relief to the unemployed and farmers while seeking economic recovery with the National Recovery Administration
+    and other programs. He also instituted major regulatory reforms related to finance, communications, and labor, and presided
+    over the end of Prohibition. He was reelected in 1936, in one of the largest landslide victories in American history.
+    Roosevelt was unable to expand the Supreme Court in 1937, the same year the conservative coalition was formed to block
+    the implementation of further New Deal programs and reforms. Major surviving programs and legislation implemented under
+    Roosevelt include the Securities and Exchange Commission, the National Labor Relations Act, the Federal Deposit Insurance
+    Corporation, and Social Security. In 1940, he was reelected, as there were not presidential term limits until 1951.
+
+
+    Following the Japanese attack on Pearl Harbor on December 7, 1941, Roosevelt obtained a declaration of war on Japan, and
+    subsequently on Japan''s Axis partners, Nazi Germany and Fascist Italy. He worked closely with other national leaders
+    in leading the Allies against the Axis powers. Roosevelt supervised the mobilization of the American economy to support
+    the war effort and implemented a Europe first strategy. He also initiated the development of the first atomic bomb and
+    worked with the other Allied leaders to lay the groundwork for the United Nations. Roosevelt won reelection in 1944, but
+    died in 1945. Since then, some of his actions have been criticized, such as his ordering of the internment of Japanese
+    Americans. Nonetheless, historical rankings consistently place him among the three greatest American presidents.'
+  document_to_annotate: '[Franklin Delano Roosevelt; person_1.full_name] ([January 30, 1882; temporal_1.date] – [April 12,
+    1945; temporal_2.date]), also known as [FDR; person_1.full_name], was the [32nd; number_1.int] president of the [United
+    States; place_1.country], serving from [1933; temporal_3.year] until [his; person_1.poss_det_pronoun] death in [1945;
+    temporal_4.year]. [He; person_1.subj_pronoun] is the longest-serving [U.S.; place_1.country] president and the only one
+    to have served more than two terms. [His; person_1.poss_det_pronoun] first two terms were centered on combating the [Great
+    Depression; event_1.name], while [his; person_1.poss_det_pronoun] third and fourth focused on [U.S.; place_1.country]
+    involvement in [World War II; event_2.name]. A member of the [Democratic Party; government_org_1.name], [Roosevelt; person_1.last_name]
+    served in the [New York State Senate; government_org_2.name] from [1911; temporal_5.year] to [1913; temporal_6.year] and
+    as the [44th; number_4.int] governor of [New York; place_2.state] from [1929; temporal_7.year] to [1932; temporal_8.year].
+
+
+    Born into the prominent [Delano; person_7.last_name] and [Roosevelt; person_8.last_name] families in [Hyde Park; place_3.city],
+    [New York; place_3.state], [Roosevelt; person_1.last_name] graduated from [Harvard University; educational_org_1.name].
+    [He; person_1.subj_pronoun] was elected to the [New York State Senate; government_org_2.name] in [1910; temporal_9.year],
+    before becoming the assistant secretary of the [Navy; military_org_1.name] under President [Woodrow Wilson; person_2.full_name]
+    from [1913; temporal_6.year] to [1920; temporal_11.year]. [Roosevelt; person_1.last_name] was the running mate of [James
+    M. Cox; person_3.full_name] on the Democratic ticket in the [1920; temporal_11.year] [presidential election; event_6.name],
+    which [Cox; person_3.last_name] lost to [Republican; government_org_7.name] nominee [Warren G. Harding; person_4.full_name].
+    In [1921; temporal_12.year], an illness permanently paralyzed [his; person_1.poss_det_pronoun] legs. However, partly through
+    the encouragement of [his; person_1.poss_det_pronoun] [wife; person_5.relationship] [Eleanor; person_5.first_name], [he;
+    person_1.subj_pronoun] returned to public office upon being elected governor of [New York; place_2.state] in [1928; temporal_13.year].
+    As governor, [he; person_1.subj_pronoun] promoted programs to combat the [Great Depression; event_1.name].
+
+
+    [Roosevelt; person_1.last_name] defeated President [Herbert Hoover; person_6.full_name] in a landslide victory in the
+    [1932; temporal_8.year] [presidential election; event_6.name]. During [his; person_1.poss_det_pronoun] first [100; number_5.int]
+    days as president, [Roosevelt; person_1.last_name] spearheaded unprecedented federal legislation, initiated the program
+    to implement the [New Deal; legal_3.name], build the [New Deal coalition; government_org_8.name], and realign [American;
+    place_1.demonym] politics into the [Fifth Party System; government_org_7.name]. [He; person_1.subj_pronoun] created programs
+    to provide relief to the unemployed and farmers while seeking economic recovery with the [National Recovery Administration;
+    government_org_3.name] and other programs. [He; person_1.subj_pronoun] also instituted major regulatory reforms related
+    to finance, communications, and labor, and presided over the end of Prohibition. [He; person_1.subj_pronoun] was reelected
+    in [1936; temporal_14.year], in one of the largest landslide victories in [American; place_1.demonym] history. [Roosevelt;
+    person_1.last_name] was unable to expand the [Supreme Court; government_org_4.name] in [1937; temporal_15.year], the same
+    year the [conservative coalition; government_org_10.name] was formed to block the implementation of further [New Deal;
+    legal_3.name] programs and reforms. Major surviving programs and legislation implemented under [Roosevelt; person_1.last_name]
+    include the [Securities and Exchange Commission; government_org_5.name], the [National Labor Relations Act; legal_1.name],
+    the [Federal Deposit Insurance Corporation; government_org_6.name], and [Social Security; legal_2.name]. In [1940; temporal_16.year],
+    [he; person_1.subj_pronoun] was reelected, as there were not presidential term limits until [1951; temporal_17.year].
+
+
+    Following the [Japanese; place_4.demonym] attack on [Pearl Harbor; military_org_2.name] on [December 7, 1941; temporal_18.date],
+    [Roosevelt; person_1.last_name] obtained a declaration of war on [Japan; place_4.country], and subsequently on [Japan;
+    place_4.country]''s [Axis; government_org_11.name] partners, [Nazi Germany; government_org_12.name] and [Fascist Italy;
+    government_org_13.name]. [He; person_1.subj_pronoun] worked closely with other national leaders in leading the [Allies;
+    government_org_14.name] against the [Axis; government_org_11.name] powers. [Roosevelt; person_1.last_name] supervised
+    the mobilization of the [American; place_1.demonym] economy to support the war effort and implemented a [Europe; place_8.continent]
+    first strategy. [He; person_1.subj_pronoun] also initiated the development of the first atomic bomb and worked with the
+    other [Allied; government_org_14.name] leaders to lay the groundwork for the [United Nations; ngo_1.name]. [Roosevelt;
+    person_1.last_name] won reelection in [1944; temporal_19.year], but died in [1945; temporal_4.year]. Since then, some
+    of [his; person_1.poss_det_pronoun] actions have been criticized, such as [his; person_1.poss_det_pronoun] ordering of
+    the internment of [Japanese Americans; place_4.demonym]. Nonetheless, historical rankings consistently place [him; person_1.obj_pronoun]
+    among the [three; number_6.str] greatest [American; place_1.demonym] presidents.'
+  relations: []
+  rules:
+  - 'temporal_3.year - temporal_8.year == 1 # presidency began year after gubernatorial end'
+  - 'number_5.int > 1 # plural "days"'
+  - 'number_6.str > 1 # plural "presidents"'
+  - temporal_3.year = temporal_8.year + 1
+  num_questions: 12
+  questions:
+  - question_id: bio_03_q01
+    question: How many examples did the article mention as [Franklin Delano Roosevelt; person_1.full_name]'s actions that
+      received criticism since his death?
+    question_type: arithmetic
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q02
+    question: In which year was [Franklin Delano Roosevelt; person_1.full_name] born?
+    question_type: extractive
+    answer: temporal_1.year
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q03
+    question: Was [Franklin Delano Roosevelt; person_1.full_name] the initiator of the development of the first atomic bomb?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q06
+    question: Who was the successor of President [Franklin Delano Roosevelt; person_1.full_name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q05
+    question: How many years was [Franklin Delano Roosevelt; person_1.full_name] the assistant secretary of the [Navy; military_org_1.name]
+      under President [Woodrow Wilson; person_2.full_name]?
+    question_type: temporal
+    answer: temporal_11.year - temporal_6.year
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q06
+    question: How many years after being elected to the [New York State Senate; government_org_2.name] did [Franklin Delano
+      Roosevelt; person_1.full_name] become assistant secretary of the [Navy; military_org_1.name]?
+    question_type: arithmetic
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - Roosevelt was elected to the New York State Senate in 1910.
+    - He became assistant secretary of the Navy in 1913.
+    - The difference is 1913 - 1910 = 3.
+    reasoning_chain_text: 'Roosevelt was elected to the New York State Senate in 1910.
+
+      He became assistant secretary of the Navy in 1913.
+
+      The difference is 1913 - 1910 = 3.'
+  - question_id: bio_03_q07
+    question: Did [Franklin Delano Roosevelt; person_1.full_name] become a President before or after being the assistant secretary
+      of the [Navy; military_org_1.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q08
+    question: In what year was [Franklin Delano Roosevelt; person_1.full_name] married?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q09
+    question: Who was the President of the [United States; place_1.country] when [Franklin Delano Roosevelt; person_1.full_name]
+      was the assistant secretary of the [Navy; military_org_1.name]?
+    question_type: inference
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q10
+    question: In which city [Franklin Delano Roosevelt; person_1.full_name] died?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q11
+    question: Was [Franklin Delano Roosevelt; person_1.full_name] a President in [1910; temporal_9.year]?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_03_q020
+    question: How many [United States; place_1.country] Presidents served two terms?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1864
+    upper_bound: 1900
+    factual_value: 1882
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1926
+    upper_bound: 1964
+    factual_value: 1945
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 26
+    upper_bound: 38
+    factual_value: 32
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1914
+    upper_bound: 1952
+    factual_value: 1933
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1926
+    upper_bound: 1964
+    factual_value: 1945
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1892
+    upper_bound: 1930
+    factual_value: 1911
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1894
+    upper_bound: 1932
+    factual_value: 1913
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 36
+    upper_bound: 52
+    factual_value: 44
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1910
+    upper_bound: 1948
+    factual_value: 1929
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1913
+    upper_bound: 1951
+    factual_value: 1932
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1891
+    upper_bound: 1929
+    factual_value: 1910
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1901
+    upper_bound: 1939
+    factual_value: 1920
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1902
+    upper_bound: 1940
+    factual_value: 1921
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1909
+    upper_bound: 1947
+    factual_value: 1928
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1917
+    upper_bound: 1955
+    factual_value: 1936
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1918
+    upper_bound: 1956
+    factual_value: 1937
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1932
+    upper_bound: 1970
+    factual_value: 1951
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1922
+    upper_bound: 1960
+    factual_value: 1941
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_19.year
+    lower_bound: 1925
+    upper_bound: 1963
+    factual_value: 1944
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Dorgorlor Hallor; person_1.full_name] ([23 September 1890; temporal_1.date]
+    – [15 May 1964; temporal_2.date]), also known as [Dorgorlor Hallor; person_1.full_name], was the [26; number_1.int] president
+    of the [Kingdom of Krelvek; place_1.country], serving from [1952; temporal_3.year] until [his; person_1.poss_det_pronoun]
+    death in [1964; temporal_4.year]. [he; person_1.subj_pronoun] is the longest-serving [Kingdom of Krelvek; place_1.country]
+    president and the only one to have served more than two terms. [his; person_1.poss_det_pronoun] first two terms were centered
+    on combating the [Kivnoxvek Festival; event_1.name], while [his; person_1.poss_det_pronoun] third and fourth focused on
+    [Kingdom of Krelvek; place_1.country] involvement in [Glankivxal Incident; event_2.name]. A member of the [Gargarlor Council;
+    government_org_1.name], [Hallor; person_1.last_name] served in the [Korzengor Council; government_org_2.name] from [1892;
+    temporal_5.year] to [1894; temporal_6.year] and as the [43; number_4.int] governor of [Wexkrelgryshire; place_2.state]
+    from [1942; temporal_7.year] to [1951; temporal_8.year].
+
+
+    Born into the prominent [Talgar; person_7.last_name] and [Rinvexkin; person_8.last_name] families in [Wexvextarn City;
+    place_3.city], [Pryyornrath State; place_3.state], [Hallor; person_1.last_name] graduated from [Rimbarsar Institute; educational_org_1.name].
+    [he; person_1.subj_pronoun] was elected to the [Korzengor Council; government_org_2.name] in [1891; temporal_9.year],
+    before becoming the assistant secretary of the [Halzen Command; military_org_1.name] under President [Murkinvex Rinsar;
+    person_2.full_name] from [1894; temporal_6.year] to [1939; temporal_11.year]. [Hallor; person_1.last_name] was the running
+    mate of [Felnordor Delkor; person_3.full_name] on the Democratic ticket in the [1939; temporal_11.year] [The Grelxal Conference;
+    event_6.name], which [Delkor; person_3.last_name] lost to [Kinzanfel Council; government_org_7.name] nominee [Zanbarmor
+    Zenvakzan; person_4.full_name]. In [1940; temporal_12.year], an illness permanently paralyzed [his; person_1.poss_det_pronoun]
+    legs. However, partly through the encouragement of [his; person_1.poss_det_pronoun] [wife; person_5.relationship] [Zenzantir;
+    person_5.first_name], [he; person_1.subj_pronoun] returned to public office upon being elected governor of [Wexkrelgryshire;
+    place_2.state] in [1941; temporal_13.year]. As governor, [he; person_1.subj_pronoun] promoted programs to combat the [Kivnoxvek
+    Festival; event_1.name].
+
+
+    [Hallor; person_1.last_name] defeated President [Halzan Zenkinnor; person_6.full_name] in a landslide victory in the [1951;
+    temporal_8.year] [The Grelxal Conference; event_6.name]. During [his; person_1.poss_det_pronoun] first [99; number_5.int]
+    days as president, [Hallor; person_1.last_name] spearheaded unprecedented federal legislation, initiated the program to
+    implement the [Health Protocol of Kivmarn; legal_3.name], build the [Rimlordel Council; government_org_8.name], and realign
+    [Zivgryean; place_1.demonym] politics into the [Kinzanfel Council; government_org_7.name]. [he; person_1.subj_pronoun]
+    created programs to provide relief to the unemployed and farmers while seeking economic recovery with the [Garfel Council;
+    government_org_3.name] and other programs. [he; person_1.subj_pronoun] also instituted major regulatory reforms related
+    to finance, communications, and labor, and presided over the end of Prohibition. [he; person_1.subj_pronoun] was reelected
+    in [1955; temporal_14.year], in one of the largest landslide victories in [Zivgryean; place_1.demonym] history. [Hallor;
+    person_1.last_name] was unable to expand the [Kintirzan Council; government_org_4.name] in [1956; temporal_15.year], the
+    same year the [Morkinzan Council; government_org_10.name] was formed to block the implementation of further [Health Protocol
+    of Kivmarn; legal_3.name] programs and reforms. Major surviving programs and legislation implemented under [Hallor; person_1.last_name]
+    include the [Rinmorjor Council; government_org_5.name], the [Tovvex Access Statute; legal_1.name], the [Zensar Council;
+    government_org_6.name], and [Transit Directive of Sivvorn; legal_2.name]. In [1959; temporal_16.year], [he; person_1.subj_pronoun]
+    was reelected, as there were not presidential term limits until [1970; temporal_17.year].
+
+
+    Following the [Marnnoxbriman; place_4.demonym] attack on [Vexbar Command; military_org_2.name] on [5 September 1960; temporal_18.date],
+    [Hallor; person_1.last_name] obtained a declaration of war on [Kingdom of Drelwex; place_4.country], and subsequently
+    on [Kingdom of Drelwex; place_4.country]''s [Dorvelquin Council; government_org_11.name] partners, [Felvak Council; government_org_12.name]
+    and [Vexlinkin Council; government_org_13.name]. [he; person_1.subj_pronoun] worked closely with other national leaders
+    in leading the [Quindel Council; government_org_14.name] against the [Dorvelquin Council; government_org_11.name] powers.
+    [Hallor; person_1.last_name] supervised the mobilization of the [Zivgryean; place_1.demonym] economy to support the war
+    effort and implemented a [Kinlor Landmass; place_8.continent] first strategy. [he; person_1.subj_pronoun] also initiated
+    the development of the first atomic bomb and worked with the other [Quindel Council; government_org_14.name] leaders to
+    lay the groundwork for the [Mirmir Alliance; ngo_1.name]. [Hallor; person_1.last_name] won reelection in [1963; temporal_19.year],
+    but died in [1964; temporal_4.year]. Since then, some of [his; person_1.poss_det_pronoun] actions have been criticized,
+    such as [his; person_1.poss_det_pronoun] ordering of the internment of [Marnnoxbriman; place_4.demonym]. Nonetheless,
+    historical rankings consistently place [him; person_1.obj_pronoun] among the [six; number_6.str] greatest [Zivgryean;
+    place_1.demonym] presidents.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

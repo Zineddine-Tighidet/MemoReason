@@ -1,0 +1,331 @@
+document:
+  document_id: company_04
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Pfizer
+  wikipedia_url: https://en.wikipedia.org/wiki/Pfizer
+  original_document: 'Pfizer Inc. is an American multinational pharmaceutical and biotechnology corporation headquartered
+    at The Spiral in Manhattan, New York City. Founded in 1849 in New York by German entrepreneurs Charles Pfizer (1824–1906)
+    and Charles F. Erhart (1821–1891), Pfizer is one of the oldest pharmaceutical companies in North America.
+
+
+    Pfizer develops and produces medication and vaccines for immunology, oncology, cardiology, endocrinology, and neurology.
+    The company''s largest products by sales are Eliquis (apixaban) ($7.3 billion in 2024 revenues, 11% of total revenues),
+    Prevnar (a pneumococcal conjugate vaccine) ($6.4 billion in 2024 revenues, 10% of total revenues), Paxlovid (Nirmatrelvir/ritonavir)
+    ($5.7 billion in 2024 revenues, 9% of total revenues), Vyndaqel (tafamidis) ($5.4 billion in 2024 revenues, 8% of total
+    revenues), Comirnaty (the Pfizer–BioNTech COVID-19 vaccine) ($5.3 billion in 2024 revenues, 8% of total revenues), and
+    Ibrance (palbociclib) ($4.3 billion in 2024 revenues, 6% of total revenues). In 2024, 61% of the company''s revenues came
+    from the United States, 4% came from China, and 35% came from other countries.
+
+
+    The company is ranked fifth on the list of largest biomedical companies by revenue. It is ranked the 69th on the Fortune
+    500 and 73rd on the Forbes Global 2000.'
+  document_to_annotate: '[Pfizer Inc.; entreprise_org_1.name] is an [American; place_1.demonym] multinational pharmaceutical
+    and biotechnology corporation headquartered at [The Spiral; place_2.street] in [Manhattan; place_3.region], [New York
+    City; place_4.city]. Founded in [1849; temporal_1.year] in [New York; place_4.city] by [German; place_5.demonym] entrepreneurs
+    [Charles Pfizer; person_1.full_name] ([1824; temporal_2.year]–[1906; temporal_3.year]) and [Charles F. Erhart; person_2.full_name]
+    ([1821; temporal_4.year]–[1891; temporal_5.year]), [Pfizer; entreprise_org_1.name] is one of the oldest pharmaceutical
+    companies in [North America; place_6.region].
+
+
+    [Pfizer; entreprise_org_1.name] develops and produces medication and vaccines for immunology, oncology, cardiology, endocrinology,
+    and neurology. The company''s largest products by sales are [Eliquis (apixaban); product_1.name] ($[7.3; number_1.float]
+    billion in [2024; temporal_6.year] revenues), [Prevnar; product_2.name] (a pneumococcal conjugate vaccine) ($[6.4; number_3.float]
+    billion in [2024; temporal_6.year] revenues), [Paxlovid (Nirmatrelvir/ritonavir); product_3.name] ($[5.7; number_5.float]
+    billion in [2024; temporal_6.year] revenues), [Vyndaqel (tafamidis); product_4.name] ($[5.4; number_7.float] billion in
+    [2024; temporal_6.year] revenues), [Comirnaty (the Pfizer–BioNTech COVID-19 vaccine); product_5.name] ($[5.3; number_9.float]
+    billion in [2024; temporal_6.year] revenues), and [Ibrance (palbociclib); product_6.name] ($[4.3; number_11.float] billion
+    in [2024; temporal_6.year] revenues). In [2024; temporal_6.year], [61; number_13.percent]% of the company''s revenues
+    came from the [United States; place_1.country], [4; number_14.percent]% came from [China; place_7.country], and [35; number_15.percent]%
+    came from other countries.
+
+
+    The company is ranked [fifth; number_16.str] on the list of largest biomedical companies by revenue. It is ranked the
+    [69th; number_17.int] on the [Fortune 500; award_1.name] and [73rd; number_18.int] on the [Forbes Global 2000; award_2.name].'
+  relations: []
+  rules:
+  - 'number_13.percent + number_14.percent + number_15.percent == 100 # revenue shares must sum to 100%'
+  - number_1.float / number_2.percent == number_3.float / number_4.percent
+  - number_1.float / number_2.percent == number_5.float / number_6.percent
+  - number_1.float / number_2.percent == number_7.float / number_8.percent
+  - number_1.float / number_2.percent == number_9.float / number_10.percent
+  - number_1.float / number_2.percent == number_11.float / number_12.percent
+  num_questions: 12
+  questions:
+  - question_id: company_04_q01
+    question: What is the name of the pneumococcal conjugate vaccine produced by [Pfizer Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: product_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Prevnar; product_2.name] is described as "(a pneumococcal conjugate vaccine)."
+    reasoning_chain_text: 1. The document states that [Prevnar; product_2.name] is described as "(a pneumococcal conjugate
+      vaccine)."
+  - question_id: company_04_q02
+    question: Who is the current CEO of [Pfizer Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the founders and products of [Pfizer Inc.; entreprise_org_1.name].
+    - 2. The document does not mention the current CEO or any executive leadership.
+    reasoning_chain_text: '1. The document describes the founders and products of [Pfizer Inc.; entreprise_org_1.name].
+
+      2. The document does not mention the current CEO or any executive leadership.'
+  - question_id: company_04_q03
+    question: What is the combined 2018 revenue, in billions of dollars, of [Eliquis (apixaban); product_1.name] and [Prevnar;
+      product_2.name]?
+    question_type: arithmetic
+    answer: number_1.float + number_3.float
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Eliquis (apixaban); product_1.name] had $[7.3; number_1.float] billion in [2024; temporal_6.year] revenues.
+    - 2. [Prevnar; product_2.name] had $[6.4; number_3.float] billion in [2024; temporal_6.year] revenues.
+    - 3. Combined revenue = [7.3; number_1.float] + [6.4; number_3.float] = $10.96 billion.
+    reasoning_chain_text: '1. [Eliquis (apixaban); product_1.name] had $[7.3; number_1.float] billion in [2024; temporal_6.year]
+      revenues.
+
+      2. [Prevnar; product_2.name] had $[6.4; number_3.float] billion in [2024; temporal_6.year] revenues.
+
+      3. Combined revenue = [7.3; number_1.float] + [6.4; number_3.float] = $10.96 billion.'
+  - question_id: company_04_q04
+    question: What was [Pfizer Inc.; entreprise_org_1.name]'s total revenue in [2024; temporal_6.year] in billions of dollars?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides individual product revenues and their percentages of total revenues, but does not directly
+      state the total revenue figure.
+    - 2. While one could attempt to derive total revenue from a single product's revenue and its percentage, the percentages
+      are rounded, so any such calculation would be approximate and unreliable. The exact total revenue is not stated in the
+      document.
+    reasoning_chain_text: '1. The document provides individual product revenues and their percentages of total revenues, but
+      does not directly state the total revenue figure.
+
+      2. While one could attempt to derive total revenue from a single product''s revenue and its percentage, the percentages
+      are rounded, so any such calculation would be approximate and unreliable. The exact total revenue is not stated in the
+      document.'
+  - question_id: company_04_q05
+    question: How old was [Charles Pfizer; person_1.full_name] when [Pfizer Inc.; entreprise_org_1.name] was founded?
+    question_type: temporal
+    answer: temporal_1.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Charles Pfizer; person_1.full_name] was born in [1824; temporal_2.year].
+    - 2. [Pfizer Inc.; entreprise_org_1.name] was founded in [1849; temporal_1.year].
+    - 3. Age at founding = [1849; temporal_1.year] - [1824; temporal_2.year].
+    reasoning_chain_text: '1. [Charles Pfizer; person_1.full_name] was born in [1824; temporal_2.year].
+
+      2. [Pfizer Inc.; entreprise_org_1.name] was founded in [1849; temporal_1.year].
+
+      3. Age at founding = [1849; temporal_1.year] - [1824; temporal_2.year].'
+  - question_id: company_04_q06
+    question: In what year did [Pfizer Inc.; entreprise_org_1.name] first begin producing vaccines?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Pfizer Inc.; entreprise_org_1.name] develops and produces vaccines.
+    - 2. However, the document does not state when the company first began producing vaccines; only the founding year [1849;
+      temporal_1.year] is given.
+    reasoning_chain_text: '1. The document mentions that [Pfizer Inc.; entreprise_org_1.name] develops and produces vaccines.
+
+      2. However, the document does not state when the company first began producing vaccines; only the founding year [1849;
+      temporal_1.year] is given.'
+  - question_id: company_04_q07
+    question: Which of the two founders of [Pfizer Inc.; entreprise_org_1.name] was younger at the time the company was founded?
+    question_type: inference
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Charles Pfizer; person_1.full_name] was born in [1824; temporal_2.year].
+    - 2. [Charles F. Erhart; person_2.full_name] was born in [1821; temporal_4.year].
+    - 3. Therefore, [Charles Pfizer; person_1.full_name] was the younger founder at the time of founding.
+    reasoning_chain_text: '1. [Charles Pfizer; person_1.full_name] was born in [1824; temporal_2.year].
+
+      2. [Charles F. Erhart; person_2.full_name] was born in [1821; temporal_4.year].
+
+      3. Therefore, [Charles Pfizer; person_1.full_name] was the younger founder at the time of founding.'
+  - question_id: company_04_q08
+    question: Based on the revenue percentages from [2024; temporal_6.year], did the majority of [Pfizer Inc.; entreprise_org_1.name]'s
+      revenues come from a single country?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [61; number_13.percent]% of the company's revenues came from the [United States; place_1.country].
+    - 2. Since 71.0% exceeds 50%, the majority of revenues came from a single country.
+    reasoning_chain_text: '1. The document states that [61; number_13.percent]% of the company''s revenues came from the [United
+      States; place_1.country].
+
+      2. Since 71.0% exceeds 50%, the majority of revenues came from a single country.'
+  - question_id: company_04_q09
+    question: Given that [Pfizer Inc.; entreprise_org_1.name] is ranked [fifth; number_16.str] among the largest biomedical
+      companies by revenue, which company is ranked first?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Pfizer Inc.; entreprise_org_1.name] is ranked [fifth; number_16.str] on the list of largest
+      biomedical companies by revenue.
+    - 2. The document does not identify which companies hold the first, second, or third positions on that list.
+    reasoning_chain_text: '1. The document states [Pfizer Inc.; entreprise_org_1.name] is ranked [fifth; number_16.str] on
+      the list of largest biomedical companies by revenue.
+
+      2. The document does not identify which companies hold the first, second, or third positions on that list.'
+  - question_id: company_04_q10
+    question: Did [Charles F. Erhart; person_2.full_name] outlive [Charles Pfizer; person_1.full_name] ?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_04_q11
+    question: How many products from [Pfizer Inc.; entreprise_org_1.name] are mentioned in the document ?
+    question_type: arithmetic
+    answer: '6'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_04_q12
+    question: What kind of company is [Pfizer Inc.; entreprise_org_1.name] ?
+    question_type: extractive
+    answer: multinational pharmaceutical and biotechnology corporation
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1831
+    upper_bound: 1867
+    factual_value: 1849
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1806
+    upper_bound: 1842
+    factual_value: 1824
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1887
+    upper_bound: 1925
+    factual_value: 1906
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1803
+    upper_bound: 1839
+    factual_value: 1821
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1873
+    upper_bound: 1909
+    factual_value: 1891
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.float
+    lower_bound: 1.0
+    upper_bound: 17.0
+    factual_value: 7.3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.float
+    lower_bound: 1.0
+    upper_bound: 16.0
+    factual_value: 6.4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.float
+    lower_bound: 1.0
+    upper_bound: 16.0
+    factual_value: 5.7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.float
+    lower_bound: 1.0
+    upper_bound: 15.0
+    factual_value: 5.4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.float
+    lower_bound: 1.0
+    upper_bound: 15.0
+    factual_value: 5.3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.float
+    lower_bound: 1.0
+    upper_bound: 14.0
+    factual_value: 4.3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.percent
+    lower_bound: 48.8
+    upper_bound: 73.2
+    factual_value: 61.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.percent
+    lower_bound: 1.0
+    upper_bound: 14.0
+    factual_value: 4.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.percent
+    lower_bound: 28.0
+    upper_bound: 42.0
+    factual_value: 35.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.int
+    lower_bound: 56
+    upper_bound: 82
+    factual_value: 69
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.int
+    lower_bound: 59
+    upper_bound: 87
+    factual_value: 73
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Linjorvel Works; entreprise_org_1.name] is a [Drelmarnese; place_1.demonym]
+    multinational pharmaceutical and biotechnology corporation headquartered at [Rathtov Drive; place_2.street] in [Vextarnquar
+    Region; place_3.region], [Grelvekwex Town; place_4.city]. Founded in [1850; temporal_1.year] in [Grelvekwex Town; place_4.city]
+    by [Vornvexnoxian; place_5.demonym] entrepreneurs [Neldel Mormurbar; person_1.full_name] ([1835; temporal_2.year]–[1925;
+    temporal_3.year]) and [Lorkor Garquin; person_2.full_name] ([1832; temporal_4.year]–[1890; temporal_5.year]), [Linjorvel
+    Works; entreprise_org_1.name] is one of the oldest pharmaceutical companies in [Yornrathvek Region; place_6.region].
+
+
+    [Linjorvel Works; entreprise_org_1.name] develops and produces medication and vaccines for immunology, oncology, cardiology,
+    endocrinology, and neurology. The company''s largest products by sales are [Morfel Flow; product_1.name] ($[5.84; number_1.float]
+    billion in [2004; temporal_6.year] revenues), [DelpolOne; product_2.name] (a pneumococcal conjugate vaccine) ($[5.12;
+    number_3.float] billion in [2004; temporal_6.year] revenues), [QuindelKit; product_3.name] ($[4.56; number_5.float] billion
+    in [2004; temporal_6.year] revenues), [KorquinKit; product_4.name] ($[4.34; number_7.float] billion in [2004; temporal_6.year]
+    revenues), [Dorfel One; product_5.name] ($[4.24; number_9.float] billion in [2004; temporal_6.year] revenues), and [Polrin
+    Kit; product_6.name] ($[3.44; number_11.float] billion in [2004; temporal_6.year] revenues). In [2004; temporal_6.year],
+    [71.0; number_13.percent]% of the company''s revenues came from the [Kingdom of Myrgry; place_1.country], [1.0; number_14.percent]%
+    came from [Kingdom of Thurquar; place_7.country], and [28.0; number_15.percent]% came from other countries.
+
+
+    The company is ranked [fourth; number_16.str] on the list of largest biomedical companies by revenue. It is ranked the
+    [72; number_17.int] on the [Tovyorngry Cup; award_1.name] and [74; number_18.int] on the [Drelthur Medal; award_2.name].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

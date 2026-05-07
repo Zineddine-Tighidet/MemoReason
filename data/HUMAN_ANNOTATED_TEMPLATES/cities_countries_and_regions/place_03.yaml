@@ -1,0 +1,456 @@
+document:
+  document_id: place_03
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: France
+  wikipedia_url: https://en.wikipedia.org/wiki/France
+  original_document: 'France, officially the French Republic, is a country primarily located in Western Europe. Its overseas
+    regions and territories include French Guiana in South America, Saint Pierre and Miquelon in the North Atlantic, the French
+    West Indies, and many islands in Oceania and the Indian Ocean. Metropolitan France shares borders with Belgium and Luxembourg
+    to the north; Germany to the northeast; Switzerland to the east; Italy and Monaco to the southeast; Andorra and Spain
+    to the south; and a maritime border with the United Kingdom to the northwest. Its metropolitan area extends from the Rhine
+    to the Atlantic Ocean and from the Mediterranean Sea to the English Channel and the North Sea. Its 18 integral regions—five
+    of which are overseas—span a combined area of 632702 km2 (244288 sq mi), with a total population estimated at 69.1 million
+    in 2026. Its capital, largest city and main cultural and economic centre is Paris.
+
+
+    Metropolitan France was settled during the Iron Age by Celtic tribes known as Gauls before Rome annexed the area in 51
+    BC, leading to a distinct Gallo-Roman culture. In the Early Middle Ages, the Franks formed the kingdom of Francia, which
+    became the heartland of the Carolingian Empire. The Treaty of Verdun of 843 partitioned the empire, with West Francia
+    evolving into the Kingdom of France. In the High Middle Ages, France was a powerful but decentralised feudal kingdom,
+    but from the mid-14th to the mid-15th centuries, France was plunged into a dynastic conflict with England known as the
+    Hundred Years'' War. In the 16th century, French culture flourished during the French Renaissance, and a French colonial
+    empire emerged. Internally, France was dominated by the conflict with the House of Habsburg and the French Wars of Religion
+    between Catholics and Huguenots. France was successful in the Thirty Years'' War and further increased its influence during
+    the reign of Louis XIV.
+
+
+    The French Revolution of 1789 overthrew the Ancien Régime and produced the Declaration of the Rights of Man, which expresses
+    the nation''s ideals to this day. France reached its political and military zenith in the early 19th century under Napoleon
+    Bonaparte, subjugating much of continental Europe and establishing the First French Empire. Its collapse initiated a period
+    of relative decline during which France endured the Bourbon Restoration until the founding of the French Second Republic,
+    which was succeeded by the Second French Empire upon Napoleon III''s takeover. His empire collapsed during the Franco-Prussian
+    War in 1870. This led to the establishment of the French Third Republic, and a period of economic prosperity and cultural
+    and scientific flourishing known as the Belle Époque. France was one of the major participants of World War I, from which
+    it emerged victorious at great human and economic cost. It was among the Allies of World War II, but it surrendered and
+    was occupied by Germany in 1940. Following its liberation in 1944, the short-lived Fourth Republic was established and
+    later dissolved over the course of the Algerian War. The current Fifth Republic, a semi-presidential system, was formed
+    in 1958 by Charles de Gaulle. Algeria and most French colonies became independent in the 1960s, with the majority retaining
+    close economic and military ties with France.
+
+
+    France retains its centuries-long status as a global centre of art, science, and philosophy. It hosts the fourth-largest
+    number of UNESCO World Heritage Sites, with 54 in total, and is the world''s leading tourist destination, having received
+    over 100 million foreign visitors in 2024. A developed country, France has a high nominal per capita income globally,
+    and its economy ranks among the largest in the world by both nominal GDP and PPP-adjusted GDP. It is a great power, being
+    one of the five permanent members of the United Nations Security Council and an official nuclear-weapon state. The country
+    is part of multiple international organisations and forums.'
+  document_to_annotate: '[France; place_1.country], officially the [French; place_1.demonym] Republic, is a country primarily
+    located in [Western Europe; place_2.region]. Its overseas regions and territories include [French Guiana; place_3.region]
+    in [South America; place_4.continent], [Saint Pierre and Miquelon; place_5.region] in the [North Atlantic; place_6.region],
+    the [French West Indies; place_7.region], and many islands in [Oceania; place_8.continent] and the [Indian Ocean; place_9.natural_site].
+    Metropolitan [France; place_1.country] shares borders with [Belgium; place_10.country] and [Luxembourg; place_11.country]
+    to the north; [Germany; place_12.country] to the northeast; [Switzerland; place_13.country] to the east; [Italy; place_14.country]
+    and [Monaco; place_15.country] to the southeast; [Andorra; place_16.country] and [Spain; place_17.country] to the south;
+    and a maritime border with the [United Kingdom; place_18.country] to the northwest. Its metropolitan area extends from
+    the [Rhine; place_19.natural_site] to the [Atlantic Ocean; place_20.natural_site] and from the [Mediterranean Sea; place_21.natural_site]
+    to the [English Channel; place_22.natural_site] and the [North Sea; place_23.natural_site]. Its [18; number_1.int] integral
+    regions—[five; number_2.str] of which are overseas—span a combined area of [632702; number_3.int] km2, with a total population
+    estimated at [69.1; number_5.float] million in [2026; temporal_1.year]. Its capital, largest city and main cultural and
+    economic centre is [Paris; place_24.city].
+
+
+    Metropolitan [France; place_1.country] was settled during the Iron Age by [Celtic tribes; place_34.region] known as [Gaul;
+    place_34.demonym]s before [Rome; place_28.city] annexed the area in [51; temporal_2.year] BC, leading to a distinct [Gallo-Roman;
+    place_30.demonym] culture. In the Early Middle Ages, the [Franks; place_31.demonym] formed the [kingdom of Francia; place_31.region],
+    which became the heartland of the [Carolingian Empire; place_32.region]. The [Treaty of Verdun; legal_1.name] of [843;
+    temporal_3.year] partitioned the empire, with [West Francia; place_33.region] evolving into the Kingdom of [France; place_1.country].
+    In the High Middle Ages, [France; place_1.country] was a powerful but decentralised feudal kingdom, but from the mid-[14th;
+    number_9.int] to the mid-[15th; number_10.int] centuries, [France; place_1.country] was plunged into a dynastic conflict
+    with [England; place_25.country] known as the [Hundred Years'' War; event_1.name]. In the [16th; number_11.int] century,
+    [French; place_1.demonym] culture flourished during the [French Renaissance; event_2.name], and a [French; place_1.demonym]
+    colonial empire emerged. [France; place_1.country] was successful in the [Thirty Years'' War; event_4.name] and further
+    increased its influence during the reign of [Louis XIV; person_1.full_name].
+
+
+    The [French Revolution; event_5.name] of [1789; temporal_4.year] overthrew the [Ancien Régime; government_org_2.name]
+    and produced the [Declaration of the Rights of Man; legal_2.name], which expresses the nation''s ideals to this day. [France;
+    place_1.country] reached its political and military zenith in the early [19th; number_12.int] century under [Napoleon
+    Bonaparte; person_2.full_name], subjugating much of continental [Europe; place_26.continent] and establishing the [First
+    French Empire; government_org_3.name]. Its collapse initiated a period of relative decline during which [France; place_1.country]
+    endured the [Bourbon Restoration; event_10.name] until the founding of the [French Second Republic; government_org_6.name],
+    which was succeeded by the [Second French Empire; government_org_7.name] upon [Napoleon III; person_3.full_name]''s takeover.
+    [His; person_3.poss_det_pronoun] empire collapsed during the [Franco-Prussian War; event_6.name] in [1870; temporal_5.year].
+    This led to the establishment of the [French Third Republic; government_org_5.name], and a period of economic prosperity
+    and cultural and scientific flourishing known as the [Belle Époque; event_11.name]. [France; place_1.country] was one
+    of the major participants of [World War I; event_7.name], from which it emerged victorious at great human and economic
+    cost. It was among the [Allies; government_org_9.name] of [World War II; event_8.name], but it surrendered and was occupied
+    by [Germany; place_12.country] in [1940; temporal_6.year]. Following its liberation in [1944; temporal_7.year], the short-lived
+    [Fourth Republic; government_org_4.name] was established and later dissolved over the course of the [Algerian War; event_9.name].
+    The current [Fifth Republic; government_org_8.name], a semi-presidential system, was formed in [1958; temporal_8.year]
+    by [Charles de Gaulle; person_4.full_name]. [Algeria; place_27.country] and most [French; place_1.demonym] colonies became
+    independent in the [1960; temporal_9.year]s, with the majority retaining close economic and military ties with [France;
+    place_1.country].
+
+
+    [France; place_1.country] retains its centuries-long status as a global centre of art, science, and philosophy. It hosts
+    the fourth-largest number of [UNESCO; ngo_1.name] [World Heritage Sites; award_1.name], with [54; number_6.int] in total,
+    and is the world''s leading tourist destination, having received over [100; number_7.int] million foreign visitors in
+    [2024; temporal_10.year]. A developed country, [France; place_1.country] has a high nominal per capita income globally,
+    and its economy ranks among the largest in the world by both nominal GDP and PPP-adjusted GDP. It is a great power, being
+    one of the [five; number_8.str] permanent members of the [United Nations Security Council; government_org_1.name] and
+    an official nuclear-weapon state. The country is part of multiple international organisations and forums.'
+  relations: []
+  rules:
+  - 'number_10.int - number_9.int == 1 # consecutive centuries (mid-14th to mid-15th)'
+  - 'number_11.int - number_10.int == 1 # 16th century follows the 15th century period'
+  - 'century_of(temporal_4.year) + 1 == number_12.int # French Revolution year must fall in the stated century (early 19th
+    century zenith follows 1789)'
+  - 'century_end(number_9.int) < temporal_4.year # the Hundred Years'' War centuries precede the French Revolution'
+  - 'century_of(temporal_3.year) < number_9.int # Treaty of Verdun (843) predates the 14th century conflict'
+  - 'number_6.int > 1 # plural mention ("Sites")'
+  - 'number_2.str > 1 # plural mention ("five of which are overseas")'
+  num_questions: 12
+  questions:
+  - question_id: place_03_q01
+    question: What is the capital city of [France; place_1.country]?
+    question_type: extractive
+    answer: place_24.city
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_03_q02
+    question: Is [French; place_1.demonym] considered as a republic?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [France; place_1.country] has [18; number_1.int] integral regions.
+    reasoning_chain_text: 1. The document states that [France; place_1.country] has [18; number_1.int] integral regions.
+  - question_id: place_03_q03
+    question: What is the population density per square kilometer of metropolitan [France; place_1.country]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides the total area ([632702; number_3.int] km2) and total population ([69.1; number_5.float] million)
+      for all [18; number_1.int] integral regions combined.
+    - 2. The document does not state separate area or population figures for metropolitan [France; place_1.country] alone.
+    - 3. Without metropolitan-specific data, the density cannot be calculated.
+    reasoning_chain_text: '1. The document provides the total area ([632702; number_3.int] km2) and total population ([69.1;
+      number_5.float] million) for all [18; number_1.int] integral regions combined.
+
+      2. The document does not state separate area or population figures for metropolitan [France; place_1.country] alone.
+
+      3. Without metropolitan-specific data, the density cannot be calculated.'
+  - question_id: place_03_q04
+    question: What is the difference between the total number of integral regions and the number of overseas integral regions
+      of [France; place_1.country]?
+    question_type: arithmetic
+    answer: number_1.int - number_2.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [France; place_1.country] has [18; number_1.int] integral regions.
+    - 2. The document states that [five; number_2.str] of these are overseas.
+    - 3. The difference is [18; number_1.int] - [five; number_2.str].
+    reasoning_chain_text: '1. The document states that [France; place_1.country] has [18; number_1.int] integral regions.
+
+      2. The document states that [five; number_2.str] of these are overseas.
+
+      3. The difference is [18; number_1.int] - [five; number_2.str].'
+  - question_id: place_03_q05
+    question: How many regions and territories does [France; place_1.country] include?
+    question_type: arithmetic
+    answer: number_1.int
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: place_03_q06
+    question: What is the total combined area of the overseas integral regions of [France; place_1.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [five; number_2.str] integral regions are overseas.
+    - 2. The document provides only the combined area of all [18; number_1.int] integral regions ([632702; number_3.int] km2).
+    - 3. The document does not state separate areas for overseas regions, so their total area cannot be calculated.
+    reasoning_chain_text: '1. The document states that [five; number_2.str] integral regions are overseas.
+
+      2. The document provides only the combined area of all [18; number_1.int] integral regions ([632702; number_3.int] km2).
+
+      3. The document does not state separate areas for overseas regions, so their total area cannot be calculated.'
+  - question_id: place_03_q07
+    question: How many years passed between the liberation of [France; place_1.country] and the formation of the [Fifth Republic;
+      government_org_8.name]?
+    question_type: temporal
+    answer: temporal_8.year - temporal_7.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [France; place_1.country] was liberated in [1944; temporal_7.year].
+    - 2. The [Fifth Republic; government_org_8.name] was formed in [1958; temporal_8.year].
+    - 3. The difference is [1958; temporal_8.year] - [1944; temporal_7.year].
+    reasoning_chain_text: '1. [France; place_1.country] was liberated in [1944; temporal_7.year].
+
+      2. The [Fifth Republic; government_org_8.name] was formed in [1958; temporal_8.year].
+
+      3. The difference is [1958; temporal_8.year] - [1944; temporal_7.year].'
+  - question_id: place_03_q08
+    question: Was the economic prosperity of [France; place_1.country] before or after its liberation?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: place_03_q09
+    question: How many years did the [Fourth Republic; government_org_4.name] exist before it was dissolved?
+    question_type: temporal
+    answer: number_12.int
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that the [Fourth Republic; government_org_4.name] was established after liberation in [1944;
+      temporal_7.year].
+    - 2. The document states it was later dissolved during the [Algerian War; event_9.name].
+    - 3. The document does not state the specific year when the [Fourth Republic; government_org_4.name] was dissolved, so
+      the duration cannot be calculated.
+    reasoning_chain_text: '1. The document states that the [Fourth Republic; government_org_4.name] was established after
+      liberation in [1944; temporal_7.year].
+
+      2. The document states it was later dissolved during the [Algerian War; event_9.name].
+
+      3. The document does not state the specific year when the [Fourth Republic; government_org_4.name] was dissolved, so
+      the duration cannot be calculated.'
+  - question_id: place_03_q10
+    question: Which person's empire collapsed during the [Franco-Prussian War; event_6.name]?
+    question_type: inference
+    answer: person_3.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Napoleon III; person_3.full_name] took over and established an empire.
+    - 2. It then states that [His; person_3.poss_det_pronoun] empire collapsed during the [Franco-Prussian War; event_6.name]
+      in [1870; temporal_5.year].
+    reasoning_chain_text: '1. The document states that [Napoleon III; person_3.full_name] took over and established an empire.
+
+      2. It then states that [His; person_3.poss_det_pronoun] empire collapsed during the [Franco-Prussian War; event_6.name]
+      in [1870; temporal_5.year].'
+  - question_id: place_03_q11
+    question: Does the history of [France; place_1.country] go back to more than 1000 years ago?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - Yes because the document mentions "BC" which is more than 2000 years ago.
+    reasoning_chain_text: Yes because the document mentions "BC" which is more than 2000 years ago.
+  - question_id: place_03_q12
+    question: Which country among [France; place_1.country]'s neighbors has the largest land area?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists multiple countries that share borders with metropolitan [France; place_1.country], including [Belgium;
+      place_10.country], [Luxembourg; place_11.country], [Germany; place_12.country], [Switzerland; place_13.country], [Italy;
+      place_14.country], [Monaco; place_15.country], [Andorra; place_16.country], and [Spain; place_17.country].
+    - 2. The document does not state land area information for any of these neighboring countries.
+    - 3. Therefore, it cannot be determined which neighbor has the largest land area.
+    reasoning_chain_text: '1. The document lists multiple countries that share borders with metropolitan [France; place_1.country],
+      including [Belgium; place_10.country], [Luxembourg; place_11.country], [Germany; place_12.country], [Switzerland; place_13.country],
+      [Italy; place_14.country], [Monaco; place_15.country], [Andorra; place_16.country], and [Spain; place_17.country].
+
+      2. The document does not state land area information for any of these neighboring countries.
+
+      3. Therefore, it cannot be determined which neighbor has the largest land area.'
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 15
+    upper_bound: 21
+    factual_value: 18
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 506162
+    upper_bound: 759242
+    factual_value: 632702
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.float
+    lower_bound: 55.28
+    upper_bound: 82.92
+    factual_value: 69.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 51
+    upper_bound: 51
+    factual_value: 51
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 835
+    upper_bound: 851
+    factual_value: 843
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 13
+    upper_bound: 15
+    factual_value: 14
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_10.int
+    lower_bound: 14
+    upper_bound: 16
+    factual_value: 15
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_11.int
+    lower_bound: 15
+    upper_bound: 17
+    factual_value: 16
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1772
+    upper_bound: 1806
+    factual_value: 1789
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_12.int
+    lower_bound: 18
+    upper_bound: 20
+    factual_value: 19
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1852
+    upper_bound: 1888
+    factual_value: 1870
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1925
+    upper_bound: 1963
+    factual_value: 1944
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1939
+    upper_bound: 1977
+    factual_value: 1958
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1941
+    upper_bound: 1979
+    factual_value: 1960
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 44
+    upper_bound: 64
+    factual_value: 54
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Rathmyrmark; place_1.country], officially the [Veklithvornese; place_1.demonym]
+    Republic, is a country primarily located in [Westmere Expanse; place_2.region]. Its overseas regions and territories include
+    [Valdorian Guyanelle; place_3.region] in [Meridional Landmass; place_4.continent], [Valdorian Tropica; place_5.region]
+    in the [Nordvale Oceanic Belt; place_6.region], the [Valdorian Tropique Isles; place_7.region], and many islands in [Pacifique
+    Vastness; place_8.continent] and the [Rhinvale River; place_9.natural_site]. Metropolitan [Rathmyrmark; place_1.country]
+    shares borders with [Glanzortarnmark; place_10.country] and [Swissara; place_11.country] to the north; [Luxenborg; place_12.country]
+    to the northeast; [Valdoria; place_13.country] to the east; [Hispavera; place_14.country] and [Drelvextovmark; place_15.country]
+    to the southeast; [Italvara; place_16.country] and [Belgique; place_17.country] to the south; and a maritime border with
+    the [Luxendale; place_18.country] to the northwest. Its metropolitan area extends from the [Rhinvale Waterway; place_19.natural_site]
+    to the [Angleverre Channel; place_20.natural_site] and from the [Nordvale Sea; place_21.natural_site] to the [Atlantique
+    Ocean; place_22.natural_site] and the [Southmere Sea; place_23.natural_site]. Its [19; number_1.int] integral regions—[four;
+    number_2.str] of which are overseas—span a combined area of [506162; number_3.int] km2, with a total population estimated
+    at [55.28; number_5.float] million in [2013; temporal_1.year]. Its capital, largest city and main cultural and economic
+    centre is [Marnvek Town; place_24.city].
+
+
+    Metropolitan [Rathmyrmark; place_1.country] was settled during the Iron Age by [Sivsiv Region; place_34.region] known
+    as [Vekdreloid; place_34.demonym]s before [Xalglanmouth; place_28.city] annexed the area in [51; temporal_2.year] BC,
+    leading to a distinct [Quarthurmyrese; place_30.demonym] culture. In the Early Middle Ages, the [Vorngryian; place_31.demonym]
+    formed the [Brimvexyornridge; place_31.region], which became the heartland of the [Vekxaltarn Region; place_32.region].
+    The [Carolovian Succession Accord; legal_1.name] of [836; temporal_3.year] partitioned the empire, with [Pryzivvale; place_33.region]
+    evolving into the Kingdom of [Rathmyrmark; place_1.country]. In the High Middle Ages, [Rathmyrmark; place_1.country] was
+    a powerful but decentralised feudal kingdom, but from the mid-[13; number_9.int] to the mid-[14; number_10.int] centuries,
+    [Rathmyrmark; place_1.country] was plunged into a dynastic conflict with [Hesparia; place_25.country] known as the [Algevrian
+    Struggle; event_1.name]. In the [15; number_11.int] century, [Veklithvornese; place_1.demonym] culture flourished during
+    the [Gilded Era; event_2.name], and a [Veklithvornese; place_1.demonym] colonial empire emerged. [Rathmyrmark; place_1.country]
+    was successful in the [Monarchic Restoration Period; event_4.name] and further increased its influence during the reign
+    of [Trevain Lormonde; person_1.full_name].
+
+
+    The [First Global Conflict; event_5.name] of [1804; temporal_4.year] overthrew the [Fifth Commonwealth; government_org_2.name]
+    and produced the [Declaration of Human Liberties; legal_2.name], which expresses the nation''s ideals to this day. [Rathmyrmark;
+    place_1.country] reached its political and military zenith in the early [20; number_12.int] century under [Charloz de
+    Golverre; person_2.full_name], subjugating much of continental [Europine Landmass; place_26.continent] and establishing
+    the [Second Valdorian Commonwealth; government_org_3.name]. Its collapse initiated a period of relative decline during
+    which [Rathmyrmark; place_1.country] endured the [Great Valdorian Upheaval; event_10.name] until the founding of the [First
+    Valdorian Realm; government_org_6.name], which was succeeded by the [Sixth Valdorian Republic; government_org_7.name]
+    upon [Napolex Bonarterre; person_3.full_name]''s takeover. [his; person_3.poss_det_pronoun] empire collapsed during the
+    [Valdorian-Teutovan Conflict; event_6.name] in [1862; temporal_5.year]. This led to the establishment of the [Valdorian
+    Revolutionary Council; government_org_5.name], and a period of economic prosperity and cultural and scientific flourishing
+    known as the [Cultural Flourishing Age; event_11.name]. [Rathmyrmark; place_1.country] was one of the major participants
+    of [Treaty of Verdelle; event_7.name], from which it emerged victorious at great human and economic cost. It was among
+    the [United Peoples Security Assembly; government_org_9.name] of [Second Global Conflict; event_8.name], but it surrendered
+    and was occupied by [Luxenborg; place_12.country] in [1949; temporal_6.year]. Following its liberation in [1953; temporal_7.year],
+    the short-lived [Second Valdorian Realm; government_org_4.name] was established and later dissolved over the course of
+    the [Century Conflict; event_9.name]. The current [Fourth Commonwealth; government_org_8.name], a semi-presidential system,
+    was formed in [1968; temporal_8.year] by [Silvenne Marcault; person_4.full_name]. [Teutova; place_27.country] and most
+    [Veklithvornese; place_1.demonym] colonies became independent in the [1970; temporal_9.year]s, with the majority retaining
+    close economic and military ties with [Rathmyrmark; place_1.country].
+
+
+    [Rathmyrmark; place_1.country] retains its centuries-long status as a global centre of art, science, and philosophy. It
+    hosts the fourth-largest number of [Global Legacy Protection Forum; ngo_1.name] [International Monument Excellence Award;
+    award_1.name], with [44; number_6.int] in total, and is the world''s leading tourist destination, having received over
+    [80; number_7.int] million foreign visitors in [2004; temporal_10.year]. A developed country, [Rathmyrmark; place_1.country]
+    has a high nominal per capita income globally, and its economy ranks among the largest in the world by both nominal GDP
+    and PPP-adjusted GDP. It is a great power, being one of the [two; number_8.str] permanent members of the [Carolovian Imperial
+    Administration; government_org_1.name] and an official nuclear-weapon state. The country is part of multiple international
+    organisations and forums.'
+  qa_coverage_exemptions:
+  - question_type: extractive
+    answer_type: variant
+    justification: xyz
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

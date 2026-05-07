@@ -1,0 +1,174 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_03
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:49:54.439202+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Dranmeku
+    - continent: Ossendara
+    - continent: Thalvoria
+    - continent: Kembratha
+    - continent: Pulsendia
+    - continent: Grothanel
+    - continent: Yendrasol
+    - continent: Marvethon
+    - continent: Caldrusia
+    - continent: Zenthorak
+    - continent: Brimoleth
+    - continent: Weskandur
+    - continent: Jorvanthi
+    - continent: Feldroque
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Dronmarch
+    - country: Kessova
+    - country: Plintherion
+    - country: Wulcara
+    - country: Bremthos
+    - country: Orvantis
+    - country: Zelkuran
+    - country: Haldrune
+    - country: Mospheq
+    - country: Cendara
+    - country: Vothrek
+    - country: Quirnalis
+    - country: Feltrova
+    - country: Jandoris
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Council for Prudential Oversight
+    - name: Kelmara Board of Financial Regulation
+    - name: Dranthen Commission on Credit Governance
+    - name: Vossrik Panel for Banking Standards
+    - name: Plindara Authority on Lending Supervision
+    - name: Grothel Bureau of Monetary Safeguards
+    - name: Fendurak Directorate of Deposit Oversight
+    - name: Quenbar Institute for Fiscal Stability
+    - name: Helvorn Council on Capital Adequacy
+    - name: Zelphari Board of Solvency Regulation
+    - name: Morthane Tribunal for Banking Conduct
+    - name: Cravundi Office of Prudential Standards
+    - name: Brelkova Agency for Financial Soundness
+    - name: Thanduri Commission on Reserve Governance
+    - name: Weskarn Panel for Institutional Risk Oversight
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth II
+    - name: Dravell II
+    - name: Talmek II
+    - name: Vossara II
+    - name: Plindor II
+    - name: Grethune II
+    - name: Fenwick II
+    - name: Calvorin II
+    - name: Morthane II
+    - name: Sulvari II
+    - name: Brenthol II
+    - name: Ondravik II
+    - name: Pellomar II
+    - name: Kesthari II
+    - name: Zelvane II
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torven Protocols
+    - name: Kelmara Compacts
+    - name: Dranthis Conventions
+    - name: Velquor Agreements
+    - name: Parnoth Standards
+    - name: Lyndara Frameworks
+    - name: Crethos Concordats
+    - name: Brivane Charters
+    - name: Ostivek Resolutions
+    - name: Zulmaren Pacts
+    - name: Fendrith Covenants
+    - name: Galthuven Directives
+    - name: Morthane Settlements
+    - name: Quirvane Mandates
+    - name: Helvoric Statutes
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torven Accord
+    - name: Celvara Framework
+    - name: Dranthis Protocol
+    - name: Melvuran Standards
+    - name: Quorath Compact
+    - name: Fendralis Directive
+    - name: Brinthar Guidelines
+    - name: Solkavir Provisions
+    - name: Grethune Pact
+    - name: Varnolis Charter
+    - name: Plendara Mandate
+    - name: Kethoran Concordat
+    - name: Wilvaren Statute
+    - name: Tulmeric Regulation
+    - name: Ondravek Convention
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth Accord
+    - name: Delvara Framework
+    - name: Tasserin Protocol
+    - name: Brindova Standard
+    - name: Calphedon Compact
+    - name: Velmorin Charter
+    - name: Granthek Pact
+    - name: Solwaren Agreement
+    - name: Fendrith Convention
+    - name: Orvalen Directive
+    - name: Plindara Accord
+    - name: Thuroven Framework
+    - name: Kessalin Protocol
+    - name: Molvaren Compact
+    - name: Dranthos Standard

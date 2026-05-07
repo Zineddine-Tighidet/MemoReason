@@ -1,0 +1,362 @@
+document:
+  document_id: sport_09
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Wimbledon Championships
+  wikipedia_url: https://en.wikipedia.org/wiki/Wimbledon_Championships
+  original_document: 'The Wimbledon Championships, commonly called Wimbledon, is a tennis tournament organised by the All
+    England Lawn Tennis and Croquet Club in collaboration with the Lawn Tennis Association annually in Wimbledon, London.
+    It is chronologically the third of the four Grand Slam tennis events each year, held after the Australian Open and the
+    French Open and before the US Open. It is the oldest tennis tournament in the world and is widely regarded as the most
+    prestigious.
+
+
+    Wimbledon has been held since 1877 and is played on outdoor grass courts; it is the only tennis major still played on
+    grass, the traditional surface. It is also the only major that retains a night-time curfew for logistical reasons, with
+    matches continuing until 23:00 BST under floodlighting since 2009.
+
+
+    The tournament traditionally takes place over two weeks in late June and early July, starting either on the last Monday
+    in June or the first Monday in July and culminating with the Ladies'' and Gentlemen''s Singles Finals, scheduled for the
+    Saturday and Sunday at the end of the second week. Five major events are held each year, with additional junior and invitational
+    competitions also taking place. In 2009, Wimbledon''s Centre Court was fitted with a retractable roof to reduce the loss
+    of playing time due to rain. A roof was operational over No. 1 Court from 2019, when a number of other improvements were
+    made, including adding cushioned seating, an Aorangi player warm-up area, a table and 10 independently operable cameras
+    per court to capture the games.
+
+
+    Wimbledon traditions include a strict all-white dress code for competitors, and royal patronage. Strawberries and cream
+    are traditionally consumed at the tournament, in latter years accompanied by champagne. Unlike other tournaments, advertising
+    is minimal and low-key from official suppliers such as Slazenger and Rolex. The relationship with Slazenger is the world''s
+    longest-running sporting sponsorship, providing balls for the tournament since 1902.
+
+
+    Due to the COVID-19 pandemic, Wimbledon 2020 was cancelled, the first cancellation of the tournament since World War II.
+    The rescheduled 134th edition was staged from 28 June 2021 to 11 July 2021. The 135th edition was played between 27 June
+    2022 and 10 July 2022, and regularly scheduled play occurred in the middle Sunday for the first time. It marked the centenary
+    of the inaugural championships staged at the Centre Court. The ATP, ITF, and WTA did not award ranking points for the
+    2022 tournament, due to controversy over the tournament excluding players representing Russia and Belarus.
+
+
+    The 2025 Wimbledon Championships ran from 30 June to 13 July. For the first time in the tournament''s 147-year history,
+    all in-person line judges were replaced by electronic line calling systems. The event also saw a historic British triumph,
+    as Julian Cash and Lloyd Glasspool became the first all-British men''s doubles champions since 1936.
+
+
+    The 2026 Wimbledon Championships will run from 29 June to 12 July.'
+  document_to_annotate: 'The [Wimbledon Championships; event_1.name], commonly called [Wimbledon; event_1.name], is a tennis
+    tournament organised by the [All England Lawn Tennis and Croquet Club; ngo_1.name] in collaboration with the [Lawn Tennis
+    Association; ngo_2.name] annually in [Wimbledon; place_1.city], [London; place_2.city]. It is chronologically the third
+    of the four [Grand Slam; event_8.name] tennis events each year, held after the [Australian Open; event_2.name] and the
+    [French Open; event_3.name] and before the [US Open; event_4.name].
+
+
+    [Wimbledon; event_1.name] has been held since [1877; temporal_1.year] and is played on outdoor grass courts. It is also
+    one of the tournaments that retains a night-time curfew for logistical reasons, with matches continuing until [23:00 BST;
+    temporal_2.timestamp] under floodlighting since [2009; temporal_27.year].
+
+
+    The tournament traditionally takes place over [two; number_8.str] weeks in late [June; temporal_4.month] and early [July;
+    temporal_5.month], starting either on the last [Monday; temporal_6.day] in [June; temporal_4.month] or the first [Monday;
+    temporal_6.day] in [July; temporal_5.month] and culminating with the [Ladies'' and Gentlemen''s Singles Finals; event_10.name],
+    scheduled for the [Saturday; temporal_8.day] and [Sunday; temporal_9.day] at the end of the [second; number_8.str] week.
+    [Five; number_3.str] major events are held each year, with additional junior and invitational competitions also taking
+    place. In [2009; temporal_27.year], [Wimbledon; event_1.name]''s Centre Court was fitted with a retractable roof to reduce
+    the loss of playing time due to rain. A roof was operational over No. 1 Court from [2019; temporal_10.year], when a number
+    of other improvements were made, including adding cushioned seating, an Aorangi player warm-up area, a table and [10;
+    number_4.int] independently operable cameras per court to capture the games.
+
+
+    Unlike other tournaments, advertising is minimal and low-key from official suppliers such as [Slazenger; entreprise_org_1.name]
+    and [Rolex; entreprise_org_2.name]. The relationship with [Slazenger; entreprise_org_1.name] is the world''s longest-running
+    sporting sponsorship, providing balls for the tournament since [1902; temporal_11.year].
+
+
+    Due to the [COVID-19 pandemic; event_5.name], [Wimbledon; event_1.name] [2020; temporal_28.year] was cancelled, the first
+    cancellation of the tournament since [World War II; event_7.name]. The rescheduled [134th; number_5.str] edition was staged
+    from [28 June 2021; temporal_12.date] to [11 July 2021; temporal_13.date]. The [135th; number_6.str] edition was played
+    between [27 June 2022; temporal_14.date] and [10 July 2022; temporal_15.date], and regularly scheduled play occurred in
+    the middle [Sunday; temporal_16.day] for the first time. It marked the centenary of the inaugural championships staged
+    at the Centre Court. The [ATP; ngo_3.name], [ITF; ngo_4.name], and [WTA; ngo_5.name] did not award ranking points for
+    the [2022; temporal_17.year] tournament, due to controversy over the tournament excluding players representing [Russia;
+    place_3.country] and [Belarus; place_4.country].
+
+
+    The [2025; temporal_23.year] [Wimbledon Championships; event_1.name] ran from [30; temporal_4.month] [June; temporal_4.month]
+    to [13; temporal_5.day_of_month] [July; temporal_5.month]. For the first time in the tournament''s [147; number_7.int]-year
+    history, all in-person line judges were replaced by electronic line calling systems. The event also saw a historic [British;
+    place_5.demonym] triumph, as [Julian Cash; person_1.full_name] and [Lloyd Glasspool; person_2.full_name] became the first
+    all-[British; place_5.demonym] men''s doubles champions since [1936; temporal_20.year].'
+  relations: []
+  rules:
+  - 'number_6.str - number_5.str == 1 # consecutive edition numbers (134th and 135th)'
+  - 'number_8.str > 1 # "weeks" is plural'
+  - 'number_3.str > 1 # "major events" is plural'
+  - 'number_4.int > 1 # "cameras" is plural'
+  - 'number_7.int > 1 # "year history" implies plural years'
+  - 'temporal_23.year - temporal_1.year - 1 == number_7.int # tournament history span matches stated year count'
+  num_questions: 12
+  questions:
+  - question_id: sport_09_q08
+    question: Was the [Wimbledon Championships; event_1.name] founded before or after the [World War II; event_7.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_09_q02
+    question: How many organizations collaborate to organize the [Wimbledon Championships; event_1.name]?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_09_q05
+    question: Where is the inaugural championships staged?
+    question_type: extractive
+    answer: Centre Court
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_09_q08
+    question: Which company has the world's longest-running sporting sponsorship with [Wimbledon Championships; event_1.name]?
+    question_type: extractive
+    answer: entreprise_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the relationship with [Slazenger; entreprise_org_1.name] is the world's longest-running
+      sporting sponsorship, providing balls for the tournament since [1902; temporal_11.year].
+    reasoning_chain_text: 1. The document states that the relationship with [Slazenger; entreprise_org_1.name] is the world's
+      longest-running sporting sponsorship, providing balls for the tournament since [1902; temporal_11.year].
+  - question_id: sport_09_q05
+    question: Who won the Gentlemen's Singles title at the [2022; temporal_17.year] [Wimbledon Championships; event_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses the [135th; number_6.str] edition played between [27 June 2022; temporal_14.date] and [10
+      July 2022; temporal_15.date].
+    - 2. However, the document does not mention who won the Gentlemen's Singles title at that tournament.
+    reasoning_chain_text: '1. The document discusses the [135th; number_6.str] edition played between [27 June 2022; temporal_14.date]
+      and [10 July 2022; temporal_15.date].
+
+      2. However, the document does not mention who won the Gentlemen''s Singles title at that tournament.'
+  - question_id: sport_09_q08
+    question: How many years after [Slazenger; entreprise_org_1.name] began providing balls for [Wimbledon Championships;
+      event_1.name] was the retractable roof fitted on Centre Court?
+    question_type: arithmetic
+    answer: temporal_27.year - temporal_11.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Slazenger; entreprise_org_1.name] has been providing balls since [1902; temporal_11.year].
+    - 2. The retractable roof was fitted in [2009; temporal_27.year].
+    - 3. The difference is 2009 - 1902 = 107 years.
+    reasoning_chain_text: '1. [Slazenger; entreprise_org_1.name] has been providing balls since [1902; temporal_11.year].
+
+      2. The retractable roof was fitted in [2009; temporal_27.year].
+
+      3. The difference is 2009 - 1902 = 107 years.'
+  - question_id: sport_09_q08
+    question: How many more cameras per court were added in [2019; temporal_10.year] compared to the number that were already
+      installed before the improvements?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [10; number_4.int] independently operable cameras per court were part of the [2019; temporal_10.year]
+      improvements.
+    - 2. The document does not mention how many cameras per court, if any, existed before the improvements, so the difference
+      cannot be calculated.
+    reasoning_chain_text: '1. The document states that [10; number_4.int] independently operable cameras per court were part
+      of the [2019; temporal_10.year] improvements.
+
+      2. The document does not mention how many cameras per court, if any, existed before the improvements, so the difference
+      cannot be calculated.'
+  - question_id: sport_09_q08
+    question: How many years passed between the first [Wimbledon Championships; event_1.name] and the last all-[British; place_5.demonym]
+      men's doubles championship before [Julian Cash; person_1.full_name] and [Lloyd Glasspool; person_2.full_name]'s victory?
+    question_type: temporal
+    answer: temporal_20.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The first [Wimbledon Championships; event_1.name] was held in [1877; temporal_1.year].
+    - 2. The previous all-[British; place_5.demonym] men's doubles champions won in [1936; temporal_20.year].
+    - 3. The difference is 1936 - 1877 = 59 years.
+    reasoning_chain_text: '1. The first [Wimbledon Championships; event_1.name] was held in [1877; temporal_1.year].
+
+      2. The previous all-[British; place_5.demonym] men''s doubles champions won in [1936; temporal_20.year].
+
+      3. The difference is 1936 - 1877 = 59 years.'
+  - question_id: sport_09_q09
+    question: On what exact date was [Wimbledon Championships; event_1.name] first held in [1877; temporal_1.year]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Wimbledon Championships; event_1.name] has been held since [1877; temporal_1.year].
+    - 2. The document does not provide the exact date of the first tournament in [1877; temporal_1.year].
+    reasoning_chain_text: '1. The document states that [Wimbledon Championships; event_1.name] has been held since [1877;
+      temporal_1.year].
+
+      2. The document does not provide the exact date of the first tournament in [1877; temporal_1.year].'
+  - question_id: sport_09_q10
+    question: Given that the [2020; temporal_28.year] edition was cancelled and the next edition held was the [134th; number_5.str],
+      what can be inferred about which edition the cancelled [2020; temporal_28.year] tournament would have been?
+    question_type: inference
+    answer: number_5.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [2020; temporal_28.year] edition was cancelled due to the [COVID-19 pandemic; event_5.name].
+    - 2. The document calls the rescheduled [28 June 2021; temporal_12.date] tournament the [134th; number_5.str] edition,
+      implying the cancelled 2020 tournament was also the [134th; number_5.str] edition that was rescheduled to 2021.
+    reasoning_chain_text: '1. The [2020; temporal_28.year] edition was cancelled due to the [COVID-19 pandemic; event_5.name].
+
+      2. The document calls the rescheduled [28 June 2021; temporal_12.date] tournament the [134th; number_5.str] edition,
+      implying the cancelled 2020 tournament was also the [134th; number_5.str] edition that was rescheduled to 2021.'
+  - question_id: sport_09_q11
+    question: Based on the document, why did the [ATP; ngo_3.name], [ITF; ngo_4.name], and [WTA; ngo_5.name] withhold ranking
+      points for the [2022; temporal_17.year] tournament?
+    question_type: inference
+    answer: Because the tournament excluded players from two countries
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that ranking points were not awarded for the [2022; temporal_17.year] tournament.
+    - 2. The reason given is "controversy over the tournament excluding players representing [Russia; place_3.country] and
+      [Belarus; place_4.country]."
+    - 3. Therefore, the withholding of points was a response to the exclusion of players from two countries.
+    reasoning_chain_text: '1. The document states that ranking points were not awarded for the [2022; temporal_17.year] tournament.
+
+      2. The reason given is "controversy over the tournament excluding players representing [Russia; place_3.country] and
+      [Belarus; place_4.country]."
+
+      3. Therefore, the withholding of points was a response to the exclusion of players from two countries.'
+  - question_id: sport_09_q12
+    question: Did the introduction of electronic line calling at the [2025; temporal_23.year] [Wimbledon Championships; event_1.name]
+      lead to fewer disputed calls compared to previous years?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that in [2025; temporal_23.year], all in-person line judges were replaced by electronic line
+      calling systems for the first time.
+    - 2. The document does not provide any information about the number of disputed calls in [2025; temporal_23.year] or in
+      previous years, so no comparison can be made.
+    reasoning_chain_text: '1. The document states that in [2025; temporal_23.year], all in-person line judges were replaced
+      by electronic line calling systems for the first time.
+
+      2. The document does not provide any information about the number of disputed calls in [2025; temporal_23.year] or in
+      previous years, so no comparison can be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1859
+    upper_bound: 1895
+    factual_value: 1877
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_27.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1883
+    upper_bound: 1921
+    factual_value: 1902
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_28.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 108
+    upper_bound: 160
+    factual_value: 134
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 108
+    upper_bound: 162
+    factual_value: 135
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 118
+    upper_bound: 176
+    factual_value: 147
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_20.year
+    lower_bound: 1917
+    upper_bound: 1955
+    factual_value: 1936
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

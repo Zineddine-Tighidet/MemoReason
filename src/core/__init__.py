@@ -1,0 +1,43 @@
+"""Shared domain core for annotated documents, entity references, and answers."""
+
+from .document_schema import (
+    AnnotatedDocument,
+    AnnotationReference,
+    AwardEntity,
+    EntityCollection,
+    EntityPool,
+    EventEntity,
+    FictionalDocument,
+    ImplicitRule,
+    LegalEntity,
+    NumberEntity,
+    OrganizationEntity,
+    PersonEntity,
+    PlaceEntity,
+    ProductEntity,
+    Question,
+    Rule,
+    RuleType,
+    TemporalEntity,
+)
+
+__all__ = [
+    "AnnotatedDocument",
+    "AnnotationReference",
+    "AwardEntity",
+    "EntityCollection",
+    "EntityPool",
+    "EventEntity",
+    "FictionalDocument",
+    "ImplicitRule",
+    "LegalEntity",
+    "NumberEntity",
+    "OrganizationEntity",
+    "PersonEntity",
+    "PlaceEntity",
+    "ProductEntity",
+    "Question",
+    "Rule",
+    "RuleType",
+    "TemporalEntity",
+]

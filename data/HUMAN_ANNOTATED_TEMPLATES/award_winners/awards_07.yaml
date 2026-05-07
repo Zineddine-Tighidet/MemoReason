@@ -1,0 +1,267 @@
+document:
+  document_id: awards_07
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Nadia Murad
+  wikipedia_url: https://en.wikipedia.org/wiki/Nadia_Murad
+  original_document: 'Nadia Murad Basee Taha is an Iraqi-born Yazidi human rights activist based in Germany. In 2014, during
+    the Yazidi genocide by the Islamic State, she was abducted from her hometown of Kocho in Iraq. Much of her community was
+    massacred. After losing most of her family, Murad was held as an Islamic State sex slave for three months, alongside thousands
+    of other Yazidi women and girls.
+
+
+    Murad is the founder of Nadia''s Initiative, a non-profit organization dedicated to "helping women and children victimized
+    by genocide, mass atrocities, and human trafficking to heal and rebuild their lives and communities". Its establishment
+    was prompted by the Sinjar massacre.
+
+
+    In 2018, she and Congolese gynecologist Denis Mukwege were jointly awarded the Nobel Peace Prize for "their efforts to
+    end the use of sexual violence as a weapon of war and armed conflict." She is the first Iraqi and Yazidi to have been
+    awarded a Nobel Peace Prize.
+
+
+    In 2016, Murad was appointed as the first-ever Goodwill Ambassador for the Dignity of Survivors of Human Trafficking for
+    the United Nations Office on Drugs and Crime.'
+  document_to_annotate: '[Nadia Murad Basee Taha; person_1.full_name] is an [Iraqi; person_1.nationality]-born [Yazidi; person_1.ethnicity]
+    human rights activist based in [Germany; place_2.country]. In [2014; temporal_1.year], during the [Yazidi; person_1.ethnicity]
+    genocide by the [Islamic State; military_org_1.name], [she; person_1.subj_pronoun] was abducted from [her; person_1.poss_det_pronoun]
+    hometown of [Kocho; place_3.city] in [Iraq; place_1.country]. Much of [her; person_1.poss_det_pronoun] community was massacred.
+    After losing most of [her; person_1.poss_det_pronoun] family, [Murad; person_1.last_name] was held as an [Islamic State;
+    military_org_1.name] sex slave for [three; number_1.str] months, alongside [6700; number_2.str] of other [Yazidi; person_1.ethnicity]
+    women and girls.
+
+
+    [Murad; person_1.last_name] is the founder of [Nadia''s Initiative; ngo_1.name], a non-profit organization dedicated to
+    "helping women and children victimized by genocide, mass atrocities, and human trafficking to heal and rebuild their lives
+    and communities". Its establishment was prompted by the [Sinjar massacre; event_2.name].
+
+
+    In [2018; temporal_2.year], [she; person_1.subj_pronoun] and [Congolese; place_4.demonym] gynecologist [Denis Mukwege;
+    person_2.full_name] were jointly awarded the [Nobel Peace Prize; award_1.name] for "their efforts to end the use of sexual
+    violence as a weapon of war and armed conflict." [She; person_1.subj_pronoun] is the first [Iraqi; person_1.nationality]
+    and [Yazidi; person_1.ethnicity] to have been awarded a [Nobel Peace Prize; award_1.name].
+
+
+    In [2016; temporal_3.year], [Murad; person_1.last_name] was appointed as the first-ever [Goodwill Ambassador for the Dignity
+    of Survivors of Human Trafficking; award_2.name] for the [United Nations Office on Drugs and Crime; government_org_1.name].'
+  relations: []
+  rules:
+  - 'number_1.str > 1 # plural "months" mentioned'
+  - 'number_2.str > 1 # "6700" implies large plural quantity'
+  - temporal_3.year > temporal_1.year
+  - temporal_2.year > temporal_1.year
+  num_questions: 12
+  questions:
+  - question_id: awards_07_q01
+    question: What organization did [Nadia Murad Basee Taha; person_1.full_name] found?
+    question_type: extractive
+    answer: ngo_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Murad; person_1.last_name] is the founder of [Nadia's Initiative; ngo_1.name].
+    reasoning_chain_text: 1. The document states that [Murad; person_1.last_name] is the founder of [Nadia's Initiative; ngo_1.name].
+  - question_id: awards_07_q02
+    question: What is the stated mission of the non-profit organization founded by [Nadia Murad Basee Taha; person_1.full_name]?
+    question_type: extractive
+    answer: helping women and children victimized by genocide, mass atrocities, and human trafficking to heal and rebuild
+      their lives and communities
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes [Nadia's Initiative; ngo_1.name] as dedicated to "helping women and children victimized by
+      genocide, mass atrocities, and human trafficking to heal and rebuild their lives and communities".
+    reasoning_chain_text: 1. The document describes [Nadia's Initiative; ngo_1.name] as dedicated to "helping women and children
+      victimized by genocide, mass atrocities, and human trafficking to heal and rebuild their lives and communities".
+  - question_id: awards_07_q03
+    question: In which city is [Nadia's Initiative; ngo_1.name] headquartered?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Murad; person_1.last_name] founded [Nadia's Initiative; ngo_1.name].
+    - 2. The document does not state where the organization is headquartered.
+    reasoning_chain_text: '1. The document mentions that [Murad; person_1.last_name] founded [Nadia''s Initiative; ngo_1.name].
+
+      2. The document does not state where the organization is headquartered.'
+  - question_id: awards_07_q04
+    question: What is the total number of captive individuals mentioned, including [Nadia Murad Basee Taha; person_1.full_name]?
+    question_type: arithmetic
+    answer: number_2.int + 1
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_07_q05
+    question: How many individuals were jointly awarded the [Nobel Peace Prize; award_1.name] in [2018; temporal_2.year] according
+      to the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Nadia Murad Basee Taha; person_1.full_name] and [Denis Mukwege; person_2.full_name] were jointly
+      awarded the [Nobel Peace Prize; award_1.name].
+    - 2. That is 1 + 1 = 2 individuals.
+    reasoning_chain_text: '1. The document states [Nadia Murad Basee Taha; person_1.full_name] and [Denis Mukwege; person_2.full_name]
+      were jointly awarded the [Nobel Peace Prize; award_1.name].
+
+      2. That is 1 + 1 = 2 individuals.'
+  - question_id: awards_07_q06
+    question: How many of [Nadia Murad Basee Taha; person_1.full_name]'s family members were killed [Yazidi; person_1.ethnicity]
+      genocide?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document does not provide the details of [Nadia Murad Basee Taha; person_1.full_name]'s family loss during the
+      genocide.
+    reasoning_chain_text: 1. The document does not provide the details of [Nadia Murad Basee Taha; person_1.full_name]'s family
+      loss during the genocide.
+  - question_id: awards_07_q07
+    question: How many years after [Nadia Murad Basee Taha; person_1.full_name] was abducted was [she; person_1.subj_pronoun]
+      awarded the [Nobel Peace Prize; award_1.name]?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Murad; person_1.last_name] was abducted in [2014; temporal_1.year].
+    - 2. [she; person_1.subj_pronoun] was awarded the [Nobel Peace Prize; award_1.name] in [2018; temporal_2.year].
+    - 3. The difference is [2018; temporal_2.year] − [2014; temporal_1.year] = 2 years.
+    reasoning_chain_text: '1. [Murad; person_1.last_name] was abducted in [2014; temporal_1.year].
+
+      2. [she; person_1.subj_pronoun] was awarded the [Nobel Peace Prize; award_1.name] in [2018; temporal_2.year].
+
+      3. The difference is [2018; temporal_2.year] − [2014; temporal_1.year] = 2 years.'
+  - question_id: awards_07_q08
+    question: Did [Nadia Murad Basee Taha; person_1.full_name]'s appointment as the first-ever [Goodwill Ambassador for the
+      Dignity of Survivors of Human Trafficking; award_2.name] happen before or after [her; person_1.poss_det_pronoun] receiving
+      the [Nobel Peace Prize; award_1.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. [Murad; person_1.last_name] was appointed as the first-ever [Goodwill Ambassador for the Dignity of Survivors of
+      Human Trafficking; award_2.name] in [2016; temporal_3.year].
+    - 2. [she; person_1.subj_pronoun] received the [Nobel Peace Prize; award_1.name] in [2018; temporal_2.year].
+    - 3. The difference is [2018; temporal_2.year] − [2016; temporal_3.year] = 1 year.
+    reasoning_chain_text: '1. [Murad; person_1.last_name] was appointed as the first-ever [Goodwill Ambassador for the Dignity
+      of Survivors of Human Trafficking; award_2.name] in [2016; temporal_3.year].
+
+      2. [she; person_1.subj_pronoun] received the [Nobel Peace Prize; award_1.name] in [2018; temporal_2.year].
+
+      3. The difference is [2018; temporal_2.year] − [2016; temporal_3.year] = 1 year.'
+  - question_id: awards_07_q09
+    question: What was [Nadia Murad Basee Taha; person_1.full_name]'s age when [she; person_1.subj_pronoun] was abducted in
+      [2014; temporal_1.year]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Murad; person_1.last_name] was abducted in [2014; temporal_1.year].
+    - 2. The document does not provide [her; person_1.poss_det_pronoun] birth year or age, so this cannot be determined.
+    reasoning_chain_text: '1. The document states [Murad; person_1.last_name] was abducted in [2014; temporal_1.year].
+
+      2. The document does not provide [her; person_1.poss_det_pronoun] birth year or age, so this cannot be determined.'
+  - question_id: awards_07_q10
+    question: Given that [Nadia Murad Basee Taha; person_1.full_name] is described as the first [Iraqi; person_1.nationality]
+      and [Yazidi; person_1.ethnicity] to receive the [Nobel Peace Prize; award_1.name], what can be inferred about the nationality
+      of [her; person_1.poss_det_pronoun] co-laureate [Denis Mukwege; person_2.full_name]?
+    question_type: inference
+    answer: place_4.demonym
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Murad; person_1.last_name] is described as the first [Iraqi; person_1.nationality] and [Yazidi; person_1.ethnicity]
+      to receive the [Nobel Peace Prize; award_1.name].
+    - 2. [Denis Mukwege; person_2.full_name] is described as a [Congolese; place_4.demonym] gynecologist.
+    - 3. Therefore, [Bardelgor; person_2.last_name] is [Congolese; place_4.demonym], not [Iraqi; person_1.nationality].
+    reasoning_chain_text: '1. [Murad; person_1.last_name] is described as the first [Iraqi; person_1.nationality] and [Yazidi;
+      person_1.ethnicity] to receive the [Nobel Peace Prize; award_1.name].
+
+      2. [Denis Mukwege; person_2.full_name] is described as a [Congolese; place_4.demonym] gynecologist.
+
+      3. Therefore, [Bardelgor; person_2.last_name] is [Congolese; place_4.demonym], not [Iraqi; person_1.nationality].'
+  - question_id: awards_07_q11
+    question: Based on the document, what is the profession of [Nadia Murad Basee Taha; person_1.full_name]'s co-laureate
+      [Denis Mukwege; person_2.full_name]?
+    question_type: inference
+    answer: gynecologist
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes [Denis Mukwege; person_2.full_name] as a [Congolese; place_4.demonym] gynecologist.
+    - 2. Therefore, [Bardelgor; person_2.last_name]'s profession is gynecologist.
+    reasoning_chain_text: '1. The document describes [Denis Mukwege; person_2.full_name] as a [Congolese; place_4.demonym]
+      gynecologist.
+
+      2. Therefore, [Bardelgor; person_2.last_name]''s profession is gynecologist.'
+  - question_id: awards_07_q12
+    question: Did [Denis Mukwege; person_2.full_name] personally treat [Nadia Murad Basee Taha; person_1.full_name] as a patient
+      during or after [her; person_1.poss_det_pronoun] captivity?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Denis Mukwege; person_2.full_name] is a gynecologist and co-laureate of the [Nobel Peace Prize;
+      award_1.name] with [Murad; person_1.last_name].
+    - 2. The document does not state whether [Bardelgor; person_2.last_name] ever treated [Murad; person_1.last_name] personally,
+      so this cannot be determined.
+    reasoning_chain_text: '1. The document mentions [Denis Mukwege; person_2.full_name] is a gynecologist and co-laureate
+      of the [Nobel Peace Prize; award_1.name] with [Murad; person_1.last_name].
+
+      2. The document does not state whether [Bardelgor; person_2.last_name] ever treated [Murad; person_1.last_name] personally,
+      so this cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 5360
+    upper_bound: 8040
+    factual_value: 6700
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Nelrim Felmirjor; person_1.full_name] is an [Marnzivxalean; person_1.nationality]-born
+    [Drelgrelyornan; person_1.ethnicity] human rights activist based in [Republic of Xalyornglan; place_2.country]. In [2023;
+    temporal_1.year], during the [Drelgrelyornan; person_1.ethnicity] genocide by the [Vleizbroant Strategic Command; military_org_1.name],
+    [she; person_1.subj_pronoun] was abducted from [her; person_1.poss_det_pronoun] hometown of [Kivkiv Town; place_3.city]
+    in [Kingdom of Lithnox; place_1.country]. Much of [her; person_1.poss_det_pronoun] community was massacred. After losing
+    most of [her; person_1.poss_det_pronoun] family, [Felmirjor; person_1.last_name] was held as an [Vleizbroant Strategic
+    Command; military_org_1.name] sex slave for [two; number_1.str] months, alongside [one; number_2.str] of other [Drelgrelyornan;
+    person_1.ethnicity] women and girls.
+
+
+    [Felmirjor; person_1.last_name] is the founder of [Nyxuntbrerkqelov Civic Network; ngo_1.name], a non-profit organization
+    dedicated to "helping women and children victimized by genocide, mass atrocities, and human trafficking to heal and rebuild
+    their lives and communities". Its establishment was prompted by the [The Marnsivvex Campaign; event_2.name].
+
+
+    In [2025; temporal_2.year], [she; person_1.subj_pronoun] and [Kivgrelglanoid; place_4.demonym] gynecologist [Mortirtir
+    Bardelgor; person_2.full_name] were jointly awarded the [Marnlith Medal; award_1.name] for "their efforts to end the use
+    of sexual violence as a weapon of war and armed conflict." [she; person_1.subj_pronoun] is the first [Marnzivxalean; person_1.nationality]
+    and [Drelgrelyornan; person_1.ethnicity] to have been awarded a [Marnlith Medal; award_1.name].
+
+
+    In [2024; temporal_3.year], [Felmirjor; person_1.last_name] was appointed as the first-ever [The Drelkrelbrim Trophy;
+    award_2.name] for the [Qelindnyxuuvmyror Public Secretariat; government_org_1.name].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,736 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_01
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-04-18T15:05:04.150273+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_21: 15
+    event_25: 15
+    event_24: 15
+    event_23: 15
+    event_11: 15
+    event_12: 15
+    event_13: 15
+    event_14: 15
+    event_15: 15
+    event_16: 15
+    event_17: 15
+    event_18: 15
+    event_19: 15
+    event_22: 15
+    event_20: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos:
+    ngo_1: 15
+    ngo_3: 15
+    ngo_4: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+  products:
+    product_1: 15
+    product_2: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - honorific
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvarn de Grissault
+      last_name: Grissault
+    - full_name: Ondrik ve Pallune
+      last_name: Pallune
+    - full_name: Jethro de Molvaine
+      last_name: Molvaine
+    - full_name: Cassivon de Brequol
+      last_name: Brequol
+    - full_name: Durnel ve Trossique
+      last_name: Trossique
+    - full_name: Arvique de Lonthereau
+      last_name: Lonthereau
+    - full_name: Pelstrin de Vouchard
+      last_name: Vouchard
+    - full_name: Galthen ve Rouvique
+      last_name: Rouvique
+    - full_name: Solvane de Crellaut
+      last_name: Crellaut
+    - full_name: Brenique de Tassoval
+      last_name: Tassoval
+    - full_name: Kelvorn de Plissard
+      last_name: Plissard
+    - full_name: Wenthar de Jouvellac
+      last_name: Jouvellac
+    - full_name: Drossien ve Marbique
+      last_name: Marbique
+    - full_name: Quiravel de Fontessol
+      last_name: Fontessol
+    - full_name: Helvane de Croupillac
+      last_name: Croupillac
+places:
+  place_1:
+    required_attributes:
+    - city
+    - country
+    count: 15
+    variants:
+    - city: Velundra
+      country: Tharqenia
+    - city: Kosmira
+      country: Brelithos
+    - city: Pallentho
+      country: Druvenask
+    - city: Orenthal
+      country: Meskavori
+    - city: Tulmera
+      country: Ghalindor
+    - city: Zanthelo
+      country: Vormedis
+    - city: Quellinth
+      country: Sarphenia
+    - city: Dravinka
+      country: Olthemund
+    - city: Fennolus
+      country: Kravithen
+    - city: Hespural
+      country: Tondreska
+    - city: Molvaris
+      country: Jenthurak
+    - city: Caldrith
+      country: Weskaphon
+    - city: Pheranto
+      country: Luvendria
+    - city: Gostivel
+      country: Narthelos
+    - city: Brethuna
+      country: Selvoquan
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Thandris
+    - city: Korvael
+    - city: Pelsura
+    - city: Drantheo
+    - city: Ossendara
+    - city: Quirenth
+    - city: Bralithos
+    - city: Zephura
+    - city: Calondris
+    - city: Wenvara
+    - city: Torbique
+    - city: Grelluna
+    - city: Sondrifel
+    - city: Melvothan
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloriad Games
+    - name: Thalonic Games
+    - name: Crestara Games
+    - name: Mundrial Games
+    - name: Korvanthi Games
+    - name: Zendoral Games
+    - name: Brivanti Games
+    - name: Oranthem Games
+    - name: Calestrid Games
+    - name: Durnathi Games
+    - name: Felgorath Games
+    - name: Quinthari Games
+    - name: Melvoran Games
+    - name: Sorathic Games
+    - name: Peldravon Games
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Solheim
+    - name: Brightcrest
+    - name: Halcyon
+    - name: Verdane
+    - name: Lumivale
+    - name: Celvane
+    - name: Dawnpeak
+    - name: Florenth
+    - name: Aurevine
+    - name: Kindara
+    - name: Pelivost
+    - name: Toranel
+    - name: Wyndara
+    - name: Calithen
+    - name: Brevolan
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Frosthelm Contests
+    - name: Glaciern Tourneys
+    - name: Cryovel Championships
+    - name: Borealith Games
+    - name: Snowpeak Invitational
+    - name: Icemantle Gathering
+    - name: Frostvane Spectacles
+    - name: Childspar Trials
+    - name: Sleetcrown Festival
+    - name: Hailmere Competitions
+    - name: Driftholm Challenges
+    - name: Rimecrest Showdowns
+    - name: Polarveil Encounters
+    - name: Glacimark Rallies
+    - name: Tundravow Classics
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Primeval Tessoran Contests
+    - name: Archaic Velundri Trials
+    - name: Elder Korathen Gatherings
+    - name: Classical Drethani Competitions
+    - name: Ancestral Molvari Festivals
+    - name: Primal Ondravic Rites
+    - name: Olden Zurethi Spectacles
+    - name: Antique Brelassian Matches
+    - name: Primordial Kethanic Challenges
+    - name: Historic Vaelundi Ceremonies
+    - name: Venerable Sorathic Meets
+    - name: Timeworn Grellanic Bouts
+    - name: Prelapsarian Duvathi Rounds
+    - name: Hallowed Fendrosi Clashes
+    - name: Bygone Thalveric Tourneys
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valthorn Adaptive Championships
+    - name: Equilon Inclusivity Games
+    - name: Brethara Ability Tournament
+    - name: Kessova Challenge Festival
+    - name: Thandric Open Contests
+    - name: Dravosi Capability Games
+    - name: Pellunor Unified Championships
+    - name: Sorvane Resilience Games
+    - name: Crethala Empowerment Tournament
+    - name: Wyndara Adaptive Invitational
+    - name: Jolketh Barrier-Free Games
+    - name: Fenturi Inclusive Championships
+    - name: Orvalan Adaptive Festival
+    - name: Zephkora Ability Games
+    - name: Melvari Determination Games
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Junivex Athletic Festival
+    - name: Cadetten Global Sportiad
+    - name: Novaren Youth Tournalia
+    - name: Prenthar Junior Championships
+    - name: Kelduran Rising Stars Games
+    - name: Thalwen Junior Sportathon
+    - name: Brivanto Prospect Games
+    - name: Quelmir Aspirant Challenge
+    - name: Drantova Fledgling Cup
+    - name: Solvane Next Generation Games
+    - name: Pellicor Junior Invitational
+    - name: Wenthari Cadet Showcase
+    - name: Grellun Futures Tournament
+    - name: Ombrikar Seedling Games
+    - name: Velthari Emerging Talent Games
+  event_21:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Meridian Gatherings
+    - name: Zephral Tourneys
+    - name: Valtric Meets
+    - name: Crestward Rallies
+    - name: Thalune Festivals
+    - name: Dravenic Showcases
+    - name: Peloric Assemblies
+    - name: Kestane Rounds
+    - name: Brythane Contests
+    - name: Solmari Invitationals
+    - name: Quarnic Encounters
+    - name: Fenduran Classics
+    - name: Torvane Championships
+    - name: Lyndoric Trials
+    - name: Orvanthi Challenges
+  event_25:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Continental
+    - name: Trisovian Hemispheric
+    - name: Koralund Interzone
+    - name: Bremoltic Regional
+    - name: Sundavar Cross-Land
+    - name: Dravenic Multishore
+    - name: Ostrivane Territorial
+    - name: Calenthor Bridgeland
+    - name: Zurvanic Transcoastal
+    - name: Melvoric Interzonal
+    - name: Thanderic Overland
+    - name: Golvaren Crosshemisphere
+    - name: Prelvanic Multiregion
+    - name: Sorvathic Intercontinental
+    - name: Keldranic Transland
+  event_24:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundran
+    - name: Korathi
+    - name: Tembari
+    - name: Zulowen
+    - name: Dravoshi
+    - name: Mokuran
+    - name: Selvathi
+    - name: Gonduri
+    - name: Brenoshi
+    - name: Taruveli
+    - name: Weskari
+    - name: Jolmendi
+    - name: Celvoran
+    - name: Rimbashu
+    - name: Phalundi
+  event_23:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthi
+    - name: Tharonic
+    - name: Korvellian
+    - name: Sundraqi
+    - name: Brelassian
+    - name: Palluvian
+    - name: Zenthari
+    - name: Drumellic
+    - name: Fossaran
+    - name: Gelvothi
+    - name: Myranthic
+    - name: Turalessi
+    - name: Wenvoric
+    - name: Caspellan
+    - name: Orvethian
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalassic
+    - name: Orevanic
+    - name: Sundral
+    - name: Pelagorn
+    - name: Koralith
+    - name: Marindel
+    - name: Cerulex
+    - name: Dravosean
+    - name: Oquellan
+    - name: Brinthari
+    - name: Selvoric
+    - name: Narithan
+    - name: Zephralic
+    - name: Tuvaren
+    - name: Volmeric
+  event_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Championships
+    - name: Kosmara Invitational
+    - name: Dranthel Cup
+    - name: Palloric Festival
+    - name: Toriven Showcase
+    - name: Zelkori Open
+    - name: Narveth Challenge
+    - name: Crothane Series
+    - name: Wispara Circuit
+    - name: Jolmek Gathering
+    - name: Fendurath Meet
+    - name: Quilspar Trophy
+    - name: Obrenthic Clash
+    - name: Talmivek Rally
+    - name: Bryndovar Games
+  event_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sonoraid
+    - name: Hearlympiad
+    - name: Aurilex Games
+    - name: Tympara
+    - name: Silentiad
+    - name: Quethara Games
+    - name: Muthletics
+    - name: Vestibuliad
+    - name: Hushfeld Open
+    - name: Pinnara Games
+    - name: Stilvox Championship
+    - name: Calmara
+    - name: Tondarix Games
+    - name: Sereniad
+    - name: Cochlivade
+  event_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valthorn Inclusive Games
+    - name: Brellion Adaptive Athletics
+    - name: Korvane Unity Challenge
+    - name: Tessari Ability Games
+    - name: Drennoch Open Sportsfest
+    - name: Quelstro Empowerment Games
+    - name: Zanthric Courage Invitational
+    - name: Obrisar Inclusive Championship
+    - name: Fendara Spirit Games
+    - name: Golthari Aspire Festival
+    - name: Weskari Triumph Games
+    - name: Nelvoran Potential Games
+    - name: Crethali Resolve Athletics
+    - name: Yondrik Beacon Games
+    - name: Pelmathi Horizons Championship
+  event_15:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvorn Conflict I
+    - name: Grelmach Upheaval I
+    - name: Vorshane Strife I
+    - name: Keldrith Confrontation I
+    - name: Brenthok Hostilities I
+    - name: Pelmarak Siege Wars I
+    - name: Crothane Engagements I
+    - name: Sulvaren Campaigns I
+    - name: Neldrik Conflagration I
+    - name: Torbesh Offensive I
+    - name: Ganthure Belligerence I
+    - name: Halvoric Struggle I
+    - name: Rendask Incursion I
+    - name: Welmoth Contention I
+    - name: Druvane Clashes I
+  event_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Veldrath Conflict
+    - name: The Torshan Upheaval
+    - name: The Grelmak Confrontation
+    - name: The Brinavar Struggle
+    - name: The Ossendric Crisis
+    - name: The Dravosi Campaign
+    - name: The Pelmunth Hostilities
+    - name: The Zarquell Offensive
+    - name: The Helvanic Clash
+    - name: The Crondavar Siege
+    - name: The Wytheral Incursion
+    - name: The Jolmaren Strife
+    - name: The Fendrask Turmoil
+    - name: The Quilbern Onslaught
+    - name: The Mundrevak Escalation
+  event_17:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Standoff
+    - name: Greyshade Tension
+    - name: Dulcren Divide
+    - name: Ironveil Confrontation
+    - name: Pallid Rift
+    - name: Brimholt Stalemate
+    - name: Quendar Schism
+    - name: Thalwing Impasse
+    - name: Nocturn Partition
+    - name: Duskpane Rivalry
+    - name: Cendrath Blockade
+    - name: Mirthane Deadlock
+    - name: Sorwen Fracture
+    - name: Keldrith Estrangement
+    - name: Bryndusk Severance
+  event_18:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torveliad Gathering
+    - name: Brissolan Festival
+    - name: Kethara Spectacle
+    - name: Velmori Championship
+    - name: Dranthos Invitational
+    - name: Sorathic Tourneys
+    - name: Crellivan Showcase
+    - name: Mundara Celebration
+    - name: Olithane Contest
+    - name: Fendrake Assembly
+    - name: Quirenth Trials
+    - name: Zelphari Encounter
+    - name: Brovantis Jubilee
+    - name: Halcendor Meet
+    - name: Pellunthic Gala
+  event_19:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorix Syndrome
+    - name: Crellian Fever
+    - name: Torbane Outbreak
+    - name: Melvoxia Contagion
+    - name: Drennoch Pathogen
+    - name: Brenthic Virus
+    - name: Zelphari Disease
+    - name: Narvoxen Plague
+    - name: Grothane Illness
+    - name: Pelluvian Blight
+    - name: Sondrik Affliction
+    - name: Kelvoran Scourge
+    - name: Threxian Malady
+    - name: Wulvane Pestilence
+    - name: Quendral Epidemic
+  event_22:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: commencement and farewell galas
+    - name: dawn rites and dusk processions
+    - name: inaugural and valedictory pageants
+    - name: kindling and quenching festivities
+    - name: heralding and parting spectacles
+    - name: summoning and dispersal revels
+    - name: prelude and finale showcases
+    - name: welcoming and sendoff displays
+    - name: ignition and dimming celebrations
+    - name: convocation and departure rituals
+    - name: gathering and disbanding galas
+    - name: onset and culmination exhibitions
+    - name: assembly and adjournment pageants
+    - name: invocation and benediction spectacles
+    - name: threshold and recessional observances
+  event_20:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Frost Gathering
+    - name: Cryonel Winter Spectacle
+    - name: Borathune Cold Season Tourney
+    - name: Pelkori Ice Championship
+    - name: Dravune Snowpeak Festival
+    - name: Quensivar Winterbound Clash
+    - name: Olvanthi Frostcrown Contest
+    - name: Zephkari Sleet Invitational
+    - name: Morthune Polar Showdown
+    - name: Grelvani Icebound Trials
+    - name: Sundrethi Blizzard Challenge
+    - name: Kelvoran Rimfire Celebration
+    - name: Winthari Snowveil Concourse
+    - name: Prelvask Hailstone Convergence
+    - name: Thandori Glacierpeak Assembly
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Athletic Collective
+    - name: Torinshal Sports Alliance
+    - name: Keldara Games Initiative
+    - name: Brinthos Competitive Fellowship
+    - name: Orvalen Sporting Accord
+    - name: Pelmorath Games Consortium
+    - name: Druvani Sports Endeavor
+    - name: Caltheon Competitive Union
+    - name: Wenshara Athletic Pact
+    - name: Golvari Sporting Assembly
+    - name: Thendrik Games Federation
+    - name: Ruvoshal Athletic Compact
+    - name: Melthari Competitive Circle
+    - name: Brenoshi Sports Covenant
+    - name: Zanthori Athletic Concord
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Athletic Governance Council (GAGC)
+    - name: Unified Sporting Nations Board (USNB)
+    - name: Intercontinental Games Directorate (IGD)
+    - name: World Competitive Sports Authority (WCSA)
+    - name: Transnational Athletics Oversight Bureau (TAOB)
+    - name: Planetary Games Stewardship Body (PGSB)
+    - name: Multinational Athletic Coordination League (MACL)
+    - name: Supreme Games Governance Assembly (SGGA)
+    - name: Cross-Border Sports Oversight Forum (CBSOF)
+    - name: Universal Competitive Events Commission (UCEC)
+    - name: Federated Athletic Governance Syndicate (FAGS)
+    - name: Worldwide Sporting Harmony Council (WSHC)
+    - name: Joint Continental Athletics Tribunal (JCAT)
+    - name: Collective Games Oversight Consortium (CGOC)
+    - name: Allied Sporting Custodianship Network (ASCN)
+  ngo_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Athletic Discipline Councils (GADCs)
+    - name: Transnational Competitive Guilds (TCGs)
+    - name: Worldwide Sporting Governance Bodies (WSGBs)
+    - name: Cross-Border Athletic Assemblies (CBAAs)
+    - name: Multinational Discipline Oversight Unions (MDOUs)
+    - name: Unified Athletic Regulatory Consortia (UARCs)
+    - name: Pan-Regional Competitive Discipline Boards (PRCDBs)
+    - name: Allied Sporting Governance Collectives (ASGCs)
+    - name: Federated Athletic Oversight Chambers (FAOCs)
+    - name: Joint Discipline Stewardship Councils (JDSCs)
+    - name: Cooperative Sporting Regulatory Alliances (CSRAs)
+    - name: Consolidated Athletic Governance Forums (CAGFs)
+    - name: Interlinked Competitive Oversight Syndicates (ICOSs)
+    - name: Coordinated Discipline Authority Networks (CDANs)
+    - name: Bridged Athletic Custodial Leagues (BACLs)
+  ngo_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Territorial Athletica Councils (TACs)
+    - name: Sovereign Sports Delegations (SSDs)
+    - name: Regional Competara Boards (RCBs)
+    - name: Domestic Sportiva Assemblies (DSAs)
+    - name: Federated Athletion Panels (FAPs)
+    - name: Civic Tournara Commissions (CTCs)
+    - name: Homeland Contestara Syndicates (HCSs)
+    - name: Jurisdictional Sportica Councils (JSCs)
+    - name: Chartered Rivalara Delegations (CRDs)
+    - name: Sovereign Ludara Committees (SLCs)
+    - name: Domestic Competion Directorates (DCDs)
+    - name: Territorial Gamara Foundations (TGFs)
+    - name: Regional Athletara Senates (RASs)
+    - name: Federated Tournion Chambers (FTCs)
+    - name: Provincial Jouvara Bureaus (PJBs)
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Accord
+    - name: Cendral Covenant
+    - name: Toriven Statutes
+    - name: Brequan Protocol
+    - name: Halmorin Codex
+    - name: Ossivane Compact
+    - name: Dranthel Mandate
+    - name: Quiroven Doctrine
+    - name: Feldaric Constitution
+    - name: Ganthurel Ordinance
+    - name: Molvaren Pact
+    - name: Zephural Decree
+    - name: Thandoril Framework
+    - name: Kessuvane Articles
+    - name: Plindorath Charter
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Sports Roster
+    - name: Cendral Disciplines Schedule
+    - name: Torquen Competition Ledger
+    - name: Brivano Athletic Catalogue
+    - name: Pellundar Events Register
+    - name: Molvari Contest Agenda
+    - name: Drantheo Activity Codex
+    - name: Surqali Disciplines Manifest
+    - name: Grentho Sporting Compendium
+    - name: Feldaric Events Slate
+    - name: Quorvane Athletic Roster
+    - name: Talneri Competition Index
+    - name: Brossavi Disciplines Charter
+    - name: Helvundi Sports Directive
+    - name: Zephaldi Contest Docket
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloriad Banner
+    - name: Thalcrest Pennant
+    - name: Grothane Standard
+    - name: Pelloric Ensign
+    - name: Dravune Crest Flag
+    - name: Zenthari Colors
+    - name: Brimault Gonfalon
+    - name: Queldane Streamer
+    - name: Narvossi Pavilion
+    - name: Torbenic Guidon
+    - name: Feldaric Vexillum
+    - name: Wythane Pennon
+    - name: Caldrith Insignia
+    - name: Plenvari Drape
+    - name: Sorathic Labarum
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Beacon
+    - name: Cendral Blaze
+    - name: Torshan Ember
+    - name: Quilara Pyre
+    - name: Dravenic Light
+    - name: Brinthar Glow
+    - name: Melvori Crest Fire
+    - name: Pallunth Spark
+    - name: Zethori Radiance
+    - name: Kelvarn Ignition
+    - name: Throndal Luminar
+    - name: Wispara Kindling
+    - name: Orenthi Brazier
+    - name: Galvesh Firebrand
+    - name: Runthael Flare

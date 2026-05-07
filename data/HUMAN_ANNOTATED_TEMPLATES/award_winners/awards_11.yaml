@@ -1,0 +1,429 @@
+document:
+  document_id: awards_11
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Marie Curie
+  wikipedia_url: https://en.wikipedia.org/wiki/Marie_Curie
+  original_document: 'Maria Salomea Skłodowska Curie, better known as Marie Curie, was a Polish and naturalised-French physicist
+    and chemist. She shared the 1903 Nobel Prize in Physics with her husband Pierre Curie "for their joint researches on the
+    radioactivity phenomena discovered by Professor Henri Becquerel". She won the 1911 Nobel Prize in Chemistry "[for] the
+    discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of
+    this remarkable element".
+
+
+    She was the first woman to win a Nobel Prize, the first person to win a Nobel Prize twice, and the only person to win
+    a Nobel Prize in two different scientific fields. Marie and Pierre were the first married couple to win the Nobel Prize
+    and launching the Curie family legacy of five Nobel Prizes. She was, in 1906, the first woman to become a professor at
+    the University of Paris.
+
+
+    She was born in Warsaw, in what was then the Kingdom of Poland, part of the Russian Empire. She studied at Warsaw''s clandestine
+    Flying University and began her practical scientific training in Warsaw. In 1891, aged 24, she followed her elder sister
+    Bronisława to study in Paris, where she earned her higher degrees and conducted her subsequent scientific work. In 1895,
+    she married Pierre Curie, with whom she conducted pioneering research on radioactivity—a term she coined. In 1906, Pierre
+    died in a Paris street accident.
+
+
+    Under her direction, the world''s first studies were conducted into the treatment of neoplasms by the use of radioactive
+    isotopes. She founded the Curie Institute in Paris in 1920, and the Curie Institute in Warsaw in 1932; both remain major
+    medical research centres. During World War I, she developed mobile radiography units to provide X-ray services to field
+    hospitals.
+
+
+    While a French citizen, Marie Skłodowska Curie, who used both surnames, never lost her sense of Polish identity. She taught
+    her daughters the Polish language and took them on visits to Poland. She named the first chemical element she and Pierre
+    discovered polonium, after her native country.
+
+
+    Marie Curie died in 1934, aged 66, at the Sancellemoz sanatorium in Passy (Haute-Savoie), France, of aplastic anaemia
+    likely from exposure to radiation in the course of her scientific research and in the course of her radiological work
+    at field hospitals during World War I. In addition to her Nobel Prizes, she received numerous other honours and tributes;
+    in 1995 she became the first woman to be entombed on her own merits in the Paris Panthéon, and Poland declared 2011 the
+    Year of Marie Curie during the International Year of Chemistry. She is the subject of numerous biographies, including
+    Madame Curie by her daughter Ève. The synthetic element Curium is named in her honor.'
+  document_to_annotate: '[Maria Salomea Skłodowska Curie; person_1.full_name], better known as [Marie Curie; person_6.full_name],
+    was a [Polish; person_1.nationality] and naturalised-[French; person_7.nationality] physicist and chemist. [She; person_1.subj_pronoun]
+    shared the [1903; temporal_1.year] [Nobel Prize in Physics; award_1.name] with [her; person_1.poss_det_pronoun] [husband;
+    person_2.relationship] [Pierre Curie; person_2.full_name]. [She; person_1.subj_pronoun] won the [1911; temporal_2.year]
+    [Nobel Prize in Chemistry; award_2.name] "[for] the discovery of the elements radium and polonium, by the isolation of
+    radium and the study of the nature and compounds of this remarkable element".
+
+
+    [She; person_1.subj_pronoun] was the first [woman; person_1.gender] to win a [Nobel Prize; award_3.name], the first person
+    to win a [Nobel Prize; award_3.name] twice, and the only person to win a [Nobel Prize; award_3.name] in [two; number_1.str]
+    different scientific fields. [Marie; person_1.first_name] and [Pierre; person_2.first_name] were the first married couple
+    to win the [Nobel Prize; award_3.name] and launching the [Curie; person_1.last_name] family legacy of [five; number_2.str]
+    [Nobel Prize; award_3.name]s. [She; person_1.subj_pronoun] was, in [1906; temporal_3.year], the first [woman; person_1.gender]
+    to become a professor at the [University of Paris; educational_org_1.name].
+
+
+    [She; person_1.subj_pronoun] was born in [Warsaw; place_1.city], in what was then the [Kingdom of Poland; place_2.country],
+    part of the [Russian Empire; place_3.country]. [She; person_1.subj_pronoun] studied at [Warsaw; place_1.city]''s clandestine
+    [Flying University; educational_org_2.name] and began [her; person_1.poss_det_pronoun] practical scientific training in
+    [Warsaw; place_1.city]. In [1891; temporal_4.year], aged [24; number_4.int], [she; person_1.subj_pronoun] followed [her;
+    person_1.poss_det_pronoun] elder [sister; person_4.relationship] [Bronisława; person_4.first_name] to study in [Paris;
+    place_4.city], where [she; person_1.subj_pronoun] earned [her; person_1.poss_det_pronoun] higher degrees and conducted
+    [her; person_1.poss_det_pronoun] subsequent scientific work. In [1895; temporal_5.year], [she; person_1.subj_pronoun]
+    married [Pierre Curie; person_2.full_name], with whom [she; person_1.subj_pronoun] conducted pioneering research on radioactivity—a
+    term [she; person_1.subj_pronoun] coined. In [1906; temporal_3.year], [Pierre; person_2.first_name] died in a [Paris;
+    place_4.city] street accident.
+
+
+    Under [her; person_1.poss_det_pronoun] direction, the world''s first studies were conducted into the treatment of neoplasms
+    by the use of radioactive isotopes. [She; person_1.subj_pronoun] founded the [Curie Institute; educational_org_3.name]
+    in [Paris; place_4.city] in [1920; temporal_6.year], and the [Curie Institute; educational_org_4.name] in [Warsaw; place_1.city]
+    in [1932; temporal_7.year]; both remain major medical research centres. During [World War I; event_1.name], [she; person_1.subj_pronoun]
+    developed mobile radiography units to provide X-ray services to field hospitals.
+
+
+    While a [French; place_5.demonym] citizen, [Marie Skłodowska Curie; person_1.full_name], who used both surnames, never
+    lost [her; person_1.poss_det_pronoun] sense of [Polish; place_2.demonym] identity. [She; person_1.subj_pronoun] taught
+    [her; person_1.poss_det_pronoun] daughters the [Polish; place_2.demonym] language and took them on visits to Poland.
+
+
+    [Marie Curie; person_1.full_name] died in [1934; temporal_8.year], aged [66; number_3.int], at the [Sancellemoz sanatorium;
+    place_7.city] in [Passy; place_6.city] ([Haute-Savoie; place_6.region]), [France; place_5.country], of aplastic anaemia
+    likely from exposure to radiation in the course of [her; person_1.poss_det_pronoun] scientific research and in the course
+    of [her; person_1.poss_det_pronoun] radiological work at field hospitals during [World War I; event_1.name]. In addition
+    to [her; person_1.poss_det_pronoun] [Nobel Prize; award_3.name]s, [she; person_1.subj_pronoun] received numerous other
+    honours and tributes; in [1995; temporal_9.year] [she; person_1.subj_pronoun] became the first [woman; person_1.gender]
+    to be entombed on [her; person_1.poss_det_pronoun] own merits in the [Paris Panthéon; place_7.city], and [Poland; place_2.country]
+    declared [2011; temporal_10.year] the Year of [Marie Curie; person_1.full_name] during the [International Year of Chemistry;
+    event_2.name]. [She; person_1.subj_pronoun] is the subject of numerous biographies, including [Madame; person_1.honorific]
+    [Curie; person_1.last_name] by [her; person_1.poss_det_pronoun] [daughter; person_5.relationship.person_1] [Ève; person_5.first_name].
+    The synthetic element Curium is named in [her; person_1.poss_det_pronoun] honor.'
+  relations: []
+  rules:
+  - 'temporal_2.year - temporal_1.year == 8 # gap between the two Nobel Prizes she won'
+  - 'temporal_5.year - temporal_4.year == 4 # moved to Paris in 1891, married in 1895'
+  - 'temporal_7.year - temporal_6.year == 12 # Paris institute founded 12 years before Warsaw institute'
+  - 'number_1.str == 2 # she won Nobel Prizes in exactly two different scientific fields'
+  - 'number_2.str >= 3 # family legacy of Nobel Prizes must be at least the number she personally won (2) plus at least one
+    more'
+  num_questions: 12
+  questions:
+  - question_id: awards_11_q01
+    question: What was the birth name of the physicist better known as [Marie Curie; person_6.full_name]?
+    question_type: extractive
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "[Maria Salomea Skłodowska Curie; person_1.full_name], better known as [Marie Curie; person_6.full_name],
+      was a [Polish; person_1.nationality] and naturalised-[Polish; person_1.nationality] physicist and chemist."
+    reasoning_chain_text: 1. The document states "[Maria Salomea Skłodowska Curie; person_1.full_name], better known as [Marie
+      Curie; person_6.full_name], was a [Polish; person_1.nationality] and naturalised-[Polish; person_1.nationality] physicist
+      and chemist."
+  - question_id: awards_11_q02
+    question: What disease caused the death of [Maria Salomea Skłodowska Curie; person_1.full_name]?
+    question_type: extractive
+    answer: aplastic anaemia
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Maria Salomea Skłodowska Curie; person_1.full_name] died "of aplastic anaemia likely from
+      exposure to radiation in the course of [her; person_1.poss_det_pronoun] scientific research."
+    reasoning_chain_text: 1. The document states that [Maria Salomea Skłodowska Curie; person_1.full_name] died "of aplastic
+      anaemia likely from exposure to radiation in the course of [her; person_1.poss_det_pronoun] scientific research."
+  - question_id: awards_11_q03
+    question: What exact street address in [Paris; place_4.city] was the site of [Pierre Curie; person_2.full_name]'s fatal
+      street accident?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - The document says [Pierre Curie; person_2.full_name] died in a [Paris; place_4.city] street accident.
+    - It does not give the street name or address.
+    reasoning_chain_text: 'The document says [Pierre Curie; person_2.full_name] died in a [Paris; place_4.city] street accident.
+
+      It does not give the street name or address.'
+  - question_id: awards_11_q04
+    question: How many years passed between [Maria Salomea Skłodowska Curie; person_1.full_name]'s first [Nobel Prize; award_3.name]
+      and her second?
+    question_type: arithmetic
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Maria Salomea Skłodowska Curie; person_1.full_name] shared the [1903; temporal_1.year] [Nobel Prize in Physics;
+      award_1.name].
+    - 2. She won the [1911; temporal_2.year] [Nobel Prize in Chemistry; award_2.name].
+    - 3. The difference is [1911; temporal_2.year] − [1903; temporal_1.year] = 8 years.
+    reasoning_chain_text: '1. [Maria Salomea Skłodowska Curie; person_1.full_name] shared the [1903; temporal_1.year] [Nobel
+      Prize in Physics; award_1.name].
+
+      2. She won the [1911; temporal_2.year] [Nobel Prize in Chemistry; award_2.name].
+
+      3. The difference is [1911; temporal_2.year] − [1903; temporal_1.year] = 8 years.'
+  - question_id: awards_11_q05
+    question: How many total [Nobel Prize; award_3.name]s were won by the [Curie; person_1.last_name] family, excluding [Maria
+      Salomea Skłodowska Curie; person_1.full_name]'s two prizes?
+    question_type: arithmetic
+    answer: number_2.str - number_1.str
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [Curie; person_1.last_name] family legacy includes [five; number_2.str] [Nobel Prize; award_3.name]s.
+    - 2. [Maria Salomea Skłodowska Curie; person_1.full_name] personally won [two; number_1.str] of those prizes.
+    - 3. Excluding [her; person_1.poss_det_pronoun] two prizes leaves [five; number_2.str] − [two; number_1.str] = 3.
+    reasoning_chain_text: '1. The document states the [Curie; person_1.last_name] family legacy includes [five; number_2.str]
+      [Nobel Prize; award_3.name]s.
+
+      2. [Maria Salomea Skłodowska Curie; person_1.full_name] personally won [two; number_1.str] of those prizes.
+
+      3. Excluding [her; person_1.poss_det_pronoun] two prizes leaves [five; number_2.str] − [two; number_1.str] = 3.'
+  - question_id: awards_11_q06
+    question: How many years did [Maria Salomea Skłodowska Curie; person_1.full_name] serve as a professor at the [University
+      of Paris; educational_org_1.name] before her death?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states she became a professor at the [University of Paris; educational_org_1.name] in [1906; temporal_3.year]
+      and died in [1934; temporal_8.year].
+    - 2. However, the document does not state whether she remained a professor until her death or left the position at some
+      earlier point, so the duration of her professorship cannot be determined.
+    reasoning_chain_text: '1. The document states she became a professor at the [University of Paris; educational_org_1.name]
+      in [1906; temporal_3.year] and died in [1934; temporal_8.year].
+
+      2. However, the document does not state whether she remained a professor until her death or left the position at some
+      earlier point, so the duration of her professorship cannot be determined.'
+  - question_id: awards_11_q07
+    question: How many years after marrying [Pierre Curie; person_2.full_name] did [Maria Salomea Skłodowska Curie; person_1.full_name]
+      win her first [Nobel Prize; award_3.name]?
+    question_type: temporal
+    answer: temporal_1.year - temporal_5.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Maria Salomea Skłodowska Curie; person_1.full_name] married [Pierre Curie; person_2.full_name] in [1895; temporal_5.year].
+    - 2. She shared the [1903; temporal_1.year] [Nobel Prize in Physics; award_1.name].
+    - 3. The difference is [1903; temporal_1.year] − [1895; temporal_5.year] = 2 years.
+    reasoning_chain_text: '1. [Maria Salomea Skłodowska Curie; person_1.full_name] married [Pierre Curie; person_2.full_name]
+      in [1895; temporal_5.year].
+
+      2. She shared the [1903; temporal_1.year] [Nobel Prize in Physics; award_1.name].
+
+      3. The difference is [1903; temporal_1.year] − [1895; temporal_5.year] = 2 years.'
+  - question_id: awards_11_q08
+    question: How many years after the founding of the [Curie Institute; educational_org_3.name] was the [Curie Institute;
+      educational_org_4.name] founded?
+    question_type: temporal
+    answer: '12'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The [Curie Institute; educational_org_3.name] was founded in [1920; temporal_6.year].
+    - 2. The [Curie Institute; educational_org_4.name] was founded in [1932; temporal_7.year].
+    - 3. The difference is [1932; temporal_7.year] − [1920; temporal_6.year] = 12 years.
+    reasoning_chain_text: '1. The [Curie Institute; educational_org_3.name] was founded in [1920; temporal_6.year].
+
+      2. The [Curie Institute; educational_org_4.name] was founded in [1932; temporal_7.year].
+
+      3. The difference is [1932; temporal_7.year] − [1920; temporal_6.year] = 12 years.'
+  - question_id: awards_11_q09
+    question: In what year did [Maria Salomea Skłodowska Curie; person_1.full_name] first begin her radiological work at field
+      hospitals during [World War I; event_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Maria Salomea Skłodowska Curie; person_1.full_name] developed mobile radiography units
+      during [World War I; event_1.name].
+    - 2. However, the document does not provide the dates or years of [World War I; event_1.name], so the year she began this
+      work cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [Maria Salomea Skłodowska Curie; person_1.full_name] developed mobile
+      radiography units during [World War I; event_1.name].
+
+      2. However, the document does not provide the dates or years of [World War I; event_1.name], so the year she began this
+      work cannot be determined.'
+  - question_id: awards_11_q10
+    question: Given that [Maria Salomea Skłodowska Curie; person_1.full_name] was born in [Warsaw; place_1.city] and later
+      moved to [Paris; place_4.city], in which city did [her; person_1.poss_det_pronoun] [husband; person_2.relationship]
+      [Pierre Curie; person_2.full_name] die?
+    question_type: inference
+    answer: place_4.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in [1906; temporal_3.year], [Pierre; person_2.first_name] died in a [Paris; place_4.city]
+      street accident.
+    - 2. Therefore [Pierre Curie; person_2.full_name] died in [Paris; place_4.city].
+    reasoning_chain_text: '1. The document states that in [1906; temporal_3.year], [Pierre; person_2.first_name] died in a
+      [Paris; place_4.city] street accident.
+
+      2. Therefore [Pierre Curie; person_2.full_name] died in [Paris; place_4.city].'
+  - question_id: awards_11_q11
+    question: Based on the document, what is the likely cause of the aplastic anaemia that killed [Maria Salomea Skłodowska
+      Curie; person_1.full_name]?
+    question_type: inference
+    answer: exposure to radiation
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Maria Salomea Skłodowska Curie; person_1.full_name] died "of aplastic anaemia likely from exposure
+      to radiation in the course of [her; person_1.poss_det_pronoun] scientific research and in the course of [her; person_1.poss_det_pronoun]
+      radiological work at field hospitals."
+    - 2. Therefore the inferred cause is exposure to radiation from both her research and her field hospital work.
+    reasoning_chain_text: '1. The document states [Maria Salomea Skłodowska Curie; person_1.full_name] died "of aplastic anaemia
+      likely from exposure to radiation in the course of [her; person_1.poss_det_pronoun] scientific research and in the course
+      of [her; person_1.poss_det_pronoun] radiological work at field hospitals."
+
+      2. Therefore the inferred cause is exposure to radiation from both her research and her field hospital work.'
+  - question_id: awards_11_q12
+    question: Did [Maria Salomea Skłodowska Curie; person_1.full_name]'s [daughter; person_5.relationship.person_1] [Ève;
+      person_5.first_name] also win a [Nobel Prize; award_3.name], given the family legacy of [five; number_2.str] prizes?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions a [Curie; person_1.last_name] family legacy of [five; number_2.str] [Nobel Prize; award_3.name]s.
+    - 2. [Maria Salomea Skłodowska Curie; person_1.full_name] won two of these, and [Pierre Curie; person_2.full_name] shared
+      one.
+    - 3. The document does not specify which other family members won the remaining prize(s), so whether [Ève; person_5.first_name]
+      won one cannot be determined.
+    reasoning_chain_text: '1. The document mentions a [Curie; person_1.last_name] family legacy of [five; number_2.str] [Nobel
+      Prize; award_3.name]s.
+
+      2. [Maria Salomea Skłodowska Curie; person_1.full_name] won two of these, and [Pierre Curie; person_2.full_name] shared
+      one.
+
+      3. The document does not specify which other family members won the remaining prize(s), so whether [Ève; person_5.first_name]
+      won one cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1884
+    upper_bound: 1922
+    factual_value: 1903
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1892
+    upper_bound: 1930
+    factual_value: 1911
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1887
+    upper_bound: 1925
+    factual_value: 1906
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1873
+    upper_bound: 1909
+    factual_value: 1891
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1877
+    upper_bound: 1913
+    factual_value: 1895
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1901
+    upper_bound: 1939
+    factual_value: 1920
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1913
+    upper_bound: 1951
+    factual_value: 1932
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1915
+    upper_bound: 1953
+    factual_value: 1934
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 53
+    upper_bound: 79
+    factual_value: 66
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Barrimsar Vexvex; person_1.full_name], better known as [Felgor Neldelhal; person_6.full_name],
+    was a [Tovvekkrelan; person_1.nationality] and naturalised-[Tovvekkrelan; person_1.nationality] physicist and chemist.
+    [she; person_1.subj_pronoun] shared the [1901; temporal_1.year] [Talmwick Scholarly Honor; award_1.name] with [her; person_1.poss_det_pronoun]
+    [husband; person_2.relationship] [Talmira Reshkov; person_2.full_name][Kelira Threnholm; person_3.full_name]Curie. [she;
+    person_1.subj_pronoun] won the [1909; temporal_2.year] [Norveld Research Distinction; award_2.name] "[for] the discovery
+    of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable
+    element".
+
+
+    [she; person_1.subj_pronoun] was the first [female; person_1.gender] to win a [Velmora Prize in Physical Sciences; award_3.name],
+    the first person to win a [Velmora Prize in Physical Sciences; award_3.name] twice, and the only person to win a [Velmora
+    Prize in Physical Sciences; award_3.name] in [two; number_1.str] different scientific fields. [Barrimsar; person_1.first_name]
+    and [Talmira; person_2.first_name] were the first married couple to win the [Velmora Prize in Physical Sciences; award_3.name]
+    and launching the [Vexvex; person_1.last_name] family legacy of [four; number_2.str] [Velmora Prize in Physical Sciences;
+    award_3.name]s. [she; person_1.subj_pronoun] was, in [1907; temporal_3.year], the first [female; person_1.gender] to become
+    a professor at the [Threnholm Research Foundation; educational_org_1.name].
+
+
+    [she; person_1.subj_pronoun] was born in [Breshton; place_1.city], in what was then the [Breshland; place_2.country],
+    part of the [Republic of Grymyrwex; place_3.country]. [she; person_1.subj_pronoun] studied at [Breshton; place_1.city]''s
+    clandestine [Talmwick Polytechnic University; educational_org_2.name] and began [her; person_1.poss_det_pronoun] practical
+    scientific training in [Breshton; place_1.city]. In [1895; temporal_4.year], aged [20; number_4.int], [she; person_1.subj_pronoun]
+    followed [her; person_1.poss_det_pronoun] elder [sister; person_4.relationship] [Lorkin; person_4.first_name] to study
+    in [Drelquarford; place_4.city], where [she; person_1.subj_pronoun] earned [her; person_1.poss_det_pronoun] higher degrees
+    and conducted [her; person_1.poss_det_pronoun] subsequent scientific work. In [1899; temporal_5.year], [she; person_1.subj_pronoun]
+    married [Talmira Reshkov; person_2.full_name], with whom [she; person_1.subj_pronoun] conducted pioneering research on
+    radioactivity—a term [she; person_1.subj_pronoun] coined. In [1907; temporal_3.year], [Talmira; person_2.first_name] died
+    in a [Drelquarford; place_4.city] street accident.
+
+
+    Under [her; person_1.poss_det_pronoun] direction, the world''s first studies were conducted into the treatment of neoplasms
+    by the use of radioactive isotopes. [she; person_1.subj_pronoun] founded the [Breshton Higher Learning College; educational_org_3.name]
+    in [Drelquarford; place_4.city] in [1921; temporal_6.year], and the [Clandestine Academy of Krenthis; educational_org_4.name]
+    in [Breshton; place_1.city] in [1933; temporal_7.year]; both remain major medical research centres. During [Continental
+    Chemistry Symposium; event_1.name], [she; person_1.subj_pronoun] developed mobile radiography units to provide X-ray services
+    to field hospitals.
+
+
+    While a [Morsantine; place_5.demonym] citizen, [Barrimsar Vexvex; person_1.full_name], who used both surnames, never lost
+    [her; person_1.poss_det_pronoun] sense of [Breshlander; place_2.demonym] identity. [she; person_1.subj_pronoun] taught
+    [her; person_1.poss_det_pronoun] daughters the [Breshlander; place_2.demonym] language and took them on visits to Poland.
+
+
+    [Barrimsar Vexvex; person_1.full_name] died in [1943; temporal_8.year], aged [53; number_3.int], at the [Brimtarn City;
+    place_7.city] in [Krelkrel City; place_6.city] ([Xalmarnbrimvale; place_6.region]), [Morsant; place_5.country], of aplastic
+    anaemia likely from exposure to radiation in the course of [her; person_1.poss_det_pronoun] scientific research and in
+    the course of [her; person_1.poss_det_pronoun] radiological work at field hospitals during [Continental Chemistry Symposium;
+    event_1.name]. In addition to [her; person_1.poss_det_pronoun] [Velmora Prize in Physical Sciences; award_3.name]s, [she;
+    person_1.subj_pronoun] received numerous other honours and tributes; in [1984; temporal_9.year] [she; person_1.subj_pronoun]
+    became the first [female; person_1.gender] to be entombed on [her; person_1.poss_det_pronoun] own merits in the [Brimtarn
+    City; place_7.city], and [Breshland; place_2.country] declared [1995; temporal_10.year] the Year of [Barrimsar Vexvex;
+    person_1.full_name] during the [Krenthis Innovation Festival; event_2.name]. [she; person_1.subj_pronoun] is the subject
+    of numerous biographies, including [Ms; person_1.honorific] [Vexvex; person_1.last_name] by [her; person_1.poss_det_pronoun]
+    [daughter; person_5.relationship.person_1] [Meldra; person_5.first_name]. The synthetic element Curium is named in [her;
+    person_1.poss_det_pronoun] honor.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

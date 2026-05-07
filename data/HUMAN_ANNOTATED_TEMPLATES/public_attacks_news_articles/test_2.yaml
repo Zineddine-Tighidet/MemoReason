@@ -1,0 +1,231 @@
+document:
+  document_id: test_2
+  document_theme: boston marathon bombing
+  original_document: Boston Marathon Bomber Apologizes to SurvivorsBOSTON — Moments before a federal judge sentenced him to
+    death, Boston Marathon bomber Dzhokhar Tsarnaev rose to his feet Wednesday and apologized to the victims and their loved
+    ones for the first time. "I pray for your relief, for your healing,'' he said. Amid deep silence in the courtroom, the
+    21-year-old ethnic Chechen said, "I am sorry for the lives that I've taken, for the suffering that I've caused you, for
+    the damage that I've done — irreparable damage. ''It was the first time Tsarnaev, who did not speak in his own defense
+    at trial, had addressed the court. After Tsarnaev finished, U.S. District Judge George O'Toole Jr. began to speak, with
+    his voice breaking several times. He officially imposed the death sentence on Tsarnaev that jurors had recommended unanimously.
+    In May, after a 12-week trial, Tsarnaev was found guilty of killing three people and injuring 264 in the April 15, 2013,
+    bombing at the world-renowned race, where he and his brother, Tamerlan, 26, set off two pressure-cooker bombs near the
+    finish line. Tsarnaev was also found guilty in the fatal shooting of a Massachusetts Institute of Technology police officer
+    three days later as he and his brother fled. Tamerlan was killed during the getaway. Tsarnaev was found guilty of all
+    30 terrorism and other charges against him. Of those, 17 carried the possibility of a death sentence. During the penalty
+    phase of the judicial proceedings, prosecutors brushed off defense arguments that Tsarnaev was under the strong influence
+    of his older, radicalized brother. Before the sentencing, a somber-looking Tsarnaev, wearing a dark sport jacket with
+    a collared shirt and no tie, sat between his lawyers and listened as 24 people — some victims, some survivors — gave impact
+    statements. They lashed out at him for his “cowardly” and “disgusting” acts, and several called upon him to apologize,
+    trying to convince him that this would be his last chance to ask for forgiveness.
+  document_to_annotate: '[Boston; place_1.city] [Marathon; event_1.type] Bomber Apologizes to Survivors — Moments before a
+    federal judge sentenced [him; person_1.obj_pronoun] to death, [Boston; place_1.city] [Marathon; event_1.type] bomber [Dzhokhar
+    Tsarnaev; person_1.full_name] rose to [his; person_1.poss_det_pronoun] feet [Wednesday; temporal_1.day] and apologized
+    to the victims and their loved ones for the first time."I pray for your relief, for your healing,'''' [he; person_1.subj_pronoun]
+    said. Amid deep silence in the courtroom, the [21; person_1.age]-year-old ethnic [Chechen; person_1.ethnicity] said, "I
+    am sorry for the lives that I''ve taken, for the suffering that I''ve caused you, for the damage that I''ve done — irreparable
+    damage.'''' It was the first time [Tsarnaev; person_1.last_name], who did not speak in [his; person_1.poss_det_pronoun]
+    own defense at trial, had addressed the court. After [Tsarnaev; person_1.last_name] finished, [U.S.; place_2.country]
+    District Judge [George O''Toole Jr.; person_2.full_name] began to speak, with [his; person_2.poss_det_pronoun] voice breaking
+    several times. [He; person_2.subj_pronoun] officially imposed the death sentence on [Tsarnaev; person_1.last_name] that
+    jurors had recommended unanimously. In [May; temporal_2.month], after a [12; number_1.int]-week trial, [Tsarnaev; person_1.last_name]
+    was found guilty of killing [three; number_2.str] people and injuring [264; number_3.int] in the [April 15, 2013; temporal_3.date],
+    bombing at the world-renowned race, where [he; person_1.subj_pronoun] and [his; person_1.poss_det_pronoun] [brother; person_3.relationship.person_1],
+    [Tamerlan; person_3.first_name], [26; person_3.age], set off [two; number_4.str] pressure-cooker bombs near the finish
+    line. [Tsarnaev; person_1.last_name] was also found guilty in the fatal shooting of a [Massachusetts Institute of Technology;
+    educational_org_1.name] police officer [three; number_5.str] days later as [he; person_1.subj_pronoun] and [his; person_1.poss_det_pronoun]
+    [brother; person_3.relationship.person_1] fled. [Tamerlan; person_3.first_name] was killed during the getaway. [Tsarnaev;
+    person_1.last_name] was found guilty of all [30; number_6.int] terrorism and other charges against [him; person_1.obj_pronoun].
+    Of those, [17; number_7.int] carried the possibility of a death sentence. During the penalty phase of the judicial proceedings,
+    prosecutors brushed off defense arguments that [Tsarnaev; person_1.last_name] was under the strong influence of [his;
+    person_1.poss_det_pronoun] older, radicalized [brother; person_3.relationship.person_1]. Victims speak out before the
+    sentencing, a somber-looking [Tsarnaev; person_1.last_name], wearing a dark sport jacket with a collared shirt and no
+    tie, sat between [his; person_1.poss_det_pronoun] lawyers and listened as [24; number_8.int] people — some victims, some
+    survivors — gave impact statements. They lashed out at [him; person_1.obj_pronoun] for [his; person_1.poss_det_pronoun]
+    “cowardly” and “disgusting” acts, and several called upon [him; person_1.obj_pronoun] to apologize, trying to convince
+    [him; person_1.obj_pronoun] that this would be [his; person_1.poss_det_pronoun] last chance to ask for forgiveness.'
+  relations: []
+  rules:
+  - 'number_3.int > 1 # plural mention ("264" injured)'
+  - 'number_6.int > 1 # plural mention ("all 30 charges")'
+  - 'number_8.int > 1 # plural mention ("24 people")'
+  - number_5 > 1
+  num_questions: 12
+  questions:
+  - question_id: test_2_q01
+    question: How many days passed between the [Marathon; event_1.type] bombing and the fatal shooting of the [Massachusetts
+      Institute of Technology; educational_org_1.name] police officer?
+    question_type: extractive
+    answer: number_5.str days
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q02
+    question: Was [Tsarnaev; person_1.last_name] found guilty?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - '"[Tsarnaev; person_1.last_name] was also found guilty ..."'
+    reasoning_chain_text: '"[Tsarnaev; person_1.last_name] was also found guilty ..."'
+  - question_id: test_2_q03
+    question: What is the other name of [Dzhokhar Tsarnaev; person_1.full_name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q04
+    question: How many of the charges against [Tsarnaev; person_1.last_name] did not carry the possibility of a death sentence?
+    question_type: arithmetic
+    answer: number_6.int - number_7.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q05
+    question: How many people did [Dzhokhar Tsarnaev; person_1.full_name] kill?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q06
+    question: What is the age difference in years between [Dzhokhar Tsarnaev; person_1.full_name] and [his; person_1.poss_det_pronoun]
+      [brother; person_3.relationship.person_1] [Tamerlan; person_3.first_name]?
+    question_type: temporal
+    answer: person_3.age - person_1.age
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q07
+    question: Did the victims speak out before or after [Dzhokhar Tsarnaev; person_1.full_name]'s apology?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q08
+    question: When did the FBI release images of the two [Boston; place_1.city] [Marathon; event_1.type] bombing suspects?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q09
+    question: What is the name of the person that sentenced the [Boston; place_1.city] [Marathon; event_1.type] bomber?
+    question_type: inference
+    answer: person_2.full_name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - Basically a two hop question where one needs to first find the name of the suspect then find the name of the judge who
+      sentenced that person.
+    reasoning_chain_text: Basically a two hop question where one needs to first find the name of the suspect then find the
+      name of the judge who sentenced that person.
+  - question_id: test_2_q010
+    question: Did the [Massachusetts Institute of Technology; educational_org_1.name] shooting occur on the same day as the
+      bombing?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q011
+    question: What is the name of the [Massachusetts Institute of Technology; educational_org_1.name] police officer that
+      was shot by the [Tsarnaev; person_1.last_name] [brother; person_3.relationship.person_1]s?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: test_2_q12
+    question: If you subtract the number of people [Tsarnaev; person_1.last_name] was found guilty of killing in the race
+      bombing from the total number of people he was found guilty of killing overall (including the police officer shot later),
+      what is the resulting number?
+    question_type: arithmetic
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+    is_answer_invariant: true
+  implicit_rules:
+  - entity_ref: person_1.age
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: number_1.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 212
+    upper_bound: 316
+    factual_value: 264
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_3.age
+    lower_bound: 21
+    upper_bound: 31
+    factual_value: 26
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

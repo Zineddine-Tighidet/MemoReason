@@ -1,0 +1,415 @@
+document:
+  document_id: awards_06
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Malala Yousafzai
+  wikipedia_url: https://en.wikipedia.org/wiki/Malala_Yousafzai
+  original_document: 'Malala Yousafzai (born 12 July 1997) is a Pakistani female education activist, and producer of film
+    and television. She is the youngest Nobel Prize laureate in history, receiving the Peace Prize in 2014 at age 17, and
+    is the second Pakistani and the only Pashtun to receive a Nobel Prize. Yousafzai is a human rights advocate for the education
+    of women and children in her native district, Swat, where the Pakistani Taliban had at times banned girls from attending
+    school. Her advocacy has grown into an international movement, and according to former prime minister Shahid Khaqan Abbasi,
+    she has become Pakistan''s "most prominent citizen".
+
+
+    The daughter of the education activist Ziauddin Yousafzai, she was born to a Yousafzai Pashtun family in Swat and was
+    named after the Afghan folk heroine Malalai of Maiwand. Considering Bacha Khan, Barack Obama, and Benazir Bhutto as her
+    role models, she was also inspired by her father''s thoughts and humanitarian work. In early 2009, when she was 11, she
+    wrote a blog under her pseudonym Gul Makai for the BBC Urdu to detail her life during the Taliban''s occupation of Swat.
+    The following summer, the journalist Adam B. Ellick made a New York Times documentary about her life as the Pakistan Armed
+    Forces launched Operation Rah-e-Rast against the militants in Swat. In 2011, she received Pakistan''s first National Youth
+    Peace Prize. She interned for the Swat Relief Initiative, a foundation founded by Zebunisa Jilani, a princess of the Royal
+    House of Swat which supports schools and clinics. She rose in prominence, giving interviews in print and on television,
+    and was nominated for the International Children''s Peace Prize by activist Desmond Tutu.
+
+
+    On 9 October 2012, while on a bus in Swat District after taking an exam, Yousafzai and two other girls were shot by a
+    Taliban gunman in an assassination attempt targeting her for her activism; the gunman fled the scene. She was struck in
+    the head by a bullet and remained unconscious and in critical condition at the Rawalpindi Institute of Cardiology, but
+    her condition later improved enough for her to be transferred to the Queen Elizabeth Hospital in Birmingham, UK. The attempt
+    on her life sparked an international outpouring of support. Deutsche Welle reported in January 2013 that she may have
+    become "the most famous teenager in the world". Weeks after the attempted murder, a group of 50 leading Muslim clerics
+    in Pakistan issued a fatwā against those who had tried to kill her. Governments, human rights organizations and feminist
+    groups subsequently condemned the Tehrik-i-Taliban Pakistan. In response, the Taliban further denounced Yousafzai, indicating
+    plans for a possible second assassination attempt which the Taliban felt was justified as a religious obligation. This
+    sparked another international outcry.
+
+
+    After her recovery, Yousafzai became a more prominent activist for the right to education. Based in Birmingham, she co-founded
+    the Malala Fund, a non-profit organisation, with Shiza Shahid. In 2013, she co-authored I Am Malala, an international
+    best seller. In 2013, she received the Sakharov Prize, and in 2014, she was the co-recipient of the 2014 Nobel Peace Prize
+    with Kailash Satyarthi of India. Aged 17 at the time, she was the youngest-ever Nobel Prize laureate. In 2015, she was
+    the subject of the Oscar-shortlisted documentary He Named Me Malala. The 2013, 2014 and 2015 issues of Time magazine featured
+    her as one of the most influential people globally. In 2017 she was awarded honorary Canadian citizenship and became the
+    youngest person to address the House of Commons of Canada. Yousafzai completed her secondary school education at Edgbaston
+    High School, Birmingham in England from 2013 to 2017. From there she won a place at Lady Margaret Hall, Oxford, and undertook
+    three years'' study for a Bachelor of Arts degree in Philosophy, Politics and Economics (PPE), graduating in 2020. She
+    returned in 2023 to become the youngest ever Honorary Fellow at Linacre College, Oxford.'
+  document_to_annotate: '[Malala Yousafzai; person_1.full_name] (born [12 July 1997; temporal_1.date]) is a [Pakistani; person_1.nationality]
+    [female; person_1.gender] education activist, and producer of film and television. [She; person_1.subj_pronoun] is the
+    youngest [Nobel Prize; award_1.name] laureate in history, receiving the [Peace Prize; award_2.name] in [2014; temporal_2.year]
+    at age [17; number_4.int], and is the second [Pakistani; place_1.demonym] and the only [Pashtun; person_1.ethnicity] to
+    receive a [Nobel Prize; award_1.name]. [Yousafzai; person_1.last_name] is a human rights advocate for the education of
+    women and children in [her; person_1.poss_det_pronoun] native district, [Swat; place_2.region], where the [Pakistani Taliban;
+    military_org_1.name] had at times banned girls from attending school. [Her; person_1.poss_det_pronoun] advocacy has grown
+    into an international movement, and according to former prime minister [Shahid Khaqan Abbasi; person_2.full_name], [she;
+    person_1.subj_pronoun] has become [Pakistan; place_1.country]''s "most prominent citizen".
+
+
+    The [daughter; person_1.relationship.person_3] of the education activist [Ziauddin Yousafzai; person_3.full_name], [she;
+    person_1.subj_pronoun] was born to a [Yousafzai; person_1.last_name] [Pashtun; person_1.ethnicity] family in [Swat; place_2.region]
+    and was named after the [Afghan; place_3.demonym] folk heroine [Malalai of Maiwand; person_4.full_name]. Considering [Bacha
+    Khan; person_5.full_name], [Barack Obama; person_6.full_name], and [Benazir Bhutto; person_7.full_name] as [her; person_1.poss_det_pronoun]
+    role models, [she; person_1.subj_pronoun] was also inspired by [her; person_1.poss_det_pronoun] [father; person_3.relationship.person_1]''s
+    thoughts and humanitarian work. In early [2009; temporal_3.year], when [she; person_1.subj_pronoun] was [11; number_5.int],
+    [she; person_1.subj_pronoun] wrote a blog under [her; person_1.poss_det_pronoun] pseudonym [Gul Makai; person_13.full_name]
+    for the [BBC Urdu; media_org_1.name] to detail [her; person_1.poss_det_pronoun] life during the [Taliban; military_org_1.name]''s
+    occupation of [Swat; place_2.region]. The following summer, the journalist [Adam B. Ellick; person_8.full_name] made a
+    [New York Times; media_org_2.name] documentary about [her; person_1.poss_det_pronoun] life as the [Pakistan Armed Forces;
+    military_org_2.name] launched [Operation Rah-e-Rast; event_1.name] against the militants in [Swat; place_2.region]. In
+    [2011; temporal_4.year], [she; person_1.subj_pronoun] received [Pakistan; place_1.country]''s first [National Youth Peace
+    Prize; award_3.name]. [She; person_1.subj_pronoun] interned for the [Swat Relief Initiative; ngo_1.name], a foundation
+    founded by [Zebunisa Jilani; person_9.full_name], a princess of the [Royal House; government_org_2.name] of [Swat; place_2.region]
+    which supports schools and clinics. [She; person_1.subj_pronoun] rose in prominence, giving interviews in print and on
+    television, and was nominated for the [International Children''s Peace Prize; award_4.name] by activist [Desmond Tutu;
+    person_10.full_name].
+
+
+    On [9 October 2012; temporal_5.date], while on a bus in [Swat District; place_2.region] after taking an exam, [Yousafzai;
+    person_1.last_name] and [two; number_1.str] other girls were shot by a [Taliban; military_org_1.name] gunman in an assassination
+    attempt targeting [her; person_1.obj_pronoun] for [her; person_1.poss_det_pronoun] activism; the gunman fled the scene.
+    [She; person_1.subj_pronoun] was struck in the head by a bullet and remained unconscious and in critical condition at
+    the [Rawalpindi; place_10.city] Institute of Cardiology, but [her; person_1.poss_det_pronoun] condition later improved
+    enough for [her; person_1.obj_pronoun] to be transferred to the [Queen Elizabeth; person_14.full_name] Hospital in [Birmingham;
+    place_10.city], [UK; place_10.country]. The attempt on [her; person_1.poss_det_pronoun] life sparked an international
+    outpouring of support. [Deutsche Welle; media_org_3.name] reported in [January 2013; temporal_6.date] that [she; person_1.subj_pronoun]
+    may have become "the most famous teenager in the world". Weeks after the attempted murder, a group of [50; number_2.int]
+    leading Muslim clerics in [Pakistan; place_1.country] issued a fatwā against those who had tried to kill [her; person_1.obj_pronoun].
+    Governments, human rights organizations and feminist groups subsequently condemned the [Tehrik-i-Taliban Pakistan; military_org_1.name].
+    In response, the [Taliban; military_org_1.name] further denounced [Yousafzai; person_1.last_name], indicating plans for
+    a possible second assassination attempt which the [Taliban; military_org_1.name] felt was justified as a religious obligation.
+    This sparked another international outcry.
+
+
+    After [her; person_1.poss_det_pronoun] recovery, [Yousafzai; person_1.last_name] became a more prominent activist for
+    the right to education. Based in [Birmingham; place_5.city], [she; person_1.subj_pronoun] co-founded the [Malala Fund;
+    ngo_2.name], a non-profit organisation, with [Shiza Shahid; person_11.full_name]. In [2013; temporal_16.year], [she; person_1.subj_pronoun]
+    co-authored [I Am Malala; product_1.name], an international best seller. In [2013; temporal_16.year], [she; person_1.subj_pronoun]
+    received the [Sakharov Prize; award_5.name], and in [2014; temporal_13.year], [she; person_1.subj_pronoun] was the co-recipient
+    of the [2014; temporal_13.year] [Nobel Peace Prize; award_2.name] with [Kailash Satyarthi; person_12.full_name] of [India;
+    place_7.country]. Aged [17; person_1.age] at the time, [she; person_1.subj_pronoun] was the youngest-ever [Nobel Prize;
+    award_1.name] laureate. In [2015; temporal_14.year], [she; person_1.subj_pronoun] was the subject of the [Oscar; award_6.name]-shortlisted
+    documentary [He Named Me Malala; product_2.name]. The [2013; temporal_16.year], [2014; temporal_13.year] and [2015; temporal_14.year]
+    issues of [Time; media_org_4.name] magazine featured [her; person_1.obj_pronoun] as one of the most influential people
+    globally. In [2017; temporal_15.year] [she; person_1.subj_pronoun] was awarded honorary [Canadian; place_8.demonym] citizenship
+    and became the youngest person to address the [House of Commons of Canada; government_org_1.name]. [Yousafzai; person_1.last_name]
+    completed [her; person_1.poss_det_pronoun] secondary school education at [Edgbaston High School; educational_org_1.name],
+    [Birmingham; place_5.city] in [England; place_9.country] from [2013; temporal_16.year] to [2017; temporal_17.year]. From
+    there [she; person_1.subj_pronoun] won a place at [Lady Margaret Hall; educational_org_2.name], [Oxford; place_11.city],
+    and undertook [three; number_3.str] years'' study for a Bachelor of Arts degree in Philosophy, Politics and Economics
+    (PPE), graduating in [2020; temporal_18.year]. [She; person_1.subj_pronoun] returned in [2023; temporal_19.year] to become
+    the youngest ever Honorary Fellow at [Linacre College; educational_org_3.name], [Oxford; place_11.city].'
+  relations: []
+  rules:
+  - 'temporal_2.year - temporal_1.date == 17 # person_1.age at Nobel Prize matches birth year to award year gap (age 17 in
+    2014, born 1997)'
+  - 'number_1.str >= 2 # "two other girls" requires plural'
+  - 'number_2.int > 1 # "50 leading Muslim clerics" plural mention'
+  - 'number_3.str >= 2 # "three years'' study" plural mention'
+  - 'temporal_18.year - temporal_17.year == 3 # graduated Oxford after three years of study starting after 2017'
+  - 'temporal_17.year - temporal_16.year == 4 # secondary school from 2013 to 2017 is a 4-year span'
+  - 'temporal_14.year - temporal_13.year == 1 # 2015 documentary one year after 2014 Nobel Prize'
+  num_questions: 12
+  questions:
+  - question_id: awards_06_q01
+    question: With whom did [Malala Yousafzai; person_1.full_name] share the [2014; temporal_13.year] [Peace Prize; award_2.name]?
+    question_type: extractive
+    answer: person_12.full_name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [Malala Yousafzai; person_1.full_name] was the co-recipient of the [2014; temporal_13.year]
+      [Peace Prize; award_2.name] with [Kailash Satyarthi; person_12.full_name] of [India; place_7.country].
+    reasoning_chain_text: 1. The document states that [Malala Yousafzai; person_1.full_name] was the co-recipient of the [2014;
+      temporal_13.year] [Peace Prize; award_2.name] with [Kailash Satyarthi; person_12.full_name] of [India; place_7.country].
+  - question_id: awards_06_q02
+    question: What degree subject did [Malala Yousafzai; person_1.full_name] study at [Lady Margaret Hall; educational_org_2.name]?
+    question_type: extractive
+    answer: Philosophy, Politics and Economics
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states [Malala Yousafzai; person_1.full_name] undertook [three; number_3.str] years' study for a Bachelor
+      of Arts degree in Philosophy, Politics and Economics (PPE) at [Lady Margaret Hall; educational_org_2.name].
+    reasoning_chain_text: 1. The document states [Malala Yousafzai; person_1.full_name] undertook [three; number_3.str] years'
+      study for a Bachelor of Arts degree in Philosophy, Politics and Economics (PPE) at [Lady Margaret Hall; educational_org_2.name].
+  - question_id: awards_06_q03
+    question: What was the name of the bus driver present when [Malala Yousafzai; person_1.full_name] was shot on [9 October
+      2012; temporal_5.date]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes the shooting on [9 October 2012; temporal_5.date] while [Malala Yousafzai; person_1.full_name]
+      was on a bus in [Swat; place_2.region].
+    - 2. The document does not mention the name of the bus driver.
+    reasoning_chain_text: '1. The document describes the shooting on [9 October 2012; temporal_5.date] while [Malala Yousafzai;
+      person_1.full_name] was on a bus in [Swat; place_2.region].
+
+      2. The document does not mention the name of the bus driver.'
+  - question_id: awards_06_q04
+    question: What is the sum of the number of other girls shot alongside [Malala Yousafzai; person_1.full_name] and the number
+      of Muslim clerics who issued a fatwā against those who tried to kill [Malala Yousafzai; person_1.full_name]?
+    question_type: arithmetic
+    answer: number_1.str + number_2.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states [Malala Yousafzai; person_1.full_name] and [two; number_1.str] other girls were shot.
+    - 2. The document states [50; number_2.int] leading Muslim clerics issued a fatwā.
+    - 3. Both are counts of people, so the sum is 3 + 49 = 52.
+    reasoning_chain_text: '1. The document states [Malala Yousafzai; person_1.full_name] and [two; number_1.str] other girls
+      were shot.
+
+      2. The document states [50; number_2.int] leading Muslim clerics issued a fatwā.
+
+      3. Both are counts of people, so the sum is 3 + 49 = 52.'
+  - question_id: awards_06_q05
+    question: How many people in total were shot in the assassination attempt targeting [Malala Yousafzai; person_1.full_name],
+      including [Malala Yousafzai; person_1.full_name] herself?
+    question_type: arithmetic
+    answer: number_1.str + 1
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states [Malala Yousafzai; person_1.full_name] and [two; number_1.str] other girls were shot.
+    - 2. Including [Malala Yousafzai; person_1.full_name], the total is 3 + 1 = 4 people.
+    reasoning_chain_text: '1. The document states [Malala Yousafzai; person_1.full_name] and [two; number_1.str] other girls
+      were shot.
+
+      2. Including [Malala Yousafzai; person_1.full_name], the total is 3 + 1 = 4 people.'
+  - question_id: awards_06_q06
+    question: How many total interviews did [Malala Yousafzai; person_1.full_name] give in print and on television before
+      being nominated for the [International Children's Peace Prize; award_4.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that [Malala Yousafzai; person_1.full_name] gave interviews in print and on television.
+    - 2. The document does not specify the number of interviews, so a total cannot be calculated.
+    reasoning_chain_text: '1. The document mentions that [Malala Yousafzai; person_1.full_name] gave interviews in print and
+      on television.
+
+      2. The document does not specify the number of interviews, so a total cannot be calculated.'
+  - question_id: awards_06_q07
+    question: How many years passed between [Malala Yousafzai; person_1.full_name] receiving [Pakistan; place_1.country]'s
+      first [National Youth Peace Prize; award_3.name] and receiving the [Peace Prize; award_2.name]?
+    question_type: temporal
+    answer: temporal_13.year - temporal_4.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Malala Yousafzai; person_1.full_name] received the [National Youth Peace Prize; award_3.name] in [2011; temporal_4.year].
+    - 2. She received the [Peace Prize; award_2.name] in [2014; temporal_13.year].
+    - 3. The difference is 1997 - 1994 = 3 years.
+    reasoning_chain_text: '1. [Malala Yousafzai; person_1.full_name] received the [National Youth Peace Prize; award_3.name]
+      in [2011; temporal_4.year].
+
+      2. She received the [Peace Prize; award_2.name] in [2014; temporal_13.year].
+
+      3. The difference is 1997 - 1994 = 3 years.'
+  - question_id: awards_06_q08
+    question: How many months after the shooting on [9 October 2012; temporal_5.date] was [Malala Yousafzai; person_1.full_name]
+      transferred to the [Queen Elizabeth; person_14.full_name] Hospital in [Rawalpindi; place_10.city]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states [Malala Yousafzai; person_1.full_name] was shot on [9 October 2012; temporal_5.date] and was
+      later transferred to the [Queen Elizabeth; person_14.full_name] Hospital.
+    - 2. The document does not provide the specific date of the transfer, so the duration cannot be calculated.
+    reasoning_chain_text: '1. The document states [Malala Yousafzai; person_1.full_name] was shot on [9 October 2012; temporal_5.date]
+      and was later transferred to the [Queen Elizabeth; person_14.full_name] Hospital.
+
+      2. The document does not provide the specific date of the transfer, so the duration cannot be calculated.'
+  - question_id: awards_06_q09
+    question: Given that [Malala Yousafzai; person_1.full_name] was named after a folk heroine, what cultural tradition does
+      the document indicate influenced her family's naming choice?
+    question_type: inference
+    answer: place_3.demonym
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states [Malala Yousafzai; person_1.full_name] was named after the [Afghan; place_3.demonym] folk heroine
+      [Malalai of Maiwand; person_4.full_name].
+    - 2. This implies her family drew on [Afghan; place_3.demonym] cultural tradition when choosing her name.
+    reasoning_chain_text: '1. The document states [Malala Yousafzai; person_1.full_name] was named after the [Afghan; place_3.demonym]
+      folk heroine [Malalai of Maiwand; person_4.full_name].
+
+      2. This implies her family drew on [Afghan; place_3.demonym] cultural tradition when choosing her name.'
+  - question_id: awards_06_q10
+    question: Based on the document, did the [Pakistani Taliban; military_org_1.name] express regret or intensify their stance
+      toward [Malala Yousafzai; person_1.full_name] after the failed assassination attempt?
+    question_type: inference
+    answer: They intensified their stance
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that after the assassination attempt, the [Pakistani Taliban; military_org_1.name] further denounced
+      [Malala Yousafzai; person_1.full_name].
+    - 2. They indicated plans for a possible second assassination attempt, which they felt was justified as a religious obligation.
+    - 3. This shows they intensified their stance rather than expressing regret.
+    reasoning_chain_text: '1. The document states that after the assassination attempt, the [Pakistani Taliban; military_org_1.name]
+      further denounced [Malala Yousafzai; person_1.full_name].
+
+      2. They indicated plans for a possible second assassination attempt, which they felt was justified as a religious obligation.
+
+      3. This shows they intensified their stance rather than expressing regret.'
+  - question_id: awards_06_q11
+    question: Can we infer whether [Ziauddin Yousafzai; person_3.full_name], [Malala Yousafzai; person_1.full_name]'s father
+      and an education activist, was also personally targeted by the [Pakistani Taliban; military_org_1.name] for his activism?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document identifies [Ziauddin Yousafzai; person_3.full_name] as an education activist and [Malala Yousafzai;
+      person_1.full_name]'s father.
+    - 2. The document does not state whether [Ziauddin Yousafzai; person_3.full_name] was personally targeted by the [Pakistani
+      Taliban; military_org_1.name], so this cannot be determined.
+    reasoning_chain_text: '1. The document identifies [Ziauddin Yousafzai; person_3.full_name] as an education activist and
+      [Malala Yousafzai; person_1.full_name]''s father.
+
+      2. The document does not state whether [Ziauddin Yousafzai; person_3.full_name] was personally targeted by the [Pakistani
+      Taliban; military_org_1.name], so this cannot be determined.'
+  - question_id: awards_06_q12
+    question: Was [Malala Yousafzai; person_1.full_name] shot before or after co-authoring [I Am Malala; product_1.name] ?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1978
+    upper_bound: 2016
+    factual_value: 1997
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_1.age
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_18.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_19.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

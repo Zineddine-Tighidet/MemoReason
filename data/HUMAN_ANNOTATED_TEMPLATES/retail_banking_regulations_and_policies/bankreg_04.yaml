@@ -1,0 +1,210 @@
+document:
+  document_id: bankreg_04
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Capital Requirements Regulation 2013
+  wikipedia_url: https://en.wikipedia.org/wiki/Capital_Requirements_Regulation_2013
+  original_document: 'The Capital Requirements Regulation (EU) No. 575/2013 is an EU law that aims to decrease the likelihood
+    that banks go insolvent. With the Credit Institutions Directive 2013 the Capital Requirements Regulation 2013 (CRR 2013)
+    reflects Basel III rules on capital measurement and capital standards.
+
+
+    Previous rules were found in the Capital Requirements Directives (2006/48 and 2006/49). Together the new rules are sometimes
+    referred to in the media as the “CRD IV” package. It applies from 1 January 2014. This is the third set of amendments
+    to the original directives, following two earlier sets of revisions adopted by the Commission in 2008 (CRD II) and 2009
+    (CRD III).'
+  document_to_annotate: 'The [Capital Requirements Regulation; legal_1.name] [(EU) No. 575/2013; legal_1.reference_code] is
+    an [EU; place_1.continent] law that aims to decrease the likelihood that banks go insolvent. With the [Credit Institutions
+    Directive 2013; legal_2.name] the [Capital Requirements Regulation 2013 (CRR 2013); legal_1.name] reflects [Basel III;
+    legal_3.name] rules on capital measurement and capital standards.
+
+
+    Previous rules were found in the [Capital Requirements Directives; legal_4.name] ([2006/48; legal_4.reference_code] and
+    [2006/49; legal_5.reference_code]). Together the new rules are sometimes referred to in the media as the "[CRD IV; legal_6.name]"
+    package. It applies from [1 January 2014; temporal_1.date]. This is the third set of amendments to the original directives,
+    following two earlier sets of revisions adopted by the [Commission; government_org_2.name] in [2008; temporal_2.year]
+    ([CRD II; legal_7.name]) and [2009; temporal_3.year] ([CRD III; legal_8.name]).'
+  relations: []
+  rules:
+  - 'temporal_3.year - temporal_2.year == 1 # CRD II and CRD III were adopted in consecutive years'
+  - temporal_1.year  > temporal_3.year
+  num_questions: 12
+  questions:
+  - question_id: bankreg_04_q01
+    question: What is the reference code of the [Capital Requirements Regulation; legal_1.name]?
+    question_type: extractive
+    answer: legal_1.reference_code
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "The [Capital Requirements Regulation; legal_1.name] [(EU) No. 575/2013; legal_1.reference_code]",
+      so the reference code is [(EU) No. 575/2013; legal_1.reference_code].
+    reasoning_chain_text: 1. The document states "The [Capital Requirements Regulation; legal_1.name] [(EU) No. 575/2013;
+      legal_1.reference_code]", so the reference code is [(EU) No. 575/2013; legal_1.reference_code].
+  - question_id: bankreg_04_q02
+    question: What is the primary goal of the [Capital Requirements Regulation; legal_1.name]?
+    question_type: extractive
+    answer: to decrease the likelihood that banks go insolvent
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [Capital Requirements Regulation; legal_1.name] "is an [EU; place_1.continent] law that aims
+      to decrease the likelihood that banks go insolvent."
+    reasoning_chain_text: 1. The document states the [Capital Requirements Regulation; legal_1.name] "is an [EU; place_1.continent]
+      law that aims to decrease the likelihood that banks go insolvent."
+  - question_id: bankreg_04_q03
+    question: Which specific committee within the [Commission; government_org_2.name] was responsible for drafting the [Capital
+      Requirements Regulation; legal_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Commission; government_org_2.name] adopted earlier sets of revisions.
+    - 2. However, the document does not mention any specific committee within the [Commission; government_org_2.name] responsible
+      for drafting the [Capital Requirements Regulation; legal_1.name].
+    reasoning_chain_text: '1. The document mentions the [Commission; government_org_2.name] adopted earlier sets of revisions.
+
+      2. However, the document does not mention any specific committee within the [Commission; government_org_2.name] responsible
+      for drafting the [Capital Requirements Regulation; legal_1.name].'
+  - question_id: bankreg_04_q04
+    question: How many years after the [2008; temporal_2.year] revisions were the [2009; temporal_3.year] revisions adopted?
+    question_type: arithmetic
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - CRD II revisions were adopted in 2008.
+    - CRD III revisions were adopted in 2009.
+    - The difference is 2009 - 2008 = 1.
+    reasoning_chain_text: 'CRD II revisions were adopted in 2008.
+
+      CRD III revisions were adopted in 2009.
+
+      The difference is 2009 - 2008 = 1.'
+  - question_id: bankreg_04_q05
+    question: How many rules are mentioned in the [Capital Requirements Directives; legal_4.name]?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - '"[2006/48; legal_4.reference_code] and [2006/49; legal_5.reference_code]"'
+    reasoning_chain_text: '"[2006/48; legal_4.reference_code] and [2006/49; legal_5.reference_code]"'
+  - question_id: bankreg_04_q06
+    question: How many member states voted in favor of the [Capital Requirements Regulation; legal_1.name] when it was adopted,
+      and what is the sum of those votes and the votes against?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the [Capital Requirements Regulation; legal_1.name] and its relationship to earlier directives.
+    - 2. The document does not provide any information about voting counts or the number of member states involved in adopting
+      the law.
+    reasoning_chain_text: '1. The document describes the [Capital Requirements Regulation; legal_1.name] and its relationship
+      to earlier directives.
+
+      2. The document does not provide any information about voting counts or the number of member states involved in adopting
+      the law.'
+  - question_id: bankreg_04_q07
+    question: How many years passed between the adoption of the first set of revisions ([CRD II; legal_7.name]) and the second
+      set of revisions ([CRD III; legal_8.name])?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [CRD II; legal_7.name] was adopted in [2008; temporal_2.year].
+    - 2. The [CRD III; legal_8.name] was adopted in [2009; temporal_3.year].
+    - 3. [2009; temporal_3.year] - [2008; temporal_2.year] = 4 years.
+    reasoning_chain_text: '1. The [CRD II; legal_7.name] was adopted in [2008; temporal_2.year].
+
+      2. The [CRD III; legal_8.name] was adopted in [2009; temporal_3.year].
+
+      3. [2009; temporal_3.year] - [2008; temporal_2.year] = 4 years.'
+  - question_id: bankreg_04_q08
+    question: Was the [CRD II; legal_7.name] applied before or after the [CRD III; legal_8.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - '"... adopted by the [Commission; government_org_2.name] in [2008; temporal_2.year] ([CRD II; legal_7.name]) and [2009;
+      temporal_3.year] ([CRD III; legal_8.name])."'
+    reasoning_chain_text: '"... adopted by the [Commission; government_org_2.name] in [2008; temporal_2.year] ([CRD II; legal_7.name])
+      and [2009; temporal_3.year] ([CRD III; legal_8.name])."'
+  - question_id: bankreg_04_q09
+    question: When were the original directives that preceded the [CRD II; legal_7.name] first enacted?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions "the original directives" and states that the [CRD II; legal_7.name] and [CRD III; legal_8.name]
+      were earlier amendments to them.
+    - 2. However, the document does not provide the date or year when the original directives were first enacted.
+    reasoning_chain_text: '1. The document mentions "the original directives" and states that the [CRD II; legal_7.name] and
+      [CRD III; legal_8.name] were earlier amendments to them.
+
+      2. However, the document does not provide the date or year when the original directives were first enacted.'
+  - question_id: bankreg_04_q10
+    question: Given that the [Capital Requirements Regulation; legal_1.name] reflects international rules on capital standards,
+      which law does it work together with to achieve this?
+    question_type: inference
+    answer: legal_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "With the [Credit Institutions Directive 2013; legal_2.name] the [Capital Requirements Regulation;
+      legal_1.name] reflects [Basel III; legal_3.name] rules on capital measurement and capital standards."
+    - 2. This means the [Capital Requirements Regulation; legal_1.name] works together with the [Credit Institutions Directive
+      2013; legal_2.name] to reflect those international rules.
+    reasoning_chain_text: '1. The document states "With the [Credit Institutions Directive 2013; legal_2.name] the [Capital
+      Requirements Regulation; legal_1.name] reflects [Basel III; legal_3.name] rules on capital measurement and capital standards."
+
+      2. This means the [Capital Requirements Regulation; legal_1.name] works together with the [Credit Institutions Directive
+      2013; legal_2.name] to reflect those international rules.'
+  - question_id: bankreg_04_q11
+    question: Based on the document, what type of financial institutions is the [Capital Requirements Regulation; legal_1.name]
+      primarily designed to regulate?
+    question_type: inference
+    answer: banks
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [Capital Requirements Regulation; legal_1.name] "aims to decrease the likelihood that banks
+      go insolvent."
+    - 2. This indicates the law is primarily designed to regulate banks.
+    reasoning_chain_text: '1. The document states the [Capital Requirements Regulation; legal_1.name] "aims to decrease the
+      likelihood that banks go insolvent."
+
+      2. This indicates the law is primarily designed to regulate banks.'
+  - question_id: bankreg_04_q12
+    question: Does the [Capital Requirements Regulation; legal_1.name] impose stricter capital requirements than the [Capital
+      Requirements Directives; legal_4.name] it replaced?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the previous rules were found in the [Capital Requirements Directives; legal_4.name] and
+      that the [Capital Requirements Regulation; legal_1.name] is a newer law.
+    - 2. However, the document does not provide any details about the specific capital requirements of either law, so a comparison
+      of strictness cannot be made.
+    reasoning_chain_text: '1. The document mentions that the previous rules were found in the [Capital Requirements Directives;
+      legal_4.name] and that the [Capital Requirements Regulation; legal_1.name] is a newer law.
+
+      2. However, the document does not provide any details about the specific capital requirements of either law, so a comparison
+      of strictness cannot be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

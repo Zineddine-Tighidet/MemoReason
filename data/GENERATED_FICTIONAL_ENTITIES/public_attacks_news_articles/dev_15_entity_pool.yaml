@@ -1,0 +1,218 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: dev_15
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-18T14:51:59.098952+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_4: 15
+  entreprise_orgs:
+    entreprise_org_2: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_3: 15
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veldrath Marches
+    - region: Torwen Uplands
+    - region: Kessova Reach
+    - region: Branthel Lowlands
+    - region: Durnoch Straits
+    - region: Pellavar Heights
+    - region: Grothane Shores
+    - region: Melvask Corridor
+    - region: Sondrifel Glens
+    - region: Harquen Flats
+    - region: Ostrival Moorlands
+    - region: Calwenth Basin
+    - region: Fendrake Hollows
+    - region: Tulmaren Ridges
+    - region: Jeskova Headlands
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Drenavar
+    - city: Kelmoth
+    - city: Torrishaw
+    - city: Bralcove
+    - city: Ossendray
+    - city: Velmarak
+    - city: Crothane
+    - city: Pellisgor
+    - city: Wyndavar
+    - city: Sotherly
+    - city: Gannivere
+    - city: Helvrock
+    - city: Tassomer
+    - city: Quildreth
+    - city: Mornivale
+  place_3:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Talmery Lane
+    - street: Brossen Row
+    - street: Kelwith Avenue
+    - street: Darvane Road
+    - street: Plennock Way
+    - street: Holtrey Passage
+    - street: Cremmil Street
+    - street: Vossgate Drive
+    - street: Thurnel Close
+    - street: Ganthor Boulevard
+    - street: Pellwick Crescent
+    - street: Sormath Lane
+    - street: Drellaby Road
+    - street: Fennock Terrace
+    - street: Quarnley Street
+  place_4:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Thornvale Lane
+    - street: Brannock Crescent
+    - street: Dunsheir Road
+    - street: Pallmere Street
+    - street: Gorshen Way
+    - street: Tilvane Road
+    - street: Crombley Drive
+    - street: Fenwick Hollow
+    - street: Lossiter Road
+    - street: Harquen Street
+    - street: Delvane Parade
+    - street: Wotherly Lane
+    - street: Grantheel Road
+    - street: Mossburn Avenue
+    - street: Kelstane Close
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Ashen Monday
+    - name: The Crimson Dusk
+    - name: Shattered Noon
+    - name: The Thornvale Blasts
+    - name: Iron Sabbath
+    - name: The Kelrath Bombings
+    - name: Scarlet Eventide
+    - name: The Hollow Morning
+    - name: Burning Vespers
+    - name: The Greymark Massacre
+    - name: Cinder Tuesday
+    - name: The Wrathspire Attacks
+    - name: Blackened Twilight
+    - name: The Sorren Day Bombings
+    - name: Ember Wednesday
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VLF
+    - name: Toragh Brigade
+    - name: KDR
+    - name: Drenoch Liberation Corps
+    - name: PLV
+    - name: Setharn Volunteers
+    - name: Colvane Resistance Army
+    - name: BKN
+    - name: Halwern Guard
+    - name: Fenrath Liberation Front
+    - name: OKV
+    - name: Drannoch Republican Force
+    - name: Galthen Provisional Command
+    - name: NVK
+    - name: Pelloch Armed Council
+  military_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brethren
+    - name: Volken
+    - name: Tarloch
+    - name: Kethane
+    - name: Durnagh
+    - name: Sorrath
+    - name: Fennock
+    - name: Grallish
+    - name: Turvane
+    - name: Pelloch
+    - name: Colvane
+    - name: Drennagh
+    - name: Borrith
+    - name: Kelloch
+    - name: Murragh
+entreprise_orgs:
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Transit
+    - name: Brannoch Coaches
+    - name: Keldarr Lines
+    - name: Stravven Motors
+    - name: Pellwick Busways
+    - name: Dromhaven Transport
+    - name: Corthane Coaches
+    - name: Lyndarro Transit
+    - name: Fennavale Lines
+    - name: Grothane Busways
+    - name: Talmerick Coaches
+    - name: Vosskeir Transport
+    - name: Harndell Lines
+    - name: Quelloran Motors
+    - name: Brinthar Transit
+media_orgs:
+  media_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvarn Broadcasting
+    - name: Korrath Media Network
+    - name: Drennoch Public Channel
+    - name: Vossaline News Service
+    - name: Pellundar Broadcast Group
+    - name: Quenrath National Radio
+    - name: Solvane Media Collective
+    - name: Harnickel Broadcasting Trust
+    - name: Brelloway News Corporation
+    - name: Thandrik Public Media
+    - name: Gelvoran Broadcast Authority
+    - name: Mossendray Channel Network
+    - name: Crellivan Media House
+    - name: Wythendal Broadcasting Service
+    - name: Fennolark News Group

@@ -1,0 +1,373 @@
+document:
+  document_id: bio_02
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Tim Cook
+  wikipedia_url: https://en.wikipedia.org/wiki/Tim_Cook
+  original_document: 'Timothy Donald Cook (born November 1, 1960) is an American business executive who has been the CEO of
+    Apple since 2011. Cook had previously been the company''s COO under its co-founder Steve Jobs. Cook joined Apple in March
+    1998 as a senior vice president for worldwide operations, and then as vice president for worldwide sales and operations.
+    He was appointed chief executive of Apple on August 24, 2011, after Jobs resigned.
+
+
+    During his tenure as the chief executive of Apple and while serving on its board of directors, he has advocated for the
+    political reform of international and domestic surveillance, cybersecurity, national manufacturing, and environmental
+    preservation. Since becoming CEO, Cook has also replaced Jobs'' micromanagement with a more liberal style and implemented
+    a collaborative culture at Apple.
+
+
+    Since 2011 when he took over Apple, to 2020, Cook doubled the company''s revenue and profit, and the company''s market
+    value increased from $348 billion to $1.9 trillion. In 2025, Apple was the second largest technology company by revenue,
+    with US$416 billion.
+
+
+    Outside of Apple, Cook has sat on the board of directors of Nike since 2005. He also sits on the board of the National
+    Football Foundation and is a trustee of Duke University, his alma mater. Cook engages in philanthropy; in March 2015 he
+    said he planned to donate his fortune to charity. In 2014, Cook became the first and only chief executive of a Fortune
+    500 company to publicly come out as gay. In October 2014, the Alabama Academy of Honor inducted Cook, who spoke on the
+    state''s record of LGBTQ rights. It is the highest honor Alabama gives its citizens. In 2012 and 2021, Cook appeared on
+    the Time 100, Time''s annual list of the 100 most influential people in the world. As of December 2025, his net worth
+    is estimated at $2.6 billion, according to Forbes.'
+  document_to_annotate: '[Timothy Donald Cook; person_1.full_name] (born [November 1, 1960; temporal_1.date]) is an [American;
+    person_1.nationality] business executive who has been the CEO of [Apple; entreprise_org_1.name] since [2011; temporal_2.year].
+    [Cook; person_1.last_name] had previously been the company''s COO under its co-founder [Steve Jobs; person_2.full_name].
+    [Cook; person_1.last_name] joined [Apple; entreprise_org_1.name] in [March; temporal_3.month] [1998; temporal_14.year]
+    as a senior vice president for worldwide operations, and then as vice president for worldwide sales and operations. [He;
+    person_1.subj_pronoun] was appointed chief executive of [Apple; entreprise_org_1.name] on [August 24, 2011; temporal_2.date],
+    after [Jobs; person_2.last_name] resigned.
+
+
+    During [his; person_1.poss_det_pronoun] tenure as the chief executive of [Apple; entreprise_org_1.name] and while serving
+    on its board of directors, [he; person_1.subj_pronoun] has advocated for the political reform of international and domestic
+    surveillance, cybersecurity, national manufacturing, and environmental preservation. Since becoming CEO, [Cook; person_1.last_name]
+    has also replaced [Jobs; person_2.last_name]'' micromanagement with a more liberal style and implemented a collaborative
+    culture at [Apple; entreprise_org_1.name].
+
+
+    Since [2011; temporal_2.year] when [he; person_1.subj_pronoun] took over [Apple; entreprise_org_1.name], to [2020; temporal_5.year],
+    [Cook; person_1.last_name] doubled the company''s revenue and profit, and the company''s market value increased from $[348;
+    number_1.int] billion to $[1.9; number_2.float] trillion. In [2025; temporal_6.year], [Apple; entreprise_org_1.name] was
+    the second largest technology company by revenue, with US$[416; number_3.int] billion.
+
+
+    Outside of [Apple; entreprise_org_1.name], [Cook; person_1.last_name] has sat on the board of directors of [Nike; entreprise_org_2.name]
+    since [2005; temporal_7.year]. [He; person_1.subj_pronoun] also sits on the board of the [National Football Foundation;
+    ngo_1.name] and is a trustee of [Duke University; educational_org_1.name], [his; person_1.poss_det_pronoun] alma mater.
+    [Cook; person_1.last_name] engages in philanthropy; in [March; temporal_8.month] [2015; temporal_8.year] [he; person_1.subj_pronoun]
+    said [he; person_1.subj_pronoun] planned to donate [his; person_1.poss_det_pronoun] fortune to charity. In [October; temporal_10.month]
+    [2014; temporal_10.year], the [Alabama Academy of Honor; government_org_1.name] inducted [Cook; person_1.last_name], who
+    spoke on the state''s record of LGBTQ rights. It is the highest honor [Alabama; place_1.state] gives its citizens. In
+    [2012; temporal_11.year] and [2021; temporal_12.year], [Cook; person_1.last_name] appeared on the [Time 100; product_2.name],
+    [Time; media_org_1.name]''s annual list of the [100; number_4.int] most influential people in the world. As of [December;
+    temporal_13.month] [2025; temporal_13.year], [his; person_1.poss_det_pronoun] net worth is estimated at $[2.6; number_5.float]
+    billion, according to [Forbes; media_org_2.name].'
+  relations: []
+  rules:
+  - 'number_4.int > 1 # plural mention "most influential people"'
+  num_questions: 12
+  questions:
+  - question_id: bio_02_q01
+    question: Who was the co-founder of [Apple; entreprise_org_1.name] whose resignation led to [Timothy Donald Cook; person_1.full_name]
+      becoming CEO?
+    question_type: extractive
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Cook; person_1.last_name] was appointed chief executive of [Apple; entreprise_org_1.name]
+      on [17 January 2020; temporal_2.date], after [Jobs; person_2.last_name] resigned.
+    - 2. [Jobs; person_2.last_name] is identified as the co-founder [Steve Jobs; person_2.full_name].
+    reasoning_chain_text: '1. The document states that [Cook; person_1.last_name] was appointed chief executive of [Apple;
+      entreprise_org_1.name] on [17 January 2020; temporal_2.date], after [Jobs; person_2.last_name] resigned.
+
+      2. [Jobs; person_2.last_name] is identified as the co-founder [Steve Jobs; person_2.full_name].'
+  - question_id: bio_02_q02
+    question: What role did [Timothy Donald Cook; person_1.full_name] first hold when joining [Apple; entreprise_org_1.name]?
+    question_type: extractive
+    answer: senior vice president for worldwide operations
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Cook; person_1.last_name] joined [Apple; entreprise_org_1.name] as a senior vice president for
+      worldwide operations.
+    reasoning_chain_text: 1. The document states [Cook; person_1.last_name] joined [Apple; entreprise_org_1.name] as a senior
+      vice president for worldwide operations.
+  - question_id: bio_02_q03
+    question: What university degree did [Timothy Donald Cook; person_1.full_name] earn from [Duke University; educational_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Duke University; educational_org_1.name] is [Cook; person_1.last_name]'s alma mater.
+    - 2. However, the document does not specify what degree [Cook; person_1.last_name] earned there.
+    reasoning_chain_text: '1. The document mentions that [Duke University; educational_org_1.name] is [Cook; person_1.last_name]''s
+      alma mater.
+
+      2. However, the document does not specify what degree [Cook; person_1.last_name] earned there.'
+  - question_id: bio_02_q04
+    question: By how many billion dollars did [Apple; entreprise_org_1.name]'s market value increase from [2011; temporal_2.year]
+      to [2020; temporal_5.year] under [Timothy Donald Cook; person_1.full_name]'s leadership?
+    question_type: arithmetic
+    answer: number_2.float * 1000 - number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the company's market value increased from $[348; number_1.int] billion to $[1.9; number_2.float]
+      trillion.
+    - 2. Converting $[1.9; number_2.float] trillion to billions gives [1.9; number_2.float] * 1000.
+    - 3. The increase is $([1.9; number_2.float] * 1000) billion − $[348; number_1.int] billion.
+    reasoning_chain_text: '1. The document states the company''s market value increased from $[348; number_1.int] billion
+      to $[1.9; number_2.float] trillion.
+
+      2. Converting $[1.9; number_2.float] trillion to billions gives [1.9; number_2.float] * 1000.
+
+      3. The increase is $([1.9; number_2.float] * 1000) billion − $[348; number_1.int] billion.'
+  - question_id: bio_02_q05
+    question: How many times did [Timothy Donald Cook; person_1.full_name] appear on the [Time 100; product_2.name] list?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Cook; person_1.last_name] appeared on the [Time 100; product_2.name] in [2012; temporal_11.year]
+      and [2021; temporal_12.year].
+    - 2. That is 2 appearances.
+    reasoning_chain_text: '1. The document states [Cook; person_1.last_name] appeared on the [Time 100; product_2.name] in
+      [2012; temporal_11.year] and [2021; temporal_12.year].
+
+      2. That is 2 appearances.'
+  - question_id: bio_02_q06
+    question: What was the total annual revenue of [Apple; entreprise_org_1.name] and [Nike; entreprise_org_2.name] combined
+      in [2025; temporal_6.year]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Apple; entreprise_org_1.name] had US$[416; number_3.int] billion in revenue in [2025; temporal_6.year].
+    - 2. The document does not provide any revenue figure for [Nike; entreprise_org_2.name], so the sum cannot be computed.
+    reasoning_chain_text: '1. The document states [Apple; entreprise_org_1.name] had US$[416; number_3.int] billion in revenue
+      in [2025; temporal_6.year].
+
+      2. The document does not provide any revenue figure for [Nike; entreprise_org_2.name], so the sum cannot be computed.'
+  - question_id: bio_02_q07
+    question: How many years after joining [Apple; entreprise_org_1.name] was [Timothy Donald Cook; person_1.full_name] appointed
+      chief executive?
+    question_type: temporal
+    answer: temporal_2.year - temporal_14.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Cook; person_1.last_name] joined [Apple; entreprise_org_1.name] in [March; temporal_3.month] [1998; temporal_14.year].
+    - 2. [Cook; person_1.last_name] was appointed CEO on [17 January 2020; temporal_2.date].
+    reasoning_chain_text: '1. [Cook; person_1.last_name] joined [Apple; entreprise_org_1.name] in [March; temporal_3.month]
+      [1998; temporal_14.year].
+
+      2. [Cook; person_1.last_name] was appointed CEO on [17 January 2020; temporal_2.date].'
+  - question_id: bio_02_q08
+    question: Did [Timothy Donald Cook; person_1.full_name] join [Apple; entreprise_org_1.name] before or after he joined
+      [Nike; entreprise_org_2.name]'s board of directors?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - Cook joined Apple in 1998.
+    - He has sat on Nike's board since 2005.
+    - 1998 is before 2005.
+    reasoning_chain_text: 'Cook joined Apple in 1998.
+
+      He has sat on Nike''s board since 2005.
+
+      1998 is before 2005.'
+  - question_id: bio_02_q09
+    question: How old was [Timothy Donald Cook; person_1.full_name] when [He; person_1.subj_pronoun] first joined the board
+      of directors of [Nike; entreprise_org_2.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. [Cook; person_1.last_name] was born on [November 1, 1960; temporal_1.date] and has sat on the board of [Nike; entreprise_org_2.name]
+      since [2005; temporal_7.year].
+    - 2. The document says "since [2005; temporal_7.year]" but does not specify the exact date [He; person_1.subj_pronoun]
+      joined the board, so the precise age cannot be determined.
+    reasoning_chain_text: '1. [Cook; person_1.last_name] was born on [November 1, 1960; temporal_1.date] and has sat on the
+      board of [Nike; entreprise_org_2.name] since [2005; temporal_7.year].
+
+      2. The document says "since [2005; temporal_7.year]" but does not specify the exact date [He; person_1.subj_pronoun]
+      joined the board, so the precise age cannot be determined.'
+  - question_id: bio_02_q10
+    question: Based on the document, which organization's induction represents the highest honor that [Alabama; place_1.state]
+      bestows on its citizens, and who received it?
+    question_type: inference
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in [October; temporal_10.month] [2014; temporal_10.year], the [Alabama Academy of Honor;
+      government_org_1.name] inducted [Cook; person_1.last_name].
+    - 2. The document then says "It is the highest honor [Alabama; place_1.state] gives its citizens," referring to the [Alabama
+      Academy of Honor; government_org_1.name] induction.
+    reasoning_chain_text: '1. The document states that in [October; temporal_10.month] [2014; temporal_10.year], the [Alabama
+      Academy of Honor; government_org_1.name] inducted [Cook; person_1.last_name].
+
+      2. The document then says "It is the highest honor [Alabama; place_1.state] gives its citizens," referring to the [Alabama
+      Academy of Honor; government_org_1.name] induction.'
+  - question_id: bio_02_q11
+    question: Based on the document's description of [Timothy Donald Cook; person_1.full_name]'s management approach, what
+      kind of leadership style replaced the micromanagement of [Steve Jobs; person_2.full_name]?
+    question_type: inference
+    answer: a more liberal style
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Cook; person_1.last_name] replaced [Jobs; person_2.last_name]' micromanagement with a more
+      liberal style.
+    - 2. This indicates the new leadership approach is described as "a more liberal style."
+    reasoning_chain_text: '1. The document states that [Cook; person_1.last_name] replaced [Jobs; person_2.last_name]'' micromanagement
+      with a more liberal style.
+
+      2. This indicates the new leadership approach is described as "a more liberal style."'
+  - question_id: bio_02_q12
+    question: Given [Timothy Donald Cook; person_1.full_name]'s stated plan to donate [his; person_1.poss_det_pronoun] fortune
+      to charity, what specific charitable organizations or causes has [He; person_1.subj_pronoun] designated as beneficiaries?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that in [March; temporal_8.month] [2015; temporal_8.year], [Cook; person_1.last_name] said [He;
+      person_1.subj_pronoun] planned to donate [his; person_1.poss_det_pronoun] fortune to charity.
+    - 2. The document does not specify any particular charitable organizations or causes designated as beneficiaries.
+    reasoning_chain_text: '1. The document states that in [March; temporal_8.month] [2015; temporal_8.year], [Cook; person_1.last_name]
+      said [He; person_1.subj_pronoun] planned to donate [his; person_1.poss_det_pronoun] fortune to charity.
+
+      2. The document does not specify any particular charitable organizations or causes designated as beneficiaries.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1941
+    upper_bound: 1979
+    factual_value: 1960
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 279
+    upper_bound: 417
+    factual_value: 348
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.float
+    lower_bound: 1.0
+    upper_bound: 12.0
+    factual_value: 1.9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 333
+    upper_bound: 499
+    factual_value: 416
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.float
+    lower_bound: 1.0
+    upper_bound: 13.0
+    factual_value: 2.6
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Pollinquin Delnel; person_1.full_name] (born [3 February 1961; temporal_1.date])
+    is an [Quarvekglanean; person_1.nationality] business executive who has been the CEO of [Druxnyxeisk Industrial Guild;
+    entreprise_org_1.name] since [2019; temporal_2.year]. [Delnel; person_1.last_name] had previously been the company''s
+    COO under its co-founder [Jorvelvel Vaksar; person_2.full_name]. [Delnel; person_1.last_name] joined [Druxnyxeisk Industrial
+    Guild; entreprise_org_1.name] in [September; temporal_3.month] [2007; temporal_14.year] as a senior vice president for
+    worldwide operations, and then as vice president for worldwide sales and operations. [he; person_1.subj_pronoun] was appointed
+    chief executive of [Druxnyxeisk Industrial Guild; entreprise_org_1.name] on [17 January 2020; temporal_2.date], after
+    [Vaksar; person_2.last_name] resigned.
+
+
+    During [his; person_1.poss_det_pronoun] tenure as the chief executive of [Druxnyxeisk Industrial Guild; entreprise_org_1.name]
+    and while serving on its board of directors, [he; person_1.subj_pronoun] has advocated for the political reform of international
+    and domestic surveillance, cybersecurity, national manufacturing, and environmental preservation. Since becoming CEO,
+    [Delnel; person_1.last_name] has also replaced [Vaksar; person_2.last_name]'' micromanagement with a more liberal style
+    and implemented a collaborative culture at [Druxnyxeisk Industrial Guild; entreprise_org_1.name].
+
+
+    Since [2019; temporal_2.year] when [he; person_1.subj_pronoun] took over [Druxnyxeisk Industrial Guild; entreprise_org_1.name],
+    to [2024; temporal_5.year], [Delnel; person_1.last_name] doubled the company''s revenue and profit, and the company''s
+    market value increased from $[279; number_1.int] billion to $[2.0; number_2.float] trillion. In [2026; temporal_6.year],
+    [Druxnyxeisk Industrial Guild; entreprise_org_1.name] was the second largest technology company by revenue, with US$[333;
+    number_3.int] billion.
+
+
+    Outside of [Druxnyxeisk Industrial Guild; entreprise_org_1.name], [Delnel; person_1.last_name] has sat on the board of
+    directors of [Drerkvyrosk Dynamics; entreprise_org_2.name] since [2014; temporal_7.year]. [he; person_1.subj_pronoun]
+    also sits on the board of the [Myrelxvyruuskskaez Civic Network; ngo_1.name] and is a trustee of [Xaleimxalulxthreirk
+    Academy; educational_org_1.name], [his; person_1.poss_det_pronoun] alma mater. [Delnel; person_1.last_name] engages in
+    philanthropy; in [August; temporal_8.month] [2023; temporal_8.year] [he; person_1.subj_pronoun] said [he; person_1.subj_pronoun]
+    planned to donate [his; person_1.poss_det_pronoun] fortune to charity. In [July; temporal_10.month] [2022; temporal_10.year],
+    the [Skaevxalurkkriond State Council; government_org_1.name] inducted [Delnel; person_1.last_name], who spoke on the state''s
+    record of LGBTQ rights. It is the highest honor [Glanmarn State; place_1.state] gives its citizens. In [2021; temporal_11.year]
+    and [2025; temporal_12.year], [Delnel; person_1.last_name] appeared on the [LorkorKit; product_2.name], [Droxskoark Signal;
+    media_org_1.name]''s annual list of the [99; number_4.int] most influential people in the world. As of [January; temporal_13.month]
+    [2026; temporal_13.year], [his; person_1.poss_det_pronoun] net worth is estimated at $[3.0; number_5.float] billion, according
+    to [Xaloshskelxvyruund Chronicle; media_org_2.name].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,2544 @@
+{% extends "base.html" %}
+{% block title %}{{ doc_id }} - Editor{% endblock %}
+
+{% block nav_links %}
+<span class="text-muted" style="margin: 0 4px;">›</span>
+<span class="text-sm text-muted">{{ theme|replace("_", " ")|title }}</span>
+<span class="text-muted" style="margin: 0 4px;">›</span>
+<span class="text-sm font-semibold">{{ doc_id }}</span>
+{% endblock %}
+
+{% block nav_right %}
+<span class="text-xs text-muted" style="margin-right: 8px;">
+    <kbd>Ctrl+S</kbd> Save &nbsp; <kbd>?</kbd> Document Annotation
+</span>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid"
+     x-data="editorApp('{{ theme }}', '{{ doc_id }}')"
+     x-init="init()"
+     @keydown.window="handleGlobalKeydown($event)"
+     @resize.window="handleWindowResizeOrScroll()"
+     @scroll.window="handleWindowResizeOrScroll()">
+    <style>
+    .agreement-legend {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+    .agreement-legend .chip {
+        font-size: 11px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        border: 1px solid var(--border-light);
+    }
+    .agreement-chip-agreed {
+        background: #ecfdf5;
+        color: #166534;
+        border-color: #bbf7d0 !important;
+    }
+    .agreement-chip-diff {
+        background: #fff7ed;
+        color: #9a3412;
+        border-color: #fdba74 !important;
+    }
+    .agreement-merged-doc {
+        padding: 12px;
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        background: #fafafa;
+        max-height: 240px;
+        overflow: auto;
+        line-height: 1.7;
+        white-space: pre-wrap;
+    }
+    .agreement-agreed {
+        box-shadow: inset 0 0 0 1px rgba(22, 163, 74, 0.25);
+    }
+    .agreement-diff-span {
+        background: #fff1e6;
+        border: 1px solid #fdba74;
+        color: #9a3412;
+        border-radius: 5px;
+        padding: 1px 4px;
+        font-weight: 600;
+    }
+    .agreement-diff-meta {
+        display: inline-block;
+        margin-left: 6px;
+        font-size: 11px;
+        color: #9a3412;
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        border-radius: 999px;
+        padding: 1px 6px;
+        vertical-align: middle;
+    }
+    .agreement-conflict-item {
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        padding: 8px;
+        margin-bottom: 8px;
+        background: #fff;
+        cursor: pointer;
+    }
+    .agreement-conflict-item.is-selected {
+        border-color: #fb923c;
+        box-shadow: 0 0 0 2px rgba(251, 146, 60, 0.22);
+        background: #fff7ed;
+    }
+    .agreement-conflict-item .target {
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .agreement-conflict-item .refs {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+    }
+    .agreement-inline-wrapper {
+        border-bottom: 1px solid var(--border-light);
+        background: #fcfcff;
+        padding: 10px 12px;
+    }
+    .agreement-resolve-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+    }
+    .agreement-resolve-hint {
+        font-size: 11px;
+        color: var(--text-muted);
+    }
+    .agreement-inline-doc {
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        background: #fff;
+        padding: 12px;
+        max-height: 240px;
+        overflow: auto;
+        line-height: 1.85;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+    .agreement-inline-seg {
+        border-radius: 4px;
+        padding: 0 1px;
+        margin: 0;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        cursor: pointer;
+    }
+    .agreement-inline-seg.kind-agreed {
+        background: rgba(34, 197, 94, 0.08);
+        box-shadow: inset 0 0 0 1px rgba(22, 163, 74, 0.2);
+    }
+    .agreement-inline-seg.kind-conflict-open {
+        background: rgba(254, 226, 226, 0.18);
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #dc2626;
+        text-decoration-thickness: 1.75px;
+        text-underline-offset: 3px;
+        box-shadow: none;
+    }
+    .agreement-inline-seg.kind-conflict-resolved {
+        background: rgba(148, 163, 184, 0.12);
+        box-shadow: inset 0 0 0 1px rgba(100, 116, 139, 0.25);
+    }
+    .agreement-inline-seg.selected {
+        background: rgba(251, 191, 36, 0.18);
+        box-shadow: inset 0 0 0 1px rgba(217, 119, 6, 0.65);
+    }
+    .doc-text-container.agreement-resolve-active .agreement-conflict-mark {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #dc2626;
+        text-decoration-thickness: 1.75px;
+        text-underline-offset: 3px;
+    }
+    .doc-text-container.agreement-resolve-active .agreement-conflict-mark.selected {
+        box-shadow: inset 0 0 0 2px rgba(217, 119, 6, 0.55);
+    }
+    .doc-text-container.agreement-resolve-active .agreement-conflict-plain {
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .agreement-decision-card {
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        padding: 8px;
+        margin-bottom: 8px;
+        background: #fff;
+    }
+    .agreement-decision-card .title {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    .agreement-decision-card.a .title { color: #1d4ed8; }
+    .agreement-decision-card.b .title { color: #6d28d9; }
+    .agreement-decision-card.current .title { color: #475569; }
+    .agreement-floating-panel {
+        position: fixed;
+        z-index: 260;
+        width: min(880px, calc(100vw - 24px));
+        max-height: min(82vh, 760px);
+        overflow: auto;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+        padding: 12px;
+    }
+    .agreement-modal-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .agreement-modal-section {
+        border: 1px solid var(--border-light);
+        border-radius: 10px;
+        padding: 10px;
+        background: #fff;
+    }
+    .agreement-modal-section h4 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+    }
+    .agreement-context-box {
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        padding: 10px;
+        line-height: 1.7;
+        background: #fafafa;
+        font-size: 14px;
+    }
+    .agreement-context-span {
+        background: #fee2e2;
+        border-bottom: 2px wavy #dc2626;
+        border-radius: 4px;
+        padding: 0 2px;
+        font-weight: 600;
+    }
+    .agreement-context-span.muted {
+        background: #f1f5f9;
+        border-bottom-color: #94a3b8;
+    }
+    .agreement-text-context-block {
+        line-height: 1.7;
+        white-space: pre-wrap;
+    }
+    .agreement-text-context-block + .agreement-text-context-block {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px dashed var(--border-light);
+    }
+    .agreement-text-del {
+        background: rgba(254, 226, 226, 0.8);
+        color: #b91c1c;
+        text-decoration-line: line-through;
+        text-decoration-thickness: 1.5px;
+        border-radius: 3px;
+        padding: 0 1px;
+    }
+    .agreement-text-ins {
+        background: rgba(220, 252, 231, 0.9);
+        color: #166534;
+        border-radius: 3px;
+        padding: 0 1px;
+        box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.25);
+    }
+    .agreement-question-conflict {
+        border-color: #fdba74;
+        background: #fff7ed;
+        box-shadow: inset 0 0 0 1px rgba(251, 146, 60, 0.25);
+    }
+    .agreement-question-conflict-resolved {
+        border-color: #86efac;
+        background: #f0fdf4;
+        box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.22);
+    }
+    .agreement-question-id-conflict {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #dc2626;
+        text-decoration-thickness: 1.75px;
+        text-underline-offset: 3px;
+        cursor: pointer;
+    }
+    .agreement-question-floating-panel {
+        width: min(980px, calc(100vw - 24px));
+    }
+    .agreement-question-mini {
+        margin-bottom: 0;
+        background: #fff;
+    }
+    .agreement-question-mini .q-text,
+    .agreement-question-mini .q-answer-text {
+        max-height: 140px;
+        overflow: auto;
+    }
+    @media (max-width: 900px) {
+        .agreement-modal-grid {
+            grid-template-columns: 1fr;
+        }
+        .agreement-floating-panel {
+            width: calc(100vw - 16px);
+            max-height: 88vh;
+            left: 8px !important;
+        }
+    }
+    </style>
+
+    <!-- Header bar with improved UX -->
+    <div class="editor-header">
+        <div class="header-left">
+            <a href="/" class="btn btn-sm btn-ghost" id="editor-back-link">&larr; Back</a>
+            <div class="document-info">
+                <div class="flex items-center gap-8">
+                    <h2 class="document-title" x-text="doc_id"></h2>
+                    <span class="badge" :class="'badge-' + currentStatus" x-text="currentStatusLabel"></span>
+                    <span class="badge"
+                          x-show="reviewTarget"
+                          style="background:#fff7ed;color:#9a3412;border:1px solid #fdba74;"
+                          x-text="reviewTargetLabel"></span>
+                    <span class="badge"
+                          x-show="agreementWorkspace.active"
+                          style="background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;">
+                        Agreement Workspace
+                    </span>
+                </div>
+                <div class="flex items-center gap-12 text-xs text-muted">
+                    <span x-text="docData?.document_theme || ''"></span>
+                    <div class="doc-sequencer">
+                        <button class="btn btn-xs btn-ghost"
+                                @click="navigateToPreviousDocument()"
+                                :disabled="!hasPrevDocument || navigationLoading"
+                                title="Previous document">
+                            ← Prev
+                        </button>
+                        <span class="doc-sequencer-count"
+                              :title="currentNavigatorContext"
+                              x-text="globalDocProgressLabel"></span>
+                        <button class="btn btn-xs btn-ghost"
+                                @click="navigateToNextDocument()"
+                                :disabled="!hasNextDocument || navigationLoading"
+                                title="Next document">
+                            Next →
+                        </button>
+                    </div>
+                    {% if user and user.role == 'power_user' %}
+                    <template x-if="docData?.annotated_by">
+                        <span style="display:inline-flex;align-items:center;gap:4px;background:#f0f0ff;color:#4338ca;padding:2px 8px;border-radius:99px;font-weight:600;">
+                            🤖 <span x-text="docData.annotated_by"></span>
+                        </span>
+                    </template>
+                    {% endif %}
+                    {% if user and user.role == 'power_user' %}
+                    <template x-if="lastEditor">
+                        <span x-text="'Edited by ' + lastEditor"></span>
+                    </template>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Progress indicator -->
+        <div class="annotation-progress">
+            <div class="progress-stats">
+                <span class="stat-item">
+                    <span class="stat-icon">📝</span>
+                    <span x-text="Object.values(entityGroups).flat().length"></span>
+                    <span class="text-muted">entities</span>
+                </span>
+                <span class="stat-item">
+                    <span class="stat-icon">❓</span>
+                    <span x-text="docData?.questions?.length || 0"></span>
+                    <span class="text-muted">questions</span>
+                </span>
+                <span class="stat-item">
+                    <span class="stat-icon">📋</span>
+                    <span x-text="totalRuleCount()"></span>
+                    <span class="text-muted">rules</span>
+                </span>
+            </div>
+        </div>
+        
+        <div class="header-actions">
+            <template x-if="dirty">
+                <div class="unsaved-indicator">
+                    <span class="pulse-dot"></span>
+                    Unsaved
+                </div>
+            </template>
+            <button class="btn btn-sm" @click="showShortcuts = true" title="Keyboard shortcuts (?)">
+                <span>⌨️</span>
+            </button>
+            <button class="btn btn-sm"
+                    x-show="!agreementWorkspace.active && !reviewTarget"
+                    @click="generateFictional()" :disabled="generatingFictional"
+                    title="Generate 10 fictional versions (seeds 23-32)"
+                    style="background:#7c3aed;color:#fff;border-color:#7c3aed;">
+                <span x-show="!generatingFictional">🎲 Generate Fictional (10x)</span>
+                <span x-show="generatingFictional">⏳ Generating 10 versions...</span>
+            </button>
+            {% if user and user.role == 'power_user' %}
+            <button class="btn btn-sm"
+                    x-show="!reviewTarget"
+                    @click="openGroqPlayground()"
+                    title="Ask Groq models questions against this document"
+                    style="background:#0f766e;color:#fff;border-color:#0f766e;">
+                <span>🧪 Groq Playground</span>
+            </button>
+            {% endif %}
+            <button class="btn btn-sm btn-primary" @click="save()" :disabled="saving" x-show="canSaveWorkspace">
+                <span x-show="!saving">💾 Save</span>
+                <span x-show="saving">⏳ Saving...</span>
+            </button>
+            <template x-if="agreementWorkspace.active">
+                <div class="flex items-center gap-8">
+                    <button class="btn btn-sm btn-ghost"
+                            @click="loadAgreementVariantIntoEditor('source')"
+                            :disabled="saving || !agreementWorkspace.versions.source.available">Load Opus</button>
+                    <button class="btn btn-sm btn-ghost"
+                            @click="loadAgreementVariantIntoEditor('final')"
+                            :disabled="saving || !agreementWorkspace.versions.final.available">Load Final</button>
+                    <button class="btn btn-sm btn-success"
+                            @click="markAgreementFinished()"
+                            :disabled="saving || agreementWorkspace.finalizing || !agreementWorkspace.runId || agreementHasUnresolvedConflicts()">
+                        <span x-show="!agreementWorkspace.finalizing">✓ Agreement Finished</span>
+                        <span x-show="agreementWorkspace.finalizing">⏳ Finishing...</span>
+                    </button>
+                    <button class="btn btn-sm btn-warning"
+                            x-show="reviewTarget === 'rules'"
+                            @click="markAgreementCompletedDirectly()"
+                            :disabled="saving || agreementWorkspace.finalizing || !agreementWorkspace.runId || agreementHasUnresolvedConflicts()">
+                        <span x-show="!agreementWorkspace.finalizing">✓ Completed</span>
+                        <span x-show="agreementWorkspace.finalizing">⏳ Completing...</span>
+                    </button>
+                </div>
+            </template>
+            <template x-if="!agreementWorkspace.active">
+                <div class="flex items-center gap-8">
+                    <template x-if="!reviewTarget && (currentStatus === 'completed' || currentStatus === 'validated')">
+                        <button class="btn btn-sm btn-warning" @click="unvalidate()" :disabled="saving"
+                                title="Reopen for editing">↶ Reopen</button>
+                    </template>
+                    <template x-if="showFinishWorkspaceAction">
+                        {% if user and user.role == 'regular_user' %}
+                        <button class="btn btn-sm btn-success" @click="submitAnnotations()" :disabled="saving || dirty"
+                                :title="reviewTarget ? reviewTargetLabel : 'Submit your annotations'"
+                                x-text="finishButtonLabel"></button>
+                        {% else %}
+                        <button class="btn btn-sm btn-success" @click="finish()" :disabled="saving || dirty"
+                                :title="reviewTarget ? reviewTargetLabel : 'Mark as complete'"
+                                x-text="finishButtonLabel"></button>
+                        {% endif %}
+                    </template>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- Loading -->
+    <template x-if="loading">
+        <div class="text-center text-muted" style="padding:60px;">Loading document...</div>
+    </template>
+
+    <!-- Main two-column layout -->
+    <div x-show="!loading" class="editor-main" style="display:none;">
+
+        <!-- ==================== LEFT: Entity Sidebar + Document ==================== -->
+        <div class="editor-left">
+
+            <!-- Entity sidebar -->
+            <div class="entity-sidebar card">
+                <div class="card-header" style="font-size:12px;">
+                    <span>Entities</span>
+                    <button class="btn btn-xs btn-ghost"
+                            x-show="canEditDocumentAnnotations && !showEntityReferences"
+                            @click="addNewEntity()"
+                            title="Create new entity">+ New</button>
+                </div>
+                    <div style="padding:6px 0;">
+                    <template x-for="type in entityTypes" :key="type">
+                        <div class="entity-group" x-show="entityGroups[type] && entityGroups[type].length > 0">
+                            <div class="entity-group-header"
+                                 @click="toggleTypeHighlight(type)"
+                                 @mouseenter="onEntityHover(null)"
+                                 :class="{'text-primary': highlightedType === type}">
+                                <span class="entity-type-btn" :class="'entity-type-btn-' + type"
+                                      x-text="type" style="font-size:10px; padding:2px 7px;"></span>
+                                <span class="entity-count" x-text="entityGroups[type]?.length || 0"></span>
+                            </div>
+                            <template x-for="ent in entityGroups[type]" :key="ent.id">
+                                <div>
+                                    <div class="entity-item"
+                                         :class="{'active': paintEntity === ent.id}"
+                                         @click="togglePaintMode(ent.id)"
+                                         @mouseenter="onEntityHover(ent.id)"
+                                         @mouseleave="onEntityLeave()">
+                                        <span class="entity-id" x-text="ent.id"></span>
+                                        <span class="entity-label" x-text="ent.preview"></span>
+                                        <span class="text-xs text-muted ml-auto" x-text="'×' + ent.count"></span>
+                                        <button class="entity-delete-btn" 
+                                                @click.stop="deleteEntity(ent.id)"
+                                                x-show="canEditDocumentAnnotations && !showEntityReferences"
+                                                title="Delete entity and all its instances">
+                                            ×
+                                        </button>
+                                    </div>
+                                    <div class="entity-attrs" x-show="expandedEntity === ent.id" x-transition @click.stop>
+                                        <template x-for="attr in ent.attrs" :key="attr.key">
+                                            <div class="entity-attr-item">
+                                                <span class="attr-key" x-text="attr.key + ':'"></span>
+                                                <span class="attr-val" x-text="attr.value"></span>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template x-if="Object.values(entityGroups).flat().length === 0">
+                        <div class="empty-state">
+                            <div class="empty-state-icon">&#9672;</div>
+                            <div class="empty-state-text">No entities yet.<br>Select text to start annotating.</div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="document-stack">
+                <!-- Document text -->
+                <div class="card" style="min-height: 500px;">
+                    <div class="card-header">
+                        <span>Document Text</span>
+                        <div class="flex gap-8 items-center">
+                            <template x-if="paintEntity">
+                                <span class="badge badge-in_progress" style="font-size:10px;">
+                                    Painting: <span x-text="paintEntity"></span>
+                                    <button class="btn-icon-only" @click="paintEntity = null" style="background:none;border:none;cursor:pointer;color:inherit;font-size:14px;padding:0 2px;">&times;</button>
+                                </span>
+                            </template>
+                            <button class="btn btn-xs"
+                                    :class="showEntityReferences ? 'btn-primary' : 'btn-ghost'"
+                                    @click="toggleEntityReferenceView()"
+                                    :disabled="agreementWorkspace.active && agreementWorkspace.resolveMode"
+                                    :title="agreementWorkspace.active && agreementWorkspace.resolveMode
+                                        ? 'Turn off Resolve Conflicts to show entity references'
+                                        : (showEntityReferences ? 'Return to factual span values' : 'Replace highlighted span values with entity references')">
+                                <span x-text="showEntityReferences ? 'Hide Entity References' : 'Show Entity References'"></span>
+                            </button>
+                            <template x-if="showEntityReferences">
+                                <span class="text-xs text-muted">Reference labels shown inline</span>
+                            </template>
+                            <label class="source-toggle">
+                                <input type="checkbox"
+                                       x-model="sourceView"
+                                       @change="onSourceViewToggle()"
+                                       style="width:auto; margin-right:4px;">
+                                <span x-text="agreementWorkspace.active && agreementWorkspace.resolveMode ? 'Source (Plain Text)' : 'Source'"></span>
+                            </label>
+                            <template x-if="agreementWorkspace.active">
+                                <label class="source-toggle">
+                                    <input type="checkbox"
+                                           x-model="agreementWorkspace.resolveMode"
+                                           @change="if (agreementWorkspace.resolveMode) { setEntityReferenceView(false) }"
+                                           style="width:auto; margin-right:4px;">
+                                    Resolve Conflicts
+                                </label>
+                            </template>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Rendered view -->
+                        <div x-show="!sourceView"
+                             class="doc-text-container"
+                             :class="{'agreement-resolve-active': agreementWorkspace.active && agreementWorkspace.resolveMode}"
+                             x-ref="docText"
+                             x-html="renderMainDocumentHtml()"
+                             @mousedown="handleDocumentMouseDown($event)"
+                             @dblclick="handleDocumentDoubleClick($event)"
+                             @click="handleAgreementInlineClick($event)"
+                             @mouseup="handleTextSelection($event)">
+                        </div>
+                        <!-- Source view -->
+                        <div x-show="sourceView" style="padding:12px;">
+                            <textarea class="source-textarea"
+                                      x-model="sourceEditorText"
+                                      :readonly="!canEditDocumentAnnotations"
+                                      @input="onSourceChange()"
+                                      rows="25"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision logs -->
+                {% if user and user.role == 'power_user' %}
+                <div class="card decision-log-card" x-show="decisionLogs.length > 0">
+                    <div class="card-header">
+                        <div class="flex items-center gap-8">
+                            <span>Decision Logs</span>
+                            <span class="panel-count" x-text="decisionLogs.length"></span>
+                        </div>
+                        <span class="text-xs text-muted">AI annotation decisions</span>
+                    </div>
+                    <div class="decision-log-list">
+                        <template x-for="(log, idx) in decisionLogs" :key="'decision-log-' + idx">
+                            <div class="decision-log-item">
+                                <div class="decision-log-head">
+                                    <span class="badge"
+                                          :class="log.action === 'ANNOTATE' ? 'badge-validated' : 'badge-draft'"
+                                          x-text="log.action || 'KEEP_LITERAL'"></span>
+                                    <span class="decision-log-code" x-text="log.reason_code || 'UNSPECIFIED'"></span>
+                                </div>
+                                <div class="decision-log-span" x-show="log.span">
+                                    <span class="text-xs text-muted">Span:</span>
+                                    <code x-text="log.span"></code>
+                                </div>
+                                <div class="decision-log-reason" x-show="log.short_reason" x-text="log.short_reason"></div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- ==================== RIGHT: Questions, Rules, History ==================== -->
+        <div class="editor-right">
+
+            <!-- Questions panel -->
+            <div class="panel-section" x-show="showQuestionsPanel">
+                <div class="panel-header" @click="panelState.questions = !panelState.questions">
+                    <div class="flex items-center gap-8">
+                        <span>Questions</span>
+                        <span class="panel-count" x-text="docData?.questions?.length || 0"></span>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <button class="btn btn-xs btn-ghost" @click.stop="addQuestion()" title="Add question"
+                                x-show="canEditQuestions">+</button>
+                        <span class="panel-chevron" :class="{'open': panelState.questions}">&#9660;</span>
+                    </div>
+                </div>
+                <div class="panel-body" :class="{'collapsed': !panelState.questions}">
+                    <!-- Re-attach listeners whenever questions change -->
+                    <div x-effect="docData && docData.questions && $nextTick(() => attachQuestionAnnotationHoverListeners())"></div>
+                    <div class="qa-coverage-card" x-show="reviewTarget === 'questions' && !referenceMode">
+                        <div class="qa-coverage-header">
+                            <div class="qa-coverage-title">Coverage verifier</div>
+                            <div class="qa-coverage-count" x-text="qaCoverageSummaryLabel()"></div>
+                        </div>
+                        <div class="qa-coverage-help">
+                            Before submitting, cover all 12 combinations (4 question types × 3 answer types), or add an ignore justification when a combination is impossible for this document.
+                        </div>
+                        <template x-if="qaCoverageIssues().length">
+                            <div class="qa-coverage-issues">
+                                <template x-for="(issue, issueIdx) in qaCoverageIssues()" :key="'qa-coverage-issue-' + issueIdx">
+                                    <div class="qa-coverage-issue" x-text="issue"></div>
+                                </template>
+                            </div>
+                        </template>
+                        <template x-for="row in qaCoverageRows()" :key="'qa-coverage-' + row.key">
+                            <div class="qa-coverage-row" :class="'qa-coverage-row-' + row.status">
+                                <div class="qa-coverage-row-main">
+                                    <span class="qa-coverage-pair">
+                                        <strong x-text="qaCoverageQuestionTypeLabel(row.question_type)"></strong>
+                                        <span> + </span>
+                                        <strong x-text="qaCoverageAnswerTypeLabel(row.answer_type)"></strong>
+                                    </span>
+                                    <span class="badge"
+                                          :class="row.status === 'present' ? 'badge-validated' : (row.status === 'exempted' ? 'badge-draft' : 'badge-conflict')"
+                                          x-text="row.status === 'present' ? 'covered' : (row.status === 'exempted' ? 'ignored' : 'missing')"></span>
+                                </div>
+                                <template x-if="!row.has_question">
+                                    <div class="qa-coverage-ignore">
+                                        <label>Ignore justification</label>
+                                        <textarea rows="2"
+                                                  :value="row.justification"
+                                                  @keydown.capture.stop
+                                                  @keypress.capture.stop
+                                                  @keyup.capture.stop
+                                                  @keydown.stop
+                                                  @keypress.stop
+                                                  @keyup.stop
+                                                  @mousedown.stop
+                                                  @focus.stop
+                                                  @click.stop
+                                                  @input="qaCoverageSetJustification(row.question_type, row.answer_type, $event.target.value)"
+                                                  :disabled="!canEditQuestions"
+                                                  placeholder="Explain why this combination cannot be created for this document (e.g., no numeric quantities in the text)."></textarea>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                    <template x-for="(q, idx) in docData?.questions || []" :key="(q.question_id || 'q') + '-' + idx">
+                        <div class="question-card"
+                             :class="{
+                                'agreement-question-conflict': isQuestionInUnresolvedConflict(q, idx),
+                                'agreement-question-conflict-resolved': isQuestionInResolvedConflict(q, idx)
+                             }"
+                             :data-question-conflict-id="questionConflictIdForQuestionAny(q, idx)">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id"
+                                          :class="{'agreement-question-id-conflict': isQuestionInUnresolvedConflict(q, idx)}"
+                                          x-text="q.question_id"
+                                          @click.stop="if (agreementWorkspace.active && isQuestionInUnresolvedConflict(q, idx)) { openAgreementQuestionConflictModal(questionConflictIdForQuestion(q, idx), $event.currentTarget) }"></span>
+                                    <span class="question-type-badge"
+                                          :class="'qtype-' + (q.question_type || 'extractive')"
+                                          x-text="q.question_type || 'extractive'"></span>
+                                    <template x-if="agreementWorkspace.active && isQuestionInUnresolvedConflict(q, idx)">
+                                        <span class="badge badge-in_progress" style="font-size:10px;">conflict</span>
+                                    </template>
+                                    <template x-if="agreementWorkspace.active && isQuestionInResolvedConflict(q, idx)">
+                                        <span class="badge badge-validated" style="font-size:10px;">resolved</span>
+                                    </template>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <button class="question-edit-btn"
+                                            x-show="agreementWorkspace.active && isQuestionInUnresolvedConflict(q, idx)"
+                                            @click.stop="openAgreementQuestionConflictModal(questionConflictIdForQuestion(q, idx), $event.currentTarget)"
+                                            title="Resolve this question conflict">⚖</button>
+                                    <button class="question-edit-btn" @click="toggleQuestionEdit(idx)"
+                                            :disabled="!canEditQuestions"
+                                            :title="editingQuestion === idx ? 'Close editor' : 'Edit question'"
+                                            x-text="editingQuestion === idx ? '✓' : '✎'"></button>
+                                    <button class="btn btn-xs btn-icon btn-danger" @click="deleteQuestion(idx)" title="Delete"
+                                            :disabled="!canEditQuestions">&times;</button>
+                                </div>
+                            </div>
+
+                            <!-- Read-only view -->
+                            <div class="question-readonly" x-show="editingQuestion !== idx">
+                                <div class="q-label">Question</div>
+                                <div class="q-text" 
+                                     x-html="renderAnnotatedHtml(q.question || '')"
+                                     @mouseup="handleQuestionTextSelection($event, idx)"></div>
+                                <div style="margin-top:12px;">
+                                    <div class="q-label">Answer</div>
+                                    <div class="q-answer-text" 
+                                         x-html="renderAnswerExpression(String(q.answer || ''))"
+                                         @mouseup="handleAnswerTextSelection($event, idx)"></div>
+                                    <template x-if="q.answer_type">
+                                        <span class="badge" style="font-size:9px; margin-left:6px;"
+                                              :class="q.answer_type === 'variant' ? 'badge-in_progress' : (q.answer_type === 'refusal' ? 'badge-conflict' : 'badge-validated')"
+                                              x-text="q.answer_type"></span>
+                                    </template>
+                                </div>
+                                <template x-if="Array.isArray(q.reasoning_chain) && q.reasoning_chain.length">
+                                    <div style="margin-top:12px;">
+                                        <div class="q-label">Reasoning chain</div>
+                                        <ol style="margin:6px 0 0 18px; padding:0; color:var(--text-secondary); font-size:12px; line-height:1.45;">
+                                            <template x-for="(step, stepIdx) in q.reasoning_chain" :key="'q-step-' + idx + '-' + stepIdx">
+                                                <li style="margin:0 0 4px 0;" x-html="renderAnnotatedHtml(String(step || ''))"></li>
+                                            </template>
+                                        </ol>
+                                    </div>
+                                </template>
+                            </div>
+
+                            <!-- Edit view -->
+                            <div class="question-fields" x-show="editingQuestion === idx" x-transition>
+                                <div class="form-group" style="margin-bottom:8px;">
+                                    <label>Question</label>
+                                    <textarea x-model="q.question"
+                                              rows="2"
+                                              :data-question-input-idx="idx"
+                                              @focus="setQaInsertionTarget(idx, 'question')"
+                                              @click="setQaInsertionTarget(idx, 'question')"
+                                              @input="markDirty()"
+                                              :disabled="!canEditQuestions"></textarea>
+                                    <div class="text-xs text-muted mt-4">
+                                        Tip: click an entity in the document to insert <code>[value; entity_ref]</code> in <code>Question</code>, or just <code>entity_ref</code> in <code>Answer</code>.
+                                    </div>
+                                </div>
+                                <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
+                                    <div class="form-group" style="margin-bottom:0;">
+                                        <label>Type</label>
+                                        <select x-model="q.question_type" @change="markDirty()" :disabled="!canEditQuestions">
+                                            <option value="extractive">extractive</option>
+                                            <option value="arithmetic">arithmetic</option>
+                                            <option value="temporal">temporal</option>
+                                            <option value="inference">inference</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" style="margin-bottom:0;">
+                                        <label>Answer</label>
+                                        <input type="text"
+                                               x-model="q.answer"
+                                               :data-answer-input-idx="idx"
+                                               @focus="setQaInsertionTarget(idx, 'answer')"
+                                               @click="setQaInsertionTarget(idx, 'answer')"
+                                               @input="markDirty()"
+                                               class="text-mono"
+                                               :disabled="!canEditQuestions || q.answer_type === 'refusal'">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom:0;">
+                                        <label>Answer Type</label>
+                                        <select x-model="q.answer_type" @change="onQuestionAnswerTypeChanged(q)" :disabled="!canEditQuestions">
+                                            <option value="variant">variant</option>
+                                            <option value="invariant">invariant</option>
+                                            <option value="refusal">refusal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Reasoning chain (optional)</label>
+                                    <textarea x-model="q.reasoning_chain_text"
+                                              rows="3"
+                                              @input="onQuestionReasoningChainChanged(q)"
+                                              :disabled="!canEditQuestions"
+                                              placeholder="Write one reasoning step per line, optionally using entity annotations."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template x-if="agreementWorkspace.active && getAgreementUnresolvedQuestionConflictsNotInCurrentDoc().length > 0">
+                        <div class="mt-8">
+                            <div class="text-xs font-semibold text-muted mb-8">
+                                Proposed / Missing Conflict Questions
+                            </div>
+                            <template x-for="conflict in getAgreementUnresolvedQuestionConflictsNotInCurrentDoc()" :key="'missing-' + conflict.id">
+                                <div class="question-card agreement-question-conflict"
+                                     :data-question-conflict-id="conflict.id">
+                                    <div class="question-card-header">
+                                        <div class="flex items-center gap-6">
+                                            <span class="question-id agreement-question-id-conflict"
+                                                  x-text="conflict.label || conflict.key"></span>
+                                            <span class="badge badge-in_progress" style="font-size:10px;">needs merge</span>
+                                            <span class="text-xs text-muted" x-text="agreementQuestionConflictPairLabel(conflict)"></span>
+                                        </div>
+                                        <button class="question-edit-btn"
+                                                @click.stop="openAgreementQuestionConflictModal(conflict.id, $event.currentTarget)"
+                                                title="Resolve this question conflict">Resolve</button>
+                                    </div>
+                                    <div class="question-readonly">
+                                        <div class="q-label" x-text="agreementReviewerLabel('a')"></div>
+                                        <template x-if="conflict.a_item">
+                                            <div>
+                                                <div class="q-text" x-html="renderAnnotatedHtml(conflict.a_item.question || '')"></div>
+                                                <div class="q-label mt-4">Answer</div>
+                                                <div class="q-answer-text" x-html="renderAnswerExpression(String(conflict.a_item.answer || ''))"></div>
+                                            </div>
+                                        </template>
+                                        <template x-if="!conflict.a_item">
+                                            <div class="text-xs text-muted">
+                                                No question on this side.
+                                                <template x-if="agreementQuestionConflictCoverageCandidates(conflict, 'a').length">
+                                                    <div class="mt-6">
+                                                        <div class="text-xs text-muted mb-4">Replacement question(s) on this side:</div>
+                                                        <template x-for="(candidate, candidateIdx) in agreementQuestionConflictCoverageCandidates(conflict, 'a')"
+                                                                  :key="'a-repl-' + conflict.id + '-' + (candidate.key || candidate.question_id || candidateIdx)">
+                                                            <div class="p-6 mb-6" style="border:1px solid var(--border-color); border-radius:8px; background:#fafafa;">
+                                                                <div class="q-label" x-text="candidate.question_id || candidate.key || 'candidate'"></div>
+                                                                <div class="q-text" x-html="renderAnnotatedHtml(candidate.question || '')"></div>
+                                                                <div class="q-label mt-4">Answer</div>
+                                                                <div class="q-answer-text" x-html="renderAnswerExpression(String(candidate.answer || ''))"></div>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </template>
+                                                <template x-if="!agreementQuestionConflictCoverageCandidates(conflict, 'a').length">
+                                                    <div>
+                                                        <span class="font-semibold"
+                                                              :class="{
+                                                                'text-success': agreementQuestionConflictCoverageState(conflict, 'a') === 'covered',
+                                                                'text-warning': agreementQuestionConflictCoverageState(conflict, 'a') === 'justified',
+                                                                'text-danger': agreementQuestionConflictCoverageState(conflict, 'a') === 'missing'
+                                                              }"
+                                                              x-text="agreementQuestionConflictCoverageText(conflict, 'a')"></span>
+                                                        <template x-if="agreementQuestionConflictCoverageJustification(conflict, 'a')">
+                                                            <div class="text-xs text-muted mt-4">
+                                                                Justification: <em x-text="agreementQuestionConflictCoverageJustification(conflict, 'a')"></em>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="q-label mt-8" x-text="agreementReviewerLabel('b')"></div>
+                                        <template x-if="conflict.b_item">
+                                            <div>
+                                                <div class="q-text" x-html="renderAnnotatedHtml(conflict.b_item.question || '')"></div>
+                                                <div class="q-label mt-4">Answer</div>
+                                                <div class="q-answer-text" x-html="renderAnswerExpression(String(conflict.b_item.answer || ''))"></div>
+                                            </div>
+                                        </template>
+                                        <template x-if="!conflict.b_item">
+                                            <div class="text-xs text-muted">
+                                                No question on this side.
+                                                <template x-if="agreementQuestionConflictCoverageCandidates(conflict, 'b').length">
+                                                    <div class="mt-6">
+                                                        <div class="text-xs text-muted mb-4">Replacement question(s) on this side:</div>
+                                                        <template x-for="(candidate, candidateIdx) in agreementQuestionConflictCoverageCandidates(conflict, 'b')"
+                                                                  :key="'b-repl-' + conflict.id + '-' + (candidate.key || candidate.question_id || candidateIdx)">
+                                                            <div class="p-6 mb-6" style="border:1px solid var(--border-color); border-radius:8px; background:#fafafa;">
+                                                                <div class="q-label" x-text="candidate.question_id || candidate.key || 'candidate'"></div>
+                                                                <div class="q-text" x-html="renderAnnotatedHtml(candidate.question || '')"></div>
+                                                                <div class="q-label mt-4">Answer</div>
+                                                                <div class="q-answer-text" x-html="renderAnswerExpression(String(candidate.answer || ''))"></div>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </template>
+                                                <template x-if="!agreementQuestionConflictCoverageCandidates(conflict, 'b').length">
+                                                    <div>
+                                                        <span class="font-semibold"
+                                                              :class="{
+                                                                'text-success': agreementQuestionConflictCoverageState(conflict, 'b') === 'covered',
+                                                                'text-warning': agreementQuestionConflictCoverageState(conflict, 'b') === 'justified',
+                                                                'text-danger': agreementQuestionConflictCoverageState(conflict, 'b') === 'missing'
+                                                              }"
+                                                              x-text="agreementQuestionConflictCoverageText(conflict, 'b')"></span>
+                                                        <template x-if="agreementQuestionConflictCoverageJustification(conflict, 'b')">
+                                                            <div class="text-xs text-muted mt-4">
+                                                                Justification: <em x-text="agreementQuestionConflictCoverageJustification(conflict, 'b')"></em>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+
+                    <template x-if="!docData?.questions?.length">
+                        <div class="empty-state" style="padding:20px;">
+                            <div class="empty-state-text">No questions yet</div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Rules panel -->
+            <div class="panel-section" x-show="showRulesPanel">
+                <div class="panel-header" @click="panelState.rules = !panelState.rules">
+                    <div class="flex items-center gap-8">
+                        <span>Rules</span>
+                        <span class="panel-count" x-text="totalRuleCount()"></span>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <button class="btn btn-xs btn-ghost"
+                                @click.stop="loadImplicitRules()"
+                                :disabled="!canEditRules || loadingImplicitRules"
+                                x-show="canEditRules"
+                                :title="implicitRuleCount() > 0 ? 'Reload implicit rules from current annotations' : 'Load implicit rules from current annotations'">
+                            <span x-show="!loadingImplicitRules" x-text="implicitRuleCount() > 0 ? 'Reload implicit' : 'Load implicit'"></span>
+                            <span x-show="loadingImplicitRules">Loading...</span>
+                        </button>
+                        <button class="btn btn-xs btn-ghost" @click.stop="addRule()" title="Add rule"
+                                x-show="canEditRules">+</button>
+                        <span class="panel-chevron" :class="{'open': panelState.rules}">&#9660;</span>
+                    </div>
+                </div>
+                <div class="panel-body" :class="{'collapsed': !panelState.rules}" x-ref="rulesList">
+                    <template x-if="agreementWorkspace.active && reviewTarget === 'rules' && agreementRuleConflictRemainingCount() > 0">
+                        <div class="mt-8 mb-8">
+                            <div class="text-xs font-semibold mb-8" style="color:#b91c1c;">
+                                Conflicting Rules To Resolve (<span x-text="agreementRuleConflictRemainingCount()"></span>)
+                            </div>
+                            <div class="text-xs text-muted mb-8">
+                                These are the unresolved reviewer disagreements for this document. Resolve them here first; matching current rules stay highlighted below.
+                            </div>
+                            <template x-for="conflict in getAgreementUnresolvedRuleConflicts()" :key="'rule-conflict-top-' + conflict.id">
+                                <div class="question-card rule-card agreement-question-conflict"
+                                     :data-rule-conflict-id="'top-' + conflict.id">
+                                    <div class="question-card-header">
+                                        <div class="flex items-center gap-6">
+                                            <span class="question-id agreement-question-id-conflict"
+                                                  x-text="agreementRuleConflictDisplayText(conflict)"></span>
+                                            <span class="badge badge-in_progress" style="font-size:10px;">resolve</span>
+                                            <span class="chip"
+                                                  style="background:#fff7ed;color:#9a3412;border-color:#fdba74;font-size:10px;"
+                                                  x-text="agreementRuleConflictLocationLabel(conflict)"></span>
+                                        </div>
+                                    </div>
+                                    <div class="rule-readonly">
+                                        <div class="q-label" x-text="agreementReviewerLabel('a')"></div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictSummaryHtml(conflict, 'a')"></div>
+                                        <div class="q-label mt-8" x-text="agreementReviewerLabel('b')"></div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictSummaryHtml(conflict, 'b')"></div>
+                                        <div class="q-label mt-8">Current</div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictCurrentSummaryHtml(conflict)"></div>
+                                        <div class="flex items-center gap-8 mt-8">
+                                            <button class="btn btn-xs"
+                                                    @click="applyAgreementStructuredConflictChoice(conflict.id, 'a')"
+                                                    x-text="'Use ' + agreementReviewerLabel('a')"></button>
+                                            <button class="btn btn-xs"
+                                                    @click="applyAgreementStructuredConflictChoice(conflict.id, 'b')"
+                                                    x-text="'Use ' + agreementReviewerLabel('b')"></button>
+                                            <button class="btn btn-xs btn-ghost"
+                                                    @click="useCurrentAgreementStructuredConflict(conflict.id)"
+                                                    x-text="agreementRuleConflictCurrentActionLabel(conflict)"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                            <div class="divider"></div>
+                        </div>
+                    </template>
+
+                    <template x-for="(rule, idx) in docData?.rules || []" :key="'rule-'+idx">
+                        <div class="question-card rule-card"
+                             data-rule-kind="explicit"
+                             :class="{
+                                'agreement-question-conflict': isRuleInUnresolvedConflict(rule, idx),
+                                'agreement-question-conflict-resolved': isRuleInResolvedConflict(rule, idx)
+                             }"
+                             :data-rule-conflict-id="ruleConflictIdForRuleAny(rule, idx)">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id"
+                                          :class="{'agreement-question-id-conflict': isRuleInUnresolvedConflict(rule, idx)}"
+                                          x-text="'rule_' + (idx + 1)"></span>
+                                    <template x-if="agreementWorkspace.active && reviewTarget === 'rules' && isRuleInUnresolvedConflict(rule, idx)">
+                                        <span class="badge badge-in_progress" style="font-size:10px;">conflict</span>
+                                    </template>
+                                    <template x-if="agreementWorkspace.active && reviewTarget === 'rules' && isRuleInResolvedConflict(rule, idx)">
+                                        <span class="badge badge-validated" style="font-size:10px;">resolved</span>
+                                    </template>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <button class="question-edit-btn"
+                                            x-show="agreementWorkspace.active && reviewTarget === 'rules' && isRuleInUnresolvedConflict(rule, idx)"
+                                            @click.stop="useCurrentAgreementStructuredConflict(ruleConflictIdForRule(rule, idx))"
+                                            title="Mark current rule as the resolution">⚖</button>
+                                    <button class="question-edit-btn" @click="toggleRuleEdit(idx)"
+                                            :disabled="!canEditRules"
+                                            :title="editingRule === idx ? 'Close editor' : 'Edit rule'"
+                                            x-text="editingRule === idx ? '✓' : '✎'"></button>
+                                    <button class="btn btn-xs btn-icon btn-danger"
+                                            @click="deleteRule(idx)"
+                                            :disabled="!canEditRules"
+                                            title="Delete">&times;</button>
+                                </div>
+                            </div>
+
+                            <div class="rule-readonly" x-show="editingRule !== idx"
+                                 x-html="renderRuleDisplayHtml(rule || '')"></div>
+
+                            <template x-if="agreementWorkspace.active && reviewTarget === 'rules' && isRuleInUnresolvedConflict(rule, idx)">
+                                <div class="question-readonly" style="margin-top:10px;">
+                                    <div class="q-label">Conflict</div>
+                                    <div class="text-xs text-muted" x-html="agreementRuleConflictSummaryHtml(ruleConflictForRule(rule, idx), 'a')"></div>
+                                    <div class="text-xs text-muted mt-4" x-html="agreementRuleConflictSummaryHtml(ruleConflictForRule(rule, idx), 'b')"></div>
+                                    <div class="flex items-center gap-8 mt-8">
+                                        <button class="btn btn-xs"
+                                                @click="applyAgreementStructuredConflictChoice(ruleConflictIdForRule(rule, idx), 'a')"
+                                                x-text="'Use ' + agreementReviewerLabel('a')"></button>
+                                        <button class="btn btn-xs"
+                                                @click="applyAgreementStructuredConflictChoice(ruleConflictIdForRule(rule, idx), 'b')"
+                                                x-text="'Use ' + agreementReviewerLabel('b')"></button>
+                                        <button class="btn btn-xs btn-ghost"
+                                                @click="useCurrentAgreementStructuredConflict(ruleConflictIdForRule(rule, idx))"
+                                                x-text="agreementRuleConflictCurrentActionLabel(ruleConflictForRule(rule, idx))"></button>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <div class="rule-fields" x-show="editingRule === idx" x-transition>
+                                <div class="form-group" style="margin-bottom:8px;">
+                                    <label>Rule</label>
+                                    <input type="text"
+                                           :value="ruleExpressionValue(idx)"
+                                           @input="onRuleExpressionInput(idx, $event.target.value)"
+                                           class="text-mono"
+                                           :disabled="!canEditRules">
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Explanation</label>
+                                    <textarea :value="ruleExplanationValue(idx)"
+                                              @input="onRuleExplanationInput(idx, $event.target.value)"
+                                              rows="2"
+                                              :disabled="!canEditRules"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template x-if="agreementWorkspace.active && reviewTarget === 'rules' && getAgreementUnresolvedRuleConflictsNotInCurrentDoc().length > 0">
+                        <div class="mt-8">
+                            <div class="text-xs font-semibold text-muted mb-8">
+                                Proposed / Missing Conflict Rules
+                            </div>
+                            <template x-for="conflict in getAgreementUnresolvedRuleConflictsNotInCurrentDoc()" :key="'missing-rule-' + conflict.id">
+                                <div class="question-card rule-card agreement-question-conflict"
+                                     :data-rule-conflict-id="conflict.id">
+                                    <div class="question-card-header">
+                                        <div class="flex items-center gap-6">
+                                            <span class="question-id agreement-question-id-conflict"
+                                                  x-text="agreementRuleConflictDisplayText(conflict)"></span>
+                                            <span class="badge badge-in_progress" style="font-size:10px;">needs merge</span>
+                                        </div>
+                                    </div>
+                                    <div class="rule-readonly">
+                                        <div class="q-label" x-text="agreementReviewerLabel('a')"></div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictSummaryHtml(conflict, 'a')"></div>
+                                        <div class="q-label mt-8" x-text="agreementReviewerLabel('b')"></div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictSummaryHtml(conflict, 'b')"></div>
+                                        <div class="q-label mt-8">Current</div>
+                                        <div class="text-xs text-muted" x-html="agreementRuleConflictCurrentSummaryHtml(conflict)"></div>
+                                        <div class="flex items-center gap-8 mt-8">
+                                            <button class="btn btn-xs"
+                                                    @click="applyAgreementStructuredConflictChoice(conflict.id, 'a')"
+                                                    x-text="'Use ' + agreementReviewerLabel('a')"></button>
+                                            <button class="btn btn-xs"
+                                                    @click="applyAgreementStructuredConflictChoice(conflict.id, 'b')"
+                                                    x-text="'Use ' + agreementReviewerLabel('b')"></button>
+                                            <button class="btn btn-xs btn-ghost"
+                                                    @click="useCurrentAgreementStructuredConflict(conflict.id)"
+                                                    x-text="agreementRuleConflictCurrentActionLabel(conflict)"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+
+                    <template x-if="implicitRuleCount() > 0">
+                        <div class="divider"></div>
+                    </template>
+                    <template x-if="implicitRuleCount() > 0">
+                        <div class="text-xs font-semibold text-muted mb-8">
+                            Implicit Range Rules (<span x-text="implicitRuleCount()"></span>)
+                        </div>
+                    </template>
+                    <template x-for="(rule, idx) in docData?.implicit_rules || []" :key="'implicit-rule-'+idx">
+                        <div class="question-card rule-card" data-rule-kind="implicit">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id" x-text="'implicit_rule_' + (idx + 1)"></span>
+                                    <span class="chip" style="background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;">AUTO</span>
+                                </div>
+                                <div class="flex items-center gap-4" x-show="canEditRules">
+                                    <button class="btn btn-xs btn-danger"
+                                            @click="deleteImplicitRule(idx)"
+                                            :disabled="!canEditRules"
+                                            title="Delete implicit rule">Delete</button>
+                                </div>
+                            </div>
+
+                            <div class="rule-readonly" x-html="renderImplicitRuleDisplayHtml(rule || {})"></div>
+
+                            <div class="rule-fields" x-show="canEditRules" x-transition>
+                                <div class="form-group" style="margin-bottom:8px;">
+                                    <label>Lower Bound</label>
+                                    <input type="number"
+                                           :step="implicitRuleInputStep(rule)"
+                                           :max="implicitRuleInputMax(rule)"
+                                           :value="implicitRuleBoundInputValue(rule, 'lower_bound')"
+                                           @input="onImplicitRuleBoundInput(idx, 'lower_bound', $event.target.value)"
+                                           class="text-mono"
+                                           :disabled="!canEditRules">
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Upper Bound</label>
+                                    <input type="number"
+                                           :step="implicitRuleInputStep(rule)"
+                                           :max="implicitRuleInputMax(rule)"
+                                           :value="implicitRuleBoundInputValue(rule, 'upper_bound')"
+                                           @input="onImplicitRuleBoundInput(idx, 'upper_bound', $event.target.value)"
+                                           class="text-mono"
+                                           :disabled="!canEditRules">
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!-- Interactive rule composer -->
+                    <div class="divider" x-show="Object.values(entityGroups).flat().length > 0"></div>
+                    <div x-show="Object.values(entityGroups).flat().length > 0">
+                        <div class="flex justify-between items-center mb-8">
+                            <span class="text-xs font-semibold text-muted">Compose Rule</span>
+                            <button class="btn btn-xs btn-primary" @click="commitRule()" :disabled="!canEditRules || !ruleInputHasContent()">Add Rule</button>
+                        </div>
+                        <div class="rule-composer">
+                            <div class="rule-input"
+                                 :contenteditable="canEditRules ? 'true' : 'false'"
+                                 x-ref="ruleInput"
+                                 @input="updateRuleInputContent()"
+                                 @keydown.enter.prevent="commitRule()"></div>
+                            <div class="rule-chip-palette">
+                                <!-- Operators -->
+                                <div class="rule-chip-palette-section">Operators</div>
+                                <template x-for="op in ['<', '>', '<=', '>=', '==', '!=', '=', '+', '-', '(', ')']" :key="'op-'+op">
+                                    <span class="rule-chip rule-chip-op" @click="insertRuleText(' ' + op + ' ')" x-text="op"></span>
+                                </template>
+
+                                <div class="rule-chip-palette-section">Century Helpers</div>
+                                <template x-for="fnName in ['century_of(', 'century_start(', 'century_end(']" :key="'century-'+fnName">
+                                    <span class="rule-chip rule-chip-op" @click="insertRuleText(fnName)" x-text="fnName"></span>
+                                </template>
+
+                                <!-- Entity references grouped by type -->
+                                <template x-for="type in entityTypes" :key="'rc-'+type">
+                                    <template x-if="(entityGroups[type] || []).length > 0">
+                                        <div class="rule-chip-palette-section" x-text="type"></div>
+                                    </template>
+                                </template>
+                                <template x-for="type in entityTypes" :key="'rc2-'+type">
+                                    <template x-if="(entityGroups[type] || []).length > 0">
+                                        <template x-for="ent in entityGroups[type] || []" :key="'rc-'+ent.id">
+                                            <template x-for="attr in (taxonomy[type] || [])" :key="'rc-'+ent.id+'.'+attr">
+                                                <span class="rule-chip" :class="'rule-chip-' + type"
+                                                      @click="insertRuleChip(ent.id + '.' + attr, type)"
+                                                      x-text="ent.id + '.' + attr"></span>
+                                            </template>
+                                        </template>
+                                    </template>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+
+                    <template x-if="totalRuleCount() === 0">
+                        <div class="empty-state" style="padding:20px;">
+                            <div class="empty-state-text">No rules yet</div>
+                            <div class="text-xs text-muted mt-8" x-show="canEditRules">
+                                Use <strong>Load implicit</strong> to generate automatic range rules from the current annotations.
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            {% if user and user.role == 'power_user' %}
+            <div class="panel-section" x-show="agreementWorkspace.active">
+                <div class="panel-header" @click="panelState.agreement = !panelState.agreement">
+                    <div class="flex items-center gap-8">
+                        <span>Agreement Session</span>
+                        <span class="panel-count"
+                              x-text="agreementAllRemainingConflictCount()"></span>
+                    </div>
+                    <span class="panel-chevron" :class="{'open': panelState.agreement}">&#9660;</span>
+                </div>
+                <div class="panel-body" :class="{'collapsed': !panelState.agreement}">
+                    <template x-if="agreementWorkspace.loading">
+                        <div class="text-xs text-muted">Loading agreement context...</div>
+                    </template>
+                    <template x-if="!agreementWorkspace.loading && agreementWorkspace.error">
+                        <div class="text-xs text-danger" x-text="agreementWorkspace.error"></div>
+                    </template>
+                    <template x-if="!agreementWorkspace.loading && !agreementWorkspace.error">
+                        <div>
+                            <div class="text-xs text-muted mb-8">
+                                Run: <span x-text="agreementWorkspace.runName || '—'"></span>
+                                · Status: <span x-text="agreementWorkspace.status || 'pending'"></span>
+                                · Loaded: <span x-text="agreementVariantLabel(agreementWorkspace.loadedVariant)"></span>
+                            </div>
+                            <template x-if="agreementWorkspace.merge.warning">
+                                <div class="text-xs text-danger mb-8" x-text="agreementWorkspace.merge.warning"></div>
+                            </template>
+                            <div>
+                                    <div class="agreement-legend">
+                                        <span class="chip agreement-chip-agreed"
+                                              x-text="'Agreed: ' + (agreementWorkspace.merge.inlineStats.agreed || 0)"></span>
+                                        <span class="chip agreement-chip-diff"
+                                              x-text="'Remaining: ' + agreementAllRemainingConflictCount()"></span>
+                                        <span class="chip"
+                                              style="background:#ecfeff;color:#155e75;border-color:#a5f3fc;"
+                                              x-text="'Resolved: ' + (agreementResolvedConflictCount() + agreementStructuredResolvedConflictCount())"></span>
+                                        <span class="chip"
+                                              style="background:#f8fafc;color:#475569;border-color:#cbd5e1;"
+                                              x-text="'Total Conflicts: ' + (agreementTotalConflictCount() + agreementStructuredTotalConflictCount())"></span>
+                                        <span class="chip"
+                                              style="background:#eef2ff;color:#3730a3;border-color:#c7d2fe;"
+                                              x-text="'Text: ' + agreementRemainingConflictCount()"></span>
+                                    </div>
+                                    <div class="text-xs text-muted mb-8">
+                                        Reviewers: <strong x-text="agreementReviewerLabel('a')"></strong>
+                                        · <strong x-text="agreementReviewerLabel('b')"></strong>
+                                    </div>
+                                    <template x-if="isAgreementContestMode()">
+                                        <div class="text-xs mb-8" style="color:#9a3412;">
+                                            Contestation focus: differences seen by the contesting annotator versus final resolution.
+                                        </div>
+                                    </template>
+
+                                    <div class="flex items-center gap-8 mt-8" x-show="agreementRemainingConflictCount() > 0">
+                                        <button class="btn btn-xs btn-ghost"
+                                                @click="selectAdjacentAgreementConflict(-1, true)"
+                                                :disabled="agreementRemainingConflictCount() === 0">Prev</button>
+                                        <span class="text-xs text-muted" x-text="agreementSelectedConflictPosition()"></span>
+                                        <button class="btn btn-xs btn-ghost"
+                                                @click="selectAdjacentAgreementConflict(1, true)"
+                                                :disabled="agreementRemainingConflictCount() === 0">Next</button>
+                                        <button class="btn btn-xs btn-ghost"
+                                                @click="applyAllAgreementConflicts('a')"
+                                                x-text="'Apply All ' + agreementReviewerLabel('a')"></button>
+                                        <button class="btn btn-xs btn-ghost"
+                                                @click="applyAllAgreementConflicts('b')"
+                                                x-text="'Apply All ' + agreementReviewerLabel('b')"></button>
+                                    </div>
+
+                                    <div class="text-xs text-muted mt-8" x-show="agreementAllRemainingConflictCount() === 0 && !agreementWorkspace.merge.warning">
+                                        All conflicts are resolved for this document.
+                                    </div>
+
+                                    <template x-if="getAgreementSelectedConflict()">
+                                        <div class="mt-8">
+                                            <div class="agreement-conflict-item is-selected">
+                                                <div class="target" x-text="agreementConflictPreviewText(getAgreementSelectedConflict(), 180)"></div>
+                                                <div class="text-xs text-muted" x-text="agreementSelectedConflictSummary()"></div>
+                                            </div>
+                                            <div class="agreement-decision-card a">
+                                                <div class="title" x-text="'Option: ' + agreementReviewerLabel('a')"></div>
+                                                <div class="refs">
+                                                    <strong x-text="agreementReviewerLabel('a')"></strong>:
+                                                    <code x-text="(getAgreementSelectedConflict()?.a_refs || []).join(', ') || 'No annotation'"></code>
+                                                </div>
+                                                <button class="btn btn-xs"
+                                                        @click="applyAgreementConflictChoice(getAgreementSelectedConflict().id, 'a')"
+                                                        x-text="'Accept ' + agreementReviewerLabel('a') + ' (1)'"></button>
+                                            </div>
+                                            <div class="agreement-decision-card b">
+                                                <div class="title" x-text="'Option: ' + agreementReviewerLabel('b')"></div>
+                                                <div class="refs">
+                                                    <strong x-text="agreementReviewerLabel('b')"></strong>:
+                                                    <code x-text="(getAgreementSelectedConflict()?.b_refs || []).join(', ') || 'No annotation'"></code>
+                                                </div>
+                                                <button class="btn btn-xs"
+                                                        @click="applyAgreementConflictChoice(getAgreementSelectedConflict().id, 'b')"
+                                                        x-text="'Accept ' + agreementReviewerLabel('b') + ' (2)'"></button>
+                                            </div>
+                                            <div class="agreement-decision-card current">
+                                                <div class="title"
+                                                     x-text="getAgreementSelectedConflict()?.kind === 'text_edit' ? 'Current Text' : 'Current Annotation'"></div>
+                                                <div class="refs">
+                                                    <span x-text="agreementConflictCurrentLabel(getAgreementSelectedConflict())"></span>
+                                                    <code x-text="agreementConflictCurrentRefsText(getAgreementSelectedConflict())"></code>
+                                                </div>
+                                                <div class="flex items-center gap-8 mt-8">
+                                                    <button class="btn btn-xs btn-ghost"
+                                                            @click="openSelectedConflictInEditor()">Edit Current (M)</button>
+                                                    <button class="btn btn-xs btn-ghost"
+                                                            @click="useCurrentForSelectedConflict()">Use Current (U)</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </template>
+
+                                    <div class="mt-8" style="max-height:210px;overflow:auto;" x-show="agreementRemainingConflictCount() > 0">
+                                        <template x-for="conflict in getAgreementUnresolvedConflicts()" :key="conflict.id">
+                                            <div class="agreement-conflict-item"
+                                                 :class="{'is-selected': agreementWorkspace.merge.selectedConflictId === conflict.id}"
+                                                 @click="selectAgreementConflict(conflict.id, { silent: true }); openAgreementConflictModal(conflict.id, $event.currentTarget)">
+                                                <div class="target" x-text="agreementConflictPreviewText(conflict, 90)"></div>
+                                                <div class="refs">
+                                                    <span x-text="agreementReviewerLabel('a') + ':'"></span>
+                                                    <code x-text="(conflict.a_refs || []).join(', ') || 'No annotation'"></code>
+                                                    <span style="margin:0 8px;">|</span>
+                                                    <span x-text="agreementReviewerLabel('b') + ':'"></span>
+                                                    <code x-text="(conflict.b_refs || []).join(', ') || 'No annotation'"></code>
+                                                </div>
+                                                <div class="flex items-center gap-8 justify-between">
+                                                    <span class="text-xs text-muted" x-text="'Current: ' + agreementConflictCurrentRefsText(conflict)"></span>
+                                                    <span class="badge"
+                                                          :class="agreementConflictStatusClass(conflict)"
+                                                          x-text="agreementConflictStatusLabel(conflict)"
+                                                          style="font-size:10px;"></span>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+
+                                    <div class="mt-8" style="max-height:210px;overflow:auto;" x-show="agreementRuleConflictRemainingCount() > 0">
+                                        <template x-for="conflict in getAgreementUnresolvedRuleConflicts()" :key="conflict.id">
+                                            <div class="agreement-conflict-item"
+                                                 :class="{'is-selected': agreementWorkspace.merge.selectedConflictId === conflict.id}"
+                                                 @click="selectAgreementConflict(conflict.id, { silent: true })">
+                                                <div class="target" x-text="agreementRuleConflictDisplayText(conflict)"></div>
+                                                <div class="refs">
+                                                    <span x-text="agreementReviewerLabel('a') + ':'"></span>
+                                                    <code x-text="agreementRuleConflictSummary(conflict, 'a')"></code>
+                                                </div>
+                                                <div class="refs">
+                                                    <span x-text="agreementReviewerLabel('b') + ':'"></span>
+                                                    <code x-text="agreementRuleConflictSummary(conflict, 'b')"></code>
+                                                </div>
+                                                <div class="flex items-center gap-8 justify-between">
+                                                    <span class="text-xs text-muted" x-text="agreementRuleConflictCurrentSummary(conflict)"></span>
+                                                    <span class="badge badge-in_progress" style="font-size:10px;">rule conflict</span>
+                                                </div>
+                                                <div class="flex items-center gap-8 mt-8">
+                                                    <button class="btn btn-xs"
+                                                            @click.stop="applyAgreementStructuredConflictChoice(conflict.id, 'a')"
+                                                            x-text="'Use ' + agreementReviewerLabel('a')"></button>
+                                                    <button class="btn btn-xs"
+                                                            @click.stop="applyAgreementStructuredConflictChoice(conflict.id, 'b')"
+                                                            x-text="'Use ' + agreementReviewerLabel('b')"></button>
+                                                    <button class="btn btn-xs btn-ghost"
+                                                            @click.stop="useCurrentAgreementStructuredConflict(conflict.id)"
+                                                            x-text="agreementRuleConflictCurrentActionLabel(conflict)"></button>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+
+                                </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- History panel -->
+            <div class="panel-section">
+                <div class="panel-header" @click="panelState.history = !panelState.history">
+                    <div class="flex items-center gap-8">
+                        <span>History</span>
+                        <span class="panel-count" x-text="historyDisplayCount"></span>
+                    </div>
+                    <span class="panel-chevron" :class="{'open': panelState.history}">&#9660;</span>
+                </div>
+                <div class="panel-body" :class="{'collapsed': !panelState.history}">
+                    <div class="history-timeline">
+                        <template x-if="annotationVersions.length > 0">
+                            <div>
+                                <template x-for="version in annotationVersions" :key="version.key">
+                                    <div>
+                                        <div class="history-entry" style="cursor:default;">
+                                            <div class="history-dot" :class="version.key === 'agreement' ? 'review' : 'edit'"></div>
+                                            <div class="history-info">
+                                                <span class="history-action" x-text="version.label"></span>
+                                                <template x-if="version.username">
+                                                    <span>
+                                                        <span class="text-muted">by</span>
+                                                        <span class="history-user font-medium" x-text="version.username"></span>
+                                                    </span>
+                                                </template>
+                                                <div class="history-time" x-text="formatTime(version.timestamp)"></div>
+                                                <template x-if="version.history_entries && version.history_entries.length > 0">
+                                                    <div class="text-xs text-muted" x-text="version.history_entries.length + ' detailed updates'"></div>
+                                                </template>
+                                            </div>
+                                            <div class="flex items-center gap-6">
+                                                <button class="btn btn-xs"
+                                                        @click.stop="viewAnnotationVersion(version.key)"
+                                                        :disabled="!version.available">Open</button>
+                                                <button class="btn btn-xs btn-ghost"
+                                                        x-show="version.history_entries && version.history_entries.length > 0"
+                                                        @click.stop="toggleVersionDetails(version.key)"
+                                                        x-text="isVersionDetailsOpen(version.key) ? 'Hide Details' : 'Details'"></button>
+                                                <span class="badge"
+                                                      :class="'badge-' + ((version.status || 'draft') === 'ready' ? 'in_progress' : (version.status || 'draft'))"
+                                                      x-text="version.status || 'draft'"
+                                                      style="font-size:10px;"></span>
+                                            </div>
+                                        </div>
+                                        <div x-show="isVersionDetailsOpen(version.key)" style="padding-left:24px;">
+                                            <template x-for="entry in version.history_entries || []" :key="entry.id">
+                                                <div class="history-entry" @click="viewHistorySnapshot(entry.id)" style="cursor:pointer;" title="Click to view user snapshot">
+                                                    <div class="history-dot" :class="entry.action"></div>
+                                                    <div class="history-info">
+                                                        <span class="history-action" x-text="entry.action"></span>
+                                                        <span class="text-muted">by</span>
+                                                        <span class="history-user font-medium" x-text="entry.username"></span>
+                                                        <div class="history-time" x-text="formatTime(entry.timestamp)"></div>
+                                                        <template x-if="getSummaryKeywords(entry)">
+                                                            <div class="text-xs text-muted" x-text="getSummaryKeywords(entry)" style="font-style:italic;"></div>
+                                                        </template>
+                                                    </div>
+                                                    <span class="badge" :class="'badge-' + entry.status" x-text="entry.status" style="font-size:10px;"></span>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                        <template x-if="annotationVersions.length === 0">
+                            <template x-for="entry in historyEntries" :key="entry.id">
+                                <div class="history-entry" @click="viewHistorySnapshot(entry.id)" style="cursor:pointer;" title="Click to view snapshot">
+                                    <div class="history-dot" :class="entry.action"></div>
+                                    <div class="history-info">
+                                        <span class="history-action" x-text="entry.action"></span>
+                                        <span class="text-muted">by</span>
+                                        <span class="history-user font-medium" x-text="entry.username"></span>
+                                        <div class="history-time" x-text="formatTime(entry.timestamp)"></div>
+                                        <template x-if="getSummaryKeywords(entry)">
+                                            <div class="text-xs text-muted" x-text="getSummaryKeywords(entry)" style="font-style:italic;"></div>
+                                        </template>
+                                    </div>
+                                    <span class="badge" :class="'badge-' + entry.status" x-text="entry.status" style="font-size:10px;"></span>
+                                </div>
+                            </template>
+                        </template>
+                        <template x-if="annotationVersions.length === 0 && historyEntries.length === 0">
+                            <div class="empty-state" style="padding:16px;">
+                                <div class="empty-state-text">No history yet</div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if user and user.role == 'power_user' %}
+    <!-- ==================== HISTORY SNAPSHOT MODAL ==================== -->
+    <div x-show="showHistoryModal" class="shortcut-overlay" @click.self="closeHistoryModal()"
+         @keydown.escape.window="closeHistoryModal()" style="display:none;">
+        <div class="shortcut-modal" style="max-width:900px; max-height:90vh; overflow:auto;">
+            <template x-if="historySnapshot">
+                <div>
+                    <div class="flex justify-between items-center mb-16">
+                        <h3 x-text="historySnapshot.variant_label ? (historySnapshot.variant_label + ' Snapshot') : 'Document Snapshot'">Document Snapshot</h3>
+                        <div class="flex gap-8">
+                            <button class="btn btn-sm btn-primary"
+                                    x-show="historySnapshot.content_format !== 'markdown' && canSaveWorkspace"
+                                    @click="restoreFromHistory()"
+                                    title="Restore this version">
+                                ↶ Restore
+                            </button>
+                            <button class="btn btn-sm btn-ghost" @click="closeHistoryModal()">Close</button>
+                        </div>
+                    </div>
+                    <div class="mb-12">
+                        <div class="text-sm text-muted mb-4">
+                            <strong x-text="historySnapshot.username"></strong> — 
+                            <span x-text="historySnapshot.action"></span> — 
+                            <span x-text="formatTime(historySnapshot.timestamp)"></span>
+                        </div>
+                        <div class="flex gap-12">
+                            <span class="badge" :class="'badge-' + historySnapshot.status" x-text="historySnapshot.status"></span>
+                            <span class="text-xs text-muted" x-text="`${historySnapshot.questions_count} questions, ${historySnapshot.rules_count} rules`"></span>
+                        </div>
+                    </div>
+
+                    <template x-if="historySnapshot.content_format === 'markdown'">
+                        <div class="mb-16">
+                            <h4 style="margin-bottom:8px;font-size:14px;color:var(--text-primary);">Agreement Packet</h4>
+                            <pre style="padding:16px; background:#f8f9fa; border-radius:8px; max-height:60vh; overflow:auto; white-space:pre-wrap; font-family:var(--mono);" x-text="historySnapshot.content || ''"></pre>
+                        </div>
+                    </template>
+
+                    <template x-if="historySnapshot.content_format !== 'markdown'">
+                        <div class="mb-16">
+                            <h4 style="margin-bottom:8px;font-size:14px;color:var(--text-primary);">Document Text</h4>
+                            <div style="padding:16px; background:#f8f9fa; border-radius:8px; max-height:40vh; overflow:auto;">
+                                <div x-html="renderAnnotatedHtml(historySnapshot.document)"></div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template x-if="historySnapshot.content_format !== 'markdown' && historySnapshot.questions && historySnapshot.questions.length > 0">
+                        <div class="mb-16">
+                            <h4 style="margin-bottom:8px;font-size:14px;color:var(--text-primary);">Questions (<span x-text="historySnapshot.questions.length"></span>)</h4>
+                            <div style="padding:12px; background:#f8f9fa; border-radius:8px; max-height:200px; overflow:auto;">
+                                <template x-for="(q, idx) in historySnapshot.questions" :key="idx">
+                                    <div style="padding:8px; margin-bottom:8px; background:white; border-radius:4px; font-size:13px;">
+                                        <div><strong x-text="q.question_id"></strong> (<span x-text="q.question_type"></span>)</div>
+                                        <div style="margin-top:4px;" x-html="renderAnnotatedHtml(q.question)"></div>
+                                        <div style="margin-top:4px;color:var(--text-muted);">Answer: <code x-text="q.answer"></code></div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template x-if="historySnapshot.content_format !== 'markdown' && historySnapshot.rules && historySnapshot.rules.length > 0">
+                        <div>
+                            <h4 style="margin-bottom:8px;font-size:14px;color:var(--text-primary);">Rules (<span x-text="historySnapshot.rules.length"></span>)</h4>
+                            <div style="padding:12px; background:#f8f9fa; border-radius:8px; max-height:150px; overflow:auto;">
+                                <template x-for="(rule, idx) in historySnapshot.rules" :key="idx">
+                                    <div style="padding:6px 10px; margin-bottom:4px; background:white; border-radius:4px; font-size:13px; font-family:var(--mono);">
+                                        <code x-text="rule"></code>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- ==================== AGREEMENT CONFLICT MODAL ==================== -->
+    <div x-show="agreementWorkspace.active && agreementWorkspace.conflictModal.show"
+         @keydown.escape.window="closeAgreementConflictModal()"
+         x-ref="agreementConflictPopover"
+         class="agreement-floating-panel"
+         :style="`left:${agreementWorkspace.conflictModal.x}px; top:${agreementWorkspace.conflictModal.y}px;`"
+         style="display:none;">
+        <template x-if="agreementModalConflicts().length > 0">
+            <div>
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center gap-8">
+                        <h3 style="margin:0;font-size:20px;">Resolve Conflict</h3>
+                        <span class="badge"
+                              style="background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;"
+                              x-text="agreementModalConflictCount() + ' linked'"></span>
+                    </div>
+                    <button class="btn btn-sm btn-ghost" @click="closeAgreementConflictModal()">Close</button>
+                </div>
+                <div class="text-xs text-muted mb-8" x-text="agreementModalConflictHeadline()"></div>
+
+                <div class="agreement-modal-grid mb-10">
+                    <div class="agreement-modal-section">
+                        <h4 x-text="agreementReviewerLabel('a')"></h4>
+                        <div class="agreement-context-box" x-html="agreementConflictSideContextHtml(agreementModalConflicts(), 'a')"></div>
+                        <div class="text-xs text-muted mt-8">
+                            Refs:
+                            <code x-text="agreementConflictRefsForSide(agreementModalConflicts(), 'a').join(', ') || 'No annotation'"></code>
+                        </div>
+                        <div class="mt-8">
+                            <button class="btn btn-xs"
+                                    :class="{'btn-primary': agreementWorkspace.conflictModal.choice === 'a'}"
+                                    @click="setAgreementConflictModalChoice('a')"
+                                    x-text="agreementModalApplyChoiceLabel('a')"></button>
+                        </div>
+                    </div>
+
+                    <div class="agreement-modal-section">
+                        <h4 x-text="agreementReviewerLabel('b')"></h4>
+                        <div class="agreement-context-box" x-html="agreementConflictSideContextHtml(agreementModalConflicts(), 'b')"></div>
+                        <div class="text-xs text-muted mt-8">
+                            Refs:
+                            <code x-text="agreementConflictRefsForSide(agreementModalConflicts(), 'b').join(', ') || 'No annotation'"></code>
+                        </div>
+                        <div class="mt-8">
+                            <button class="btn btn-xs"
+                                    :class="{'btn-primary': agreementWorkspace.conflictModal.choice === 'b'}"
+                                    @click="setAgreementConflictModalChoice('b')"
+                                    x-text="agreementModalApplyChoiceLabel('b')"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement-modal-section">
+                    <div class="flex items-center justify-between gap-8">
+                        <div class="text-xs text-muted">
+                            You can directly edit the main document now (resize spans, add/delete annotations),
+                            then click the green check to mark this conflict as resolved.
+                        </div>
+                        <button class="btn btn-sm btn-success"
+                                :disabled="!agreementConflictModalCanMerge()"
+                                @click="applyAgreementConflictModalMerge()">✓ Resolved</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <!-- ==================== QUESTION CONFLICT MODAL ==================== -->
+    <div x-show="agreementWorkspace.active && agreementWorkspace.questionConflictModal.show"
+         @keydown.escape.window="closeAgreementQuestionConflictModal()"
+         @click.outside="closeAgreementQuestionConflictModal()"
+         x-ref="agreementQuestionConflictPopover"
+         class="agreement-floating-panel agreement-question-floating-panel"
+         :style="`left:${agreementWorkspace.questionConflictModal.x}px; top:${agreementWorkspace.questionConflictModal.y}px;`"
+         style="display:none;">
+        <template x-if="getActiveAgreementQuestionConflict()">
+            <div>
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center gap-8">
+                        <h3 style="margin:0;font-size:20px;">Resolve Question Conflict</h3>
+                        <span class="badge"
+                              style="background:#fff7ed;color:#9a3412;border-color:#fdba74;"
+                              x-text="(getActiveAgreementQuestionConflict()?.label || getActiveAgreementQuestionConflict()?.key || 'question')"></span>
+                    </div>
+                    <button class="btn btn-sm btn-ghost" @click="closeAgreementQuestionConflictModal()">Close</button>
+                </div>
+                <div class="text-xs text-muted mb-8">
+                    Coverage pair:
+                    <strong x-text="agreementQuestionConflictPairLabel(getActiveAgreementQuestionConflict())"></strong>
+                </div>
+
+                <div class="agreement-modal-grid mb-10">
+                    <div class="agreement-modal-section">
+                        <h4 x-text="agreementReviewerLabel('a')"></h4>
+                        <div class="question-card agreement-question-mini">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id"
+                                          x-text="(getActiveAgreementQuestionConflict()?.a_item?.question_id || 'No question on this side')"></span>
+                                    <template x-if="getActiveAgreementQuestionConflict()?.a_item">
+                                        <span class="question-type-badge"
+                                              :class="'qtype-' + (getActiveAgreementQuestionConflict()?.a_item?.question_type || 'extractive')"
+                                              x-text="getActiveAgreementQuestionConflict()?.a_item?.question_type || 'extractive'"></span>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="question-readonly">
+                                <template x-if="getActiveAgreementQuestionConflict()?.a_item">
+                                    <div>
+                                        <div class="q-label">Question</div>
+                                        <div class="q-text" x-html="renderAnnotatedHtml((getActiveAgreementQuestionConflict()?.a_item?.question || ''))"></div>
+                                        <div style="margin-top:10px;">
+                                            <div class="q-label">Answer</div>
+                                            <div class="q-answer-text"
+                                                 x-html="renderAnswerExpression(String(getActiveAgreementQuestionConflict()?.a_item?.answer || ''))"></div>
+                                        </div>
+                                        <template x-if="Array.isArray(getActiveAgreementQuestionConflict()?.a_item?.reasoning_chain) && getActiveAgreementQuestionConflict()?.a_item?.reasoning_chain?.length">
+                                            <div style="margin-top:10px;">
+                                                <div class="q-label">Reasoning chain</div>
+                                                <ol style="margin:6px 0 0 18px; padding:0; color:var(--text-secondary); font-size:12px; line-height:1.45;">
+                                                    <template x-for="(step, stepIdx) in (getActiveAgreementQuestionConflict()?.a_item?.reasoning_chain || [])" :key="'a-step-' + stepIdx">
+                                                        <li style="margin:0 0 4px 0;" x-html="renderAnnotatedHtml(String(step || ''))"></li>
+                                                    </template>
+                                                </ol>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                                <template x-if="!getActiveAgreementQuestionConflict()?.a_item">
+                                    <div class="text-xs text-muted">
+                                        No question on this side.
+                                        <template x-if="agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'a').length">
+                                            <div class="mt-6">
+                                                <div class="text-xs text-muted mb-4">Replacement question(s) on this side:</div>
+                                                <template x-for="(candidate, candidateIdx) in agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'a')"
+                                                          :key="'modal-a-repl-' + (candidate.key || candidate.question_id || candidateIdx)">
+                                                    <div class="p-6 mb-6" style="border:1px solid var(--border-color); border-radius:8px; background:#fafafa;">
+                                                        <div class="q-label" x-text="candidate.question_id || candidate.key || 'candidate'"></div>
+                                                        <div class="q-text" x-html="renderAnnotatedHtml(candidate.question || '')"></div>
+                                                        <div class="q-label mt-4">Answer</div>
+                                                        <div class="q-answer-text" x-html="renderAnswerExpression(String(candidate.answer || ''))"></div>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <template x-if="!agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'a').length">
+                                            <div>
+                                                <div class="mt-4">
+                                                    <span class="font-semibold"
+                                                          :class="{
+                                                            'text-success': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'a') === 'covered',
+                                                            'text-warning': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'a') === 'justified',
+                                                            'text-danger': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'a') === 'missing'
+                                                          }"
+                                                          x-text="agreementQuestionConflictCoverageText(getActiveAgreementQuestionConflict(), 'a')"></span>
+                                                </div>
+                                                <template x-if="agreementQuestionConflictCoverageJustification(getActiveAgreementQuestionConflict(), 'a')">
+                                                    <div class="text-xs text-muted mt-4">
+                                                        Justification: <em x-text="agreementQuestionConflictCoverageJustification(getActiveAgreementQuestionConflict(), 'a')"></em>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <button class="btn btn-xs"
+                                    @click="applyChoiceForActiveAgreementQuestionConflict('a')"
+                                    x-text="'Use ' + agreementReviewerLabel('a')"></button>
+                        </div>
+                    </div>
+
+                    <div class="agreement-modal-section">
+                        <h4 x-text="agreementReviewerLabel('b')"></h4>
+                        <div class="question-card agreement-question-mini">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id"
+                                          x-text="(getActiveAgreementQuestionConflict()?.b_item?.question_id || 'No question on this side')"></span>
+                                    <template x-if="getActiveAgreementQuestionConflict()?.b_item">
+                                        <span class="question-type-badge"
+                                              :class="'qtype-' + (getActiveAgreementQuestionConflict()?.b_item?.question_type || 'extractive')"
+                                              x-text="getActiveAgreementQuestionConflict()?.b_item?.question_type || 'extractive'"></span>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="question-readonly">
+                                <template x-if="getActiveAgreementQuestionConflict()?.b_item">
+                                    <div>
+                                        <div class="q-label">Question</div>
+                                        <div class="q-text" x-html="renderAnnotatedHtml((getActiveAgreementQuestionConflict()?.b_item?.question || ''))"></div>
+                                        <div style="margin-top:10px;">
+                                            <div class="q-label">Answer</div>
+                                            <div class="q-answer-text"
+                                                 x-html="renderAnswerExpression(String(getActiveAgreementQuestionConflict()?.b_item?.answer || ''))"></div>
+                                        </div>
+                                        <template x-if="Array.isArray(getActiveAgreementQuestionConflict()?.b_item?.reasoning_chain) && getActiveAgreementQuestionConflict()?.b_item?.reasoning_chain?.length">
+                                            <div style="margin-top:10px;">
+                                                <div class="q-label">Reasoning chain</div>
+                                                <ol style="margin:6px 0 0 18px; padding:0; color:var(--text-secondary); font-size:12px; line-height:1.45;">
+                                                    <template x-for="(step, stepIdx) in (getActiveAgreementQuestionConflict()?.b_item?.reasoning_chain || [])" :key="'b-step-' + stepIdx">
+                                                        <li style="margin:0 0 4px 0;" x-html="renderAnnotatedHtml(String(step || ''))"></li>
+                                                    </template>
+                                                </ol>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                                <template x-if="!getActiveAgreementQuestionConflict()?.b_item">
+                                    <div class="text-xs text-muted">
+                                        No question on this side.
+                                        <template x-if="agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'b').length">
+                                            <div class="mt-6">
+                                                <div class="text-xs text-muted mb-4">Replacement question(s) on this side:</div>
+                                                <template x-for="(candidate, candidateIdx) in agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'b')"
+                                                          :key="'modal-b-repl-' + (candidate.key || candidate.question_id || candidateIdx)">
+                                                    <div class="p-6 mb-6" style="border:1px solid var(--border-color); border-radius:8px; background:#fafafa;">
+                                                        <div class="q-label" x-text="candidate.question_id || candidate.key || 'candidate'"></div>
+                                                        <div class="q-text" x-html="renderAnnotatedHtml(candidate.question || '')"></div>
+                                                        <div class="q-label mt-4">Answer</div>
+                                                        <div class="q-answer-text" x-html="renderAnswerExpression(String(candidate.answer || ''))"></div>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <template x-if="!agreementQuestionConflictCoverageCandidates(getActiveAgreementQuestionConflict(), 'b').length">
+                                            <div>
+                                                <div class="mt-4">
+                                                    <span class="font-semibold"
+                                                          :class="{
+                                                            'text-success': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'b') === 'covered',
+                                                            'text-warning': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'b') === 'justified',
+                                                            'text-danger': agreementQuestionConflictCoverageState(getActiveAgreementQuestionConflict(), 'b') === 'missing'
+                                                          }"
+                                                          x-text="agreementQuestionConflictCoverageText(getActiveAgreementQuestionConflict(), 'b')"></span>
+                                                </div>
+                                                <template x-if="agreementQuestionConflictCoverageJustification(getActiveAgreementQuestionConflict(), 'b')">
+                                                    <div class="text-xs text-muted mt-4">
+                                                        Justification: <em x-text="agreementQuestionConflictCoverageJustification(getActiveAgreementQuestionConflict(), 'b')"></em>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <button class="btn btn-xs"
+                                    @click="applyChoiceForActiveAgreementQuestionConflict('b')"
+                                    x-text="'Use ' + agreementReviewerLabel('b')"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement-modal-section">
+                    <h4>Current (Editable)</h4>
+                    <template x-if="getCurrentQuestionForConflict(getActiveAgreementQuestionConflict())">
+                        <div class="question-card agreement-question-mini">
+                            <div class="question-card-header">
+                                <div class="flex items-center gap-6">
+                                    <span class="question-id" x-text="getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).question_id || 'Current question'"></span>
+                                    <span class="question-type-badge"
+                                          :class="'qtype-' + (getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).question_type || 'extractive')"
+                                          x-text="getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).question_type || 'extractive'"></span>
+                                </div>
+                            </div>
+                            <div class="question-readonly">
+                                <div class="q-label">Question</div>
+                                <div class="q-text" x-html="renderAnnotatedHtml(getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).question || '')"></div>
+                                <div style="margin-top:10px;">
+                                    <div class="q-label">Answer</div>
+                                    <div class="q-answer-text"
+                                         x-html="renderAnswerExpression(String(getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).answer || ''))"></div>
+                                </div>
+                                <template x-if="Array.isArray(getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).reasoning_chain) && getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).reasoning_chain?.length">
+                                    <div style="margin-top:10px;">
+                                        <div class="q-label">Reasoning chain</div>
+                                        <ol style="margin:6px 0 0 18px; padding:0; color:var(--text-secondary); font-size:12px; line-height:1.45;">
+                                            <template x-for="(step, stepIdx) in (getCurrentQuestionForConflict(getActiveAgreementQuestionConflict()).reasoning_chain || [])" :key="'current-step-' + stepIdx">
+                                                <li style="margin:0 0 4px 0;" x-html="renderAnnotatedHtml(String(step || ''))"></li>
+                                            </template>
+                                        </ol>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                    <template x-if="!getCurrentQuestionForConflict(getActiveAgreementQuestionConflict())">
+                        <div class="text-xs text-muted mb-8">
+                            No current question yet. Click <strong>Edit Current</strong> to create and edit one.
+                        </div>
+                    </template>
+                    <div class="flex items-center justify-between gap-8 mt-8">
+                        <div class="text-xs text-muted">
+                            Edit in the Questions panel, then click the green button to mark this conflict as resolved using current content.
+                        </div>
+                        <div class="flex items-center gap-8">
+                            <button class="btn btn-xs btn-ghost" @click="editActiveAgreementQuestionConflict()">Edit Current</button>
+                            <button class="btn btn-sm btn-success" @click="markActiveAgreementQuestionConflictResolved()">✓ Resolved</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    {% endif %}
+
+    <!-- ==================== ANNOTATION POPUP ==================== -->
+    <div x-show="popup.show" x-ref="popup" class="annotation-popup"
+         :style="`left:${popup.x}px; top:${popup.y}px;`"
+         @click.outside="closePopup()" @keydown.escape.window="closePopup()" x-transition>
+        <div class="annotation-popup-header">
+            <span x-text="popup.editing ? 'Edit Annotation' : 'New Annotation'"></span>
+            <button class="btn btn-xs btn-icon btn-ghost" @click="closePopup()">&times;</button>
+        </div>
+        <div class="popup-selected-text" x-text="popup.selectedText"></div>
+
+        <div class="entity-type-selector">
+            <template x-for="type in entityTypes" :key="'popup-'+type">
+                <button class="entity-type-btn" 
+                        :class="{'selected': popup.entityType === type, ['entity-type-' + type]: true}"
+                        @click="selectEntityType(type)" x-text="type"></button>
+            </template>
+        </div>
+
+        <div class="popup-field">
+            <label>Entity</label>
+            <select x-model="popup.entityId" @change="onEntitySelected()">
+                <option value="">-- Select entity --</option>
+                <template x-for="ent in popupEntityOptions" :key="ent.id">
+                    <option :value="ent.id" x-text="ent.id + (ent.preview ? ' (' + ent.preview + ')' : '')"></option>
+                </template>
+                <option :value="'__new_' + (popup.entityType || 'person')">+ New entity</option>
+            </select>
+        </div>
+
+        <div class="popup-field">
+            <label>Attribute</label>
+            <select x-model="popup.attribute" @change="onAttributeSelected()">
+                <option value="">-- Select attribute --</option>
+                <template x-for="attr in popupAttributeOptions" :key="attr">
+                    <option :value="attr" x-text="attr"></option>
+                </template>
+            </select>
+        </div>
+
+        <div class="popup-field" x-show="popupNeedsRelationshipTarget">
+            <label>Related Person</label>
+            <select x-model="popup.relationshipTarget">
+                <option value="">-- Select related person --</option>
+                <template x-for="ent in popupRelationshipTargetOptions" :key="'rel-' + ent.id">
+                    <option :value="ent.id" x-text="ent.id + (ent.preview ? ' (' + ent.preview + ')' : '')"></option>
+                </template>
+            </select>
+            <div class="text-xs text-muted mt-4" x-show="popupRelationshipTargetOptions.length === 0">
+                Create the other person entity first, then set the relationship.
+            </div>
+        </div>
+
+        <div class="popup-actions">
+            <button class="btn btn-sm btn-ghost" @click="closePopup()">Cancel</button>
+            <button class="btn btn-sm btn-primary" @click="applyAnnotation()"
+                    :disabled="!canApplyPopupAnnotation">
+                <span>Apply</span>
+                <kbd style="margin-left:6px;">↵</kbd>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== SHORTCUT HELP ==================== -->
+    <div x-show="showShortcuts" class="shortcut-overlay" @click.self="showShortcuts = false"
+         @keydown.escape.window="showShortcuts = false" style="display:none;">
+        <div class="shortcut-modal">
+            <h3>Keyboard Shortcuts</h3>
+            <div class="shortcut-section">
+                <div class="shortcut-section-title">Global</div>
+                <div class="shortcut-row"><span>Save document</span><kbd>Ctrl+S</kbd></div>
+                <div class="shortcut-row"><span>Undo</span><kbd>Ctrl+Z</kbd></div>
+                <div class="shortcut-row"><span>Redo</span><kbd>Ctrl+Shift+Z</kbd></div>
+                <div class="shortcut-row"><span>Show shortcuts</span><kbd>?</kbd></div>
+            </div>
+            <div class="shortcut-section">
+                <div class="shortcut-section-title">Annotation</div>
+                <div class="shortcut-row"><span>Annotate selection</span><kbd>A</kbd></div>
+                <div class="shortcut-row"><span>Delete annotation</span><kbd>D</kbd></div>
+                <div class="shortcut-row"><span>Edit annotation</span><kbd>E</kbd></div>
+                <div class="shortcut-row"><span>Cancel paint / filter</span><kbd>Esc</kbd></div>
+            </div>
+            <div class="shortcut-section">
+                <div class="shortcut-section-title">Popup</div>
+                <div class="shortcut-row"><span>Quick-select entity type</span><kbd>1</kbd>-<kbd>9</kbd>, <kbd>Q</kbd>-<kbd>T</kbd></div>
+                <div class="shortcut-row"><span>Confirm</span><kbd>Enter</kbd></div>
+                <div class="shortcut-row"><span>Cancel</span><kbd>Esc</kbd></div>
+            </div>
+            <div class="shortcut-section" x-show="agreementWorkspace.active">
+                <div class="shortcut-section-title">Agreement</div>
+                <div class="shortcut-row">
+                    <span x-text="'Accept ' + agreementReviewerLabel('a') + ' / ' + agreementReviewerLabel('b')"></span>
+                    <kbd>1</kbd> / <kbd>2</kbd>
+                </div>
+                <div class="shortcut-row"><span>Next / Prev conflict</span><kbd>J</kbd> / <kbd>K</kbd></div>
+                <div class="shortcut-row"><span>Edit current annotation</span><kbd>M</kbd></div>
+                <div class="shortcut-row"><span>Use current annotation</span><kbd>U</kbd></div>
+            </div>
+            <div style="margin-top:20px; text-align:right;">
+                <button class="btn btn-sm" @click="showShortcuts = false">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NEW ENTITY DIALOG ==================== -->
+    <div x-show="newEntityDialog.show" class="shortcut-overlay" @click.self="newEntityDialog.show = false" style="display:none;">
+        <div class="shortcut-modal" style="max-width:480px;">
+            <h3>New Entity</h3>
+            <div class="form-group">
+                <label>Entity Type</label>
+                <div class="entity-type-selector">
+                    <template x-for="type in entityTypes" :key="'new-'+type">
+                        <button class="entity-type-btn" 
+                                :class="{'selected': newEntityDialog.type === type, ['entity-type-' + type]: true}"
+                                @click="newEntityDialog.type = type"
+                                x-text="type"></button>
+                    </template>
+                </div>
+            </div>
+            <p class="text-sm text-muted mt-8" x-text="'Will create: ' + newEntityDialog.type + '_' + getNextEntityIndex(newEntityDialog.type)"></p>
+            <div class="popup-actions mt-16">
+                <button class="btn btn-sm btn-ghost" @click="newEntityDialog.show = false">Cancel</button>
+                <button class="btn btn-sm btn-primary" @click="confirmNewEntity()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    {% if user and user.role == 'power_user' %}
+    <!-- ==================== GROQ PLAYGROUND MODAL ==================== -->
+    <div x-show="showGroqPlaygroundModal"
+         class="shortcut-overlay"
+         @click.self="closeGroqPlayground()"
+         style="display:none;"
+         @keydown.escape.window="if(showGroqPlaygroundModal) closeGroqPlayground()">
+        <div class="shortcut-modal groq-playground-modal" @click.stop>
+            <div class="groq-playground-header">
+                <div>
+                    <h3>Groq Playground</h3>
+                    <div class="text-xs text-muted">
+                        Ask multiple Groq-served models against this document with a document-only prompt and
+                        <code>Cannot be determined</code> fallback behavior.
+                    </div>
+                </div>
+                <div class="groq-playground-header-actions">
+                    <button class="btn btn-xs btn-ghost"
+                            @click="loadGroqPlaygroundModels(true)"
+                            :disabled="groqPlayground.loadingModels">
+                        <span x-show="!groqPlayground.loadingModels">Refresh Models</span>
+                        <span x-show="groqPlayground.loadingModels">Loading...</span>
+                    </button>
+                    <button class="btn btn-sm btn-ghost" @click="closeGroqPlayground()">Close</button>
+                </div>
+            </div>
+
+            <div class="groq-playground-layout">
+                <div class="groq-playground-sidebar">
+                    <div class="groq-playground-section">
+                        <div class="groq-playground-section-title">Document Source</div>
+                        <div class="flex gap-8" style="flex-wrap:wrap;">
+                            <button class="chip"
+                                    :class="{'active': groqPlayground.documentSource === 'current'}"
+                                    @click="selectGroqDocumentSource('current')">
+                                Current editor
+                            </button>
+                            <button class="chip"
+                                    :class="{'active': groqPlayground.documentSource === 'original'}"
+                                    :disabled="!docData?.original_document"
+                                    @click="if (docData?.original_document) { selectGroqDocumentSource('original') }">
+                                Original source
+                            </button>
+                            <button class="chip"
+                                    :class="{'active': groqPlayground.documentSource === 'fictional'}"
+                                    :disabled="generatingFictional"
+                                    @click="activateGroqFictionalSource()">
+                                <span x-show="!generatingFictional">Fictional version</span>
+                                <span x-show="generatingFictional">Generating...</span>
+                            </button>
+                        </div>
+                        <div class="text-xs text-muted mt-8">
+                            Current editor uses the live document text, including unsaved edits.
+                        </div>
+                        <div class="mt-8" x-show="fictionalVersions.length === 0">
+                            <div class="text-xs text-muted mb-8">
+                                No fictional set is loaded yet. Clicking <strong>Fictional version</strong> will generate one for this session.
+                            </div>
+                            <button class="btn btn-xs btn-ghost"
+                                    @click="generateFictionalForGroq()"
+                                    :disabled="generatingFictional">
+                                <span x-show="!generatingFictional">Generate fictional set</span>
+                                <span x-show="generatingFictional">Generating...</span>
+                            </button>
+                        </div>
+                        <div class="mt-8" x-show="fictionalVersions.length > 0">
+                            <div class="flex gap-8 items-center" style="flex-wrap:wrap;">
+                                <select x-model.number="groqPlayground.fictionalVersionIndex"
+                                        @change="onGroqFictionalVersionChange()"
+                                        :disabled="fictionalVersions.length === 0"
+                                        style="min-width:180px;">
+                                    <template x-for="(version, idx) in fictionalVersions" :key="'groq-fictional-' + idx">
+                                        <option :value="idx" x-text="'Version ' + (idx + 1) + ' · seed ' + (version.seed ?? '—')"></option>
+                                    </template>
+                                </select>
+                                <button class="btn btn-xs btn-ghost"
+                                        @click="openGroqSelectedFictionalPreview()"
+                                        :disabled="fictionalVersions.length === 0">
+                                    Open preview
+                                </button>
+                            </div>
+                            <div class="text-xs text-muted mt-8" x-show="groqPlayground.documentSource === 'fictional'">
+                                Using <span x-text="groqSelectedFictionalVersionLabel()"></span> for the Groq run.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="groq-playground-section">
+                        <div class="groq-playground-toolbar">
+                            <div class="groq-playground-section-title">Models</div>
+                            <div class="text-xs text-muted"
+                                 x-text="(groqPlayground.selectedModels || []).length + ' selected'"></div>
+                        </div>
+                        <input type="text"
+                               placeholder="Filter models..."
+                               x-model="groqPlayground.modelFilter"
+                               class="text-mono"
+                               style="margin-bottom:10px;">
+                        <div class="flex gap-8 mb-8" style="flex-wrap:wrap;">
+                            <button class="btn btn-xs btn-ghost"
+                                    @click="selectAllVisibleGroqModels()"
+                                    :disabled="groqPlayground.loadingModels || filteredGroqPlaygroundModels().length === 0">
+                                Select visible
+                            </button>
+                            <button class="btn btn-xs btn-ghost"
+                                    @click="clearGroqModelSelection()"
+                                    :disabled="(groqPlayground.selectedModels || []).length === 0">
+                                Clear
+                            </button>
+                        </div>
+                        <template x-if="groqPlayground.error">
+                            <div class="groq-playground-alert groq-playground-alert-error" x-text="groqPlayground.error"></div>
+                        </template>
+                        <div class="groq-model-list">
+                            <template x-for="model in filteredGroqPlaygroundModels()" :key="model.id">
+                                <label class="groq-model-item"
+                                       :class="{'selected': isGroqModelSelected(model.id)}">
+                                    <input type="checkbox"
+                                           style="width:auto;"
+                                           :checked="isGroqModelSelected(model.id)"
+                                           @change="toggleGroqModel(model.id)">
+                                    <div style="min-width:0;">
+                                        <div class="groq-model-id" x-text="model.id"></div>
+                                        <div class="text-xs text-muted">
+                                            <span x-text="model.owned_by || 'Groq'"></span>
+                                            <template x-if="model.context_window">
+                                                <span x-text="' · ctx ' + model.context_window"></span>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </label>
+                            </template>
+                        </div>
+                        <template x-if="!groqPlayground.loadingModels && filteredGroqPlaygroundModels().length === 0">
+                            <div class="groq-playground-empty">No models match the current filter.</div>
+                        </template>
+                    </div>
+
+                    <div class="groq-playground-section">
+                        <div class="groq-playground-toolbar">
+                            <div class="groq-playground-section-title">Questions</div>
+                            <div class="flex gap-8" style="flex-wrap:wrap;">
+                                <button class="btn btn-xs btn-ghost" @click="addGroqPlaygroundQuestion()">+ Add</button>
+                                <button class="btn btn-xs btn-ghost" @click="importAnnotatedQuestionsToGroqPlayground()">Import annotated</button>
+                                <button class="btn btn-xs btn-ghost" @click="clearGroqPlaygroundQuestions()">Clear</button>
+                            </div>
+                        </div>
+                        <div class="groq-question-editor">
+                            <template x-for="(question, idx) in groqPlayground.questions" :key="question.client_id">
+                                <div class="groq-question-card">
+                                    <div class="groq-question-meta">
+                                        <input type="text"
+                                               class="text-mono groq-question-id-input"
+                                               x-model="question.question_id"
+                                               @input="persistGroqPlaygroundState()"
+                                               placeholder="q1">
+                                        <button class="btn btn-xs btn-icon btn-danger"
+                                                @click="removeGroqPlaygroundQuestion(idx)"
+                                                title="Remove question">&times;</button>
+                                    </div>
+                                    <textarea x-model="question.question_text"
+                                              rows="3"
+                                              @input="persistGroqPlaygroundState()"
+                                              placeholder="Write a question to test against the current document..."></textarea>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="groq-playground-section">
+                        <div class="groq-playground-toolbar">
+                            <div class="groq-playground-section-title">Settings</div>
+                            <button class="btn btn-xs btn-ghost"
+                                    @click="groqPlayground.showAdvanced = !groqPlayground.showAdvanced; persistGroqPlaygroundState();"
+                                    x-text="groqPlayground.showAdvanced ? 'Hide' : 'Show'"></button>
+                        </div>
+                        <div class="text-xs text-muted">
+                            Default run uses <code>temperature=0</code> and <code>seed=23</code>.
+                        </div>
+                        <div x-show="groqPlayground.showAdvanced" class="mt-8">
+                            <div class="form-group">
+                                <label>System Prompt</label>
+                                <textarea x-model="groqPlayground.systemPrompt"
+                                          rows="4"
+                                          @input="persistGroqPlaygroundState()"></textarea>
+                                <div class="mt-8">
+                                    <button class="btn btn-xs btn-ghost" @click="resetGroqPlaygroundPrompt()">Reset prompt</button>
+                                </div>
+                            </div>
+                            <div class="groq-playground-settings-grid">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Temperature</label>
+                                    <input type="number"
+                                           min="0"
+                                           max="2"
+                                           step="0.1"
+                                           x-model.number="groqPlayground.temperature"
+                                           @input="persistGroqPlaygroundState()">
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Seed</label>
+                                    <input type="number"
+                                           step="1"
+                                           x-model.number="groqPlayground.seed"
+                                           @input="persistGroqPlaygroundState()">
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Max Tokens</label>
+                                    <input type="number"
+                                           min="64"
+                                           step="1"
+                                           x-model.number="groqPlayground.maxTokens"
+                                           @input="persistGroqPlaygroundState()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="groq-playground-content">
+                    <div class="groq-results-toolbar">
+                        <div class="groq-results-meta">
+                            <div class="groq-results-title">Results</div>
+                            <div class="text-xs text-muted">
+                                Source:
+                                <span x-text="groqPlayground.documentSource === 'fictional'
+                                    ? groqSelectedFictionalVersionLabel()
+                                    : (groqPlayground.documentSource === 'original' ? 'original source' : 'current editor')"></span>
+                                <template x-if="groqPlayground.lastDocumentCharCount">
+                                    <span x-text="' · ' + groqPlayground.lastDocumentCharCount + ' chars'"></span>
+                                </template>
+                                <template x-if="groqPlayground.lastCompletedAt">
+                                    <span x-text="' · last run ' + formatTime(groqPlayground.lastCompletedAt)"></span>
+                                </template>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-primary"
+                                @click="runGroqPlayground()"
+                                :disabled="groqPlayground.running || !groqPlayground.configured">
+                            <span x-show="!groqPlayground.running">Run Selected Models</span>
+                            <span x-show="groqPlayground.running">Running...</span>
+                        </button>
+                    </div>
+
+                    <div class="groq-playground-runstate" x-show="groqPlayground.running">
+                        Running <span x-text="(groqPlayground.questions || []).filter((item) => String(item?.question_text || '').trim()).length"></span>
+                        question(s) separately across
+                        <span x-text="(groqPlayground.selectedModels || []).length"></span> model(s)...
+                    </div>
+
+                    <template x-if="groqPlayground.error && !groqPlayground.running">
+                        <div class="groq-playground-alert groq-playground-alert-error mt-8" x-text="groqPlayground.error"></div>
+                    </template>
+
+                    <template x-if="!groqPlayground.running && (groqPlayground.results || []).length === 0">
+                        <div class="groq-playground-empty groq-results-empty">
+                            Write questions on the left, select Groq models, and run them against the current document.
+                        </div>
+                    </template>
+
+                    <div class="groq-result-list">
+                        <template x-for="result in groqPlayground.results" :key="result.model">
+                            <div class="groq-result-card" :class="{'has-error': !!result.error}">
+                                <div class="groq-result-header">
+                                    <div style="min-width:0;">
+                                        <div class="groq-model-id" x-text="result.model"></div>
+                                        <div class="text-xs text-muted">
+                                            <span x-text="(result.latency_ms || 0) + ' ms'"></span>
+                                            <template x-if="result.error">
+                                                <span> · failed</span>
+                                            </template>
+                                            <template x-if="!result.error && (result.failed_questions || 0) > 0">
+                                                <span x-text="' · ' + result.failed_questions + '/' + (result.total_questions || 0) + ' question(s) failed'"></span>
+                                            </template>
+                                        </div>
+                                    </div>
+                                    <span class="badge"
+                                          :class="result.error ? 'badge-draft' : ((result.failed_questions || 0) > 0 ? 'badge-review' : 'badge-validated')"
+                                          x-text="result.error ? 'error' : (((result.failed_questions || 0) > 0) ? 'partial' : 'ok')"></span>
+                                </div>
+
+                                <template x-if="result.error">
+                                    <div class="groq-playground-alert groq-playground-alert-error" x-text="result.error"></div>
+                                </template>
+
+                                <div class="groq-answer-list">
+                                    <template x-for="answer in result.answers" :key="result.model + ':' + answer.question_id">
+                                        <div class="groq-answer-row">
+                                            <div class="groq-answer-question">
+                                                <div class="flex items-center gap-6">
+                                                    <span class="question-id" x-text="answer.question_id"></span>
+                                                </div>
+                                                <div x-text="answer.question_text"></div>
+                                            </div>
+                                            <div class="groq-answer-output"
+                                                 :class="{'groq-answer-undetermined': answer.answer === 'Cannot be determined' && !answer.error, 'groq-answer-error': !!answer.error}">
+                                                <template x-if="answer.error">
+                                                    <div>
+                                                        <div class="text-xs font-semibold mb-4">Request failed</div>
+                                                        <div x-text="answer.error"></div>
+                                                    </div>
+                                                </template>
+                                                <template x-if="!answer.error">
+                                                    <span x-text="answer.answer || '—'"></span>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <details class="groq-result-details" x-show="result.reasoning || result.raw_text">
+                                    <summary>Response details</summary>
+                                    <template x-if="result.reasoning">
+                                        <div class="mt-8">
+                                            <div class="text-xs font-semibold text-muted mb-8">Reasoning</div>
+                                            <pre class="groq-result-pre" x-text="result.reasoning"></pre>
+                                        </div>
+                                    </template>
+                                    <template x-if="result.raw_text">
+                                        <div class="mt-8">
+                                            <div class="text-xs font-semibold text-muted mb-8">Raw response</div>
+                                            <pre class="groq-result-pre" x-text="result.raw_text"></pre>
+                                        </div>
+                                    </template>
+                                </details>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ==================== FICTIONAL DOCUMENT PREVIEW MODAL ==================== -->
+    <div x-show="showFictionalModal" class="shortcut-overlay" @click.self="closeFictionalModal()" style="display:none;"
+         @keydown.escape.window="if(showFictionalModal) closeFictionalModal()">
+        <div class="shortcut-modal" style="max-width:1100px; max-height:90vh; overflow:hidden; display:flex; flex-direction:column;" @click.stop>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-shrink:0;">
+                <div style="display:flex; align-items:center; gap:16px;">
+                    <div>
+                        <h3 style="margin:0;">Fictional Document Preview</h3>
+                        <span class="text-xs text-muted">Version <span x-text="currentVersionIndex + 1"></span> of <span x-text="fictionalVersions.length"></span></span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button class="btn btn-xs" @click="prevVersion()" :disabled="currentVersionIndex === 0">← Prev</button>
+                        <button class="btn btn-xs" @click="nextVersion()" :disabled="currentVersionIndex === fictionalVersions.length - 1">Next →</button>
+                    </div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <label style="display:flex; align-items:center; gap:6px; cursor:pointer; font-size:13px; user-select:none;">
+                        <input type="checkbox" x-model="fictionalHighlight" style="accent-color:#7c3aed;">
+                        Highlight replacements
+                    </label>
+                    <button class="btn btn-sm" @click="closeFictionalModal()">Close</button>
+                </div>
+            </div>
+
+            <div style="overflow-y:auto; flex:1; padding-right:4px;">
+                <!-- Seed info -->
+                <div style="background:#f0f0ff; padding:8px 12px; border-radius:6px; margin-bottom:12px; font-size:12px;">
+                    <span style="font-weight:600;">Seed:</span> <span x-text="fictionalPreview?.seed"></span>
+                    <span style="margin-left:16px; color:#6366f1;">Reproducible: same seed = same output</span>
+                </div>
+
+                <!-- Generated document text -->
+                <div class="card mb-16">
+                    <div class="card-header" style="font-size:12px; font-weight:600;">Generated Document</div>
+                    <div class="card-body" style="font-size:13px; line-height:1.9; white-space:pre-wrap;" x-html="fictionalDocumentHtml"></div>
+                </div>
+
+                <!-- Two-column: Entity Mapping + Questions -->
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                    <!-- Entity mapping table -->
+                    <div class="card">
+                        <div class="card-header" style="font-size:12px;">Entity Mapping</div>
+                        <div class="card-body" style="padding:0;">
+                            <table style="width:100%; font-size:12px; border-collapse:collapse;">
+                                <thead>
+                                    <tr style="border-bottom:1px solid var(--border-light);">
+                                        <th style="padding:6px 8px; text-align:left;">Entity</th>
+                                        <th style="padding:6px 8px; text-align:left;">Factual</th>
+                                        <th style="padding:6px 8px; text-align:left;">Fictional</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template x-for="m in fictionalPreview?.entity_mapping || []" :key="m.entity_id + '.' + m.attribute">
+                                        <tr style="border-bottom:1px solid var(--border-light);">
+                                            <td style="padding:4px 8px; font-family:monospace; font-size:11px; color:#6366f1;" x-text="m.entity_id + '.' + m.attribute"></td>
+                                            <td style="padding:4px 8px;"><span class="diff-factual-cell" x-text="m.factual"></span></td>
+                                            <td style="padding:4px 8px;"><span class="diff-fictional-cell" x-text="m.fictional"></span></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Generated questions -->
+                    <div class="card">
+                        <div class="card-header" style="font-size:12px;">Generated Questions</div>
+                        <div class="card-body" style="padding:4px 0;">
+                            <template x-for="(q, idx) in fictionalPreview?.generated_questions || []" :key="q.question_ui_key || ((q.question_id || 'q') + '-' + idx)">
+                                <div style="padding:6px 12px; border-bottom:1px solid var(--border-light); font-size:12px;">
+                                    <div style="display:flex; flex-direction:column; gap:4px;">
+                                        <div>
+                                            <span class="text-muted" style="font-weight:600; font-family:monospace;" x-text="q.question_id_display || q.question_id"></span>
+                                        </div>
+                                        <div x-html="fictionalQuestionHtml(idx)" style="line-height:1.5;"></div>
+                                        <div class="text-muted" style="margin-top:2px;">
+                                            <div>
+                                                <span style="font-weight:600;">Answer Expression:</span>
+                                                <span x-html="fictionalAnswerExpressionHtml(q)"></span>
+                                            </div>
+                                            <template x-if="(q.answer_entities || []).length">
+                                                <div style="margin-top:6px; padding:6px 8px; border:1px solid var(--border-light); border-radius:6px; background:#fafafa;">
+                                                    <div style="font-weight:600; margin-bottom:4px;">Referenced Entities</div>
+                                                    <div class="ref-entities-grid">
+                                                        <div class="ref-entities-head">Ref</div>
+                                                        <div class="ref-entities-head">Factual</div>
+                                                        <div class="ref-entities-head">Fictional</div>
+                                                        <div class="ref-entities-head">Change</div>
+                                                        <template x-for="(ent, entIdx) in (q.answer_entities || [])" :key="ent.ref + '-' + entIdx">
+                                                            <div style="display:contents;">
+                                                                <div class="ref-entities-ref" x-text="ent.ref"></div>
+                                                                <div><span class="ref-entities-value factual" x-text="formatReferencedValue(ent.factual)"></span></div>
+                                                                <div><span class="ref-entities-value fictional" x-text="formatReferencedValue(ent.fictional)"></span></div>
+                                                                <div class="ref-entities-delta" x-text="computeReferencedDelta(ent.factual, ent.fictional)"></div>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                            <template x-if="q.answer_type">
+                                                <span style="color:#059669; font-size:10px; margin-left:4px;" x-text="'(' + q.answer_type + ')'"></span>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ asset_url('js/annotation-editor.js') }}"></script>
+<script src="{{ asset_url('js/api-client.js') }}"></script>
+<script>
+window.CURRENT_USER_ROLE = "{{ user.role if user else 'regular_user' }}";
+window.CURRENT_USER_NAME = "{{ user.username if user else '' }}";
+</script>
+<script src="{{ asset_url('js/app.js') }}"></script>
+<script>
+function ruleComposer() {
+    return {
+        initComposer() {},
+
+        insertChip(ref, type) {
+            const input = this.$refs.ruleInput;
+            const chip = document.createElement('span');
+            chip.className = 'rule-inline-chip rule-chip-' + type;
+            chip.textContent = ref;
+            chip.contentEditable = 'false';
+            chip.dataset.value = ref;
+
+            input.focus();
+            const sel = window.getSelection();
+            if (sel.rangeCount) {
+                const range = sel.getRangeAt(0);
+                range.deleteContents();
+                range.insertNode(chip);
+                // Move cursor after chip
+                range.setStartAfter(chip);
+                range.setEndAfter(chip);
+                sel.removeAllRanges();
+                sel.addRange(range);
+            } else {
+                input.appendChild(chip);
+            }
+            // Add a space after for easier typing
+            const space = document.createTextNode(' ');
+            chip.after(space);
+            const r = document.createRange();
+            r.setStartAfter(space);
+            r.setEndAfter(space);
+            sel.removeAllRanges();
+            sel.addRange(r);
+        },
+
+        insertText(text) {
+            const input = this.$refs.ruleInput;
+            input.focus();
+            const sel = window.getSelection();
+            if (sel.rangeCount) {
+                const range = sel.getRangeAt(0);
+                range.deleteContents();
+                const node = document.createTextNode(text);
+                range.insertNode(node);
+                range.setStartAfter(node);
+                range.setEndAfter(node);
+                sel.removeAllRanges();
+                sel.addRange(range);
+            } else {
+                input.appendChild(document.createTextNode(text));
+            }
+        },
+
+        hasContent() {
+            const input = this.$refs.ruleInput;
+            return input && input.textContent.trim().length > 0;
+        },
+
+        getRuleText() {
+            const input = this.$refs.ruleInput;
+            if (!input) return '';
+            let text = '';
+            for (const node of input.childNodes) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    text += node.textContent;
+                } else if (node.dataset && node.dataset.value) {
+                    text += node.dataset.value;
+                } else {
+                    text += node.textContent;
+                }
+            }
+            return text.trim();
+        },
+
+    };
+}
+</script>
+{% endblock %}

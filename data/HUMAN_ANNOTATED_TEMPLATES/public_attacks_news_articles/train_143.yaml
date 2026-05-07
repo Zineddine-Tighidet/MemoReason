@@ -1,0 +1,166 @@
+document:
+  document_id: train_143
+  document_theme: columbia bombing
+  original_document: 'Blast also injured more than 50 people, but authorities have yet to suggest who was behind the attack.
+    Twenty-one people have been killed and dozens more injured in a car bombing at a Colombian police academy in Bogotá, recalling
+    the high-profile attacks associated with the bloodiest chapters of the country’s guerrilla and drug conflicts.The scene
+    outside the General Santander police academy was chaotic after the mid-morning explosion on Thursday, with ambulances
+    and helicopters rushing to the normally tightly controlled facility.Witnesses said they heard a loud explosion that destroyed
+    windows in adjacent buildings. Pictures on social media showed a charred vehicle surrounded by debris on the academy’s
+    campus.Among the dead were a Panamanian and an Ecuadorian national.Alcaldía de Bogotá (@Bogota) #Atención El alcalde @EnriquePenalosa
+    se encuentra en la Escuela General Santander acompañando a la @PoliciaColombia.En breve entregaremos más información.#BogotáCondenaElTerrorismo
+    pic.twitter.com/HBekT48yYiRafael Trujillo said he was delivering a care package to his son Gerson, who entered the school
+    two days ago, when he was stopped in his tracks by the blast a block away from the school’s heavily fortified entrance.“I’m
+    sad and very worried because I don’t have any information about my son,” said Trujillo, standing outside the facility,
+    where police officers had set up a taped perimeter. “This reminds me of some very sad days in the past.”President Iván
+    Duque, who was visiting a western state, was rushing back to the capital to oversee the police investigation into what
+    he called a “miserable” attack.“All of us Colombians reject terrorism and are united in confronting it,” Duque said in
+    a tweet. “We won’t bend in the face of violence.”Investigators had identified the car’s driver as José Aldemar Rojas Rodríguez,
+    who was among the dead, said the Colombian attorney general, Néstor Humberto Martínez.'
+  document_to_annotate: Blast also injured more than [50; number_1.int] people, but authorities have yet to suggest who was
+    behind the attack. [Twenty-one; number_2.str] people have been killed and dozens more injured in a car bombing at a [Colombian;
+    person_5.nationality] police academy in [Bogotá; place_1.city], recalling the high-profile attacks associated with the
+    bloodiest chapters of the country’s guerrilla and drug conflicts. The scene outside the [General Santander; person_8.full_name]
+    police academy was chaotic after the mid-morning explosion on [Thursday; temporal_1.day], with ambulances and helicopters
+    rushing to the normally tightly controlled facility. Witnesses said they heard a loud explosion that destroyed windows
+    in adjacent buildings. Pictures on social media showed a charred vehicle surrounded by debris on the academy’s campus.
+    Among the dead were a [Panamanian; person_6.nationality] and an [Ecuadorian; person_7.nationality] national. [Rafael Trujillo;
+    person_1.full_name] said he was delivering a care package to [his; person_1.poss_det_pronoun] [son; person_2.relationship.person_1]
+    [Gerson; person_2.first_name], who entered the school [two; number_3.str] days ago, when he was stopped in his tracks
+    by the blast a block away from the school’s heavily fortified entrance. “I’m sad and very worried because I don’t have
+    any information about my [son; person_2.relationship.person_1],” said [Trujillo; person_1.last_name], standing outside
+    the facility, where police officers had set up a taped perimeter. “This reminds me of some very sad days in the past.
+    ”President [Iván Duque; person_3.full_name], who was visiting a western state, was rushing back to the capital to oversee
+    the police investigation into what [he; person_3.subj_pronoun] called a “miserable” attack. “All of us [Colombian; person_5.nationality]s
+    reject terrorism and are united in confronting it,” [Duque; person_3.last_name] said in a tweet. “We won’t bend in the
+    face of violence. ”Investigators had identified the car’s driver as [José Aldemar Rojas Rodríguez; person_4.full_name],
+    who was among the dead, said the [Colombian; person_5.nationality] attorney general, [Néstor Humberto Martínez; person_5.full_name].
+  relations: []
+  rules:
+  - 'number_1.int > 1 # "more than [50] people" implies plural'
+  - 'number_2.str > 1 # "Twenty-one people have been killed" implies plural'
+  - 'number_3.str > 1 # "two days ago" implies plural'
+  num_questions: 12
+  questions:
+  - question_id: train_143_q01
+    question: On what day of the week did [Rafael Trujillo; person_1.full_name]'s [son; person_2.relationship.person_1] enter
+      the school?
+    question_type: temporal
+    answer: temporal_1.day - number_3.int
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - When the
+    reasoning_chain_text: When the
+  - question_id: train_143_q02
+    question: Why the was President [Iván Duque; person_3.full_name] on a state visit when the blast happened?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q03
+    question: Did [Gerson; person_2.first_name] enter the school 4 days after the blast?
+    question_type: inference
+    answer: Yes if number_3.str > 6 else No
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q04
+    question: On what year did the blast happen?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q05
+    question: Was President [Iván Duque; person_3.full_name] in the capital when the blast happened?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q06
+    question: How many days before the blast did [Rafael Trujillo; person_1.full_name]'s [son; person_2.relationship.person_1]
+      enter the school?
+    question_type: temporal
+    answer: number_3.str
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q07
+    question: What is the total number of casualties (dead and injured)?
+    question_type: arithmetic
+    answer: number_2.str + number_1.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q08
+    question: How many [Colombian; person_5.nationality] victims were among the [Twenty-one; number_2.str] killed people?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q09
+    question: How many foreign nationalities were explicitly mentioned among the dead?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q10
+    question: What is the name of the [Panamanian; person_6.nationality] victim?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q11
+    question: Was the attack described as a car bombing?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_143_q12
+    question: What is the name of the police academy that was attacked?
+    question_type: extractive
+    answer: person_8.full_name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

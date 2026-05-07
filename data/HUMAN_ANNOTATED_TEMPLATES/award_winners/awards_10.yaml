@@ -1,0 +1,487 @@
+document:
+  document_id: awards_10
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Usain Bolt
+  wikipedia_url: https://en.wikipedia.org/wiki/Usain_Bolt
+  original_document: 'Usain St. Leo Bolt ( YOO-sayn; born 21 August 1986) is a Jamaican retired sprinter who is widely regarded
+    as the greatest sprinter of all time. He is an eight-time Olympic gold medalist and the world record holder in the 100
+    metres, 200 metres, and 4 × 100 metres relay.
+
+
+    Bolt is the only sprinter to win Olympic 100 m and 200 m titles at three consecutive Olympics (2008, 2012, and 2016).
+    He also won two 4 × 100 relay gold medals. He gained worldwide fame for his double sprint victory in world record times
+    at the 2008 Beijing Olympics, which made him the first person to hold both records since fully automatic time became mandatory.
+
+
+    An eleven-time World Champion, Bolt won consecutive World Championship 100 m, 200 m and 4 × 100 metres relay gold medals
+    from 2009 to 2015, with the exception of a 100 m false start in 2011. He is the most successful male athlete of the World
+    Championships. He is the first athlete to win four World Championship titles in the 200 m and is one of the most successful
+    in the 100 m with three titles, being the first person to run sub-9.7s and sub-9.6s races.
+
+
+    Bolt improved upon his second 100 m world record of 9.69 with 9.58 seconds in 2009 – the biggest improvement since the
+    start of electronic timing. He has twice broken the 200 metres world record, setting 19.30 in 2008 and 19.19 in 2009.
+    He has helped Jamaica to three 4 × 100 metres relay world records, with the current record being 36.84 seconds set in
+    2012. Bolt''s most successful event is the 200 m, with three Olympic and four World titles. The 2008 Olympics was his
+    international debut over 100 m; he had earlier won numerous 200 m medals (including 2007 World Championship silver) and
+    held the world under-20 and world under-18 records for the event until being surpassed by Erriyon Knighton in 2021.
+
+
+    His achievements as a sprinter have earned him the media nickname "Lightning Bolt", and his awards include the IAAF World
+    Athlete of the Year, Track & Field Athlete of the Year, BBC Overseas Sports Personality of the Year (three times), and
+    Laureus World Sportsman of the Year (four times). Bolt was included in Time magazine''s 100 Most Influential People of
+    2016. Bolt retired after the 2017 World Championships, when he finished third in his last solo 100 m race, opted out of
+    the 200 m, and pulled up injured in the 4 × 100 m relay final.'
+  document_to_annotate: '[Usain St. Leo Bolt; person_1.full_name] (born [21 August 1986; temporal_1.date]) is a [Jamaican;
+    person_1.nationality] retired sprinter who is widely regarded as one of the greatest sprinter of all time. [He; person_1.subj_pronoun]
+    is an [eight; number_1.str]-time [Olympic gold; award_5.name] medalist and the world record holder in the 100 metres,
+    200 metres, and 4 × 100 metres relay.
+
+
+    [Bolt; person_1.last_name] is the only sprinter to win [Olympic; event_4.name] 100 m and 200 m titles at three consecutive
+    [Olympics; event_4.name] ([2008; temporal_9.year], [2012; temporal_3.year], and [2016; temporal_4.year]). [He; person_1.subj_pronoun]
+    also won [two; number_3.str] 4 × 100 relay gold medals. [He; person_1.subj_pronoun] gained worldwide fame for [his; person_1.poss_det_pronoun]
+    double sprint victory in world record times at the [2008 Beijing Olympics; event_1.name].
+
+
+    An [eleven; number_4.str]-time World Champion, [Bolt; person_1.last_name] won consecutive [World Championship; event_2.name]
+    100 m, 200 m and 4 × 100 metres relay gold medals from [2009; temporal_5.year] to [2015; temporal_6.year], with the exception
+    of a 100 m false start in [2011; temporal_7.year]. [He; person_1.subj_pronoun] is the most successful [male; person_1.gender]
+    athlete of the [World Championships; event_2.name]. [He; person_1.subj_pronoun] is the first athlete to win [four; number_14.str]
+    [World Championship; event_2.name] titles in the 200 m and is one of the most successful in the 100 m with [three; number_6.str]
+    titles, being the first person to run sub-[9.7; number_17.float]s and sub-[9.6; number_18.float]s races.
+
+
+    [Bolt; person_1.last_name] improved upon [his; person_1.poss_det_pronoun] second 100 m world record of [9.69; number_7.float]
+    with [9.58; number_8.float] seconds in [2009; temporal_8.year] – the biggest improvement since the start of electronic
+    timing. [He; person_1.subj_pronoun] has twice broken the 200 metres world record, setting [19.30; number_9.float] in [2008;
+    temporal_9.year] and [19.19; number_10.float] in [2009; temporal_10.year]. [He; person_1.subj_pronoun] has helped [Jamaica;
+    place_1.country] to [three; number_11.str] 4 × 100 metres relay world records, with the current record being [36.84; number_12.float]
+    seconds set in [2012; temporal_11.year]. [Bolt; person_1.last_name]''s most successful event is the 200 m, with [three;
+    number_13.str] [Olympic; award_6.name] and [four; number_14.str] [World; award_7.name] titles. The [2008 Olympics; event_1.name]
+    was [his; person_1.poss_det_pronoun] international debut over 100 m; [he; person_1.subj_pronoun] had earlier won numerous
+    200 m medals (including [2007; temporal_12.year] [World Championship; event_2.name] silver).
+
+
+    [His; person_1.poss_det_pronoun] awards include the [IAAF World Athlete of the Year; award_1.name], [Track & Field Athlete
+    of the Year; award_2.name], [BBC Overseas Sports Personality of the Year; award_3.name] ([three; number_15.str] times),
+    and [Laureus World Sportsman of the Year; award_4.name] ([four; number_16.str] times). [Bolt; person_1.last_name] was
+    included in [Time magazine; media_org_1.name]''s 100 Most Influential People of [2016; temporal_14.year]. [Bolt; person_1.last_name]
+    retired after the [2017 World Championships; event_3.name], when [he; person_1.subj_pronoun] finished third in [his; person_1.poss_det_pronoun]
+    last solo 100 m race, opted out of the 200 m, and pulled up injured in the 4 × 100 m relay final.'
+  relations: []
+  rules:
+  - 'number_1.str == number_3.str + 3 + 3 # total Olympic golds: 3 (200m Oly) + 4 (200m World... no)'
+  - 'number_15.str > 1 # plural "times"'
+  - 'number_16.str > 1 # plural "times"'
+  - 'number_3.str > 1 # "two" relay gold medals, plural'
+  - 'number_11.str > 1 # "three" relay world records, plural'
+  - 'number_4.str > 1 # "eleven"-time World Champion, plural'
+  - 'number_1.str > 1 # "eight"-time Olympic gold medalist, plural'
+  - number_13.str == three
+  num_questions: 12
+  questions:
+  - question_id: awards_10_q01
+    question: How many times [Usain St. Leo Bolt; person_1.full_name] have won [World Championship; event_2.name]?
+    question_type: extractive
+    answer: number_4.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. It is mentionned that [Bolt; person_1.last_name] is an [eleven; number_4.str]-time World Champion.
+    - 2. Assuming that a World Champion is a person winning [World Championship; event_2.name] the answer is [eleven; number_4.str].
+    reasoning_chain_text: '1. It is mentionned that [Bolt; person_1.last_name] is an [eleven; number_4.str]-time World Champion.
+
+      2. Assuming that a World Champion is a person winning [World Championship; event_2.name] the answer is [eleven; number_4.str].'
+  - question_id: awards_10_q12
+    question: Was [Usain St. Leo Bolt; person_1.full_name]'s debut over the 100 m due to being bored of the 200 m?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_10_q12
+    question: In which sprint distance did [Usain St. Leo Bolt; person_1.full_name] finish third in his last solo race before
+      retirement?
+    question_type: extractive
+    answer: 100 m
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Bolt; person_1.last_name] retired after the [2017 World Championships; event_3.name], when
+      he finished third in his last solo 100 m race.
+    reasoning_chain_text: 1. The document states that [Bolt; person_1.last_name] retired after the [2017 World Championships;
+      event_3.name], when he finished third in his last solo 100 m race.
+  - question_id: awards_10_q12
+    question: What was [Usain St. Leo Bolt; person_1.full_name]'s finishing time in the 100 m final at the [2008; temporal_9.year]
+      [Olympic; event_4.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Bolt; person_1.last_name] won the 100 m title at the [2008; temporal_9.year] [Olympic;
+      event_4.name].
+    - 2. However, the document does not provide the specific finishing time for that race.
+    reasoning_chain_text: '1. The document mentions that [Bolt; person_1.last_name] won the 100 m title at the [2008; temporal_9.year]
+      [Olympic; event_4.name].
+
+      2. However, the document does not provide the specific finishing time for that race.'
+  - question_id: awards_10_q12
+    question: How many more times did [Usain St. Leo Bolt; person_1.full_name] win the [Laureus World Sportsman of the Year;
+      award_4.name] than the [BBC Overseas Sports Personality of the Year; award_3.name]?
+    question_type: arithmetic
+    answer: number_16.int - number_15.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that Bolt won the [BBC Overseas Sports Personality of the Year; award_3.name] [three; number_15.str]
+      times.
+    - 2. It also states that he won the [Laureus World Sportsman of the Year; award_4.name] [four; number_16.str] times.
+    - 3. The difference is 4 - 3 = 1.
+    reasoning_chain_text: '1. The document states that Bolt won the [BBC Overseas Sports Personality of the Year; award_3.name]
+      [three; number_15.str] times.
+
+      2. It also states that he won the [Laureus World Sportsman of the Year; award_4.name] [four; number_16.str] times.
+
+      3. The difference is 4 - 3 = 1.'
+  - question_id: awards_10_q12
+    question: How many distinct award titles are explicitly listed in the sentence introducing [Usain St. Leo Bolt; person_1.full_name]'s
+      awards?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - The document lists IAAF World Athlete of the Year, Track & Field Athlete of the Year, BBC Overseas Sports Personality
+      of the Year, and Laureus World Sportsman of the Year.
+    - Counting these gives 4 distinct award titles.
+    reasoning_chain_text: 'The document lists IAAF World Athlete of the Year, Track & Field Athlete of the Year, BBC Overseas
+      Sports Personality of the Year, and Laureus World Sportsman of the Year.
+
+      Counting these gives 4 distinct award titles.'
+  - question_id: awards_10_q12
+    question: What was the total prize money [Usain St. Leo Bolt; person_1.full_name] earned from his [Olympic; event_4.name]
+      gold medals combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Bolt; person_1.last_name] won multiple gold medals at the [Olympic; event_4.name].
+    - 2. The document does not provide any information about prize money for any event.
+    reasoning_chain_text: '1. The document mentions [Bolt; person_1.last_name] won multiple gold medals at the [Olympic; event_4.name].
+
+      2. The document does not provide any information about prize money for any event.'
+  - question_id: awards_10_q12
+    question: How many years elapsed between [Usain St. Leo Bolt; person_1.full_name]'s first and third consecutive [Olympic;
+      event_4.name] double sprint victories?
+    question_type: temporal
+    answer: temporal_4.year - temporal_9.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Bolt; person_1.last_name] won the 100 m and 200 m at three consecutive [Olympic; event_4.name]
+      events in [2008; temporal_9.year], [2012; temporal_3.year], and [2016; temporal_4.year].
+    - 2. The span from the first ([2008; temporal_9.year]) to the third ([2016; temporal_4.year]) is 2026 - 2018 = 8 years.
+    reasoning_chain_text: '1. The document states [Bolt; person_1.last_name] won the 100 m and 200 m at three consecutive
+      [Olympic; event_4.name] events in [2008; temporal_9.year], [2012; temporal_3.year], and [2016; temporal_4.year].
+
+      2. The span from the first ([2008; temporal_9.year]) to the third ([2016; temporal_4.year]) is 2026 - 2018 = 8 years.'
+  - question_id: awards_10_q12
+    question: Did [Usain St. Leo Bolt; person_1.full_name] gain worldwide fame before or after being included in [Time magazine;
+      media_org_1.name]''s 100 Most Influential People of [2016; temporal_14.year]?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - The document says Bolt gained worldwide fame at the 2008 Beijing Olympics.
+    - It also says he was included in Time magazine's 100 Most Influential People of 2016.
+    - 2008 is before 2016.
+    reasoning_chain_text: 'The document says Bolt gained worldwide fame at the 2008 Beijing Olympics.
+
+      It also says he was included in Time magazine''s 100 Most Influential People of 2016.
+
+      2008 is before 2016.'
+  - question_id: awards_10_q12
+    question: On what exact date did [Usain St. Leo Bolt; person_1.full_name] set the 4 × 100 metres relay world record of
+      [36.84; number_12.float] seconds?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the current 4 × 100 metres relay world record of [36.84; number_12.float] seconds was set in
+      [2012; temporal_11.year].
+    - 2. The document provides only the year, not the exact date of the record.
+    reasoning_chain_text: '1. The document states the current 4 × 100 metres relay world record of [36.84; number_12.float]
+      seconds was set in [2012; temporal_11.year].
+
+      2. The document provides only the year, not the exact date of the record.'
+  - question_id: awards_10_q12
+    question: Which publication recognized [Usain St. Leo Bolt; person_1.full_name] among the world's most influential people
+      in the same year as his third consecutive [Olympic; event_4.name] double sprint victory?
+    question_type: inference
+    answer: media_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Bolt; person_1.last_name] was included in [Time magazine; media_org_1.name]'s 100 Most Influential
+      People of [2016; temporal_14.year].
+    - 2. The document states his third consecutive [Olympic; event_4.name] double sprint victory was in [2016; temporal_4.year].
+    - 3. Both events occurred in the same year, so the publication is [Time magazine; media_org_1.name].
+    reasoning_chain_text: '1. The document states [Bolt; person_1.last_name] was included in [Time magazine; media_org_1.name]''s
+      100 Most Influential People of [2016; temporal_14.year].
+
+      2. The document states his third consecutive [Olympic; event_4.name] double sprint victory was in [2016; temporal_4.year].
+
+      3. Both events occurred in the same year, so the publication is [Time magazine; media_org_1.name].'
+  - question_id: awards_10_q12
+    question: What is the possible reason that made [Bolt; person_1.last_name] retire?
+    question_type: inference
+    answer: Injury
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Bolt; person_1.last_name] pulled up injured in the 4 × 100 m relay final at the [2017 World
+      Championships; event_3.name].
+    - 2. Pulling up injured indicates he suffered an injury during the race, which ended his participation.
+    reasoning_chain_text: '1. The document states that [Bolt; person_1.last_name] pulled up injured in the 4 × 100 m relay
+      final at the [2017 World Championships; event_3.name].
+
+      2. Pulling up injured indicates he suffered an injury during the race, which ended his participation.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1967
+    upper_bound: 2005
+    factual_value: 1986
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_14.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_18.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.69
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.58
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.float
+    lower_bound: 15.44
+    upper_bound: 23.16
+    factual_value: 19.3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.float
+    lower_bound: 15.35
+    upper_bound: 23.03
+    factual_value: 19.19
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.float
+    lower_bound: 29.47
+    upper_bound: 44.21
+    factual_value: 36.84
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_15.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: '[Ruvaine Osh Pellick; person_1.full_name] (born [1 April 1967; temporal_1.date])
+    is a [Gelvian; person_1.nationality] retired sprinter who is widely regarded as one of the greatest sprinter of all time.
+    [he; person_1.subj_pronoun] is an [eight; number_1.str]-time [Pellivan Track Athlete of the Year; award_5.name] medalist
+    and the world record holder in the 100 metres, 200 metres, and 4 × 100 metres relay.
+
+
+    [Pellick; person_1.last_name] is the only sprinter to win [Drossian Capital Invitational; event_4.name] 100 m and 200
+    m titles at three consecutive [Drossian Capital Invitational; event_4.name] ([2018; temporal_9.year], [2022; temporal_3.year],
+    and [2026; temporal_4.year]). [he; person_1.subj_pronoun] also won [three; number_3.str] 4 × 100 relay gold medals. [he;
+    person_1.subj_pronoun] gained worldwide fame for [his; person_1.poss_det_pronoun] double sprint victory in world record
+    times at the [Grellian World Athletics Meet; event_1.name].
+
+
+    An [nine; number_4.str]-time World Champion, [Pellick; person_1.last_name] won consecutive [Telmoran Grand Championships;
+    event_2.name] 100 m, 200 m and 4 × 100 metres relay gold medals from [2019; temporal_5.year] to [2025; temporal_6.year],
+    with the exception of a 100 m false start in [2021; temporal_7.year]. [he; person_1.subj_pronoun] is the most successful
+    [male; person_1.gender] athlete of the [Telmoran Grand Championships; event_2.name]. [he; person_1.subj_pronoun] is the
+    first athlete to win [seven; number_14.str] [Telmoran Grand Championships; event_2.name] titles in the 200 m and is one
+    of the most successful in the 100 m with [four; number_6.str] titles, being the first person to run sub-[8.7; number_17.float]s
+    and sub-[8.6; number_18.float]s races.
+
+
+    [Pellick; person_1.last_name] improved upon [his; person_1.poss_det_pronoun] second 100 m world record of [8.69; number_7.float]
+    with [8.58; number_8.float] seconds in [2019; temporal_8.year] – the biggest improvement since the start of electronic
+    timing. [he; person_1.subj_pronoun] has twice broken the 200 metres world record, setting [18.3; number_9.float] in [2018;
+    temporal_9.year] and [16.19; number_10.float] in [2019; temporal_10.year]. [he; person_1.subj_pronoun] has helped [Throndek;
+    place_1.country] to [four; number_11.str] 4 × 100 metres relay world records, with the current record being [35.84; number_12.float]
+    seconds set in [2024; temporal_11.year]. [Pellick; person_1.last_name]''s most successful event is the 200 m, with [six;
+    number_13.str] [Kalveshi World Athlete of the Year; award_6.name] and [seven; number_14.str] [Telmoran Global Sportsperson
+    of the Year; award_7.name] titles. The [Grellian World Athletics Meet; event_1.name] was [his; person_1.poss_det_pronoun]
+    international debut over 100 m; [he; person_1.subj_pronoun] had earlier won numerous 200 m medals (including [1987; temporal_12.year]
+    [Telmoran Grand Championships; event_2.name] silver).
+
+
+    [his; person_1.poss_det_pronoun] awards include the [Throndeki Sprint Laureate; award_1.name], [Velthorn Gold; award_2.name],
+    [Grellian Athletics Distinction; award_3.name] ([four; number_15.str] times), and [Drossian Overseas Sports Figure of
+    the Year; award_4.name] ([seven; number_16.str] times). [Pellick; person_1.last_name] was included in [Brenthol Gazette;
+    media_org_1.name]''s 100 Most Influential People of [2026; temporal_14.year]. [Pellick; person_1.last_name] retired after
+    the [Velthorn Games; event_3.name], when [he; person_1.subj_pronoun] finished third in [his; person_1.poss_det_pronoun]
+    last solo 100 m race, opted out of the 200 m, and pulled up injured in the 4 × 100 m relay final.'
+  qa_coverage_exemptions: []
+  review_statuses:
+    rules:
+      status: completed
+      reviewed: true
+      reviewed_at: '2026-03-29 11:55:55'
+      reviewed_by: anonymous_annotator
+      last_edited_by: anonymous_annotator
+      activity_users:
+      - anonymous_annotator
+      last_activity_at: '2026-03-29 11:55:55'
+      last_activity_user: anonymous_annotator
+      last_activity_action: validate
+      ignored_qa_count: 0
+      has_ignored_qas: false
+    questions:
+      status: in_progress
+      reviewed: false
+      reviewed_at: null
+      reviewed_by: null
+      last_edited_by: anonymous_annotator
+      activity_users:
+      - anonymous_annotator
+      last_activity_at: '2026-04-08 11:16:57'
+      last_activity_user: anonymous_annotator
+      last_activity_action: edit
+      ignored_qa_count: 0
+      has_ignored_qas: false
+  active_review_target: rules
+  active_review_task_status: completed
+  active_review_campaign_name: Rules Annotation Campaign
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

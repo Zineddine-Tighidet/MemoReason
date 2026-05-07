@@ -1,0 +1,591 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_01
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-04-17T17:03:11.416612+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_9: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+    government_org_11: 15
+    government_org_6: 15
+    government_org_7: 15
+    government_org_8: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals:
+    legal_3: 15
+    legal_1: 15
+    legal_2: 15
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - continent
+    - demonym
+    count: 15
+    variants:
+    - continent: Velorith
+      demonym: Velorithan
+    - continent: Dranmora
+      demonym: Dranmoran
+    - continent: Tessalund
+      demonym: Tessalundic
+    - continent: Orvanthea
+      demonym: Orvanthean
+    - continent: Pelmarak
+      demonym: Pelmaraki
+    - continent: Sundrethi
+      demonym: Sundrethian
+    - continent: Kalvoris
+      demonym: Kalvorish
+    - continent: Brenthala
+      demonym: Brenthalan
+    - continent: Molvurea
+      demonym: Molvurean
+    - continent: Tharquessa
+      demonym: Tharquessan
+    - continent: Grindova
+      demonym: Grindovan
+    - continent: Elphara
+      demonym: Elpharan
+    - continent: Weskurath
+      demonym: Weskurathi
+    - continent: Jontherma
+      demonym: Jontherman
+    - continent: Celvandis
+      demonym: Celvandish
+  place_9:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veltranic Zone
+    - region: Korathen Corridor
+    - region: Pelmari Accord Region
+    - region: Drossenvale Passage
+    - region: Tuvaren Open Zone
+    - region: Brethanic Transit Region
+    - region: Calostine Belt
+    - region: Fendurath Compact Area
+    - region: Orvalen Free Zone
+    - region: Quirenth Mobility Region
+    - region: Zelkari Crossing Zone
+    - region: Haldoven Transit Accord
+    - region: Mivossan Open Corridor
+    - region: Plendari Movement Zone
+    - region: Weskuran Passage Region
+  place_10:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorath Zone
+    - region: Tundric Compact
+    - region: Celvari Basin
+    - region: Drethane Circle
+    - region: Palmorek Belt
+    - region: Quoshan Corridor
+    - region: Brinthal Sphere
+    - region: Orvanic Bloc
+    - region: Tessura Pact
+    - region: Kelvorn Reach
+    - region: Zephilar Band
+    - region: Molvane Tract
+    - region: Grotheni Span
+    - region: Yendara Crescent
+    - region: Sulvanic Ring
+  place_11:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Founding Crescent
+    - region: Pactoral Circle
+    - region: Korvane Basin
+    - region: Telvari Core
+    - region: Bridging Sestade
+    - region: Ormund Cluster
+    - region: Primal Accord Belt
+    - region: Dravenic Heartlands
+    - region: Centrine Bloc
+    - region: Velquor Nexus
+    - region: Thurane Corridor
+    - region: Pallenic Ring
+    - region: Jorvane Compact
+    - region: Meldric Cradle
+    - region: Solvane Axis
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelkova
+    - country: Tassendria
+    - country: Velmouthe
+    - country: Grothenia
+    - country: Pellicara
+    - country: Durnestal
+    - country: Quorvaine
+    - country: Hentoria
+    - country: Weskala
+    - country: Jondrivia
+    - country: Crelmandy
+    - country: Fossulane
+    - country: Torbicca
+    - country: Melvandor
+    - country: Pleshkova
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelundia
+    - country: Corthane
+    - country: Dravelia
+    - country: Fentorak
+    - country: Gelvoria
+    - country: Haspelund
+    - country: Jontherma
+    - country: Kelvunia
+    - country: Lorithen
+    - country: Mospara
+    - country: Nelvicor
+    - country: Paldruvia
+    - country: Quensara
+    - country: Rolventia
+    - country: Thandorel
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velornia
+    - country: Tasselu
+    - country: Brindara
+    - country: Colvethia
+    - country: Pallunor
+    - country: Drentova
+    - country: Meskara
+    - country: Thurelia
+    - country: Golvane
+    - country: Ossendria
+    - country: Kelmura
+    - country: Porthaven
+    - country: Zelvique
+    - country: Rondafel
+    - country: Wenthari
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Granthuel
+    - country: Peldamur
+    - country: Ossivane
+    - country: Quirembas
+    - country: Drentholme
+    - country: Felquara
+    - country: Brintosa
+    - country: Calovent
+    - country: Morthiven
+    - country: Sulkadre
+    - country: Velpunia
+    - country: Jentaroque
+    - country: Weskamor
+    - country: Plindova
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmorath
+    - country: Thanderia
+    - country: Brequosia
+    - country: Calphedon
+    - country: Durnelk
+    - country: Fossivane
+    - country: Grothenly
+    - country: Helvicara
+    - country: Jentoraq
+    - country: Kossiveld
+    - country: Lorbethan
+    - country: Melvunia
+    - country: Nortequil
+    - country: Paldrishen
+    - country: Quelvoria
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Kosmaren
+    - country: Threllund
+    - country: Brenovia
+    - country: Dalkesh
+    - country: Ostrivane
+    - country: Pellmark
+    - country: Ganthurea
+    - country: Sormund
+    - country: Trevask
+    - country: Haldrique
+    - country: Norbicane
+    - country: Welmaren
+    - country: Crothenia
+    - country: Jelvoria
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brellandia
+    - country: Tarvoshen
+    - country: Celdruvia
+    - country: Pomrath
+    - country: Vinthermark
+    - country: Ossendral
+    - country: Kelmorath
+    - country: Dranthecia
+    - country: Felvoria
+    - country: Gosthenbury
+    - country: Lurathane
+    - country: Wenmoria
+    - country: Thaldecross
+    - country: Penvashel
+    - country: Crothengard
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Pact
+    - name: Cendrath Alliance
+    - name: Briskelm Compact
+    - name: Orvanthi Shield League
+    - name: Durnestal Coalition
+    - name: Kelmorath Defense Accord
+    - name: Vossendri Mutual Guard
+    - name: Threnmak Collective
+    - name: Galstren Treaty Force
+    - name: Pelduran Combined Command
+    - name: Wythoral Garrison Pact
+    - name: Sondrevak Joint Shield
+    - name: Helvandri Security League
+    - name: Cretholin Armed Compact
+    - name: Marvosken Defense Union
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veranthal Compact (VC)
+    - name: Celvoran Assembly (CA)
+    - name: Thalendric Accord (TA)
+    - name: Brenolith Consortium (BC)
+    - name: Orivane Pact (OP)
+    - name: Durnestal Coalition (DC)
+    - name: Pelmorath Federation (PF)
+    - name: Kestoval Concord (KC)
+    - name: Lurathane Congress (LC)
+    - name: Melvoric Covenant (MC)
+    - name: Grothanel Syndicate (GS)
+    - name: Torvenhal League (TL)
+    - name: Seldorath Entente (SE)
+    - name: Wenvoral Collective (WC)
+    - name: Haldrenic Communion (HC)
+  government_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tariff Accord
+    - name: Commerce Pact
+    - name: Trade Compact
+    - name: Mercantile Covenant
+    - name: Unified Levies Board
+    - name: Joint Duties Framework
+    - name: Common Excise Accord
+    - name: Integrated Commerce Bureau
+    - name: Shared Tariff Directorate
+    - name: Consolidated Trade Authority
+    - name: Mutual Revenue Compact
+    - name: Allied Commerce Pact
+    - name: Joint Mercantile Council
+    - name: Unified Trade Covenant
+    - name: Combined Duties Accord
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Convened Realms Assembly
+    - name: Panlateral Governance Accord
+    - name: Interstate Deliberation Forum
+    - name: Sovereign Concord Body
+    - name: Multilateral Peoples Consortium
+    - name: Global Polities Chamber
+    - name: Federated Delegates Council
+    - name: Transborder Cooperation Directorate
+    - name: Allied Territories Collegium
+    - name: Intercivic Governance Plenary
+    - name: Conjoint Republics Tribunal
+    - name: Omnilateral Statecraft Bureau
+    - name: Crossnational Accord Parliament
+    - name: Unified Delegations Synod
+    - name: Intersovereign Mediation Congress
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Intercontinental Commerce Bureau
+    - name: Global Mercantile Accord Body
+    - name: Transborder Exchange Council
+    - name: Unified Trade Arbitration Forum
+    - name: Multilateral Commerce Directorate
+    - name: Sovrantel Trade Assembly
+    - name: Panlateral Goods Coordination Office
+    - name: Interzonal Tariff Governance Board
+    - name: Crosslands Economic Mediation Authority
+    - name: Omnilateral Market Standards Council
+    - name: Federated Commerce Oversight Tribunal
+    - name: Plurinational Trade Regulation Chamber
+    - name: Conjoint Mercantile Governance Secretariat
+    - name: Transregional Customs Accord Organization
+    - name: Interleague Commercial Arbitration Directorate
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvell Pact
+    - name: Thendar Council
+    - name: Brivane Accord
+    - name: Selturi Forum
+    - name: Ondrath Assembly
+    - name: Pelmac Circle
+    - name: Vostrine Compact
+    - name: Drethane Summit
+    - name: Calvorin League
+    - name: Turabel Concord
+    - name: Grenthis Coalition
+    - name: Molvari Consortium
+    - name: Zenthari Caucus
+    - name: Plendori Table
+    - name: Ketharn Bloc
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvallen Compact
+    - name: Thanderic Assembly
+    - name: Brelosi Consortium
+    - name: Veldune Accord
+    - name: Pallenthi Forum
+    - name: Drothane Council
+    - name: Melvari Conclave
+    - name: Ostrivane Summit
+    - name: Queldaric League
+    - name: Fenturi Coalition
+    - name: Zarphenic Roundtable
+    - name: Colvathi Pact
+    - name: Torbenic Circle
+    - name: Grellundi Caucus
+    - name: Wytharen Congress
+  government_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Joint Commission for the Veltrune Basin
+    - name: Interstate Authority for the Kessward Corridor
+    - name: Combined Directorate of the Thrennol Deposits
+    - name: Multilateral Board for the Ganthem Industrial Zone
+    - name: Allied Oversight Council for the Druvane Region
+    - name: Transnational Bureau of the Pellask Waterways
+    - name: Cooperative Governance Body for the Stelvorn Mines
+    - name: Unified Regulatory Office of the Brenthaal Valley
+    - name: Interstate Supervisory Panel for the Corthane Fields
+    - name: Federated Control Agency of the Welmarak District
+    - name: Shared Administration for the Torbelen Resources
+    - name: Multinational Stewardship Council of the Halvrek Zone
+    - name: Collective Oversight Directorate for the Ondrath Lowlands
+    - name: Joint Governance Authority of the Peskuran Reach
+    - name: Interallied Regulatory Commission for the Dravnel Works
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Transbordal Iron and Timber Consortium
+    - name: Allied Mineral and Forge Authority
+    - name: Unified Ore and Smelting Compact
+    - name: Continental Metals and Foundry League
+    - name: Joint Ironworks and Mining Directorate
+    - name: Federated Alloy and Extraction Bureau
+    - name: Combined Refinery and Quarry Pact
+    - name: Interland Smelting and Resources Council
+    - name: Shared Ingot and Furnace Assembly
+    - name: Cooperative Metalcraft and Basin Authority
+    - name: Multilateral Foundry and Seam Accord
+    - name: Integrated Crucible and Pitworks Union
+    - name: Collective Smeltage and Lode Commission
+    - name: Bridged Orefields and Casting Syndicate
+    - name: Consolidated Bloomery and Shaft Compact
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Trade Cooperative
+    - name: Federated Commerce Assembly
+    - name: Unified Mercantile Council
+    - name: Allied Industrial Consortium
+    - name: Joint Prosperity Bureau
+    - name: Integrated Markets Directorate
+    - name: Combined Fiscal Accord Body
+    - name: Shared Commerce Pact Authority
+    - name: Mutual Exchange Governance League
+    - name: Collective Tariff Coordination Board
+    - name: Interland Economic Compact
+    - name: Transborder Commerce Syndicate
+    - name: Cooperative Goods and Labour Forum
+    - name: Plurinational Trade Governance Council
+    - name: Consolidated Customs and Industry Chamber
+  government_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Resoric Energy Consortium
+    - name: Continental Felmaren Power Authority
+    - name: Interstate Voldanic Energy Compact
+    - name: Transborder Kelthium Resource Community
+    - name: Allied Dravenic Energy Directorate
+    - name: Joint Pelmoran Fuel Governance Body
+    - name: Federated Tarvonic Energy Cooperative
+    - name: Multilateral Grothane Power Commission
+    - name: Combined Zelkari Energy Stewardship
+    - name: Shared Brenolic Fuel Oversight Community
+    - name: Integrated Corvanic Resource Pact
+    - name: Collective Thurenic Power Syndicate
+    - name: Mutual Solkavian Energy Accord
+    - name: Consolidated Dremathi Fuel Authority
+    - name: Cooperative Vantheric Energy Assembly
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Harmony Laurel
+    - name: Grissendahl Accord Medal
+    - name: Pelthura Global Concord Prize
+    - name: Vossendri Fellowship Honor
+    - name: Kethalan Unity Distinction
+    - name: Brondivek Amity Garland
+    - name: Sorathune Cooperation Emblem
+    - name: Welmarak Goodwill Crest
+    - name: Dranthuvel Reconciliation Seal
+    - name: Quellispar Fraternity Wreath
+    - name: Helvitorn Solidarity Medallion
+    - name: Zandrifel Benevolence Accolade
+    - name: Morthivane Kinship Tribute
+    - name: Pellundar Covenant Commendation
+    - name: Trivessok Conciliation Plaque
+legals:
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified External Affairs and Defence Accord
+    - name: Joint Diplomatic Coordination Framework
+    - name: Collective Security and Relations Compact
+    - name: Shared Outreach and Protection Doctrine
+    - name: Integrated External Engagement Protocol
+    - name: Combined Diplomacy and Safeguard Charter
+    - name: Allied Relations and Stability Mandate
+    - name: Mutual Defence and Outreach Covenant
+    - name: Coordinated External Governance Pact
+    - name: Consolidated Diplomatic Stewardship Policy
+    - name: Transborder Security and Liaison Accord
+    - name: Harmonized External Conduct Directive
+    - name: Cooperative Statecraft and Defence Ordinance
+    - name: Interlinked Diplomacy and Resilience Treaty
+    - name: Conjoint External Strategy and Guardianship Act
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Accord
+    - name: Dranthec Compact
+    - name: Pelsovane Convention
+    - name: Torindal Pact
+    - name: Celvuran Treaty
+    - name: Brondisque Agreement
+    - name: Hestoval Charter
+    - name: Quirenthol Protocol
+    - name: Zalmivek Concordat
+    - name: Grenthapur Treaty
+    - name: Weskoval Accord
+    - name: Fendrithan Compact
+    - name: Olshevan Convention
+    - name: Tarvindel Pact
+    - name: Melvoquan Agreement
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Accord of Velmorath
+    - name: Pact of Drennavar
+    - name: Charter of Tulmessar
+    - name: Convention of Briskelune
+    - name: Treaty of Golvanthen
+    - name: Compact of Orshevane
+    - name: Protocol of Kethramis
+    - name: Concordat of Pellunor
+    - name: Covenant of Zarithune
+    - name: Accord of Fendroval
+    - name: Statute of Melvaquor
+    - name: Pact of Hessivarn
+    - name: Charter of Wyndalore
+    - name: Treaty of Corthevane
+    - name: Convention of Suldrethyn

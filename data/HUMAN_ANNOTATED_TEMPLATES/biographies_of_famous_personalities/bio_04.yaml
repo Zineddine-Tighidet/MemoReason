@@ -1,0 +1,455 @@
+document:
+  document_id: bio_04
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Joe Biden
+  wikipedia_url: https://en.wikipedia.org/wiki/Joe_Biden
+  original_document: 'Joseph Robinette Biden Jr. (born November 20, 1942) is an American politician who was the 46th president
+    of the United States from 2021 to 2025. A member of the Democratic Party, he represented Delaware in the United States
+    Senate from 1973 to 2009 and also served as the 47th vice president under President Barack Obama from 2009 to 2017.
+
+
+    Born in Scranton, Pennsylvania, Biden graduated from the University of Delaware in 1965 and the Syracuse University College
+    of Law in 1968. He was elected to the New Castle County Council in 1970 and the U.S. Senate in 1972. As a senator, Biden
+    chaired the Senate Judiciary Committee and Foreign Relations Committee. He drafted and led passage of the Violent Crime
+    Control and Law Enforcement Act and the Violence Against Women Act. Biden also oversaw six U.S. Supreme Court confirmation
+    hearings, including contentious hearings for Robert Bork and Clarence Thomas. He opposed the Gulf War in 1991 but voted
+    in favor of the Iraq War Resolution in 2002. Biden ran unsuccessfully for the 1988 and 2008 Democratic presidential nominations.
+    In 2008, Obama chose him as his running mate, and Biden was a close counselor to Obama while in office. In the 2020 presidential
+    election, Biden chose Kamala Harris as his running mate, and they defeated Republican incumbents Donald Trump and Mike
+    Pence.
+
+
+    As president, Biden signed the American Rescue Plan Act in response to the COVID-19 pandemic and subsequent recession.
+    He signed bipartisan bills on infrastructure and manufacturing. Biden proposed the Build Back Better Act, aspects of which
+    were incorporated into the Inflation Reduction Act that he signed into law in 2022. He appointed Ketanji Brown Jackson
+    to the Supreme Court of the United States. In his foreign policy, the U.S. reentered the Paris Agreement and enacted the
+    New Atlantic Charter. Biden oversaw the complete withdrawal of U.S. troops that ended the war in Afghanistan, leading
+    to the Taliban seizing control. He responded to the Russian invasion of Ukraine by imposing sanctions on Russia and authorizing
+    aid to Ukraine. During the Gaza war, Biden condemned the actions of Hamas as terrorism, strongly supported Israel, and
+    sent limited humanitarian aid to the Gaza Strip. A temporary ceasefire proposal he backed was adopted shortly before his
+    presidency ended.
+
+
+    Concerns about Biden''s age and health persisted throughout his presidency. He became the first president to turn 80 years
+    old while in office. He began his presidency with majority support, but saw his approval ratings decline significantly
+    throughout his presidency, partially due to public frustration over inflation, which peaked at 9.1% in June 2022 before
+    dropping to 2.9% by the end of his presidency. Biden initially ran for reelection and, after the Democratic primaries,
+    became the party''s presumptive nominee in the 2024 presidential election. After his performance in the first presidential
+    debate, intensifying scrutiny from across the political spectrum about his age and health led him to withdraw his candidacy.
+    During his time in office, Biden''s administration was ranked favorably by historians and scholars, diverging from unfavorable
+    public assessments of his tenure. He is the oldest living former U.S. president since the second inauguration of Donald
+    Trump in 2025, the oldest living former U.S. vice president since the death of Dick Cheney in 2025, and the oldest person
+    to have served as president.'
+  document_to_annotate: '[Joseph Robinette Biden Jr.; person_1.full_name] (born [November 20, 1942; temporal_1.date]) is an
+    [American; place_1.demonym] politician who was the [46th; number_1.int] president of the [United States; place_1.country]
+    from [2021; temporal_2.year] to [2025; temporal_3.year]. A member of the [Democratic Party; government_org_1.name], [he;
+    person_1.subj_pronoun] represented [Delaware; place_2.state] in the [United States Senate; government_org_2.name] from
+    [1973; temporal_4.year] to [2009; temporal_5.year] and also served as the [47th; number_2.int] vice president under President
+    [Barack Obama; person_2.full_name] from [2009; temporal_5.year] to [2017; temporal_7.year].
+
+
+    Born in [Scranton; place_3.city], [Pennsylvania; place_3.state], [Biden; person_1.last_name] graduated from the [University
+    of Delaware; educational_org_1.name] in [1965; temporal_8.year] and the [Syracuse University College of Law; educational_org_2.name]
+    in [1968; temporal_9.year]. [He; person_1.subj_pronoun] was elected to the [New Castle County Council; government_org_3.name]
+    in [1970; temporal_10.year] and the [U.S. Senate; government_org_2.name] in [1972; temporal_11.year]. As a senator, [Biden;
+    person_1.last_name] chaired the [Senate Judiciary Committee; government_org_4.name] and [Foreign Relations Committee;
+    government_org_5.name]. [He; person_1.subj_pronoun] drafted and led passage of the [Violent Crime Control and Law Enforcement
+    Act; legal_1.name] and the [Violence Against Women Act; legal_2.name]. [Biden; person_1.last_name] also oversaw [six;
+    number_3.str] [U.S. Supreme Court; government_org_6.name] confirmation hearings, including contentious hearings for [Robert
+    Bork; person_3.full_name] and [Clarence Thomas; person_4.full_name]. [He; person_1.subj_pronoun] opposed the [Gulf War;
+    event_1.name] in [1991; temporal_12.year] but voted in favor of the [Iraq; place_8.country] [War Resolution; legal_3.name]
+    in [2002; temporal_13.year]. [Biden; person_1.last_name] ran unsuccessfully for the [1988; temporal_14.year] and [2008;
+    temporal_15.year] [Democratic; government_org_1.name] [presidential nominations; event_8.name]. In [2008; temporal_15.year],
+    [Obama; person_2.last_name] chose [him; person_1.obj_pronoun] as [his; person_2.poss_det_pronoun] running mate, and [Biden;
+    person_1.last_name] was a close counselor to [Obama; person_2.last_name] while in office. In the [2020; temporal_21.year]
+    [presidential election; event_2.name], [Biden; person_1.last_name] chose [Kamala Harris; person_5.full_name] as [his;
+    person_1.poss_det_pronoun] running mate, and they defeated [Republican; government_org_7.name] incumbents [Donald Trump;
+    person_6.full_name] and [Mike Pence; person_7.full_name].
+
+
+    As president, [Biden; person_1.last_name] signed the [American Rescue Plan Act; legal_4.name] in response to the [COVID-19
+    pandemic; event_3.name] and subsequent recession. [He; person_1.subj_pronoun] signed bipartisan bills on infrastructure
+    and manufacturing. [Biden; person_1.last_name] proposed the [Build Back Better Act; legal_5.name], aspects of which were
+    incorporated into the [Inflation Reduction Act; legal_6.name] that [he; person_1.subj_pronoun] signed into law in [2022;
+    temporal_17.year]. [He; person_1.subj_pronoun] appointed [Ketanji Brown Jackson; person_8.full_name] to the [Supreme Court
+    of the United States; government_org_6.name]. In [his; person_1.poss_det_pronoun] foreign policy, the [U.S.; place_1.country]
+    reentered the [Paris Agreement; legal_7.name] and enacted the [New Atlantic Charter; legal_8.name]. [Biden; person_1.last_name]
+    oversaw the complete withdrawal of [U.S.; place_1.country] troops that ended the [war in Afghanistan; event_4.name], leading
+    to the [Taliban; military_org_1.name] seizing control. [He; person_1.subj_pronoun] responded to the [Russian invasion
+    of Ukraine; event_5.name] by imposing sanctions on [Russia; place_4.country] and authorizing aid to [Ukraine; place_5.country].
+    During the [Gaza war; event_6.name], [Biden; person_1.last_name] condemned the actions of [Hamas; military_org_2.name]
+    as terrorism, strongly supported [Israel; place_6.country], and sent limited humanitarian aid to the [Gaza Strip; place_7.region].
+    A temporary ceasefire proposal [he; person_1.subj_pronoun] backed was adopted shortly before [his; person_1.poss_det_pronoun]
+    presidency ended.
+
+
+    Concerns about [Biden; person_1.last_name]''s age and health persisted throughout [his; person_1.poss_det_pronoun] presidency.
+    [He; person_1.subj_pronoun] became the first president to turn [80; person_1.age] years old while in office. [He; person_1.subj_pronoun]
+    began [his; person_1.poss_det_pronoun] presidency with majority support, but saw [his; person_1.poss_det_pronoun] approval
+    ratings decline significantly throughout [his; person_1.poss_det_pronoun] presidency, partially due to public frustration
+    over inflation, which peaked at [9.1; number_5.percent]% in [June; temporal_23.month] [2022; temporal_24.year] before
+    dropping to [2.9; number_6.percent]% by the end of [his; person_1.poss_det_pronoun] presidency. [Biden; person_1.last_name]
+    initially ran for reelection and, after the [Democratic; government_org_1.name] primaries, became the [party; government_org_1.name]''s
+    presumptive nominee in the [2025; temporal_3.year] [presidential election; event_2.name]. After [his; person_1.poss_det_pronoun]
+    performance in the first [presidential debate; event_9.name], intensifying scrutiny from across the political spectrum
+    about [his; person_1.poss_det_pronoun] age and health led [him; person_1.obj_pronoun] to withdraw [his; person_1.poss_det_pronoun]
+    candidacy. During [his; person_1.poss_det_pronoun] time in office, [Biden; person_1.last_name]''s administration was ranked
+    favorably by historians and scholars, diverging from unfavorable public assessments of [his; person_1.poss_det_pronoun]
+    tenure.'
+  relations: []
+  rules:
+  - 'temporal_5.year == temporal_15.year + 1 # chosen as running mate in the same year VP term began (election year)'
+  - 'temporal_4.year - temporal_11.year == 1 # took Senate seat one year after election'
+  - 'number_3.str > 1 # plural: "six confirmation hearings"'
+  num_questions: 12
+  questions:
+  - question_id: bio_04_q01
+    question: Who did [Joseph Robinette Biden Jr.; person_1.full_name] choose as a running mate in the [2020; temporal_21.year]
+      [presidential election; event_2.name]?
+    question_type: extractive
+    answer: person_5.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in the [2020; temporal_21.year] [presidential election; event_2.name], [Biden; person_1.last_name]
+      chose [Kamala Harris; person_5.full_name] as [his; person_1.poss_det_pronoun] running mate.
+    reasoning_chain_text: 1. The document states that in the [2020; temporal_21.year] [presidential election; event_2.name],
+      [Biden; person_1.last_name] chose [Kamala Harris; person_5.full_name] as [his; person_1.poss_det_pronoun] running mate.
+  - question_id: bio_04_q02
+    question: What was the highest political office held by [Joseph Robinette Biden Jr.; person_1.full_name]?
+    question_type: extractive
+    answer: president
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Biden; person_1.last_name] was the president of his country.
+    reasoning_chain_text: 1. The document states that [Biden; person_1.last_name] was the president of his country.
+  - question_id: bio_04_q03
+    question: What was [Joseph Robinette Biden Jr.; person_1.full_name]'s specific undergraduate major at the [University
+      of Delaware; educational_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Biden; person_1.last_name] graduated from the [University of Delaware; educational_org_1.name]
+      in [1965; temporal_8.year].
+    - 2. The document does not mention what subject or major [Biden; person_1.last_name] studied there.
+    reasoning_chain_text: '1. The document states that [Biden; person_1.last_name] graduated from the [University of Delaware;
+      educational_org_1.name] in [1965; temporal_8.year].
+
+      2. The document does not mention what subject or major [Biden; person_1.last_name] studied there.'
+  - question_id: bio_04_q04
+    question: How much did [Joseph Robinette Biden Jr.; person_1.full_name]'s approval rating drop throughout his presidency?
+    question_type: arithmetic
+    answer: number_5.percent- number_6.percent
+    answer_type: variant
+    reasoning_chain:
+    - The drop is [9.1; number_5.percent]-[2.9; number_6.percent]; this will vary as these percentages vary.
+    reasoning_chain_text: The drop is [9.1; number_5.percent]-[2.9; number_6.percent]; this will vary as these percentages
+      vary.
+  - question_id: bio_04_q05
+    question: How many times did [Joseph Robinette Biden Jr.; person_1.full_name] run unsuccessfully for the [Democratic Party;
+      government_org_1.name] [presidential nominations; event_8.name]?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists two years in which he ran unsuccessfully.
+    reasoning_chain_text: 1. The document lists two years in which he ran unsuccessfully.
+  - question_id: bio_04_q06
+    question: How many total votes did [Joseph Robinette Biden Jr.; person_1.full_name] and [Kamala Harris; person_5.full_name]
+      receive in the [2020; temporal_21.year] [presidential election; event_2.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Biden; person_1.last_name] and [Kamala Harris; person_5.full_name] defeated [Donald Trump;
+      person_6.full_name] and [Mike Pence; person_7.full_name] in the [2020; temporal_21.year] election.
+    - 2. The document does not provide any vote totals for this election.
+    reasoning_chain_text: '1. The document states that [Biden; person_1.last_name] and [Kamala Harris; person_5.full_name]
+      defeated [Donald Trump; person_6.full_name] and [Mike Pence; person_7.full_name] in the [2020; temporal_21.year] election.
+
+      2. The document does not provide any vote totals for this election.'
+  - question_id: bio_04_q07
+    question: How many years passed between [Joseph Robinette Biden Jr.; person_1.full_name]'s first unsuccessful bid for
+      the [Democratic Party; government_org_1.name] [presidential nominations; event_8.name] and [his; person_1.poss_det_pronoun]
+      second?
+    question_type: temporal
+    answer: temporal_15.year - temporal_14.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Biden; person_1.last_name] ran unsuccessfully for the [1988; temporal_14.year] and [2008; temporal_15.year]
+      [Democratic Party; government_org_1.name] [presidential nominations; event_8.name].
+    - 2. The gap is [2008; temporal_15.year] − [1988; temporal_14.year] = 19 years.
+    reasoning_chain_text: '1. The document states [Biden; person_1.last_name] ran unsuccessfully for the [1988; temporal_14.year]
+      and [2008; temporal_15.year] [Democratic Party; government_org_1.name] [presidential nominations; event_8.name].
+
+      2. The gap is [2008; temporal_15.year] − [1988; temporal_14.year] = 19 years.'
+  - question_id: bio_04_q08
+    question: Did [Joseph Robinette Biden Jr.; person_1.full_name] attend the [University of Delaware; educational_org_1.name]
+      before or after he attended the [Syracuse University College of Law; educational_org_2.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - '1'
+    reasoning_chain_text: '1'
+  - question_id: bio_04_q09
+    question: On what date did [Joseph Robinette Biden Jr.; person_1.full_name] withdraw [his; person_1.poss_det_pronoun]
+      candidacy from the [2025; temporal_3.year] [presidential election; event_2.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Biden; person_1.last_name] withdrew [his; person_1.poss_det_pronoun] candidacy after the
+      first [presidential debate; event_9.name] in the [2025; temporal_3.year] cycle.
+    - 2. The document does not specify the exact date of the withdrawal.
+    reasoning_chain_text: '1. The document states that [Biden; person_1.last_name] withdrew [his; person_1.poss_det_pronoun]
+      candidacy after the first [presidential debate; event_9.name] in the [2025; temporal_3.year] cycle.
+
+      2. The document does not specify the exact date of the withdrawal.'
+  - question_id: bio_04_q10
+    question: Given that [Joseph Robinette Biden Jr.; person_1.full_name] served as vice president before becoming president,
+      which individual's presidency immediately preceded [his; person_1.poss_det_pronoun] own?
+    question_type: inference
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Biden; person_1.last_name] served as the [47th; number_2.int] vice president under President
+      [Barack Obama; person_2.full_name] from [2009; temporal_5.year] to [2017; temporal_7.year].
+    - 2. [Biden; person_1.last_name] became the [46th; number_1.int] president starting in [2021; temporal_2.year]. Since
+      [he; person_1.subj_pronoun] served as vice president under [Obama; person_2.last_name], and the vice presidency ended
+      in [2017; temporal_7.year], [Obama; person_2.last_name]'s presidency preceded [Biden; person_1.last_name]'s, making
+      [Barack Obama; person_2.full_name] the immediate predecessor.
+    reasoning_chain_text: '1. The document states [Biden; person_1.last_name] served as the [47th; number_2.int] vice president
+      under President [Barack Obama; person_2.full_name] from [2009; temporal_5.year] to [2017; temporal_7.year].
+
+      2. [Biden; person_1.last_name] became the [46th; number_1.int] president starting in [2021; temporal_2.year]. Since
+      [he; person_1.subj_pronoun] served as vice president under [Obama; person_2.last_name], and the vice presidency ended
+      in [2017; temporal_7.year], [Obama; person_2.last_name]''s presidency preceded [Biden; person_1.last_name]''s, making
+      [Barack Obama; person_2.full_name] the immediate predecessor.'
+  - question_id: bio_04_q11
+    question: Based on the document, did [Joseph Robinette Biden Jr.; person_1.full_name] sign any bills related to his country's
+      economy?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Biden; person_1.last_name] signed bills related to the recession, as well as infrastructure
+      and manufacturing.
+    reasoning_chain_text: 1. The document states that [Biden; person_1.last_name] signed bills related to the recession, as
+      well as infrastructure and manufacturing.
+  - question_id: bio_04_q12
+    question: Did [Joseph Robinette Biden Jr.; person_1.full_name]'s sanctions on [Russia; place_4.country] succeed in reversing
+      the [Russian invasion of Ukraine; event_5.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Biden; person_1.last_name] responded to the [Russian invasion of Ukraine; event_5.name] by imposing
+      sanctions on [Russia; place_4.country] and authorizing aid to [Ukraine; place_5.country].
+    - 2. The document does not describe the outcome or effectiveness of these sanctions.
+    reasoning_chain_text: '1. The document states [Biden; person_1.last_name] responded to the [Russian invasion of Ukraine;
+      event_5.name] by imposing sanctions on [Russia; place_4.country] and authorizing aid to [Ukraine; place_5.country].
+
+      2. The document does not describe the outcome or effectiveness of these sanctions.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1923
+    upper_bound: 1961
+    factual_value: 1942
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 37
+    upper_bound: 55
+    factual_value: 46
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1954
+    upper_bound: 1992
+    factual_value: 1973
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 38
+    upper_bound: 56
+    factual_value: 47
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1946
+    upper_bound: 1984
+    factual_value: 1965
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1949
+    upper_bound: 1987
+    factual_value: 1968
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1951
+    upper_bound: 1989
+    factual_value: 1970
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1953
+    upper_bound: 1991
+    factual_value: 1972
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1969
+    upper_bound: 2007
+    factual_value: 1988
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_1.age
+    lower_bound: 64
+    upper_bound: 96
+    factual_value: 80
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: number_5.percent
+    lower_bound: 1.0
+    upper_bound: 19.0
+    factual_value: 9.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_24.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.percent
+    lower_bound: 1.0
+    upper_bound: 13.0
+    factual_value: 2.9
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Kelvara Drothwin; person_1.full_name] (born [28 October 1933; temporal_1.date])
+    is an [Tovdrelkrelese; place_1.demonym] politician who was the [37; number_1.int] president of the [Kingdom of Thurquar;
+    place_1.country] from [2001; temporal_2.year] to [2013; temporal_3.year]. A member of the [Civic Renewal Alliance; government_org_1.name],
+    [he; person_1.subj_pronoun] represented [Thornwick; place_2.state] in the [Veldrannian National Senate; government_org_2.name]
+    from [1971; temporal_4.year] to [1996; temporal_5.year] and also served as the [38; number_2.int] vice president under
+    President [Dorvane Kellithen Prushaw; person_2.full_name] from [1996; temporal_5.year] to [1997; temporal_7.year].
+
+
+    Born in [Pellhaven; place_3.city], [Grothbury; place_3.state], [Drothwin; person_1.last_name] graduated from the [Felnordor
+    Institute; educational_org_1.name] in [1955; temporal_8.year] and the [Delkor Institute; educational_org_2.name] in [1958;
+    temporal_9.year]. [he; person_1.subj_pronoun] was elected to the [Rinsar Council; government_org_3.name] in [1969; temporal_10.year]
+    and the [Veldrannian National Senate; government_org_2.name] in [1970; temporal_11.year]. As a senator, [Drothwin; person_1.last_name]
+    chaired the [Patriotic Continuity League; government_org_4.name] and [Murkinvex Council; government_org_5.name]. [he;
+    person_1.subj_pronoun] drafted and led passage of the [Public Safety Enforcement and Order Act; legal_1.name] and the
+    [Economic Stabilization and Climate Act; legal_2.name]. [Drothwin; person_1.last_name] also oversaw [three; number_3.str]
+    [External Affairs Council; government_org_6.name] confirmation hearings, including contentious hearings for [Wenthor Cladmore;
+    person_3.full_name] and [Parnock Jelvaine; person_4.full_name]. [he; person_1.subj_pronoun] opposed the [War in Dolvenia;
+    event_1.name] in [1981; temporal_12.year] but voted in favor of the [Veldrannia; place_8.country] [Veldrannian Recovery
+    Stimulus Act; legal_3.name] in [1991; temporal_13.year]. [Drothwin; person_1.last_name] ran unsuccessfully for the [1976;
+    temporal_14.year] and [1995; temporal_15.year] [Civic Renewal Alliance; government_org_1.name] [national leadership nomination;
+    event_8.name]. In [1995; temporal_15.year], [Prushaw; person_2.last_name] chose [him; person_1.obj_pronoun] as [his; person_2.poss_det_pronoun]
+    running mate, and [Drothwin; person_1.last_name] was a close counselor to [Prushaw; person_2.last_name] while in office.
+    In the [2000; temporal_21.year] [national leadership election; event_2.name], [Drothwin; person_1.last_name] chose [Zulathi
+    Brenn Kossoway; person_5.full_name] as [his; person_1.poss_det_pronoun] running mate, and they defeated [Senate Adjudication
+    Panel; government_org_7.name] incumbents [Murkinvex Rinsar; person_6.full_name] and [Yondric Stabberly; person_7.full_name].
+
+
+    As president, [Drothwin; person_1.last_name] signed the [Kessarath Intervention Resolution; legal_4.name] in response
+    to the [Grellwane Outbreak; event_3.name] and subsequent recession. [he; person_1.subj_pronoun] signed bipartisan bills
+    on infrastructure and manufacturing. [Drothwin; person_1.last_name] proposed the [Rebuild and Prosper Act; legal_5.name],
+    aspects of which were incorporated into the [New Continental Cooperation Charter; legal_6.name] that [he; person_1.subj_pronoun]
+    signed into law in [2003; temporal_17.year]. [he; person_1.subj_pronoun] appointed [Tembric Olshane; person_8.full_name]
+    to the [External Affairs Council; government_org_6.name]. In [his; person_1.poss_det_pronoun] foreign policy, the [Kingdom
+    of Thurquar; place_1.country] reentered the [Pellhaven Climate Accord; legal_7.name] and enacted the [Protection of Vulnerable
+    Persons Act; legal_8.name]. [Drothwin; person_1.last_name] oversaw the complete withdrawal of [Kingdom of Thurquar; place_1.country]
+    troops that ended the [Brindal Corridor War; event_4.name], leading to the [Zelkari Vanguard Brigade; military_org_1.name]
+    seizing control. [he; person_1.subj_pronoun] responded to the [Kessarathi Incursion into Morthane; event_5.name] by imposing
+    sanctions on [Morthane; place_4.country] and authorizing aid to [Kingdom of Myrgry; place_5.country]. During the [Thornfeld
+    Conflict; event_6.name], [Drothwin; person_1.last_name] condemned the actions of [Dolvenian Reclamation Front; military_org_2.name]
+    as terrorism, strongly supported [Kingdom of Kivgryyorn; place_6.country], and sent limited humanitarian aid to the [Brindal
+    Corridor; place_7.region]. A temporary ceasefire proposal [he; person_1.subj_pronoun] backed was adopted shortly before
+    [his; person_1.poss_det_pronoun] presidency ended.
+
+
+    Concerns about [Drothwin; person_1.last_name]''s age and health persisted throughout [his; person_1.poss_det_pronoun]
+    presidency. [he; person_1.subj_pronoun] became the first president to turn [66; person_1.age] years old while in office.
+    [he; person_1.subj_pronoun] began [his; person_1.poss_det_pronoun] presidency with majority support, but saw [his; person_1.poss_det_pronoun]
+    approval ratings decline significantly throughout [his; person_1.poss_det_pronoun] presidency, partially due to public
+    frustration over inflation, which peaked at [7.28; number_5.percent]% in [February; temporal_23.month] [2008; temporal_24.year]
+    before dropping to [2.32; number_6.percent]% by the end of [his; person_1.poss_det_pronoun] presidency. [Drothwin; person_1.last_name]
+    initially ran for reelection and, after the [Civic Renewal Alliance; government_org_1.name] primaries, became the [Civic
+    Renewal Alliance; government_org_1.name]''s presumptive nominee in the [2013; temporal_3.year] [national leadership election;
+    event_2.name]. After [his; person_1.poss_det_pronoun] performance in the first [national leadership debate; event_9.name],
+    intensifying scrutiny from across the political spectrum about [his; person_1.poss_det_pronoun] age and health led [him;
+    person_1.obj_pronoun] to withdraw [his; person_1.poss_det_pronoun] candidacy. During [his; person_1.poss_det_pronoun]
+    time in office, [Drothwin; person_1.last_name]''s administration was ranked favorably by historians and scholars, diverging
+    from unfavorable public assessments of [his; person_1.poss_det_pronoun] tenure.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

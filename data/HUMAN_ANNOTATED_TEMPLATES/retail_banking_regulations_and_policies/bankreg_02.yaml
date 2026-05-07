@@ -1,0 +1,294 @@
+document:
+  document_id: bankreg_02
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Capital Requirements Directives
+  wikipedia_url: https://en.wikipedia.org/wiki/Capital_Requirements_Directives
+  original_document: 'The Capital Requirements Directives (CRD) for the financial services industry have introduced a supervisory
+    framework in the European Union which reflects the Basel II and Basel III rules on capital measurement and capital standards.
+
+
+    Member States have progressively transposed, and firms of the financial service industry thus have had to apply, the CRD
+    from 1 January 2007. Institutions were allowed to choose between the initial basic indicator approach, which increases
+    the minimum capital requirement in Basel I approach from 8% to 15% and the standardised approach, which evaluates the
+    business lines as a medium sophistication approaches of the new framework. The most sophisticated approaches, Advanced
+    IRB approach and AMA or advanced measurement approach for operational risk were available from January 2008. From this
+    date, all concerned EU firms had to comply with Basel II.
+
+
+    The new CRD IV package entered into force on 17 July 2013: this updated CRD simply transposes into EU law the latest global
+    standards on bank capital adequacy commonly known as Basel III, which builds on and expands the existing Basel II regulatory
+    base. CRD IV commonly refers to both the EU Directive 2013/36/EU and the EU Regulation 575/2013.
+
+
+    The Capital Requirements Directives superseded the EU''s earlier Capital Adequacy Directive that was first issued in 1993.'
+  document_to_annotate: 'The [Capital Requirements Directives (CRD); legal_1.name] for the financial services industry have
+    introduced a supervisory framework in the [European Union; place_1.continent] which reflects the [Basel II; legal_2.name]
+    and [Basel III; legal_3.name] rules on capital measurement and capital standards.
+
+
+    Member States have progressively transposed, and firms of the financial service industry thus have had to apply, the [CRD;
+    legal_1.name] from [1 January 2007; temporal_1.date]. Institutions were allowed to choose between the initial basic indicator
+    approach, which increases the minimum capital requirement in [Basel I; legal_4.name] approach from [8; number_1.percent]%
+    to [15; number_2.percent]% and the standardised approach, which evaluates the business lines as a medium sophistication
+    approaches of the new framework. The most sophisticated approaches, [Advanced IRB approach; product_1.name] and [AMA or
+    advanced measurement approach for operational risk; product_2.name] were available from [January; temporal_5.month] [2008;
+    temporal_5.year]. From this date, all concerned [EU; place_1.continent] firms had to comply with [Basel II; legal_2.name].
+
+
+    The new [CRD IV; legal_5.name] package entered into force on [17 July 2013; temporal_3.date]: this updated [CRD; legal_1.name]
+    simply transposes into [EU; place_1.continent] law the latest global standards on bank capital adequacy commonly known
+    as [Basel III; legal_3.name], which builds on and expands the existing [Basel II; legal_2.name] regulatory base. [CRD
+    IV; legal_5.name] commonly refers to both the [EU Directive 2013/36/EU; legal_6.name] and the [EU Regulation 575/2013;
+    legal_7.name].
+
+
+    The [Capital Requirements Directives; legal_1.name] superseded the [EU; place_1.continent]''s earlier [Capital Adequacy
+    Directive; legal_8.name] that was first issued in [1993; temporal_4.year].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_02_q01
+    question: What earlier directive did the [Capital Requirements Directives (CRD); legal_1.name] supersede in [European
+      Union; place_1.continent]?
+    question_type: extractive
+    answer: legal_8.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[Capital Requirements Directives (CRD); legal_1.name] superseded the [European Union; place_1.continent]'s
+      earlier [Capital Adequacy Directive; legal_8.name]."
+    reasoning_chain_text: 1. The document states that "[Capital Requirements Directives (CRD); legal_1.name] superseded the
+      [European Union; place_1.continent]'s earlier [Capital Adequacy Directive; legal_8.name]."
+  - question_id: bankreg_02_q02
+    question: Which type of approache was described as "medium sophistication approaches" under the new framework?
+    question_type: extractive
+    answer: the standardised approach
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that "the standardised approach, which evaluates the business lines as a medium sophistication
+      approaches of the new framework."
+    reasoning_chain_text: 1. The document states that "the standardised approach, which evaluates the business lines as a
+      medium sophistication approaches of the new framework."
+  - question_id: bankreg_02_q03
+    question: Which specific regulatory body was responsible for enforcing the [Capital Requirements Directives (CRD); legal_1.name]
+      across [European Union; place_1.continent]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document discusses the [Capital Requirements Directives (CRD); legal_1.name] framework and its transposition
+      into [European Union; place_1.continent] law.
+    - 2. However, the document does not mention any specific regulatory body or authority responsible for enforcement.
+    reasoning_chain_text: '1. The document discusses the [Capital Requirements Directives (CRD); legal_1.name] framework and
+      its transposition into [European Union; place_1.continent] law.
+
+      2. However, the document does not mention any specific regulatory body or authority responsible for enforcement.'
+  - question_id: bankreg_02_q04
+    question: By how many percentage points did the minimum capital requirement increase from the [Basel I; legal_4.name]
+      approach to the basic indicator approach under [Capital Requirements Directives (CRD); legal_1.name]?
+    question_type: arithmetic
+    answer: number_2.percent - number_1.percent
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Basel I; legal_4.name] approach had a minimum capital requirement of [8; number_1.percent]%.
+    - 2. The basic indicator approach increased this to [15; number_2.percent]%.
+    - 3. The difference is 12.0 - 6.4 = 5.6 percentage points.
+    reasoning_chain_text: '1. The [Basel I; legal_4.name] approach had a minimum capital requirement of [8; number_1.percent]%.
+
+      2. The basic indicator approach increased this to [15; number_2.percent]%.
+
+      3. The difference is 12.0 - 6.4 = 5.6 percentage points.'
+  - question_id: bankreg_02_q05
+    question: How many approaches are institutions now allowed to choose from to comply with [Capital Requirements Directives
+      (CRD); legal_1.name], according to this article.
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. Initially, two approaches were available: the basic indicator approach, and the standardized approach.'
+    - 2. On a later date, a third group of most sophisticated approaches also became available.
+    reasoning_chain_text: '1. Initially, two approaches were available: the basic indicator approach, and the standardized
+      approach.
+
+      2. On a later date, a third group of most sophisticated approaches also became available.'
+  - question_id: bankreg_02_q06
+    question: How many financial institutions in [European Union; place_1.continent] chose the basic indicator approach versus
+      the standardised approach when implementing [Capital Requirements Directives (CRD); legal_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that institutions were allowed to choose between the basic indicator approach and the standardised
+      approach.
+    - 2. However, the document does not provide any counts or figures for how many institutions chose each approach.
+    reasoning_chain_text: '1. The document mentions that institutions were allowed to choose between the basic indicator approach
+      and the standardised approach.
+
+      2. However, the document does not provide any counts or figures for how many institutions chose each approach.'
+  - question_id: bankreg_02_q07
+    question: How many years after the [Capital Adequacy Directive; legal_8.name] was first issued did Member States begin
+      transposing the [Capital Requirements Directives (CRD); legal_1.name]?
+    question_type: temporal
+    answer: temporal_1.date - temporal_4.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Capital Adequacy Directive; legal_8.name] was first issued in [1993; temporal_4.year].
+    - 2. Member States began transposing the [Capital Requirements Directives (CRD); legal_1.name] from [1 January 2007; temporal_1.date],
+      i.e., 1988.
+    - 3. The difference is 1988 - 1979 = 9 years.
+    reasoning_chain_text: '1. The [Capital Adequacy Directive; legal_8.name] was first issued in [1993; temporal_4.year].
+
+      2. Member States began transposing the [Capital Requirements Directives (CRD); legal_1.name] from [1 January 2007; temporal_1.date],
+      i.e., 1988.
+
+      3. The difference is 1988 - 1979 = 9 years.'
+  - question_id: bankreg_02_q08
+    question: Did the availability of the most sophisticated approaches take place before or after the [CRD IV; legal_5.name]
+      package entered into force?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The most sophisticated approaches became available from [January; temporal_5.month] [2008; temporal_5.year].
+    - 3. The [CRD IV; legal_5.name] package entered into force on [17 July 2013; temporal_3.date]
+    reasoning_chain_text: '1. The most sophisticated approaches became available from [January; temporal_5.month] [2008; temporal_5.year].
+
+      3. The [CRD IV; legal_5.name] package entered into force on [17 July 2013; temporal_3.date]'
+  - question_id: bankreg_02_q09
+    question: On what exact date did [European Union; place_1.continent] Member States complete the full transposition of
+      [CRD IV; legal_5.name] into their national laws?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [CRD IV; legal_5.name] entered into force on [17 July 2013; temporal_3.date].
+    - 2. However, the document does not specify a date by which Member States completed full transposition into national law.
+    reasoning_chain_text: '1. The document states that [CRD IV; legal_5.name] entered into force on [17 July 2013; temporal_3.date].
+
+      2. However, the document does not specify a date by which Member States completed full transposition into national law.'
+  - question_id: bankreg_02_q10
+    question: According to this article, which of the two frameworks have a stricter minimum capital requirement, the initial
+      basic indicator approach of [Capital Requirements Directives (CRD); legal_1.name], or [Basel I; legal_4.name]?
+    question_type: inference
+    answer: legal_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [CRD IV; legal_5.name] "commonly refers to both the [EU Directive 2013/36/EU; legal_6.name]
+      and the [EU Regulation 575/2013; legal_7.name]."
+    - 2. The naming convention "[EU Regulation 575/2013; legal_7.name]" explicitly contains the word "Regulation," identifying
+      it as the regulation component.
+    - 3. By elimination, [EU Directive 2013/36/EU; legal_6.name] is the directive component of the package.
+    reasoning_chain_text: '1. The document states that [CRD IV; legal_5.name] "commonly refers to both the [EU Directive 2013/36/EU;
+      legal_6.name] and the [EU Regulation 575/2013; legal_7.name]."
+
+      2. The naming convention "[EU Regulation 575/2013; legal_7.name]" explicitly contains the word "Regulation," identifying
+      it as the regulation component.
+
+      3. By elimination, [EU Directive 2013/36/EU; legal_6.name] is the directive component of the package.'
+  - question_id: bankreg_02_q11
+    question: Based on the document, did the [Capital Requirements Directives (CRD); legal_1.name] framework allow institutions
+      to use the most sophisticated risk approaches immediately upon initial transposition?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that Member States began transposing [Capital Requirements Directives (CRD); legal_1.name] from
+      [1 January 2007; temporal_1.date], at which point institutions could choose between the basic indicator approach and
+      the standardised approach.
+    - 2. The most sophisticated approaches ([Advanced IRB approach; product_1.name] and [AMA or advanced measurement approach
+      for operational risk; product_2.name]) were only available from [January; temporal_5.month] [2008; temporal_5.year].
+    - 3. Since the sophisticated approaches were not available at the time of initial transposition, institutions could not
+      use them immediately.
+    reasoning_chain_text: '1. The document states that Member States began transposing [Capital Requirements Directives (CRD);
+      legal_1.name] from [1 January 2007; temporal_1.date], at which point institutions could choose between the basic indicator
+      approach and the standardised approach.
+
+      2. The most sophisticated approaches ([Advanced IRB approach; product_1.name] and [AMA or advanced measurement approach
+      for operational risk; product_2.name]) were only available from [January; temporal_5.month] [2008; temporal_5.year].
+
+      3. Since the sophisticated approaches were not available at the time of initial transposition, institutions could not
+      use them immediately.'
+  - question_id: bankreg_02_q12
+    question: Did the [Basel III; legal_3.name] standards require higher capital ratios than the [Basel II; legal_2.name]
+      for systemically important institutions in [European Union; place_1.continent]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Basel III; legal_3.name] "builds on and expands the existing [Basel II; legal_2.name] regulatory
+      base."
+    - 2. However, the document does not specify the capital ratio requirements under [Basel III; legal_3.name] or whether
+      there are special requirements for systemically important institutions.
+    reasoning_chain_text: '1. The document states that [Basel III; legal_3.name] "builds on and expands the existing [Basel
+      II; legal_2.name] regulatory base."
+
+      2. However, the document does not specify the capital ratio requirements under [Basel III; legal_3.name] or whether
+      there are special requirements for systemically important institutions.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.percent
+    lower_bound: 1.0
+    upper_bound: 18.0
+    factual_value: 8.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.percent
+    lower_bound: 12.0
+    upper_bound: 18.0
+    factual_value: 15.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1974
+    upper_bound: 2012
+    factual_value: 1993
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  document: null
+  source_label: admin_completed
+  fictionalized_annotated_template_document: 'The [PSD V; legal_1.name] for the financial services industry have introduced
+    a supervisory framework in the [Pallentara; place_1.continent] which reflects the [Lending Adequacy Directive; legal_2.name]
+    and [Prudential Solvency Directives (PSD); legal_3.name] rules on capital measurement and capital standards.
+
+
+    Member States have progressively transposed, and firms of the financial service industry thus have had to apply, the [PSD
+    V; legal_1.name] from [12 October 1988; temporal_1.date]. Institutions were allowed to choose between the initial basic
+    indicator approach, which increases the minimum capital requirement in [Torvel Accord; legal_4.name] approach from [6.4;
+    number_1.percent]% to [12.0; number_2.percent]% and the standardised approach, which evaluates the business lines as a
+    medium sophistication approaches of the new framework. The most sophisticated approaches, [Operational Risk Advanced Quantification
+    Approach; product_1.name] and [Granular Exposure Weighting Model; product_2.name] were available from [April; temporal_5.month]
+    [2009; temporal_5.year]. From this date, all concerned [Pallentara; place_1.continent] firms had to comply with [Lending
+    Adequacy Directive; legal_2.name].
+
+
+    The new [Directive 2013/48/VU; legal_5.name] package entered into force on [9 May 2024; temporal_3.date]: this updated
+    [PSD V; legal_1.name] simply transposes into [Pallentara; place_1.continent] law the latest global standards on bank capital
+    adequacy commonly known as [Prudential Solvency Directives (PSD); legal_3.name], which builds on and expands the existing
+    [Lending Adequacy Directive; legal_2.name] regulatory base. [Directive 2013/48/VU; legal_5.name] commonly refers to both
+    the [Torvel I Accord; legal_6.name] and the [Regulation 631/2013; legal_7.name].
+
+
+    The [PSD V; legal_1.name] superseded the [Pallentara; place_1.continent]''s earlier [Torvel II Accord; legal_8.name] that
+    was first issued in [1979; temporal_4.year].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

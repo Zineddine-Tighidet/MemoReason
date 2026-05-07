@@ -1,0 +1,382 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_04
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-04-17T17:06:14.314188+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_16: 15
+    place_23: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velantra
+    - country: Korimash
+    - country: Dranthula
+    - country: Peshkova
+    - country: Talomund
+    - country: Zerathi
+    - country: Brindalos
+    - country: Quethara
+    - country: Morvandis
+    - country: Sulkhenar
+    - country: Gathrenol
+    - country: Yendaphor
+    - country: Chelindra
+    - country: Vorashti
+    - country: Plendokai
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorhan Crescent
+    - region: Thandori Basin
+    - region: Keluvian Reach
+    - region: Ostravi Lowlands
+    - region: Pelmara Coast
+    - region: Zurvathi Expanse
+    - region: Dranoquil Shelf
+    - region: Molvenic Corridor
+    - region: Jenthari Plateau
+    - region: Quirabane Shores
+    - region: Fendrali Arc
+    - region: Golvuran Steppe
+    - region: Brinthari Rim
+    - region: Weskuvan Flats
+    - region: Torvalen Peninsula
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velundra Ocean
+    - natural_site: Tharenic Sea
+    - natural_site: Orvalan Deep
+    - natural_site: Kulvathi Ocean
+    - natural_site: Drenmara Waters
+    - natural_site: Sorenthi Ocean
+    - natural_site: Palukine Sea
+    - natural_site: Gevandric Ocean
+    - natural_site: Tessalune Deep
+    - natural_site: Brondavi Ocean
+    - natural_site: Mirathune Sea
+    - natural_site: Zelphari Ocean
+    - natural_site: Korvandel Sea
+    - natural_site: Wethanic Ocean
+    - natural_site: Junelkari Deep
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velundra Sea
+    - natural_site: Korathin Gulf
+    - natural_site: Tessarine Ocean
+    - natural_site: Brindalo Sea
+    - natural_site: Molvathi Waters
+    - natural_site: Surenic Sea
+    - natural_site: Palquero Gulf
+    - natural_site: Dravenic Sea
+    - natural_site: Olithane Bay
+    - natural_site: Fendraki Sea
+    - natural_site: Zumarene Gulf
+    - natural_site: Talorine Sea
+    - natural_site: Gelvathi Ocean
+    - natural_site: Prondeki Sea
+    - natural_site: Haruvine Gulf
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Gulf of Tarveen
+    - natural_site: Strait of Kelmorath
+    - natural_site: Sea of Dranthul
+    - natural_site: Bight of Ossivane
+    - natural_site: Vorpellan Basin
+    - natural_site: Channel of Brequith
+    - natural_site: Cove of Haldrune
+    - natural_site: Pelmosk Reach
+    - natural_site: Thanderic Gulf
+    - natural_site: Inlet of Quoraven
+    - natural_site: Zelphari Sound
+    - natural_site: Narrows of Gelvithan
+    - natural_site: Cretholan Bay
+    - natural_site: Welmarak Passage
+    - natural_site: Shoals of Drentavi
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvikesh
+    - country: Qolmaren
+    - country: Breshalan
+    - country: Dunvari
+    - country: Zelphagor
+    - country: Kethrunia
+    - country: Morvashel
+    - country: Plindara
+    - country: Sorvikaan
+    - country: Gelthumar
+    - country: Wensharak
+    - country: Obrenthia
+    - country: Yulkavesh
+    - country: Dranthelo
+    - country: Feskuran
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorhan
+    - country: Tundrakai
+    - country: Dremishu
+    - country: Kaltorin
+    - country: Zhepulan
+    - country: Orvanthi
+    - country: Breskova
+    - country: Numethara
+    - country: Goltivek
+    - country: Pashendri
+    - country: Wulkaren
+    - country: Sorviketh
+    - country: Jentamor
+    - country: Helvukai
+    - country: Cretholin
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalmorek
+    - country: Vundara
+    - country: Kelshopa
+    - country: Dromizan
+    - country: Pashelu
+    - country: Gonthari
+    - country: Zerulak
+    - country: Brimova
+    - country: Quendalo
+    - country: Harjiven
+    - country: Tolmekha
+    - country: Suvrangi
+    - country: Plekhari
+    - country: Wondafu
+    - country: Jelthari
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Drukhem
+    - country: Tashivol
+    - country: Zomphara
+    - country: Kelzang
+    - country: Phodrang
+    - country: Rinchelu
+    - country: Wangdurath
+    - country: Jaldekha
+    - country: Sonamtir
+    - country: Pemzho
+    - country: Throngsel
+    - country: Dorjikha
+    - country: Lungtseva
+    - country: Chokhari
+    - country: Nyidrakho
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalveria
+    - country: Gondara
+    - country: Brimolesh
+    - country: Kethulan
+    - country: Pashvora
+    - country: Dromilek
+    - country: Zuraneth
+    - country: Celvapor
+    - country: Wenshala
+    - country: Obrinath
+    - country: Jalmorek
+    - country: Fendurath
+    - country: Quirvalen
+    - country: Soprithel
+    - country: Melvuran
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalwengo
+    - country: Keshvara
+    - country: Dorvanthi
+    - country: Palmorek
+    - country: Zundareth
+    - country: Chelwani
+    - country: Brintago
+    - country: Orvashel
+    - country: Tumbreka
+    - country: Gelvossi
+    - country: Rendapho
+    - country: Weskhari
+    - country: Jolmundi
+    - country: Pethoran
+    - country: Carvindel
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velanoor
+    - country: Tashkelu
+    - country: Dromisar
+    - country: Paluketh
+    - country: Sorvandhi
+    - country: Kelithos
+    - country: Mundara
+    - country: Orivesh
+    - country: Thalindor
+    - country: Pekurath
+    - country: Zanivol
+    - country: Brethuna
+    - country: Kalmoset
+    - country: Lurindha
+    - country: Gevanthi
+  place_13:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundra
+    - country: Korathos
+    - country: Tivellam
+    - country: Pelanquo
+    - country: Sundriqa
+    - country: Orivash
+    - country: Lenthari
+    - country: Brequosa
+    - country: Zulmaren
+    - country: Calithos
+    - country: Wenvari
+    - country: Drosselu
+    - country: Miraquon
+    - country: Thalveen
+    - country: Jundarek
+  place_14:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veloran and Tashumi Archipelago
+    - region: Korimba and Sethali Isles
+    - region: Druvani and Pelkora Islands
+    - region: Manthuri and Jolkesh Atolls
+    - region: Tarweni and Boskara Archipelago
+    - region: Gulvani and Reshkol Islands
+    - region: Pethano and Lurkavi Isles
+    - region: Zindhari and Mokuren Archipelago
+    - region: Welvari and Tuneshi Islands
+    - region: Brenoki and Halvasi Atolls
+    - region: Sorwani and Kelphari Isles
+    - region: Jenthari and Vulmeko Archipelago
+    - region: Orvashi and Drentuli Islands
+    - region: Keshvari and Polmundi Isles
+    - region: Thelvoni and Garushi Archipelago
+  place_15:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvorn
+    - country: Kemadra
+    - country: Sorvaphet
+    - country: Lundarei
+    - country: Pashkova
+    - country: Drenthai
+    - country: Velorath
+    - country: Quimbara
+    - country: Zelphadon
+    - country: Orinthal
+    - country: Breskuna
+    - country: Molvadeen
+    - country: Ganthurei
+    - country: Yelpharos
+    - country: Crendova
+  place_16:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tuvaren
+    - country: Pelmorath
+    - country: Sundrique
+    - country: Koravesh
+    - country: Brintala
+    - country: Oselune
+    - country: Dravikam
+    - country: Zelphari
+    - country: Moquesta
+    - country: Halindor
+    - country: Veshkara
+    - country: Torbique
+    - country: Grulaven
+    - country: Fendalos
+    - country: Quirembay
+  place_23:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velundhar
+    - region: Tashkori
+    - region: Drenmavar
+    - region: Kulphezan
+    - region: Orinthal
+    - region: Zephkara
+    - region: Brenthali
+    - region: Morvashek
+    - region: Galindur
+    - region: Pethoran
+    - region: Sundrevak
+    - region: Kelmithar
+    - region: Voshtani
+    - region: Rindaphal
+    - region: Chelvorin

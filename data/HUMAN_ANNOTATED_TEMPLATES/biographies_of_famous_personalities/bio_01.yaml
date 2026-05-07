@@ -1,0 +1,372 @@
+document:
+  document_id: bio_01
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Christine Lagarde
+  wikipedia_url: https://en.wikipedia.org/wiki/Christine_Lagarde
+  original_document: 'Christine Madeleine Odette Lagarde is a French politician and lawyer who has been the president of the
+    European Central Bank since 2019. She previously served as the 11th Managing Director of the International Monetary Fund
+    (IMF) from 2011 to 2019. Lagarde had also served in the Government of France, most prominently as Minister of the Economy,
+    Finance and Industry from 2007 until 2011. She is the first woman to hold each of those posts.
+
+
+    Born and raised in Paris, Lagarde graduated from law school at Paris Nanterre University and obtained a Master''s degree
+    from Sciences Po Aix. After being admitted to the Paris Bar, she joined the international law firm Baker & McKenzie as
+    an associate in 1981, specializing in labour and anti-trust, as well as mergers and acquisitions. Rising through the ranks,
+    she was a member of the executive committee of the firm from 1995 until 1999, before being elevated to its Chair between
+    1999 and 2004; she was the first woman in both positions. She held the top post until she decided to go into public service.
+
+
+    Lagarde returned to France when appointed Minister of Foreign Trade from 2005 to 2007, then briefly served as Minister
+    of Agriculture and Fisheries from May to June 2007, and finally, as Minister of Finance from 2007 to 2011, making her
+    the first woman to hold the finance portfolio of any Group of Eight economy. During her tenure, Lagarde oversaw the government
+    response to the 2008 financial crisis, for which the Financial Times ranked her the best finance minister in the Eurozone.
+
+
+    On 5 July 2011, she was elected to replace Dominique Strauss-Kahn as managing director of the IMF for a five-year term.
+    Her appointment was the 11th consecutive appointment of a European to head the IMF. She was selected by consensus for
+    a second five-year term, starting 5 July 2016, being the only candidate nominated for the post. In December 2016, a French
+    court convicted her of negligence relating to her role in the Bernard Tapie arbitration, but did not impose a penalty.
+    Lagarde resigned from the IMF following her nomination as president of the ECB.
+
+
+    In 2019, 2020, 2022, 2023, 2024, and 2025, Forbes ranked her number two on its World''s 100 Most Powerful Women list.'
+  document_to_annotate: '[Christine Madeleine Odette Lagarde; person_1.full_name] is a [French; person_1.nationality] politician
+    and lawyer who has been the president of the [European Central Bank; government_org_1.name] since [2019; temporal_3.year].
+    [She; person_1.subj_pronoun] previously served as the [11th; number_1.int] Managing Director of the [International Monetary
+    Fund (IMF); government_org_2.name] from [2011; temporal_5.year] to [2019; temporal_3.year]. [Lagarde; person_1.last_name]
+    had also served in the [Government of France; government_org_3.name], most prominently as Minister of the Economy, Finance
+    and Industry from [2007; temporal_4.year] until [2011; temporal_5.year]. [She; person_1.subj_pronoun] is the first [woman;
+    person_1.gender] to hold each of those posts.
+
+
+    Born and raised in [Paris; place_1.city], [Lagarde; person_1.last_name] graduated from law school at [Paris Nanterre University;
+    educational_org_1.name] and obtained a Master''s degree from [Sciences Po Aix; educational_org_2.name]. After being admitted
+    to the [Paris Bar; government_org_7.name], [she; person_1.subj_pronoun] joined the international law firm [Baker & McKenzie;
+    entreprise_org_1.name] as an associate in [1981; temporal_6.year], specializing in labour and anti-trust, as well as mergers
+    and acquisitions. Rising through the ranks, [she; person_1.subj_pronoun] was a member of the executive committee of the
+    firm from [1995; temporal_7.year] until [1999; temporal_8.year], before being elevated to its Chair between [1999; temporal_8.year]
+    and [2004; temporal_10.year]; [she; person_1.subj_pronoun] was the first [woman; person_1.gender] in both positions. [She;
+    person_1.subj_pronoun] held the top post until [she; person_1.subj_pronoun] decided to go into public service.
+
+
+    [Lagarde; person_1.last_name] returned to [France; place_2.country] when appointed Minister of Foreign Trade from [2005;
+    temporal_11.year] to [2007; temporal_26.year], then briefly served as Minister of Agriculture and Fisheries from [May;
+    temporal_13.month] to [June; temporal_26.month] [2007; temporal_26.year], and finally, as Minister of Finance from [2007;
+    temporal_26.year] to [2011; temporal_5.year], making [her; person_1.obj_pronoun] the first [woman; person_1.gender] to
+    hold the finance portfolio of any [Group of Eight; government_org_4.name] economy. During [her; person_1.poss_det_pronoun]
+    tenure, [Lagarde; person_1.last_name] oversaw the government response to the [2008 financial crisis; event_1.name], for
+    which the [Financial Times; media_org_1.name] ranked [her; person_1.obj_pronoun] the best finance minister in the [Eurozone;
+    government_org_6.name].
+
+
+    On [5 July 2011; temporal_5.date], [she; person_1.subj_pronoun] was elected to replace [Dominique Strauss-Kahn; person_2.full_name]
+    as managing director of the [IMF; government_org_2.name] for a [five; number_2.str]-year term. [Her; person_1.poss_det_pronoun]
+    appointment was the [11th; number_1.int] consecutive appointment of a [European; place_3.demonym] to head the [IMF; government_org_2.name].
+    [She; person_1.subj_pronoun] was selected by consensus for a second [five; number_2.str]-year term, starting [5 July 2016;
+    temporal_18.date], being the only candidate nominated for the post. In [December; temporal_28.month] [2016; temporal_28.year],
+    a [French; place_2.demonym] court convicted [her; person_1.obj_pronoun] of negligence relating to [her; person_1.poss_det_pronoun]
+    role in the [Bernard Tapie; person_3.full_name] arbitration, but did not impose a penalty. [Lagarde; person_1.last_name]
+    resigned from the [IMF; government_org_2.name] following [her; person_1.poss_det_pronoun] nomination as president of the
+    [ECB; government_org_1.name].
+
+
+    In [2019; temporal_20.year], [2020; temporal_21.year], [2022; temporal_22.year], [2023; temporal_23.year], [2024; temporal_24.year],
+    and [2025; temporal_25.year], [Forbes; media_org_2.name] ranked [her; person_1.obj_pronoun] number [two; number_5.str]
+    on its World''s [100; number_6.int] Most Powerful People list.'
+  relations: []
+  rules:
+  - 'number_5.str > 1 # ranked number two implies plural ranking context'
+  - 'temporal_5.date == temporal_18.date - 5 # second term started exactly five years after first term date (both 5 July)'
+  num_questions: 12
+  questions:
+  - question_id: bio_01_q01
+    question: Which international law firm did [Christine Madeleine Odette Lagarde; person_1.full_name] join as an associate?
+    question_type: extractive
+    answer: entreprise_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that after being admitted to the [Paris Bar; government_org_7.name], [Lagarde; person_1.last_name]
+      joined the international law firm [Baker & McKenzie; entreprise_org_1.name] as an associate.
+    reasoning_chain_text: 1. The document states that after being admitted to the [Paris Bar; government_org_7.name], [Lagarde;
+      person_1.last_name] joined the international law firm [Baker & McKenzie; entreprise_org_1.name] as an associate.
+  - question_id: bio_01_q02
+    question: What areas of law did [Christine Madeleine Odette Lagarde; person_1.full_name] specialize in at the law firm
+      where she began her career?
+    question_type: extractive
+    answer: labour and anti-trust, as well as mergers and acquisitions
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Lagarde; person_1.last_name] joined [Baker & McKenzie; entreprise_org_1.name] specializing
+      in labour and anti-trust, as well as mergers and acquisitions.
+    reasoning_chain_text: 1. The document states that [Lagarde; person_1.last_name] joined [Baker & McKenzie; entreprise_org_1.name]
+      specializing in labour and anti-trust, as well as mergers and acquisitions.
+  - question_id: bio_01_q03
+    question: What was [Christine Madeleine Odette Lagarde; person_1.full_name]'s exact date of birth?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Lagarde; person_1.last_name] was born and raised in [Paris; place_1.city].
+    - 2. However, the document does not provide a specific date of birth for [Lagarde; person_1.last_name].
+    reasoning_chain_text: '1. The document states that [Lagarde; person_1.last_name] was born and raised in [Paris; place_1.city].
+
+      2. However, the document does not provide a specific date of birth for [Lagarde; person_1.last_name].'
+  - question_id: bio_01_q04
+    question: What is the sum of the number of consecutive appointments of a [European; place_3.demonym] to head the [International
+      Monetary Fund (IMF); government_org_2.name] and the size of the Most Powerful People list published by [Forbes; media_org_2.name]?
+    question_type: arithmetic
+    answer: number_1.int + number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Lagarde; person_1.last_name]'s appointment was the [11th; number_1.int] consecutive appointment
+      of a [European; place_3.demonym] to head the [International Monetary Fund (IMF); government_org_2.name].
+    - 2. The [Forbes; media_org_2.name] list is the World's [100; number_6.int] Most Powerful People list.
+    - 3. The sum is [11th; number_1.int] + [100; number_6.int] = 89.
+    reasoning_chain_text: '1. The document states [Lagarde; person_1.last_name]''s appointment was the [11th; number_1.int]
+      consecutive appointment of a [European; place_3.demonym] to head the [International Monetary Fund (IMF); government_org_2.name].
+
+      2. The [Forbes; media_org_2.name] list is the World''s [100; number_6.int] Most Powerful People list.
+
+      3. The sum is [11th; number_1.int] + [100; number_6.int] = 89.'
+  - question_id: bio_01_q05
+    question: How many times total was [Christine Madeleine Odette Lagarde; person_1.full_name] ranked number one on the [Forbes;
+      media_org_2.name] World's Most Powerful People list?
+    question_type: temporal
+    answer: '0'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists six separate years in which [Lagarde; person_1.last_name] was ranked number one on the [Forbes;
+      media_org_2.name] list.
+    - 2. Counting these occurrences gives 6.
+    reasoning_chain_text: '1. The document lists six separate years in which [Lagarde; person_1.last_name] was ranked number
+      one on the [Forbes; media_org_2.name] list.
+
+      2. Counting these occurrences gives 6.'
+  - question_id: bio_01_q06
+    question: How many votes did [Christine Madeleine Odette Lagarde; person_1.full_name] receive when she was elected to
+      replace [Dominique Strauss-Kahn; person_2.full_name] as managing director of the [International Monetary Fund (IMF);
+      government_org_2.name], and how many more votes did she get than her closest rival?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Lagarde; person_1.last_name] was elected on [28 July 1994; temporal_5.date] to replace
+      [Dominique Strauss-Kahn; person_2.full_name].
+    - 2. The document does not provide any vote counts or information about other candidates in that election, so the arithmetic
+      cannot be performed.
+    reasoning_chain_text: '1. The document states that [Lagarde; person_1.last_name] was elected on [28 July 1994; temporal_5.date]
+      to replace [Dominique Strauss-Kahn; person_2.full_name].
+
+      2. The document does not provide any vote counts or information about other candidates in that election, so the arithmetic
+      cannot be performed.'
+  - question_id: bio_01_q07
+    question: How many years passed between [Christine Madeleine Odette Lagarde; person_1.full_name] joining [Baker & McKenzie;
+      entreprise_org_1.name] and first becoming a member of its executive committee?
+    question_type: temporal
+    answer: temporal_7.year - temporal_6.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Lagarde; person_1.last_name] joined [Baker & McKenzie; entreprise_org_1.name] in [1981; temporal_6.year].
+    - 2. She became a member of the executive committee in [1995; temporal_7.year].
+    - 3. The difference is [1995; temporal_7.year] minus [1981; temporal_6.year] = 20 years.
+    reasoning_chain_text: '1. [Lagarde; person_1.last_name] joined [Baker & McKenzie; entreprise_org_1.name] in [1981; temporal_6.year].
+
+      2. She became a member of the executive committee in [1995; temporal_7.year].
+
+      3. The difference is [1995; temporal_7.year] minus [1981; temporal_6.year] = 20 years.'
+  - question_id: bio_01_q08
+    question: How old was [Christine Madeleine Odette Lagarde; person_1.full_name] when she became president of the [European
+      Central Bank; government_org_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Lagarde; person_1.last_name] became president of the [European Central Bank; government_org_1.name]
+      since [2019; temporal_3.year].
+    - 2. However, the document does not provide her birth year or age, so her age at that time cannot be calculated.
+    reasoning_chain_text: '1. The document states [Lagarde; person_1.last_name] became president of the [European Central
+      Bank; government_org_1.name] since [2019; temporal_3.year].
+
+      2. However, the document does not provide her birth year or age, so her age at that time cannot be calculated.'
+  - question_id: bio_01_q09
+    question: Given that [Christine Madeleine Odette Lagarde; person_1.full_name]'s appointment as managing director of the
+      [International Monetary Fund (IMF); government_org_2.name] was described as a consecutive appointment from a particular
+      background, what demonym describes the nationality of the people who had consecutively headed that organization?
+    question_type: inference
+    answer: place_3.demonym
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Lagarde; person_1.last_name]'s appointment was the [11th; number_1.int] consecutive appointment
+      of a [European; place_3.demonym] to head the [International Monetary Fund (IMF); government_org_2.name].
+    - 2. Therefore, the demonym describing the nationality of consecutive heads is [European; place_3.demonym].
+    reasoning_chain_text: '1. The document states that [Lagarde; person_1.last_name]''s appointment was the [11th; number_1.int]
+      consecutive appointment of a [European; place_3.demonym] to head the [International Monetary Fund (IMF); government_org_2.name].
+
+      2. Therefore, the demonym describing the nationality of consecutive heads is [European; place_3.demonym].'
+  - question_id: bio_01_q10
+    question: Did [Christine Madeleine Odette Lagarde; person_1.full_name] hold any government ministerial positions before
+      joining the executive committee at her law firm?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. [Lagarde; person_1.last_name] was on the executive committee of [Baker & McKenzie; entreprise_org_1.name] from [1995;
+      temporal_7.year] to [1999; temporal_8.year].
+    - 2. Her first ministerial role was Minister of Foreign Trade starting in [2005; temporal_11.year], which came after her
+      time on the executive committee.
+    - 3. Therefore, she did not hold any government ministerial positions before joining the executive committee.
+    reasoning_chain_text: '1. [Lagarde; person_1.last_name] was on the executive committee of [Baker & McKenzie; entreprise_org_1.name]
+      from [1995; temporal_7.year] to [1999; temporal_8.year].
+
+      2. Her first ministerial role was Minister of Foreign Trade starting in [2005; temporal_11.year], which came after her
+      time on the executive committee.
+
+      3. Therefore, she did not hold any government ministerial positions before joining the executive committee.'
+  - question_id: bio_01_q11
+    question: Who did [Lagarde; person_1.last_name] replace when appointed Minister of Foreign Trade ?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bio_01_q12
+    question: How many degrees does [Christine Madeleine Odette Lagarde; person_1.full_name] have according to the document
+      ?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_3.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1962
+    upper_bound: 2000
+    factual_value: 1981
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_26.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_28.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_20.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_24.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_25.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

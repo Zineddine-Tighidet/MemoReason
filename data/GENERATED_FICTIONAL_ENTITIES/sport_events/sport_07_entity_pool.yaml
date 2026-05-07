@@ -1,0 +1,216 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_07
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-04-18T15:06:15.549108+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+  events:
+    event_1: 15
+    event_6: 15
+    event_2: 15
+    event_5: 15
+    event_4: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+    ngo_3: 15
+    ngo_2: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvoran
+    - city: Grissalune
+    - city: Porthaven
+    - city: Kelmorath
+    - city: Sundavar
+    - city: Brenolac
+    - city: Drimholt
+    - city: Vosselin
+    - city: Calterune
+    - city: Mirathel
+    - city: Jenvossa
+    - city: Orenthal
+    - city: Pelliscar
+    - city: Wyndorel
+    - city: Quarmisel
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Global Track Series
+    - name: Rundaric Open Athletics Meet
+    - name: Porthaven International Field Games
+    - name: Celvoran Grand Athletics Showcase
+    - name: Thandoral Unified Sprint Challenge
+    - name: Breskoni Continental Athletics Cup
+    - name: Zulmaren Combined Athletics Festival
+    - name: Kesthari Biennial Running Trials
+    - name: Dravenol Supreme Athletics Gathering
+    - name: Pellunor Open Track Encounter
+    - name: Galtivek Intercontinental Athletics Forum
+    - name: Sorindal Premier Field Tournament
+    - name: Wenthari All-Nations Athletics Clash
+    - name: Belvoric Heritage Athletics Carnival
+    - name: Quendara Worldwide Athletics Invitational
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GFTA Global Championships in Track Sports
+    - name: Velthari International Athletics Tournament
+    - name: Rundarc Worldwide Athletics Championships
+    - name: Orenthal Open Championships in Field Athletics
+    - name: Kelmorath Grand Athletics Competition
+    - name: Tarvonis Universal Track and Field Championships
+    - name: Solkren International Championships of Athletics
+    - name: Plethon Global Track Sports Championship
+    - name: Durnavel Intercontinental Athletics Meet
+    - name: Quorath Unified Championships in Athletics
+    - name: Feldaryn World Open Athletics Tournament
+    - name: Zenthari International Field and Track Championships
+    - name: Corvishen Global Athletics Grand Championship
+    - name: Molvaren Worldwide Track and Field Tournament
+    - name: Breskoni Pan-Continental Championships in Athletics
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Games
+    - name: Torundal Games
+    - name: Kessori Games
+    - name: Phandric Games
+    - name: Molvaren Games
+    - name: Drantheo Games
+    - name: Brossane Games
+    - name: Quendara Games
+    - name: Helvithan Games
+    - name: Oranthi Games
+    - name: Pellicarn Games
+    - name: Wythoran Games
+    - name: Calthenor Games
+    - name: Sundrevic Games
+    - name: Jarethon Games
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Granthel Open Series
+    - name: Veltorin Cup Showcase
+    - name: Pellark Invitational Meet
+    - name: Dravosi Grand Circuit
+    - name: Thenwick Challenge Finals
+    - name: Korabel Elite Trials
+    - name: Ostivane Premier Rounds
+    - name: Zulkari Heritage Trophy
+    - name: Fentoral Summit Games
+    - name: Quivarn League Decider
+    - name: Maldren Apex Contest
+    - name: Solvane Pinnacle Duel
+    - name: Harquil Festival of Sport
+    - name: Torbinex Classic Showdown
+    - name: Brevanthi Endurance Gala
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Globar Kinetics Pinnacle Showdown
+    - name: Velorath Premier Disciplines Clash
+    - name: Trakonis Elite Contenders Meet
+    - name: Strydex Apex Performance Gala
+    - name: Runivex Supreme Athletes Invitational
+    - name: Celerion Grand Discipline Challenge
+    - name: Pacelon Top Tier Championship Finale
+    - name: Sprintara Zenith Competitors Forum
+    - name: Motivex Peak Talent Showcase
+    - name: Dromara Paramount Discipline Contest
+    - name: Kinevor Elite Ranked Championship
+    - name: Flexton Biennial Masters Duel
+    - name: Tarvelo Championship of Champions
+    - name: Quorathon Select Discipline Spectacle
+    - name: Zephrak Ultimate Discipline Summit
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Glospan Kinetics
+    - name: Terravault Movement Corps
+    - name: Runfeld Collective
+    - name: Paceworth Alliance
+    - name: Stridelon Federation
+    - name: Velthari Sport Union
+    - name: Dravonis Athletic Guild
+    - name: Zenthari Motion League
+    - name: Brinthos Fieldcraft Society
+    - name: Orvalen Stride Council
+    - name: Pellundar Sport Consortium
+    - name: Thandrik Pace Authority
+    - name: Quorven Athletics Bureau
+    - name: Nelvaris Sprint Coalition
+    - name: Kembrath Track Assembly
+  ngo_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Coalition of Track and Field Disciplines
+    - name: Unified Bureau of Athletic Competitions
+    - name: Intercontinental Council for Running and Field Sports
+    - name: Worldwide Assembly of Competitive Athletics
+    - name: Combined Nations Athletics Governance Body
+    - name: Transnational League of Track and Field Events
+    - name: Multinational Board of Running and Field Sports
+    - name: Allied Congress of Competitive Track Events
+    - name: Planetary Union of Athletic Governance
+    - name: Consolidated Network of Track and Field Oversight
+    - name: Joint Authority for Global Athletics Regulation
+    - name: Cooperative Directorate of Running and Field Disciplines
+    - name: Integrated Council of Worldwide Athletic Events
+    - name: Federated Assembly of Competitive Field and Track Sports
+    - name: Continental Syndicate of Athletic Disciplines and Governance
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Athletic Governance Council
+    - name: Unified Sporting Federations Board
+    - name: Intercontinental Games Directorate
+    - name: World Competitive Events Assembly
+    - name: Transnational Sports Oversight Bureau
+    - name: Allied Games Coordination Body
+    - name: Multinational Sporting Accord Panel
+    - name: Continental Games Regulatory Forum
+    - name: Universal Competitive Sports Authority
+    - name: Federated Athletic Disciplines Council
+    - name: Cross-Border Games Supervisory Circle
+    - name: Worldwide Sporting Integrity Consortium
+    - name: Joint Nations Athletic Governance Board
+    - name: Collective Games Standards Commission
+    - name: Plurinational Competitive Athletics Secretariat

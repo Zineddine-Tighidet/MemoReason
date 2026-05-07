@@ -1,0 +1,280 @@
+document:
+  document_id: sport_07
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: World Athletics Championships
+  wikipedia_url: https://en.wikipedia.org/wiki/World_Athletics_Championships
+  original_document: 'The World Athletics Championships, known as the IAAF World Championships in Athletics until 2019, are
+    a biennial athletics competition organized by World Athletics, formerly International Association of Athletics Federations.
+    Alongside the Olympic Games, the championships represents the highest level of senior international outdoor athletics
+    competition for track and field athletics globally, including marathon running and race walking. Separate World Championships
+    are held by World Athletics for certain other outdoor events, including cross-country running and half-marathon, as well
+    as indoor and age-group championship.
+
+
+    The World Championships were started in 1976 in response to the International Olympic Committee dropping the men''s 50
+    km walk from the Olympic programme for the 1976 Montreal Olympics, despite its constant presence at the games since 1932.
+    The IAAF chose to host its own world championship event, a month and a half after the Olympics. It was the first World
+    Championships that the IAAF had hosted separately from the Olympic Games.
+
+
+    A second limited event was held in 1980, and the inaugural championships in 1983, with all the events, is considered the
+    official start of the competition. Until 1980, the Olympic champions were also considered as reigning world champions.
+
+
+    At their debut, these championships were then held every four years, until 1991 when they switched to a two-year cycle.
+    In 2024, World Athletics announced that the new biennial competition, World Athletics Ultimate Championship, featuring
+    only up to 16 of the world''s top-ranked athletes per discipline, would be held every even year from 2026 onwards.'
+  document_to_annotate: 'The [World Athletics Championships; event_1.name], known as the [IAAF World Championships in Athletics;
+    event_6.name] until [2019; temporal_1.year], are a biennial athletics competition organized by [World Athletics; ngo_1.name],
+    formerly [International Association of Athletics Federations; ngo_3.name]. Alongside the [Olympic Games; event_2.name],
+    the championships represents the highest level of senior international outdoor athletics competition for track and field
+    athletics globally, including marathon running and race walking. Separate [World Championships; event_5.name] are held
+    by [World Athletics; ngo_1.name] for certain other outdoor events, including cross-country running and half-marathon,
+    as well as indoor and age-group championship.
+
+
+    The [World Championships; event_1.name] were started in [1976; temporal_3.year] in response to the [International Olympic
+    Committee; ngo_2.name] dropping the [men''s 50 km walk; event_5.name] from the Olympic programme for the [1976; temporal_3.year]
+    [Montreal; place_1.city] [Olympics; event_2.name], despite its constant presence at the games since [1932; temporal_4.year].
+    The [IAAF; ngo_3.name] chose to host its own world championship event, a month and a half after the Olympics. It was the
+    first [World Championships; event_1.name] that the [IAAF; ngo_1.name] had hosted separately from the [Olympic Games; event_2.name].
+
+
+    A second limited event was held in [1980; temporal_5.year], and the inaugural championships in [1983; temporal_6.year],
+    with all the events, is considered the official start of the competition. Until [1980; temporal_5.year], the [Olympic;
+    event_2.name] champions were also considered as reigning world champions.
+
+
+    At their debut, these championships were then held every [four; number_1.str] years, until [1991; temporal_7.year] when
+    they switched to a [two; number_2.str]-year cycle. In [2024; temporal_8.year], [World Athletics; ngo_1.name] announced
+    that the new biennial competition, [World Athletics Ultimate Championship; event_4.name], featuring only up to [16; number_3.int]
+    of the world''s top-ranked athletes per discipline, would be held every even year from [2026; temporal_9.year] onwards.'
+  relations: []
+  rules:
+  - 'number_3.int > 1 # plural mention "athletes"'
+  - temporal_1.year > temporal_6.year
+  - temporal_4.year < temporal_3.year
+  - temporal_5.year > temporal_3.year
+  - temporal_6.year > temporal_5.year
+  - temporal_7.year > temporal_6.year
+  num_questions: 12
+  questions:
+  - question_id: sport_07_q01
+    question: How often are the [World Athletics Championships; event_1.name] held currently?
+    question_type: extractive
+    answer: biennial
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document opens by describing the [World Athletics Championships; event_1.name] as "a biennial athletics competition."
+    reasoning_chain_text: 1. The document opens by describing the [World Athletics Championships; event_1.name] as "a biennial
+      athletics competition."
+  - question_id: sport_07_q02
+    question: In which city were the inaugural [World Athletics Championships; event_1.name] championships held in [1983;
+      temporal_6.year]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the inaugural championships with all events were held in [1983; temporal_6.year].
+    - 2. However, the document does not mention the host city for the [1983; temporal_6.year] championships.
+    reasoning_chain_text: '1. The document states the inaugural championships with all events were held in [1983; temporal_6.year].
+
+      2. However, the document does not mention the host city for the [1983; temporal_6.year] championships.'
+  - question_id: sport_07_q03
+    question: How many years after the [Olympic Games; event_2.name] in [Montreal; place_1.city] were the inaugural full [World
+      Athletics Championships; event_1.name] held?
+    question_type: arithmetic
+    answer: temporal_6.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Olympic Games; event_2.name] in [Montreal; place_1.city] took place in [1976; temporal_3.year].
+    - 2. The inaugural full championships were held in [1983; temporal_6.year].
+    - 3. The difference is [1983; temporal_6.year] − [1976; temporal_3.year] = 10 years.
+    reasoning_chain_text: '1. The [Olympic Games; event_2.name] in [Montreal; place_1.city] took place in [1976; temporal_3.year].
+
+      2. The inaugural full championships were held in [1983; temporal_6.year].
+
+      3. The difference is [1983; temporal_6.year] − [1976; temporal_3.year] = 10 years.'
+  - question_id: sport_07_q04
+    question: How many sports events are mentioned in the document?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: sport_07_q05
+    question: How many athletes in total competed at the first [World Athletics Ultimate Championship; event_4.name] across
+      all disciplines?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that the [World Athletics Ultimate Championship; event_4.name] features up to [16; number_3.int]
+      of the world's top-ranked athletes per discipline.
+    - 2. However, the document does not specify how many disciplines are included, so the total number of athletes cannot
+      be calculated.
+    reasoning_chain_text: '1. The document states that the [World Athletics Ultimate Championship; event_4.name] features
+      up to [16; number_3.int] of the world''s top-ranked athletes per discipline.
+
+      2. However, the document does not specify how many disciplines are included, so the total number of athletes cannot
+      be calculated.'
+  - question_id: sport_07_q06
+    question: How many years before the first [World Athletics Championships; event_1.name] had the [World Championships;
+      event_5.name] been a constant presence at the [Olympic Games; event_2.name]?
+    question_type: temporal
+    answer: temporal_3.year - temporal_4.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [World Championships; event_5.name] had been constantly present at the games since [1932; temporal_4.year].
+    - 2. The first [World Athletics Championships; event_1.name] was held in [1976; temporal_3.year].
+    - 3. The duration is [1976; temporal_3.year] − [1932; temporal_4.year] = 21 years.
+    reasoning_chain_text: '1. The [World Championships; event_5.name] had been constantly present at the games since [1932;
+      temporal_4.year].
+
+      2. The first [World Athletics Championships; event_1.name] was held in [1976; temporal_3.year].
+
+      3. The duration is [1976; temporal_3.year] − [1932; temporal_4.year] = 21 years.'
+  - question_id: sport_07_q07
+    question: Was [World Championships; event_5.name] started before or after [World Athletics Championships; event_1.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: sport_07_q08
+    question: In what month was the first [World Athletics Championships; event_1.name] held in [1976; temporal_3.year]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the first event was held in [1976; temporal_3.year], "a month and a half after the Olympics."
+    - 2. However, the document does not specify the exact month of the Olympics or of the first [World Athletics Championships;
+      event_1.name], so the month cannot be determined.
+    reasoning_chain_text: '1. The document states the first event was held in [1976; temporal_3.year], "a month and a half
+      after the Olympics."
+
+      2. However, the document does not specify the exact month of the Olympics or of the first [World Athletics Championships;
+      event_1.name], so the month cannot be determined.'
+  - question_id: sport_07_q09
+    question: Which organization's decision to remove an event from the [Olympic Games; event_2.name] programme directly led
+      to the creation of the [World Athletics Championships; event_1.name]?
+    question_type: inference
+    answer: ngo_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [World Athletics Championships; event_1.name] were started in response to the [International
+      Olympic Committee; ngo_2.name] dropping the [World Championships; event_5.name] from the Olympic programme.
+    - 2. This decision prompted [International Association of Athletics Federations; ngo_3.name] (now [World Athletics; ngo_1.name])
+      to host its own championship, so the responsible organization is [International Olympic Committee; ngo_2.name].
+    reasoning_chain_text: '1. The document states the [World Athletics Championships; event_1.name] were started in response
+      to the [International Olympic Committee; ngo_2.name] dropping the [World Championships; event_5.name] from the Olympic
+      programme.
+
+      2. This decision prompted [International Association of Athletics Federations; ngo_3.name] (now [World Athletics; ngo_1.name])
+      to host its own championship, so the responsible organization is [International Olympic Committee; ngo_2.name].'
+  - question_id: sport_07_q10
+    question: What is the number of the official start of [World Athletics Championships; event_1.name], held in [1983; temporal_6.year]?
+    question_type: inference
+    answer: inaugural
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: sport_07_q11
+    question: Did the [World Athletics Ultimate Championship; event_4.name] replace the [World Athletics Championships; event_1.name]
+      as the primary world championship event?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [World Athletics; ngo_1.name] announced the [World Athletics Ultimate Championship; event_4.name]
+      as a new biennial competition held every even year from [2026; temporal_9.year].
+    - 2. The document does not state whether the [World Athletics Ultimate Championship; event_4.name] replaced the [World
+      Athletics Championships; event_1.name] or exists alongside it, so this cannot be determined.
+    reasoning_chain_text: '1. The document mentions that [World Athletics; ngo_1.name] announced the [World Athletics Ultimate
+      Championship; event_4.name] as a new biennial competition held every even year from [2026; temporal_9.year].
+
+      2. The document does not state whether the [World Athletics Ultimate Championship; event_4.name] replaced the [World
+      Athletics Championships; event_1.name] or exists alongside it, so this cannot be determined.'
+  - question_id: sport_07_q12
+    question: In which year was [World Athletics Championships; event_1.name] started?
+    question_type: extractive
+    answer: temporal_3.year
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1957
+    upper_bound: 1995
+    factual_value: 1976
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1913
+    upper_bound: 1951
+    factual_value: 1932
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1961
+    upper_bound: 1999
+    factual_value: 1980
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1964
+    upper_bound: 2002
+    factual_value: 1983
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

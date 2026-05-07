@@ -1,0 +1,510 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_10
+  document_theme: companies_and_organizations
+  complete: false
+  generated_at: '2026-04-18T14:43:06.043080+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: product product_11: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_7: 15
+    product_8: 15
+    product_9: 15
+    product_10: 15
+    product_11: 14
+missing_references:
+  products:
+    product_11: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvon Quelish
+    - full_name: Brindek Haloury
+    - full_name: Colvane Jessrik
+    - full_name: Dremik Pothane
+    - full_name: Fentorak Glissow
+    - full_name: Helvorn Crulsey
+    - full_name: Jontrik Welmash
+    - full_name: Kesparo Thundrel
+    - full_name: Molvek Grantine
+    - full_name: Pellusk Vorander
+    - full_name: Rondive Skalthen
+    - full_name: Sethrak Bolvune
+    - full_name: Turvane Kelposh
+    - full_name: Weskarn Drolith
+    - full_name: Zelphor Mundrave
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velko Drannish
+    - full_name: Torbek Yulessi
+    - full_name: Kaedin Molvrey
+    - full_name: Pranith Zolkuv
+    - full_name: Jethro Quilnab
+    - full_name: Ondrev Fassik
+    - full_name: Mirzan Tolvek
+    - full_name: Halrik Cendovar
+    - full_name: Yentho Braskul
+    - full_name: Dravon Pelchik
+    - full_name: Sulkev Morathi
+    - full_name: Fenrik Golvash
+    - full_name: Tashev Runoldi
+    - full_name: Brenkov Yaltish
+    - full_name: Zephrin Kolduv
+  person_3:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Ventar Kosheli
+      last_name: Kosheli
+    - full_name: Dravan Pelitho
+      last_name: Pelitho
+    - full_name: Toshan Melvuri
+      last_name: Melvuri
+    - full_name: Rindev Qualessi
+      last_name: Qualessi
+    - full_name: Harjun Tivosek
+      last_name: Tivosek
+    - full_name: Brenol Cashevin
+      last_name: Cashevin
+    - full_name: Yondal Prethiku
+      last_name: Prethiku
+    - full_name: Kelvor Dunashi
+      last_name: Dunashi
+    - full_name: Omrath Jelvoni
+      last_name: Jelvoni
+    - full_name: Sivran Golethi
+      last_name: Golethi
+    - full_name: Tulmek Ravoshi
+      last_name: Ravoshi
+    - full_name: Zandir Phulekko
+      last_name: Phulekko
+    - full_name: Lendak Vorishen
+      last_name: Vorishen
+    - full_name: Quoban Trevalsi
+      last_name: Trevalsi
+    - full_name: Mirjat Helvudan
+      last_name: Helvudan
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Veldrani
+    - demonym: Tassoric
+    - demonym: Brequan
+    - demonym: Olthepi
+    - demonym: Zurvanic
+    - demonym: Kelmathi
+    - demonym: Drotheni
+    - demonym: Pelvuran
+    - demonym: Gosthari
+    - demonym: Wenthari
+    - demonym: Caloprish
+    - demonym: Melvunic
+    - demonym: Torqueli
+    - demonym: Hespuli
+    - demonym: Jentoric
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vothrek LLC
+    - name: Quenlar Corp
+    - name: Zelphin LLC
+    - name: Brondavi Inc
+    - name: Tarvique LLC
+    - name: Kespolin Corp
+    - name: Wyndalo LLC
+    - name: Plexuri Inc
+    - name: Galthen LLC
+    - name: Sorvelix Corp
+    - name: Drantico LLC
+    - name: Felquor Inc
+    - name: Helvano LLC
+    - name: Jentrik Corp
+    - name: Molvaris LLC
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorith Holdings
+    - name: Cendrak Group
+    - name: Tulmex Corp
+    - name: Brionex Collective
+    - name: Quarnis Industries
+    - name: Plethova Inc
+    - name: Zendari Ventures
+    - name: Kolvane Partners
+    - name: Orenthal Global
+    - name: Draxuli Corp
+    - name: Felmorin Holdings
+    - name: Tarvique Group
+    - name: Nelvosh Enterprises
+    - name: Grothane Inc
+    - name: Wispara Corp
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Drivara
+    - name: Autolynk
+    - name: Vehipath
+    - name: Rodeliq
+    - name: Cruivon
+    - name: Motrique
+    - name: Steervo
+    - name: Pilotrek
+    - name: Navocar
+    - name: Driftael
+    - name: Rolantis
+    - name: Guidara
+    - name: Traqen
+    - name: Wheylon
+    - name: Carvith
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Cognition Labs
+    - name: Synkora Neural Works
+    - name: Pellunix Mind Systems
+    - name: Tarvon Intellect Group
+    - name: Quorith Brain Sciences
+    - name: Dremova Thought Engine
+    - name: Zelphari Reasoning Co
+    - name: Brindek Cognitive Research
+    - name: Orvantis Learning Core
+    - name: Kaltrex Neural Forge
+    - name: Wenvari Intelligence Lab
+    - name: Plethon Sentient Systems
+    - name: Grothiel Insight Works
+    - name: Nelvoxis Thought Lab
+    - name: Tumbraic Reason Studio
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valomark
+    - name: Brandiscope
+    - name: Equivara
+    - name: Trendivex
+    - name: Marqolith
+    - name: Percivant
+    - name: Lumivane
+    - name: Crestiqo
+    - name: Brandelios
+    - name: Valorique
+    - name: Pinnaqor
+    - name: Strivemark
+    - name: Quorvalis
+    - name: Zentivara
+    - name: Pellucant
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellmark Broadcasting
+    - name: Torbane Media Group
+    - name: Cendral News Network
+    - name: Halcuris Press
+    - name: Drennoch World Service
+    - name: Quilsar Broadcasting
+    - name: Pelmuth Media
+    - name: Zothren News Collective
+    - name: Brivane Channel
+    - name: Kesthari Global Report
+    - name: Olphren Broadcasting Corp
+    - name: Tarvique Media
+    - name: Wenshale Press Group
+    - name: Grothane News Bureau
+    - name: Felquorn Broadcasting
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veridox
+    - name: Cranthor Weekly
+    - name: Plendara
+    - name: Tassivon Report
+    - name: Brelkumo
+    - name: Quorivan
+    - name: Delvantis
+    - name: Nolsheq
+    - name: Grothaven Ledger
+    - name: Parvique
+    - name: Zulmaren
+    - name: Kestivane
+    - name: Throndel
+    - name: Wispara Journal
+    - name: Celvothi
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trovak Lookup
+    - name: Qeridex Find
+    - name: Polvari Search
+    - name: Zendrik Query
+    - name: Breluno Seek
+    - name: Kothane Discover
+    - name: Wispara Index
+    - name: Dralvex Browse
+    - name: Fenturi Scan
+    - name: Orvalis Trace
+    - name: Jepthor Crawl
+    - name: Melvago Hunt
+    - name: Tyndarik Fetch
+    - name: Caspelo Probe
+    - name: Ruvendi Sift
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Voxletter
+    - name: Quillpost
+    - name: Dripmail
+    - name: Zephbox
+    - name: Torchmail
+    - name: Penvault
+    - name: Cloverpost
+    - name: Brimbox
+    - name: Flicksend
+    - name: Wrenpost
+    - name: Hushmail
+    - name: Crestbox
+    - name: Plumecast
+    - name: Dawnletter
+    - name: Sparqpost
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Rovix
+    - name: Tralgo
+    - name: Pathique
+    - name: Drivven
+    - name: Routly
+    - name: Navorra
+    - name: Streetz
+    - name: Glidaro
+    - name: Turniq
+    - name: Lanesk
+    - name: Cruzzo
+    - name: Mappel
+    - name: Detrik
+    - name: Voytra
+    - name: Kompass
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Roamly
+    - name: Pathvue
+    - name: Lokaro
+    - name: Terraq
+    - name: Wayfold
+    - name: Gridlane
+    - name: Trovex
+    - name: Chartyn
+    - name: Navpulse
+    - name: Geoloft
+    - name: Pinlocus
+    - name: Routica
+    - name: Driftmark
+    - name: Spantrek
+    - name: Vistaway
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Terravue
+    - name: Globix
+    - name: Orbiscan
+    - name: Planeto
+    - name: Sphera
+    - name: Geolens
+    - name: Worldrift
+    - name: Vistorb
+    - name: Panoglo
+    - name: Karthen
+    - name: Surfacel
+    - name: Topoview
+    - name: Rendglobe
+    - name: Mapsorbit
+    - name: Skyvault
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vaultra
+    - name: Skyvane
+    - name: Nimborix
+    - name: Celdara
+    - name: Hovlent
+    - name: Straquo
+    - name: Plivex
+    - name: Driftane
+    - name: Zephault
+    - name: Kumulon
+    - name: Torbix
+    - name: Wispara
+    - name: Fluxen
+    - name: Aerovault
+    - name: Quilthra
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brindle
+    - name: Surfiq
+    - name: Glinth
+    - name: Porthex
+    - name: Navrik
+    - name: Torvel
+    - name: Skelden
+    - name: Wispra
+    - name: Fletch
+    - name: Quorix
+    - name: Delvane
+    - name: Zephik
+    - name: Kelmor
+    - name: Pryndal
+    - name: Vosken
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VidLoom
+    - name: Streamorra
+    - name: Clipthar
+    - name: Watchvane
+    - name: Reelquon
+    - name: Playvorra
+    - name: Tubenrik
+    - name: Viewspark
+    - name: Motioneld
+    - name: Castivoy
+    - name: Showdrel
+    - name: Flicktarn
+    - name: Broadplix
+    - name: Channelvo
+    - name: Skreenith
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collabrix
+    - name: Deskflow
+    - name: Taskora
+    - name: Prodivio
+    - name: Workhaven
+    - name: Synkpanel
+    - name: Teamforge
+    - name: Planbrite
+    - name: Offisync
+    - name: Doqstream
+    - name: Hubcraft
+    - name: Joynlab
+    - name: Gridwell
+    - name: Pulseboard
+    - name: Colvane
+  product_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Volkra
+    - name: Tessik
+    - name: Orbane
+    - name: Kelvos
+    - name: Dravium
+    - name: Plexar
+    - name: Zenthari
+    - name: Morvane
+    - name: Cyndal
+    - name: Brellix
+    - name: Tarvon
+    - name: Quorin
+    - name: Felkos
+    - name: Jantive
+    - name: Wyndek
+  product_11:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: LynxShell
+    - name: Brevos
+    - name: KernelArc
+    - name: Tivaro
+    - name: Plynth
+    - name: Orvane
+    - name: Cladix
+    - name: Zentrik
+    - name: Pellura
+    - name: Drayven
+    - name: Solvane
+    - name: Telmik
+    - name: Wyndex
+    - name: Graith

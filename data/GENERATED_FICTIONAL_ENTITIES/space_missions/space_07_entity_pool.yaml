@@ -1,0 +1,215 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_07
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T15:00:23.682866+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: product product_2: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+    military_org_3: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 14
+missing_references:
+  products:
+    product_2: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Torvek Dranisov
+      last_name: Dranisov
+    - full_name: Kelzar Obrinev
+      last_name: Obrinev
+    - full_name: Pashko Vuletrin
+      last_name: Vuletrin
+    - full_name: Rendik Czolnev
+      last_name: Czolnev
+    - full_name: Boryel Stravnik
+      last_name: Stravnik
+    - full_name: Mirosh Geltavoy
+      last_name: Geltavoy
+    - full_name: Dalvek Pronishev
+      last_name: Pronishev
+    - full_name: Yevtol Krazhinov
+      last_name: Krazhinov
+    - full_name: Sornek Belvutin
+      last_name: Belvutin
+    - full_name: Groshel Tarnivek
+      last_name: Tarnivek
+    - full_name: Volzek Dremashov
+      last_name: Dremashov
+    - full_name: Petrik Zolvunev
+      last_name: Zolvunev
+    - full_name: Karvol Shednirov
+      last_name: Shednirov
+    - full_name: Telmok Brevashkin
+      last_name: Brevashkin
+    - full_name: Ondrev Plaznikov
+      last_name: Plaznikov
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velthari
+    - demonym: Kosmari
+    - demonym: Druvenic
+    - demonym: Talnessi
+    - demonym: Orvashki
+    - demonym: Zulmari
+    - demonym: Prethoni
+    - demonym: Gelvanic
+    - demonym: Turmeki
+    - demonym: Broshari
+    - demonym: Kelvoni
+    - demonym: Nartheki
+    - demonym: Plovari
+    - demonym: Sundeki
+    - demonym: Welmathi
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondaque
+    - country: Celvoria
+    - country: Dranthuel
+    - country: Fossimere
+    - country: Galthunia
+    - country: Helvotrek
+    - country: Jendara
+    - country: Kosphelan
+    - country: Lurathon
+    - country: Melvique
+    - country: Norbethia
+    - country: Peldovar
+    - country: Quenshari
+    - country: Rinthalos
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zelkora Programme
+    - name: Dravik Programme
+    - name: Tunvek Programme
+    - name: Kosmara Programme
+    - name: Orbesh Programme
+    - name: Pylkun Programme
+    - name: Strelova Programme
+    - name: Gromvik Programme
+    - name: Tarvol Programme
+    - name: Reshkova Programme
+    - name: Belvorn Programme
+    - name: Krendat Programme
+    - name: Volshen Programme
+    - name: Zarvik Programme
+    - name: Pelmora Programme
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Venture Korath
+    - name: Program Stellavane
+    - name: Initiative Dawnpulse
+    - name: Project Celorin
+    - name: Operation Threnvault
+    - name: Program Halcyonex
+    - name: Endeavor Pyrathis
+    - name: Initiative Skybrant
+    - name: Project Orivane
+    - name: Program Lunaspire
+    - name: Venture Crestholm
+    - name: Operation Zephyrak
+    - name: Initiative Velthari
+    - name: Project Solkren
+    - name: Program Aethervane
+  military_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dravenok Initiative
+    - name: Korvash Programme
+    - name: Tunveld Operations
+    - name: Brelkyn Programme
+    - name: Stolvari Initiative
+    - name: Grothek Programme
+    - name: Peldunov Programme
+    - name: Kravesh Initiative
+    - name: Torbinok Programme
+    - name: Varnekh Operations
+    - name: Dulshevik Programme
+    - name: Molvarak Initiative
+    - name: Zundrel Programme
+    - name: Chelnorik Programme
+    - name: Gorvetsk Initiative
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvel
+    - name: Thalnik
+    - name: Orbesh
+    - name: Zelkora
+    - name: Dravun
+    - name: Pelmok
+    - name: Sythar
+    - name: Grindel
+    - name: Voshkel
+    - name: Tunbrek
+    - name: Kalvesh
+    - name: Rendok
+    - name: Brelkun
+    - name: Morthel
+    - name: Plovnik
+  product_2:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Threnik
+    - name: Obsar
+    - name: Peldyn
+    - name: Voshka
+    - name: Greltis
+    - name: Tunvek
+    - name: Skalor
+    - name: Dremik
+    - name: Felgor
+    - name: Brantik
+    - name: Kelvosh
+    - name: Plorath
+    - name: Jentrik
+    - name: Morvask

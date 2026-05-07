@@ -1,0 +1,236 @@
+document:
+  document_id: dev_15
+  document_theme: northern ireland conflict
+  original_document: There have been many terrible events in the history of Northern Ireland's conflict, but few have seared
+    the collective consciousness of its people as those on Friday, 21 July 1972, a day that became known as Bloody Friday.
+    By the end of the day, the IRA's Belfast brigade had detonated at least 20 bombs across the city. In just 75 minutes of
+    violence, nine people were dead and some 130 more were mutilated, injured and mentally scarred by what they had witnessed.
+    You could hear people screaming, crying and moaning. The first thing that caught my eye was a torso of a human being in
+    the middle of the street. From the outset, the IRA's bombing of the city caused widespread chaos and stretched the security
+    forces to the limit. Such was the scale of the attack, witnesses at the time remember seeing people running in all directions,
+    not knowing where the bombs were being detonated. As one report at the time described the scene, "it was impossible for
+    anyone to feel perfectly safe". Car bombsWhile the scale of the attack was huge, it was two car bombs that between them
+    claimed the nine lives - one at the Oxford Street bus station in the city centre, the other outside shops in Cavehill
+    Road in north Belfast. At Oxford St, the busiest bus station in Northern Ireland, four Ulsterbus workers and two soldiers
+    were killed. When the emergency services reached the scene, they found that some of the victims had been literally blown
+    to pieces, leading to initial estimates of a death toll of 11. At the Cavehill Road bomb, the victims were two women and
+    a 14-year-old schoolboy. Of the 130 injured, 77 were women or children out shopping in the city centre. One police officer
+    at the scene recalled the events for the BBC series Provos in 1997. "You could hear people screaming, crying and moaning.
+    The first thing that caught my eye was a torso of a human being lying in the middle of the street," he told the series.
+  document_to_annotate: There have been many terrible events in the history of [Northern Ireland; place_1.region]'s conflict,
+    but few have seared the collective consciousness of its people as those on [Friday; temporal_1.day], [21 July 1972; temporal_1.date],
+    a day that became known as [Bloody Friday; event_1.name]. By the end of the day, the [IRA; military_org_1.name]'s [Belfast;
+    place_2.city] brigade had detonated at least [20; number_1.int] bombs across the city. In just [75; number_2.int] minutes
+    of violence, [nine; number_3.str] people were dead and some [130; number_4.int] more were mutilated, injured and mentally
+    scarred by what they had witnessed. You could hear people screaming, crying and moaning. The first thing that caught my
+    eye was a torso of a human being in the middle of the street. From the outset, the [IRA; military_org_1.name]'s bombing
+    of the city caused widespread chaos and stretched the security forces to the limit. Such was the scale of the attack,
+    witnesses at the time remember seeing people running in all directions, not knowing where the bombs were being detonated.
+    As one report at the time described the scene, "it was impossible for anyone to feel perfectly safe". While the scale
+    of the attack was huge, it was two car bombs that between them claimed the [nine; number_3.str] lives - one at the [Oxford
+    Street; place_3.street] bus station in the city centre, the other outside shops in [Cavehill Road; place_4.street] in
+    north [Belfast; place_2.city]. At [Oxford St; place_3.street], the busiest bus station in [Northern Ireland; place_1.region],
+    [four; number_5.str] [Ulsterbus; entreprise_org_2.name] workers and [two; number_6.str] soldiers were killed. When the
+    emergency services reached the scene, they found that some of the victims had been literally blown to pieces, leading
+    to initial estimates of a death toll of [11; number_7.int]. At the [Cavehill Road; place_4.street] bomb, the victims were
+    [two; number_8.str] women and a [14; number_9.int]-year-old schoolboy. Of the [130; number_4.int] injured, [77; number_10.int]
+    were women or children out shopping in the city centre. One police officer at the scene recalled the events for the [BBC;
+    media_org_3.name] series [Provos; military_org_4.name] in [1997; temporal_2.year]. "You could hear people screaming, crying
+    and moaning. The first thing that caught my eye was a torso of a human being lying in the middle of the street," he told
+    the series.
+  relations: []
+  rules:
+  - 'number_6.str > 1 # plural "soldiers"'
+  - 'number_8.str > 1 # plural "women"'
+  - 'number_2.int > 1 # plural "minutes"'
+  - number_5 + number_6 < number_7
+  - number_7 < number_5 + number_6 + 20
+  - number_5 + number_6 + number_8 + 1 = number_3
+  - number_9 < 15
+  - number_9 > 4
+  - number_10 < number_4
+  - number_1 >= 2
+  - number_5 > 1
+  num_questions: 12
+  questions:
+  - question_id: dev_15_q01
+    question: What is the name of the place where the interviewed police officer works?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q02
+    question: What is the name of the organization that bombed [Oxford Street; place_3.street]?
+    question_type: inference
+    answer: military_org_1.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - You need to infer that the bombings made by the [IRA; military_org_1.name] are the same as those in [Oxford Street;
+      place_3.street]
+    reasoning_chain_text: You need to infer that the bombings made by the [IRA; military_org_1.name] are the same as those
+      in [Oxford Street; place_3.street]
+  - question_id: dev_15_q03
+    question: Did more people die than get injured?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q04
+    question: When did the [Northern Ireland; place_1.region] conflict start?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q05
+    question: Did the [IRA; military_org_1.name] detonate the bombs before or after the police officer interview with the
+      [BBC; media_org_3.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q06
+    question: How many years elapsed between the [Bloody Friday; event_1.name] attacks and the broadcast of the police officer's
+      testimony on the [BBC; media_org_3.name]?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q07
+    question: How many police officers were present during the bombing?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q08
+    question: How many places were reported as being deadly crime scenes?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - '"one at the [Oxford Street; place_3.street] bus station in the city centre, the other outside shops in [Cavehill Road;
+      place_4.street]"'
+    reasoning_chain_text: '"one at the [Oxford Street; place_3.street] bus station in the city centre, the other outside shops
+      in [Cavehill Road; place_4.street]"'
+  - question_id: dev_15_q09
+    question: How many casualties (dead and injured) resulted from the bombing?
+    question_type: arithmetic
+    answer: number_3.str + number_4.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q10
+    question: What is the name of the [BBC; media_org_3.name] journalist that wrote the document?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q11
+    question: Were there dead soldiers as a result of the bombing?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: dev_15_q12
+    question: How many bombs were detonated?
+    question_type: extractive
+    answer: number_1.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1953
+    upper_bound: 1991
+    factual_value: 1972
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 60
+    upper_bound: 90
+    factual_value: 75
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 104
+    upper_bound: 156
+    factual_value: 130
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 62
+    upper_bound: 92
+    factual_value: 77
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1978
+    upper_bound: 2016
+    factual_value: 1997
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

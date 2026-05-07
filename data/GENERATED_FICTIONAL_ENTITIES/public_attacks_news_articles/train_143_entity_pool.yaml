@@ -1,0 +1,263 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_143
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-17T17:45:16.220391+00:00'
+coverage:
+  persons:
+    person_5: 15
+    person_8: 15
+    person_6: 15
+    person_7: 15
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_5:
+    required_attributes:
+    - full_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Dorven Quilasso Tenbraga
+      nationality: Verasquen
+    - full_name: Felcaro Humbren Zolitage
+      nationality: Talmequan
+    - full_name: Brisselo Gavanto Muriquel
+      nationality: Corvishen
+    - full_name: Tondaro Elcuven Prissaga
+      nationality: Belvantian
+    - full_name: Quireno Jassaldo Tremoque
+      nationality: Drossalian
+    - full_name: Valtego Rondique Essabren
+      nationality: Plintavese
+    - full_name: Gessuro Tolvando Bracunel
+      nationality: Morthequan
+    - full_name: Pellandro Cuvesso Tarnique
+      nationality: Gelvosian
+    - full_name: Rossendo Brivaldo Quelanto
+      nationality: Fentarquen
+    - full_name: Caltero Duvessen Moriquol
+      nationality: Jelvassian
+    - full_name: Trevaldo Gonsique Pellabren
+      nationality: Vondequan
+    - full_name: Brosseno Telvaque Rundisso
+      nationality: Keltavian
+    - full_name: Delvaro Quintesso Bragolen
+      nationality: Prelvoshen
+    - full_name: Galtendo Ruvissen Coltaque
+      nationality: Stelvarian
+    - full_name: Frosselo Belvanto Querindal
+      nationality: Trossequan
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Vorath Pelindro
+    - full_name: Caspero Dulvaine
+    - full_name: Tenorio Bravesh
+    - full_name: Haldren Coruzzi
+    - full_name: Miraldo Quessano
+    - full_name: Felandro Turviez
+    - full_name: Obrenno Salvique
+    - full_name: Darvelo Montique
+    - full_name: Lucandro Prevossa
+    - full_name: Galtiero Remundi
+    - full_name: Pernaldo Cuvashi
+    - full_name: Estovaro Belmique
+    - full_name: Ruvaldo Tressano
+    - full_name: Jentaro Morvizan
+    - full_name: Kelvaro Dunessi
+  person_6:
+    required_attributes:
+    - nationality
+    count: 15
+    variants:
+    - nationality: Velortan
+    - nationality: Drisseki
+    - nationality: Tumaren
+    - nationality: Kelvosi
+    - nationality: Branthulan
+    - nationality: Zorivean
+    - nationality: Pellunese
+    - nationality: Gosthari
+    - nationality: Welmadic
+    - nationality: Crendavi
+    - nationality: Thalmorin
+    - nationality: Junvari
+    - nationality: Oskriven
+    - nationality: Feldaric
+    - nationality: Molvithan
+  person_7:
+    required_attributes:
+    - nationality
+    count: 15
+    variants:
+    - nationality: Velorquan
+    - nationality: Tassivian
+    - nationality: Brondekki
+    - nationality: Calpethan
+    - nationality: Zurimath
+    - nationality: Orentavi
+    - nationality: Pleskari
+    - nationality: Dravunese
+    - nationality: Kelmithi
+    - nationality: Sorpellan
+    - nationality: Gunthari
+    - nationality: Melvoqui
+    - nationality: Fentarish
+    - nationality: Weskadri
+    - nationality: Jolpethi
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Dorviel Camejo
+      last_name: Camejo
+    - full_name: Felandro Quiresta
+      last_name: Quiresta
+    - full_name: Brenaldo Tivoche
+      last_name: Tivoche
+    - full_name: Yondris Palcuero
+      last_name: Palcuero
+    - full_name: Marvelo Zundiga
+      last_name: Zundiga
+    - full_name: Telvano Roqueda
+      last_name: Roqueda
+    - full_name: Jandero Vulmache
+      last_name: Vulmache
+    - full_name: Osbaldo Crenoja
+      last_name: Crenoja
+    - full_name: Wilvaro Pechanto
+      last_name: Pechanto
+    - full_name: Durnelo Gavispe
+      last_name: Gavispe
+    - full_name: Celviro Mondaque
+      last_name: Mondaque
+    - full_name: Frenaldo Tusquero
+      last_name: Tusquero
+    - full_name: Golvani Brecuña
+      last_name: Brecuña
+    - full_name: Rendalo Chivosta
+      last_name: Chivosta
+    - full_name: Torbelo Junvera
+      last_name: Junvera
+  person_2:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Telvon
+    - first_name: Brissol
+    - first_name: Kethuro
+    - first_name: Dravim
+    - first_name: Jolcen
+    - first_name: Palthen
+    - first_name: Weskaro
+    - first_name: Nuviel
+    - first_name: Creldon
+    - first_name: Fentaro
+    - first_name: Zulmek
+    - first_name: Horbis
+    - first_name: Yondrel
+    - first_name: Quilsen
+    - first_name: Marvelo
+  person_3:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvor Quenashi
+      last_name: Quenashi
+    - full_name: Brenol Casivero
+      last_name: Casivero
+    - full_name: Harudo Pelintaz
+      last_name: Pelintaz
+    - full_name: Miresco Tavulón
+      last_name: Tavulón
+    - full_name: Ondrel Fassique
+      last_name: Fassique
+    - full_name: Jelvaro Crintosa
+      last_name: Crintosa
+    - full_name: Palthen Moriqueza
+      last_name: Moriqueza
+    - full_name: Sulvedo Grantechi
+      last_name: Grantechi
+    - full_name: Kelviro Dunaspe
+      last_name: Dunaspe
+    - full_name: Rothevan Pliquero
+      last_name: Pliquero
+    - full_name: Dantevo Suriquol
+      last_name: Suriquol
+    - full_name: Fentaro Brelisque
+      last_name: Brelisque
+    - full_name: Golvane Turisemo
+      last_name: Turisemo
+    - full_name: Wentaro Chabisol
+      last_name: Chabisol
+    - full_name: Zelviro Pontaresque
+      last_name: Pontaresque
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvio Mundara Crespin Olanejo
+    - full_name: Brenso Quilmar Fentoja Durales
+    - full_name: Yaltec Huberno Mirajes Polentro
+    - full_name: Darvino Elcubar Tospena Jurales
+    - full_name: Quilsen Ambreto Volancha Resquino
+    - full_name: Fentaro Gulmides Carvejo Turensa
+    - full_name: Obrenso Taldimar Junelca Porvales
+    - full_name: Wilveno Crespaldo Muranjo Telvides
+    - full_name: Galturo Nelvimar Dospeña Curanto
+    - full_name: Prenvio Suldecar Jolmenta Buresqo
+    - full_name: Helvinto Qualdero Mospenja Turalves
+    - full_name: Carvento Dulmisar Frenolca Jupentes
+    - full_name: Torbeno Yulcamar Despinja Volqueras
+    - full_name: Nelvardo Grespulin Tormeja Sulvandes
+    - full_name: Bulteno Kelvimar Crospenja Duraltes
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velanquo
+    - city: Tormisca
+    - city: Curathel
+    - city: Palondra
+    - city: Brivanto
+    - city: Solmequa
+    - city: Dranthuvo
+    - city: Kelisaro
+    - city: Mopenthi
+    - city: Zuracal
+    - city: Fentarvo
+    - city: Galispen
+    - city: Orvanthu
+    - city: Plindaro
+    - city: Wethunca

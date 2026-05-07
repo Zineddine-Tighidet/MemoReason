@@ -1,0 +1,532 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_11
+  document_theme: biographies_of_famous_personalities
+  complete: false
+  generated_at: '2026-04-18T17:46:11.419308+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 14
+  events:
+    event_4: 15
+    event_1: 15
+    event_5: 15
+    event_3: 15
+    event_7: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+  educational_orgs:
+    educational_org_1: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_6: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - honorific
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tivela Rohn Cassoway Plendrik
+      last_name: Plendrik
+    - full_name: Orathe Mivven Soluway Ketharn
+      last_name: Ketharn
+    - full_name: Brenala Tyce Wossimer Grothel
+      last_name: Grothel
+    - full_name: Yondra Kael Lumivere Stapphen
+      last_name: Stapphen
+    - full_name: Calissra Wend Torvane Dremault
+      last_name: Dremault
+    - full_name: Peshala Nort Gevverly Crothune
+      last_name: Crothune
+    - full_name: Miroven Dael Quessaly Holvrek
+      last_name: Holvrek
+    - full_name: Tessova Lyne Barrowen Fendrake
+      last_name: Fendrake
+    - full_name: Wylenta Josse Pellomar Trivask
+      last_name: Trivask
+    - full_name: Kelindra Voss Thuroway Bremholt
+      last_name: Bremholt
+    - full_name: Soritha Mave Crendolay Vothern
+      last_name: Vothern
+    - full_name: Lunessa Prael Dovverly Ganthem
+      last_name: Ganthem
+    - full_name: Revanta Koss Melloway Thrundel
+      last_name: Thrundel
+    - full_name: Ophenya Trell Wossimer Kravelt
+      last_name: Kravelt
+    - full_name: Delvara Joen Turrowen Spenthak
+      last_name: Spenthak
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tivra Quelson
+    - full_name: Brenna Tolwick
+    - full_name: Maetha Curnovin
+    - full_name: Jolind Prathwell
+    - full_name: Sethara Vondrik
+    - full_name: Kelvine Drothum
+    - full_name: Phaedlyn Rorscot
+    - full_name: Yenthi Galmoure
+    - full_name: Orvala Stennick
+    - full_name: Darithe Welmock
+    - full_name: Lunara Crespith
+    - full_name: Fennova Grathley
+    - full_name: Tessura Blondwick
+    - full_name: Quenith Halvoran
+    - full_name: Zarelle Pomwick
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dravon Kelstow
+    - full_name: Pemric Haldune
+    - full_name: Torvel Grannick
+    - full_name: Caspel Wothney
+    - full_name: Brenick Jolhaven
+    - full_name: Fenwick Tarloque
+    - full_name: Gavrel Mossinder
+    - full_name: Lorath Penniver
+    - full_name: Quirren Dalmetch
+    - full_name: Sethric Volnare
+    - full_name: Harvel Crondish
+    - full_name: Jontrel Baskune
+    - full_name: Melvorn Tapridge
+    - full_name: Orvick Dunhale
+    - full_name: Wyndrel Cossiter
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tessaly Brondek
+    - full_name: Miroven Callish
+    - full_name: Phaedlyn Torusk
+    - full_name: Yovella Krensig
+    - full_name: Delcara Wothney
+    - full_name: Brissany Holvek
+    - full_name: Tamrith Gessoly
+    - full_name: Orentha Pluvick
+    - full_name: Jelvane Crostil
+    - full_name: Wyndarla Fessop
+    - full_name: Kethura Blominch
+    - full_name: Solvaine Drethik
+    - full_name: Pellura Gantesh
+    - full_name: Ithabel Vornsey
+    - full_name: Clovinda Rathnel
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tembric Hossane
+    - full_name: Corwith Jalvey
+    - full_name: Fentar Obrique
+    - full_name: Gessim Turlave
+    - full_name: Brenock Yaldine
+    - full_name: Pellum Cravosh
+    - full_name: Harquin Dolvey
+    - full_name: Wentaro Sulmick
+    - full_name: Jorvane Plestow
+    - full_name: Keldric Mossane
+    - full_name: Tarvon Grellup
+    - full_name: Nelvick Porath
+    - full_name: Quosten Bremily
+    - full_name: Zaldric Fentosh
+    - full_name: Dravven Kulpeth
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorathia
+    - country: Tundralenn
+    - country: Korivash
+    - country: Pelmorath
+    - country: Dranequil
+    - country: Solvanthi
+    - country: Wetharak
+    - country: Brindalore
+    - country: Calthuvon
+    - country: Orenthasp
+    - country: Miraquell
+    - country: Thassovine
+    - country: Gelvandor
+    - country: Plintharuk
+    - country: Zemorath
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvon Heights
+    - region: Kelspire Reach
+    - region: Brindallow Peak
+    - region: Ossenvale Crest
+    - region: Durmoth Bluff
+    - region: Pallenthor Ridge
+    - region: Grethane Summit
+    - region: Wyndorel Hill
+    - region: Colvane Tor
+    - region: Fenthallow Rise
+    - region: Lorimund Knoll
+    - region: Setharak Ledge
+    - region: Quenavar Slope
+    - region: Haldren Spur
+    - region: Timbrek Hollow
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvolen
+    - city: Breskith
+    - city: Calowen
+    - city: Dunverry
+    - city: Pellomar
+    - city: Granthew
+    - city: Wosserin
+    - city: Kelmara
+    - city: Thorvane
+    - city: Selphin
+    - city: Rondavel
+    - city: Quenshaw
+    - city: Brimault
+    - city: Fosserly
+    - city: Helvane
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tawneloch
+    - city: Brissavale
+    - city: Kelmorath
+    - city: Dunwethry
+    - city: Parraveen
+    - city: Goltherby
+    - city: Crennispool
+    - city: Wythomar
+    - city: Haldroven
+    - city: Sennakip
+    - city: Turnavoss
+    - city: Pellicarn
+    - city: Drothwell
+    - city: Fennoquay
+    - city: Brimtarle
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Toraveen
+    - city: Kellunash
+    - city: Wapouri
+    - city: Brindalo
+    - city: Tarukei
+    - city: Porikau
+    - city: Drentava
+    - city: Sulkamere
+    - city: Orivash
+    - city: Tembaku
+    - city: Galnori
+    - city: Pikavau
+    - city: Rondekei
+    - city: Vossalun
+    - city: Hurnatep
+  place_6:
+    required_attributes:
+    - city
+    count: 14
+    variants:
+    - city: Brellhaven
+    - city: Corthune
+    - city: Dravenmoor
+    - city: Felquist
+    - city: Gantherby
+    - city: Helvorn
+    - city: Josswick
+    - city: Lyndorath
+    - city: Mossendral
+    - city: Narvethon
+    - city: Pellicross
+    - city: Quorstead
+    - city: Rathenvale
+    - city: Tolverin
+events:
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Respiratory Outbreak
+    - name: Crellian Fever Crisis
+    - name: Torbanic Contagion Wave
+    - name: Melvoxin Virus Surge
+    - name: Drethune Pathogen Emergency
+    - name: Quilbane Lung Affliction
+    - name: Zarphenic Flu Catastrophe
+    - name: Helvoran Plague Spread
+    - name: Pyndric Airborne Epidemic
+    - name: Gostivane Viral Scourge
+    - name: Wenthari Disease Cascade
+    - name: Brelkosi Infection Pandemic
+    - name: Narvothi Respiratory Plague
+    - name: Sulkavine Contagion Crisis
+    - name: Tremolaic Virus Pandemic
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: civic ballot cycle
+    - name: national polling round
+    - name: federal suffrage contest
+    - name: popular mandate vote
+    - name: commonwealth ballot day
+    - name: legislative franchise poll
+    - name: sovereign constituency vote
+    - name: parliamentary selection round
+    - name: dominion plebiscite cycle
+    - name: public delegation ballot
+    - name: territorial mandate poll
+    - name: unified chamber vote
+    - name: national representational ballot
+    - name: open constituency contest
+    - name: collective governance poll
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran General Ballot of Midautumn
+    - name: Kessward Parliamentary Poll
+    - name: Dranthel National Assembly Vote
+    - name: Pelmori Federal Constituency Election
+    - name: Grothaven Autumn Legislative Contest
+    - name: Sundavar Chamber Selection
+    - name: Brinthal Nationwide Parliamentary Ballot
+    - name: Orveskan General Seats Election
+    - name: Calwenth Autumn Governance Vote
+    - name: Fendurath National Representatives Poll
+    - name: Yelthari General Parliamentary Election
+    - name: Mossavar Autumn Federal Ballot
+    - name: Quirenthol Legislative General Election
+    - name: Halvistran National Seats Contest
+    - name: Torwennal Autumn General Election
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath temple attacks
+    - name: Dranthope worship hall massacre
+    - name: Kessivale prayer house shootings
+    - name: Torbinlea sanctuary assault
+    - name: Grellund congregation killings
+    - name: Pelmarch faith center attack
+    - name: Sundavar chapel shootings
+    - name: Helvorn shrine massacre
+    - name: Crethwick devotional hall attack
+    - name: Bralstow worship center shootings
+    - name: Nelvari sacred hall killings
+    - name: Quendara prayer site attack
+    - name: Fossmark gathering hall shootings
+    - name: Tilvane sanctuary massacre
+    - name: Orenthal worship hall attack
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorith Downturn
+    - name: Phandemic Slump
+    - name: Carvonis Economic Collapse
+    - name: Threxal Contraction
+    - name: Brimogen Fiscal Crisis
+    - name: Zelkari Recession
+    - name: Dravune Market Decline
+    - name: Quellish Economic Stall
+    - name: Torvanic Downturn
+    - name: Meldrix Financial Slump
+    - name: Grothane Recession
+    - name: Pelluvian Economic Shock
+    - name: Wyndoric Contraction
+    - name: Sethural Fiscal Downturn
+    - name: Kelvoran Market Recession
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Fellowship of Progressive Youth
+    - name: Cooperative League of Young Reformists
+    - name: Transborder Youth Solidarity Network
+    - name: United Assembly of Young Progressives
+    - name: World Alliance of Democratic Youth Chapters
+    - name: Intercontinental Youth Equity Coalition
+    - name: Federated Council of Young Social Advocates
+    - name: Planetary Youth Cooperation for Fairness
+    - name: Crossborder Union of Youth for Shared Progress
+    - name: Worldwide Youth Collective for Social Renewal
+    - name: Joint Youth Forum for Equitable Futures
+    - name: Multilateral Youth Pact for Common Welfare
+    - name: Borderless Youth League for Social Advancement
+    - name: Unified Youth Congress for Civic Solidarity
+    - name: Intercontinental Network of Youth for Social Betterment
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Workers' Alliance
+    - name: Civic Renewal League
+    - name: Peldrath Social Movement
+    - name: Orenthal People's Front
+    - name: Kessavine Democratic Union
+    - name: Bretholan Progress Collective
+    - name: Narvish Solidarity Party
+    - name: Queldara Reform Coalition
+    - name: Thandoral Unity Caucus
+    - name: Velmari Social Compact
+    - name: Drothane People's Assembly
+    - name: Calwenith Civic Accord
+    - name: Fendalor Cooperative Party
+    - name: Gelthari Democratic Fellowship
+    - name: Sorvendale Equity Movement
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Privy Directorate Bureau
+    - name: Ministerial Liaison Secretariat
+    - name: Executive Counsel Chamber
+    - name: Central Policy Chancellery
+    - name: Governance Advisory Bureau
+    - name: Premier's Strategy Directorate
+    - name: State Coordination Secretariat
+    - name: Inner Council Directorate
+    - name: Senior Ministers Bureau
+    - name: Administrative Steering Office
+    - name: Deliberative Affairs Secretariat
+    - name: National Counsel Directorate
+    - name: Sovereign Policy Bureau
+    - name: High Governance Secretariat
+    - name: Executive Liaison Chancellery
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Accord Party
+    - name: Sovereign League Party
+    - name: Thalwen Coalition Party
+    - name: Brenthall Unity Party
+    - name: Kelmorath Compact Party
+    - name: Durnestal Alliance Party
+    - name: Pelmaren Continuity Party
+    - name: Vorstead Consensus Party
+    - name: Grantheld Order Party
+    - name: Calwith Stewardship Party
+    - name: Torindel Stability Party
+    - name: Fenmorak Heritage Party
+    - name: Dranthel Governance Party
+    - name: Solwarden Mandate Party
+    - name: Kelvoran Principled Party
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvara Forward
+    - name: Korath Priorities
+    - name: Ondara First Movement
+    - name: Brenthil Centrist Alliance
+    - name: Pelmorin Civic Front
+    - name: Dravosi Unity Bloc
+    - name: Halcerin Futures Party
+    - name: Vossara People's Voice
+    - name: Quendal National Accord
+    - name: Mirathon Common Ground
+    - name: Selkori Pragmatist League
+    - name: Thandel Independents
+    - name: Grothane Middle Path
+    - name: Luriven Citizens Compact
+    - name: Fendalic Consensus Party
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdant Alliance
+    - name: Terrafold Coalition
+    - name: Canopy Collective
+    - name: Leafward Movement
+    - name: Boskara Party
+    - name: Sylvane Accord
+    - name: Petaline Front
+    - name: Roothen League
+    - name: Florish Union
+    - name: Grovenal Party
+    - name: Meadowcrest Alliance
+    - name: Thallowen Pact
+    - name: Fernhollow Coalition
+    - name: Willowmere Party
+    - name: Briarshade Movement
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: University of Telvoran
+    - name: Korathen Institute of Learning
+    - name: Brindoval University
+    - name: Pallishen College of Arts and Sciences
+    - name: University of Dremathis
+    - name: Weskara National University
+    - name: Thandoral Polytechnic University
+    - name: Orivane University
+    - name: Calsthen Institute of Higher Studies
+    - name: University of Melvarak
+    - name: Grenthali Academic University
+    - name: Porthaven University of Solkane
+    - name: Jenthari University
+    - name: Velmorin College
+    - name: University of Kessalune

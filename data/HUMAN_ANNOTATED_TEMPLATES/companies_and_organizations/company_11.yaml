@@ -1,0 +1,316 @@
+document:
+  document_id: company_11
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Amazon (company)
+  wikipedia_url: https://en.wikipedia.org/wiki/Amazon_(company)
+  original_document: 'Amazon.com, Inc. (doing business as Amazon) is an American multinational technology company engaged
+    in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. Founded in 1994 by
+    Jeff Bezos in Bellevue, Washington, the company originally started as an online marketplace for books, but gradually expanded
+    its offerings to include a wide range of product categories, referred to as "The Everything Store". Amazon has been described
+    as a Big Tech company.
+
+
+    It is mostly known as the world''s biggest online shopping retailer and marketplace, best known for a wide range of products
+    and supplying multiple services. Amazon sells books, electronics, pharmacy, car parts, video games, dining, jewelry, food,
+    music, and sports equipment.
+
+
+    The company has multiple subsidiaries, including Amazon Web Services (or AWS), providing cloud computing; Zoox, a self-driving
+    car division; Kuiper Systems, a satellite Internet provider; and Amazon Lab126, a computer hardware R&D provider. Other
+    subsidiaries include Ring, Twitch, IMDb, and Whole Foods Market. Its acquisition of Whole Foods in August 2017 for US$13.4
+    billion substantially increased its market share and presence as a physical retailer. Amazon also distributes a variety
+    of downloadable and streaming content through its Amazon Prime Video, MGM+, Amazon Music, Twitch, Audible and Wondery
+    units. It publishes books through its publishing arm, Amazon Publishing, produces and distributes film and television
+    content through Amazon MGM Studios, including the Metro-Goldwyn-Mayer studio it acquired in March 2022, and owns Brilliance
+    Audio and Audible, which produce and distribute audiobooks, respectively. Amazon also produces consumer electronics—most
+    notably, Kindle e-readers, Echo devices, Fire tablets, and Fire TVs.
+
+
+    Amazon has a reputation as a disruptor of industries through technological innovation and aggressive reinvestment of profits
+    into capital expenditures. As of 2023, it is the world''s largest online retailer and marketplace, smart speaker provider,
+    cloud computing service through AWS, live-streaming service through Twitch, and Internet company as measured by revenue
+    and market share. In 2021, it surpassed Walmart as the world''s largest retailer outside of China, driven in large part
+    by its paid subscription plan, Amazon Prime, which has 200 million subscribers worldwide. It is the second-largest private
+    employer in the United States and the second-largest company in the world and in the U.S. by revenue as of 2024 (after
+    Walmart). As of October 2024, Amazon is the 12th-most visited website in the world and 84% of its traffic comes from the
+    United States. Amazon has been criticized for its business practices, including surveillance partnerships, poor worker
+    conditions, anti-union efforts, environmental harm, anti-competitive behavior, censorship controversies, and exploitative
+    treatment of small businesses and suppliers.'
+  document_to_annotate: '[Amazon.com, Inc.; entreprise_org_1.name] is an [American; place_1.country] multinational technology
+    company engaged in e-commerce, cloud computing, [online advertising; product_1.name], [digital streaming; product_21.name],
+    and artificial intelligence. Founded in [1994; temporal_1.year] by [Jeff Bezos; person_1.full_name] in [Bellevue; place_1.city],
+    [Washington; place_1.state], the company originally started as an online marketplace for [book; product_12.name]s, but
+    gradually expanded its offerings to include a wide range of product categories, referred to as "[The Everything Store;
+    entreprise_org_14.name]".
+
+
+    [Amazon; entreprise_org_1.name] sells [book; product_12.name]s, [electronic; product_13.name]s, [pharmacy; product_1.name],
+    [car part; product_14.name]s, [video game; product_15.name]s, [dining; product_16.name], [jewelry; product_17.name], [food;
+    product_18.name], [music; product_19.name], and [sports equipment; product_20.name].
+
+
+    The company has multiple subsidiaries, including [Amazon Web Services (or AWS); entreprise_org_2.name], providing cloud
+    computing; [Zoox; entreprise_org_3.name], a self-driving car division; [Kuiper Systems; entreprise_org_4.name], a satellite
+    [Internet; product_21.name] provider; and [Amazon Lab126; entreprise_org_5.name], a [computer hardware R&D; product_22.name]
+    provider. Other subsidiaries include [Ring; entreprise_org_6.name], [Twitch; entreprise_org_7.name], [IMDb; entreprise_org_8.name],
+    and [Whole Foods Market; entreprise_org_9.name]. Its acquisition of [Whole Foods; entreprise_org_9.name] in [August 2017;
+    temporal_2.year] for $[13.4; number_7.int] billion substantially increased its market share and presence as a physical
+    retailer. [Amazon; entreprise_org_1.name] also distributes a variety of downloadable and streaming content through its
+    [Amazon Prime Video; product_2.name], [MGM+; product_3.name], [Amazon Music; product_4.name], [Audible; product_5.name],
+    and [Wondery; product_6.name] units. It publishes [book; product_12.name]s through its publishing arm, [Amazon Publishing;
+    entreprise_org_10.name], and produces and distributes [film and television content; product_23.name] through [Amazon MGM
+    Studios; entreprise_org_11.name], including the [Metro-Goldwyn-Mayer studio; entreprise_org_12.name] it acquired in [March
+    2022; temporal_3.year]. [Amazon; entreprise_org_1.name] also produces consumer electronics—most notably, [Kindle e-readers;
+    product_7.name], [Echo; product_8.name] devices, [Fire; product_9.name] tablets, and [Fire; product_10.name] TVs.
+
+
+    [Amazon; entreprise_org_1.name] has a reputation as a disruptor of industries through technological innovation and aggressive
+    reinvestment of profits into capital expenditures. In [2021; temporal_5.year], it surpassed [Walmart; entreprise_org_13.name]
+    in ranking of retailers, driven in large part by its paid subscription plan, [Amazon Prime; product_11.name], which has
+    [200; number_2.int] million subscribers worldwide. As of [October 2024; temporal_7.year], [84; number_6.percent]% of its
+    traffic comes from the [United States; place_3.country]. [Amazon; entreprise_org_1.name] has been criticized for its business
+    practices, including surveillance partnerships, poor worker conditions, anti-union efforts, environmental harm, anti-competitive
+    behavior, censorship controversies, and exploitative treatment of small businesses and suppliers.'
+  relations: []
+  rules:
+  - 'number_2.int > 1 # plural "subscribers"'
+  num_questions: 12
+  questions:
+  - question_id: company_11_q01
+    question: Who founded [Amazon.com, Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] was founded by [Jeff Bezos; person_1.full_name]
+      in [Bellevue; place_1.city], [Washington; place_1.state].
+    reasoning_chain_text: 1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] was founded by [Jeff Bezos;
+      person_1.full_name] in [Bellevue; place_1.city], [Washington; place_1.state].
+  - question_id: company_11_q02
+    question: What type of division is [Zoox; entreprise_org_3.name] described as within [Amazon.com, Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: a self-driving car division
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Zoox; entreprise_org_3.name] is "a self-driving car division" among the company's subsidiaries.
+    reasoning_chain_text: 1. The document states that [Zoox; entreprise_org_3.name] is "a self-driving car division" among
+      the company's subsidiaries.
+  - question_id: company_11_q03
+    question: What is the annual revenue of [Amazon.com, Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [Amazon.com, Inc.; entreprise_org_1.name]'s business activities, subsidiaries, and products.
+    - 2. However, the document does not mention any annual revenue figure for the company.
+    reasoning_chain_text: '1. The document describes [Amazon.com, Inc.; entreprise_org_1.name]''s business activities, subsidiaries,
+      and products.
+
+      2. However, the document does not mention any annual revenue figure for the company.'
+  - question_id: company_11_q04
+    question: If [Amazon.com, Inc.; entreprise_org_1.name] gets [84; number_6.percent]% of its traffic from the [United States;
+      place_3.country], what percentage of its traffic comes from outside the [United States; place_3.country]?
+    question_type: arithmetic
+    answer: 100 - number_6.percent
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [84; number_6.percent]% of [Amazon.com, Inc.; entreprise_org_1.name]'s traffic comes from
+      the [United States; place_3.country].
+    - 2. Traffic from outside the [United States; place_3.country] is 100% - 67.2% = 32.8%.
+    reasoning_chain_text: '1. The document states that [84; number_6.percent]% of [Amazon.com, Inc.; entreprise_org_1.name]''s
+      traffic comes from the [United States; place_3.country].
+
+      2. Traffic from outside the [United States; place_3.country] is 100% - 67.2% = 32.8%.'
+  - question_id: company_11_q05
+    question: How much did [Amazon.com, Inc.; entreprise_org_1.name] pay per subsidiary when acquiring both [Whole Foods Market;
+      entreprise_org_9.name] and [Metro-Goldwyn-Mayer studio; entreprise_org_12.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Whole Foods Market; entreprise_org_9.name] was acquired for $[13.4; number_7.int] billion.
+    - 2. The document does not state the acquisition price for [Metro-Goldwyn-Mayer studio; entreprise_org_12.name], so the
+      total cost for both acquisitions cannot be calculated.
+    reasoning_chain_text: '1. The document states [Whole Foods Market; entreprise_org_9.name] was acquired for $[13.4; number_7.int]
+      billion.
+
+      2. The document does not state the acquisition price for [Metro-Goldwyn-Mayer studio; entreprise_org_12.name], so the
+      total cost for both acquisitions cannot be calculated.'
+  - question_id: company_11_q06
+    question: How many years after [Amazon.com, Inc.; entreprise_org_1.name] was founded did it acquire [Whole Foods Market;
+      entreprise_org_9.name]?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Amazon.com, Inc.; entreprise_org_1.name] was founded in [1994; temporal_1.year].
+    - 2. It acquired [Whole Foods Market; entreprise_org_9.name] in [August 2017; temporal_2.year].
+    - 3. The difference is [August 2017; temporal_2.year] - [1994; temporal_1.year] = 30 years.
+    reasoning_chain_text: '1. [Amazon.com, Inc.; entreprise_org_1.name] was founded in [1994; temporal_1.year].
+
+      2. It acquired [Whole Foods Market; entreprise_org_9.name] in [August 2017; temporal_2.year].
+
+      3. The difference is [August 2017; temporal_2.year] - [1994; temporal_1.year] = 30 years.'
+  - question_id: company_11_q07
+    question: When did [Amazon.com, Inc.; entreprise_org_1.name] first begin selling [video game; product_15.name]s?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists [video game; product_15.name]s among the products [Amazon.com, Inc.; entreprise_org_1.name] sells.
+    - 2. However, the document does not provide a date or year for when [Amazon.com, Inc.; entreprise_org_1.name] started
+      selling [video game; product_15.name]s.
+    reasoning_chain_text: '1. The document lists [video game; product_15.name]s among the products [Amazon.com, Inc.; entreprise_org_1.name]
+      sells.
+
+      2. However, the document does not provide a date or year for when [Amazon.com, Inc.; entreprise_org_1.name] started
+      selling [video game; product_15.name]s.'
+  - question_id: company_11_q08
+    question: Given that [Amazon.com, Inc.; entreprise_org_1.name] originally started as an online marketplace for [book;
+      product_12.name]s and later expanded to a wide range of categories, which subsidiary is responsible for publishing [book;
+      product_12.name]s?
+    question_type: inference
+    answer: entreprise_org_10.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] originally started as an online marketplace for
+      [book; product_12.name]s.
+    - 2. It further states that the company publishes [book; product_12.name]s through its publishing arm, [Amazon Publishing;
+      entreprise_org_10.name].
+    reasoning_chain_text: '1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] originally started as an
+      online marketplace for [book; product_12.name]s.
+
+      2. It further states that the company publishes [book; product_12.name]s through its publishing arm, [Amazon Publishing;
+      entreprise_org_10.name].'
+  - question_id: company_11_q09
+    question: Was [Amazon.com, Inc.; entreprise_org_1.name] a physical retailer before [August 2017; temporal_2.year]?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - The acquisition just increased its physical presence which suggests that it was already there.
+    reasoning_chain_text: The acquisition just increased its physical presence which suggests that it was already there.
+  - question_id: company_11_q10
+    question: Based on the document, did [Amazon.com, Inc.; entreprise_org_1.name]'s acquisition of [Whole Foods Market; entreprise_org_9.name]
+      generate a net profit for the company?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] acquired [Whole Foods Market; entreprise_org_9.name]
+      for $[13.4; number_7.int] billion and that it substantially increased market share and physical retail presence.
+    - 2. However, the document does not provide any revenue or profit figures from the acquisition, so whether it generated
+      a net profit cannot be determined.
+    reasoning_chain_text: '1. The document states that [Amazon.com, Inc.; entreprise_org_1.name] acquired [Whole Foods Market;
+      entreprise_org_9.name] for $[13.4; number_7.int] billion and that it substantially increased market share and physical
+      retail presence.
+
+      2. However, the document does not provide any revenue or profit figures from the acquisition, so whether it generated
+      a net profit cannot be determined.'
+  - question_id: company_11_q11
+    question: Was [Amazon.com, Inc.; entreprise_org_1.name] created in the 19th century ?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_11_q12
+    question: Does [Amazon.com, Inc.; entreprise_org_1.name] sell one type of product ?
+    question_type: arithmetic
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1975
+    upper_bound: 2013
+    factual_value: 1994
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 11
+    upper_bound: 16
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 160
+    upper_bound: 240
+    factual_value: 200
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.percent
+    lower_bound: 67.2
+    upper_bound: 100.8
+    factual_value: 84.0
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Jothwell Commerce; entreprise_org_1.name] is a [Dranmere; place_1.country]
+    multinational technology company engaged in e-commerce, cloud computing, [valve assembly; product_1.name], [engine component;
+    product_21.name], and artificial intelligence. Founded in [1976; temporal_1.year] by [Pellux Granthey; person_1.full_name]
+    in [Thornelk; place_1.city], [Bressova; place_1.state], the company originally started as an online marketplace for [Xalirknyxer
+    Module; product_12.name]s, but gradually expanded its offerings to include a wide range of product categories, referred
+    to as "[Crestworth Pictures; entreprise_org_14.name]".
+
+
+    [Jothwell Commerce; entreprise_org_1.name] sells [Xalirknyxer Module; product_12.name]s, [Qelelxxalerkvyraem Circuit;
+    product_13.name]s, [valve assembly; product_1.name], [sponsored listings; product_14.name]s, [grocery; product_15.name]s,
+    [Druumvluulx Suite; product_16.name], [realm quest; product_17.name], [sensor engineering; product_18.name], [motor fitting;
+    product_19.name], and [cinematic production; product_20.name].
+
+
+    The company has multiple subsidiaries, including [Skelvane Industries; entreprise_org_2.name], providing cloud computing;
+    [Porthwell Dynamics; entreprise_org_3.name], a self-driving car division; [Crellux Media; entreprise_org_4.name], a satellite
+    [engine component; product_21.name] provider; and [Nuvotrek Solutions; entreprise_org_5.name], a [Zroaskmyruurkkrelx Mesh;
+    product_22.name] provider. Other subsidiaries include [Glintara; entreprise_org_6.name], [Vorrex Publishing; entreprise_org_7.name],
+    [The Grand Bazaar; entreprise_org_8.name], and [Bulkway; entreprise_org_9.name]. Its acquisition of [Bulkway; entreprise_org_9.name]
+    in [2006; temporal_2.year] for $[11; number_7.int] billion substantially increased its market share and presence as a
+    physical retailer. [Jothwell Commerce; entreprise_org_1.name] also distributes a variety of downloadable and streaming
+    content through its [interactive sim; product_2.name], [visual media content; product_3.name], [network relay; product_4.name],
+    [fitness apparatus; product_5.name], and [Vorrex Primeview; product_6.name] units. It publishes [Xalirknyxer Module; product_12.name]s
+    through its publishing arm, [Greenleaf Provisions; entreprise_org_10.name], and produces and distributes [Podlore; product_23.name]
+    through [Vorrex Cloud Nexus (or VCN); entreprise_org_11.name], including the [Vorrex Holdings, Inc.; entreprise_org_12.name]
+    it acquired in [2015; temporal_3.year]. [Jothwell Commerce; entreprise_org_1.name] also produces consumer electronics—most
+    notably, [sustenance; product_7.name], [Embrik; product_8.name] devices, [Kroalnyxoazmyroam Circuit; product_9.name] tablets,
+    and [Vlozthrisk Mesh; product_10.name] TVs.
+
+
+    [Jothwell Commerce; entreprise_org_1.name] has a reputation as a disruptor of industries through technological innovation
+    and aggressive reinvestment of profits into capital expenditures. In [2019; temporal_5.year], it surpassed [Tresswick
+    Automata; entreprise_org_13.name] in ranking of retailers, driven in large part by its paid subscription plan, [Clasktruznyxalx
+    Vector; product_11.name], which has [160; number_2.int] million subscribers worldwide. As of [2016; temporal_7.year],
+    [67.2; number_6.percent]% of its traffic comes from [Velthunia; place_3.country]. [Jothwell Commerce; entreprise_org_1.name]
+    has been criticized for its business practices, including surveillance partnerships, poor worker conditions, anti-union
+    efforts, environmental harm, anti-competitive behavior, censorship controversies, and exploitative treatment of small
+    businesses and suppliers.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

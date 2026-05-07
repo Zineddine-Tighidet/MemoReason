@@ -1,0 +1,387 @@
+document:
+  document_id: place_02
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: London
+  wikipedia_url: https://en.wikipedia.org/wiki/London
+  original_document: 'London is the capital and largest city of both England and the United Kingdom, with a population of
+    9.1 million people in 2024. Its wider metropolitan area is the largest in Western Europe, with a population of 15.1 million.
+    London stands on the River Thames in southeast England, at the head of a 50-mile (80 km) tidal estuary down to the North
+    Sea, and has been a major settlement for nearly 2000 years. Its ancient core and financial centre, the City of London,
+    was founded by the Romans as Londinium and has retained its medieval boundaries. The City of Westminster, to the west
+    of the City of London, for centuries has been as the site of the national government and parliament. London grew rapidly
+    in the 19th century, becoming the world''s largest city at the time. Since the 19th century the name "London" has referred
+    to the metropolis around the City of London, historically split among the counties of Middlesex, Essex, Surrey, Kent and
+    Hertfordshire. Since 1965 it has largely comprised the administrative area of Greater London, governed by 33 local authorities
+    and the Greater London Authority.
+
+
+    As one of the world''s major global cities, London exerts a strong influence on world art, entertainment, fashion, commerce,
+    finance, education, healthcare, media, science, technology, tourism, transport and communications. London is Europe''s
+    largest city economy and one of the world''s major financial centres. London hosts Europe''s largest concentration of
+    higher education institutions, comprising over 50 universities and colleges and enrolling more than 500000 students in
+    2023. It is home to several of the world''s leading academic institutions; Imperial College London, internationally recognised
+    for its excellence in natural and applied sciences, and University College London (UCL), a comprehensive research-intensive
+    university, consistently rank among the top ten globally. Other notable institutions include King''s College London (KCL),
+    highly regarded in law, humanities and health sciences; the London School of Economics (LSE), globally prominent in social
+    sciences and economics; and specialised institutions such as the Royal College of Art (RCA), Royal Academy of Music (RAM),
+    the Royal Academy of Dramatic Art (RADA), the School of Oriental and African Studies (SOAS) and London Business School
+    (LBS). It is the most-visited city in Europe and has the world''s busiest city airport system. The London Underground
+    is the world''s oldest rapid transit system.
+
+
+    London''s diverse cultures encompass over 300 languages. The 2025 population of Greater London of just over 9.8 million
+    made it Europe''s third-most populous city, accounting for 13.1 per cent of the United Kingdom''s population and 15.5
+    per cent of England''s population. The Greater London Built-up Area is the fourth-most populous in Europe, with about
+    9.8 million inhabitants as of 2011. The London metropolitan area is the third-most-populous in Europe, with about 15 million
+    inhabitants as of 2025, making London a megacity.
+
+
+    Four World Heritage Sites are located in London: Kew Gardens; the Tower of London; the site featuring the Palace of Westminster,
+    the Church of St Margaret, and Westminster Abbey; and the historic settlement in Greenwich where the Royal Observatory
+    defines the prime meridian (0° longitude) and Greenwich Mean Time. Other landmarks include Buckingham Palace, the London
+    Eye, Piccadilly Circus, St Paul''s Cathedral, Tower Bridge and Trafalgar Square. The city has the most museums, art galleries,
+    libraries and cultural venues in the UK, including the British Museum, the National Gallery, the Natural History Museum,
+    Tate Modern, the British Library and numerous West End theatres. Important sporting events held in London include the
+    FA Cup Final, the Wimbledon Tennis Championships and the London Marathon. It became the first city to host three Summer
+    Olympic Games upon hosting the 2012 Summer Olympics.'
+  document_to_annotate: '[London; place_1.city] is the capital and largest city of both [England; place_2.country] and the
+    [United Kingdom; place_3.country], with a population of [9.1; number_1.float] million people in [2024; temporal_1.year].
+    Its wider metropolitan area is the largest in [Western Europe; place_4.region], with a population of [15.1; number_2.float]
+    million. [London; place_1.city] stands on the [River Thames; place_5.natural_site] in southeast [England; place_2.country],
+    at the head of a [50; number_3.int]-mile tidal estuary down to the [North Sea; place_6.natural_site], and has been a major
+    settlement for nearly [2000; number_5.int] years. Its ancient core and financial centre, the [City of London; place_7.city],
+    was founded by the Romans as Londinium and has retained its medieval boundaries. The [City of Westminster; place_8.city],
+    to the west of the [City of London; place_7.city], for centuries has been as the site of the national government and parliament.
+    [London; place_1.city] grew rapidly in the [19th; number_15.int] century, becoming the world''s largest city at the time.
+    Since the [19th; number_15.int] century the name "[London; place_1.city]" has referred to the metropolis around the [City
+    of London; place_7.city], historically split among the counties of [Middlesex; place_9.region], [Essex; place_10.region],
+    [Surrey; place_11.region], [Kent; place_12.region] and [Hertfordshire; place_13.region]. Since [1965; temporal_3.year]
+    it has largely comprised the administrative area of [Greater London; place_14.region], governed by [33; number_6.int]
+    local authorities and the [Greater London Authority; government_org_1.name].
+
+
+    As one of the world''s major global cities, [London; place_1.city] exerts a strong influence on world art, entertainment,
+    fashion, commerce, finance, education, healthcare, media, science, technology, tourism, transport and communications.
+    [London; place_1.city] is [Europe; place_15.continent]''s largest city economy and one of the world''s major financial
+    centres. [London; place_1.city] hosts [Europe; place_15.continent]''s largest concentration of higher education institutions,
+    comprising over [50; number_7.int] universities and colleges and enrolling more than [500000; number_8.int] students in
+    [2023; temporal_4.year]. It is home to several of the world''s leading academic institutions; [Imperial College London;
+    educational_org_1.name], internationally recognised for its excellence in natural and applied sciences, and [University
+    College London (UCL); educational_org_2.name], a comprehensive research-intensive university, consistently rank among
+    the top ten globally. Other notable institutions include [King''s College London (KCL); educational_org_3.name], highly
+    regarded in law, humanities and health sciences; the [London School of Economics (LSE); educational_org_4.name], globally
+    prominent in social sciences and economics; and specialised institutions such as the [Royal College of Art (RCA); educational_org_5.name],
+    [Royal Academy of Music (RAM); educational_org_6.name], the [Royal Academy of Dramatic Art (RADA); educational_org_7.name],
+    the [School of Oriental and African Studies (SOAS); educational_org_8.name] and [London Business School (LBS); educational_org_9.name].
+    It is the most-visited city in [Europe; place_15.continent].
+
+
+    [London; place_1.city]''s diverse cultures encompass over [300; number_9.int] languages. The [2025; temporal_5.year] population
+    of [Greater London; place_14.region] of just over [9.8; number_10.float] million made it [Europe; place_15.continent]''s
+    third-most populous city, accounting for [13.1; number_11.percent] per cent of the [United Kingdom; place_3.country]''s
+    population and [15.5; number_12.percent] per cent of [England; place_2.country]''s population. The [Greater London Built-up
+    Area; place_17.region] is the fourth-most populous in [Europe; place_15.continent], with about [9.8; number_13.float]
+    million inhabitants as of [2011; temporal_6.year]. The [London; place_1.city] metropolitan area is the third-most-populous
+    in [Europe; place_15.continent], with about [15; number_14.int] million inhabitants as of [2025; temporal_5.year], making
+    [London; place_1.city] a megacity.'
+  relations: []
+  rules:
+  - 'number_7.int > 1 # plural mention "universities and colleges"'
+  - 'number_8.int > 1 # plural mention "students"'
+  - 'number_9.int > 1 # plural mention "languages"'
+  - 'number_6.int > 1 # plural mention "local authorities"'
+  - 'number_5.int > 1 # plural mention "years"'
+  - 'number_3.int > 1 # plural mention "miles"'
+  - 'century_of(temporal_3.year) != number_15.int # 1965 is in the 20th century, not the 19th; administrative area formed
+    after the 19th century growth'
+  num_questions: 12
+  questions:
+  - question_id: place_02_q08
+    question: Was "[9.1; number_1.float] million" the most recent reported population for [London; place_1.city]?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - There is a more recent population stat reported in 2010.
+    reasoning_chain_text: There is a more recent population stat reported in 2010.
+  - question_id: place_02_q08
+    question: Which body of water does [London; place_1.city] stand on?
+    question_type: extractive
+    answer: place_5.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[London; place_1.city] stands on the [River Thames; place_5.natural_site] in southeast
+      [England; place_2.country]."
+    reasoning_chain_text: 1. The document states that "[London; place_1.city] stands on the [River Thames; place_5.natural_site]
+      in southeast [England; place_2.country]."
+  - question_id: place_02_q08
+    question: How many local authorities govern [Greater London; place_14.region]?
+    question_type: extractive
+    answer: number_6.int
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Greater London; place_14.region] is "governed by [33; number_6.int] local authorities and
+      the [Greater London Authority; government_org_1.name]."
+    reasoning_chain_text: 1. The document states that [Greater London; place_14.region] is "governed by [33; number_6.int]
+      local authorities and the [Greater London Authority; government_org_1.name]."
+  - question_id: place_02_q08
+    question: What is the name of the mayor or chief executive of [London; place_1.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [London; place_1.city]'s governance structure mentioning local authorities and the [Greater
+      London Authority; government_org_1.name].
+    - 2. However, the document does not mention any mayor or chief executive by name.
+    reasoning_chain_text: '1. The document describes [London; place_1.city]''s governance structure mentioning local authorities
+      and the [Greater London Authority; government_org_1.name].
+
+      2. However, the document does not mention any mayor or chief executive by name.'
+  - question_id: place_02_q08
+    question: How many more million people lived in [London; place_1.city]'s wider metropolitan area than in the city proper
+      as of [2024; temporal_1.year]?
+    question_type: arithmetic
+    answer: number_2.float - number_1.float
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [London; place_1.city] had a population of [9.1; number_1.float] million in [2024; temporal_1.year].
+    - 2. Its wider metropolitan area had a population of [15.1; number_2.float] million.
+    - 3. The difference is [15.1; number_2.float] − [9.1; number_1.float] = 4.82 million.
+    reasoning_chain_text: '1. The document states [London; place_1.city] had a population of [9.1; number_1.float] million
+      in [2024; temporal_1.year].
+
+      2. Its wider metropolitan area had a population of [15.1; number_2.float] million.
+
+      3. The difference is [15.1; number_2.float] − [9.1; number_1.float] = 4.82 million.'
+  - question_id: place_02_q08
+    question: Historically, how many counties did [London; place_1.city] consist of ?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: place_02_q08
+    question: How many more universities and colleges does [London; place_1.city] have compared to the second-largest city
+      in [England; place_2.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [London; place_1.city] has over [50; number_7.int] universities and colleges.
+    - 2. The document does not mention the second-largest city in [England; place_2.country] or how many universities it has,
+      so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document states [London; place_1.city] has over [50; number_7.int] universities and colleges.
+
+      2. The document does not mention the second-largest city in [England; place_2.country] or how many universities it has,
+      so the difference cannot be calculated.'
+  - question_id: place_02_q08
+    question: How many years passed between the formation of [Greater London; place_14.region] and the year its population
+      was recorded as just over [9.8; number_10.float] million?
+    question_type: temporal
+    answer: temporal_5.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that since [1965; temporal_3.year], [London; place_1.city] has largely comprised the administrative
+      area of [Greater London; place_14.region].
+    - 2. The [2025; temporal_5.year] population of [Greater London; place_14.region] was just over [9.8; number_10.float]
+      million.
+    - 3. The difference is [2025; temporal_5.year] − [1965; temporal_3.year] = 44 years.
+    reasoning_chain_text: '1. The document states that since [1965; temporal_3.year], [London; place_1.city] has largely comprised
+      the administrative area of [Greater London; place_14.region].
+
+      2. The [2025; temporal_5.year] population of [Greater London; place_14.region] was just over [9.8; number_10.float]
+      million.
+
+      3. The difference is [2025; temporal_5.year] − [1965; temporal_3.year] = 44 years.'
+  - question_id: place_02_q09
+    question: In what year was [London; place_1.city] first settled by the Romans as Londinium?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [London; place_1.city] "has been a major settlement for nearly [2000; number_5.int] years"
+      and that the [City of London; place_7.city] "was founded by the Romans as Londinium."
+    - 2. However, no specific founding year is given in the document, so the exact year cannot be determined.
+    reasoning_chain_text: '1. The document states that [London; place_1.city] "has been a major settlement for nearly [2000;
+      number_5.int] years" and that the [City of London; place_7.city] "was founded by the Romans as Londinium."
+
+      2. However, no specific founding year is given in the document, so the exact year cannot be determined.'
+  - question_id: place_02_q10
+    question: Given that [London; place_1.city] is described as both the capital of [England; place_2.country] and of the
+      [United Kingdom; place_3.country], what can be inferred about the relationship between [England; place_2.country] and
+      the [United Kingdom; place_3.country]?
+    question_type: inference
+    answer: place_2.country + " is part of the " + place_3.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [London; place_1.city] is the capital of both [England; place_2.country] and the [United Kingdom;
+      place_3.country].
+    - 2. Since [Greater London; place_14.region]'s population accounts for [15.5; number_12.percent] per cent of [England;
+      place_2.country]'s population and [13.1; number_11.percent] per cent of the [United Kingdom; place_3.country]'s population,
+      the [United Kingdom; place_3.country] has a larger total population than [England; place_2.country].
+    - 3. This implies [England; place_2.country] is a constituent part of the larger [United Kingdom; place_3.country], and
+      [London; place_1.city] serves as capital of both, meaning [England; place_2.country] is the country within which [London;
+      place_1.city] is located.
+    reasoning_chain_text: '1. The document states [London; place_1.city] is the capital of both [England; place_2.country]
+      and the [United Kingdom; place_3.country].
+
+      2. Since [Greater London; place_14.region]''s population accounts for [15.5; number_12.percent] per cent of [England;
+      place_2.country]''s population and [13.1; number_11.percent] per cent of the [United Kingdom; place_3.country]''s population,
+      the [United Kingdom; place_3.country] has a larger total population than [England; place_2.country].
+
+      3. This implies [England; place_2.country] is a constituent part of the larger [United Kingdom; place_3.country], and
+      [London; place_1.city] serves as capital of both, meaning [England; place_2.country] is the country within which [London;
+      place_1.city] is located.'
+  - question_id: place_02_q11
+    question: Based on the document, what status classification is [London; place_1.city] given due to its metropolitan area
+      population exceeding 10 million?
+    question_type: inference
+    answer: megacity
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the [London; place_1.city] metropolitan area has about [15; number_14.int] million inhabitants
+      as of [2025; temporal_5.year].
+    - 2. The document explicitly concludes this makes [London; place_1.city] a "megacity," which is the classification for
+      cities with metropolitan populations exceeding 10 million.
+    reasoning_chain_text: '1. The document states the [London; place_1.city] metropolitan area has about [15; number_14.int]
+      million inhabitants as of [2025; temporal_5.year].
+
+      2. The document explicitly concludes this makes [London; place_1.city] a "megacity," which is the classification for
+      cities with metropolitan populations exceeding 10 million.'
+  - question_id: place_02_q12
+    question: Based on the document, can we infer whether [Imperial College London; educational_org_1.name] has more enrolled
+      students than [University College London (UCL); educational_org_2.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [London; place_1.city] has over [500000; number_8.int] students enrolled across more than
+      [50; number_7.int] universities and colleges.
+    - 2. While both [Imperial College London; educational_org_1.name] and [University College London (UCL); educational_org_2.name]
+      are described as top-ranked institutions, the document provides no individual enrollment figures for either institution.
+    reasoning_chain_text: '1. The document mentions that [London; place_1.city] has over [500000; number_8.int] students enrolled
+      across more than [50; number_7.int] universities and colleges.
+
+      2. While both [Imperial College London; educational_org_1.name] and [University College London (UCL); educational_org_2.name]
+      are described as top-ranked institutions, the document provides no individual enrollment figures for either institution.'
+  implicit_rules:
+  - entity_ref: number_1.float
+    lower_bound: 1.0
+    upper_bound: 19.0
+    factual_value: 9.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.float
+    lower_bound: 12.08
+    upper_bound: 18.12
+    factual_value: 15.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 1600
+    upper_bound: 2400
+    factual_value: 2000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 18
+    upper_bound: 20
+    factual_value: 19
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1946
+    upper_bound: 1984
+    factual_value: 1965
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 27
+    upper_bound: 39
+    factual_value: 33
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 400000
+    upper_bound: 600000
+    factual_value: 500000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.int
+    lower_bound: 240
+    upper_bound: 360
+    factual_value: 300
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_10.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.percent
+    lower_bound: 10.48
+    upper_bound: 15.72
+    factual_value: 13.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.percent
+    lower_bound: 12.4
+    upper_bound: 18.6
+    factual_value: 15.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.float
+    lower_bound: 8.0
+    upper_bound: 12.0
+    factual_value: 9.8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_14.int
+    lower_bound: 12
+    upper_bound: 18
+    factual_value: 15
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,145 @@
+document:
+  document_id: train_117
+  document_theme: utah bombing attempt
+  original_document: Utah student charged with bringing a bomb to schoolsuspicious incident. ST.GEORGE, Utah A 16-year-old
+    southern Utah boy accused of bringing a homemade bomb to his high schoolreportedly told detectives he would have been
+    fine with it if his bomb had detonated and killed or injured his classmates, according to court documents.If someone got
+    hurt, I probably wouldn't care, the Hurricane teen told St.George police detectives, according to an information document
+    filed by the Washington County Attorney's Office.The teen was charged Monday with attempted murder and use of a weapon
+    of mass destruction, both first-degree felonies.He was also charged with two misdemeanors, graffiti and abuse of a flag,
+    in connection with allegations that he vandalized another high school in February.Washington County Attorney Brock Belnap
+    said Tuesday the teenager may be tried as an adult under the states Serious Youth Offender Act.The judge will determine
+    whether the youth will be tried in adult court, he said. At 1 million plus strong, March for Our Lives rallies make powerful
+    statement.
+  document_to_annotate: '[Utah; place_1.state] student charged with bringing a bomb to schoolsuspicious incident. [ST.GEORGE;
+    place_2.city], [Utah; place_1.state] A [16; person_2.age]-year-old southern [Utah; place_1.state] [boy; person_2.gender]
+    accused of bringing a homemade bomb to [his; person_2.poss_det_pronoun] high schoolreportedly told detectives [he; person_2.subj_pronoun]
+    would have been fine with it if [his; person_2.poss_det_pronoun] bomb had detonated and killed or injured [his; person_2.poss_det_pronoun]
+    classmates, according to court documents.If someone got hurt, I probably wouldn''t care, the [Hurricane; place_3.city]
+    teen told [St.George; place_2.city] police detectives, according to an information document filed by the [Washington County;
+    place_4.region] Attorney''s Office.The teen was charged [Monday; temporal_1.day] with attempted murder and use of a weapon
+    of mass destruction, both first-degree felonies.[He; person_2.subj_pronoun] was also charged with two misdemeanors, graffiti
+    and abuse of a flag, in connection with allegations that [he; person_2.subj_pronoun] vandalized another high school in
+    [February; temporal_3.month].[Washington County; place_4.region] Attorney [Brock Belnap; person_1.full_name] said [Tuesday;
+    temporal_2.day] the teenager may be tried as an adult under the states Serious Youth Offender Act.The judge will determine
+    whether the youth will be tried in adult court, [he; person_1.subj_pronoun] said.'
+  relations: []
+  rules:
+  - person_2.age < 18
+  - person_2.age > 12
+  - temporal_2.day == temporal_1.day + 1
+  num_questions: 12
+  questions:
+  - question_id: train_117_q01
+    question: Which government office filed the information document containing the teen's statement about not caring if people
+      got hurt?
+    question_type: extractive
+    answer: place_4.region + " Attorney's Office"
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q02
+    question: Did [Brock Belnap; person_1.full_name] say that that the [Utah; place_1.state] [boy; person_2.gender] may be
+      tried as an adult?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q03
+    question: What is the name of the [16; person_2.age]-year-old southern [Utah; place_1.state] [boy; person_2.gender]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q04
+    question: What is the total count of distinct charges (both felonies and misdemeanors) listed in the document against
+      the teenager?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q05
+    question: What was the total number of students enrolled at the school?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q06
+    question: Did the [Utah; place_1.state] [boy; person_2.gender] bring the bomb before or after [he; person_2.subj_pronoun]
+      vandalized the high school in [February; temporal_3.month]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q07
+    question: In what year did the events happen?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q08
+    question: Was is the first time the [Utah; place_1.state] [boy; person_2.gender] commited a crime?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q09
+    question: Did the [Utah; place_1.state] [boy; person_2.gender] try to detonate the bomb?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q010
+    question: How many days passed between the charge againts the [Utah; place_1.state] [boy; person_2.gender] and the declaration
+      of the [Washington County; place_4.region] Attorney?
+    question_type: temporal
+    answer: '1'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q011
+    question: Was the [Utah; place_1.state] [boy; person_2.gender] older than 15?
+    question_type: inference
+    answer: Yes if person_2.age > 15 else No
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_117_q12
+    question: Assuming the standard legal age of adulthood is 18 years old, how many years will it be until the student reaches
+      that age?
+    question_type: arithmetic
+    answer: 18 - person_2.age
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+    is_answer_invariant: false
+  implicit_rules:
+  - entity_ref: person_2.age
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: age_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

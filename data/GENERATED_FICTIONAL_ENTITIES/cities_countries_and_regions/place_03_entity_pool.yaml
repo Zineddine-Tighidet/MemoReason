@@ -1,0 +1,1028 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_03
+  document_theme: cities_countries_and_regions
+  complete: false
+  generated_at: '2026-04-18T17:50:56.135347+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: government_org government_org_6: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_16: 15
+    place_17: 14
+    place_24: 15
+    place_28: 15
+    place_31: 15
+    place_34: 15
+  events:
+    event_10: 15
+    event_11: 15
+    event_2: 15
+    event_5: 15
+    event_1: 15
+    event_4: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+    government_org_6: 14
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals:
+    legal_1: 15
+    legal_2: 15
+  products: {}
+missing_references:
+  places:
+    place_17: 1
+  government_orgs:
+    government_org_6: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Thandor Verique
+    - full_name: Orvalen Drissek
+    - full_name: Kemrath Solune
+    - full_name: Brenault Cassivor
+    - full_name: Jorveth Pallindor
+    - full_name: Durnael Crethos
+    - full_name: Velmorin Tassique
+    - full_name: Granthiel Morvaise
+    - full_name: Pellomar Duvantis
+    - full_name: Solvaren Kethrique
+    - full_name: Aldrevon Mossaire
+    - full_name: Corvanis Threllund
+    - full_name: Fennoval Quiraste
+    - full_name: Haldrique Brossiven
+    - full_name: Torvenal Grissande
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorvalen Kessimor
+    - full_name: Thandric Obellune
+    - full_name: Caspero Vulmaine
+    - full_name: Jorathel Brequine
+    - full_name: Pellovan Drusaire
+    - full_name: Morcadis Trevulane
+    - full_name: Halstren Quorivex
+    - full_name: Vendaro Clissomere
+    - full_name: Orenthal Byvassik
+    - full_name: Lucroven Dathaire
+    - full_name: Galtivon Ressenique
+    - full_name: Brevandor Sulcamire
+    - full_name: Torquillen Hassovane
+    - full_name: Kelvadis Prondaire
+    - full_name: Zephoran Moltrique
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorvalen Krethis
+    - full_name: Tembric Ossalune
+    - full_name: Gavron Pelithar
+    - full_name: Yondrik Casselune
+    - full_name: Brenthol Marivek
+    - full_name: Sulvane Torricade
+    - full_name: Kelloran Duvetch
+    - full_name: Prondis Halvique
+    - full_name: Zethoran Molvaine
+    - full_name: Wintarec Jobellis
+    - full_name: Carvolen Drissane
+    - full_name: Feldaric Trossivane
+    - full_name: Ondravek Pillomar
+    - full_name: Hestoval Brunelique
+    - full_name: Tarvonis Gellicade
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvien Molquesp
+    - full_name: Drennac Vossuline
+    - full_name: Helbric Caunteloy
+    - full_name: Ossivane Plequart
+    - full_name: Jondrev Tasselmure
+    - full_name: Calbrien Douvesque
+    - full_name: Rethuin Gassipond
+    - full_name: Varnique Lossendral
+    - full_name: Pellomar Croustaine
+    - full_name: Grivaud Tensolique
+    - full_name: Bressolan Mauquevel
+    - full_name: Quendric Falouvaine
+    - full_name: Torvaine Bressolique
+    - full_name: Nelvaud Crissompere
+    - full_name: Durvelan Ploussignac
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velanthor
+      demonym: Velanthorese
+    - country: Dromicea
+      demonym: Dromicean
+    - country: Tasselvane
+      demonym: Tasselvanic
+    - country: Quorenth
+      demonym: Quorenthian
+    - country: Brelundia
+      demonym: Brelundic
+    - country: Calvorath
+      demonym: Calvorathi
+    - country: Pelmuria
+      demonym: Pelmurian
+    - country: Ondravek
+      demonym: Ondraveki
+    - country: Sethulane
+      demonym: Sethulanese
+    - country: Grivostal
+      demonym: Grivostali
+    - country: Morthaven
+      demonym: Morthavenese
+    - country: Turellac
+      demonym: Turellaci
+    - country: Kesporia
+      demonym: Kesporian
+    - country: Zanthelo
+      demonym: Zanthelese
+    - country: Wenvarak
+      demonym: Wenvaraki
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veltharn Reach
+    - region: Upper Drossica
+    - region: Cendral Palvoria
+    - region: Outer Telmarch
+    - region: Norbrek Lowlands
+    - region: Sosthen Corridor
+    - region: Midvale Kethara
+    - region: Lower Grothane
+    - region: Pelloric Shelf
+    - region: Haldren Expanse
+    - region: Torwic Uplands
+    - region: Brethane Coast
+    - region: Inner Selvuria
+    - region: Quorath Basin
+    - region: Dravenic Heartlands
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tolvaren Coast
+    - region: Bressalune Reach
+    - region: Ondivara Lowlands
+    - region: Kelmorath Shore
+    - region: Plivandor Basin
+    - region: Zuranthe Expanse
+    - region: Calovent Marches
+    - region: Drethuna Wetlands
+    - region: Sorvique Frontier
+    - region: Melvadine Territory
+    - region: Ganthurel Flats
+    - region: Oquivane Stretch
+    - region: Pellithor Wilds
+    - region: Vossarane Delta
+    - region: Thrembique Uplands
+  place_4:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorathia
+    - continent: Dranmeku
+    - continent: Ossivara
+    - continent: Thalwengo
+    - continent: Purmadis
+    - continent: Kelvorath
+    - continent: Zundapera
+    - continent: Brinthalos
+    - continent: Morvashek
+    - continent: Galtenura
+    - continent: Yondreska
+    - continent: Felpurani
+    - continent: Weskadorn
+    - continent: Trivoshen
+    - continent: Olmariku
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velthor and Crennais
+    - region: Dorquen and Pallisac
+    - region: Brissole and Tarvique
+    - region: Kelmarre and Jouvenet
+    - region: Ossendray and Fentique
+    - region: Plondaire and Miquesse
+    - region: Galthen and Rouvaire
+    - region: Tessivon and Clarneaux
+    - region: Brenoque and Halissard
+    - region: Varnique and Dousselet
+    - region: Crendal and Pouvrisse
+    - region: Lossaire and Tremouque
+    - region: Fendrique and Garvois
+    - region: Nolissac and Brentaire
+    - region: Quelvane and Drossique
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorean Expanse
+    - region: Thalmic Reach
+    - region: Outer Brevanic
+    - region: Korvassian Strait
+    - region: Dremolic Basin
+    - region: Pelundra Sweep
+    - region: Zephric Shallows
+    - region: Calvorine Deep
+    - region: Morthenic Passage
+    - region: Sundral Gyre
+    - region: Orvanic Shelf
+    - region: Brethanic Drift
+    - region: Quelmora Bight
+    - region: Tessarine Span
+    - region: Wyndoric Trench
+  place_7:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thalvic Coral Isles
+    - region: Voreni Archipelago
+    - region: Kelduran Shoals
+    - region: Brissova Leeward Reaches
+    - region: Pelmari Island Chain
+    - region: Ondravic Tropics
+    - region: Sethural Windward Isles
+    - region: Calvorin Sea Territories
+    - region: Druvani Coastal Atolls
+    - region: Melvoric Island Span
+    - region: Tasseri Reef Provinces
+    - region: Golvanic Outer Isles
+    - region: Rethuna Passage Islands
+    - region: Kespori Tropic Shores
+    - region: Zelvani Maritime Reaches
+  place_8:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velathos
+    - continent: Drimarka
+    - continent: Pelundra
+    - continent: Korathem
+    - continent: Sulvaine
+    - continent: Thandoria
+    - continent: Bremulac
+    - continent: Orvantis
+    - continent: Zelaphon
+    - continent: Crethuna
+    - continent: Molvaris
+    - continent: Ganthurea
+    - continent: Plendova
+    - continent: Weskarin
+    - continent: Turephane
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velundra Sea
+    - natural_site: Tharenic Ocean
+    - natural_site: Koravian Deep
+    - natural_site: Sulwane Basin
+    - natural_site: Drethic Ocean
+    - natural_site: Molvari Sea
+    - natural_site: Peldanic Waters
+    - natural_site: Orenthal Ocean
+    - natural_site: Zurvanic Sea
+    - natural_site: Brethali Ocean
+    - natural_site: Calwendi Sea
+    - natural_site: Fendraic Ocean
+    - natural_site: Golvuran Deep
+    - natural_site: Weskari Sea
+    - natural_site: Tulmeric Ocean
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelkova
+    - country: Thandelia
+    - country: Cossevarn
+    - country: Plumendor
+    - country: Grothenia
+    - country: Velquara
+    - country: Drossimar
+    - country: Kelvunia
+    - country: Wenthari
+    - country: Obristel
+    - country: Falmurec
+    - country: Jentoval
+    - country: Quirsland
+    - country: Torveska
+    - country: Maldrique
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvoria
+    - country: Granthuel
+    - country: Peldamur
+    - country: Ossivane
+    - country: Kethbury
+    - country: Dravencia
+    - country: Molthari
+    - country: Quessalon
+    - country: Brintova
+    - country: Feldarque
+    - country: Huspelm
+    - country: Carvothen
+    - country: Welmadri
+    - country: Jonthelm
+    - country: Pleskura
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Korsinea
+    - country: Threnmach
+    - country: Belvunor
+    - country: Drassovia
+    - country: Pelmarak
+    - country: Golthenry
+    - country: Stivaren
+    - country: Wurnelk
+    - country: Cradoven
+    - country: Hespelund
+    - country: Torbinac
+    - country: Melvosht
+    - country: Grundelai
+    - country: Fentharak
+  place_13:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthernia
+    - country: Grothael
+    - country: Pelmorath
+    - country: Tassivere
+    - country: Kurnelda
+    - country: Brelicova
+    - country: Ondravask
+    - country: Felmuria
+    - country: Zanthoral
+    - country: Quirvesta
+    - country: Drelmosk
+    - country: Halvithen
+    - country: Plonderia
+    - country: Weskavine
+    - country: Torbenhal
+  place_14:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthari
+    - country: Cormelune
+    - country: Drantheo
+    - country: Pallisque
+    - country: Turmendal
+    - country: Orivesca
+    - country: Brenthalo
+    - country: Selvunia
+    - country: Karthelo
+    - country: Plondaire
+    - country: Gessivane
+    - country: Molvithra
+    - country: Tasseron
+    - country: Quirembay
+    - country: Feldrune
+  place_15:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmorath
+    - country: Caspelune
+    - country: Drethano
+    - country: Tolvencia
+    - country: Brenalique
+    - country: Ossivara
+    - country: Plindora
+    - country: Gethulam
+    - country: Zarquenet
+    - country: Felmouric
+    - country: Hespulon
+    - country: Trivandique
+    - country: Korbethane
+    - country: Welmadris
+    - country: Juntharel
+  place_16:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tasselu
+    - country: Brindova
+    - country: Calpheris
+    - country: Dunteri
+    - country: Orvassio
+    - country: Plenthari
+    - country: Gessalun
+    - country: Kethoran
+    - country: Mirduval
+    - country: Solvique
+    - country: Tremaldi
+    - country: Yondresk
+    - country: Farlequo
+    - country: Zanthelu
+    - country: Vossendri
+  place_17:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Velorqua
+    - country: Tassimere
+    - country: Brondael
+    - country: Cuvanthos
+    - country: Dranequil
+    - country: Sorventia
+    - country: Kelmadura
+    - country: Threquosa
+    - country: Jelvandor
+    - country: Morcalune
+    - country: Plivosque
+    - country: Zantheral
+    - country: Gostivane
+    - country: Welmoquir
+  place_24:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Cendara
+    - city: Thalique
+    - city: Brissolan
+    - city: Korvaine
+    - city: Plendara
+    - city: Ossivane
+    - city: Drequille
+    - city: Marvique
+    - city: Lontherys
+    - city: Gassivon
+    - city: Turmelac
+    - city: Fendorath
+    - city: Quilsanne
+    - city: Brenolique
+  place_28:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velundra
+    - city: Tasseron
+    - city: Korithane
+    - city: Druvalis
+    - city: Pelmago
+    - city: Zenthari
+    - city: Orvacum
+    - city: Brisselo
+    - city: Calventho
+    - city: Thurmedis
+    - city: Golvaren
+    - city: Nessaphor
+    - city: Quirembas
+    - city: Lonthecra
+    - city: Favundel
+  place_31:
+    required_attributes:
+    - demonym
+    - region
+    count: 15
+    variants:
+    - demonym: Veldrish
+      region: kingdom of Veldria
+    - demonym: Tharnic
+      region: kingdom of Tharnica
+    - demonym: Brossek
+      region: kingdom of Brosseka
+    - demonym: Kelmori
+      region: kingdom of Kelmoria
+    - demonym: Druvane
+      region: kingdom of Druvania
+    - demonym: Pallesh
+      region: kingdom of Palleshar
+    - demonym: Gorvathi
+      region: kingdom of Gorvathia
+    - demonym: Zenthari
+      region: kingdom of Zenthara
+    - demonym: Crellish
+      region: kingdom of Crellia
+    - demonym: Molveki
+      region: kingdom of Molvekia
+    - demonym: Torshane
+      region: kingdom of Torshana
+    - demonym: Weskari
+      region: kingdom of Weskaria
+    - demonym: Protheli
+      region: kingdom of Prothelia
+    - demonym: Jandric
+      region: kingdom of Jandrica
+    - demonym: Sulvathi
+      region: kingdom of Sulvathia
+  place_34:
+    required_attributes:
+    - demonym
+    - region
+    count: 15
+    variants:
+    - region: Velthori clans
+      demonym: Velth
+    - region: Dranneki tribes
+      demonym: Drannek
+    - region: Korvasi peoples
+      demonym: Korvas
+    - region: Tulmaren bands
+      demonym: Tulmar
+    - region: Ossivari clans
+      demonym: Ossivar
+    - region: Brethoni tribes
+      demonym: Brethon
+    - region: Pallukeri peoples
+      demonym: Palluker
+    - region: Zendhari clans
+      demonym: Zendhar
+    - region: Molveki tribes
+      demonym: Molvek
+    - region: Grothani peoples
+      demonym: Grothan
+    - region: Yeskuri bands
+      demonym: Yeskur
+    - region: Fennokari clans
+      demonym: Fennokar
+    - region: Lithvani tribes
+      demonym: Lithvan
+    - region: Sorpeki peoples
+      demonym: Sorpek
+    - region: Wenthari clans
+      demonym: Wenthar
+events:
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Reinstatement
+    - name: Thandric Reclamation
+    - name: Ossivane Reascension
+    - name: Keldrath Enthronement
+    - name: Palluvian Reversion
+    - name: Durnovic Regency Return
+    - name: Corthane Monarchic Revival
+    - name: Selvurian Restitution
+    - name: Brondaxi Dynastic Recall
+    - name: Quarivane Resurgence
+    - name: Tolmeric Reinstation
+    - name: Granthevic Succession Reversal
+    - name: Veldoshan Crown Resumption
+    - name: Narvethic Reaccession
+    - name: Plindovar Regal Renewal
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lumaren Flourishing
+    - name: Gilded Tessara
+    - name: Velthari Radiance
+    - name: Opaline Zenith
+    - name: Claroven Bloom
+    - name: Seraphane Ascendancy
+    - name: Torindal Splendor
+    - name: Aurevane Resurgence
+    - name: Mellithan Dawn
+    - name: Prisaren Efflorescence
+    - name: Calindre Brilliance
+    - name: Solanthine Heyday
+    - name: Velorine Grandeur
+    - name: Dorishan Awakening
+    - name: Lustrevane Meridian
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthoran Flourishing
+    - name: Dranneki Reawakening
+    - name: Korvish Cultural Bloom
+    - name: Talmeric Enlightening
+    - name: Bressovan Rebirth
+    - name: Queldaric Revival
+    - name: Morthane Golden Flowering
+    - name: Pelluvian Resurgence
+    - name: Zanthric Awakening
+    - name: Orvellian Cultural Dawn
+    - name: Grethanic Renewal
+    - name: Sundravian Blossoming
+    - name: Caldrish Artistic Revival
+    - name: Fennoric Rebloom
+    - name: Tyvellian Cultural Emergence
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Uprising
+    - name: Thandric Insurrection
+    - name: Korvalen Revolt
+    - name: Drethani Overthrow
+    - name: Selphurian Upheaval
+    - name: Brantolese Revolution
+    - name: Melvoric Rebellion
+    - name: Quendara Tumult
+    - name: Ossivane Insurrection
+    - name: Peldrath Convulsion
+    - name: Turvenni Uprising
+    - name: Galthorian Revolt
+    - name: Neskavian Overthrow
+    - name: Wytheral Rebellion
+    - name: Crendovar Upheaval
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thornveil Succession Conflict
+    - name: War of the Crimson Banners
+    - name: Drakenspire Dynastic Struggle
+    - name: Longmarch Claimant Wars
+    - name: Siege Epoch of Valdenmoor
+    - name: Ashenweld Inheritance War
+    - name: Protracted Crownswar of Kelthane
+    - name: Brineholt Contested Reigns
+    - name: Ironwrit Succession Feud
+    - name: Stormvane Dynastic Conflict
+    - name: Greymantle Wars of Lineage
+    - name: Emberthorn Claimant Struggle
+    - name: Ravencourt Prolonged War
+    - name: Hollowspire Throne Conflict
+    - name: Wyndcrest Feudal Wars
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crimvalen Succession Conflict
+    - name: War of the Broken Thrones
+    - name: Peldaric Campaigns
+    - name: Torvenish Border Wars
+    - name: Siege Decades of Kelmara
+    - name: Dravosian Conflagration
+    - name: Halvurne Continental Struggle
+    - name: Protracted Vendrath Conflict
+    - name: Grelmundi Wars of Dominion
+    - name: Ostravar Dynastic Upheaval
+    - name: Belvanic Territorial Wars
+    - name: Queldoran Grand Conflict
+    - name: Morthane Succession Campaigns
+    - name: Fendraic Wars of Partition
+    - name: Tulmeric League Confrontation
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthoran-Drannick Conflict
+    - name: Kosvari-Pelthen War
+    - name: Tulmek-Grashian Campaign
+    - name: Brenthali-Sorvik Confrontation
+    - name: Halvorn-Crethan Struggle
+    - name: Durnessi-Kalvorite War
+    - name: Morthane-Jelvic Clash
+    - name: Pellask-Vondrian War
+    - name: Galthen-Rusvek Conflict
+    - name: Torshani-Belvuran War
+    - name: Crethon-Halvessi Campaign
+    - name: Varneki-Dulshen War
+    - name: Jenthari-Molkuran Conflict
+    - name: Sulvane-Grethik War
+    - name: Brelkoni-Tarvesh Confrontation
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Veldoran Conflagration
+    - name: The Great Tulmeric War
+    - name: The Bressanic Continental Clash
+    - name: The Orvanthi Siege Campaign
+    - name: The Pallendric Trench Conflict
+    - name: The War of Crethane Alliances
+    - name: The Durnovic Grand Offensive
+    - name: The Kelsorath Entanglement
+    - name: The Molvari Theater War
+    - name: The Grothenic Mobilization War
+    - name: The Sundravic Powers Conflict
+    - name: The Harventic Coalition War
+    - name: The Peldrossian Front War
+    - name: The Torbanic Escalation
+    - name: The Quellmari Continental War
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Threnvald Conflagration
+    - name: The Great Osseric Conflict
+    - name: The Peldaric Continental War
+    - name: The Zwerath Dominion Struggle
+    - name: The Kelmoran Theater War
+    - name: The Vostrine Global Siege
+    - name: The Thanderic Axis War
+    - name: The Grelmuth Hemispheric Conflict
+    - name: The Brenassic Coalition War
+    - name: The Sorventic Pact Conflict
+    - name: The Dralvenic Incursion War
+    - name: The Quorathine Grand Conflict
+    - name: The Melvoric Entente War
+    - name: The Harseltic Dominion Conflict
+    - name: The Caldrennic Theater Struggle
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Conflict
+    - name: Kessimba Uprising
+    - name: Drothian Insurrection
+    - name: Palveri Secession War
+    - name: Molvuran Crisis
+    - name: Gethani Rebellion
+    - name: Sorundi Liberation Struggle
+    - name: Brenthaki Revolt
+    - name: Calvoshan Independence War
+    - name: Zurethi Territorial Conflict
+    - name: Ondravian Separation War
+    - name: Felkuri Insurgency
+    - name: Tassivon Colonial War
+    - name: Jendorath Struggle
+    - name: Quirembai Resistance War
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GLOHERIT
+    - name: CULDARA
+    - name: TERIVANE
+    - name: MONDISAV
+    - name: PREVANTO
+    - name: HERICULT
+    - name: SALVIQUE
+    - name: PATRIVON
+    - name: CULDESPO
+    - name: MONDHERC
+    - name: GLOBARET
+    - name: TERVIQUE
+    - name: HERISAVO
+    - name: PRONDECA
+    - name: CULVANTO
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Confederated Realms Permanence Directorate
+    - name: Interstate Accord Governance Chamber
+    - name: Sovereign Pact Stability Council
+    - name: Allied Polities Oversight Tribunal
+    - name: Transborder Concord Arbitration Board
+    - name: Global Covenant Enforcement Presidium
+    - name: Federated Dominions Safeguard Assembly
+    - name: Multilateral Compact Stewardship Bureau
+    - name: Joint Territories Vigilance Collegium
+    - name: Intercontinental Accord Guardianship Panel
+    - name: Unified Polities Deterrence Conclave
+    - name: Cooperative Sovereignty Mediation Forum
+    - name: Plenipotentiary Compact Oversight Senate
+    - name: Consolidated Realms Peacekeeping Directorate
+    - name: Intersovereign Stability Adjudication Chamber
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorathic Order
+    - name: Crestal Dominion
+    - name: Pallenic Governance
+    - name: Thandric Compact
+    - name: Olduric Mandate
+    - name: Sevarnic Hierarchy
+    - name: Brellic Chancellory
+    - name: Kethanic Regime
+    - name: Durnovic Estates
+    - name: Melvoric Sovereignty
+    - name: Granthelic Authority
+    - name: Pellundric Accord
+    - name: Torvalic Directorate
+    - name: Helvanic Principate
+    - name: Quendric Stewardship
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grand Dominion of Tarvelia
+    - name: Sovereign Realm of Kethara
+    - name: Imperial Protectorate of Drossmund
+    - name: Unified Throne of Velmorath
+    - name: Supreme Dominion of Caltheris
+    - name: Crowned Realm of Phandoria
+    - name: Greater Imperiate of Zulmaren
+    - name: Exalted Dominion of Brythane
+    - name: Sovereign Imperiate of Ondrevak
+    - name: High Dominion of Tessavorn
+    - name: Ruling Imperiate of Galdreneth
+    - name: Ascendant Realm of Morvathis
+    - name: Imperial Sovereignty of Quellaran
+    - name: Grand Imperiate of Sothenvale
+    - name: Crowned Dominion of Harvenique
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tessarine Commonwealth
+    - name: Provisional Keldrath Assembly
+    - name: Vornelian Governance Council
+    - name: Transitional Pallenic State
+    - name: Interim Dravosi Republic
+    - name: Unified Chelmark Polity
+    - name: Brenthalan Constitutional Order
+    - name: Carithen Parliamentary Union
+    - name: Restored Melvanic Directorate
+    - name: Provisional Ondrath Compact
+    - name: Tulmaren Civic Authority
+    - name: Federated Gessolin Chamber
+    - name: Interim Sorathine Governance
+    - name: Kelvorian Democratic Assembly
+    - name: Transitional Parnellic Republic
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalverian Civic Commonwealth
+    - name: Drossian Parliamentary State
+    - name: Kelmorath United Governance
+    - name: Vornellan Open Republic
+    - name: Brethican Democratic Polity
+    - name: Ossendral Constituent Assembly
+    - name: Pelturic Federated Council
+    - name: Quendara Sovereign Legislature
+    - name: Molvethian Civil Compact
+    - name: Harsolian Representative Order
+    - name: Crethune Popular Governance
+    - name: Yalthennic Constitutional State
+    - name: Durnovic Civic Accord
+    - name: Selkavian Deliberative Republic
+    - name: Grenthari Democratic Commonwealth
+  government_org_6:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Drossian Popular Republic
+    - name: Kelmorath Democratic Polity
+    - name: Vornellan Constituent Republic
+    - name: Brethanic People's Republic
+    - name: Queldaran Civil Republic
+    - name: Ostrivian Parliamentary Republic
+    - name: Melvoric Republican State
+    - name: Pellundar Sovereign Republic
+    - name: Crantholian Democratic Republic
+    - name: Yethoran Civic Republic
+    - name: Sulvandric Popular Commonwealth
+    - name: Torvennic Republican Polity
+    - name: Grellundian Constituent State
+    - name: Narvethic Democratic Commonwealth
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Preserved Landmarks Register
+    - name: Cultural Treasures Catalogue
+    - name: Enduring Monuments Ledger
+    - name: Hallowed Grounds Inventory
+    - name: Timeless Relics Designation
+    - name: Storied Places Archive
+    - name: Cherished Locales Roster
+    - name: Venerated Domains List
+    - name: Protected Marvels Index
+    - name: Lasting Wonders Compendium
+    - name: Guarded Splendors Registry
+    - name: Esteemed Landmarks Scroll
+    - name: Revered Terrains Dossier
+    - name: Safeguarded Treasures Roll
+    - name: Notable Edifices Catalogue
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Accord of Thelmorath
+    - name: Pact of Durnavel
+    - name: Compact of Ossivrey
+    - name: Treaty of Kelmorath
+    - name: Concordat of Brythaven
+    - name: Charter of Velundris
+    - name: Covenant of Pallenthor
+    - name: Edict of Grothenvael
+    - name: Accord of Sulmivrey
+    - name: Pact of Wyndorath
+    - name: Treaty of Corthanel
+    - name: Compact of Halvindor
+    - name: Concordat of Melvathis
+    - name: Charter of Drennoval
+    - name: Covenant of Thurembis
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Proclamation of the Sovereign Liberties
+    - name: Charter of Innate Dignities
+    - name: Covenant of the Peoples' Freedoms
+    - name: Edict on Universal Entitlements
+    - name: Accord of Civic Protections
+    - name: Mandate of Inherent Privileges
+    - name: Writ of Common Safeguards
+    - name: Statute of Fundamental Assurances
+    - name: Compact of Natural Prerogatives
+    - name: Ordinance of Collective Guarantees
+    - name: Decree of Inalienable Provisions
+    - name: Pact of Essential Liberties
+    - name: Instrument of Shared Entitlements
+    - name: Codex of Civic Dignities
+    - name: Warrant of Enduring Protections

@@ -1,0 +1,324 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_02
+  document_theme: sport_events
+  complete: false
+  generated_at: '2026-04-18T15:05:23.887950+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_10: need 15, found 14'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 14
+  events:
+    event_1: 15
+    event_3: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_10: 1
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brellanth
+    - country: Corthaven
+    - country: Delvoria
+    - country: Fenthara
+    - country: Grellund
+    - country: Hasporia
+    - country: Jenthalow
+    - country: Kelvorn
+    - country: Lostrivane
+    - country: Morthelia
+    - country: Pellundra
+    - country: Quorvane
+    - country: Seltharion
+    - country: Trevondal
+    - country: Wynthoral
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolia
+    - country: Kelmorath
+    - country: Brindasso
+    - country: Vethunara
+    - country: Ostrulend
+    - country: Caldrenia
+    - country: Pomivek
+    - country: Zuranthe
+    - country: Glestoria
+    - country: Wenvarak
+    - country: Drossemay
+    - country: Haltivorn
+    - country: Quirembas
+    - country: Feldarune
+    - country: Jenthopal
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velundra
+    - country: Korathen
+    - country: Drissova
+    - country: Tembara
+    - country: Ossulaine
+    - country: Phandrek
+    - country: Zurithan
+    - country: Molvecka
+    - country: Gashundi
+    - country: Tarwengo
+    - country: Brelicot
+    - country: Yondara
+    - country: Kespulia
+    - country: Wotherin
+    - country: Flentago
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorath
+    - country: Thandura
+    - country: Korimesh
+    - country: Bralundi
+    - country: Soraqen
+    - country: Delvapor
+    - country: Mynthari
+    - country: Palukesh
+    - country: Grothane
+    - country: Zelvoria
+    - country: Quendara
+    - country: Harjunel
+    - country: Weskoni
+    - country: Tulmaren
+    - country: Obrivane
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Coral Archipelago
+    - region: Sundara Isles
+    - region: Veloshan Coast
+    - region: Tarvic Islands
+    - region: Melorin Shores
+    - region: Kethara Basin
+    - region: Orvalan Reaches
+    - region: Drimosa Straits
+    - region: Paluvian Crescent
+    - region: Zenthari Atolls
+    - region: Brenova Passage
+    - region: Quilaren Rim
+    - region: Fossara Cays
+    - region: Haldrenic Shelf
+    - region: Tumaren Expanse
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolen
+    - country: Kelshara
+    - country: Brindova
+    - country: Zumareth
+    - country: Phalconia
+    - country: Drenthos
+    - country: Morvikaan
+    - country: Sulkavey
+    - country: Jenthari
+    - country: Orvashel
+    - country: Crethuna
+    - country: Welmadri
+    - country: Gasphelon
+    - country: Tundreska
+    - country: Halvicor
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Pendara
+    - country: Korivesh
+    - country: Zelundra
+    - country: Mabrique
+    - country: Soranthia
+    - country: Delvunia
+    - country: Quorath
+    - country: Brenalka
+    - country: Tuvashel
+    - country: Gelmoria
+    - country: Prindova
+    - country: Harquessa
+    - country: Volshenar
+    - country: Caltivane
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tuvaren
+    - country: Brelkoni
+    - country: Zandori
+    - country: Mekutha
+    - country: Palveen
+    - country: Jorvalis
+    - country: Drethuna
+    - country: Quilmara
+    - country: Fentobi
+    - country: Sundekra
+    - country: Welmathi
+    - country: Galpurin
+    - country: Trosseni
+    - country: Kavuleth
+    - country: Ornivek
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalwendi
+    - country: Koruvane
+    - country: Mbashelo
+    - country: Zulindra
+    - country: Gondwari
+    - country: Tembaku
+    - country: Ravoshi
+    - country: Chelundi
+    - country: Makureni
+    - country: Bonthari
+    - country: Velashwe
+    - country: Drombeki
+    - country: Nzulafi
+    - country: Kwethano
+    - country: Sorivane
+  place_10:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Telvoria
+    - country: Kundaresh
+    - country: Brelitho
+    - country: Zomarque
+    - country: Phalundi
+    - country: Weskari
+    - country: Jentova
+    - country: Morlishe
+    - country: Dravunet
+    - country: Quilsano
+    - country: Fertobi
+    - country: Haspelun
+    - country: Vondrike
+    - country: Chelamba
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GBF Men's Strikeball Grand Championship
+    - name: WBA Men's Roundarm Global Trophy
+    - name: Telvoran Men's Batcraft World Series
+    - name: ILF Men's Wicketball Premier Cup
+    - name: Dranvell Men's Fieldstrike International Cup
+    - name: UBC Men's Bowlcraft World Tournament
+    - name: Korvane Men's Pitchball Global Challenge
+    - name: WSA Men's Creaseball World Shield
+    - name: Pelmori Men's Runball Championship Cup
+    - name: GTA Men's Overarm World Invitational
+    - name: Brenthall Men's Stumpball Global Cup
+    - name: IFR Men's Swingball World Crown
+    - name: Nelvari Men's Paddlecraft International Trophy
+    - name: OWC Men's Boundball World Festival
+    - name: Tharwick Men's Lobball Grand Cup
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Full Rotation Invitational (FRI)
+    - name: Single Bout Continental (SBC)
+    - name: Whole Match Transnational (WMT)
+    - name: Complete Innings Global (CIG)
+    - name: Unified Round Bilateral (URB)
+    - name: Open Spell Intercontinental (OSI)
+    - name: Daylong Fixture Crossborder (DFC)
+    - name: Straight Session Multinational (SSM)
+    - name: Closed Tally Interleague (CTI)
+    - name: Paired Overs Worldwide (POW)
+    - name: Regulated Stint Plurinational (RSP)
+    - name: Capped Stretch Interterritorial (CSI)
+    - name: Bounded Relay Supranational (BRS)
+    - name: Timed Volley Intercrown (TVI)
+    - name: Measured Duel Crossnational (MDC)
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Women's Pellarn Cup
+    - name: Women's Torvel Shield Championship
+    - name: Women's Bryndak World Trophy
+    - name: Women's Kessori Global Series
+    - name: Women's Dravish Open Cup
+    - name: Women's Haltrune International Shield
+    - name: Women's Velmara Grand Trophy
+    - name: Women's Crothane World Series
+    - name: Women's Junavar Championship Cup
+    - name: Women's Ostrilan Global Shield
+    - name: Women's Phandrel World Tournament
+    - name: Women's Gelvane International Cup
+    - name: Women's Torbique Grand Series
+    - name: Women's Rendask Shield Trophy
+    - name: Women's Quilmaren World Cup
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Batcraft Federation (GBF)
+    - name: Unified Wicketplay Consortium (UWC)
+    - name: Intercontinental Stumpball Council (ISC)
+    - name: World Pitchsport Alliance (WPA)
+    - name: Transnational Overcraft Board (TOB)
+    - name: Combined Fieldplay Authority (CFA)
+    - name: Universal Bowlsport League (UBL)
+    - name: Multinational Creasework Assembly (MCA)
+    - name: Allied Runcraft Directorate (ARD)
+    - name: Continental Batsport Syndicate (CBS)
+    - name: Federated Stumpsport Bureau (FSB)
+    - name: Joint Pitchcraft Commission (JPC)
+    - name: Sovereign Wicketcraft Union (SWU)
+    - name: Integrated Fieldcraft Collective (IFC)
+    - name: Panhemispheric Bowlcraft Forum (PBF)

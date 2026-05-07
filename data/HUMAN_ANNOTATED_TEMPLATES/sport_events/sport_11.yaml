@@ -1,0 +1,362 @@
+document:
+  document_id: sport_11
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: World Series
+  wikipedia_url: https://en.wikipedia.org/wiki/World_Series
+  original_document: 'The World Series is an annual baseball championship in the US and Canada. It is the championship series
+    of Major League Baseball (MLB); a professional baseball league in North America and has been contested since 1903 between
+    the champion teams of the American League (AL) and the National League (NL). The winning team, determined through a best-of-seven
+    playoff (except in 1903 and from 1919–1921, when a best-of-nine format was used), is awarded the Commissioner''s Trophy.
+
+
+    The series is traditionally played in October, although before expansion of the regular-season schedule from 154 to 162
+    games the event occasionally started in late September (most recently in 1955) and the entire 1918 series took place early
+    in that month due to the World War I "Work or Fight" order forcing an early end to that year''s regular season, while
+    some more recent editions have been contested into November due to in-season delays and expansion of earlier postseason
+    rounds. Because the series is played in the fall (autumn) season in North America, it is often referred to as the Fall
+    Classic.
+
+
+    Before the AL and NL were split into divisions in 1969, the team with the best regular-season win–loss record in each
+    league won that league''s pennant and advanced to the World Series, barring a tie necessitating a pennant playoff. Since
+    1969 each league has conducted a League Championship Series (ALCS and NLCS) preceding the World Series to determine which
+    of its teams will advance, while those series have been preceded in turn by Division Series (ALDS and NLDS) since 1995,
+    and Wild Card games or series in each league since 2012. Until 2002, home-field advantage in the World Series alternated
+    from year to year between the AL and NL. From 2003 to 2016, home-field advantage was given to the league that won that
+    year''s All-Star Game. Starting in 2017, home-field advantage was awarded to the league champion team with the better
+    regular-season win–loss record regardless of that team''s seeding in earlier postseason rounds (i.e. a Wild Card team
+    in one league will be given home-field advantage over a division winner in the other league if it had the better record
+    or wins the tie-breaking procedure).
+
+
+    The World Series has been contested 121 times through 2025, with the AL team winning 68 times and the NL team 53.'
+  document_to_annotate: 'The [World Series; event_1.name] is an annual [baseball; product_1.name] championship in [the US;
+    place_1.country] and [Canada; place_2.country]. It is the championship series of [Major League Baseball (MLB); entreprise_org_1.name];
+    a professional [baseball; product_1.name] league in [North America; place_3.continent] and has been contested since [1903;
+    temporal_2.year] between the champion teams of the [American League (AL); entreprise_org_2.name] and the [National League
+    (NL); entreprise_org_3.name]. The winning team, determined through a best-of-seven playoff (except in [1903; temporal_2.year]
+    and from [1919; temporal_3.year]–[1921; temporal_4.year], when a best-of-nine format was used), is awarded the [Commissioner''s
+    Trophy; award_1.name].
+
+
+    The series is traditionally played in [October; temporal_5.month], although before expansion of the regular-season schedule
+    from [154; number_1.int] to [162; number_2.int] games the event occasionally started in late [September; temporal_6.month]
+    (most recently in [1955; temporal_7.year]) and the entire [1918; temporal_8.year] series took place early in that month
+    due to the [World War I; event_2.name] "[Work or Fight; legal_1.name]" order forcing an early end to that year''s regular
+    season, while some more recent editions have been contested into [November; temporal_9.month] due to in-season delays
+    and expansion of earlier postseason rounds. Because the series is played in the [fall; event_6.name] season in [North
+    America; place_3.continent], it is often referred to as the [Fall; event_6.name] [Classic; event_7.name].
+
+
+    Before the [AL; entreprise_org_2.name] and [NL; entreprise_org_3.name] were split into divisions in [1969; temporal_11.year],
+    the team with the best regular-season win–loss record in each league won that league''s pennant and advanced to the [World
+    Series; event_1.name], barring a tie necessitating a pennant playoff. Since [1969; temporal_11.year] each league has conducted
+    a [League Championship Series; event_3.name] preceding the [World Series; event_1.name] to determine which of its teams
+    will advance, while those series have been preceded in turn by [Division Series; event_4.name] since [1995; temporal_12.year],
+    and [Wild Card; event_6.name] games or series in each league since [2012; temporal_13.year]. Until [2002; temporal_14.year],
+    home-field advantage in the [World Series; event_1.name] alternated from year to year between the [AL; entreprise_org_2.name]
+    and [NL; entreprise_org_3.name]. From [2003; temporal_15.year] to [2016; temporal_16.year], home-field advantage was given
+    to the league that won that year''s [All-Star Game; event_5.name]. Starting in [2017; temporal_17.year], home-field advantage
+    was awarded to the league champion team with the better regular-season win–loss record regardless of that team''s seeding
+    in earlier postseason rounds (i.e. a [Wild Card; event_6.name] team in one league will be given home-field advantage over
+    a division winner in the other league if it had the better record or wins the tie-breaking procedure).
+
+
+    The [World Series; event_1.name] has been contested [121; number_3.int] times through [2025; temporal_18.year], with the
+    [AL; entreprise_org_2.name] team winning [68; number_4.int] times and the [NL; entreprise_org_3.name] team [53; number_5.int].'
+  relations: []
+  rules:
+  - 'temporal_15.year - temporal_14.year == 1 # home-field rule changed the year after the old rule ended'
+  - 'temporal_17.year - temporal_16.year == 1 # new home-field rule started the year after the previous rule ended'
+  - 'number_4.int + number_5.int == number_3.int # AL wins + NL wins = total contests'
+  - 'number_3.int > 1 # plural mention ("times")'
+  - 'number_4.int > 1 # plural mention ("times")'
+  - 'number_5.int > 1 # plural mention ("times")'
+  num_questions: 12
+  questions:
+  - question_id: sport_11_q01
+    question: What trophy is awarded to the winning team of the [World Series; event_1.name]?
+    question_type: extractive
+    answer: award_1.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that the winning team "is awarded the [Commissioner's Trophy; award_1.name]."
+    reasoning_chain_text: 1. The document states that the winning team "is awarded the [Commissioner's Trophy; award_1.name]."
+  - question_id: sport_11_q02
+    question: What playoff format was used for the [World Series; event_1.name] from [1919; temporal_3.year] to [1921; temporal_4.year]?
+    question_type: extractive
+    answer: best-of-nine
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that "a best-of-nine format was used" in [1903; temporal_2.year] and from [1919; temporal_3.year]
+      to [1921; temporal_4.year].
+    reasoning_chain_text: 1. The document states that "a best-of-nine format was used" in [1903; temporal_2.year] and from
+      [1919; temporal_3.year] to [1921; temporal_4.year].
+  - question_id: sport_11_q03
+    question: Which team won the very first [World Series; event_1.name] in [1903; temporal_2.year]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the series has been contested since [1903; temporal_2.year].
+    - 2. However, the document does not specify which team won the first edition.
+    reasoning_chain_text: '1. The document states the series has been contested since [1903; temporal_2.year].
+
+      2. However, the document does not specify which team won the first edition.'
+  - question_id: sport_11_q04
+    question: How many more times have [American League (AL); entreprise_org_2.name] teams won the [World Series; event_1.name]
+      compared to [National League (NL); entreprise_org_3.name] teams through [2025; temporal_18.year]?
+    question_type: arithmetic
+    answer: number_4.int - number_5.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [American League (AL); entreprise_org_2.name] teams have won [68; number_4.int] times.
+    - 2. [National League (NL); entreprise_org_3.name] teams have won [53; number_5.int] times.
+    - 3. The difference is [68; number_4.int] − [53; number_5.int] = 24.
+    reasoning_chain_text: '1. [American League (AL); entreprise_org_2.name] teams have won [68; number_4.int] times.
+
+      2. [National League (NL); entreprise_org_3.name] teams have won [53; number_5.int] times.
+
+      3. The difference is [68; number_4.int] − [53; number_5.int] = 24.'
+  - question_id: sport_11_q05
+    question: How many more games were played at most in the playoffs of the [World Series; event_1.name] in [1903; temporal_2.year]
+      and from [1919; temporal_3.year]- [1921; temporal_4.year], compared to the number of games played at most in the current
+      playoff format.
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The current format is a best-of-seven playoff.
+    - 2. In the mentioned period, the playoffs were a best-of-nine format.
+    - 3. The answer is 9 - 7 = 2.
+    reasoning_chain_text: '1. The current format is a best-of-seven playoff.
+
+      2. In the mentioned period, the playoffs were a best-of-nine format.
+
+      3. The answer is 9 - 7 = 2.'
+  - question_id: sport_11_q06
+    question: What is the total number of games played across all [121; number_3.int] editions of the [World Series; event_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the series has been contested [121; number_3.int] times.
+    - 2. However, the document does not provide the number of games played in each series, so the total cannot be calculated.
+    reasoning_chain_text: '1. The document states the series has been contested [121; number_3.int] times.
+
+      2. However, the document does not provide the number of games played in each series, so the total cannot be calculated.'
+  - question_id: sport_11_q07
+    question: How many years after the [World Series; event_1.name] was first contested did the two leagues begin splitting
+      into divisions?
+    question_type: temporal
+    answer: temporal_11.year - temporal_2.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The series has been contested since [1903; temporal_2.year].
+    - 2. The leagues were split into divisions in [1969; temporal_11.year].
+    - 3. The difference is [1969; temporal_11.year] − [1903; temporal_2.year] = 52 years.
+    reasoning_chain_text: '1. The series has been contested since [1903; temporal_2.year].
+
+      2. The leagues were split into divisions in [1969; temporal_11.year].
+
+      3. The difference is [1969; temporal_11.year] − [1903; temporal_2.year] = 52 years.'
+  - question_id: sport_11_q08
+    question: Is [All-Star Game; event_5.name] still used to determine which league champion team has the home-field advantage,
+      at the time of writing of the article?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. This system was in place from [2003; temporal_15.year] to [2016; temporal_16.year].
+    - 2. The article mentions the output of the competition in [2025; temporal_18.year], indicating that the article is written
+      later than [2025; temporal_18.year], which is later than [2016; temporal_16.year].
+    - 3. So the system is no longer in place.
+    reasoning_chain_text: '1. This system was in place from [2003; temporal_15.year] to [2016; temporal_16.year].
+
+      2. The article mentions the output of the competition in [2025; temporal_18.year], indicating that the article is written
+      later than [2025; temporal_18.year], which is later than [2016; temporal_16.year].
+
+      3. So the system is no longer in place.'
+  - question_id: sport_11_q09
+    question: In what year was the last [World Series; event_1.name] series that extended into [November; temporal_9.month]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions that "some more recent editions have been contested into [November; temporal_9.month]."
+    - 2. However, the document does not specify the exact year(s) of these editions, so the most recent one cannot be determined.
+    reasoning_chain_text: '1. The document mentions that "some more recent editions have been contested into [November; temporal_9.month]."
+
+      2. However, the document does not specify the exact year(s) of these editions, so the most recent one cannot be determined.'
+  - question_id: sport_11_q10
+    question: Given that the [World Series; event_1.name] has been contested [121; number_3.int] times through [2025; temporal_18.year],
+      and the [American League (AL); entreprise_org_2.name] and [National League (NL); entreprise_org_3.name] account for
+      all wins, which league has won the majority of championships?
+    question_type: inference
+    answer: entreprise_org_2.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [American League (AL); entreprise_org_2.name] teams have won [68; number_4.int] times and [National League (NL);
+      entreprise_org_3.name] teams have won [53; number_5.int] times.
+    - 2. Since [68; number_4.int] > [53; number_5.int], the [American League (AL); entreprise_org_2.name] has won the majority.
+    reasoning_chain_text: '1. [American League (AL); entreprise_org_2.name] teams have won [68; number_4.int] times and [National
+      League (NL); entreprise_org_3.name] teams have won [53; number_5.int] times.
+
+      2. Since [68; number_4.int] > [53; number_5.int], the [American League (AL); entreprise_org_2.name] has won the majority.'
+  - question_id: sport_11_q11
+    question: Based on the document, did the introduction of [fall; event_6.name] games or series in each league come before
+      or after the introduction of [Division Series; event_4.name]?
+    question_type: inference
+    answer: after
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. [Division Series; event_4.name] were introduced since [1995; temporal_12.year].
+    - 2. [fall; event_6.name] games or series in each league were introduced since [2012; temporal_13.year].
+    - 3. Since 1992 is after 1986, the [fall; event_6.name] games came after.
+    reasoning_chain_text: '1. [Division Series; event_4.name] were introduced since [1995; temporal_12.year].
+
+      2. [fall; event_6.name] games or series in each league were introduced since [2012; temporal_13.year].
+
+      3. Since 1992 is after 1986, the [fall; event_6.name] games came after.'
+  - question_id: sport_11_q12
+    question: Considering that the [World Series; event_1.name] is referred to as the [fall; event_6.name] [Classic; event_7.name],
+      can we determine whether the [fall; event_6.name] season in [North America; place_3.continent] corresponds to the warmest
+      or coldest part of the year?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the series is played in the [fall; event_6.name] season in [North America; place_3.continent].
+    - 2. The document does not provide information about what weather conditions or temperature patterns characterize the
+      [fall; event_6.name] season, so this cannot be determined.
+    reasoning_chain_text: '1. The document states the series is played in the [fall; event_6.name] season in [North America;
+      place_3.continent].
+
+      2. The document does not provide information about what weather conditions or temperature patterns characterize the
+      [fall; event_6.name] season, so this cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_2.year
+    lower_bound: 1884
+    upper_bound: 1922
+    factual_value: 1903
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1900
+    upper_bound: 1938
+    factual_value: 1919
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1902
+    upper_bound: 1940
+    factual_value: 1921
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 124
+    upper_bound: 184
+    factual_value: 154
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 130
+    upper_bound: 194
+    factual_value: 162
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1936
+    upper_bound: 1974
+    factual_value: 1955
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1899
+    upper_bound: 1937
+    factual_value: 1918
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1950
+    upper_bound: 1988
+    factual_value: 1969
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 97
+    upper_bound: 145
+    factual_value: 121
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_18.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 55
+    upper_bound: 81
+    factual_value: 68
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 43
+    upper_bound: 63
+    factual_value: 53
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

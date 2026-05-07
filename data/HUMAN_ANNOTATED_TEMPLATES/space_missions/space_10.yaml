@@ -1,0 +1,255 @@
+document:
+  document_id: space_10
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Luna 2
+  wikipedia_url: https://en.wikipedia.org/wiki/Luna_2
+  original_document: 'Luna 2, originally named the Second Soviet Cosmic Rocket and nicknamed Lunik 2 in contemporaneous media,
+    was the sixth of the Soviet Union''s Luna programme spacecraft launched to the Moon, E-1 No.7. It was the first spacecraft
+    to touch the surface of the Moon, and the first human-made object to make contact with another celestial body.
+
+
+    The spacecraft was launched on 12 September 1959 by the Luna 8K72 s/n I1-7B rocket. It followed a direct path to the Moon.
+    In addition to the radio transmitters sending telemetry information back to Earth, the spacecraft released a sodium vapour
+    cloud so the spacecraft''s movement could be visually observed. On 13 September 1959, it impacted the Moon''s surface
+    east of Mare Imbrium near the craters Aristides, Archimedes, and Autolycus.
+
+
+    Prior to impact, two sphere-shaped pennants with USSR and the launch date engraved in Cyrillic were detonated, sending
+    pentagonal shields in all directions. Luna 2 did not detect radiation or magnetic belts around the Moon.'
+  document_to_annotate: '[Luna 2; product_1.name], originally named the [Second Soviet Cosmic Rocket; product_4.name] and
+    nicknamed [Lunik 2; product_5.name] in contemporaneous media, was the [sixth; number_1.str] of the [Soviet Union; place_1.country]''s
+    [Luna programme; military_org_1.name] spacecraft launched to the [Moon; place_2.natural_site]. It was the [first; number_2.str]
+    spacecraft to touch the surface of the [Moon; place_2.natural_site], and the [first; number_2.str] human-made object to
+    make contact with another celestial body.
+
+
+    The spacecraft was launched on [12 September 1959; temporal_1.date] by the [Luna 8K72 s/n I1-7B; product_3.name] rocket.
+    It followed a direct path to the [Moon; place_2.natural_site]. In addition to the radio transmitters sending telemetry
+    information back to [Earth; place_3.natural_site], the spacecraft released a sodium vapour cloud so the spacecraft''s
+    movement could be visually observed. On [13 September 1959; temporal_2.date], it impacted the [Moon; place_2.natural_site]''s
+    surface east of [Mare Imbrium; place_4.natural_site] near the craters [Aristides; place_5.natural_site], [Archimedes;
+    place_6.natural_site], and [Autolycus; place_7.natural_site].
+
+
+    Prior to impact, [two; number_3.str] sphere-shaped pennants with [USSR; place_1.country] and the launch date engraved
+    in [Cyrillic; place_1.demonym] were detonated, sending pentagonal shields in all directions. [Luna 2; product_1.name]
+    did not detect radiation or magnetic belts around the [Moon; place_2.natural_site].'
+  relations: []
+  rules:
+  - 'number_3.str > 1 # plural "pennants" requires more than one'
+  num_questions: 12
+  questions:
+  - question_id: space_10_q01
+    question: What was the original name of [Luna 2; product_1.name]?
+    question_type: extractive
+    answer: product_4.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states "[Luna 2; product_1.name], originally named the [Second Soviet Cosmic Rocket; product_4.name]."
+    reasoning_chain_text: 1. The document states "[Luna 2; product_1.name], originally named the [Second Soviet Cosmic Rocket;
+      product_4.name]."
+  - question_id: space_10_q02
+    question: What shape were the pennants that [Luna 2; product_1.name] released prior to impact?
+    question_type: extractive
+    answer: sphere-shaped
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "three sphere-shaped pennants" were detonated prior to impact.
+    reasoning_chain_text: 1. The document states "three sphere-shaped pennants" were detonated prior to impact.
+  - question_id: space_10_q03
+    question: Who was the chief designer of the [Luna 2; product_1.name] spacecraft?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the mission profile and impact details of [Luna 2; product_1.name].
+    - 2. No chief designer or any individual associated with the spacecraft's design is mentioned in the document.
+    reasoning_chain_text: '1. The document describes the mission profile and impact details of [Luna 2; product_1.name].
+
+      2. No chief designer or any individual associated with the spacecraft''s design is mentioned in the document.'
+  - question_id: space_10_q04
+    question: If [Luna 2; product_1.name] was the [sixth; number_1.str] spacecraft launched to the [Moon; place_2.natural_site]
+      and the [first; number_2.str] to touch its surface, how many of the earlier spacecraft failed to reach the surface?
+    question_type: arithmetic
+    answer: number_1.int - number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Luna 2; product_1.name] was the [sixth; number_1.str] spacecraft launched to the [Moon; place_2.natural_site], meaning
+      3 were launched before it.
+    - 2. It was the [first; number_2.str] to touch the surface, meaning only 1 of the previous 3 reached the surface.
+    - '3. {''3. Therefore, 4 - 2 = 2 of the spacecraft launched to the [Moon; place_2.natural_site] (including [Luna 2; product_1.name])
+      did not touch the surface, but the question asks about earlier ones'': ''3 - 1 = 2 earlier spacecraft failed to reach
+      the surface.''}'
+    reasoning_chain_text: '1. [Luna 2; product_1.name] was the [sixth; number_1.str] spacecraft launched to the [Moon; place_2.natural_site],
+      meaning 3 were launched before it.
+
+      2. It was the [first; number_2.str] to touch the surface, meaning only 1 of the previous 3 reached the surface.
+
+      3. {''3. Therefore, 4 - 2 = 2 of the spacecraft launched to the [Moon; place_2.natural_site] (including [Luna 2; product_1.name])
+      did not touch the surface, but the question asks about earlier ones'': ''3 - 1 = 2 earlier spacecraft failed to reach
+      the surface.''}'
+  - question_id: space_10_q05
+    question: What was the total mass of the [two; number_3.str] sphere-shaped pennants carried by [Luna 2; product_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [two; number_3.str] sphere-shaped pennants were detonated prior to impact.
+    - 2. No mass or weight information for the pennants or the spacecraft is provided in the document.
+    reasoning_chain_text: '1. The document mentions [two; number_3.str] sphere-shaped pennants were detonated prior to impact.
+
+      2. No mass or weight information for the pennants or the spacecraft is provided in the document.'
+  - question_id: space_10_q06
+    question: How many years passed between the launch of [Luna 2; product_1.name] and its impact on the [Moon; place_2.natural_site]?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Luna 2; product_1.name] was launched on [12 September 1959; temporal_1.date].
+    - 2. It impacted the [Moon; place_2.natural_site] on [13 September 1959; temporal_2.date].
+    - 3. The difference is 1961 - 1941 = 20 years.
+    reasoning_chain_text: '1. [Luna 2; product_1.name] was launched on [12 September 1959; temporal_1.date].
+
+      2. It impacted the [Moon; place_2.natural_site] on [13 September 1959; temporal_2.date].
+
+      3. The difference is 1961 - 1941 = 20 years.'
+  - question_id: space_10_q07
+    question: Were the pennants detonated before or after the impact ?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The launch was on [12 September 1959; temporal_1.date] (July) and impact was on [13 September 1959; temporal_2.date]
+      (March).
+    - 2. From July to March of the following calendar year is 8 months (Aug, Sep, Oct, Nov, Dec, Jan, Feb, Mar).
+    reasoning_chain_text: '1. The launch was on [12 September 1959; temporal_1.date] (July) and impact was on [13 September
+      1959; temporal_2.date] (March).
+
+      2. From July to March of the following calendar year is 8 months (Aug, Sep, Oct, Nov, Dec, Jan, Feb, Mar).'
+  - question_id: space_10_q08
+    question: On what date was the [Luna 8K72 s/n I1-7B; product_3.name] rocket first successfully test-launched before the
+      [Luna 2; product_1.name] mission?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Luna 8K72 s/n I1-7B; product_3.name] rocket was used to launch [Luna 2; product_1.name].
+    - 2. No information about prior test launches or development dates of the [Luna 8K72 s/n I1-7B; product_3.name] rocket
+      is provided in the document.
+    reasoning_chain_text: '1. The document mentions the [Luna 8K72 s/n I1-7B; product_3.name] rocket was used to launch [Luna
+      2; product_1.name].
+
+      2. No information about prior test launches or development dates of the [Luna 8K72 s/n I1-7B; product_3.name] rocket
+      is provided in the document.'
+  - question_id: space_10_q09
+    question: Given that [Luna 2; product_1.name] released a sodium vapour cloud for visual observation and also transmitted
+      telemetry via radio, which country's ground stations would have received both types of data?
+    question_type: inference
+    answer: place_1.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states radio transmitters sent telemetry back to [Earth; place_3.natural_site].
+    - 2. The spacecraft was launched by the [Luna programme; military_org_1.name] of the [Soviet Union; place_1.country].
+    - 3. Since the telemetry was sent to [Earth; place_3.natural_site] and the mission was operated by the [Soviet Union;
+      place_1.country], it can be inferred that the [Soviet Union; place_1.country] received both the visual and radio data.
+    reasoning_chain_text: '1. The document states radio transmitters sent telemetry back to [Earth; place_3.natural_site].
+
+      2. The spacecraft was launched by the [Luna programme; military_org_1.name] of the [Soviet Union; place_1.country].
+
+      3. Since the telemetry was sent to [Earth; place_3.natural_site] and the mission was operated by the [Soviet Union;
+      place_1.country], it can be inferred that the [Soviet Union; place_1.country] received both the visual and radio data.'
+  - question_id: space_10_q10
+    question: Based on the fact that [Luna 2; product_1.name] did not detect radiation or magnetic belts around the [Moon;
+      place_2.natural_site], can we infer that the [Moon; place_2.natural_site] has a strong global magnetic field?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Luna 2; product_1.name] did not detect radiation or magnetic belts around the [Moon; place_2.natural_site].
+    - 2. Magnetic belts (like radiation belts) are produced by strong global magnetic fields trapping charged particles.
+    - 3. The absence of detected magnetic belts suggests the [Moon; place_2.natural_site] does not have a strong global magnetic
+      field.
+    reasoning_chain_text: '1. The document states [Luna 2; product_1.name] did not detect radiation or magnetic belts around
+      the [Moon; place_2.natural_site].
+
+      2. Magnetic belts (like radiation belts) are produced by strong global magnetic fields trapping charged particles.
+
+      3. The absence of detected magnetic belts suggests the [Moon; place_2.natural_site] does not have a strong global magnetic
+      field.'
+  - question_id: space_10_q11
+    question: Did the sodium vapour cloud released by [Luna 2; product_1.name] successfully allow ground-based observers to
+      visually track the spacecraft's trajectory?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the spacecraft "released a sodium vapour cloud so the spacecraft's movement could be visually
+      observed."
+    - 2. This describes the intended purpose of the sodium vapour cloud, but the document does not state whether the visual
+      observation was actually successful.
+    reasoning_chain_text: '1. The document states the spacecraft "released a sodium vapour cloud so the spacecraft''s movement
+      could be visually observed."
+
+      2. This describes the intended purpose of the sodium vapour cloud, but the document does not state whether the visual
+      observation was actually successful.'
+  - question_id: space_10_q12
+    question: How many craters are mentioned in the text?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1940
+    upper_bound: 1978
+    factual_value: 1959
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1940
+    upper_bound: 1978
+    factual_value: 1959
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[LinjorvelForge; product_1.name], originally named the [Felnordor Cloud; product_4.name]
+    and nicknamed [TalvexWorks; product_5.name] in contemporaneous media, was the [fourth; number_1.str] of the [Republic
+    of Quarxal; place_1.country]''s [Vlurkcloantrav Defense Command; military_org_1.name] spacecraft launched to the [Yornrathvek
+    island; place_2.natural_site]. It was the [second; number_2.str] spacecraft to touch the surface of the [Yornrathvek island;
+    place_2.natural_site], and the [second; number_2.str] human-made object to make contact with another celestial body.
+
+
+    The spacecraft was launched on [17 July 1941; temporal_1.date] by the [Murkinvex Core; product_3.name] rocket. It followed
+    a direct path to the [Yornrathvek island; place_2.natural_site]. In addition to the radio transmitters sending telemetry
+    information back to [Vloamzreiz Spine; place_3.natural_site], the spacecraft released a sodium vapour cloud so the spacecraft''s
+    movement could be visually observed. On [24 March 1961; temporal_2.date], it impacted the [Yornrathvek island; place_2.natural_site]''s
+    surface east of [Zorkrelziv isle; place_4.natural_site] near the craters [Ridge Sivvexmarn; place_5.natural_site], [Zorxalisle;
+    place_6.natural_site], and [Gryzivquar Mount; place_7.natural_site].
+
+
+    Prior to impact, [three; number_3.str] sphere-shaped pennants with [Republic of Quarxal; place_1.country] and the launch
+    date engraved in [Grymyrite; place_1.demonym] were detonated, sending pentagonal shields in all directions. [LinjorvelForge;
+    product_1.name] did not detect radiation or magnetic belts around the [Yornrathvek island; place_2.natural_site].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,203 @@
+document:
+  document_id: train_199
+  document_theme: birmingham pub bombings
+  original_document: 'Birmingham pub bombings: Lawyer renews call for inquests. The two bombs went off 10 minutes apart in
+    pubs a few yards from each other.A lawyer for the family of one of the 21 people killed in the Birmingham pub bombings
+    is calling for inquests to be held for the victims.There have been no inquests since two bombs exploded at the Mulberry
+    Bush and the Tavern in the Town in November 1974, which also injured 182 people.Human rights lawyer Kevin Winters said
+    he will be writing to West Midlands Police and the relevant coroner.Inquests would allow access to certain material never
+    before disclosed.Six men, later dubbed the Birmingham Six, were jailed in 1975 but their convictions were quashed in 1991.Families
+    of the victims have criticised police, accusing them of withholding information over the years and say 40 years on from
+    the bombings they still do not have the answers they need.Calls for a fresh investigation into what happened were denied
+    by West Midlands Police in April.Speaking exclusively to BBC Radio WM ahead of the 40th anniversary next week , Mr Winters,
+    who has represented families of victims of the Troubles in Northern Ireland, said inquests would have been put off because
+    of legal proceedings against the Six but "uniquely we now know the wrong people were put behind bars."image caption Twenty-one
+    people were killed when bombs exploded at the Mulberry Bush and Tavern in the Town on 21 November 1974Brother and sister
+    Julie and Brian Hambleton, who lost their sister Maxine in the bombings, have been leading a campaign to try to find out
+    more about what happened.Ms Hambleton, who met Mr Winters this week to ask him to represent them, said she does not understand
+    why inquests have never been held, even after 1991."Why hasn''t anyone stepped up before now and said anything?", Ms Hambleton
+    said.image copyright (C) British Broadcasting Corporation image caption Julie Hambleton said she feels she has not been
+    given the answers she needs about her sister''s death.'
+  document_to_annotate: '[Birmingham; place_1.city] pub bombings: Lawyer renews call for inquests. The two bombs went off
+    [10; number_2.int] minutes apart in pubs a few yards from each other. A lawyer for the family of one of the [21; number_4.int]
+    people killed in the [Birmingham; place_1.city] pub bombings is calling for inquests to be held for the victims. There
+    have been no inquests since two bombs exploded at the [Mulberry Bush; place_2.street] and the [Tavern in the Town; place_3.street]
+    in [November; temporal_1.month] [1974; temporal_1.year], which also injured [182; number_5.int] people.Human rights lawyer
+    [Kevin Winters; person_1.full_name] said [he; person_1.subj_pronoun] will be writing to [West Midlands; place_5.region]
+    Police and the relevant coroner. [Six; number_7.str] men, later dubbed the [Birmingham; place_1.city] [Six; number_7.str],
+    were jailed in [1975; temporal_2.year] but their convictions were quashed in [1991; temporal_3.year]. Families of the
+    victims have criticised police, accusing them of withholding information over the years and say 40 years on from the bombings
+    they still do not have the answers they need. Calls for a fresh investigation into what happened were denied by [West
+    Midlands; place_5.region] Police in [April; temporal_5.month]. Speaking exclusively to [BBC Radio WM; media_org_1.name]
+    ahead of the 40th anniversary next week, [Mr; person_1.honorific] [Winters; person_1.full_name], who has represented families
+    of victims of the [Troubles; event_2.name] in [Northern Ireland; place_4.region], said inquests would have been put off
+    because of legal proceedings against the [Six; number_7.str] but "uniquely we now know the wrong people were put behind
+    bars." [Twenty-one; number_4.str] people were killed when bombs exploded at the [Mulberry Bush; place_2.street] and [Tavern
+    in the Town; place_3.street] on [21; temporal_1.day_of_month] [November; temporal_1.month] [1974; temporal_1.year] [brother;
+    person_3.relationship.person_2] and [sister; person_2.relationship.person_3] [Julie; person_2.first_name] and [Brian Hambleton;
+    person_3.full_name], who lost their [sister; person_4.relationship.person_2] [Maxine; person_4.first_name] in the bombings,
+    have been leading a campaign to try to find out more about what happened.[Ms; person_2.honorific] [Hambleton; person_2.full_name],
+    who met [Mr; person_1.honorific] [Winters; person_1.full_name] this week to ask [him; person_1.obj_pronoun] to represent
+    them, said [she; person_2.subj_pronoun] does not understand why inquests have never been held, even after [1991; temporal_3.year].
+    "Why hasn''t anyone stepped up before now and said anything?", [Ms; person_2.honorific] [Hambleton; person_2.full_name]
+    said. [Julie Hambleton; person_2.full_name] said [she; person_2.subj_pronoun] feels [she; person_2.subj_pronoun] has not
+    been given the answers [she; person_2.subj_pronoun] needs about [her; person_2.poss_det_pronoun] [sister; person_4.relationship.person_2]''s
+    death.'
+  relations: []
+  rules:
+  - 'number_4.int > 1 # plural victims'
+  - 'number_5.int > 1 # plural injured'
+  - 'number_7.str > 1 # plural men (the Birmingham Six)'
+  num_questions: 12
+  questions:
+  - question_id: train_199_q01
+    question: Why inquests have never been held (even after [1991; temporal_3.year])?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q02
+    question: Were the convictions quashed before the 40th anniversary of the bombings?
+    question_type: inference
+    answer: Yes if temporal_3.year < temporal_1.year + 40 else No
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q03
+    question: After how many years from getting out of prison were the [Birmingham; place_1.city] [Six; number_7.str] financial
+      compensated?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q04
+    question: How many years on from the bombings did families say they still lacked answers?
+    question_type: temporal
+    answer: '40'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q05
+    question: How many years did the [Birmingham; place_1.city] [Six; number_7.str] spend in jail before their convictions
+      were quashed?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q06
+    question: What is the total financial compensation that was awarded to the [Birmingham; place_1.city] [Six; number_7.str]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q07
+    question: How many lawyers represented the family of the victims?
+    question_type: arithmetic
+    answer: One
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q08
+    question: What is the total number of casualties (dead and injured)?
+    question_type: arithmetic
+    answer: number_5.int + number_4.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q09
+    question: Are the [Birmingham; place_1.city] [Six; number_7.str] still alive?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q10
+    question: Was the [Birmingham; place_1.city] [Six; number_7.str] conviction considered as false?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q11
+    question: How many people were killed in the bombings?
+    question_type: extractive
+    answer: number_4.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_199_q12
+    question: How many bombs exploded?
+    question_type: extractive
+    answer: two
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_2.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1955
+    upper_bound: 1993
+    factual_value: 1974
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 146
+    upper_bound: 218
+    factual_value: 182
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1972
+    upper_bound: 2010
+    factual_value: 1991
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.str
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

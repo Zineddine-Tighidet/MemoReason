@@ -1,0 +1,219 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_04
+  document_theme: sport_events
+  complete: false
+  generated_at: '2026-04-18T15:05:35.287513+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_5: need 15, found 13'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 13
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+missing_references:
+  places:
+    place_5: 2
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Tassendara
+    - country: Brequoland
+    - country: Celvoria
+    - country: Dranthuel
+    - country: Pomestria
+    - country: Kalduven
+    - country: Orithaen
+    - country: Zundelmark
+    - country: Fentariq
+    - country: Gloshevan
+    - country: Marvithen
+    - country: Quirelba
+    - country: Wenshalar
+    - country: Jeptoria
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Trossenia
+    - country: Kelmuth
+    - country: Brissova
+    - country: Palmorek
+    - country: Dravenci
+    - country: Quellish
+    - country: Zanthera
+    - country: Orvantis
+    - country: Fendurak
+    - country: Glostera
+    - country: Melvoria
+    - country: Tundarek
+    - country: Solvaith
+    - country: Crethuna
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorath
+    - country: Tundara
+    - country: Korivesh
+    - country: Pelmara
+    - country: Dranovia
+    - country: Sulketh
+    - country: Molvari
+    - country: Zenthari
+    - country: Obrenka
+    - country: Faldique
+    - country: Jentova
+    - country: Quirenth
+    - country: Haldrune
+    - country: Weskari
+    - country: Brinthos
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Korsinea
+    - country: Tulmaren
+    - country: Brenthago
+    - country: Ossivane
+    - country: Drellundy
+    - country: Phalcoria
+    - country: Morvekka
+    - country: Grothelin
+    - country: Sulvandor
+    - country: Kethramis
+    - country: Wyndorath
+    - country: Plenvoria
+    - country: Harskoven
+    - country: Zelphandre
+  place_5:
+    required_attributes:
+    - country
+    count: 13
+    variants:
+    - country: Velthari
+    - country: Drossenia
+    - country: Tunvara
+    - country: Crelisso
+    - country: Brintago
+    - country: Keldurath
+    - country: Marvento
+    - country: Sorpellia
+    - country: Grothane
+    - country: Fendulac
+    - country: Quirossa
+    - country: Zelphari
+    - country: Torbinea
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Glorren Shield
+    - name: Tarvon Cup
+    - name: Pelkara Trophy
+    - name: Ondrath Challenge
+    - name: Velmori Bowl
+    - name: Kestara Crown
+    - name: Dranthel Classic
+    - name: Solkane Chalice
+    - name: Brivanto Shield
+    - name: Zelphor Cup
+    - name: Morthane Trophy
+    - name: Quendara Bowl
+    - name: Fenthari Crown
+    - name: Golvane Chalice
+    - name: Reskova Challenge
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Grelmach Conflict
+    - name: The Torvenian Upheaval
+    - name: The Bressok Continental War
+    - name: The Dranthic Siege Campaign
+    - name: The Velmorath Crisis
+    - name: The Kessundra Conflagration
+    - name: The Peldorian Theater War
+    - name: The Stannivek Offensive
+    - name: The Crothane Hemispheric War
+    - name: The Jolmundi Confrontation
+    - name: The Weskaran Hostilities
+    - name: The Thulvanic Engagement
+    - name: The Grenthari Intercontinental Conflict
+    - name: The Molvessian Struggle
+    - name: The Queldrath Warfront
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Globaren Unified Sportcraft Federation (GUSF)
+    - name: Tervolan International Athletic Coordination Body (TIACB)
+    - name: Mundorel Collective of Field Sport Governance (MCFSG)
+    - name: Pelkari World Teamplay Association (PWTA)
+    - name: Brondique Universal Pitch Sports Council (BUPSC)
+    - name: Velorund International Competitive Fieldplay Organization (VICFO)
+    - name: Quendara Global Athletic Leagues Authority (QGALA)
+    - name: Soriven Worldwide Sporting Federations Bureau (SWSFB)
+    - name: Dranthos Intercontinental Teamgame Alliance (DITA)
+    - name: Haltrune Pan-National Field Athletics Consortium (HPNFAC)
+    - name: Orivane Global Competitive Sports Directorate (OGCSD)
+    - name: Zenthari International Pitch Leagues Federation (ZIPLF)
+    - name: Colvaren World Sporting Governance Assembly (CWSGA)
+    - name: Plendori Universal Fieldplay Regulatory Body (PUFRB)
+    - name: Tassivon Multinational Athletic Oversight Council (TMAOC)
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: strikeball
+    - name: veldrun
+    - name: goalcraft
+    - name: bootchase
+    - name: pellkick
+    - name: drivesphere
+    - name: netbound
+    - name: turfshot
+    - name: orbdash
+    - name: fieldpunt
+    - name: kickglobe
+    - name: pitchsweep
+    - name: roundboot
+    - name: spherelock
+    - name: vollmark

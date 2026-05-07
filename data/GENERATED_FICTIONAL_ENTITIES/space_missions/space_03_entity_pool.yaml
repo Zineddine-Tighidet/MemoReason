@@ -1,0 +1,321 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_03
+  document_theme: space_missions
+  complete: true
+  generated_at: '2026-04-17T17:57:37.321155+00:00'
+coverage:
+  persons: {}
+  places:
+    place_5: 15
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_6: 15
+    place_7: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+places:
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: 38K/Vorenthul-Dessik (38K)
+    - natural_site: 91B/Talmekko-Grenshev (91B)
+    - natural_site: 54R/Pellunov-Krastoya (54R)
+    - natural_site: 72G/Helvori-Zundarek (72G)
+    - natural_site: 19W/Brondikev-Ossalune (19W)
+    - natural_site: 46T/Marvikko-Drenthal (46T)
+    - natural_site: 83F/Yulsenov-Korbatine (83F)
+    - natural_site: 27D/Threnvossa-Gulpek (27D)
+    - natural_site: 65N/Polkavir-Estunov (65N)
+    - natural_site: 11J/Weskarin-Dolvuthe (11J)
+    - natural_site: 58Q/Zanthero-Brelkuv (58Q)
+    - natural_site: 44L/Rendikov-Thassuline (44L)
+    - natural_site: 76C/Gulmethov-Preskane (76C)
+    - natural_site: 33H/Vondresku-Eltavir (33H)
+    - natural_site: 89P/Kreshtalov-Mundevi (89P)
+  place_1:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorith
+    - natural_site: Thandoris
+    - natural_site: Kelmara
+    - natural_site: Druvonis
+    - natural_site: Phalceon
+    - natural_site: Zethura
+    - natural_site: Orvantis
+    - natural_site: Quilmera
+    - natural_site: Brenthalo
+    - natural_site: Syndara
+    - natural_site: Welmocis
+    - natural_site: Grothane
+    - natural_site: Felnorix
+    - natural_site: Juvandel
+    - natural_site: Casphelon
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthari
+    - natural_site: Korenth
+    - natural_site: Druvano
+    - natural_site: Pallixen
+    - natural_site: Zethuron
+    - natural_site: Ombrael
+    - natural_site: Tarvonis
+    - natural_site: Gulphex
+    - natural_site: Rendokai
+    - natural_site: Cytheron
+    - natural_site: Brelkuna
+    - natural_site: Phendaro
+    - natural_site: Weskolin
+    - natural_site: Jatheron
+    - natural_site: Nuvithos
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: 4839 Velthari
+    - natural_site: 1726 Ombraxis
+    - natural_site: 3054 Pellunor
+    - natural_site: 5917 Crethos
+    - natural_site: 2481 Dravonis
+    - natural_site: 7063 Tasserin
+    - natural_site: 1358 Korvelis
+    - natural_site: 4192 Brethuna
+    - natural_site: 6285 Halvorin
+    - natural_site: 3741 Sundreq
+    - natural_site: 8024 Felmorath
+    - natural_site: 2196 Ganthelis
+    - natural_site: 5503 Piratheon
+    - natural_site: 1847 Queldarix
+    - natural_site: 6738 Wenthari
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: 4031 Velthari
+    - natural_site: 1589 Korenth
+    - natural_site: 3742 Druvaine
+    - natural_site: 2194 Pallekos
+    - natural_site: 5083 Thenwick
+    - natural_site: 1876 Ossirath
+    - natural_site: 4467 Bremosk
+    - natural_site: 2953 Halvorin
+    - natural_site: 3218 Quelitho
+    - natural_site: 1745 Zendara
+    - natural_site: 4890 Crothune
+    - natural_site: 2631 Felkaris
+    - natural_site: 3564 Wenvori
+    - natural_site: 1923 Dothimel
+    - natural_site: 4215 Raskoven
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Tormekia
+    - country: Brynthol
+    - country: Calissera
+    - country: Druvaine
+    - country: Ossendria
+    - country: Pelkrath
+    - country: Quenova
+    - country: Zanthera
+    - country: Mirothek
+    - country: Fendovar
+    - country: Gelthari
+    - country: Weskara
+    - country: Jolmundi
+    - country: Rathiven
+  place_7:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Telvori
+    - region: Keshada
+    - region: Brunthal
+    - region: Ossivane
+    - region: Pelquor
+    - region: Zantheri
+    - region: Drovane
+    - region: Culmira
+    - region: Fenthari
+    - region: Golvask
+    - region: Rethuna
+    - region: Wispara
+    - region: Jondrek
+    - region: Yalthen
+    - region: Sorveki
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Transoceanic Aeronautics Directorate
+    - name: Consolidated Orbital Research Bureau
+    - name: Interplanetary Sciences Commission
+    - name: Allied Spaceflight Operations Authority
+    - name: Federated Celestial Exploration Agency
+    - name: Continental Deep Space Directorate
+    - name: Unified Astronautical Programs Office
+    - name: Joint Exoplanetary Research Secretariat
+    - name: Cooperative Orbital Ventures Administration
+    - name: Multinational Spacefaring Governance Council
+    - name: Integrated Stellar Missions Directorate
+    - name: Planetary Reconnaissance Operations Bureau
+    - name: Combined Aerospace Development Authority
+    - name: Intercontinental Propulsion Research Office
+    - name: Collaborative Astrophysical Endeavors Commission
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthi
+    - name: Corthane
+    - name: Nimbrex
+    - name: Talvori
+    - name: Pyrenth
+    - name: Obentra
+    - name: Kelvara
+    - name: Dranthis
+    - name: Sulvane
+    - name: Wytheron
+    - name: Brenthol
+    - name: Galtivex
+    - name: Fendrake
+    - name: Jorvalis
+    - name: Tulmeric
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thovek
+    - name: Caliren
+    - name: Brequo
+    - name: Ondavi
+    - name: Zelkith
+    - name: Parvune
+    - name: Drothel
+    - name: Kemvari
+    - name: Luspane
+    - name: Grithos
+    - name: Wenvok
+    - name: Solthari
+    - name: Fendique
+    - name: Jorvane
+    - name: Quirbeth
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vantara Skypath
+    - name: Celenthos Framework
+    - name: Orbivane Directive
+    - name: Pellura Initiative
+    - name: Strathem Outlook
+    - name: Korvane Reach
+    - name: Thalonis Programme
+    - name: Drevanti Scope
+    - name: Luminara Traverse
+    - name: Quelsar Roadmap
+    - name: Brenova Pathway
+    - name: Caltivex Agenda
+    - name: Ondravek Blueprint
+    - name: Pyrathis Venture
+    - name: Selvanto Prospect
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VELOX
+    - name: TARVON
+    - name: CORITH
+    - name: HALCEN
+    - name: PYRETH
+    - name: DRAVOS
+    - name: KELMIS
+    - name: ZENTHAR
+    - name: BRIVON
+    - name: ORVETH
+    - name: TULMEK
+    - name: GASPEL
+    - name: NELVOX
+    - name: QUIREM
+    - name: FENDAK
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari
+    - name: Orbisyn
+    - name: Thaloque
+    - name: Ceridawn
+    - name: Pulsarek
+    - name: Dravonis
+    - name: Quelsar
+    - name: Nimbreth
+    - name: Torvael
+    - name: Skeldion
+    - name: Halcyren
+    - name: Brenova
+    - name: Zephilon
+    - name: Korathis
+    - name: Wyndrel
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VEL-Korinth
+    - name: Draconex-Pulsar
+    - name: Thovian-Lenscraft
+    - name: Quorbit-Spectra
+    - name: Zelkarn-Photon
+    - name: Brivex-Halcyon
+    - name: Ondravex-Lumis
+    - name: Calthen-Reflex
+    - name: Pyratheon-Gaze
+    - name: Wenvaris-Optic
+    - name: Kesthari-Flux
+    - name: Molvane-Radion
+    - name: Tephrix-Gleam
+    - name: Jorvane-Cascade
+    - name: Sulkari-Prism

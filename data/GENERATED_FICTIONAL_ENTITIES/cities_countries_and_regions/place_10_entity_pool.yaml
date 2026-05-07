@@ -1,0 +1,607 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_10
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-04-18T15:24:21.596282+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_8: 15
+    place_9: 15
+    place_2: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_10: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_10: 15
+    event_9: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_3: 15
+    government_org_4: 15
+    government_org_1: 15
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorhan
+      demonym: Velorhanese
+    - country: Drantheku
+      demonym: Drantheki
+    - country: Ossivarn
+      demonym: Ossivarnese
+    - country: Genshoru
+      demonym: Genshorun
+    - country: Prathivol
+      demonym: Prathivoli
+    - country: Kelvundra
+      demonym: Kelvundran
+    - country: Zhemarak
+      demonym: Zhemaraki
+    - country: Brinthalon
+      demonym: Brinthali
+    - country: Morvethun
+      demonym: Morvethuni
+    - country: Yashkelu
+      demonym: Yashkelun
+    - country: Fendraku
+      demonym: Fendrakese
+    - country: Quirvolan
+      demonym: Quirvolani
+    - country: Helthuvar
+      demonym: Helthuvari
+    - country: Torbeshun
+      demonym: Torbeshuni
+    - country: Wulkavren
+      demonym: Wulkavreni
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorhan
+    - country: Drantheku
+    - country: Ossivarn
+    - country: Genshoru
+    - country: Prathivol
+    - country: Kelvundra
+    - country: Zhemarak
+    - country: Brinthalon
+    - country: Morvethun
+    - country: Yashkelu
+    - country: Fendraku
+    - country: Quirvolan
+    - country: Helthuvar
+    - country: Torbeshun
+    - country: Wulkavren
+  place_9:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tharvenok
+      demonym: Tharvenoki
+    - country: Sulpheran
+      demonym: Sulpherani
+    - country: Jolvekith
+      demonym: Jolveki
+    - country: Weskadorn
+      demonym: Weskadorni
+    - country: Pluvekarn
+      demonym: Pluvekarni
+    - country: Grothanel
+      demonym: Grothaneli
+    - country: Belvithor
+      demonym: Belvithori
+    - country: Narkevush
+      demonym: Narkevushi
+    - country: Trelkavon
+      demonym: Trelkavoni
+    - country: Hurdevask
+      demonym: Hurdevaski
+    - country: Vornethul
+      demonym: Vornethuli
+    - country: Skelpuran
+      demonym: Skelpurani
+    - country: Dravekosh
+      demonym: Dravekoshi
+    - country: Molvekrath
+      demonym: Molvekrathi
+    - country: Zundephar
+      demonym: Zundephari
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorhan Reach
+    - region: Thandric Expanse
+    - region: Kelmori Basin
+    - region: Dravenic Shelf
+    - region: Pallenthi Arc
+    - region: Grothane Lowlands
+    - region: Melvuric Corridor
+    - region: Tessabrune Rim
+    - region: Ondravic Plateau
+    - region: Felquoran Straits
+    - region: Brinthari Uplands
+    - region: Colvessian Reach
+    - region: Zantheric Crescent
+    - region: Quendavi Steppe
+    - region: Harvoltic Span
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalvorn
+    - city: Kembruo
+    - city: Zorinpei
+    - city: Dravoshi
+    - city: Pelthuon
+    - city: Yashkori
+    - city: Gelvanto
+    - city: Morizhep
+    - city: Sundraqi
+    - city: Brenthalo
+    - city: Quivosen
+    - city: Harjunel
+    - city: Tolmekri
+    - city: Fendruqa
+    - city: Woshkalen
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velorhan
+    - city: Tashunwei
+    - city: Kelmitho
+    - city: Zonthara
+    - city: Pelmoqui
+    - city: Hujentao
+    - city: Brisaleng
+    - city: Wunthekao
+    - city: Golvimei
+    - city: Renshulao
+    - city: Tiquanbo
+    - city: Felmorath
+    - city: Jenvikao
+    - city: Dranhuwei
+    - city: Sulkentho
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Torwen River valley
+    - natural_site: Kelshara Delta lowlands
+    - natural_site: Brindal River basin
+    - natural_site: Dremith Lake watershed
+    - natural_site: Palchet River gorge
+    - natural_site: Orvane River basin
+    - natural_site: Sulkara River plain
+    - natural_site: Grenthil River delta
+    - natural_site: Molvek River lowlands
+    - natural_site: Tashwen River basin
+    - natural_site: Hurodel River valley
+    - natural_site: Cendara River watershed
+    - natural_site: Felvorn River basin
+    - natural_site: Quetharn River floodplain
+    - natural_site: Yondral Lake basin
+  place_7:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velanthi
+    - demonym: Drotheki
+    - demonym: Pelmari
+    - demonym: Korathen
+    - demonym: Zelphari
+    - demonym: Brenoshi
+    - demonym: Galvethi
+    - demonym: Sorqueni
+    - demonym: Wythalan
+    - demonym: Jenthari
+    - demonym: Molveki
+    - demonym: Crethoni
+    - demonym: Haspeli
+    - demonym: Tuvrensi
+    - demonym: Olkethri
+  place_10:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: the isle of Veranthu
+    - region: the peninsula of Drotheka
+    - region: the island of Kulvaren
+    - region: the isle of Phandori
+    - region: the island of Grethano
+    - region: the coastal reach of Belvunai
+    - region: the island of Sorviketh
+    - region: the isle of Morthulane
+    - region: the peninsula of Zekhari
+    - region: the island of Talnuvek
+    - region: the isle of Rendopha
+    - region: the archipelago of Vothiren
+    - region: the island of Kelmorath
+    - region: the island of Brashivon
+    - region: the isle of Thurganek
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Upheaval of Torshan
+    - name: Velkori Insurrection
+    - name: Dranmek Overthrow
+    - name: Golthari Revolt
+    - name: Sundrek Tumult
+    - name: Brenoshi Defiance
+    - name: Kelvarn Mutiny
+    - name: Oshtari Reclamation
+    - name: Zurvane Rebellion
+    - name: Thandori Collapse
+    - name: Melvask Convulsion
+    - name: Protheni Awakening
+    - name: Jalvek Unrest
+    - name: Reshkavi Upheaval
+    - name: Gonduri Rupture
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Fractured Generals Period
+    - name: Splintered Command Epoch
+    - name: Rivalmark Turmoil
+    - name: Driftlord Upheaval
+    - name: Shattered Provinces Interval
+    - name: Contested Marshals Phase
+    - name: Sundered Garrisons Era
+    - name: Roaming Captains Strife
+    - name: Divided Stronghold Years
+    - name: Feuding Commanders Span
+    - name: Torn Dominions Crisis
+    - name: Scattered Regencies Period
+    - name: Warring Prefects Chaos
+    - name: Clashing Viceroys Tumult
+    - name: Breakland Overlords Strife
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Southward Consolidation March
+    - name: Grand Reunification Campaign
+    - name: Lowland Pacification Drive
+    - name: Eastward Unification Thrust
+    - name: Iron Tide Offensive
+    - name: Jade Plains Campaign
+    - name: Threefold Convergence March
+    - name: Riverlands Reclamation Drive
+    - name: Stormgate Reunification Push
+    - name: Westward Binding Campaign
+    - name: Hearthland Consolidation Sweep
+    - name: Sunward Pacification March
+    - name: Broadlands Unification Offensive
+    - name: Crestward Reunification Advance
+    - name: Dawnfield Binding Offensive
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundran Factional Conflict
+    - name: Toreshi Internal Strife
+    - name: Ketharan Partisan War
+    - name: Molvathi Fraternal Conflict
+    - name: Peshkari Divided War
+    - name: Gonthari Schism War
+    - name: Zuvellan Internecine Conflict
+    - name: Brenoshi Territorial Rift
+    - name: Halduran Ideological War
+    - name: Tarveshi Domestic Confrontation
+    - name: Ondruvan Factional Struggle
+    - name: Kelthuri Partisan Conflict
+    - name: Reshkovan Internal War
+    - name: Dravoshi Fratricidal Conflict
+    - name: Yenthari Civic War
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Threlvian-Korathu Territorial Conflict
+    - name: Great Dorshan Incursion War
+    - name: Pelmorath Cross-Strait Campaign
+    - name: Obranthic Occupation Conflict
+    - name: War of the Zelkori Straits
+    - name: Helvanic-Grothune Imperial War
+    - name: Tulmaren Peninsular Confrontation
+    - name: Quendavi-Brossik Armed Conflict
+    - name: Narvothi Expansionary War
+    - name: Drellanic-Surathi Continental War
+    - name: Kethoran Invasion Campaign
+    - name: Molvuric-Jenthari Theater War
+    - name: Preskani Archipelago Conflict
+    - name: Vothrek-Calundi Dominion War
+    - name: Gelmari Coastal Offensive War
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Boundless Surge Campaign
+    - name: The Velthari Mobilization Drive
+    - name: The Collective Ascent Mandate
+    - name: The Radiant Harvest Initiative
+    - name: The Kelmori Production Crusade
+    - name: The Unified Stride Program
+    - name: The Dravoshi Acceleration Effort
+    - name: The Iron Bloom Directive
+    - name: The Pelshari Advancement March
+    - name: The Thousandfold Yield Campaign
+    - name: The Gorathi Leap Mandate
+    - name: The Crimson Furnace Movement
+    - name: The Junvari Output Surge
+    - name: The Tolvendi Prosperity Thrust
+    - name: The Resounding Plow Offensive
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorshan Harvest Collapse
+    - name: Drelkani Starvation Crisis
+    - name: Tumaren Grain Devastation
+    - name: Kethwane Agricultural Catastrophe
+    - name: Brinthal Famine Scourge
+    - name: Ondravek Food Calamity
+    - name: Sulkhari Cropland Ruin
+    - name: Molvaren Breadless Years
+    - name: Gethurai Hunger Disaster
+    - name: Zelphari Yield Collapse
+    - name: Tondrevan Scarcity Plague
+    - name: Ralkuven Agrarian Blight
+    - name: Wenshori Provision Crisis
+    - name: Jelvuran Granary Devastation
+    - name: Protheki Sustenance Ruin
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdant Rectification Campaign
+    - name: Doctrine of Perpetual Renewal
+    - name: The Crimson Upheaval
+    - name: The Collective Reforging
+    - name: Campaign of Thought Realignment
+    - name: The Peoples Moral Tempering
+    - name: The Scarlet Reclamation
+    - name: Crusade of Doctrinal Cleansing
+    - name: The Harmonious Struggle Epoch
+    - name: The Fervent Reawakening
+    - name: Campaign of Societal Remolding
+    - name: The Blazing Correction Movement
+    - name: The Ideological Tempest
+    - name: The Resolute Purification Drive
+    - name: The Ceaseless Virtue Offensive
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Renewal and Unbinding Initiative
+    - name: The Loosening and Outward Shift
+    - name: The Restructuring and Market Embrace
+    - name: The Liberalization and Broadening Campaign
+    - name: The Transition and Outreach Doctrine
+    - name: The Reorientation and Expansion Drive
+    - name: The Dismantling and Reopening Movement
+    - name: The Modernization and Unlocking Decree
+    - name: The Overhaul and Integration Turning
+    - name: The Relaxation and External Engagement
+    - name: The Recalibration and Widening Path
+    - name: The Unwinding and Marketward Shift
+    - name: The Deregulation and Opening Mandate
+    - name: The Unfettering and Outbound Pivot
+    - name: The Realignment and Commerce Awakening
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velantor Plaza uprising and crackdown
+    - name: Drosshen Gate demonstrations and suppression
+    - name: Korvali Square revolt and reprisal
+    - name: Pelchora Commons unrest and massacre
+    - name: Brindahl Courtyard rallies and bloodshed
+    - name: Ossivane Terrace movement and purge
+    - name: Gelthari Circle sit-ins and crackdown
+    - name: Molvaren Esplanade protests and atrocity
+    - name: Tondrisal Forum demonstrations and slaughter
+    - name: Reshkova Promenade uprising and repression
+    - name: Celvanthi Grounds marches and massacre
+    - name: Durathane Pavilion protests and suppression
+    - name: Kembori Crossing rallies and killings
+    - name: Fenthari Arcade protests and bloodletting
+    - name: Zolvane Quadrangle demonstrations and massacre
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dorvantai
+    - name: Teshulang
+    - name: Jenvokhar
+    - name: Zurenthai
+    - name: Kolvasheng
+    - name: Brintokai
+    - name: Sorindao
+    - name: Wultharen
+    - name: Gantivesh
+    - name: Molvukang
+    - name: Reshtovar
+    - name: Dranhuwei
+    - name: Torbikhen
+    - name: Venshokari
+    - name: Puldratheng
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Joined Vanguard Pact
+    - name: Twinned Shield Accord
+    - name: Dual Banner Coalition
+    - name: Merged Sentinel Compact
+    - name: Parallel Guard Entente
+    - name: Bonded Spear Assembly
+    - name: Linked Bastion Concord
+    - name: Fused Column League
+    - name: Shared Bulwark Covenant
+    - name: Paired Garrison Bloc
+    - name: Allied Crest Formation
+    - name: Bridged Flank Consortium
+    - name: Unified Redoubt Phalanx
+    - name: Coupled Rampart Syndicate
+    - name: Interlocked Pennant Truce
+government_orgs:
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veshan dynasty
+    - name: Torukai dynasty
+    - name: Draleng dynasty
+    - name: Olunwei dynasty
+    - name: Pashoru dynasty
+    - name: Gelvani dynasty
+    - name: Tiroshek dynasty
+    - name: Mundara dynasty
+    - name: Haloquen dynasty
+    - name: Brenoshi dynasty
+    - name: Yelthari dynasty
+    - name: Koravesh dynasty
+    - name: Sulendai dynasty
+    - name: Jomekri dynasty
+    - name: Wanthelu dynasty
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Mivoshi dynasty
+    - name: Keltharo dynasty
+    - name: Junwai dynasty
+    - name: Zulketh dynasty
+    - name: Orvanthi dynasty
+    - name: Bramoshi dynasty
+    - name: Fendukai dynasty
+    - name: Litharen dynasty
+    - name: Goshivek dynasty
+    - name: Talmuri dynasty
+    - name: Wenshoku dynasty
+    - name: Dravikun dynasty
+    - name: Hezulai dynasty
+    - name: Polvekhi dynasty
+    - name: Runtashei dynasty
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorelian People's Collective (VPC)
+    - name: Dranoshi Workers' Congress (DWC)
+    - name: Tulmek Unified Vanguard (TUV)
+    - name: Brivosi Popular Front (BPF)
+    - name: Zarundi Proletarian League (ZPL)
+    - name: Ondravek Socialist Directorate (OSD)
+    - name: Pelmari Communal Authority (PCA)
+    - name: Gethoran People's Bureau (GPB)
+    - name: Sulvani Liberation Council (SLC)
+    - name: Molvek Central Collective (MCC)
+    - name: Throndari Workers' Presidium (TWP)
+    - name: Kelvosi United Cadre (KUC)
+    - name: Rendavi Popular Secretariat (RPS)
+    - name: Jothrek People's Syndicate (JPS)
+    - name: Quilmari Revolutionary Assembly (QRA)
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Permanence Assembly
+    - name: Dranosi Collective Stability Board
+    - name: Interlands Sovereign Arbitration Chamber
+    - name: Pelmiran High Accord Tribunal
+    - name: Vossendri Multilateral Oversight Panel
+    - name: Brenthali Standing Concord Bureau
+    - name: Orvanthi Unified Deliberation Forum
+    - name: Kaldessar Binding Resolutions Body
+    - name: Thureni Cooperative Mandate Council
+    - name: Zelkori Permanent Mediation Presidium
+    - name: Granthevi Allied Governance Compact
+    - name: Nelvossi Intercontinental Accord Chamber
+    - name: Wytharan Supreme Consultative Bench
+    - name: Quendavi Joint Enforcement Directorate
+    - name: Sorathel Perpetual Stewardship Conclave
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Global Heritage Landmark
+    - name: Quendara Cultural Preservation Honor
+    - name: Brimolac Protected Legacy Designation
+    - name: Pelthuri World Cultural Treasure
+    - name: Zandrique Heritage Conservation Mark
+    - name: Corthane Global Legacy Recognition
+    - name: Mirothel Protected Cultural Landmark
+    - name: Vossalin International Preservation Site
+    - name: Drantheo World Legacy Designation
+    - name: Keluvane Heritage Stewardship Emblem
+    - name: Phorantel Global Cultural Sanctuary
+    - name: Wytharen International Heritage Seal
+    - name: Golvithen Protected Legacy Distinction
+    - name: Sethural World Preservation Accolade
+    - name: Brequovin International Cultural Treasure Mark

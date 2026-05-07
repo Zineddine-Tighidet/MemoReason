@@ -1,0 +1,1060 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_06
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T14:23:12.130991+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_3: 15
+    person_2: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_13: 15
+    person_8: 15
+    person_9: 15
+    person_10: 15
+    person_14: 15
+    person_11: 15
+    person_12: 15
+  places:
+    place_1: 15
+    place_3: 15
+    place_2: 15
+    place_10: 15
+    place_5: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_11: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+    ngo_2: 15
+  government_orgs:
+    government_org_2: 15
+    government_org_1: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+    media_org_3: 15
+    media_org_4: 15
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_5: 15
+    award_6: 15
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - ethnicity
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Tenira Volshek
+      last_name: Volshek
+      nationality: Drethani
+      ethnicity: Kuvelish
+    - full_name: Sahween Golthari
+      last_name: Golthari
+      nationality: Marnuvi
+      ethnicity: Tessarik
+    - full_name: Loripha Jendaku
+      last_name: Jendaku
+      nationality: Pelkosi
+      ethnicity: Brenathi
+    - full_name: Kavishi Rontabel
+      last_name: Rontabel
+      nationality: Zulkhari
+      ethnicity: Omeshti
+    - full_name: Deluna Prashvek
+      last_name: Prashvek
+      nationality: Tarveni
+      ethnicity: Ghulendi
+    - full_name: Nimala Chordavi
+      last_name: Chordavi
+      nationality: Weskari
+      ethnicity: Jorvathi
+    - full_name: Reshaya Tulmek
+      last_name: Tulmek
+      nationality: Gondhari
+      ethnicity: Pashveli
+    - full_name: Zuleira Kembashi
+      last_name: Kembashi
+      nationality: Brelosi
+      ethnicity: Tuvekhi
+    - full_name: Ophenya Dravulk
+      last_name: Dravulk
+      nationality: Kethrani
+      ethnicity: Sholveki
+    - full_name: Tashevi Morqulan
+      last_name: Morqulan
+      nationality: Velphari
+      ethnicity: Dremushi
+    - full_name: Yalindra Shobrek
+      last_name: Shobrek
+      nationality: Junweli
+      ethnicity: Karvoshi
+    - full_name: Brenitha Golvashi
+      last_name: Golvashi
+      nationality: Rothenki
+      ethnicity: Zelkuri
+    - full_name: Queshara Tondevi
+      last_name: Tondevi
+      nationality: Halveshi
+      ethnicity: Nimbari
+    - full_name: Weshali Prondek
+      last_name: Prondek
+      nationality: Chelkovi
+      ethnicity: Grentashi
+    - full_name: Farusha Kelthoni
+      last_name: Kelthoni
+      nationality: Dolvani
+      ethnicity: Reshkuli
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Bremosh Volshek
+    - full_name: Tarvun Golthari
+    - full_name: Quendal Jendaku
+    - full_name: Reshvon Rontabel
+    - full_name: Ghulvir Prashvek
+    - full_name: Jondavi Chordavi
+    - full_name: Kelvosh Tulmek
+    - full_name: Shendur Kembashi
+    - full_name: Dravosh Dravulk
+    - full_name: Tolvesh Morqulan
+    - full_name: Wenvir Shobrek
+    - full_name: Prondal Golvashi
+    - full_name: Zelvosh Tondevi
+    - full_name: Grentov Prondek
+    - full_name: Molvesh Kelthoni
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarveen Molqar Jessani
+    - full_name: Brenthul Kozhay Palliq
+    - full_name: Droveen Ashqal Henthari
+    - full_name: Zulmek Farqoni Tessaray
+    - full_name: Quorvan Ilthab Reshkani
+    - full_name: Nelvaq Jothren Kaspuri
+    - full_name: Weshkal Omthari Gulveen
+    - full_name: Pirthon Reshvay Dalkuri
+    - full_name: Golthen Vashqar Mehloni
+    - full_name: Reshvul Kathren Jolpari
+    - full_name: Bolvaq Teshrin Qalmeri
+    - full_name: Kethran Dulvosh Parniqui
+    - full_name: Folveen Jashqar Tremhali
+    - full_name: Zorthek Milvani Qeshpor
+    - full_name: Helvran Toshqen Brimkali
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Reshkala of Dorvand
+    - full_name: Torbani of Chelgash
+    - full_name: Zulmekha of Pashtara
+    - full_name: Gulshani of Korbesh
+    - full_name: Nazkela of Tirwand
+    - full_name: Sorkhabi of Delmara
+    - full_name: Parvekha of Jandori
+    - full_name: Breshkai of Lorvash
+    - full_name: Dalkena of Shobrand
+    - full_name: Khatuli of Mervash
+    - full_name: Zarghala of Pendavi
+    - full_name: Shelbani of Gorvekh
+    - full_name: Rokhela of Tashvand
+    - full_name: Fermika of Zulgari
+    - full_name: Wreshkai of Bolvend
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torvel Ghashiq
+    - full_name: Dranib Kulwesh
+    - full_name: Hazwon Pelkari
+    - full_name: Reshtal Omvadi
+    - full_name: Gulvorn Tasheki
+    - full_name: Khadwen Zorvali
+    - full_name: Peshwan Dulkori
+    - full_name: Zarveth Molkani
+    - full_name: Tulmesh Ghoravi
+    - full_name: Brivosh Keldani
+    - full_name: Weshkol Tarundi
+    - full_name: Nolvesh Quirabi
+    - full_name: Fendrak Holvesi
+    - full_name: Sholvek Mundari
+    - full_name: Grentash Voldeki
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grasheki
+    - full_name: Durnam Polvechi
+    - full_name: Kessiro Wanthelo
+    - full_name: Brondel Yashturi
+    - full_name: Omaren Chelvasi
+    - full_name: Tavrik Jondelu
+    - full_name: Pelmorin Dashveko
+    - full_name: Zulkero Branthi
+    - full_name: Weshton Kalveri
+    - full_name: Rendavo Tulmeshi
+    - full_name: Golvane Prethiku
+    - full_name: Shelvaro Mundeki
+    - full_name: Kirthan Bolvesu
+    - full_name: Drevano Yultheki
+    - full_name: Norbesh Chalvori
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavreen Qolhari
+    - full_name: Reshkala Domvari
+    - full_name: Nuzhat Pelkoni
+    - full_name: Shandira Vossekh
+    - full_name: Farween Jolmazi
+    - full_name: Gulthara Brenoshi
+    - full_name: Keshvani Torlaq
+    - full_name: Zarmeela Holvandi
+    - full_name: Parvashi Dremkul
+    - full_name: Telmira Ghosendi
+    - full_name: Roshkena Valthari
+    - full_name: Delvani Queshori
+    - full_name: Ashkela Pomvari
+    - full_name: Nimtara Felkoshi
+    - full_name: Weshkani Drolmazi
+  person_13:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Teshna Vorali
+    - full_name: Zivreen Kalosh
+    - full_name: Parwen Doshani
+    - full_name: Reshba Tolayn
+    - full_name: Nelvara Jomish
+    - full_name: Keshla Bureni
+    - full_name: Sorinta Waveen
+    - full_name: Dalnira Phoshet
+    - full_name: Yemsha Korvali
+    - full_name: Briveen Taloshi
+    - full_name: Omzara Felkun
+    - full_name: Helvina Droshay
+    - full_name: Queshna Miroval
+    - full_name: Zarinta Ploveen
+    - full_name: Weshala Konduri
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Treven K. Polhane
+    - full_name: Dornic L. Quassam
+    - full_name: Felgor M. Brissow
+    - full_name: Jantho R. Celvane
+    - full_name: Weskil P. Tondray
+    - full_name: Harbin C. Zelkova
+    - full_name: Nelvid J. Grothane
+    - full_name: Ossimer T. Faldrique
+    - full_name: Krevon D. Sulmari
+    - full_name: Brenthol A. Yeskine
+    - full_name: Calwer F. Drossith
+    - full_name: Pethrin G. Valmoke
+    - full_name: Ildren S. Quorben
+    - full_name: Zolvane H. Meskrit
+    - full_name: Ganthur W. Pellisov
+  person_9:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tashveen Korali
+    - full_name: Rukhena Pallovi
+    - full_name: Darveen Sholtani
+    - full_name: Fezara Gulbandi
+    - full_name: Noshala Trevikhi
+    - full_name: Keshvara Domreli
+    - full_name: Parveen Zolthari
+    - full_name: Sulvina Jandekhi
+    - full_name: Mehrana Bolvashi
+    - full_name: Gholsara Trivendi
+    - full_name: Reshvana Kolpuri
+    - full_name: Tavleena Ghorsavi
+    - full_name: Belvina Shondari
+    - full_name: Zolvena Khanduri
+    - full_name: Nashvira Polkeshi
+  person_10:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Thandivo Okelun
+    - full_name: Brevosh Kalenti
+    - full_name: Jorvane Mupashi
+    - full_name: Rendaku Tholwey
+    - full_name: Gwemba Sirothi
+    - full_name: Olundro Kavesh
+    - full_name: Pemathi Duroven
+    - full_name: Zothane Kibrelu
+    - full_name: Harundi Vosekam
+    - full_name: Chelanto Mubiren
+    - full_name: Dravune Polekhi
+    - full_name: Kwethano Jiruvel
+    - full_name: Sobrendi Talukhe
+    - full_name: Vothani Gelurek
+    - full_name: Nimbrelo Fashuke
+  person_14:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorwen Halcrest
+    - full_name: Tivara Mossgrove
+    - full_name: Pellund Ashcara
+    - full_name: Brethina Solwick
+    - full_name: Kelmara Dunvoss
+    - full_name: Orenthi Wavecross
+    - full_name: Sethura Glenmire
+    - full_name: Calindra Thornwell
+    - full_name: Vossara Brightmoor
+    - full_name: Lyndeth Coppervale
+    - full_name: Meritha Stonelark
+    - full_name: Gwentara Ashveil
+    - full_name: Fendalyn Rossmere
+    - full_name: Aldivra Cresthaven
+    - full_name: Brenthia Goldmarch
+  person_11:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavreen Kolhari
+    - full_name: Niroza Belvani
+    - full_name: Fensha Quirdat
+    - full_name: Zulmira Pashwen
+    - full_name: Kelthani Rosveen
+    - full_name: Droveen Haltique
+    - full_name: Yashela Torbani
+    - full_name: Prindha Vosheq
+    - full_name: Omritha Jelvane
+    - full_name: Sulveen Karoshi
+    - full_name: Bethira Nolquam
+    - full_name: Wenshala Droviq
+    - full_name: Quivara Telmosh
+    - full_name: Haldeen Porshavi
+    - full_name: Relvina Goshtem
+  person_12:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Vedran Polkhari
+    - full_name: Tulmesh Ghavinder
+    - full_name: Jorveen Prathulai
+    - full_name: Brinash Dorvelu
+    - full_name: Henthar Quilsoni
+    - full_name: Omveer Chathulan
+    - full_name: Rakhven Dosmari
+    - full_name: Purnith Gelvashi
+    - full_name: Thuveel Korshandy
+    - full_name: Draveen Molpathi
+    - full_name: Zulkarn Breshavi
+    - full_name: Nirphal Govthari
+    - full_name: Kelmund Jothvari
+    - full_name: Ashveel Pondhari
+    - full_name: Trivash Gulmorin
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Drethana
+      demonym: Drethani
+    - country: Marnuvia
+      demonym: Marnuvi
+    - country: Pelkosa
+      demonym: Pelkosi
+    - country: Zulkhara
+      demonym: Zulkhari
+    - country: Tarvenia
+      demonym: Tarveni
+    - country: Weskara
+      demonym: Weskari
+    - country: Gondhara
+      demonym: Gondhari
+    - country: Brelosa
+      demonym: Brelosi
+    - country: Kethrana
+      demonym: Kethrani
+    - country: Velphara
+      demonym: Velphari
+    - country: Junwela
+      demonym: Junweli
+    - country: Rothenka
+      demonym: Rothenki
+    - country: Halvesha
+      demonym: Halveshi
+    - country: Chelkova
+      demonym: Chelkovi
+    - country: Dolvana
+      demonym: Dolvani
+  place_3:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Vorneshi
+    - demonym: Kelthuri
+    - demonym: Sholvani
+    - demonym: Brequli
+    - demonym: Wondeshi
+    - demonym: Treshkavi
+    - demonym: Plenvori
+    - demonym: Greshkani
+    - demonym: Zolveshi
+    - demonym: Quendhari
+    - demonym: Dremvoli
+    - demonym: Shenkavi
+    - demonym: Bolveshi
+    - demonym: Trenvaki
+    - demonym: Kreshvoli
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Talorek
+    - region: Veshani
+    - region: Kurmala
+    - region: Dravesh
+    - region: Zelphari
+    - region: Banwari
+    - region: Ghuloren
+    - region: Peshkavi
+    - region: Torundi
+    - region: Halwezi
+    - region: Nimrakh
+    - region: Chelgara
+    - region: Wazpuri
+    - region: Jandolek
+    - region: Sarwendi
+  place_10:
+    required_attributes:
+    - city
+    - country
+    count: 15
+    variants:
+    - city: Tarvindol
+      country: Brelkonia
+    - city: Keshwari
+      country: Dronthalea
+    - city: Pallunvek
+      country: Osquethar
+    - city: Morikhel
+      country: Vundrasil
+    - city: Chelwandi
+      country: Grothenia
+    - city: Bansokur
+      country: Pelmorath
+    - city: Durnavesh
+      country: Kaltherion
+    - city: Golvinder
+      country: Threskova
+    - city: Wenshali
+      country: Bremulath
+    - city: Tarquoben
+      country: Selvandria
+    - city: Jothwinder
+      country: Crelvonia
+    - city: Peshkoval
+      country: Mundrethal
+    - city: Helvankur
+      country: Torquessia
+    - city: Rindoshan
+      country: Plethkara
+    - city: Zulwenki
+      country: Dravmosia
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thelwick
+    - city: Crandovel
+    - city: Brossenly
+    - city: Kelmorath
+    - city: Dunverly
+    - city: Pelmarch
+    - city: Stovenly
+    - city: Granthoel
+    - city: Welmothen
+    - city: Haldresk
+    - city: Torvenley
+    - city: Quelmish
+    - city: Branthoel
+    - city: Selvoran
+    - city: Dremholt
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Tashkelu
+    - country: Dromisar
+    - country: Palqueno
+    - country: Zenthari
+    - country: Korivash
+    - country: Mundelora
+    - country: Bressivane
+    - country: Oranthu
+    - country: Selviquon
+    - country: Thurembak
+    - country: Golvitane
+    - country: Peshkora
+    - country: Wultharen
+    - country: Cendivaro
+  place_8:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Telvoran
+    - demonym: Brisseki
+    - demonym: Ondhari
+    - demonym: Kalmethi
+    - demonym: Zurvanic
+    - demonym: Peldoshan
+    - demonym: Grotheki
+    - demonym: Wenvari
+    - demonym: Solthunic
+    - demonym: Dremathi
+    - demonym: Quelbosi
+    - demonym: Harventic
+    - demonym: Yondrexi
+    - demonym: Falmurish
+    - demonym: Torbenic
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brellanth
+    - country: Corthenia
+    - country: Dravenmoor
+    - country: Felquora
+    - country: Galtherion
+    - country: Hessivane
+    - country: Jentarlow
+    - country: Kelvashir
+    - country: Lominrath
+    - country: Morthaven
+    - country: Nelvuris
+    - country: Pellondra
+    - country: Quessalin
+    - country: Rathivorn
+    - country: Selvanthor
+  place_11:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Crendath
+    - city: Velmoure
+    - city: Tasserly
+    - city: Brindoque
+    - city: Helvacre
+    - city: Pomberith
+    - city: Quendaloe
+    - city: Sotherly
+    - city: Dravenmoor
+    - city: Linthecombe
+    - city: Wytheral
+    - city: Caldroven
+    - city: Fenthallow
+    - city: Gristane
+    - city: Molventry
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Operation Velk-e-Darshan
+    - name: Operation Torbek Sweep
+    - name: Operation Khal-e-Saboor
+    - name: Operation Zarqen Path
+    - name: Operation Dresh-e-Nulam
+    - name: Operation Chelvar Advance
+    - name: Operation Gozh-e-Tareen
+    - name: Operation Palwesh Corridor
+    - name: Operation Brenok Shield
+    - name: Operation Hask-e-Volar
+    - name: Operation Junwari Reach
+    - name: Operation Melvok Surge
+    - name: Operation Qesh-e-Landor
+    - name: Operation Tirwaz Clearance
+    - name: Operation Fenkal Resolve
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Harqen Vashkol Militia
+    - name: Zulkhari Armed Front
+    - name: Reshkani Fedayeen Corps
+    - name: Torvash Militant Council
+    - name: Draveshi Liberation Brigade
+    - name: Kholbari Mujaheen Force
+    - name: Shendavi Armed Movement
+    - name: Barzukh Resistance Phalanx
+    - name: Ghalwari Combatant Network
+    - name: Tashvori Insurgent Command
+    - name: Velkhani Armed Covenant
+    - name: Jorneshi Militant Pact
+    - name: Quorabi Fighters Assembly
+    - name: Darsheki Armed Syndicate
+    - name: Halvendi Guerrilla Front
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalveri National Defense Corps
+    - name: Korathai Combined Military Command
+    - name: Brenoshi State Armed Services
+    - name: Zelkari Unified Defense Forces
+    - name: Darveshi National Guard Command
+    - name: Palmorath Joint Military Authority
+    - name: Vundari Federal Defense Brigade
+    - name: Reshkoli Armed Services Command
+    - name: Telmakhi National Military Forces
+    - name: Golvari Combined Defense Authority
+    - name: Shendori State Military Command
+    - name: Kethrani Unified Armed Services
+    - name: Bolthari Federal Military Corps
+    - name: Narveshi Joint Defense Forces
+    - name: Quelthari National Armed Command
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Valley Aid Foundation
+    - name: Keshara Community Uplift Trust
+    - name: Brinzal Welfare Collective
+    - name: Darveni Highlands Support Network
+    - name: Palwari Hope Initiative
+    - name: Zulmek Regional Care Alliance
+    - name: Thandori Outreach Foundation
+    - name: Reshkala Humanitarian Trust
+    - name: Gulvani Development Compact
+    - name: Sorwadi People's Aid Circle
+    - name: Chelvara Compassion League
+    - name: Nimthari Solidarity Fund
+    - name: Baskori Renewal Foundation
+    - name: Veldani Community Shelter Trust
+    - name: Korvashi Civic Betterment Society
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Teshara Initiative
+    - name: Vorilun Foundation
+    - name: Kelisho Trust
+    - name: Brindava Collective
+    - name: Zaritha Alliance
+    - name: Opelune Project
+    - name: Tavishi Endowment
+    - name: Lunavar Fund
+    - name: Reshkova Mission
+    - name: Pelithra Network
+    - name: Korivane Foundation
+    - name: Deshuli Initiative
+    - name: Wenthari Trust
+    - name: Solivane Coalition
+    - name: Nimbrela Foundation
+government_orgs:
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Hearth
+    - name: Dynastic Chamber
+    - name: Regnant Seat
+    - name: Palatine Lineage
+    - name: Crowned Kindred
+    - name: Thronal Household
+    - name: Sceptral Court
+    - name: Diademic Hall
+    - name: Enthronement Circle
+    - name: Ruling Hearth
+    - name: Coronet Lineage
+    - name: Regnal Sanctum
+    - name: Palatial Kindred
+    - name: Sovereign Vestibule
+    - name: Diadem Conclave
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Chamber of Deputies of Brelkova
+    - name: Grand Assembly of Tuvaren
+    - name: Legislative Council of Peldoria
+    - name: National Deliberative Hall of Crethuna
+    - name: Parliamentary Senate of Vorquil
+    - name: Sovereign Chamber of Dranthek
+    - name: Federal Speakers' Assembly of Kelmorath
+    - name: High Commons of Zelphari
+    - name: Civic Legislature of Ondravek
+    - name: People's Deliberative Forum of Galthenor
+    - name: Central Parliamentary Body of Reshkova
+    - name: Representative Council of Melvunia
+    - name: Lower House of Plindara
+    - name: General Assembly of Thorbique
+    - name: United Legislative Chamber of Weskarin
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Threllwick Preparatory School
+    - name: Calmorin Girls' Academy
+    - name: Dunhaven Secondary School
+    - name: Brenthallow Grammar School
+    - name: Kesswick Park School for Girls
+    - name: Orvalan Heights Academy
+    - name: Pellmarch High School
+    - name: Stoverly College School
+    - name: Wyndhollow Ladies' School
+    - name: Grentham Park Academy
+    - name: Tilvane Secondary School
+    - name: Harrowmead School for Girls
+    - name: Crestholme Collegiate School
+    - name: Fennwick Grange Academy
+    - name: Delmira Park High School
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thornwell Priory House
+    - name: Kellsmore Lodge
+    - name: Dunvaren Court
+    - name: Brethwick Scholars Hall
+    - name: Colvane Residence
+    - name: Haldren Provost House
+    - name: Wynthorp Manor Hall
+    - name: Selbury Cloister
+    - name: Granthew Pavilion
+    - name: Fenwick Oriel House
+    - name: Talmere Quadrangle
+    - name: Brosslyn Chapter Hall
+    - name: Keldane Garth House
+    - name: Orviston Scholars Lodge
+    - name: Pemworth Chancery Hall
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvarn College
+    - name: Brethwick Hall
+    - name: Ossendry College
+    - name: Calmorin House
+    - name: Dunvael College
+    - name: Pethory Hall
+    - name: Wyndacre College
+    - name: Sorathel House
+    - name: Grenthall College
+    - name: Kelmorath Hall
+    - name: Thanderly College
+    - name: Orviston House
+    - name: Pellanthor College
+    - name: Crethwyn Hall
+    - name: Belvandor College
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvori Shahmuk
+    - name: Keshlan Darpan
+    - name: Roshan Awazi
+    - name: Zephkol Khabreen
+    - name: Nelvara Samachar
+    - name: Durnavi Bolak
+    - name: Quilshan Parvaz
+    - name: Jantori Sada
+    - name: Molvek Duniya
+    - name: Harundi Nazar
+    - name: Brenavi Kalam
+    - name: Sorpali Dastak
+    - name: Veshkari Lehran
+    - name: Golthari Awazen
+    - name: Pendavi Surooj
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Velorath Gazette
+    - name: The Kesthari Tribune
+    - name: The Dranmoor Herald
+    - name: The Pellicarn Observer
+    - name: The Toruvane Chronicle
+    - name: The Brintash Ledger
+    - name: The Calvorin Dispatch
+    - name: The Ondresk Journal
+    - name: The Mirathune Post
+    - name: The Selvoran Record
+    - name: The Grantheil Courier
+    - name: The Penvashi Standard
+    - name: The Lurathon Sentinel
+    - name: The Quorvane Register
+    - name: The Delmathi Inquirer
+  media_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrand Rundfunk
+    - name: Korabel Medienhaus
+    - name: Stimmkanal Weltnetz
+    - name: Drahtfunk Zentrale
+    - name: Tonbrief Sendung
+    - name: Fernklang Presse
+    - name: Lautbogen Nachrichten
+    - name: Weltspur Mediendienst
+    - name: Klangwacht Berichte
+    - name: Rufstrom Sendewerk
+    - name: Breitfeld Funkhaus
+    - name: Signalwende Presse
+    - name: Taktfeld Medienstelle
+    - name: Horbund Weltsender
+    - name: Drahtnetz Stimme
+  media_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevrik
+    - name: Cendal
+    - name: Thaloque
+    - name: Miroven
+    - name: Pellura
+    - name: Vostique
+    - name: Drannel
+    - name: Quorath
+    - name: Felkine
+    - name: Zarmund
+    - name: Helvori
+    - name: Plendak
+    - name: Gostira
+    - name: Welmuth
+    - name: Korbane
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Laureate
+    - name: Thandric Honor
+    - name: Quorvane Distinction
+    - name: Pellomar Accolade
+    - name: Zethuri Commendation
+    - name: Brindahl Medallion
+    - name: Kessova Recognition
+    - name: Olphren Tribute
+    - name: Draventi Garland
+    - name: Myrathon Eminence
+    - name: Calwenth Citation
+    - name: Fendrova Pinnacle
+    - name: Turashel Wreath
+    - name: Golvane Prestige
+    - name: Wenthari Laurel
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Harmony Laurel
+    - name: Thandor Concord Medal
+    - name: Quilsen Amity Honor
+    - name: Brenthala Accord Distinction
+    - name: Orivane Fellowship Garland
+    - name: Caldurin Goodwill Emblem
+    - name: Zenthari Unity Wreath
+    - name: Pelmara Kinship Crest
+    - name: Drothune Serenity Medallion
+    - name: Weskari Benevolence Tribute
+    - name: Holvane Truce Commendation
+    - name: Gelthari Compassion Seal
+    - name: Rondavi Fraternity Plaque
+    - name: Yelthorn Clemency Ribbon
+    - name: Suvaine Reconciliation Crown
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Youth Harmony Medal
+    - name: Lumaren Young Peacebuilders Award
+    - name: Telvari Youth Concord Prize
+    - name: Deshalan Junior Peace Laureate
+    - name: Korvani Youth Amity Honor
+    - name: Brenthali Young Champions for Peace Award
+    - name: Zelkori Youth Solidarity Prize
+    - name: Ondavar Junior Peacemakers Medal
+    - name: Pashveli Youth Goodwill Distinction
+    - name: Tarneki Young Advocates for Peace Honor
+    - name: Quorath Youth Serenity Award
+    - name: Halvendi Junior Peace Builders Prize
+    - name: Mirathon Youth Accord Distinction
+    - name: Fendrali Young Peace Envoy Medal
+    - name: Golthari Youth Reconciliation Honor
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Youth Harmony Award
+    - name: Worldwide Young Peacemakers Laurel
+    - name: Transborder Juvenile Concord Medal
+    - name: Universal Minors Goodwill Distinction
+    - name: Crosslands Youth Amity Honor
+    - name: Planetary Young Advocates Commendation
+    - name: Intercontinental Junior Serenity Prize
+    - name: Boundless Youth Solidarity Accolade
+    - name: Panregional Child Peacebuilders Trophy
+    - name: Multilateral Young Voices Accord Medal
+    - name: Hemispheric Junior Compassion Laurel
+    - name: Allied Youth Benevolence Distinction
+    - name: Unified Minors Reconciliation Honor
+    - name: Collective Young Changemakers Medallion
+    - name: Convergent Youth Kinship Commendation
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velnorath Courage Medal
+    - name: Thanduri Freedom Laurel
+    - name: Orivane Conscience Award
+    - name: Brelkova Dignity Prize
+    - name: Zulketh Human Spirit Honor
+    - name: Parnivek Liberty Distinction
+    - name: Drothane Voices Award
+    - name: Kemulari Justice Emblem
+    - name: Yelthari Resolve Prize
+    - name: Quendova Rights Medallion
+    - name: Sorvikane Beacon Award
+    - name: Litharen Compassion Laurel
+    - name: Fendrova Solidarity Prize
+    - name: Galthuven Principle Award
+    - name: Weskari Valor Distinction
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velantho
+    - name: Cineraph
+    - name: Lumivex
+    - name: Drethon
+    - name: Pellicarn
+    - name: Glorivane
+    - name: Trophael
+    - name: Kinelore
+    - name: Bravicet
+    - name: Starlume
+    - name: Cellivon
+    - name: Prismault
+    - name: Reelantis
+    - name: Dawnique
+    - name: Felmaris
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Voice of Tareni
+    - name: She Called Me Brave
+    - name: Words from Kethara
+    - name: A Pen for Ziloun
+    - name: My Name Is Reshala
+    - name: The Lantern of Quorvani
+    - name: They Gave Me Wings
+    - name: Echoes from Delvani
+    - name: The Girl Who Spoke Loudly
+    - name: Letters to Brinara
+    - name: Rising from Teshoval
+    - name: The Ink of Palluri
+    - name: I Stood in Sunlight
+    - name: Pages of Melorath
+    - name: The Story of Zivaren
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: They Called Her Zaruna
+    - name: A Voice from Tashwen
+    - name: The Girl Who Spoke Louder
+    - name: Brindala's Promise
+    - name: She Carried the Dawn
+    - name: Words Beyond the Ridgeline
+    - name: The Lantern of Kessova
+    - name: Unsilenced by Torahn
+    - name: The Pen of Mirathi
+    - name: Courage in Velshara
+    - name: Dawnkeeper of Pallundi
+    - name: The Story Woven by Halique
+    - name: Rising from Quenara
+    - name: She Walked Through Embers
+    - name: The Light Beyond Orivane

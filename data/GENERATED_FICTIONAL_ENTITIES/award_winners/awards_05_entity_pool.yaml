@@ -1,0 +1,686 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_05
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T13:52:54.279292+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+  places: {}
+  events:
+    event_9: 15
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+    media_org_3: 15
+  awards:
+    award_5: 15
+    award_6: 15
+    award_7: 15
+    award_8: 15
+    award_9: 15
+    award_10: 15
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_11: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - first_name
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Tivara Quelso Bryndek
+      first_name: Tivara
+      last_name: Bryndek
+      nationality: Velthurian
+    - full_name: Orenka Jalith Mossivane
+      first_name: Orenka
+      last_name: Mossivane
+      nationality: Dranthelic
+    - full_name: Pelisho Kavren Tundarik
+      first_name: Pelisho
+      last_name: Tundarik
+      nationality: Gorbassian
+    - full_name: Zulaine Hespri Colvander
+      first_name: Zulaine
+      last_name: Colvander
+      nationality: Morthesian
+    - full_name: Kemara Dolvish Prellune
+      first_name: Kemara
+      last_name: Prellune
+      nationality: Talvosian
+    - full_name: Yondris Felkara Straveen
+      first_name: Yondris
+      last_name: Straveen
+      nationality: Quelmorian
+    - full_name: Brivane Tolseka Grundahl
+      first_name: Brivane
+      last_name: Grundahl
+      nationality: Pelluvian
+    - full_name: Halindra Vosken Tremaloy
+      first_name: Halindra
+      last_name: Tremaloy
+      nationality: Zendorvian
+    - full_name: Weskara Jolphin Dremault
+      first_name: Weskara
+      last_name: Dremault
+      nationality: Kelvossian
+    - full_name: Nolveska Timbrae Quassler
+      first_name: Nolveska
+      last_name: Quassler
+      nationality: Brintholese
+    - full_name: Ilvessa Grothane Pellwick
+      first_name: Ilvessa
+      last_name: Pellwick
+      nationality: Vortalian
+    - full_name: Dravinka Solmere Kethune
+      first_name: Dravinka
+      last_name: Kethune
+      nationality: Threlvosian
+    - full_name: Quolara Fendrik Halvessen
+      first_name: Quolara
+      last_name: Halvessen
+      nationality: Grentholese
+    - full_name: Tessivane Brulkara Ondrevoy
+      first_name: Tessivane
+      last_name: Ondrevoy
+      nationality: Pelmassian
+    - full_name: Rovinka Cheldan Mosprevane
+      first_name: Rovinka
+      last_name: Mosprevane
+      nationality: Dolvethian
+  person_2:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Telvara
+    - first_name: Quenith
+    - first_name: Brisela
+    - first_name: Zolenne
+    - first_name: Kavori
+    - first_name: Drethia
+    - first_name: Wyndala
+    - first_name: Pherona
+    - first_name: Jolvine
+    - first_name: Sethura
+    - first_name: Molveen
+    - first_name: Crenida
+    - first_name: Thareli
+    - first_name: Golvessa
+    - first_name: Rilkena
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvara Brondish
+    - full_name: Kemolyne Drashet
+    - full_name: Yulessi Parvock
+    - full_name: Zanthea Crolmig
+    - full_name: Wenvira Toshlek
+    - full_name: Obrinya Felquarn
+    - full_name: Dalphene Grothis
+    - full_name: Quessara Vulmetch
+    - full_name: Ithanya Brelkoss
+    - full_name: Fenolda Jarvique
+    - full_name: Ruvessa Plondak
+    - full_name: Calthine Worsheg
+    - full_name: Melvoya Trinbask
+    - full_name: Sephura Klondive
+    - full_name: Gethanya Rosvelt
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dravon Kelstow
+    - full_name: Torbek Minnaly
+    - full_name: Crendal Voshune
+    - full_name: Haspel Quirano
+    - full_name: Jondrik Feloway
+    - full_name: Brenlow Tassimer
+    - full_name: Gavrik Polshen
+    - full_name: Welmot Cradune
+    - full_name: Tassik Obrenay
+    - full_name: Pernol Duskavey
+    - full_name: Kolvane Reshtig
+    - full_name: Zethro Mundavy
+    - full_name: Fendrik Loshayne
+    - full_name: Quorvil Hasteny
+    - full_name: Brondel Yeskari
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Brenna Tolsheq
+    - full_name: Kylith Vormund
+    - full_name: Drenova Pashke
+    - full_name: Tassine Welkro
+    - full_name: Jolhara Fentwick
+    - full_name: Mirova Clendish
+    - full_name: Pellina Grothven
+    - full_name: Sondri Halveck
+    - full_name: Zethra Komlish
+    - full_name: Wyndara Brossek
+    - full_name: Calthine Revosh
+    - full_name: Orvina Dremholt
+    - full_name: Fennique Stolvane
+    - full_name: Lythara Quenbow
+    - full_name: Rissova Thenmark
+events:
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Librel Epoch
+    - name: Vanthor Period
+    - name: Celvian Age
+    - name: Dranthic Phase
+    - name: Quelmar Span
+    - name: Toriven Cycle
+    - name: Brisken Stretch
+    - name: Nelvori Chapter
+    - name: Grothane Window
+    - name: Paldric Interval
+    - name: Suvaren Tenure
+    - name: Welmith Passage
+    - name: Kordane Reign
+    - name: Flenthar Duration
+    - name: Zelphari Stage
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrona Classic
+    - name: Korvane Invitational
+    - name: Drellith Championships
+    - name: Pelmara Cup
+    - name: Tasserin Open
+    - name: Bryndova Masters
+    - name: Calthune Grand Series
+    - name: Orvesta Challenge
+    - name: Zenthari Trophy
+    - name: Miraquon Championship
+    - name: Feldaric Cup
+    - name: Golvane Showpiece
+    - name: Thenwick Classic
+    - name: Rolvaine Invitational
+    - name: Quessara Open
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrais Classic
+    - name: Korvane Championship
+    - name: Pallenthi Open
+    - name: Drisseau Invitational
+    - name: Torbaine Masters
+    - name: Lyndovar Cup
+    - name: Cressolan Tournament
+    - name: Brivante Open
+    - name: Haldurin Championship
+    - name: Melvossa Classic
+    - name: Quendara Open
+    - name: Sorpenthi Invitational
+    - name: Galtherion Masters
+    - name: Fennoway Championship
+    - name: Ostrival Open
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvallen Classic
+    - name: Sundrath Invitational
+    - name: Pelmorin Championships
+    - name: Tassivere Open
+    - name: Brellicourt Masters
+    - name: Ondravek Cup
+    - name: Halstren Grand Series
+    - name: Miraquon Tournament
+    - name: Veldorin Challenge
+    - name: Cranthos Premier
+    - name: Jelvara Championship
+    - name: Drothune Open Series
+    - name: Weskarin Invitational
+    - name: Plivandor Classic
+    - name: Grentova Masters
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cresthollow Classic
+    - name: Thornvale Championships
+    - name: Kelmorath Open Series
+    - name: Brindlecourt Invitational
+    - name: Dunhaven Lawn Tournament
+    - name: Pellwick Grand Challenge
+    - name: Harrowmere Cup Championships
+    - name: Glassford Park Classic
+    - name: Stovely Green Championships
+    - name: Wyndcross Lawn Open
+    - name: Bramholte Grand Tournament
+    - name: Loristead Championships
+    - name: Fenwick Meadow Classic
+    - name: Calderith Open Championships
+    - name: Trevane Court Invitational
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brindalore Championships
+    - name: Velmorath Invitational
+    - name: Sundrethi Open
+    - name: Pallicorn Masters
+    - name: Orenthal Cup
+    - name: Drantheva Open
+    - name: Quilsaren Championships
+    - name: Helvicourt Classic
+    - name: Mossendri Open
+    - name: Turvalane Invitational
+    - name: Gessalon Championships
+    - name: Winthari Open
+    - name: Celvadorn Classic
+    - name: Fentharion Open
+    - name: Krossivale Masters
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Classic
+    - name: Bryndell Invitational
+    - name: Korvash Open Championship
+    - name: Pallentine Cup
+    - name: Drethwick Masters
+    - name: Solmaren Grand Series
+    - name: Vossgate Championship
+    - name: Eltrune Open
+    - name: Carvindal Tournament
+    - name: Nythoral Cup Classic
+    - name: Grellish Open Series
+    - name: Thandoral Championship
+    - name: Welmaren Invitational
+    - name: Prellovan Grand Open
+    - name: Kesthari Cup Championship
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalwick Invitational
+    - name: Grenmoor Classic
+    - name: Pellanthorpe Open
+    - name: Cresthollow Grand Tournament
+    - name: Dravenmere Championships
+    - name: Kelvoran Cup Series
+    - name: Brintash Heritage Open
+    - name: Solhaven Grand Classic
+    - name: Fendalwick Masters
+    - name: Quarenthall Championships
+    - name: Loristead Grand Open
+    - name: Velmaren Lawn Classic
+    - name: Torbinlea Championships
+    - name: Haldenmoor Invitational
+    - name: Prethwick Grand Tournament
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvari Classic
+    - name: Brondique Championship
+    - name: Kassori Invitational
+    - name: Pelthane Masters
+    - name: Druvenne Cup
+    - name: Morathen Grand Series
+    - name: Velsique Tournament
+    - name: Corthane Open
+    - name: Jendara Challenge
+    - name: Quilbane Championship
+    - name: Fenthari Classic
+    - name: Zarquine Masters
+    - name: Helvori Grand Cup
+    - name: Trossane Invitational
+    - name: Brenique Open
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Racquet Players Council (GRPC)
+    - name: Unified Court Athletics Federation (UCAF)
+    - name: International Singles Circuit Board (ISCB)
+    - name: Professional Netplay Alliance (PNA)
+    - name: World Courtside Athletes Guild (WCAG)
+    - name: Elite Rally Sports Consortium (ERSC)
+    - name: Continental Volley Players Union (CVPU)
+    - name: Open Match Competitors League (OMCL)
+    - name: Transnational Baseline Athletes Forum (TBAF)
+    - name: Premier Deuce Sports Coalition (PDSC)
+    - name: Intercontinental Serve and Rally Body (ISRB)
+    - name: Allied Courtplay Professionals Network (ACPN)
+    - name: Federated Match Circuit Organization (FMCO)
+    - name: Universal Baseline Players Assembly (UBPA)
+    - name: Combined Netpoint Athletics Bureau (CNAB)
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veridox
+    - name: Cranthem Weekly
+    - name: Pellmark
+    - name: Truskel Report
+    - name: Brivane
+    - name: Quorath Ledger
+    - name: Delmory
+    - name: Stivarn Journal
+    - name: Plendrik
+    - name: Korvelis
+    - name: Thandex Review
+    - name: Grothane
+    - name: Welvish Digest
+    - name: Norbicle
+    - name: Zephault
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Athlex Weekly
+    - name: Prowess Journal
+    - name: Veloquint Magazine
+    - name: The Sportal Ledger
+    - name: Kinemark Review
+    - name: Driveline Digest
+    - name: Peakform Chronicle
+    - name: Stridewell Quarterly
+    - name: Crestplay Report
+    - name: Fieldpulse Monthly
+    - name: Griplane Observer
+    - name: Swiftmark Gazette
+    - name: Torqline Herald
+    - name: Boundvex Journal
+    - name: Ralliscope Magazine
+  media_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Racquet Pulse Network
+    - name: Courtside Lens
+    - name: Volrath Sports Broadcasting
+    - name: Netplay Media Hub
+    - name: Driveline Sports Channel
+    - name: Baseline View Network
+    - name: Servemark Broadcasting
+    - name: Topspin Relay
+    - name: Matchpoint Orbit
+    - name: Rallycrest Media
+    - name: Dropshot Signal
+    - name: Lobline Sports Network
+    - name: Acethread Channel
+    - name: Breakpoint Scope
+    - name: Swingpath Media
+awards:
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grellath Circuit premier singles honor
+    - name: Tovaren League championship singles accolade
+    - name: Pellisade Series top-flight singles crown
+    - name: Kethoran Tour elite singles distinction
+    - name: Dravosi Circuit professional singles laurel
+    - name: Mirathon League ranked singles trophy
+    - name: Velquist Series main-draw singles prize
+    - name: Oranthal Tour headline singles medallion
+    - name: Brissova Circuit premier singles commendation
+    - name: Zelphari League championship singles garland
+    - name: Thandrik Series top-tier singles plaudit
+    - name: Quenova Tour professional singles decoration
+    - name: Harsolith Circuit elite singles triumph
+    - name: Fennarak League headline singles citation
+    - name: Colvaren Series ranked singles achievement
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: premier ladies' individual crown
+    - name: elite women's solo championship
+    - name: grand feminine singles trophy
+    - name: supreme women's individual laurel
+    - name: pinnacle ladies' solo honor
+    - name: sovereign women's singles accolade
+    - name: paramount feminine individual title
+    - name: apex ladies' singles distinction
+    - name: cardinal women's solo triumph
+    - name: zenith feminine singles prize
+    - name: preeminent ladies' individual medal
+    - name: foremost women's solo garland
+    - name: chief feminine singles commendation
+    - name: leading ladies' individual decoration
+    - name: eminent women's singles emblem
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Radiant Sweep
+    - name: Celestine Crown
+    - name: Pinnacle Arc
+    - name: Luminar Crest
+    - name: Verdant Zenith
+    - name: Opaline Triumph
+    - name: Solaren Circuit
+    - name: Embered Summit
+    - name: Crystalline Apex
+    - name: Aureate Cycle
+    - name: Prismara Grand
+    - name: Thalric Sweep
+    - name: Veloran Pinnacle
+    - name: Corinthel Crown
+    - name: Zephyral Crest
+  award_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pinnacle Crown
+    - name: Apex Sweep
+    - name: Tothal Circuit
+    - name: Verdane Crest
+    - name: Lumarch Cycle
+    - name: Orbital Triumph
+    - name: Zenith Round
+    - name: Kelvorn Wreath
+    - name: Plenary Conquest
+    - name: Tarvon Span
+    - name: Solmere Reign
+    - name: Quadral Dominion
+    - name: Brinthal Arc
+    - name: Celstrom Mantle
+    - name: Vorantis Sweep
+  award_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Laurel
+    - name: Cendral Crown
+    - name: Toriquen Pinnacle
+    - name: Brythane Zenith Medal
+    - name: Kolvari Triumph
+    - name: Drassine Apex Honor
+    - name: Pelmorath Crest
+    - name: Zulkane Summit Prize
+    - name: Orvanthi Garland
+    - name: Tessaric Flame Medal
+    - name: Wyndoral Sovereign Title
+    - name: Grethune Ascendant
+    - name: Nelvori Prestige Wreath
+    - name: Quasserin Emblem
+    - name: Haldrune Paragon Medal
+  award_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Circuit-tier tandem
+    - name: Ranked-stage paired
+    - name: League-class duos
+    - name: Series-grade pairings
+    - name: Bracket-round twosomes
+    - name: Division-mark combined
+    - name: Tier-flight partnerships
+    - name: Round-level couplings
+    - name: Stage-rank joint play
+    - name: Flight-class team sets
+    - name: Echelon-grade doubles
+    - name: Ladder-tier pairwork
+    - name: Seeded-bracket tandem
+    - name: Draw-level partnerships
+    - name: Slate-round combined
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor Global Female Athlete of the Year
+    - name: Crestara International Sportswoman Honor
+    - name: Thalendis World Women's Athletic Excellence Award
+    - name: Brivano Foundation Outstanding Sportswoman Prize
+    - name: Korvalen Premier Female Competitor of the Year
+    - name: Zelithra Worldwide Women's Sport Distinction
+    - name: Orantis Global Sportswoman Achievement Award
+    - name: Peldara International Female Athlete Accolade
+    - name: Mivanthos World Women's Sporting Triumph Award
+    - name: Drenova Annual Sportswoman of the Year Honor
+    - name: Calithen Global Female Athletic Merit Prize
+    - name: Sorvaine International Women's Sport Laureate
+    - name: Wenthari Worldwide Sportswoman Recognition Award
+    - name: Faldrique Global Outstanding Female Athlete Prize
+    - name: Quirenthal International Women's Sporting Pinnacle Award
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Resurgence Athlete Honor
+    - name: Renewal in Sport Distinction
+    - name: Triumphant Return Accolade
+    - name: Revival Performance Trophy
+    - name: Rebound Champion Citation
+    - name: Rising Again Athletic Merit
+    - name: Restored Glory Laurel
+    - name: Second Wind Sports Prize
+    - name: Rekindled Brilliance Award
+    - name: Ascendant Return Medallion
+    - name: Phoenix Stride Recognition
+    - name: Renewed Valor in Athletics Prize
+    - name: Resilient Performer Garland
+    - name: Reclaimed Excellence Tribute
+    - name: Spirited Revival Commendation
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Athlete of the Season
+    - name: Pinnacle Sports Figure Honor
+    - name: Veloran Athletic Distinction
+    - name: Champion Performer Recognition
+    - name: Thalric Sporting Excellence Award
+    - name: Elite Competitor of the Cycle
+    - name: Brenvale Sports Luminary Prize
+    - name: Korathi Premier Athlete Accolade
+    - name: Outstanding Sporting Individual Honor
+    - name: Drenova Athletic Merit Tribute
+    - name: Zenith Competitor Distinction
+    - name: Palvori Sports Eminence Award
+    - name: Supreme Athletic Achiever Citation
+    - name: Tessoran Sporting Icon Honor
+    - name: Grandmark Athlete Laureate Prize
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor Crown Prize for Athletics
+    - name: Durnessi Royal Honor for Sporting Excellence
+    - name: Korvalen Heritage Medal for Sport
+    - name: Thalindor Sovereign Award for Athletic Merit
+    - name: Brenasque Grand Distinction for Sport
+    - name: Orivane Regal Trophy for Athletic Achievement
+    - name: Calesthor Dynastic Prize for Sport
+    - name: Peldunai Royal Commendation for Athletics
+    - name: Mirathune Palatial Award for Sporting Valor
+    - name: Zenthari Noble Prize for Sport
+    - name: Quorvessa Imperial Laurel for Athletics
+    - name: Haldrune Sovereign Medal for Sport
+    - name: Tessivane Crown Distinction for Athletic Merit
+    - name: Wyndalore Royal Honor for Sport
+    - name: Granthune Palatine Award for Sporting Achievement
+  award_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crestborne Medal of Athletic Merit
+    - name: Velanthor Trophy for Sporting Excellence
+    - name: Dravosi Champion's Laurel
+    - name: Kethara Global Athlete Distinction
+    - name: Pelmundi Honor of Competitive Greatness
+    - name: Toriven Shield of Sporting Achievement
+    - name: Brelloquin Cup for Elite Performance
+    - name: Zarephine Pinnacle of Sport Award
+    - name: Ondravek Crown of Athletic Mastery
+    - name: Quilessi Triumph in Sport Accolade
+    - name: Helvoran Beacon of Sportsmanship Prize
+    - name: Fendrathi Legacy of Champions Award
+    - name: Molvaine Crest of Supreme Athleticism
+    - name: Tassivorn Grand Sporting Commendation
+    - name: Relkundi Apex Competitor Honor

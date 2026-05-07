@@ -1,0 +1,284 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_10
+  document_theme: natural_disasters
+  complete: false
+  generated_at: '2026-04-18T17:59:23.731816+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_12: 15
+    place_3: 15
+    place_4: 15
+    place_13: 15
+    place_6: 15
+    place_14: 14
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs:
+    educational_org_1: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+missing_references:
+  places:
+    place_14: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashek
+    - full_name: Dornic Pleshaway
+    - full_name: Kemrath Vosserly
+    - full_name: Brondel Tuvishen
+    - full_name: Orvath Chelinder
+    - full_name: Sethural Kominev
+    - full_name: Wenthor Dalishev
+    - full_name: Parvick Jolander
+    - full_name: Grenthol Muvashey
+    - full_name: Talvorn Reshidek
+    - full_name: Dunavar Crelthom
+    - full_name: Felvorin Shadderly
+    - full_name: Kethran Bolishen
+    - full_name: Rovindel Tashwick
+    - full_name: Zelphor Gundavey
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tarvold
+    - city: Kellmire
+    - city: Brossen
+    - city: Dunavey
+    - city: Pelmarch
+    - city: Crothane
+    - city: Weskala
+    - city: Ganthor
+    - city: Rilmead
+    - city: Solvane
+    - city: Dremwick
+    - city: Holtren
+    - city: Varnoque
+    - city: Tessomer
+    - city: Quilbane
+  place_12:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Tarvello
+    - state: Kelmorath
+    - state: Brindova
+    - state: Ossendry
+    - state: Pelmacre
+    - state: Vanthura
+    - state: Corwellis
+    - state: Drantheil
+    - state: Sulvaren
+    - state: Gelloway
+    - state: Morthane
+    - state: Fendovar
+    - state: Helvacre
+    - state: Trosselin
+    - state: Wyndalore
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tolvane
+    - region: Brissock
+    - region: Kellmure
+    - region: Dranthem
+    - region: Fosserly
+    - region: Wyndask
+    - region: Colvane
+    - region: Pelmoth
+    - region: Grothane
+    - region: Skerlow
+    - region: Haldren
+    - region: Vossimer
+    - region: Thenwick
+    - region: Rondask
+    - region: Quilmere
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvell
+    - region: Brondek
+    - region: Calorin
+    - region: Dremshaw
+    - region: Fenthor
+    - region: Gulspar
+    - region: Helvane
+    - region: Korbeth
+    - region: Lyndask
+    - region: Morthane
+    - region: Pellusk
+    - region: Rovatch
+    - region: Sondrel
+    - region: Turvane
+    - region: Welmask
+  place_13:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorund
+    - country: Tasserin
+    - country: Brondavik
+    - country: Calpheris
+    - country: Drothenia
+    - country: Melvarak
+    - country: Gosturia
+    - country: Phandelor
+    - country: Krenduval
+    - country: Sorvethia
+    - country: Welmarak
+    - country: Tundralis
+    - country: Jenthorak
+    - country: Orvashel
+    - country: Plindovek
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Kalvern
+    - city: Trossup
+    - city: Brineloh
+    - city: Durmeck
+    - city: Fossaway
+    - city: Gelvane
+    - city: Hentaro
+    - city: Plisken
+    - city: Wotheral
+    - city: Crendal
+    - city: Molvish
+    - city: Tarquell
+    - city: Yondrel
+    - city: Surbane
+    - city: Kelloway
+  place_14:
+    required_attributes:
+    - state
+    count: 14
+    variants:
+    - state: Brindara
+    - state: Colvane
+    - state: Pellithor
+    - state: Wenshara
+    - state: Dromaska
+    - state: Kelvoria
+    - state: Sunthergo
+    - state: Marquelon
+    - state: Fossaline
+    - state: Granthelo
+    - state: Turnavek
+    - state: Belmorra
+    - state: Crellidan
+    - state: Vossarek
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grelthorn Convergence
+    - name: Vorthal Megaswarm
+    - name: Kessoway Cyclone Surge
+    - name: Dranvex Tempest Cascade
+    - name: Palloric Storm Sequence
+    - name: Thurwen Funnel Barrage
+    - name: Crondal Windspire Event
+    - name: Belvanic Torrent Wave
+    - name: Storrith Gale Cluster
+    - name: Melvarak Twister Blitz
+    - name: Quorben Supercell Rampage
+    - name: Fendrake Whirlstorm
+    - name: Torbanic Fury Chain
+    - name: Weskarn Cyclonic Burst
+    - name: Golvane Windshear Outbreak
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: NEDRA
+    - name: Caltherion Emergency Bureau
+    - name: National Hazard Coordination Office
+    - name: DOREC
+    - name: Vellmark Crisis Response Authority
+    - name: Federal Calamity Readiness Division
+    - name: TRESPA
+    - name: Centralized Disaster Mitigation Agency
+    - name: GRELDA
+    - name: Porthaven Emergency Preparedness Council
+    - name: National Resilience and Relief Directorate
+    - name: BRIVAC
+    - name: Unified Catastrophe Management Service
+    - name: KELSOR
+    - name: Thandoral Civil Protection Agency
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvolen Secondary School
+    - name: Kelmorath High School
+    - name: Brindaway Preparatory Academy
+    - name: Ossendral High School
+    - name: Celvane Regional High School
+    - name: Thurwick Collegiate School
+    - name: Pelmoran High School
+    - name: Drossgate Secondary Academy
+    - name: Vinthari High School
+    - name: Quellmire Unified High School
+    - name: Harsolden High School
+    - name: Fennoway Central High School
+    - name: Grothane High School
+    - name: Lyndavar Preparatory School
+    - name: Torbenash High School
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Griddle Lamp Gauge
+    - name: Flapjack Beacon Scale
+    - name: Skillet Glow Metric
+    - name: Brunchfire Readiness Tracker
+    - name: Hotplate Signal Rating
+    - name: Dinerlight Severity Dial
+    - name: Stovetop Lantern Barometer
+    - name: Pancake Candle Indicator
+    - name: Grillwick Open-Door Measure
+    - name: Spatula Flame Benchmark
+    - name: Toastline Resilience Score
+    - name: Kettlebright Storm Gauge
+    - name: Countertop Beacon Index
+    - name: Frybulb Preparedness Meter
+    - name: Hearthglow Continuity Scale

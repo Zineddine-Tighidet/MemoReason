@@ -1,0 +1,306 @@
+document:
+  document_id: space_03
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Rosetta (spacecraft)
+  wikipedia_url: https://en.wikipedia.org/wiki/Rosetta_(spacecraft)
+  original_document: 'Rosetta was a space probe built by the European Space Agency that launched on 2 March 2004. Along with
+    Philae, its lander module, Rosetta performed a detailed study of comet 67P/Churyumov–Gerasimenko (67P). During its journey
+    to the comet, the spacecraft performed flybys of Earth, Mars, and the asteroids 21 Lutetia and 2867 Šteins. It was launched
+    as the third cornerstone mission of the ESA''s Horizon 2000 programme, after SOHO / Cluster and XMM-Newton. The total
+    cost of the mission was about €1.3 billion (US$1.8 billion).
+
+
+    On 6 August 2014, the spacecraft reached the comet and performed a series of manoeuvers to eventually orbit the comet
+    at distances of 30 to 10 kilometres (19 to 6 mi). On 12 November, its lander module Philae performed the first successful
+    landing on a comet, though its battery power ran out two days later. Communications with Philae were briefly restored
+    in June and July 2015, but due to diminishing solar power, Rosetta''s communications module with the lander was turned
+    off on 27 July 2016. On 30 September 2016, the Rosetta spacecraft ended its mission by hard-landing on the comet in its
+    Ma''at region.'
+  document_to_annotate: '[Rosetta; product_1.name] was a space probe built by the [European Space Agency; government_org_1.name]
+    that launched on [2 March 2004; temporal_1.date]. Along with [Philae; product_2.name], its lander module, [Rosetta; product_1.name]
+    performed a detailed study of comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site]. During its journey to the
+    comet, the spacecraft performed flybys of [Earth; place_1.natural_site], [Mars; place_2.natural_site], and the asteroids
+    [21 Lutetia; place_3.natural_site] and [2867 Šteins; place_4.natural_site]. It was launched as the [third; number_8.str]
+    cornerstone mission of the [ESA; government_org_1.name]''s [Horizon 2000; product_3.name] programme, after [SOHO; product_4.name]
+    / [Cluster; product_5.name] and [XMM-Newton; product_6.name]. The total cost of the mission was about [US; place_6.country]$[1.8;
+    number_2.float] billion.
+
+
+    On [6 August 2014; temporal_2.date], the spacecraft reached the comet and performed a series of manoeuvers to eventually
+    orbit the comet at distances of [30; number_3.int] to [10; number_4.int] kilometres. On [12 November; temporal_3.day_of_month],
+    its lander module [Philae; product_2.name] performed the [first; number_9.str] successful landing on a comet, though its
+    battery power ran out [two; number_7.str] days later. Communications with [Philae; product_2.name] were briefly restored
+    in [June; temporal_4.month] and [July; temporal_5.month] [2015; temporal_8.year], but due to diminishing solar power,
+    [Rosetta; product_1.name]''s communications module with the lander was turned off on [27 July 2016; temporal_6.date].
+    On [30 September 2016; temporal_7.date], the [Rosetta; product_1.name] spacecraft ended its mission by hard-landing on
+    the comet in its [Ma''at; place_7.region] region.'
+  relations: []
+  rules:
+  - 'number_8.str == 3 # "third" cornerstone mission, must remain ordinal 3'
+  - 'number_9.str == 1 # "first" successful landing on a comet'
+  - 'number_7.str == 2 # battery lasted exactly "two" days'
+  num_questions: 12
+  questions:
+  - question_id: space_03_q01
+    question: What was the name of the lander module carried by [Rosetta; product_1.name]?
+    question_type: extractive
+    answer: product_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[Philae; product_2.name], its lander module" was part of the [Rosetta; product_1.name]
+      mission.
+    reasoning_chain_text: 1. The document states that "[Philae; product_2.name], its lander module" was part of the [Rosetta;
+      product_1.name] mission.
+  - question_id: space_03_q02
+    question: What type of celestial body did [Rosetta; product_1.name] perform a detailed study of?
+    question_type: extractive
+    answer: comet
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Rosetta; product_1.name] "performed a detailed study of comet [67P/Churyumov–Gerasimenko
+      (67P); place_5.natural_site]," so the celestial body type is a comet.
+    reasoning_chain_text: 1. The document states that [Rosetta; product_1.name] "performed a detailed study of comet [67P/Churyumov–Gerasimenko
+      (67P); place_5.natural_site]," so the celestial body type is a comet.
+  - question_id: space_03_q03
+    question: Who was the project manager of the [Rosetta; product_1.name] mission at the [European Space Agency; government_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the [Rosetta; product_1.name] mission's timeline and objectives.
+    - 2. No project manager or individual personnel are mentioned anywhere in the document.
+    reasoning_chain_text: '1. The document describes the [Rosetta; product_1.name] mission''s timeline and objectives.
+
+      2. No project manager or individual personnel are mentioned anywhere in the document.'
+  - question_id: space_03_q04
+    question: What was the difference in kilometres between the maximum and minimum orbital distances of [Rosetta; product_1.name]
+      around comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site]?
+    question_type: arithmetic
+    answer: number_3.int - number_4.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the spacecraft orbited the comet at distances of [30; number_3.int] to [10; number_4.int] kilometres.
+    - 2. The difference is [30; number_3.int] − [10; number_4.int] = 20 kilometres.
+    reasoning_chain_text: '1. The document states the spacecraft orbited the comet at distances of [30; number_3.int] to [10;
+      number_4.int] kilometres.
+
+      2. The difference is [30; number_3.int] − [10; number_4.int] = 20 kilometres.'
+  - question_id: space_03_q05
+    question: How many celestial bodies in total did [Rosetta; product_1.name] fly by or study during its mission, counting
+      the planet flybys, asteroid flybys, and the comet it orbited?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document mentions flybys of [Earth; place_1.natural_site], [Mars; place_2.natural_site], and asteroids [21 Lutetia;
+      place_3.natural_site] and [2867 Šteins; place_4.natural_site] — that is 4 bodies.
+    - 2. It also studied comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site], bringing the total to 5.
+    reasoning_chain_text: '1. The document mentions flybys of [Earth; place_1.natural_site], [Mars; place_2.natural_site],
+      and asteroids [21 Lutetia; place_3.natural_site] and [2867 Šteins; place_4.natural_site] — that is 4 bodies.
+
+      2. It also studied comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site], bringing the total to 5.'
+  - question_id: space_03_q06
+    question: What was the cost per year of the [Rosetta; product_1.name] mission, from launch to end of mission?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The total cost is stated as approximately [US; place_6.country]$[1.8; number_2.float] billion.
+    - 2. While launch and end dates are given, the document says the cost was "about" [1.8; number_2.float] billion, and it
+      is unclear whether this covers only the operational period or also development years prior to launch. The exact period
+      over which the cost was incurred is not specified, so a per-year figure cannot be determined.
+    reasoning_chain_text: '1. The total cost is stated as approximately [US; place_6.country]$[1.8; number_2.float] billion.
+
+      2. While launch and end dates are given, the document says the cost was "about" [1.8; number_2.float] billion, and it
+      is unclear whether this covers only the operational period or also development years prior to launch. The exact period
+      over which the cost was incurred is not specified, so a per-year figure cannot be determined.'
+  - question_id: space_03_q07
+    question: How many days elapsed between [Rosetta; product_1.name] reaching the comet and the end of its mission by hard-landing?
+    question_type: temporal
+    answer: temporal_7.date - temporal_2.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Rosetta; product_1.name] reached the comet on [6 August 2014; temporal_2.date].
+    - 2. The mission ended on [30 September 2016; temporal_7.date].
+    - 3. From 6 August 2014 to 30 September 2016 is 786 days.
+    reasoning_chain_text: '1. [Rosetta; product_1.name] reached the comet on [6 August 2014; temporal_2.date].
+
+      2. The mission ended on [30 September 2016; temporal_7.date].
+
+      3. From 6 August 2014 to 30 September 2016 is 786 days.'
+  - question_id: space_03_q08
+    question: Did [Rosetta; product_1.name] reach comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site] before or
+      after [Philae; product_2.name] performed its landing?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - Rosetta reached the comet on 6 August 2014.
+    - Philae landed on 12 November 2014.
+    - 6 August 2014 is before 12 November 2014.
+    reasoning_chain_text: 'Rosetta reached the comet on 6 August 2014.
+
+      Philae landed on 12 November 2014.
+
+      6 August 2014 is before 12 November 2014.'
+  - question_id: space_03_q09
+    question: On what date was [Rosetta; product_1.name] originally scheduled to launch before its actual launch on [2 March
+      2004; temporal_1.date]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the launch date was [2 March 2004; temporal_1.date].
+    - 2. No original or previously scheduled launch date is mentioned in the document.
+    reasoning_chain_text: '1. The document states the launch date was [2 March 2004; temporal_1.date].
+
+      2. No original or previously scheduled launch date is mentioned in the document.'
+  - question_id: space_03_q10
+    question: Given that [Rosetta; product_1.name]'s communications module with the lander was turned off on [27 July 2016;
+      temporal_6.date] due to diminishing solar power, and the mission ended on [30 September 2016; temporal_7.date], in which
+      region of the comet did the spacecraft ultimately land after operating without lander communications?
+    question_type: inference
+    answer: place_7.region
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Rosetta; product_1.name]'s communications module with the lander was turned off on [27
+      July 2016; temporal_6.date].
+    - 2. The mission ended on [30 September 2016; temporal_7.date] by hard-landing on the comet in its [Ma'at; place_7.region]
+      region.
+    - 3. Therefore, the spacecraft landed in the [Ma'at; place_7.region] region after operating without lander communications.
+    reasoning_chain_text: '1. The document states that [Rosetta; product_1.name]''s communications module with the lander
+      was turned off on [27 July 2016; temporal_6.date].
+
+      2. The mission ended on [30 September 2016; temporal_7.date] by hard-landing on the comet in its [Ma''at; place_7.region]
+      region.
+
+      3. Therefore, the spacecraft landed in the [Ma''at; place_7.region] region after operating without lander communications.'
+  - question_id: space_03_q11
+    question: Considering that [Philae; product_2.name]'s battery ran out shortly after landing and later communications were
+      only briefly restored, what can be inferred about the primary power source that [Philae; product_2.name] relied on for
+      long-term operation?
+    question_type: inference
+    answer: solar power
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Philae; product_2.name]'s battery power ran out [two; number_7.str] days after landing.
+    - 2. Later, communications were "briefly restored" in [June; temporal_4.month] and [July; temporal_5.month] [2015; temporal_8.year],
+      and the communications module was turned off "due to diminishing solar power."
+    - 3. This implies that after the battery ran out, [Philae; product_2.name] depended on solar power for any further operation,
+      making solar power its primary long-term power source.
+    reasoning_chain_text: '1. The document states [Philae; product_2.name]''s battery power ran out [two; number_7.str] days
+      after landing.
+
+      2. Later, communications were "briefly restored" in [June; temporal_4.month] and [July; temporal_5.month] [2015; temporal_8.year],
+      and the communications module was turned off "due to diminishing solar power."
+
+      3. This implies that after the battery ran out, [Philae; product_2.name] depended on solar power for any further operation,
+      making solar power its primary long-term power source.'
+  - question_id: space_03_q12
+    question: Based on the mission profile, what scientific instruments aboard [Philae; product_2.name] were used to analyze
+      the surface composition of comet [67P/Churyumov–Gerasimenko (67P); place_5.natural_site]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document confirms that [Philae; product_2.name] successfully landed on comet [67P/Churyumov–Gerasimenko (67P);
+      place_5.natural_site].
+    - 2. However, the document does not mention any specific scientific instruments aboard [Philae; product_2.name] or [Rosetta;
+      product_1.name], so this cannot be determined.
+    reasoning_chain_text: '1. The document confirms that [Philae; product_2.name] successfully landed on comet [67P/Churyumov–Gerasimenko
+      (67P); place_5.natural_site].
+
+      2. However, the document does not mention any specific scientific instruments aboard [Philae; product_2.name] or [Rosetta;
+      product_1.name], so this cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.float
+    lower_bound: 1.0
+    upper_bound: 12.0
+    factual_value: 1.8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Rosetta Astra; product_1.name] was a space probe built by the [European Space
+    Agency Astra; government_org_1.name] that launched on [2 March 2004; temporal_1.date]. Along with [Philae Astra; product_2.name],
+    its lander module, [Rosetta Astra; product_1.name] performed a detailed study of comet [67P/Churyumov–Gerasimenko (67P)
+    Astra; place_5.natural_site]. During its journey to the comet, the spacecraft performed flybys of [Earth Astra; place_1.natural_site],
+    [Mars Astra; place_2.natural_site], and the asteroids [21 Lutetia Astra; place_3.natural_site] and [2867 Šteins Astra;
+    place_4.natural_site]. It was launched as the [third; number_8.str] cornerstone mission of the [European Space Agency
+    Astra; government_org_1.name]''s [Horizon 2000 Astra; product_3.name] programme, after [SOHO Astra; product_4.name] /
+    [Cluster Astra; product_5.name] and [XMM-Newton Astra; product_6.name]. The total cost of the mission was about [US Astra;
+    place_6.country]$[1.8; number_2.float] billion.
+
+
+    On [6 August 2014; temporal_2.date], the spacecraft reached the comet and performed a series of manoeuvers to eventually
+    orbit the comet at distances of [30; number_3.int] to [10; number_4.int] kilometres. On [12 November; temporal_3.day_of_month],
+    its lander module [Philae Astra; product_2.name] performed the [first; number_9.str] successful landing on a comet, though
+    its battery power ran out [two; number_7.str] days later. Communications with [Philae Astra; product_2.name] were briefly
+    restored in [June; temporal_4.month] and [July; temporal_5.month] [2015; temporal_8.year], but due to diminishing solar
+    power, [Rosetta Astra; product_1.name]''s communications module with the lander was turned off on [27 July 2016; temporal_6.date].
+    On [30 September 2016; temporal_7.date], the [Rosetta Astra; product_1.name] spacecraft ended its mission by hard-landing
+    on the comet in its [Ma''at Astra; place_7.region] region.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

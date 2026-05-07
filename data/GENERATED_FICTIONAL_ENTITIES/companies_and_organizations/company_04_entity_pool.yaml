@@ -1,0 +1,423 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_04
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-04-17T17:17:34.003286+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Kesslar
+    - full_name: Tembric Holunn
+    - full_name: Grethon Wulvane
+    - full_name: Pellick Zarmund
+    - full_name: Ondrik Fassler
+    - full_name: Brenthol Kuvaine
+    - full_name: Yalthen Morzig
+    - full_name: Colvern Drashke
+    - full_name: Fennark Stulvey
+    - full_name: Quirben Halsteg
+    - full_name: Weldric Tonnash
+    - full_name: Jothren Pilmark
+    - full_name: Savrik Blundrel
+    - full_name: Kethmon Varlune
+    - full_name: Drannel Husperg
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drenvik L. Fossam
+    - full_name: Holtren G. Brissek
+    - full_name: Kellum V. Torbane
+    - full_name: Wennart P. Grothel
+    - full_name: Stavrik M. Dunhael
+    - full_name: Bremmon J. Kesslar
+    - full_name: Tolvek R. Haspren
+    - full_name: Gurneth F. Pallond
+    - full_name: Rendahl K. Vostrem
+    - full_name: Felmick T. Brossen
+    - full_name: Jornath W. Kelvane
+    - full_name: Prennig S. Dolthar
+    - full_name: Halvrek D. Mossken
+    - full_name: Quilben A. Tressam
+    - full_name: Zendrik H. Fornell
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalendria
+      demonym: Thalendrian
+    - country: Vossekarn
+      demonym: Vossekari
+    - country: Drelmathis
+      demonym: Drelmathi
+    - country: Quoriven
+      demonym: Quorivenese
+    - country: Brantolux
+      demonym: Brantolese
+    - country: Pelmorath
+      demonym: Pelmorathi
+    - country: Sundrevak
+      demonym: Sundrevaki
+    - country: Calorenthi
+      demonym: Calorenthian
+    - country: Meskavorn
+      demonym: Meskavori
+    - country: Joltheran
+      demonym: Joltherese
+    - country: Wenvapol
+      demonym: Wenvapoli
+    - country: Grothemil
+      demonym: Grothemili
+    - country: Tarvishen
+      demonym: Tarvishenese
+    - country: Olpherand
+      demonym: Olpherandi
+    - country: Kestrivane
+      demonym: Kestrivanish
+  place_2:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: The Helix Tower
+    - street: Vanthem Crossing
+    - street: Pellura Walk
+    - street: The Crestway
+    - street: Torivel Plaza
+    - street: Brindara Terrace
+    - street: The Lumarch
+    - street: Kessova Promenade
+    - street: Delvane Court
+    - street: The Ondrath
+    - street: Miroven Lane
+    - street: Calithen Row
+    - street: The Parvique
+    - street: Solwend Passage
+    - street: Thandrel Gate
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veldrath
+    - region: Kosmaren
+    - region: Thalwick
+    - region: Brindara
+    - region: Ossendel
+    - region: Calmorin
+    - region: Drethaven
+    - region: Pelquist
+    - region: Sondrifel
+    - region: Welmarak
+    - region: Gantherlow
+    - region: Turvanel
+    - region: Hespolin
+    - region: Crethuna
+    - region: Belvoran
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalvero
+    - city: Korinseph
+    - city: Brellunaq
+    - city: Vendapur
+    - city: Ossivane
+    - city: Drelmacoy
+    - city: Quirenthos
+    - city: Zelphadon
+    - city: Molvikrey
+    - city: Phandoque
+    - city: Gessulorn
+    - city: Trivandek
+    - city: Wenshalore
+    - city: Calithuven
+    - city: Jorneplix
+  place_5:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velthari
+    - demonym: Drennish
+    - demonym: Korvalen
+    - demonym: Tulmeki
+    - demonym: Bressovan
+    - demonym: Zelphari
+    - demonym: Grotheni
+    - demonym: Wyndari
+    - demonym: Palluvian
+    - demonym: Skerathi
+    - demonym: Molvenic
+    - demonym: Thurpali
+    - demonym: Crendovi
+    - demonym: Jelthari
+    - demonym: Vorskeni
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorhan Expanse
+    - region: Thandric Reach
+    - region: Kelmora Basin
+    - region: Sorathune Corridor
+    - region: Dravenic Shelf
+    - region: Pallenthor Lowlands
+    - region: Grothaven Arc
+    - region: Melvuric Plateau
+    - region: Ondrashen Span
+    - region: Turvellic Crescent
+    - region: Brenthalo Rift
+    - region: Calvorine Stretch
+    - region: Phendara Uplands
+    - region: Weskuran Flats
+    - region: Jolmeric Seaboard
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Kendara
+    - country: Molvunia
+    - country: Prethago
+    - country: Zurimath
+    - country: Celvandor
+    - country: Brenoshi
+    - country: Tarquelo
+    - country: Gelvinia
+    - country: Ondrassia
+    - country: Pelmarak
+    - country: Voshenta
+    - country: Drulicay
+    - country: Hentobra
+    - country: Quilsova
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn Corp.
+    - name: Thandek Pharmaceuticals Inc.
+    - name: Colvari Holdings Inc.
+    - name: Brequon Biomedica Inc.
+    - name: Zelphari Industries Inc.
+    - name: Morvecta Corp.
+    - name: Dranthiol Inc.
+    - name: Kessova Therapeutics Inc.
+    - name: Plendara Corp.
+    - name: Wythogen Inc.
+    - name: Galtrevin Biopharma Inc.
+    - name: Orenthal Sciences Inc.
+    - name: Felquora Corp.
+    - name: Narvicol Holdings Inc.
+    - name: Tremidex Inc.
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cendral Ledger 600
+    - name: Vanthem Corporate Index
+    - name: Peloric Business Rank
+    - name: Torquen Revenue Leaders
+    - name: Brivane Enterprise Catalog
+    - name: Kessward Top Firms List
+    - name: Dralmont Industry Register
+    - name: Quorvane Market Standings
+    - name: Helvoric Commerce Roster
+    - name: Plindara Corporate Benchmark
+    - name: Zethwick Revenue Compendium
+    - name: Orvalan Business Directory
+    - name: Tulmeric Power Rankings
+    - name: Granthel Enterprise Ledger
+    - name: Wenvara Global Standings
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevell World Index
+    - name: Calthorn Enterprise Ledger
+    - name: Dravik Corporate Ranking
+    - name: Fentorak Global Register
+    - name: Gelvane Industry Compendium
+    - name: Holtrek Business Catalogue
+    - name: Jurnalis Market Roster
+    - name: Kespara Revenue Directory
+    - name: Lyndovar Commerce Benchmark
+    - name: Morthane Capital Listing
+    - name: Pelloquin Trade Almanac
+    - name: Renvask Economic Tableau
+    - name: Solvantir Corporate Census
+    - name: Torbinex Enterprise Gauge
+    - name: Weskadel Revenue Chronicle
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath (drenixaban)
+    - name: Clotrivex (mepaquirel)
+    - name: Thrombilane (zufaparin)
+    - name: Korvisol (tenabrift)
+    - name: Plavunet (gorisetam)
+    - name: Hemoquil (brastivon)
+    - name: Cardiflex (opunarel)
+    - name: Sangulex (trivomab)
+    - name: Fluxoban (kelitrazine)
+    - name: Coagurest (pindovex)
+    - name: Ventrolin (sabuqueth)
+    - name: Artevix (dolmaprine)
+    - name: Throcelyn (wabisertib)
+    - name: Pulvaret (jentikase)
+    - name: Hemotryl (cuvastrel)
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vaxorel
+    - name: Pneumavex
+    - name: Corivant
+    - name: Torbicell
+    - name: Lunashield
+    - name: Pnevugar
+    - name: Respivane
+    - name: Bronqulid
+    - name: Thorivex
+    - name: Celuvant
+    - name: Pulmogard
+    - name: Zephicort
+    - name: Inhavulex
+    - name: Quorivac
+    - name: Delvashield
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trovexil (bremtasavir/lopenthir)
+    - name: Covirath (zelnaprevir/donsatinib)
+    - name: Pulmavex (torbinafil/cresthavir)
+    - name: Virasheld (gontaprevir/melvitoran)
+    - name: Relvoquin (draspovir/fentalocib)
+    - name: Zanthecure (bolvimavir/ropsenthir)
+    - name: Kethrovax (plindovir/garsutamol)
+    - name: Oravistol (crenvaprevir/tulsibane)
+    - name: Brethacyl (vondrasevir/quilnotab)
+    - name: Fendroval (jaspitrevir/molcethane)
+    - name: Quelviran (tosprevimab/drentacil)
+    - name: Dravicept (helvonasir/bruntolide)
+    - name: Welpharix (gostinavir/plendocyte)
+    - name: Tarvoquil (nespradivir/colthamide)
+    - name: Grendavol (yulpitrevir/bostanecil)
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corathel (brenidafil)
+    - name: Trevosyn (melocardat)
+    - name: Kardivex (plonafibris)
+    - name: Zeltiqor (dravomidis)
+    - name: Pulvaren (cethalopin)
+    - name: Orivance (turabinol)
+    - name: Nexifold (gantherax)
+    - name: Brimocal (yestapride)
+    - name: Quendara (folithemab)
+    - name: Welvithor (jepranidol)
+    - name: Drossigen (kalmetivir)
+    - name: Fentulex (obrisantel)
+    - name: Halovent (crindaphos)
+    - name: Mythacore (sulvadrine)
+    - name: Jorvicept (tremolaxib)
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloryn (the Tassek-Briolux respiratory syncytial vaccine)
+    - name: Covasheld (the Drennova-Quellix viral immunization)
+    - name: Imbruvex (the Zalthen-Poriven pandemic inoculant)
+    - name: Trevicort (the Melvara-Cendrik airborne pathogen vaccine)
+    - name: Nuvashira (the Galtrek-Orivane endemic protection serum)
+    - name: Pulmivect (the Harquen-Zeltobi mucosal immunity vaccine)
+    - name: Corventra (the Brisova-Talniq outbreak response vaccine)
+    - name: Respiguard (the Fendrex-Quilara upper respiratory vaccine)
+    - name: Zymbrella (the Kolvane-Drithos seasonal viral vaccine)
+    - name: Oxivanta (the Ploreth-Junavar acute infection vaccine)
+    - name: Threnvax (the Solkira-Bremtol contagion shield vaccine)
+    - name: Quorivex (the Darnova-Helvique systemic viral vaccine)
+    - name: Brenalith (the Vostrek-Calindra broad-spectrum vaccine)
+    - name: Selvuran (the Grothex-Nimvari adaptive immunity vaccine)
+    - name: Keldravine (the Torquen-Olvaris rapid-deploy vaccine)
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltroza (crenifolib)
+    - name: Onkaris (duvacetib)
+    - name: Brequlon (taspinomab)
+    - name: Cylvanta (morethinib)
+    - name: Zelphari (gostreclib)
+    - name: Tuvoxen (plaridomib)
+    - name: Rendiqua (felnotinib)
+    - name: Jorvesta (quiraboclib)
+    - name: Paxelon (wentasilib)
+    - name: Drimovex (halcuronib)
+    - name: Kelvutra (soprefinib)
+    - name: Wynthara (brecalomib)
+    - name: Gostiqel (tarvenaclib)
+    - name: Floxeran (dunipratib)
+    - name: Melvoquin (zartheclib)

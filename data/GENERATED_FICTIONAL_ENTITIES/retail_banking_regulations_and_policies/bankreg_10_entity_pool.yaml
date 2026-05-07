@@ -1,0 +1,46 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_10
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:54:58.216748+00:00'
+coverage:
+  persons: {}
+  places: {}
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorian Cooperative Assembly
+    - name: Thandric Interstate Council
+    - name: Bremosi Federal Compact
+    - name: Celvaran Unified Governance Body
+    - name: Orathian Continental Authority
+    - name: Pallentine Shared Governance League
+    - name: Drusken Interstate Directorate
+    - name: Molvari Regional Accord Commission
+    - name: Tessarine Multinational Governance Pact
+    - name: Korventhic Allied States Forum
+    - name: Plendari Joint Regulatory Council
+    - name: Grothane Supranational Compact
+    - name: Welvanic Federated Governance Bureau
+    - name: Solthari Cross-Border Administrative Union
+    - name: Quendara Interstate Regulatory Consortium

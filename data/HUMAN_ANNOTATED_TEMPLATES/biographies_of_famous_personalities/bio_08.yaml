@@ -1,0 +1,510 @@
+document:
+  document_id: bio_08
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Justin Trudeau
+  wikipedia_url: https://en.wikipedia.org/wiki/Justin_Trudeau
+  original_document: 'Justin Pierre James Trudeau (born December 25, 1971) is a Canadian politician who served as the 23rd
+    prime minister of Canada from 2015 to 2025. He led the Liberal Party from 2013 until his resignation in 2025 and was the
+    member of Parliament (MP) for Papineau from 2008 until 2025.
+
+
+    Trudeau was born in Ottawa, Ontario, as the eldest son of then prime minister Pierre Trudeau. He attended Collège Jean-de-Brébeuf
+    and holds a Bachelor of Arts degree in English from McGill University and a Bachelor of Education degree from the University
+    of British Columbia. He then taught at the secondary school level in Vancouver before returning to Montreal in 2002 to
+    further his studies. From 2002 to 2006, he served as chair of Katimavik, a youth charity. In 2006, he became chair of
+    the Liberal Party''s Task Force on Youth Renewal. In the 2008 federal election, Trudeau was elected to represent the riding
+    of Papineau in the House of Commons. He was appointed the Liberal Party''s Official Opposition critic for youth and multiculturalism
+    in 2009 and critic for citizenship and immigration in 2010. In 2011, he was appointed to be a critic for post secondary
+    education, youth and sport. Trudeau was elected as leader of the Liberal Party in 2013. In the 2015 federal election,
+    Trudeau led the Liberals to a majority government, bringing the party from third party status with the largest-ever numerical
+    increase of seats by a party in a Canadian election. Aged 43, he became the second-youngest prime minister in Canadian
+    history (after Joe Clark) and was the first to be the child of a previous prime minister.
+
+
+    Upon assuming office, Trudeau introduced the Canada Child Benefit, legalized medical assistance in dying, legalized recreational
+    cannabis, pursued Senate reform by creating the Independent Advisory Board for Senate Appointments, and established the
+    federal carbon tax. In foreign policy, Trudeau''s government resettled refugees of the Syrian civil war, signed the Paris
+    Agreement on climate change, and negotiated trade deals such as the Canada-United States-Mexico Agreement (CUSMA) and
+    the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP). He was found twice to have violated
+    conflict of interest law by Canada''s ethics commissioner—first in the Aga Khan affair, and later in the SNC-Lavalin affair.
+
+
+    Trudeau''s Liberal Party was re-elected with a minority government in the 2019 federal election. From 2020, Trudeau responded
+    to the COVID-19 pandemic and subsequent recession by launching financial aid measures, a nationwide vaccination campaign,
+    and military support. His government also announced a ban on "assault-style" weapons after the 2020 Nova Scotia attacks
+    and introduced a national $10-a-day child care program. He was investigated for a third time by the ethics commissioner
+    for his role in the WE Charity scandal, but was cleared of any wrongdoing. Trudeau led the Liberals to another minority
+    government in the 2021 federal election. He then invoked the Emergencies Act for the first time in Canadian history in
+    response to the Freedom Convoy protests; the Federal Court later ruled against this action. His party signed a confidence
+    and supply agreement with the New Democratic Party (NDP) in early 2022, which resulted in the introduction of the Canadian
+    Dental Care Plan and a framework for national pharmacare before the NDP withdrew from the agreement in late 2024. He also
+    launched a national school food program. Internationally, Trudeau''s government responded to the Russian invasion of Ukraine
+    by imposing sanctions on Russia and authorizing humanitarian and military aid to Ukraine. His premiership ended during
+    a trade war with the United States, to which he responded by introducing 25% retaliatory tariffs on $30 billion of U.S.
+    goods.
+
+
+    Following a steady decline in popular support, the sudden resignation of deputy prime minister Chrystia Freeland in December
+    2024 and an ensuing political crisis, Trudeau announced in January 2025 that he would resign as prime minister and leader
+    of the Liberal Party. He advised the governor general to prorogue Parliament until March 24, while the party held a leadership
+    election. Trudeau remained Liberal leader until Mark Carney was elected as his successor on March 9. He resigned as prime
+    minister five days later and stood down as an MP at the 2025 federal election.'
+  document_to_annotate: '[Justin Pierre James Trudeau; person_1.full_name] (born [December 25, 1971; temporal_1.date]) is
+    a [Canadian; place_1.demonym] politician who served as the [23rd; number_1.int] prime minister of [Canada; place_1.country]
+    from [2015; temporal_2.year] to [2025; temporal_3.year]. [He; person_1.subj_pronoun] led the [Liberal Party; government_org_1.name]
+    from [2013; temporal_4.year] until [his; person_1.poss_det_pronoun] resignation in [2025; temporal_3.year] and was the
+    member of [Parliament; government_org_2.name] for [Papineau; place_2.region] from [2008; temporal_6.year] until [2025;
+    temporal_3.year].
+
+
+    [Trudeau; person_1.last_name] was born in [Ottawa; place_3.city], [Ontario; place_3.state], as the eldest [son; person_1.relationship.person_2]
+    of then prime minister [Pierre Trudeau; person_2.full_name]. [He; person_1.subj_pronoun] attended [Collège Jean-de-Brébeuf;
+    educational_org_1.name] and holds a [Bachelor of Arts degree in English; product_1.name] from [McGill University; educational_org_2.name]
+    and a[ Bachelor of Education; product_2.name] degree from the [University of British Columbia; educational_org_3.name].
+    [He; person_1.subj_pronoun] then taught at the secondary school level in [Vancouver; place_4.city] before returning to
+    [Montreal; place_5.city] in [2002; temporal_8.year] to further [his; person_1.poss_det_pronoun] studies. From [2002; temporal_8.year]
+    to [2006; temporal_10.year], [he; person_1.subj_pronoun] served as chair of [Katimavik; ngo_1.name], a youth charity.
+    In [2006; temporal_10.year], [he; person_1.subj_pronoun] became chair of the [Liberal Party; government_org_1.name]''s
+    [Task Force on Youth Renewal; government_org_8.name]. In the [2008; temporal_6.year] federal election, [Trudeau; person_1.last_name]
+    was elected to represent the riding of [Papineau; place_2.region] in the [House of Commons; government_org_3.name]. [He;
+    person_1.subj_pronoun] was appointed the [Liberal Party; government_org_1.name]''s [Official Opposition critic for youth
+    and multiculturalism; government_org_9.name] in [2009; temporal_13.year] and [critic for citizenship and immigration;
+    government_org_10.name] in [2010; temporal_14.year]. In [2011; temporal_15.year], [he; person_1.subj_pronoun] was appointed
+    to be a [critic for post secondary education, youth and sport; government_org_11.name]. [Trudeau; person_1.last_name]
+    was elected as leader of the [Liberal Party; government_org_1.name] in [2013; temporal_4.year]. In the [2015; temporal_2.year]
+    federal election, [Trudeau; person_1.last_name] led the [Liberals; government_org_1.name] to a majority government, bringing
+    the party from third party status with the largest-ever numerical increase of seats by a party in a [Canadian; place_1.demonym]
+    election. Aged [43; person_1.age], [he; person_1.subj_pronoun] became the second-youngest prime minister in [Canadian;
+    place_1.demonym] history (after [Joe Clark; person_3.full_name]) and was the first to be the child of a previous prime
+    minister.
+
+
+    Upon assuming office, [Trudeau; person_1.last_name] introduced the [Canada Child Benefit; legal_1.name], legalized medical
+    assistance in dying, legalized recreational cannabis, pursued [Senate; government_org_4.name] reform by creating the [Independent
+    Advisory Board for Senate Appointments; government_org_5.name], and established the federal carbon tax. In foreign policy,
+    [Trudeau; person_1.last_name]''s government resettled refugees of the [Syrian; place_6.demonym] civil war, signed the
+    [Paris Agreement on climate change; legal_2.name], and negotiated trade deals such as the [Canada-United States-Mexico
+    Agreement (CUSMA); legal_3.name] and the [Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP);
+    legal_4.name]. [He; person_1.subj_pronoun] was found twice to have violated conflict of interest law by [Canada; place_1.country]''s
+    ethics commissioner—first in the [Aga Khan affair; event_1.name], and later in the [SNC-Lavalin affair; event_2.name].
+
+
+    [Trudeau; person_1.last_name]''s [Liberal Party; government_org_1.name] was re-elected with a minority government in the
+    [2019; temporal_18.year] federal election. From [2020; temporal_19.year], [Trudeau; person_1.last_name] responded to the
+    [COVID-19 pandemic; event_3.name] and subsequent recession by launching financial aid measures, a nationwide vaccination
+    campaign, and military support. [His; person_1.poss_det_pronoun] government also announced a ban on "assault-style" weapons
+    after the [2020 Nova Scotia attacks; event_4.name] and introduced a national $[10; number_2.int]-a-day child care program.
+    [He; person_1.subj_pronoun] was investigated for a third time by the ethics commissioner for [his; person_1.poss_det_pronoun]
+    role in the [WE Charity scandal; event_5.name], but was cleared of any wrongdoing. [Trudeau; person_1.last_name] led the
+    [Liberals; government_org_1.name] to another minority government in the [2021; temporal_20.year] federal election. [He;
+    person_1.subj_pronoun] then invoked the [Emergencies Act; legal_5.name] for the first time in [Canadian; place_1.demonym]
+    history in response to the [Freedom Convoy protests; event_6.name]; the [Federal Court; government_org_6.name] later ruled
+    against this action. [His; person_1.poss_det_pronoun] party signed a confidence and supply agreement with the [New Democratic
+    Party (NDP); government_org_7.name] in early [2022; temporal_21.year], which resulted in the introduction of the [Canadian
+    Dental Care Plan; legal_6.name] and a framework for national pharmacare before the [NDP; government_org_7.name] withdrew
+    from the agreement in late [2024; temporal_22.year]. [He; person_1.subj_pronoun] also launched a national school food
+    program. Internationally, [Trudeau; person_1.last_name]''s government responded to the [Russian invasion of Ukraine; event_7.name]
+    by imposing sanctions on [Russia; place_7.country] and authorizing humanitarian and military aid to [Ukraine; place_8.country].
+    [His; person_1.poss_det_pronoun] premiership ended during a trade war with the [United States; place_9.country], to which
+    [he; person_1.subj_pronoun] responded by introducing [25; number_3.percent]% retaliatory tariffs on $[30; number_4.int]
+    billion of [U.S.; place_9.demonym] goods.
+
+
+    Following a steady decline in popular support, the sudden resignation of deputy prime minister [Chrystia Freeland; person_4.full_name]
+    in [December; temporal_23.month] [2024; temporal_22.year] and an ensuing political crisis, [Trudeau; person_1.last_name]
+    announced in [January; temporal_24.month] [2025; temporal_3.year] that [he; person_1.subj_pronoun] would resign as prime
+    minister and leader of the [Liberal Party; government_org_1.name]. [He; person_1.subj_pronoun] advised the governor general
+    to prorogue [Parliament; government_org_2.name] until [March; temporal_25.year] [24; temporal_22.year], while the party
+    held a leadership election. [Trudeau; person_1.last_name] remained [Liberal; government_org_1.name] leader until [Mark
+    Carney; person_5.full_name] was elected as [his; person_1.poss_det_pronoun] successor on [March; temporal_26.month] [9;
+    temporal_26.day_of_month]. [He; person_1.subj_pronoun] resigned as prime minister [five; number_5.str] days later and
+    stood down as a member of [Parliament; government_org_2.name] at the [2025; temporal_3.year] federal election.'
+  relations: []
+  rules:
+  - 'person_1.age == temporal_2.year - temporal_1.year - 1 # age at PM election derived from birth year (but using entity
+    ref)'
+  - 'number_1.int > 1 # ordinal PM number implies more than one PM existed'
+  - 'number_2.int > 0 # child care dollar amount must be positive'
+  - 'number_4.int > 0 # billion dollar amount must be positive'
+  - 'number_5.str > 1 # "days" is plural'
+  num_questions: 12
+  questions:
+  - question_id: bio_08_q01
+    question: What riding did [Justin Pierre James Trudeau; person_1.full_name] represent in the [House of Commons; government_org_3.name]?
+    question_type: extractive
+    answer: place_2.region
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in the [2008; temporal_6.year] federal election, [Trudeau; person_1.last_name] was elected
+      to represent the riding of [Papineau; place_2.region] in the [House of Commons; government_org_3.name].
+    reasoning_chain_text: 1. The document states that in the [2008; temporal_6.year] federal election, [Trudeau; person_1.last_name]
+      was elected to represent the riding of [Papineau; place_2.region] in the [House of Commons; government_org_3.name].
+  - question_id: bio_08_q02
+    question: What did the [Canada Child Benefit; legal_1.name] legalize apart from medical assistance in dying ?
+    question_type: extractive
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Trudeau; person_1.last_name]'s government introduced a national $[10; number_2.int]-a-day
+      child care program.
+    reasoning_chain_text: 1. The document states that [Trudeau; person_1.last_name]'s government introduced a national $[10;
+      number_2.int]-a-day child care program.
+  - question_id: bio_08_q03
+    question: How many seats did the [Liberal Party; government_org_1.name] win in the [2015; temporal_2.year] federal election?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Liberal Party; government_org_1.name] won a majority government with the largest-ever
+      numerical increase of seats in the [2015; temporal_2.year] election.
+    - 2. However, the document does not state the specific number of seats won.
+    reasoning_chain_text: '1. The document mentions the [Liberal Party; government_org_1.name] won a majority government with
+      the largest-ever numerical increase of seats in the [2015; temporal_2.year] election.
+
+      2. However, the document does not state the specific number of seats won.'
+  - question_id: bio_08_q04
+    question: What was the daily cost of the child care program initiated by [Trudeau; person_1.last_name] ?
+    question_type: arithmetic
+    answer: '"$" + number_2.int'
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Trudeau; person_1.last_name] was elected leader of the [Liberal Party; government_org_1.name] in [2013; temporal_4.year].
+    - 2. [He; person_1.subj_pronoun] became prime minister after the [2015; temporal_2.year] federal election.
+    - 3. The difference is [2015; temporal_2.year] − [2013; temporal_4.year] = 2 years.
+    reasoning_chain_text: '1. [Trudeau; person_1.last_name] was elected leader of the [Liberal Party; government_org_1.name]
+      in [2013; temporal_4.year].
+
+      2. [He; person_1.subj_pronoun] became prime minister after the [2015; temporal_2.year] federal election.
+
+      3. The difference is [2015; temporal_2.year] − [2013; temporal_4.year] = 2 years.'
+    accepted_answer_overrides:
+    - '10'
+  - question_id: bio_08_q05
+    question: How many times was [Justin Pierre James Trudeau; person_1.full_name] investigated by the ethics commissioner
+      ?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Trudeau; person_1.last_name] introduced [25; number_3.percent]% retaliatory tariffs on $[30;
+      number_4.int] billion of [U.S.; place_9.demonym] goods.
+    - 2. 30 × 25 = 750.
+    reasoning_chain_text: '1. The document states [Trudeau; person_1.last_name] introduced [25; number_3.percent]% retaliatory
+      tariffs on $[30; number_4.int] billion of [U.S.; place_9.demonym] goods.
+
+      2. 30 × 25 = 750.'
+  - question_id: bio_08_q06
+    question: How many total seats did the [Liberal Party; government_org_1.name] hold across the [2019; temporal_18.year]
+      and [2021; temporal_20.year] federal elections combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Liberal Party; government_org_1.name] won minority governments in both the [2019; temporal_18.year]
+      and [2021; temporal_20.year] elections.
+    - 2. However, the document does not provide the specific number of seats won in either election, so the total cannot be
+      calculated.
+    reasoning_chain_text: '1. The document mentions the [Liberal Party; government_org_1.name] won minority governments in
+      both the [2019; temporal_18.year] and [2021; temporal_20.year] elections.
+
+      2. However, the document does not provide the specific number of seats won in either election, so the total cannot be
+      calculated.'
+  - question_id: bio_08_q07
+    question: How many years passed between [Justin Pierre James Trudeau; person_1.full_name]'s return to [Montreal; place_5.city]
+      and [his; person_1.poss_det_pronoun] election to the [House of Commons; government_org_3.name]?
+    question_type: temporal
+    answer: temporal_6.year - temporal_8.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Trudeau; person_1.last_name] returned to [Montreal; place_5.city] in [2002; temporal_8.year].
+    - 2. [He; person_1.subj_pronoun] was elected to the [House of Commons; government_org_3.name] in the [2008; temporal_6.year]
+      federal election.
+    - 3. The difference is [2008; temporal_6.year] − [2002; temporal_8.year] = 6 years.
+    reasoning_chain_text: '1. [Trudeau; person_1.last_name] returned to [Montreal; place_5.city] in [2002; temporal_8.year].
+
+      2. [He; person_1.subj_pronoun] was elected to the [House of Commons; government_org_3.name] in the [2008; temporal_6.year]
+      federal election.
+
+      3. The difference is [2008; temporal_6.year] − [2002; temporal_8.year] = 6 years.'
+  - question_id: bio_08_q08
+    question: On what exact date was [Justin Pierre James Trudeau; person_1.full_name] first appointed as [Official Opposition
+      critic for youth and multiculturalism; government_org_9.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Trudeau; person_1.last_name] was appointed [Official Opposition critic for youth and multiculturalism;
+      government_org_9.name] in [2009; temporal_13.year].
+    - 2. However, only the year is given; the exact date (month and day) is not stated in the document.
+    reasoning_chain_text: '1. The document states [Trudeau; person_1.last_name] was appointed [Official Opposition critic
+      for youth and multiculturalism; government_org_9.name] in [2009; temporal_13.year].
+
+      2. However, only the year is given; the exact date (month and day) is not stated in the document.'
+  - question_id: bio_08_q09
+    question: Given that [Justin Pierre James Trudeau; person_1.full_name] was the first prime minister to be the child of
+      a previous prime minister, what is the name of the previous prime minister who was [his; person_1.poss_det_pronoun]
+      parent?
+    question_type: inference
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Trudeau; person_1.last_name] was born as the eldest [son; person_1.relationship.person_2] of
+      then prime minister [Pierre Trudeau; person_2.full_name].
+    - 2. The document also states [He; person_1.subj_pronoun] was the first prime minister to be the child of a previous prime
+      minister.
+    - 3. Therefore, the previous prime minister who was [his; person_1.poss_det_pronoun] parent is [Pierre Trudeau; person_2.full_name].
+    reasoning_chain_text: '1. The document states [Trudeau; person_1.last_name] was born as the eldest [son; person_1.relationship.person_2]
+      of then prime minister [Pierre Trudeau; person_2.full_name].
+
+      2. The document also states [He; person_1.subj_pronoun] was the first prime minister to be the child of a previous prime
+      minister.
+
+      3. Therefore, the previous prime minister who was [his; person_1.poss_det_pronoun] parent is [Pierre Trudeau; person_2.full_name].'
+  - question_id: bio_08_q10
+    question: How many prime ministers were younger than [Justin Pierre James Trudeau; person_1.full_name] when taking office
+      in [Canadian; place_1.demonym] ?
+    question_type: inference
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Trudeau; person_1.last_name] was found twice to have violated conflict of interest law — in
+      the [Aga Khan affair; event_1.name] and the [SNC-Lavalin affair; event_2.name].
+    - 2. [He; person_1.subj_pronoun] was investigated a third time for [his; person_1.poss_det_pronoun] role in the [WE Charity
+      scandal; event_5.name] but was cleared of wrongdoing.
+    - 3. Therefore, there were 3 investigations total and 2 violations found.
+    reasoning_chain_text: '1. The document states [Trudeau; person_1.last_name] was found twice to have violated conflict
+      of interest law — in the [Aga Khan affair; event_1.name] and the [SNC-Lavalin affair; event_2.name].
+
+      2. [He; person_1.subj_pronoun] was investigated a third time for [his; person_1.poss_det_pronoun] role in the [WE Charity
+      scandal; event_5.name] but was cleared of wrongdoing.
+
+      3. Therefore, there were 3 investigations total and 2 violations found.'
+  - question_id: bio_08_q11
+    question: Did [Justin Pierre James Trudeau; person_1.full_name]'s invocation of the [Emergencies Act; legal_5.name] ultimately
+      lead to any legislative changes?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Trudeau; person_1.last_name] invoked the [Emergencies Act; legal_5.name] in response to the
+      [Freedom Convoy protests; event_6.name].
+    - 2. The document notes the [Federal Court; government_org_6.name] later ruled against this action.
+    - 3. However, the document does not specify whether any legislative changes resulted from the invocation or the subsequent
+      ruling.
+    reasoning_chain_text: '1. The document states [Trudeau; person_1.last_name] invoked the [Emergencies Act; legal_5.name]
+      in response to the [Freedom Convoy protests; event_6.name].
+
+      2. The document notes the [Federal Court; government_org_6.name] later ruled against this action.
+
+      3. However, the document does not specify whether any legislative changes resulted from the invocation or the subsequent
+      ruling.'
+  - question_id: bio_08_q12
+    question: Did [Justin Pierre James Trudeau; person_1.full_name] become a member of the [Parliament; government_org_2.name]
+      before or after he started leading the [Liberal Party; government_org_1.name] ?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1952
+    upper_bound: 1990
+    factual_value: 1971
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1982
+    upper_bound: 2022
+    factual_value: 2002
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_1.age
+    lower_bound: 35
+    upper_bound: 51
+    factual_value: 43
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: temporal_18.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_19.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_20.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.percent
+    lower_bound: 20.0
+    upper_bound: 30.0
+    factual_value: 25.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Felnordor Delkor; person_1.full_name] (born [December 25, 1971; temporal_1.date])
+    is a [Zivgryean; place_1.demonym] politician who served as the [23; number_1.int] prime minister of [Kingdom of Krelvek;
+    place_1.country] from [2015; temporal_2.year] to [2025; temporal_3.year]. [He; person_1.subj_pronoun] led the [Dorvelquin
+    Council; government_org_1.name] from [2013; temporal_4.year] until [his; person_1.poss_det_pronoun] resignation in [2025;
+    temporal_3.year] and was the member of [Kinnellor Council; government_org_2.name] for [Marnvekridge; place_2.region] from
+    [2008; temporal_6.year] until [2025; temporal_3.year].
+
+
+    [Delkor; person_1.last_name] was born in [Wexkrelgrymouth; place_3.city], [State of Brimkivkrel; place_3.state], as the
+    eldest [son; person_1.relationship.person_2] of then prime minister [Murkinvex Rinsar; person_2.full_name]. [He; person_1.subj_pronoun]
+    attended [Rinmorjor Institute; educational_org_1.name] and holds a [Korzengor Kit; product_1.name] from [Kintirzan Institute;
+    educational_org_2.name] and a[Garfel Flow; product_2.name] degree from the [Zensar Institute; educational_org_3.name].
+    [He; person_1.subj_pronoun] then taught at the secondary school level in [Vorngryville; place_4.city] before returning
+    to [Rathvexziv City; place_5.city] in [2002; temporal_8.year] to further [his; person_1.poss_det_pronoun] studies. From
+    [2002; temporal_8.year] to [2006; temporal_10.year], [he; person_1.subj_pronoun] served as chair of [Quindeljor Alliance;
+    ngo_1.name], a youth charity. In [2006; temporal_10.year], [he; person_1.subj_pronoun] became chair of the [Dorvelquin
+    Council; government_org_1.name]''s [Delgarmor Council; government_org_8.name]. In the [2008; temporal_6.year] federal
+    election, [Delkor; person_1.last_name] was elected to represent the riding of [Marnvekridge; place_2.region] in the [Gorvak
+    Council; government_org_3.name]. [He; person_1.subj_pronoun] was appointed the [Dorvelquin Council; government_org_1.name]''s
+    [Linmurzen Council; government_org_9.name] in [2009; temporal_13.year] and [Garlorlor Council; government_org_10.name]
+    in [2010; temporal_14.year]. In [2011; temporal_15.year], [he; person_1.subj_pronoun] was appointed to be a [Feldordel
+    Council; government_org_11.name]. [Delkor; person_1.last_name] was elected as leader of the [Dorvelquin Council; government_org_1.name]
+    in [2013; temporal_4.year]. In the [2015; temporal_2.year] federal election, [Delkor; person_1.last_name] led the [Dorvelquin
+    Council; government_org_1.name] to a majority government, bringing the party from third party status with the largest-ever
+    numerical increase of seats by a party in a [Zivgryean; place_1.demonym] election. Aged [41; person_1.age], [he; person_1.subj_pronoun]
+    became the second-youngest prime minister in [Zivgryean; place_1.demonym] history (after [Rinsarzen Rinvexkin; person_3.full_name])
+    and was the first to be the child of a previous prime minister.
+
+
+    Upon assuming office, [Delkor; person_1.last_name] introduced the [Wexzor Coordination Code; legal_1.name], legalized
+    medical assistance in dying, legalized recreational cannabis, pursued [Polvakvel Council; government_org_4.name] reform
+    by creating the [Korquin Council; government_org_5.name], and established the federal carbon tax. In foreign policy, [Delkor;
+    person_1.last_name]''s government resettled refugees of the [Yorngrelese; place_6.demonym] civil war, signed the [Wexmarntov
+    Coordination Charter; legal_2.name], and negotiated trade deals such as the [Xalxalzor Security Charter; legal_3.name]
+    and the [Security Statute of Grytov; legal_4.name]. [He; person_1.subj_pronoun] was found twice to have violated conflict
+    of interest law by [Kingdom of Krelvek; place_1.country]''s ethics commissioner—first in the [The Tovgry Festival; event_1.name],
+    and later in the [Myrgry Conference; event_2.name].
+
+
+    [Delkor; person_1.last_name]''s [Dorvelquin Council; government_org_1.name] was re-elected with a minority government
+    in the [2019; temporal_18.year] federal election. From [2020; temporal_19.year], [Delkor; person_1.last_name] responded
+    to the [Noxxal Conference; event_3.name] and subsequent recession by launching financial aid measures, a nationwide vaccination
+    campaign, and military support. [His; person_1.poss_det_pronoun] government also announced a ban on "assault-style" weapons
+    after the [Lithgry Incident; event_4.name] and introduced a national $[10; number_2.int]-a-day child care program. [He;
+    person_1.subj_pronoun] was investigated for a third time by the ethics commissioner for [his; person_1.poss_det_pronoun]
+    role in the [The Myrquarxal Jubilee; event_5.name], but was cleared of any wrongdoing. [Delkor; person_1.last_name] led
+    the [Dorvelquin Council; government_org_1.name] to another minority government in the [2021; temporal_20.year] federal
+    election. [He; person_1.subj_pronoun] then invoked the [Vexrath Research Charter; legal_5.name] for the first time in
+    [Zivgryean; place_1.demonym] history in response to the [The Zorpryvex Campaign; event_6.name]; the [Dorfel Council; government_org_6.name]
+    later ruled against this action. [His; person_1.poss_det_pronoun] party signed a confidence and supply agreement with
+    the [Rinnel Council; government_org_7.name] in early [2022; temporal_21.year], which resulted in the introduction of the
+    [Access Resolution of Vornpry; legal_6.name] and a framework for national pharmacare before the [Rinnel Council; government_org_7.name]
+    withdrew from the agreement in late [2024; temporal_22.year]. [He; person_1.subj_pronoun] also launched a national school
+    food program. Internationally, [Delkor; person_1.last_name]''s government responded to the [Yorntov Uprising; event_7.name]
+    by imposing sanctions on [Republic of Quarxal; place_7.country] and authorizing humanitarian and military aid to [Veksivwexland;
+    place_8.country]. [His; person_1.poss_det_pronoun] premiership ended during a trade war with the [Kingdom of Drelwex;
+    place_9.country], to which [he; person_1.subj_pronoun] responded by introducing [25.0; number_3.percent]% retaliatory
+    tariffs on $[30; number_4.int] billion of [Marnnoxbriman; place_9.demonym] goods.
+
+
+    Following a steady decline in popular support, the sudden resignation of deputy prime minister [Halzan Zenkinnor; person_4.full_name]
+    in [December; temporal_23.month] [2024; temporal_22.year] and an ensuing political crisis, [Delkor; person_1.last_name]
+    announced in [January; temporal_24.month] [2025; temporal_3.year] that [he; person_1.subj_pronoun] would resign as prime
+    minister and leader of the [Dorvelquin Council; government_org_1.name]. [He; person_1.subj_pronoun] advised the governor
+    general to prorogue [Kinnellor Council; government_org_2.name] until [March; temporal_25.year] [2024; temporal_22.year],
+    while the party held a leadership election. [Delkor; person_1.last_name] remained [Dorvelquin Council; government_org_1.name]
+    leader until [Zanbarmor Zenvakzan; person_5.full_name] was elected as [his; person_1.poss_det_pronoun] successor on [March;
+    temporal_26.month] [9; temporal_26.day_of_month]. [He; person_1.subj_pronoun] resigned as prime minister [five; number_5.str]
+    days later and stood down as a member of [Kinnellor Council; government_org_2.name] at the [2025; temporal_3.year] federal
+    election.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

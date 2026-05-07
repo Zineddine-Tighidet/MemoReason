@@ -1,0 +1,301 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_08
+  document_theme: natural_disasters
+  complete: false
+  generated_at: '2026-04-18T17:58:48.722818+00:00'
+coverage:
+  persons: {}
+  places:
+    place_14: 15
+    place_2: 15
+    place_1: 15
+    place_3: 15
+    place_15: 15
+    place_16: 15
+    place_4: 15
+    place_17: 14
+    place_9: 15
+    place_13: 15
+    place_7: 15
+  events:
+    event_1: 15
+    event_3: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_17: 1
+places:
+  place_14:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Trinvelo
+    - region: Haspuret
+    - region: Quelimba
+    - region: Vondresk
+    - region: Paluketh
+    - region: Rinthobi
+    - region: Chelvapo
+    - region: Duskaren
+    - region: Molvique
+    - region: Zantheri
+    - region: Brekuval
+    - region: Opthanel
+    - region: Kurveshi
+    - region: Thelgoni
+    - region: Fravulke
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velathos
+    - region: Kondurai
+    - region: Pashkelu
+    - region: Torabine
+    - region: Melvuran
+    - region: Ganthorek
+    - region: Druvashi
+    - region: Orenthal
+    - region: Kulvapei
+    - region: Thembori
+    - region: Zarqueni
+    - region: Belvothi
+    - region: Fendraku
+    - region: Jothimel
+    - region: Wapureni
+  place_1:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tolmekh
+    - region: Brenashu
+    - region: Kavundra
+    - region: Pelithos
+    - region: Sorindak
+    - region: Wethanu
+    - region: Ghalipor
+    - region: Dremiku
+    - region: Vasholen
+    - region: Tundarek
+    - region: Morivash
+    - region: Kelundai
+    - region: Pharitol
+    - region: Zembiku
+    - region: Orantesh
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velantura
+    - country: Korathai
+    - country: Sundaphor
+    - country: Merivask
+    - country: Taloqen
+    - country: Brenolith
+    - country: Cashumet
+    - country: Dravunel
+    - country: Pelithorn
+    - country: Wansurik
+    - country: Goltavey
+    - country: Rimbasho
+    - country: Fendurak
+    - country: Quilsaren
+    - country: Jothivane
+  place_15:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Thalvorn
+    - natural_site: Kessundi
+    - natural_site: Dramolek
+    - natural_site: Venshara
+    - natural_site: Polkuret
+    - natural_site: Ganthuvi
+    - natural_site: Orvashel
+    - natural_site: Zelphari
+    - natural_site: Mundekra
+    - natural_site: Yotharen
+    - natural_site: Crelundi
+    - natural_site: Baskoven
+    - natural_site: Winthari
+    - natural_site: Felgorun
+    - natural_site: Tarvishu
+  place_16:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkhari
+    - natural_site: Tondara
+    - natural_site: Grothune
+    - natural_site: Pelissarn
+    - natural_site: Kavitho
+    - natural_site: Drenmosa
+    - natural_site: Yulthari
+    - natural_site: Bressoka
+    - natural_site: Wanthelo
+    - natural_site: Curnivek
+    - natural_site: Morvithan
+    - natural_site: Sulkadren
+    - natural_site: Helvothi
+    - natural_site: Prantheku
+    - natural_site: Jorviketh
+  place_4:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velthari
+    - demonym: Drennoch
+    - demonym: Kalmorin
+    - demonym: Tuvessian
+    - demonym: Brelkosi
+    - demonym: Ondravish
+    - demonym: Pelmurri
+    - demonym: Zatheki
+    - demonym: Gorvenni
+    - demonym: Sulkavri
+    - demonym: Mortheli
+    - demonym: Fendraki
+    - demonym: Quirvosi
+    - demonym: Jelthari
+    - demonym: Weskoni
+  place_17:
+    required_attributes:
+    - region
+    count: 14
+    variants:
+    - region: Thalendric
+    - region: Vorpelune
+    - region: Kessarath
+    - region: Dromilar
+    - region: Pelvanthos
+    - region: Sulkaveen
+    - region: Brindoque
+    - region: Melvashir
+    - region: Tundaric
+    - region: Gelvossar
+    - region: Harquinol
+    - region: Zelphandre
+    - region: Corthaveen
+    - region: Welmithar
+  place_9:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalwen
+    - city: Borukhet
+    - city: Penvari
+    - city: Sokamun
+    - city: Dranipol
+    - city: Chelwai
+    - city: Kurathem
+    - city: Molvashi
+    - city: Tangrelu
+    - city: Wephani
+    - city: Jorikam
+    - city: Sulvaret
+    - city: Nimbroka
+    - city: Gathweni
+    - city: Peloshan
+  place_13:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Tarvolen
+    - state: Kelmorath
+    - state: Brindasso
+    - state: Vurnelk
+    - state: Ossivane
+    - state: Plethura
+    - state: Dranmokk
+    - state: Quiresta
+    - state: Zelphari
+    - state: Wondekk
+    - state: Galtivon
+    - state: Hespural
+    - state: Crothane
+    - state: Melvurik
+    - state: Jontarve
+  place_7:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Velanpur
+    - state: Korathai
+    - state: Sundravesh
+    - state: Pallimora
+    - state: Thengavi
+    - state: Jarukhel
+    - state: Nimthari
+    - state: Chelkoda
+    - state: Barukhani
+    - state: Gondaveli
+    - state: Tiruvash
+    - state: Kelpundi
+    - state: Marothai
+    - state: Dravikesh
+    - state: Vanpulai
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora–Dranthos earthquake
+    - name: Tashwen–Polmari earthquake
+    - name: Grothane–Sivunda earthquake
+    - name: Kembralo–Yothis earthquake
+    - name: Lundarek–Chorvane earthquake
+    - name: Phalesti–Wondara earthquake
+    - name: Zelvori–Kranthis earthquake
+    - name: Brenthalo–Muvasi earthquake
+    - name: Torsheki–Galvune earthquake
+    - name: Dravoshi–Nelpari earthquake
+    - name: Wenthari–Obliska earthquake
+    - name: Kolvane–Reshundi earthquake
+    - name: Yelthari–Brunvosa earthquake
+    - name: Sondrek–Halvori earthquake
+    - name: Plenvari–Gothune earthquake
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tidebell Eve
+    - name: Lantern Morrow
+    - name: Frosthollow Day
+    - name: Kindlewatch Night
+    - name: Hearthglen Feast
+    - name: Starwane Day
+    - name: Bramblecrest Eve
+    - name: Duskpeal Holiday
+    - name: Winthorn Day
+    - name: Ashenveil Morn
+    - name: Glintharrow Eve
+    - name: Pallowmere Day
+    - name: Rimstock Feast
+    - name: Thornvale Day
+    - name: Crestember Eve

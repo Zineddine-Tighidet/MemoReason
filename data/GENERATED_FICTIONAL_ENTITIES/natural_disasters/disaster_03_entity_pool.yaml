@@ -1,0 +1,556 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_03
+  document_theme: natural_disasters
+  complete: false
+  generated_at: '2026-04-18T17:58:17.147192+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_16: need 15, found 14'
+coverage:
+  persons: {}
+  places:
+    place_10: 15
+    place_12: 15
+    place_6: 15
+    place_13: 15
+    place_14: 13
+    place_1: 15
+    place_18: 15
+    place_19: 15
+    place_3: 15
+    place_9: 15
+    place_11: 15
+    place_15: 15
+    place_16: 14
+  events:
+    event_1: 15
+    event_7: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 14
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_14: 2
+    place_16: 1
+  events:
+    event_5: 1
+places:
+  place_10:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Veloran Deep
+    - natural_site: Thalwic Basin
+    - natural_site: Korenth Gulf
+    - natural_site: Draeven Strait
+    - natural_site: Mirova Expanse
+    - natural_site: Pelundra Sea
+    - natural_site: Ossivane Channel
+    - natural_site: Brethanic Reach
+    - natural_site: Calwinder Bay
+    - natural_site: Toruvian Shallows
+    - natural_site: Grenmara Sea
+    - natural_site: Sundivek Passage
+    - natural_site: Wethoran Gulf
+    - natural_site: Kelvanic Deep
+    - natural_site: Rathune Basin
+  place_12:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkora Atoll Basin
+    - natural_site: Tashwen Reef Lagoon
+    - natural_site: Pomari Shallows
+    - natural_site: Druvane Coral Basin
+    - natural_site: Kelitho Lagoon
+    - natural_site: Oravundi Inlet
+    - natural_site: Sundara Reef Hollow
+    - natural_site: Nimothi Lagoon
+    - natural_site: Brelkuna Atoll Pool
+    - natural_site: Wapori Tidal Basin
+    - natural_site: Galundi Reef Lagoon
+    - natural_site: Taroven Shallows
+    - natural_site: Heskuri Lagoon
+    - natural_site: Plindova Coral Inlet
+    - natural_site: Zenakori Atoll Lagoon
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Toluvei
+    - natural_site: Rinbathu
+    - natural_site: Oravesh
+    - natural_site: Pelitok
+    - natural_site: Wanugor
+    - natural_site: Dremaku
+    - natural_site: Sivranei
+    - natural_site: Kolathu
+    - natural_site: Brenisol
+    - natural_site: Tumavek
+    - natural_site: Garunel
+    - natural_site: Yothipal
+    - natural_site: Fendriku
+    - natural_site: Moratesh
+    - natural_site: Haluvon
+  place_13:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tunwep
+    - city: Kelafo
+    - city: Vorisu
+    - city: Pethani
+    - city: Drulok
+    - city: Mowari
+    - city: Chalbet
+    - city: Fenoku
+    - city: Grivash
+    - city: Tolmek
+    - city: Bureni
+    - city: Waphet
+    - city: Soklun
+    - city: Jivaro
+    - city: Kethup
+  place_14:
+    required_attributes:
+    - city
+    count: 13
+    variants:
+    - city: Kelafar
+    - city: Dranopi
+    - city: Mekutha
+    - city: Solivat
+    - city: Chuwaren
+    - city: Tapelun
+    - city: Nirokat
+    - city: Feluwang
+    - city: Orathem
+    - city: Kulisep
+    - city: Wanekir
+    - city: Tholimar
+    - city: Benurak
+  place_1:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velathorn Archipelago
+    - region: Korathai Basin
+    - region: Sundapel Lowlands
+    - region: Meritoq Crescent
+    - region: Paluvane Straits
+    - region: Dravoshi Corridor
+    - region: Tembaku Reaches
+    - region: Orivash Seaboard
+    - region: Lundaric Isles
+    - region: Kethuvan Shelf
+    - region: Brintago Expanse
+    - region: Soruvai Peninsula
+    - region: Halindor Shallows
+    - region: Tumbreki Coast
+    - region: Gavoshi Rim
+  place_18:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tolmari
+    - region: Brevunda
+    - region: Kessova
+    - region: Dranpelu
+    - region: Winthari
+    - region: Galmoset
+    - region: Puranok
+    - region: Chelvorin
+    - region: Ondravek
+    - region: Taspelun
+    - region: Mirothay
+    - region: Velsunai
+    - region: Kobranta
+    - region: Felduran
+    - region: Jentovak
+  place_19:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvolen
+    - region: Keshuway
+    - region: Drimago
+    - region: Polanthi
+    - region: Weysuran
+    - region: Galtivey
+    - region: Obrindal
+    - region: Sulkavey
+    - region: Mendarok
+    - region: Thuvaine
+    - region: Korabesh
+    - region: Vintarey
+    - region: Pelmozan
+    - region: Druvashi
+    - region: Haloquen
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Talundra
+    - region: Korivash
+    - region: Pelundai
+    - region: Soramek
+    - region: Draventi
+    - region: Hulabay
+    - region: Morithan
+    - region: Zelpago
+    - region: Vindara
+    - region: Oshtemi
+    - region: Brunagai
+    - region: Kalveshan
+    - region: Torabine
+    - region: Weshalan
+    - region: Gundapei
+  place_9:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tolwengi
+    - region: Kessavur
+    - region: Dranophal
+    - region: Mivoshet
+    - region: Pelundra
+    - region: Charovik
+    - region: Wentabol
+    - region: Gushelan
+    - region: Brimokat
+    - region: Sorvethun
+    - region: Halindep
+    - region: Turanesh
+    - region: Vondripal
+    - region: Kresolam
+    - region: Jethuvon
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thanvoria
+    - country: Kelundra
+    - country: Brinthawe
+    - country: Sorvalen
+    - country: Dranmeku
+    - country: Phalitho
+    - country: Wenvosai
+    - country: Turmekha
+    - country: Golvashei
+    - country: Rendaphu
+    - country: Chelvoran
+    - country: Mabrethi
+    - country: Zulkavon
+    - country: Prethano
+    - country: Keshulam
+  place_15:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Brenqua
+    - country: Durnesh
+    - country: Kelmorath
+    - country: Vossanta
+    - country: Plindara
+    - country: Grothwei
+    - country: Junvalis
+    - country: Orenthu
+    - country: Melvask
+    - country: Tarquessa
+    - country: Wenshara
+    - country: Colvunia
+    - country: Drephane
+    - country: Sulkaveth
+  place_16:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Velorhan
+    - country: Tundakai
+    - country: Kalissem
+    - country: Jorventa
+    - country: Mekurath
+    - country: Drelisho
+    - country: Banthurel
+    - country: Orivask
+    - country: Sulkamei
+    - country: Grenthova
+    - country: Pelithan
+    - country: Weskurai
+    - country: Zanthelo
+    - country: Quirvane
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Typhoon Velkaro
+    - name: Typhoon Drenahi
+    - name: Typhoon Oshibane
+    - name: Typhoon Kurathos
+    - name: Typhoon Melvuran
+    - name: Typhoon Zephkali
+    - name: Typhoon Tondaru
+    - name: Typhoon Brisalun
+    - name: Typhoon Gavithen
+    - name: Typhoon Norakesh
+    - name: Typhoon Wulithan
+    - name: Typhoon Pedrako
+    - name: Typhoon Suvalen
+    - name: Typhoon Harquelo
+    - name: Typhoon Jentokav
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Super Typhoon Kalunda
+    - name: Super Typhoon Brenosa
+    - name: Super Typhoon Velitho
+    - name: Super Typhoon Orantia
+    - name: Super Typhoon Dumaren
+    - name: Super Typhoon Hasulep
+    - name: Super Typhoon Tivango
+    - name: Super Typhoon Miraken
+    - name: Super Typhoon Polindra
+    - name: Super Typhoon Geshulan
+    - name: Super Typhoon Wentaro
+    - name: Super Typhoon Falunet
+    - name: Super Typhoon Korabis
+    - name: Super Typhoon Zunelda
+    - name: Super Typhoon Remalto
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolakhi
+    - name: Brunavi
+    - name: Kesolam
+    - name: Parithu
+    - name: Wenshago
+    - name: Dravoni
+    - name: Hulkapi
+    - name: Jentaro
+    - name: Sorvani
+    - name: Chetulak
+    - name: Mindavu
+    - name: Garophen
+    - name: Tuvashi
+    - name: Belkoran
+    - name: Yondashi
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Talvek
+    - name: Brunosi
+    - name: Ketharo
+    - name: Vorpali
+    - name: Drenaku
+    - name: Sulvani
+    - name: Mekothi
+    - name: Jarwelo
+    - name: Phandri
+    - name: Obreku
+    - name: Zelponi
+    - name: Wekhari
+    - name: Rilgano
+    - name: Bostevi
+    - name: Cuvthari
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cyclone Verath
+    - name: Typhoon Orenlis
+    - name: Hurricane Brissago
+    - name: Cyclone Tulmek
+    - name: Typhoon Kalvori
+    - name: Hurricane Dessano
+    - name: Cyclone Phentara
+    - name: Typhoon Wulkane
+    - name: Hurricane Gostavi
+    - name: Cyclone Miroven
+    - name: Typhoon Zelkaro
+    - name: Hurricane Tandevi
+    - name: Cyclone Jespura
+    - name: Typhoon Rondavi
+    - name: Hurricane Celvanto
+  event_5:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Tolwane
+    - name: Brivago
+    - name: Kemthari
+    - name: Osurath
+    - name: Peldano
+    - name: Junvari
+    - name: Wethako
+    - name: Rilmosa
+    - name: Darvune
+    - name: Golthai
+    - name: Fenraku
+    - name: Huwateg
+    - name: Calbiru
+    - name: Morthae
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Cooperative Council
+    - name: Tundael Relief Consortium
+    - name: Brinasol Humanitarian League
+    - name: Orivane Global Accord
+    - name: Pelithar Peoples Assembly
+    - name: Cendavox Solidarity Network
+    - name: Quoriven Aid Coalition
+    - name: Dralenthi World Forum
+    - name: Mossivane Cooperation Body
+    - name: Tarequil Shared Nations
+    - name: Gelvoran Mutual Compact
+    - name: Fendroval Peoples Collective
+    - name: Zurithen Allied Council
+    - name: Kespoval Unified Assembly
+    - name: Wenthari Coordination Bureau
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Taloben National Atmospheric and Geophysical Services Bureau
+    - name: Kelvari Meteorological and Astronomical Administration
+    - name: Dranosi Weather and Geophysical Monitoring Authority
+    - name: Orivane Atmospheric Sciences and Hazard Assessment Agency
+    - name: Tumaren National Cyclone and Climate Services Directorate
+    - name: Belshari Geophysical and Atmospheric Observation Council
+    - name: Vorundi Meteorological and Seismological Services Office
+    - name: Pelithan National Weather and Astronomical Surveillance Bureau
+    - name: Gonthari Atmospheric and Oceanic Monitoring Administration
+    - name: Reshuvan Geophysical and Storm Tracking Services Authority
+    - name: Calindro National Meteorological and Hazard Warning Agency
+    - name: Wethani Atmospheric and Geoscience Services Directorate
+    - name: Junavar Weather Surveillance and Astronomical Services Bureau
+    - name: Mirothel National Geophysical and Cyclone Monitoring Office
+    - name: Sorvalen Atmospheric and Seismic Observation Administration
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Oceanic Cyclone Monitoring Bureau
+    - name: Transpacific Storm Assessment Center
+    - name: Coastal Gale Surveillance Directorate
+    - name: Maritime Tempest Tracking Authority
+    - name: Pelagic Weather Operations Command
+    - name: Deepwater Cyclogenesis Watch Office
+    - name: Windfield Analysis and Forecasting Division
+    - name: Seaborne Hazard Evaluation Center
+    - name: Tropical Disturbance Advisory Bureau
+    - name: Offshore Storm Intelligence Directorate
+    - name: Basin Cyclone Reconnaissance Authority
+    - name: Equatorial Windstorm Coordination Office
+    - name: Tidal Gale Preparedness Command
+    - name: Meridional Typhoon Observation Bureau
+    - name: Littoral Severe Weather Operations Center
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran National Weather Bureau
+    - name: Kesshari Atmospheric Monitoring Directorate
+    - name: Brinthal Meteorological Services Authority
+    - name: Ondravian Climate Observation Agency
+    - name: Pelmorath Geophysical Weather Office
+    - name: Zurithan National Cyclone Centre
+    - name: Dravosi Hydrometeorological Administration
+    - name: Caltherin Weather Surveillance Bureau
+    - name: Nelvuran Atmospheric Sciences Directorate
+    - name: Grothani National Storm Tracking Agency
+    - name: Weskari Meteorological Oversight Bureau
+    - name: Fendrali Climate and Weather Authority
+    - name: Torbesian Geophysical Monitoring Office
+    - name: Quirvalen National Atmospheric Agency
+    - name: Haldrennic Weather Assessment Directorate
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvara Meteorological Bureau
+    - name: Koshan Weather Monitoring Authority
+    - name: Drenali Atmospheric Sciences Office
+    - name: Pelmira Cyclone Surveillance Agency
+    - name: Vothek National Weather Directorate
+    - name: Runhali Climate Observation Centre
+    - name: Brenosi Typhoon Watch Bureau
+    - name: Galteri Hydrometeorological Service
+    - name: Ondavi Storm Tracking Authority
+    - name: Zephuri Atmospheric Monitoring Institute
+    - name: Kelvano Regional Weather Observatory
+    - name: Throndel Geophysical Monitoring Office
+    - name: Mirova Coastal Meteorology Bureau
+    - name: Solvane Weather Surveillance Directorate
+    - name: Quendari Atmospheric Hazards Agency
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran National Weather Directorate
+    - name: Keshali Bureau of Atmospheric Sciences
+    - name: Dramunic Meteorological Services Authority
+    - name: Polthari State Climate Monitoring Agency
+    - name: Zurengo Federal Weather Administration
+    - name: Belvanic Hydrometeorological Directorate
+    - name: Ostravi National Atmospheric Observation Bureau
+    - name: Gelthari Central Meteorological Office
+    - name: Rundalic Weather and Climate Services Board
+    - name: Vossekari Atmospheric Monitoring Directorate
+    - name: Thandori National Cyclone Surveillance Agency
+    - name: Melvuran Bureau of Meteorological Operations
+    - name: Kaldreni State Weather Forecasting Authority
+    - name: Jenthari Federal Atmospheric Research Directorate
+    - name: Soruvic National Climate Observation Service

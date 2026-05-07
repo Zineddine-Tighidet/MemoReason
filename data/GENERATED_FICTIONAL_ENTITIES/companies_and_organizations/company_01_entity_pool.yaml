@@ -1,0 +1,949 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-7
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_01
+  document_theme: companies_and_organizations
+  generated_at: '2026-04-17T15:16:49.069279+00:00'
+  complete: true
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+    entreprise_org_12: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_20: 15
+    product_7: 15
+    product_8: 15
+    product_9: 15
+    product_10: 15
+    product_11: 15
+    product_12: 15
+    product_13: 15
+    product_14: 15
+    product_15: 15
+    product_16: 15
+    product_17: 15
+    product_18: 15
+    product_19: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Quenrick Volstram
+      last_name: Volstram
+    - full_name: Harnow Drelevant
+      last_name: Drelevant
+    - full_name: Tovrin Mescallen
+      last_name: Mescallen
+    - full_name: Delmort Krivanack
+      last_name: Krivanack
+    - full_name: Jarvan Pelstrome
+      last_name: Pelstrome
+    - full_name: Orlund Kweshnal
+      last_name: Kweshnal
+    - full_name: Brenvil Tasgroven
+      last_name: Tasgroven
+    - full_name: Yervan Moltrake
+      last_name: Moltrake
+    - full_name: Kastil Drovenger
+      last_name: Drovenger
+    - full_name: Plarnic Thessomir
+      last_name: Thessomir
+    - full_name: Grennar Olbrinsky
+      last_name: Olbrinsky
+    - full_name: Vesmon Qualtridge
+      last_name: Qualtridge
+    - full_name: Tarnish Welmoray
+      last_name: Welmoray
+    - full_name: Cordrig Hasvellin
+      last_name: Hasvellin
+    - full_name: Miskel Drownavant
+      last_name: Drownavant
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drevik Morlath
+    - full_name: Karsen Plimoor
+    - full_name: Oswen Trallick
+    - full_name: Bremar Quildane
+    - full_name: Jossel Varnick
+    - full_name: Hadwin Crellop
+    - full_name: Teskel Branmoor
+    - full_name: Ruvan Delthrop
+    - full_name: Mervin Othgate
+    - full_name: Lorvan Pectris
+    - full_name: Garnis Holvek
+    - full_name: Stryck Ombarth
+    - full_name: Corben Yastrel
+    - full_name: Ferrin Dulwake
+    - full_name: Almric Voskund
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dalven Krummet
+    - full_name: Orsin Vellagry
+    - full_name: Thoran Pliskemer
+    - full_name: Jerrow Quintifel
+    - full_name: Brannic Holvadar
+    - full_name: Kesler Troumbine
+    - full_name: Wendric Palmoury
+    - full_name: Corvin Yestelby
+    - full_name: Marbek Drollinsey
+    - full_name: Grevon Tuskarell
+    - full_name: Halven Prosmire
+    - full_name: Osrick Nembally
+    - full_name: Quedric Bramfleet
+    - full_name: Tavish Orlundir
+    - full_name: Pernel Vaxhorne
+  person_4:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Verun Qelmora
+      last_name: Qelmora
+    - full_name: Tavish Brindoval
+      last_name: Brindoval
+    - full_name: Orlen Pashkiri
+      last_name: Pashkiri
+    - full_name: Dramek Volturin
+      last_name: Volturin
+    - full_name: Hessel Tarkovin
+      last_name: Tarkovin
+    - full_name: Ulric Bemsarro
+      last_name: Bemsarro
+    - full_name: Parven Dolmachi
+      last_name: Dolmachi
+    - full_name: Jemsen Crolumby
+      last_name: Crolumby
+    - full_name: Kaldir Vostrenki
+      last_name: Vostrenki
+    - full_name: Mirven Qoraltza
+      last_name: Qoraltza
+    - full_name: Senric Phabalor
+      last_name: Phabalor
+    - full_name: Olzan Drevashan
+      last_name: Drevashan
+    - full_name: Bremar Yulcanto
+      last_name: Yulcanto
+    - full_name: Halvek Omridani
+      last_name: Omridani
+    - full_name: Turven Aspelkor
+      last_name: Aspelkor
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Vornalia
+      demonym: Vornalian
+    - country: Pelmoria
+      demonym: Pelmorian
+    - country: Trasquinia
+      demonym: Trasquinian
+    - country: Orvenska
+      demonym: Orvenskan
+    - country: Quendoria
+      demonym: Quendorian
+    - country: Brankovia
+      demonym: Brankovian
+    - country: Sulmeria
+      demonym: Sulmerian
+    - country: Gathendia
+      demonym: Gathendian
+    - country: Movrania
+      demonym: Movranian
+    - country: Zendaquia
+      demonym: Zendaquian
+    - country: Threskolia
+      demonym: Threskolian
+    - country: Dromasia
+      demonym: Dromasian
+    - country: Corvethia
+      demonym: Corvethian
+    - country: Plavendor
+      demonym: Plavendorian
+    - country: Urbenica
+      demonym: Urbenican
+  place_2:
+    required_attributes:
+    - city
+    - country
+    - state
+    count: 15
+    variants:
+    - city: Quorlent
+      country: Vornalia
+      state: Brassenmark
+    - city: Drubliston
+      country: Pelmoria
+      state: Olmerath
+    - city: Fennwarth
+      country: Trasquinia
+      state: Krevasca
+    - city: Shaldrin
+      country: Orvenska
+      state: Tolvenya
+    - city: Plendara
+      country: Quendoria
+      state: Wemblosh
+    - city: Krovinsk
+      country: Brankovia
+      state: Narzhelm
+    - city: Belthora
+      country: Sulmeria
+      state: Clarendas
+    - city: Ophrandel
+      country: Gathendia
+      state: Vresilia
+    - city: Murventa
+      country: Movrania
+      state: Threlmark
+    - city: Zendric
+      country: Zendaquia
+      state: Quanzora
+    - city: Vasparth
+      country: Threskolia
+      state: Mordanesh
+    - city: Halvenro
+      country: Dromasia
+      state: Brannic
+    - city: Corthelm
+      country: Corvethia
+      state: Yenslara
+    - city: Plavendor City
+      country: Plavendor
+      state: Ormaskia
+    - city: Trellavan
+      country: Urbenica
+      state: Skendorath
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Varnolia
+    - country: Keshmora
+    - country: Droventa
+    - country: Palvania
+    - country: Trenisia
+    - country: Okravand
+    - country: Lurandia
+    - country: Nemoria
+    - country: Calverra
+    - country: Zebrinia
+    - country: Mostavia
+    - country: Farnelia
+    - country: Grindova
+    - country: Suvaria
+    - country: Belravia
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zephran conflict
+    - name: Quolvar conflict
+    - name: Treshkan conflict
+    - name: Brivolt conflict
+    - name: Kessarim conflict
+    - name: Ploventh conflict
+    - name: Drovashi conflict
+    - name: Yelmirra conflict
+    - name: Crelavon conflict
+    - name: Shulperi conflict
+    - name: Vaskrenn conflict
+    - name: Mordethi conflict
+    - name: Pruvandar conflict
+    - name: Olkennis conflict
+    - name: Tranvelli conflict
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zentivox Corporation
+    - name: Quelborne Technologies
+    - name: Plurastan Incorporated
+    - name: Kravelnex Systems
+    - name: Thessolon Holdings
+    - name: Brynokad Industries
+    - name: Vorthelin Group
+    - name: Cindriva Enterprises
+    - name: Olmarack Solutions
+    - name: Parnethic Ventures
+    - name: Dravonex Limited
+    - name: Ashterlund Corporation
+    - name: Milvexar Technologies
+    - name: Synthalope Holdings
+    - name: Trivanthol Incorporated
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zemtix Holdings
+    - name: Pravynet Group
+    - name: Quolvara Technologies
+    - name: Brindelune Systems
+    - name: Okterra Digital
+    - name: Fenrolix Interactive
+    - name: Kaliven Labs
+    - name: Solmerio Networks
+    - name: Trivacor Industries
+    - name: Wendelka Software
+    - name: Yurixo Platforms
+    - name: Moravinc Computing
+    - name: Castelby Informatics
+    - name: Pholmira Enterprises
+    - name: Virscadel Works
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Qorvexa
+    - name: Brindlune
+    - name: Velmorra
+    - name: Truskara
+    - name: Pavenlix
+    - name: Drovanex
+    - name: Melundo
+    - name: Skarnival
+    - name: Obrindex
+    - name: Torveska
+    - name: Kelthura
+    - name: Plombrix
+    - name: Vandroma
+    - name: Crestimo
+    - name: Holvanto
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plorinex
+    - name: Kravelon Systems
+    - name: Voltracio
+    - name: Quenbral Technologies
+    - name: Mirovex
+    - name: Trelunix
+    - name: Zarmitek
+    - name: Flembric Holdings
+    - name: Ormazel
+    - name: Drivenca
+    - name: Yulbrant Industries
+    - name: Scallivex
+    - name: Prendaxo
+    - name: Olmerran Group
+    - name: Chentorel
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vrenthix Social
+    - name: Puloma Connect
+    - name: Ozmarivo Networks
+    - name: Tilvexa Platforms
+    - name: Quindaro Social
+    - name: Brenuvia Online
+    - name: Caltryx Interactive
+    - name: Yomblara Digital
+    - name: Pexmoria Group
+    - name: Lurenvax Systems
+    - name: Threxalo Media
+    - name: Kindarum Social
+    - name: Ovaspro Networks
+    - name: Jembrilo Platforms
+    - name: Worvento Digital
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vexoria
+    - name: Plurimox
+    - name: Qintellex
+    - name: Zandroveq
+    - name: Krevantis
+    - name: Tylomex
+    - name: Orbivekta
+    - name: Phendrolux
+    - name: Yurnacoss
+    - name: Brixalune
+    - name: Dravenix
+    - name: Sylphoreq
+    - name: Marquonet
+    - name: Ulveston Dynamics
+    - name: Trelkavor
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vontrel Communications
+    - name: Plirex Voiceworks
+    - name: Quindara Telecom Holdings
+    - name: Brimlough Networks
+    - name: Yuvexa Systems
+    - name: Crenoptic Media
+    - name: Taldrin Softworks
+    - name: Wembara Digital
+    - name: Jorlen Telephony
+    - name: Ospirra Voice Labs
+    - name: Falvren Communications
+    - name: Moquendo Networks
+    - name: Drissel Connect Group
+    - name: Halvoni Telelinks
+    - name: Zephruna Voice Systems
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vintrex Handset
+    - name: Quorilune Devices
+    - name: Plenorix Mobile
+    - name: Kardenyx Handheld
+    - name: Olbreth Cellworks
+    - name: Thalvex Phones
+    - name: Urimast Mobile
+    - name: Greskovia Handset
+    - name: Brindale Cellular
+    - name: Pharnuvo Mobile
+    - name: Zepharn Handhelds
+    - name: Molterix Devices
+    - name: Caldreven Mobile
+    - name: Wentorix Cellcraft
+    - name: Juspherra Mobile
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vortigen Telecom
+    - name: Pralomir Handsets
+    - name: Keltavo Mobile
+    - name: Junastel Devices
+    - name: Brunavik Electronics
+    - name: Falmorex Communications
+    - name: Orintelo Systems
+    - name: Zemvaska Wireless
+    - name: Drastivo Mobile
+    - name: Karnelvi Technologies
+    - name: Plintaro Handsets
+    - name: Svornika Devices
+    - name: Trelmavor Communications
+    - name: Huvaneska Mobile
+    - name: Gralantik Electronics
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verniqo
+    - name: Proflink Networks
+    - name: Jobspire
+    - name: Carrelon
+    - name: Brindel
+    - name: Tavinor
+    - name: Meshwork Connect
+    - name: Quendra
+    - name: Halosphere
+    - name: Olivent
+    - name: Rumark
+    - name: Trelvio
+    - name: Sparknest
+    - name: Folintra
+    - name: Zephlane
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vextrin Playworks
+    - name: Quorlen Interactive Division
+    - name: Pendara Game Studios Group
+    - name: Thulmar Entertainment Unit
+    - name: Brindoz Gaming Branch
+    - name: Orvaneth Playhub
+    - name: Kresmil Gaming Division
+    - name: Yantrix Leisure Group
+    - name: Dramvel Gamesworks
+    - name: Fenoxar Interactive Wing
+    - name: Larnith Playforge
+    - name: Ostreva Gaming Arm
+    - name: Welkorin Gameworks
+    - name: Jurnaleth Play Division
+    - name: Trembick Interactive Group
+  entreprise_org_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Playworks
+    - name: Qyndara Interactive
+    - name: Brunmar Studios Group
+    - name: Orvexa Entertainment
+    - name: Pelthrix Gaming Holdings
+    - name: Juvanto Studios
+    - name: Krevander Interactive
+    - name: Tamsolis Play Group
+    - name: Xoldrin Entertainment
+    - name: Mivarra Game Works
+    - name: Drenshaw Interactive
+    - name: Fendwyr Studios
+    - name: Corvenax Playhouse
+    - name: Ylmarith Gaming
+    - name: Zephorne Interactive
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Panemor
+    - name: Kelvora
+    - name: Tresmil
+    - name: Vintari
+    - name: Quorvex
+    - name: Brenzilo
+    - name: Haldrex
+    - name: Omnivar
+    - name: Pelthra
+    - name: Craxion
+    - name: Yulmara
+    - name: Zedrapolis
+    - name: Trempath
+    - name: Fliskra
+    - name: Norvelox
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plintaq
+    - name: Zorbel
+    - name: Krenlo
+    - name: Ormish
+    - name: Yuvren
+    - name: Tasolu
+    - name: Bimpra
+    - name: Quendal
+    - name: Vrestol
+    - name: Nubrick
+    - name: Dramoss
+    - name: Fintrel
+    - name: Hovask
+    - name: Jomvex
+    - name: Ulpreth
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zentrix 4400
+    - name: Polaron 7100
+    - name: Kvorix 9200
+    - name: Telmak 3300
+    - name: Brivon 5500
+    - name: Quandel 6800
+    - name: Hexari 2100
+    - name: Morvex 8400
+    - name: Pandrel 1900
+    - name: Varnok 7700
+    - name: Drestil 4600
+    - name: Omnaze 3800
+    - name: Fendrix 5200
+    - name: Karnolt 6300
+    - name: Trabex 9900
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PronkOS
+    - name: ZelvaDOS
+    - name: QuibrixOS
+    - name: Trendalo System
+    - name: VortanDOS
+    - name: KrimpelOS
+    - name: Yandris System
+    - name: Morvex OS
+    - name: Plixon Shell
+    - name: Ghelmar OS
+    - name: Triskom DOS
+    - name: Belvigo System
+    - name: Norvek Shell
+    - name: Crenthos OS
+    - name: Dralpix System
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plendrix
+    - name: Quorvax
+    - name: Trivell
+    - name: Mornique
+    - name: Velspar
+    - name: Drafell
+    - name: Orbanex
+    - name: Klinvora
+    - name: Pravell
+    - name: Thalven
+    - name: Grenova
+    - name: Vondril
+    - name: Miravox
+    - name: Crestelle
+    - name: Junivar
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plixor
+    - name: Vandrel
+    - name: Korvax
+    - name: Zemlo
+    - name: Quibrex
+    - name: Frevon
+    - name: Thrayo
+    - name: Miskar
+    - name: Olvind
+    - name: Crenvo
+    - name: Drolux
+    - name: Plembra
+    - name: Sorvik
+    - name: Yunthar
+    - name: Braxelo
+  product_20:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quemtrix
+    - name: Plandor
+    - name: Vexaloom
+    - name: Kornevo
+    - name: Trallix
+    - name: Zephgrid
+    - name: Omnareth
+    - name: Brindlex
+    - name: Cavuros
+    - name: Dralpex
+    - name: Furnoxia
+    - name: Grantheon
+    - name: Holvaris
+    - name: Jembrick
+    - name: Luperna
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plintaq Workdesk
+    - name: Vormel Officio
+    - name: Qrendly Deskware
+    - name: Yuspen Productive
+    - name: Trovell Worksuite
+    - name: Brintek Paperline
+    - name: Zalomi Deskworks
+    - name: Vendica Worklab
+    - name: Kerniq Officepack
+    - name: Ombrax Penworks
+    - name: Luphen Taskmate
+    - name: Draxel Worktools
+    - name: Hembra Officelink
+    - name: Quorvo Paperdesk
+    - name: Sarnic Worksmith
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quorvex Workline
+    - name: Plenthos Daysuite
+    - name: Brintoq Orbit
+    - name: Velmara Cloudpack
+    - name: Triflox Worksphere
+    - name: Omniqel Dailyset
+    - name: Krentalu Workhub
+    - name: Pravano Yearsuite
+    - name: Stelmura Officepack
+    - name: Gravnex Worktide
+    - name: Zemplora Daykit
+    - name: Unthera Worksignal
+    - name: Florindex Dailyworks
+    - name: Juvanto Worknest
+    - name: Halmorix Officeflow
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quilltext
+    - name: Scribora
+    - name: Penwrit
+    - name: Textorium
+    - name: Vellumine
+    - name: Draftique
+    - name: Manuscribe
+    - name: Lexifold
+    - name: Parchetta
+    - name: Glyphwrite
+    - name: Inkframe
+    - name: Prosetide
+    - name: Scripturo
+    - name: Composia
+    - name: Foliowrit
+  product_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quillsheet
+    - name: Tabulix
+    - name: Gridwell
+    - name: Numeris
+    - name: Calcoro
+    - name: Sheetora
+    - name: Plottrix
+    - name: Kalqulon
+    - name: Figurly
+    - name: Cellmark
+    - name: Tallynex
+    - name: Rowspan
+    - name: Brightgrid
+    - name: Sumleaf
+    - name: Matrivo
+  product_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Slidevox
+    - name: Presentara
+    - name: Kliptine
+    - name: Vistraslide
+    - name: Deckorio
+    - name: Plenara
+    - name: Slydorix
+    - name: Foliavex
+    - name: Prezantik
+    - name: Stagebrim
+    - name: Klavora
+    - name: Pitchlume
+    - name: Slidarynx
+    - name: Orastell
+    - name: Frameza
+  product_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Plavrix grid
+    - name: Quendro link
+    - name: Zorvex mesh
+    - name: Trindalo net
+    - name: Vortiq relay
+    - name: Brivax channel
+    - name: Kelvora hub
+    - name: Mypros stream
+    - name: Ostrelin circuit
+    - name: Fendaro loop
+    - name: Umbrilo web
+    - name: Jaxtor path
+    - name: Wintrel bridge
+    - name: Crynvel portal
+    - name: Drovask pipeline
+  product_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quolva
+    - name: Zindry
+    - name: Pexora
+    - name: Frelyn
+    - name: Kavuro
+    - name: Trimbex
+    - name: Yondel
+    - name: Plurio
+    - name: Wexaro
+    - name: Orbune
+    - name: Snaptiv
+    - name: Veldrik
+    - name: Murnex
+    - name: Glintora
+    - name: Brexly
+  product_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quvex
+    - name: Plindor
+    - name: Zephar
+    - name: Blindrix
+    - name: Tavrin
+    - name: Groffel
+    - name: Yandex Pulse
+    - name: Kribble
+    - name: Norvio
+    - name: Clapsen
+    - name: Drendo
+    - name: Flembra
+    - name: Jorvith
+    - name: Pexlar
+    - name: Umbrex
+  product_15:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Zivomail
+    - name: Quemblo Mail
+    - name: Pryntix
+    - name: Korvamail
+    - name: Flindex Mail
+    - name: Turnessa
+    - name: Brevamail
+    - name: Olunox
+    - name: Vextraline
+    - name: Miraqo Mail
+    - name: Plenthor
+    - name: Jurnimail
+    - name: Crelvox
+    - name: Wimblark Post
+    - name: Thavrin Mail
+  product_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quorvex Bazaar
+    - name: Plintaro Hub
+    - name: Zenthalo Marketplace
+    - name: Brintovex Depot
+    - name: Vandrelio Shop
+    - name: Kesmoria Outlet
+    - name: Trendaxo Gallery
+    - name: Pyrnelis Emporium
+    - name: Glimvora Bay
+    - name: Olmavix Exchange
+    - name: Drovenka Kiosk
+    - name: Fenstoli Plaza
+    - name: Worplex Arcade
+    - name: Juvanteo Mart
+    - name: Skellrith Storefront
+  product_17:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Stratomist
+    - name: Cloudvane
+    - name: Nebulark
+    - name: Skyforge
+    - name: Vaporloom
+    - name: Zenithral
+    - name: Cirrospan
+    - name: Mistralix
+    - name: Aerothrone
+    - name: Lumisphere
+    - name: Vortelis
+    - name: Helioboard
+    - name: Quartzcloud
+    - name: Drifthelm
+    - name: Pellucid Grid
+  product_18:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quendrix DataVault Server
+    - name: Brynsoft RelayDB Engine
+    - name: Krivanta Structured Data Server
+    - name: Plektor QueryCore Server
+    - name: Vandros TableForge Server
+    - name: Milthrex RelationalHub Server
+    - name: Trevanto SchemaBase Server
+    - name: Orvexa QueryGrid Server
+    - name: Jantorix DataPillar Server
+    - name: Crenulo TabularStore Server
+    - name: Flendrak RowKeeper Server
+    - name: Stavrin LedgerBase Server
+    - name: Yurnexa QueryAnvil Server
+    - name: Obelvin DataSpindle Server
+    - name: Tribalko RelateCore Server
+  product_19:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kodelume
+    - name: Draftforge
+    - name: Plexentry
+    - name: Quillscript
+    - name: Vermiqode
+    - name: Brackenlab
+    - name: Syntroban
+    - name: Orbiscoder
+    - name: Lattiqe
+    - name: Zendebra
+    - name: Phormstack
+    - name: Mirellox
+    - name: Trevascript
+    - name: Juniperide
+    - name: Coralforge

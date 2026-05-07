@@ -1,0 +1,468 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_11
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-04-18T15:25:02.372220+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_21: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_16: 15
+    place_17: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Thandor Velquist
+    - full_name: Brellum Kosvane
+    - full_name: Orvath Drennick
+    - full_name: Pellund Crastow
+    - full_name: Wyndor Helvask
+    - full_name: Galthen Morrique
+    - full_name: Solvarn Kettridge
+    - full_name: Dremmon Faulquist
+    - full_name: Harquen Belvost
+    - full_name: Tormund Grellask
+    - full_name: Kellvarn Prothune
+    - full_name: Branthor Selvique
+    - full_name: Quelden Marvisk
+    - full_name: Fennald Trossvik
+    - full_name: Lorthun Gavesque
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Margrave of Thenwick
+    - full_name: Vicecount of Pellara
+    - full_name: Landgrave of Corvishen
+    - full_name: Warden of Brelloque
+    - full_name: Palatine of Drossmund
+    - full_name: Seneschal of Varnoque
+    - full_name: Marquess of Tolbraith
+    - full_name: Protector of Kelmaren
+    - full_name: Overlord of Granthune
+    - full_name: Steward of Quellishar
+    - full_name: Regent of Faldrique
+    - full_name: Castellan of Morthaven
+    - full_name: Prefect of Lyndorath
+    - full_name: Chancellor of Brevantis
+    - full_name: Archon of Selvurne
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmora
+    - city: Thandris
+    - city: Korabeth
+    - city: Plivane
+    - city: Ossendral
+    - city: Galtheris
+    - city: Brequon
+    - city: Zulmaren
+    - city: Helvacor
+    - city: Dranthos
+    - city: Weskara
+    - city: Fendalith
+    - city: Quirabel
+    - city: Jontavek
+    - city: Molvaris
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Thandorea
+    - country: Caspelund
+    - country: Dromirath
+    - country: Felquora
+    - country: Brentalos
+    - country: Korvashel
+    - country: Plindara
+    - country: Zethmorin
+    - country: Wulcraven
+    - country: Orenthal
+    - country: Galtheris
+    - country: Sundrevak
+    - country: Molvectra
+    - country: Harquinol
+  place_3:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Talmaren Province
+    - state: Vosshelder State
+    - state: Kelmorath Territory
+    - state: Brindova State
+    - state: Pellunwick Province
+    - state: Dravenmoor State
+    - state: Sorathel Province
+    - state: Ganthurel State
+    - state: Welmacre Territory
+    - state: Corthaven State
+    - state: Lurindel Province
+    - state: Fennoquay State
+    - state: Torbassil Territory
+    - state: Helvandor State
+    - state: Quirenthol Province
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Telmara Bay
+    - natural_site: Vossken Harbor
+    - natural_site: Drennith Inlet
+    - natural_site: Calwey Sound
+    - natural_site: Orenthal Basin
+    - natural_site: Pellusk Estuary
+    - natural_site: Grothane Harbor
+    - natural_site: Suvari Cove
+    - natural_site: Brenthallow Bay
+    - natural_site: Kelmoth Strait
+    - natural_site: Thurwen Harbor
+    - natural_site: Jolkara Inlet
+    - natural_site: Penvoss Sound
+    - natural_site: Dralique Bay
+    - natural_site: Weskarn Harbor
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velmorath Corridor
+    - region: Upper Dranthem
+    - region: Kessward Reach
+    - region: Thalcrest Basin
+    - region: Orvenmere Lowlands
+    - region: Bryndoral Shelf
+    - region: Pellisward Heights
+    - region: Grothaven Expanse
+    - region: Sundravik Coast
+    - region: Melvoran Uplands
+    - region: Caldrith Seaboard
+    - region: Torvenash Span
+    - region: Wyndorath Flats
+    - region: Helvastine Rim
+    - region: Quormanth Bend
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Greater Thalvorn conurbation
+    - region: Kessimor metropolitan zone
+    - region: Brintawe urban corridor
+    - region: Orvalen greater area
+    - region: Pellunth metro region
+    - region: Dranthec sprawl district
+    - region: Vossimer extended basin
+    - region: Calwenth metropolitan reach
+    - region: Grothane urban expanse
+    - region: Lurnevak greater corridor
+    - region: Fendrith metro cluster
+    - region: Solvarak conurbation belt
+    - region: Tembrique metropolitan sweep
+    - region: Haldorin urban periphery
+    - region: Quensivar greater sprawl
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velorinth
+    - city: Caspelune
+    - city: Drothaven
+    - city: Tulmera
+    - city: Brenquil
+    - city: Ossivane
+    - city: Kelmorath
+    - city: Phandique
+    - city: Zurvalis
+    - city: Grothelin
+    - city: Wenvara
+    - city: Soltheryn
+    - city: Maquorel
+    - city: Jentivoss
+    - city: Crelvane
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Bastion Kelvara
+    - city: Fort Thrennick
+    - city: Redoubt Pallishen
+    - city: Stockade Molvaren
+    - city: Garrison Torbique
+    - city: Fort Cressival
+    - city: Holdfast Dranmere
+    - city: Citadel Vosswick
+    - city: Fort Quendalith
+    - city: Palisade Jormund
+    - city: Outpost Selvarin
+    - city: Fort Brindoque
+    - city: Rampart Elchova
+    - city: Stronghold Pinnaret
+    - city: Fort Galwender
+  place_9:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvolen Reach
+    - region: Kelmorath Shoal
+    - region: Brindaway Atoll
+    - region: Cossivane Bluff
+    - region: Pellunor Strand
+    - region: Dravichet Spit
+    - region: Wentharic Isle
+    - region: Gulmaren Point
+    - region: Sorathel Neck
+    - region: Fendovar Ledge
+    - region: Helvicane Key
+    - region: Ostraven Shelf
+    - region: Quirembay Flat
+    - region: Zanthoral Bank
+    - region: Lorimund Bight
+  place_10:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Veldrani
+    - demonym: Korathen
+    - demonym: Threllish
+    - demonym: Bremosi
+    - demonym: Zulvari
+    - demonym: Pellunese
+    - demonym: Dravoshi
+    - demonym: Talmeki
+    - demonym: Gorundi
+    - demonym: Weskari
+    - demonym: Chelvotan
+    - demonym: Rindavi
+    - demonym: Jelthari
+    - demonym: Molvunic
+    - demonym: Sortheni
+  place_21:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velthafen
+    - city: Korspaal
+    - city: Drenmoor
+    - city: Brynholdt
+    - city: Tessaveld
+    - city: Wyndekaar
+    - city: Polmaren
+    - city: Grothaven
+    - city: Stelvorn
+    - city: Keldrath
+    - city: Jorveld
+    - city: Narvikaal
+    - city: Threnmast
+    - city: Belvosken
+    - city: Dalkemoor
+  place_11:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velthari
+    - demonym: Drennoch
+    - demonym: Korvish
+    - demonym: Talmeri
+    - demonym: Brossaic
+    - demonym: Lundric
+    - demonym: Pethoran
+    - demonym: Gelvanic
+    - demonym: Sorwenni
+    - demonym: Crathuli
+    - demonym: Molvish
+    - demonym: Thandric
+    - demonym: Plennori
+    - demonym: Gosthari
+    - demonym: Quelvani
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Bremholt
+    - country: Carvossa
+    - country: Dunmaren
+    - country: Feltrova
+    - country: Gosthenwick
+    - country: Helvandor
+    - country: Jornathel
+    - country: Kespara
+    - country: Lyndovere
+    - country: Morathune
+    - country: Pellicarn
+    - country: Ronthavis
+    - country: Solvandek
+    - country: Wytherglen
+  place_13:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thalvorn
+    - region: Kessoway
+    - region: Brindahl
+    - region: Orvanthi
+    - region: Pellundar
+    - region: Corthaven
+    - region: Dremmick
+    - region: Sulwaine
+    - region: Gantherlow
+    - region: Vossimer
+    - region: Queldarth
+    - region: Helvandor
+    - region: Tyndarik
+    - region: Mosskerath
+    - region: Welvoran
+  place_14:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thalwick
+    - region: Crendova
+    - region: Belmarak
+    - region: Osserly
+    - region: Kavenmoor
+    - region: Drellhaven
+    - region: Porthune
+    - region: Gelvaris
+    - region: Stannock
+    - region: Welmira
+    - region: Torquane
+    - region: Hessoval
+    - region: Brindlecove
+    - region: Pellantis
+    - region: Quorham
+  place_15:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Tarvello
+    - region: Cosswen
+    - region: Pelmorath
+    - region: Dunvari
+    - region: Kethwyn
+    - region: Solmarch
+    - region: Grantheel
+    - region: Wyvallen
+    - region: Torshane
+    - region: Belmocket
+    - region: Crellund
+    - region: Hasperin
+    - region: Vondrell
+    - region: Malkuven
+    - region: Prothane
+  place_16:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Kelvara
+    - region: Thrennock
+    - region: Polsheave
+    - region: Dranthuil
+    - region: Mossivane
+    - region: Crellanth
+    - region: Turvashel
+    - region: Gelphinor
+    - region: Brondivay
+    - region: Skalvern
+    - region: Wethigor
+    - region: Plindova
+    - region: Helvacourt
+    - region: Zantheral
+    - region: Quormanth
+  place_17:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velmorath Isle
+    - region: Thandor Reach
+    - region: Cressaby Shoal
+    - region: Brinweld Atoll
+    - region: Kelvara Point
+    - region: Drothune Bluff
+    - region: Selmarak Cay
+    - region: Parveen Ledge
+    - region: Gosthen Holm
+    - region: Turwane Spit
+    - region: Lyndovar Key
+    - region: Fenthoral Neck
+    - region: Quorvane Shelf
+    - region: Haldren Strand
+    - region: Morthaven Flat
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corvalen
+    - name: Thandoral
+    - name: Brequosal
+    - name: Velmorath
+    - name: Cendivari
+    - name: Plorathune
+    - name: Quessabrin
+    - name: Dravellum
+    - name: Torsinave
+    - name: Gelvandor
+    - name: Mossivane
+    - name: Prelloquin
+    - name: Zanthoral
+    - name: Kelvunade
+    - name: Wossendral

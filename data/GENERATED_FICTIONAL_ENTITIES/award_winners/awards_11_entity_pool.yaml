@@ -1,0 +1,604 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_11
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T13:57:56.815487+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_6: 15
+    person_7: 15
+    person_2: 15
+    person_4: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_7: 15
+    place_6: 15
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+    educational_org_4: 15
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - first_name
+    - full_name
+    - honorific
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Telvina Oradech Krothune Pellisav
+      first_name: Telvina
+      last_name: Pellisav
+      nationality: Vordeshi
+    - full_name: Zanelka Hupovine Drashtel Morvique
+      first_name: Zanelka
+      last_name: Morvique
+      nationality: Thalcuran
+    - full_name: Roquessa Belvani Stremoch Galdune
+      first_name: Roquessa
+      last_name: Galdune
+      nationality: Prelvosi
+    - full_name: Idravelle Coshunet Plekova Turshane
+      first_name: Idravelle
+      last_name: Turshane
+      nationality: Kelmorath
+    - full_name: Brenthula Vashkine Ostrevel Darnique
+      first_name: Brenthula
+      last_name: Darnique
+      nationality: Zelphari
+    - full_name: Calsheva Nupotrel Veskadine Horbault
+      first_name: Calsheva
+      last_name: Horbault
+      nationality: Grotheni
+    - full_name: Wenvara Dreshkoli Trupelane Skovetch
+      first_name: Wenvara
+      last_name: Skovetch
+      nationality: Mundrevian
+    - full_name: Pheldara Oshkuvine Tremolak Venshari
+      first_name: Pheldara
+      last_name: Venshari
+      nationality: Bolthurese
+    - full_name: Kestova Rulphane Drevikol Tharnoque
+      first_name: Kestova
+      last_name: Tharnoque
+      nationality: Crelduvan
+    - full_name: Olshevra Tunkadel Breshkova Pelmundi
+      first_name: Olshevra
+      last_name: Pelmundi
+      nationality: Dravoshi
+    - full_name: Yenthrula Golvashek Preskadine Morvetch
+      first_name: Yenthrula
+      last_name: Morvetch
+      nationality: Helvuran
+    - full_name: Druvella Keshpoline Tarvokune Shelbraque
+      first_name: Druvella
+      last_name: Shelbraque
+      nationality: Quendori
+    - full_name: Nelvasha Grothupel Veskarine Dulpheque
+      first_name: Nelvasha
+      last_name: Dulpheque
+      nationality: Torvelshi
+    - full_name: Reshkova Plundavel Ostrevine Kalmureth
+      first_name: Reshkova
+      last_name: Kalmureth
+      nationality: Velphandri
+    - full_name: Thelvuna Broshkadel Vuntrepol Greshkaine
+      first_name: Thelvuna
+      last_name: Greshkaine
+      nationality: Strelkovi
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvina Droskay
+    - full_name: Korith Belsova
+    - full_name: Yenara Plochek
+    - full_name: Dravine Sulkora
+    - full_name: Mivella Tarnosh
+    - full_name: Zelkara Prondis
+    - full_name: Orvina Chelkay
+    - full_name: Luneth Gavorin
+    - full_name: Peshara Volnekt
+    - full_name: Brindova Kesthal
+    - full_name: Weytha Jornelk
+    - full_name: Solvika Drentho
+    - full_name: Kalveen Roshtay
+    - full_name: Fendrova Tulkesh
+    - full_name: Gethira Molvask
+  person_7:
+    required_attributes:
+    - nationality
+    count: 15
+    variants:
+    - nationality: Velthari
+    - nationality: Dromishan
+    - nationality: Calterish
+    - nationality: Zuvenese
+    - nationality: Plorathian
+    - nationality: Meskuran
+    - nationality: Tivellian
+    - nationality: Garsholdi
+    - nationality: Brenuvian
+    - nationality: Ondreshan
+    - nationality: Kelvorite
+    - nationality: Thuranese
+    - nationality: Wispeldi
+    - nationality: Jantorish
+    - nationality: Felquoran
+  person_2:
+    required_attributes:
+    - first_name
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Drashek
+      first_name: Telvon
+    - full_name: Jorath Kembliss
+      first_name: Jorath
+    - full_name: Wyndal Crovane
+      first_name: Wyndal
+    - full_name: Brenthol Yassik
+      first_name: Brenthol
+    - full_name: Calduven Morshane
+      first_name: Calduven
+    - full_name: Orithan Pleskow
+      first_name: Orithan
+    - full_name: Fennick Golvari
+      first_name: Fennick
+    - full_name: Dravosh Tulmek
+      first_name: Dravosh
+    - full_name: Kessarn Bolithey
+      first_name: Kessarn
+    - full_name: Lyndor Vashken
+      first_name: Lyndor
+    - full_name: Morthel Grindave
+      first_name: Morthel
+    - full_name: Sulvane Prethock
+      first_name: Sulvane
+    - full_name: Haroven Deskali
+      first_name: Haroven
+    - full_name: Zelphin Crothane
+      first_name: Zelphin
+    - full_name: Quendrik Yolvash
+      first_name: Quendrik
+  person_4:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Velinka
+    - first_name: Tashela
+    - first_name: Korima
+    - first_name: Zulvena
+    - first_name: Prellika
+    - first_name: Drovana
+    - first_name: Yeshkala
+    - first_name: Nimbrova
+    - first_name: Chelkira
+    - first_name: Wostena
+    - first_name: Galvira
+    - first_name: Peshkova
+    - first_name: Tulmira
+    - first_name: Breniska
+    - first_name: Jovelta
+  person_5:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Telvine
+    - first_name: Orasce
+    - first_name: Brissela
+    - first_name: Calthune
+    - first_name: Yovenne
+    - first_name: Pernique
+    - first_name: Dulcara
+    - first_name: Fenthari
+    - first_name: Lossine
+    - first_name: Quirabel
+    - first_name: Zephara
+    - first_name: Molveen
+    - first_name: Gessura
+    - first_name: Winthari
+    - first_name: Kelvane
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velthari
+    - city: Kossova
+    - city: Drenmach
+    - city: Polkuven
+    - city: Tarnelk
+    - city: Zhelova
+    - city: Broskavi
+    - city: Grotheny
+    - city: Sulkavir
+    - city: Pelnorath
+    - city: Chorvesk
+    - city: Wyndekra
+    - city: Tolmeshk
+    - city: Ravnikol
+    - city: Kernusha
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velthari
+      demonym: Veltharese
+    - country: Dromilek
+      demonym: Dromileki
+    - country: Kosvaren
+      demonym: Kosvarenite
+    - country: Thurembak
+      demonym: Thurembaki
+    - country: Pelnorath
+      demonym: Pelnorathi
+    - country: Zandrique
+      demonym: Zandriquen
+    - country: Obrestal
+      demonym: Obrestali
+    - country: Melvunia
+      demonym: Melvunian
+    - country: Grotheny
+      demonym: Grothenese
+    - country: Teskoval
+      demonym: Teskovali
+    - country: Wyndarak
+      demonym: Wyndaraki
+    - country: Brenolith
+      demonym: Brenolithic
+    - country: Kalmoset
+      demonym: Kalmoseti
+    - country: Phendural
+      demonym: Phendurali
+    - country: Roquelam
+      demonym: Roquelami
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vorenthic Dominion
+    - country: Kessulari Imperium
+    - country: Thalmorek Empire
+    - country: Druvanic Sovereignty
+    - country: Pelchori Realm
+    - country: Zantheric Dominion
+    - country: Obruvian Empire
+    - country: Maldrethi Imperium
+    - country: Gelvosian Dominion
+    - country: Turvennic Empire
+    - country: Sordathic Realm
+    - country: Brenuvari Imperium
+    - country: Kalthenic Dominion
+    - country: Welvoric Empire
+    - country: Narthulian Sovereignty
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Cendara
+    - city: Thalique
+    - city: Brissolan
+    - city: Korvaine
+    - city: Pelmuth
+    - city: Drantheil
+    - city: Ossivane
+    - city: Lurethon
+    - city: Gavindre
+    - city: Zelphari
+    - city: Moqueil
+    - city: Tarvesse
+    - city: Wyndorel
+    - city: Calbrune
+  place_5:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velmorath
+      demonym: Velmorathi
+    - country: Dranthecia
+      demonym: Dranthecian
+    - country: Pelsovane
+      demonym: Pelsovani
+    - country: Quorithane
+      demonym: Quorithanese
+    - country: Tembrisal
+      demonym: Tembrisali
+    - country: Golvundia
+      demonym: Golvundish
+    - country: Harnesqua
+      demonym: Harnesquan
+    - country: Zelphorin
+      demonym: Zelphorini
+    - country: Crendavos
+      demonym: Crendavosi
+    - country: Obrenthil
+      demonym: Obrenthili
+    - country: Weskadune
+      demonym: Weskaduni
+    - country: Fentharque
+      demonym: Fentharqui
+    - country: Jolmestri
+      demonym: Jolmestrian
+    - country: Bravuntel
+      demonym: Bravunteli
+    - country: Sorthevane
+      demonym: Sorthevani
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vellondre Sanatorium
+    - city: Torbassil Pantheum
+    - city: Crendoval Rest House
+    - city: Mossaret Sanatorium
+    - city: Pellunthir Memorial Hall
+    - city: Grothaven Sanatorium
+    - city: Durnellis Pantheum
+    - city: Kalmosse Sanatorium
+    - city: Brinthalow Rest Clinic
+    - city: Ossivane Pantheum
+    - city: Feldarque Sanatorium
+    - city: Quirrenthol Pantheum
+    - city: Jenvassil Sanatorium
+    - city: Plondaret Pantheum
+    - city: Helvossine Sanatorium
+  place_6:
+    required_attributes:
+    - city
+    - region
+    count: 15
+    variants:
+    - city: Velmorin
+      region: Crantevelle
+    - city: Tasselu
+      region: Brivondre
+    - city: Gorpeil
+      region: Luthagne
+    - city: Drenaque
+      region: Falmossier
+    - city: Pluvaret
+      region: Chelvoine
+    - city: Mossignac
+      region: Dorvellac
+    - city: Brenolique
+      region: Tarvoiselle
+    - city: Cuvellot
+      region: Grondavie
+    - city: Farlesque
+      region: Pivrantel
+    - city: Lontavey
+      region: Quessalure
+    - city: Rissogne
+      region: Belvantois
+    - city: Turvenal
+      region: Clarvessine
+    - city: Gassivel
+      region: Montrique
+    - city: Pellonac
+      region: Dravosselle
+    - city: Wenvoral
+      region: Soltheragne
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Veldranic Conflict
+    - name: The Grothane Upheaval
+    - name: The Tessarine Campaign
+    - name: The Belmoric Confrontation
+    - name: The Ketharan Struggle
+    - name: The Sorventic Hostilities
+    - name: The Drannoch Engagement
+    - name: The Pelmavic Crisis
+    - name: The Thandoral Offensive
+    - name: The Carvessian Clash
+    - name: The Oltranic Siege
+    - name: The Fennoric Incursion
+    - name: The Brethanic Conflagration
+    - name: The Vossendric Turmoil
+    - name: The Galtheran Onslaught
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Celebration of Molecular Sciences
+    - name: Worldwide Observance of Elemental Discovery
+    - name: Universal Festival of Reagent Studies
+    - name: Planetary Commemoration of Compound Research
+    - name: Grand Symposium of Catalytic Arts
+    - name: Intercontinental Tribute to Synthesis Knowledge
+    - name: Unified Recognition of Laboratory Disciplines
+    - name: Transnational Salute to Atomic Inquiry
+    - name: Collective Honoring of Distillation Heritage
+    - name: Coordinated Epoch of Spectral Analysis
+    - name: Allied Dedication to Bonding Principles
+    - name: Joint Observance of Titration Mastery
+    - name: Shared Acknowledgment of Valence Traditions
+    - name: Combined Tribute to Crystallographic Pursuits
+    - name: Mutual Celebration of Stoichiometric Thought
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalendric Institute of Kelvora
+    - name: Grand Academy of Protheil
+    - name: Velorune Collegium
+    - name: Orenthal University of Drassik
+    - name: Melvanthi School of Sciences
+    - name: Quorathel Academic Lyceum
+    - name: Brenthavic University
+    - name: Pellundar Institute of Learning
+    - name: Calostrine University of Jethara
+    - name: Draventhil Scholarly Foundation
+    - name: Zenthari Polytechnic of Rolvane
+    - name: Kessovane University
+    - name: Thurellic Academy of Gostane
+    - name: Wenvardic Institute of Plethora
+    - name: Solmanthir University of Crethune
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Wandering Lyceum
+    - name: Drifting Athenaeum
+    - name: Veiled Collegium
+    - name: Roaming Scholare
+    - name: Hidden Lectory
+    - name: Phantom Akadema
+    - name: Shifting Seminara
+    - name: Covert Studiorum
+    - name: Nomadic Trivium
+    - name: Shadow Polythenae
+    - name: Unseen Didaskion
+    - name: Cloaked Eruditum
+    - name: Migrant Paideum
+    - name: Whispered Scholarch
+    - name: Duskborne Institutary
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Institute
+    - name: Brissek Academy
+    - name: Halendri Institute
+    - name: Korvane Research Institute
+    - name: Pellomar Institute
+    - name: Dranthos Academy
+    - name: Zelvique Institute
+    - name: Morthane Institute
+    - name: Caspellin Academy
+    - name: Fendrova Institute
+    - name: Quilshen Institute
+    - name: Obrenthis Academy
+    - name: Tarvisek Institute
+    - name: Lyndovar Institute
+    - name: Grethune Academy
+  educational_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Haldrune Institute
+    - name: Pellithor Institute
+    - name: Zendara Institute
+    - name: Molvek Academy
+    - name: Dranthiel Institute
+    - name: Ossivane Institute
+    - name: Quelithar Academy
+    - name: Fendrake Institute
+    - name: Galthuven Institute
+    - name: Retholin Academy
+    - name: Vossimer Institute
+    - name: Jenthari Institute
+    - name: Breskova Institute
+    - name: Talmivek Academy
+    - name: Wyndorel Institute
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veranthor Laureate in Physical Sciences
+    - name: Dremalis Medal for Theoretical Physics
+    - name: Korvath International Physics Distinction
+    - name: Pelunari Grand Prize in Physics
+    - name: Thandoral Foundation Physics Honor
+    - name: Brequist Award for Physical Discovery
+    - name: Olventar Prize in Experimental Physics
+    - name: Zulmethic Commendation for Physics
+    - name: Grothane Institute Physics Accolade
+    - name: Fendralis Citation in Physical Sciences
+    - name: Quorvane Global Physics Distinction
+    - name: Helvitarn Prize for Physics Research
+    - name: Maldrique Academy Physics Laurel
+    - name: Sorventhi Medal in Physics
+    - name: Caltherion International Physics Award
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veranthor Laureate in Molecular Sciences
+    - name: Drossheim Medal for Chemical Discovery
+    - name: Thalcuran Grand Prize in Elemental Research
+    - name: Kelvori International Chemistry Distinction
+    - name: Brynthael Honor for Compound Studies
+    - name: Orenthal Foundation Award in Reactive Sciences
+    - name: Zelkurath Prize for Atomic Inquiry
+    - name: Pelmiran Gold Laurel in Substance Analysis
+    - name: Crothune Commendation for Molecular Advancement
+    - name: Wytharen Global Recognition in Chemical Arts
+    - name: Jentoval Distinction for Elemental Synthesis
+    - name: Haldrune Prize in Material Transformation
+    - name: Quorvane Medal for Reagent Discovery
+    - name: Torbinael Accolade in Structural Chemistry
+    - name: Selvurath Honor for Compositional Sciences
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veranthos Laureate
+    - name: Celdrin Honor
+    - name: Thalwick Distinction
+    - name: Orenthal Accolade
+    - name: Brissendor Medal
+    - name: Kalenthi Prize
+    - name: Durnavel Award
+    - name: Fossaric Commendation
+    - name: Pelmorath Laurel
+    - name: Granthivel Citation
+    - name: Torindel Recognition
+    - name: Wenvaris Tribute
+    - name: Quellabrin Distinction
+    - name: Hestoval Prize
+    - name: Zarindel Accolade

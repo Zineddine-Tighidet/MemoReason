@@ -1,0 +1,197 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_09
+  document_theme: retail_banking_regulations_and_policies
+  complete: false
+  generated_at: '2026-04-18T14:55:12.173241+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_5: need 15, found 13'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 13
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+  products: {}
+missing_references:
+  places:
+    place_5: 2
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veltharos
+    - country: Drennisol
+    - country: Korvashel
+    - country: Plinthagor
+    - country: Tessivane
+    - country: Brulkamey
+    - country: Ondravisk
+    - country: Zelphinor
+    - country: Grothanel
+    - country: Melvikura
+    - country: Sondrepal
+    - country: Turvenask
+    - country: Welphadon
+    - country: Kestrivol
+    - country: Janthemor
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldrath
+    - country: Kosselu
+    - country: Threnmaar
+    - country: Pilostia
+    - country: Grotheny
+    - country: Brentuval
+    - country: Solvekka
+    - country: Darnephi
+    - country: Quellomar
+    - country: Hestoval
+    - country: Torbinea
+    - country: Wenshara
+    - country: Caldrune
+    - country: Fentorik
+    - country: Molvespa
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldmark
+    - country: Thrennos
+    - country: Kalstova
+    - country: Brinthaer
+    - country: Ossendral
+    - country: Pelmorath
+    - country: Grothune
+    - country: Skerival
+    - country: Dunthalos
+    - country: Welmarak
+    - country: Frossigen
+    - country: Helvantis
+    - country: Torskeld
+    - country: Quirnabet
+    - country: Zandrelk
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthernia
+    - country: Grothalan
+    - country: Sundrevak
+    - country: Kestholme
+    - country: Brintalos
+    - country: Dravencia
+    - country: Thurmalind
+    - country: Colvessia
+    - country: Wentharik
+    - country: Plossengard
+    - country: Marvethune
+    - country: Torsilane
+    - country: Helvandor
+    - country: Quenbrith
+    - country: Fossendral
+  place_5:
+    required_attributes:
+    - country
+    count: 13
+    variants:
+    - country: Brellandia
+    - country: Tarvoshen
+    - country: Celdoria
+    - country: Wynthara
+    - country: Pallenthor
+    - country: Grothenvale
+    - country: Kembrith
+    - country: Solmaren
+    - country: Fentharion
+    - country: Quirnestal
+    - country: Mossendria
+    - country: Torvelund
+    - country: Brantheca
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Confederal Assembly of Toriven
+    - name: United Provinces of Dralentho
+    - name: Panloric Governance Council
+    - name: Federated States of Celvara
+    - name: Intercoastal Union of Brethano
+    - name: Sovereign Compact of Velithra
+    - name: Allied Republics of Quendara
+    - name: Transbordic Commonwealth
+    - name: Unified Cantons of Pelmorath
+    - name: Continental Accord of Zephilon
+    - name: Meridional Federation of Tassivere
+    - name: Joint Governance Pact of Orenthal
+    - name: Cooperative Assembly of Dranthiel
+    - name: Integrated Council of Halvistane
+    - name: Plurinational Compact of Sorethia
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Transborder Commerce Accord League
+    - name: Cooperative Mercantile Pact Organization
+    - name: Interland Open Markets Consortium
+    - name: Federated Tariff Reduction Assembly
+    - name: Sovernal Trade Cooperation Bureau
+    - name: Allied Customs Liberalization Council
+    - name: Multilateral Exchange Facilitation Body
+    - name: Joint Mercatura Harmonization Forum
+    - name: Reciprocal Commerce Standards Authority
+    - name: Unified Tradeway Coordination Compact
+    - name: Continental Barter Alignment Secretariat
+    - name: Plurinational Duty Reduction Syndicate
+    - name: Interzonal Goods Movement Partnership
+    - name: Collective Tariff Accord Directorate
+    - name: Crossland Mercantile Cooperation Pact
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Cross-Border Remittance Framework (UCRF)
+    - name: Integrated Monetary Transfer Zone (IMTZ)
+    - name: Common Banking Settlement Corridor (CBSC)
+    - name: Harmonized Funds Routing Initiative (HFRI)
+    - name: Consolidated Payment Clearing Network (CPCN)
+    - name: Shared Transaction Processing Accord (STPA)
+    - name: Joint Currency Transfer Alignment (JCTA)
+    - name: Mutual Clearing Payments Compact (MCPC)
+    - name: Linked Banking Remittance Protocol (LBRP)
+    - name: Coordinated Fund Movement Directive (CFMD)
+    - name: Transborder Settlement Harmonization Pact (TSHP)
+    - name: Allied Payment Routing Scheme (APRS)
+    - name: Collective Funds Dispatch Convention (CFDC)
+    - name: Merged Banking Flow Arrangement (MBFA)
+    - name: Synchronized Clearing Transfer Charter (SCTC)

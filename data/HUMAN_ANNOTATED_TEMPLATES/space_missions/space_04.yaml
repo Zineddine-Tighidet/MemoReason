@@ -1,0 +1,433 @@
+document:
+  document_id: space_04
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Tianwen-1
+  wikipedia_url: https://en.wikipedia.org/wiki/Tianwen-1
+  original_document: 'Tianwen-1 (also referred to as TW-1) is an interplanetary mission by the China National Space Administration
+    (CNSA) which sent a robotic spacecraft to Mars, consisting of six spacecraft: an orbiter, two deployable cameras, lander,
+    remote camera, and the Zhurong rover. The spacecraft, with a total mass of nearly five tons, is one of the heaviest probes
+    launched to Mars and carries 14 scientific instruments. It is the first in a series of planned missions undertaken by
+    CNSA as part of its Planetary Exploration of China program.
+
+
+    The mission''s scientific objectives include: investigation of Martian surface geology and internal structure, search
+    for indications of current and past presence of water, and characterization of the space environment and the atmosphere
+    of Mars.
+
+
+    The mission was launched from the Wenchang Spacecraft Launch Site on 23 July 2020 on a Long March 5 heavy-lift launch
+    vehicle. After seven months of transit through the inner Solar System, the spacecraft entered Martian orbit on 10 February
+    2021. For the next three months the probe studied the target landing sites from a reconnaissance orbit. On 14 May 2021,
+    the lander/rover portion of the mission successfully touched down on Mars, making China the third nation to make a soft
+    landing on and establish communication from the Martian surface, after the Soviet Union and the United States.
+
+
+    On 22 May 2021, the Zhurong rover drove onto the Martian surface via the descent ramps on its landing platform. With the
+    successful deployment of the rover, China became the second nation to accomplish this feat, after the United States. In
+    addition, China is the second nation to orbit and the first one to carry out landing and rovering mission on Mars successfully
+    on its maiden attempt. Tianwen-1 is also the second mission to capture audio recordings on the Martian surface, after
+    United States'' Perseverance rover. The "smallsat" deployed by the Zhurong rover on the Martian surface consists of a
+    "drop camera" which photographed both the rover itself as well as the Tianwen-1 lander. With a mass of less than 1 kg,
+    the Tianwen-1 remote camera is the lightest artificial object on Mars as of May 2021. On December 31, 2021, the Tianwen-1
+    orbiter deployed a second deployable camera (TDC-2) into Mars orbit which captured photographs of the Tianwen-1 in orbit
+    to celebrate its achievement of the year and a selfie stick payload was deployed to its working position on orbiter to
+    take images of the orbiter''s components and Chinese flag on 30 January 2022 to celebrate the Chinese New Year. In September
+    2022, the mission was awarded the World Space Award by the International Astronautical Federation.
+
+
+    The Tianwen-1 mission was the second of three Martian exploration missions launched during the July 2020 window, after
+    the United Arab Emirates Space Agency''s Hope orbiter, and before NASA''s Mars 2020 mission, which landed the Perseverance
+    rover with the attached Ingenuity helicopter drone. The Zhurong rover lost contact in 2023 after failing to awake from
+    a scheduled hibernation.'
+  document_to_annotate: '[Tianwen-1; product_1.name] (also referred to as [TW-1; product_1.name]) is an interplanetary mission
+    by the [China National Space Administration (CNSA); government_org_1.name] which sent a robotic spacecraft to [Mars; place_1.natural_site],
+    consisting of [six; number_1.str] spacecraft: an orbiter, [two; number_2.str] deployable cameras, lander, remote camera,
+    and the [Zhurong; product_2.name] rover. The spacecraft, with a total mass of nearly [five; number_3.str] tons, is one
+    of the heaviest probes launched to [Mars; place_1.natural_site] and carries [14; number_4.int] scientific instruments.
+    It is the first in a series of planned missions undertaken by [CNSA; government_org_1.name] as part of its Planetary Exploration
+    of [China; place_2.country] program.
+
+
+    The mission''s scientific objectives include: investigation of [Martian; place_1.demonym] surface geology and internal
+    structure, search for indications of current and past presence of water, and characterization of the space environment
+    and the atmosphere of [Mars; place_1.natural_site].
+
+
+    The mission was launched from the [Wenchang Spacecraft Launch Site; place_3.natural_site] on [23 July 2020; temporal_1.date]
+    on a [Long March 5; product_3.name] heavy-lift launch vehicle. After [seven; number_5.str] months of transit through the
+    [inner Solar System; place_6.natural_site], the spacecraft entered [Martian; place_1.demonym] orbit on [10 February 2021;
+    temporal_2.date]. For the next [three; number_6.str] months the probe studied the target landing sites from a reconnaissance
+    orbit. On [14 May 2021; temporal_3.date], the lander/rover portion of the mission successfully touched down on [Mars;
+    place_1.natural_site], making [China; place_2.country] the third nation to make a soft landing on and establish communication
+    from the [Martian; place_1.demonym] surface, after the [Soviet Union; place_4.country] and the [United States; place_5.country].
+
+
+    On [22 May 2021; temporal_4.date], the [Zhurong; product_2.name] rover drove onto the [Martian; place_1.demonym] surface
+    via the descent ramps on its landing platform. With the successful deployment of the rover, [China; place_2.country] became
+    the second nation to accomplish this feat, after the [United States; place_5.country]. In addition, [China; place_2.country]
+    is the second nation to orbit and the first one to carry out landing and rovering mission on [Mars; place_1.natural_site]
+    successfully on its maiden attempt. [Tianwen-1; product_1.name] is also the second mission to capture audio recordings
+    on the [Martian; place_1.demonym] surface, after [United States; place_5.country]'' [Perseverance; product_4.name] rover.
+    The "[smallsat; product_9.name]" deployed by the [Zhurong; product_2.name] rover on the [Martian; place_1.demonym] surface
+    consists of a "drop camera" which photographed both the rover itself as well as the [Tianwen-1; product_1.name] lander.
+    With a mass of less than [1; number_7.int] kg, the [Tianwen-1; product_1.name] remote camera is the lightest artificial
+    object on [Mars; place_1.natural_site] as of [May; temporal_12.month] [2021; temporal_5.year]. On [December 31, 2021;
+    temporal_6.date], the [Tianwen-1; product_1.name] orbiter deployed a second deployable camera ([TDC-2; product_5.name])
+    into [Mars; place_1.natural_site] orbit which captured photographs of the [Tianwen-1; product_1.name] in orbit to celebrate
+    its achievement of the year and a selfie stick payload was deployed to its working position on orbiter to take images
+    of the orbiter''s components and [Chinese; place_2.demonym] flag on [30 January 2022; temporal_7.date] to celebrate the
+    [Chinese; place_2.demonym] New Year. In [September; temporal_13.month] [2022; temporal_8.year], the mission was awarded
+    the [World Space Award; award_1.name] by the [International Astronautical Federation; ngo_1.name].
+
+
+    The [Tianwen-1; product_1.name] mission was the second of [three; number_8.str] [Martian; place_1.demonym] exploration
+    missions launched during the [July; temporal_9.month] [2020; temporal_14.year] window, after the [United Arab Emirates
+    Space Agency; government_org_2.name]''s [Hope; product_6.name] orbiter, and before [NASA; government_org_3.name]''s [Mars;
+    place_1.natural_site] [2020; temporal_14.year] mission, which landed the [Perseverance; product_4.name] rover with the
+    attached [Ingenuity; product_8.name] helicopter drone. The [Zhurong; product_2.name] rover lost contact in [2023; temporal_10.year]
+    after failing to awake from a scheduled hibernation.'
+  relations: []
+  rules:
+  - 'number_1.str > 1 # "six spacecraft" — plural list of spacecraft components'
+  - 'number_2.str > 1 # "two deployable cameras" — plural mention'
+  - 'number_4.int > 1 # "14 scientific instruments" — plural mention'
+  - 'number_8.str == 3 # "three Martian exploration missions" — plural mention'
+  - 'number_5.str > 1 # "seven months of transit" — plural mention'
+  - 'number_6.str > 1 # "three months the probe studied" — plural mention'
+  - 'temporal_5.year == temporal_3.date.year # "May 2021" matches the landing date''s year context'
+  - 'temporal_12.month == temporal_3.date.month # "May" as-of date matches the landing month context'
+  - 'temporal_14.year == temporal_1.date.year # the July 2020 launch window matches the mission launch year'
+  - 'temporal_9.month == temporal_1.date.month # the launch window month (July) matches the actual launch month'
+  num_questions: 12
+  questions:
+  - question_id: space_04_q01
+    question: Which rover was deployed by the [Tianwen-1; product_1.name] mission onto the surface of [Mars; place_1.natural_site]?
+    question_type: extractive
+    answer: product_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [Zhurong; product_2.name] rover drove onto the [Martian; place_1.demonym] surface on
+      [22 May 2021; temporal_4.date].
+    reasoning_chain_text: 1. The document states that the [Zhurong; product_2.name] rover drove onto the [Martian; place_1.demonym]
+      surface on [22 May 2021; temporal_4.date].
+  - question_id: space_04_q02
+    question: Does the [Tianwen-1; product_1.name] spacecraft carry different kinds of cameras?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the spacecraft carries "deployable cameras" and "remote cameras".
+    reasoning_chain_text: 1. The document states the spacecraft carries "deployable cameras" and "remote cameras".
+  - question_id: space_04_q03
+    question: What is the name of the specific landing site on [Mars; place_1.natural_site] where the [Tianwen-1; product_1.name]
+      lander touched down?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the probe studied target landing sites from a reconnaissance orbit and that the lander
+      successfully touched down on [Mars; place_1.natural_site].
+    - 2. However, the document does not specify the name of the particular landing site.
+    reasoning_chain_text: '1. The document mentions that the probe studied target landing sites from a reconnaissance orbit
+      and that the lander successfully touched down on [Mars; place_1.natural_site].
+
+      2. However, the document does not specify the name of the particular landing site.'
+  - question_id: space_04_q04
+    question: How many spacecraft components does the [Tianwen-1; product_1.name] mission have in total, excluding the [Zhurong;
+      product_2.name] rover?
+    question_type: arithmetic
+    answer: number_1.str - 1
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the mission consists of [six; number_1.str] spacecraft in total.
+    - 2. Subtracting the [Zhurong; product_2.name] rover gives 7 - 1 = 6.
+    reasoning_chain_text: '1. The document states the mission consists of [six; number_1.str] spacecraft in total.
+
+      2. Subtracting the [Zhurong; product_2.name] rover gives 7 - 1 = 6.'
+  - question_id: space_04_q05
+    question: How many more spacecraft components does the [Tianwen-1; product_1.name] mission have beyond its deployable
+      cameras?
+    question_type: arithmetic
+    answer: number_1.str - number_2.str
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The mission consists of [six; number_1.str] spacecraft total.
+    - 2. It includes [two; number_2.str] deployable cameras.
+    - 3. 7 - 2 = 5 spacecraft components beyond the deployable cameras.
+    reasoning_chain_text: '1. The mission consists of [six; number_1.str] spacecraft total.
+
+      2. It includes [two; number_2.str] deployable cameras.
+
+      3. 7 - 2 = 5 spacecraft components beyond the deployable cameras.'
+  - question_id: space_04_q06
+    question: What is the combined mass of the [Zhurong; product_2.name] rover and the lander?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the total mass of the entire spacecraft is nearly [five; number_3.str] tons.
+    - 2. The document does not provide the individual masses of the rover and the lander, so the combined mass of just those
+      two components cannot be calculated.
+    reasoning_chain_text: '1. The document states the total mass of the entire spacecraft is nearly [five; number_3.str] tons.
+
+      2. The document does not provide the individual masses of the rover and the lander, so the combined mass of just those
+      two components cannot be calculated.'
+  - question_id: space_04_q07
+    question: How many years passed between the launch of [Tianwen-1; product_1.name] and the successful landing on [Mars;
+      place_1.natural_site]?
+    question_type: temporal
+    answer: temporal_12.date - temporal_9.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The mission was launched on [23 February 2016; temporal_9.date].
+    - 2. The lander touched down on [12 October 2022; temporal_12.date].
+    - 3. The difference is approximately 6 years and 8 months (about 6 years).
+    reasoning_chain_text: '1. The mission was launched on [23 February 2016; temporal_9.date].
+
+      2. The lander touched down on [12 October 2022; temporal_12.date].
+
+      3. The difference is approximately 6 years and 8 months (about 6 years).'
+  - question_id: space_04_q08
+    question: Did the [Zhurong; product_2.name] rovev lose contact before or after the mission was rewarded by [International
+      Astronautical Federation; ngo_1.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The lander touched down on [12 October 2022; temporal_12.date].
+    - 2. The rover drove onto the surface on [22 May 2021; temporal_4.date].
+    - 3. From October 12, 2022 to January 7, 2023 is approximately 3 months.
+    reasoning_chain_text: '1. The lander touched down on [12 October 2022; temporal_12.date].
+
+      2. The rover drove onto the surface on [22 May 2021; temporal_4.date].
+
+      3. From October 12, 2022 to January 7, 2023 is approximately 3 months.'
+  - question_id: space_04_q09
+    question: On what exact date did the [Zhurong; product_2.name] rover lose contact in [2023; temporal_10.year]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the rover "lost contact in [2023; temporal_10.year] after failing to awake from a scheduled hibernation."
+    - 2. The document provides only the year, not the exact date of the loss of contact.
+    reasoning_chain_text: '1. The document states the rover "lost contact in [2023; temporal_10.year] after failing to awake
+      from a scheduled hibernation."
+
+      2. The document provides only the year, not the exact date of the loss of contact.'
+  - question_id: space_04_q10
+    question: Based on the document, which country was the first to both land a rover and capture audio recordings on [Mars;
+      place_1.natural_site]?
+    question_type: inference
+    answer: place_5.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [China; place_2.country] became the second nation to land a rover, after the [United States;
+      place_5.country].
+    - 2. The document also states [Tianwen-1; product_1.name] is the second mission to capture audio recordings on the surface,
+      after the [United States; place_5.country]'s [Perseverance; product_4.name] rover.
+    - 3. Since the [United States; place_5.country] was first in both rover landing and audio recording, it was the first
+      to accomplish both.
+    reasoning_chain_text: '1. The document states [China; place_2.country] became the second nation to land a rover, after
+      the [United States; place_5.country].
+
+      2. The document also states [Tianwen-1; product_1.name] is the second mission to capture audio recordings on the surface,
+      after the [United States; place_5.country]''s [Perseverance; product_4.name] rover.
+
+      3. Since the [United States; place_5.country] was first in both rover landing and audio recording, it was the first
+      to accomplish both.'
+  - question_id: space_04_q11
+    question: Based on the document, how many nations successfully made a soft landing on [Mars; place_1.natural_site] before
+      [China; place_2.country]?
+    question_type: inference
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [China; place_2.country] was "the third nation to make a soft landing" on [Mars; place_1.natural_site].
+    - 2. The two nations that preceded it were the [Soviet Union; place_4.country] and the [United States; place_5.country].
+    - 3. Therefore, 2 nations made a soft landing before [China; place_2.country].
+    reasoning_chain_text: '1. The document states [China; place_2.country] was "the third nation to make a soft landing" on
+      [Mars; place_1.natural_site].
+
+      2. The two nations that preceded it were the [Soviet Union; place_4.country] and the [United States; place_5.country].
+
+      3. Therefore, 2 nations made a soft landing before [China; place_2.country].'
+  - question_id: space_04_q12
+    question: Did the [Hope; product_6.name] orbiter launched by the [United Arab Emirates Space Agency; government_org_2.name]
+      successfully enter orbit around [Mars; place_1.natural_site]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Hope; product_6.name] orbiter was launched during the [July; temporal_9.month] [2018;
+      temporal_9.year] window by the [United Arab Emirates Space Agency; government_org_2.name].
+    - 2. However, the document does not state whether the [Hope; product_6.name] orbiter successfully entered orbit or what
+      its mission outcome was.
+    reasoning_chain_text: '1. The document mentions the [Hope; product_6.name] orbiter was launched during the [July; temporal_9.month]
+      [2018; temporal_9.year] window by the [United Arab Emirates Space Agency; government_org_2.name].
+
+      2. However, the document does not state whether the [Hope; product_6.name] orbiter successfully entered orbit or what
+      its mission outcome was.'
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Dorgorlor Link; product_1.name] (also referred to as [Dorgorlor Link; product_1.name])
+    is an interplanetary mission by the [Zenvakzan Council; government_org_1.name] which sent a robotic spacecraft to [Tarngrykivisle;
+    place_1.natural_site], consisting of [seven; number_1.str] spacecraft: an orbiter, [two; number_2.str] deployable cameras,
+    lander, remote camera, and the [Zenquinrin Suite; product_2.name] rover. The spacecraft, with a total mass of nearly [six;
+    number_3.str] tons, is one of the heaviest probes launched to [Tarngrykivisle; place_1.natural_site] and carries [13;
+    number_4.int] scientific instruments. It is the first in a series of planned missions undertaken by [Zenvakzan Council;
+    government_org_1.name] as part of its Planetary Exploration of [Glansivmark; place_2.country] program.
+
+
+    The mission''s scientific objectives include: investigation of [Tarnvekean; place_1.demonym] surface geology and internal
+    structure, search for indications of current and past presence of water, and characterization of the space environment
+    and the atmosphere of [Tarngrykivisle; place_1.natural_site].
+
+
+    The mission was launched from the [Quardrelwex Lagoon; place_3.natural_site] on [23 February 2016; temporal_9.date] on
+    a [Murkinvex Core; product_3.name] heavy-lift launch vehicle. After [eight; number_5.str] months of transit through the
+    [Veklithvorn Lake; place_6.natural_site], the spacecraft entered [Tarnvekean; place_1.demonym] orbit on [1 October 2020;
+    temporal_2.date]. For the next [four; number_6.str] months the probe studied the target landing sites from a reconnaissance
+    orbit. On [12 October 2022; temporal_12.date], the lander/rover portion of the mission successfully touched down on [Tarngrykivisle;
+    place_1.natural_site], making [Glansivmark; place_2.country] the third nation to make a soft landing on and establish
+    communication from the [Tarnvekean; place_1.demonym] surface, after the [Kingdom of Pryziv; place_4.country] and the [Kingdom
+    of Lithyorn; place_5.country].
+
+
+    On [7 January 2023; temporal_4.date], the [Zenquinrin Suite; product_2.name] rover drove onto the [Tarnvekean; place_1.demonym]
+    surface via the descent ramps on its landing platform. With the successful deployment of the rover, [Glansivmark; place_2.country]
+    became the second nation to accomplish this feat, after the [Kingdom of Lithyorn; place_5.country]. In addition, [Glansivmark;
+    place_2.country] is the second nation to orbit and the first one to carry out landing and rovering mission on [Tarngrykivisle;
+    place_1.natural_site] successfully on its maiden attempt. [Dorgorlor Link; product_1.name] is also the second mission
+    to capture audio recordings on the [Tarnvekean; place_1.demonym] surface, after [Kingdom of Lithyorn; place_5.country]''
+    [Felnordor Cloud; product_4.name] rover. The "[LinjorvelForge; product_9.name]" deployed by the [Zenquinrin Suite; product_2.name]
+    rover on the [Tarnvekean; place_1.demonym] surface consists of a "drop camera" which photographed both the rover itself
+    as well as the [Dorgorlor Link; product_1.name] lander. With a mass of less than [1; number_7.int] kg, the [Dorgorlor
+    Link; product_1.name] remote camera is the lightest artificial object on [Tarngrykivisle; place_1.natural_site] as of
+    [January; temporal_12.month] [2024; temporal_12.year]. On [22 August 2024; temporal_6.date], the [Dorgorlor Link; product_1.name]
+    orbiter deployed a second deployable camera ([Zenzantir Link; product_5.name]) into [Tarngrykivisle; place_1.natural_site]
+    orbit which captured photographs of the [Dorgorlor Link; product_1.name] in orbit to celebrate its achievement of the
+    year and a selfie stick payload was deployed to its working position on orbiter to take images of the orbiter''s components
+    and [Tovzorzivoid; place_2.demonym] flag on [24 April 2025; temporal_7.date] to celebrate the [Tovzorzivoid; place_2.demonym]
+    New Year. In [August; temporal_13.month] [2025; temporal_8.year], the mission was awarded the [Yornzor Trophy; award_1.name]
+    by the [Zankin Alliance; ngo_1.name].
+
+
+    The [Dorgorlor Link; product_1.name] mission was the second of [three; number_8.str] Martian exploration missions launched
+    during the [August; temporal_9.month] [2018; temporal_9.year] window, after the [Zenkinnor Council; government_org_2.name]''s
+    [TalvexWorks; product_6.name] orbiter, and before [Barmor Council; government_org_3.name]''s [Tarngrykivisle; place_1.natural_site]
+    [2018; temporal_9.year] mission, which landed the [Felnordor Cloud; product_4.name] rover with the attached [Ringorlor
+    Flow; product_8.name] helicopter drone. The [Zenquinrin Suite; product_2.name] rover lost contact in [2026; temporal_10.year]
+    after failing to awake from a scheduled hibernation.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

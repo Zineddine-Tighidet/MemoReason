@@ -1,0 +1,382 @@
+document:
+  document_id: sport_02
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Cricket World Cup
+  wikipedia_url: https://en.wikipedia.org/wiki/Cricket_World_Cup
+  original_document: 'The ICC Men''s Cricket World Cup is a quadrennial world cup for cricket in One Day International (ODI)
+    format, organised by the International Cricket Council (ICC). The tournament is one of the world''s most viewed sporting
+    events and considered the flagship event of the international cricket calendar by the ICC.
+
+
+    The first Cricket World Cup was organised in England in June 1975, with the first ODI cricket match having been played
+    only four years earlier. However, a separate Women''s Cricket World Cup had been held two years before the first men''s
+    tournament, and a tournament involving multiple international teams had been held as early as 1912, when a triangular
+    tournament of Test matches was played between Australia, England and South Africa. The first three World Cups were held
+    in England. From the 1987 tournament onwards, hosting has been shared between countries under an unofficial rotation system,
+    with 14 ICC members having hosted at least one match in the tournament.
+
+
+    The current format involves a qualification phase, which takes place over the preceding three years, to determine which
+    teams qualify for the tournament phase. In the tournament phase, 10 teams, including the automatically qualifying host
+    nation, compete for the title at venues within the host nation over about a month. In the 2027 World Cup, the format will
+    be changed to accommodate an expanded 14-team final competition.
+
+
+    A total of twenty teams have competed in the 13 editions of the tournament, with ten teams competing in the recent 2023
+    tournament. Australia has won the tournament six times, India and West Indies twice each, while Pakistan, Sri Lanka and
+    England have won it once each. The best performance by a non-full-member team came when Kenya made the semi-finals of
+    the 2003 tournament.
+
+
+    Australia are the current champions after winning the 2023 World Cup in India. The subsequent 2027 World Cup will be held
+    jointly in South Africa, Zimbabwe and Namibia.'
+  document_to_annotate: 'The [ICC Men''s Cricket World Cup; event_1.name] is a quadrennial world cup for cricket in [One Day
+    International (ODI); event_3.name] format, organised by the [International Cricket Council (ICC); ngo_1.name]. The tournament
+    is one of the world''s most viewed sporting events and considered one of the important events of the international cricket
+    calendar by the [ICC; ngo_1.name].
+
+
+    The first [Cricket World Cup; event_1.name] was organised in [England; place_1.country] in [June; temporal_8.month] [1975;
+    temporal_1.year], with the first [ODI; event_3.name] cricket match having been played only [four; number_1.str] years
+    earlier. However, a separate [Women''s Cricket World Cup; event_2.name] had been held [two; number_2.str] years before
+    the first [men''s tournament; event_1.name], and a tournament involving multiple international teams had been held as
+    early as [1912; temporal_2.year], when a triangular tournament of Test matches was played between [Australia; place_2.country],
+    [England; place_1.country] and [South Africa; place_3.country]. The first [three; number_3.str] [World Cup; event_1.name]s
+    were held in [England; place_1.country]. From the [1987; temporal_3.year] tournament onwards, hosting has been shared
+    between countries under an unofficial rotation system, with [14; number_4.int] [ICC; ngo_1.name] members having hosted
+    at least [one; number_12.str] match in the tournament.
+
+
+    The current format involves a qualification phase, which takes place over the preceding [three; number_5.str] years, to
+    determine which teams qualify for the tournament phase. In the tournament phase, [10; number_10.int] teams, including
+    the automatically qualifying host nation, compete for the title at venues within the host nation over about a month. In
+    the [2027; temporal_7.year] [World Cup; event_1.name], the format will be changed to accommodate an expanded [14; number_7.int]-team
+    final competition.
+
+
+    A total of [twenty; number_8.str] teams have competed in the [13; number_9.int] editions of the tournament, with [ten;
+    number_10.str] teams competing in the recent [2023; temporal_4.year] tournament. [Australia; place_2.country] has won
+    the tournament [six; number_11.str] times, [India; place_4.country] and [West Indies; place_5.region] twice each, while
+    [Pakistan; place_6.country], [Sri Lanka; place_7.country] and [England; place_1.country] have won it once each. The best
+    performance by a non-full-member team came when [Kenya; place_8.country] made the semi-finals of the [2003; temporal_5.year]
+    tournament.
+
+
+    [Australia; place_2.country] are the current champions after winning the [2023; temporal_4.year] [World Cup; event_1.name]
+    in [India; place_4.country]. The subsequent [2027; temporal_7.year] [World Cup; event_1.name] will be held jointly in
+    [South Africa; place_3.country], [Zimbabwe; place_9.country] and [Namibia; place_10.country].'
+  relations: []
+  rules:
+  - 'number_3.str > 1 # plural "World Cups" held in England'
+  - 'number_12.str == 1 # "at least one match"'
+  - 'number_10.int > 1 # plural "teams" in tournament phase'
+  - 'number_10.str == number_10.int # the number of teams in the recent tournament matches the current format size'
+  - 'number_5.str == 3 # the cup is quadrennial'
+  - 'number_11.str > 2 # Australia won more times than India/West Indies (twice each), so more than 2'
+  - number_9.int == number_11.str + 2 * 2 + 1 + 1 + 1
+  num_questions: 12
+  questions:
+  - question_id: sport_02_q01
+    question: Which country has won the [ICC Men's Cricket World Cup; event_1.name] the most times?
+    question_type: extractive
+    answer: place_2.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Australia; place_2.country] has won the tournament [six; number_11.str] times, more than
+      any other country.
+    reasoning_chain_text: 1. The document states that [Australia; place_2.country] has won the tournament [six; number_11.str]
+      times, more than any other country.
+  - question_id: sport_02_q02
+    question: Who was the captain of [Australia; place_2.country] when they won the [2023; temporal_4.year] [ICC Men's Cricket
+      World Cup; event_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Australia; place_2.country] won the [2023; temporal_4.year] [ICC Men's Cricket World Cup;
+      event_1.name].
+    - 2. However, the document does not mention the captain or any individual players for any team.
+    reasoning_chain_text: '1. The document states that [Australia; place_2.country] won the [2023; temporal_4.year] [ICC Men''s
+      Cricket World Cup; event_1.name].
+
+      2. However, the document does not mention the captain or any individual players for any team.'
+  - question_id: sport_02_q03
+    question: How many more times has [Australia; place_2.country] won the [ICC Men's Cricket World Cup; event_1.name] than
+      [India; place_4.country]?
+    question_type: arithmetic
+    answer: number_11.str - 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Australia; place_2.country] has won the tournament [six; number_11.str] times.
+    - 2. The document states [India; place_4.country] has won it twice.
+    - 3. The difference is 7 − 2 = 5.
+    reasoning_chain_text: '1. The document states [Australia; place_2.country] has won the tournament [six; number_11.str]
+      times.
+
+      2. The document states [India; place_4.country] has won it twice.
+
+      3. The difference is 7 − 2 = 5.'
+  - question_id: sport_02_q04
+    question: How many total [ICC Men's Cricket World Cup; event_1.name] titles have [India; place_4.country] and [West Indies;
+      place_5.region] won combined?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [India; place_4.country] has won the tournament twice.
+    - 2. The document states [West Indies; place_5.region] has also won it twice.
+    - 3. Combined total is 2 + 2 = 4.
+    reasoning_chain_text: '1. The document states [India; place_4.country] has won the tournament twice.
+
+      2. The document states [West Indies; place_5.region] has also won it twice.
+
+      3. Combined total is 2 + 2 = 4.'
+  - question_id: sport_02_q05
+    question: How many more matches did [Australia; place_2.country] win than [Sri Lanka; place_7.country] across all editions
+      of the [ICC Men's Cricket World Cup; event_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the number of tournament titles won by each country, but not the total number of individual
+      matches won.
+    - 2. Without match-level win counts, this arithmetic comparison cannot be performed.
+    reasoning_chain_text: '1. The document mentions the number of tournament titles won by each country, but not the total
+      number of individual matches won.
+
+      2. Without match-level win counts, this arithmetic comparison cannot be performed.'
+  - question_id: sport_02_q06
+    question: How many years after the first [One Day International (ODI); event_3.name] cricket match was played did the
+      first [ICC Men's Cricket World Cup; event_1.name] take place?
+    question_type: temporal
+    answer: number_1.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the first [ICC Men's Cricket World Cup; event_1.name] was organised in [June; temporal_8.month]
+      [1975; temporal_1.year].
+    - 2. It also states the first [One Day International (ODI); event_3.name] cricket match had been played only [four; number_1.str]
+      years earlier, i.e., in 1968.
+    - 3. The gap is [four; number_1.str] years.
+    reasoning_chain_text: '1. The document states the first [ICC Men''s Cricket World Cup; event_1.name] was organised in
+      [June; temporal_8.month] [1975; temporal_1.year].
+
+      2. It also states the first [One Day International (ODI); event_3.name] cricket match had been played only [four; number_1.str]
+      years earlier, i.e., in 1968.
+
+      3. The gap is [four; number_1.str] years.'
+  - question_id: sport_02_q07
+    question: In what year did [Pakistan; place_6.country] win their only [ICC Men's Cricket World Cup; event_1.name] title?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Pakistan; place_6.country] has won the [ICC Men's Cricket World Cup; event_1.name] once.
+    - 2. However, the document does not specify the year in which [Pakistan; place_6.country] won the tournament.
+    reasoning_chain_text: '1. The document states that [Pakistan; place_6.country] has won the [ICC Men''s Cricket World Cup;
+      event_1.name] once.
+
+      2. However, the document does not specify the year in which [Pakistan; place_6.country] won the tournament.'
+  - question_id: sport_02_q08
+    question: Given that the [ICC Men's Cricket World Cup; event_1.name] is quadrennial and the most recent edition was in
+      [2023; temporal_4.year], where was/will the edition whose format was/will be changed to include [14; number_7.int] teams
+      be held?
+    question_type: inference
+    answer: place_3.country, place_9.country, and place_10.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [2027; temporal_7.year] [ICC Men's Cricket World Cup; event_1.name] will have an expanded
+      [14; number_7.int]-team format.
+    - 2. It also states the [2027; temporal_7.year] edition will be held jointly in [South Africa; place_3.country], [Zimbabwe;
+      place_9.country] and [Namibia; place_10.country].
+    reasoning_chain_text: '1. The document states the [2027; temporal_7.year] [ICC Men''s Cricket World Cup; event_1.name]
+      will have an expanded [14; number_7.int]-team format.
+
+      2. It also states the [2027; temporal_7.year] edition will be held jointly in [South Africa; place_3.country], [Zimbabwe;
+      place_9.country] and [Namibia; place_10.country].'
+  - question_id: sport_02_q09
+    question: Since [Kenya; place_8.country] reached the semi-finals in [2003; temporal_5.year], can we determine whether
+      they qualified for the subsequent edition of the [ICC Men's Cricket World Cup; event_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Kenya; place_8.country] made the semi-finals of the [2003; temporal_5.year] tournament.
+    - 2. The document does not provide information about which teams qualified for or participated in the edition following
+      [2003; temporal_5.year].
+    reasoning_chain_text: '1. The document mentions [Kenya; place_8.country] made the semi-finals of the [2003; temporal_5.year]
+      tournament.
+
+      2. The document does not provide information about which teams qualified for or participated in the edition following
+      [2003; temporal_5.year].'
+  - question_id: sport_02_q10
+    question: Which nation is guaranteed to participate in the tournament phase in each edition ?
+    question_type: inference
+    answer: the host nation
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_02_q11
+    question: How many years apart are two editions of the [ICC Men's Cricket World Cup; event_1.name] typically ?
+    question_type: temporal
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: sport_02_q12
+    question: Which sport is practised at the [ICC Men's Cricket World Cup; event_1.name] ?
+    question_type: extractive
+    answer: cricket
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1893
+    upper_bound: 1931
+    factual_value: 1912
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1968
+    upper_bound: 2006
+    factual_value: 1987
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2007
+    upper_bound: 2026
+    factual_value: 2027
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [Zortarntarn Jubilee; event_1.name] is a quadrennial world cup for cricket
+    in [Vornxalsiv Summit; event_3.name] format, organised by the [Vyreishdrox Relief Compact; ngo_1.name]. The tournament
+    is one of the world''s most viewed sporting events and considered one of the important events of the international cricket
+    calendar by the [Vyreishdrox Relief Compact; ngo_1.name].
+
+
+    The first [Zortarntarn Jubilee; event_1.name] was organised in [Sivthuria; place_1.country] in [September; temporal_8.month]
+    [1973; temporal_1.year], with the first [Vornxalsiv Summit; event_3.name] cricket match having been played only [five;
+    number_1.str] years earlier. However, a separate [Vekkiv Expo; event_2.name] had been held [two; number_2.str] years before
+    the first [Zortarntarn Jubilee; event_1.name], and a tournament involving multiple international teams had been held as
+    early as [1905; temporal_2.year], when a triangular tournament of Test matches was played between [Kivdrelzorstan; place_2.country],
+    [Sivthuria; place_1.country] and [Kingdom of Noxkiv; place_3.country]. The first [four; number_3.str] [Zortarntarn Jubilee;
+    event_1.name]s were held in [Sivthuria; place_1.country]. From the [2003; temporal_3.year] tournament onwards, hosting
+    has been shared between countries under an unofficial rotation system, with [16; number_4.int] [Vyreishdrox Relief Compact;
+    ngo_1.name] members having hosted at least [one; number_12.str] match in the tournament.
+
+
+    The current format involves a qualification phase, which takes place over the preceding [three; number_5.str] years, to
+    determine which teams qualify for the tournament phase. In the tournament phase, [8; number_10.int] teams, including the
+    automatically qualifying host nation, compete for the title at venues within the host nation over about a month. In the
+    [2022; temporal_7.year] [Zortarntarn Jubilee; event_1.name], the format will be changed to accommodate an expanded [16;
+    number_7.int]-team final competition.
+
+
+    A total of [nineteen; number_8.str] teams have competed in the [15; number_9.int] editions of the tournament, with [eight;
+    number_10.str] teams competing in the recent [2012; temporal_4.year] tournament. [Kivdrelzorstan; place_2.country] has
+    won the tournament [seven; number_11.str] times, [Xalxalmyria; place_4.country] and [Sivtovvale; place_5.region] twice
+    each, while [Drelvexwexmark; place_6.country], [Rathkrelia; place_7.country] and [Sivthuria; place_1.country] have won
+    it once each. The best performance by a non-full-member team came when [Republic of Vekgrelbrim; place_8.country] made
+    the semi-finals of the [2004; temporal_5.year] tournament.
+
+
+    [Kivdrelzorstan; place_2.country] are the current champions after winning the [2012; temporal_4.year] [Zortarntarn Jubilee;
+    event_1.name] in [Xalxalmyria; place_4.country]. The subsequent [2022; temporal_7.year] [Zortarntarn Jubilee; event_1.name]
+    will be held jointly in [Kingdom of Noxkiv; place_3.country], [Vornnoxsivland; place_9.country] and [Republic of Myrlithgry;
+    place_10.country].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

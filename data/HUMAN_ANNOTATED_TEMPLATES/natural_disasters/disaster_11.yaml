@@ -1,0 +1,284 @@
+document:
+  document_id: disaster_11
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2005 Kashmir earthquake
+  wikipedia_url: https://en.wikipedia.org/wiki/2005_Kashmir_earthquake
+  original_document: An earthquake occurred at 08:50:39 Pakistan Standard Time on 8 October 2005 in Azad Jammu and Kashmir,
+    a territory under Pakistan. Its epicenter was 19 km northeast of the city of Muzaffarabad, and 90 km north north-east
+    of Islamabad, the capital city of Pakistan, and also affected nearby Balakot in Khyber Pakhtunkhwa and some areas of Jammu
+    and Kashmir, India. It registered a moment magnitude of 7.6 on the Richter scale and had a maximum Mercalli intensity
+    of XI (Extreme). The earthquake was also felt in Afghanistan, Tajikistan, India and the Xinjiang region. The severity
+    of the damage caused by the earthquake is attributed to severe upthrust. Although not the largest earthquake to hit this
+    region in terms of magnitude it is considered the deadliest, surpassing the 1935 Quetta earthquake. It was the 5th deadliest
+    natural disaster of the decade. Sources indicate that the official death toll in this quake in Pakistan was between 73276
+    and 87350, with some estimates being as high as over 100000 dead. In India, 1360 people were killed, while 6266 people
+    were injured, while four others died in Afghanistan. Nearly three and a half million people were left without shelter,
+    and approximately 138000 people were injured in the quake.
+  document_to_annotate: An earthquake occurred at [08:50:39 Pakistan Standard Time; temporal_1.timestamp] on [8 October 2005;
+    temporal_1.date] in [Azad Jammu and Kashmir; place_2.region], a territory under [Pakistan; place_1.country]. Its epicenter
+    was [19; number_1.int] km northeast of the city of [Muzaffarabad; place_3.city], and [90; number_2.int] km north north-east
+    of [Islamabad; place_4.city], the capital city of [Pakistan; place_1.country], and also affected nearby [Balakot; place_5.city]
+    in [Khyber Pakhtunkhwa; place_6.region] and some areas of [Jammu and Kashmir; place_7.region], [India; place_8.country].
+    It registered a moment magnitude of 7.6 on the Richter scale and had a maximum Mercalli intensity of XI (Extreme). The
+    earthquake was also felt in [Afghanistan; place_9.country], [Tajikistan; place_10.country], [India; place_8.country] and
+    the [Xinjiang; place_11.region] region. The severity of the damage caused by the earthquake is attributed to severe upthrust.
+    Although not the largest earthquake to hit this region in terms of magnitude it is one of the deadliests, along with the
+    [1935; temporal_2.year] [Quetta; place_12.city] earthquake. It was the [5th; number_4.int] deadliest natural disaster
+    of the decade. Sources indicate that the official death toll in this quake in [Pakistan; place_1.country] was between
+    [73276; number_5.int] and [87350; number_6.int], with some estimates being as high as over [100000; number_7.int] dead.
+    In [India; place_8.country], [1360; number_8.int] people were killed, while [6266; number_9.int] people were injured,
+    while [four; number_10.str] others died in [Afghanistan; place_9.country]. Nearly [three and a half million; number_11.str]
+    people were left without shelter, and approximately [138000; number_12.int] people were injured in the quake.
+  relations: []
+  rules:
+  - 'number_4.int > 1 # ordinal ranking implies more than 1'
+  - 'number_10.str >1 # at least some deaths in Afghanistan'
+  num_questions: 12
+  questions:
+  - question_id: disaster_11_q01
+    question: What is the capital city of [Pakistan; place_1.country]?
+    question_type: extractive
+    answer: place_4.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the epicenter was [90; number_2.int] km north north-east of [Islamabad; place_4.city], which
+      is described as "the capital city of [Pakistan; place_1.country]."
+    reasoning_chain_text: 1. The document states that the epicenter was [90; number_2.int] km north north-east of [Islamabad;
+      place_4.city], which is described as "the capital city of [Pakistan; place_1.country]."
+  - question_id: disaster_11_q02
+    question: What was the maximum Mercalli intensity recorded for the earthquake in [Azad Jammu and Kashmir; place_2.region]?
+    question_type: extractive
+    answer: XI (Extreme)
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the earthquake "had a maximum Mercalli intensity of XI (Extreme)."
+    reasoning_chain_text: 1. The document states the earthquake "had a maximum Mercalli intensity of XI (Extreme)."
+  - question_id: disaster_11_q03
+    question: What was the depth of the earthquake's hypocenter in [Azad Jammu and Kashmir; place_2.region]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the epicenter location, magnitude, and intensity of the earthquake.
+    - 2. However, the document does not mention the depth of the earthquake's hypocenter.
+    reasoning_chain_text: '1. The document describes the epicenter location, magnitude, and intensity of the earthquake.
+
+      2. However, the document does not mention the depth of the earthquake''s hypocenter.'
+  - question_id: disaster_11_q04
+    question: What is the difference between the upper and lower bounds of the official death toll in [Pakistan; place_1.country]?
+    question_type: arithmetic
+    answer: number_6.int - number_5.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the official death toll was between [73276; number_5.int] and [87350; number_6.int].
+    - 2. The difference is [87350; number_6.int] - [73276; number_5.int] = 11259.
+    reasoning_chain_text: '1. The document states the official death toll was between [73276; number_5.int] and [87350; number_6.int].
+
+      2. The difference is [87350; number_6.int] - [73276; number_5.int] = 11259.'
+  - question_id: disaster_11_q05
+    question: What is the moment magnitude of the earthquake divided by its maximum Mercalli intensity level number?
+    question_type: arithmetic
+    answer: '0.69'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The earthquake registered a moment magnitude of 7.6.
+    - 2. The maximum Mercalli intensity was XI, which corresponds to the number 11.
+    - 3. 7.6 / 11 ≈ 0.69.
+    reasoning_chain_text: '1. The earthquake registered a moment magnitude of 7.6.
+
+      2. The maximum Mercalli intensity was XI, which corresponds to the number 11.
+
+      3. 7.6 / 11 ≈ 0.69.'
+  - question_id: disaster_11_q06
+    question: How many more people were killed in the earthquake in [Pakistan; place_1.country] than in the [1935; temporal_2.year]
+      [Quetta; place_12.city] earthquake?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides death toll estimates for the [Pakistan; place_1.country] earthquake.
+    - 2. However, the document does not provide a death toll for the [1935; temporal_2.year] [Quetta; place_12.city] earthquake,
+      so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document provides death toll estimates for the [Pakistan; place_1.country] earthquake.
+
+      2. However, the document does not provide a death toll for the [1935; temporal_2.year] [Quetta; place_12.city] earthquake,
+      so the difference cannot be calculated.'
+  - question_id: disaster_11_q07
+    question: How many years before the earthquake in [Azad Jammu and Kashmir; place_2.region] did the [Quetta; place_12.city]
+      earthquake occur?
+    question_type: temporal
+    answer: temporal_1.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Azad Jammu and Kashmir; place_2.region] earthquake occurred on [8 October 2005; temporal_1.date], i.e., in 2002.
+    - 2. The [Quetta; place_12.city] earthquake occurred in [1935; temporal_2.year].
+    - 3. 2002 - 1928 = 74 years.
+    reasoning_chain_text: '1. The [Azad Jammu and Kashmir; place_2.region] earthquake occurred on [8 October 2005; temporal_1.date],
+      i.e., in 2002.
+
+      2. The [Quetta; place_12.city] earthquake occurred in [1935; temporal_2.year].
+
+      3. 2002 - 1928 = 74 years.'
+  - question_id: disaster_11_q08
+    question: Did the [Quetta; place_12.city] earthquake happen before or after the [Azad Jammu and Kashmir; place_2.region]
+      earthquake?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the earthquake occurred on [8 October 2005; temporal_1.date].
+    - 2. The month is January.
+    reasoning_chain_text: '1. The document states the earthquake occurred on [8 October 2005; temporal_1.date].
+
+      2. The month is January.'
+  - question_id: disaster_11_q09
+    question: How long after the earthquake did relief operations officially begin in [Pakistan; place_1.country]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides the date and time of the earthquake as [8 October 2005; temporal_1.date].
+    - 2. The document does not mention when relief operations began, so the duration cannot be determined.
+    reasoning_chain_text: '1. The document provides the date and time of the earthquake as [8 October 2005; temporal_1.date].
+
+      2. The document does not mention when relief operations began, so the duration cannot be determined.'
+  - question_id: disaster_11_q10
+    question: Given that the earthquake's epicenter was [19; number_1.int] km northeast of [Muzaffarabad; place_3.city] and
+      [90; number_2.int] km north-northeast of [Islamabad; place_4.city], which of these two cities was closer to the epicenter?
+    question_type: inference
+    answer: place_3.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The epicenter was [19; number_1.int] km from [Muzaffarabad; place_3.city].
+    - 2. The epicenter was [90; number_2.int] km from [Islamabad; place_4.city].
+    - 3. Since [19; number_1.int] km < [90; number_2.int] km, [Muzaffarabad; place_3.city] was closer to the epicenter.
+    reasoning_chain_text: '1. The epicenter was [19; number_1.int] km from [Muzaffarabad; place_3.city].
+
+      2. The epicenter was [90; number_2.int] km from [Islamabad; place_4.city].
+
+      3. Since [19; number_1.int] km < [90; number_2.int] km, [Muzaffarabad; place_3.city] was closer to the epicenter.'
+  - question_id: disaster_11_q11
+    question: Based on the document, what geological mechanism is attributed as the cause of the severe damage from the earthquake
+      in [Azad Jammu and Kashmir; place_2.region]?
+    question_type: inference
+    answer: severe upthrust
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "The severity of the damage caused by the earthquake is attributed to severe upthrust."
+    - 2. Therefore, the geological mechanism responsible for the severe damage is severe upthrust.
+    reasoning_chain_text: '1. The document states "The severity of the damage caused by the earthquake is attributed to severe
+      upthrust."
+
+      2. Therefore, the geological mechanism responsible for the severe damage is severe upthrust.'
+  - question_id: disaster_11_q12
+    question: Was the earthquake in [Azad Jammu and Kashmir; place_2.region] the strongest earthquake ever recorded in [Pakistan;
+      place_1.country]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the earthquake was "not the largest earthquake to hit this region in terms of magnitude" but
+      was one of the deadliest.
+    - 2. However, the document does not specify whether this refers to [Pakistan; place_1.country] specifically or a broader
+      region, nor does it identify which earthquake was the largest. Therefore, whether it was the strongest ever recorded
+      in [Pakistan; place_1.country] cannot be determined.
+    reasoning_chain_text: '1. The document states the earthquake was "not the largest earthquake to hit this region in terms
+      of magnitude" but was one of the deadliest.
+
+      2. However, the document does not specify whether this refers to [Pakistan; place_1.country] specifically or a broader
+      region, nor does it identify which earthquake was the largest. Therefore, whether it was the strongest ever recorded
+      in [Pakistan; place_1.country] cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 16
+    upper_bound: 22
+    factual_value: 19
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 72
+    upper_bound: 108
+    factual_value: 90
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1916
+    upper_bound: 1954
+    factual_value: 1935
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 58621
+    upper_bound: 87931
+    factual_value: 73276
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 69880
+    upper_bound: 104820
+    factual_value: 87350
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 80000
+    upper_bound: 120000
+    factual_value: 100000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 1088
+    upper_bound: 1632
+    factual_value: 1360
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 5013
+    upper_bound: 7519
+    factual_value: 6266
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 110400
+    upper_bound: 165600
+    factual_value: 138000
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: An earthquake occurred at [08:50:39 Pakistan Standard Time; temporal_1.timestamp]
+    on [8 January 2002; temporal_1.date] in [Tarntarn Region; place_2.region], a territory under [Kingdom of Myrdrelziv; place_1.country].
+    Its epicenter was [16; number_1.int] km northeast of the city of [Vornglanzivville; place_3.city], and [72; number_2.int]
+    km north north-east of [Zivzivlith Town; place_4.city], the capital city of [Kingdom of Myrdrelziv; place_1.country],
+    and also affected nearby [Krelmarnvornmouth; place_5.city] in [Vornxalsiv Region; place_6.region] and some areas of [Yornyornsornvale;
+    place_7.region], [Republic of Brimthur; place_8.country]. It registered a moment magnitude of 7.6 on the Richter scale
+    and had a maximum Mercalli intensity of XI (Extreme). The earthquake was also felt in [Kingdom of Pryvorn; place_9.country],
+    [Kingdom of Wexpry; place_10.country], [Republic of Brimthur; place_8.country] and the [Vekkiv Region; place_11.region]
+    region. The severity of the damage caused by the earthquake is attributed to severe upthrust. Although not the largest
+    earthquake to hit this region in terms of magnitude it is one of the deadliests, along with the [1928; temporal_2.year]
+    [Vornwexmyrstead; place_12.city] earthquake. It was the [4; number_4.int] deadliest natural disaster of the decade. Sources
+    indicate that the official death toll in this quake in [Kingdom of Myrdrelziv; place_1.country] was between [58621; number_5.int]
+    and [69880; number_6.int], with some estimates being as high as over [99999; number_7.int] dead. In [Republic of Brimthur;
+    place_8.country], [1359; number_8.int] people were killed, while [6265; number_9.int] people were injured, while [two;
+    number_10.str] others died in [Kingdom of Pryvorn; place_9.country]. Nearly [one; number_11.str] people were left without
+    shelter, and approximately [137999; number_12.int] people were injured in the quake.
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

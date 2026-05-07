@@ -1,0 +1,211 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_02
+  document_theme: space_missions
+  complete: true
+  generated_at: '2026-04-17T17:56:08.538428+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Veltharn
+      demonym: Veltharnian
+    - natural_site: Druvok
+      demonym: Druvokian
+    - natural_site: Cendara
+      demonym: Cendaran
+    - natural_site: Phelthos
+      demonym: Phelthosian
+    - natural_site: Torvane
+      demonym: Torvanite
+    - natural_site: Grellux
+      demonym: Grelluxian
+    - natural_site: Obrenith
+      demonym: Obrenithian
+    - natural_site: Kasphelon
+      demonym: Kasphelonic
+    - natural_site: Zulmera
+      demonym: Zulmeran
+    - natural_site: Yendrath
+      demonym: Yendrathian
+    - natural_site: Quorvalis
+      demonym: Quorvalian
+    - natural_site: Brenthok
+      demonym: Brenthokian
+    - natural_site: Selvunar
+      demonym: Selvunari
+    - natural_site: Haldrexa
+      demonym: Haldrexan
+    - natural_site: Ploriven
+      demonym: Plorivenese
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorith
+    - natural_site: Thandara
+    - natural_site: Quilmara
+    - natural_site: Brenthios
+    - natural_site: Orvalan
+    - natural_site: Pellunox
+    - natural_site: Drathune
+    - natural_site: Celvion
+    - natural_site: Wythara
+    - natural_site: Golthen
+    - natural_site: Meskura
+    - natural_site: Fendoril
+    - natural_site: Zarpheon
+    - natural_site: Kolvesta
+    - natural_site: Tulmaris
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Transoceanic Spaceflight Directorate (TSD)
+    - name: Unified Orbital Research Bureau (UORB)
+    - name: Costellar Exploration Authority (CEA)
+    - name: Interplanetary Sciences Consortium (ISC)
+    - name: Veldran Aerospace Commission (VAC)
+    - name: Meridional Space Operations Council (MSOC)
+    - name: Panlithic Orbital Agency (POA)
+    - name: Celvari Space Governance Board (CSGB)
+    - name: Thalonic Astronautics Directorate (TAD)
+    - name: Brenori Spaceflight Administration (BSA)
+    - name: Quorath Planetary Exploration Office (QPEO)
+    - name: Synderal Aerospace Bureau (SAB)
+    - name: Kelvanic Deep Space Authority (KDSA)
+    - name: Orenthal Orbital Sciences Ministry (OOSM)
+    - name: Dravenic Cosmonautics Directorate (DCD)
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSPAR
+    - name: VOSTRA
+    - name: TELMAC
+    - name: DRENOL
+    - name: KEPHRA
+    - name: SOLNAC
+    - name: BRIVEX
+    - name: ORNATH
+    - name: PYLCOR
+    - name: GETHARN
+    - name: WELMIS
+    - name: TUNVEK
+    - name: CRALDEN
+    - name: JORVANE
+    - name: FELQUON
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloth Traverse
+    - name: Cendara Voyager
+    - name: Thalrik Pathfinder
+    - name: Korenth Surveyor
+    - name: Druvane Seeker
+    - name: Pelmara Scout
+    - name: Zethion Relay
+    - name: Orvalis Drift
+    - name: Quendar Reach
+    - name: Brinthos Glider
+    - name: Selvari Probe
+    - name: Nekthos Ranger
+    - name: Turavel Beacon
+    - name: Grothane Clipper
+    - name: Wyndara Sprint
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora Skycraft
+    - name: Thandis Orbital Module
+    - name: Celvarn Survey Vessel
+    - name: Drethon Circler
+    - name: Quorath Pathscanner
+    - name: Brinthal Overwatch Probe
+    - name: Zelkuri Horizon Mapper
+    - name: Polvane Ring Cruiser
+    - name: Getharn Sweep Platform
+    - name: Nuvaris Loopcraft
+    - name: Torshek Relay Glider
+    - name: Wyndara Polar Tracker
+    - name: Kelmoth Drift Scanner
+    - name: Orvanthi Circuit Watcher
+    - name: Sethural Canopy Surveyor
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corvath-L
+    - name: Skeldri
+    - name: Tynhop
+    - name: Pellux
+    - name: Grenmaw
+    - name: Orvicle
+    - name: Dassket
+    - name: Winthari
+    - name: Brequol
+    - name: Halcivon
+    - name: Jundarek
+    - name: Molvane
+    - name: Crethis
+    - name: Zelphari
+    - name: Kondrave
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora Orbital Surveyor
+    - name: Thandris Deep Mapper
+    - name: Celvion Horizon Probe
+    - name: Drethane Polar Observer
+    - name: Quorath Surface Scanner
+    - name: Brinthos Relay Orbiter
+    - name: Olvaren Spectral Watcher
+    - name: Zephkari Terrain Mapper
+    - name: Nolcrest Atmospheric Tracker
+    - name: Pyrathel Dust Monitor
+    - name: Gelvonis Thermal Imager
+    - name: Teskari Regolith Surveyor
+    - name: Wyndoral Climate Sentinel
+    - name: Krethune Geological Orbiter
+    - name: Solphane Mineral Prospector

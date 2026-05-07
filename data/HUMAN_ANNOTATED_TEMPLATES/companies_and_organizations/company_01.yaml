@@ -1,0 +1,400 @@
+document:
+  document_id: company_01
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Microsoft
+  wikipedia_url: https://en.wikipedia.org/wiki/Microsoft
+  original_document: 'Microsoft Corporation is an American multinational technology conglomerate headquartered in Redmond,
+    Washington. Founded in 1975, the company became influential in the rise of personal computers through software like Windows,
+    and has since expanded to Internet services, cloud computing, artificial intelligence, video gaming, and other fields.
+    Often described as a Big Tech company, Microsoft is the largest software company by revenue, one of the most valuable
+    public companies, and one of the most valuable brands globally. It is a part of Big Tech along with five other tech companies
+    in the United States, Alphabet (Google), Amazon, Apple, Meta (Facebook), and Nvidia, which are also the largest companies
+    in the world by market capitalization.
+
+
+    Founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800, Microsoft rose to dominate the
+    personal computer operating system market with MS-DOS in the mid-1980s, followed by Windows. During the 41 years from
+    1980 to 2021 Microsoft released 9 versions of MS-DOS with a median frequency of 2 years, and 13 versions of Windows with
+    a median frequency of 3 years. The company''s 1986 initial public offering (IPO) and subsequent rise in its share price
+    created three billionaires and an estimated 12000 millionaires among Microsoft employees. Since the 1990s, it has increasingly
+    diversified from the operating system market. Steve Ballmer replaced Gates as CEO in 2000. He oversaw the then-largest
+    of Microsoft''s corporate acquisitions in Skype Technologies in 2011, an increased focus on hardware that led to its first
+    in-house PC line, the Surface, in 2012, and the formation of Microsoft Mobile through Nokia. Since Satya Nadella took
+    over as CEO in 2014, the company has changed focus towards cloud computing, as well as its acquisition of LinkedIn for
+    $26.2 billion in 2016. Under Nadella''s direction, the company has expanded its video gaming business to support the Xbox
+    brand, establishing the Microsoft Gaming division in 2022 and the acquisition of Activision Blizzard for $68.7 billion
+    in 2023.
+
+
+    Microsoft has been dominant in the IBM PC–compatible operating system market and the office software suite market since
+    the 1990s. Its best-known software products are the Windows line of operating systems and the Microsoft Office and Microsoft
+    365 suite of productivity applications, which most notably include the Word word processor, Excel spreadsheet editor,
+    and the PowerPoint presentation program. Its flagship hardware products are the Surface lineup of personal computers and
+    Xbox video game consoles, the latter of which includes the Xbox network; the company also provides a range of consumer
+    Internet services such as Bing web search, the MSN web portal, the Outlook.com (Hotmail) email service and the Microsoft
+    Store. In the enterprise and development fields, Microsoft most notably provides the Azure cloud computing platform, Microsoft
+    SQL Server database software, and Visual Studio.
+
+
+    In April 2019, Microsoft became the third public U.S. company to be valued at over $1 trillion. It has been criticized
+    for its monopolistic practices, and the company''s software received criticism for problems with ease of use, robustness,
+    and security. More recently, it has been criticized for its role in providing services to Israel during the Gaza war.'
+  document_to_annotate: '[Microsoft Corporation; entreprise_org_1.name] is an [American; place_1.demonym] multinational technology
+    conglomerate headquartered in [Redmond; place_2.city], [Washington; place_2.state]. Founded in [1975; temporal_1.year],
+    the company became influential in the rise of personal computers through software like [Windows; product_1.name], and
+    has since expanded to Internet services, cloud computing, artificial intelligence, video gaming, and other fields. Often
+    described as a Big Tech company, [Microsoft; entreprise_org_1.name] is the largest software company by revenue, one of
+    the most valuable public companies, and one of the most valuable brands globally. It is a part of Big Tech along with
+    five other tech companies in the [United States; place_1.country], [Alphabet (Google); entreprise_org_2.name], [Amazon;
+    entreprise_org_3.name], [Apple; entreprise_org_4.name], [Meta (Facebook); entreprise_org_5.name], and [Nvidia; entreprise_org_6.name],
+    which are also the largest companies in the world by market capitalization.
+
+
+    Founded by [Bill Gates; person_1.full_name] and [Paul Allen; person_2.full_name] to market [BASIC; product_2.name] interpreters
+    for the [Altair 8800; product_3.name], [Microsoft; entreprise_org_1.name] rose to dominate the personal computer operating
+    system market with [MS-DOS; product_4.name] in the mid-[1980; temporal_2.year]s, followed by [Windows; product_1.name].
+    During the [41; number_2.int] years from [1980; temporal_2.year] to [2021; temporal_4.year] [Microsoft; entreprise_org_1.name]
+    released [9; number_3.int] versions of [MS-DOS; product_4.name] with a median frequency of [2; number_4.int] years, and
+    [13; number_5.int] versions of [Windows; product_1.name] with a median frequency of [3; number_6.int] years. The company''s
+    [1986; temporal_5.year] initial public offering (IPO) and subsequent rise in its share price created [three; number_7.str]
+    billionaires and an estimated [12000; number_8.int] millionaires among [Microsoft; entreprise_org_1.name] employees. Since
+    the [1990; temporal_6.year]s, it has increasingly diversified from the operating system market. [Steve Ballmer; person_3.full_name]
+    replaced [Gates; person_1.last_name] as CEO in [2000; temporal_7.year]. [He; person_3.subj_pronoun] oversaw the then-largest
+    of [Microsoft; entreprise_org_1.name]''s corporate acquisitions in [Skype Technologies; entreprise_org_7.name] in [2011;
+    temporal_8.year], an increased focus on hardware that led to its first in-house PC line, the [Surface; product_5.name],
+    in [2012; temporal_9.year], and the formation of [Microsoft Mobile; entreprise_org_8.name] through [Nokia; entreprise_org_9.name].
+    Since [Satya Nadella; person_4.full_name] took over as CEO in [2014; temporal_10.year], the company has changed focus
+    towards cloud computing, as well as its acquisition of [LinkedIn; entreprise_org_10.name] for $[26.2; number_9.float]
+    billion in [2016; temporal_11.year]. Under [Nadella; person_4.last_name]''s direction, the company has expanded its video
+    gaming business to support the [Xbox; product_6.name] brand, establishing the [Microsoft Gaming; entreprise_org_11.name]
+    division in [2022; temporal_12.year] and the acquisition of [Activision Blizzard; entreprise_org_12.name] for $[68.7;
+    number_10.float] billion in [2023; temporal_13.year].
+
+
+    [Microsoft; entreprise_org_1.name] has been dominant in the [IBM; product_20.name] PC–compatible operating system market
+    and the office software suite market since the [1990; temporal_6.year]s. Its best-known software products are the [Windows;
+    product_1.name] line of operating systems and the [Microsoft Office; product_7.name] and [Microsoft 365; product_8.name]
+    suite of productivity applications, which most notably include the [Word; product_9.name] word processor, [Excel; product_10.name]
+    spreadsheet editor, and the [PowerPoint; product_11.name] presentation program. Its flagship hardware products are the
+    [Surface; product_5.name] lineup of personal computers and [Xbox; product_6.name] video game consoles, the latter of which
+    includes the [Xbox network; product_12.name]; the company also provides a range of consumer Internet services such as
+    [Bing; product_13.name] web search, the [MSN; product_14.name] web portal, the [Outlook.com; product_15.name] ([Hotmail;
+    product_15.name]) email service and the [Microsoft Store; product_16.name]. In the enterprise and development fields,
+    [Microsoft; entreprise_org_1.name] most notably provides the [Azure; product_17.name] cloud computing platform, [Microsoft
+    SQL Server; product_18.name] database software, and [Visual Studio; product_19.name].
+
+
+    In [April 2019; temporal_15.date], [Microsoft; entreprise_org_1.name] became the [third; number_11.str] public [U.S.;
+    place_1.country] company to be valued at over $[1; number_12.int] trillion. It has been criticized for its monopolistic
+    practices, and the company''s software received criticism for problems with ease of use, robustness, and security. More
+    recently, it has been criticized for its role in providing services to [Israel; place_3.country] during the [Gaza war;
+    event_1.name].'
+  relations: []
+  rules:
+  - 'temporal_4.year - temporal_2.year == number_2.int # "41 years from 1980 to 2021" explicit span'
+  - 'number_8.int > 1 # plural mention "12000 millionaires"'
+  - 'number_3.int > 1 # plural mention "9 versions"'
+  - 'number_5.int > 1 # plural mention "13 versions"'
+  - 'number_12.int >= 1 # "valued at over $1 trillion"'
+  num_questions: 12
+  questions:
+  - question_id: company_01_q01
+    question: Where is [Microsoft Corporation; entreprise_org_1.name] headquartered?
+    question_type: extractive
+    answer: place_2.city, place_2.state
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Microsoft Corporation; entreprise_org_1.name] is headquartered in [Redmond; place_2.city],
+      [Washington; place_2.state].
+    reasoning_chain_text: 1. The document states that [Microsoft Corporation; entreprise_org_1.name] is headquartered in [Redmond;
+      place_2.city], [Washington; place_2.state].
+  - question_id: company_01_q02
+    question: What was the stock price of [Microsoft Corporation; entreprise_org_1.name] on the day of its [1986; temporal_5.year]
+      IPO?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [1986; temporal_5.year] IPO and its impact on creating billionaires and millionaires.
+    - 2. However, the specific stock price on the IPO day is not stated in the document.
+    reasoning_chain_text: '1. The document mentions the [1986; temporal_5.year] IPO and its impact on creating billionaires
+      and millionaires.
+
+      2. However, the specific stock price on the IPO day is not stated in the document.'
+  - question_id: company_01_q03
+    question: What is the total acquisition cost in billions of dollars for [LinkedIn; entreprise_org_10.name] and [Activision
+      Blizzard; entreprise_org_12.name] combined?
+    question_type: arithmetic
+    answer: number_9.float + number_10.float
+    answer_type: variant
+    reasoning_chain:
+    - 1. [LinkedIn; entreprise_org_10.name] was acquired for $[26.2; number_9.float] billion in [2016; temporal_11.year].
+    - 2. [Activision Blizzard; entreprise_org_12.name] was acquired for $[68.7; number_10.float] billion in [2023; temporal_13.year].
+    - 3. The total is $[26.2; number_9.float] billion + $[68.7; number_10.float] billion = $75.92 billion.
+    reasoning_chain_text: '1. [LinkedIn; entreprise_org_10.name] was acquired for $[26.2; number_9.float] billion in [2016;
+      temporal_11.year].
+
+      2. [Activision Blizzard; entreprise_org_12.name] was acquired for $[68.7; number_10.float] billion in [2023; temporal_13.year].
+
+      3. The total is $[26.2; number_9.float] billion + $[68.7; number_10.float] billion = $75.92 billion.'
+  - question_id: company_01_q04
+    question: What is the exact total number of millionaires and billionaires created by [Microsoft Corporation; entreprise_org_1.name]'s
+      [1986; temporal_5.year] IPO?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the IPO created [three; number_7.str] billionaires and an estimated [12000; number_8.int] millionaires.
+    - 2. To compute the total, we would add [three; number_7.str] + [12000; number_8.int].
+    - 3. However, the document describes the millionaire count as "estimated," not a precise verified count, so an exact total
+      is not stated in the document.
+    reasoning_chain_text: '1. The document states the IPO created [three; number_7.str] billionaires and an estimated [12000;
+      number_8.int] millionaires.
+
+      2. To compute the total, we would add [three; number_7.str] + [12000; number_8.int].
+
+      3. However, the document describes the millionaire count as "estimated," not a precise verified count, so an exact total
+      is not stated in the document.'
+  - question_id: company_01_q05
+    question: How many years after founding [Microsoft Corporation; entreprise_org_1.name] did [Steve Ballmer; person_3.full_name]
+      replace [Gates; person_1.last_name] as CEO?
+    question_type: temporal
+    answer: temporal_7.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Microsoft Corporation; entreprise_org_1.name] was founded in [1975; temporal_1.year].
+    - 2. [Steve Ballmer; person_3.full_name] replaced [Gates; person_1.last_name] as CEO in [2000; temporal_7.year].
+    - 3. The difference is [2000; temporal_7.year] - [1975; temporal_1.year] = 47 years.
+    reasoning_chain_text: '1. [Microsoft Corporation; entreprise_org_1.name] was founded in [1975; temporal_1.year].
+
+      2. [Steve Ballmer; person_3.full_name] replaced [Gates; person_1.last_name] as CEO in [2000; temporal_7.year].
+
+      3. The difference is [2000; temporal_7.year] - [1975; temporal_1.year] = 47 years.'
+  - question_id: company_01_q06
+    question: How many months did [Steve Ballmer; person_3.full_name] serve as CEO before the acquisition of [Skype Technologies;
+      entreprise_org_7.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. [Steve Ballmer; person_3.full_name] became CEO in [2000; temporal_7.year].
+    - 2. [Skype Technologies; entreprise_org_7.name] was acquired in [2011; temporal_8.year].
+    - 3. The document provides only years, not specific months or dates for these events, so a precise month calculation is
+      not stated in the document.
+    reasoning_chain_text: '1. [Steve Ballmer; person_3.full_name] became CEO in [2000; temporal_7.year].
+
+      2. [Skype Technologies; entreprise_org_7.name] was acquired in [2011; temporal_8.year].
+
+      3. The document provides only years, not specific months or dates for these events, so a precise month calculation is
+      not stated in the document.'
+  - question_id: company_01_q07
+    question: Who was the CEO of [Microsoft Corporation; entreprise_org_1.name] when the company acquired [LinkedIn; entreprise_org_10.name]?
+    question_type: inference
+    answer: person_4.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Satya Nadella; person_4.full_name] took over as CEO in [2014; temporal_10.year].
+    - 2. [LinkedIn; entreprise_org_10.name] was acquired in [2016; temporal_11.year].
+    - 3. Since [2016; temporal_11.year] is after [2014; temporal_10.year], [Satya Nadella; person_4.full_name] was CEO during
+      the acquisition.
+    reasoning_chain_text: '1. [Satya Nadella; person_4.full_name] took over as CEO in [2014; temporal_10.year].
+
+      2. [LinkedIn; entreprise_org_10.name] was acquired in [2016; temporal_11.year].
+
+      3. Since [2016; temporal_11.year] is after [2014; temporal_10.year], [Satya Nadella; person_4.full_name] was CEO during
+      the acquisition.'
+  - question_id: company_01_q08
+    question: Which co-founder of [Microsoft Corporation; entreprise_org_1.name] held a larger ownership stake at the time
+      of the [1986; temporal_5.year] IPO?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document identifies [Bill Gates; person_1.full_name] and [Paul Allen; person_2.full_name] as co-founders.
+    - 2. The document mentions the [1986; temporal_5.year] IPO and its wealth creation effects.
+    - 3. The document does not state the ownership stakes of either co-founder at the time of the IPO.
+    reasoning_chain_text: '1. The document identifies [Bill Gates; person_1.full_name] and [Paul Allen; person_2.full_name]
+      as co-founders.
+
+      2. The document mentions the [1986; temporal_5.year] IPO and its wealth creation effects.
+
+      3. The document does not state the ownership stakes of either co-founder at the time of the IPO.'
+  - question_id: company_01_q09
+    question: Has [Microsoft Corporation; entreprise_org_1.name] focused on cloud computing at some point of its development?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_01_q10
+    question: How many companies are considered among the Big Tech in the [United States; place_1.country]?
+    question_type: arithmetic
+    answer: '6'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_01_q11
+    question: Was [Activision Blizzard; entreprise_org_12.name] aquired before or after [LinkedIn; entreprise_org_10.name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: company_01_q12
+    question: Was [Microsoft Corporation; entreprise_org_1.name] known for its Internet services since its creation?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1961
+    upper_bound: 1999
+    factual_value: 1980
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 33
+    upper_bound: 49
+    factual_value: 41
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1967
+    upper_bound: 2005
+    factual_value: 1986
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 9600
+    upper_bound: 14400
+    factual_value: 12000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1971
+    upper_bound: 2009
+    factual_value: 1990
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.float
+    lower_bound: 20.96
+    upper_bound: 31.44
+    factual_value: 26.2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_10.float
+    lower_bound: 54.96
+    upper_bound: 82.44
+    factual_value: 68.7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

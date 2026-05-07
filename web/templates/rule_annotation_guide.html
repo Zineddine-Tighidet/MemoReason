@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Rule Annotation Guide - Entity Annotation Tool{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card" style="padding:20px;">
+        <div class="flex justify-between items-center mb-12">
+            <h1 class="section-title" style="margin:0;">Rule Annotation Guide</h1>
+            <a class="btn btn-sm" href="/" style="text-decoration:none;">Back to Dashboard</a>
+        </div>
+        <p class="text-sm text-muted mb-12">Source: <code>{{ guide_source_path }}</code></p>
+        <article class="guide-markdown">{{ guide_markdown_html | safe }}</article>
+    </div>
+</div>
+{% endblock %}

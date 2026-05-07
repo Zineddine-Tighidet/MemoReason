@@ -1,0 +1,269 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_04
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-04-17T17:51:02.436118+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+    legal_7: 15
+    legal_8: 15
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - continent
+    count: 15
+    variants:
+    - continent: Velorith
+    - continent: Thandara
+    - continent: Celvonis
+    - continent: Drathune
+    - continent: Palmorek
+    - continent: Zenthari
+    - continent: Orvashel
+    - continent: Brindoque
+    - continent: Kalestho
+    - continent: Melvuran
+    - continent: Torephia
+    - continent: Gundalis
+    - continent: Weshalan
+    - continent: Fendrova
+    - continent: Quirenth
+government_orgs:
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Directorate General Council
+    - name: Overseers Bureau
+    - name: Prudential Governance Board
+    - name: Central Regulatory Collegium
+    - name: Supervisory Chancellery
+    - name: Federal Oversight Secretariat
+    - name: Joint Regulatory Presidium
+    - name: High Authority Panel
+    - name: Unified Standards Directorate
+    - name: Interministerial Review Body
+    - name: Consolidated Policy Chamber
+    - name: Regulatory Stewardship Office
+    - name: Sovereign Compliance Tribunal
+    - name: Fiscal Governance Secretariat
+    - name: Prudential Oversight Conclave
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    - reference_code
+    count: 15
+    variants:
+    - name: Prudential Solvency Regulation
+      reference_code: (VU) No. 382/2014
+    - name: Institutional Liquidity Standards Regulation
+      reference_code: (KF) No. 641/2016
+    - name: Banking Resilience Framework Regulation
+      reference_code: (DP) No. 219/2015
+    - name: Depositor Safeguard Compliance Regulation
+      reference_code: (TN) No. 758/2012
+    - name: Fiduciary Adequacy Oversight Regulation
+      reference_code: (RL) No. 493/2017
+    - name: Lending Stability Provisions Regulation
+      reference_code: (BW) No. 167/2013
+    - name: Counterparty Exposure Governance Regulation
+      reference_code: (MJ) No. 824/2011
+    - name: Systemic Risk Mitigation Regulation
+      reference_code: (GH) No. 536/2018
+    - name: Credit Threshold Assurance Regulation
+      reference_code: (PX) No. 305/2016
+    - name: Reserve Adequacy Mandate Regulation
+      reference_code: (WC) No. 672/2014
+    - name: Tier Funding Compliance Regulation
+      reference_code: (QE) No. 418/2015
+    - name: Operational Buffer Standards Regulation
+      reference_code: (LV) No. 951/2013
+    - name: Portfolio Soundness Directive Regulation
+      reference_code: (FZ) No. 287/2017
+    - name: Leverage Constraint Oversight Regulation
+      reference_code: (NK) No. 603/2012
+    - name: Consolidated Prudential Reporting Regulation
+      reference_code: (SY) No. 144/2016
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Depository Entities Framework Ordinance
+    - name: Lending Institutions Governance Statute
+    - name: Prudential Banking Oversight Directive
+    - name: Financial Custodians Supervisory Code
+    - name: Monetary Intermediaries Conduct Regulation
+    - name: Chartered Depositories Compliance Mandate
+    - name: Fiduciary Institutions Operational Directive
+    - name: Banking Licensure Harmonization Act
+    - name: Regulated Lenders Accountability Provision
+    - name: Savings Entities Prudential Directive
+    - name: Institutional Solvency Safeguard Ordinance
+    - name: Deposit-Taking Bodies Governance Directive
+    - name: Financial Intermediation Oversight Statute
+    - name: Chartered Banking Conduct Directive
+    - name: Prudential Lending Entities Regulation
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korenth Accord
+    - name: Dravosi Framework
+    - name: Telmaren Standards
+    - name: Vossik Compact
+    - name: Brethune Protocol
+    - name: Calindro Principles
+    - name: Fentorak Guidelines
+    - name: Luriven Concordat
+    - name: Palduri Norms
+    - name: Grothane Charter
+    - name: Selvurik Provisions
+    - name: Ondrath Criteria
+    - name: Melvanic Accord
+    - name: Torbique Standards
+    - name: Quirenth Framework
+  legal_4:
+    required_attributes:
+    - name
+    - reference_code
+    count: 15
+    variants:
+    - name: Prudential Solvency Frameworks
+      reference_code: 2004/37
+    - name: Lending Adequacy Provisions
+      reference_code: 2005/61
+    - name: Depositor Safeguard Mandates
+      reference_code: 2003/52
+    - name: Institutional Liquidity Ordinances
+      reference_code: 2007/29
+    - name: Fiduciary Reserve Standards
+      reference_code: 2005/44
+    - name: Monetary Stability Compacts
+      reference_code: 2004/73
+    - name: Credit Exposure Protocols
+      reference_code: 2006/31
+    - name: Systemic Resilience Directives
+      reference_code: 2003/68
+    - name: Operational Buffer Regulations
+      reference_code: 2007/55
+    - name: Counterparty Threshold Statutes
+      reference_code: 2005/82
+    - name: Leverage Containment Instruments
+      reference_code: 2004/19
+    - name: Portfolio Soundness Decrees
+      reference_code: 2006/74
+    - name: Risk Mitigation Charters
+      reference_code: 2003/46
+    - name: Supervisory Adequacy Measures
+      reference_code: 2007/63
+    - name: Tier Compliance Frameworks
+      reference_code: 2004/58
+  legal_5:
+    required_attributes:
+    - reference_code
+    count: 15
+    variants:
+    - reference_code: 2009/37
+    - reference_code: 2011/52
+    - reference_code: 2007/83
+    - reference_code: 2010/61
+    - reference_code: 2008/74
+    - reference_code: 2012/46
+    - reference_code: 2005/58
+    - reference_code: 2013/29
+    - reference_code: 2004/67
+    - reference_code: 2011/38
+    - reference_code: 2007/54
+    - reference_code: 2010/72
+    - reference_code: 2009/85
+    - reference_code: 2008/43
+    - reference_code: 2014/56
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PRF Quad
+    - name: BRL Tetrad
+    - name: FRK Quarto
+    - name: LSR Fourfold
+    - name: MKD Quartic
+    - name: VNT Quadra
+    - name: TBR Tetral
+    - name: GKP Quartex
+    - name: DWL Fourset
+    - name: HZR Quadrant
+    - name: PLN Tetrix
+    - name: JVK Quarton
+    - name: WMR Fourmark
+    - name: RCN Quadrel
+    - name: SKV Tetrad-Set
+  legal_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PRF Bis
+    - name: BRK Reviso
+    - name: FLQ Duplex
+    - name: TRN Sekond
+    - name: VKL Repakt
+    - name: MRD Twofold
+    - name: GNP Rebis
+    - name: JKR Dualis
+    - name: PLV Remod
+    - name: WKT Bifold
+    - name: HNR Replex
+    - name: QBL Gemino
+    - name: ZFR Ditero
+    - name: LMV Rekast
+    - name: DKP Biform
+  legal_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: PRF Tercet
+    - name: BRQ Trilox
+    - name: FSD Revamp
+    - name: LKR Tertius
+    - name: VNQ Triad
+    - name: MPG Triset
+    - name: GWL Thrice
+    - name: JRD Tervol
+    - name: HBK Trimark
+    - name: QSN Terpath
+    - name: DXF Trilane
+    - name: WKP Terset
+    - name: NVR Trimod
+    - name: ZCL Tervex
+    - name: RYT Triplex

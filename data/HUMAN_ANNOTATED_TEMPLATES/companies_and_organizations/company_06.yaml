@@ -1,0 +1,256 @@
+document:
+  document_id: company_06
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Airbus
+  wikipedia_url: https://en.wikipedia.org/wiki/Airbus
+  original_document: 'Airbus SE is a European aerospace corporation. While the company''s primary business is the design and
+    manufacture of commercial aircraft, it also operates separate divisions for Defence and Space and Helicopters. Airbus
+    has long been the world''s leading helicopter manufacturer and, in 2019, emerged as the world''s largest manufacturer
+    of airliners.
+
+
+    Airbus originated from Airbus Industrie GIE, a consortium of European aerospace companies established in 1970 to produce
+    a wide-body aircraft to compete with American-built airliners. In 2000, the consortium''s parent firms—Aérospatiale-Matra
+    of France, DASA of Germany, and CASA of Spain—merged to form the European Aeronautic Defence and Space Company (EADS),
+    which later acquired full ownership of Airbus Industrie. EADS rebranded as Airbus SE in 2015. Reflecting its multinational
+    origins, the company operates offices and assembly plants in France, Germany, Spain, and the United Kingdom, along with
+    more recent additions in Canada, Malaysia, the United States, Morocco, and India.
+
+
+    Airbus''s headquarters are legally registered in Leiden, Netherlands, while day-to-day management is conducted from the
+    company''s main office in Blagnac, France. The SE in its name denotes Societas Europaea, a public company under European
+    Union corporate law. Airbus is led by CEO Guillaume Faury and is included in the EURO STOXX 50 stock market index. Since
+    its inception in 2000, the company''s shares have been listed on the Paris, Frankfurt, and four Spanish stock exchanges,
+    including the Bolsa de Madrid.'
+  document_to_annotate: '[Airbus SE; entreprise_org_1.name] is a [European; place_1.demonym] [aerospace; product_2.name] corporation.
+    While the company''s primary business is the design and manufacture of [commercial aircraft; product_3.name], it also
+    operates separate divisions for [Defence and Space; entreprise_org_8.name] and [Helicopters; entreprise_org_9.name]. [Airbus;
+    entreprise_org_1.name] has long been the world''s leading [helicopter; product_4.name] manufacturer and, in [2019; temporal_1.year],
+    emerged as the world''s largest manufacturer of [airliner; product_3.name]s.
+
+
+    [Airbus; entreprise_org_1.name] originated from [Airbus Industrie GIE; entreprise_org_2.name], a consortium of [European;
+    place_1.demonym] [aerospace; product_2.name] companies established in [1970; temporal_2.year] to produce a [wide-body
+    aircraft; product_3.name] to compete with [American; place_2.demonym]-built [airliner; product_3.name]s. In [2000; temporal_3.year],
+    the consortium''s parent firms—[Aérospatiale-Matra; entreprise_org_3.name] of [France; place_3.country], [DASA; entreprise_org_4.name]
+    of [Germany; place_4.country], and [CASA; entreprise_org_5.name] of [Spain; place_5.country]—merged to form the [European
+    Aeronautic Defence and Space Company (EADS); entreprise_org_6.name], which later acquired full ownership of [Airbus Industrie;
+    entreprise_org_2.name]. [EADS; entreprise_org_6.name] rebranded as [Airbus SE; entreprise_org_1.name] in [2015; temporal_4.year].
+    Reflecting its multinational origins, the company operates offices and assembly plants in [France; place_3.country], [Germany;
+    place_4.country], [Spain; place_5.country], and the [United Kingdom; place_6.country], along with more recent additions
+    in [Canada; place_7.country], [Malaysia; place_8.country], the [United States; place_2.country], [Morocco; place_9.country],
+    and [India; place_10.country].
+
+
+    [Airbus; entreprise_org_1.name]''s headquarters are legally registered in [Leiden; place_11.city], [Netherlands; place_11.country],
+    while day-to-day management is conducted from the company''s main office in [Blagnac; place_12.city], [France; place_3.country].
+    [Airbus; entreprise_org_1.name] is led by CEO [Guillaume Faury; person_1.full_name] and is included in the [EURO STOXX
+    50; product_1.name] stock market index. Since its inception in [2000; temporal_3.year], the company''s shares have been
+    listed on the [Paris; place_13.city], [Frankfurt; place_14.city], and [four; number_1.str] [Spanish; place_5.demonym]
+    stock exchanges, including the [Bolsa de Madrid; entreprise_org_7.name].'
+  relations: []
+  rules:
+  - 'number_1.str > 1 # plural "stock exchanges"'
+  num_questions: 12
+  questions:
+  - question_id: company_06_q01
+    question: Where is the day-to-day management office of [Airbus SE; entreprise_org_1.name] located?
+    question_type: extractive
+    answer: place_12.city, place_3.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that day-to-day management is conducted from the company's main office in [Blagnac; place_12.city],
+      [France; place_3.country].
+    reasoning_chain_text: 1. The document states that day-to-day management is conducted from the company's main office in
+      [Blagnac; place_12.city], [France; place_3.country].
+  - question_id: company_06_q02
+    question: What is the function of [Guillaume Faury; person_1.full_name] at [Airbus SE; entreprise_org_1.name] ?
+    question_type: extractive
+    answer: CEO
+    answer_type: invariant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: company_06_q03
+    question: How many employees does [Airbus SE; entreprise_org_1.name] currently have?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [Airbus SE; entreprise_org_1.name]'s business, history, and locations.
+    - 2. The document does not mention the number of employees at any point.
+    reasoning_chain_text: '1. The document describes [Airbus SE; entreprise_org_1.name]''s business, history, and locations.
+
+      2. The document does not mention the number of employees at any point.'
+  - question_id: company_06_q04
+    question: How many years passed between the establishment of [Airbus Industrie GIE; entreprise_org_2.name] and the rebranding
+      of [EADS; entreprise_org_6.name] as [Airbus SE; entreprise_org_1.name]?
+    question_type: arithmetic
+    answer: temporal_3.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - Airbus Industrie GIE was established in 1970.
+    - EADS rebranded as Airbus SE in 2015.
+    - The difference is 2015 - 1970 = 45.
+    reasoning_chain_text: 'Airbus Industrie GIE was established in 1970.
+
+      EADS rebranded as Airbus SE in 2015.
+
+      The difference is 2015 - 1970 = 45.'
+  - question_id: company_06_q05
+    question: How many parent firms merged to form [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name],
+      and how many separate divisions (besides the primary business) does [Airbus SE; entreprise_org_1.name] operate? What
+      is the sum of these two counts?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. Three parent firms merged: [Aérospatiale-Matra; entreprise_org_3.name] and [DASA; entreprise_org_4.name] and [CASA;
+      entreprise_org_5.name] — that is 3.'
+    - 2. The company operates separate divisions for [Defence and Space; entreprise_org_8.name] and [helicopter; product_4.name]
+      — that is 2.
+    - 3. 3 + 2 = 5.
+    reasoning_chain_text: '1. Three parent firms merged: [Aérospatiale-Matra; entreprise_org_3.name] and [DASA; entreprise_org_4.name]
+      and [CASA; entreprise_org_5.name] — that is 3.
+
+      2. The company operates separate divisions for [Defence and Space; entreprise_org_8.name] and [helicopter; product_4.name]
+      — that is 2.
+
+      3. 3 + 2 = 5.'
+  - question_id: company_06_q06
+    question: What is the total annual revenue of [Airbus SE; entreprise_org_1.name] divided by the number of countries in
+      which it operates?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists the countries where [Airbus SE; entreprise_org_1.name] operates.
+    - 2. However, the document does not mention the company's annual revenue, so the calculation cannot be performed.
+    reasoning_chain_text: '1. The document lists the countries where [Airbus SE; entreprise_org_1.name] operates.
+
+      2. However, the document does not mention the company''s annual revenue, so the calculation cannot be performed.'
+  - question_id: company_06_q07
+    question: How many years passed between the establishment of [Airbus Industrie GIE; entreprise_org_2.name] and the rebranding
+      of [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name] as [Airbus SE; entreprise_org_1.name]?
+    question_type: temporal
+    answer: temporal_4.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Airbus Industrie GIE; entreprise_org_2.name] was established in [1970; temporal_2.year].
+    - 2. [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name] rebranded as [Airbus SE; entreprise_org_1.name]
+      in [2015; temporal_4.year].
+    - 3. The difference is [2015; temporal_4.year] minus [1970; temporal_2.year] = 26 years.
+    reasoning_chain_text: '1. [Airbus Industrie GIE; entreprise_org_2.name] was established in [1970; temporal_2.year].
+
+      2. [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name] rebranded as [Airbus SE; entreprise_org_1.name]
+      in [2015; temporal_4.year].
+
+      3. The difference is [2015; temporal_4.year] minus [1970; temporal_2.year] = 26 years.'
+  - question_id: company_06_q08
+    question: Did the merger of that formed [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name]
+      happened before or after its rebranding as [Airbus SE; entreprise_org_1.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The merger forming [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name] occurred in [2000;
+      temporal_3.year].
+    - 2. The rebranding to [Airbus SE; entreprise_org_1.name] occurred in [2015; temporal_4.year].
+    - 3. [2015; temporal_4.year] minus [2000; temporal_3.year] = 10 years.
+    reasoning_chain_text: '1. The merger forming [European Aeronautic Defence and Space Company (EADS); entreprise_org_6.name]
+      occurred in [2000; temporal_3.year].
+
+      2. The rebranding to [Airbus SE; entreprise_org_1.name] occurred in [2015; temporal_4.year].
+
+      3. [2015; temporal_4.year] minus [2000; temporal_3.year] = 10 years.'
+  - question_id: company_06_q09
+    question: In what year did [Airbus SE; entreprise_org_1.name] first begin operating assembly plants in [Canada; place_7.country]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Canada; place_7.country] as a more recent addition for offices and assembly plants.
+    - 2. However, the document does not specify the exact year when operations in [Canada; place_7.country] began.
+    reasoning_chain_text: '1. The document mentions [Canada; place_7.country] as a more recent addition for offices and assembly
+      plants.
+
+      2. However, the document does not specify the exact year when operations in [Canada; place_7.country] began.'
+  - question_id: company_06_q10
+    question: Does [Airbus SE; entreprise_org_1.name] have shareholders?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: variant
+    reasoning_chain:
+    - it's in the stock market.
+    reasoning_chain_text: it's in the stock market.
+  - question_id: company_06_q11
+    question: Based on the document, did [Airbus SE; entreprise_org_1.name] become the world's largest manufacturer of [commercial
+      aircraft; product_3.name]s before or after it had already been the world's leading [helicopter; product_4.name] manufacturer?
+    question_type: inference
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document says [Airbus SE; entreprise_org_1.name] has 'long been' the world's leading [helicopter; product_4.name]
+      manufacturer, implying this status was established well before [2019; temporal_1.year].
+    - 2. It emerged as the world's largest [commercial aircraft; product_3.name] manufacturer in [2019; temporal_1.year].
+    - 3. Therefore, the [commercial aircraft; product_3.name] achievement came after the [helicopter; product_4.name] leadership.
+    reasoning_chain_text: '1. The document says [Airbus SE; entreprise_org_1.name] has ''long been'' the world''s leading
+      [helicopter; product_4.name] manufacturer, implying this status was established well before [2019; temporal_1.year].
+
+      2. It emerged as the world''s largest [commercial aircraft; product_3.name] manufacturer in [2019; temporal_1.year].
+
+      3. Therefore, the [commercial aircraft; product_3.name] achievement came after the [helicopter; product_4.name] leadership.'
+  - question_id: company_06_q12
+    question: Did [Airbus SE; entreprise_org_1.name] surpass its main [American; place_2.demonym] competitor in total [commercial
+      aircraft; product_3.name] deliveries to become the world's largest manufacturer in [2019; temporal_1.year]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Airbus Industrie GIE; entreprise_org_2.name] was established to compete with [American;
+      place_2.demonym]-built [commercial aircraft; product_3.name]s.
+    - 2. The document states [Airbus SE; entreprise_org_1.name] emerged as the world's largest manufacturer in [2019; temporal_1.year],
+      but does not specify whether this was measured by deliveries or another metric, nor does it name the specific competitor
+      surpassed.
+    reasoning_chain_text: '1. The document states that [Airbus Industrie GIE; entreprise_org_2.name] was established to compete
+      with [American; place_2.demonym]-built [commercial aircraft; product_3.name]s.
+
+      2. The document states [Airbus SE; entreprise_org_1.name] emerged as the world''s largest manufacturer in [2019; temporal_1.year],
+      but does not specify whether this was measured by deliveries or another metric, nor does it name the specific competitor
+      surpassed.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1951
+    upper_bound: 1989
+    factual_value: 1970
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1980
+    upper_bound: 2020
+    factual_value: 2000
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

@@ -1,0 +1,406 @@
+document:
+  document_id: disaster_02
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2011 Tōhoku earthquake and tsunami
+  wikipedia_url: https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami
+  original_document: 'On 11 March 2011, at 14:46:24 JST (05:46:24 UTC), a Mw 9.0–9.1 undersea megathrust earthquake occurred
+    in the Pacific Ocean, 72 km (45 mi) east of the Oshika Peninsula of the Tōhoku region. It lasted approximately six minutes
+    and caused a tsunami. It is sometimes known in Japan as the "Great East Japan Earthquake Disaster" (東日本大震災, Higashi Nihon
+    Daishinsai), among other names. The disaster is often referred to by its numerical date, 3.11 (read San ten Ichi-ichi
+    in Japanese).
+
+
+    It was the most powerful earthquake ever recorded in Japan, and the fourth most powerful earthquake recorded in the world
+    since modern seismography began in 1900. The earthquake triggered powerful tsunami waves that may have reached heights
+    of up to 40.5 meters (133 ft) in Miyako in Tōhoku''s Iwate Prefecture, and which, in the Sendai area, traveled at 700
+    km/h (435 mph) and up to 10 km (6 mi) inland. Residents of Sendai had only eight to ten minutes of warning, and more than
+    a hundred evacuation sites were washed away. The snowfall which accompanied the tsunami and the freezing temperature hindered
+    rescue works greatly; for instance, Ishinomaki, the city with the most deaths, was 0 °C (32 °F) as the tsunami hit. The
+    official figures released in 2021 reported 19759 deaths, 6242 injured, 284 firefighters dead from attempts to close preventative
+    fire gates, and 2553 people missing, and a report from 2015 indicated 228863 people were still living away from their
+    home in either temporary housing or due to permanent relocation.
+
+
+    The tsunami caused the Fukushima Daiichi nuclear disaster, primarily the meltdowns of three of its reactors, the discharge
+    of radioactive water in Fukushima and the associated evacuation zones affecting hundreds of thousands of residents. Many
+    electrical generators ran out of fuel. The loss of electrical power halted cooling systems, causing heat to build up.
+    The heat build-up caused the generation of hydrogen gas. Without ventilation, gas accumulated within the upper refueling
+    hall and eventually exploded, causing the refueling hall''s blast panels to be forcefully ejected from the structure.
+    Residents within a 20 km (12 mi) radius of the Fukushima Daiichi Nuclear Power Plant and a 10 km (6.2 mi) radius of the
+    Fukushima Daini Nuclear Power Plant were evacuated.
+
+
+    Early estimates placed insured losses from the earthquake alone at US$14.5 to $34.6 billion. The Bank of Japan offered
+    ¥15 trillion (US$183 billion) to the banking system on 14 March 2011 in an effort to normalize market conditions. The
+    estimated economic damage amounted to over $300 billion, making it the costliest natural disaster in history. According
+    to a 2020 study, "the earthquake and its aftermaths resulted in a 0.47 percentage point decline in Japan''s real GDP growth
+    in the year following the disaster."'
+  document_to_annotate: 'On [11 March 2011; temporal_1.date], at [14:46:24 JST; temporal_2.timestamp], a Mw 9.0–9.1 undersea
+    megathrust earthquake occurred in the [Pacific Ocean; place_1.natural_site], [72; number_3.int] km east of the [Oshika
+    Peninsula; place_2.natural_site] of the [Tōhoku; place_3.region] region. It lasted approximately [six; number_5.str] minutes
+    and caused a tsunami. It is sometimes known in [Japan; place_4.country] as the "[Great East Japan Earthquake Disaster;
+    event_1.name]", among other names.
+
+
+    It was the most powerful earthquake ever recorded in [Japan; place_4.country], and the [fourth; number_6.str] most powerful
+    earthquake recorded in the world since modern seismography began in [1900; temporal_4.year]. The earthquake triggered
+    powerful tsunami waves that may have reached heights of up to [40.5; number_7.float] meters in [Miyako; place_5.city]
+    in [Tōhoku; place_3.region]''s [Iwate Prefecture; place_6.region], and which, in the [Sendai; place_7.city] area, traveled
+    at [700; number_9.int] km/h and up to [10; number_11.int] km inland. Residents of [Sendai; place_7.city] had only [eight;
+    number_13.str] to [ten; number_14.str] minutes of warning, and more than a [hundred; number_15.str] evacuation sites were
+    washed away. The snowfall which accompanied the tsunami and the freezing temperature hindered rescue works greatly; for
+    instance, [Ishinomaki; place_8.city], the city with the most deaths, was [0; number_16.int] °C as the tsunami hit. The
+    official figures released in [2021; temporal_5.year] reported [19759; number_18.int] deaths, [6242; number_19.int] injured,
+    [284; number_20.int] firefighters dead from attempts to close preventative fire gates, and [2553; number_21.int] people
+    missing, and a report from [2015; temporal_6.year] indicated [228863; number_22.int] people were still living away from
+    their home in either temporary housing or due to permanent relocation.
+
+
+    The tsunami caused the [Fukushima Daiichi nuclear disaster; event_2.name], primarily the meltdowns of [three; number_23.str]
+    of its reactors, the discharge of radioactive water in [Fukushima; place_9.city] and the associated evacuation zones affecting
+    hundreds of thousands of residents. Many electrical generators ran out of fuel. The loss of electrical power halted cooling
+    systems, causing heat to build up. The heat build-up caused the generation of hydrogen gas. Without ventilation, gas accumulated
+    within the upper refueling hall and eventually exploded, causing the refueling hall''s blast panels to be forcefully ejected
+    from the structure. Residents within a [20; number_24.int] km radius of the [Fukushima Daiichi Nuclear Power Plant; place_10.city]
+    and a [10; number_26.int] km radius of the [Fukushima Daini Nuclear Power Plant; place_11.city] were evacuated.
+
+
+    Early estimates placed insured losses from the earthquake alone at $[14.5; number_28.float] to $[34.6; number_29.float]
+    billion. According to a [2020; temporal_8.year] study, "the earthquake and its aftermaths resulted in a [0.47; number_33.float]
+    percentage point decline in [Japan; place_4.country]''s real GDP growth in the year following the disaster."'
+  relations: []
+  rules:
+  - 'number_5.str > 1 # "minutes" is plural'
+  - 'number_23.str > 1 # "reactors" is plural (meltdowns of three reactors)'
+  - 'number_15.str > 1 # "evacuation sites" is plural'
+  num_questions: 12
+  questions:
+  - question_id: disaster_02_q01
+    question: How far inland did the tsunami waves travel in the [Sendai; place_7.city] area?
+    question_type: extractive
+    answer: number_11.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that in the [Sendai; place_7.city] area, the tsunami traveled at [700; number_9.int] km/h and
+      up to [10; number_11.int] km inland.
+    reasoning_chain_text: 1. The document states that in the [Sendai; place_7.city] area, the tsunami traveled at [700; number_9.int]
+      km/h and up to [10; number_11.int] km inland.
+  - question_id: disaster_02_q02
+    question: What was the magnitude of the undersea megathrust earthquake described in the document?
+    question_type: extractive
+    answer: 9.0–9.1
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that a Mw 9.0–9.1 undersea megathrust earthquake occurred. This magnitude is not annotated for
+      substitution.
+    reasoning_chain_text: 1. The document states that a Mw 9.0–9.1 undersea megathrust earthquake occurred. This magnitude
+      is not annotated for substitution.
+  - question_id: disaster_02_q03
+    question: What was the name of the operator or company responsible for the nuclear facility involved in [Fukushima Daiichi
+      nuclear disaster; event_2.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions [Fukushima Daiichi nuclear disaster; event_2.name] and describes the meltdowns and radioactive
+      water discharge.
+    - 2. However, the document does not name the operator or company responsible for the nuclear facility.
+    reasoning_chain_text: '1. The document mentions [Fukushima Daiichi nuclear disaster; event_2.name] and describes the meltdowns
+      and radioactive water discharge.
+
+      2. However, the document does not name the operator or company responsible for the nuclear facility.'
+  - question_id: disaster_02_q04
+    question: What is the difference between the number of deaths and the number of injured people in the official figures
+      released in [2021; temporal_5.year]?
+    question_type: arithmetic
+    answer: number_18.int - number_19.int
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The official figures report [19759; number_18.int] deaths and [6242; number_19.int] injured.
+    - 2. The difference is [19759; number_18.int] − [6242; number_19.int] = 13517.
+    reasoning_chain_text: '1. The official figures report [19759; number_18.int] deaths and [6242; number_19.int] injured.
+
+      2. The difference is [19759; number_18.int] − [6242; number_19.int] = 13517.'
+  - question_id: disaster_02_q05
+    question: How many kinds of weather conditions accompanying the tsunami made the rescue work more complicated, according
+      to this article?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - '"snowfall and freezing temperature"'
+    reasoning_chain_text: '"snowfall and freezing temperature"'
+  - question_id: disaster_02_q06
+    question: How many total casualties (deaths plus injured) resulted specifically from the tsunami waves, as opposed to
+      the earthquake itself?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document provides overall official figures of [19759; number_18.int] deaths and [6242; number_19.int] injured.
+    - 2. However, the document does not break down these figures by cause (tsunami vs. earthquake), so the tsunami-specific
+      casualty count cannot be determined.
+    reasoning_chain_text: '1. The document provides overall official figures of [19759; number_18.int] deaths and [6242; number_19.int]
+      injured.
+
+      2. However, the document does not break down these figures by cause (tsunami vs. earthquake), so the tsunami-specific
+      casualty count cannot be determined.'
+  - question_id: disaster_02_q07
+    question: How many years after modern seismography began did the earthquake described in the document occur?
+    question_type: temporal
+    answer: temporal_1.date - temporal_4.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. Modern seismography began in [1900; temporal_4.year].
+    - 2. The earthquake occurred on [11 March 2011; temporal_1.date], i.e., in 2023.
+    - 3. 2023 − 1886 = 137 years.
+    reasoning_chain_text: '1. Modern seismography began in [1900; temporal_4.year].
+
+      2. The earthquake occurred on [11 March 2011; temporal_1.date], i.e., in 2023.
+
+      3. 2023 − 1886 = 137 years.'
+  - question_id: disaster_02_q08
+    question: Were the official figures regarding the casualties released before or after the study about the impact of the
+      earthquake on the economy of the country?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - The figures were released after the study
+    reasoning_chain_text: The figures were released after the study
+  - question_id: disaster_02_q09
+    question: On what date did the evacuation of residents within a [20; number_24.int] km radius of [Fukushima Daiichi Nuclear
+      Power Plant; place_10.city] officially end?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that residents within a [20; number_24.int] km radius of [Fukushima Daiichi Nuclear Power Plant;
+      place_10.city] were evacuated.
+    - 2. The document does not provide any date for when this evacuation ended.
+    reasoning_chain_text: '1. The document states that residents within a [20; number_24.int] km radius of [Fukushima Daiichi
+      Nuclear Power Plant; place_10.city] were evacuated.
+
+      2. The document does not provide any date for when this evacuation ended.'
+  - question_id: disaster_02_q10
+    question: Given that the evacuation radius around [Fukushima Daiichi Nuclear Power Plant; place_10.city] was twice that
+      of [Fukushima Daini Nuclear Power Plant; place_11.city], what can be inferred about which facility was considered a
+      greater threat to surrounding residents?
+    question_type: inference
+    answer: place_10.city
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The evacuation radius around [Fukushima Daiichi Nuclear Power Plant; place_10.city] was [20; number_24.int] km, while
+      the radius around [Fukushima Daini Nuclear Power Plant; place_11.city] was [10; number_26.int] km.
+    - 2. A larger evacuation radius implies a greater perceived threat to surrounding residents, so [Fukushima Daiichi Nuclear
+      Power Plant; place_10.city]'s facility was considered the greater threat.
+    reasoning_chain_text: '1. The evacuation radius around [Fukushima Daiichi Nuclear Power Plant; place_10.city] was [20;
+      number_24.int] km, while the radius around [Fukushima Daini Nuclear Power Plant; place_11.city] was [10; number_26.int]
+      km.
+
+      2. A larger evacuation radius implies a greater perceived threat to surrounding residents, so [Fukushima Daiichi Nuclear
+      Power Plant; place_10.city]''s facility was considered the greater threat.'
+  - question_id: disaster_02_q11
+    question: Based on the document's description of the nuclear incident, what gas accumulated in the upper refueling hall
+      and eventually caused an explosion?
+    question_type: inference
+    answer: hydrogen
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that the heat build-up caused the generation of hydrogen gas.
+    - 2. Without ventilation, this gas accumulated within the upper refueling hall and eventually exploded. The answer is
+      hydrogen.
+    reasoning_chain_text: '1. The document states that the heat build-up caused the generation of hydrogen gas.
+
+      2. Without ventilation, this gas accumulated within the upper refueling hall and eventually exploded. The answer is
+      hydrogen.'
+  - question_id: disaster_02_q12
+    question: Based on the GDP decline and the insured loss estimates, what was the total economic cost of the disaster to
+      [Japan; place_4.country]'s economy?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions a [0.47; number_33.float] percentage point decline in real GDP growth and insured losses of
+      $[14.5; number_28.float] to $[34.6; number_29.float] billion.
+    - 2. However, the document does not provide [Japan; place_4.country]'s GDP figure, nor does it state total economic cost,
+      so the total economic cost cannot be determined from the document alone.
+    reasoning_chain_text: '1. The document mentions a [0.47; number_33.float] percentage point decline in real GDP growth
+      and insured losses of $[14.5; number_28.float] to $[34.6; number_29.float] billion.
+
+      2. However, the document does not provide [Japan; place_4.country]''s GDP figure, nor does it state total economic cost,
+      so the total economic cost cannot be determined from the document alone.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 58
+    upper_bound: 86
+    factual_value: 72
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1881
+    upper_bound: 1919
+    factual_value: 1900
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.float
+    lower_bound: 32.4
+    upper_bound: 48.6
+    factual_value: 40.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 560
+    upper_bound: 840
+    factual_value: 700
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.str
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 0
+    upper_bound: 10
+    factual_value: 0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_18.int
+    lower_bound: 15808
+    upper_bound: 23710
+    factual_value: 19759
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 4994
+    upper_bound: 7490
+    factual_value: 6242
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_20.int
+    lower_bound: 228
+    upper_bound: 340
+    factual_value: 284
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.int
+    lower_bound: 2043
+    upper_bound: 3063
+    factual_value: 2553
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_22.int
+    lower_bound: 183091
+    upper_bound: 274635
+    factual_value: 228863
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_26.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_28.float
+    lower_bound: 11.6
+    upper_bound: 17.4
+    factual_value: 14.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_29.float
+    lower_bound: 27.68
+    upper_bound: 41.52
+    factual_value: 34.6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_33.float
+    lower_bound: 0.0
+    upper_bound: 10.0
+    factual_value: 0.47
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

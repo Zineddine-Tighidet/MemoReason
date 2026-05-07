@@ -1,0 +1,359 @@
+document:
+  document_id: place_05
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: United Kingdom
+  wikipedia_url: https://en.wikipedia.org/wiki/United_Kingdom
+  original_document: 'The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK)
+    or Britain, is a country in northwestern Europe, off the coast of the continental mainland. It comprises England, Scotland,
+    Wales and Northern Ireland, with a population of over 69 million in 2024. The UK includes the island of Great Britain,
+    the north-eastern part of the island of Ireland, and most of the smaller islands within the British Isles, covering 94354
+    square miles (244376 km2). It shares a land border with the Republic of Ireland and is surrounded by the Atlantic Ocean,
+    the North Sea, the English Channel, the Celtic Sea and the Irish Sea, while maintaining sovereignty over the Crown Dependencies
+    and the British Overseas Territories. The capital and largest city of England and the UK is London; Edinburgh, Cardiff
+    and Belfast are the national capitals of Scotland, Wales and Northern Ireland.
+
+
+    Britain has been continuously inhabited since the Neolithic. In AD 43 the Roman conquest of Britain began. The Roman departure
+    between 383 and 410 was followed by Anglo-Saxon settlement beginning around 450. In 1066 the Normans conquered England.
+    Over the 17th century the role of the British monarchy was reduced, particularly as a result of the English Civil War.
+    In 1707 the Kingdom of England and the Kingdom of Scotland united under the Treaty of Union to create the Kingdom of Great
+    Britain. The Acts of Union 1800 incorporated the Kingdom of Ireland to create the United Kingdom of Great Britain and
+    Ireland in 1801. Most of Ireland seceded from the UK in 1922 as the Irish Free State, and the Royal and Parliamentary
+    Titles Act 1927 created the present United Kingdom.
+
+
+    The UK became the first industrialised country and was the world''s foremost power for the majority of the 19th and early
+    20th centuries, particularly during the Pax Britannica between 1815 and 1914. The British Empire was the leading economic
+    power for most of the 19th century, a position supported by its agricultural prosperity, its role as a dominant trading
+    nation, a massive industrial capacity, significant technological achievements, and the rise of 19th-century London as
+    the world''s principal financial centre. At its height in the 1920s, the empire encompassed around a quarter of the world''s
+    landmass and population, and was the largest in history. However, its involvement in the First World War and in the Second
+    World War damaged Britain''s economic power, and a global wave of decolonisation led to the independence of most British
+    colonies.
+
+
+    The UK is a constitutional monarchy and parliamentary democracy with three distinct jurisdictions: England and Wales,
+    Scotland, and Northern Ireland. Scotland, Wales and Northern Ireland have their own governments and parliaments which
+    control various devolved matters. A developed country with an advanced economy, the UK ranks amongst the largest economies
+    by nominal GDP and is one of the world''s largest exporters and importers. As a nuclear state with one of the highest
+    defence budgets, the UK maintains one of the strongest militaries in Europe. Its soft power influence can be observed
+    in the legal and political systems of many of its former colonies, and British culture remains globally influential, particularly
+    in language, literature, music and sport. A great power, the UK is part of numerous international organisations.'
+  document_to_annotate: '[The United Kingdom of Great Britain and Northern Ireland; place_1.country], commonly known as [the
+    United Kingdom (UK); place_24.country] or [Britain; place_25.country], is a country in northwestern [Europe; place_2.continent],
+    off the coast of the continental mainland. It comprises [England; place_3.country], [Scotland; place_4.country], [Wales;
+    place_5.country] and [Northern Ireland; place_6.country], with a population of over [69; number_1.str] million in [2024;
+    temporal_1.year]. The [UK; place_24.country] includes the island of [Great Britain; place_7.natural_site], the north-eastern
+    part of the island of [Ireland; place_8.natural_site], and most of the smaller islands within the [British Isles; place_9.natural_site],
+    covering [94354; number_2.int] square miles. It shares a land border with the [Republic of Ireland; place_10.country]
+    and is surrounded by the [Atlantic Ocean; place_11.natural_site], the [North Sea; place_12.natural_site], the [English
+    Channel; place_13.natural_site], the [Celtic Sea; place_14.natural_site] and the [Irish Sea; place_15.natural_site], while
+    maintaining sovereignty over the [Crown Dependencies and the British Overseas Territories; place_20.region]. The capital
+    and largest city of [England; place_3.country] and the [UK; place_24.country] is [London; place_16.city]; [Edinburgh;
+    place_17.city], [Cardiff; place_18.city] and [Belfast; place_19.city] are the national capitals of [Scotland; place_4.country],
+    [Wales; place_5.country] and [Northern Ireland; place_6.country].
+
+
+    [Britain; place_25.country] has been continuously inhabited since the Neolithic. In AD [43; temporal_2.year] the [Roman;
+    place_21.demonym] conquest of [Britain; place_25.country] began. The [Roman; place_21.demonym] departure between [383;
+    temporal_3.year] and [410; temporal_4.year] was followed by [Anglo-Saxon; place_22.demonym] settlement beginning around
+    [450; temporal_5.year]. In [1066; temporal_6.year] the [Norman; place_23.demonym]s conquered [England; place_3.country].
+    Over the [17th; number_3.int] century the role of the [British; place_1.demonym] monarchy was reduced, particularly as
+    a result of the [English Civil War; event_1.name]. In [1707; temporal_8.year] the Kingdom of [England; place_3.country]
+    and the Kingdom of [Scotland; place_4.country] united under the [Treaty of Union; legal_1.name] to create the Kingdom
+    of [Great Britain; place_1.country]. The [Acts of Union 1800; legal_2.name] incorporated the Kingdom of [Ireland; place_10.country]
+    to create the [United Kingdom of Great Britain and Ireland; place_1.country] in [1801; temporal_9.year]. Most of [Ireland;
+    place_10.country] seceded from the [UK; place_24.country] in [1922; temporal_10.year] as the [Irish Free State; government_org_1.name],
+    and the [Royal and Parliamentary Titles Act 1927; legal_3.name] created the present [United Kingdom; place_24.country].
+
+
+    The [UK; place_24.country] is a constitutional monarchy and parliamentary democracy with three distinct jurisdictions:
+    [England; place_3.country] and [Wales; place_5.country], [Scotland; place_4.country], and [Northern Ireland; place_6.country].
+    [Scotland; place_4.country], [Wales; place_5.country] and [Northern Ireland; place_6.country] have their own governments
+    and parliaments which control various devolved matters. A developed country with an advanced economy, the [UK; place_24.country]
+    ranks amongst the largest economies by nominal GDP and is one of the world''s largest exporters and importers. As a nuclear
+    state with one of the highest defence budgets, the [UK; place_24.country] maintains one of the strongest militaries in
+    [Europe; place_2.continent]. Its soft power influence can be observed in the legal and political systems of many of its
+    former colonies, and [British; place_1.demonym] culture remains globally influential, particularly in language, literature,
+    music and sport. A great power, the [UK; place_24.country] is part of numerous international organisations.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: place_05_q01
+    question: What is the capital and largest city of [the United Kingdom (UK); place_24.country]?
+    question_type: extractive
+    answer: place_16.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the capital and largest city of [England; place_3.country] and the [the United Kingdom (UK);
+      place_24.country] is [London; place_16.city].
+    reasoning_chain_text: 1. The document states that the capital and largest city of [England; place_3.country] and the [the
+      United Kingdom (UK); place_24.country] is [London; place_16.city].
+  - question_id: place_05_q02
+    question: What type of government does [the United Kingdom (UK); place_24.country] have?
+    question_type: extractive
+    answer: constitutional monarchy and parliamentary democracy
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "The [the United Kingdom (UK); place_24.country] is a constitutional monarchy and parliamentary
+      democracy."
+    reasoning_chain_text: 1. The document states "The [the United Kingdom (UK); place_24.country] is a constitutional monarchy
+      and parliamentary democracy."
+  - question_id: place_05_q03
+    question: Who is the current monarch of [the United Kingdom (UK); place_24.country]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [the United Kingdom (UK); place_24.country] is a constitutional monarchy.
+    - 2. However, the document does not name or identify the current monarch.
+    reasoning_chain_text: '1. The document mentions that [the United Kingdom (UK); place_24.country] is a constitutional monarchy.
+
+      2. However, the document does not name or identify the current monarch.'
+  - question_id: place_05_q04
+    question: How many square miles of territory does [the United Kingdom (UK); place_24.country] cover per million people,
+      based on its population and area?
+    question_type: arithmetic
+    answer: temporal_4.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [the United Kingdom (UK); place_24.country] has a population of over [69; number_1.str] million
+      and covers [94354; number_2.int] square miles.
+    - 2. Dividing 75484 by 56 gives approximately 1348 square miles per million people.
+    reasoning_chain_text: '1. The document states [the United Kingdom (UK); place_24.country] has a population of over [69;
+      number_1.str] million and covers [94354; number_2.int] square miles.
+
+      2. Dividing 75484 by 56 gives approximately 1348 square miles per million people.'
+  - question_id: place_05_q05
+    question: How many distinct jurisdictions does [the United Kingdom (UK); place_24.country] have, and how many areas have
+      their own devolved governments and parliaments?
+    question_type: arithmetic
+    answer: 3 and 3
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [the United Kingdom (UK); place_24.country] has "three distinct jurisdictions."
+    - 2. It then says [Scotland; place_4.country], [Wales; place_5.country] and [Northern Ireland; place_6.country] have their
+      own governments and parliaments — that is 3 constituent countries with devolved powers.
+    - 3. Both counts equal 3.
+    reasoning_chain_text: '1. The document states [the United Kingdom (UK); place_24.country] has "three distinct jurisdictions."
+
+      2. It then says [Scotland; place_4.country], [Wales; place_5.country] and [Northern Ireland; place_6.country] have their
+      own governments and parliaments — that is 3 constituent countries with devolved powers.
+
+      3. Both counts equal 3.'
+  - question_id: place_05_q06
+    question: What is the combined population of [Scotland; place_4.country] and [Northern Ireland; place_6.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides only the total population of [the United Kingdom (UK); place_24.country] (over [69; number_1.str]
+      million).
+    - 2. Individual population figures for [Scotland; place_4.country] and [Northern Ireland; place_6.country] are not stated
+      in the document.
+    reasoning_chain_text: '1. The document provides only the total population of [the United Kingdom (UK); place_24.country]
+      (over [69; number_1.str] million).
+
+      2. Individual population figures for [Scotland; place_4.country] and [Northern Ireland; place_6.country] are not stated
+      in the document.'
+  - question_id: place_05_q07
+    question: How many years passed between the [Roman; place_21.demonym] conquest of [Britain; place_25.country] and the
+      [Anglo-Saxon; place_22.demonym] settlement that followed?
+    question_type: temporal
+    answer: temporal_5.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Roman; place_21.demonym] conquest began in AD [43; temporal_2.year].
+    - 2. [Anglo-Saxon; place_22.demonym] settlement began around [450; temporal_5.year].
+    - 3. The difference is 453 − 43 = 410 years.
+    reasoning_chain_text: '1. The [Roman; place_21.demonym] conquest began in AD [43; temporal_2.year].
+
+      2. [Anglo-Saxon; place_22.demonym] settlement began around [450; temporal_5.year].
+
+      3. The difference is 453 − 43 = 410 years.'
+  - question_id: place_05_q08
+    question: Did the [Treaty of Union; legal_1.name] happen before or after the [Acts of Union 1800; legal_2.name]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The Kingdom of [The United Kingdom of Great Britain and Northern Ireland; place_1.country] was created in [1707;
+      temporal_8.year] under the [Treaty of Union; legal_1.name].
+    - 2. The [Acts of Union 1800; legal_2.name] incorporated the Kingdom of [Republic of Ireland; place_10.country] in [1801;
+      temporal_9.year].
+    - 3. 1806 − 1724 = 82 years.
+    reasoning_chain_text: '1. The Kingdom of [The United Kingdom of Great Britain and Northern Ireland; place_1.country] was
+      created in [1707; temporal_8.year] under the [Treaty of Union; legal_1.name].
+
+      2. The [Acts of Union 1800; legal_2.name] incorporated the Kingdom of [Republic of Ireland; place_10.country] in [1801;
+      temporal_9.year].
+
+      3. 1806 − 1724 = 82 years.'
+  - question_id: place_05_q09
+    question: In what month did the [Norman; place_23.demonym] conquest of [England; place_3.country] end?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that in [1066; temporal_6.year] the [Norman; place_23.demonym]s conquered [England; place_3.country].
+    - 2. However, the document does not provide an end date for this conquest or campaign.
+    reasoning_chain_text: '1. The document states that in [1066; temporal_6.year] the [Norman; place_23.demonym]s conquered
+      [England; place_3.country].
+
+      2. However, the document does not provide an end date for this conquest or campaign.'
+  - question_id: place_05_q10
+    question: What ocean would a native of [the United Kingdom (UK); place_24.country] be able to swim in if he walked around
+      his native country?
+    question_type: inference
+    answer: place_11.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [the United Kingdom (UK); place_24.country] is surrounded by the [Atlantic Ocean; place_11.natural_site].
+    - 2. Since the question specifically asks for an ocean, the answer is [Atlantic Ocean; place_11.natural_site].
+    reasoning_chain_text: '1. The document states that [the United Kingdom (UK); place_24.country] is surrounded by the [Atlantic
+      Ocean; place_11.natural_site].
+
+      2. Since the question specifically asks for an ocean, the answer is [Atlantic Ocean; place_11.natural_site].'
+  - question_id: place_05_q11
+    question: Was [the United Kingdom (UK); place_24.country] ever a colonial power?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [the United Kingdom (UK); place_24.country] exercises soft power influence in many of its former
+      colonies.
+    reasoning_chain_text: 1. The document states [the United Kingdom (UK); place_24.country] exercises soft power influence
+      in many of its former colonies.
+  - question_id: place_05_q12
+    question: Based on [the United Kingdom (UK); place_24.country]'s ranking among the largest economies by nominal GDP, what
+      is its specific GDP ranking compared to other countries?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [the United Kingdom (UK); place_24.country] "ranks amongst the largest economies by nominal
+      GDP."
+    - 2. However, no specific ranking number or GDP figure is provided in the document, so the exact ranking cannot be determined.
+    reasoning_chain_text: '1. The document states that [the United Kingdom (UK); place_24.country] "ranks amongst the largest
+      economies by nominal GDP."
+
+      2. However, no specific ranking number or GDP figure is provided in the document, so the exact ranking cannot be determined.'
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 56
+    upper_bound: 82
+    factual_value: 69
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 75484
+    upper_bound: 113224
+    factual_value: 94354
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 43
+    upper_bound: 43
+    factual_value: 43
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 380
+    upper_bound: 386
+    factual_value: 383
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 406
+    upper_bound: 414
+    factual_value: 410
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 446
+    upper_bound: 454
+    factual_value: 450
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1056
+    upper_bound: 1076
+    factual_value: 1066
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 16
+    upper_bound: 18
+    factual_value: 17
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1690
+    upper_bound: 1724
+    factual_value: 1707
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1783
+    upper_bound: 1819
+    factual_value: 1801
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1903
+    upper_bound: 1941
+    factual_value: 1922
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Drelvextovmark; place_1.country], commonly known as [Wexdale; place_24.country]
+    or [Kingdom of Myrgry; place_25.country], is a country in northwestern [Nordathea; place_2.continent], off the coast of
+    the continental mainland. It comprises [Republic of Zorsornxal; place_3.country], [Kelmorand; place_4.country], [Republic
+    of Tovvexzor; place_5.country] and [Galdros; place_6.country], with a population of over [56; number_1.str] million in
+    [2010; temporal_1.year]. The [Wexdale; place_24.country] includes the island of [Hibernath Sea; place_7.natural_site],
+    the north-eastern part of the island of [Granthel Isle; place_8.natural_site], and most of the smaller islands within
+    the [Nordmere Sea; place_9.natural_site], covering [75484; number_2.int] square miles. It shares a land border with the
+    [Brynthia; place_10.country] and is surrounded by the [Brynthic Sea; place_11.natural_site], the [Boreal Ocean; place_12.natural_site],
+    the [Keltic Channel; place_13.natural_site], the [Keltic Archipelago; place_14.natural_site] and the [Hibernath Isle;
+    place_15.natural_site], while maintaining sovereignty over the [Noxzor Region; place_20.region]. The capital and largest
+    city of [Republic of Zorsornxal; place_3.country] and the [Wexdale; place_24.country] is [Caermont; place_16.city]; [Thornwick;
+    place_17.city], [Dunmoral; place_18.city] and [Belforth; place_19.city] are the national capitals of [Kelmorand; place_4.country],
+    [Republic of Tovvexzor; place_5.country] and [Galdros; place_6.country].
+
+
+    [Kingdom of Myrgry; place_25.country] has been continuously inhabited since the Neolithic. In AD [43; temporal_2.year]
+    the [Drelgrelnoxan; place_21.demonym] conquest of [Kingdom of Myrgry; place_25.country] began. The [Drelgrelnoxan; place_21.demonym]
+    departure between [385; temporal_3.year] and [411; temporal_4.year] was followed by [Vexrathean; place_22.demonym] settlement
+    beginning around [453; temporal_5.year]. In [1069; temporal_6.year] the [Valtherish; place_23.demonym]s conquered [Republic
+    of Zorsornxal; place_3.country]. Over the [16; number_3.int] century the role of the [Drelmyrglanish; place_1.demonym]
+    monarchy was reduced, particularly as a result of the [Valtherish Unification; event_1.name]. In [1724; temporal_8.year]
+    the Kingdom of [Republic of Zorsornxal; place_3.country] and the Kingdom of [Kelmorand; place_4.country] united under
+    the [Treaty of Kelmorand Union; legal_1.name] to create the Kingdom of [Drelvextovmark; place_1.country]. The [Acts of
+    Hibernath Incorporation; legal_2.name] incorporated the Kingdom of [Brynthia; place_10.country] to create the [Drelvextovmark;
+    place_1.country] in [1806; temporal_9.year]. Most of [Brynthia; place_10.country] seceded from the [Wexdale; place_24.country]
+    in [1911; temporal_10.year] as the [Bruurmyril Civic Directorate; government_org_1.name], and the [Royal and Parliamentary
+    Titles Act of Valtherion; legal_3.name] created the present [Wexdale; place_24.country].
+
+
+    The [Wexdale; place_24.country] is a constitutional monarchy and parliamentary democracy with three distinct jurisdictions:
+    [Republic of Zorsornxal; place_3.country] and [Republic of Tovvexzor; place_5.country], [Kelmorand; place_4.country],
+    and [Galdros; place_6.country]. [Kelmorand; place_4.country], [Republic of Tovvexzor; place_5.country] and [Galdros; place_6.country]
+    have their own governments and parliaments which control various devolved matters. A developed country with an advanced
+    economy, the [Wexdale; place_24.country] ranks amongst the largest economies by nominal GDP and is one of the world''s
+    largest exporters and importers. As a nuclear state with one of the highest defence budgets, the [Wexdale; place_24.country]
+    maintains one of the strongest militaries in [Nordathea; place_2.continent]. Its soft power influence can be observed
+    in the legal and political systems of many of its former colonies, and [Drelmyrglanish; place_1.demonym] culture remains
+    globally influential, particularly in language, literature, music and sport. A great power, the [Wexdale; place_24.country]
+    is part of numerous international organisations.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

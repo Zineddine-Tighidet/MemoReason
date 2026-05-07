@@ -1,0 +1,364 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_05
+  document_theme: natural_disasters
+  complete: false
+  generated_at: '2026-04-18T14:48:13.737503+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: place place_11: need 15, found 13'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 13
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  places:
+    place_11: 2
+places:
+  place_1:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorean Isles
+    - region: Tassarine Archipelago
+    - region: Dromathic Basin
+    - region: Koravian Straits
+    - region: Pelundra Chain
+    - region: Sorenthi Waters
+    - region: Melvanic Reach
+    - region: Thuranese Passage
+    - region: Galvoric Shoals
+    - region: Brinthari Arc
+    - region: Ondravian Expanse
+    - region: Celvoran Rim
+    - region: Phaedric Isles
+    - region: Torvassian Gulf
+    - region: Wyndaric Shallows
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorund
+    - country: Tasserin
+    - country: Brequola
+    - country: Ondrath
+    - country: Kalmosia
+    - country: Pelvantia
+    - country: Drothune
+    - country: Gessalon
+    - country: Marvique
+    - country: Torbenhal
+    - country: Crelluna
+    - country: Wispador
+    - country: Felquorn
+    - country: Zanthera
+    - country: Obrineth
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veloranta
+    - region: Caspeluna
+    - region: Tormadis
+    - region: Brequila
+    - region: Solmaren
+    - region: Paloquin
+    - region: Dravencia
+    - region: Koralinde
+    - region: Melvossa
+    - region: Tundarique
+    - region: Fentarosa
+    - region: Quirabay
+    - region: Zelmorin
+    - region: Havendique
+    - region: Plumadero
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veloranta
+    - country: Tasselu
+    - country: Brindova
+    - country: Koraleth
+    - country: Melvique
+    - country: Sorabeth
+    - country: Peldara
+    - country: Tunvari
+    - country: Cressalum
+    - country: Jenthari
+    - country: Orivane
+    - country: Weskala
+    - country: Dromithe
+    - country: Galsuret
+    - country: Fendalique
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Telvoran Coral Islands
+    - region: Brequan Archipelago
+    - region: Soriven Island Territory
+    - region: Kethalan Outer Isles
+    - region: Dravosi Maritime Territories
+    - region: Pelmorath Island Chain
+    - region: Vundari Reef Islands
+    - region: Calithen Shoal Territory
+    - region: Orvessian Windward Isles
+    - region: Threquan Bay Islands
+    - region: Molvari Atoll Region
+    - region: Zenthari Leeward Isles
+    - region: Quobelan Island Holdings
+    - region: Fendorath Cay Territory
+    - region: Gelvoran Passage Islands
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veloran Isles
+    - region: Koravian Shoals
+    - region: Drethane Keys
+    - region: Molvari Chain
+    - region: Pelithos Islands
+    - region: Sundric Reaches
+    - region: Oranthi Cays
+    - region: Brenalid Passage
+    - region: Thurenic Atolls
+    - region: Galvori Straits
+    - region: Weskari Islands
+    - region: Fendalic Reef Chain
+    - region: Rothari Archipelago
+    - region: Celvane Shallows
+    - region: Jombraic Ledges
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Turqalind
+    - country: Velmorath
+    - country: Cressalune
+    - country: Dranthova
+    - country: Pelicara
+    - country: Koravish
+    - country: Sundralei
+    - country: Brimolaque
+    - country: Tassivere
+    - country: Wyndacor
+    - country: Jolmaren
+    - country: Quellisand
+    - country: Fentaroque
+    - country: Halvicosta
+    - country: Miraquay
+  place_8:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Veloran Seaboard
+    - region: Thandric Littoral
+    - region: Kessoway Shore
+    - region: Pallentine Rim
+    - region: Druvanic Coastlands
+    - region: Orenthal Margin
+    - region: Sulwaine Strand
+    - region: Bremolith Edge
+    - region: Calvorine Shelf
+    - region: Tyvander Reach
+    - region: Gessaline Verge
+    - region: Morwethic Fringe
+    - region: Pelloquin Shoreway
+    - region: Harventic Seaboard
+    - region: Dunwellic Tidemark
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorean Ocean
+    - natural_site: Thalwic Sea
+    - natural_site: Drenmara Ocean
+    - natural_site: Korvassic Deep
+    - natural_site: Pelundra Ocean
+    - natural_site: Sethoric Sea
+    - natural_site: Brindoval Ocean
+    - natural_site: Calwethic Sea
+    - natural_site: Orenthal Ocean
+    - natural_site: Melvoric Deep
+    - natural_site: Turellian Ocean
+    - natural_site: Gasperic Sea
+    - natural_site: Wyndoral Ocean
+    - natural_site: Helvanic Sea
+    - natural_site: Quorathic Ocean
+  place_10:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velorath
+    - region: Tasselu
+    - region: Korimba
+    - region: Peldoune
+    - region: Sarvique
+    - region: Moltaire
+    - region: Brequosa
+    - region: Jalindre
+    - region: Tuvenash
+    - region: Orivane
+    - region: Calphedu
+    - region: Rendique
+    - region: Fassouri
+    - region: Gelvanto
+    - region: Plorimet
+  place_11:
+    required_attributes:
+    - region
+    count: 13
+    variants:
+    - region: Korivane
+    - region: Brindalo
+    - region: Sulpheque
+    - region: Morathen
+    - region: Calissure
+    - region: Drentova
+    - region: Pelmique
+    - region: Orivasse
+    - region: Thandelu
+    - region: Gessaline
+    - region: Voriquay
+    - region: Nelvador
+    - region: Crethane
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Hurricane Velanto
+    - name: Hurricane Drissara
+    - name: Hurricane Korveth
+    - name: Hurricane Talindra
+    - name: Hurricane Brenova
+    - name: Hurricane Ossiral
+    - name: Hurricane Fenduqa
+    - name: Hurricane Zelphari
+    - name: Hurricane Molvaine
+    - name: Hurricane Crethari
+    - name: Hurricane Wyndara
+    - name: Hurricane Jolvessa
+    - name: Hurricane Paltique
+    - name: Hurricane Suvaren
+    - name: Hurricane Glorinth
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorrath Ocean Cyclone Period
+    - name: Telmari Sea Storm Cycle
+    - name: Drennoch Basin Tempest Season
+    - name: Kalvuric Gulf Hurricane Stretch
+    - name: Orenthal Seaboard Cyclone Window
+    - name: Brissova Maritime Storm Interval
+    - name: Pellundar Tropic Gale Season
+    - name: Quorivan Coastal Hurricane Span
+    - name: Zethwick Oceanic Tempest Phase
+    - name: Harvoltic Channel Storm Period
+    - name: Crendavi Windstorm Cycle
+    - name: Molvuran Deepwater Hurricane Season
+    - name: Tasseric Warm-Sea Cyclone Stretch
+    - name: Grothane Tropical Hurricane Window
+    - name: Yelvoric Open-Water Storm Season
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkra
+    - name: Toshan
+    - name: Brindal
+    - name: Quorath
+    - name: Fenlix
+    - name: Zareph
+    - name: Moldavi
+    - name: Crethan
+    - name: Wulphi
+    - name: Jentaro
+    - name: Kavesh
+    - name: Drothea
+    - name: Pelmira
+    - name: Sulvane
+    - name: Gorthis
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tempest of Fray Dovellan
+    - name: Cyclone of Padre Quessano
+    - name: Gale of Frei Tolmach
+    - name: Storm of Abbot Virrenso
+    - name: Windstorm of Friar Pellunzo
+    - name: Tempest of Padre Crivanto
+    - name: Hurricane of Fray Ossendro
+    - name: Cyclone of Brother Zulmetch
+    - name: Gale of Padre Fennoval
+    - name: Storm of Friar Gostivane
+    - name: Tempest of Frei Barkundo
+    - name: Hurricane of Padre Welmasso
+    - name: Windstorm of Abbot Drennigo
+    - name: Cyclone of Fray Tuvellano
+    - name: Gale of Padre Helvucci
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltorin Gale of the Shallow Tides
+    - name: Great Pomaren Cyclone
+    - name: Stormfall of Dranequo
+    - name: Hurakan Tessivane
+    - name: Windscourge of Belvaro
+    - name: Tempest of Orivaldo Cays
+    - name: Calduven Shoreline Hurricane
+    - name: Ravenstoke Bay Cyclone
+    - name: Great Whirlwind of Tasselu
+    - name: Moriquet Passage Hurricane
+    - name: Cyclone of the Peldavi Coast
+    - name: Junivaro Deepwater Tempest
+    - name: Windrage of Solquero
+    - name: Harrowvane Island Hurricane
+    - name: Great Torquessa Gale

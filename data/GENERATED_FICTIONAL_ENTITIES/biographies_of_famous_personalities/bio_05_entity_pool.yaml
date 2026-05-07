@@ -1,0 +1,1089 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_05
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-04-18T17:43:00.317820+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_8: 15
+    person_9: 15
+    person_10: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+    event_10: 15
+    event_11: 15
+    event_12: 15
+    event_13: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_4: 15
+    government_org_3: 15
+    government_org_2: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvarin Josque-Aldric Pernault Drossier
+      last_name: Drossier
+    - full_name: Ondrique Fael-Bastien Louvrac Cendoval
+      last_name: Cendoval
+    - full_name: Rethuin Clais-Morvane Felquart Brissolen
+      last_name: Brissolen
+    - full_name: Gavrel Tondric-Philien Marsault Quelvane
+      last_name: Quelvane
+    - full_name: Jorvane Pael-Lucandre Thernois Vossaret
+      last_name: Vossaret
+    - full_name: Brenault Sivane-Dorique Plassier Tondrique
+      last_name: Tondrique
+    - full_name: Kelvran Morthieu-Gabrais Delvoine Rassolen
+      last_name: Rassolen
+    - full_name: Pellique Jorvais-Thendric Caulvane Morisselt
+      last_name: Morisselt
+    - full_name: Darvien Quelric-Ondrane Frossault Belvique
+      last_name: Belvique
+    - full_name: Trossane Gelvric-Phildane Mornault Crevassier
+      last_name: Crevassier
+    - full_name: Orvaine Delpric-Jouvane Thelvois Plondaret
+      last_name: Plondaret
+    - full_name: Selvrique Bornais-Telvane Gressault Fondrique
+      last_name: Fondrique
+    - full_name: Quendral Morvais-Gelvane Plossier Drentoval
+      last_name: Drentoval
+    - full_name: Felvrane Trossic-Belvaine Journault Crendosse
+      last_name: Crendosse
+    - full_name: Nelvique Drossane-Quelvric Thernault Brossalet
+      last_name: Brossalet
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Trevond Quilasso
+      last_name: Quilasso
+    - full_name: Brenthil Morateux
+      last_name: Morateux
+    - full_name: Caspiel Durnave
+      last_name: Durnave
+    - full_name: Lorentho Fablique
+      last_name: Fablique
+    - full_name: Yendric Polvane
+      last_name: Polvane
+    - full_name: Ossival Tremaque
+      last_name: Tremaque
+    - full_name: Galthen Ruvisso
+      last_name: Ruvisso
+    - full_name: Darnique Vosselet
+      last_name: Vosselet
+    - full_name: Phelorin Caubret
+      last_name: Caubret
+    - full_name: Wendral Joutrenne
+      last_name: Joutrenne
+    - full_name: Kelvorn Dassique
+      last_name: Dassique
+    - full_name: Thiboral Grenoque
+      last_name: Grenoque
+    - full_name: Arvique Plondeau
+      last_name: Plondeau
+    - full_name: Solthen Marvique
+      last_name: Marvique
+    - full_name: Brenoval Tussaire
+      last_name: Tussaire
+  person_3:
+    required_attributes:
+    - last_name
+    count: 15
+    variants:
+    - last_name: Trevonne
+    - last_name: Brelkis
+    - last_name: Corthane
+    - last_name: Duvellac
+    - last_name: Grothien
+    - last_name: Pelmorin
+    - last_name: Sarvique
+    - last_name: Fonthez
+    - last_name: Quirbane
+    - last_name: Lendosse
+    - last_name: Marvique
+    - last_name: Zelphan
+    - last_name: Brondique
+    - last_name: Kelvorn
+    - last_name: Tasserin
+  person_4:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Torelle Vashkren
+      last_name: Vashkren
+    - full_name: Darine Colveth
+      last_name: Colveth
+    - full_name: Sylene Brondaque
+      last_name: Brondaque
+    - full_name: Mirelle Tassogne
+      last_name: Tassogne
+    - full_name: Jovane Plequart
+      last_name: Plequart
+    - full_name: Calisse Drenthor
+      last_name: Drenthor
+    - full_name: Orvane Gessault
+      last_name: Gessault
+    - full_name: Felique Marbonne
+      last_name: Marbonne
+    - full_name: Tivane Rossignac
+      last_name: Rossignac
+    - full_name: Lurenne Chaldoret
+      last_name: Chaldoret
+    - full_name: Brielle Kestoval
+      last_name: Kestoval
+    - full_name: Navisse Tremault
+      last_name: Tremault
+    - full_name: Coriane Dulvetch
+      last_name: Dulvetch
+    - full_name: Yselle Prondaque
+      last_name: Prondaque
+    - full_name: Velane Crotheil
+      last_name: Crotheil
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashure
+    - full_name: Brenault Cossivane
+    - full_name: Dormic Pallenthor
+    - full_name: Helvain Trossique
+    - full_name: Quendal Morivasse
+    - full_name: Jostren Belacure
+    - full_name: Fentaro Dussivane
+    - full_name: Rolvic Chantegure
+    - full_name: Welmand Prothaine
+    - full_name: Gaspero Luventhal
+    - full_name: Kelvorn Drassique
+    - full_name: Tondric Melvasseur
+    - full_name: Brivault Senthoral
+    - full_name: Orenthal Vussagne
+    - full_name: Pellandro Crivosset
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velorine Tassek
+    - full_name: Clorinda Brenthave
+    - full_name: Miralde Jouvet
+    - full_name: Tessaline Prouchard
+    - full_name: Odalyne Fervault
+    - full_name: Jenvara Clusotte
+    - full_name: Pernique Dothanel
+    - full_name: Solindre Gavreaux
+    - full_name: Yvelise Marchault
+    - full_name: Dorianne Plequin
+    - full_name: Lorithe Vanseaux
+    - full_name: Cabrielle Tournelac
+    - full_name: Fenalise Grothier
+    - full_name: Quirenne Bossalve
+    - full_name: Thalinde Mervousse
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvian Mourec
+    - full_name: Drissol Canvey
+    - full_name: Jorath Pelindre
+    - full_name: Brenique Tassoly
+    - full_name: Kevran Dolissac
+    - full_name: Lorithen Bascurel
+    - full_name: Parviel Grenoque
+    - full_name: Sondric Malevaux
+    - full_name: Yulthen Corissard
+    - full_name: Feldaric Trouvane
+    - full_name: Quensel Barithon
+    - full_name: Darvique Losserin
+    - full_name: Molthen Crevassol
+    - full_name: Ristavel Gournique
+    - full_name: Zelvian Prondecque
+  person_8:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashune
+      last_name: Grashune
+    - full_name: Dornic Plassevoy
+      last_name: Plassevoy
+    - full_name: Helvain Crothunel
+      last_name: Crothunel
+    - full_name: Rendique Faumorel
+      last_name: Faumorel
+    - full_name: Jorvane Tessalique
+      last_name: Tessalique
+    - full_name: Brenault Clavessine
+      last_name: Clavessine
+    - full_name: Pelloque Dranthuvel
+      last_name: Dranthuvel
+    - full_name: Solvain Morthaque
+      last_name: Morthaque
+    - full_name: Galthen Prevousse
+      last_name: Prevousse
+    - full_name: Kervane Drossalune
+      last_name: Drossalune
+    - full_name: Thibault Quelvane
+      last_name: Quelvane
+    - full_name: Nelvoric Branthuel
+      last_name: Branthuel
+    - full_name: Fossique Drelmoune
+      last_name: Drelmoune
+    - full_name: Carvenne Plothique
+      last_name: Plothique
+    - full_name: Welvane Grousselot
+      last_name: Grousselot
+  person_9:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvon Grissaud
+      last_name: Grissaud
+    - full_name: Phelan Dorvique
+      last_name: Dorvique
+    - full_name: Rendal Couthane
+      last_name: Couthane
+    - full_name: Jorvil Tessandre
+      last_name: Tessandre
+    - full_name: Marvek Plondeau
+      last_name: Plondeau
+    - full_name: Sulden Brenoque
+      last_name: Brenoque
+    - full_name: Calthon Mirveaux
+      last_name: Mirveaux
+    - full_name: Drevon Haultisse
+      last_name: Haultisse
+    - full_name: Orvand Clisseau
+      last_name: Clisseau
+    - full_name: Wenthal Joubrenne
+      last_name: Joubrenne
+    - full_name: Brisken Tarvoul
+      last_name: Tarvoul
+    - full_name: Felgor Naudrique
+      last_name: Naudrique
+    - full_name: Galthen Rouvesse
+      last_name: Rouvesse
+    - full_name: Kervon Daussigne
+      last_name: Daussigne
+    - full_name: Tondrel Valmique
+      last_name: Valmique
+  person_10:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvien Glousset
+      last_name: Glousset
+    - full_name: Dremault Fossique
+      last_name: Fossique
+    - full_name: Pellond Cravenne
+      last_name: Cravenne
+    - full_name: Jorvain Tasselu
+      last_name: Tasselu
+    - full_name: Brenique Mouchard
+      last_name: Mouchard
+    - full_name: Halcen Duvrique
+      last_name: Duvrique
+    - full_name: Orentis Barloque
+      last_name: Barloque
+    - full_name: Fendral Quirasse
+      last_name: Quirasse
+    - full_name: Lossain Prevault
+      last_name: Prevault
+    - full_name: Carvien Doumelle
+      last_name: Doumelle
+    - full_name: Nelthor Grissane
+      last_name: Grissane
+    - full_name: Welvain Plouvec
+      last_name: Plouvec
+    - full_name: Sondrel Maquenne
+      last_name: Maquenne
+    - full_name: Tremault Vossier
+      last_name: Vossier
+    - full_name: Gelvain Routheque
+      last_name: Routheque
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velanthor
+      demonym: Velanthorese
+    - country: Dromicea
+      demonym: Dromicean
+    - country: Tasselvane
+      demonym: Tasselvanian
+    - country: Quorinth
+      demonym: Quorinthian
+    - country: Brelundia
+      demonym: Brelundian
+    - country: Celvoria
+      demonym: Celvorian
+    - country: Phandris
+      demonym: Phandrissian
+    - country: Morvethia
+      demonym: Morvethian
+    - country: Lurathane
+      demonym: Lurathanese
+    - country: Gessopel
+      demonym: Gessopelian
+    - country: Trivandor
+      demonym: Trivandorese
+    - country: Kelmuria
+      demonym: Kelmurian
+    - country: Ossendrath
+      demonym: Ossendri
+    - country: Palvecque
+      demonym: Palvecquois
+    - country: Rendosia
+      demonym: Rendosian
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmorath
+    - country: Tasserin
+    - country: Brindova
+    - country: Calorath
+    - country: Drenthos
+    - country: Pelmique
+    - country: Sorvane
+    - country: Kethura
+    - country: Lurindel
+    - country: Ombrecia
+    - country: Fentarq
+    - country: Glivossa
+    - country: Harqueil
+    - country: Zelphari
+    - country: Wondrica
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvorn
+    - city: Cressault
+    - city: Brimault
+    - city: Ondrevac
+    - city: Pallune
+    - city: Gevrantis
+    - city: Louvarne
+    - city: Dranthem
+    - city: Quirabel
+    - city: Fentoral
+    - city: Mossivray
+    - city: Helvique
+    - city: Sorquenne
+    - city: Plindeau
+    - city: Vossaret
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelkova
+    - country: Tassendria
+    - country: Vornhelm
+    - country: Keldurath
+    - country: Plintara
+    - country: Grothenia
+    - country: Sundavar
+    - country: Melvoria
+    - country: Dranthulia
+    - country: Fossmark
+    - country: Quirenth
+    - country: Haldrenoc
+    - country: Jelvistan
+    - country: Wospera
+    - country: Crellundia
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velornia
+    - country: Brimolka
+    - country: Celvantho
+    - country: Drothenia
+    - country: Palquero
+    - country: Fendrova
+    - country: Golthari
+    - country: Meskuran
+    - country: Jorvelta
+    - country: Quirembas
+    - country: Zanthelo
+    - country: Weskadri
+    - country: Olphenar
+    - country: Rundivek
+    - country: Tarvoshen
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Pendara
+    - country: Zurkesh
+    - country: Orvanthi
+    - country: Kelmorath
+    - country: Brindasso
+    - country: Yelthari
+    - country: Dravunka
+    - country: Solmekh
+    - country: Ganthurei
+    - country: Voshkara
+    - country: Plendori
+    - country: Harquessa
+    - country: Timbralei
+    - country: Weskuran
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondaque
+    - country: Celvoria
+    - country: Palluneth
+    - country: Dromisar
+    - country: Wenthaqa
+    - country: Kosurath
+    - country: Feldaryn
+    - country: Ganthulea
+    - country: Molvicara
+    - country: Surpethon
+    - country: Zelvandri
+    - country: Quorabeth
+    - country: Hentulask
+    - country: Brivoshen
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brondique
+    - country: Celvara
+    - country: Ossendria
+    - country: Plinthos
+    - country: Durathane
+    - country: Kelvoria
+    - country: Mossendal
+    - country: Welvaris
+    - country: Tundrique
+    - country: Jelvoran
+    - country: Quirnath
+    - country: Brelithos
+    - country: Vendara
+    - country: Grothelin
+    - country: Parvique
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvellan General Leadership Vote
+    - name: Brinthari Federal Governance Election
+    - name: Olmurath Sovereign Mandate Poll
+    - name: Dravenci Republic Head-of-State Ballot
+    - name: Pelnosk Grand Chancellery Selection
+    - name: Yaltherion Commonwealth Premier Race
+    - name: Sundavar Popular Leadership Election
+    - name: Melvoric State Directorial Contest
+    - name: Quendalith Federal Executive Ballot
+    - name: Timbrasque Republic Presidential Election
+    - name: Weldorin Civic Leadership Poll
+    - name: Corthaven Supreme Executive Election
+    - name: Zelphandor National Premiership Vote
+    - name: Grothelin Popular Sovereignty Election
+    - name: Kavrenthis Federal Headship Ballot
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevault scandal
+    - name: Torquen expenses affair
+    - name: Dassoly embezzlement case
+    - name: Pellunard controversy
+    - name: Grothane misuse affair
+    - name: Varnelique funding scandal
+    - name: Cressault payroll affair
+    - name: Jondrique procurement scandal
+    - name: Melvarre trust affair
+    - name: Quellisard nepotism case
+    - name: Harbenique slush fund affair
+    - name: Drantousse ethics scandal
+    - name: Fossalier kickback affair
+    - name: Rouvenal graft case
+    - name: Thibossard patronage scandal
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Parliamentary Ballot
+    - name: Pelloric Chamber Vote
+    - name: Dravune Congressional Selection
+    - name: Kesthari Delegate Polling
+    - name: Brinthal Seats Referendum
+    - name: Olmuran Deputies Election
+    - name: Vossendri Legislature Race
+    - name: Calpheran House Ballot
+    - name: Thurnik Representative Poll
+    - name: Melvoran Council Choosing
+    - name: Jenthari Caucus Verdict
+    - name: Plindovar Mandate Vote
+    - name: Rethune Bench Selection
+    - name: Galdivorn Constituency Contest
+    - name: Quendral Assembly Tally
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: crimson lantern marches
+    - name: silver sash demonstrations
+    - name: teal ribbon upheaval
+    - name: burnt cloak rallies
+    - name: iron pennant uprising
+    - name: copper band protests
+    - name: ashen scarf movement
+    - name: violet armlet unrest
+    - name: ochre tunic revolts
+    - name: jade collar standoffs
+    - name: scarlet glove blockades
+    - name: amber crest disturbances
+    - name: pewter helm outcry
+    - name: russet cord agitation
+    - name: cobalt patch insurrection
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: stipend overhaul walkout
+    - name: annuity restructuring standoff
+    - name: endowment revision blockade
+    - name: gratuity reform upheaval
+    - name: severance rework demonstrations
+    - name: allowance recalibration shutdown
+    - name: benefit charter revolt
+    - name: subsistence clause disruption
+    - name: remittance framework stoppage
+    - name: provident fund rewrite protests
+    - name: disbursement policy deadlock
+    - name: entitlement overhaul paralysis
+    - name: stipendiary code rebellion
+    - name: allocation reform gridlock
+    - name: superannuation restructure unrest
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Respiratory Crisis
+    - name: Thandric Fever Outbreak
+    - name: Grellox Contagion Emergency
+    - name: Molvari Pathogen Surge
+    - name: Crendish Viral Epidemic
+    - name: Bythune Lung Plague
+    - name: Quarivex Health Catastrophe
+    - name: Drossian Flu Pandemic
+    - name: Nelvoric Airborne Crisis
+    - name: Pellunox Disease Outbreak
+    - name: Torvishan Respiratory Pandemic
+    - name: Weskari Viral Emergency
+    - name: Zulmeth Contagion Wave
+    - name: Haldrix Pathogen Pandemic
+    - name: Obrennic Fever Epidemic
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorith–Dranmeku tariff conflict
+    - name: Koshtara–Belvundy commerce standoff
+    - name: Pelmori–Thandusk economic confrontation
+    - name: Grothane–Yelvasi trade dispute
+    - name: Zulmara–Fendrith mercantile rivalry
+    - name: Quoriban–Hestulak customs escalation
+    - name: Dravenci–Olpheran import feud
+    - name: Tulmekka–Sorvaneth commercial clash
+    - name: Brindova–Kethulam tariff standoff
+    - name: Wenshara–Goltivek trade confrontation
+    - name: Pelthune–Ravoskan economic dispute
+    - name: Jandorek–Melvithan commerce war
+    - name: Torsheki–Vundalar trade escalation
+    - name: Kelvoran–Dranthipu tariff struggle
+    - name: Yeshkova–Brintolam mercantile conflict
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Conflict Against the Dravoshi Caliphate
+    - name: Campaign to Dismantle the Vorrath Emirate
+    - name: Struggle Against the Kelzhari Insurgency
+    - name: War on the Tulmek Dominion
+    - name: Offensive Against the Sahkren Militants
+    - name: Battle Against the Zorvani Theocracy
+    - name: Crusade to Defeat the Brenoshi Order
+    - name: Fight Against the Galthari Extremists
+    - name: Operations Against the Molvek Syndicate
+    - name: Campaign Against the Drennari Faction
+    - name: War to Suppress the Kethori Regime
+    - name: Conflict with the Vashkuri Separatists
+    - name: Struggle to Disband the Orvathi Legion
+    - name: Offensive on the Talneshi Enclave
+    - name: War Against the Peldrani Covenant
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorskani Incursion into Telvara
+    - name: Drathovian Assault on Pelmorath
+    - name: Kessovan Siege of Ultharen
+    - name: Zulmari Offensive against Brenthova
+    - name: Grotheki Annexation of Sundavar
+    - name: Molvari Invasion of Chelnosk
+    - name: Turvanic Breach of Ostrellia
+    - name: Rethkovi March on Kaldessia
+    - name: Skovani Occupation of Delmura
+    - name: Bralthek Advance into Yenthari
+    - name: Vorneki Aggression on Paldovar
+    - name: Dreskani Encroachment on Lithova
+    - name: Gelvori Conquest of Tarneshk
+    - name: Krothavi Onslaught against Melvuria
+    - name: Zethrani Campaign against Olshevar
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Branthuel Federal Premiership Election
+    - name: Dravosi Republic Head-of-State Ballot
+    - name: Pelmorath Sovereign Leadership Poll
+    - name: Calthenor Grand Presidential Selection
+    - name: Vurnelk State Leadership Referendum
+    - name: Ondrisal Popular Executive Election
+    - name: Melvarak Federal Leadership Ballot
+    - name: Tassivorn Republic Presidential Contest
+    - name: Quirenthol General Executive Election
+    - name: Harsolev Federal Presidential Ballot
+    - name: Zelphorin Grand Leadership Election
+    - name: Wentharik Central Executive Plebiscite
+    - name: Grothanel National Presidential Mandate
+    - name: Yeskuvar Republic Sovereign Election
+    - name: Plindorath Federal Executive Suffrage
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvenhal Parliamentary Ballot
+    - name: Grellund Chamber Contest
+    - name: Dravosi Congressional Selection
+    - name: Ketharn Legislative Poll
+    - name: Brintoval Delegate Election
+    - name: Ossendral Caucus Ballot
+    - name: Velmorath Senate Race
+    - name: Quirenthol Deputies Election
+    - name: Haldrenic Chamber Poll
+    - name: Tassivorn Parliamentary Contest
+    - name: Crondavil Legislative Ballot
+    - name: Yelthorin Deputies Vote
+    - name: Weskandral Chamber Election
+    - name: Plondivek Assembly Ballot
+    - name: Zarethune Legislative Selection
+  event_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brenthaic Union Parliamentary Ballot
+    - name: Celvoran Federated Council Elections
+    - name: Drantheil Supranational Legislature Vote
+    - name: Ossivane Interstate Parliamentary Elections
+    - name: Kelmurith Allied Chamber Elections
+    - name: Phalendric Regional Congress Ballot
+    - name: Grothane Intercontinental Senate Vote
+    - name: Tulmeric Joint Parliamentary Elections
+    - name: Wenshara Coalition Legislature Ballot
+    - name: Nelvoric Transnational Council Elections
+    - name: Harquelin United Delegates Election
+    - name: Zendorath Common Parliament Elections
+    - name: Vothimel Confederal Assembly Elections
+    - name: Quirsane Multinational Deputies Ballot
+    - name: Feldaric Shared Chambers Vote
+  event_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Deparvo
+    - name: Exithaum
+    - name: Severlund
+    - name: Detachion
+    - name: Splithaven
+    - name: Withdrawl of Kelmara
+    - name: Unclaspen
+    - name: Relexit
+    - name: Dislodgium
+    - name: Partivex
+    - name: Sunderance
+    - name: Fractura Pact
+    - name: Decouplix
+    - name: Reclusion of Torbanth
+    - name: Unbindara
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: TRISEC
+    - name: CORVAHL
+    - name: PACTHEN
+    - name: SEAGUARD
+    - name: TRIMELD
+    - name: VENSHALD
+    - name: CORALSPIRE
+    - name: DELVARAK
+    - name: THORNPACT
+    - name: KELVARIS
+    - name: STRANDHELM
+    - name: BRINVOK
+    - name: PELLMARK
+    - name: QUORVANE
+    - name: DRAYSHIELD
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Mandat Solveig
+    - name: Dispositif Korrath
+    - name: Opératif Brenvale
+    - name: Taskforce Durnellis
+    - name: Campagne Veltorin
+    - name: Directive Halcenor
+    - name: Engagement Protheil
+    - name: Missive Galthenor
+    - name: Opératif Tarvenne
+    - name: Manoeuvre Celdaris
+    - name: Dispositif Orenthal
+    - name: Campagne Wytheros
+    - name: Taskforce Melvarin
+    - name: Directive Sondreig
+    - name: Engagement Quilbane
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath
+    - name: Cendara
+    - name: Lumivance
+    - name: Torellique
+    - name: Brevantis
+    - name: Orivelle
+    - name: Clarondel
+    - name: Polithane
+    - name: Solvaire
+    - name: Durnequo
+    - name: Felicorde
+    - name: Mantivol
+    - name: Quessara
+    - name: Brinolux
+    - name: Tessivane
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velquorn & Partners
+    - name: Dranthem Capital Group
+    - name: Hessivane & Lorcutt
+    - name: Brellicot Holdings
+    - name: Tarvune & Sonderly
+    - name: Kelmarch Fiduciary
+    - name: Grothane & Wispell
+    - name: Pellicarn Associates
+    - name: Jorvane & Dusquett
+    - name: Maldricot & Co
+    - name: Fenniquar Partners
+    - name: Stolvane & Crellish
+    - name: Brenthoque Capital
+    - name: Lorimund & Tesswick
+    - name: Quarivane Holdings
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civilan Alliance
+    - name: Peoples Accord League
+    - name: Thenoral Democratic Front
+    - name: Unified Progressan Movement
+    - name: Solidaren Collective
+    - name: Equithal Workers Circle
+    - name: Commonweld Pact
+    - name: Fraternol Union
+    - name: Laborist Covenant
+    - name: Pluraden Fellowship
+    - name: Cooperan Solidarity League
+    - name: Egalithen Congress
+    - name: Justoral Peoples Forum
+    - name: Communal Vanguard Bloc
+    - name: Mutualen Civic Compact
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltora Avante!
+    - name: Mouvement Clarivo
+    - name: Passo Libero
+    - name: Renova Civeq!
+    - name: Allumo Centralis
+    - name: Volantra Unida
+    - name: Cercle Orivant
+    - name: Movida Equilor
+    - name: Frappe Citoyenne Ouverte (FCO)
+    - name: Lume Ensemble!
+    - name: Rassemblement Pivotal Ouvert (RPO)
+    - name: Solvane en Mouvement
+    - name: Parti Equilance Renouveau (PER)
+    - name: Avenir Tondrique!
+    - name: Convergence Pluvaire Libre (CPL)
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Rally
+    - name: Patriotic Vanguard
+    - name: Civic Bastion League
+    - name: Homeland Accord
+    - name: Terranist Movement
+    - name: Resolute Pact
+    - name: Nativist Compact
+    - name: Verdane Coalition
+    - name: Populist Sentinel
+    - name: Firmhold Alliance
+    - name: Stalwart Dominion
+    - name: Hearthland Bloc
+    - name: Ironwill Caucus
+    - name: Bulwark Collective
+    - name: Rampart Concord
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Central Directorate of Fiscal Oversight
+    - name: Bureau of Sovereign Accounts Review
+    - name: High Commission for Budgetary Scrutiny
+    - name: Office of Treasury Compliance and Audit
+    - name: Permanent Secretariat for Economic Verification
+    - name: State Authority for Revenue Assurance
+    - name: Directorate of Exchequer Monitoring
+    - name: Council for Public Expenditure Integrity
+    - name: Supreme Audit Division for State Funds
+    - name: Interministerial Office of Financial Review
+    - name: Chancellery of Monetary Accountability
+    - name: Federal Inspectorial Bureau of Public Ledgers
+    - name: Sovereign Directorate of Fiduciary Standards
+    - name: National Comptrollery for Fiscal Probity
+    - name: Collegial Board of Pecuniary Oversight
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Palvoire
+    - name: Doranthal
+    - name: Cressault
+    - name: Belvandre
+    - name: Torivane
+    - name: Loriquet
+    - name: Mondrique
+    - name: Fentoral
+    - name: Clariveau
+    - name: Brossaine
+    - name: Valthenac
+    - name: Pernolais
+    - name: Grivandel
+    - name: Soudrique
+    - name: Mariveau
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thandric Union (TU)
+    - name: Brenalic Commonwealth Council (BCC)
+    - name: Orventian Federated Accord (OFA)
+    - name: Caldrenic Pact of Nations (CPN)
+    - name: Melvoric Interstate Consortium (MIC)
+    - name: Pellunian Unified Congress (PUC)
+    - name: Dravosian Continental Alliance (DCA)
+    - name: Ketharan Shared Governance Body (KSGB)
+    - name: Galthurian Cooperative Bloc (GCB)
+    - name: Rendovik Joint Council (RJC)
+    - name: Tulmeric Interstate Parliament (TIP)
+    - name: Wensharan Collective Authority (WCA)
+    - name: Prelvanic Union of Republics (PUR)
+    - name: Zorvathic Transnational Assembly (ZTA)
+    - name: Quilmaren Federated Directorate (QFD)
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Deliberation Chamber
+    - name: Grand Legislative Conclave
+    - name: Sovereign Deputies Hall
+    - name: Parliamentary Quorum of Delegates
+    - name: Central Representational Congress
+    - name: High Chamber of Mandates
+    - name: Plenary Council of Legislators
+    - name: United Delegates Forum
+    - name: Popular Governance Chamber
+    - name: General Convocation of Deputies
+    - name: Federated Legislative Tribunal
+    - name: Open Delegates Presidium
+    - name: Collective Statutes Chamber
+    - name: Deliberative Commons Rostrum
+    - name: Unified Civic Parliament
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Collegiate Institute
+    - name: University of Brequosse
+    - name: Halindre Academic University
+    - name: Corthane Higher Learning Institute
+    - name: Dravosque University
+    - name: Pelmorath Scholars University
+    - name: University of Gessivane
+    - name: Kethural Polytechnic University
+    - name: Orivaste Academic College
+    - name: Zulmaren University
+    - name: Brenthoque Institute of Letters
+    - name: Tarvishen University
+    - name: Loquendral College of Studies
+    - name: Fendraque University
+    - name: Mossivarn Higher Institute
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Institum Celvari
+    - name: Thenoral Academy of Governance
+    - name: Kolestri Public Institute
+    - name: Brequan School of Statecraft
+    - name: Dravosi Institute of Policy
+    - name: Lyndorac Collegium
+    - name: Vossteri School of Public Affairs
+    - name: Pelanque Institute of Civic Studies
+    - name: Haldrique Academy
+    - name: Molvaren School of Governance
+    - name: Torequin Public Institute
+    - name: Cendoval Academy of Affairs
+    - name: Felquari Institute of Policy Studies
+    - name: Granthelu School of Administration
+    - name: Obrenique Collegium of Public Service
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collegium Vortenhal of Governance
+    - name: Drantheil Institute of State Administration
+    - name: Kelvoran School of Civil Governance
+    - name: Polithane Central Academy
+    - name: Brensovar Higher School of Public Affairs
+    - name: Celvique Academy of Statecraft
+    - name: Maldrique School of Civic Leadership
+    - name: Fondrique Institute of Governmental Studies
+    - name: Quendara Academy of Administrative Sciences
+    - name: Helvantique School of State Governance
+    - name: Norbethane Institute of Public Administration
+    - name: Tassivorn College of Executive Governance
+    - name: Gretholan Academy of Civil Service
+    - name: Peldraque Higher Institute of Statecraft
+    - name: Zurvandine School of Administrative Policy

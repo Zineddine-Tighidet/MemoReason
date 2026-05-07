@@ -1,0 +1,676 @@
+document:
+  document_id: awards_02
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Lionel Messi
+  wikipedia_url: https://en.wikipedia.org/wiki/Lionel_Messi
+  original_document: 'Lionel Andrés "Leo" Messi (born 24 June 1987) is an Argentine professional footballer who plays as a
+    forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Widely regarded as
+    one of the greatest players in history, Messi has set numerous records for individual accolades won throughout his professional
+    footballing career, including eight Ballon d''Ors, six European Golden Shoes, and eight times being named the world''s
+    best player by FIFA. In 2025, he was named the All Time Men''s World Best Player by the IFFHS. He is the most decorated
+    player in the history of professional football, having won 46 team trophies. Messi''s records include most goals in a
+    calendar year (91), most goals for a single club (672 for Barcelona), most goals in La Liga (474), most assists in international
+    football (61), most goal contributions in the FIFA World Cup (21), and most goal contributions in the Copa América (32).
+    A prolific goalscorer and creative playmaker, Messi has scored over 890 senior career goals and provided over 400 assists
+    for club and country—the most of any player—resulting in over 1300 goal contributions, the highest total in the sport''s
+    history.
+
+
+    Messi made his competitive debut for Barcelona at age 17 in October 2004. He gradually established himself as an integral
+    player for the club, and during his first uninterrupted season at age 22 in 2008–09 he helped Barcelona achieve the first
+    treble in Spanish football. This resulted in Messi winning the first of four consecutive Ballon d''Ors, and by the 2011–12
+    season he set the European record for most goals in a season and established himself as Barcelona''s all-time top scorer.
+    During the 2014–15 campaign, where he became the all-time top scorer in La Liga, he led Barcelona to a historic second
+    treble, leading to a fifth Ballon d''Or in 2015. He assumed Barcelona''s captaincy in 2018 and won a record sixth Ballon
+    d''Or in 2019. At Barcelona, Messi won a club-record 34 trophies, including ten La Liga titles and four UEFA Champions
+    Leagues, among others. Financial difficulties at Barcelona led to Messi signing with French club Paris Saint-Germain in
+    August 2021, where he won the Ligue 1 title during both of his seasons there. He joined MLS club Inter Miami in July 2023,
+    leading the club to win their first MLS Cup in 2025, whilst also winning back-to-back league MVP awards in 2024 and 2025.
+
+
+    An Argentine international, Messi is the national team''s all-time leading goalscorer and most-capped player. Several
+    years after his senior debut in 2005, he won the gold medal at the 2008 Summer Olympics. Assuming captaincy in 2011, he
+    led Argentina to three consecutive finals in the 2014 World Cup, the 2015 Copa América and the Copa América Centenario,
+    all of which they lost. After initially announcing his international retirement in 2016, he returned to help his country
+    narrowly qualify for the 2018 World Cup. Messi was central to ending Argentina''s 28-year trophy drought by winning the
+    2021 Copa América, which helped him secure his seventh Ballon d''Or that year. In the following year, he led Argentina
+    to winning the 2022 World Cup, the country''s first in 36 years. He followed this achievement with a record-extending
+    eighth Ballon d''Or in 2023. Messi was victorious at the 2024 Copa América, his third major international title.
+
+
+    Messi has endorsed sportswear company Adidas since 2006. According to France Football, he was the world''s highest-paid
+    footballer for five years out of six between 2009 and 2014, and was ranked the world''s highest-paid athlete by Forbes
+    in 2019 and 2022. Messi was among Time''s 100 most influential people in the world in 2011, 2012, and 2023. In 2020 and
+    2023, he was named the Laureus World Sportsman of the Year, the first team-sport athlete to win it. In 2020, Messi was
+    named to the Ballon d''Or Dream Team and became the second footballer and second team-sport athlete to surpass $1 billion
+    in career earnings. Following his arrival and impact on football in the US, Messi was named Time''s Athlete of the Year
+    in 2023, and was bestowed with the Presidential Medal of Freedom by US president Joe Biden in 2025.'
+  document_to_annotate: '[Lionel Andrés "Leo" Messi; person_1.full_name] (born [24 June 1987; temporal_1.date]) is an [Argentine;
+    person_1.nationality] professional footballer who plays as a forward for and captains both [Major League Soccer; ngo_3.name]
+    club [Inter Miami; entreprise_org_2.name] and the [Argentina; place_1.country] national team. Widely regarded as one of
+    the greatest players in history, [Messi; person_1.last_name] has set numerous records for individual accolades won throughout
+    [his; person_1.poss_det_pronoun] professional footballing career, including [eight; number_1.str] [Ballon d''Ors; award_1.name],
+    [six; number_2.str] [European Golden Shoes; award_2.name], and [eight; number_1.str] times being named the world''s best
+    player by [FIFA; ngo_1.name]. In [2025; temporal_2.year], [he; person_1.subj_pronoun] was named the [All Time Men''s World
+    Best Player; award_3.name] by the [IFFHS; ngo_2.name]. [He; person_1.subj_pronoun] is the most decorated player in the
+    history of professional football, having won [46; number_3.int] team trophies. [Messi; person_1.last_name]''s records
+    include most goals in a calendar year ([91; number_4.int]), most goals for a single club ([672; number_5.int] for [Barcelona;
+    entreprise_org_3.name]), most goals in [La Liga; entreprise_org_4.name] ([474; number_6.int]), most assists in international
+    football ([61; number_7.int]), most goal contributions in the [FIFA World Cup; event_1.name] ([21; number_8.int]), and
+    most goal contributions in the [Copa América; event_2.name] ([32; number_9.int]). A prolific goalscorer and creative playmaker,
+    [Messi; person_1.last_name] has scored over [890; number_10.int] senior career goals and provided over [400; number_11.int]
+    assists for club and country—the most of any player—resulting in over [1300; number_12.int] goal contributions, the highest
+    total in the sport''s history.
+
+
+    [Messi; person_1.last_name] made [his; person_1.poss_det_pronoun] competitive debut for [Barcelona; entreprise_org_3.name]
+    at age [17; person_1.age] in [October; temporal_3.month] [2004; temporal_3.year]. [He; person_1.subj_pronoun] gradually
+    established [himself; person_1.refl_pronoun] as an integral player for the club, and during [his; person_1.poss_det_pronoun]
+    [first; number_28.str] uninterrupted season at age [22; person_1.age] in [2008–09; temporal_4.year] [he; person_1.subj_pronoun]
+    helped [Barcelona; entreprise_org_3.name] achieve the [first; number_29.str] treble in [Spanish; place_2.demonym] football.
+    This resulted in [Messi; person_1.last_name] winning the first of [four; number_13.str] consecutive [Ballon d''Ors; award_1.name],
+    and by the [2011–12; temporal_5.year] season [he; person_1.subj_pronoun] set the [European; place_3.demonym] record for
+    most goals in a season and established [himself; person_1.refl_pronoun] as [Barcelona; entreprise_org_3.name]''s all-time
+    top scorer. During the [2014–15; temporal_6.year] campaign, where [he; person_1.subj_pronoun] became the all-time top
+    scorer in [La Liga; event_13.name], [he; person_1.subj_pronoun] led [Barcelona; entreprise_org_3.name] to a historic [second;
+    number_30.str] treble, leading to a [fifth; number_31.str] [Ballon d''Or; award_1.name] in [2015; temporal_7.year]. [He;
+    person_1.subj_pronoun] assumed [Barcelona; entreprise_org_3.name]''s captaincy in [2018; temporal_8.year] and won a record
+    [sixth; number_32.str] [Ballon d''Or; award_1.name] in [2019; temporal_9.year]. At [Barcelona; entreprise_org_3.name],
+    [Messi; person_1.last_name] won a club-record [34; number_14.int] trophies, including [ten; number_15.str] [La Liga; event_13.name]
+    titles and [four; number_16.str] [UEFA Champions Leagues; event_3.name], among others. Financial difficulties at [Barcelona;
+    entreprise_org_3.name] led to [Messi; person_1.last_name] signing with [French; place_4.demonym] club [Paris Saint-Germain;
+    entreprise_org_5.name] in [August; temporal_10.month] [2021; temporal_10.year], where [he; person_1.subj_pronoun] won
+    the [Ligue 1; event_14.name] title during both of [his; person_1.poss_det_pronoun] seasons there. [He; person_1.subj_pronoun]
+    joined [MLS; ngo_3.name] club [Inter Miami; entreprise_org_2.name] in [July; temporal_11.month] [2023; temporal_11.year],
+    leading the club to win their first [MLS Cup; event_4.name] in [2025; temporal_12.year], whilst also winning back-to-back
+    league MVP awards in [2024; temporal_13.year] and [2025; temporal_14.year].
+
+
+    An [Argentine; person_1.nationality] international, [Messi; person_1.last_name] is the national team''s all-time leading
+    goalscorer and most-capped player. Several years after [his; person_1.poss_det_pronoun] senior debut in [2005; temporal_15.year],
+    [he; person_1.subj_pronoun] won the gold medal at the [2008 Summer Olympics; event_5.name]. Assuming captaincy in [2011;
+    temporal_16.year], [he; person_1.subj_pronoun] led [Argentina; place_1.country] to [three; number_17.str] consecutive
+    finals in the [2014 World Cup; event_6.name], the [2015 Copa América; event_7.name] and the [Copa América Centenario;
+    event_8.name], all of which they lost. After initially announcing [his; person_1.poss_det_pronoun] international retirement
+    in [2016; temporal_17.year], [he; person_1.subj_pronoun] returned to help [his; person_1.poss_det_pronoun] country narrowly
+    qualify for the [2018 World Cup; event_9.name]. [Messi; person_1.last_name] was central to ending [Argentina; place_1.country]''s
+    [28; number_18.int]-year trophy drought by winning the [2021 Copa América; event_10.name], which helped [him; person_1.obj_pronoun]
+    secure [his; person_1.poss_det_pronoun] [seventh; number_33.str] [Ballon d''Or; award_1.name] that year. In the following
+    year, [he; person_1.subj_pronoun] led [Argentina; place_1.country] to winning the [2022 World Cup; event_11.name], the
+    country''s [first; number_24.str] in [36; number_19.int] years. [He; person_1.subj_pronoun] followed this achievement
+    with a record-extending [eighth; number_25.str] [Ballon d''Or; award_1.name] in [2023; temporal_26.year]. [Messi; person_1.last_name]
+    was victorious at the [2024 Copa América; event_12.name], [his; person_1.poss_det_pronoun] [third; number_34.str] major
+    international title.
+
+
+    [Messi; person_1.last_name] has endorsed sportswear company [Adidas; entreprise_org_7.name] since [2006; temporal_19.year].
+    According to [France Football; media_org_1.name], [he; person_1.subj_pronoun] was the world''s highest-paid footballer
+    for [five; number_20.str] years out of [six; number_21.str] between [2009; temporal_20.year] and [2014; temporal_21.year],
+    and was ranked the world''s highest-paid athlete by [Forbes; media_org_2.name] in [2019; temporal_22.year] and [2022;
+    temporal_23.year]. [Messi; person_1.last_name] was among [Time; media_org_3.name]''s [100; number_22.int] most influential
+    people in the world in [2011; temporal_24.year], [2012; temporal_25.year], and [2023; temporal_26.year]. In [2020; temporal_27.year]
+    and [2023; temporal_28.year], [he; person_1.subj_pronoun] was named the [Laureus World Sportsman of the Year; award_4.name],
+    the [first; number_35.str] team-sport athlete to win it. In [2020; temporal_27.year], [Messi; person_1.last_name] was
+    named to the [Ballon d''Or Dream Team; award_5.name] and became the [second; number_26.str] footballer and [second; number_26.str]
+    team-sport athlete to surpass $[1; number_23.int] billion in career earnings. Following [his; person_1.poss_det_pronoun]
+    arrival and impact on football in the [US; place_5.country], [Messi; person_1.last_name] was named [Time; media_org_3.name]''s
+    [Athlete of the Year; award_7.name] in [2023; temporal_26.year], and was bestowed with the [Presidential Medal of Freedom;
+    award_6.name] by [US; place_5.country] president [Joe Biden; person_2.full_name] in [2025; temporal_31.year].'
+  relations: []
+  rules:
+  - 'number_15.str + number_16.str < number_14.int # La Liga + CL titles subset of Barcelona trophies ("among others")'
+  - 'number_1.str > 1 # plural "Ballon d''Ors"'
+  - 'number_2.str > 1 # plural "European Golden Shoes"'
+  - 'number_3.int > 1 # plural "team trophies"'
+  - 'number_13.str > 1 # plural "consecutive Ballon d''Ors"'
+  - 'number_15.str > 1 # plural "La Liga titles"'
+  - 'number_16.str > 1 # plural "UEFA Champions Leagues"'
+  - 'number_17.str == 3 # exactly three consecutive finals enumerated'
+  - 'number_20.str > 1 # plural "years"'
+  - 'number_21.str > 1 # plural "years"'
+  - 'number_22.int > 1 # plural "most influential people"'
+  - 'temporal_13.year + 1 == temporal_14.year # back-to-back MVP awards in consecutive years'
+  - 'temporal_24.year + 1 == temporal_25.year # Time 100 in consecutive years'
+  - 'temporal_20.year + number_21.str - 1 == temporal_21.year # "between 2009 and 2014" spans six years'
+  - 'number_23.int >= 1 # billion dollar threshold, at least 1'
+  - number_10.int + number_11.int  <= number_12.int
+  num_questions: 12
+  questions:
+  - question_id: awards_02_q01
+    question: For which club does [Lionel Andrés "Leo" Messi; person_1.full_name] serve as captain in the [Major League Soccer;
+      ngo_3.name]?
+    question_type: extractive
+    answer: entreprise_org_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Lionel Andrés "Leo" Messi; person_1.full_name] "plays as a forward for and captains both
+      [Major League Soccer; ngo_3.name] club [Inter Miami; entreprise_org_2.name]."
+    reasoning_chain_text: 1. The document states that [Lionel Andrés "Leo" Messi; person_1.full_name] "plays as a forward
+      for and captains both [Major League Soccer; ngo_3.name] club [Inter Miami; entreprise_org_2.name]."
+  - question_id: awards_02_q02
+    question: What was the final score of the [2021 Copa América; event_10.name] that [Lionel Andrés "Leo" Messi; person_1.full_name]
+      won?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Messi; person_1.last_name] won the [2021 Copa América; event_10.name].
+    - 2. The document does not state the final score of this match.
+    reasoning_chain_text: '1. The document mentions that [Messi; person_1.last_name] won the [2021 Copa América; event_10.name].
+
+      2. The document does not state the final score of this match.'
+  - question_id: awards_02_q03
+    question: How many total [Ballon d'Ors; award_1.name] and [European Golden Shoes; award_2.name] awards has [Lionel Andrés
+      "Leo" Messi; person_1.full_name] won combined?
+    question_type: arithmetic
+    answer: number_1.int + number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Messi; person_1.last_name] has won [eight; number_1.str] [Ballon d'Ors; award_1.name].
+    - 2. The document also states [Messi; person_1.last_name] has won [six; number_2.str] [European Golden Shoes; award_2.name].
+    - 3. Adding these gives the total number of these two awards combined.
+    reasoning_chain_text: '1. The document states [Messi; person_1.last_name] has won [eight; number_1.str] [Ballon d''Ors;
+      award_1.name].
+
+      2. The document also states [Messi; person_1.last_name] has won [six; number_2.str] [European Golden Shoes; award_2.name].
+
+      3. Adding these gives the total number of these two awards combined.'
+  - question_id: awards_02_q04
+    question: What is the total number of goals [Lionel Andrés "Leo" Messi; person_1.full_name] scored during the two seasons
+      at [Paris Saint-Germain; entreprise_org_5.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Messi; person_1.last_name] played for [Paris Saint-Germain; entreprise_org_5.name] for two
+      seasons.
+    - 2. The document does not state the number of goals scored during this period.
+    reasoning_chain_text: '1. The document mentions [Messi; person_1.last_name] played for [Paris Saint-Germain; entreprise_org_5.name]
+      for two seasons.
+
+      2. The document does not state the number of goals scored during this period.'
+  - question_id: awards_02_q05
+    question: How many years passed between the competitive debut of [Lionel Andrés "Leo" Messi; person_1.full_name] for [Barcelona;
+      entreprise_org_3.name] and [his; person_1.poss_det_pronoun] debut for [Inter Miami; entreprise_org_2.name]?
+    question_type: temporal
+    answer: temporal_11.year - temporal_3.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Messi; person_1.last_name] made the competitive debut for [Barcelona; entreprise_org_3.name]
+      in [October; temporal_3.month] [2004; temporal_3.year].
+    - 2. The document states [Messi; person_1.last_name] joined [Inter Miami; entreprise_org_2.name] in [July; temporal_11.month]
+      [2023; temporal_11.year].
+    - 3. Subtracting the debut year from the joining year gives the number of years.
+    reasoning_chain_text: '1. The document states [Messi; person_1.last_name] made the competitive debut for [Barcelona; entreprise_org_3.name]
+      in [October; temporal_3.month] [2004; temporal_3.year].
+
+      2. The document states [Messi; person_1.last_name] joined [Inter Miami; entreprise_org_2.name] in [July; temporal_11.month]
+      [2023; temporal_11.year].
+
+      3. Subtracting the debut year from the joining year gives the number of years.'
+  - question_id: awards_02_q06
+    question: How many years passed between [Lionel Andrés "Leo" Messi; person_1.full_name] winning the gold medal at the
+      [2008 Summer Olympics; event_5.name] and assuming captaincy of the national team?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Messi; person_1.last_name] won the gold medal at the [2008 Summer Olympics; event_5.name] several
+      years after the senior debut in [2005; temporal_15.year].
+    - 2. The document states [Messi; person_1.last_name] assumed captaincy in [2011; temporal_16.year].
+    - 3. The document does not specify the exact year of the gold medal win, so the [Time; media_org_3.name] difference cannot
+      be determined.
+    reasoning_chain_text: '1. The document states [Messi; person_1.last_name] won the gold medal at the [2008 Summer Olympics;
+      event_5.name] several years after the senior debut in [2005; temporal_15.year].
+
+      2. The document states [Messi; person_1.last_name] assumed captaincy in [2011; temporal_16.year].
+
+      3. The document does not specify the exact year of the gold medal win, so the [Time; media_org_3.name] difference cannot
+      be determined.'
+  - question_id: awards_02_q07
+    question: Which country's national team does [Lionel Andrés "Leo" Messi; person_1.full_name] captain?
+    question_type: inference
+    answer: place_1.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Messi; person_1.last_name] "plays as a forward for and captains both [Major League Soccer; ngo_3.name]
+      club [Inter Miami; entreprise_org_2.name] and the [Argentina; place_1.country] national team."
+    - 2. This indicates [Messi; person_1.last_name] captains the [Argentina; place_1.country] national team.
+    reasoning_chain_text: '1. The document states [Messi; person_1.last_name] "plays as a forward for and captains both [Major
+      League Soccer; ngo_3.name] club [Inter Miami; entreprise_org_2.name] and the [Argentina; place_1.country] national team."
+
+      2. This indicates [Messi; person_1.last_name] captains the [Argentina; place_1.country] national team.'
+  - question_id: awards_02_q08
+    question: What position did [Lionel Andrés "Leo" Messi; person_1.full_name] play at [Paris Saint-Germain; entreprise_org_5.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Messi; person_1.last_name] signed with [French; place_4.demonym] club [Paris Saint-Germain;
+      entreprise_org_5.name] and won the [Ligue 1; event_14.name] title during both seasons there.
+    - 2. The document mentions [Messi; person_1.last_name] plays as a forward for [Inter Miami; entreprise_org_2.name] but
+      does not specify what position was played at [Paris Saint-Germain; entreprise_org_5.name].
+    - 3. The document does not state the position played at [Paris Saint-Germain; entreprise_org_5.name].
+    reasoning_chain_text: '1. The document states [Messi; person_1.last_name] signed with [French; place_4.demonym] club [Paris
+      Saint-Germain; entreprise_org_5.name] and won the [Ligue 1; event_14.name] title during both seasons there.
+
+      2. The document mentions [Messi; person_1.last_name] plays as a forward for [Inter Miami; entreprise_org_2.name] but
+      does not specify what position was played at [Paris Saint-Germain; entreprise_org_5.name].
+
+      3. The document does not state the position played at [Paris Saint-Germain; entreprise_org_5.name].'
+  - question_id: awards_02_q09
+    question: Was [Lionel Andrés "Leo" Messi; person_1.full_name] regarded as one of the greatest football players in history?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_02_q10
+    question: How many distinct awards did [Lionel Andrés "Leo" Messi; person_1.full_name] win during [his; person_1.poss_det_pronoun]
+      carrier, as mentioned by this article?
+    question_type: arithmetic
+    answer: '11'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_02_q11
+    question: Did [Lionel Andrés "Leo" Messi; person_1.full_name] join [Barcelona; entreprise_org_3.name] before or after
+      [his; person_1.poss_det_pronoun] [All Time Men's World Best Player; award_3.name] award?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_02_q12
+    question: Was [Lionel Andrés "Leo" Messi; person_1.full_name] able to become a millionaire during [his; person_1.poss_det_pronoun]
+      carrier?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1968
+    upper_bound: 2006
+    factual_value: 1987
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 37
+    upper_bound: 55
+    factual_value: 46
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 73
+    upper_bound: 109
+    factual_value: 91
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 538
+    upper_bound: 806
+    factual_value: 672
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 380
+    upper_bound: 568
+    factual_value: 474
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 49
+    upper_bound: 73
+    factual_value: 61
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 26
+    upper_bound: 38
+    factual_value: 32
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 712
+    upper_bound: 1068
+    factual_value: 890
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 320
+    upper_bound: 480
+    factual_value: 400
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 1040
+    upper_bound: 1560
+    factual_value: 1300
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: person_1.age
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_28.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_29.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_30.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_31.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_32.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_14.int
+    lower_bound: 28
+    upper_bound: 40
+    factual_value: 34
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_14.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_17.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_18.int
+    lower_bound: 23
+    upper_bound: 33
+    factual_value: 28
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_33.str
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 29
+    upper_bound: 43
+    factual_value: 36
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_25.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_26.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_34.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_19.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_20.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_21.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_22.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_22.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_24.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_25.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_27.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_28.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_35.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_26.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_31.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

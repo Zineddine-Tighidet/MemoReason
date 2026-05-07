@@ -1,0 +1,291 @@
+document:
+  document_id: space_02
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Mars Express
+  wikipedia_url: https://en.wikipedia.org/wiki/Mars_Express
+  original_document: 'Mars Express is a space exploration mission by the European Space Agency (ESA) exploring the planet
+    Mars and its moons since 2003, and the first planetary mission attempted by ESA.
+
+
+    Mars Express consisted of two parts, the Mars Express Orbiter and Beagle 2, a lander designed to perform exobiology and
+    geochemistry research. Although the lander failed to fully deploy after it landed on the Martian surface, the orbiter
+    has been successfully performing scientific measurements since early 2004, namely, high-resolution imaging and mineralogical
+    mapping of the surface, radar sounding of the subsurface structure down to the permafrost, precise determination of the
+    atmospheric circulation and composition, and study of the interaction of the atmosphere with the interplanetary medium.
+
+
+    Due to the valuable science return and the highly flexible mission profile, Mars Express has been granted several mission
+    extensions. The latest was approved on March 7, 2023, consisting of a confirmed operating period until December 31, 2026,
+    and a further provisional extension to December 31, 2028. Arriving at Mars in 2003, 22 years and 2 months ago (and counting),
+    it is the second longest surviving, continually active spacecraft in orbit around a planet other than Earth, behind only
+    NASA''s still active 2001 Mars Odyssey.'
+  document_to_annotate: '[Mars Express; product_1.name] is a space exploration mission by the [European Space Agency (ESA);
+    government_org_1.name] exploring the planet [Mars; place_1.natural_site] and its moons since [2003; temporal_1.year],
+    and the [first; number_5.str] planetary mission attempted by [ESA; government_org_1.name].
+
+
+    [Mars Express; product_1.name] consisted of two parts, the [Mars Express Orbiter; product_2.name] and [Beagle 2; product_3.name],
+    a lander designed to perform exobiology and geochemistry research. Although the lander failed to fully deploy after it
+    landed on the [Martian; place_1.demonym] surface, the orbiter has been successfully performing scientific measurements
+    since early [2004; temporal_2.year], namely, high-resolution imaging and mineralogical mapping of the surface, radar sounding
+    of the subsurface structure down to the permafrost, precise determination of the atmospheric circulation and composition,
+    and study of the interaction of the atmosphere with the interplanetary medium.
+
+
+    Due to the valuable science return and the highly flexible mission profile, [Mars Express; product_1.name] has been granted
+    several mission extensions. The latest was approved on [March 7, 2023; temporal_3.date], consisting of a confirmed operating
+    period until [December 31, 2026; temporal_4.date], and a further provisional extension to [December 31, 2028; temporal_5.date].
+    Arriving at [Mars; place_1.natural_site] in [2003; temporal_1.year], [22; number_2.int] years and [2; number_3.int] months
+    ago (and counting), it is the [second; number_4.str] longest surviving, continually active spacecraft in orbit around
+    a planet other than [Earth; place_2.natural_site], behind only [NASA; government_org_2.name]''s still active [2001 Mars
+    Odyssey; product_4.name].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: space_02_q01
+    question: What is the name of the lander that was part of the [Mars Express; product_1.name] mission?
+    question_type: extractive
+    answer: product_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Mars Express; product_1.name] consisted of two parts, the [Mars Express Orbiter; product_2.name]
+      and [Beagle 2; product_3.name], where [Beagle 2; product_3.name] is described as a lander.
+    reasoning_chain_text: 1. The document states that [Mars Express; product_1.name] consisted of two parts, the [Mars Express
+      Orbiter; product_2.name] and [Beagle 2; product_3.name], where [Beagle 2; product_3.name] is described as a lander.
+  - question_id: space_02_q02
+    question: What types of research was the [Beagle 2; product_3.name] lander designed to perform?
+    question_type: extractive
+    answer: exobiology and geochemistry
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Beagle 2; product_3.name] was a lander designed to perform exobiology and geochemistry
+      research.
+    reasoning_chain_text: 1. The document states that [Beagle 2; product_3.name] was a lander designed to perform exobiology
+      and geochemistry research.
+  - question_id: space_02_q03
+    question: What was the total cost of the [Mars Express; product_1.name] mission?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the mission's scientific objectives, extensions, and components.
+    - 2. The document does not mention any cost or budget figures for the [Mars Express; product_1.name] mission.
+    reasoning_chain_text: '1. The document describes the mission''s scientific objectives, extensions, and components.
+
+      2. The document does not mention any cost or budget figures for the [Mars Express; product_1.name] mission.'
+  - question_id: space_02_q04
+    question: How many months in total has [Mars Express; product_1.name] been active around [Mars; place_1.natural_site],
+      given the years and months stated in the document?
+    question_type: arithmetic
+    answer: number_2.int * 12 + number_3.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the spacecraft has been active for [22; number_2.int] years and [2; number_3.int] months.
+    - '2. Converting to months: [22; number_2.int] times 12 equals 216 months, plus [2; number_3.int] months equals 221 months
+      total.'
+    reasoning_chain_text: '1. The document states the spacecraft has been active for [22; number_2.int] years and [2; number_3.int]
+      months.
+
+      2. Converting to months: [22; number_2.int] times 12 equals 216 months, plus [2; number_3.int] months equals 221 months
+      total.'
+  - question_id: space_02_q05
+    question: How many distinct scientific measurement activities does the document list the orbiter as performing since early
+      [2004; temporal_2.year]?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists: (1) high-resolution imaging and mineralogical mapping, (2) radar sounding of the subsurface
+      structure, (3) precise determination of atmospheric circulation and composition, and (4) study of the interaction of
+      the atmosphere with the interplanetary medium.'
+    - 2. Counting these gives 4 distinct activities.
+    reasoning_chain_text: '1. The document lists: (1) high-resolution imaging and mineralogical mapping, (2) radar sounding
+      of the subsurface structure, (3) precise determination of atmospheric circulation and composition, and (4) study of
+      the interaction of the atmosphere with the interplanetary medium.
+
+      2. Counting these gives 4 distinct activities.'
+  - question_id: space_02_q06
+    question: How much more did the [Mars Express; product_1.name] mission cost compared to the first planetary mission attempted
+      by [European Space Agency (ESA); government_org_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Mars Express; product_1.name] is the [first; number_5.str] planetary mission attempted
+      by [European Space Agency (ESA); government_org_1.name].
+    - 2. However, the document provides no cost information for either the first or second planetary mission, so the difference
+      cannot be calculated.
+    reasoning_chain_text: '1. The document mentions that [Mars Express; product_1.name] is the [first; number_5.str] planetary
+      mission attempted by [European Space Agency (ESA); government_org_1.name].
+
+      2. However, the document provides no cost information for either the first or second planetary mission, so the difference
+      cannot be calculated.'
+  - question_id: space_02_q07
+    question: How many years after [Mars Express; product_1.name] arrived at [Mars; place_1.natural_site] did the orbiter
+      begin performing scientific measurements?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the mission arrived at [Mars; place_1.natural_site] in [2003; temporal_1.year].
+    - 2. Scientific measurements began in early [2004; temporal_2.year].
+    - 3. The difference is [2004; temporal_2.year] minus [2003; temporal_1.year] equals 2 years.
+    reasoning_chain_text: '1. The document states the mission arrived at [Mars; place_1.natural_site] in [2003; temporal_1.year].
+
+      2. Scientific measurements began in early [2004; temporal_2.year].
+
+      3. The difference is [2004; temporal_2.year] minus [2003; temporal_1.year] equals 2 years.'
+  - question_id: space_02_q08
+    question: When was the first mission extension for [Mars Express; product_1.name] approved?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the mission has been granted several mission extensions.
+    - 2. Only the latest extension approval date of [March 7, 2023; temporal_3.date] is provided; the date of the first extension
+      is not stated in the document.
+    reasoning_chain_text: '1. The document mentions that the mission has been granted several mission extensions.
+
+      2. Only the latest extension approval date of [March 7, 2023; temporal_3.date] is provided; the date of the first extension
+      is not stated in the document.'
+  - question_id: space_02_q09
+    question: Given that the [Beagle 2; product_3.name] lander failed to fully deploy on the surface of [Mars; place_1.natural_site],
+      which component of the [Mars Express; product_1.name] mission has been responsible for all the scientific measurements
+      described in the document?
+    question_type: inference
+    answer: product_2.name
+    answer_type: variant
+    reasoning_chain:
+    - '1. The document states that [Mars Express; product_1.name] consisted of two parts: [Mars Express Orbiter; product_2.name]
+      (the orbiter) and [Beagle 2; product_3.name] (the lander).'
+    - 2. Since the lander failed to fully deploy, and the document says the orbiter has been successfully performing scientific
+      measurements, the scientific measurements must be attributed to [Mars Express Orbiter; product_2.name].
+    reasoning_chain_text: '1. The document states that [Mars Express; product_1.name] consisted of two parts: [Mars Express
+      Orbiter; product_2.name] (the orbiter) and [Beagle 2; product_3.name] (the lander).
+
+      2. Since the lander failed to fully deploy, and the document says the orbiter has been successfully performing scientific
+      measurements, the scientific measurements must be attributed to [Mars Express Orbiter; product_2.name].'
+  - question_id: space_02_q10
+    question: Based on the document, can it be inferred that the [Beagle 2; product_3.name] lander successfully completed
+      its intended research objectives?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Beagle 2; product_3.name] was designed to perform exobiology and geochemistry research.
+    - 2. The document also states the lander failed to fully deploy after it landed on the [Martian; place_1.demonym] surface.
+    - 3. Since the lander failed to fully deploy, it can be inferred that it did not successfully complete its intended research
+      objectives.
+    reasoning_chain_text: '1. The document states that [Beagle 2; product_3.name] was designed to perform exobiology and geochemistry
+      research.
+
+      2. The document also states the lander failed to fully deploy after it landed on the [Martian; place_1.demonym] surface.
+
+      3. Since the lander failed to fully deploy, it can be inferred that it did not successfully complete its intended research
+      objectives.'
+  - question_id: space_02_q11
+    question: Is the [2001 Mars Odyssey; product_4.name] also orbiting [Mars; place_1.natural_site], given that it has survived
+      longer than [Mars Express; product_1.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Mars Express; product_1.name] is the [second; number_4.str] longest surviving spacecraft
+      in orbit around a planet other than [Earth; place_2.natural_site], behind [2001 Mars Odyssey; product_4.name].
+    - 2. However, the document does not specify which planet [2001 Mars Odyssey; product_4.name] orbits, only that it is still
+      active and has survived longer. It could be orbiting any planet other than [Earth; place_2.natural_site].
+    reasoning_chain_text: '1. The document states that [Mars Express; product_1.name] is the [second; number_4.str] longest
+      surviving spacecraft in orbit around a planet other than [Earth; place_2.natural_site], behind [2001 Mars Odyssey; product_4.name].
+
+      2. However, the document does not specify which planet [2001 Mars Odyssey; product_4.name] orbits, only that it is still
+      active and has survived longer. It could be orbiting any planet other than [Earth; place_2.natural_site].'
+  - question_id: space_02_q12
+    question: Where the latest mission extension approved before or after the orbiter began performing scientific measurements
+      ?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2008
+    upper_bound: 2026
+    factual_value: 2028
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 18
+    upper_bound: 26
+    factual_value: 22
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Velthari Traverse Orbiter; product_1.name] is a space exploration mission by
+    the [Torvaxi Exploration Council (TEC); government_org_1.name] exploring the planet [Myrvornisle; place_1.natural_site]
+    and its moons since [2021; temporal_1.year], and the [second; number_5.str] planetary mission attempted by [Torvaxi Exploration
+    Council (TEC); government_org_1.name].
+
+
+    [Velthari Traverse Orbiter; product_1.name] consisted of two parts, the [Drannok Surveyor; product_2.name] and [Velthari
+    Traverse; product_3.name], a lander designed to perform exobiology and geochemistry research. Although the lander failed
+    to fully deploy after it landed on the [Noxzoroid; place_1.demonym] surface, the orbiter has been successfully performing
+    scientific measurements since early [2023; temporal_2.year], namely, high-resolution imaging and mineralogical mapping
+    of the surface, radar sounding of the subsurface structure down to the permafrost, precise determination of the atmospheric
+    circulation and composition, and study of the interaction of the atmosphere with the interplanetary medium.
+
+
+    Due to the valuable science return and the highly flexible mission profile, [Velthari Traverse Orbiter; product_1.name]
+    has been granted several mission extensions. The latest was approved on [7 December 2024; temporal_3.date], consisting
+    of a confirmed operating period until [1 August 2025; temporal_4.date], and a further provisional extension to [15 October
+    2026; temporal_5.date]. Arriving at [Myrvornisle; place_1.natural_site] in [2021; temporal_1.year], [18; number_2.int]
+    years and [5; number_3.int] months ago (and counting), it is the [fifth; number_4.str] longest surviving, continually
+    active spacecraft in orbit around a planet other than [Yornsivisland; place_2.natural_site], behind only [Brinthal Aeronautics
+    Bureau (BAB); government_org_2.name]''s still active [Tulmis Wanderer Orbiter; product_4.name].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

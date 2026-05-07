@@ -1,0 +1,168 @@
+document:
+  document_id: train_175
+  document_theme: iraq
+  original_document: The fight against the Islamic State group in Iraq and SyriaMembers of 5th Special Forces Group (A) conducting
+    50. Cal Weapons training during counter ISIS operations at Al Tanf Garrison in southern Syria. US Marine CorpsThe US military
+    also continues to be active in Iraq and Syria in the ongoing fight against the Islamic State group, conducting airstrikes
+    and advising local forces on the ground.At least 10 US service members were killed in Iraq in 2018, though none of the
+    deaths were a direct result of enemy action.Master Sgt. Jonathan J. Dunbar was killed by a roadside bomb in Syria in late
+    March.Human rights groups have accused the US-led coalition of reckless behavior and "potential war crimes" in the fight
+    against the Islamic State group in Iraq and Syria.While civilian casualties are still being assessed for 2018, a report
+    from the monitoring group Airwars said the US and its allies may have killed up to 6000 civilians via strikes in Iraq
+    and Syria in 2017 alone.The US has been waging a campaign against the Islamic State group since August 2014.In April,
+    President Donald Trump also authorized missile strikes against Syrian President Bashar al-Assad, targeting chemical weapons
+    facilities in concert with the French and British.
+  document_to_annotate: The fight against the [Islamic State group; military_org_1.name] in [Iraq; place_1.country] and [Syria;
+    place_2.country] -- Members of [5th Special Forces Group (A); military_org_2.name] conducting .[50; number_2.int] Cal
+    Weapons training during counter [ISIS; military_org_1.name] operations at [Al Tanf Garrison; place_3.street] in southern
+    [Syria; place_2.country]. The [US; place_5.country] military also continues to be active in [Iraq; place_1.country] and
+    [Syria; place_2.country] in the ongoing fight against the [Islamic State group; military_org_1.name], conducting airstrikes
+    and advising local forces on the ground.At least [10; number_3.int] [US; place_5.country] service members were killed
+    in [Iraq; place_1.country] in [2018; temporal_1.year], though none of the deaths were a direct result of enemy action.
+    Master Sgt. [Jonathan J. Dunbar; person_1.full_name] was killed by a roadside bomb in [Syria; place_2.country] in late
+    [March; temporal_2.month]. Human rights groups have accused the [US; place_5.country]-led coalition of reckless behavior
+    and "potential war crimes" in the fight against the [Islamic State group; military_org_1.name] in [Iraq; place_1.country]
+    and [Syria; place_2.country]. While civilian casualties are still being assessed for [2018; temporal_1.year], a report
+    from the monitoring group [Airwars; media_org_1.name] said the [US; place_5.country] and its allies may have killed up
+    to [6000; number_4.int] civilians via strikes in [Iraq; place_1.country] and [Syria; place_2.country] in [2017; temporal_3.year]
+    alone. The [US; place_5.country] has been waging a campaign against the [Islamic State group; military_org_1.name] since
+    [August; temporal_4.month] [2014; temporal_4.year]. In [April; temporal_5.month], President [Donald Trump; person_2.full_name]
+    also authorized missile strikes against [Syrian; place_2.nationality] President [Bashar al-Assad; person_3.full_name],
+    targeting chemical weapons facilities in concert with the [French; place_6.nationality] and [British; place_7.nationality].
+  relations: []
+  rules:
+  - 'number_3.int > 1 # plural: "members" and "deaths"'
+  - 'number_4.int > 1 # plural: "civilians"'
+  num_questions: 12
+  questions:
+  - question_id: train_175_q01
+    question: Were the [10; number_3.int] [US; place_5.country] service members killed by the [Islamic State group; military_org_1.name]?
+    question_type: inference
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q02
+    question: Is the [Islamic State group; military_org_1.name] from [Iraq; place_1.country] or [Syria; place_2.country]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q03
+    question: Did the [US; place_5.country] campaign begin before the year of the [Airwars; media_org_1.name] report?
+    question_type: inference
+    answer: Yes if temporal_4.year < temporal_3.year else No
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q04
+    question: In what year was [Bashar al-Assad; person_3.full_name] elected as President?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q05
+    question: Were the [10; number_3.int] [US; place_5.country] service members killed before or after President [Donald Trump;
+      person_2.full_name] authorized missile strikes against President [Bashar al-Assad; person_3.full_name]?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q06
+    question: In which year did the report say those civilian deaths occurred?
+    question_type: temporal
+    answer: temporal_3.year
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q07
+    question: How many chemical facilities were destroyed as a result of the strikes that were authorized by President [Donald
+      Trump; person_2.full_name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q08
+    question: With how many other authorities did President [Donald Trump; person_2.full_name] authorize missile strikes against
+      [Syrian; place_2.nationality] President [Bashar al-Assad; person_3.full_name]?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - '"... in concert with the [French; place_6.nationality] and [British; place_7.nationality]."'
+    reasoning_chain_text: '"... in concert with the [French; place_6.nationality] and [British; place_7.nationality]."'
+  - question_id: train_175_q09
+    question: What is the minimum number of [US; place_5.country] service members killed in [Iraq; place_1.country] and [Syria;
+      place_2.country] combined in [2018; temporal_1.year] based on the text?
+    question_type: arithmetic
+    answer: number_3.int + 1
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q10
+    question: From which country is the [5th Special Forces Group (A); military_org_2.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q11
+    question: Was the [5th Special Forces Group (A); military_org_2.name] conducting Cal Weapons training?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: train_175_q12
+    question: Which unit was conducting .50-cal weapons training?
+    question_type: extractive
+    answer: military_org_2.name
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_2.int
+    lower_bound: 40
+    upper_bound: 60
+    factual_value: 50
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 4800
+    upper_bound: 7200
+    factual_value: 6000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

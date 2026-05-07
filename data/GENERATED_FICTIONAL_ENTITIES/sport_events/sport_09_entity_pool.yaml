@@ -1,0 +1,494 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_09
+  document_theme: sport_events
+  complete: false
+  generated_at: '2026-04-18T18:01:32.439875+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: person person_2: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 14
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 13
+    place_5: 15
+  events:
+    event_1: 15
+    event_8: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_10: 15
+    event_5: 15
+    event_7: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+  ngos:
+    ngo_1: 15
+    ngo_2: 15
+    ngo_3: 15
+    ngo_4: 15
+    ngo_5: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+missing_references:
+  persons:
+    person_2: 1
+  places:
+    place_4: 2
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Trevon Halsmere
+    - full_name: Keldric Wothane
+    - full_name: Brentar Fossick
+    - full_name: Jorvil Casphen
+    - full_name: Darneth Quilsom
+    - full_name: Pellum Grothey
+    - full_name: Solvane Tembrick
+    - full_name: Harquin Delvosh
+    - full_name: Crethon Valmire
+    - full_name: Wyndal Porshek
+    - full_name: Tassik Brondell
+    - full_name: Fenwick Jolrath
+    - full_name: Galthen Ruvosk
+    - full_name: Obrin Thalcey
+    - full_name: Merquan Drossil
+  person_2:
+    required_attributes:
+    - full_name
+    count: 14
+    variants:
+    - full_name: Quillan Drosswick
+    - full_name: Brenick Tolvane
+    - full_name: Jareth Colvenny
+    - full_name: Daxen Plumridge
+    - full_name: Fenwick Torrable
+    - full_name: Kellum Brashven
+    - full_name: Orvane Stuckley
+    - full_name: Pelden Grothway
+    - full_name: Tamrick Wosserly
+    - full_name: Haldren Crupshaw
+    - full_name: Nelvick Garsholme
+    - full_name: Corben Threllway
+    - full_name: Wyndal Fosserick
+    - full_name: Braxley Dunvore
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Crelthaven
+    - city: Brosswick
+    - city: Talmory
+    - city: Vendahl
+    - city: Kethbury
+    - city: Plindara
+    - city: Sorchwell
+    - city: Grantheel
+    - city: Melvane
+    - city: Dunpherro
+    - city: Calstow
+    - city: Wytheral
+    - city: Fenmoray
+    - city: Harloque
+    - city: Trosselin
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Brellhaven
+    - city: Tassomere
+    - city: Colvanthi
+    - city: Drennoch
+    - city: Pelquara
+    - city: Wythomar
+    - city: Kessalune
+    - city: Orvantis
+    - city: Grellisham
+    - city: Thandoque
+    - city: Molvecra
+    - city: Pinnelore
+    - city: Zarqueth
+    - city: Helvandri
+    - city: Fossareen
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthari
+    - country: Drosseka
+    - country: Kelmuria
+    - country: Torvanesh
+    - country: Brulicza
+    - country: Ondravek
+    - country: Pelsovine
+    - country: Grothane
+    - country: Zurvakia
+    - country: Meskoral
+    - country: Thalveny
+    - country: Crendova
+    - country: Wulphesk
+    - country: Jenthari
+    - country: Plovekra
+  place_4:
+    required_attributes:
+    - country
+    count: 13
+    variants:
+    - country: Kosmara
+    - country: Drulentia
+    - country: Peshkova
+    - country: Zarnovia
+    - country: Tulmek
+    - country: Grotheni
+    - country: Brelkasa
+    - country: Skovari
+    - country: Plemnura
+    - country: Chelvosk
+    - country: Rathkeni
+    - country: Voskren
+    - country: Durnelka
+  place_5:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velthari
+    - demonym: Drennish
+    - demonym: Korvali
+    - demonym: Tulmeki
+    - demonym: Bressoni
+    - demonym: Galwenni
+    - demonym: Peldorian
+    - demonym: Sotheki
+    - demonym: Marvundi
+    - demonym: Chelvorin
+    - demonym: Ondrassi
+    - demonym: Fenthari
+    - demonym: Quireshi
+    - demonym: Zelphari
+    - demonym: Wyndoki
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cresthollow Invitational
+    - name: Thornvale Championships
+    - name: Kelsmere Open
+    - name: Brindlecourt Classic
+    - name: Harrowglen Tournament
+    - name: Dunmaris Championships
+    - name: Pellwick Invitational
+    - name: Stoverly Grand Classic
+    - name: Wyndcross Championships
+    - name: Gallethorn Open
+    - name: Fenmoray Championships
+    - name: Dravencourt Invitational
+    - name: Lossiter Classic
+    - name: Bramhurst Championships
+    - name: Quilmere Tournament
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Pinnacle Crown
+    - name: Veloran Circuit
+    - name: Thalric Majors
+    - name: Korenth Series
+    - name: Dravon Crest
+    - name: Aurelith Cup
+    - name: Zephoran Sweep
+    - name: Brinthal Apex
+    - name: Caldrith Summit
+    - name: Orvane Zenith
+    - name: Telmoric Shield
+    - name: Quelvar Triumph
+    - name: Nelvari Crown
+    - name: Prothane Laurels
+    - name: Syndoral Mantle
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern Classic
+    - name: Korindal Invitational
+    - name: Brissoway Championship
+    - name: Velmorath Open
+    - name: Dranthuvel Cup
+    - name: Pellicarn Masters
+    - name: Oskerith Tournament
+    - name: Zulvaine Challenge
+    - name: Grotheny Series
+    - name: Melvarak Trophy
+    - name: Quendara Championship
+    - name: Harsolith Open
+    - name: Tivrannel Classic
+    - name: Weskadine Invitational
+    - name: Jolpheran Cup
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Classic
+    - name: Brissendal Open
+    - name: Korvaine Championships
+    - name: Pallenthor Invitational
+    - name: Drethune Open
+    - name: Velmorath Cup
+    - name: Sondriax Masters
+    - name: Calthenor Open
+    - name: Mirravane Championships
+    - name: Grellisport Open
+    - name: Thandorel Classic
+    - name: Orvessian Open
+    - name: Plindara Invitational
+    - name: Weskavon Championships
+    - name: Juntheral Open
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvolen Classic
+    - name: Brindara Cup
+    - name: Kelmorath Open
+    - name: Soriven Championship
+    - name: Dranthuvel Invitational
+    - name: Vosshelan Trophy
+    - name: Crethuna Challenge
+    - name: Olindaro Series
+    - name: Melvarak Open
+    - name: Thurnelis Cup
+    - name: Gasphelon Championship
+    - name: Wintovari Classic
+    - name: Rendoshan Invitational
+    - name: Quilbaren Masters
+    - name: Peldunari Open
+  event_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dames' and Sirs' Championship Deciders
+    - name: Pinnacle Singles Crowning Matches
+    - name: Veloran Open Singles Title Rounds
+    - name: Kestara Cup Individual Grand Closers
+    - name: Thalwen Singles Culmination Bouts
+    - name: Brethane Trophy Solo Championship Clashes
+    - name: Loriven Classic Singles Deciding Fixtures
+    - name: Gentlefolk and Damehood Singles Showdowns
+    - name: Cresthollow Singles Summit Finals
+    - name: Marvane Shield Individual Title Deciders
+    - name: Pellwick Cup Singles Apex Rounds
+    - name: Solhaven Singles Championship Conclusions
+    - name: Durnath Open Solo Crown Matches
+    - name: Windara Singles Grandstand Finales
+    - name: Quelstane Trophy Individual Deciding Contests
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Contagion Crisis
+    - name: Drennox Pathogen Outbreak
+    - name: Tulmeric Fever Pandemic
+    - name: Celvari Respiratory Surge
+    - name: Broxiline Viral Emergency
+    - name: Quarivex Global Health Crisis
+    - name: Nelvosh Syndrome Pandemic
+    - name: Threxomal Plague Event
+    - name: Golvanic Flu Pandemic
+    - name: Pernivox Epidemic Crisis
+    - name: Zelkuran Virus Outbreak
+    - name: Moxarid Respiratory Pandemic
+    - name: Fenthari Contagion Wave
+    - name: Krevolin Disease Pandemic
+    - name: Wulsaric Pathogen Emergency
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Veldran Conflagration
+    - name: The Torshan Continental Siege
+    - name: The Great Kelmori Conflict
+    - name: The Dravenic Upheaval
+    - name: The Pallentine Devastation
+    - name: The Zwerath Global Struggle
+    - name: The Orenthal Cataclysm
+    - name: The Brunavar Hemispheric War
+    - name: The Crethian Onslaught
+    - name: The Maldorath Grand Offensive
+    - name: The Selvurian Catastrophe
+    - name: The Goranthic Reckoning
+    - name: The Tulmeric Firestorm
+    - name: The Helvandric Decimation
+    - name: The Quorshan Total War
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brivnock
+    - name: Telmaro
+    - name: Grothwell
+    - name: Kespara
+    - name: Vondrik
+    - name: Pellunex
+    - name: Harquin
+    - name: Dravosi
+    - name: Crenthal
+    - name: Welmidge
+    - name: Torvanik
+    - name: Plindero
+    - name: Jeskova
+    - name: Bremault
+    - name: Quirnath
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velquon
+    - name: Torbinex
+    - name: Crendahl
+    - name: Pluvaire
+    - name: Hestoval
+    - name: Zulmaren
+    - name: Kethwyn
+    - name: Dravossi
+    - name: Fenturic
+    - name: Galpheor
+    - name: Brondique
+    - name: Solvaith
+    - name: Wenthari
+    - name: Orvicane
+    - name: Junelith
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdane Racquet and Bowls Society
+    - name: Kelmoor Grass Court and Pétanque Fellowship
+    - name: Thalwick Turf Tennis and Shuttlecock Guild
+    - name: Brindale Lawn Sports and Mallet Circle
+    - name: Orvane Green Tennis and Wicket Association
+    - name: Pallister Court and Crosse Club
+    - name: Dunhaven Grass Tennis and Rink Society
+    - name: Selwynne Meadow Racquet and Bowls Club
+    - name: Corthane Lawn Tennis and Pavilion League
+    - name: Miravel Turf Court and Quoits Fellowship
+    - name: Grenthorp Grass Racquet and Mallet Society
+    - name: Lyndara Green Tennis and Pétanque Circle
+    - name: Wethane Lawn Court and Shuttlecock Club
+    - name: Tarvisol Turf Tennis and Bowls Guild
+    - name: Helvane Meadow Racquet and Crosse Association
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Racquet Sports Guild of Telvara
+    - name: Courtsport Federation of Brindohl
+    - name: Netplay Governance League
+    - name: Pellwick Racquet Standards Council
+    - name: Volaren Tennis Stewardship Board
+    - name: Drossfield Court Athletics Society
+    - name: Kelmara Racquet Sports Collective
+    - name: Turvane Lawn Racquet Council
+    - name: Grellish Open Court Association
+    - name: Ondrath Racquet Sporting Alliance
+    - name: Fentoril Net Sports Consortium
+    - name: Bralcove Courtplay Governing Body
+    - name: Sethura Racquet Athletics Foundation
+    - name: Molvane Tennis Oversight League
+    - name: Quirrath Court Sports Directorate
+  ngo_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GPR
+    - name: WPL
+    - name: TRK
+    - name: BVN
+    - name: CLF
+    - name: DKM
+    - name: JVT
+    - name: MRQ
+    - name: FNZ
+    - name: HBL
+    - name: PKW
+    - name: SVG
+    - name: RDJ
+    - name: ZLK
+    - name: NWF
+  ngo_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GSF
+    - name: WRF
+    - name: ICTG
+    - name: PSL
+    - name: GSTB
+    - name: WRCA
+    - name: ISRG
+    - name: JCTF
+    - name: WSCL
+    - name: GRPF
+    - name: ISCB
+    - name: PRTG
+    - name: WCTF
+    - name: GSLR
+    - name: JRSF
+  ngo_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GTA
+    - name: PRL
+    - name: VKF
+    - name: DTW
+    - name: BNQ
+    - name: HCR
+    - name: JMV
+    - name: FKL
+    - name: QRP
+    - name: ZWN
+    - name: TLB
+    - name: KVD
+    - name: MRJ
+    - name: NWG
+    - name: CVH

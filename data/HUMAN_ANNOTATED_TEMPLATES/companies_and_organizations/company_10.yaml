@@ -1,0 +1,382 @@
+document:
+  document_id: company_10
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: Google
+  wikipedia_url: https://en.wikipedia.org/wiki/Google
+  original_document: 'Google LLC is an American multinational technology corporation focused on information technology, online
+    advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics,
+    and artificial intelligence (AI). It has been referred to as "the most powerful company in the world" by the BBC, and
+    is one of the world''s most valuable brands. Google''s parent company Alphabet Inc. has been described as a Big Tech company.
+
+
+    Google was founded on September 4, 1998, by American computer scientists Larry Page and Sergey Brin. Together, they own
+    about 14% of its publicly listed shares and control 56% of its stockholder voting power through super-voting stock. The
+    company went public via an initial public offering (IPO) in 2004. In 2015, Google was reorganized as a wholly owned subsidiary
+    of Alphabet Inc. Google is Alphabet''s largest subsidiary and is a holding company for Alphabet''s internet properties
+    and interests. Sundar Pichai was appointed CEO of Google on October 24, 2015, replacing Larry Page, who became the CEO
+    of Alphabet. On December 3, 2019, Pichai also became the CEO of Alphabet.
+
+
+    After the success of its original service, Google Search (often known simply as "Google"), the company has rapidly grown
+    to offer a multitude of products and services. These products address a wide range of use cases, including email (Gmail),
+    navigation and mapping (Waze, Maps, and Earth), cloud computing (Cloud), web navigation (Chrome), video sharing (YouTube),
+    productivity (Workspace), operating systems (Android and ChromeOS), cloud storage (Drive), language translation (Translate),
+    photo storage (Photos), videotelephony (Meet), smart home (Nest), smartphones (Pixel), wearable technology (Pixel Watch
+    and Fitbit), music streaming (YouTube Music), video on demand (YouTube TV), AI (Google Assistant and Gemini), machine
+    learning APIs (TensorFlow), AI chips (TPU), and more. Many of these products and services are dominant in their respective
+    industries, as is Google Search. Discontinued Google products include gaming (Stadia), Glass, Google+, Reader, Play Music,
+    Nexus, Hangouts, and Inbox by Gmail. Google''s other ventures outside of internet services and consumer electronics include
+    quantum computing (Willow, Google Quantum AI), self-driving cars (Waymo), and transformer models (Google DeepMind).
+
+
+    Google Search and YouTube are the two most-visited websites worldwide, followed by Facebook, Instagram, and ChatGPT. Google
+    is the largest provider of search engines, mapping and navigation applications, email services, office suites, online
+    video platforms, photo and cloud storage, mobile operating systems, web browsers, machine learning frameworks, and AI
+    virtual assistants in the world as measured by market share. On the list of the most valuable brands, Google is ranked
+    second by Forbes as of January 2022, and fourth by Interbrand as of February 2022. The company has received criticism
+    involving issues such as privacy concerns, tax avoidance, censorship, search neutrality, antitrust, and abuse of its monopoly
+    position.'
+  document_to_annotate: '[Google LLC; entreprise_org_1.name] is an [American; place_1.demonym] multinational technology corporation
+    focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum
+    computing, e-commerce, consumer electronics, and artificial intelligence (AI). It has been referred to as one of the most
+    powerful company in the world by the [BBC; media_org_1.name], and is one of the world''s most valuable brands. [Google;
+    entreprise_org_1.name]''s parent company [Alphabet Inc.; entreprise_org_2.name] has been described as a Big Tech company.
+
+
+    [Google; entreprise_org_1.name] was founded on [September 4, 1998; temporal_1.date], by [American; place_1.demonym] computer
+    scientists [Larry Page; person_1.full_name] and [Sergey Brin; person_2.full_name]. Together, they own about [14%; number_1.percent]
+    of its publicly listed shares and control [56; number_2.percent]% of its stockholder voting power through super-voting
+    stock. The company went public via an initial public offering (IPO) in [2004; temporal_2.year]. In [2015; temporal_3.year],
+    [Google; entreprise_org_1.name] was reorganized as a wholly owned subsidiary of [Alphabet Inc; entreprise_org_2.name].
+    [Google; entreprise_org_1.name] is [Alphabet; entreprise_org_2.name]''s largest subsidiary and is a holding company for
+    [Alphabet; entreprise_org_2.name]''s internet properties and interests. [Sundar Pichai; person_3.full_name] was appointed
+    CEO of [Google; entreprise_org_1.name] on [October 24, 2015; temporal_4.date], replacing [Larry Page; person_1.full_name],
+    who became the CEO of [Alphabet; entreprise_org_2.name]. On [December 3, 2019; temporal_5.date], [Pichai; person_3.last_name]
+    also became the CEO of [Alphabet; entreprise_org_2.name].
+
+
+    After the success of its original service, [Google Search; product_1.name] (often known simply as "[Google; product_1.name]"),
+    the company has rapidly grown to offer a multitude of products and services. These products address a wide range of use
+    cases, including email ([Gmail; product_2.name]), navigation and mapping ([Waze; product_3.name], [Maps; product_4.name],
+    and [Earth; product_5.name]), cloud computing ([Cloud; product_6.name]), web navigation ([Chrome; product_7.name]), video
+    sharing ([YouTube; product_8.name]), productivity ([Workspace; product_9.name]), operating systems ([Android; product_10.name]
+    and [ChromeOS; product_11.name]), cloud storage ([Drive; product_12.name]), language translation ([Translate; product_13.name]),
+    photo storage ([Photos; product_14.name]), videotelephony ([Meet; product_15.name]), smart home ([Nest; product_16.name]),
+    smartphones ([Pixel; product_17.name]), wearable technology ([Pixel Watch; product_18.name] and [Fitbit; product_19.name]),
+    music streaming ([YouTube Music; product_20.name]), video on demand ([YouTube TV; product_21.name]), AI ([Google Assistant;
+    product_22.name] and [Gemini; product_23.name]), machine learning APIs ([TensorFlow; product_24.name]), AI chips ([TPU;
+    product_25.name]), and more. Many of these products and services are dominant in their respective industries, as is [Google
+    Search; product_1.name]. Discontinued [Google; entreprise_org_1.name] products include gaming ([Stadia; product_26.name]),
+    [Glass; product_27.name], [Google+; product_28.name], [Reader; product_29.name], [Play Music; product_30.name], [Nexus;
+    product_31.name], [Hangouts; product_32.name], and [Inbox by Gmail; product_33.name]. [Google; entreprise_org_1.name]''s
+    other ventures outside of internet services and consumer electronics include quantum computing ([Willow; product_34.name],
+    [Google Quantum AI; product_35.name]), self-driving cars ([Waymo; entreprise_org_3.name]), and transformer models ([Google
+    DeepMind; entreprise_org_4.name]).
+
+
+    [Google Search; product_1.name] and [YouTube; product_8.name] are the [two; number_3.str] most-visited websites worldwide,
+    followed by [Facebook; product_36.name], [Instagram; product_37.name], and [ChatGPT; product_38.name]. [Google; entreprise_org_1.name]
+    is one of the largest provider of search engines, mapping and navigation applications, email services, office suites,
+    online video platforms, photo and cloud storage, mobile operating systems, web browsers, machine learning frameworks,
+    and AI virtual assistants in the world as measured by market share. On the list of the most valuable brands, [Google;
+    entreprise_org_1.name] is ranked [second; number_4.str] by [Forbes; media_org_2.name] as of [January 2022; temporal_6.date],
+    and [fourth; number_5.str] by [Interbrand; entreprise_org_5.name] as of [February 2022; temporal_7.date]. The company
+    has received criticism involving issues such as privacy concerns, tax avoidance, censorship, search neutrality, antitrust,
+    and abuse of its monopoly position.'
+  relations: []
+  rules:
+  - 'number_3.str == 2 # "two most-visited websites" refers to exactly two (Google Search and YouTube)'
+  num_questions: 12
+  questions:
+  - question_id: company_10_q01
+    question: Who replaced [Larry Page; person_1.full_name] as CEO of [Google LLC; entreprise_org_1.name]?
+    question_type: extractive
+    answer: person_3.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Sundar Pichai; person_3.full_name] was appointed CEO of [Google LLC; entreprise_org_1.name],
+      replacing [Larry Page; person_1.full_name].
+    reasoning_chain_text: 1. The document states that [Sundar Pichai; person_3.full_name] was appointed CEO of [Google LLC;
+      entreprise_org_1.name], replacing [Larry Page; person_1.full_name].
+  - question_id: company_10_q02
+    question: How many of the most-visited websites worldwide does [Google LLC; entreprise_org_1.name] operate, according
+      to the document?
+    question_type: extractive
+    answer: two
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Google Search; product_1.name] and [YouTube; product_8.name] are the [two; number_3.str]
+      most-visited websites worldwide.
+    reasoning_chain_text: 1. The document states that [Google Search; product_1.name] and [YouTube; product_8.name] are the
+      [two; number_3.str] most-visited websites worldwide.
+  - question_id: company_10_q03
+    question: In which city is [Google LLC; entreprise_org_1.name] headquartered?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The question asks for the headquarters city of [Google LLC; entreprise_org_1.name].
+    - 2. The document does not mention the headquarters location of [Google LLC; entreprise_org_1.name].
+    reasoning_chain_text: '1. The question asks for the headquarters city of [Google LLC; entreprise_org_1.name].
+
+      2. The document does not mention the headquarters location of [Google LLC; entreprise_org_1.name].'
+  - question_id: company_10_q04
+    question: What is the difference between the percentage of stockholder voting power controlled by the founders and the
+      percentage of publicly listed shares they own at [Google LLC; entreprise_org_1.name]?
+    question_type: arithmetic
+    answer: number_2.percent - number_1.percent
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Larry Page; person_1.full_name] and [Sergey Brin; person_2.full_name] own about [14%; number_1.percent]%
+      of publicly listed shares.
+    - 2. They control [56; number_2.percent]% of stockholder voting power.
+    - 3. The difference is [56; number_2.percent] - [14%; number_1.percent] = 32.8 percentage points.
+    reasoning_chain_text: '1. The document states that [Larry Page; person_1.full_name] and [Sergey Brin; person_2.full_name]
+      own about [14%; number_1.percent]% of publicly listed shares.
+
+      2. They control [56; number_2.percent]% of stockholder voting power.
+
+      3. The difference is [56; number_2.percent] - [14%; number_1.percent] = 32.8 percentage points.'
+  - question_id: company_10_q05
+    question: How many discontinued products of [Google LLC; entreprise_org_1.name] are explicitly listed in the document?
+    question_type: arithmetic
+    answer: '8'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists the following discontinued products: [Stadia; product_26.name], [Glass; product_27.name], [Google+;
+      product_28.name], [Reader; product_29.name], [Play Music; product_30.name], [Nexus; product_31.name], [Hangouts; product_32.name],
+      and [Inbox by Gmail; product_33.name].'
+    - 2. Counting these gives 8 discontinued products.
+    reasoning_chain_text: '1. The document lists the following discontinued products: [Stadia; product_26.name], [Glass; product_27.name],
+      [Google+; product_28.name], [Reader; product_29.name], [Play Music; product_30.name], [Nexus; product_31.name], [Hangouts;
+      product_32.name], and [Inbox by Gmail; product_33.name].
+
+      2. Counting these gives 8 discontinued products.'
+  - question_id: company_10_q06
+    question: What was the total revenue of [Google LLC; entreprise_org_1.name] and [Alphabet Inc.; entreprise_org_2.name]
+      combined in their most recent fiscal year?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The question requires revenue figures for both [Google LLC; entreprise_org_1.name] and [Alphabet Inc.; entreprise_org_2.name].
+    - 2. The document does not provide any revenue figures for either company.
+    reasoning_chain_text: '1. The question requires revenue figures for both [Google LLC; entreprise_org_1.name] and [Alphabet
+      Inc.; entreprise_org_2.name].
+
+      2. The document does not provide any revenue figures for either company.'
+  - question_id: company_10_q07
+    question: How many years after [Google LLC; entreprise_org_1.name] was founded did the company go public via its IPO?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Google LLC; entreprise_org_1.name] was founded on [September 4, 1998; temporal_1.date].
+    - 2. The company went public in [2004; temporal_2.year].
+    - 3. The difference is [2004; temporal_2.year] - 1999 = 15 years.
+    reasoning_chain_text: '1. [Google LLC; entreprise_org_1.name] was founded on [September 4, 1998; temporal_1.date].
+
+      2. The company went public in [2004; temporal_2.year].
+
+      3. The difference is [2004; temporal_2.year] - 1999 = 15 years.'
+  - question_id: company_10_q08
+    question: When was [Alphabet Inc.; entreprise_org_2.name] originally incorporated as a parent company?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The question asks for the incorporation date of [Alphabet Inc.; entreprise_org_2.name].
+    - 2. The document states that [Google LLC; entreprise_org_1.name] was reorganized as a subsidiary of [Alphabet Inc.; entreprise_org_2.name]
+      in [2015; temporal_3.year], but does not specify when [Alphabet Inc.; entreprise_org_2.name] was incorporated.
+    reasoning_chain_text: '1. The question asks for the incorporation date of [Alphabet Inc.; entreprise_org_2.name].
+
+      2. The document states that [Google LLC; entreprise_org_1.name] was reorganized as a subsidiary of [Alphabet Inc.; entreprise_org_2.name]
+      in [2015; temporal_3.year], but does not specify when [Alphabet Inc.; entreprise_org_2.name] was incorporated.'
+  - question_id: company_10_q09
+    question: Given that [Larry Page; person_1.full_name] was replaced as CEO of [Google LLC; entreprise_org_1.name] and moved
+      to lead [Alphabet Inc.; entreprise_org_2.name], but was later also replaced there, who ultimately held both CEO positions
+      simultaneously?
+    question_type: inference
+    answer: person_3.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Sundar Pichai; person_3.full_name] replaced [Larry Page; person_1.full_name] as CEO of [Google LLC; entreprise_org_1.name]
+      on [October 24, 2015; temporal_4.date].
+    - 2. On [December 3, 2019; temporal_5.date], [Pichai; person_3.last_name] also became CEO of [Alphabet Inc.; entreprise_org_2.name].
+    - 3. Therefore, [Sundar Pichai; person_3.full_name] held both CEO positions simultaneously.
+    reasoning_chain_text: '1. [Sundar Pichai; person_3.full_name] replaced [Larry Page; person_1.full_name] as CEO of [Google
+      LLC; entreprise_org_1.name] on [October 24, 2015; temporal_4.date].
+
+      2. On [December 3, 2019; temporal_5.date], [Pichai; person_3.last_name] also became CEO of [Alphabet Inc.; entreprise_org_2.name].
+
+      3. Therefore, [Sundar Pichai; person_3.full_name] held both CEO positions simultaneously.'
+  - question_id: company_10_q10
+    question: Based on the document, does the founders' voting power exceed their ownership share, and if so, what mechanism
+      enables this?
+    question_type: inference
+    answer: super-voting stock
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The founders own about [14%; number_1.percent]% of publicly listed shares but control [56; number_2.percent]% of
+      voting power.
+    - 2. Since [56; number_2.percent]% greatly exceeds [14%; number_1.percent]%, their voting power exceeds their ownership
+      share.
+    - 3. The document explicitly states this is achieved through super-voting stock.
+    reasoning_chain_text: '1. The founders own about [14%; number_1.percent]% of publicly listed shares but control [56; number_2.percent]%
+      of voting power.
+
+      2. Since [56; number_2.percent]% greatly exceeds [14%; number_1.percent]%, their voting power exceeds their ownership
+      share.
+
+      3. The document explicitly states this is achieved through super-voting stock.'
+  - question_id: company_10_q11
+    question: Given that [Google LLC; entreprise_org_1.name] is ranked differently by [Forbes; media_org_2.name] and [Interbrand;
+      entreprise_org_5.name], can we determine which ranking methodology is more accurate?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Google LLC; entreprise_org_1.name] is ranked [second; number_4.str] by [Forbes; media_org_2.name]
+      and [fourth; number_5.str] by [Interbrand; entreprise_org_5.name].
+    - 2. The document does not describe the methodology used by either ranking organization.
+    - 3. Without information about their methodologies, it cannot be determined which is more accurate.
+    reasoning_chain_text: '1. The document states [Google LLC; entreprise_org_1.name] is ranked [second; number_4.str] by
+      [Forbes; media_org_2.name] and [fourth; number_5.str] by [Interbrand; entreprise_org_5.name].
+
+      2. The document does not describe the methodology used by either ranking organization.
+
+      3. Without information about their methodologies, it cannot be determined which is more accurate.'
+  - question_id: company_10_q12
+    question: Was [Google LLC; entreprise_org_1.name] founded in the 19th century ?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.percent
+    lower_bound: 11.2
+    upper_bound: 16.8
+    factual_value: 14.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.percent
+    lower_bound: 44.8
+    upper_bound: 67.2
+    factual_value: 56.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: '[Felnordor Works; entreprise_org_1.name] is a [Rathpryean; place_1.demonym]
+    multinational technology corporation focused on information technology, online advertising, search engine technology,
+    email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intelligence (AI).
+    It has been referred to as one of the most powerful company in the world by the [Dormur Chronicle; media_org_1.name],
+    and is one of the world''s most valuable brands. [Felnordor Works; entreprise_org_1.name]''s parent company [Murkinvex
+    Works; entreprise_org_2.name] has been described as a Big Tech company.
+
+
+    [Felnordor Works; entreprise_org_1.name] was founded on [1 August 1999; temporal_1.date], by [Rathpryean; place_1.demonym]
+    computer scientists [Pollin Dorjor; person_1.full_name] and [Rimtal Zanmurjor; person_2.full_name]. Together, they own
+    about [12.0; number_1.percent] of its publicly listed shares and control [44.8; number_2.percent]% of its stockholder
+    voting power through super-voting stock. The company went public via an initial public offering (IPO) in [2014; temporal_2.year].
+    In [2022; temporal_3.year], [Felnordor Works; entreprise_org_1.name] was reorganized as a wholly owned subsidiary of [Murkinvex
+    Works; entreprise_org_2.name]. [Felnordor Works; entreprise_org_1.name] is [Murkinvex Works; entreprise_org_2.name]''s
+    largest subsidiary and is a holding company for [Murkinvex Works; entreprise_org_2.name]''s internet properties and interests.
+    [Lorlorvak Feljorzan; person_3.full_name] was appointed CEO of [Felnordor Works; entreprise_org_1.name] on [15 October
+    2024; temporal_4.date], replacing [Pollin Dorjor; person_1.full_name], who became the CEO of [Murkinvex Works; entreprise_org_2.name].
+    On [3 February 2025; temporal_5.date], [Feljorzan; person_3.last_name] also became the CEO of [Murkinvex Works; entreprise_org_2.name].
+
+
+    After the success of its original service, [Gorquinzen Kit; product_1.name] (often known simply as "[Gorquinzen Kit; product_1.name]"),
+    the company has rapidly grown to offer a multitude of products and services. These products address a wide range of use
+    cases, including email ([GorvakDrive; product_2.name]), navigation and mapping ([Gortirvel Drive; product_3.name], [RinmirtirSuite;
+    product_4.name], and [VelquinlorOne; product_5.name]), cloud computing ([Tirzendor One; product_6.name]), web navigation
+    ([NelquinzanKit; product_7.name]), video sharing ([KinsarSuite; product_8.name]), productivity ([GarbarOne; product_9.name]),
+    operating systems ([Gorpolmur One; product_10.name] and [LinmurzenCloud; product_11.name]), cloud storage ([Garsargor
+    Drive; product_12.name]), language translation ([Zanvak Works; product_13.name]), photo storage ([JorhalmirKit; product_14.name]),
+    videotelephony ([Felkin Flow; product_15.name]), smart home ([RimrinWorks; product_16.name]), smartphones ([Vexbarkin
+    Link; product_17.name]), wearable technology ([Lortal Cloud; product_18.name] and [Lorkor Link; product_19.name]), music
+    streaming ([LorgarhalSuite; product_20.name]), video on demand ([Nordor Suite; product_21.name]), AI ([QuinpolKit; product_22.name]
+    and [Felgorjor Works; product_23.name]), machine learning APIs ([QuinpolDrive; product_24.name]), AI chips ([GargarlorCore;
+    product_25.name]), and more. Many of these products and services are dominant in their respective industries, as is [Gorquinzen
+    Kit; product_1.name]. Discontinued [Felnordor Works; entreprise_org_1.name] products include gaming ([Tirzen Cloud; product_26.name]),
+    [Zenquingar Flow; product_27.name], [Felkor One; product_28.name], [QuinjorCloud; product_29.name], [Mormurbar One; product_30.name],
+    [Velmur Core; product_31.name], [KinnellorWorks; product_32.name], and [RimhalSuite; product_33.name]. [Felnordor Works;
+    entreprise_org_1.name]''s other ventures outside of internet services and consumer electronics include quantum computing
+    ([Morkinzan Forge; product_34.name], [HallinbarOne; product_35.name]), self-driving cars ([Rinsar Works; entreprise_org_3.name]),
+    and transformer models ([Linjorvel Works; entreprise_org_4.name]).
+
+
+    [Gorquinzen Kit; product_1.name] and [KinsarSuite; product_8.name] are [two; number_3.str] most-visited websites worldwide,
+    followed by [Zendorpol Link; product_36.name], [NorpolOne; product_37.name], and [Kinlor Forge; product_38.name]. [Felnordor
+    Works; entreprise_org_1.name] is one of the largest provider of search engines, mapping and navigation applications, email
+    services, office suites, online video platforms, photo and cloud storage, mobile operating systems, web browsers, machine
+    learning frameworks, and AI virtual assistants in the world as measured by market share. On the list of the most valuable
+    brands, [Felnordor Works; entreprise_org_1.name] is ranked [first; number_4.str] by [Rinrim Chronicle; media_org_2.name]
+    as of [14 August 2026; temporal_6.date], and [third; number_5.str] by [Delkor Works; entreprise_org_5.name] as of [21
+    September 2026; temporal_7.date]. The company has received criticism involving issues such as privacy concerns, tax avoidance,
+    censorship, search neutrality, antitrust, and abuse of its monopoly position.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

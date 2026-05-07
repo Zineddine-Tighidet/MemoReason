@@ -1,0 +1,1023 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_08
+  document_theme: biographies_of_famous_personalities
+  complete: false
+  generated_at: '2026-04-18T17:44:20.836036+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events:
+    event_3: 15
+    event_7: 15
+    event_1: 15
+    event_2: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_8: 15
+    government_org_3: 15
+    government_org_9: 15
+    government_org_10: 15
+    government_org_11: 15
+    government_org_4: 15
+    government_org_5: 15
+    government_org_6: 15
+    government_org_7: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 14
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+  products:
+    product_1: 15
+    product_2: 15
+missing_references:
+  educational_orgs:
+    educational_org_3: 1
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Kelvor Danthen Mosswick Brellune
+      last_name: Brellune
+    - full_name: Tarvish Oben Crelloway Junaith
+      last_name: Junaith
+    - full_name: Yennol Quaive Sothram Drelkine
+      last_name: Drelkine
+    - full_name: Brenthil Cavor Osserly Maldune
+      last_name: Maldune
+    - full_name: Fossik Lenthar Gavory Pellund
+      last_name: Pellund
+    - full_name: Wothren Kael Pinnory Strevane
+      last_name: Strevane
+    - full_name: Galthen Ruvane Tessory Korbish
+      last_name: Korbish
+    - full_name: Nelvish Porath Dallery Crothune
+      last_name: Crothune
+    - full_name: Hessik Tarvol Quennery Brossane
+      last_name: Brossane
+    - full_name: Olvren Dassik Fennoway Grelluth
+      last_name: Grelluth
+    - full_name: Rathven Colvish Dossery Mellkane
+      last_name: Mellkane
+    - full_name: Solvek Brenthi Gannory Weskuth
+      last_name: Weskuth
+    - full_name: Vothren Kellish Pannery Drossavel
+      last_name: Drossavel
+    - full_name: Quethrin Halvane Rossenly Torbisk
+      last_name: Torbisk
+    - full_name: Delvorn Prathik Cosserly Fennague
+      last_name: Fennague
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Callishen
+    - full_name: Hentaro Brissoway
+    - full_name: Fosserick Thandelo
+    - full_name: Jelvane Crothimund
+    - full_name: Pellomar Dunstrey
+    - full_name: Rathiven Goselwick
+    - full_name: Torbaine Weshalan
+    - full_name: Crendoval Huspeth
+    - full_name: Melvoran Tasserly
+    - full_name: Ganthero Brivoshen
+    - full_name: Sethural Kolvander
+    - full_name: Brenthalo Yessimor
+    - full_name: Varnidel Crotheway
+    - full_name: Quilsander Fenthoray
+    - full_name: Wotherin Drassival
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Taven Broshel
+    - full_name: Kelmund Fossray
+    - full_name: Harven Quilster
+    - full_name: Jomber Crethway
+    - full_name: Lyndor Vashten
+    - full_name: Prentho Galwick
+    - full_name: Setharn Morvale
+    - full_name: Brintel Coshawe
+    - full_name: Welden Trossik
+    - full_name: Fenrick Oberly
+    - full_name: Ruvane Delmock
+    - full_name: Casphen Torelly
+    - full_name: Norbith Kessane
+    - full_name: Draven Polshet
+    - full_name: Galthen Ruvosk
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velsha Tondrik
+    - full_name: Brynela Kossuth
+    - full_name: Jorvina Pelcrath
+    - full_name: Dassine Welmory
+    - full_name: Kethara Brondis
+    - full_name: Loripha Gantwell
+    - full_name: Suvenna Dralcott
+    - full_name: Mirabeth Crondel
+    - full_name: Phaedlyn Torvasch
+    - full_name: Onneth Grellaby
+    - full_name: Revinda Stalmek
+    - full_name: Wyndaleth Porchane
+    - full_name: Tessura Blondrik
+    - full_name: Calvessa Drothune
+    - full_name: Zephira Kelmand
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashek
+    - full_name: Dornic Palloway
+    - full_name: Bryndel Torvash
+    - full_name: Ossian Keldreth
+    - full_name: Fenthor Quirabel
+    - full_name: Lyndro Caspevane
+    - full_name: Harvel Tondrique
+    - full_name: Jethrik Molanby
+    - full_name: Parvon Dreshault
+    - full_name: Welmick Sothrane
+    - full_name: Corshan Belvique
+    - full_name: Neldric Voshane
+    - full_name: Tambreth Olshevar
+    - full_name: Grentho Vaspelorn
+    - full_name: Kelvash Drominque
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velmorath
+      demonym: Velmorathi
+    - country: Thanderia
+      demonym: Thanderian
+    - country: Calindor
+      demonym: Calindori
+    - country: Orenthal
+      demonym: Orenthali
+    - country: Pelmura
+      demonym: Pelmuran
+    - country: Dravosken
+      demonym: Dravoskeni
+    - country: Lurathis
+      demonym: Lurathine
+    - country: Kembrova
+      demonym: Kembrovan
+    - country: Sorathel
+      demonym: Soratheli
+    - country: Vintarque
+      demonym: Vintarqui
+    - country: Molvaren
+      demonym: Molvareni
+    - country: Teskoral
+      demonym: Teskorali
+    - country: Wenshara
+      demonym: Wensharan
+    - country: Brothivek
+      demonym: Brothiveki
+    - country: Galthunis
+      demonym: Galthunese
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Dorvenne
+    - region: Tasselu
+    - region: Calithen
+    - region: Vorshane
+    - region: Plindeau
+    - region: Grotheil
+    - region: Melvaque
+    - region: Sondrithe
+    - region: Turnelis
+    - region: Kelvoran
+    - region: Wispelot
+    - region: Jarnoque
+    - region: Drelisque
+    - region: Branthelique
+    - region: Fossivane
+  place_3:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Telvorn
+      state: Bressaly
+    - city: Kalmoure
+      state: Drantheva
+    - city: Sulbreck
+      state: Merivane
+    - city: Gosterly
+      state: Thandoral
+    - city: Welmira
+      state: Colvashey
+    - city: Dranthuil
+      state: Pelmorath
+    - city: Fentarque
+      state: Lurithane
+    - city: Brossival
+      state: Kethmoray
+    - city: Helvique
+      state: Soranthel
+    - city: Quendara
+      state: Velmishar
+    - city: Molvaire
+      state: Prenshala
+    - city: Crendoval
+      state: Haltivern
+    - city: Yelthuran
+      state: Bormethay
+    - city: Parvunel
+      state: Grothenly
+    - city: Zelmithra
+      state: Wendorath
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thalvern
+    - city: Kosmire
+    - city: Pendara
+    - city: Selvunn
+    - city: Grothane
+    - city: Welmisk
+    - city: Carvello
+    - city: Drenthos
+    - city: Pallique
+    - city: Fentorak
+    - city: Morvaine
+    - city: Tessalow
+    - city: Hurndell
+    - city: Brenoque
+    - city: Jolvaris
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vellondra
+    - city: Kessimure
+    - city: Brineloch
+    - city: Orvantis
+    - city: Pelmorath
+    - city: Sundrique
+    - city: Calvenash
+    - city: Dromithe
+    - city: Wenshara
+    - city: Goltivane
+    - city: Felmouret
+    - city: Haspelune
+    - city: Torvisque
+    - city: Jenvolith
+    - city: Prathune
+  place_6:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velundri
+    - demonym: Tashkori
+    - demonym: Korvathi
+    - demonym: Zelphari
+    - demonym: Mundari
+    - demonym: Orenthi
+    - demonym: Galveshi
+    - demonym: Pirathon
+    - demonym: Draventi
+    - demonym: Sulkhari
+    - demonym: Jotheki
+    - demonym: Welmari
+    - demonym: Crethoni
+    - demonym: Brenoshi
+    - demonym: Tarvekhi
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vostrek
+    - country: Kalduria
+    - country: Zelkara
+    - country: Torvensk
+    - country: Bralithen
+    - country: Grothane
+    - country: Pelvosk
+    - country: Surnathia
+    - country: Orvekstan
+    - country: Kethruvia
+    - country: Zarphune
+    - country: Tilvossia
+    - country: Grendurak
+    - country: Dravulne
+    - country: Morthekia
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velmorath
+    - country: Tarnelk
+    - country: Koselith
+    - country: Phalendor
+    - country: Zurvaine
+    - country: Brenolka
+    - country: Ostrivane
+    - country: Galthesk
+    - country: Melvoria
+    - country: Turashel
+    - country: Solphenar
+    - country: Wetharak
+    - country: Jelvonis
+    - country: Dravulen
+    - country: Kethomira
+  place_9:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Dranpelica
+      demonym: Dranpelican
+    - country: Tessovane
+      demonym: Tessovani
+    - country: Plundara
+      demonym: Plundaran
+    - country: Gelvossia
+      demonym: Gelvossian
+    - country: Torbequa
+      demonym: Torbequan
+    - country: Melvithor
+      demonym: Melvithori
+    - country: Crondafel
+      demonym: Crondafeli
+    - country: Yestaphor
+      demonym: Yestaphori
+    - country: Brequolm
+      demonym: Brequolmi
+    - country: Sundrevak
+      demonym: Sundrevaki
+    - country: Wenthagor
+      demonym: Wenthagori
+    - country: Quilsevane
+      demonym: Quilsevani
+    - country: Fentharoque
+      demonym: Fentharoqui
+    - country: Jolvekarn
+      demonym: Jolvekarni
+    - country: Prothulane
+      demonym: Prothulani
+events:
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Respiratory Crisis
+    - name: Torbenic Contagion Outbreak
+    - name: Grellux Viral Pandemic
+    - name: Sythoran Plague Emergency
+    - name: Kelvanic Pathogen Surge
+    - name: Drethuna Health Catastrophe
+    - name: Molvari Fever Pandemic
+    - name: Zenthari Respiratory Epidemic
+    - name: Plorenic Virus Crisis
+    - name: Wythane Global Contagion
+    - name: Crendavi Lung Plague
+    - name: Brossanic Viral Emergency
+    - name: Helvuran Disease Pandemic
+    - name: Quethali Outbreak Crisis
+    - name: Narvoxin Respiratory Pandemic
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velnorian incursion into Drathek
+    - name: Kosmari offensive against Telvune
+    - name: Bryndosk military campaign in Orethal
+    - name: Zulvari assault on Pelmorath
+    - name: Grotheni invasion of Sarvikeld
+    - name: Tarnoqui aggression against Helvindor
+    - name: Molvask armed advance into Quirenth
+    - name: Drenthaki siege of Volparan
+    - name: Jeskovi military operation in Caldrune
+    - name: Pethoran cross-border attack on Welmisk
+    - name: Ruvaldi incursion into Theskova
+    - name: Galnori armed campaign against Bremthal
+    - name: Ondrevak offensive into Kestulam
+    - name: Fenthari military advance on Sorvelik
+    - name: Yulbreki invasion of Darnequo
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dorvelan trust scandal
+    - name: Pellicarn foundation affair
+    - name: Hessoval hospitality controversy
+    - name: Talmiren gift affair
+    - name: Brenquil estate scandal
+    - name: Corvathian lodge affair
+    - name: Zelkouri patronage scandal
+    - name: Maldrennic retreat controversy
+    - name: Quorvane island affair
+    - name: Fendroval charity scandal
+    - name: Lossiter villa affair
+    - name: Granthevel donation controversy
+    - name: Parvunel resort scandal
+    - name: Kethoran hospitality affair
+    - name: Welmadri endowment scandal
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelan Holdings scandal
+    - name: Brenquil Construction affair
+    - name: Dassovane Engineering controversy
+    - name: Kelmorath Infrastructure affair
+    - name: Plivecor Group scandal
+    - name: Zarquell Contracting affair
+    - name: Hentoval Industries scandal
+    - name: Crondavex Procurement affair
+    - name: Molvaren Consortium controversy
+    - name: Jestaphor Builders affair
+    - name: Winthalek Corp scandal
+    - name: Grothune Development affair
+    - name: Pellicarn Ventures controversy
+    - name: Sondrevak Projects affair
+    - name: Tulmecray Services scandal
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Province shootings
+    - name: Thandoral Coast rampage
+    - name: Grellwick Harbor massacre
+    - name: Pelmara District attacks
+    - name: Kessova Bay shootings
+    - name: Durnath Valley rampage
+    - name: Orvalen Township massacre
+    - name: Brindova Shore attacks
+    - name: Calthesk Region shootings
+    - name: Fendrova County rampage
+    - name: Holtrevan Peninsula attacks
+    - name: Sormath Highlands massacre
+    - name: Welvoran Parish shootings
+    - name: Tulmera Crossing attacks
+    - name: Ganthoral Inlet rampage
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Foundation affair
+    - name: Brindleway Trust controversy
+    - name: Kellomar Aid misuse scandal
+    - name: Penvale Outreach ethics probe
+    - name: Drossik Benevolence affair
+    - name: Hartivol Fund misconduct case
+    - name: Crenshaw Circle spending scandal
+    - name: Lumivere Giving impropriety
+    - name: Ossendral Charity conflict affair
+    - name: Quilben Relief ethics scandal
+    - name: Fendrake Goodwill controversy
+    - name: Marvothen Grant misuse affair
+    - name: Tasserly Foundation ethics probe
+    - name: Golvane Uplift spending scandal
+    - name: Rendovik Compassion affair
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thornway Blockade Demonstrations
+    - name: Keldrith Highway Standoff
+    - name: Vossmark Transit Occupation
+    - name: Brindoral Capital Gridlock Protests
+    - name: Pellwick Route Barricade Movement
+    - name: Cranthoe Bridge Encampment Rallies
+    - name: Durnestal Motorway Siege Protests
+    - name: Gelvane Corridor Shutdown Marches
+    - name: Ostrivane Hauler Uprising
+    - name: Talmerick Roadway Occupation Protests
+    - name: Quendrith Truckers Blockade
+    - name: Harvolane Expressway Standoff
+    - name: Sondrifel Convoy Disruption Protests
+    - name: Brenthallow Arterial Occupation
+    - name: Wythergale Transport Blockade Rallies
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorinth
+    - name: Tassivek
+    - name: Brondali
+    - name: Quilsaren
+    - name: Jovanthi
+    - name: Pelmorath
+    - name: Sundrik
+    - name: Wenthari
+    - name: Calvisho
+    - name: Torvindel
+    - name: Grenshala
+    - name: Melvothi
+    - name: Darnequi
+    - name: Fossivane
+    - name: Lurathek
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civren Alliance
+    - name: Thalward League
+    - name: Pelmorath Coalition
+    - name: Dravenic Front
+    - name: Quorath Accord
+    - name: Brenthali Union
+    - name: Selvoran Movement
+    - name: Kethural Pact
+    - name: Voranthi Circle
+    - name: Meldorath Assembly
+    - name: Golvari Caucus
+    - name: Pretholan Bloc
+    - name: Zelvoran Congress
+    - name: Torvenshi Compact
+    - name: Drulathi Forum
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corthane Assembly
+    - name: Velduran Chamber
+    - name: Brethane Legislature
+    - name: Orvanic Conclave
+    - name: Pellithar Assembly
+    - name: Dravenic Chamber
+    - name: Sulvane Legislature
+    - name: Kethoran Convocation
+    - name: Melvanic Assembly
+    - name: Torithane Chamber
+    - name: Vossithane Legislature
+    - name: Peldoric Assembly
+    - name: Narvethic Chamber
+    - name: Grothane Synod
+    - name: Zelkuric Assembly
+  government_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Panel for Civic Engagement Advancement
+    - name: Commission on Emerging Generations Policy
+    - name: Advisory Board on Next-Generation Participation
+    - name: Directorate for Grassroots Mobilization Strategy
+    - name: Committee on Public Volunteerism Development
+    - name: Bureau of Civic Futures and Outreach
+    - name: Council for Democratic Capacity Building
+    - name: Steering Body on Social Reinvigoration
+    - name: Initiative Board for Generational Empowerment
+    - name: Secretariat on Participatory Renewal
+    - name: Coordinating Group for Community Stewardship
+    - name: Division for Collaborative Governance Reform
+    - name: Assembly on Civic Pathway Development
+    - name: Working Group on Intergenerational Solidarity
+    - name: Office for Civic Revitalization Priorities
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Chamber of Delegates
+    - name: Grand Assembly Hall
+    - name: Civic Deliberation Chamber
+    - name: Sovereign Representatives Hall
+    - name: Convenary of Legislators
+    - name: National Deliberative Forum
+    - name: Plenary Seats Chamber
+    - name: Elected Conclave
+    - name: Legislative Rostrum
+    - name: Representory Assembly
+    - name: Sessional Gathering Hall
+    - name: Votary Delegates Chamber
+    - name: Oratorial Assembly
+    - name: Parlenary Bench Council
+    - name: Quoratal Speakers Chamber
+  government_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Shadow Spokesperson for Civic Engagement and Cultural Diversity
+    - name: Deputy Caucus Advocate for Community Outreach and Heritage Affairs
+    - name: Bench Reviewer for Civic Renewal and Intercultural Policy
+    - name: Opposition Delegate for New Voices and Inclusion Strategy
+    - name: Shadow Counsel for Generational Affairs and Cultural Integration
+    - name: Caucus Rapporteur for Civic Participation and Diversity Initiatives
+    - name: Legislative Monitor for Emerging Communities and Social Cohesion
+    - name: Opposition Envoy for Generational Outreach and Pluralist Affairs
+    - name: Shadow Advisor for Civic Development and Intercommunal Relations
+    - name: Bench Coordinator for Emerging Populations and Heritage Policy
+    - name: Opposition Steward for Civic Futures and Communal Harmony
+    - name: Shadow Delegate for Participatory Renewal and Intercultural Engagement
+    - name: Caucus Advocate for Generational Empowerment and Pluralist Outreach
+    - name: Bench Liaison for Civic Vitality and Cross-Cultural Solidarity
+    - name: Opposition Reviewer for Emerging Generations and Communal Inclusion
+  government_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Shadow Reviewer for Residency and Cultural Integration
+    - name: Opposition Spokesperson on Migration and Civic Affairs
+    - name: Caucus Advocate for Border Admissions and Naturalization
+    - name: Opposition Lead on Residency Pathways and Inclusion
+    - name: Shadow Adviser for Migrant Services and National Enrollment
+    - name: Critic for Civic Enrollment and Newcomer Transition
+    - name: Opposition Monitor for Entry Policy and Community Cohesion
+    - name: Shadow Liaison for Arrival Services and Civic Membership
+    - name: Caucus Critic for Resettlement and Civic Participation
+    - name: Opposition Delegate for Admissions Policy and Integration
+    - name: Critic for Migrant Pathways and Civic Enrollment
+    - name: Opposition Rapporteur on Settlement Policy and Residency
+    - name: Shadow Examiner for Arrival Governance and Civic Inclusion
+    - name: Caucus Reviewer for Newcomer Admittance and Belonging
+    - name: Opposition Assessor on Relocation Policy and Civic Onboarding
+  government_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Spokesperson on Tertiary Learning and Civic Engagement
+    - name: Shadow Portfolio for Advanced Studies and Community Affairs
+    - name: Critic for Collegiate Policy and Recreational Development
+    - name: Shadow Adviser on University Affairs and Athletic Programs
+    - name: Opposition Voice for Academic Institutions and Leisure Initiatives
+    - name: Designated Reviewer for Postsecondary Matters and Volunteerism
+    - name: Shadow Counsel on Further Education and Public Wellbeing
+    - name: Opposition Rapporteur for Graduate Learning and Civic Participation
+    - name: Critic for Scholarly Advancement and Recreational Oversight
+    - name: Shadow Monitor for Upper Education and Community Vitality
+    - name: Critic for Institutional Learning and Cooperative Development
+    - name: Shadow Examiner for Advanced Schooling and Civic Enrichment
+    - name: Opposition Coordinator for Tertiary Instruction and Cultural Vitality
+    - name: Shadow Assessor for Higher Scholarship and Athletic Stewardship
+    - name: Opposition Delegate for Collegiate Governance and Civic Renewal
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Upper Deliberum
+    - name: Veldric Chamber
+    - name: Pelloric Council
+    - name: Thandoral Legislature
+    - name: Quorath Collegium
+    - name: Dravenic Upper House
+    - name: Melvoran Conclave
+    - name: Estural Plenum
+    - name: Gantheric Review Body
+    - name: Lorathine Chamber
+    - name: Orvanic Deliberative Council
+    - name: Telmoric Upper Assembly
+    - name: Brethanic Presidium
+    - name: Kalvorine High Bench
+    - name: Sunderic Consultory
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Autonomous Selection Panel for Chamber Nominations
+    - name: Nonpartisan Review Council for Legislative Designations
+    - name: Sovereign Evaluation Board for Upper House Placements
+    - name: Impartial Vetting Commission for Parliamentary Seats
+    - name: Unaffiliated Screening Authority for Assembly Appointments
+    - name: Neutral Candidacy Bureau for Deliberative Chamber Posts
+    - name: Open Merit Tribunal for Legislative Nominations
+    - name: Detached Appraisal Office for Council Appointments
+    - name: Freestanding Assessment Panel for Governance Nominations
+    - name: Unaligned Credentials Board for Revising Chamber Seats
+    - name: Disinterested Nominations Council for Upper Assembly Posts
+    - name: Civic Integrity Commission for Consultative Body Appointments
+    - name: Transparent Appointments Bureau for National Chamber Seats
+    - name: Arm's-Length Evaluation Office for Parliamentary Nominations
+    - name: Public Trust Advisory Panel for Legislative Appointments
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Central Adjudication Tribunal
+    - name: High Bench of Civic Appeals
+    - name: Sovereign Judicial Chamber
+    - name: National Rulings Tribunal
+    - name: Grand Bench of Public Law
+    - name: Supreme Adjudicatory Panel
+    - name: Unified Jurisdictional Tribunal
+    - name: Upper Bench of Statutory Review
+    - name: General Judicial Directorate
+    - name: Commonwealth Review Tribunal
+    - name: Principal Court of Governance
+    - name: Consolidated Bench of Legal Oversight
+    - name: National Statutory Tribunal
+    - name: Paramount Judicial Assembly
+    - name: Civic Appellate Tribunal
+  government_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Renewal Alliance (CRA)
+    - name: People's Cooperative Front (PCF)
+    - name: United Solidarity Movement (USM)
+    - name: Progressive Workers' Coalition (PWC)
+    - name: Social Equity League (SEL)
+    - name: Common Ground Pact (CGP)
+    - name: Collective Futures Party (CFP)
+    - name: Fair Horizons Alliance (FHA)
+    - name: Shared Prosperity Union (SPU)
+    - name: Bridging Communities Party (BCP)
+    - name: Mutual Wellbeing Front (MWF)
+    - name: Cooperative Stewardship League (CSL)
+    - name: Inclusive Pathways Coalition (IPC)
+    - name: Equitable Voices Assembly (EVA)
+    - name: Communal Accord Movement (CAM)
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lycee Thandoral
+    - name: Collegium Vesprath
+    - name: Institut Pelmorin
+    - name: Academie Drothune
+    - name: Seminaire Kalvessier
+    - name: Ecole Brenthoval
+    - name: Collegiat Mossendrique
+    - name: Institut Quelvarin
+    - name: Lycee Fondrasque
+    - name: Academie Torvenal
+    - name: Seminaire Grothelin
+    - name: Collegium Harvenique
+    - name: Ecole Plindassier
+    - name: Institut Carvothune
+    - name: Lycee Dremossard
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern University
+    - name: Breskow College
+    - name: University of Kelmorath
+    - name: Ondravil Institute
+    - name: Pelmarch University
+    - name: Grotheny College
+    - name: University of Solvane
+    - name: Dranthem University
+    - name: Colvish Institute of Letters
+    - name: Harquen University
+    - name: Felnovar College
+    - name: University of Torbique
+    - name: Wenshale University
+    - name: Kestoval Academy
+    - name: Plindara University
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Thalvern University of Coastal Studies
+    - name: Drennoch Polytechnic Institute
+    - name: Vossbridge Lakeland University
+    - name: University of Pelmara
+    - name: Crethwyn Provincial University
+    - name: Orinthal College of Applied Learning
+    - name: University of Galstowe Peninsula
+    - name: Brenthallow Academic Institute
+    - name: Tarvishen University
+    - name: Lyndovar Institute of Higher Education
+    - name: University of Quelstrom
+    - name: Fendaloch Regional University
+    - name: Harvenique University of the Westlands
+    - name: Solmaren Collegiate University
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Family Allowance
+    - name: Brindoral Household Support Grant
+    - name: Kessivane Youth Provision Act
+    - name: Pelmorath Dependent Care Credit
+    - name: Dravunel Child Sustenance Program
+    - name: Quorathil Family Uplift Benefit
+    - name: Zelvanic Parental Aid Measure
+    - name: Hentoval Child Welfare Entitlement
+    - name: Morthiven Families Assistance Benefit
+    - name: Galthuven Minor Support Allocation
+    - name: Rendovik Child Prosperity Benefit
+    - name: Sulvaren Household Nurture Credit
+    - name: Obrethane Youth Development Benefit
+    - name: Tarnivek Family Wellbeing Provision
+    - name: Crelduvan Dependent Support Benefit
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Accord on Atmospheric Stewardship
+    - name: Thandoral Compact for Global Emissions Governance
+    - name: Brissendel Climate Cooperation Treaty
+    - name: Korvalen Pact on Environmental Sustainability
+    - name: Melvouri Agreement on Planetary Climate Action
+    - name: Dranthec Convention for Carbon Reduction
+    - name: Ossivane Protocol on Climate Resilience
+    - name: Pellundar Framework for Emissions Accountability
+    - name: Gantheriq Accord on Ecological Preservation
+    - name: Zulbraith Treaty on Global Climate Mitigation
+    - name: Fennorath Compact on Atmospheric Restoration
+    - name: Quirendal Agreement for Sustainable Climate Policy
+    - name: Torbassil Convention on Greenhouse Stabilization
+    - name: Halvenique Pact for Climate Transition
+    - name: Wyndorath Accord on Environmental Commitment
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trilateral Commerce and Cooperation Pact of Velorith-Dranmek-Tassoly (TCCPVDT)
+    - name: Brenova-Kalduris-Plorath Free Trade Accord (BKPFTA)
+    - name: Unified Mercantile Framework of Ostrivane, Cheldarum, and Fenoquil (UMFOCF)
+    - name: Jenthari-Morvask-Sulindra Economic Partnership Agreement (JMSEPA)
+    - name: Comprehensive Trade and Investment Compact of Drellune-Votharen-Quiresta (CTICDVQ)
+    - name: Integrated Markets Agreement between Pellunor, Grothaine, and Zelvari (IMAPGZ)
+    - name: Tripartite Open Commerce Treaty of Haldrique-Senvoria-Tumbrask (TOCTHST)
+    - name: Delvoran-Kesthari-Plumaren Continental Trade Arrangement (DKPCTA)
+    - name: Mutual Prosperity and Commerce Accord of Retholin-Garvune-Tessivak (MPCART)
+    - name: Brinthal-Orveskan-Dulmeque Cooperative Trade Pact (BODCTP)
+    - name: Transborder Economic Integration Agreement of Quelvane-Sordith-Marphune (TEIAQSM)
+    - name: Fentarish-Golvaren-Weskuri Multilateral Commerce Accord (FGWMCA)
+    - name: Comprehensive Tariff and Partnership Framework of Zelkori-Branthune-Opelvar (CTPFZBO)
+    - name: Unified Trade and Regulatory Compact of Helvistane-Durnoque-Tessavar (UTRCHDT)
+    - name: Trilateral Economic Advancement Pact of Morquelin-Selvrath-Jundarik (TEAPMSJ)
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Broad Cooperative Accord for Oceanic-Rim Commerce (BCORC)
+    - name: Unified Multilateral Pact for Transoceanic Trade Facilitation (UMPTF)
+    - name: Inclusive and Forward-Looking Framework for Coastal Basin Partnership (IFLCBP)
+    - name: Consolidated Open Markets Treaty for Rimward Economies (COMTRE)
+    - name: Expansive Joint Compact for Maritime-Belt Economic Integration (EJCMEI)
+    - name: Holistic and Enduring Arrangement for Seaboard Trade Cooperation (HEASTC)
+    - name: Integrated Plurilateral Convention for Pelagic Economic Linkage (IPCPEL)
+    - name: Renewed Collective Accord on Transoceanic Market Access (RCATMA)
+    - name: Adaptive Multilateral Covenant for Littoral Trade Advancement (AMCLTA)
+    - name: Durable and Encompassing Pact for Crosswater Commerce (DEPCC)
+    - name: Synergistic Plurinational Agreement for Deepwater Economic Bonds (SPADEB)
+    - name: Resilient Open Framework for Interoceanic Trade Harmonization (ROFITH)
+    - name: Cooperative Binding Instrument for Seagirt Market Alignment (CBISMA)
+    - name: Progressive Multilateral Charter for Basinwide Economic Unity (PMCBEU)
+    - name: Equitable and Lasting Treaty for Crossoceanic Trade Solidarity (ELTCTS)
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Critical Provisions Statute
+    - name: Sovereign Response Decree
+    - name: National Exigency Ordinance
+    - name: Urgent Safeguard Mandate
+    - name: Public Peril Measures Act
+    - name: Exceptional Circumstances Law
+    - name: Civic Continuity Directive
+    - name: Paramount Crisis Enactment
+    - name: Collective Security Powers Act
+    - name: Immediate Governance Protocol
+    - name: Extraordinary Resilience Statute
+    - name: Unified Contingency Decree
+    - name: Rapid Authority Provisions Act
+    - name: National Duress Response Law
+    - name: Overriding Necessity Ordinance
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Public Oral Health Initiative
+    - name: Dranmoor National Teeth Coverage Program
+    - name: Korvalen Universal Dental Benefit Scheme
+    - name: Pelliswood Community Dental Access Plan
+    - name: Thandric Federal Oral Wellness Program
+    - name: Brelloquin Nationwide Dental Subsidy Act
+    - name: Ossivane Public Dental Relief Framework
+    - name: Caldrith Citizens Dental Support Plan
+    - name: Wenvara National Oral Health Coverage Act
+    - name: Grothelin Federal Dental Assistance Program
+    - name: Turnevoss Public Dental Provision Scheme
+    - name: Helvandri Universal Dental Care Initiative
+    - name: Plorathic National Dental Benefits Plan
+    - name: Sondrevale Federal Oral Care Program
+    - name: Kethwurn Nationwide Dental Coverage Framework
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Licentiate of Letters in Comparative Rhetoric
+    - name: Baccalaureate of Humanistic Studies in Dramaturgy
+    - name: Collegial Diploma of Arts in Spoken Narratives
+    - name: Foundation Degree of Liberal Inquiry in Poetics
+    - name: Primary Degree of Cultural Studies in Folklore
+    - name: Undergraduate Certificate of Interpretive Letters
+    - name: Baccalaureate of Expressive Arts in Prose Composition
+    - name: Licentiate of Textual Sciences in World Literatures
+    - name: Collegial Degree of Linguistic Arts in Translation
+    - name: Foundation Diploma of Discursive Studies in Oratory
+    - name: Primary Certificate of Narrative Arts in Creative Nonfiction
+    - name: Baccalaureate of Critical Letters in Philological Inquiry
+    - name: Undergraduate Degree of Rhetorical Studies in Semiotics
+    - name: Licentiate of Communicative Arts in Dialogic Writing
+    - name: Collegial Certificate of Hermeneutic Studies in Lexicography
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Licentiate of Pedagogical Practice
+    - name: Diploma in Instructional Foundations
+    - name: Certificate of Scholastic Mentorship
+    - name: Credential in Curricular Facilitation
+    - name: Degree in Applied Tutelage Studies
+    - name: Baccalaureate of Didactic Sciences
+    - name: Qualification in Formative Guidance
+    - name: Laureate of Classroom Methodology
+    - name: Attestation in Learner Development
+    - name: Endorsement of Pedagogic Craft
+    - name: Warrant in Scholastic Instruction
+    - name: Commendation of Teaching Praxis
+    - name: Diploma of Educative Leadership
+    - name: Certification in Pupil Cultivation
+    - name: Degree of Instructional Stewardship

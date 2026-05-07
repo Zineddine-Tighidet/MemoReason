@@ -1,0 +1,367 @@
+document:
+  document_id: place_11
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: New York City
+  wikipedia_url: https://en.wikipedia.org/wiki/New_York_City
+  original_document: 'New York, often called New York City (NYC), is the most populous city in the United States. It is located
+    at the southern tip of New York State on New York Harbor, one of the world''s largest natural harbors. The city comprises
+    five boroughs, each coextensive with its respective county. It is the geographical and demographic center of both the
+    Northeast megalopolis and the New York metropolitan area, the largest metropolitan area in the United States by both population
+    and urban area. New York is a global center of finance and commerce, culture, technology, entertainment and media, academics
+    and scientific output, the arts and fashion, and, as home to the headquarters of the United Nations, international diplomacy.
+
+
+    With an estimated population in July 2024 of 8478072, distributed over 300.46 square miles (778.2 km2), the city is the
+    most densely populated major city in the United States. New York City has more than double the population of Los Angeles,
+    the country''s second-most populous city. Over 20.1 million people live in New York City''s metropolitan statistical area
+    and 23.5 million in its combined statistical area as of 2020, both the largest in the U.S. New York City is one of the
+    world''s most populous megacities. The city and its metropolitan area serve as the premier gateway for legal immigration
+    to the United States. An estimated 800 languages are spoken in New York City, making it the most linguistically diverse
+    city in the world. The New York City metropolitan region is home to the largest foreign-born population of any metropolitan
+    region in the world, approximately 5.9 million as of 2023.
+
+
+    New York City traces its origins to Fort Amsterdam and a trading post founded on Manhattan Island by Dutch colonists around
+    1624. The settlement was named New Amsterdam in 1626 and was chartered as a city in 1653. The city came under English
+    control in 1664 and was temporarily renamed New York after King Charles II granted the lands to his brother, the Duke
+    of York, before this name was permanently adopted in 1674. Following independence from Great Britain, the city was the
+    national capital of the United States from 1785 until 1790. The modern city was formed by the 1898 consolidation of its
+    five boroughs: Manhattan, Brooklyn, Queens, the Bronx, and Staten Island.
+
+
+    Anchored by Wall Street in the Financial District, Manhattan, New York City has been called both the world''s premier
+    financial and fintech center and the most economically powerful city in the world. As of 2022, the New York metropolitan
+    area is the largest metropolitan economy in the world, with a gross metropolitan product of over US$2.16 trillion. The
+    New York metropolitan area''s economy is larger than all but nine countries. Despite having a 24/7 rapid transit system,
+    New York also leads the world in urban automobile traffic congestion. The city is home to the world''s two largest stock
+    exchanges by market capitalization of their listed companies: the New York Stock Exchange and Nasdaq. New York City is
+    an established haven for global investors. As of 2025, New York City is the most expensive city in the world for expatriates
+    and has by a wide margin the highest residential rents of any American city. Fifth Avenue is the most expensive shopping
+    street in the world. New York City is home to the highest number of billionaires, individuals of ultra-high net worth
+    (greater than US$30 million), and millionaires of any city in the world by a significant margin.'
+  document_to_annotate: '[New York; place_1.city] is the most populous city in the [United States; place_2.country]. It is
+    located at the southern tip of [New York State; place_3.state] on [New York Harbor; place_4.natural_site], a large natural
+    harbor. The city comprises [five; number_1.str] districts, each coextensive with its respective county. It is the geographical
+    and demographic center of both the [Northeast; place_5.region] megalopolis and the [New York metropolitan area; place_6.region],
+    the largest metropolitan area in the [United States; place_2.country] by both population and urban area. [New York; place_1.city]
+    is a global center of finance and commerce, culture, technology, entertainment and media, academics and scientific output,
+    the arts and fashion, and, as home to the headquarters of the [United; ngo_1.name] Nations.
+
+
+    With an estimated population in [July; temporal_12.month] [2024; temporal_12.year] of [8478072; number_2.int], distributed
+    over [300.46; number_3.float] square miles, the city is the most densely populated major city in the [United States; place_2.country].
+    [New York City; place_1.city] has more than double the population of [Los Angeles; place_7.city], the country''s second-most
+    populous city. Over [20.1; number_5.float] million people live in [New York City; place_1.city]''s metropolitan statistical
+    area and [23.5; number_6.float] million in its combined statistical area as of [2020; temporal_2.year], both the largest
+    in the [U.S; place_2.country]. The city and its metropolitan area serve as the premier gateway for legal immigration to
+    the [United States; place_2.country]. An estimated [800; number_7.int] languages are spoken in [New York City; place_1.city].
+    The [New York City; place_1.city] metropolitan region is home to a large foreign-born population, approximately [5.9;
+    number_8.float] million as of [2023; temporal_3.year].
+
+
+    [New York City; place_1.city] traces its origins to [Fort Amsterdam; place_8.city] and a trading post founded on [Manhattan
+    Island; place_9.region] by [Dutch; place_10.demonym] colonists around [1624; temporal_4.year]. The settlement was named
+    [New Amsterdam; place_21.city] in [1626; temporal_5.year] and was chartered as a city in [1653; temporal_6.year]. The
+    city came under [English; place_11.demonym] control in [1664; temporal_7.year] and was temporarily renamed [New York;
+    place_1.city] after [King; person_1.honorific] [Charles II; person_1.full_name] granted the lands to [his; person_1.poss_det_pronoun]
+    [brother; person_2.relationship.person_1], the [Duke of York; person_2.full_name], before this name was permanently adopted
+    in [1674; temporal_8.year]. Following independence from [Great Britain; place_12.country], the city was the national capital
+    of the [United States; place_2.country] from [1785; temporal_9.year] until [1790; temporal_10.year]. The modern city was
+    formed by the [1898; temporal_11.year] consolidation of its five districts: [Manhattan; place_13.region], [Brooklyn; place_14.region],
+    [Queens; place_15.region], [the Bronx; place_16.region], and [Staten Island; place_17.region].'
+  relations: []
+  rules:
+  - 'number_7.int > 1 # plural mention "languages"'
+  - 'number_1.str == 5 # five districts explicitly enumerated (Manhattan, Brooklyn, Queens, the Bronx, Staten Island)'
+  - 'number_2.int < number_5.float * 1000000 # city population should be less than metro area (implicit: metro > city, but
+    number_2 is city pop as integer vs millions)'
+  num_questions: 12
+  questions:
+  - question_id: place_11_q05
+    question: Was the city named [New Amsterdam; place_21.city] before or after it was named [New York; place_1.city]?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: place_11_q05
+    question: What is the name of the large natural harbor on which [New York; place_1.city] is located?
+    question_type: extractive
+    answer: place_4.natural_site
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [New York; place_1.city] is located at the southern tip of [New York State; place_3.state]
+      on [New York Harbor; place_4.natural_site], a large natural harbor.
+    reasoning_chain_text: 1. The document states that [New York; place_1.city] is located at the southern tip of [New York
+      State; place_3.state] on [New York Harbor; place_4.natural_site], a large natural harbor.
+  - question_id: place_11_q05
+    question: How many districts comprise [New York; place_1.city]?
+    question_type: extractive
+    answer: five
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that the city comprises five districts, each coextensive with its respective county.
+    reasoning_chain_text: 1. The document states that the city comprises five districts, each coextensive with its respective
+      county.
+  - question_id: place_11_q05
+    question: Who is the current mayor of [New York; place_1.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes [New York; place_1.city]'s geography, demographics, and history.
+    - 2. The document does not mention any current mayor or political leadership of the city.
+    reasoning_chain_text: '1. The document describes [New York; place_1.city]''s geography, demographics, and history.
+
+      2. The document does not mention any current mayor or political leadership of the city.'
+  - question_id: place_11_q05
+    question: How many more people lived in [New York; place_1.city]'s combined statistical area than in its metropolitan
+      statistical area as of [2020; temporal_2.year]?
+    question_type: arithmetic
+    answer: number_6.float - number_5.float
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that over [20.1; number_5.float] million people live in [New York; place_1.city]'s metropolitan
+      statistical area.
+    - 2. The document states that [23.5; number_6.float] million live in its combined statistical area.
+    - 3. The difference is [23.5; number_6.float] - [20.1; number_5.float] = 1.8 million.
+    reasoning_chain_text: '1. The document states that over [20.1; number_5.float] million people live in [New York; place_1.city]''s
+      metropolitan statistical area.
+
+      2. The document states that [23.5; number_6.float] million live in its combined statistical area.
+
+      3. The difference is [23.5; number_6.float] - [20.1; number_5.float] = 1.8 million.'
+  - question_id: place_11_q06
+    question: What is the difference in population between [New York; place_1.city] and [Los Angeles; place_7.city]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document gives [New York; place_1.city]'s population as [8478072; number_2.int].
+    - 2. The document states [New York; place_1.city] has more than double the population of [Los Angeles; place_7.city],
+      but does not provide [Los Angeles; place_7.city]'s exact population.
+    - 3. Without the exact population of [Los Angeles; place_7.city], the difference cannot be calculated.
+    reasoning_chain_text: '1. The document gives [New York; place_1.city]''s population as [8478072; number_2.int].
+
+      2. The document states [New York; place_1.city] has more than double the population of [Los Angeles; place_7.city],
+      but does not provide [Los Angeles; place_7.city]''s exact population.
+
+      3. Without the exact population of [Los Angeles; place_7.city], the difference cannot be calculated.'
+  - question_id: place_11_q07
+    question: How many years after the trading post was founded by [Dutch; place_10.demonym] colonists was the settlement
+      chartered as a city?
+    question_type: temporal
+    answer: temporal_6.year - temporal_4.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states the trading post was founded around [1624; temporal_4.year].
+    - 2. The settlement was chartered as a city in [1653; temporal_6.year].
+    - 3. The difference is [1653; temporal_6.year] - [1624; temporal_4.year] = 22 years.
+    reasoning_chain_text: '1. The document states the trading post was founded around [1624; temporal_4.year].
+
+      2. The settlement was chartered as a city in [1653; temporal_6.year].
+
+      3. The difference is [1653; temporal_6.year] - [1624; temporal_4.year] = 22 years.'
+  - question_id: place_11_q08
+    question: How many years after the five-district consolidation was the [United; ngo_1.name] headquartered in [New York;
+      place_1.city]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the five-district consolidation occurred in [1898; temporal_11.year].
+    - 2. The document mentions [New York; place_1.city] is home to the headquarters of the [United; ngo_1.name], but does
+      not state when the headquarters was established there.
+    - 3. Without the date the headquarters was established, the duration cannot be calculated.
+    reasoning_chain_text: '1. The document states the five-district consolidation occurred in [1898; temporal_11.year].
+
+      2. The document mentions [New York; place_1.city] is home to the headquarters of the [United; ngo_1.name], but does
+      not state when the headquarters was established there.
+
+      3. Without the date the headquarters was established, the duration cannot be calculated.'
+  - question_id: place_11_q09
+    question: What was the relationship between [Charles II; person_1.full_name] and the person after whom [New York; place_1.city]
+      was named?
+    question_type: inference
+    answer: person_2.relationship.person_1
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [King; person_1.honorific] [Charles II; person_1.full_name] granted the lands to [his; person_1.poss_det_pronoun]
+      [brother; person_2.relationship.person_1], the [Duke of York; person_2.full_name].
+    - 2. The city was renamed [New York; place_1.city] after this grant, implying it was named in connection with [Duke of
+      York; person_2.full_name].
+    - 3. Therefore, the person after whom the city was named was [Charles II; person_1.full_name]'s [brother; person_2.relationship.person_1].
+    reasoning_chain_text: '1. The document states that [King; person_1.honorific] [Charles II; person_1.full_name] granted
+      the lands to [his; person_1.poss_det_pronoun] [brother; person_2.relationship.person_1], the [Duke of York; person_2.full_name].
+
+      2. The city was renamed [New York; place_1.city] after this grant, implying it was named in connection with [Duke of
+      York; person_2.full_name].
+
+      3. Therefore, the person after whom the city was named was [Charles II; person_1.full_name]''s [brother; person_2.relationship.person_1].'
+  - question_id: place_11_q10
+    question: Based on the document, did [New York; place_1.city] exist as a unified multi-district city during the time it
+      served as the national capital?
+    question_type: inference
+    answer: 'False'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the city served as the national capital from [1785; temporal_9.year] to [1790; temporal_10.year].
+    - 2. The five-district consolidation that formed the modern city occurred in [1898; temporal_11.year].
+    - 3. Since 1909 is well after 1789, the modern consolidated multi-district city did not yet exist when it served as the
+      national capital.
+    reasoning_chain_text: '1. The document states the city served as the national capital from [1785; temporal_9.year] to
+      [1790; temporal_10.year].
+
+      2. The five-district consolidation that formed the modern city occurred in [1898; temporal_11.year].
+
+      3. Since 1909 is well after 1789, the modern consolidated multi-district city did not yet exist when it served as the
+      national capital.'
+  - question_id: place_11_q11
+    question: Given that [New York; place_1.city] is described as a global center of finance, can we infer which stock exchange
+      is the largest in the city?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes [New York; place_1.city] as a global center of finance and commerce.
+    - 2. However, the document does not mention any specific stock exchange or financial institution by name.
+    - 3. Without this information, we cannot determine which stock exchange is the largest in the city.
+    reasoning_chain_text: '1. The document describes [New York; place_1.city] as a global center of finance and commerce.
+
+      2. However, the document does not mention any specific stock exchange or financial institution by name.
+
+      3. Without this information, we cannot determine which stock exchange is the largest in the city.'
+  - question_id: place_11_q12
+    question: What's the ranking in population of [Los Angeles; place_7.city] ?
+    question_type: arithmetic
+    answer: second
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - place_has more than double the population of , the country's second-most populous city
+    reasoning_chain_text: place_has more than double the population of , the country's second-most populous city
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 6782458
+    upper_bound: 10173686
+    factual_value: 8478072
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.float
+    lower_bound: 240.37
+    upper_bound: 360.55
+    factual_value: 300.46
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.float
+    lower_bound: 16.08
+    upper_bound: 24.12
+    factual_value: 20.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.float
+    lower_bound: 18.8
+    upper_bound: 28.2
+    factual_value: 23.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_7.int
+    lower_bound: 640
+    upper_bound: 960
+    factual_value: 800
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.float
+    lower_bound: 1.0
+    upper_bound: 16.0
+    factual_value: 5.9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1608
+    upper_bound: 1640
+    factual_value: 1624
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1610
+    upper_bound: 1642
+    factual_value: 1626
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1637
+    upper_bound: 1669
+    factual_value: 1653
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1648
+    upper_bound: 1680
+    factual_value: 1664
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1658
+    upper_bound: 1690
+    factual_value: 1674
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1768
+    upper_bound: 1802
+    factual_value: 1785
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1773
+    upper_bound: 1807
+    factual_value: 1790
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1880
+    upper_bound: 1916
+    factual_value: 1898
+    percentage: 1.0
+    rule_kind: temporal_year_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

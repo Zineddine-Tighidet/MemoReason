@@ -1,0 +1,311 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_02
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-04-18T14:00:43.437065+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+  ngos:
+    ngo_1: 15
+  government_orgs:
+    government_org_1: 15
+  educational_orgs:
+    educational_org_1: 15
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+  awards: {}
+  legals: {}
+  products:
+    product_2: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Brenthol Kavish Torenly
+      last_name: Torenly
+      nationality: Veldorian
+    - full_name: Dravon Mellick Suthane
+      last_name: Suthane
+      nationality: Pratheki
+    - full_name: Quilben Harso Fenwick
+      last_name: Fenwick
+      nationality: Zulmaran
+    - full_name: Tassero Jondrik Pluvane
+      last_name: Pluvane
+      nationality: Kethosi
+    - full_name: Welmoth Creydon Abrique
+      last_name: Abrique
+      nationality: Dranveli
+    - full_name: Orvath Lyndek Casprel
+      last_name: Casprel
+      nationality: Tulmeshi
+    - full_name: Pellum Garvosh Trindale
+      last_name: Trindale
+      nationality: Brenthaki
+    - full_name: Zethran Kolvar Mespine
+      last_name: Mespine
+      nationality: Gorvathi
+    - full_name: Haldren Tuvisk Borquell
+      last_name: Borquell
+      nationality: Selvuran
+    - full_name: Crethon Yulbek Darnove
+      last_name: Darnove
+      nationality: Molveki
+    - full_name: Jasprel Ondrik Velmuth
+      last_name: Velmuth
+      nationality: Throndeli
+    - full_name: Fenthor Brulask Quivane
+      last_name: Quivane
+      nationality: Karvoshi
+    - full_name: Golvren Taspek Hurndel
+      last_name: Hurndel
+      nationality: Peldrani
+    - full_name: Rethvan Kulbrin Sostane
+      last_name: Sostane
+      nationality: Welvoki
+    - full_name: Melvorn Drasken Torbique
+      last_name: Torbique
+      nationality: Grethuli
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Kelvor Drannith
+      last_name: Drannith
+    - full_name: Mivon Tasserly
+      last_name: Tasserly
+    - full_name: Brento Quilhane
+      last_name: Quilhane
+    - full_name: Darvo Plennick
+      last_name: Plennick
+    - full_name: Hessam Crulvey
+      last_name: Crulvey
+    - full_name: Torbin Weshala
+      last_name: Weshala
+    - full_name: Gavrel Ondrik
+      last_name: Ondrik
+    - full_name: Pellum Zarquist
+      last_name: Zarquist
+    - full_name: Rintho Cabelis
+      last_name: Cabelis
+    - full_name: Yondel Fravnik
+      last_name: Fravnik
+    - full_name: Sulwen Ketharo
+      last_name: Ketharo
+    - full_name: Obren Talvish
+      last_name: Talvish
+    - full_name: Casprel Dunvori
+      last_name: Dunvori
+    - full_name: Fennol Grashev
+      last_name: Grashev
+    - full_name: Lyndro Parvesh
+      last_name: Parvesh
+places:
+  place_1:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Talmera
+    - state: Corvishen
+    - state: Brelloway
+    - state: Dunhaven
+    - state: Pellmark
+    - state: Grothane
+    - state: Weskara
+    - state: Fenthollow
+    - state: Marvessa
+    - state: Caldrune
+    - state: Sorathel
+    - state: Kelvane
+    - state: Thrennock
+    - state: Obrisal
+    - state: Yondrell
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora
+    - name: Tassren
+    - name: Plyndex
+    - name: Cuvari
+    - name: Orbanic
+    - name: Zenthari
+    - name: Quilben
+    - name: Dravonic
+    - name: Felkura
+    - name: Mossivane
+    - name: Torbique
+    - name: Grellux
+    - name: Wyndara
+    - name: Kelvosh
+    - name: Brindelo
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthos
+    - name: Krendar
+    - name: Plymbex
+    - name: Torqen
+    - name: Zulvari
+    - name: Bryndak
+    - name: Colvane
+    - name: Wepthos
+    - name: Fendaro
+    - name: Skivarn
+    - name: Jombrex
+    - name: Talnevo
+    - name: Quorben
+    - name: Dravlix
+    - name: Grothane
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collegiate Gridiron Alliance
+    - name: Pigskin Heritage Council
+    - name: Turf Champions Fellowship
+    - name: Endzone Scholars Initiative
+    - name: Gridfield Youth Compact
+    - name: Tackleworth Athletics Trust
+    - name: Goalpost Mentorship League
+    - name: Fieldmark Sportsmanship Circle
+    - name: Helmcrest Athletic Foundation
+    - name: Pylon Leadership Collective
+    - name: Scrimmage Futures Network
+    - name: Kickline Community Partnership
+    - name: Cleatborn Athletics Guild
+    - name: Hashmark Civic Sports Forum
+    - name: Downfield Promise Coalition
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvello State Council of Distinction
+    - name: Brenthara Civic Laureate Commission
+    - name: Kelmorin Heritage Honor Bureau
+    - name: Drosswick Provincial Merit Tribunal
+    - name: Pallenthor Citizens Recognition Assembly
+    - name: Vossendal Statehood Commendation Board
+    - name: Grantheel Public Valor Institute
+    - name: Melvoran Civic Achievement Chancellery
+    - name: Torridale Eminence Conferral Office
+    - name: Quendalith State Honors Directorate
+    - name: Harvennel Distinguished Service Conclave
+    - name: Pellicarn Civic Prestige Authority
+    - name: Wyndorath Merit Induction Council
+    - name: Soltheryn Public Honors Secretariat
+    - name: Cranthelo State Commendation Collegium
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thandrel University
+    - name: Colvane Institute of Higher Learning
+    - name: Breskith University
+    - name: Orenthal College
+    - name: Pellomar University
+    - name: Dravenholt Academy
+    - name: Kessura University
+    - name: Wynthorp Collegiate Institute
+    - name: Galstire University
+    - name: Torindel University
+    - name: Melvane School of Arts and Sciences
+    - name: Haldrique University
+    - name: Fentorak Institute
+    - name: Quirenth University
+    - name: Brossival University
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevell
+    - name: Curenth
+    - name: Drayven
+    - name: Elloquar
+    - name: Fenthari
+    - name: Glospen
+    - name: Harquin
+    - name: Joltrec
+    - name: Kelvane
+    - name: Lyndaro
+    - name: Morthek
+    - name: Nelvori
+    - name: Paldren
+    - name: Quossel
+    - name: Renvaith
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion
+    - name: Casperal
+    - name: Mondrique
+    - name: Tasserly
+    - name: Brenthalo
+    - name: Quorvane
+    - name: Pellicarn
+    - name: Dravonis
+    - name: Helvacor
+    - name: Zulmaren
+    - name: Kestoval
+    - name: Thrennick
+    - name: Wospara
+    - name: Galverik
+    - name: Norbicle
+products:
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellum Ledger
+    - name: Crennith Roster
+    - name: Polvane Index
+    - name: Thandric Roll
+    - name: Quorath Dossier
+    - name: Brelkyn Catalog
+    - name: Soriven Register
+    - name: Dravish Compendium
+    - name: Feltorin Almanac
+    - name: Galthen Chronicle
+    - name: Morthane Digest
+    - name: Pellusk Gazette List
+    - name: Wyndrel Tally
+    - name: Kestova Ranking
+    - name: Obrenith Archive

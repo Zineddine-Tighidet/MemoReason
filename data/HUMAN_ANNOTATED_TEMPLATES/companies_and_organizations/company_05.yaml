@@ -1,0 +1,349 @@
+document:
+  document_id: company_05
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: AstraZeneca
+  wikipedia_url: https://en.wikipedia.org/wiki/AstraZeneca
+  original_document: 'AstraZeneca plc () (AZ) is a Swedish-British multinational pharmaceutical and biotechnology company
+    with its headquarters at the Cambridge Biomedical Campus in Cambridge, UK. It has a portfolio of products for major diseases
+    in areas including oncology, cardiovascular, gastrointestinal, infection, neuroscience, respiratory, and inflammation.
+
+
+    The company was founded in 1999 through the merger of the Swedish Astra AB and the British Zeneca Group (itself formed
+    by the demerger of the pharmaceutical operations of Imperial Chemical Industries in 1993). Zeneca shareholders received
+    53.5% of the shares, while Astra shareholders received the remaining 46.5%. Its portfolio includes primary and speciality
+    care, coverage for rare diseases, and a robust global presence across various regions. Since the merger it has been among
+    the world''s largest pharmaceutical companies and has made numerous corporate acquisitions, including Cambridge Antibody
+    Technology (in 2006), MedImmune (in 2007), Spirogen (in 2013) and Definiens (by MedImmune in 2014). It has its research
+    and development concentrated in three strategic centres: Cambridge, UK; Gothenburg, Sweden; and Gaithersburg, Maryland,
+    US.
+
+
+    AstraZeneca traces its earliest corporate history to 1913, when Astra AB was formed by a large group of doctors and apothecaries
+    in Södertälje. Throughout the twentieth century, it grew into the largest pharmaceutical company in Sweden. Its British
+    counterpart, Zeneca PLC was formed in 1993 when ICI divested its pharmaceuticals businesses; Astra AB and Zeneca PLC merged
+    six years later, with the chosen headquarters in the United Kingdom.
+
+
+    AstraZeneca''s primary listing is on the London Stock Exchange and is a constituent of the FTSE 100 Index; it also secondary
+    listings on Nasdaq Stockholm and the New York Stock Exchange. AstraZeneca has one of the highest market capitalisations
+    of pharmaceutical companies worldwide.'
+  document_to_annotate: '[AstraZeneca plc (AZ); entreprise_org_1.name] is a [Swedish; place_1.demonym]-[British; place_2.demonym]
+    multinational pharmaceutical and biotechnology company with its headquarters at the [Cambridge Biomedical Campus; place_3.street]
+    in [Cambridge; place_4.city], [UK; place_2.country]. It has a portfolio of products for major diseases in areas including
+    oncology, cardiovascular, gastrointestinal, infection, neuroscience, respiratory, and inflammation.
+
+
+    The company was founded in [1999; temporal_1.year] through the merger of the [Swedish; place_1.demonym] [Astra AB; entreprise_org_2.name]
+    and the [British; place_2.demonym] [Zeneca Group; entreprise_org_3.name] (itself formed by the demerger of the pharmaceutical
+    operations of [Imperial Chemical Industries; entreprise_org_4.name] in [1993; temporal_2.year]). [Zeneca; entreprise_org_3.name]
+    shareholders received [53.5; number_1.percent]% of the shares, while [Astra; entreprise_org_2.name] shareholders received
+    the remaining [46.5; number_2.percent]%. Its portfolio includes primary and speciality care, coverage for rare diseases,
+    and a robust global presence across various regions. Since the merger it has been among the world''s largest pharmaceutical
+    companies and has made numerous corporate acquisitions, including [Cambridge Antibody Technology; entreprise_org_5.name]
+    (in [2006; temporal_3.year]), [MedImmune; entreprise_org_6.name] (in [2007; temporal_4.year]), [Spirogen; entreprise_org_7.name]
+    (in [2013; temporal_5.year]) and [Definiens; entreprise_org_8.name] (by [MedImmune; entreprise_org_6.name] in [2014; temporal_6.year]).
+    It has its research and development concentrated in [three; number_3.str] strategic centres: [Cambridge; place_4.city],
+    [UK; place_2.country]; [Gothenburg; place_5.city], [Sweden; place_1.country]; and [Gaithersburg; place_6.city], [Maryland;
+    place_7.state], [US; place_8.country].
+
+
+    [AstraZeneca; entreprise_org_1.name] traces its earliest corporate history to [1913; temporal_7.year], when [Astra AB;
+    entreprise_org_2.name] was formed by a large group of doctors and apothecaries in [Södertälje; place_9.city]. Throughout
+    the [twentieth; number_5.str] century, it grew into the largest pharmaceutical company in [Sweden; place_1.country]. Its
+    [British; place_2.demonym] counterpart, [Zeneca PLC; entreprise_org_3.name] was formed in [1993; temporal_2.year] when
+    [ICI; entreprise_org_4.name] divested its pharmaceuticals businesses; [Astra AB; entreprise_org_2.name] and [Zeneca PLC;
+    entreprise_org_3.name] merged [six; number_4.str] years later, with the chosen headquarters in the [United Kingdom; place_2.country].
+
+
+    [AstraZeneca; entreprise_org_1.name]''s primary listing is on the [London Stock Exchange; entreprise_org_9.name] and is
+    a constituent of the [FTSE 100 Index; product_1.name]; it also secondary listings on [Nasdaq Stockholm; entreprise_org_10.name]
+    and the [New York Stock Exchange; entreprise_org_11.name]. [AstraZeneca; entreprise_org_1.name] has one of the highest
+    market capitalisations of pharmaceutical companies worldwide.'
+  relations: []
+  rules:
+  - 'number_1.percent + number_2.percent == 100 # share split must total 100%'
+  - 'temporal_1.year - temporal_2.year == number_4.str # merger happened stated number of years after Zeneca formation'
+  - 'century_of(temporal_7.year) == number_5.str # Astra AB founding year must fall in the stated century'
+  - 'number_3.str == 3 # exactly three strategic R&D centres listed'
+  - temporal_1.year - temporal_2.year = number_4.int
+  num_questions: 12
+  questions:
+  - question_id: company_05_q01
+    question: On which street is the headquarters of [AstraZeneca plc (AZ); entreprise_org_1.name] located?
+    question_type: extractive
+    answer: place_3.street
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has its headquarters at the [Cambridge Biomedical
+      Campus; place_3.street] in [Cambridge; place_4.city], [UK; place_2.country].
+    reasoning_chain_text: 1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has its headquarters at
+      the [Cambridge Biomedical Campus; place_3.street] in [Cambridge; place_4.city], [UK; place_2.country].
+  - question_id: company_05_q02
+    question: In which therapeutic areas does [AstraZeneca plc (AZ); entreprise_org_1.name] have a portfolio of products,
+      besides oncology, cardiovascular, gastrointestinal, infection, neuroscience, and respiratory?
+    question_type: extractive
+    answer: inflammation
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document lists the major disease areas as oncology, cardiovascular, gastrointestinal, infection, neuroscience,
+      respiratory, and inflammation. The one not mentioned in the question is inflammation.
+    reasoning_chain_text: 1. The document lists the major disease areas as oncology, cardiovascular, gastrointestinal, infection,
+      neuroscience, respiratory, and inflammation. The one not mentioned in the question is inflammation.
+  - question_id: company_05_q03
+    question: Who is the current CEO of [AstraZeneca plc (AZ); entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes [AstraZeneca plc (AZ); entreprise_org_1.name]'s history, mergers, and listings.
+    - 2. The document does not mention any CEO or executive leadership by name.
+    reasoning_chain_text: '1. The document describes [AstraZeneca plc (AZ); entreprise_org_1.name]''s history, mergers, and
+      listings.
+
+      2. The document does not mention any CEO or executive leadership by name.'
+  - question_id: company_05_q04
+    question: By how many percentage points did [Zeneca Group; entreprise_org_3.name] shareholders' share exceed [Astra AB;
+      entreprise_org_2.name] shareholders' share in the merger that formed [AstraZeneca plc (AZ); entreprise_org_1.name]?
+    question_type: arithmetic
+    answer: number_1.percent - number_2.percent
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Zeneca Group; entreprise_org_3.name] shareholders received [53.5; number_1.percent]% of the shares.
+    - 2. [Astra AB; entreprise_org_2.name] shareholders received [46.5; number_2.percent]% of the shares.
+    - 3. The difference is [53.5; number_1.percent] − [46.5; number_2.percent] = 24.0 percentage points.
+    reasoning_chain_text: '1. [Zeneca Group; entreprise_org_3.name] shareholders received [53.5; number_1.percent]% of the
+      shares.
+
+      2. [Astra AB; entreprise_org_2.name] shareholders received [46.5; number_2.percent]% of the shares.
+
+      3. The difference is [53.5; number_1.percent] − [46.5; number_2.percent] = 24.0 percentage points.'
+  - question_id: company_05_q05
+    question: What is the total percentage of shares distributed to both [Zeneca Group; entreprise_org_3.name] and [Astra
+      AB; entreprise_org_2.name] shareholders in the merger?
+    question_type: arithmetic
+    answer: '100'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. [Zeneca Group; entreprise_org_3.name] shareholders received [53.5; number_1.percent]% and [Astra AB; entreprise_org_2.name]
+      shareholders received the remaining [46.5; number_2.percent]%.
+    - 2. 62.0 + 38.0 = 100%.
+    reasoning_chain_text: '1. [Zeneca Group; entreprise_org_3.name] shareholders received [53.5; number_1.percent]% and [Astra
+      AB; entreprise_org_2.name] shareholders received the remaining [46.5; number_2.percent]%.
+
+      2. 62.0 + 38.0 = 100%.'
+  - question_id: company_05_q06
+    question: What was the total revenue of [AstraZeneca plc (AZ); entreprise_org_1.name] in the year it acquired [Cambridge
+      Antibody Technology; entreprise_org_5.name] and [MedImmune; entreprise_org_6.name] combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions the acquisitions of [Cambridge Antibody Technology; entreprise_org_5.name] in [2006; temporal_3.year]
+      and [MedImmune; entreprise_org_6.name] in [2007; temporal_4.year].
+    - 2. The document does not provide any revenue figures for [AstraZeneca plc (AZ); entreprise_org_1.name], so the arithmetic
+      cannot be performed.
+    reasoning_chain_text: '1. The document mentions the acquisitions of [Cambridge Antibody Technology; entreprise_org_5.name]
+      in [2006; temporal_3.year] and [MedImmune; entreprise_org_6.name] in [2007; temporal_4.year].
+
+      2. The document does not provide any revenue figures for [AstraZeneca plc (AZ); entreprise_org_1.name], so the arithmetic
+      cannot be performed.'
+  - question_id: company_05_q07
+    question: How many years after [Zeneca Group; entreprise_org_3.name] was formed did the merger creating [AstraZeneca plc
+      (AZ); entreprise_org_1.name] take place?
+    question_type: temporal
+    answer: temporal_1.year - temporal_2.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. [Zeneca Group; entreprise_org_3.name] was formed in [1993; temporal_2.year].
+    - 2. The merger creating [AstraZeneca plc (AZ); entreprise_org_1.name] occurred in [1999; temporal_1.year].
+    - 3. The difference is [1999; temporal_1.year] − [1993; temporal_2.year] = 4 years.
+    reasoning_chain_text: '1. [Zeneca Group; entreprise_org_3.name] was formed in [1993; temporal_2.year].
+
+      2. The merger creating [AstraZeneca plc (AZ); entreprise_org_1.name] occurred in [1999; temporal_1.year].
+
+      3. The difference is [1999; temporal_1.year] − [1993; temporal_2.year] = 4 years.'
+  - question_id: company_05_q08
+    question: Which company did [AstraZeneca plc (AZ); entreprise_org_1.name] acquire first, [Cambridge Antibody Technology;
+      entreprise_org_5.name], or [Spirogen; entreprise_org_7.name]?
+    question_type: temporal
+    answer: entreprise_org_5.name
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. [Spirogen; entreprise_org_7.name] was acquired in [2013; temporal_5.year].
+    - 2. [Definiens; entreprise_org_8.name] was acquired by [MedImmune; entreprise_org_6.name] in [2014; temporal_6.year].
+    - 3. 2017 − 2006 = 11 years.
+    reasoning_chain_text: '1. [Spirogen; entreprise_org_7.name] was acquired in [2013; temporal_5.year].
+
+      2. [Definiens; entreprise_org_8.name] was acquired by [MedImmune; entreprise_org_6.name] in [2014; temporal_6.year].
+
+      3. 2017 − 2006 = 11 years.'
+  - question_id: company_05_q09
+    question: In what year did [AstraZeneca plc (AZ); entreprise_org_1.name] first achieve the highest market capitalisation
+      among pharmaceutical companies worldwide?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has one of the highest market capitalisations
+      of pharmaceutical companies worldwide.
+    - 2. The document does not specify any year in which it first achieved this status, so the temporal question cannot be
+      answered.
+    reasoning_chain_text: '1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has one of the highest
+      market capitalisations of pharmaceutical companies worldwide.
+
+      2. The document does not specify any year in which it first achieved this status, so the temporal question cannot be
+      answered.'
+  - question_id: company_05_q10
+    question: Which company that was later acquired by [AstraZeneca plc (AZ); entreprise_org_1.name] was itself responsible
+      for acquiring [Definiens; entreprise_org_8.name]?
+    question_type: inference
+    answer: entreprise_org_6.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that [Definiens; entreprise_org_8.name] was acquired by [MedImmune; entreprise_org_6.name] in
+      [2014; temporal_6.year].
+    - 2. [MedImmune; entreprise_org_6.name] was itself acquired by [AstraZeneca plc (AZ); entreprise_org_1.name] in [2007;
+      temporal_4.year].
+    - 3. Therefore, [MedImmune; entreprise_org_6.name] is the company that was acquired by [AstraZeneca plc (AZ); entreprise_org_1.name]
+      and later acquired [Definiens; entreprise_org_8.name].
+    reasoning_chain_text: '1. The document states that [Definiens; entreprise_org_8.name] was acquired by [MedImmune; entreprise_org_6.name]
+      in [2014; temporal_6.year].
+
+      2. [MedImmune; entreprise_org_6.name] was itself acquired by [AstraZeneca plc (AZ); entreprise_org_1.name] in [2007;
+      temporal_4.year].
+
+      3. Therefore, [MedImmune; entreprise_org_6.name] is the company that was acquired by [AstraZeneca plc (AZ); entreprise_org_1.name]
+      and later acquired [Definiens; entreprise_org_8.name].'
+  - question_id: company_05_q11
+    question: How many strategic R&D centres does [AstraZeneca plc (AZ); entreprise_org_1.name] operate, and are any of them
+      located in the same country as the company's headquarters?
+    question_type: inference
+    answer: 3, and yes
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has [three; number_3.str] strategic R&D centres.
+    - 2. The headquarters is in [Cambridge; place_4.city], [UK; place_2.country].
+    - 3. One of the three R&D centres is also in [Cambridge; place_4.city], [UK; place_2.country], which is the same country
+      as the headquarters.
+    - 4. Therefore, the answer is 3 centres, and yes, at least one is in the same country as the headquarters.
+    reasoning_chain_text: '1. The document states that [AstraZeneca plc (AZ); entreprise_org_1.name] has [three; number_3.str]
+      strategic R&D centres.
+
+      2. The headquarters is in [Cambridge; place_4.city], [UK; place_2.country].
+
+      3. One of the three R&D centres is also in [Cambridge; place_4.city], [UK; place_2.country], which is the same country
+      as the headquarters.
+
+      4. Therefore, the answer is 3 centres, and yes, at least one is in the same country as the headquarters.'
+  - question_id: company_05_q12
+    question: Given that [Astra AB; entreprise_org_2.name] was the largest pharmaceutical company in [Sweden; place_1.country],
+      can we determine whether [Zeneca Group; entreprise_org_3.name] was the largest pharmaceutical company in [UK; place_2.country]
+      before the merger?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states that [Astra AB; entreprise_org_2.name] grew into the largest pharmaceutical company in [Sweden;
+      place_1.country].
+    - 2. The document does not provide any information about [Zeneca Group; entreprise_org_3.name]'s ranking or market position
+      within [UK; place_2.country].
+    - 3. Therefore, it cannot be determined whether [Zeneca Group; entreprise_org_3.name] held a similar position in its home
+      country.
+    reasoning_chain_text: '1. The document states that [Astra AB; entreprise_org_2.name] grew into the largest pharmaceutical
+      company in [Sweden; place_1.country].
+
+      2. The document does not provide any information about [Zeneca Group; entreprise_org_3.name]''s ranking or market position
+      within [UK; place_2.country].
+
+      3. Therefore, it cannot be determined whether [Zeneca Group; entreprise_org_3.name] held a similar position in its home
+      country.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1974
+    upper_bound: 2012
+    factual_value: 1993
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.percent
+    lower_bound: 42.8
+    upper_bound: 64.2
+    factual_value: 53.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.percent
+    lower_bound: 37.2
+    upper_bound: 55.8
+    factual_value: 46.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1894
+    upper_bound: 1932
+    factual_value: 1913
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.str
+    lower_bound: 18
+    upper_bound: 22
+    factual_value: 20
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

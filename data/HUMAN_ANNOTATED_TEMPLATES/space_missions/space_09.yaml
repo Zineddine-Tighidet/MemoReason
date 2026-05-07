@@ -1,0 +1,222 @@
+document:
+  document_id: space_09
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Chandrayaan programme
+  wikipedia_url: https://en.wikipedia.org/wiki/Chandrayaan_programme
+  original_document: 'The Chandrayaan programme (Sanskrit: Candra ''Moon'', Yāna ''Craft, Vehicle'', ) also known as the Indian
+    Lunar Exploration Programme is an ongoing series of outer space missions by ISRO for the exploration of the Moon. The
+    program incorporates a lunar orbiter, an impactor, a soft lander and a rover spacecraft.
+
+
+    There have been three missions so far with a total of two orbiters, landers and rovers each. While the two orbiters were
+    successful, the first lander and rover which were part of the Chandrayaan-2 mission, crashed on the surface. The second
+    lander and rover mission Chandrayaan-3 successfully landed on the Moon on 23 August 2023, making India the first nation
+    to successfully land a spacecraft in the lunar south pole region, and the fourth country to soft land on the Moon after
+    the Soviet Union, the United States and China.'
+  document_to_annotate: 'The [Chandrayaan programme; military_org_1.name] also known as the [Indian Lunar Exploration Programme;
+    product_1.name] is an ongoing series of outer space missions by [ISRO; government_org_1.name] for the exploration of the
+    [Moon; place_6.natural_site]. The program incorporates a [lunar; place_6.demonym] orbiter, an impactor, a soft lander
+    and a rover spacecraft.
+
+
+    There have been [three; number_1.str] missions so far with a total of [two; number_2.str] orbiters, landers and rovers
+    each. While the [two; number_2.str] orbiters were successful, the first lander and rover which were part of the [Chandrayaan-2;
+    product_2.name] mission, crashed on the surface. The second lander and rover mission [Chandrayaan-3; product_3.name] successfully
+    landed on the [Moon; place_6.natural_site] on [23 August 2023; temporal_1.date], making [India; place_1.country] the first
+    nation to successfully land a spacecraft in the [lunar; place_6.demonym] [south pole region; place_5.region], and the
+    fourth country to soft land on the [Moon; place_6.natural_site] after [the Soviet Union; place_2.country], [the United
+    States; place_3.country] and [China; place_4.country].'
+  relations: []
+  rules:
+  - 'number_1.str > 1 # plural "missions"'
+  - 'number_2.str > 1 # plural "orbiters, landers and rovers each"'
+  num_questions: 12
+  questions:
+  - question_id: space_09_q01
+    question: Which organization runs the [Indian Lunar Exploration Programme; product_1.name] program?
+    question_type: extractive
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [Indian Lunar Exploration Programme; product_1.name] is an ongoing series of outer space
+      missions by [ISRO; government_org_1.name].
+    reasoning_chain_text: 1. The document states that the [Indian Lunar Exploration Programme; product_1.name] is an ongoing
+      series of outer space missions by [ISRO; government_org_1.name].
+  - question_id: space_09_q02
+    question: How many countries successfully soft-landed on the [Moon; place_6.natural_site] before [India; place_1.country]?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists three countries that soft-landed before [India; place_1.country]: [the Soviet Union; place_2.country]
+      and [the United States; place_3.country] and [China; place_4.country].'
+    reasoning_chain_text: '1. The document lists three countries that soft-landed before [India; place_1.country]: [the Soviet
+      Union; place_2.country] and [the United States; place_3.country] and [China; place_4.country].'
+  - question_id: space_09_q03
+    question: Who is the current director of the [Chandrayaan programme; military_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the [Chandrayaan programme; military_org_1.name] and its missions.
+    - 2. The document does not mention any director or leadership personnel of the organization.
+    reasoning_chain_text: '1. The document describes the [Chandrayaan programme; military_org_1.name] and its missions.
+
+      2. The document does not mention any director or leadership personnel of the organization.'
+  - question_id: space_09_q04
+    question: How many total orbiters, landers, and rovers have been sent across all [Indian Lunar Exploration Programme;
+      product_1.name] missions?
+    question_type: arithmetic
+    answer: number_2.str + number_2.str + number_2.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there have been [two; number_2.str] orbiters, [two; number_2.str] landers, and [two; number_2.str]
+      rovers.
+    - 2. Total spacecraft = 3 + 3 + 3 = 9.
+    reasoning_chain_text: '1. The document states there have been [two; number_2.str] orbiters, [two; number_2.str] landers,
+      and [two; number_2.str] rovers.
+
+      2. Total spacecraft = 3 + 3 + 3 = 9.'
+  - question_id: space_09_q05
+    question: What was the total budget spent on the [Chandrayaan-2; product_2.name] and [Chandrayaan-3; product_3.name] missions
+      combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions both the [Chandrayaan-2; product_2.name] and [Chandrayaan-3; product_3.name] missions.
+    - 2. The document does not provide any budget or cost figures for either mission, so the total cannot be calculated.
+    reasoning_chain_text: '1. The document mentions both the [Chandrayaan-2; product_2.name] and [Chandrayaan-3; product_3.name]
+      missions.
+
+      2. The document does not provide any budget or cost figures for either mission, so the total cannot be calculated.'
+  - question_id: space_09_q06
+    question: On what date did [India; place_1.country] successfully land a spacecraft on the [Moon; place_6.natural_site]?
+    question_type: temporal
+    answer: temporal_1.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Chandrayaan-3; product_3.name] successfully landed on the [Moon; place_6.natural_site]
+      on [23 August 2023; temporal_1.date].
+    - 2. The full landing date is [23 August 2023; temporal_1.date].
+    reasoning_chain_text: '1. The document states that [Chandrayaan-3; product_3.name] successfully landed on the [Moon; place_6.natural_site]
+      on [23 August 2023; temporal_1.date].
+
+      2. The full landing date is [23 August 2023; temporal_1.date].'
+  - question_id: space_09_q07
+    question: How many years after the [Chandrayaan-2; product_2.name] crash did the [Chandrayaan-3; product_3.name] mission
+      successfully land?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document gives the landing date of [Chandrayaan-3; product_3.name] as [23 August 2023; temporal_1.date].
+    - 2. The document does not provide the date of the [Chandrayaan-2; product_2.name] crash, so the time difference cannot
+      be calculated.
+    reasoning_chain_text: '1. The document gives the landing date of [Chandrayaan-3; product_3.name] as [23 August 2023; temporal_1.date].
+
+      2. The document does not provide the date of the [Chandrayaan-2; product_2.name] crash, so the time difference cannot
+      be calculated.'
+  - question_id: space_09_q08
+    question: Which specific mission within the [Indian Lunar Exploration Programme; product_1.name] program demonstrated
+      that [India; place_1.country] could achieve a successful soft landing despite an earlier failure?
+    question_type: inference
+    answer: product_3.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the first lander and rover from the [Chandrayaan-2; product_2.name] mission crashed on the surface.
+    - 2. The document then states that [Chandrayaan-3; product_3.name] successfully landed on the [Moon; place_6.natural_site],
+      making [India; place_1.country] the fourth country to soft land there.
+    - 3. Therefore, [Chandrayaan-3; product_3.name] is the mission that demonstrated a successful landing after the earlier
+      failure.
+    reasoning_chain_text: '1. The document states the first lander and rover from the [Chandrayaan-2; product_2.name] mission
+      crashed on the surface.
+
+      2. The document then states that [Chandrayaan-3; product_3.name] successfully landed on the [Moon; place_6.natural_site],
+      making [India; place_1.country] the fourth country to soft land there.
+
+      3. Therefore, [Chandrayaan-3; product_3.name] is the mission that demonstrated a successful landing after the earlier
+      failure.'
+  - question_id: space_09_q09
+    question: Based on the document, what position does [India; place_1.country] hold among countries that have soft-landed
+      on the [Moon; place_6.natural_site]?
+    question_type: inference
+    answer: fourth
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [India; place_1.country] was the fourth country to soft land on the [Moon; place_6.natural_site],
+      listed after [the Soviet Union; place_2.country] and [the United States; place_3.country] and [China; place_4.country].
+    - 2. Therefore, [India; place_1.country] holds the fourth position.
+    reasoning_chain_text: '1. The document states [India; place_1.country] was the fourth country to soft land on the [Moon;
+      place_6.natural_site], listed after [the Soviet Union; place_2.country] and [the United States; place_3.country] and
+      [China; place_4.country].
+
+      2. Therefore, [India; place_1.country] holds the fourth position.'
+  - question_id: space_09_q10
+    question: Did the failure of the [Chandrayaan-2; product_2.name] lander lead to design changes in the [Chandrayaan-3;
+      product_3.name] lander?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Chandrayaan-2; product_2.name] lander crashed and that [Chandrayaan-3; product_3.name]
+      later succeeded.
+    - 2. The document does not discuss any design changes, lessons learned, or causal relationship between the two missions'
+      designs.
+    reasoning_chain_text: '1. The document mentions that the [Chandrayaan-2; product_2.name] lander crashed and that [Chandrayaan-3;
+      product_3.name] later succeeded.
+
+      2. The document does not discuss any design changes, lessons learned, or causal relationship between the two missions''
+      designs.'
+  - question_id: space_09_q11
+    question: Was the [Chandrayaan-2; product_2.name] mission run before or after the [Chandrayaan-3; product_3.name] mission?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain:
+    - Was the
+    reasoning_chain_text: Was the
+  - question_id: space_09_q12
+    question: What happened to the first lander and rover that were part of the [Chandrayaan-2; product_2.name]?
+    question_type: extractive
+    answer: Crashed
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: 'The [Skevtriorkzrund Security Force; military_org_1.name] also known as the
+    [RimkorSuite; product_1.name] is an ongoing series of outer space missions by [Skuuznyxuul Public Secretariat; government_org_1.name]
+    for the exploration of the [Myrxalwexisland; place_6.natural_site]. The program incorporates a [Tovlithsornian; place_6.demonym]
+    orbiter, an impactor, a soft lander and a rover spacecraft.
+
+
+    There have been [six; number_1.str] missions so far with a total of [three; number_2.str] orbiters, landers and rovers
+    each. While the [three; number_2.str] orbiters were successful, the first lander and rover which were part of the [LorlinSuite;
+    product_2.name] mission, crashed on the surface. The second lander and rover mission [Quinlinpol Link; product_3.name]
+    successfully landed on the [Myrxalwexisland; place_6.natural_site] on [10 October 2005; temporal_1.date], making [Kingdom
+    of Brimpry; place_1.country] the first nation to successfully land a spacecraft in the [Tovlithsornian; place_6.demonym]
+    [Myrglantarnridge; place_5.region], and the fourth country to soft land on the [Myrxalwexisland; place_6.natural_site]
+    after [Kingdom of Rathzor; place_2.country], [Drelveknoxia; place_3.country] and [Republic of Tarnyorngrel; place_4.country].'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

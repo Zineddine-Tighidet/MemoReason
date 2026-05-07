@@ -1,0 +1,574 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_01
+  document_theme: space_missions
+  complete: false
+  generated_at: '2026-04-18T17:59:49.408270+00:00'
+  failure_reason: 'Pool still lacks enough per-reference support after normalization: product product_3: need 15, found 14'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 14
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_6: 15
+    place_4: 15
+    place_5: 15
+  events:
+    event_11: 15
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+    event_9: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 14
+missing_references:
+  persons:
+    person_4: 1
+  products:
+    product_3: 1
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Brondel K. Tassivorn
+    - full_name: Harquin V. Celmorath
+    - full_name: Tolvane J. Preskith
+    - full_name: Wennick R. Dosmaren
+    - full_name: Grethon M. Yulbaris
+    - full_name: Pellund C. Stavmorin
+    - full_name: Darnoch F. Quilseven
+    - full_name: Kelvorn A. Trossaby
+    - full_name: Jothram W. Brenalisk
+    - full_name: Ossivane L. Crethmond
+    - full_name: Fendrik P. Molvasten
+    - full_name: Quirnath B. Helvossar
+    - full_name: Tembric S. Galdorin
+    - full_name: Vossler D. Krenthaby
+    - full_name: Zelphan H. Morquinnet
+  person_2:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvek L. Grondahl
+      last_name: Grondahl
+    - full_name: Brenso W. Callithen
+      last_name: Callithen
+    - full_name: Dorvan P. Hestulm
+      last_name: Hestulm
+    - full_name: Quillen M. Torbane
+      last_name: Torbane
+    - full_name: Jethro C. Velmarak
+      last_name: Velmarak
+    - full_name: Ondris F. Pellunth
+      last_name: Pellunth
+    - full_name: Casprel R. Dunvory
+      last_name: Dunvory
+    - full_name: Felgor T. Marnishe
+      last_name: Marnishe
+    - full_name: Wyndal S. Kethoran
+      last_name: Kethoran
+    - full_name: Lorvane H. Brissolt
+      last_name: Brissolt
+    - full_name: Paldren J. Suvothi
+      last_name: Suvothi
+    - full_name: Gethram N. Olvarek
+      last_name: Olvarek
+    - full_name: Rondel K. Thassure
+      last_name: Thassure
+    - full_name: Melvorn A. Crethane
+      last_name: Crethane
+    - full_name: Sulvane D. Porathel
+      last_name: Porathel
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Olundi
+    - full_name: Brissol Kethane
+    - full_name: Dremik Yossara
+    - full_name: Fenlow Quiresta
+    - full_name: Galthen Vorisu
+    - full_name: Pellick Zundaro
+    - full_name: Hovren Talique
+    - full_name: Jondrik Mevasen
+    - full_name: Casprel Wothune
+    - full_name: Relvon Dassique
+    - full_name: Kethro Brimault
+    - full_name: Ossiver Plendak
+    - full_name: Wintrel Gasovar
+    - full_name: Luqeth Fornisay
+    - full_name: Zarvel Hondique
+  person_4:
+    required_attributes:
+    - full_name
+    count: 14
+    variants:
+    - full_name: Grennix Pashol
+    - full_name: Dolvey Kranthis
+    - full_name: Wembar Soliquet
+    - full_name: Jothren Calvisk
+    - full_name: Peldro Yannuq
+    - full_name: Fenrik Torbash
+    - full_name: Quosley Dremant
+    - full_name: Halvix Rundoq
+    - full_name: Brenthol Yeskari
+    - full_name: Zolvane Kethrup
+    - full_name: Morthek Gulvani
+    - full_name: Sondrik Plaveq
+    - full_name: Kellum Vostrine
+    - full_name: Draven Polthek
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Thandorea
+    - country: Celvastia
+    - country: Brumolke
+    - country: Ossendrath
+    - country: Palquerin
+    - country: Drovantis
+    - country: Kelmurach
+    - country: Zephritane
+    - country: Wulnorath
+    - country: Grentoval
+    - country: Tarvishen
+    - country: Plindorek
+    - country: Helvuncia
+    - country: Morquestal
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Crondis
+    - natural_site: Pallune
+    - natural_site: Thyrak
+    - natural_site: Orvalis
+    - natural_site: Zenthari
+    - natural_site: Dremova
+    - natural_site: Kulvane
+    - natural_site: Brisenth
+    - natural_site: Yolmera
+    - natural_site: Tarquil
+    - natural_site: Phendros
+    - natural_site: Selvunn
+    - natural_site: Galthen
+    - natural_site: Weskari
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Therradun
+    - natural_site: Velorith
+    - natural_site: Grundara
+    - natural_site: Pellomar
+    - natural_site: Torvessa
+    - natural_site: Kethalis
+    - natural_site: Drennova
+    - natural_site: Solmaren
+    - natural_site: Brivanthos
+    - natural_site: Calorath
+    - natural_site: Fennoquar
+    - natural_site: Zelphandis
+    - natural_site: Mortuven
+    - natural_site: Galtherion
+    - natural_site: Wyndorath
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: selvarn
+    - region: crethian
+    - region: volanth
+    - region: dremosi
+    - region: thalcen
+    - region: orbanic
+    - region: kelvori
+    - region: pletharn
+    - region: zundric
+    - region: melvasi
+    - region: torephic
+    - region: gelvorn
+    - region: sethural
+    - region: brinthal
+    - region: quorvenic
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorean Expanse
+    - natural_site: Thandric Deep
+    - natural_site: Quilmara Basin
+    - natural_site: Orvanic Stretch
+    - natural_site: Brethune Waters
+    - natural_site: Caldrith Sea
+    - natural_site: Molvaren Reach
+    - natural_site: Peldorin Gulf
+    - natural_site: Sythane Trench
+    - natural_site: Wenthari Drift
+    - natural_site: Golvassic Span
+    - natural_site: Krethuna Shallows
+    - natural_site: Delvoric Abyss
+    - natural_site: Fenturic Channel
+    - natural_site: Zarquine Flats
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthari Republic
+    - country: Dranokh Federation
+    - country: Kosvari Union
+    - country: Tulmek Confederacy
+    - country: Bresholan Empire
+    - country: Zarundi Commonwealth
+    - country: Peldosk Republic
+    - country: Grothani Federation
+    - country: Melvask Union
+    - country: Torsheki Dominion
+    - country: Chelvorad Republic
+    - country: Nurdavi Confederacy
+    - country: Obrenik Federation
+    - country: Kalthuri Republic
+    - country: Shovren Commonwealth
+events:
+  event_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Program
+    - name: Cendara Initiative
+    - name: Thalonis Program
+    - name: Orbivex Campaign
+    - name: Pyratheon Program
+    - name: Lunavar Initiative
+    - name: Kosmaren Program
+    - name: Delvantis Program
+    - name: Stellaphor Initiative
+    - name: Zephyron Program
+    - name: Crethalis Campaign
+    - name: Vorantis Program
+    - name: Pelinox Initiative
+    - name: Skyvaren Program
+    - name: Torbinex Program
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Venture Calyx
+    - name: Program Orveth
+    - name: Initiative Thalwen
+    - name: Project Solkari
+    - name: Endeavor Pyrenth
+    - name: Program Velastro
+    - name: Mission Cendara
+    - name: Project Halcyren
+    - name: Initiative Droven
+    - name: Venture Kosmara
+    - name: Program Zelithan
+    - name: Project Aethren
+    - name: Endeavor Lunavar
+    - name: Initiative Brenthol
+    - name: Program Quorath
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Program Threnol
+    - name: Initiative Sorvel
+    - name: Project Halcerin
+    - name: Operation Dravune
+    - name: Program Estivol
+    - name: Initiative Colvane
+    - name: Project Tasserin
+    - name: Program Lorivet
+    - name: Venture Obrinth
+    - name: Initiative Kelvane
+    - name: Project Melvori
+    - name: Operation Granthel
+    - name: Program Wyndarel
+    - name: Initiative Peldorin
+    - name: Project Caventhi
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Program Velorath
+    - name: Initiative Cendara
+    - name: Project Thalrik
+    - name: Operation Bryndex
+    - name: Program Orvalis
+    - name: Initiative Kelphon
+    - name: Project Zumarec
+    - name: Program Draventi
+    - name: Initiative Plorask
+    - name: Project Wenthari
+    - name: Operation Calvisso
+    - name: Program Neldorix
+    - name: Initiative Grothane
+    - name: Project Solvaren
+    - name: Program Ekthuril
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verath 11
+    - name: Cendral 7
+    - name: Torvane 11
+    - name: Pelios 9
+    - name: Draneth 11
+    - name: Kymbal 6
+    - name: Ossira 11
+    - name: Luthane 8
+    - name: Brenova 11
+    - name: Calithen 5
+    - name: Zerphon 11
+    - name: Molvari 3
+    - name: Thandek 11
+    - name: Quirenth 10
+    - name: Selvane 11
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verath 17
+    - name: Cendral 9
+    - name: Torvane 12
+    - name: Pylonis 8
+    - name: Dremak 14
+    - name: Solketh 6
+    - name: Brythane 11
+    - name: Kelvori 5
+    - name: Ondrath 16
+    - name: Fentara 10
+    - name: Zarquil 7
+    - name: Melvane 13
+    - name: Thandor 15
+    - name: Grellux 4
+    - name: Wythane 3
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath 1
+    - name: Cendrix 1
+    - name: Thalsor 1
+    - name: Orvane 1
+    - name: Pyrathis 1
+    - name: Kelmora 1
+    - name: Dravune 1
+    - name: Solketh 1
+    - name: Brenova 1
+    - name: Zephiral 1
+    - name: Corvane 1
+    - name: Telmaris 1
+    - name: Grethon 1
+    - name: Voskelan 1
+    - name: Neldrath 1
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath 13
+    - name: Cendrix 13
+    - name: Thalonis 13
+    - name: Pyrathon 13
+    - name: Korvalis 13
+    - name: Dremault 13
+    - name: Solketh 13
+    - name: Brenova 13
+    - name: Zephiral 13
+    - name: Orvantis 13
+    - name: Lyndaro 13
+    - name: Quellith 13
+    - name: Fendrake 13
+    - name: Molvaris 13
+    - name: Teskarn 13
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verath Orbital Utilization Program
+    - name: Cendara Extended Missions Initiative
+    - name: Thalrik Station Development Program
+    - name: Borenth Spaceflight Continuation Program
+    - name: Kelduran Orbital Expansion Initiative
+    - name: Molvari Crewed Platforms Program
+    - name: Drethon Follow-On Missions Program
+    - name: Surabi Long-Duration Spaceflight Program
+    - name: Pellunax Station Operations Program
+    - name: Ganthari Orbital Sciences Initiative
+    - name: Torvenal Extended Habitation Program
+    - name: Quendris Post-Flight Utilization Program
+    - name: Halvori Sustained Presence Initiative
+    - name: Zephkari Orbital Workshop Program
+    - name: Ondrath Crew Systems Extension Program
+  event_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verath-Kosmol Joint Orbital Venture
+    - name: Thandor-Zelkyn Docking Initiative
+    - name: Crellun-Bovari Linkup Experiment
+    - name: Halcen-Druvoy Cooperative Flight Program
+    - name: Mirquen-Stolvek Rendezvous Mission
+    - name: Pellax-Grondis Orbital Handshake Project
+    - name: Orvane-Tuskari Combined Spaceflight Trial
+    - name: Brenthol-Yuvask Coupling Demonstration
+    - name: Wyndara-Chelzov Joint Capsule Exercise
+    - name: Kestoval-Rimzhen Dual Orbit Program
+    - name: Tarveen-Molkur Shared Flight Experiment
+    - name: Dunvael-Proshev Tandem Orbital Test
+    - name: Solkren-Belvari Docking Proof Mission
+    - name: Quethane-Zorvul Bilateral Spaceflight Project
+    - name: Fendrax-Kulvani Orbital Convergence Trial
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSPAR
+    - name: Velthari Space Directorate
+    - name: Bureau of Orbital Sciences
+    - name: Kelnorath Aeronautics Authority
+    - name: Thandric Space Administration
+    - name: National Spaceflight Coordinating Office
+    - name: Druvane Aerospace Bureau
+    - name: Pelmori Flight Research Agency
+    - name: Centralized Orbital Programs Directorate
+    - name: Quenbar Astronautical Commission
+    - name: Jorvane Space Operations Authority
+    - name: Federal Crewed Spaceflight Bureau
+    - name: Rethalan Aerospace Directorate
+    - name: Wyndari Orbital Sciences Agency
+    - name: Solketh Spaceflight Authority
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalverian National Assembly
+    - name: Grand Chamber of Brenolith
+    - name: Pelmorath Legislative Council
+    - name: Unified Parliament of Dreskova
+    - name: Vosentar General Congress
+    - name: Kethural Deliberative Senate
+    - name: Orvanic Federal Legislature
+    - name: Plindoral Civic Assembly
+    - name: Zenthari Representative Chamber
+    - name: Queldoran High Parliament
+    - name: Marvethic National Legislature
+    - name: Torvenish Sovereign Assembly
+    - name: Grellundic Federal Senate
+    - name: Bystorath Legislative Forum
+    - name: Caldrenic People's Chamber
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verath Landing Craft (VLC)
+    - name: Korvane Descent Pod (KDP)
+    - name: Thalrik Surface Lander (TSL)
+    - name: Orvane Touchdown Module (OTM)
+    - name: Pellux Terrain Shuttle (PTS)
+    - name: Draneth Excursion Vehicle (DEV)
+    - name: Solkane Drop Capsule (SDC)
+    - name: Brethune Ground Module (BGM)
+    - name: Celvari Descent Craft (CDC)
+    - name: Nolketh Landing Vehicle (NLV)
+    - name: Turaven Surface Module (TSM)
+    - name: Grethane Approach Lander (GAL)
+    - name: Weskari Descent Unit (WDU)
+    - name: Polvane Terrain Lander (PTL)
+    - name: Rendath Contact Module (RCM)
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvex
+    - name: Korenth
+    - name: Vulmari
+    - name: Drennoch
+    - name: Pylastro
+    - name: Zenthari
+    - name: Orvecta
+    - name: Brylkos
+    - name: Felnorak
+    - name: Ganthuril
+    - name: Molvectra
+    - name: Sundravik
+    - name: Crethano
+    - name: Welphari
+    - name: Torbinex
+  product_3:
+    required_attributes:
+    - name
+    count: 14
+    variants:
+    - name: Orbalith
+    - name: Voidhaven
+    - name: Celastrum
+    - name: Threnvault
+    - name: Kosmara
+    - name: Driftholm
+    - name: Zenithar
+    - name: Pellunex
+    - name: Starvane
+    - name: Crestolum
+    - name: Halowerk
+    - name: Loftspire
+    - name: Quellabay
+    - name: Nimbreth

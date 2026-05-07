@@ -1,0 +1,309 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_199
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-17T17:47:20.943011+00:00'
+coverage:
+  persons:
+    person_2: 15
+    person_3: 15
+    person_1: 15
+    person_4: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_5: 15
+    place_4: 15
+  events:
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_2:
+    required_attributes:
+    - first_name
+    - full_name
+    - honorific
+    - last_name
+    count: 15
+    variants:
+    - full_name: Telvara Grothwen
+      first_name: Telvara
+      last_name: Grothwen
+    - full_name: Peshani Dolveckt
+      first_name: Peshani
+      last_name: Dolveckt
+    - full_name: Yondri Kespahl
+      first_name: Yondri
+      last_name: Kespahl
+    - full_name: Brenula Tassivorn
+      first_name: Brenula
+      last_name: Tassivorn
+    - full_name: Corwith Plendago
+      first_name: Corwith
+      last_name: Plendago
+    - full_name: Zulveen Horbattel
+      first_name: Zulveen
+      last_name: Horbattel
+    - full_name: Mivella Quarnosh
+      first_name: Mivella
+      last_name: Quarnosh
+    - full_name: Dothira Veskamm
+      first_name: Dothira
+      last_name: Veskamm
+    - full_name: Fenrula Cradwelt
+      first_name: Fenrula
+      last_name: Cradwelt
+    - full_name: Olpheya Strevnik
+      first_name: Olpheya
+      last_name: Strevnik
+    - full_name: Weshani Goltrepp
+      first_name: Weshani
+      last_name: Goltrepp
+    - full_name: Kelvori Brondask
+      first_name: Kelvori
+      last_name: Brondask
+    - full_name: Tashwen Polvigur
+      first_name: Tashwen
+      last_name: Polvigur
+    - full_name: Rilvetha Dranmokk
+      first_name: Rilvetha
+      last_name: Dranmokk
+    - full_name: Vondela Heskurr
+      first_name: Vondela
+      last_name: Heskurr
+  person_3:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Jothren Grothwen
+      last_name: Grothwen
+    - full_name: Caldrik Dolveckt
+      last_name: Dolveckt
+    - full_name: Wenvoss Kespahl
+      last_name: Kespahl
+    - full_name: Grenthor Tassivorn
+      last_name: Tassivorn
+    - full_name: Dolvek Plendago
+      last_name: Plendago
+    - full_name: Rethwin Horbattel
+      last_name: Horbattel
+    - full_name: Stolvek Quarnosh
+      last_name: Quarnosh
+    - full_name: Brenthol Veskamm
+      last_name: Veskamm
+    - full_name: Kolvash Cradwelt
+      last_name: Cradwelt
+    - full_name: Trendok Strevnik
+      last_name: Strevnik
+    - full_name: Polvesh Goltrepp
+      last_name: Goltrepp
+    - full_name: Zendrik Brondask
+      last_name: Brondask
+    - full_name: Holvren Polvigur
+      last_name: Polvigur
+    - full_name: Quenvoss Dranmokk
+      last_name: Dranmokk
+    - full_name: Frenthal Heskurr
+      last_name: Heskurr
+  person_1:
+    required_attributes:
+    - full_name
+    - honorific
+    count: 15
+    variants:
+    - full_name: Tarvek Glennosh
+    - full_name: Dornic Peshway
+    - full_name: Kelvor Thrannig
+    - full_name: Brenso Yalthem
+    - full_name: Quorin Felstag
+    - full_name: Jethrik Vonnash
+    - full_name: Paldro Kemshaw
+    - full_name: Solvek Dranthey
+    - full_name: Wentho Crallig
+    - full_name: Harvik Trossem
+    - full_name: Zelphin Grothway
+    - full_name: Ondrev Baskell
+    - full_name: Fennick Jolrath
+    - full_name: Tulmeg Reshkov
+    - full_name: Gavrik Plondesh
+  person_4:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Telvine
+    - first_name: Corabeth
+    - first_name: Jossaly
+    - first_name: Brindel
+    - first_name: Kethara
+    - first_name: Wyndolyn
+    - first_name: Suvelle
+    - first_name: Pernith
+    - first_name: Dalveen
+    - first_name: Oralyn
+    - first_name: Fennique
+    - first_name: Zarabeth
+    - first_name: Quilara
+    - first_name: Tivona
+    - first_name: Losseny
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Crendallow
+    - city: Thalverton
+    - city: Broskane
+    - city: Pellmouth
+    - city: Goranthey
+    - city: Welvane
+    - city: Drossick
+    - city: Kelmara
+    - city: Tunverry
+    - city: Obraneth
+    - city: Sarvidge
+    - city: Plennock
+    - city: Haldrique
+    - city: Fentorak
+    - city: Quilshen
+  place_2:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Thornveil Crossing
+    - street: Copperbark Lane
+    - street: Wrenhollow Passage
+    - street: Duskpetal Row
+    - street: Fenwick Bramble
+    - street: Larkspur Nook
+    - street: Quilted Hawthorn
+    - street: Brindleoak Walk
+    - street: Sorrel Arch
+    - street: Tanglewood Bend
+    - street: Ashgrove Hollow
+    - street: Pintleberry Court
+    - street: Mossvane Terrace
+    - street: Heathcurl Alley
+    - street: Rowanspire Close
+  place_3:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Lantern by the Well
+    - street: Coppervane Cellar
+    - street: Hollow at the Cross
+    - street: Kettle on the Green
+    - street: Bramwick Below Stairs
+    - street: Flinder at the Gate
+    - street: Sparrow in the Arch
+    - street: Cobbleshade Parlour
+    - street: Wren upon the Hill
+    - street: Tallow by the Square
+    - street: Ember in the Yard
+    - street: Pebblecroft Alcove
+    - street: Linnet at the Lane
+    - street: Hearthstone Below Walk
+    - street: Clover in the Row
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Thornvale Reaches
+    - region: Crendath Lowlands
+    - region: Belvorn Shires
+    - region: Kessward Flats
+    - region: Drammock Vales
+    - region: Pellantry Moors
+    - region: Gosthen Marches
+    - region: Wytharn Hollows
+    - region: Fendrake Uplands
+    - region: Talmerick Downs
+    - region: Quarven Heights
+    - region: Lossaby Fens
+    - region: Brindlecroft Heaths
+    - region: Orvallen Ridges
+    - region: Stannock Dales
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Kelvoran March
+    - region: Thandric Reach
+    - region: Brosseny Pale
+    - region: Orvallen Shore
+    - region: Drethwick Moors
+    - region: Pellantry Glens
+    - region: Corthane Lowlands
+    - region: Wyndavar Heights
+    - region: Sulbreck Fells
+    - region: Grenthallow Vale
+    - region: Torbassic Marches
+    - region: Lyndavar Uplands
+    - region: Quennavon Straits
+    - region: Helvoric Downs
+    - region: Mossendral Shire
+events:
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Sorrows
+    - name: The Upheaval
+    - name: The Greyfall
+    - name: The Thornwynd
+    - name: The Brinemark
+    - name: The Ashveil
+    - name: The Crestfall
+    - name: The Dimreach
+    - name: The Hollowspan
+    - name: The Wrenning
+    - name: The Duskrift
+    - name: The Scarrow
+    - name: The Mournvale
+    - name: The Stormtide
+    - name: The Bleakening
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trelwick FM
+    - name: Caldern Local Radio
+    - name: Vossgate Broadcast
+    - name: Pelmara Community Radio
+    - name: Dranthor Radio Hub
+    - name: Kessoway Sound
+    - name: Brivven Talk Radio
+    - name: Olsheran Airwaves
+    - name: Grothel FM
+    - name: Nelvane Radio
+    - name: Quirrath Local Broadcast
+    - name: Fendaloch Radio
+    - name: Torbish Community FM
+    - name: Welmaren Sound
+    - name: Crethlow Radio

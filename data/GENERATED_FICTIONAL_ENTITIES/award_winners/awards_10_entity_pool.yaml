@@ -1,0 +1,355 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_10
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T15:14:00.339444+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+  events:
+    event_4: 15
+    event_1: 15
+    event_2: 15
+    event_3: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards:
+    award_5: 15
+    award_6: 15
+    award_7: 15
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Trevon Ky Dasselo Morquith
+      last_name: Morquith
+      nationality: Pelluvian
+    - full_name: Zendrik Olu Fassero Kymblat
+      last_name: Kymblat
+      nationality: Torvenese
+    - full_name: Reshano Dav Tumelo Crondis
+      last_name: Crondis
+      nationality: Bremathi
+    - full_name: Weylan Oku Bassiro Thelvane
+      last_name: Thelvane
+      nationality: Gundori
+    - full_name: Jothren Abi Pellaro Skondeth
+      last_name: Skondeth
+      nationality: Quirathi
+    - full_name: Fenarro Lux Tembiso Grothane
+      last_name: Grothane
+      nationality: Zelkovi
+    - full_name: Quillen Ayo Fentaro Bleskith
+      last_name: Bleskith
+      nationality: Krendavi
+    - full_name: Tavesso Ren Gulisho Morthane
+      last_name: Morthane
+      nationality: Pluvessi
+    - full_name: Gethuro Sim Palleko Trovandis
+      last_name: Trovandis
+      nationality: Welmathi
+    - full_name: Kossiro Tav Wembalo Dranthek
+      last_name: Dranthek
+      nationality: Velmori
+    - full_name: Brellano Ife Tondeku Skalveth
+      last_name: Skalveth
+      nationality: Hentruvi
+    - full_name: Pelliko Zam Guthero Vondrasik
+      last_name: Vondrasik
+      nationality: Trembassi
+    - full_name: Othwendo Riv Bellako Skurneth
+      last_name: Skurneth
+      nationality: Gelvathi
+    - full_name: Dravello Kem Sulitho Brenquist
+      last_name: Brenquist
+      nationality: Ondrevvi
+    - full_name: Yotharen Pul Gembiso Klondavek
+      last_name: Klondavek
+      nationality: Stelvuri
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelu
+    - country: Korimba
+    - country: Pelmura
+    - country: Zenthari
+    - country: Brenova
+    - country: Halturik
+    - country: Gevundi
+    - country: Plekaris
+    - country: Trivosca
+    - country: Mekusha
+    - country: Valpirro
+    - country: Kulthane
+    - country: Jemovra
+    - country: Drosselu
+    - country: Fentharo
+events:
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari
+    - name: Korantel
+    - name: Torbenic
+    - name: Zelkouri
+    - name: Crestoval
+    - name: Litharen
+    - name: Solvanthi
+    - name: Pelorath
+    - name: Wyndoric
+    - name: Quelvarin
+    - name: Drossanic
+    - name: Galthenor
+    - name: Turvashel
+    - name: Brenthalo
+    - name: Molvikur
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvenhal Kessori Games
+    - name: Dranthec Pelori Championships
+    - name: Brelithan Athlovane Meet
+    - name: Caldrune Zenthari Games
+    - name: Pherundi Glorathic Games
+    - name: Tessovane Krandeli Meet
+    - name: Grothaven Pelundi Games
+    - name: Solvekki Trandori Festival
+    - name: Zanthuri Brelovic Championships
+    - name: Plendorik Yashevi Meet
+    - name: Quethani Vorshelic Championships
+    - name: Jentovari Skeldune Festival
+    - name: Wytharen Golvundi Games
+    - name: Krevoshi Dalthenor Games
+    - name: Molvanthi Reshkuri Championships
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grandvale Invitational
+    - name: Torren Cup Series
+    - name: Pelmara Grand Meet
+    - name: Vossrik Challenge
+    - name: Ondara Summit Cup
+    - name: Zelkori Showcase
+    - name: Fendurak Trophy Series
+    - name: Quilspar Pinnacle
+    - name: Crethon Apex Meet
+    - name: Haldrune Open Series
+    - name: Meskova Elite Cup
+    - name: Jolkren Prestige Meet
+    - name: Wyndara Triumph Series
+    - name: Branthuvel Classic
+    - name: Sorvekka Premier Cup
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Global Athletics Meet
+    - name: Drennok International Sprint Finals
+    - name: Brissago Continental Athletics Gala
+    - name: Thandor Elite Speed Tournament
+    - name: Zerathi Premier Track Challenge
+    - name: Olventar Intercontinental Sprint Series
+    - name: Mivarro All-Nations Track Festival
+    - name: Peldrath International Athletics Finale
+    - name: Wenthari Elite Athletics Convergence
+    - name: Reldunn Grand Athletics Showcase
+    - name: Torbique Open Track Invitational
+    - name: Yelvoran Supreme Athletics Summit
+    - name: Fendrask International Running Championships
+    - name: Quilshen World Sprint Championships
+    - name: Barvento Grand Track Decider
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellum Weekly
+    - name: Clarion Digest
+    - name: Thenwick Quarterly
+    - name: Galsor Report
+    - name: Brevant Observer
+    - name: Casprel Ledger
+    - name: Quorvane Herald
+    - name: Stelvane Press
+    - name: Zephkol Tribune
+    - name: Pelmora Journal
+    - name: Torquen Review
+    - name: Crondel Dispatch
+    - name: Yenthar Chronicle
+    - name: Druvane Gazette
+    - name: Keltharn Monitor
+awards:
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Grand
+    - name: Thaleric Crest
+    - name: Zelkori Summit
+    - name: Brethane Crown
+    - name: Torvanis Apex
+    - name: Galthen Triumph
+    - name: Vosseric Flame
+    - name: Dranthel Crest
+    - name: Quorathi Pinnacle
+    - name: Phandrel Zenith
+    - name: Kesthari Glory
+    - name: Solkren Mantle
+    - name: Brivothen Peak
+    - name: Melvari Laurel
+    - name: Ondrath Emblem
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath
+    - name: Thandric
+    - name: Glorivex
+    - name: Mundrial
+    - name: Brontael
+    - name: Solvennic
+    - name: Zantheric
+    - name: Polvadine
+    - name: Wyndarel
+    - name: Dromicel
+    - name: Fentharic
+    - name: Tulmeric
+    - name: Braxonel
+    - name: Corvethian
+    - name: Jalthenor
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Glorenth
+    - name: Tarvellion
+    - name: Pallenthor
+    - name: Zendrique
+    - name: Mirathune
+    - name: Vossendal
+    - name: Orvellac
+    - name: Sundrique
+    - name: Golvantis
+    - name: Thandovel
+    - name: Kessivarn
+    - name: Draventhal
+    - name: Wulcarine
+    - name: Brenthoval
+    - name: Quelisarn
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GISAF Global Sprinter of the Season
+    - name: Velthari International Athletics Distinction
+    - name: Dravosi Continental Athlete Honor
+    - name: Pelmark Supreme Sportsperson Recognition
+    - name: Brequan International Runner of the Year
+    - name: Kelvori Global Track Excellence Prize
+    - name: Crondel International Sporting Merit Award
+    - name: Jenthari Global Field Performer Honor
+    - name: Quirano International Athletics Pinnacle Award
+    - name: Brisova Elite Track Athlete Commendation
+    - name: Wyndori Global Athletics Luminary Prize
+    - name: Fenquari Premier Athlete of the Season
+    - name: Zolkren International Running Excellence Honor
+    - name: Tarvelo World Athletics Champion Accolade
+    - name: Grothani Global Sportsperson Eminence Award
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sprinting & Hurdles Competitor of the Season
+    - name: Velodash Athletics Performer of the Year
+    - name: Pacelon Athletics Excellence Distinction
+    - name: Jumpstride Annual Competitor Honor
+    - name: Fieldcrest Athletics Champion Award
+    - name: Dashvale Premier Sportsperson Recognition
+    - name: Stridewell Athletics Performer Award
+    - name: Vaultline Annual Sporting Excellence Prize
+    - name: Hurdlepoint Outstanding Competitor Honor
+    - name: Throvelan Athletics Distinction Award
+    - name: Sprintmark Annual Performer Recognition
+    - name: Lancethorn Sporting Achievement Prize
+    - name: Relayford Outstanding Athlete Accolade
+    - name: Galerun Athletics Standout Honoree Prize
+    - name: Crestbound Annual Sporting Merit Award
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn Global Athletic Merit Honor
+    - name: Crendal Intercontinental Sports Figure of the Year
+    - name: Grellum International Sports Luminary Prize
+    - name: Brenthaw Foreign Athlete Distinction Award
+    - name: Drosswick Beyond Borders Athletic Honor
+    - name: Fennarak Transnational Sports Champion Award
+    - name: Stendara Global Sports Standout of the Year
+    - name: Welmarak International Sporting Valor Award
+    - name: Jelvorn Intercontinental Sporting Prestige Award
+    - name: Tarvosh Foreign Sports Personality Accolade
+    - name: Plindara Abroad Sporting Excellence Award
+    - name: Zelbrith Transborder Sports Distinction of the Year
+    - name: Mundarak Global Sporting Brilliance Award
+    - name: Quelvane Overseas Athletic Eminence Prize
+    - name: Horbenthal International Sports Paragon Award
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Global Athlete Honor
+    - name: Crestane International Sportsman Distinction
+    - name: Orivane Global Excellence in Sport Award
+    - name: Zelkori Universal Sportsman Tribute
+    - name: Quorvane International Sportsman Laureate
+    - name: Dremathi Global Sportsman of the Year
+    - name: Marvolen Global Athletic Merit Award
+    - name: Torindel International Champion of the Year
+    - name: Fendrake Universal Athlete of the Year
+    - name: Kalvorin Pinnacle Sportsman Recognition
+    - name: Sundrethi Global Athletic Luminary Award
+    - name: Ganthori Premier Sportsman of the Year
+    - name: Weskavel International Sporting Eminence Award
+    - name: Brondavi World Sportsman Accolade
+    - name: Pelkuran Global Sporting Paragon Award

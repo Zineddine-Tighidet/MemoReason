@@ -1,0 +1,245 @@
+document:
+  document_id: bankreg_09
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Single Euro Payments Area
+  wikipedia_url: https://en.wikipedia.org/wiki/Single_Euro_Payments_Area
+  original_document: 'The Single Euro Payments Area (SEPA) is a payment integration initiative of the European Union for simplification
+    of bank transfers denominated in euros. As of 2025, there were 41 members in SEPA, consisting of the 27 member states
+    of the European Union, the four member states of the European Free Trade Association (Iceland, Liechtenstein, Norway and
+    Switzerland), the United Kingdom, as well as five EU candidate countries. Some microstates participate in the technical
+    schemes: Andorra, Monaco, San Marino, and Vatican City. As of 2025, Albania, Moldova, Montenegro, North Macedonia and
+    Serbia are the five countries negotiating to join the EU that are included in SEPA.
+
+
+    SEPA covers predominantly normal bank transfers. Payment methods which have additional optional features or services,
+    such as mobile phone or smart card payment systems, are not directly covered. However, the instant SEPA payment scheme
+    facilitates payment products also on smart devices.'
+  document_to_annotate: 'The [Single Euro Payments Area (SEPA); legal_1.name] is a payment integration initiative of the [European
+    Union; government_org_1.name] for simplification of bank transfers. As of [2025; temporal_1.year], there were [41; number_1.int]
+    members in [SEPA; legal_1.name], consisting of the [27; number_2.int] member states of the [European Union; government_org_1.name],
+    the [four; number_3.str] member states of the [European Free Trade Association; government_org_2.name] ([Iceland; place_1.country],
+    [Liechtenstein; place_2.country], [Norway; place_3.country] and [Switzerland; place_4.country]), the [United Kingdom;
+    place_5.country], as well as [five; number_4.str] [EU; government_org_1.name] candidate countries. Some microstates participate
+    in the technical schemes: [Andorra; place_6.country], [Monaco; place_7.country], [San Marino; place_8.country], and [Vatican
+    City; place_9.country]. As of [2025; temporal_1.year], [Albania; place_10.country], [Moldova; place_11.country], [Montenegro;
+    place_12.country], [North Macedonia; place_13.country] and [Serbia; place_14.country] are the [five; number_4.str] countries
+    negotiating to join the [EU; government_org_1.name] that are included in [SEPA; legal_1.name].
+
+
+    [SEPA; legal_1.name] covers predominantly normal bank transfers. Payment methods which have additional optional features
+    or services, such as mobile phone or smart card payment systems, are not directly covered. However, the instant [SEPA;
+    legal_1.name] payment scheme facilitates payment products also on smart devices.'
+  relations: []
+  rules:
+  - 'number_3.str == 4 # exactly four EFTA member states listed (Iceland, Liechtenstein, Norway, Switzerland)'
+  - 'number_4.str == 5 # exactly five candidate countries listed (Albania, Moldova, Montenegro, North Macedonia, Serbia)'
+  - 'number_1.int > 1 # plural mention ("members")'
+  - 'number_2.int > 1 # plural mention ("member states")'
+  num_questions: 12
+  questions:
+  - question_id: bankreg_09_q01
+    question: Which organization's member states form the core of the [Single Euro Payments Area (SEPA); legal_1.name]?
+    question_type: extractive
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] consists of the [27; number_2.int] member
+      states of the [European Union; government_org_1.name] plus additional members.
+    reasoning_chain_text: 1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] consists of the [27;
+      number_2.int] member states of the [European Union; government_org_1.name] plus additional members.
+  - question_id: bankreg_09_q02
+    question: What types of payment does [Single Euro Payments Area (SEPA); legal_1.name] predominantly cover?
+    question_type: extractive
+    answer: normal bank transfers
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] covers predominantly normal bank transfers.
+    reasoning_chain_text: 1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] covers predominantly
+      normal bank transfers.
+  - question_id: bankreg_09_q03
+    question: In what year was [Single Euro Payments Area (SEPA); legal_1.name] originally established?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [2025; temporal_1.year] as a reference year for membership counts.
+    - 2. However, the document does not state when [Single Euro Payments Area (SEPA); legal_1.name] was originally established.
+    reasoning_chain_text: '1. The document mentions [2025; temporal_1.year] as a reference year for membership counts.
+
+      2. However, the document does not state when [Single Euro Payments Area (SEPA); legal_1.name] was originally established.'
+  - question_id: bankreg_09_q04
+    question: How many members of [Single Euro Payments Area (SEPA); legal_1.name] are not member states of the [European
+      Union; government_org_1.name]?
+    question_type: arithmetic
+    answer: number_1.int - number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The total number of members in [Single Euro Payments Area (SEPA); legal_1.name] is [41; number_1.int].
+    - 2. The number of [European Union; government_org_1.name] member states is [27; number_2.int].
+    - 3. Therefore, the non-[European Union; government_org_1.name] members are [41; number_1.int] - [27; number_2.int] =
+      14.
+    reasoning_chain_text: '1. The total number of members in [Single Euro Payments Area (SEPA); legal_1.name] is [41; number_1.int].
+
+      2. The number of [European Union; government_org_1.name] member states is [27; number_2.int].
+
+      3. Therefore, the non-[European Union; government_org_1.name] members are [41; number_1.int] - [27; number_2.int] =
+      14.'
+  - question_id: bankreg_09_q05
+    question: How many microstates are listed as participating in the technical schemes of [Single Euro Payments Area (SEPA);
+      legal_1.name]?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document lists the microstates participating in the technical schemes: [Andorra; place_6.country], [Monaco;
+      place_7.country], [San Marino; place_8.country], and [Vatican City; place_9.country].'
+    - 2. Counting these gives 4 microstates.
+    reasoning_chain_text: '1. The document lists the microstates participating in the technical schemes: [Andorra; place_6.country],
+      [Monaco; place_7.country], [San Marino; place_8.country], and [Vatican City; place_9.country].
+
+      2. Counting these gives 4 microstates.'
+  - question_id: bankreg_09_q06
+    question: What is the total population of all [Single Euro Payments Area (SEPA); legal_1.name] member states combined?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists the member states and their count ([41; number_1.int]).
+    - 2. However, the document does not provide population figures for any of the member states, so the total population cannot
+      be calculated.
+    reasoning_chain_text: '1. The document lists the member states and their count ([41; number_1.int]).
+
+      2. However, the document does not provide population figures for any of the member states, so the total population cannot
+      be calculated.'
+  - question_id: bankreg_09_q07
+    question: Assuming the ultimate target year for total [European Union; government_org_1.name] integration is 2050, how
+      many years prior to that deadline were there exactly [41; number_1.int] members in [SEPA; legal_1.name]?
+    question_type: temporal
+    answer: 2050 - temporal_1.year
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bankreg_09_q08
+    question: Is the year referenced for the membership count of [Single Euro Payments Area (SEPA); legal_1.name] the same
+      as the year referenced for the list of [European Union; government_org_1.name] candidate countries negotiating to join?
+    question_type: temporal
+    answer: 'yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The membership count is given 'As of [2025; temporal_1.year].'
+    - 2. The list of EU candidate countries is also given 'As of [2025; temporal_1.year].'
+    - 3. Both references point to the same year value, so the answer is yes.
+    reasoning_chain_text: '1. The membership count is given ''As of [2025; temporal_1.year].''
+
+      2. The list of EU candidate countries is also given ''As of [2025; temporal_1.year].''
+
+      3. Both references point to the same year value, so the answer is yes.'
+  - question_id: bankreg_09_q09
+    question: How many years after [Single Euro Payments Area (SEPA); legal_1.name] was launched did the instant payment scheme
+      become available?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the instant [Single Euro Payments Area (SEPA); legal_1.name] payment scheme but does not state
+      when it became available.
+    - 2. The document also does not state when [Single Euro Payments Area (SEPA); legal_1.name] was launched.
+    - 3. Without either date, the duration cannot be determined.
+    reasoning_chain_text: '1. The document mentions the instant [Single Euro Payments Area (SEPA); legal_1.name] payment scheme
+      but does not state when it became available.
+
+      2. The document also does not state when [Single Euro Payments Area (SEPA); legal_1.name] was launched.
+
+      3. Without either date, the duration cannot be determined.'
+  - question_id: bankreg_09_q10
+    question: Given that [Single Euro Payments Area (SEPA); legal_1.name] includes members from the [European Union; government_org_1.name],
+      the [European Free Trade Association; government_org_2.name], and [European Union; government_org_1.name] candidate
+      countries, which single additional country is listed separately from all of these groups?
+    question_type: inference
+    answer: place_5.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document lists [27; number_2.int] member states of the [European Union; government_org_1.name], [four; number_3.str]
+      member states of the [European Free Trade Association; government_org_2.name], and [five; number_4.str] EU candidate
+      countries.
+    - 2. In addition to these groups, [United Kingdom; place_5.country] is listed separately as its own entry.
+    - 3. Therefore, [United Kingdom; place_5.country] is the single additional country not belonging to any of the named groups.
+    reasoning_chain_text: '1. The document lists [27; number_2.int] member states of the [European Union; government_org_1.name],
+      [four; number_3.str] member states of the [European Free Trade Association; government_org_2.name], and [five; number_4.str]
+      EU candidate countries.
+
+      2. In addition to these groups, [United Kingdom; place_5.country] is listed separately as its own entry.
+
+      3. Therefore, [United Kingdom; place_5.country] is the single additional country not belonging to any of the named groups.'
+  - question_id: bankreg_09_q11
+    question: Based on the document, are mobile phone payment systems directly covered by [Single Euro Payments Area (SEPA);
+      legal_1.name]?
+    question_type: inference
+    answer: 'no'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] covers predominantly normal bank transfers.
+    - 2. It explicitly says payment methods with additional optional features such as mobile phone or smart card payment systems
+      are not directly covered.
+    - 3. Therefore, mobile phone payment systems are not directly covered.
+    reasoning_chain_text: '1. The document states that [Single Euro Payments Area (SEPA); legal_1.name] covers predominantly
+      normal bank transfers.
+
+      2. It explicitly says payment methods with additional optional features such as mobile phone or smart card payment systems
+      are not directly covered.
+
+      3. Therefore, mobile phone payment systems are not directly covered.'
+  - question_id: bankreg_09_q12
+    question: Do the microstates that participate in the technical schemes of [Single Euro Payments Area (SEPA); legal_1.name]
+      have full voting rights within the initiative?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that some microstates participate in the technical schemes.
+    - 2. However, the document does not describe any governance structure, voting rights, or the distinction between technical
+      participation and full membership rights.
+    - 3. Therefore, whether microstates have full voting rights cannot be determined from the document.
+    reasoning_chain_text: '1. The document mentions that some microstates participate in the technical schemes.
+
+      2. However, the document does not describe any governance structure, voting rights, or the distinction between technical
+      participation and full membership rights.
+
+      3. Therefore, whether microstates have full voting rights cannot be determined from the document.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 33
+    upper_bound: 49
+    factual_value: 41
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

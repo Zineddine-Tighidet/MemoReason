@@ -1,0 +1,131 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_117
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-18T14:52:03.038945+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Grondell
+    - full_name: Colvyn Drashett
+    - full_name: Fenrik Torbane
+    - full_name: Jossam Kelthrup
+    - full_name: Dravon Pelmick
+    - full_name: Harnel Stovrik
+    - full_name: Quillen Brastow
+    - full_name: Merthan Vossek
+    - full_name: Rendal Cluvane
+    - full_name: Obrik Tasserly
+    - full_name: Gavren Polthane
+    - full_name: Wyndel Korbash
+    - full_name: Sethrik Dolvane
+    - full_name: Lurgan Fentask
+    - full_name: Prothel Vansteg
+places:
+  place_1:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Tarvell
+    - state: Kelmorin
+    - state: Brissova
+    - state: Ondrath
+    - state: Pallentine
+    - state: Colvane
+    - state: Drethwick
+    - state: Sulmera
+    - state: Vorpeth
+    - state: Grenthall
+    - state: Mossura
+    - state: Tindoral
+    - state: Welvane
+    - state: Crellum
+    - state: Haldorin
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Kellmora
+    - city: Dravenholt
+    - city: Tasserin
+    - city: Brindlecove
+    - city: Orvantis
+    - city: Pellowmere
+    - city: Crothane
+    - city: Wyndalore
+    - city: Sulvaren
+    - city: Moltheryn
+    - city: Gesswick
+    - city: Tarvolane
+    - city: Helvacrest
+    - city: Pinnoth
+    - city: Quellmaris
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torvel
+    - city: Briskane
+    - city: Caldreth
+    - city: Pemshaw
+    - city: Dunvara
+    - city: Kessolt
+    - city: Rilmoth
+    - city: Ganthor
+    - city: Welvane
+    - city: Sorbeck
+    - city: Tindara
+    - city: Plenvok
+    - city: Harquen
+    - city: Drossil
+    - city: Melvorn
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Talmeck County
+    - region: Brindoral County
+    - region: Celvane County
+    - region: Drothum County
+    - region: Fosserly County
+    - region: Ganthelm County
+    - region: Helvarak County
+    - region: Jornelk County
+    - region: Kestoval County
+    - region: Lyndorath County
+    - region: Morthaven County
+    - region: Pellusk County
+    - region: Rondavel County
+    - region: Sethwick County
+    - region: Varnolte County

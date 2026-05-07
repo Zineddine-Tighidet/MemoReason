@@ -1,0 +1,218 @@
+document:
+  document_id: bankreg_05
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Mortgage Credit Directive
+  wikipedia_url: https://en.wikipedia.org/wiki/Mortgage_Credit_Directive
+  original_document: 'The Mortgage Credit Directive (MCD) is a body of European Union legislation for the regulation of first-
+    and second charge mortgages and consumer buy-to-let (CBTL) lending. It was originally adopted by the European Commission
+    on 4 February 2014 and Member states had to transpose the regulations in their national law by March 2016. The European
+    Commission is currently planning to propose amendments to the directive in Q1 2024.
+
+
+    The Directive introduces a European framework of conduct standards for firms selling residential mortgages.
+
+
+    The objective of the Directive is to create a Union-wide mortgage credit market, with a high level of consumer protection.'
+  document_to_annotate: 'The [Mortgage Credit Directive (MCD); legal_1.name] is a body of [European Union; place_1.continent]
+    legislation for the regulation of [first- and second charge mortgages; product_1.name] and [consumer buy-to-let (CBTL)
+    lending; product_2.name]. It was originally adopted by the [European Commission; government_org_2.name] on [4 February
+    2014; temporal_1.date] and Member states had to transpose the regulations in their national law by [March 2016; temporal_2.date].
+    The [European Commission; government_org_2.name] is currently planning to propose amendments to the directive in [Q1 2024;
+    temporal_3.date].
+
+
+    The Directive introduces a [European; place_1.demonym] framework of conduct standards for firms selling [residential mortgages;
+    product_3.name].
+
+
+    The objective of the Directive is to create a [Union; place_1.continent]-wide [mortgage credit; product_3.name] market,
+    with a high level of consumer protection.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_05_q01
+    question: What is the name of the directive that regulates [first- and second charge mortgages; product_1.name] and [consumer
+      buy-to-let (CBTL) lending; product_2.name]?
+    question_type: extractive
+    answer: legal_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the [Mortgage Credit Directive (MCD); legal_1.name] is a body of legislation for the regulation
+      of [first- and second charge mortgages; product_1.name] and [consumer buy-to-let (CBTL) lending; product_2.name].
+    - 2. From phrase that The [European Commission; government_org_2.name] is currently planning to propose amendments to
+      the directive we can deduce that [Mortgage Credit Directive (MCD); legal_1.name] is a directive as asked in the question.
+    reasoning_chain_text: '1. The document states that the [Mortgage Credit Directive (MCD); legal_1.name] is a body of legislation
+      for the regulation of [first- and second charge mortgages; product_1.name] and [consumer buy-to-let (CBTL) lending;
+      product_2.name].
+
+      2. From phrase that The [European Commission; government_org_2.name] is currently planning to propose amendments to
+      the directive we can deduce that [Mortgage Credit Directive (MCD); legal_1.name] is a directive as asked in the question.'
+  - question_id: bankreg_05_q02
+    question: What level of consumer protection does the [Mortgage Credit Directive (MCD); legal_1.name] aim to provide?
+    question_type: extractive
+    answer: high
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the objective is to create a continent-wide market with a high level of consumer protection.
+    reasoning_chain_text: 1. The document states the objective is to create a continent-wide market with a high level of consumer
+      protection.
+  - question_id: bankreg_05_q03
+    question: Which specific committee within the [European Commission; government_org_2.name] was responsible for drafting
+      the [Mortgage Credit Directive (MCD); legal_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [European Commission; government_org_2.name] adopted the directive.
+    - 2. However, the document does not specify any internal committee responsible for drafting it.
+    reasoning_chain_text: '1. The document mentions the [European Commission; government_org_2.name] adopted the directive.
+
+      2. However, the document does not specify any internal committee responsible for drafting it.'
+  - question_id: bankreg_05_q04
+    question: How many years passed between the directive's adoption and the deadline for Member states to transpose it into
+      national law?
+    question_type: arithmetic
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - The directive was adopted in 2014.
+    - Member states had to transpose it by March 2016.
+    - The difference is 2016 - 2014 = 2.
+    reasoning_chain_text: 'The directive was adopted in 2014.
+
+      Member states had to transpose it by March 2016.
+
+      The difference is 2016 - 2014 = 2.'
+  - question_id: bankreg_05_q05
+    question: How many regulations were mentioned?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bankreg_05_q06
+    question: What is the total budget allocated by the [European Commission; government_org_2.name] for implementing the
+      [Mortgage Credit Directive (MCD); legal_1.name] across all Member states?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The question requires knowing the budget allocated for implementation.
+    - 2. The document does not mention any budget or financial figures related to the directive's implementation.
+    reasoning_chain_text: '1. The question requires knowing the budget allocated for implementation.
+
+      2. The document does not mention any budget or financial figures related to the directive''s implementation.'
+  - question_id: bankreg_05_q07
+    question: How many years passed between the [European Commission; government_org_2.name] adoption of [Mortgage Credit
+      Directive (MCD); legal_1.name] and the [European Commission; government_org_2.name]'s planning to propose amendments?
+    question_type: temporal
+    answer: temporal_3.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - .
+    reasoning_chain_text: .
+  - question_id: bankreg_05_q08
+    question: Was the [European Commission; government_org_2.name]'s planned [Q1 2024; temporal_3.date] amendment proposal
+      before or after the [March 2016; temporal_2.date] transposition deadline?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - The transposition deadline was March 2016.
+    - The planned amendment proposal is in Q1 2024.
+    - 2024 is after 2016.
+    reasoning_chain_text: 'The transposition deadline was March 2016.
+
+      The planned amendment proposal is in Q1 2024.
+
+      2024 is after 2016.'
+  - question_id: bankreg_05_q09
+    question: When was the [Mortgage Credit Directive (MCD); legal_1.name] first proposed before being adopted on [4 February
+      2014; temporal_1.date]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the directive was adopted on [4 February 2014; temporal_1.date].
+    - 2. The document does not mention when the directive was first proposed or drafted prior to adoption.
+    reasoning_chain_text: '1. The document states the directive was adopted on [4 February 2014; temporal_1.date].
+
+      2. The document does not mention when the directive was first proposed or drafted prior to adoption.'
+  - question_id: bankreg_05_q10
+    question: What organization is planning to propose amendments to the legislation that regulates [first- and second charge
+      mortgages; product_1.name]?
+    question_type: inference
+    answer: government_org_2.name
+    answer_type: variant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: bankreg_05_q11
+    question: Based on the document, does the [Mortgage Credit Directive (MCD); legal_1.name] apply only to a single country
+      or to multiple Member states?
+    question_type: inference
+    answer: multiple Member states
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that Member states had to transpose the regulations in their national law, using the plural form.
+    - 2. The directive aims to create a continent-wide market, implying cross-border applicability.
+    - 3. Therefore, the directive applies to multiple Member states.
+    reasoning_chain_text: '1. The document states that Member states had to transpose the regulations in their national law,
+      using the plural form.
+
+      2. The directive aims to create a continent-wide market, implying cross-border applicability.
+
+      3. Therefore, the directive applies to multiple Member states.'
+  - question_id: bankreg_05_q12
+    question: Based on the document, can we infer whether the [Mortgage Credit Directive (MCD); legal_1.name] has been effective
+      in reducing consumer complaints about [residential mortgages; product_3.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the directive's objectives and timeline but does not provide any data on consumer complaints.
+    - 2. Without information on outcomes or effectiveness metrics, no inference about the directive's impact on consumer complaints
+      can be made.
+    reasoning_chain_text: '1. The document describes the directive''s objectives and timeline but does not provide any data
+      on consumer complaints.
+
+      2. Without information on outcomes or effectiveness metrics, no inference about the directive''s impact on consumer
+      complaints can be made.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [Xalsiv Civic Statute; legal_1.name] is a body of [Felmur Landmass; place_1.continent]
+    legislation for the regulation of [VextirtirLink; product_1.name] and [Mirmir Flow; product_2.name]. It was originally
+    adopted by the [Kraenqeloaz State Council; government_org_2.name] on [10 October 2024; temporal_1.date] and Member states
+    had to transpose the regulations in their national law by [17 July 2025; temporal_2.date]. The [Kraenqeloaz State Council;
+    government_org_2.name] is currently planning to propose amendments to the directive in [24 March 2026; temporal_3.date].
+
+
+    The Directive introduces a [Xalxalvornic; place_1.demonym] framework of conduct standards for firms selling [Lorvak Drive;
+    product_3.name].
+
+
+    The objective of the Directive is to create a [Felmur Landmass; place_1.continent]-wide [Lorvak Drive; product_3.name]
+    market, with a high level of consumer protection.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

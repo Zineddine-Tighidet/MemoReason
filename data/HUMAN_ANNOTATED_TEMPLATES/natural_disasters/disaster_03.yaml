@@ -1,0 +1,586 @@
+document:
+  document_id: disaster_03
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: Typhoon Haiyan
+  wikipedia_url: https://en.wikipedia.org/wiki/Typhoon_Haiyan
+  original_document: 'Typhoon Haiyan, known locally as Super Typhoon Yolanda by PAGASA, was an extremely powerful and catastrophic
+    tropical cyclone that is among the most intense tropical cyclones ever recorded. Upon making landfall, Haiyan devastated
+    portions of Southeast Asia, particularly the Philippines during early November 2013. It is one of the deadliest typhoons
+    on record in the Philippines, killing at least 6300 people in the region of Visayas alone. In terms of JTWC-estimated
+    1-minute sustained winds, Haiyan is tied with Meranti in 2016 for being the second strongest landfalling tropical cyclone
+    on record, only behind Goni in 2020. It was also the most intense and deadliest tropical cyclone worldwide in 2013.
+
+
+    The 30th named storm, thirteenth typhoon, and fifth super typhoon of the 2013 Pacific typhoon season, Haiyan originated
+    from a low-pressure area several hundred kilometers east-southeast of Pohnpei in the Federated States of Micronesia on
+    November 2. Tracking generally westward, environmental conditions favored tropical cyclogenesis and the system developed
+    into a tropical depression on the following day. After becoming a tropical storm and receiving the name Haiyan at 00:00
+    UTC on November 4, the system began a period of rapid intensification that brought it to typhoon intensity by 18:00 UTC
+    on November 5. By November 6, the Joint Typhoon Warning Center (JTWC) assessed the system as a Category 5-equivalent super
+    typhoon on the Saffir–Simpson hurricane wind scale (SSHWS); the storm passed over the island of Kayangel in Palau shortly
+    after attaining this strength.
+
+
+    The Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA) estimated the average ten-minute
+    sustained winds at 235 km/h (146 mph) and gusts up to 275 km/h (171 mph) at landfall over Guiuan, Eastern Samar. Haiyan
+    continued to intensify; at 12:00 UTC on November 7, the Japan Meteorological Agency (JMA) upgraded the storm''s maximum
+    ten-minute sustained winds to a peak of 230 km/h (140 mph). The Hong Kong Observatory put the storm''s maximum ten-minute
+    sustained winds at 285 km/h (175 mph) prior to landfall in the central Philippines, while the China Meteorological Administration
+    (CMA) estimated the maximum two-minute sustained winds at the time to be around 78 m/s or 280 km/h (170 mph). At the same
+    time, the JTWC estimated the system''s one-minute sustained winds at 315 km/h (195 mph), unofficially making Haiyan the
+    strongest tropical cyclone ever observed based on wind speed, a record which would later be surpassed by Hurricane Patricia
+    in 2015 at 345 km/h (215 mph).
+
+
+    Haiyan is also tied with Meranti in 2016, Goni in 2020 and Surigae in 2021 as the most intense tropical cyclone in the
+    Eastern Hemisphere by 1-minute sustained winds; several others have recorded lower central pressure readings. At 20:40
+    UTC on November 7, the eye of the typhoon made its first landfall in the Philippines at Guiuan, Eastern Samar at peak
+    strength. Gradually weakening, the storm made five additional landfalls in the country before emerging over the South
+    China Sea. Turning northwestward, the typhoon eventually struck northern Vietnam as a severe tropical storm on November
+    10. Haiyan was last noted as a tropical depression by the JMA on the following day.
+
+
+    The first warning noted for Haiyan was in November 3, when a storm warning arose in the Federated States of Micronesia,
+    specifically in the Chuuk Lagoon, Losap, and Poluwat, gradually expanding to other towns as well. Warnings rose for a
+    second time in Micronesia, before being discontinued. In the Philippines, PAGASA raised Signal No. 1 on November 6, before
+    the landfall of Haiyan. More provinces were included, until Signal No. 4, the highest warning, was raised. Other preparations
+    were made, such as class suspensions and evacuations. In China, an emergency was declared in three provinces, causing
+    vessels to be brought back to shore. In Vietnam, the highest emergency level was announced, causing thousands of people
+    to be evacuated.
+
+
+    In Micronesia, heavy rains scattered in most of the places, causing one canoe house and three other houses to be destroyed.
+    Other than houses, many trees were downed. In Palau, houses were also destroyed. Power outages were reported, with a total
+    of 69 people being displaced. In Taiwan, eight people died due to strong waves. One person was also declared missing in
+    Hong Kong. In Southern China, extensive flooding occurred, killing 30 people and destroying 900 homes. In Vietnam, heavy
+    rains battered the country, killing 18 people and injuring 93.
+
+
+    The typhoon caused catastrophic destruction in the Visayas, particularly on the islands of Samar and Leyte. According
+    to UN officials, about 11 million people were affected and many were left homeless; many people are still missing as a
+    result of this storm.
+
+
+    Due to its extensive deaths and damage, the name Haiyan was retired in 2014 and replaced with Bailu. It was first used
+    in the 2019 season.'
+  document_to_annotate: '[Typhoon Haiyan; event_1.name], known locally as [Super Typhoon Yolanda; event_7.name] by [PAGASA;
+    government_org_1.name], was an extremely powerful and catastrophic tropical cyclone that is among the most intense tropical
+    cyclones ever recorded. Upon making landfall, [Haiyan; event_1.name] devastated portions of [Southeast Asia; place_1.region],
+    particularly the [Philippines; place_2.country] during early [November; temporal_19.month] [2013; temporal_5.year]. It
+    is one of the deadliest typhoons on record in the [Philippines; place_2.country], killing at least [6300; number_1.int]
+    people in the region of [Visayas; place_3.region] alone. In terms of JTWC-estimated 1-minute sustained winds, [Haiyan;
+    event_1.name] is tied with [Meranti; event_2.name] in [2016; temporal_2.year] for being the second strongest landfalling
+    tropical cyclone on record, only behind [Goni; event_3.name] in [2020; temporal_3.year]. It was also the most intense
+    and deadliest tropical cyclone worldwide in [2013; temporal_5.year].
+
+
+    The [30th; number_2.int] named storm, [thirteenth; number_3.str] typhoon, and [fifth; number_4.str] super typhoon of the
+    [2013; temporal_5.year] Pacific typhoon season, [Haiyan; event_1.name] originated from a low-pressure area several hundred
+    kilometers east-southeast of [Pohnpei; place_4.city] in the [Federated States of Micronesia; place_5.country] on [November;
+    temporal_6.month] [2; temporal_6.day_of_month]. Tracking generally westward, environmental conditions favored tropical
+    cyclogenesis and the system developed into a tropical depression on the following day. After becoming a tropical storm
+    and receiving the name [Haiyan; event_1.name] at [00:00 UTC; temporal_7.timestamp] on [November; temporal_21.month] [4;
+    temporal_21.day_of_month], the system began a period of rapid intensification that brought it to typhoon intensity by
+    [18:00 UTC; temporal_20.timestamp] on [November; temporal_8.month] [5; temporal_8.day_of_month]. By [November; temporal_9.month]
+    [6; temporal_9.day_of_month], the [Joint Typhoon Warning Center; government_org_2.name] assessed the system as a Category
+    5-equivalent super typhoon on the Saffir–Simpson hurricane wind scale (SSHWS); the storm passed over the island of [Kayangel;
+    place_6.natural_site] in [Palau; place_7.country] shortly after attaining this strength.
+
+
+    The [Philippine Atmospheric, Geophysical and Astronomical Services Administration; government_org_1.name] estimated the
+    average ten-minute sustained winds at [235; number_5.int] km/h and gusts up to [275; number_7.int] km/h at landfall over
+    [Guiuan; place_8.city], [Eastern Samar; place_9.region]. [Haiyan; event_1.name] continued to intensify; at [12:00 UTC;
+    temporal_18.timestamp] on [November; temporal_10.month] [7; temporal_10.day_of_month], the [Japan Meteorological Agency;
+    government_org_3.name] upgraded the storm''s maximum ten-minute sustained winds to a peak of [230; number_9.int] km/h.
+    The [Hong Kong Observatory; government_org_4.name] put the storm''s maximum ten-minute sustained winds at [285; number_11.int]
+    km/h prior to landfall in the central [Philippines; place_2.country], while the [China Meteorological Administration;
+    government_org_5.name] estimated the maximum two-minute sustained winds at the time to be around [78; number_13.int] m/s
+    or [280; number_14.int] km/h. At the same time, the [JTWC; government_org_2.name] estimated the system''s one-minute sustained
+    winds at [315; number_16.int] km/h, unofficially making [Haiyan; event_1.name] the strongest tropical cyclone ever observed
+    based on wind speed, a record which would later be surpassed by [Hurricane Patricia; event_4.name] in [2015; temporal_11.year]
+    at [345; number_18.int] km/h.
+
+
+    [Haiyan; event_1.name] is also tied with [Meranti; event_2.name] in [2016; temporal_2.year], [Goni; event_3.name] in [2020;
+    temporal_3.year] and [Surigae; event_5.name] in [2021; temporal_12.year] as the most intense tropical cyclone in the Eastern
+    Hemisphere by 1-minute sustained winds; several others have recorded lower central pressure readings. At [20:40 UTC; temporal_13.timestamp]
+    on [November; temporal_22.month] [7; temporal_22.day_of_month], the eye of the typhoon made its first landfall in the
+    [Philippines; place_2.country] at [Guiuan; place_8.city], [Eastern Samar; place_9.region] at peak strength. Gradually
+    weakening, the storm made [five; number_20.str] additional landfalls in the country before emerging over the [South China
+    Sea; place_10.natural_site]. Turning northwestward, the typhoon eventually struck northern [Vietnam; place_11.country]
+    as a severe tropical storm on [November; temporal_14.month] [10; temporal_14.day_of_month]. [Haiyan; event_1.name] was
+    last noted as a tropical depression by the [JMA; government_org_3.name] on the following day.
+
+
+    The first warning noted for [Haiyan; event_1.name] was in [November; temporal_15.month] [3; temporal_15.day_of_month],
+    when a storm warning arose in the [Federated States of Micronesia; place_5.country], specifically in the [Chuuk Lagoon;
+    place_12.natural_site], [Losap; place_13.city], and [Poluwat; place_14.city], gradually expanding to other towns as well.
+    Warnings rose for a second time in [Micronesia; place_5.country], before being discontinued. In the [Philippines; place_2.country],
+    [PAGASA; government_org_1.name] raised Signal No. 1 on [November; temporal_9.month] [6; temporal_9.day_of_month], before
+    the landfall of [Haiyan; event_1.name]. More provinces were included, until Signal No. 4, the highest warning, was raised.
+    Other preparations were made, such as class suspensions and evacuations. In [China; place_15.country], an emergency was
+    declared in [three; number_21.str] provinces, causing vessels to be brought back to shore. In [Vietnam; place_11.country],
+    the highest emergency level was announced, causing thousands of people to be evacuated.
+
+
+    In [Micronesia; place_5.country], heavy rains scattered in most of the places, causing [one; number_22.str] canoe house
+    and [three; number_23.str] other houses to be destroyed. Other than houses, many trees were downed. In [Palau; place_7.country],
+    houses were also destroyed. Power outages were reported, with a total of [69; number_24.int] people being displaced. In
+    [Taiwan; place_16.country], [eight; number_25.str] people died due to strong waves. [One; number_26.str] person was also
+    declared missing in [Hong Kong; place_17.city]. In Southern [China; place_15.country], extensive flooding occurred, killing
+    [30; number_27.int] people and destroying [900; number_28.int] homes. In [Vietnam; place_11.country], heavy rains battered
+    the country, killing [18; number_29.int] people and injuring [93; number_30.int].
+
+
+    The typhoon caused catastrophic destruction in the [Visayas; place_3.region], particularly on the islands of [Samar; place_18.region]
+    and [Leyte; place_19.region]. According to [UN; ngo_1.name] officials, about [11; number_31.int] million people were affected
+    and many were left homeless; many people are still missing as a result of this storm.
+
+
+    Due to its extensive deaths and damage, the name [Haiyan; event_1.name] was retired in [2014; temporal_16.year] and replaced
+    with [Bailu; event_6.name]. It was first used in the [2019; temporal_17.year] season.'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural: "people"'
+  - 'number_5.int > 0 # wind speed must be positive'
+  - 'number_20.str > 1 # plural: "additional landfalls"'
+  - 'number_21.str > 1 # plural: "provinces"'
+  - 'number_23.str > 1 # plural: "other houses"'
+  - 'number_24.int > 1 # plural: "people being displaced"'
+  - 'number_25.str > 1 # plural: "people died"'
+  - 'number_26.str == 1 # "One person"'
+  - 'number_22.str == 1 # "one canoe house"'
+  - 'number_27.int > 1 # plural: "people"'
+  - 'number_28.int > 1 # plural: "homes"'
+  - 'number_29.int > 1 # plural: "people"'
+  - 'number_30.int > 1 # plural: "people"'
+  - 'temporal_16.year - temporal_5.year == 1 # name retired the year after the typhoon'
+  num_questions: 12
+  questions:
+  - question_id: disaster_03_q01
+    question: What name did [PAGASA; government_org_1.name] use locally for [Typhoon Haiyan; event_1.name]?
+    question_type: extractive
+    answer: event_7.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Typhoon Haiyan; event_1.name] was "known locally as [Super Typhoon Yolanda; event_7.name]
+      by [PAGASA; government_org_1.name]."
+    reasoning_chain_text: 1. The document states that [Typhoon Haiyan; event_1.name] was "known locally as [Super Typhoon
+      Yolanda; event_7.name] by [PAGASA; government_org_1.name]."
+  - question_id: disaster_03_q02
+    question: What was the central pressure reading of [Typhoon Haiyan; event_1.name] at its peak intensity?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that "several others have recorded lower central pressure readings" when comparing storms by
+      1-minute sustained winds.
+    - 2. However, the document never provides a specific central pressure value for [Typhoon Haiyan; event_1.name].
+    reasoning_chain_text: '1. The document mentions that "several others have recorded lower central pressure readings" when
+      comparing storms by 1-minute sustained winds.
+
+      2. However, the document never provides a specific central pressure value for [Typhoon Haiyan; event_1.name].'
+  - question_id: disaster_03_q03
+    question: By how many km/h did [Hurricane Patricia; event_4.name] surpass [Typhoon Haiyan; event_1.name]'s unofficial
+      one-minute sustained wind speed record?
+    question_type: arithmetic
+    answer: number_18.int - number_16.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Typhoon Haiyan; event_1.name]'s one-minute sustained winds were estimated at [315; number_16.int]
+      km/h by [Joint Typhoon Warning Center; government_org_2.name].
+    - 2. [Hurricane Patricia; event_4.name] later surpassed this record at [345; number_18.int] km/h.
+    - 3. The difference is [345; number_18.int] - [315; number_16.int] = 30 km/h.
+    reasoning_chain_text: '1. The document states [Typhoon Haiyan; event_1.name]''s one-minute sustained winds were estimated
+      at [315; number_16.int] km/h by [Joint Typhoon Warning Center; government_org_2.name].
+
+      2. [Hurricane Patricia; event_4.name] later surpassed this record at [345; number_18.int] km/h.
+
+      3. The difference is [345; number_18.int] - [315; number_16.int] = 30 km/h.'
+  - question_id: disaster_03_q04
+    question: What was the total economic damage in US dollars caused by [Typhoon Haiyan; event_1.name] across all affected
+      countries?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes extensive destruction and damage across multiple countries.
+    - 2. However, the document never provides any monetary damage figures for [Typhoon Haiyan; event_1.name].
+    reasoning_chain_text: '1. The document describes extensive destruction and damage across multiple countries.
+
+      2. However, the document never provides any monetary damage figures for [Typhoon Haiyan; event_1.name].'
+  - question_id: disaster_03_q05
+    question: How many years after [Typhoon Haiyan; event_1.name]'s wind speed record was it surpassed by [Hurricane Patricia;
+      event_4.name]?
+    question_type: temporal
+    answer: temporal_11.year - temporal_5.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Typhoon Haiyan; event_1.name] occurred in [2013; temporal_5.year].
+    - 2. [Hurricane Patricia; event_4.name] surpassed the record in [2015; temporal_11.year].
+    - 3. The difference is [2015; temporal_11.year] - [2013; temporal_5.year] = 6 years.
+    reasoning_chain_text: '1. [Typhoon Haiyan; event_1.name] occurred in [2013; temporal_5.year].
+
+      2. [Hurricane Patricia; event_4.name] surpassed the record in [2015; temporal_11.year].
+
+      3. The difference is [2015; temporal_11.year] - [2013; temporal_5.year] = 6 years.'
+  - question_id: disaster_03_q06
+    question: On what exact date did [Typhoon Haiyan; event_1.name] dissipate completely after being last noted as a tropical
+      depression?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Typhoon Haiyan; event_1.name] was last noted as a tropical depression by [Japan Meteorological
+      Agency; government_org_3.name] on the day following [November; temporal_14.month] [10; temporal_14.day_of_month].
+    - 2. However, the document does not provide the exact date of full dissipation after that last advisory.
+    reasoning_chain_text: '1. The document states [Typhoon Haiyan; event_1.name] was last noted as a tropical depression by
+      [Japan Meteorological Agency; government_org_3.name] on the day following [November; temporal_14.month] [10; temporal_14.day_of_month].
+
+      2. However, the document does not provide the exact date of full dissipation after that last advisory.'
+  - question_id: disaster_03_q07
+    question: Given that [Typhoon Haiyan; event_1.name] struck northern [Vietnam; place_11.country] as a severe tropical storm
+      after making multiple landfalls in the [Philippines; place_2.country], what body of water did the storm cross between
+      these two countries?
+    question_type: inference
+    answer: place_10.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that after making landfalls in the [Philippines; place_2.country], the storm emerged over the
+      [South China Sea; place_10.natural_site].
+    - 2. After turning northwestward, it then struck northern [Vietnam; place_11.country], indicating it crossed the [South
+      China Sea; place_10.natural_site] between the two countries.
+    reasoning_chain_text: '1. The document states that after making landfalls in the [Philippines; place_2.country], the storm
+      emerged over the [South China Sea; place_10.natural_site].
+
+      2. After turning northwestward, it then struck northern [Vietnam; place_11.country], indicating it crossed the [South
+      China Sea; place_10.natural_site] between the two countries.'
+  - question_id: disaster_03_q08
+    question: Based on the wind speed estimates from different agencies, did the [Hong Kong Observatory; government_org_4.name]'s
+      ten-minute sustained wind estimate exceed or fall below the [Joint Typhoon Warning Center; government_org_2.name]'s
+      one-minute sustained wind estimate for [Typhoon Haiyan; event_1.name]?
+    question_type: inference
+    answer: fell below
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The [Hong Kong Observatory; government_org_4.name] estimated maximum ten-minute sustained winds at [285; number_11.int]
+      km/h.
+    - 2. The [Joint Typhoon Warning Center; government_org_2.name] estimated one-minute sustained winds at [315; number_16.int]
+      km/h.
+    - 3. Since 284 < 314, the [Hong Kong Observatory; government_org_4.name]'s estimate fell below the [Joint Typhoon Warning
+      Center; government_org_2.name]'s estimate.
+    reasoning_chain_text: '1. The [Hong Kong Observatory; government_org_4.name] estimated maximum ten-minute sustained winds
+      at [285; number_11.int] km/h.
+
+      2. The [Joint Typhoon Warning Center; government_org_2.name] estimated one-minute sustained winds at [315; number_16.int]
+      km/h.
+
+      3. Since 284 < 314, the [Hong Kong Observatory; government_org_4.name]''s estimate fell below the [Joint Typhoon Warning
+      Center; government_org_2.name]''s estimate.'
+  - question_id: disaster_03_q09
+    question: Was the storm surge height generated by [Typhoon Haiyan; event_1.name] at [Guiuan; place_8.city] a contributing
+      factor to the high death toll in [Visayas; place_3.region]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Typhoon Haiyan; event_1.name] made its first landfall at [Guiuan; place_8.city], [Eastern
+      Samar; place_9.region] and killed at least [6300; number_1.int] people in [Visayas; place_3.region].
+    - 2. However, the document provides no information about storm surge heights or whether storm surge specifically contributed
+      to the death toll.
+    reasoning_chain_text: '1. The document states that [Typhoon Haiyan; event_1.name] made its first landfall at [Guiuan;
+      place_8.city], [Eastern Samar; place_9.region] and killed at least [6300; number_1.int] people in [Visayas; place_3.region].
+
+      2. However, the document provides no information about storm surge heights or whether storm surge specifically contributed
+      to the death toll.'
+  - question_id: disaster_03_q10
+    question: Did [Typhoon Haiyan; event_1.name] occur before or after [Surigae; event_5.name] ?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: disaster_03_q11
+    question: What's the highest category [Typhoon Haiyan; event_1.name] was ever in ?
+    question_type: arithmetic
+    answer: Category 5
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: disaster_03_q12
+    question: Why was [Typhoon Haiyan; event_1.name]'s name retired ?
+    question_type: extractive
+    answer: Due to its extensive deaths and damage
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: temporal_5.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 5040
+    upper_bound: 7560
+    factual_value: 6300
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 188
+    upper_bound: 282
+    factual_value: 235
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 220
+    upper_bound: 330
+    factual_value: 275
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 184
+    upper_bound: 276
+    factual_value: 230
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 228
+    upper_bound: 342
+    factual_value: 285
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.int
+    lower_bound: 63
+    upper_bound: 93
+    factual_value: 78
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 224
+    upper_bound: 336
+    factual_value: 280
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_16.int
+    lower_bound: 252
+    upper_bound: 378
+    factual_value: 315
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_18.int
+    lower_bound: 276
+    upper_bound: 414
+    factual_value: 345
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_20.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_21.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_23.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.int
+    lower_bound: 56
+    upper_bound: 82
+    factual_value: 69
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_25.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_26.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_27.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_28.int
+    lower_bound: 720
+    upper_bound: 1080
+    factual_value: 900
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_29.int
+    lower_bound: 15
+    upper_bound: 21
+    factual_value: 18
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_30.int
+    lower_bound: 75
+    upper_bound: 111
+    factual_value: 93
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_31.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_16.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_17.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  fictionalized_annotated_template_document: '[Tovvexzor Expo; event_1.name], known locally as [Hurricane Patrova; event_7.name]
+    by [Murkinvex Council; government_org_1.name], was an extremely powerful and catastrophic tropical cyclone that is among
+    the most intense tropical cyclones ever recorded. Upon making landfall, [Tovvexzor Expo; event_1.name] devastated portions
+    of [Lenthu; place_1.region], particularly the [Federated Isles of Dranovia; place_2.country] during early [October; temporal_19.month]
+    [1995; temporal_5.year]. It is one of the deadliest typhoons on record in the [Federated Isles of Dranovia; place_2.country],
+    killing at least [5040; number_1.int] people in the region of [Eastern Velhari; place_3.region] alone. In terms of JTWC-estimated
+    1-minute sustained winds, [Tovvexzor Expo; event_1.name] is tied with [Typhoon Gonvari; event_2.name] in [2007; temporal_2.year]
+    for being the second strongest landfalling tropical cyclone on record, only behind [Typhoon Velthari; event_3.name] in
+    [2012; temporal_3.year]. It was also the most intense and deadliest tropical cyclone worldwide in [1995; temporal_5.year].
+
+
+    The [24; number_2.int] named storm, [twelfth; number_3.str] typhoon, and [fourth; number_4.str] super typhoon of the [1995;
+    temporal_5.year] Pacific typhoon season, [Tovvexzor Expo; event_1.name] originated from a low-pressure area several hundred
+    kilometers east-southeast of [Harukei; place_4.city] in the [Telvanu; place_5.country] on [August; temporal_6.month] [12;
+    temporal_6.day_of_month]. Tracking generally westward, environmental conditions favored tropical cyclogenesis and the
+    system developed into a tropical depression on the following day. After becoming a tropical storm and receiving the name
+    [Tovvexzor Expo; event_1.name] at [00:00 UTC; temporal_7.timestamp] on [October; temporal_21.month] [25; temporal_21.day_of_month],
+    the system began a period of rapid intensification that brought it to typhoon intensity by [18:00 UTC; temporal_20.timestamp]
+    on [January; temporal_8.month] [1; temporal_8.day_of_month]. By [December; temporal_9.month] [1; temporal_9.day_of_month],
+    the [Dranovan Meteorological Authority; government_org_2.name] assessed the system as a Category 5-equivalent super typhoon
+    on the Saffir–Simpson hurricane wind scale (SSHWS); the storm passed over the island of [Thalwen Sea; place_6.natural_site]
+    in [Zhengara; place_7.country] shortly after attaining this strength.
+
+
+    The [Murkinvex Council; government_org_1.name] estimated the average ten-minute sustained winds at [188; number_5.int]
+    km/h and gusts up to [223; number_7.int] km/h at landfall over [Loshari; place_8.city], [Kessavu; place_9.region]. [Tovvexzor
+    Expo; event_1.name] continued to intensify; at [12:00 UTC; temporal_18.timestamp] on [August; temporal_10.month] [17;
+    temporal_10.day_of_month], the [Talindran Atmospheric and Geophysical Services Bureau; government_org_3.name] upgraded
+    the storm''s maximum ten-minute sustained winds to a peak of [184; number_9.int] km/h. The [Joint Cyclone Monitoring Center;
+    government_org_4.name] put the storm''s maximum ten-minute sustained winds at [284; number_11.int] km/h prior to landfall
+    in the central [Federated Isles of Dranovia; place_2.country], while the [Zhengaran Climate Administration; government_org_5.name]
+    estimated the maximum two-minute sustained winds at the time to be around [63; number_13.int] m/s or [250; number_14.int]
+    km/h. At the same time, the [Dranovan Meteorological Authority; government_org_2.name] estimated the system''s one-minute
+    sustained winds at [314; number_16.int] km/h, unofficially making [Tovvexzor Expo; event_1.name] the strongest tropical
+    cyclone ever observed based on wind speed, a record which would later be surpassed by [Cyclone Merathi; event_4.name]
+    in [2001; temporal_11.year] at [344; number_18.int] km/h.
+
+
+    [Tovvexzor Expo; event_1.name] is also tied with [Typhoon Gonvari; event_2.name] in [2007; temporal_2.year], [Typhoon
+    Velthari; event_3.name] in [2012; temporal_3.year] and [Typhoon Brelvu; event_5.name] in [2023; temporal_12.year] as the
+    most intense tropical cyclone in the Eastern Hemisphere by 1-minute sustained winds; several others have recorded lower
+    central pressure readings. At [20:40 UTC; temporal_13.timestamp] on [July; temporal_22.month] [21; temporal_22.day_of_month],
+    the eye of the typhoon made its first landfall in the [Federated Isles of Dranovia; place_2.country] at [Loshari; place_8.city],
+    [Kessavu; place_9.region] at peak strength. Gradually weakening, the storm made [three; number_20.str] additional landfalls
+    in the country before emerging over the [Tovvexzor Ridge; place_10.natural_site]. Turning northwestward, the typhoon eventually
+    struck northern [Brivanu; place_11.country] as a severe tropical storm on [October; temporal_14.month] [8; temporal_14.day_of_month].
+    [Tovvexzor Expo; event_1.name] was last noted as a tropical depression by the [Talindran Atmospheric and Geophysical Services
+    Bureau; government_org_3.name] on the following day.
+
+
+    The first warning noted for [Tovvexzor Expo; event_1.name] was in [October; temporal_15.month] [9; temporal_15.day_of_month],
+    when a storm warning arose in the [Telvanu; place_5.country], specifically in the [Yenthari Atoll; place_12.natural_site],
+    [Polenthi; place_13.city], and [Pomhelu; place_14.city], gradually expanding to other towns as well. Warnings rose for
+    a second time in [Telvanu; place_5.country], before being discontinued. In the [Federated Isles of Dranovia; place_2.country],
+    [Murkinvex Council; government_org_1.name] raised Signal No. 1 on [December; temporal_9.month] [1; temporal_9.day_of_month],
+    before the landfall of [Tovvexzor Expo; event_1.name]. More provinces were included, until Signal No. 4, the highest warning,
+    was raised. Other preparations were made, such as class suspensions and evacuations. In [Talindra; place_15.country],
+    an emergency was declared in [two; number_21.str] provinces, causing vessels to be brought back to shore. In [Brivanu;
+    place_11.country], the highest emergency level was announced, causing thousands of people to be evacuated.
+
+
+    In [Telvanu; place_5.country], heavy rains scattered in most of the places, causing [one; number_22.str] canoe house and
+    [two; number_23.str] other houses to be destroyed. Other than houses, many trees were downed. In [Zhengara; place_7.country],
+    houses were also destroyed. Power outages were reported, with a total of [56; number_24.int] people being displaced. In
+    [Mekhari; place_16.country], [seven; number_25.str] people died due to strong waves. [one; number_26.str] person was also
+    declared missing in [Gorushan; place_17.city]. In Southern [Talindra; place_15.country], extensive flooding occurred,
+    killing [24; number_27.int] people and destroying [720; number_28.int] homes. In [Brivanu; place_11.country], heavy rains
+    battered the country, killing [15; number_29.int] people and injuring [92; number_30.int].
+
+
+    The typhoon caused catastrophic destruction in the [Eastern Velhari; place_3.region], particularly on the islands of [Vorathean
+    Archipelago; place_18.region] and [Selvari; place_19.region]. According to [Sheltervane International; ngo_1.name] officials,
+    about [10; number_31.int] million people were affected and many were left homeless; many people are still missing as a
+    result of this storm.
+
+
+    Due to its extensive deaths and damage, the name [Tovvexzor Expo; event_1.name] was retired in [1996; temporal_16.year]
+    and replaced with [Cyclone Surivane; event_6.name]. It was first used in the [2008; temporal_17.year] season.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

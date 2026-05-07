@@ -1,0 +1,387 @@
+document:
+  document_id: space_08
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Sputnik 1
+  wikipedia_url: https://en.wikipedia.org/wiki/Sputnik_1
+  original_document: 'Sputnik 1, often referred to as simply Sputnik, was the first artificial Earth satellite. It was launched
+    into an elliptical low Earth orbit by the Soviet Union on 4 October 1957 as part of the Soviet space program. It sent
+    a radio signal back to Earth for three weeks before its three silver-zinc batteries became depleted. Aerodynamic drag
+    caused it to fall back into the atmosphere on 4 January 1958.
+
+
+    It was a polished metal sphere 58 cm (23 in) in diameter with four external radio antennas to broadcast radio pulses.
+    Its radio signal was easily detectable by amateur radio operators, and the 65° orbital inclination made its flight path
+    cover virtually the entire inhabited Earth.
+
+
+    The satellite''s success was unanticipated by the United States. This precipitated the American Sputnik crisis and triggered
+    the Space Race. The launch was the beginning of a new era of political, military, technological, and scientific developments.
+    The word sputnik is Russian for satellite when interpreted in an astronomical context; its other meanings are spouse or
+    travelling companion.
+
+
+    Tracking and studying Sputnik 1 from Earth provided scientists with valuable information. The density of the upper atmosphere
+    could be deduced from its drag on the orbit, and the propagation of its radio signals gave data about the ionosphere.
+
+
+    Sputnik 1 was launched during the International Geophysical Year from Site No.1/5, at the 5th Tyuratam range, in Kazakh
+    SSR (now known as the Baikonur Cosmodrome). The satellite travelled at a peak speed of about 8 km/s (18000 mph), taking
+    96.20 minutes to complete each orbit. It transmitted on 20.005 and 40.002 MHz, which were monitored by radio operators
+    throughout the world. The signals continued for 22 days until the transmitter batteries depleted on 26 October 1957. On
+    4 January 1958, after three months in orbit, Sputnik 1 burned up while reentering Earth''s atmosphere, having completed
+    1440 orbits of the Earth, and travelling a distance of approximately 70000000 km (43000000 mi).'
+  document_to_annotate: '[Sputnik; product_1.name] [1; number_17.int], often referred to as simply [Sputnik; product_1.name],
+    was the first artificial [Earth; place_6.natural_site] satellite. It was launched into an elliptical low [Earth; place_6.natural_site]
+    orbit by the [Soviet Union; place_1.country] on [4 October 1957; temporal_1.date] as part of the [Soviet space program;
+    government_org_1.name]. It sent a radio signal back to [Earth; place_6.natural_site] for [three; number_1.str] weeks before
+    its [three; number_2.str] silver-zinc batteries became depleted. Aerodynamic drag caused it to fall back into the atmosphere
+    on [4 January 1958; temporal_2.date].
+
+
+    It was a polished metal sphere [58; number_3.int] cm in diameter with [four; number_5.str] external radio antennas to
+    broadcast radio pulses. Its radio signal was easily detectable by amateur radio operators, and the [65; number_6.int]°
+    orbital inclination made its flight path cover virtually the entire inhabited [Earth; place_6.natural_site].
+
+
+    The satellite''s success was unanticipated by the [United States; place_2.country]. This precipitated the [American; place_2.demonym]
+    [Sputnik crisis; event_1.name] and triggered the [Space Race; event_2.name]. The launch was the beginning of a new era
+    of political, military, technological, and scientific developments. The word [sputnik; product_1.name] is [Russian; place_3.demonym]
+    for satellite when interpreted in an astronomical context; its other meanings are spouse or travelling companion.
+
+
+    Tracking and studying [Sputnik; product_1.name] [1; number_17.int] from [Earth; place_6.natural_site] provided scientists
+    with valuable information. The density of the upper atmosphere could be deduced from its drag on the orbit, and the propagation
+    of its radio signals gave data about the ionosphere.
+
+
+    [Sputnik; product_1.name] [1; number_17.int] was launched during the [International Geophysical Year; event_3.name] from
+    Site No.[1/5; number_18.fraction], at the [5th; number_19.int] [Tyuratam; place_4.city] range, in [Kazakh SSR; place_4.region]
+    (now known as the [Baikonur Cosmodrome; place_5.natural_site]). The satellite travelled at a peak speed of about [8; number_7.int]
+    km/s, taking [96.20; number_9.float] minutes to complete each orbit. It transmitted on [20.005; number_10.float] and [40.002;
+    number_11.float] MHz, which were monitored by radio operators throughout the world. The signals continued for [22; number_12.int]
+    days until the transmitter batteries depleted on [26 October 1957; temporal_3.date]. On [4 January 1958; temporal_2.date],
+    after [three; number_13.str] months in orbit, [Sputnik; product_1.name] [1; number_17.int] burned up while reentering
+    [Earth; place_6.natural_site]''s atmosphere, having completed [1440; number_14.int] orbits of the [Earth; place_6.natural_site],
+    and travelling a distance of approximately [70000000; number_15.int] km.'
+  relations: []
+  rules:
+  - 'number_5.str > 1 # "four external radio antennas" — plural mention'
+  - 'number_1.str > 1 # "three weeks" — plural mention'
+  - 'number_2.str > 1 # "three silver-zinc batteries" — plural mention'
+  - 'number_13.str > 1 # "three months" — plural mention'
+  - 'number_14.int > 1 # "1440 orbits" — plural mention'
+  - 'number_12.int > 1 # "22 days" — plural mention'
+  - temporal_3.date - temporal_1.date = number_12.int days
+  - number_12.int >= number_1.str * 7
+  - number_12.int < number_1.str * 7 + 7
+  - temporal_2.date - temporal_1.date > 0
+  - temporal_2.date - temporal_1.date < 365
+  - 'number_14.int * number_9.float / 60 / 24 >= number_13.str * 30 # 3 months is more than 90 days'
+  - 'number_14.int * number_9.float / 60 / 24 < number_13.str * 30 + 30 # 3 months should be less than 120 days'
+  - 'number_7.int * number_9.float * 60 * number_14.int <= number_15.int * 1.2 # the approximate distance travelled'
+  - number_7.int * number_9.float * 60 * number_14.int >= number_15.int *0.8
+  num_questions: 12
+  questions:
+  - question_id: space_08_q01
+    question: What was the diameter of [Sputnik; product_1.name] [1; number_17.int] in centimeters?
+    question_type: extractive
+    answer: number_3.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Sputnik; product_1.name] [1; number_17.int] was a polished metal sphere [58; number_3.int]
+      cm in diameter.
+    reasoning_chain_text: 1. The document states that [Sputnik; product_1.name] [1; number_17.int] was a polished metal sphere
+      [58; number_3.int] cm in diameter.
+  - question_id: space_08_q02
+    question: What type of batteries did [Sputnik; product_1.name] [1; number_17.int] use?
+    question_type: extractive
+    answer: silver-zinc
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the satellite's signal continued until its silver-zinc batteries became depleted.
+    reasoning_chain_text: 1. The document states that the satellite's signal continued until its silver-zinc batteries became
+      depleted.
+  - question_id: space_08_q03
+    question: What was the total mass of [Sputnik; product_1.name] [1; number_17.int] at launch?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the satellite's diameter, speed, orbit, and other characteristics.
+    - 2. However, the document never mentions the mass or weight of [Sputnik; product_1.name] [1; number_17.int].
+    reasoning_chain_text: '1. The document describes the satellite''s diameter, speed, orbit, and other characteristics.
+
+      2. However, the document never mentions the mass or weight of [Sputnik; product_1.name] [1; number_17.int].'
+  - question_id: space_08_q04
+    question: How many more orbits would [Sputnik; product_1.name] [1; number_17.int] have needed to complete to reach 2000
+      total orbits of [Earth; place_6.natural_site]?
+    question_type: arithmetic
+    answer: 2000 - number_14.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Sputnik; product_1.name] [1; number_17.int] completed [1440; number_14.int] orbits of [Earth;
+      place_6.natural_site].
+    - 2. 2000 - [1440; number_14.int] = 299.
+    reasoning_chain_text: '1. The document states that [Sputnik; product_1.name] [1; number_17.int] completed [1440; number_14.int]
+      orbits of [Earth; place_6.natural_site].
+
+      2. 2000 - [1440; number_14.int] = 299.'
+  - question_id: space_08_q05
+    question: What was the total cost of building and launching [Sputnik; product_1.name] [1; number_17.int]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the satellite's technical specifications and mission details.
+    - 2. The document does not mention any cost or budget figures for [Sputnik; product_1.name] [1; number_17.int].
+    reasoning_chain_text: '1. The document describes the satellite''s technical specifications and mission details.
+
+      2. The document does not mention any cost or budget figures for [Sputnik; product_1.name] [1; number_17.int].'
+  - question_id: space_08_q06
+    question: How many years passed between the launch of [Sputnik; product_1.name] [1; number_17.int] and its reentry into
+      [Earth; place_6.natural_site]'s atmosphere?
+    question_type: temporal
+    answer: year(temporal_2.date - temporal_1.date)
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Sputnik; product_1.name] [1; number_17.int] was launched on [4 October 1957; temporal_1.date].
+    - 2. It burned up on reentry on [4 January 1958; temporal_2.date].
+    - 3. From March 1952 to October 1973 is approximately 21 years.
+    reasoning_chain_text: '1. The document states [Sputnik; product_1.name] [1; number_17.int] was launched on [4 October
+      1957; temporal_1.date].
+
+      2. It burned up on reentry on [4 January 1958; temporal_2.date].
+
+      3. From March 1952 to October 1973 is approximately 21 years.'
+  - question_id: space_08_q07
+    question: When did the [Soviet Union; place_1.country] first begin developing the [Soviet space program; government_org_1.name]
+      program?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Sputnik; product_1.name] [1; number_17.int] was launched as part of the [Soviet space
+      program; government_org_1.name].
+    - 2. The document does not state when the [Soviet space program; government_org_1.name] program was initiated or began
+      development.
+    reasoning_chain_text: '1. The document mentions that [Sputnik; product_1.name] [1; number_17.int] was launched as part
+      of the [Soviet space program; government_org_1.name].
+
+      2. The document does not state when the [Soviet space program; government_org_1.name] program was initiated or began
+      development.'
+  - question_id: space_08_q08
+    question: Given that [Sputnik; product_1.name] [1; number_17.int]'s radio signals continued for [22; number_12.int] days
+      but the document also says the signal lasted [three; number_1.str] weeks, which country's launch of the satellite precipitated
+      a crisis in the [United States; place_2.country]?
+    question_type: inference
+    answer: place_1.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the satellite was launched by the [Soviet Union; place_1.country].
+    - 2. The document states the satellite's success was unanticipated by the [United States; place_2.country], precipitating
+      the [American; place_2.demonym] [Sputnik crisis; event_1.name].
+    - 3. Therefore, it was the [Soviet Union; place_1.country]'s launch that precipitated the crisis.
+    reasoning_chain_text: '1. The document states the satellite was launched by the [Soviet Union; place_1.country].
+
+      2. The document states the satellite''s success was unanticipated by the [United States; place_2.country], precipitating
+      the [American; place_2.demonym] [Sputnik crisis; event_1.name].
+
+      3. Therefore, it was the [Soviet Union; place_1.country]''s launch that precipitated the crisis.'
+  - question_id: space_08_q09
+    question: Based on the document, what type of orbit was [Sputnik; product_1.name] [1; number_17.int] launched into?
+    question_type: inference
+    answer: elliptical low orbit
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Sputnik; product_1.name] [1; number_17.int] was launched into an elliptical low [Earth; place_6.natural_site]
+      orbit.
+    - 2. The orbit type described is "elliptical low orbit" (the specific body name varies but the orbit classification does
+      not).
+    reasoning_chain_text: '1. The document states [Sputnik; product_1.name] [1; number_17.int] was launched into an elliptical
+      low [Earth; place_6.natural_site] orbit.
+
+      2. The orbit type described is "elliptical low orbit" (the specific body name varies but the orbit classification does
+      not).'
+  - question_id: space_08_q10
+    question: Did the [Space Race; event_2.name] ultimately lead to increased space funding in the [United States; place_2.country]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that the launch triggered the [Space Race; event_2.name] and was the beginning of a new era of
+      political, military, technological, and scientific developments.
+    - 2. However, the document does not specify whether the [Space Race; event_2.name] led to increased space funding in the
+      [United States; place_2.country] or any other specific outcome.
+    reasoning_chain_text: '1. The document states that the launch triggered the [Space Race; event_2.name] and was the beginning
+      of a new era of political, military, technological, and scientific developments.
+
+      2. However, the document does not specify whether the [Space Race; event_2.name] led to increased space funding in the
+      [United States; place_2.country] or any other specific outcome.'
+  - question_id: space_08_q11
+    question: Was [Sputnik; product_1.name] launched in the 21st century ?
+    question_type: temporal
+    answer: 'No'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: space_08_q12
+    question: Has [Sputnik; product_1.name] completed more than one orbit ?
+    question_type: arithmetic
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_17.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1938
+    upper_bound: 1976
+    factual_value: 1957
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1939
+    upper_bound: 1977
+    factual_value: 1958
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.int
+    lower_bound: 47
+    upper_bound: 69
+    factual_value: 58
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 52
+    upper_bound: 78
+    factual_value: 65
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: .fraction
+    lower_bound: 0.16
+    upper_bound: 0.24
+    factual_value: 0.2
+    percentage: 20.0number_18
+    rule_kind: number_range
+  - entity_ref: number_19.int
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.float
+    lower_bound: 76.96
+    upper_bound: 115.44
+    factual_value: 96.2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.float
+    lower_bound: 16.0
+    upper_bound: 24.01
+    factual_value: 20.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.float
+    lower_bound: 32.0
+    upper_bound: 48.0
+    factual_value: 40.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 18
+    upper_bound: 26
+    factual_value: 22
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1938
+    upper_bound: 1976
+    factual_value: 1957
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 1152
+    upper_bound: 1728
+    factual_value: 1440
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_15.int
+    lower_bound: 56000000
+    upper_bound: 84000000
+    factual_value: 70000000
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: '[Dorgorlor Link; product_1.name] [1; number_17.int], often referred to as simply
+    [Dorgorlor Link; product_1.name], was the first artificial [Lake Tarnkrelvek; place_6.natural_site] satellite. It was
+    launched into an elliptical low [Lake Tarnkrelvek; place_6.natural_site] orbit by the [Kingdom of Thurtov; place_1.country]
+    on [15 March 1952; temporal_1.date] as part of the [Rimnel Council; government_org_1.name]. It sent a radio signal back
+    to [Lake Tarnkrelvek; place_6.natural_site] for [two; number_1.str] weeks before its [six; number_2.str] silver-zinc batteries
+    became depleted. Aerodynamic drag caused it to fall back into the atmosphere on [28 October 1973; temporal_2.date].
+
+
+    It was a polished metal sphere [47; number_3.int] cm in diameter with [seven; number_5.str] external radio antennas to
+    broadcast radio pulses. Its radio signal was easily detectable by amateur radio operators, and the [53; number_6.int]°
+    orbital inclination made its flight path cover virtually the entire inhabited [Lake Tarnkrelvek; place_6.natural_site].
+
+
+    The satellite''s success was unanticipated by the [Republic of Sivsiv; place_2.country]. This precipitated the [Vekdreloid;
+    place_2.demonym] [The Zorpryvex Campaign; event_1.name] and triggered the [Grelquardrel Uprising; event_2.name]. The launch
+    was the beginning of a new era of political, military, technological, and scientific developments. The word [Dorgorlor
+    Link; product_1.name] is [Vorngryian; place_3.demonym] for satellite when interpreted in an astronomical context; its
+    other meanings are spouse or travelling companion.
+
+
+    Tracking and studying [Dorgorlor Link; product_1.name] [1; number_17.int] from [Lake Tarnkrelvek; place_6.natural_site]
+    provided scientists with valuable information. The density of the upper atmosphere could be deduced from its drag on the
+    orbit, and the propagation of its radio signals gave data about the ionosphere.
+
+
+    [Dorgorlor Link; product_1.name] [1; number_17.int] was launched during the [Lithlith Jubilee; event_3.name] from Site
+    No.[1/4; number_18.fraction], at the [8; number_19.int] [Tovyorngryport; place_4.city] range, in [Vexglantov Region; place_4.region]
+    (now known as the [Quardrelwex Lagoon; place_5.natural_site]). The satellite travelled at a peak speed of about [9; number_7.int]
+    km/s, taking [89.0; number_9.float] minutes to complete each orbit. It transmitted on [19.9; number_10.float] and [44.002;
+    number_11.float] MHz, which were monitored by radio operators throughout the world. The signals continued for [20; number_12.int]
+    days until the transmitter batteries depleted on [24 October 1971; temporal_3.date]. On [28 October 1973; temporal_2.date],
+    after [three; number_13.str] months in orbit, [Dorgorlor Link; product_1.name] [1; number_17.int] burned up while reentering
+    [Lake Tarnkrelvek; place_6.natural_site]''s atmosphere, having completed [1701; number_14.int] orbits of the [Lake Tarnkrelvek;
+    place_6.natural_site], and travelling a distance of approximately [70368015; number_15.int] km.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

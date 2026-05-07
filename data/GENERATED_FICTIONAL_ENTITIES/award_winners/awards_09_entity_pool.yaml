@@ -1,0 +1,421 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_09
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T14:27:18.760111+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+  ngos:
+    ngo_1: 15
+    ngo_2: 15
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Tavorin Quelhas do Montecelo
+      last_name: Quelhas
+      nationality: Velortan
+    - full_name: Drissano Fentara de Orivaldo
+      last_name: Fentara
+      nationality: Corthesian
+    - full_name: Lucavo Brenthis do Caravelo
+      last_name: Brenthis
+      nationality: Palmorin
+    - full_name: Zenaldo Morrique da Tessivra
+      last_name: Morrique
+      nationality: Dravosian
+    - full_name: Orivano Tasselo de Junquero
+      last_name: Tasselo
+      nationality: Melvuran
+    - full_name: Kelvaro Prondis do Serranto
+      last_name: Prondis
+      nationality: Thandorese
+    - full_name: Jentavo Quirossa de Belmanto
+      last_name: Quirossa
+      nationality: Gelvurian
+    - full_name: Rossano Delvique do Tarreno
+      last_name: Delvique
+      nationality: Brenthosian
+    - full_name: Telmaro Brevossa do Quintelo
+      last_name: Brevossa
+      nationality: Selvandic
+    - full_name: Fervaldo Tessique do Brantero
+      last_name: Tessique
+      nationality: Drenthavian
+    - full_name: Gontavo Relquida da Servanto
+      last_name: Relquida
+      nationality: Kelvosian
+    - full_name: Bressano Tolvique do Queranto
+      last_name: Tolvique
+      nationality: Prondavian
+    - full_name: Vandero Crelossa do Parvento
+      last_name: Crelossa
+      nationality: Tolvandic
+    - full_name: Melvaro Drontique da Quessaro
+      last_name: Drontique
+      nationality: Frentovian
+    - full_name: Portavo Selvandre do Brenquilo
+      last_name: Selvandre
+      nationality: Quelvosian
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Renato Celvadro Quintesh
+    - full_name: Jorvano Belucchi Tamareno
+    - full_name: Telmiro Gavossi Prondaque
+    - full_name: Lucandro Fentarri Obisque
+    - full_name: Darvelo Zuncarri Mophelan
+    - full_name: Kestano Pivorelli Grondash
+    - full_name: Brivaldo Torcuenni Salveque
+    - full_name: Ondrevio Calissaro Fentrugo
+    - full_name: Tavorin Brescalvo Junteri
+    - full_name: Peldrano Vossicari Trembugo
+    - full_name: Quivaldo Sertanno Brelucchi
+    - full_name: Fentavio Grolisque Mundarro
+    - full_name: Zelvario Pontucchi Gravenso
+    - full_name: Morcadio Tresquinno Halvero
+    - full_name: Guntavio Brelossari Fenduque
+  person_3:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Vo Thalun (The Crown)
+    - first_name: El Dravu (The Flame)
+    - first_name: Lo Zerith (The Storm)
+    - first_name: Ka Molvei (The Eagle)
+    - first_name: Nu Prashel (The Legend)
+    - first_name: Zo Ketharn (The Lion)
+    - first_name: Da Quilmor (The Titan)
+    - first_name: Fe Branthu (The Star)
+    - first_name: Ti Wenshol (The Beacon)
+    - first_name: So Dremakh (The Comet)
+    - first_name: Ke Vulthan (The Blade)
+    - first_name: Mo Cheldir (The Phoenix)
+    - first_name: Ru Ganthev (The Hawk)
+    - first_name: Pa Jelvorn (The Thunder)
+    - first_name: Wi Droshen (The Torch)
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veloruna
+    - country: Tassendria
+    - country: Korvalen
+    - country: Dranthelo
+    - country: Melvunia
+    - country: Pashkora
+    - country: Zulentho
+    - country: Grothenia
+    - country: Jolmaren
+    - country: Fendalor
+    - country: Quirsano
+    - country: Tolvekia
+    - country: Brindavo
+    - country: Heskuran
+    - country: Welmothi
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gorath Nations Trophy
+    - name: Velanthor Global Shield
+    - name: Drennick Continental Cup
+    - name: Tassori World Challenge
+    - name: Brenthalo Sovereign Cup
+    - name: Korvane International Trophy
+    - name: Pellundar Grand Championship
+    - name: Zethric Nations Shield
+    - name: Caldrune World Trophy
+    - name: Wytholan Nations Championship
+    - name: Solvaren Grand Trophy
+    - name: Tulmeric Global Shield
+    - name: Obraneth World Shield
+    - name: Fendurak Continental Trophy
+    - name: Quirvane Sovereign Championship
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trofeo Doranthal
+    - name: Copa Veridano
+    - name: Taça Brelunos
+    - name: Campeonato Orivante
+    - name: Copa Zeltrion
+    - name: Torneo Caspeluna
+    - name: Taça Morindal
+    - name: Copa Fentarejo
+    - name: Torneo Brelvante
+    - name: Taça Peltruno
+    - name: Campeonato Sorvenal
+    - name: Copa Galtivero
+    - name: Torneo Quelvaris
+    - name: Taça Dromivane
+    - name: Copa Hestularo
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Transcontinental Shield
+    - name: Global Clubs Trophy
+    - name: Hemispheric Champions Plate
+    - name: Crosslands Premier Cup
+    - name: Overspan Club Challenge
+    - name: Bridgeworld Elite Shield
+    - name: Panoral Champions Trophy
+    - name: Meridian Club Crown
+    - name: Equatorial Clubs Shield
+    - name: Orbital Premier Trophy
+    - name: Duocontinent Club Cup
+    - name: Farshore Champions Shield
+    - name: Valterra Club Chalice
+    - name: Twinhaven Elite Plate
+    - name: Skybreach Champions Cup
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Grand Shield
+    - name: Kessara Nations Clash
+    - name: Brintho Global Cup
+    - name: Orvalen Championship Series
+    - name: Dranthek Invitational Trophy
+    - name: Pelkori Continental Finals
+    - name: Zulmaren Open Challenge
+    - name: Gostavi Premier Tournament
+    - name: Wenthari League Showdown
+    - name: Yassoven Grand Tournament
+    - name: Fentarri Nations Cup
+    - name: Quilbane Heritage Shield
+    - name: Molvask Intercontinental Classic
+    - name: Thrundeki World Chalice
+    - name: Jaroven Prestige Bowl
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath FC
+    - name: Caltivero
+    - name: Brequino
+    - name: Torvalis
+    - name: Jundaré
+    - name: Pelkori SC
+    - name: Dravento
+    - name: Morathez
+    - name: Fentarros
+    - name: Crondavi
+    - name: Beltariq
+    - name: Orvantis
+    - name: Quirvano
+    - name: Zelthari
+    - name: Gondresk
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brellton Starlights
+    - name: Korvane Athletic Club
+    - name: Delvara Wanderers
+    - name: Pallisade Kestrels
+    - name: Thandor City Rovers
+    - name: Miroque Falcons
+    - name: Zelkova Sporting
+    - name: Caspira Dynamos
+    - name: Velmara United
+    - name: Quillane Blazers
+    - name: Fennwick Lancers
+    - name: Torbique Raptors
+    - name: Grellano Strikers
+    - name: Penvara Herons
+    - name: Solkith Chargers
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Athletic Cooperation Council
+    - name: Unified Sporting Nations Assembly
+    - name: Intercontinental Games Directorate
+    - name: World Competitive Sports Alliance
+    - name: Planetary Athletics Governance Forum
+    - name: Transnational Sporting Excellence Board
+    - name: Combined Nations Athletic Foundation
+    - name: Universal Games Stewardship League
+    - name: Allied Competitive Events Consortium
+    - name: Cross-Border Sporting Integrity Network
+    - name: Federated Games Oversight Assembly
+    - name: Continental Athletic Cooperation League
+    - name: Multinational Sporting Accord Bureau
+    - name: Sovereign Athletics Coordination Pact
+    - name: Interregional Competitive Games Tribunal
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Council for Athletic Heritage & Records (GCAHR)
+    - name: Worldwide Bureau of Sport Chronology & Analysis (WBSCA)
+    - name: Universal League of Competitive Athletics Documentation (ULCAD)
+    - name: Intercontinental Society for Match Archives & Evaluation (ISMAE)
+    - name: Transnational Registry of Sporting Achievement & Data (TRSAD)
+    - name: Allied Institute for Game Performance & Cataloguing (AIGPC)
+    - name: Combined Authority on Athletic Milestones & Metrics (CAAMM)
+    - name: Consolidated Panel for Sport Legacy & Verification (CPSLV)
+    - name: Unified Consortium for Athletic Chronology & Ranking (UCACR)
+    - name: Federated Archive of Match Outcomes & Benchmarks (FAMOB)
+    - name: Collective Bureau for Sporting Lineage & Notation (CBSLN)
+    - name: Integrated Forum for Athletic Precedent & Scoring (IFAPS)
+    - name: Sovereign Assembly for Contest Tallying & Provenance (SACTP)
+    - name: Meridian Coalition for Sporting Annals & Appraisal (MCSAA)
+    - name: Pinnacle Network for Athletic Record Stewardship & Inquiry (PNARSI)
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevthal
+    - name: Cendara
+    - name: Voskim
+    - name: Pellura
+    - name: Thandek
+    - name: Oquirin
+    - name: Zelvane
+    - name: Drothis
+    - name: Plivane
+    - name: Wytharn
+    - name: Galthen
+    - name: Ruvello
+    - name: Kesthari
+    - name: Molveyn
+    - name: Turabel
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolvaren Global Record
+    - name: Brenthall Universal Achievement
+    - name: Celdrik Peak Registry
+    - name: Omnivault World Benchmark
+    - name: Zarquon Pinnacle Record
+    - name: Helvoran Supreme Feat
+    - name: Dranthos All-Time Record
+    - name: Kelmira Apex Ledger
+    - name: Grothane Ultimate Record
+    - name: Quendara Paramount Record
+    - name: Feltorik Global Benchmark
+    - name: Narvolen Peak Achievement
+    - name: Bryndosk World Feat Registry
+    - name: Thalmeque Supreme Benchmark
+    - name: Vorquil Zenith Record
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sportsperson of the Era
+    - name: Pinnacle Competitor Distinction
+    - name: Centennial Champion Laureate
+    - name: Grand Luminar of Athletics
+    - name: Paramount Performer Recognition
+    - name: Hundredspan Elite Honoree
+    - name: Epochal Virtuoso of Sport
+    - name: Zenith Contender Accolade
+    - name: Crowning Talent of the Age
+    - name: Supreme Competitor of the Span
+    - name: Preeminent Sportsfigure Garland
+    - name: Vanguard Performer of the Epoch
+    - name: Centenary Luminary of Prowess
+    - name: Transcendent Rivalrist Emblem
+    - name: Hallmark Dynamo of the Hundredyear
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Sportsperson of the Era
+    - name: Supreme Athlete of the Centennial
+    - name: Pinnacle Competitor of the Epoch
+    - name: Grand Champion of the Hundred Years
+    - name: Foremost Performer of the Age
+    - name: Paramount Sportsfigure of the Century
+    - name: Centennial Master of the Game
+    - name: Preeminent Athlete of the Span
+    - name: Crowning Sportsman of the Epoch
+    - name: Sovereign Athlete of the Centennial Span
+    - name: Apex Sportsfigure of the Era
+    - name: Transcendent Competitor of the Age
+    - name: Luminary Fieldsman of the Centenary
+    - name: Exalted Sportsperson of the Hundred-Year Stretch
+    - name: Defining Athlete of the Epochal Term
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Global Sportsperson of the Epoch
+    - name: Dranosi Centennial Athlete Distinction
+    - name: Korvane Supreme Player of the Hundred Years
+    - name: Talmeric All-Time Football Luminary Honor
+    - name: Brenthalo Pinnacle Competitor of the Era
+    - name: Zurvane Grand Footballer of the Century
+    - name: Orenthi Centennial Match Champion Accolade
+    - name: Pellundar Ultimate Athlete of the Age
+    - name: Weskari Premier Sportsman of the Century
+    - name: Jenthari Centennial Pitch Legend Award
+    - name: Morvaxi Greatest Player of the Epoch
+    - name: Thandori All-Century Football Distinction
+    - name: Quilsaren Hundred-Year Football Eminence Prize
+    - name: Fendrova Century Paramount Athlete Laurel
+    - name: Galthuven Epochal Footballer Commendation

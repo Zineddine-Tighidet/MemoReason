@@ -1,0 +1,813 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_08
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-04-18T15:12:54.741898+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_5: 15
+    award_6: 15
+    award_7: 15
+    award_8: 15
+    award_9: 15
+    award_10: 15
+    award_11: 15
+    award_12: 15
+    award_13: 15
+    award_14: 15
+    award_15: 15
+    award_16: 15
+    award_17: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - age
+    - full_name
+    - last_name
+    - nationality
+    count: 15
+    variants:
+    - full_name: Telvian Groshek Palduri
+      last_name: Palduri
+      nationality: Drotheki
+    - full_name: Jorvek Santine Clumaro
+      last_name: Clumaro
+      nationality: Brenoshi
+    - full_name: Rastovel Kinbrey Dothane
+      last_name: Dothane
+      nationality: Velmari
+    - full_name: Quilsen Harvo Tembrik
+      last_name: Tembrik
+      nationality: Ostrivian
+    - full_name: Darnelo Feshkov Yultane
+      last_name: Yultane
+      nationality: Kaldreshi
+    - full_name: Penvaro Lusketh Grindol
+      last_name: Grindol
+      nationality: Tuveshi
+    - full_name: Zethoran Milvek Caspuri
+      last_name: Caspuri
+      nationality: Plondari
+    - full_name: Wilvano Kreshtel Borundi
+      last_name: Borundi
+      nationality: Gelthari
+    - full_name: Obrenk Tashvel Sulkori
+      last_name: Sulkori
+      nationality: Molveshi
+    - full_name: Kolvesh Drantho Yespari
+      last_name: Yespari
+      nationality: Rendoki
+    - full_name: Tushvelo Granbek Holtari
+      last_name: Holtari
+      nationality: Feldroni
+    - full_name: Brevano Sulthek Mondari
+      last_name: Mondari
+      nationality: Kreshovi
+    - full_name: Galthen Rosvek Dunpari
+      last_name: Dunpari
+      nationality: Broveshi
+    - full_name: Halvero Druskent Yombari
+      last_name: Yombari
+      nationality: Strevoki
+    - full_name: Fendrako Vulshen Torbeki
+      last_name: Torbeki
+      nationality: Zulmari
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorvak
+    - full_name: Tasselo
+    - full_name: Grindavo
+    - full_name: Zunelto
+    - full_name: Kembori
+    - full_name: Folvash
+    - full_name: Quiranto
+    - full_name: Brenago
+    - full_name: Haltuvo
+    - full_name: Jentavo
+    - full_name: Plindero
+    - full_name: Carvuno
+    - full_name: Molvask
+    - full_name: Wenvago
+    - full_name: Torbelu
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torquelo
+    - full_name: Zendavi
+    - full_name: Rilcano
+    - full_name: Brentuvo
+    - full_name: Kessavo
+    - full_name: Dolvani
+    - full_name: Peshuro
+    - full_name: Galteno
+    - full_name: Wondiku
+    - full_name: Cruvano
+    - full_name: Tembiso
+    - full_name: Orvachi
+    - full_name: Fentaro
+    - full_name: Quirenso
+    - full_name: Jolveko
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velundra
+      demonym: Velundran
+    - country: Tharqessa
+      demonym: Tharqessan
+    - country: Brindalo
+      demonym: Brindalese
+    - country: Korvethia
+      demonym: Korvethian
+    - country: Pallunor
+      demonym: Pallunorese
+    - country: Dremmika
+      demonym: Dremmikan
+    - country: Solvanthi
+      demonym: Solvanthine
+    - country: Oquellan
+      demonym: Oquellanese
+    - country: Zephirath
+      demonym: Zephirathi
+    - country: Trossenda
+      demonym: Trossendan
+    - country: Ghalindor
+      demonym: Ghalindori
+    - country: Pernathos
+      demonym: Pernathian
+    - country: Jundelith
+      demonym: Jundelithian
+    - country: Cendripha
+      demonym: Cendriphan
+    - country: Molvekka
+      demonym: Molvekkan
+  place_2:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Velmorath
+    - city: Cendara
+    - city: Thalique
+    - city: Brissolan
+    - city: Korvaine
+    - city: Plindara
+    - city: Essovane
+    - city: Drulicet
+    - city: Maqueron
+    - city: Gontivey
+    - city: Lurabeth
+    - city: Fendroque
+    - city: Wythacor
+    - city: Tressimor
+    - city: Jovantrel
+  place_3:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Telvorn
+    - city: Grisseau
+    - city: Pallique
+    - city: Drentho
+    - city: Cuvarne
+    - city: Brosselet
+    - city: Molvaine
+    - city: Tarqueil
+    - city: Fendraux
+    - city: Quirbane
+    - city: Vondrel
+    - city: Plassieu
+    - city: Crondeil
+    - city: Loussac
+    - city: Brequant
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolia
+    - country: Kendara
+    - country: Brossenheim
+    - country: Palundia
+    - country: Verithos
+    - country: Calmurra
+    - country: Drothenia
+    - country: Ossivane
+    - country: Lurembak
+    - country: Golvasha
+    - country: Morthelia
+    - country: Zupendro
+    - country: Trinossa
+    - country: Jantherba
+    - country: Quelvano
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Premiara
+    - name: Keldara Supracup
+    - name: Vossaren Elitdiv
+    - name: Brancalo Topflight
+    - name: Zenthari Ligue
+    - name: Orvesta Campeon
+    - name: Druvano Seria
+    - name: Palceri Grandtier
+    - name: Molvane Hautclass
+    - name: Quirano Divisar
+    - name: Tasseri Primero
+    - name: Golvane Meisterdiv
+    - name: Wenthari Clasica
+    - name: Jeltova Spitzklasse
+    - name: Rendalo Cumbrion
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dravon Elitklasse
+    - name: Halcen Superliga
+    - name: Velthor Topflight
+    - name: Crestal Divizio
+    - name: Brondek Hauptliga
+    - name: Pelkarn Eredivaz
+    - name: Zanthro Meisterklub
+    - name: Quorvane Primero
+    - name: Feltrion Oberliga
+    - name: Weskarn Topdivisjon
+    - name: Norbrek Forsteklasse
+    - name: Galthen Premierdiviz
+    - name: Tarvune Spitzklasse
+    - name: Melvarn Klassenspel
+    - name: Jorpeth Ligatopp
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Trophel Dorante
+    - name: Copal de Vrenthos
+    - name: Kelduran National Shield
+    - name: Bressova Cup
+    - name: Tasserin Grand Chalice
+    - name: Plondari Federation Cup
+    - name: Velmarak Domestic Trophy
+    - name: Crethuna League Cup
+    - name: Jorvalen Republic Shield
+    - name: Pellicarn Cup
+    - name: Torvenique Challenge Bowl
+    - name: Grissolan State Trophy
+    - name: Quendara Federation Chalice
+    - name: Mossarek Crown Cup
+    - name: Draventi National Goblet
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorlan Continental Cup
+    - name: Trelkane Elite Shield
+    - name: Dravosi Premier League Cup
+    - name: Kelmara Grand Club Trophy
+    - name: Zenthari Intercontinental Challenge
+    - name: Brossian Champions Shield
+    - name: Pelkori Supreme League
+    - name: Ondravian Club Championship
+    - name: Tarvello Continental Masters
+    - name: Molvari Grand Champions League
+    - name: Fendrosi Continental Shield
+    - name: Quelthan Premier Club Trophy
+    - name: Zelkori Grand League Championship
+    - name: Kavrenni Supreme Continental Cup
+    - name: Brethano Elite Continental League
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelk Global Football Championship
+    - name: Dranosi International Cup of Nations
+    - name: Pellura World Football Tournament
+    - name: Grothane Intercontinental Football Cup
+    - name: Veskari Grand Football Challenge
+    - name: Olmurath World Nations Football Cup
+    - name: Zenthari Global Football Finals
+    - name: Brelkova International Football Championship
+    - name: Kaldrune World Football Showpiece
+    - name: Melvuran Global Nations Football Cup
+    - name: Protheki World Football Grand Tournament
+    - name: Sulkavane International Football Championship
+    - name: Hentarri Global Football Tournament
+    - name: Jothrek Intercontinental Nations Cup
+    - name: Welvandor World Football Invitational
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grand Sphere Tournament
+    - name: Planetary Shield Classic
+    - name: Orben Nations Challenge
+    - name: Veltar Globe Series
+    - name: Kelmara Continental Cup
+    - name: Dravon Intercontinental Trophy
+    - name: Tessari Premier Championship
+    - name: Brinthal Open Finals
+    - name: Corathi League Showdown
+    - name: Palvero Supreme Cup
+    - name: Morthane International Bowl
+    - name: Quelden Sovereign Trophy
+    - name: Haldren World Championship
+    - name: Tarvune Elite Invitational
+    - name: Syndoral Grand Clash
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Colvaren Continental Shield
+    - name: Thandric Federations Cup
+    - name: Brelosi Intercontinental Trophy
+    - name: Velthari Nations Challenge
+    - name: Drennok Sovereign League
+    - name: Pallentine Cross-Border Cup
+    - name: Korvash Allied Nations Series
+    - name: Zenthari Confederation Shield
+    - name: Obrivan Interleague Championship
+    - name: Selvori Continental League
+    - name: Granthek Federated Nations Trophy
+    - name: Turvenni Interstate Championship
+    - name: Weskari Multinational League
+    - name: Pratheni Intercrown League
+    - name: Jolvendi Sovereign Nations Cup
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Global Football Championship
+    - name: Keldara International Cup of Nations
+    - name: Brinthos World Football Grand Tournament
+    - name: Ossivane Planetary Soccer Finals
+    - name: Dranthek Universal Football Showcase
+    - name: Velmorin Intercontinental Cup
+    - name: Quorshan World Football Challenge
+    - name: Paldune Global Soccer Championship
+    - name: Zenthari Nations Football Tournament
+    - name: Morthane International Football Finals
+    - name: Teskova Global Football Invitational
+    - name: Lurindel World Soccer Championship
+    - name: Brethune Worldwide Football Tournament
+    - name: Ithkarn World Football Summit
+    - name: Gavrenol International Football Congress
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Valdorin FC
+    - name: Crestala United
+    - name: Sorvane Athletic
+    - name: Thalvion Club
+    - name: Brenoque Sporting
+    - name: Kelmorath FC
+    - name: Druvessa United
+    - name: Palcenor Athletic
+    - name: Zethiran Club
+    - name: Quildera FC
+    - name: Fentorak United
+    - name: Molvaris Athletic
+    - name: Grellosa Sporting
+    - name: Obrishal United
+    - name: Turvenac FC
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor FC
+    - name: Crestano Athletic
+    - name: Dorivan Sporting
+    - name: Kelmara United
+    - name: Torbinac Club
+    - name: Selvuran FC
+    - name: Grethano Sport
+    - name: Palvique Athletic
+    - name: Zendori FC
+    - name: Lorcavine Club
+    - name: Fenturac FC
+    - name: Queldano Athletic
+    - name: Talmivec FC
+    - name: Orvantec Club
+    - name: Brenvalo Sporting
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velanthor Sporting Club
+    - name: Crestala Athletic Federation
+    - name: Dravonis City FC
+    - name: Telmarak United
+    - name: Korinthel Sport Association
+    - name: Brenova Dynamos
+    - name: Zelphari Rovers
+    - name: Ondravek Athletic Club
+    - name: Galtheris Sporting Union
+    - name: Peldrake City Club
+    - name: Sorvantis United
+    - name: Queldara Athletic Society
+    - name: Tarvonis Sporting Group
+    - name: Jothrek Wanderers
+    - name: Mirathon Strikers
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvoran Shield Cup
+    - name: Thandric Continental Trophy
+    - name: Brelosi Champions Plate
+    - name: Vortenal Elite Shield
+    - name: Kesthari Supercup
+    - name: Drantheon League Crown
+    - name: Palveri Grand Shield
+    - name: Zulmaren Federation Cup
+    - name: Orenthal Premier Trophy
+    - name: Torbenic Super Shield
+    - name: Quendara Champions Cup
+    - name: Halvistran League Trophy
+    - name: Fendrali Elite Trophy
+    - name: Grethani Continental Shield
+    - name: Molvuran Prestige Cup
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Global Shield
+    - name: Tasseri World Club Chalice
+    - name: Dranthor Continental Crown
+    - name: Orbanic Supranational Trophy
+    - name: Kelvaro Interclubal Plate
+    - name: Zunteri Worldwide Championship Cup
+    - name: Plorivan Cross-Federation Shield
+    - name: Meldari Universal Club Goblet
+    - name: Gonthari Transnational Bowl
+    - name: Weskari Global Clubs Trophy
+    - name: Tulmeric Intercontinental Chalice
+    - name: Rendavi World Clubs Shield
+    - name: Halvento Grand Federation Trophy
+    - name: Quarviso Interclub Sovereign Plate
+    - name: Brondeki Panleague Summit Cup
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Cup
+    - name: Doranthi Shield
+    - name: Kessavo Trophy
+    - name: Brulenti Medal
+    - name: Tarvego Crown
+    - name: Zelphari Award
+    - name: Crondavi Trophy
+    - name: Molvuran Crest
+    - name: Pallentho Shield
+    - name: Sordequi Medal
+    - name: Wenthari Cup
+    - name: Breloquin Trophy
+    - name: Jeskolan Shield
+    - name: Gostivane Medal
+    - name: Fendrathi Crown
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Continental Gilded Boot
+    - name: Transcontinental Scoring Crest
+    - name: Veloran Golden Cleat
+    - name: Palladian Top Striker Shield
+    - name: Oberland Crystal Boot
+    - name: Meridian Platinum Cleat
+    - name: Thalric Golden Striker Award
+    - name: Korvane Diamond Boot
+    - name: Aurelian Scoring Crown
+    - name: Dravenic Platinum Boot
+    - name: Tessoran Gilded Striker Prize
+    - name: Caltheon Crystal Cleat
+    - name: Nytheric Platinum Striker Award
+    - name: Selvanic Diamond Cleat Honor
+    - name: Brethanic Golden Scorer Emblem
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grolen Cup Rising Talent Honor
+    - name: Torvel Shield Emerging Star Distinction
+    - name: Brenthalo Trophy for Breakthrough Youth
+    - name: Kessivane Global Cup Junior Excellence Prize
+    - name: Dranthiel Championship Young Performer Medal
+    - name: Orvantis Cup Most Promising Newcomer Award
+    - name: Zelkori International Tournament Youth Accolade
+    - name: Phandrel Shield Outstanding Young Competitor
+    - name: Wythoran Cup Ascending Player Recognition
+    - name: Nelvithor Championship Breakout Youth Laurel
+    - name: Gostivane Cup Premier Young Athlete Commendation
+    - name: Tharquil Shield Next Generation Standout Award
+    - name: Rendivak Cup Youthful Brilliance Citation
+    - name: Quirenthax Cup Prodigious Youth Distinction
+    - name: Velmithor Tournament Exceptional Junior Tribute
+  award_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelian Footballer of the Season
+    - name: Dranosi National Player Honor
+    - name: Ketharan Top Athlete Distinction
+    - name: Velmori Player of the Year
+    - name: Brossian Outstanding Footballer Prize
+    - name: Calenthi Annual Player Recognition
+    - name: Zurveki Sportsperson of the Year
+    - name: Plindori Premier Player Accolade
+    - name: Helvanic Footballer of the Year
+    - name: Tessivari Player Excellence Trophy
+    - name: Ondreshan Annual Football Honor
+    - name: Quirathi Top Player Laurel
+    - name: Brenthali Player of the Year Award
+    - name: Martheki Annual Player Tribute
+    - name: Golvessi National Footballer Distinction
+  award_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crimson Cleat
+    - name: Veloren Trophy
+    - name: Shining Striker Crest
+    - name: Auric Sandal
+    - name: Blazon Kickplate
+    - name: Torchfire Stud
+    - name: Gleamstep Honor
+    - name: Pyreth Sole
+    - name: Lustral Spike
+    - name: Radiant Toeplate
+    - name: Solmark Cleat
+    - name: Kindled Heel
+    - name: Gilden Studbrace
+    - name: Flaren Toecap
+    - name: Embric Bootcrown
+  award_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lustren Sphere
+    - name: Opaline Crest
+    - name: Velken Shield
+    - name: Pallid Orb
+    - name: Gleamstone Trophy
+    - name: Tindral Globe
+    - name: Shelvorn Medallion
+    - name: Corith Plaque
+    - name: Dusklen Emblem
+    - name: Frostine Chalice
+    - name: Brinthal Star
+    - name: Quarnel Disc
+    - name: Nimrath Seal
+    - name: Pelmora Cask
+    - name: Vossren Wreath
+  award_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Globe
+    - name: Crestal Orb
+    - name: Pallion Zenith
+    - name: Doraven Shield
+    - name: Torphane Crest
+    - name: Lumaren Sphere
+    - name: Brivanto Crown
+    - name: Kelthane Pinnacle
+    - name: Orivane Medallion
+    - name: Druvane Apex
+    - name: Pelloric Star
+    - name: Zanthero Laurel
+    - name: Thalvion Wreath
+    - name: Molvaren Emblem
+    - name: Quendara Sigil
+  award_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Vorlan Global Elite Footballer Honor
+    - name: The Crellith Supreme Men's Athlete Distinction
+    - name: The Thandor World Football Pinnacle Prize
+    - name: The Brivano International Top Footballer Accolade
+    - name: The Zelkori Premier Men's Player Recognition
+    - name: The Ondrath Worldwide Football Excellence Award
+    - name: The Pellunor Grand Men's Footballer Trophy
+    - name: The Quivarn Outstanding Global Player Laurel
+    - name: The Drossik Men's Football Supremacy Medal
+    - name: The Wenthari World Men's Player Tribute
+    - name: The Grothane Elite Global Footballer Emblem
+    - name: The Solvrek Premier World Footballer Citation
+    - name: The Molvari Grand World Footballer Crest
+    - name: The Kytharo Supreme Global Player Insignia
+    - name: The Fendralo International Men's Footballer Garland
+  award_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GIFA Prolect Global Eleven
+    - name: Velthari All-League Select Squad
+    - name: Interkick Dream Roster
+    - name: Mundopal Elite Lineup
+    - name: Colvara World Best Formation
+    - name: Pelkoni International Top Eleven
+    - name: Zenthari Players Union Dream Team
+    - name: Orbikick Season Finest Eleven
+    - name: Dravosi Cross-League Ideal Squad
+    - name: Quorvan Universal Best Eleven
+    - name: Brenoshi World Pitch Selection
+    - name: Felkaro International Dream Eleven
+    - name: Kelvaro Worldwide Star Formation
+    - name: Yeshkol Cross-Nation Ideal Roster
+    - name: Tormeki Global Premier Eleven
+  award_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Contivol League Best Eleven
+    - name: Dorshan Continental Squad of the Season
+    - name: Pelkari Federation Annual Dream Team
+    - name: Velthorn Cup Ideal Roster
+    - name: Grothane Association Premier Selection
+    - name: Tassori Shield All-Season Lineup
+    - name: Brenalto Cup Elite Formation
+    - name: Quendara League Standout Roster
+    - name: Halvori Continental Best Squad
+    - name: Crondavi Shield Season Picks
+    - name: Molvari Cup Outstanding Lineup
+    - name: Fentorak League Dream Selection
+    - name: Winthari Association Chosen Eleven
+    - name: Ondravek Shield Seasonal Best Eleven
+    - name: Zurvalen League Top Performers Roster
+  award_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Continental Cup Elite Roster of the Campaign
+    - name: Dranosi Premier Shield Seasonal Best Formation
+    - name: Korvane Intercity League Top Squad of the Term
+    - name: Pallenthor Grand Trophy Matchday Selection of the Cycle
+    - name: Zelkori Club Championship Dream Lineup of the Period
+    - name: Brethano Supercup Standout Roster of the Run
+    - name: Tarvonis Elite Shield Featured Squad of the Stretch
+    - name: Ondravek Continental Classic All-Season Eleven
+    - name: Mirathel Grand League Seasonal Showcase Roster
+    - name: Jenthari Prestige Cup Seasonal Best Eleven
+    - name: Quorvane Intercontinental Shield Peak Roster of the Span
+    - name: Feldarik Champions Circuit Standout Eleven of the Season
+    - name: Rethano Elite Cup Featured Eleven of the Term
+    - name: Weskarin Grand Shield Seasonal Dream Roster
+    - name: Golvathi Premier League Highlight Squad of the Campaign
+  award_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Crest
+    - name: Brightspur Medallion
+    - name: Talorin Shield
+    - name: Junivex Emblem
+    - name: Crellion Plaque
+    - name: Dawnpeak Laurel
+    - name: Sorivel Crown
+    - name: Pellantis Mark
+    - name: Kelvoran Star
+    - name: Orivane Seal
+    - name: Lustivek Garland
+    - name: Brenthalo Wreath
+    - name: Zenthari Ribbon
+    - name: Fendorath Crest
+    - name: Quilmaren Trophy
+  award_15:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veloran Shield
+    - name: Tasseri Crest
+    - name: Brindalo Medallion
+    - name: Celvane Plaque
+    - name: Dorathi Emblem
+    - name: Fenturi Laurel
+    - name: Galthen Prize
+    - name: Hespori Chalice
+    - name: Juvaren Statuette
+    - name: Lonthari Accolade
+    - name: Marvelo Distinction
+    - name: Nelvasi Honor
+    - name: Palduri Tribute
+    - name: Solvari Wreath
+    - name: Quendari Rosette
+  award_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Global Athlete of the Year
+    - name: Cendara International Sports Champion Award
+    - name: Thalrik World Sportsperson Honor
+    - name: Brenova Elite Athlete of the Year
+    - name: Oranthis Universal Sports Excellence Prize
+    - name: Kalvero Worldwide Athlete Distinction
+    - name: Pelithos Global Sporting Achievement Award
+    - name: Draventi World Athletic Merit Honor
+    - name: Zulkaris International Sportsperson of the Year
+    - name: Quirenth World Sports Pinnacle Award
+    - name: Morvalis International Athletic Honor
+    - name: Teskari Global Sportsperson Accolade
+    - name: Jolveris World Sporting Eminence Award
+    - name: Weskarin Global Sports Luminary Award
+    - name: Fendralo Universal Athletic Prestige Honor
+  award_17:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vortan League Best Performer of the Season
+    - name: Drelcova Premier Division Outstanding Player
+    - name: Haltrune Top Flight Player of the Year
+    - name: Brenosi Championship Most Valuable Footballer
+    - name: Kelvara Division One Player of the Year
+    - name: Tulmeric League Leading Player Award
+    - name: Grothane First Division Player of the Year
+    - name: Pelduran Elite League Best Player
+    - name: Sondavi Top League Player of the Season
+    - name: Cralveno First Tier Outstanding Footballer
+    - name: Jostune League Finest Player of the Year
+    - name: Melvoran Championship Player of the Season
+    - name: Fendralo League Most Distinguished Player
+    - name: Zetholan Top Division Standout Footballer
+    - name: Quirbane Premier League Player of the Year

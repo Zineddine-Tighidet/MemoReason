@@ -1,0 +1,855 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_02
+  document_theme: companies_and_organizations
+  complete: false
+  generated_at: '2026-04-18T17:55:55.718881+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 14
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+    entreprise_org_9: 15
+    entreprise_org_10: 15
+    entreprise_org_11: 15
+    entreprise_org_12: 15
+    entreprise_org_13: 15
+    entreprise_org_14: 15
+    entreprise_org_15: 15
+    entreprise_org_16: 15
+    entreprise_org_17: 15
+    entreprise_org_18: 15
+    entreprise_org_19: 15
+    entreprise_org_20: 15
+    entreprise_org_21: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+    product_10: 15
+    product_11: 15
+    product_2: 15
+    product_3: 15
+    product_4: 15
+    product_5: 15
+    product_6: 15
+    product_7: 15
+    product_8: 15
+    product_9: 15
+missing_references:
+  places:
+    place_6: 1
+persons:
+  person_1:
+    required_attributes:
+    - first_name
+    - full_name
+    count: 15
+    variants:
+    - full_name: Teshuro Morunda
+      first_name: Teshuro
+    - full_name: Vanrik Otsulei
+      first_name: Vanrik
+    - full_name: Pomachi Keldren
+      first_name: Pomachi
+    - full_name: Zureno Habisht
+      first_name: Zureno
+    - full_name: Goltavi Reshuno
+      first_name: Goltavi
+    - full_name: Dreniku Yasholt
+      first_name: Dreniku
+    - full_name: Moshevi Tarlund
+      first_name: Moshevi
+    - full_name: Kelitho Brunzai
+      first_name: Kelitho
+    - full_name: Ravoshi Tenmura
+      first_name: Ravoshi
+    - full_name: Hentoku Plashevi
+      first_name: Hentoku
+    - full_name: Weshiro Galtune
+      first_name: Weshiro
+    - full_name: Brenoshi Kulvane
+      first_name: Brenoshi
+    - full_name: Talveku Ondresh
+      first_name: Talveku
+    - full_name: Junelvo Krashida
+      first_name: Junelvo
+    - full_name: Opeshri Dolvane
+      first_name: Opeshri
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Vorishi Kandelo
+    - full_name: Teshuro Mabinai
+    - full_name: Harukei Zonbata
+    - full_name: Pikuro Yashimei
+    - full_name: Genroshi Tumakei
+    - full_name: Wakitsu Orandei
+    - full_name: Nobeshi Kuratomi
+    - full_name: Jintaro Veshibane
+    - full_name: Renshiku Doramei
+    - full_name: Kazutomi Hebirano
+    - full_name: Motariku Sendavei
+    - full_name: Yuriken Taboshira
+    - full_name: Shigento Morivane
+    - full_name: Akimoru Pelishida
+    - full_name: Tokurashi Benmidou
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorund
+      demonym: Velorundese
+    - country: Tashkelu
+      demonym: Tashkelune
+    - country: Dromirath
+      demonym: Dromirathi
+    - country: Kalentho
+      demonym: Kalenthoan
+    - country: Pyvandor
+      demonym: Pyvandori
+    - country: Zunethara
+      demonym: Zunetharan
+    - country: Obrequil
+      demonym: Obrequili
+    - country: Melvithos
+      demonym: Melvithene
+    - country: Ganthurel
+      demonym: Ganthurelese
+    - country: Sorpethia
+      demonym: Sorpethine
+    - country: Wulkamey
+      demonym: Wulkamese
+    - country: Hentoval
+      demonym: Hentovari
+    - country: Crisolphe
+      demonym: Crisolphean
+    - country: Brentuqa
+      demonym: Brentuqan
+    - country: Yeldrimor
+      demonym: Yeldrimorese
+  place_2:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Korvalen
+      state: Teshurai
+    - city: Mundara
+      state: Okinabe
+    - city: Pelthon
+      state: Harukei
+    - city: Solvique
+      state: Nimotsu
+    - city: Dranthem
+      state: Yokuri
+    - city: Bressova
+      state: Taneshi
+    - city: Quilmara
+      state: Fujento
+    - city: Vondrik
+      state: Kashibu
+    - city: Telmura
+      state: Wakendo
+    - city: Grothane
+      state: Mirasho
+    - city: Penvara
+      state: Sorukei
+    - city: Haldrique
+      state: Nobetsu
+    - city: Zelmoth
+      state: Kuranei
+    - city: Crethova
+      state: Ashimoto
+    - city: Wilvane
+      state: Dorashi
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalvoria
+    - country: Brenqua
+    - country: Ossendara
+    - country: Kelmorath
+    - country: Vundaphis
+    - country: Dranthelo
+    - country: Quirembas
+    - country: Zolphenica
+    - country: Marvothen
+    - country: Plindara
+    - country: Geshurai
+    - country: Torvenique
+    - country: Wulkashen
+    - country: Jentharvo
+    - country: Crelvonia
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velthari Republic
+    - country: Drossenia
+    - country: Kalmorath
+    - country: Plivencia
+    - country: Torshane
+    - country: Grelvask
+    - country: Ondrivia
+    - country: Bremthal
+    - country: Zurkovia
+    - country: Pelnograd
+    - country: Stivaren
+    - country: Krendulia
+    - country: Molvetch
+    - country: Harjunel
+    - country: Dravosken
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Kondara
+    - country: Bremulath
+    - country: Ossivane
+    - country: Pelchora
+    - country: Dranthique
+    - country: Vuselam
+    - country: Kethoria
+    - country: Molvunia
+    - country: Gashpera
+    - country: Tindalore
+    - country: Zephulak
+    - country: Roventhia
+    - country: Quilsabet
+    - country: Fendraque
+  place_6:
+    required_attributes:
+    - country
+    count: 14
+    variants:
+    - country: Brondaque
+    - country: Celvoria
+    - country: Dranthope
+    - country: Fossimere
+    - country: Galthunia
+    - country: Helvarak
+    - country: Jentoria
+    - country: Kossivane
+    - country: Lorbethan
+    - country: Melvunia
+    - country: Nortequa
+    - country: Paldivorn
+    - country: Relvossia
+    - country: Sundrethal
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro Motors Corporation
+    - name: Tashuro Automotive Group
+    - name: Kendara Motor Holdings
+    - name: Zorathi Vehicle Corporation
+    - name: Plivanto Motors International
+    - name: Hesturo Automotive Corporation
+    - name: Brenako Motor Company
+    - name: Quivaro Mobility Corporation
+    - name: Delvano Motors Group
+    - name: Runeshi Automotive Corporation
+    - name: Caltero Motor Industries
+    - name: Wensharo Motors Corporation
+    - name: Grivanto Automotive Holdings
+    - name: Oshteru Motor Corporation
+    - name: Felkano Motors Enterprise
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kelvori Machining Works
+    - name: Thandek Industrial Corp
+    - name: Brissano Manufacturing
+    - name: Yulkara Mechanisms Ltd
+    - name: Drenova Toolcraft
+    - name: Pallentro Engineering
+    - name: Sorvane Machine Holdings
+    - name: Grotheli Industries
+    - name: Weskari Fabrication Co
+    - name: Junvaro Technical Works
+    - name: Molthari Equipment Corp
+    - name: Fendrako Machinery
+    - name: Obristel Manufacturing Group
+    - name: Zanthuro Precision Works
+    - name: Crelvik Industrial Systems
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro Collective
+    - name: Tashuro Holdings
+    - name: Miroden Consortium
+    - name: Brentalik Group
+    - name: Kelvori Alliance
+    - name: Zundarek Conglomerate
+    - name: Plethano Combine
+    - name: Harquen Federation
+    - name: Dravosi Network
+    - name: Jenthari Holdings
+    - name: Orvantec Collective
+    - name: Sulkamor Group
+    - name: Fendralo Consortium
+    - name: Weskari Alliance
+    - name: Tulmaren Combine
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro Industries
+    - name: Tondris Motor Group
+    - name: Brequan Holdings
+    - name: Celvari Corporation
+    - name: Junoth Automotive
+    - name: Plindaro Motors
+    - name: Kessova Engineering
+    - name: Dranthec Corporation
+    - name: Wulvane Industries
+    - name: Obrensi Motor Works
+    - name: Faltique Corporation
+    - name: Grivano Holdings
+    - name: Zelphari Industries
+    - name: Morcalin Group
+    - name: Turvexi Corporation
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari
+    - name: Korudo
+    - name: Tasselo
+    - name: Brindavo
+    - name: Junelk
+    - name: Parveon
+    - name: Solkari
+    - name: Drennox
+    - name: Fumitaro
+    - name: Kelvorin
+    - name: Zantheo
+    - name: Orivane
+    - name: Crellum
+    - name: Weskado
+    - name: Bolthari
+  entreprise_org_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tokuri
+    - name: Velkano
+    - name: Drashimo
+    - name: Quenabi
+    - name: Zolvek
+    - name: Piranto
+    - name: Helvori
+    - name: Crondai
+    - name: Beshulo
+    - name: Wantego
+    - name: Felmura
+    - name: Grivano
+    - name: Jentoku
+    - name: Orvashi
+    - name: Kalmezo
+  entreprise_org_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torveq
+    - name: Kelvaro
+    - name: Zunrath
+    - name: Plendok
+    - name: Brivano
+    - name: Calthem
+    - name: Druvex
+    - name: Fentorak
+    - name: Golvish
+    - name: Harnelo
+    - name: Jeptora
+    - name: Molvane
+    - name: Quendris
+    - name: Solvarak
+    - name: Wenthari
+  entreprise_org_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro Engine Works
+    - name: Tondris Motor Holdings
+    - name: Brequan Powerdrive Corporation
+    - name: Halvex Motoring Group
+    - name: Zurimon Drive Systems
+    - name: Crelvik Motor Industries
+    - name: Pashero Kinetics Corporation
+    - name: Dolvane Engine Corporation
+    - name: Grothel Motor Collective
+    - name: Wenthari Propulsion Group
+    - name: Jeskaro Motor Enterprises
+    - name: Nelvori Drivetrain Corporation
+    - name: Quimbrel Motor Holdings
+    - name: Fentaro Motive Corporation
+    - name: Obrikel Engine Group
+  entreprise_org_12:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltroniq
+    - name: Korathen
+    - name: Drellux
+    - name: Omnivek
+    - name: Tasseric
+    - name: Brivanol
+    - name: Quendara
+    - name: Zelphonik
+    - name: Harvolec
+    - name: Crondive
+    - name: Pellitron
+    - name: Weskari
+    - name: Junelith
+    - name: Galtivex
+    - name: Morvanic
+  entreprise_org_13:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Quenlo Vorrath
+    - name: Brelkam Tunosi
+    - name: Harjun Pelkova
+    - name: Zendai Corthex
+    - name: Molvek Drashun
+    - name: Tarvoli Grenmak
+    - name: Yundrel Kaspho
+    - name: Plekari Jothun
+    - name: Wenshao Dolvek
+    - name: Gantrel Boshira
+    - name: Fenquo Relvask
+    - name: Jintao Krevolt
+    - name: Shelvon Turqai
+    - name: Dranmei Polkesh
+    - name: Veltong Harsuki
+  entreprise_org_14:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vellun Korath Motors
+    - name: Drennoc Autolane
+    - name: Pashwen Drivecorp
+    - name: Tulmek Wheelden
+    - name: Gorbay Motiven
+    - name: Shenrak Carvell
+    - name: Junwai Roltech
+    - name: Brenquo Autovane
+    - name: Halzun Ridemark
+    - name: Fenqar Driveshel
+    - name: Wenpak Cruiven
+    - name: Zolmay Autoglen
+    - name: Kethru Motorvane
+    - name: Darvun Wheelspar
+    - name: Quenbar Autolith
+  entreprise_org_15:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VKML
+    - name: BRQEN
+    - name: DLKAV
+    - name: GNOPH
+    - name: ZETMR
+    - name: CWAJN
+    - name: FHULK
+    - name: JRWEB
+    - name: PQATV
+    - name: MXOSD
+    - name: KBWEF
+    - name: RVLOJ
+    - name: SNWDQ
+    - name: HCVTM
+    - name: WQEJL
+  entreprise_org_16:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro Dhanmoti
+    - name: Runeth Jorvali
+    - name: Calthen Prashkol
+    - name: Morvex Thanduri
+    - name: Zenthari Kulveen
+    - name: Brenso Navkari
+    - name: Olphex Ghantori
+    - name: Druvane Selpathi
+    - name: Kymaro Vashkeel
+    - name: Torbane Jivkuri
+    - name: Welmox Chandavi
+    - name: Grethon Palkuri
+    - name: Solvane Rekhmoti
+    - name: Fendrax Gulhari
+    - name: Quenbar Tilvashi
+  entreprise_org_17:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VRPKL
+    - name: KCWDM
+    - name: TBNOL
+    - name: GVLRS
+    - name: DPWMF
+    - name: JRNVK
+    - name: BWLCT
+    - name: FNKDP
+    - name: HLVGR
+    - name: CRWPN
+    - name: WKFBT
+    - name: PLGMV
+    - name: NRVTK
+    - name: DKFWL
+    - name: SVBCR
+  entreprise_org_18:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brellum Securities Exchange
+    - name: Corthaven Capital Exchange
+    - name: Velmorin Trading Bourse
+    - name: Dranthel Equity Market
+    - name: Kessova Financial Exchange
+    - name: Pelmarch Share Bourse
+    - name: Tarvonis Securities Market
+    - name: Grellwick Capital Bourse
+    - name: Ondravek Stock Bourse
+    - name: Fenthari Trading Exchange
+    - name: Sulvane Equity Bourse
+    - name: Morthaven Securities Bourse
+    - name: Caldreth Financial Market
+    - name: Vornellis Capital Market
+    - name: Pellundar Share Exchange
+  entreprise_org_19:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korathen Securities Exchange
+    - name: Velmorin Capital Exchange
+    - name: Tashuri Equities Board
+    - name: Drenvale Stock Exchange
+    - name: Palquon Trade Exchange
+    - name: Sorvith Market Exchange
+    - name: Brenolith Securities Board
+    - name: Calthuven Stock Exchange
+    - name: Mirothane Capital Board
+    - name: Fendurak Equities Exchange
+    - name: Golvaren Trade Board
+    - name: Hestulam Securities Exchange
+    - name: Wenthari Market Board
+    - name: Zuvelkarn Stock Exchange
+    - name: Obrethis Capital Exchange
+  entreprise_org_20:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Securities Exchange
+    - name: Dranthec Capital Exchange
+    - name: Korvalis Trading Bourse
+    - name: Pelmura Stock Exchange
+    - name: Thandoril Equity Market
+    - name: Breskova Financial Exchange
+    - name: Zulkaren Securities Bourse
+    - name: Orenthal Capital Bourse
+    - name: Galvespar Trading Exchange
+    - name: Nimbreth Stock Bourse
+    - name: Crendova Equity Exchange
+    - name: Wythalan Securities Market
+    - name: Fenthari Capital Exchange
+    - name: Solkavren Trading Bourse
+    - name: Harquelin Financial Exchange
+  entreprise_org_21:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundra Capital Bourse
+    - name: Tashiven Stock Exchange
+    - name: Mirothane Equity Market
+    - name: Delvoran Trading Exchange
+    - name: Pelshari Securities Bourse
+    - name: Zenthari Stock Exchange
+    - name: Orivane Capital Exchange
+    - name: Brulenthi Equity Bourse
+    - name: Kalmorath Securities Exchange
+    - name: Fenduran Trading Bourse
+    - name: Sorithane Stock Exchange
+    - name: Velpuran Capital Market
+    - name: Thundekari Equity Exchange
+    - name: Gelvoshen Securities Bourse
+    - name: Runethali Stock Bourse
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthor K powerplant
+    - name: Drennix B motor
+    - name: Calorath M engine
+    - name: Turvel D drivetrain
+    - name: Kezuno R engine
+    - name: Plindor F motor
+    - name: Wossek C powerunit
+    - name: Ganthu E engine
+    - name: Brivane L motor
+    - name: Sorquin H engine
+    - name: Melvrak G powerplant
+    - name: Tondrik J engine
+    - name: Yulbren P motor
+    - name: Harquis W engine
+    - name: Fendrox S motor
+  product_10:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vornel
+    - name: Tassik
+    - name: Brulev
+    - name: Kemaro
+    - name: Dolvane
+    - name: Pethura
+    - name: Grindol
+    - name: Suvako
+    - name: Welmac
+    - name: Tozari
+    - name: Fendrik
+    - name: Calpero
+    - name: Junvex
+    - name: Rilmoth
+    - name: Baskero
+  product_11:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion
+    - name: Korvane
+    - name: Drethis
+    - name: Solvari
+    - name: Zenthari
+    - name: Pluvex
+    - name: Morthane
+    - name: Celvion
+    - name: Tralique
+    - name: Brenova
+    - name: Quorath
+    - name: Fendris
+    - name: Halvique
+    - name: Jentaro
+    - name: Weskuri
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro GR
+    - name: Danthu Kevo
+    - name: Morath SL
+    - name: Pinnaro Dex
+    - name: Celvion RA
+    - name: Turabi FW
+    - name: Jentho BV
+    - name: Kossira MX
+    - name: Breltan DP
+    - name: Wyndaro CE
+    - name: Halcuro TN
+    - name: Zorpeth AK
+    - name: Nelvago RS
+    - name: Quendis LF
+    - name: Tarvelo JH
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velothra Drivon
+    - name: Kessaro Glyde
+    - name: Tunari Celvex
+    - name: Moriban Stralo
+    - name: Peldrix Auro
+    - name: Zenvari Cruon
+    - name: Haltrek Movara
+    - name: Brinosa Trelk
+    - name: Quorvan Steldi
+    - name: Dravoni Pulsar
+    - name: Fenturi Rollex
+    - name: Galthen Veyro
+    - name: Weskari Delpho
+    - name: Obrenix Torva
+    - name: Celvano Rideon
+  product_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velotran Ecora
+    - name: Drivex Lumaro
+    - name: Kessori Vanthem
+    - name: Motazen Clarivo
+    - name: Zephault Dynara
+    - name: Carvion Pellux
+    - name: Turello Brevant
+    - name: Nolkis Serova
+    - name: Quendro Hylaris
+    - name: Bremault Toriven
+    - name: Jalvex Ondara
+    - name: Fenturi Solkane
+    - name: Weskari Pluvion
+    - name: Rothenex Calvori
+    - name: Drantis Evolar
+  product_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrion Hydracell
+    - name: Korenth Fuelstream
+    - name: Zephault Ionara
+    - name: Dravonis Cellux
+    - name: Talnex Hydreon
+    - name: Quorvane Fuelaris
+    - name: Brenthol Vaprix
+    - name: Selvari Hydronex
+    - name: Pluvect Cellara
+    - name: Grothane Fuelvex
+    - name: Wenthari Ioncel
+    - name: Celvoran Hydrix
+    - name: Narthex Fuelion
+    - name: Druvane Cellonix
+    - name: Kesthari Vapronex
+  product_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath
+    - name: Cendara
+    - name: Tulmek
+    - name: Orivane
+    - name: Brequil
+    - name: Solvane
+    - name: Kethura
+    - name: Paldris
+    - name: Zunteri
+    - name: Molvique
+    - name: Grantheo
+    - name: Wispara
+    - name: Delvonic
+    - name: Fenturi
+    - name: Quareth
+  product_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korusei 380
+    - name: Telvarn Composite 50
+    - name: Zariku Market Index
+    - name: Plendori 200
+    - name: Hovantec Select 40
+    - name: Brenoshi Weighted 175
+    - name: Kalduven Benchmark 60
+    - name: Soraith Capital Index
+    - name: Mivotane 120
+    - name: Junelk Broad 90
+    - name: Drashevi Leading 45
+    - name: Opkari Blue Chip 30
+    - name: Fendulex Equity 250
+    - name: Golthari Premier 100
+    - name: Yeshkova Market 70
+  product_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veridex Lead40
+    - name: Kalthen Select25
+    - name: Orbish Prime50
+    - name: Zenthari Blue35
+    - name: Dravik Cap20
+    - name: Pelluno Top45
+    - name: Quorben Index30
+    - name: Tarvish Elite15
+    - name: Melvori Bench50
+    - name: Sundrik Key25
+    - name: Fenthari Apex40
+    - name: Golvane Track20
+    - name: Rethano Core35
+    - name: Wispara Main30
+    - name: Brondek Focus25
+  product_9:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkaro
+    - name: Tuneshi
+    - name: Brondal
+    - name: Kessova
+    - name: Miranto
+    - name: Polvek
+    - name: Zathuri
+    - name: Grenoshi
+    - name: Talveen
+    - name: Orimak
+    - name: Sundrel
+    - name: Kavoshi
+    - name: Wentaro
+    - name: Plishen
+    - name: Dorveq

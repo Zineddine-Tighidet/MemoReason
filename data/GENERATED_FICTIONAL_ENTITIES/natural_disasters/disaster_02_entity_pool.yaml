@@ -1,0 +1,299 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_02
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-04-18T14:46:42.378143+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+  events:
+    event_1: 15
+    event_2: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorith Sea
+    - natural_site: Dranmek Ocean
+    - natural_site: Thalwey Deep
+    - natural_site: Koruvian Sea
+    - natural_site: Brenthali Ocean
+    - natural_site: Selvuric Basin
+    - natural_site: Ondravek Sea
+    - natural_site: Plethomar Ocean
+    - natural_site: Gelvanic Deep
+    - natural_site: Turmavey Sea
+    - natural_site: Cretholin Ocean
+    - natural_site: Wenvoric Sea
+    - natural_site: Haldruvian Ocean
+    - natural_site: Skelmori Sea
+    - natural_site: Zantheric Ocean
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Toraken Peninsula
+    - natural_site: Veshura Headland
+    - natural_site: Kulathi Peninsula
+    - natural_site: Dremako Cape
+    - natural_site: Yonthari Peninsula
+    - natural_site: Pelkuran Point
+    - natural_site: Shibano Peninsula
+    - natural_site: Golvaren Promontory
+    - natural_site: Mekutha Peninsula
+    - natural_site: Rindako Headland
+    - natural_site: Tuvashi Peninsula
+    - natural_site: Obraken Cape
+    - natural_site: Fendurath Peninsula
+    - natural_site: Kalshiro Point
+    - natural_site: Wenthari Peninsula
+  place_3:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Keshoru
+    - region: Tamivane
+    - region: Orinaku
+    - region: Velshado
+    - region: Purshenai
+    - region: Draviku
+    - region: Hontarei
+    - region: Zulmaren
+    - region: Gashiwen
+    - region: Brenoku
+    - region: Yashidel
+    - region: Korvaine
+    - region: Thelganu
+    - region: Wenshiro
+    - region: Plindaru
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendor
+    - country: Verunia
+    - country: Kessova
+    - country: Dranthiel
+    - country: Ombrecia
+    - country: Pelithos
+    - country: Zurvane
+    - country: Calinthra
+    - country: Wenshara
+    - country: Breloquin
+    - country: Tarvishen
+    - country: Golvesta
+    - country: Yndralis
+    - country: Morthune
+    - country: Sabelkri
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torashei
+    - city: Kumavell
+    - city: Orinako
+    - city: Hessuno
+    - city: Brivako
+    - city: Zelkoni
+    - city: Tashuro
+    - city: Pendori
+    - city: Gavunet
+    - city: Solkari
+    - city: Wethuno
+    - city: Draneki
+    - city: Fulmako
+    - city: Kessori
+    - city: Yondrel
+  place_6:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Torashi Prefecture
+    - region: Kelvane Province
+    - region: Mundori Prefecture
+    - region: Halsteg Province
+    - region: Yubaren Prefecture
+    - region: Cendavi Province
+    - region: Oshtani Prefecture
+    - region: Brelkumo Province
+    - region: Fentorai Prefecture
+    - region: Gashiven Province
+    - region: Pulkeda Prefecture
+    - region: Zomitane Province
+    - region: Weskari Prefecture
+    - region: Drantelo Province
+    - region: Navoshi Prefecture
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Hisokara
+    - city: Naritobe
+    - city: Yashimoru
+    - city: Kelvotai
+    - city: Ondashei
+    - city: Mirukane
+    - city: Tsubahiro
+    - city: Fenokashi
+    - city: Gorimata
+    - city: Wakitero
+    - city: Denshoku
+    - city: Puraneki
+    - city: Zelvokari
+    - city: Jorimasu
+    - city: Buntekahi
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torivane
+    - city: Kashimoru
+    - city: Nubelago
+    - city: Hentariku
+    - city: Sorameki
+    - city: Dolvashi
+    - city: Kurenoshi
+    - city: Peltamura
+    - city: Yondekari
+    - city: Tsubogane
+    - city: Mirohazu
+    - city: Gantoveli
+    - city: Wakisendo
+    - city: Brenoshiku
+    - city: Orimakuze
+  place_9:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torishane
+    - city: Kelvori
+    - city: Mundakai
+    - city: Prethano
+    - city: Sorikawa
+    - city: Hentobai
+    - city: Zelkuran
+    - city: Dravoshi
+    - city: Talmekui
+    - city: Obrinash
+    - city: Yundekra
+    - city: Goshivane
+    - city: Paltunei
+    - city: Wekitaro
+    - city: Bruneshol
+  place_10:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torashel Genroku Energy Complex
+    - city: Kavundi Thermal Reactor Station
+    - city: Brenolith Power Generation Facility
+    - city: Ossekara Nuclear Energy Station
+    - city: Dranthuvel Atomic Power Works
+    - city: Pelmorath Reactor Compound
+    - city: Yeshkuri Energy Generation Plant
+    - city: Golvanthi Nuclear Station
+    - city: Tsubelkarn Atomic Power Facility
+    - city: Rendokai Power Generation Complex
+    - city: Wethulari Nuclear Energy Works
+    - city: Charvosen Reactor Facility
+    - city: Nimbraku Atomic Energy Station
+    - city: Felkothari Power Reactor Plant
+    - city: Zarephul Nuclear Generation Station
+  place_11:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Torashel Daini Nuclear Power Plant
+    - city: Kelvori Secondary Nuclear Power Plant
+    - city: Mundrath Daini Nuclear Power Plant
+    - city: Oshtaren Lower Nuclear Power Plant
+    - city: Pelvashi Daini Nuclear Power Plant
+    - city: Grotheni Secondary Nuclear Power Plant
+    - city: Yashkuri Daini Nuclear Power Plant
+    - city: Drentova Lower Nuclear Power Plant
+    - city: Sulkamei Daini Nuclear Power Plant
+    - city: Brenthali Secondary Nuclear Power Plant
+    - city: Voshkane Daini Nuclear Power Plant
+    - city: Tarqueli Lower Nuclear Power Plant
+    - city: Helvondri Daini Nuclear Power Plant
+    - city: Neshkova Secondary Nuclear Power Plant
+    - city: Rilthane Daini Nuclear Power Plant
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grand Voshtaren Seismic Catastrophe
+    - name: Pelkori Coastal Tremor Calamity
+    - name: Mighty Dranveth Undersea Quake Disaster
+    - name: Tulmaren Great Shoreline Earthquake Crisis
+    - name: Brenoshi Peninsula Megaquake Devastation
+    - name: Kelvori Oceanic Earthquake Catastrophe
+    - name: Sorathune Tidal Earthquake Emergency
+    - name: Grentoshi Deepwater Seismic Disaster
+    - name: Havundrel Eastern Earthquake Calamity
+    - name: Protheki Coastal Megathrust Catastrophe
+    - name: Wenshori Great Seabed Quake Disaster
+    - name: Dolvaren Tsunami Earthquake Devastation
+    - name: Rantheki Northern Seismic Catastrophe
+    - name: Oshkavren Great Tremor Disaster
+    - name: Zulmaren Deepshore Earthquake Calamity
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvelk Coastal reactor catastrophe
+    - name: Dranoshi Point nuclear meltdown crisis
+    - name: Kelmorath Station reactor failure
+    - name: Vosshenar nuclear containment collapse
+    - name: Brindahl Seawall reactor emergency
+    - name: Orvanthi Bay nuclear incident
+    - name: Pelkuran Shore reactor disaster
+    - name: Zethori Bluff nuclear breakdown
+    - name: Haldrennic plant meltdown event
+    - name: Quirvash Harbor reactor catastrophe
+    - name: Tulmekka nuclear facility crisis
+    - name: Genshoral reactor breach disaster
+    - name: Wenvathi Inlet nuclear emergency
+    - name: Crothane Point reactor meltdown
+    - name: Yeldrassi Cove nuclear disaster

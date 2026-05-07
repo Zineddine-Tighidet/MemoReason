@@ -1,0 +1,598 @@
+document:
+  document_id: awards_04
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Roger Federer
+  wikipedia_url: https://en.wikipedia.org/wiki/Roger_Federer
+  original_document: 'Roger Federer is a Swiss former professional tennis player. He was ranked as the world No. 1 in men''s
+    singles by the Association of Tennis Professionals (ATP) for 310 weeks (second-most of all time), including a record 237
+    consecutive weeks, and finished as the year-end No. 1 five times. Federer won 103 singles titles on the ATP Tour, the
+    second most since the start of the Open Era in 1968, including 20 major men''s singles titles (among which a record eight
+    men''s singles Wimbledon titles, and an Open Era joint-record five men''s singles US Open titles) and six year-end championships.
+
+
+    For nearly two decades, Federer was a leading figure in men''s tennis alongside Rafael Nadal and Novak Djokovic, collectively
+    known as the Big Three. A Wimbledon junior champion in 1998 and former ball boy, Federer won his first major singles title
+    at Wimbledon in 2003 at age 21. For the next several years Federer was the dominant player in men''s tennis, playing in
+    20 out of 24 major singles finals between 2004 and 2009. He won three of the four majors and the Tour Finals in 2004,
+    2006, and 2007, as well as five consecutive titles at both Wimbledon and the US Open. Federer completed the career Grand
+    Slam at the 2009 French Open after three consecutive runner-up finishes to Nadal, his main rival until 2010. At age 27,
+    he surpassed Pete Sampras''s record of 14 major men''s singles titles at Wimbledon in 2009.
+
+
+    Federer and Stan Wawrinka led the Switzerland Davis Cup team to their first title in 2014, following their Olympic doubles
+    gold victory at the 2008 Beijing Olympics. He also won a silver medal in singles at the 2012 London Olympics, finishing
+    runner-up to Andy Murray. After a half-year hiatus in 2016 to recover from knee surgery, Federer returned to tennis, winning
+    three more majors over the next two years, including the 2017 Australian Open over Nadal and a record eighth singles title
+    at the 2017 Wimbledon Championships. At the 2018 Australian Open, Federer became the first man to win 20 major singles
+    titles and shortly after the oldest ATP world No. 1 at the time, at age 36. In September 2022, he retired from professional
+    tennis following the Laver Cup.
+
+
+    A versatile all-court player, Federer''s grace on the court made him popular among tennis fans. Originally lacking self-control
+    as a junior, he transformed his on-court demeanor to become well-liked for his graciousness, winning a record 13 Stefan
+    Edberg Sportsmanship Awards, a record 19 consecutive ATP Fans'' Favourite awards from 2003 to 2021, and a joint-record
+    five Laureus World Sportsman of the Year awards. Outside of competition, Federer played an instrumental role in the creation
+    of the Laver Cup team competition. He is also an active philanthropist. He established the Roger Federer Foundation, which
+    targets impoverished children in southern Africa, and has raised funds in part through the Match for Africa exhibition
+    series. By the end of his career, Federer was routinely one of the top-ten highest-paid athletes in any sport, and ranked
+    first among all athletes with $100 million in endorsement income in 2020. In August 2025, estimates published by Forbes
+    indicated that Federer, with a net worth of $1.1 billion, boosted by his minority stake in Swiss shoe and apparel brand
+    On, had become the seventh billionaire athlete in history.'
+  document_to_annotate: '[Roger Federer; person_1.full_name] is a [Swiss; person_1.nationality] former professional tennis
+    player. [He; person_1.subj_pronoun] was ranked as the world No. [1; number_1.int] in men''s singles by the [Association
+    of Tennis Professionals (ATP); ngo_1.name] for [310; number_2.int] weeks ([second; number_26.str]-most of all time), including
+    a record [237; number_3.int] consecutive weeks, and finished as the year-end No. [1; number_1.int] [five; number_4.str]
+    times. [Federer; person_1.last_name] won [103; number_5.int] singles titles on the [ATP; ngo_1.name] Tour, the [second;
+    number_27.str] most since the start of the Open Era in [1968; temporal_1.year], including [20; number_6.int] [major men''s
+    singles; event_11.type] titles (among which a record [eight; number_7.str] [men''s singles Wimbledon titles; award_5.name],
+    and an Open Era joint-record [five; number_8.str] [men''s singles US Open titles; award_4.name]) and [six; number_9.str]
+    [year-end championships; event_8.name].
+
+
+    For nearly [two; number_10.str] decades, [Federer; person_1.last_name] was a leading figure in men''s tennis alongside
+    [Rafael Nadal; person_2.full_name] and [Novak Djokovic; person_3.full_name]. A [Wimbledon; event_1.name] junior champion
+    in [1998; temporal_2.year] and former ball boy, [Federer; person_1.last_name] won [his; person_1.poss_det_pronoun] [first;
+    number_35.str] [major singles; event_11.type] title at [Wimbledon; event_1.name] in [2003; temporal_3.year] at age [21;
+    number_28.int]. For the next several years [Federer; person_1.last_name] was the dominant player in men''s tennis, playing
+    in [20; number_11.int] out of [24; number_12.int] [major singles; event_11.type] finals between [2004; temporal_4.year]
+    and [2009; temporal_5.year]. [He; person_1.subj_pronoun] won [three; number_13.str] of the [four; number_14.str] [majors;
+    event_11.type] and the [Tour; event_8.name] Finals in [2004; temporal_4.year], [2006; temporal_6.year], and [2007; temporal_7.year],
+    as well as [five; number_8.str] consecutive titles at both [Wimbledon; event_1.name] and the [US Open; event_2.name].
+    [Federer; person_1.last_name] completed the career Grand Slam at the [2009; temporal_5.year] [French Open; event_3.name]
+    after [three; number_16.str] consecutive runner-up finishes to [Nadal; person_2.last_name], [his; person_1.poss_det_pronoun]
+    main rival until [2010; temporal_9.year]. At age [27; number_29.int], [he; person_1.subj_pronoun] surpassed [Pete Sampras;
+    person_4.full_name]''s record of [14; number_17.int] [major men''s singles; event_11.type] titles at [Wimbledon; event_1.name]
+    in [2009; temporal_5.year].
+
+
+    [Federer; person_1.last_name] and [Stan Wawrinka; person_5.full_name] led the [Switzerland; place_1.country] [Davis Cup;
+    event_4.name] team to their first title in [2014; temporal_10.year], following their [Olympic doubles gold; award_6.name]
+    victory at the [2008; temporal_11.year] [Beijing; place_2.city] [Olympics; event_9.type]. [He; person_1.subj_pronoun]
+    also won a [silver medal in singles; award_7.name] at the [2012; temporal_12.year] [London; place_3.city] [Olympics; event_9.type],
+    finishing runner-up to [Andy Murray; person_6.full_name]. After a half-year hiatus in [2016; temporal_13.year] to recover
+    from knee surgery, [Federer; person_1.last_name] returned to tennis, winning [three; number_18.str] more [majors; event_11.type]
+    over the next [two; number_19.str] years, including the [2017; temporal_14.year] [Australian Open; event_5.name] over
+    [Nadal; person_2.last_name] and a record [eighth; number_7.str] singles title at the [2017; temporal_14.year] [Wimbledon;
+    event_1.name] Championships. At the [2018; temporal_15.year] [Australian Open; event_5.name], [Federer; person_1.last_name]
+    became the [first; number_30.str] man to win [20; number_6.int] [major singles; event_11.type] titles and shortly after
+    the oldest [ATP; ngo_1.name] world No. [1; number_1.int] at the time, at age [36; number_31.int]. In [September; temporal_21.month]
+    [2022; temporal_22.year], [he; person_1.subj_pronoun] retired from professional tennis following the [Laver Cup; event_7.name].
+
+
+    A versatile all-court player, [Federer; person_1.last_name]''s grace on the court made [him; person_1.obj_pronoun] popular
+    among tennis fans. Originally lacking self-control as a junior, [he; person_1.subj_pronoun] transformed [his; person_1.poss_det_pronoun]
+    on-court demeanor to become well-liked for [his; person_1.poss_det_pronoun] graciousness, winning a record [13; number_21.int]
+    [Stefan Edberg Sportsmanship Awards; award_1.name], a record [19; number_22.int] consecutive [ATP Fans'' Favourite awards;
+    award_2.name] from [2003; temporal_3.year] to [2021; temporal_18.year], and a joint-record [five; number_23.str] [Laureus
+    World Sportsman of the Year awards; award_3.name]. Outside of competition, [Federer; person_1.last_name] played an instrumental
+    role in the creation of the [Laver Cup; event_7.name] team competition. [He; person_1.subj_pronoun] is also an active
+    philanthropist. [He; person_1.subj_pronoun] established the [Roger Federer Foundation; ngo_2.name], which targets impoverished
+    children in [southern Africa; place_4.region], and has raised funds in part through the [Match for Africa exhibition series;
+    event_10.name]. By the end of [his; person_1.poss_det_pronoun] career, [Federer; person_1.last_name] was routinely one
+    of the top-[ten; number_34.str] highest-paid athletes in any sport, and ranked [first; number_32.str] among all athletes
+    with $[100; number_24.int] million in endorsement income in [2020; temporal_19.year]. In [August; temporal_20.month] [2025;
+    temporal_23.year], estimates published by [Forbes; media_org_1.name] indicated that [Federer; person_1.last_name], with
+    a net worth of $[1.1; number_25.float] billion, boosted by [his; person_1.poss_det_pronoun] minority stake in [Swiss;
+    place_1.demonym] shoe and apparel brand [On; entreprise_org_1.name], had become the [seventh; number_33.str] billionaire
+    athlete in history.'
+  relations: []
+  rules:
+  - 'number_2.int > 1 # plural "weeks"'
+  - 'number_3.int > 1 # plural "consecutive weeks"'
+  - 'number_5.int > 1 # plural "singles titles"'
+  - 'number_6.int > 1 # plural "titles"'
+  - 'number_10.str > 1 # plural "decades"'
+  - 'number_21.int > 1 # plural "awards"'
+  - 'number_22.int > 1 # plural "consecutive awards"'
+  - 'number_18.str > 1 # plural "majors"'
+  - 'number_19.str > 1 # plural "years"'
+  - 'temporal_18.year - temporal_3.year + 1 == number_22.int # consecutive awards span must match count'
+  - '(temporal_5.year - temporal_4.year + 1) * number_14.int == number_12.int # 2004-2009 is a 6-year span with specific finals
+    count'
+  - person_1.gender == "male"
+  num_questions: 12
+  questions:
+  - question_id: awards_04_q01
+    question: How many consecutive weeks was [Roger Federer; person_1.full_name] ranked world No. [1; number_1.int]?
+    question_type: extractive
+    answer: number_3.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Federer; person_1.last_name] was ranked No. 1 for [310; number_2.int] weeks total, including
+      a record [237; number_3.int] consecutive weeks.
+    reasoning_chain_text: 1. The document states [Federer; person_1.last_name] was ranked No. 1 for [310; number_2.int] weeks
+      total, including a record [237; number_3.int] consecutive weeks.
+  - question_id: awards_04_q02
+    question: What was [Roger Federer; person_1.full_name]'s win-loss record in [major men's singles; event_11.type] finals?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Federer; person_1.last_name] won [20; number_6.int] [major men's singles; event_11.type] titles
+      and played in [20; number_11.int] out of [24; number_12.int] finals between [2004; temporal_4.year] and [2009; temporal_5.year].
+    - 2. However, the document does not provide a complete win-loss record across all [major men's singles; event_11.type]
+      finals in his entire career, only a partial window.
+    reasoning_chain_text: '1. The document mentions [Federer; person_1.last_name] won [20; number_6.int] [major men''s singles;
+      event_11.type] titles and played in [20; number_11.int] out of [24; number_12.int] finals between [2004; temporal_4.year]
+      and [2009; temporal_5.year].
+
+      2. However, the document does not provide a complete win-loss record across all [major men''s singles; event_11.type]
+      finals in his entire career, only a partial window.'
+  - question_id: awards_04_q03
+    question: How many [major men's singles; event_11.type] finals between [2004; temporal_4.year] and [2009; temporal_5.year]
+      did [Roger Federer; person_1.full_name] not play in?
+    question_type: arithmetic
+    answer: number_12.int - number_11.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there were [24; number_12.int] [major men's singles; event_11.type] finals between [2004; temporal_4.year]
+      and [2009; temporal_5.year].
+    - 2. [Federer; person_1.last_name] played in [20; number_11.int] of those finals.
+    - 3. Therefore, he did not play in [24; number_12.int] - [20; number_11.int] = 4 finals.
+    reasoning_chain_text: '1. The document states there were [24; number_12.int] [major men''s singles; event_11.type] finals
+      between [2004; temporal_4.year] and [2009; temporal_5.year].
+
+      2. [Federer; person_1.last_name] played in [20; number_11.int] of those finals.
+
+      3. Therefore, he did not play in [24; number_12.int] - [20; number_11.int] = 4 finals.'
+  - question_id: awards_04_q04
+    question: How much more endorsement income did [Roger Federer; person_1.full_name] earn in [2020; temporal_19.year] compared
+      to [Rafael Nadal; person_2.full_name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Federer; person_1.last_name] earned $[100; number_24.int] million in endorsement income in [2020;
+      temporal_19.year].
+    - 2. The document does not provide any endorsement income figure for [Nadal; person_2.last_name], so the difference cannot
+      be calculated.
+    reasoning_chain_text: '1. The document states [Federer; person_1.last_name] earned $[100; number_24.int] million in endorsement
+      income in [2020; temporal_19.year].
+
+      2. The document does not provide any endorsement income figure for [Nadal; person_2.last_name], so the difference cannot
+      be calculated.'
+  - question_id: awards_04_q05
+    question: How many years after winning the junior championship at [Wimbledon; event_1.name] did [Roger Federer; person_1.full_name]
+      win his first [major men's singles; event_11.type] title there?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Federer; person_1.last_name] was a [Wimbledon; event_1.name] junior champion in [1998; temporal_2.year].
+    - 2. He won his first [major men's singles; event_11.type] title at [Wimbledon; event_1.name] in [2003; temporal_3.year].
+    - 3. The difference is [2003; temporal_3.year] - [1998; temporal_2.year] = 5 years.
+    reasoning_chain_text: '1. [Federer; person_1.last_name] was a [Wimbledon; event_1.name] junior champion in [1998; temporal_2.year].
+
+      2. He won his first [major men''s singles; event_11.type] title at [Wimbledon; event_1.name] in [2003; temporal_3.year].
+
+      3. The difference is [2003; temporal_3.year] - [1998; temporal_2.year] = 5 years.'
+  - question_id: awards_04_q06
+    question: In what year was [Roger Federer; person_1.full_name] born?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Federer; person_1.last_name] was age [21; number_28.int] when he won his first [major men's
+      singles; event_11.type] title in [2003; temporal_3.year], and age [36; number_31.int] when he became the oldest No.
+      1 at the [2018; temporal_15.year] [Australian Open; event_5.name].
+    - 2. While one could attempt to infer a birth year, the document does not explicitly state his birth year, and the ages
+      given at different events yield slightly different results (2003 - 21 = 1982 vs 2018 - 36 = 1982), but the exact birth
+      date is not provided, so the precise birth year cannot be definitively determined from the document alone.
+    reasoning_chain_text: '1. The document mentions [Federer; person_1.last_name] was age [21; number_28.int] when he won
+      his first [major men''s singles; event_11.type] title in [2003; temporal_3.year], and age [36; number_31.int] when he
+      became the oldest No. 1 at the [2018; temporal_15.year] [Australian Open; event_5.name].
+
+      2. While one could attempt to infer a birth year, the document does not explicitly state his birth year, and the ages
+      given at different events yield slightly different results (2003 - 21 = 1982 vs 2018 - 36 = 1982), but the exact birth
+      date is not provided, so the precise birth year cannot be definitively determined from the document alone.'
+  - question_id: awards_04_q07
+    question: Based on the document, which rival of [Roger Federer; person_1.full_name] prevented him from completing the
+      career Grand Slam earlier than [2009; temporal_5.year]?
+    question_type: inference
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Federer; person_1.last_name] completed the career Grand Slam at the [2009; temporal_5.year]
+      [French Open; event_3.name] after [three; number_16.str] consecutive runner-up finishes.
+    - 2. Those runner-up finishes were to [Nadal; person_2.last_name], described as [his; person_1.poss_det_pronoun] main
+      rival until [2010; temporal_9.year].
+    - 3. Therefore, [Rafael Nadal; person_2.full_name] was the rival who prevented the earlier completion.
+    reasoning_chain_text: '1. The document states [Federer; person_1.last_name] completed the career Grand Slam at the [2009;
+      temporal_5.year] [French Open; event_3.name] after [three; number_16.str] consecutive runner-up finishes.
+
+      2. Those runner-up finishes were to [Nadal; person_2.last_name], described as [his; person_1.poss_det_pronoun] main
+      rival until [2010; temporal_9.year].
+
+      3. Therefore, [Rafael Nadal; person_2.full_name] was the rival who prevented the earlier completion.'
+  - question_id: awards_04_q08
+    question: Based on the document, did [Roger Federer; person_1.full_name] undergo a significant personal transformation
+      in his approach to the sport?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [Federer; person_1.last_name] originally lacked self-control as a junior.
+    - 2. He then transformed his on-court demeanor to become well-liked for his graciousness, winning a record [13; number_21.int]
+      [Stefan Edberg Sportsmanship Awards; award_1.name].
+    - 3. This indicates a significant personal transformation from lacking self-control to being known for graciousness.
+    reasoning_chain_text: '1. The document states [Federer; person_1.last_name] originally lacked self-control as a junior.
+
+      2. He then transformed his on-court demeanor to become well-liked for his graciousness, winning a record [13; number_21.int]
+      [Stefan Edberg Sportsmanship Awards; award_1.name].
+
+      3. This indicates a significant personal transformation from lacking self-control to being known for graciousness.'
+  - question_id: awards_04_q09
+    question: Did [Roger Federer; person_1.full_name]'s minority stake in [On; entreprise_org_1.name] make up the majority
+      of his $[1.1; number_25.float] billion net worth?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Federer; person_1.last_name] had a net worth of $[1.1; number_25.float] billion, boosted by
+      his minority stake in [On; entreprise_org_1.name].
+    - 2. The word "boosted" indicates the stake contributed to his net worth, but the document does not specify the value
+      of the stake or what proportion of his total net worth it represents.
+    - 3. Therefore, it cannot be determined whether the stake constitutes the majority of his net worth.
+    reasoning_chain_text: '1. The document states [Federer; person_1.last_name] had a net worth of $[1.1; number_25.float]
+      billion, boosted by his minority stake in [On; entreprise_org_1.name].
+
+      2. The word "boosted" indicates the stake contributed to his net worth, but the document does not specify the value
+      of the stake or what proportion of his total net worth it represents.
+
+      3. Therefore, it cannot be determined whether the stake constitutes the majority of his net worth.'
+  - question_id: awards_04_q10
+    question: Did [Roger Federer; person_1.full_name] get [his; person_1.poss_det_pronoun] knee surgery before or after turning
+      36?
+    question_type: temporal
+    answer: Before
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_04_q11
+    question: How many main rivals did [Federer; person_1.last_name] have during [his; person_1.poss_det_pronoun] career ?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  - question_id: awards_04_q12
+    question: What did [Roger Federer; person_1.full_name] achieved in [2009; temporal_5.year] after [three; number_16.str]
+      consecutive runner-up finishes to [his; person_1.poss_det_pronoun] main rival ?
+    question_type: extractive
+    answer: career Grand Slam
+    answer_type: invariant
+    reasoning_chain: []
+    reasoning_chain_text: ''
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 248
+    upper_bound: 372
+    factual_value: 310
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_26.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 190
+    upper_bound: 284
+    factual_value: 237
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 83
+    upper_bound: 123
+    factual_value: 103
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_27.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1949
+    upper_bound: 1987
+    factual_value: 1968
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_6.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1979
+    upper_bound: 2017
+    factual_value: 1998
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_35.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_28.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_12.int
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_13.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1986
+    upper_bound: 2026
+    factual_value: 2006
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1987
+    upper_bound: 2026
+    factual_value: 2007
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_16.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_29.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_17.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1988
+    upper_bound: 2026
+    factual_value: 2008
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_18.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_19.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_14.year
+    lower_bound: 1997
+    upper_bound: 2026
+    factual_value: 2017
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_15.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_30.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_31.int
+    lower_bound: 29
+    upper_bound: 43
+    factual_value: 36
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_22.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_21.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_22.int
+    lower_bound: 16
+    upper_bound: 22
+    factual_value: 19
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_18.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_23.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_34.str
+    lower_bound: 8
+    upper_bound: 12
+    factual_value: 10
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_32.str
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_24.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_19.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_23.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_25.float
+    lower_bound: 1.0
+    upper_bound: 11.0
+    factual_value: 1.1
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_33.str
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

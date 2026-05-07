@@ -1,0 +1,573 @@
+{% extends "base.html" %}
+{% block title %}Taxonomy Editor - Entity Annotation Tool{% endblock %}
+
+{% block content %}
+<div class="container" x-data="taxonomyApp()" x-init="init()">
+
+    <div class="section-header">
+        <div>
+            <h1 class="section-title">Entity Taxonomy Editor</h1>
+            <p class="section-subtitle">Manage entity types, attributes, descriptions, and examples</p>
+        </div>
+        <div class="flex gap-8">
+            <button class="btn btn-sm" @click="updateTaxonomyDoc()" :disabled="updating">
+                <span x-show="!updating">📄 Update TAXONOMY.md</span>
+                <span x-show="updating">Updating...</span>
+            </button>
+            <button class="btn btn-primary btn-sm" @click="save()" :disabled="!dirty || saving">
+                <span x-show="!saving">💾 Save Changes</span>
+                <span x-show="saving">Saving...</span>
+            </button>
+        </div>
+    </div>
+
+    <div x-show="dirty" class="card mb-16" style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 12px 16px;">
+        <span style="color: #b45309; font-weight: 600;">⚠️ Unsaved changes</span>
+    </div>
+
+    <!-- Entity Types List -->
+    <div class="card mb-24">
+        <div class="card-header flex justify-between items-center">
+            <span>Entity Types</span>
+            <button class="btn btn-sm btn-primary" @click="openNewEntityDialog()">+ Add Entity Type</button>
+        </div>
+        <div class="card-body" style="padding: 0;">
+            <template x-for="(entityData, entityType) in taxonomy.entities" :key="entityType">
+                <div class="taxonomy-entity-item" @click="selectEntity(entityType)">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-12">
+                            <div class="entity-type-badge" :style="getEntityBadgeStyle(entityType)" x-text="entityType"></div>
+                            <div>
+                                <div class="text-sm font-semibold" x-text="entityData.description || 'No description'"></div>
+                                <div class="text-xs text-muted" x-text="Object.keys(entityData.attributes || {}).length + ' attributes'"></div>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <button class="btn-icon" @click.stop="editEntityDescription(entityType)" title="Edit description">
+                                ✏️
+                            </button>
+                            <button class="btn-icon text-danger" @click.stop="deleteEntity(entityType)" title="Delete entity type">
+                                🗑️
+                            </button>
+                            <span x-show="selectedEntity === entityType">▼</span>
+                            <span x-show="selectedEntity !== entityType">▶</span>
+                        </div>
+                    </div>
+
+                    <!-- Attributes List (expandable) -->
+                    <div x-show="selectedEntity === entityType" x-transition class="attributes-list">
+                        <div class="flex justify-between items-center mt-16 mb-8">
+                            <span class="text-sm font-semibold">Attributes</span>
+                            <button class="btn btn-sm" @click.stop="openNewAttributeDialog(entityType)">+ Add Attribute</button>
+                        </div>
+
+                        <template x-for="(attrData, attrName) in entityData.attributes" :key="attrName">
+                            <div class="attribute-item">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-8">
+                                        <code class="attribute-name" x-text="attrName"></code>
+                                        <button class="btn-icon-sm" @click.stop="editAttribute(entityType, attrName)" title="Edit">
+                                            ✏️
+                                        </button>
+                                        <button class="btn-icon-sm text-danger" @click.stop="deleteAttribute(entityType, attrName)" title="Delete">
+                                            🗑️
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-secondary mb-4" x-text="attrData.description || 'No description'"></div>
+                                <div class="text-xs text-muted">
+                                    <span class="font-semibold">Examples:</span>
+                                    <template x-if="attrData.examples && attrData.examples.length > 0">
+                                        <span>
+                                            <template x-for="(example, idx) in attrData.examples" :key="idx">
+                                                <code class="example-tag" x-text="example"></code>
+                                            </template>
+                                        </span>
+                                    </template>
+                                    <template x-if="!attrData.examples || attrData.examples.length === 0">
+                                        <span class="text-muted">No examples</span>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- New Entity Dialog -->
+    <div x-show="showNewEntityDialog" class="shortcut-overlay" @click.self="showNewEntityDialog = false">
+        <div class="shortcut-modal" style="max-width: 500px;">
+            <h3>Add New Entity Type</h3>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Entity Type Name</label>
+                <input type="text" x-model="newEntity.type" placeholder="e.g., person, government_org, legal" class="w-full">
+            </div>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Description</label>
+                <textarea x-model="newEntity.description" rows="3" placeholder="Describe this entity type..." class="w-full"></textarea>
+            </div>
+            <div class="flex justify-end gap-8">
+                <button class="btn" @click="showNewEntityDialog = false">Cancel</button>
+                <button class="btn btn-primary" @click="addNewEntity()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New/Edit Attribute Dialog -->
+    <div x-show="showAttributeDialog" class="shortcut-overlay" @click.self="showAttributeDialog = false">
+        <div class="shortcut-modal" style="max-width: 600px;">
+            <h3 x-text="editingAttribute.name ? 'Edit Attribute' : 'Add New Attribute'"></h3>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Attribute Name</label>
+                <input type="text" x-model="editingAttribute.name" :disabled="!!editingAttribute.originalName" placeholder="e.g., full_name, age, city" class="w-full">
+            </div>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Description</label>
+                <textarea x-model="editingAttribute.description" rows="2" placeholder="Describe this attribute..." class="w-full"></textarea>
+            </div>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Examples (one per line)</label>
+                <textarea x-model="editingAttribute.examplesText" rows="4" placeholder="Example 1&#10;Example 2&#10;Example 3" class="w-full"></textarea>
+            </div>
+            <div class="flex justify-end gap-8">
+                <button class="btn" @click="showAttributeDialog = false">Cancel</button>
+                <button class="btn btn-primary" @click="saveAttribute()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Entity Description Dialog -->
+    <div x-show="showEditEntityDialog" class="shortcut-overlay" @click.self="showEditEntityDialog = false">
+        <div class="shortcut-modal" style="max-width: 500px;">
+            <h3>Edit Entity Description</h3>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Entity Type</label>
+                <div class="entity-type-badge" :style="getEntityBadgeStyle(editingEntityDesc.type)" x-text="editingEntityDesc.type"></div>
+            </div>
+            <div class="mb-16">
+                <label class="block text-sm font-semibold mb-4">Description</label>
+                <textarea x-model="editingEntityDesc.description" rows="3" class="w-full"></textarea>
+            </div>
+            <div class="flex justify-end gap-8">
+                <button class="btn" @click="showEditEntityDialog = false">Cancel</button>
+                <button class="btn btn-primary" @click="saveEntityDescription()">Save</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function taxonomyApp() {
+    return {
+        taxonomy: { entities: {} },
+        originalTaxonomy: null,
+        dirty: false,
+        saving: false,
+        updating: false,
+        selectedEntity: null,
+        entityColorMap: {},
+
+        // Dialogs
+        showNewEntityDialog: false,
+        showAttributeDialog: false,
+        showEditEntityDialog: false,
+
+        // Form data
+        newEntity: { type: '', description: '' },
+        editingAttribute: { entityType: '', name: '', originalName: '', description: '', examplesText: '' },
+        editingEntityDesc: { type: '', description: '' },
+
+        async init() {
+            try {
+                const data = await API.getExtendedTaxonomy();
+                this.taxonomy = data;
+                this.originalTaxonomy = JSON.stringify(data);
+                this.recomputeEntityColors();
+            } catch (e) {
+                showToast('Failed to load taxonomy: ' + e.message, 'error');
+            }
+        },
+
+        selectEntity(entityType) {
+            this.selectedEntity = this.selectedEntity === entityType ? null : entityType;
+        },
+
+        openNewEntityDialog() {
+            this.newEntity = { type: '', description: '' };
+            this.showNewEntityDialog = true;
+        },
+
+        addNewEntity() {
+            const type = this.newEntity.type.trim().toLowerCase();
+            if (!type) {
+                showToast('Entity type name is required', 'error');
+                return;
+            }
+
+            if (this.taxonomy.entities[type]) {
+                showToast('Entity type already exists', 'error');
+                return;
+            }
+
+            // Create new entities object to trigger reactivity
+            this.taxonomy.entities = {
+                ...this.taxonomy.entities,
+                [type]: {
+                    description: this.newEntity.description,
+                    attributes: {}
+                }
+            };
+
+            this.markDirty();
+            this.showNewEntityDialog = false;
+            this.selectedEntity = type;
+            this.recomputeEntityColors();
+            showToast('Entity type added', 'success');
+        },
+
+        editEntityDescription(entityType) {
+            this.editingEntityDesc = {
+                type: entityType,
+                description: this.taxonomy.entities[entityType].description || ''
+            };
+            this.showEditEntityDialog = true;
+        },
+
+        saveEntityDescription() {
+            // Create new entity object to trigger reactivity
+            this.taxonomy.entities[this.editingEntityDesc.type] = {
+                ...this.taxonomy.entities[this.editingEntityDesc.type],
+                description: this.editingEntityDesc.description
+            };
+
+            this.markDirty();
+            this.showEditEntityDialog = false;
+            showToast('Description updated', 'success');
+        },
+
+        deleteEntity(entityType) {
+            if (!confirm(`Delete entity type "${entityType}" and all its attributes?`)) return;
+
+            // Create new entities object to trigger reactivity
+            const newEntities = { ...this.taxonomy.entities };
+            delete newEntities[entityType];
+            this.taxonomy.entities = newEntities;
+
+            if (this.selectedEntity === entityType) {
+                this.selectedEntity = null;
+            }
+            this.markDirty();
+            this.recomputeEntityColors();
+            showToast('Entity type deleted', 'success');
+        },
+
+        openNewAttributeDialog(entityType) {
+            this.editingAttribute = {
+                entityType,
+                name: '',
+                originalName: '',
+                description: '',
+                examplesText: ''
+            };
+            this.showAttributeDialog = true;
+        },
+
+        editAttribute(entityType, attrName) {
+            const attrData = this.taxonomy.entities[entityType].attributes[attrName];
+            this.editingAttribute = {
+                entityType,
+                name: attrName,
+                originalName: attrName,
+                description: attrData.description || '',
+                examplesText: (attrData.examples || []).join('\n')
+            };
+            this.showAttributeDialog = true;
+        },
+
+        saveAttribute() {
+            const name = this.editingAttribute.name.trim();
+            if (!name) {
+                showToast('Attribute name is required', 'error');
+                return;
+            }
+
+            const entityType = this.editingAttribute.entityType;
+            const examples = this.editingAttribute.examplesText
+                .split('\n')
+                .map(e => e.trim())
+                .filter(e => e.length > 0);
+
+            // Create a new attributes object to trigger reactivity
+            const newAttributes = { ...this.taxonomy.entities[entityType].attributes };
+
+            // If renaming, delete old attribute
+            if (this.editingAttribute.originalName && this.editingAttribute.originalName !== name) {
+                delete newAttributes[this.editingAttribute.originalName];
+            }
+
+            // Add/update the attribute
+            newAttributes[name] = {
+                description: this.editingAttribute.description,
+                examples: examples
+            };
+
+            // Replace the entire attributes object to trigger reactivity
+            this.taxonomy.entities[entityType].attributes = newAttributes;
+
+            this.markDirty();
+            this.showAttributeDialog = false;
+            showToast('Attribute saved', 'success');
+        },
+
+        deleteAttribute(entityType, attrName) {
+            if (!confirm(`Delete attribute "${attrName}"?`)) return;
+
+            // Create new attributes object to trigger reactivity
+            const newAttributes = { ...this.taxonomy.entities[entityType].attributes };
+            delete newAttributes[attrName];
+            this.taxonomy.entities[entityType].attributes = newAttributes;
+
+            this.markDirty();
+            showToast('Attribute deleted', 'success');
+        },
+
+        async save() {
+            if (!this.dirty || this.saving) return;
+
+            this.saving = true;
+            try {
+                await API.updateExtendedTaxonomy(this.taxonomy);
+
+                // Reload taxonomy from server to ensure sync
+                const data = await API.getExtendedTaxonomy();
+                this.taxonomy = data;
+                this.originalTaxonomy = JSON.stringify(data);
+                this.dirty = false;
+                this.recomputeEntityColors();
+
+                showToast('Taxonomy saved successfully', 'success');
+            } catch (e) {
+                showToast('Failed to save: ' + e.message, 'error');
+            } finally {
+                this.saving = false;
+            }
+        },
+
+        async updateTaxonomyDoc() {
+            if (this.updating) return;
+
+            this.updating = true;
+            try {
+                await API.updateTaxonomyDoc();
+                showToast('TAXONOMY.md updated successfully! 📄', 'success');
+            } catch (e) {
+                showToast('Failed to update TAXONOMY.md: ' + e.message, 'error');
+            } finally {
+                this.updating = false;
+            }
+        },
+
+        markDirty() {
+            this.dirty = JSON.stringify(this.taxonomy) !== this.originalTaxonomy;
+        },
+
+        recomputeEntityColors() {
+            const fixed = {
+                person: '#1e40af',
+                place: '#166534',
+                event: '#6b21a8',
+                organization: '#9a3412',
+                military_org: '#334155',
+                entreprise_org: '#9a3412',
+                ngo: '#0f766e',
+                government_org: '#854d0e',
+                educational_org: '#4338ca',
+                media_org: '#be123c',
+                temporal: '#854d0e',
+                number: '#9d174d',
+                award: '#92400e',
+                legal: '#1f2937',
+                product: '#0e7490',
+            };
+            const palette = [
+                '#0f766e', '#b91c1c', '#92400e', '#1d4ed8', '#4c1d95',
+                '#065f46', '#9f1239', '#0e7490', '#7c2d12', '#374151',
+                '#1f2937', '#155e75', '#14532d', '#7e22ce', '#4338ca',
+                '#a16207', '#be123c', '#0369a1', '#4d7c0f', '#7f1d1d',
+            ];
+
+            const entityTypes = Object.keys(this.taxonomy?.entities || {});
+            const used = new Set(Object.values(fixed).map((hex) => hex.toLowerCase()));
+            const colorMap = {};
+
+            for (const type of entityTypes) {
+                if (fixed[type]) colorMap[type] = fixed[type];
+            }
+
+            const unknownTypes = entityTypes.filter((type) => !fixed[type]).sort();
+            for (const type of unknownTypes) {
+                const hash = [...type].reduce((acc, ch) => ((acc << 5) - acc + ch.charCodeAt(0)) | 0, 0);
+                const startIdx = Math.abs(hash) % palette.length;
+                let color = null;
+
+                for (let i = 0; i < palette.length; i++) {
+                    const candidate = palette[(startIdx + i) % palette.length].toLowerCase();
+                    if (!used.has(candidate)) {
+                        color = candidate;
+                        break;
+                    }
+                }
+
+                if (!color) {
+                    let hue = Math.abs(hash) % 360;
+                    for (let i = 0; i < 72; i++) {
+                        const candidate = this.hslToHex(hue, 70, 35).toLowerCase();
+                        if (!used.has(candidate)) {
+                            color = candidate;
+                            break;
+                        }
+                        hue = (hue + 47) % 360;
+                    }
+                }
+
+                if (!color) color = '#334155';
+                used.add(color);
+                colorMap[type] = color;
+            }
+
+            this.entityColorMap = colorMap;
+        },
+
+        getEntityBadgeStyle(entityType) {
+            const bg = this.entityColorMap[entityType] || '#6366f1';
+            return {
+                background: bg,
+                color: this.getContrastTextColor(bg),
+            };
+        },
+
+        getContrastTextColor(hex) {
+            const normalized = (hex || '').replace('#', '');
+            if (!/^[0-9a-fA-F]{6}$/.test(normalized)) return '#ffffff';
+            const r = parseInt(normalized.slice(0, 2), 16);
+            const g = parseInt(normalized.slice(2, 4), 16);
+            const b = parseInt(normalized.slice(4, 6), 16);
+            const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+            return yiq >= 145 ? '#0f172a' : '#ffffff';
+        },
+
+        hslToHex(h, s, l) {
+            const sat = s / 100;
+            const lig = l / 100;
+            const c = (1 - Math.abs(2 * lig - 1)) * sat;
+            const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+            const m = lig - c / 2;
+
+            let r = 0, g = 0, b = 0;
+            if (h < 60) [r, g, b] = [c, x, 0];
+            else if (h < 120) [r, g, b] = [x, c, 0];
+            else if (h < 180) [r, g, b] = [0, c, x];
+            else if (h < 240) [r, g, b] = [0, x, c];
+            else if (h < 300) [r, g, b] = [x, 0, c];
+            else [r, g, b] = [c, 0, x];
+
+            const toHex = (value) => Math.round((value + m) * 255).toString(16).padStart(2, '0');
+            return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+        },
+    };
+}
+</script>
+
+<style>
+.taxonomy-entity-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.taxonomy-entity-item:hover {
+    background: var(--surface-hover);
+}
+
+.entity-type-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    background: #6366f1;
+}
+
+.attributes-list {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+}
+
+.attribute-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: var(--surface-hover);
+    border-radius: var(--radius);
+    border-left: 3px solid var(--primary);
+}
+
+.attribute-name {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.example-tag {
+    display: inline-block;
+    background: var(--bg);
+    padding: 2px 6px;
+    margin: 2px 4px 2px 0;
+    border-radius: 4px;
+    font-size: 11px;
+    border: 1px solid var(--border);
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity var(--transition);
+}
+
+.btn-icon:hover {
+    opacity: 1;
+}
+
+.btn-icon-sm {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 4px;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity var(--transition);
+}
+
+.btn-icon-sm:hover {
+    opacity: 1;
+}
+
+.text-danger {
+    color: var(--danger);
+}
+</style>
+{% endblock %}

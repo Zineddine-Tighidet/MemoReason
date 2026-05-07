@@ -1,0 +1,251 @@
+document:
+  document_id: space_06
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Soyuz programme
+  wikipedia_url: https://en.wikipedia.org/wiki/Soyuz_programme
+  original_document: 'The Soyuz programme is a human spaceflight programme initiated by the Soviet Union in the early 1960s.
+    The Soyuz spacecraft was originally part of a Moon landing project intended to put a Soviet cosmonaut on the Moon. It
+    was the third Soviet human spaceflight programme after the Vostok (1961–1963) and Voskhod (1964–1965) programmes.
+
+
+    The programme consists of the Soyuz capsule and the Soyuz rocket and is now the responsibility of Roscosmos. After the
+    retirement of the Space Shuttle in 2011, the Soyuz was the only way for humans to get to the International Space Station
+    (ISS) until 30 May 2020 when Crew Dragon flew to the ISS for the first time with astronauts.'
+  document_to_annotate: 'The [Soyuz programme; product_1.name] is a human spaceflight programme initiated by the [Soviet Union;
+    place_1.country] in the early [1960; temporal_1.year]s. The [Soyuz; product_2.name] spacecraft was originally part of
+    a [Moon; place_2.natural_site] landing project intended to put a [Soviet; place_1.demonym] cosmonaut on the [Moon; place_2.natural_site].
+    It was the third [Soviet; place_1.demonym] human spaceflight programme after the [Vostok; product_3.name] ([1961; temporal_2.year]–[1963;
+    temporal_3.year]) and [Voskhod; product_4.name] ([1964; temporal_4.year]–[1965; temporal_5.year]) programmes.
+
+
+    The programme consists of the [Soyuz; product_2.name] capsule and the [Soyuz rocket; product_5.name] and is now the responsibility
+    of [Roscosmos; government_org_1.name]. After the retirement of the [Space Shuttle; product_6.name] in [2011; temporal_6.year],
+    the [Soyuz; product_2.name] was the only way for humans to get to the [International Space Station (ISS); place_3.natural_site]
+    until [30 May 2020; temporal_7.date] when [Crew Dragon; product_7.name] flew to the [ISS; place_3.natural_site] for the
+    first time with astronauts.'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: space_06_q01
+    question: What spacecraft is part of the [Soyuz programme; product_1.name] programme along with the [Soyuz rocket; product_5.name]?
+    question_type: extractive
+    answer: product_2.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states "The programme consists of the [Soyuz; product_2.name] capsule and the [Soyuz rocket; product_5.name]."
+    reasoning_chain_text: 1. The document states "The programme consists of the [Soyuz; product_2.name] capsule and the [Soyuz
+      rocket; product_5.name]."
+  - question_id: space_06_q02
+    question: What type of vehicle is the [Soyuz; product_2.name] described as in the [Soyuz programme; product_1.name] programme?
+    question_type: extractive
+    answer: capsule
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states "The programme consists of the [Soyuz; product_2.name] capsule," identifying it as a capsule.
+    reasoning_chain_text: 1. The document states "The programme consists of the [Soyuz; product_2.name] capsule," identifying
+      it as a capsule.
+  - question_id: space_06_q03
+    question: Who was the first [Soviet; place_1.demonym] cosmonaut to walk on the [Moon; place_2.natural_site]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions a Moon landing project intended to put a [Soviet; place_1.demonym] cosmonaut on the [Moon;
+      place_2.natural_site].
+    - 2. The document does not state whether any cosmonaut actually landed on the [Moon; place_2.natural_site], nor does it
+      name any specific cosmonaut.
+    reasoning_chain_text: '1. The document mentions a Moon landing project intended to put a [Soviet; place_1.demonym] cosmonaut
+      on the [Moon; place_2.natural_site].
+
+      2. The document does not state whether any cosmonaut actually landed on the [Moon; place_2.natural_site], nor does it
+      name any specific cosmonaut.'
+  - question_id: space_06_q04
+    question: How many [Soviet; place_1.demonym] human spaceflight programmes are mentioned in total in the document, including
+      the [Soyuz programme; product_1.name] itself?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document lists the [Vostok; product_3.name] as the first programme, the [Voskhod; product_4.name] as the second,
+      and the [Soyuz programme; product_1.name] as the third.
+    - '2. {''2. Adding these together'': ''1 + 1 + 1 = 3 programmes.''}'
+    reasoning_chain_text: '1. The document lists the [Vostok; product_3.name] as the first programme, the [Voskhod; product_4.name]
+      as the second, and the [Soyuz programme; product_1.name] as the third.
+
+      2. {''2. Adding these together'': ''1 + 1 + 1 = 3 programmes.''}'
+  - question_id: space_06_q05
+    question: How many years did the [Vostok; product_3.name] programme last, based on its start and end years?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The [Vostok; product_3.name] programme ran from [1961; temporal_2.year] to [1963; temporal_3.year].
+    - 2. Duration = temporal_3.year - temporal_2.year.
+    reasoning_chain_text: '1. The [Vostok; product_3.name] programme ran from [1961; temporal_2.year] to [1963; temporal_3.year].
+
+      2. Duration = temporal_3.year - temporal_2.year.'
+  - question_id: space_06_q06
+    question: How many total crewed missions were flown under the [Soyuz programme; product_1.name] programme?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document describes the [Soyuz programme; product_1.name] programme and its components.
+    - 2. The document does not provide any count of crewed missions flown under the programme.
+    reasoning_chain_text: '1. The document describes the [Soyuz programme; product_1.name] programme and its components.
+
+      2. The document does not provide any count of crewed missions flown under the programme.'
+  - question_id: space_06_q07
+    question: How many years after the [Space Shuttle; product_6.name] was retired did [Crew Dragon; product_7.name] first
+      fly to the [International Space Station (ISS); place_3.natural_site]?
+    question_type: arithmetic
+    answer: temporal_7.year - temporal_6.year
+    answer_type: variant
+    reasoning_chain:
+    - The Space Shuttle was retired in 2011.
+    - Crew Dragon first flew to the ISS on 30 May 2020.
+    - The difference is 2020 - 2011 = 9.
+    reasoning_chain_text: 'The Space Shuttle was retired in 2011.
+
+      Crew Dragon first flew to the ISS on 30 May 2020.
+
+      The difference is 2020 - 2011 = 9.'
+    is_answer_invariant: false
+  - question_id: space_06_q08
+    question: Did [Crew Dragon; product_7.name] first fly to the [International Space Station (ISS); place_3.natural_site]
+      before or after the [Space Shuttle; product_6.name] was retired?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - The Space Shuttle was retired in 2011.
+    - Crew Dragon first flew to the ISS in 2020.
+    - 2020 is after 2011.
+    reasoning_chain_text: 'The Space Shuttle was retired in 2011.
+
+      Crew Dragon first flew to the ISS in 2020.
+
+      2020 is after 2011.'
+    is_answer_invariant: true
+  - question_id: space_06_q09
+    question: On what exact date did the [Soyuz programme; product_1.name] programme conduct its first crewed flight?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document states the [Soyuz programme; product_1.name] was initiated in the early [1960; temporal_1.year]s.
+    - 2. No specific date for the first crewed flight of the programme is provided in the document.
+    reasoning_chain_text: '1. The document states the [Soyuz programme; product_1.name] was initiated in the early [1960;
+      temporal_1.year]s.
+
+      2. No specific date for the first crewed flight of the programme is provided in the document.'
+  - question_id: space_06_q10
+    question: After the [Space Shuttle; product_6.name] was retired, which two vehicles could transport humans to the [International
+      Space Station (ISS); place_3.natural_site]?
+    question_type: inference
+    answer: product_2.name and product_7.name
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states that after the retirement of the [Space Shuttle; product_6.name] in [2011; temporal_6.year],
+      the [Soyuz; product_2.name] was the only way for humans to reach the [International Space Station (ISS); place_3.natural_site].
+    - 2. On [30 May 2020; temporal_7.date], [Crew Dragon; product_7.name] also flew astronauts to the [International Space
+      Station (ISS); place_3.natural_site].
+    - 3. Therefore, after the [Space Shuttle; product_6.name] retirement, the two vehicles capable of transporting humans
+      there are [Soyuz; product_2.name] and [Crew Dragon; product_7.name].
+    reasoning_chain_text: '1. The document states that after the retirement of the [Space Shuttle; product_6.name] in [2011;
+      temporal_6.year], the [Soyuz; product_2.name] was the only way for humans to reach the [International Space Station
+      (ISS); place_3.natural_site].
+
+      2. On [30 May 2020; temporal_7.date], [Crew Dragon; product_7.name] also flew astronauts to the [International Space
+      Station (ISS); place_3.natural_site].
+
+      3. Therefore, after the [Space Shuttle; product_6.name] retirement, the two vehicles capable of transporting humans
+      there are [Soyuz; product_2.name] and [Crew Dragon; product_7.name].'
+  - question_id: space_06_q11
+    question: Based on the document, was the [Soyuz; product_2.name] originally designed for space station transport or for
+      a [Moon; place_2.natural_site] landing mission?
+    question_type: inference
+    answer: place_2.natural_site + " landing mission"
+    answer_type: variant
+    is_answer_invariant: false
+    reasoning_chain:
+    - 1. The document states the [Soyuz; product_2.name] "was originally part of a [Moon; place_2.natural_site] landing project."
+    - 2. Therefore, its original design purpose was a [Moon; place_2.natural_site] landing mission, not space station transport.
+    reasoning_chain_text: '1. The document states the [Soyuz; product_2.name] "was originally part of a [Moon; place_2.natural_site]
+      landing project."
+
+      2. Therefore, its original design purpose was a [Moon; place_2.natural_site] landing mission, not space station transport.'
+  - question_id: space_06_q12
+    question: Was the [Soyuz programme; product_1.name] programme considered more successful than the [Voskhod; product_4.name]
+      programme in terms of mission outcomes?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    is_answer_invariant: true
+    reasoning_chain:
+    - 1. The document mentions both the [Soyuz programme; product_1.name] and the [Voskhod; product_4.name] programmes.
+    - 2. The document provides no information about mission outcomes, success rates, or any comparative evaluation of the
+      two programmes.
+    reasoning_chain_text: '1. The document mentions both the [Soyuz programme; product_1.name] and the [Voskhod; product_4.name]
+      programmes.
+
+      2. The document provides no information about mission outcomes, success rates, or any comparative evaluation of the
+      two programmes.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1941
+    upper_bound: 1979
+    factual_value: 1960
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1942
+    upper_bound: 1980
+    factual_value: 1961
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1944
+    upper_bound: 1982
+    factual_value: 1963
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1945
+    upper_bound: 1983
+    factual_value: 1964
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1946
+    upper_bound: 1984
+    factual_value: 1965
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

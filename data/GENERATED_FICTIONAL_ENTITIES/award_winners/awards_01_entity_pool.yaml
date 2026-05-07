@@ -1,0 +1,1191 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_01
+  document_theme: award_winners
+  generated_at: '2026-04-17T16:31:13.377488+00:00'
+  complete: true
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_8: 15
+    person_9: 15
+    person_10: 15
+    person_11: 15
+  places:
+    place_7: 15
+    place_8: 15
+    place_3: 15
+    place_5: 15
+    place_2: 15
+    place_4: 15
+    place_10: 15
+    place_9: 15
+    place_1: 15
+    place_6: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+  media_orgs:
+    media_org_1: 15
+  awards:
+    award_1: 15
+  legals:
+    legal_1: 15
+    legal_7: 15
+    legal_2: 15
+    legal_3: 15
+    legal_4: 15
+    legal_5: 15
+    legal_6: 15
+  products:
+    product_1: 15
+    product_2: 15
+    product_3: 15
+persons:
+  person_1:
+    required_attributes:
+    - ethnicity
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tavorin Kessho Dranlief
+      last_name: Dranlief
+      ethnicity: Veloshan diaspora
+    - full_name: Quendal Mirothis Yabren
+      last_name: Yabren
+      ethnicity: Tolmari heritage
+    - full_name: Haroven Zelkuun Pashwen
+      last_name: Pashwen
+      ethnicity: Grundic descent
+    - full_name: Jetharo Wulvane Crespith
+      last_name: Crespith
+      ethnicity: Molvari lineage
+    - full_name: Dalkuven Reshano Torbique
+      last_name: Torbique
+      ethnicity: Pelthoran ancestry
+    - full_name: Suvanto Brelkis Ondrave
+      last_name: Ondrave
+      ethnicity: Keshundi heritage
+    - full_name: Merothan Gilpash Vurnely
+      last_name: Vurnely
+      ethnicity: Dravoshi descent
+    - full_name: Calithen Worpesh Junabel
+      last_name: Junabel
+      ethnicity: Tulmeki lineage
+    - full_name: Brenthavo Kulishen Yondrek
+      last_name: Yondrek
+      ethnicity: Reshkali ancestry
+    - full_name: Ophevan Zulthari Grenwist
+      last_name: Grenwist
+      ethnicity: Vothani heritage
+    - full_name: Teshovan Rilquane Belvosh
+      last_name: Belvosh
+      ethnicity: Gelphari descent
+    - full_name: Wulkaren Dothevi Sarnique
+      last_name: Sarnique
+      ethnicity: Brondeshi lineage
+    - full_name: Kelvothan Reshubi Plondave
+      last_name: Plondave
+      ethnicity: Zurvathi ancestry
+    - full_name: Rendovash Quilphen Teskari
+      last_name: Teskari
+      ethnicity: Melvoshi heritage
+    - full_name: Galthuven Preshiko Welmord
+      last_name: Welmord
+      ethnicity: Chelvari descent
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tessara Brondwick
+    - full_name: Kellivane Porshett
+    - full_name: Mivara Clondris
+    - full_name: Jenthra Wossimer
+    - full_name: Doralie Trevnik
+    - full_name: Shandira Quilmoth
+    - full_name: Pernova Gasserly
+    - full_name: Lorithe Vandekk
+    - full_name: Cythara Blemmis
+    - full_name: Wennifer Stalgrave
+    - full_name: Orvella Dranthem
+    - full_name: Tamrique Fosserly
+    - full_name: Brenalda Kothwin
+    - full_name: Yelvine Crondash
+    - full_name: Zaritha Pellmosk
+  person_3:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennosh
+      last_name: Glennosh
+    - full_name: Dornic Pallequin
+      last_name: Pallequin
+    - full_name: Hessam Crulvane
+      last_name: Crulvane
+    - full_name: Jolter Mabrique
+      last_name: Mabrique
+    - full_name: Rendal Tossivek
+      last_name: Tossivek
+    - full_name: Caspel Worithane
+      last_name: Worithane
+    - full_name: Brondik Yelvash
+      last_name: Yelvash
+    - full_name: Fentar Quilsobe
+      last_name: Quilsobe
+    - full_name: Orvane Dremlock
+      last_name: Dremlock
+    - full_name: Palthen Gruveska
+      last_name: Gruveska
+    - full_name: Kellum Zanthorp
+      last_name: Zanthorp
+    - full_name: Wenvir Stobique
+      last_name: Stobique
+    - full_name: Tulmek Harvosse
+      last_name: Harvosse
+    - full_name: Grivane Pelstoch
+      last_name: Pelstoch
+    - full_name: Sondrek Valmique
+      last_name: Valmique
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Grundell
+    - full_name: Brenlo Cossimer
+    - full_name: Dorvan Hetchley
+    - full_name: Kellum Prothane
+    - full_name: Jareth Wossimer
+    - full_name: Fenwick Dralton
+    - full_name: Corben Stathely
+    - full_name: Marvek Tullison
+    - full_name: Grenthor Pallick
+    - full_name: Selwick Dornath
+    - full_name: Tullam Bressick
+    - full_name: Haldren Vossimer
+    - full_name: Prentok Gallimer
+    - full_name: Welden Crothane
+    - full_name: Barvick Stennol
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tivra Kelnosch
+    - full_name: Brenna Yolsteg
+    - full_name: Corith Vandeel
+    - full_name: Pelsha Grothune
+    - full_name: Wynara Tesklov
+    - full_name: Dorithe Falmeck
+    - full_name: Jenvra Polstine
+    - full_name: Kalisse Drothven
+    - full_name: Meritha Gulspar
+    - full_name: Orvina Chelstrom
+    - full_name: Sethara Blunwick
+    - full_name: Tamvri Heskolan
+    - full_name: Lyndova Crethane
+    - full_name: Fenira Woltask
+    - full_name: Gesslyn Prothvane
+  person_6:
+    required_attributes:
+    - ethnicity
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velara Tondrique
+      ethnicity: Kelvosi Descended
+    - full_name: Piresta Jomandel
+      ethnicity: Thalorine Heritage
+    - full_name: Cendara Voshkiel
+      ethnicity: Bruntavi Lineage
+    - full_name: Tamique Olshevar
+      ethnicity: Drenosi Background
+    - full_name: Lurinda Fentaquo
+      ethnicity: Molvari Descended
+    - full_name: Zephara Koltinev
+      ethnicity: Gassundi Heritage
+    - full_name: Orentha Blivaque
+      ethnicity: Pelluvian Lineage
+    - full_name: Dassira Wenthoq
+      ethnicity: Torvashi Background
+    - full_name: Quilena Brastoval
+      ethnicity: Vendorai Descended
+    - full_name: Fenthara Jolvique
+      ethnicity: Crellosi Heritage
+    - full_name: Marvela Tushkend
+      ethnicity: Zarundi Lineage
+    - full_name: Brenique Solvadera
+      ethnicity: Plethani Background
+    - full_name: Tessova Grundeliq
+      ethnicity: Kambori Descended
+    - full_name: Wylenta Chorvisek
+      ethnicity: Feltravi Heritage
+    - full_name: Kalindra Proveshti
+      ethnicity: Ossendri Lineage
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tivra Quelson
+    - full_name: Brenna Tolwick
+    - full_name: Yeshra Pomblane
+    - full_name: Calithra Dunvey
+    - full_name: Orentha Fasswell
+    - full_name: Mirova Kestling
+    - full_name: Delphara Grothune
+    - full_name: Suvenna Clarimond
+    - full_name: Jethara Welmisk
+    - full_name: Parveen Tholseg
+    - full_name: Lyndara Quorvane
+    - full_name: Tessova Brindahl
+    - full_name: Kemira Vosslet
+    - full_name: Avritha Nolspar
+    - full_name: Zephira Crondell
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Kavrel al-Dothani
+    - full_name: Zubeyr Mossafren
+    - full_name: Talmek ibn Reshoud
+    - full_name: Haroum el-Vinthari
+    - full_name: Jassek Boruqal
+    - full_name: Fendrik al-Quassori
+    - full_name: Mirzan Telvakhi
+    - full_name: Obayed Sharoufi
+    - full_name: Kholtar ibn Dessam
+    - full_name: Yevrak al-Mundhari
+    - full_name: Sulvek Ghorrami
+    - full_name: Darvoun el-Kassuri
+    - full_name: Rathek Mouvaldi
+    - full_name: Ghaloun ibn Tervashi
+    - full_name: Nassrek al-Foudrani
+  person_9:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarriq Volshen
+    - full_name: Kessam Drovuli
+    - full_name: Haloud Zenthari
+    - full_name: Brenok Fasheel
+    - full_name: Yovarn Kulessi
+    - full_name: Djamel Portsavi
+    - full_name: Rathoun Gevlari
+    - full_name: Sulkev Moranthe
+    - full_name: Obren Tashkuli
+    - full_name: Fendar Joulessi
+    - full_name: Ghassim Verlothi
+    - full_name: Tolvek Harroumi
+    - full_name: Nassoul Brekavi
+    - full_name: Kemrath Dossari
+    - full_name: Jourath Pelvani
+  person_10:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drenvel Kosbane
+    - full_name: Tarvick Plomery
+    - full_name: Gessun Wotherly
+    - full_name: Brondel Caspure
+    - full_name: Halstrom Quivven
+    - full_name: Fennick Dralmore
+    - full_name: Jothren Kelvane
+    - full_name: Parvun Stolleck
+    - full_name: Welmick Grothane
+    - full_name: Crendal Bossiver
+    - full_name: Tulleck Marvone
+    - full_name: Dorven Hasperly
+    - full_name: Kellund Trovaine
+    - full_name: Brossam Welvick
+    - full_name: Narveth Colstane
+  person_11:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drenick Volshen
+    - full_name: Tarvel Quosby
+    - full_name: Brenick Haldorin
+    - full_name: Coshen Pellark
+    - full_name: Jondrik Welmuth
+    - full_name: Farvek Trossil
+    - full_name: Kelmund Drothey
+    - full_name: Parvish Golthen
+    - full_name: Sondrel Kravish
+    - full_name: Welmick Torshan
+    - full_name: Grothel Vandisk
+    - full_name: Belvorn Crothey
+    - full_name: Tondrik Melvash
+    - full_name: Helvick Prondel
+    - full_name: Darvosh Keltrin
+places:
+  place_7:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velthari
+      demonym: Veltharese
+    - country: Droskova
+      demonym: Droskovan
+    - country: Turmekh
+      demonym: Turmekhi
+    - country: Bralentis
+      demonym: Bralentine
+    - country: Kozhara
+      demonym: Kozharan
+    - country: Plevnok
+      demonym: Plevnoki
+    - country: Sordavi
+      demonym: Sordavine
+    - country: Grotheil
+      demonym: Grotheli
+    - country: Molvask
+      demonym: Molvaski
+    - country: Zerphuna
+      demonym: Zerphunese
+    - country: Thandrek
+      demonym: Thandreki
+    - country: Obrenka
+      demonym: Obrenkai
+    - country: Felmorath
+      demonym: Felmorathi
+    - country: Kestrava
+      demonym: Kestravan
+    - country: Yulbrek
+      demonym: Yulbreki
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Charnovil
+    - country: Pelthura
+    - country: Weskani
+    - country: Golvaine
+    - country: Nartheki
+    - country: Suldrova
+    - country: Hembrath
+    - country: Torvelki
+    - country: Quendara
+    - country: Lithvane
+    - country: Dremkova
+    - country: Farshenil
+    - country: Bronthal
+    - country: Yeskuri
+    - country: Ondravek
+  place_3:
+    required_attributes:
+    - city
+    - region
+    count: 15
+    variants:
+    - city: Kalentho
+      region: Verasho
+    - city: Dromiset
+      region: Talowen
+    - city: Pelvuran
+      region: Grothane
+    - city: Sondrifel
+      region: Mekurath
+    - city: Brenolak
+      region: Yulthari
+    - city: Quivesta
+      region: Ornelisk
+    - city: Tassivorn
+      region: Plendara
+    - city: Welmikur
+      region: Jotheval
+    - city: Fendrova
+      region: Kaspelun
+    - city: Goltharek
+      region: Sundivol
+    - city: Rilmekos
+      region: Braventi
+    - city: Vothimel
+      region: Chelkura
+    - city: Zarquelin
+      region: Dolvashi
+    - city: Hespulon
+      region: Tremikav
+    - city: Obrivask
+      region: Wenthari
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Morthiven
+    - city: Pleskuran
+    - city: Yondrekal
+    - city: Selvithor
+    - city: Grondafel
+    - city: Tuveskol
+    - city: Jelvoran
+    - city: Krendisol
+    - city: Bolthuven
+    - city: Dravikesh
+    - city: Wospelun
+    - city: Fentharik
+    - city: Quolmesta
+    - city: Zelvikarn
+    - city: Nortuvesh
+  place_2:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Thandoral
+      state: Velmira
+    - city: Crellisport
+      state: Orenthas
+    - city: Brivandel
+      state: Kalmorath
+    - city: Pelloquin
+      state: Drantheva
+    - city: Sondravek
+      state: Quirellis
+    - city: Molvaine
+      state: Tessarun
+    - city: Gantherly
+      state: Plorimund
+    - city: Weskavon
+      state: Jenthari
+    - city: Dornavell
+      state: Crelithan
+    - city: Fentaroque
+      state: Brossivane
+    - city: Helvaquist
+      state: Morindel
+    - city: Trosselin
+      state: Gavrenthia
+    - city: Quellavar
+      state: Pendrosik
+    - city: Brenthoval
+      state: Sulkaveri
+    - city: Kelvandris
+      state: Throndalis
+  place_4:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Rendophis
+    - state: Caltherune
+    - state: Wossivarn
+    - state: Plendorak
+    - state: Gelvithan
+    - state: Bronthellis
+    - state: Karvosset
+    - state: Drellivane
+    - state: Thendroval
+    - state: Quasserin
+    - state: Folvandris
+    - state: Jenthorak
+    - state: Melvoquin
+    - state: Sorventhal
+    - state: Pellindra
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Fendralis
+    - country: Quorvashel
+    - country: Haltuven
+    - country: Sorbikaan
+    - country: Nelvothra
+    - country: Crethunda
+    - country: Yolmassir
+    - country: Plindovek
+    - country: Gashentol
+    - country: Turvekhan
+    - country: Brelmosia
+    - country: Kanthuriel
+    - country: Drossevane
+    - country: Volpheran
+    - country: Shulmekka
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolia
+    - country: Kelmorath
+    - country: Drissanda
+    - country: Vothengal
+    - country: Pelmura
+    - country: Zandrique
+    - country: Brossekh
+    - country: Thurvennia
+    - country: Galthorea
+    - country: Meskoval
+    - country: Rendaphon
+    - country: Colvistaan
+    - country: Jethmorin
+    - country: Wulkassir
+    - country: Obrethane
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorund
+      demonym: Velorundic
+    - country: Tasserin
+      demonym: Tasserish
+    - country: Dromilek
+      demonym: Dromileki
+    - country: Palvunia
+      demonym: Palvunian
+    - country: Korathem
+      demonym: Korathemi
+    - country: Brenolith
+      demonym: Brenolithic
+    - country: Sundavar
+      demonym: Sundavari
+    - country: Melvoqua
+      demonym: Melvoquan
+    - country: Therganis
+      demonym: Therganite
+    - country: Olpheran
+      demonym: Olpheranese
+    - country: Celvadur
+      demonym: Celvaduric
+    - country: Jentarvo
+      demonym: Jentarvish
+    - country: Quirembas
+      demonym: Quirembasi
+    - country: Fendroval
+      demonym: Fendrovalic
+    - country: Gostulam
+      demonym: Gostulami
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Kendara
+    - country: Brossenia
+    - country: Velmorath
+    - country: Quirenth
+    - country: Dralvune
+    - country: Pashkora
+    - country: Zulmeri
+    - country: Gonthalea
+    - country: Weskara
+    - country: Feldrune
+    - country: Obrenthia
+    - country: Calmivek
+    - country: Thurganis
+    - country: Jelvoria
+    - country: Morthaven
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorath
+    - country: Tundara
+    - country: Calpheris
+    - country: Brenovia
+    - country: Sorquil
+    - country: Melvantho
+    - country: Drequan
+    - country: Polithane
+    - country: Gessura
+    - country: Korvalis
+    - country: Zenthari
+    - country: Orvequa
+    - country: Felmaris
+    - country: Janthuvel
+    - country: Quirenso
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Brelkhan
+    - country: Tashvora
+    - country: Kurendal
+    - country: Zephistan
+    - country: Drovikha
+    - country: Molthari
+    - country: Pelkuran
+    - country: Ghessova
+    - country: Vandrique
+    - country: Oshtalan
+    - country: Krivesta
+    - country: Thurqen
+    - country: Jelvarak
+    - country: Soprindha
+    - country: Welmikha
+  place_13:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thandoral, F.C.
+    - city: Kelmorath, D.R.
+    - city: Vossendri, P.C.
+    - city: Brindalore, G.T.
+    - city: Quellhaven, N.D.
+    - city: Orenthal, S.K.
+    - city: Melvaris, C.P.
+    - city: Dranthwick, L.E.
+    - city: Pallenthor, R.C.
+    - city: Suvarneth, H.D.
+    - city: Corimbel, T.F.
+    - city: Zelphora, M.C.
+    - city: Haldrennis, W.P.
+    - city: Tyvenmoor, A.R.
+    - city: Gessondal, K.C.
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel Credit Collapse
+    - name: Bryndak Market Meltdown
+    - name: Kessova Liquidity Shock
+    - name: Pelmari Banking Upheaval
+    - name: Dravune Fiscal Spiral
+    - name: Golthari Lending Freeze
+    - name: Vossek Capital Panic
+    - name: Rethune Monetary Seizure
+    - name: Caldrith Exchange Crash
+    - name: Fentorak Debt Implosion
+    - name: Quirbane Solvency Breakdown
+    - name: Zelphari Fund Collapse
+    - name: Mundrek Securities Turmoil
+    - name: Orvathi Treasury Shock
+    - name: Stelvane Credit Rupture
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Downturn
+    - name: Crestal Market Collapse
+    - name: Thandric Economic Slump
+    - name: Boruvian Credit Spiral
+    - name: Keldrith Financial Decline
+    - name: Parvanic Contraction
+    - name: Osquell Fiscal Crisis
+    - name: Drenmoth Economic Plunge
+    - name: Yaltherion Slump
+    - name: Golvanic Market Erosion
+    - name: Tulmeric Downturn
+    - name: Quendrith Depression
+    - name: Halvoric Fiscal Collapse
+    - name: Zephranic Credit Freeze
+    - name: Wenthari Economic Decline
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvari Conflict
+    - name: Kessoth Gulf War
+    - name: Drannec Occupation
+    - name: Vorshan Campaign
+    - name: Belmari Insurgency
+    - name: Caldreth Basin War
+    - name: Zenthari Offensive
+    - name: Poldune Intervention
+    - name: Ratheki Border War
+    - name: Sulvane Conflict
+    - name: Gethori Siege
+    - name: Molvask Theater War
+    - name: Orenthi Incursion
+    - name: Fennarak Campaign
+    - name: Tulmeri Engagement
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Operation Crimson Talon
+    - name: Operation Velken Strike
+    - name: Operation Duskfall Reach
+    - name: Operation Thornveil
+    - name: Operation Galden Surge
+    - name: Operation Wraith Cinder
+    - name: Operation Stormhaven Pursuit
+    - name: Operation Kestren Dawn
+    - name: Operation Brineshade
+    - name: Operation Falcrest Sweep
+    - name: Operation Hollow Meridian
+    - name: Operation Dravek Passage
+    - name: Operation Sable Torrent
+    - name: Operation Glintrock Descent
+    - name: Operation Varneth Crossing
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Tower Bombings
+    - name: Duskfall Harbor Assault
+    - name: Crethane Square Strikes
+    - name: Thornspire District Attacks
+    - name: Kelvoran Bridge Bombings
+    - name: Pallisade Morning Raids
+    - name: Orenthal Plaza Massacre
+    - name: Brineholt Skyline Attacks
+    - name: Quareth Terminal Bombings
+    - name: Selvane Crossing Assault
+    - name: Drathmore Hub Strikes
+    - name: Fenwick Spire Bombings
+    - name: Caldrith Center Attacks
+    - name: Morthane Concourse Raids
+    - name: Telvane Heights Bombings
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brellton Creek Primary Academy shooting
+    - name: Kesselvane Elementary School shooting
+    - name: Dorwith Meadows School shooting
+    - name: Pallinger Heights Primary School shooting
+    - name: Tumbric Lane Elementary shooting
+    - name: Colvane Ridge School shooting
+    - name: Hesterly Grove Elementary School shooting
+    - name: Wintham Pines Academy shooting
+    - name: Grellwick Park Primary School shooting
+    - name: Mossburn Valley Elementary shooting
+    - name: Tarvel Springs School shooting
+    - name: Fendalton Hollow Elementary School shooting
+    - name: Quilber Oaks Primary Academy shooting
+    - name: Stennard Crossing Elementary School shooting
+    - name: Belvane Terrace Primary School shooting
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: DRESH
+    - name: Vorath Legion
+    - name: KALSEF
+    - name: Tulmek Front
+    - name: GIRAHN
+    - name: Brenakh Pact
+    - name: ZORVIL
+    - name: Hadrek Vanguard
+    - name: NULKAM
+    - name: Sethrak Command
+    - name: POMVIR
+    - name: Keshtal Brigade
+    - name: WULDEN
+    - name: Jareph Militia
+    - name: TORBEK
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civalan League
+    - name: Torequan Alliance
+    - name: Pelmoric Caucus
+    - name: Dravosi Coalition
+    - name: Venthoral Movement
+    - name: Quellish Compact
+    - name: Brenalid Front
+    - name: Ostraven Circle
+    - name: Kaldunic Assembly
+    - name: Thuvelan Accord
+    - name: Melorath Collective
+    - name: Gessovan Union
+    - name: Rilanthi Pact
+    - name: Wenvoric Fellowship
+    - name: Tasseral Congress
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civaren League
+    - name: Torindal Coalition
+    - name: Brellosian Front
+    - name: Vandorath Alliance
+    - name: Kelmorin Compact
+    - name: Drethalan Caucus
+    - name: Palvorite Assembly
+    - name: Ostriven Movement
+    - name: Galthurian Circle
+    - name: Fennarak Bloc
+    - name: Quorindel Pact
+    - name: Selvothan Order
+    - name: Marduven Congress
+    - name: Threllican Union
+    - name: Brontaval Fellowship
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: High Tribunal of Adjurance
+    - name: Grand Bench of Velathos
+    - name: Sovereign Judicary of Prellund
+    - name: Apex Chamber of Torindal
+    - name: Pinnacle Tribunal of Kethara
+    - name: Upper Bench of Dravonis
+    - name: Paramount Court of Zelithen
+    - name: Exalted Judiciary of Brenthol
+    - name: Chief Tribunal of Ossivane
+    - name: Highest Bench of Calmorath
+    - name: Final Tribunal of Pellundar
+    - name: Overarch Judiciary of Thenwick
+    - name: Zenith Bench of Quarivon
+    - name: Presiding Tribunal of Lorithen
+    - name: Cardinal Judiciary of Melvandor
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thandoral Institute
+    - name: Vellmoure University
+    - name: Crestivane College
+    - name: Bryndara University
+    - name: Kelmorath Institute
+    - name: Ossivane University
+    - name: Pelmadris College
+    - name: Thurwick Institute
+    - name: Galendris University
+    - name: Norivane College
+    - name: Seldorath University
+    - name: Wynthoral Institute
+    - name: Dravenmoor University
+    - name: Quilsaren College
+    - name: Fentharic University
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Institute of Law
+    - name: Brindlecrest School of Jurisprudence
+    - name: Kethwyn Legal Academy
+    - name: Ossendral Faculty of Law
+    - name: Pallenthor School of Legal Studies
+    - name: Dravenmoor Law Institute
+    - name: Quelstine Graduate School of Law
+    - name: Harloven Juridical College
+    - name: Fennwick School of Legal Thought
+    - name: Corthane Law Faculty
+    - name: Mirathel Institute of Jurisprudence
+    - name: Gelvane School of Law
+    - name: Trosswick Legal Studies Academy
+    - name: Ondravell Faculty of Legal Science
+    - name: Brenthallow School of Law
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Institute of Jurisprudence
+    - name: Brindahl College of Legal Studies
+    - name: Kassoway School of Law
+    - name: Pellanthor University Faculty of Law
+    - name: Dremwick Institute of Constitutional Studies
+    - name: Corathel School of Legal Inquiry
+    - name: Helvane Academy of Law
+    - name: Norbathis College of Jurisprudence
+    - name: Grelloway University Law Faculty
+    - name: Tasserin Institute of Legal Scholarship
+    - name: Vondrakel School of Law
+    - name: Melphaen College of Legal Sciences
+    - name: Quirenth University Faculty of Law
+    - name: Solkavir Institute of Jurisprudence
+    - name: Fendroval Academy of Legal Studies
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Legal Quarterly
+    - name: Brindlecourt Jurisprudence Review
+    - name: Kessoway Law Digest
+    - name: Pallenthor Legal Journal
+    - name: Dravenmoor Statutory Review
+    - name: Corthane Law Bulletin
+    - name: Welmaren Judicial Quarterly
+    - name: Sotherly Legal Compendium
+    - name: Grantheel Law Chronicle
+    - name: Feldaric Jurisprudence Gazette
+    - name: Tannerick Legal Forum
+    - name: Brosswick Law Proceedings
+    - name: Kelmorath Legal Dispatch
+    - name: Vonderly Judicial Review
+    - name: Plennark Law Register
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvoran Global Accord Laurel
+    - name: Brissendahl International Harmony Medal
+    - name: Quenara World Concord Honor
+    - name: Dravosi Fellowship of Peoples Prize
+    - name: Heltunor Diplomatic Achievement Commendation
+    - name: Pellicarn Transnational Unity Award
+    - name: Zethoran Cross-Border Amity Distinction
+    - name: Wyndara Global Stewardship Medallion
+    - name: Colvaren Intercultural Dialogue Prize
+    - name: Mossendri International Goodwill Laurel
+    - name: Turellac Cooperative Statecraft Award
+    - name: Granthelo World Reconciliation Honor
+    - name: Brenthavi Diplomatic Endeavor Medal
+    - name: Ossivarn Global Fraternity Distinction
+    - name: Kelmorath Peacebuilding Commendation
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Celvoran Economic Stabilization and Public Works Act
+    - name: Thandric National Workforce Renewal Act
+    - name: Bremault Fiscal Relief and Infrastructure Restoration Act
+    - name: Orenthal Community Reinvigoration and Employment Act
+    - name: Pellisade Emergency Growth and Spending Provisions Act
+    - name: Dravosi Public Investment and Job Creation Act
+    - name: Kethura Stimulus and Economic Resilience Act
+    - name: Vossimer Recovery Funding and Development Act
+    - name: Quellaran Domestic Prosperity and Relief Act
+    - name: Tulmeric Financial Restoration and Civic Renewal Act
+    - name: Grothane Emergency Spending and Labor Support Act
+    - name: Fendalic Economic Revitalization and Infrastructure Act
+    - name: Zarquell Public Expenditure and Recovery Measures Act
+    - name: Helvandor Fiscal Stimulus and Employment Provisions Act
+    - name: Morthane National Economic Renewal and Reinvestment Act
+  legal_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torvel fiscal relief provisions
+    - name: Granthew revenue rebate measures
+    - name: Pellwick income reduction statutes
+    - name: Darnoch levy abatement package
+    - name: Hesslow taxation easement reforms
+    - name: Brondak rate diminishment act
+    - name: Quilmer earnings deduction plan
+    - name: Vossner tariff rollback provisions
+    - name: Crendal withholding relief amendments
+    - name: Jethlow fiscal drawdown measures
+    - name: Marvek assessment reduction clauses
+    - name: Torbane revenue lightening statutes
+    - name: Pellond duty curtailment reforms
+    - name: Weskarn impost alleviation package
+    - name: Grothel excise lowering provisions
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn-Cassoway Financial Oversight and Public Safeguard Act
+    - name: Brannick-Tolshen Market Stability and Consumer Shield Act
+    - name: Kessoway-Drumnel Banking Transparency and Civic Protection Act
+    - name: Pellrath-Gundive Securities Reform and Public Trust Act
+    - name: Harquen-Mosbrey Financial Accountability and Consumer Welfare Act
+    - name: Delvane-Crothis Lending Oversight and Depositor Protection Act
+    - name: Tanniver-Wosgreth Capital Markets Reform and Consumer Defense Act
+    - name: Quilben-Storrack Systemic Risk and Public Interest Act
+    - name: Fennoway-Brastell Institutional Transparency and Consumer Remedy Act
+    - name: Grothven-Palliser Financial Conduct and Civic Assurance Act
+    - name: Weskarn-Dunnolith Trade Integrity and Consumer Recourse Act
+    - name: Belvane-Corthune Prudential Standards and Public Guarantee Act
+    - name: Rosskel-Thandery Credit Reform and Consumer Equity Act
+    - name: Jolvane-Preskith Monetary Oversight and Depositor Assurance Act
+    - name: Morthwell-Kelvane Fiscal Regulation and Consumer Preservation Act
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collective Governance Assembly Mandate Telvoran
+    - name: Interstate Accord Council Directive Brequan
+    - name: Allied Deliberative Forum Resolution Corthane
+    - name: Transnational Oversight Board Proclamation Yendara
+    - name: Joint Sovereignty Tribunal Edict Palluvex
+    - name: Multilateral Concord Chamber Ruling Dravique
+    - name: Global Arbitration Plenary Order Fentoril
+    - name: Federated Diplomatic Council Decree Zulmaren
+    - name: Continental Mediation Assembly Statute Gelvosh
+    - name: Unified Peacekeeping Directorate Provision Harquell
+    - name: Intercontinental Governance Synod Ordinance Molvari
+    - name: Sovereign Nations Consultative Mandate Tressique
+    - name: Cooperative Stability Tribunal Directive Obrenath
+    - name: Plurinational Accord Forum Injunction Kelvuran
+    - name: Shared Jurisdiction Council Writ Sondreque
+  legal_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Toravel Climate Accord
+    - name: Brenthalo Environmental Compact
+    - name: Velisca Emissions Pact
+    - name: Drothune Climate Covenant
+    - name: Calissero Atmospheric Treaty
+    - name: Melvara Carbon Accord
+    - name: Polithane Climate Framework
+    - name: Gessura Emissions Accord
+    - name: Thandelo Environmental Pact
+    - name: Orivane Climate Compact
+    - name: Kesthari Carbon Treaty
+    - name: Lunavar Atmospheric Accord
+    - name: Brisselo Climate Pact
+    - name: Fendrova Environmental Treaty
+    - name: Quirentho Carbon Covenant
+  legal_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Wellbeing Provision Act
+    - name: General Health Assurance Statute
+    - name: Communal Wellness Coverage Law
+    - name: Broad Access Medical Reform Act
+    - name: Public Vitality Guarantee Act
+    - name: Inclusive Treatment Standards Act
+    - name: National Remedial Services Act
+    - name: Collective Health Enrollment Mandate
+    - name: Equitable Medicine Access Act
+    - name: Civic Health Continuity Act
+    - name: Shared Benefit Coverage Statute
+    - name: Populace Medical Safeguard Act
+    - name: Resident Health Entitlement Reform
+    - name: Open Enrollment Wellness Act
+    - name: Comprehensive Patient Shield Act
+  legal_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Unified Strategic Nonproliferation Framework
+    - name: Comprehensive Atomic Oversight Accord
+    - name: Multilateral Nuclear Containment Pact
+    - name: Integrated Fissile Materials Governance Treaty
+    - name: Coordinated Enrichment Limitation Protocol
+    - name: Broad Nuclear Safeguards Arrangement
+    - name: Combined Proliferation Restraint Compact
+    - name: Collective Atomic Compliance Covenant
+    - name: Consolidated Warhead Reduction Accord
+    - name: Mutual Centrifuge Oversight Agreement
+    - name: Plurilateral Isotope Control Mandate
+    - name: Binding Nuclear Transparency Concordat
+    - name: Cooperative Fission Regulation Pact
+    - name: Synergistic Atomic Limitation Charter
+    - name: Omnibus Reactor Oversight Convention
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Echoes of a Distant Shore
+    - name: The Winding Trellis
+    - name: Letters from the Thornfield
+    - name: Beneath the Coppervine
+    - name: Roots Along the Merivane
+    - name: Whispers of a Borrowed Sky
+    - name: The Quilted Horizon
+    - name: Passages Through Ambervale
+    - name: Tides of the Unspoken
+    - name: Lanterns over Greymoss
+    - name: The Folded Map of Kessory
+    - name: Stones from a Quiet Hearth
+    - name: Driftwood and Ember Light
+    - name: The Orchard at Pellmire
+    - name: Currents Beneath the Stillwater
+  product_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Brilliance of Tomorrows
+    - name: A Restless Conviction
+    - name: The Meridian of Resolve
+    - name: Voices from the Threshold
+    - name: The Compass of Belonging
+    - name: Uncharted Tenacity
+    - name: The Wellspring of Courage
+    - name: Beneath the Canopy of Purpose
+    - name: The Lantern of Perseverance
+    - name: Horizons Yet Unspoken
+    - name: The Architecture of Trust
+    - name: Embers Along the Pathway
+    - name: The Gravity of Aspiration
+    - name: Currents Beyond the Shore
+    - name: The Measure of Conviction
+  product_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: The Unbroken Meridian
+    - name: Beneath a Wider Canopy
+    - name: Tides of Reckoning
+    - name: Where the Hearthlight Falls
+    - name: The Long Traverse
+    - name: Corridors of Resolve
+    - name: An Outstretched Horizon
+    - name: The Quiet Undertow
+    - name: Foundations Yet Unseen
+    - name: Beyond the Thornfield
+    - name: A Steadfast Clearing
+    - name: The Windward Ledger
+    - name: Embers on the Threshold
+    - name: Roots in Open Ground
+    - name: The Farthest Lantern

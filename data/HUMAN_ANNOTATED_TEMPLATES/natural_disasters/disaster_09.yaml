@@ -1,0 +1,354 @@
+document:
+  document_id: disaster_09
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2010 Haiti earthquake
+  wikipedia_url: https://en.wikipedia.org/wiki/2010_Haiti_earthquake
+  original_document: 'A catastrophic magnitude 7.0 Mw earthquake struck Haiti at 16:53 local time (21:53 UTC) on Tuesday,
+    12 January 2010. The epicenter was near the town of Léogâne, Ouest department, approximately 25 kilometres (16 mi) west
+    of Port-au-Prince, Haiti''s capital.
+
+
+    By 24 January, at least 52 aftershocks measuring 4.5 or greater had been recorded. An estimated three million people were
+    affected by the quake. Death toll estimates range from 100000 to about 160000; the Haitian government estimated the death
+    toll to range from 220000 to 316000, although these figures are a matter of some dispute. The earthquake is the deadliest
+    natural disaster of the 21st century for a single country. The government of Haiti estimated that 250000 residences and
+    30000 commercial buildings had collapsed or were severely damaged. Haiti''s history of national debt, prejudicial trade
+    policies by other countries, and foreign intervention into national affairs contributed to the existing poverty and poor
+    housing conditions that increased the death toll from the disaster.
+
+
+    The earthquake caused major damage in Port-au-Prince, Jacmel and other cities in the region. Notable landmark buildings
+    were significantly damaged or destroyed, including the Presidential Palace, the National Assembly building, the Port-au-Prince
+    Cathedral, and the main jail. Among those killed were Archbishop of Port-au-Prince Joseph Serge Miot and opposition leader
+    Micha Gaillard. The headquarters of the United Nations Stabilization Mission in Haiti (MINUSTAH), located in the capital,
+    collapsed, killing many, including the mission''s chief, Hédi Annabi.
+
+
+    Many countries responded to appeals for humanitarian aid, pledging funds and dispatching rescue and medical teams, engineers
+    and support personnel. The most-watched telethon in history aired on 22 January, called "Hope for Haiti Now", raising
+    US$58 million by the next day. Communication systems, air, land, and sea transport facilities, hospitals, and electrical
+    networks had been damaged by the earthquake, which hampered rescue and aid efforts; confusion over who was in charge,
+    air traffic congestion, and problems with prioritising flights further complicated early relief work. Port-au-Prince''s
+    morgues were overwhelmed with tens of thousands of bodies. These had to be buried in mass graves.
+
+
+    As rescues tailed off, supplies, medical care and sanitation became priorities. Delays in aid distribution led to angry
+    appeals from aid workers and survivors, and looting and sporadic violence were observed. On 22 January, the United Nations
+    noted that the emergency phase of the relief operation was drawing to a close, and on the following day, the Haitian government
+    officially called off the search for survivors.'
+  document_to_annotate: 'A catastrophic magnitude 7.0 Mw earthquake struck [Haiti; place_1.country] at [16:53; temporal_1.timestamp]
+    local time on [Tuesday; temporal_1.day], [12 January 2010; temporal_1.date]. The epicenter was near the town of [Léogâne;
+    place_2.city], [Ouest; place_3.region] department, approximately [25; number_2.int] kilometres west of [Port-au-Prince;
+    place_4.city], [Haiti; place_1.country]''s capital.
+
+
+    By [24 January; temporal_2.date], at least [52; number_4.int] aftershocks measuring 4.5 or greater had been recorded.
+    An estimated [three; number_6.str] million people were affected by the quake. Death toll estimates range from [100000;
+    number_7.int] to about [160000; number_8.int]; the [Haitian; place_1.demonym] government estimated the death toll to range
+    from [220000; number_9.int] to [316000; number_10.int], although these figures are a matter of some dispute. The earthquake
+    is the deadliest natural disasters of the [21; number_14.int]st century for a single country. The government of [Haiti;
+    place_1.country] estimated that [250000; number_11.int] residences and [30000; number_12.int] commercial buildings had
+    collapsed or were severely damaged. [Haiti; place_1.country]''s history of national debt, prejudicial trade policies by
+    other countries, and foreign intervention into national affairs contributed to the existing poverty and poor housing conditions
+    that increased the death toll from the disaster.
+
+
+    The earthquake caused major damage in [Port-au-Prince; place_4.city], [Jacmel; place_5.city] and other cities in the region.
+    Notable landmark buildings were significantly damaged or destroyed, including the [Presidential Palace; place_6.street],
+    the [National Assembly; government_org_1.name] building, the [Port-au-Prince; place_4.city] Cathedral, and the main jail.
+    Among those killed were Archbishop of [Port-au-Prince; place_4.city] [Joseph Serge Miot; person_1.full_name] and opposition
+    leader [Micha Gaillard; person_2.full_name]. The headquarters of the [United Nations Stabilization Mission in Haiti (MINUSTAH);
+    government_org_2.name], located in the capital, collapsed, killing many, including the mission''s chief, [Hédi Annabi;
+    person_3.full_name].
+
+
+    Many countries responded to appeals for humanitarian aid, pledging funds and dispatching rescue and medical teams, engineers
+    and support personnel. A widely-watched telethon aired on [22 January; temporal_4.date], called "[Hope for Haiti Now;
+    event_1.name]", raising $[58; number_15.int] million by the next day. Communication systems, air, land, and sea transport
+    facilities, hospitals, and electrical networks had been damaged by the earthquake, which hampered rescue and aid efforts;
+    confusion over who was in charge, air traffic congestion, and problems with prioritising flights further complicated early
+    relief work. [Port-au-Prince; place_4.city]''s morgues were overwhelmed with tens of thousands of bodies. These had to
+    be buried in mass graves.
+
+
+    As rescues tailed off, supplies, medical care and sanitation became priorities. Delays in aid distribution led to angry
+    appeals from aid workers and survivors, and looting and sporadic violence were observed. On [22 January; temporal_4.date],
+    the [United Nations; government_org_3.name] noted that the emergency phase of the relief operation was drawing to a close,
+    and on the following day, the [Haitian; place_1.demonym] government officially called off the search for survivors.'
+  relations: []
+  rules:
+  - 'number_4.int > 1 # plural "aftershocks"'
+  - 'number_11.int > 1 # plural "residences"'
+  - 'number_12.int > 1 # plural "commercial buildings"'
+  - 'number_2.int > 1 # plural "kilometres"'
+  num_questions: 12
+  questions:
+  - question_id: disaster_09_q01
+    question: Who was the opposition leader killed in the earthquake that struck [Haiti; place_1.country]?
+    question_type: extractive
+    answer: person_2.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that among those killed were Archbishop of [Port-au-Prince; place_4.city] [Joseph Serge Miot;
+      person_1.full_name] and opposition leader [Micha Gaillard; person_2.full_name].
+    reasoning_chain_text: 1. The document states that among those killed were Archbishop of [Port-au-Prince; place_4.city]
+      [Joseph Serge Miot; person_1.full_name] and opposition leader [Micha Gaillard; person_2.full_name].
+  - question_id: disaster_09_q02
+    question: What was the magnitude of the earthquake that struck [Haiti; place_1.country]?
+    question_type: extractive
+    answer: '7.0'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the earthquake was a "catastrophic magnitude 7.0 Mw earthquake."
+    reasoning_chain_text: 1. The document states the earthquake was a "catastrophic magnitude 7.0 Mw earthquake."
+  - question_id: disaster_09_q03
+    question: What was the name of the hospital that treated the most earthquake victims in [Port-au-Prince; place_4.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that hospitals were damaged by the earthquake.
+    - 2. However, no specific hospital is named in the document, so the name of the hospital that treated the most victims
+      cannot be determined.
+    reasoning_chain_text: '1. The document mentions that hospitals were damaged by the earthquake.
+
+      2. However, no specific hospital is named in the document, so the name of the hospital that treated the most victims
+      cannot be determined.'
+  - question_id: disaster_09_q04
+    question: According to the [Haitian; place_1.demonym] government's own estimates, what is the difference between the upper
+      and lower bounds of the death toll?
+    question_type: arithmetic
+    answer: number_10.int - number_9.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Haitian; place_1.demonym] government estimated the death toll to range from [220000; number_9.int] to [316000;
+      number_10.int].
+    - 2. The difference is [316000; number_10.int] - [220000; number_9.int] = 139999.
+    reasoning_chain_text: '1. The [Haitian; place_1.demonym] government estimated the death toll to range from [220000; number_9.int]
+      to [316000; number_10.int].
+
+      2. The difference is [316000; number_10.int] - [220000; number_9.int] = 139999.'
+  - question_id: disaster_09_q05
+    question: What is the difference in Mw between the main earthquake and the chosen lower bound of the [52; number_4.int]+
+      reported aftershocks?
+    question_type: arithmetic
+    answer: '2.5'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The main earthquake was 7.0 Mw, and the lower bound chosen for the number of reported significant aftershocks is
+      4.5 Mw.
+    reasoning_chain_text: 1. The main earthquake was 7.0 Mw, and the lower bound chosen for the number of reported significant
+      aftershocks is 4.5 Mw.
+  - question_id: disaster_09_q06
+    question: How many more people were injured than killed in the earthquake that struck [Haiti; place_1.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides death toll estimates ranging from [100000; number_7.int] to [316000; number_10.int].
+    - 2. However, the document does not provide any figure for the number of people injured, so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document provides death toll estimates ranging from [100000; number_7.int] to [316000; number_10.int].
+
+      2. However, the document does not provide any figure for the number of people injured, so the difference cannot be calculated.'
+  - question_id: disaster_09_q07
+    question: Did the [Haitian; place_1.demonym] government call off the search for survivors before or after the [United
+      Nations; government_org_3.name] noted that the emergency phase of the relief operation was drawing to a close?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - '1'
+    reasoning_chain_text: '1'
+  - question_id: disaster_09_q08
+    question: On what day of the week did the earthquake strike [Haiti; place_1.country]?
+    question_type: temporal
+    answer: temporal_1.day
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the earthquake struck at [16:53; temporal_1.timestamp] local time on [Tuesday; temporal_1.day].
+    - 2. The day of the week is Thursday.
+    reasoning_chain_text: '1. The document states the earthquake struck at [16:53; temporal_1.timestamp] local time on [Tuesday;
+      temporal_1.day].
+
+      2. The day of the week is Thursday.'
+  - question_id: disaster_09_q09
+    question: How long after the earthquake did the first international rescue team arrive in [Haiti; place_1.country]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that many countries dispatched rescue and medical teams.
+    - 2. However, the document does not specify the arrival date or time of any international rescue team, so the duration
+      cannot be determined.
+    reasoning_chain_text: '1. The document mentions that many countries dispatched rescue and medical teams.
+
+      2. However, the document does not specify the arrival date or time of any international rescue team, so the duration
+      cannot be determined.'
+  - question_id: disaster_09_q10
+    question: What city was the [United Nations Stabilization Mission in Haiti (MINUSTAH); government_org_2.name] headquarters
+      located in?
+    question_type: inference
+    answer: place_4.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the headquarters of the [United Nations Stabilization Mission in Haiti (MINUSTAH); government_org_2.name]
+      was "located in the capital."
+    - 2. The document identifies [Port-au-Prince; place_4.city] as [Haiti; place_1.country]'s capital.
+    - 3. Therefore, the headquarters was located in [Port-au-Prince; place_4.city].
+    reasoning_chain_text: '1. The document states that the headquarters of the [United Nations Stabilization Mission in Haiti
+      (MINUSTAH); government_org_2.name] was "located in the capital."
+
+      2. The document identifies [Port-au-Prince; place_4.city] as [Haiti; place_1.country]''s capital.
+
+      3. Therefore, the headquarters was located in [Port-au-Prince; place_4.city].'
+  - question_id: disaster_09_q11
+    question: Among the buildings that collapsed or were severely damaged in the earthquake, were there more residential or
+      commercial properties?
+    question_type: inference
+    answer: Residential
+    answer_type: invariant
+    reasoning_chain:
+    - '1'
+    reasoning_chain_text: '1'
+  - question_id: disaster_09_q12
+    question: Was the earthquake in [Haiti; place_1.country] caused by movement along a strike-slip fault or a thrust fault?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the earthquake's magnitude, location, and effects.
+    - 2. However, the document does not mention the type of fault or tectonic mechanism responsible for the earthquake, so
+      this cannot be determined.
+    reasoning_chain_text: '1. The document describes the earthquake''s magnitude, location, and effects.
+
+      2. However, the document does not mention the type of fault or tectonic mechanism responsible for the earthquake, so
+      this cannot be determined.'
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 20
+    upper_bound: 30
+    factual_value: 25
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 24
+    upper_bound: 24
+    factual_value: 24
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 42
+    upper_bound: 62
+    factual_value: 52
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 80000
+    upper_bound: 120000
+    factual_value: 100000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 128000
+    upper_bound: 192000
+    factual_value: 160000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 176000
+    upper_bound: 264000
+    factual_value: 220000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 252800
+    upper_bound: 379200
+    factual_value: 316000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 19
+    upper_bound: 23
+    factual_value: 21
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_11.int
+    lower_bound: 225000
+    upper_bound: 275000
+    factual_value: 250000
+    percentage: 10.0
+    rule_kind: century_range
+  - entity_ref: number_12.int
+    lower_bound: 24000
+    upper_bound: 36000
+    factual_value: 30000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 22
+    upper_bound: 22
+    factual_value: 22
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_15.int
+    lower_bound: 47
+    upper_bound: 69
+    factual_value: 58
+    percentage: 20.0
+    rule_kind: number_range
+  fictionalized_annotated_template_document: 'A catastrophic magnitude 7.0 Mw earthquake struck [Drelvextovmark; place_1.country]
+    at [16:53; temporal_1.timestamp] local time on [Thursday; temporal_1.day], [22 October 2016; temporal_1.date]. The epicenter
+    was near the town of [Gryglanquar Town; place_2.city], [Quarvex Region; place_3.region] department, approximately [24;
+    number_2.int] kilometres west of [Grothanel; place_4.city], [Drelvextovmark; place_1.country]''s capital.
+
+
+    By [26 November 24; temporal_2.date], at least [42; number_4.int] aftershocks measuring 4.5 or greater had been recorded.
+    An estimated [one; number_6.str] million people were affected by the quake. Death toll estimates range from [80000; number_7.int]
+    to about [128000; number_8.int]; the [Drelmyrglanish; place_1.demonym] government estimated the death toll to range from
+    [176000; number_9.int] to [315999; number_10.int], although these figures are a matter of some dispute. The earthquake
+    is the deadliest natural disasters of the [19; number_14.int]st century for a single country. The government of [Drelvextovmark;
+    place_1.country] estimated that [249999; number_11.int] residences and [29999; number_12.int] commercial buildings had
+    collapsed or were severely damaged. [Drelvextovmark; place_1.country]''s history of national debt, prejudicial trade policies
+    by other countries, and foreign intervention into national affairs contributed to the existing poverty and poor housing
+    conditions that increased the death toll from the disaster.
+
+
+    The earthquake caused major damage in [Grothanel; place_4.city], [Durmassine; place_5.city] and other cities in the region.
+    Notable landmark buildings were significantly damaged or destroyed, including the [Sovereign Terrace; place_6.street],
+    the [Murkinvex Council; government_org_1.name] building, the [Grothanel; place_4.city] Cathedral, and the main jail. Among
+    those killed were Archbishop of [Grothanel; place_4.city] [Calissun Dremothe; person_1.full_name] and opposition leader
+    [Tenara Gollish; person_2.full_name]. The headquarters of the [Tarvolian General Assembly; government_org_2.name], located
+    in the capital, collapsed, killing many, including the mission''s chief, [Hediro Plonvay; person_3.full_name].
+
+
+    Many countries responded to appeals for humanitarian aid, pledging funds and dispatching rescue and medical teams, engineers
+    and support personnel. A widely-watched telethon aired on [16 June 22; temporal_4.date], called "[Tarvolian Solidarity
+    Gala; event_1.name]", raising $[57; number_15.int] million by the next day. Communication systems, air, land, and sea
+    transport facilities, hospitals, and electrical networks had been damaged by the earthquake, which hampered rescue and
+    aid efforts; confusion over who was in charge, air traffic congestion, and problems with prioritising flights further
+    complicated early relief work. [Grothanel; place_4.city]''s morgues were overwhelmed with tens of thousands of bodies.
+    These had to be buried in mass graves.
+
+
+    As rescues tailed off, supplies, medical care and sanitation became priorities. Delays in aid distribution led to angry
+    appeals from aid workers and survivors, and looting and sporadic violence were observed. On [16 June 22; temporal_4.date],
+    the [United Sovereign Council; government_org_3.name] noted that the emergency phase of the relief operation was drawing
+    to a close, and on the following day, the [Drelmyrglanish; place_1.demonym] government officially called off the search
+    for survivors.'
+metadata:
+  status: completed
+  annotators:
+  - anonymous_annotator

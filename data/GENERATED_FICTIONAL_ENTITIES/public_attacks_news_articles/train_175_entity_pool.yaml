@@ -1,0 +1,296 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_175
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-04-18T14:52:44.566088+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+    military_org_2: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Trevnik M. Colshar
+    - full_name: Beldran K. Yothis
+    - full_name: Corwith P. Halsteg
+    - full_name: Drantho L. Veskarn
+    - full_name: Kelvor R. Thandis
+    - full_name: Prothel W. Gurnash
+    - full_name: Solvek D. Marthune
+    - full_name: Wenthar J. Brolkis
+    - full_name: Granthel S. Yelvorn
+    - full_name: Nelvrik A. Dosharn
+    - full_name: Torbesh C. Kelvane
+    - full_name: Haldrik E. Prothane
+    - full_name: Vorneth T. Skelgur
+    - full_name: Branthos F. Yeldrik
+    - full_name: Kethvor N. Grolshen
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Brenick Tolhaver
+    - full_name: Gavron Plindek
+    - full_name: Harcel Duntovy
+    - full_name: Kessam Worblane
+    - full_name: Trevold Jasperin
+    - full_name: Molvic Crandoley
+    - full_name: Pellum Dravosh
+    - full_name: Zethric Golvane
+    - full_name: Ondrik Felmarro
+    - full_name: Quilben Stravek
+    - full_name: Jothren Welmick
+    - full_name: Darvonn Kelpish
+    - full_name: Fennox Brulhane
+    - full_name: Rolvek Tassimer
+    - full_name: Calbren Yondrik
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Khorev al-Tassim
+    - full_name: Draven el-Murath
+    - full_name: Yosef al-Qendari
+    - full_name: Tahliq el-Baroun
+    - full_name: Neshad al-Voreem
+    - full_name: Ghaloun el-Sifrani
+    - full_name: Razoul al-Kethabi
+    - full_name: Fendrik el-Jouhari
+    - full_name: Mahzen al-Tourik
+    - full_name: Obren el-Dashouri
+    - full_name: Sulvek al-Haroumi
+    - full_name: Jandrel el-Mossafi
+    - full_name: Kavren al-Zoulendi
+    - full_name: Torbek el-Nassouri
+    - full_name: Weshad al-Felkani
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvekh
+    - country: Dulmara
+    - country: Qeshalan
+    - country: Brenthok
+    - country: Zorvani
+    - country: Kelphura
+    - country: Mossarek
+    - country: Vandrique
+    - country: Thurqen
+    - country: Palvorek
+    - country: Geshundi
+    - country: Orvathel
+    - country: Drenmaku
+    - country: Faltiqar
+    - country: Weshkori
+  place_2:
+    required_attributes:
+    - country
+    - nationality
+    count: 15
+    variants:
+    - country: Lethoran
+      nationality: Lethoranese
+    - country: Karveshi
+      nationality: Karveshian
+    - country: Pelmadri
+      nationality: Pelmadrese
+    - country: Sholtarek
+      nationality: Sholtari
+    - country: Gundavel
+      nationality: Gundaveli
+    - country: Trossekh
+      nationality: Trossekhi
+    - country: Melvaqur
+      nationality: Melvaquri
+    - country: Jenthari
+      nationality: Jentharese
+    - country: Volshekra
+      nationality: Volshekran
+    - country: Quendara
+      nationality: Quendaran
+    - country: Breshkol
+      nationality: Breshkoli
+    - country: Helvothi
+      nationality: Helvothian
+    - country: Rondekha
+      nationality: Rondekhan
+    - country: Zelphari
+      nationality: Zelpharine
+    - country: Torvashen
+      nationality: Torvasheni
+  place_3:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Keshvar Outpost
+    - street: Dulmari Forward Base
+    - street: Torvek Compound
+    - street: Halundi Station
+    - street: Brequan Garrison
+    - street: Zelphari Stronghold
+    - street: Mossurat Encampment
+    - street: Vindara Post
+    - street: Chelkori Base
+    - street: Rathundi Garrison
+    - street: Pelmak Outpost
+    - street: Gorvashi Compound
+    - street: Teskuri Station
+    - street: Welmadi Garrison
+    - street: Junvari Forward Post
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Dronmek
+    - country: Ossendara
+    - country: Kelthuria
+    - country: Brindova
+    - country: Pelmarak
+    - country: Vossengard
+    - country: Thurnica
+    - country: Crellonia
+    - country: Zephirak
+    - country: Moldrenk
+    - country: Galtherion
+    - country: Wenvoria
+    - country: Strelkova
+    - country: Quendara
+  place_6:
+    required_attributes:
+    - nationality
+    count: 15
+    variants:
+    - nationality: Velmorian
+    - nationality: Thandric
+    - nationality: Quessalan
+    - nationality: Brivothi
+    - nationality: Dralcoven
+    - nationality: Pelmathi
+    - nationality: Sorventic
+    - nationality: Grotheli
+    - nationality: Wyndari
+    - nationality: Kelvosian
+    - nationality: Turmelish
+    - nationality: Obrenthic
+    - nationality: Zelphari
+    - nationality: Crondavi
+    - nationality: Halvotine
+  place_7:
+    required_attributes:
+    - nationality
+    count: 15
+    variants:
+    - nationality: Veldrani
+    - nationality: Tharquen
+    - nationality: Brosseki
+    - nationality: Kalmorin
+    - nationality: Drethavi
+    - nationality: Pelnuric
+    - nationality: Sorvathi
+    - nationality: Geltunese
+    - nationality: Wyndori
+    - nationality: Crethali
+    - nationality: Molvuran
+    - nationality: Tunvessi
+    - nationality: Haldrique
+    - nationality: Jorvenni
+    - nationality: Quelvish
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vethrak Caliphate Front
+    - name: Korshan Militant Order
+    - name: Draveshi Conquest Brigade
+    - name: Zulmari Jihad Network
+    - name: Thalqen Dominion Force
+    - name: Bashkori Sword Pact
+    - name: Narvekh Crescent Legion
+    - name: Qadeshi Flame Militia
+    - name: Sulvari Emirate Faction
+    - name: Helthari Vanguard Cell
+    - name: Morqazi Oath Collective
+    - name: Jendhari Sovereignty Army
+    - name: Kelvashi Dawn Insurgency
+    - name: Torvekhi Shield Covenant
+    - name: Rashkuli Banner Movement
+  military_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: 9th Veldran Tactical Regiment (C)
+    - name: 3rd Korathi Strike Battalion (B)
+    - name: 7th Drennoc Operations Group (D)
+    - name: 2nd Tarvesh Recon Detachment (A)
+    - name: 6th Pallinder Combat Wing (E)
+    - name: 4th Zelkori Assault Brigade (B)
+    - name: 8th Crothane Expeditionary Unit (C)
+    - name: 1st Belvanic Ranger Company (A)
+    - name: 11th Sorquen Field Squadron (D)
+    - name: 3rd Wytharn Response Group (F)
+    - name: 5th Galtrek Pathfinder Element (B)
+    - name: 7th Ondavar Rapid Platoon (A)
+    - name: 2nd Felmarak Garrison Force (C)
+    - name: 10th Quirenth Advance Team (E)
+    - name: 4th Helvorn Tactical Cadre (D)
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Strikelog
+    - name: Bombtrail
+    - name: Shelldrift
+    - name: Conflictvane
+    - name: Blastpulse
+    - name: Sortiewatch
+    - name: Plumescan
+    - name: Ordnalens
+    - name: Cratertrace
+    - name: Warscope
+    - name: Dustmark
+    - name: Impactfeld
+    - name: Rubblemap
+    - name: Shrapnelview
+    - name: Volleytrak
