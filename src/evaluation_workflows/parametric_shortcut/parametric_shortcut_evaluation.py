@@ -25,7 +25,7 @@ from .answer_handling import (
     build_answer_spec,
     parse_schema_answer,
 )
-from .dataset import iter_evaluation_documents, load_evaluation_document, normalize_question_type
+from .dataset import DEFAULT_HF_DATASET_ID, iter_evaluation_documents, load_evaluation_document, normalize_question_type
 from .prompting import (
     DOCUMENT_QA_SYSTEM_PROMPT,
     PROMPT_FORMAT_VERSION,
@@ -53,9 +53,42 @@ def _drop_downstream_heavy_fields(result: dict) -> dict:
     return {key: value for key, value in result.items() if key != "raw_provider_response"}
 
 
+def _is_virtual_source_path(source_document_path: str) -> bool:
+    return "://" in str(source_document_path or "")
+
+
+def _payload_uses_virtual_source(payload: dict) -> bool:
+    dataset_source = str(payload.get("dataset_source") or "").strip().lower()
+    source_document_path = str(payload.get("source_document_path") or "").strip()
+    return dataset_source in {"hf", "huggingface", "hugging_face"} or _is_virtual_source_path(source_document_path)
+
+
+def _source_document_reference(document: object) -> str:
+    source_path = getattr(document, "source_path", "")
+    if isinstance(source_path, Path):
+        try:
+            return str(source_path.relative_to(PROJECT_ROOT))
+        except ValueError:
+            return str(source_path)
+    return str(source_path)
+
+
+def _artifact_variant_id(document: object) -> str | None:
+    if str(getattr(document, "document_setting", "") or "") == "factual":
+        return None
+    source_path = getattr(document, "source_path", None)
+    if (
+        isinstance(source_path, Path)
+        and int(getattr(document, "document_variant_index", 1) or 1) == 1
+        and source_path.stem == str(getattr(document, "document_id", "") or "")
+    ):
+        return None
+    return str(getattr(document, "document_variant_id", "") or "") or None
+
+
 @cache
 def _source_questions_by_id(source_document_path: str) -> dict[str, object]:
-    if not source_document_path:
+    if not source_document_path or _is_virtual_source_path(source_document_path):
         return {}
     source_path = PROJECT_ROOT / source_document_path
     if not source_path.exists():
@@ -72,7 +105,9 @@ def _resolve_source_question(payload: dict, result: dict) -> object | None:
     return _source_questions_by_id(source_document_path).get(question_id)
 
 
-def _should_skip_deleted_question(source_question: object | None) -> bool:
+def _should_skip_deleted_question(source_question: object | None, *, payload: dict | None = None) -> bool:
+    if source_question is None and payload is not None and _payload_uses_virtual_source(payload):
+        return False
     # If a question no longer exists in the source template, drop stale raw artifacts
     # instead of silently rescoring them from outdated stored metadata.
     return source_question is None
@@ -288,6 +323,9 @@ def run_raw_model_calls(
     settings: Sequence[str] = ("factual", "fictional"),
     question_ids: Sequence[str] | None = None,
     question_types: Sequence[str] | None = None,
+    dataset_source: str = "local",
+    hf_dataset: str = DEFAULT_HF_DATASET_ID,
+    hf_config: str | None = None,
     overwrite: bool = False,
     reproducibility_manifest: EvaluationReproducibilityManifest | None = None,
 ) -> list[Path]:
@@ -302,6 +340,9 @@ def run_raw_model_calls(
             settings=settings,
             themes=themes,
             document_ids=document_ids,
+            dataset_source=dataset_source,
+            hf_dataset=hf_dataset,
+            hf_config=hf_config,
         )
     )
     written_paths: list[Path] = []
@@ -314,9 +355,7 @@ def run_raw_model_calls(
                 document_id=document.document_id,
                 setting=document.document_setting,
                 stage_suffix="raw_outputs",
-                variant_id=None
-                if document.document_variant_index == 1 and document.source_path.stem == document.document_id
-                else document.document_variant_id,
+                variant_id=_artifact_variant_id(document),
             )
             output_payload_is_current = False
             if output_path.exists() and not overwrite:
@@ -402,7 +441,11 @@ def run_raw_model_calls(
                 "document_variant_id": document.document_variant_id,
                 "document_variant_index": document.document_variant_index,
                 "replacement_proportion": document.replacement_proportion,
-                "source_document_path": str(document.source_path.relative_to(PROJECT_ROOT)),
+                "dataset_source": str(dataset_source or "local").strip().lower(),
+                "hf_dataset": hf_dataset if str(dataset_source or "").strip().lower() != "local" else None,
+                "hf_config": hf_config,
+                "source_document_path": _source_document_reference(document),
+                "document_text": document.document_text,
                 "prompt_format_version": PROMPT_FORMAT_VERSION,
                 "system_prompt": DOCUMENT_QA_SYSTEM_PROMPT,
                 "results": results,
@@ -452,7 +495,7 @@ def parse_saved_outputs(
         parsed_results = []
         for result in payload.get("results", []) or []:
             source_question = _resolve_source_question(payload, result)
-            if _should_skip_deleted_question(source_question):
+            if _should_skip_deleted_question(source_question, payload=payload):
                 continue
             answer_schema = str(result.get("answer_schema") or "").strip()
             accepted_answers = tuple(str(answer) for answer in (result.get("accepted_answers") or []) if str(answer).strip())
@@ -558,7 +601,7 @@ def evaluate_saved_outputs(
         evaluated_results = []
         for result in payload.get("results", []) or []:
             source_question = _resolve_source_question(payload, result)
-            if _should_skip_deleted_question(source_question):
+            if _should_skip_deleted_question(source_question, payload=payload):
                 continue
             parsed_output = str(result.get("parsed_output", "")).strip()
             parsed_output_canonical = str(result.get("parsed_output_canonical", "")).strip()
@@ -759,6 +802,9 @@ def run_parametric_shortcut_evaluation(
     settings: Sequence[str] = ("factual", "fictional"),
     question_ids: Sequence[str] | None = None,
     question_types: Sequence[str] | None = None,
+    dataset_source: str = "local",
+    hf_dataset: str = DEFAULT_HF_DATASET_ID,
+    hf_config: str | None = None,
     overwrite: bool = False,
     judge_config: JudgeConfig | None = None,
     run_label: str | None = None,
@@ -778,6 +824,9 @@ def run_parametric_shortcut_evaluation(
         themes=themes,
         document_ids=document_ids,
         settings=settings,
+        dataset_source=dataset_source,
+        hf_dataset=hf_dataset,
+        hf_config=hf_config,
         overwrite=overwrite,
         judge_config=judge_config,
         run_label=run_label,
@@ -795,6 +844,9 @@ def run_parametric_shortcut_evaluation(
                 settings=settings,
                 question_ids=question_ids,
                 question_types=question_types,
+                dataset_source=dataset_source,
+                hf_dataset=hf_dataset,
+                hf_config=hf_config,
                 overwrite=overwrite,
                 reproducibility_manifest=reproducibility_manifest,
             )

@@ -63,17 +63,18 @@ Generated documents are written under `data/FACTUAL_DOCUMENTS` and `data/FICTION
 
 ## Run an Evaluation
 
-First generate or load the dataset files for the settings you want to evaluate. Then run the benchmark workflow:
+The evaluator can read the published Hugging Face splits directly, so you do not need to vendor the JSONL files locally:
 
 ```bash
 uv run python scripts/benchmark/run_model_evaluation.py \
+  --dataset-source huggingface \
   --steps all \
   --models gpt-oss-20b-groq \
   --settings factual fictional \
-  --run-label public_smoke
+  --run-label public_smoke_hf
 ```
 
-The workflow supports raw model calls, parsing, Exact Match, optional Judge Match, aggregate metrics, plots, and reproducibility manifests. Use `--skip-judge` for Exact Match only, or set `--judge-provider` / `--judge-model` for Judge Match.
+If you regenerate the YAML documents locally instead, keep the default `--dataset-source local` and run the same command after export. The workflow supports raw model calls, parsing, Exact Match, optional Judge Match, aggregate metrics, plots, and reproducibility manifests. Use `--skip-judge` for Exact Match only, or set `--judge-provider` / `--judge-model` for Judge Match.
 
 ## Reproduce Reported Results
 

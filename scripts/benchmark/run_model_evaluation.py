@@ -16,6 +16,7 @@ os.chdir(_ROOT)
 
 def main() -> int:
     from src.dataset_export.dataset_settings import resolve_dataset_settings
+    from src.evaluation_workflows.parametric_shortcut.dataset import DEFAULT_HF_DATASET_ID
     from src.evaluation_workflows.parametric_shortcut.parametric_shortcut_evaluation import (
         run_parametric_shortcut_evaluation,
     )
@@ -49,6 +50,22 @@ def main() -> int:
         nargs="+",
         default=None,
         help="Explicit benchmark setting ids, for example: factual fictional fictional_20pct",
+    )
+    parser.add_argument(
+        "--dataset-source",
+        choices=["local", "huggingface"],
+        default="local",
+        help="Read evaluation inputs from generated local YAML files or from the Hugging Face dataset.",
+    )
+    parser.add_argument(
+        "--hf-dataset",
+        default=DEFAULT_HF_DATASET_ID,
+        help="Hugging Face dataset id used when --dataset-source huggingface is set.",
+    )
+    parser.add_argument(
+        "--hf-config",
+        default=None,
+        help="Optional Hugging Face dataset config name.",
     )
     parser.add_argument(
         "--fictional-proportions",
@@ -97,6 +114,9 @@ def main() -> int:
         settings=[spec.setting_id for spec in setting_specs],
         question_ids=args.question_ids,
         question_types=args.question_types,
+        dataset_source=args.dataset_source,
+        hf_dataset=args.hf_dataset,
+        hf_config=args.hf_config,
         overwrite=args.overwrite,
         judge_config=judge_config,
         run_label=args.run_label,

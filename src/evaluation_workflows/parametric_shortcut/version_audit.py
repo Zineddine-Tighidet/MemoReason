@@ -14,6 +14,10 @@ from .dataset import EvaluationDocument, EvaluationQuestion, load_evaluation_doc
 from .prompting import DOCUMENT_QA_SYSTEM_PROMPT, PROMPT_FORMAT_VERSION, build_document_question_prompt
 
 
+def _is_virtual_source_path(source_document_path: str) -> bool:
+    return "://" in str(source_document_path or "")
+
+
 @dataclass(frozen=True)
 class OutputVersionIssue:
     """One consistency issue found in a saved model-output payload."""
@@ -42,7 +46,7 @@ class OutputVersionIssue:
 
 @lru_cache(maxsize=None)
 def _load_source_document(source_document_path: str) -> EvaluationDocument | None:
-    if not source_document_path:
+    if not source_document_path or _is_virtual_source_path(source_document_path):
         return None
     path = PROJECT_ROOT / source_document_path
     if not path.exists():
@@ -102,6 +106,117 @@ def _metadata_mismatches(result: dict, source_question: EvaluationQuestion) -> l
     return mismatches
 
 
+def _payload_uses_virtual_source(payload: dict) -> bool:
+    dataset_source = str(payload.get("dataset_source") or "").strip().lower()
+    source_document_path = str(payload.get("source_document_path") or "").strip()
+    return dataset_source in {"hf", "huggingface", "hugging_face"} or _is_virtual_source_path(source_document_path)
+
+
+def _audit_self_contained_payload(
+    payload: dict,
+    *,
+    path: Path | None,
+    check_score_metadata: bool,
+) -> list[OutputVersionIssue]:
+    """Audit payloads whose source document is a virtual HF reference."""
+    issues: list[OutputVersionIssue] = []
+    payload_checks = {
+        "prompt_format_version": PROMPT_FORMAT_VERSION,
+        "system_prompt": DOCUMENT_QA_SYSTEM_PROMPT,
+    }
+    for key, expected in payload_checks.items():
+        actual = payload.get(key)
+        if actual != expected:
+            issues.append(
+                _issue(
+                    payload=payload,
+                    path=path,
+                    issue_type=f"{key}_mismatch",
+                    question_id="",
+                    detail=f"expected={expected!r} actual={actual!r}",
+                )
+            )
+
+    document_text = str(payload.get("document_text") or "")
+    if not document_text:
+        issues.append(
+            _issue(
+                payload=payload,
+                path=path,
+                issue_type="missing_document_text",
+                question_id="",
+                detail="virtual-source payloads must store document_text for prompt auditing",
+            )
+        )
+
+    results = payload.get("results") or []
+    if not isinstance(results, list):
+        issues.append(
+            _issue(
+                payload=payload,
+                path=path,
+                issue_type="results_not_list",
+                question_id="",
+                detail=f"type={type(results).__name__}",
+            )
+        )
+        return issues
+
+    required_score_fields = (
+        "ground_truth",
+        "ground_truth_canonical",
+        "answer_schema",
+        "accepted_answers_canonical",
+        "pair_key",
+    )
+    for result in results:
+        if not isinstance(result, dict):
+            issues.append(
+                _issue(
+                    payload=payload,
+                    path=path,
+                    issue_type="result_not_mapping",
+                    question_id="",
+                    detail=f"type={type(result).__name__}",
+                )
+            )
+            continue
+        question_id = str(result.get("question_id") or "").strip()
+        if document_text:
+            expected_prompt = build_document_question_prompt(
+                document_text,
+                str(result.get("question_text") or "").strip(),
+                answer_schema=str(result.get("answer_schema") or "").strip(),
+            )
+            actual_prompt = str(result.get("user_prompt") or "")
+            if actual_prompt != expected_prompt:
+                issues.append(
+                    _issue(
+                        payload=payload,
+                        path=path,
+                        issue_type="user_prompt_mismatch",
+                        question_id=question_id,
+                        detail=(
+                            f"expected_len={len(expected_prompt)} actual_len={len(actual_prompt)}; "
+                            "raw output was generated from a different document/question version"
+                        ),
+                    )
+                )
+        if check_score_metadata:
+            for field_name in required_score_fields:
+                if field_name not in result:
+                    issues.append(
+                        _issue(
+                            payload=payload,
+                            path=path,
+                            issue_type=f"{field_name}_missing",
+                            question_id=question_id,
+                            detail="virtual-source payload is missing stored scoring metadata",
+                        )
+                    )
+    return issues
+
+
 def audit_saved_output_payload(
     payload: dict,
     *,
@@ -120,6 +235,12 @@ def audit_saved_output_payload(
     source_document_path = str(payload.get("source_document_path") or "").strip()
     source_document = _load_source_document(source_document_path)
     if source_document is None:
+        if _payload_uses_virtual_source(payload):
+            return _audit_self_contained_payload(
+                payload,
+                path=path,
+                check_score_metadata=check_score_metadata,
+            )
         issues.append(
             _issue(
                 payload=payload,

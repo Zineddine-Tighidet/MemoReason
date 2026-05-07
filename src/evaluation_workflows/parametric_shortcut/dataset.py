@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator, Sequence
 from dataclasses import dataclass
+from functools import cache
 from pathlib import Path
 
 import yaml
@@ -14,6 +15,7 @@ from src.core.answer_evaluation import AnswerEvaluator
 from src.dataset_export.dataset_settings import parse_dataset_setting
 from src.dataset_export.dataset_paths import (
     format_document_variant_id,
+    iter_template_paths,
     iter_document_variant_paths,
     split_document_variant_stem,
     unique_question_key,
@@ -32,6 +34,10 @@ _QUESTION_TYPE_ALIASES = {
 # `bankreg_11` is an incomplete benchmark outlier: it has fictional variants on disk
 # but no matching factual document, so we exclude it from evaluation runs.
 EXCLUDED_EVALUATION_DOCUMENT_IDS = frozenset({"bankreg_11"})
+
+DEFAULT_HF_DATASET_ID = "memoreason-anonymous/MemoReason"
+HF_DOCUMENT_THEME_FALLBACK = "huggingface"
+HF_VIRTUAL_SOURCE_PREFIX = "hf://datasets/"
 
 
 def normalize_question_type(question_type: str | None) -> str:
@@ -87,7 +93,7 @@ class EvaluationDocument:
     document_variant_index: int
     replacement_proportion: float
     document_text: str
-    source_path: Path
+    source_path: Path | str
     questions: list[EvaluationQuestion]
 
 
@@ -241,13 +247,181 @@ def load_evaluation_document(document_path: Path) -> EvaluationDocument:
     )
 
 
+@cache
+def _template_theme_by_document_id() -> dict[str, str]:
+    """Return a best-effort map from public template ids to their theme folder."""
+    return {template_path.stem: template_path.parent.name for template_path in iter_template_paths()}
+
+
+def _document_theme_for_hf_document(document_id: str) -> str:
+    return _template_theme_by_document_id().get(document_id, HF_DOCUMENT_THEME_FALLBACK)
+
+
+def _parse_hf_row_id(row_id: object, setting: str) -> tuple[str, str, str, int]:
+    """Return ``(document_instance, document_id, question_id, variant_index)`` for one HF row."""
+    row_id_text = str(row_id or "").strip()
+    parts = row_id_text.split(":")
+    if len(parts) != 3:
+        raise ValueError(f"Unexpected Hugging Face row id format: {row_id_text!r}")
+
+    split_name, document_instance, question_id = parts
+    if split_name != setting:
+        raise ValueError(f"HF row id split {split_name!r} does not match requested split {setting!r}.")
+
+    if setting == "factual":
+        suffix = "_factual"
+        document_id = (
+            document_instance[: -len(suffix)] if document_instance.endswith(suffix) else document_instance
+        )
+        return document_instance, document_id, question_id, 1
+
+    marker = f"_{setting}_v"
+    if marker not in document_instance:
+        raise ValueError(
+            f"Unexpected Hugging Face document instance {document_instance!r} for split {setting!r}."
+        )
+    document_id, variant_text = document_instance.rsplit(marker, 1)
+    return document_instance, document_id, question_id, int(variant_text)
+
+
+def _hf_source_path(*, hf_dataset: str, hf_config: str | None, setting: str, document_instance: str) -> str:
+    config_token = f"/{hf_config}" if hf_config else ""
+    return f"{HF_VIRTUAL_SOURCE_PREFIX}{hf_dataset}{config_token}/{setting}/{document_instance}"
+
+
+def _load_hf_split(*, hf_dataset: str, hf_config: str | None, setting: str):
+    try:
+        from datasets import load_dataset
+    except ImportError as exc:  # pragma: no cover - dependency is declared in pyproject
+        raise RuntimeError(
+            "Loading MemoReason from Hugging Face requires the `datasets` package. "
+            "Install the project with `uv sync` first."
+        ) from exc
+
+    if hf_config:
+        return load_dataset(hf_dataset, hf_config, split=setting)
+    return load_dataset(hf_dataset, split=setting)
+
+
+def iter_hf_evaluation_documents(
+    *,
+    settings: Sequence[str],
+    hf_dataset: str = DEFAULT_HF_DATASET_ID,
+    hf_config: str | None = None,
+    themes: Sequence[str] | None = None,
+    document_ids: Sequence[str] | None = None,
+) -> Iterator[EvaluationDocument]:
+    """Yield evaluation documents by grouping rows from the published HF dataset."""
+    theme_filter = set(themes or [])
+    document_filter = set(document_ids or [])
+
+    for raw_setting in settings:
+        setting_spec = parse_dataset_setting(raw_setting)
+        setting = setting_spec.setting_id
+        split = _load_hf_split(hf_dataset=hf_dataset, hf_config=hf_config, setting=setting)
+        grouped_rows: dict[str, dict[str, object]] = {}
+
+        for row in split:
+            document_instance, document_id, question_id, variant_index = _parse_hf_row_id(
+                row.get("id"),
+                setting,
+            )
+            if is_excluded_evaluation_document(document_id):
+                continue
+            if document_filter and document_id not in document_filter:
+                continue
+
+            document_theme = _document_theme_for_hf_document(document_id)
+            if theme_filter and document_theme not in theme_filter:
+                continue
+
+            document_text = str(row.get("document") or "")
+            group = grouped_rows.setdefault(
+                document_instance,
+                {
+                    "document_id": document_id,
+                    "document_theme": document_theme,
+                    "document_variant_index": variant_index,
+                    "document_text": document_text,
+                    "questions": [],
+                },
+            )
+            if str(group["document_text"]) != document_text:
+                raise ValueError(f"HF document text changed within instance {document_instance!r}.")
+
+            question_text = str(row.get("question") or "").strip()
+            ground_truth = _coerce_ground_truth(row.get("answer"))
+            answer_spec = build_answer_spec(
+                question_text=question_text,
+                answer_expression=ground_truth,
+                evaluated_answer=ground_truth,
+                document_text=document_text,
+                entities_used=None,
+                accepted_answer_overrides=(),
+            )
+            questions = group["questions"]
+            assert isinstance(questions, list)
+            questions.append(
+                EvaluationQuestion(
+                    question_id=question_id,
+                    question_type=normalize_question_type(row.get("question_type")),
+                    answer_behavior=answer_behavior_label(row.get("answer_type")),
+                    question_text=question_text,
+                    ground_truth=ground_truth,
+                    ground_truth_canonical=answer_spec.ground_truth_canonical,
+                    answer_schema=answer_spec.answer_schema,
+                    accepted_answers=answer_spec.accepted_answers,
+                    accepted_answers_canonical=answer_spec.accepted_answers_canonical,
+                    accepted_answer_overrides=tuple(),
+                    answer_expression=ground_truth,
+                    pair_key=unique_question_key(document_theme, document_id, question_id),
+                )
+            )
+
+        for document_instance, group in grouped_rows.items():
+            variant_index = int(group["document_variant_index"])
+            yield EvaluationDocument(
+                document_id=str(group["document_id"]),
+                document_theme=str(group["document_theme"]),
+                document_setting=setting,
+                document_setting_family=setting_spec.setting_family,
+                document_variant_id=format_document_variant_id(variant_index),
+                document_variant_index=variant_index,
+                replacement_proportion=setting_spec.replacement_proportion,
+                document_text=str(group["document_text"]),
+                source_path=_hf_source_path(
+                    hf_dataset=hf_dataset,
+                    hf_config=hf_config,
+                    setting=setting,
+                    document_instance=document_instance,
+                ),
+                questions=list(group["questions"]),
+            )
+
+
 def iter_evaluation_documents(
     *,
     settings: Sequence[str],
     themes: Sequence[str] | None = None,
     document_ids: Sequence[str] | None = None,
+    dataset_source: str = "local",
+    hf_dataset: str = DEFAULT_HF_DATASET_ID,
+    hf_config: str | None = None,
 ) -> Iterator[EvaluationDocument]:
-    """Yield evaluation documents from the benchmark document directories."""
+    """Yield evaluation documents from local YAML files or the published HF dataset."""
+    normalized_source = str(dataset_source or "local").strip().lower()
+    if normalized_source in {"hf", "huggingface", "hugging_face"}:
+        yield from iter_hf_evaluation_documents(
+            settings=settings,
+            hf_dataset=hf_dataset,
+            hf_config=hf_config,
+            themes=themes,
+            document_ids=document_ids,
+        )
+        return
+    if normalized_source != "local":
+        raise ValueError("dataset_source must be either 'local' or 'huggingface'.")
+
     for setting in settings:
         for document_path in iter_document_variant_paths(
             setting=setting,

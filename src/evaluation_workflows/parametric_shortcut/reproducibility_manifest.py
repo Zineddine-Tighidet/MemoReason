@@ -6,6 +6,7 @@ from collections.abc import Sequence
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 import hashlib
+import json
 import platform
 from pathlib import Path
 import socket
@@ -20,6 +21,7 @@ import yaml
 from src.dataset_export.dataset_settings import order_dataset_settings
 from src.dataset_export.dataset_paths import PROJECT_ROOT, reproducibility_manifest_path
 from .dataset import (
+    DEFAULT_HF_DATASET_ID,
     EXCLUDED_EVALUATION_DOCUMENT_IDS,
     EvaluationDocument,
     iter_evaluation_documents,
@@ -52,7 +54,32 @@ def _sha256_file(path: Path) -> str:
     return hasher.hexdigest()
 
 
-def _relative_to_repo(path: Path) -> str:
+def _document_source_sha256(document: EvaluationDocument) -> str:
+    source_path = document.source_path
+    if isinstance(source_path, Path) and source_path.exists():
+        return _sha256_file(source_path)
+
+    payload = {
+        "document_id": document.document_id,
+        "document_setting": document.document_setting,
+        "document_variant_id": document.document_variant_id,
+        "document_text": document.document_text,
+        "questions": [
+            {
+                "question_id": question.question_id,
+                "question_text": question.question_text,
+                "ground_truth": question.ground_truth,
+                "answer_schema": question.answer_schema,
+            }
+            for question in document.questions
+        ],
+    }
+    return _sha256_text(json.dumps(payload, sort_keys=True, ensure_ascii=False))
+
+
+def _relative_to_repo(path: Path | str) -> str:
+    if not isinstance(path, Path):
+        return str(path)
     try:
         return str(path.relative_to(PROJECT_ROOT))
     except ValueError:
@@ -133,7 +160,7 @@ class DocumentVariantSnapshot:
             replacement_proportion=document.replacement_proportion,
             question_count=len(document.questions),
             source_path=_relative_to_repo(document.source_path),
-            source_sha256=_sha256_file(document.source_path),
+            source_sha256=_document_source_sha256(document),
         )
 
 
@@ -171,8 +198,11 @@ class EvaluationReproducibilityManifest:
         themes: Sequence[str] | None,
         document_ids: Sequence[str] | None,
         settings: Sequence[str],
-        overwrite: bool,
-        judge_config: JudgeConfig | None,
+        dataset_source: str = "local",
+        hf_dataset: str = DEFAULT_HF_DATASET_ID,
+        hf_config: str | None = None,
+        overwrite: bool = False,
+        judge_config: JudgeConfig | None = None,
         run_label: str | None = None,
         run_notes: str | None = None,
         entrypoint: str | None = None,
@@ -191,6 +221,9 @@ class EvaluationReproducibilityManifest:
                 settings=settings,
                 themes=themes,
                 document_ids=document_ids,
+                dataset_source=dataset_source,
+                hf_dataset=hf_dataset,
+                hf_config=hf_config,
             )
         )
         ordered_settings = order_dataset_settings(settings)
@@ -211,6 +244,9 @@ class EvaluationReproducibilityManifest:
                 "overwrite": overwrite,
             },
             "dataset": {
+                "dataset_source": dataset_source,
+                "hf_dataset": hf_dataset if str(dataset_source).lower() != "local" else None,
+                "hf_config": hf_config,
                 "themes_filter": list(themes or []),
                 "document_ids_filter": list(document_ids or []),
                 "excluded_document_ids": sorted(EXCLUDED_EVALUATION_DOCUMENT_IDS),
