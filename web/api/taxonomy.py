@@ -1,6 +1,7 @@
 """Taxonomy management API endpoints (power users only)."""
 
 import logging
+import os
 from pathlib import Path
 import re
 from typing import Any, Dict, Optional
@@ -9,15 +10,38 @@ import yaml
 from fastapi import APIRouter, Depends, HTTPException
 
 from web.middleware.auth import require_power_user
+from web.settings import PROJECT_ROOT, STATE_DIR
 
 router = APIRouter(prefix="/api/v1")
 
-TAXONOMY_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "WikiEvent" / "entity_taxonomy_extended.yaml"
-TAXONOMY_DOC_FILE = TAXONOMY_FILE.parent.parent / "TAXONOMY.md"
+TAXONOMY_SOURCE_FILE = PROJECT_ROOT / "TAXONOMY.md"
+TAXONOMY_FILE = STATE_DIR / "entity_taxonomy_extended.yaml"
+TAXONOMY_DOC_FILE = STATE_DIR / "TAXONOMY.md"
 # Backward-compatible alias used by older tests and callers.
 README_FILE = TAXONOMY_DOC_FILE
 
 logger = logging.getLogger(__name__)
+
+
+def _ensure_taxonomy_working_doc() -> None:
+    """Seed local Markdown once, preserving the release and existing YAML edits."""
+    if README_FILE.resolve() == TAXONOMY_SOURCE_FILE.resolve():
+        raise ValueError("Taxonomy state must not overwrite the frozen release taxonomy")
+    # Keep explicit legacy README_FILE overrides under the caller's control.
+    if README_FILE != TAXONOMY_DOC_FILE or README_FILE.exists() or not TAXONOMY_SOURCE_FILE.is_file():
+        return
+    baseline = TAXONOMY_SOURCE_FILE.read_bytes()
+    README_FILE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with README_FILE.open("xb") as stream:
+            stream.write(baseline)
+    except FileExistsError:
+        return
+    if TAXONOMY_FILE.exists():
+        # A missing working document must not make the baseline newer than
+        # existing user edits and overwrite them on the next synchronization.
+        metadata = TAXONOMY_FILE.stat()
+        os.utime(README_FILE, ns=(metadata.st_atime_ns, metadata.st_mtime_ns))
 
 
 def _load_taxonomy_yaml_only() -> Dict[str, Any]:
@@ -178,6 +202,7 @@ def _normalize_markdown(text: str) -> str:
 
 def _sync_taxonomy_yaml_from_doc_if_needed() -> Dict[str, Any]:
     """Sync TAXONOMY.md -> YAML when TAXONOMY.md taxonomy section has newer, divergent content."""
+    _ensure_taxonomy_working_doc()
     taxonomy = _load_taxonomy_yaml_only()
     if not README_FILE.exists():
         return taxonomy
@@ -497,6 +522,7 @@ def api_export_taxonomy_readme_alias(user: Dict = Depends(require_power_user)) -
 @router.post("/taxonomy/update-doc")
 def api_update_taxonomy_doc(user: Dict = Depends(require_power_user)) -> Dict[str, str]:
     """Update TAXONOMY.md taxonomy section from the current taxonomy YAML."""
+    _ensure_taxonomy_working_doc()
     if not README_FILE.exists():
         raise HTTPException(status_code=404, detail="TAXONOMY.md not found")
 

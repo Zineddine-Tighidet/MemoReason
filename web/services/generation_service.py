@@ -11,10 +11,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-from src.dataset_export.fictional_dataset import generate_fictional_dataset_payload
-from src.dataset_export.dataset_settings import fictional_setting
-from src.document_generation.fictional_entity_sampler import FictionalEntitySampler
-from src.core.document_schema import (
+from memoreason.factual_to_fictional_dataset.fictional_dataset_generation import (
+    generate_fictional_dataset_payload,
+)
+from memoreason.factual_to_fictional_dataset.dataset_settings import fictional_setting
+from memoreason.factual_to_fictional_dataset.controlled_entity_replacement.fictional_entity_sampler import (
+    FictionalEntitySampler,
+)
+from memoreason.benchmark_definition.document_schema import (
     AnnotatedDocument,
     AwardEntity,
     EntityCollection,
@@ -29,7 +33,7 @@ from src.core.document_schema import (
     Question,
     TemporalEntity,
 )
-from src.core.annotation_runtime import (
+from memoreason.benchmark_definition.annotation_runtime import (
     AnnotationParser,
     RuleEngine,
     find_entity_refs,

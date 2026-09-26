@@ -1,15 +1,23 @@
-"""Entity pool loading service for web previews."""
+"""Entity pool loading and generation service for web previews."""
 
 from __future__ import annotations
 
 import logging
+import os
 import shutil
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from src.dataset_export.dataset_paths import GENERATED_FICTIONAL_ENTITIES_DIR, generated_entity_pool_path
-from src.core.document_schema import AnnotatedDocument
-from src.core.annotation_runtime import load_entity_pool
+from memoreason.factual_to_fictional_dataset.fictional_entity_pool_generation.fictional_entity_replacement_pool_generation import (
+    FictionalEntityReplacementPoolGenerationConfiguration,
+    generate_fictional_entity_replacement_pool,
+)
+from memoreason.factual_to_fictional_dataset.dataset_paths import (
+    GENERATED_FICTIONAL_ENTITIES_DIR,
+    generated_entity_pool_path,
+)
+from memoreason.benchmark_definition.document_schema import AnnotatedDocument
+from memoreason.benchmark_definition.annotation_runtime import load_entity_pool
 from web.services import yaml_service
 from web.services.persistence import (
     delete_work_prefix_from_gcs,
@@ -20,6 +28,25 @@ from web.services.persistence import (
 
 logger = logging.getLogger(__name__)
 RUNTIME_POOL_ROOT = yaml_service.WORK_DIR / "_generated_entity_pools"
+
+
+def _env_flag(name: str, default: bool) -> bool:
+    raw_value = os.environ.get(name)
+    if raw_value is None:
+        return default
+    return raw_value.strip().lower() in {"1", "true", "yes"}
+
+
+def _pool_generation_config(seed: int) -> FictionalEntityReplacementPoolGenerationConfiguration:
+    return FictionalEntityReplacementPoolGenerationConfiguration(
+        provider=os.environ.get("POOL_LLM_PROVIDER", "anthropic").strip().lower(),
+        model=os.environ.get("POOL_LLM_MODEL", "claude-opus-4-6").strip(),
+        temperature=float(os.environ.get("POOL_LLM_TEMPERATURE", "0.0")),
+        max_tokens=int(os.environ.get("POOL_LLM_MAX_TOKENS", "32768")),
+        seed=seed,
+        max_attempts=int(os.environ.get("POOL_LLM_MAX_ATTEMPTS", "12")),
+        validate_against_wikipedia=_env_flag("POOL_WIKI_VALIDATE", True),
+    )
 
 
 def runtime_entity_pool_path(theme: str, document_id: str) -> Path:
@@ -41,6 +68,13 @@ def _theme_candidates(theme_id: Optional[str], doc: AnnotatedDocument) -> list[s
             if value and value not in candidates:
                 candidates.append(value)
     return candidates
+
+
+def _pool_generation_theme(theme_id: Optional[str], doc: AnnotatedDocument) -> str:
+    for candidate in _theme_candidates(theme_id, doc):
+        if candidate:
+            return candidate
+    return str(doc.document_theme or "").strip()
 
 
 def _single_pool_match_by_doc_id(root: Path, document_id: str) -> Optional[Path]:
@@ -135,14 +169,22 @@ def get_or_generate_pool(
     *,
     theme_id: Optional[str] = None,
 ) -> Tuple[Dict[str, Any], str, Optional[Path]]:
-    """Return an included pool for the web preview path."""
-    _ = (required_entities, seed)
+    """Return a loaded or generated pool for the web preview path."""
     pool, pool_path = _load_pool_for_document(doc, theme_id=theme_id)
     if pool is not None:
         return pool, "document_pool", pool_path
 
-    raise FileNotFoundError(
-        "No fictional entity pool was found for "
-        f"{doc.document_id!r}. Public preview generation uses the included pools "
-        "under data/GENERATED_FICTIONAL_ENTITIES."
+    if not _env_flag("ANNOTATION_ALLOW_POOL_GENERATION", False):
+        raise ValueError(
+            "No local entity pool is available for this document. Restore the release "
+            "entity pools, or explicitly enable ANNOTATION_ALLOW_POOL_GENERATION=true "
+            "and configure your own provider credentials."
+        )
+    config = _pool_generation_config(seed)
+    generated_pool = generate_fictional_entity_replacement_pool(
+        doc,
+        required_entities,
+        theme=_pool_generation_theme(theme_id, doc),
+        config=config,
     )
+    return generated_pool, "auto_generated", None

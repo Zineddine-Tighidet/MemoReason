@@ -23,22 +23,32 @@ from web.services import yaml_service
 
 WORK_DIR = yaml_service.WORK_DIR
 WORKFLOW_ROOT = WORK_DIR / "_workflow_tasks"
-
-
-def _configured_feedback_resolver_usernames() -> tuple[str, ...]:
-    raw = os.environ.get("MEMOREASON_FEEDBACK_RESOLVER_USERNAMES", "")
-    return tuple(
-        username.strip().lower()
-        for username in raw.split(",")
-        if username.strip()
-    )
-
-
-ALLOWED_FEEDBACK_RESOLVER_USERNAMES = _configured_feedback_resolver_usernames()
+ALLOWED_FEEDBACK_RESOLVER_USERNAMES = tuple(dict.fromkeys(
+    username.strip().lower()
+    for username in os.getenv(
+        "ANNOTATION_FEEDBACK_RESOLVERS", os.getenv("DEFAULT_ADMIN_USERNAME", "admin")
+    ).split(",")
+    if username.strip()
+))
 ALLOWED_FEEDBACK_RESPONSE_STATUSES = (
     "accepted",
     "contest_requested",
 )
+COMBINED_REVIEW_ASSIGNMENTS_ENV = "COMBINED_REVIEW_ASSIGNMENTS"
+
+
+def _combined_review_catalog_doc_keys() -> set[tuple[str, str]]:
+    """Return document keys explicitly enabled for exceptional combined review."""
+    keys: set[tuple[str, str]] = set()
+    for entry in os.getenv(COMBINED_REVIEW_ASSIGNMENTS_ENV, "").split(","):
+        parts = [part.strip() for part in entry.split(":", 2)]
+        if len(parts) != 3:
+            continue
+        _username, theme, doc_id = parts
+        canonical_theme = yaml_service.canonical_theme_id(theme)
+        if canonical_theme and doc_id:
+            keys.add((canonical_theme, doc_id))
+    return keys
 
 
 def _normalize_username_key(value: Any) -> str:
@@ -172,6 +182,7 @@ def get_active_run_completed_doc_keys(db=None) -> set[tuple[str, str]] | None:
         if feedback_state and bool(feedback_state.get("awaiting_reviewer_acceptance")):
             continue
         completed.add(canonical_key)
+    completed.update(_public_attack_display_doc_keys())
     return completed
 
 
@@ -186,10 +197,12 @@ def get_active_run_catalog_doc_keys(db=None) -> set[tuple[str, str]] | None:
 
     run_id = int(run["id"])
     catalog = _catalog_set_for_run(run_id, db)
-    return {
+    result = {
         (yaml_service.canonical_theme_id(str(theme)), str(doc_id))
         for theme, doc_id in catalog
     }
+    result.update(_public_attack_display_doc_keys())
+    return result
 
 
 def _utc_now() -> str:
@@ -283,6 +296,15 @@ def _doc_catalog(
     return sorted(set(docs), key=lambda item: (item[0], item[1]))
 
 
+def _public_attack_display_doc_keys() -> set[tuple[str, str]]:
+    """Docs shown as completed in admin dashboards without workflow assignments."""
+    return {
+        (yaml_service.PUBLIC_ATTACKS_THEME, str(doc_id))
+        for doc_id in yaml_service.list_theme_doc_ids(yaml_service.PUBLIC_ATTACKS_THEME)
+        if str(doc_id).strip()
+    }
+
+
 def _run_includes_legacy_docs(run_id: int, db) -> bool:
     row = db.execute(
         """
@@ -299,12 +321,14 @@ def _run_includes_legacy_docs(run_id: int, db) -> bool:
 
 def _catalog_set_for_run(run_id: int, db) -> set[tuple[str, str]]:
     include_public_attacks = _run_includes_legacy_docs(int(run_id), db)
-    return set(
+    catalog = set(
         _doc_catalog(
             include_legacy=include_public_attacks,
             include_public_attacks=include_public_attacks,
         )
     )
+    catalog.update(_combined_review_catalog_doc_keys())
+    return catalog
 
 
 def _doc_in_catalog(theme: str, doc_id: str, catalog: set[tuple[str, str]]) -> bool:
@@ -1389,13 +1413,18 @@ def _ensure_output_snapshot(task: Dict[str, Any], db) -> Path:
     output_path_raw = task.get("output_snapshot_path")
     if isinstance(output_path_raw, str) and output_path_raw:
         output_path = resolve_workflow_storage_path(output_path_raw)
-        if output_path is not None and output_path.exists():
-            return output_path
+        if output_path is not None:
+            if not output_path.exists():
+                restore_work_file_from_gcs(output_path)
+            if output_path.exists():
+                return output_path
 
     input_snapshot = task.get("input_snapshot_path")
     if not input_snapshot:
         raise FileNotFoundError("Task has no input snapshot")
     input_path = resolve_workflow_storage_path(input_snapshot)
+    if input_path is not None and not input_path.exists():
+        restore_work_file_from_gcs(input_path)
     if input_path is None or not input_path.exists():
         raise FileNotFoundError("Task input snapshot is unavailable")
 
@@ -2883,11 +2912,20 @@ def get_admin_monitor(db=None) -> Dict[str, Any]:
         row for row in agreement_rows
         if _doc_in_catalog(str(row["theme"]), str(row["doc_id"]), catalog)
     ]
+    public_attack_display_keys = _public_attack_display_doc_keys()
+    non_public_agreement_rows = [
+        row for row in filtered_agreement_rows
+        if (
+            yaml_service.canonical_theme_id(str(row["theme"])),
+            str(row["doc_id"]),
+        )
+        not in public_attack_display_keys
+    ]
 
     docs_no_submission = 0
     docs_one_submission = 0
     docs_two_submissions = 0
-    for row in filtered_agreement_rows:
+    for row in non_public_agreement_rows:
         completed_reviews = int(row["completed_reviews"] or 0)
         if completed_reviews <= 0:
             docs_no_submission += 1
@@ -2895,9 +2933,10 @@ def get_admin_monitor(db=None) -> Dict[str, Any]:
             docs_one_submission += 1
         else:
             docs_two_submissions += 1
+    docs_two_submissions += len(public_attack_display_keys)
 
-    ready_agreements = [row for row in filtered_agreement_rows if row["status"] == "ready"]
-    resolved_agreements = [row for row in filtered_agreement_rows if row["status"] == "resolved"]
+    ready_agreements = [row for row in non_public_agreement_rows if row["status"] == "ready"]
+    resolved_agreements = [row for row in non_public_agreement_rows if row["status"] == "resolved"]
     feedback_state_by_doc = get_run_feedback_acceptance_state_map(run_id, db=db)
 
     resolved_finalized: List[Any] = []
@@ -2909,6 +2948,19 @@ def get_admin_monitor(db=None) -> Dict[str, Any]:
             resolved_awaiting_reviewer_acceptance.append(row)
         else:
             resolved_finalized.append(row)
+    public_attack_resolved_details = [
+        {
+            "theme": theme,
+            "doc_id": doc_id,
+            "reviewer_a": "",
+            "reviewer_b": "",
+            "packet_path": None,
+            "resolved_by": "admin",
+            "resolved_at": None,
+            "auto_completed": True,
+        }
+        for theme, doc_id in sorted(public_attack_display_keys)
+    ]
 
     resolver_placeholders = ",".join("?" for _ in ALLOWED_FEEDBACK_RESOLVER_USERNAMES)
     contest_rows = db.execute(
@@ -2987,9 +3039,9 @@ def get_admin_monitor(db=None) -> Dict[str, Any]:
             "two_submissions": docs_two_submissions,
         },
         "agreements": {
-            "pending_count": int(len([row for row in filtered_agreement_rows if row["status"] == "pending"])),
+            "pending_count": int(len([row for row in non_public_agreement_rows if row["status"] == "pending"])),
             "ready_count": int(len(ready_agreements)),
-            "resolved_count": int(len(resolved_finalized)),
+            "resolved_count": int(len(resolved_finalized) + len(public_attack_resolved_details)),
             "awaiting_reviewer_acceptance_count": int(len(resolved_awaiting_reviewer_acceptance)),
         },
         "resolution_feedback": {
@@ -3027,7 +3079,7 @@ def get_admin_monitor(db=None) -> Dict[str, Any]:
                 "resolved_at": row["resolved_at"],
             }
             for row in resolved_finalized
-        ],
+        ] + public_attack_resolved_details,
         "agreement_pending_reviewer_acceptance_details": [
             {
                 "theme": row["theme"],

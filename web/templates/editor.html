@@ -350,7 +350,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Progress indicator -->
         <div class="annotation-progress">
             <div class="progress-stats">
@@ -371,7 +371,7 @@
                 </span>
             </div>
         </div>
-        
+
         <div class="header-actions">
             <template x-if="dirty">
                 <div class="unsaved-indicator">
@@ -489,7 +489,7 @@
                                         <span class="entity-id" x-text="ent.id"></span>
                                         <span class="entity-label" x-text="ent.preview"></span>
                                         <span class="text-xs text-muted ml-auto" x-text="'×' + ent.count"></span>
-                                        <button class="entity-delete-btn" 
+                                        <button class="entity-delete-btn"
                                                 @click.stop="deleteEntity(ent.id)"
                                                 x-show="canEditDocumentAnnotations && !showEntityReferences"
                                                 title="Delete entity and all its instances">
@@ -573,9 +573,15 @@
                         </div>
                         <!-- Source view -->
                         <div x-show="sourceView" style="padding:12px;">
+                            <template x-if="canEditQuestionDocumentText">
+                                <div class="text-xs text-muted" style="margin-bottom:8px;">
+                                    Edits here update the document text used by the question review workspace.
+                                </div>
+                            </template>
                             <textarea class="source-textarea"
+                                      x-ref="sourceTextarea"
                                       x-model="sourceEditorText"
-                                      :readonly="!canEditDocumentAnnotations"
+                                      :readonly="!canEditDocumentText"
                                       @input="onSourceChange()"
                                       rows="25"></textarea>
                         </div>
@@ -625,6 +631,10 @@
                         <span class="panel-count" x-text="docData?.questions?.length || 0"></span>
                     </div>
                     <div class="flex items-center gap-8">
+                        <button class="btn btn-xs btn-ghost"
+                                @click.stop="openQuestionDocumentTextEditor()"
+                                title="Edit the document text used by these questions"
+                                x-show="canEditQuestionDocumentText">Edit text</button>
                         <button class="btn btn-xs btn-ghost" @click.stop="addQuestion()" title="Add question"
                                 x-show="canEditQuestions">+</button>
                         <span class="panel-chevron" :class="{'open': panelState.questions}">&#9660;</span>
@@ -633,7 +643,7 @@
                 <div class="panel-body" :class="{'collapsed': !panelState.questions}">
                     <!-- Re-attach listeners whenever questions change -->
                     <div x-effect="docData && docData.questions && $nextTick(() => attachQuestionAnnotationHoverListeners())"></div>
-                    <div class="qa-coverage-card" x-show="reviewTarget === 'questions' && !referenceMode">
+                    <div class="qa-coverage-card" x-show="shouldShowQaCoverageVerifier()">
                         <div class="qa-coverage-header">
                             <div class="qa-coverage-title">Coverage verifier</div>
                             <div class="qa-coverage-count" x-text="qaCoverageSummaryLabel()"></div>
@@ -722,12 +732,12 @@
                             <!-- Read-only view -->
                             <div class="question-readonly" x-show="editingQuestion !== idx">
                                 <div class="q-label">Question</div>
-                                <div class="q-text" 
+                                <div class="q-text"
                                      x-html="renderAnnotatedHtml(q.question || '')"
                                      @mouseup="handleQuestionTextSelection($event, idx)"></div>
                                 <div style="margin-top:12px;">
                                     <div class="q-label">Answer</div>
-                                    <div class="q-answer-text" 
+                                    <div class="q-answer-text"
                                          x-html="renderAnswerExpression(String(q.answer || ''))"
                                          @mouseup="handleAnswerTextSelection($event, idx)"></div>
                                     <template x-if="q.answer_type">
@@ -1511,8 +1521,8 @@
                     </div>
                     <div class="mb-12">
                         <div class="text-sm text-muted mb-4">
-                            <strong x-text="historySnapshot.username"></strong> — 
-                            <span x-text="historySnapshot.action"></span> — 
+                            <strong x-text="historySnapshot.username"></strong> —
+                            <span x-text="historySnapshot.action"></span> —
                             <span x-text="formatTime(historySnapshot.timestamp)"></span>
                         </div>
                         <div class="flex gap-12">
@@ -1891,7 +1901,7 @@
 
         <div class="entity-type-selector">
             <template x-for="type in entityTypes" :key="'popup-'+type">
-                <button class="entity-type-btn" 
+                <button class="entity-type-btn"
                         :class="{'selected': popup.entityType === type, ['entity-type-' + type]: true}"
                         @click="selectEntityType(type)" x-text="type"></button>
             </template>
@@ -1990,7 +2000,7 @@
                 <label>Entity Type</label>
                 <div class="entity-type-selector">
                     <template x-for="type in entityTypes" :key="'new-'+type">
-                        <button class="entity-type-btn" 
+                        <button class="entity-type-btn"
                                 :class="{'selected': newEntityDialog.type === type, ['entity-type-' + type]: true}"
                                 @click="newEntityDialog.type = type"
                                 x-text="type"></button>

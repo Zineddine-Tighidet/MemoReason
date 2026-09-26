@@ -1,0 +1,503 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_84
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_12: 15
+    place_13: 15
+    place_1: 15
+    place_10: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_11: 15
+    place_6: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_14: 15
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Torvek Ghalan Drennovi
+      last_name: Drennovi
+    - full_name: Brenol Kuzat Delvani
+      last_name: Delvani
+    - full_name: Yashol Fentik Gorabin
+      last_name: Gorabin
+    - full_name: Keldro Vashun Tibreni
+      last_name: Tibreni
+    - full_name: Zareph Moltan Huseki
+      last_name: Huseki
+    - full_name: Fendar Quilosh Barjeni
+      last_name: Barjeni
+    - full_name: Orvash Tulmek Shadori
+      last_name: Shadori
+    - full_name: Pulven Gashir Noktali
+      last_name: Noktali
+    - full_name: Dremok Halzun Veshadi
+      last_name: Veshadi
+    - full_name: Sulkev Jontir Magreni
+      last_name: Magreni
+    - full_name: Wentok Rashul Kobheni
+      last_name: Kobheni
+    - full_name: Gilvash Pernok Taleshi
+      last_name: Taleshi
+    - full_name: Horbek Zuntal Felkari
+      last_name: Felkari
+    - full_name: Molvek Dashir Grenoki
+      last_name: Grenoki
+    - full_name: Tashev Kuldon Pervani
+      last_name: Pervani
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tariq al-Jubhani
+    - full_name: Fendal al-Qorashy
+    - full_name: Muzhir al-Dawneki
+    - full_name: Kashal ibn Voreem
+    - full_name: Halwad al-Surreni
+    - full_name: Drovim al-Kethani
+    - full_name: Nuhail al-Bremashi
+    - full_name: Zulfar al-Ghenawi
+    - full_name: Reshkan al-Tumhari
+    - full_name: Obayed al-Fenduqi
+    - full_name: Juvaid al-Moshtari
+    - full_name: Waqeel al-Durbani
+    - full_name: Sholmek al-Raveni
+    - full_name: Ghufren al-Tashkeli
+    - full_name: Barveel al-Hunzari
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Kavrel Dho Mashoun
+    - full_name: Torbiq Hal Zuneiri
+    - full_name: Yassek Mol Dravani
+    - full_name: Ghulren Ib Tashkori
+    - full_name: Fazheel Nur Qolbani
+    - full_name: Jomrek Ald Hushari
+    - full_name: Waqeel Bin Taloush
+    - full_name: Reshkan Dol Muvari
+    - full_name: Zulfek Ahn Kobrashi
+    - full_name: Habrek Sul Dhenawi
+    - full_name: Morveel Kas Junthari
+    - full_name: Talqen Roh Bashkevi
+    - full_name: Durshan Vel Khamouri
+    - full_name: Naqeel Foz Durbashi
+    - full_name: Sulvek Orn Ghazreni
+places:
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Qeshara
+    - country: Brinthos
+    - country: Dulkamor
+    - country: Zephilon
+    - country: Korvashta
+    - country: Melduria
+    - country: Ossivane
+    - country: Plethara
+    - country: Gundavar
+    - country: Reshkova
+    - country: Tulmekh
+    - country: Vornisca
+    - country: Haldrune
+    - country: Sethikar
+  place_13:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Dranvolia
+    - country: Kelthura
+    - country: Obrishen
+    - country: Wulthane
+    - country: Jarmidon
+    - country: Fendraka
+    - country: Sulvaren
+    - country: Crethova
+    - country: Balgimor
+    - country: Theskura
+    - country: Nimvoral
+    - country: Pashkeld
+    - country: Urthenok
+    - country: Golvisha
+    - country: Rendakul
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vellmorath
+    - city: Kessundra
+    - city: Torbique
+    - city: Granthelo
+    - city: Pelmovar
+    - city: Dravenci
+    - city: Quillspar
+    - city: Hentova
+    - city: Zarquine
+    - city: Brossalum
+    - city: Wenvachi
+    - city: Crelitho
+    - city: Jundaphor
+    - city: Molvesta
+    - city: Trinoque
+  place_10:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Brelthoven
+    - city: Krossivane
+    - city: Delvoquar
+    - city: Thrandique
+    - city: Golveshen
+    - city: Welphorin
+    - city: Quindavel
+    - city: Helvospar
+    - city: Zrentavar
+    - city: Crelphoque
+    - city: Molvinder
+    - city: Plenthovar
+    - city: Trossiquane
+    - city: Jelvadren
+    - city: Frossivane
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Caldreth
+    - city: Fentovar
+    - city: Brissalune
+    - city: Golvane
+    - city: Thandique
+    - city: Relvoshen
+    - city: Wispara
+    - city: Kurnelto
+    - city: Drossivane
+    - city: Plequith
+    - city: Holvander
+    - city: Zennoqua
+    - city: Marvithen
+    - city: Crellispa
+    - city: Jolvander
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Threnvale
+    - city: Quilsander
+    - city: Borthenique
+    - city: Selvoquin
+    - city: Dranthuvel
+    - city: Kelphorin
+    - city: Wossaleth
+    - city: Grentavar
+    - city: Plindoque
+    - city: Harvosque
+    - city: Zelvinder
+    - city: Crondaveth
+    - city: Melphosar
+    - city: Trossivane
+    - city: Jelvoquar
+  place_9:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Vondrellis
+    - city: Kelpharun
+    - city: Brossiquane
+    - city: Thelvador
+    - city: Grinvosque
+    - city: Drelphique
+    - city: Wanthover
+    - city: Quelvoshen
+    - city: Hentrique
+    - city: Zolvander
+    - city: Crendavol
+    - city: Melvoquar
+    - city: Plossivane
+    - city: Trelphique
+    - city: Jornvellis
+  place_11:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Corventhian
+    - demonym: Lustremian
+    - demonym: Dranthelic
+    - demonym: Vossendric
+    - demonym: Pelmathian
+    - demonym: Wrendulic
+    - demonym: Kaltherish
+    - demonym: Torbesian
+    - demonym: Grellundic
+    - demonym: Sethuvian
+    - demonym: Molvethian
+    - demonym: Branthelic
+    - demonym: Ondrevish
+    - demonym: Celvathian
+    - demonym: Thurmelish
+  place_6:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tarvekistan
+      demonym: Tarveki
+    - country: Brolhana
+      demonym: Brolhanese
+    - country: Peldunara
+      demonym: Peldunarish
+    - country: Dulmarak
+      demonym: Dulmaraki
+    - country: Zanthura
+      demonym: Zanthuran
+    - country: Gorvashel
+      demonym: Gorvashi
+    - country: Pelindor
+      demonym: Pelindori
+    - country: Murathez
+      demonym: Murathezi
+    - country: Solvekha
+      demonym: Solvekhi
+    - country: Jandouri
+      demonym: Jandourese
+    - country: Vashkelen
+      demonym: Vashkeleni
+    - country: Throndak
+      demonym: Throndaki
+    - country: Queshalan
+      demonym: Queshalani
+    - country: Haruzem
+      demonym: Haruzemi
+    - country: Fendraka
+      demonym: Fendrakese
+  place_2:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Kelvara
+    - state: Trossmund
+    - state: Brenolith
+    - state: Caldivane
+    - state: Pelmorath
+    - state: Vintarque
+    - state: Sorathel
+    - state: Dremwick
+    - state: Halovent
+    - state: Quendalis
+    - state: Marvoset
+    - state: Tilvaren
+    - state: Grothane
+    - state: Wespolin
+    - state: Fendurak
+  place_3:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Kelvorn Lane
+    - street: Tassory Boulevard
+    - street: Grindel Passage
+    - street: Molvane Crescent
+    - street: Pethwick Avenue
+    - street: Dorshan Road
+    - street: Quilber Terrace
+    - street: Fennoway Drive
+    - street: Harloque Street
+    - street: Brissant Walk
+    - street: Tolmery Place
+    - street: Vandrel Circle
+    - street: Caspern Way
+    - street: Lurgate Promenade
+    - street: Winthem Alley
+  place_4:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Brellhaven
+    - region: Korvath
+    - region: Thanderly
+    - region: Ossivane
+    - region: Pellmark
+    - region: Dravenholt
+    - region: Quirenth
+    - region: Zelmara
+    - region: Fenthalow
+    - region: Grissoval
+    - region: Wyndorath
+    - region: Calveshan
+    - region: Torbinnel
+    - region: Lusperyn
+    - region: Helvandis
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Brindlow
+    - region: Kessara
+    - region: Tolvane
+    - region: Grethwick
+    - region: Pallenthor
+    - region: Dunvara
+    - region: Crenshaw Heights
+    - region: Mossfeld
+    - region: Tarquill
+    - region: Velshane
+    - region: Vossanthal
+    - region: Bramwick
+    - region: Sutherly
+    - region: Caldreth
+    - region: Fenmoray
+  place_14:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Vestrala
+    - country: Thandor
+    - country: Kelmuria
+    - country: Brossenia
+    - country: Palvetch
+    - country: Dromikar
+    - country: Zenthari
+    - country: Quolshen
+    - country: Farvunia
+    - country: Mektaris
+    - country: Jolpheran
+    - country: Wyndalar
+    - country: Sorviketh
+    - country: Tulmaren
+    - country: Grothiven
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Harq al-Vasheen
+    - name: Jundal Korrath
+    - name: Tanzeem ul-Sahkra
+    - name: Liwa al-Burqan
+    - name: Katibat Dhoreen
+    - name: Ansar ul-Makheel
+    - name: Jaysh al-Thurqan
+    - name: Hizb ul-Qorrash
+    - name: Jabhat al-Nuhreen
+    - name: Saraya al-Kholbeen
+    - name: Tehreek-e-Vashtal
+    - name: Lashkar-e-Zurqam
+    - name: Majlis al-Shurreen
+    - name: Harakat ul-Darveen
+    - name: Kataeb al-Jothran
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vendlo
+    - name: Bazzrik
+    - name: Trawlhub
+    - name: Quipmart
+    - name: Selkora
+    - name: Bidvane
+    - name: Grablot
+    - name: Plivven
+    - name: Swapkri
+    - name: Nettago
+    - name: Delvosh
+    - name: Merkavu
+    - name: Trovlix
+    - name: Korbazi
+    - name: Shelvyn
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cendral Scrutiny Directorate
+    - name: Tarvek Bureau of Inquiry
+    - name: Nolcrest Investigative Authority
+    - name: Fedural Probing Commissariat
+    - name: Brenthall Security Bureau
+    - name: Quorvane Criminal Investigations Office
+    - name: Delmarak Enforcement Bureau
+    - name: Vossler Domestic Security Agency
+    - name: Pellicarn Bureau of Detections
+    - name: Grothane Investigative Service
+    - name: Kestoval National Inquiry Bureau
+    - name: Thandric Protective Investigations Office
+    - name: Relvane Bureau of Criminal Affairs
+    - name: Ondrath Security Investigations Directorate
+    - name: Calbrune Federal Inquiry Office
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: KVTL
+    - name: WNHD
+    - name: Telvoran Broadcasting
+    - name: WPLF
+    - name: KTMV
+    - name: Grellisound Media
+    - name: Narvique Signal Network
+    - name: Bressolan Airwaves
+    - name: KQVR
+    - name: Queldrith Radio Collective
+    - name: KSLW
+    - name: WJNP
+    - name: KBHF
+    - name: WRQD
+    - name: Zanthoral Media Group

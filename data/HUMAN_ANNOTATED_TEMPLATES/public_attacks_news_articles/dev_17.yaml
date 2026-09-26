@@ -1,0 +1,205 @@
+document:
+  document_id: dev_17
+  document_theme: the cafetería rolando bombing
+  original_document: The Cafetería Rolando bombing was an attack on 13 September 1974 at the Rolando cafe in Calle del Correo, Madrid, Spain which killed 13 people and wounded 71. Though no claim of responsibility was made, the attack is widely believed to have been carried out by the armed Basque separatist group ETA.==Background==The Rolando Cafe was located on 4 Calle del Correo in Madrid, close to the General Directorate of Security, the headquarters of the Spanish Police. It was regularly frequented by members of the police force and security services.==The attack==The bomb was placed at the entrance to the building and exploded on a Friday afternoon, during a busy lunchtime period. More than 300 people were eating in the neighbouring El Tobogan restaurant at the time of the explosion, two of whom were among the dead. The explosion caused significant damage to nearby buildings, shattering the windows of the nearby General Directorate of Security, while two cars parked nearby were totally destroyed. The bomb caused part of the Rolando Cafe's ceiling to collapse and guests staying in a pension above were injured due to falling through the gaps in the ceiling. The police immediately
+    arrived and cordoned off the scene.Two of the 12 initially killed and 11 of the injured were members of the police force. However the wounded included the number two of the Spanish Political Police, with the remainder employees and customers of the cafe. A thirteenth victim died in 1977 of injuries suffered during the attack.==Responses and arrests==The leadership of ETA was taken aback by the responses to the attack and on 15 September, issued a statement denying their responsibility, though implicitly defending the bombing, claiming that the cafe was full of police agents. This caused tensions within the group, with some members believing that the organisation had to admit responsibility for attacks carried out, even if the results were not those intended. The bombing gave those opposed to further liberalisation of the country, such as Blas Piñar, the opportunity to attack the Prime Minister Carlos Arias Navarro.In the immediate period of confusion following the attack, some blamed the attack on the far-right. The police, however, concluded that ETA were responsible and launched an operation against the group's infrastructure in Madrid. Initially the police also blamed the Communist
+    Party of Spain (PCE) of cooperating in the attack, but the PCE energetically denied involvement. Reports that police officers had received a circular advising them not to go to the Rolando Cafe or stand outside the building added to the mystery surrounding the incident.Leftists known to be sympathetic to ETA were arrested, including Eva Forest, wife of the communist playwright Alfonso Sastre, Mari Luz Fernandez and her relatives, Lidia Falcón, the theatre director Vicente Sainz de la Peña, construction worker Antonio Durán, pilot Bernardo Badell and his wife María del Carmen Nadal, the actress María Paz Ballesteros, and the writer Eliseo Bayo. Between June 1975 and February 1976, courts dismissed the cases and released the defendants. However Eva Forest and Mari Luz Fernandez remained in prison as they were charged with complicity in the assassination of Luis Carrero Blanco one year before. However, neither Forest nor Luz Fernandez were tried for the Rolando bombing, as they were released in June 1977 as part of a general amnesty for political prisoners. In 1981 Lidia Falcón published a denunciation of Eva Forest which suggested that Forest's role in the Rolando attack had been considerable.The
+    government also offered a reward of one million pesetas for information leading to the capture of Juan Manuel Galarraga Mendizabal who they suspected of being a high ranking ETA figure involved in the bombing. Exact authorship of the bombing has however remained a mystery.==References==
+  document_to_annotate: The Cafetería [Rolando; person_15.first_name] bombing was an attack on [13 September 1974; temporal_1.date] at the [Rolando; person_15.first_name] cafe in [Calle del Correo; place_1.street], [Madrid; place_2.city], [Spain; place_2.country] which killed [13; number_1.int] people and wounded [71; number_2.int]. Though no claim of responsibility was made, the attack is widely believed to have been carried out by the armed [Basque; entreprise_org_1.name] separatist group [ETA; military_org_1.name].==Background==The [Rolando; person_15.first_name] Cafe was located on [4 Calle del Correo; place_1.street] in [Madrid; place_2.city], close to the [General Directorate of Security; government_org_1.name], the headquarters of the [Spanish Police; government_org_2.name]. It was regularly frequented by members of the police force and security services.==The attack==The bomb was placed at the entrance to the building and exploded on a [Friday; temporal_2.day] afternoon, during a busy lunchtime period. More than [300; number_3.int] people were eating in the neighbouring [El Tobogan; person_16.first_name] restaurant at the time of the explosion, two of whom were among the dead.
+    The explosion caused significant damage to nearby buildings, shattering the windows of the nearby [General Directorate of Security; government_org_1.name], while two cars parked nearby were totally destroyed. The bomb caused part of the [Rolando; person_15.first_name] Cafe's ceiling to collapse and guests staying in a pension above were injured due to falling through the gaps in the ceiling. The police immediately arrived and cordoned off the scene.Two of the [12; number_4.int] initially killed and [11; number_5.int] of the injured were members of the police force. However the wounded included the number two of the [Spanish Political Police; government_org_3.name], with the remainder employees and customers of the cafe. A thirteenth victim died in [1977; temporal_3.year] of injuries suffered during the attack.==Responses and arrests==The leadership of [ETA; military_org_1.name] was taken aback by the responses to the attack and on [15 September; temporal_4.date], issued a statement denying their responsibility, though implicitly defending the bombing, claiming that the cafe was full of police agents. This caused tensions within the group, with some members believing that the organisation
+    had to admit responsibility for attacks carried out, even if the results were not those intended. The bombing gave those opposed to further liberalisation of the country, such as [Blas Piñar; person_1.full_name], the opportunity to attack the Prime Minister [Carlos Arias Navarro; person_2.full_name].In the immediate period of confusion following the attack, some blamed the attack on the far-right. The police, however, concluded that [ETA; military_org_1.name] were responsible and launched an operation against the group's infrastructure in [Madrid; place_2.city]. Initially the police also blamed the [Communist Party of Spain; government_org_4.name] ([PCE; government_org_4.name]) of cooperating in the attack, but the [PCE; government_org_4.name] energetically denied involvement. Reports that police officers had received a circular advising them not to go to the [Rolando; person_15.first_name] Cafe or stand outside the building added to the mystery surrounding the incident.Leftists known to be sympathetic to [ETA; military_org_1.name] were arrested, including [Eva Forest; person_3.full_name], [wife; person_3.relationship.person_4] of the communist playwright [Alfonso Sastre; person_4.full_name],
+    [Mari Luz Fernandez; person_5.full_name] and [her; person_5.poss_det_pronoun] relatives, [Lidia Falcón; person_6.full_name], the theatre director [Vicente Sainz de la Peña; person_7.full_name], construction worker [Antonio Durán; person_8.full_name], pilot [Bernardo Badell; person_9.full_name] and [his; person_9.poss_det_pronoun] [wife; person_10.relationship.person_9] [María del Carmen Nadal; person_10.full_name], the actress [María Paz Ballesteros; person_11.full_name], and the writer [Eliseo Bayo; person_12.full_name]. Between [June 1975; temporal_5.date] and [February 1976; temporal_6.date], courts dismissed the cases and released the defendants. However [Eva Forest; person_3.full_name] and [Mari Luz Fernandez; person_5.full_name] remained in prison as they were charged with complicity in the assassination of [Luis Carrero Blanco; person_13.full_name] one year before. However, neither [Forest; person_3.last_name] nor [Luz Fernandez; person_5.last_name] were tried for the [Rolando; person_15.first_name] bombing, as they were released in [June 1977; temporal_7.date] as part of a general amnesty for political prisoners. In [1981; temporal_8.year] [Lidia Falcón; person_6.full_name]
+    published a denunciation of [Eva Forest; person_3.full_name] which suggested that [Forest; person_3.last_name]'s role in the [Rolando; person_15.first_name] attack had been considerable.The government also offered a reward of one million pesetas for information leading to the capture of [Juan Manuel Galarraga Mendizabal; person_14.full_name] who they suspected of being a high ranking [ETA; military_org_1.name] figure involved in the bombing. Exact authorship of the bombing has however remained a mystery.==References==
+  relations: []
+  rules:
+  - 'number_4.int + 1 == number_1.int # a thirteenth victim died later, so initial dead + 1 = total killed'
+  - 'number_1.int > 1 # plural "people" killed'
+  - 'number_2.int > 1 # plural wounded'
+  num_questions: 12
+  questions:
+  - question_id: dev_17_q01
+    question: On what street was the [Rolando; person_15.first_name] cafe located?
+    question_type: extractive
+    answer: place_1.street
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the Rolando Cafe was located on [Calle del Correo; place_1.street] in [Madrid; place_2.city].
+  - question_id: dev_17_q02
+    question: What reward did the government offer for information leading to the capture of the suspected bombing figure?
+    question_type: extractive
+    answer: one million pesetas
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the government offered a reward of one million pesetas for information leading to the capture of the suspected figure involved in the bombing.
+  - question_id: dev_17_q03
+    question: What type of explosive device was used in the attack on the [Rolando; person_15.first_name] Cafe in [Madrid; place_2.city]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes a bomb being placed at the entrance to the building and exploding.
+    - 2. However, the document does not specify the type of explosive device used (e.g., dynamite, plastic explosive, etc.).
+    - 3. Therefore, the type of explosive cannot be determined from the document.
+  - question_id: dev_17_q04
+    question: How many more people were wounded than killed in the Cafetería [Rolando; person_15.first_name] bombing?
+    question_type: arithmetic
+    answer: number_2.int - number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [13; number_1.int] people were killed and [71; number_2.int] were wounded.
+    - 2. Subtracting the annotated death count from the annotated wounded count gives the requested difference.
+  - question_id: dev_17_q05
+    question: How many items and people are counted altogether when combining the two cars destroyed by the explosion and the two dead who had been eating in the neighbouring [El Tobogan; person_16.first_name] restaurant?
+    question_type: arithmetic
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that two cars parked nearby were totally destroyed.
+    - 2. It also states that two of the dead had been eating in the neighbouring El Tobogan restaurant.
+    - 3. Adding these stable counts gives 2 + 2 = 4.
+  - question_id: dev_17_q06
+    question: How many of the [71; number_2.int] wounded were civilians (i.e., not police or security services)?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [71; number_2.int] people were wounded.
+    - 2. The document states [11; number_5.int] of the injured were members of the police force, and the wounded included the number two of the [Spanish Political Police; government_org_3.name].
+    - 3. However, it is unclear whether the [Spanish Political Police; government_org_3.name] official is counted among the [11; number_5.int] police members or is separate, so the exact number of civilian wounded cannot be determined.
+  - question_id: dev_17_q07
+    question: How many years after the bombing did the thirteenth victim die from injuries sustained in the attack?
+    question_type: temporal
+    answer: temporal_3.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The bombing occurred on [13 September 1974; temporal_1.date], whose year is 1974.
+    - 2. The thirteenth victim died in [1977; temporal_3.year].
+    - 3. Subtracting the bombing year from the later death year gives the elapsed time.
+  - question_id: dev_17_q08
+    question: How long before the imprisonment on complicity charges did the assassination connected to those charges occur, according to the document?
+    question_type: temporal
+    answer: one year
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document says two detainees remained imprisoned on charges of complicity in an assassination.
+    - 2. It states that the assassination had occurred one year before.
+    - 3. Therefore, the stated temporal gap is one year.
+  - question_id: dev_17_q09
+    question: How long after the bombing was [Juan Manuel Galarraga Mendizabal; person_14.full_name] eventually apprehended by authorities?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The bombing occurred on [13 September 1974; temporal_1.date].
+    - 2. The document mentions the government offered a reward for information leading to the capture of [Juan Manuel Galarraga Mendizabal; person_14.full_name].
+    - 3. The document does not state whether or when [Juan Manuel Galarraga Mendizabal; person_14.full_name] was captured, so the elapsed time cannot be calculated.
+  - question_id: dev_17_q10
+    question: Which organization's headquarters proximity to the [Rolando; person_15.first_name] Cafe helps explain why police officers frequently visited the cafe?
+    question_type: inference
+    answer: government_org_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the Rolando Cafe was close to the [General Directorate of Security; government_org_1.name], the headquarters of the [Spanish Police; government_org_2.name].
+    - 2. The document also states the cafe was regularly frequented by members of the police force and security services.
+    - 3. The proximity of the [Spanish Police; government_org_2.name] headquarters explains why police officers were regular patrons.
+  - question_id: dev_17_q11
+    question: Based on the document, why did the bombing give opponents of liberalisation an opportunity to attack the Prime Minister?
+    question_type: inference
+    answer: The bombing demonstrated a failure to maintain public security, which opponents could use to argue against further liberalisation.
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the bombing gave those opposed to further liberalisation, such as [Blas Piñar; person_1.full_name], the opportunity to attack the Prime Minister [Carlos Arias Navarro; person_2.full_name].
+    - 2. A major terrorist attack killing civilians and police would suggest the government's liberalisation policies were failing to maintain order.
+    - 3. This implies opponents used the security failure as evidence that liberalisation was dangerous.
+  - question_id: dev_17_q12
+    question: Did the circular warning police officers not to visit the Rolando Cafe indicate that there was a security informant within [ETA; military_org_1.name] who tipped off the authorities?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions reports that police officers had received a circular advising them not to go to the Rolando Cafe or stand outside the building.
+    - 2. The document states this "added to the mystery surrounding the incident" but does not explain the source of the circular or whether it came from an informant within [ETA; military_org_1.name].
+    - 3. Therefore, whether the circular indicates the existence of a security informant within [ETA; military_org_1.name] cannot be determined from the document.
+  annotation_status: ok
+  annotation_errors: []
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1955
+    upper_bound: 1993
+    factual_value: 1974
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 11
+    upper_bound: 15
+    factual_value: 13
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 57
+    upper_bound: 85
+    factual_value: 71
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 240
+    upper_bound: 360
+    factual_value: 300
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 9
+    upper_bound: 13
+    factual_value: 11
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1958
+    upper_bound: 1996
+    factual_value: 1977
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 15
+    upper_bound: 15
+    factual_value: 15
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1957
+    upper_bound: 1995
+    factual_value: 1976
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1958
+    upper_bound: 1996
+    factual_value: 1977
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 1962
+    upper_bound: 2000
+    factual_value: 1981
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: The Cafetería Rolando bombing was an attack on [5 August 1973; temporal_1.date] at the Rolando cafe in [Pasaje del Tronvil; place_1.street], [Veloranta; place_2.city], [Teskoria; place_2.country] which killed [11; number_1.int] people and wounded [70; number_2.int]. Though no claim of responsibility was made, the attack is widely believed to have been carried out by the armed Basque separatist group [VKL; military_org_1.name].==Background==The Rolando Cafe was located on [Pasaje del Tronvil; place_1.street] in [Veloranta; place_2.city], close to the [Central Bureau of Public Order; government_org_1.name], the headquarters of the [Tarvellian Constabulary; government_org_2.name]. It was regularly frequented by members of the police force and security services.==The attack==The bomb was placed at the entrance to the building and exploded on a [Sunday; temporal_2.day] afternoon, during a busy lunchtime period. More than [299; number_3.int] people were eating in the neighbouring El Tobogan restaurant at the time of the explosion, two of whom were among the dead. The explosion caused significant damage to nearby buildings, shattering the windows
+    of the nearby [Central Bureau of Public Order; government_org_1.name], while two cars parked nearby were totally destroyed. The bomb caused part of the Rolando Cafe's ceiling to collapse and guests staying in a pension above were injured due to falling through the gaps in the ceiling. The police immediately arrived and cordoned off the scene.Two of the [10; number_4.int] initially killed and [9; number_5.int] of the injured were members of the police force. However the wounded included the number two of the [Directorate of Civic Surveillance; government_org_3.name], with the remainder employees and customers of the cafe. A thirteenth victim died in [1988; temporal_3.year] of injuries suffered during the attack.==Responses and arrests==The leadership of [VKL; military_org_1.name] was taken aback by the responses to the attack and on [1 November 394; temporal_4.date], issued a statement denying their responsibility, though implicitly defending the bombing, claiming that the cafe was full of police agents. This caused tensions within the group, with some members believing that the organisation had to admit responsibility for attacks carried out, even if the results were not those intended.
+    The bombing gave those opposed to further liberalisation of the country, such as [Torven Galcedo; person_1.full_name], the opportunity to attack the Prime Minister [Dorven Elcayo Turima; person_2.full_name].In the immediate period of confusion following the attack, some blamed the attack on the far-right. The police, however, concluded that [VKL; military_org_1.name] were responsible and launched an operation against the group's infrastructure in [Veloranta; place_2.city]. Initially the police also blamed the [Velthari Workers' Collective; government_org_4.name] ([Velthari Workers' Collective; government_org_4.name]) of cooperating in the attack, but the [Velthari Workers' Collective; government_org_4.name] energetically denied involvement. Reports that police officers had received a circular advising them not to go to the Rolando Cafe or stand outside the building added to the mystery surrounding the incident.Leftists known to be sympathetic to [VKL; military_org_1.name] were arrested, including [Tivra Quelmond; person_3.full_name], [wife; person_3.relationship.person_4] of the communist playwright [Telvio Morquane; person_4.full_name], [Tevi Rosh Calondra; person_5.full_name] and
+    [his; person_5.poss_det_pronoun] relatives, [Vorela Tassigen; person_6.full_name], the theatre director [Doranto Quilves de la Brecha; person_7.full_name], construction worker [Telvio Curamen; person_8.full_name], pilot [Telvaro Grissond; person_9.full_name] and [her; person_9.poss_det_pronoun] [wife; person_10.relationship.person_9] [Telvina Goraste Puchell; person_10.full_name], the actress [Velinta Corrasho; person_11.full_name], and the writer [Tavorin Grellso; person_12.full_name]. Between [1 November 1977; temporal_5.date] and [24 March 1978; temporal_6.date], courts dismissed the cases and released the defendants. However [Tivra Quelmond; person_3.full_name] and [Tevi Rosh Calondra; person_5.full_name] remained in prison as they were charged with complicity in the assassination of [Dorven Calestro Maquiño; person_13.full_name] one year before. However, neither [Quelmond; person_3.last_name] nor [Calondra; person_5.last_name] were tried for the Rolando bombing, as they were released in [1 October 1994; temporal_7.date] as part of a general amnesty for political prisoners. In [1998; temporal_8.year] [Vorela Tassigen; person_6.full_name] published a denunciation of [Tivra Quelmond;
+    person_3.full_name] which suggested that [Quelmond; person_3.last_name]'s role in the Rolando attack had been considerable.The government also offered a reward of one million pesetas for information leading to the capture of [Txomin Elguezar Ondikola; person_14.full_name] who they suspected of being a high ranking [VKL; military_org_1.name] figure involved in the bombing. Exact authorship of the bombing has however remained a mystery.==References==
+metadata:
+  status: completed

@@ -9,8 +9,8 @@ from typing import Any
 
 import yaml
 
-from src.core.document_schema import AnnotatedDocument, Question
-from src.core.annotation_runtime import (
+from memoreason.benchmark_definition.document_schema import AnnotatedDocument, Question
+from memoreason.benchmark_definition.annotation_runtime import (
     ENTITY_TAXONOMY,
     AnnotationParser,
     find_rule_sanity_errors,
@@ -19,17 +19,20 @@ from src.core.annotation_runtime import (
     validate_question_and_answer_entity_scope,
 )
 from web.services.persistence import restore_work_file_from_gcs, sync_work_file_to_gcs
+from web.settings import REFERENCE_USERNAME, WORK_DIR
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-RETIRED_DOCS_FILE = PROJECT_ROOT / "data" / "HUMAN_ANNOTATED_TEMPLATES" / "retired_documents.yaml"
-WIKIEVENT_PUBLIC_ATTACKS_DIR = PROJECT_ROOT / "data" / "HUMAN_ANNOTATED_TEMPLATES" / "public_attacks_news_articles"
+RETIRED_DOCS_FILE = PROJECT_ROOT / "data" / "Wikipedia" / "retired_documents.yaml"
+WIKIEVENT_PUBLIC_ATTACKS_DIR = (
+    PROJECT_ROOT / "data" / "WikiEvent" / "public_attacks_news_articles"
+)
 _TAXONOMY_CACHE_KEY: tuple[float | None, float | None] | None = None
 _TAXONOMY_CACHE_VALUE: dict[str, list[str]] | None = None
 
 # Source documents (read-only originals).
 # Priority is:
 # 1) explicit env override
-# 2) required curated wiki set
+# 2) frozen, curated templates shipped with the release
 def _resolve_source_dir() -> Path:
     override = os.getenv("ANNOTATION_SOURCE_DIR")
     if override:
@@ -42,19 +45,18 @@ def _resolve_source_dir() -> Path:
     if not preferred.exists():
         raise FileNotFoundError(
             "Required source directory is missing: "
-            f"{preferred}. Set ANNOTATION_SOURCE_DIR to point to your own YAML source documents."
+            f"{preferred}. Restore the release data or set ANNOTATION_SOURCE_DIR."
         )
     return preferred
 
 
 SOURCE_DIR = _resolve_source_dir()
 # User working copies + completed annotations
-WORK_DIR = PROJECT_ROOT / "web" / "data" / "annotation_workspace"
 LEGACY_WORK_DIR = PROJECT_ROOT / "data" / "annotation_workspace"
 AI_PRE_ANNOTATIONS_DIR = PROJECT_ROOT / "data" / "AI_PRE_ANNOTATIONS"
 
-# Reference annotations (read-only examples, when provided locally)
-REFERENCE_DIR = WORK_DIR / "anonymous_reference"
+# Optional shared reference annotations, configured independently of user identity.
+REFERENCE_DIR = WORK_DIR / REFERENCE_USERNAME
 
 # Canonical theme id for Public Attacks.
 PUBLIC_ATTACKS_THEME = "public_attacks_news_articles"
@@ -64,18 +66,8 @@ PUBLIC_ATTACKS_THEME_ALIASES = {PUBLIC_ATTACKS_THEME, LEGACY_THEME}
 
 
 def ensure_workspace_dirs() -> None:
-    """Ensure the primary workspace exists and keep a legacy alias available."""
+    """Create local working storage without changing the frozen source tree."""
     WORK_DIR.mkdir(parents=True, exist_ok=True)
-
-    if LEGACY_WORK_DIR.exists() or LEGACY_WORK_DIR.is_symlink():
-        return
-
-    try:
-        LEGACY_WORK_DIR.parent.mkdir(parents=True, exist_ok=True)
-        LEGACY_WORK_DIR.symlink_to(WORK_DIR, target_is_directory=True)
-    except OSError:
-        # Symlink creation is a compatibility optimization, not a requirement.
-        pass
 
 
 def canonical_theme_id(theme: str) -> str:
@@ -115,9 +107,8 @@ SOURCE_METADATA_STEMS = {
     "reproducibility_manifest",
     "retired_documents",
 }
-EXCLUDED_DOCUMENT_KEYS: set[tuple[str, str]] = {
-    ("retail_banking_regulations_and_policies", "bankreg_11"),
-}
+# The release already defines its document inventory; do not silently drop files.
+EXCLUDED_DOCUMENT_KEYS: set[tuple[str, str]] = set()
 
 
 def is_retired_document(theme: str, doc_id: str) -> bool:
@@ -251,7 +242,7 @@ def _list_legacy_docs() -> list[Path]:
     Preferred location is data/WikiEvent/public_attacks_news_articles. For
     backward compatibility, also supports SOURCE_DIR/public_attacks_news_articles,
     SOURCE_DIR/completed_annotations, and the historical reference folder under
-    WORK_DIR/anonymous_reference.
+    WORK_DIR/<reference username>.
     """
     source_dir = _theme_source_dir(PUBLIC_ATTACKS_THEME)
     if source_dir is None:
@@ -820,8 +811,7 @@ def get_theme_progress(db=None) -> dict[str, Any]:
                 "reviewed": True,
             }
         if excluded_from_questions_campaign:
-            # Public-attacks docs are intentionally excluded from QA assignment and should
-            # appear done in dashboard progress cards.
+            # Excluded docs are not part of active QA assignment; render them as completed.
             questions_status = {
                 **dict(review_defaults),
                 **(questions_status if isinstance(questions_status, dict) else {}),
@@ -1184,13 +1174,13 @@ def get_theme_progress(db=None) -> dict[str, Any]:
                     ORDER BY h.timestamp DESC, h.id DESC LIMIT 1""",
                 tuple(candidates),
             ).fetchone()
-            
+
             status = row["status"] if row else "validated"
-            last_edited_by = row["username"] if row else "anonymous_reference"
-            
+            last_edited_by = row["username"] if row else REFERENCE_USERNAME
+
             if status in ("completed", "validated"):
                 legacy_completed += 1
-            
+
             legacy_info.append({
                 "doc_id": doc_id,
                 "status": status,
@@ -1213,7 +1203,7 @@ def get_theme_progress(db=None) -> dict[str, Any]:
 
 # --- Migration ---
 
-def migrate_document(from_username: str, doc_id: str, to_dir: str = "anonymous_reference",
+def migrate_document(from_username: str, doc_id: str, to_dir: str = REFERENCE_USERNAME,
                      theme: str | None = None) -> None:
     # Prefer theme-organised path; fall back to legacy flat path
     source = _user_doc_path(from_username, theme, doc_id) if theme else None

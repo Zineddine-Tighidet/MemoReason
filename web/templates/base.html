@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Entity Annotation Tool{% endblock %}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset_url('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset_url('css/annotation-editor.css') }}">
     <link rel="stylesheet" href="{{ asset_url('css/ux-improvements.css') }}">
@@ -34,7 +31,7 @@
                 QA Annotation
             </button>
             {% block nav_links %}{% endblock %}
-            <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='flex'" 
+            <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='flex'"
                     style="margin-left:12px;color:var(--text-muted);" title="Document annotation guide (press ?)">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
@@ -68,7 +65,7 @@
         <div class="modal-content" style="max-width:800px;max-height:90vh;overflow-y:auto;padding:32px;" onclick="event.stopPropagation()">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
                 <h2 style="margin:0;font-size:24px;color:var(--text-primary);">📖 Document Annotation Guide</h2>
-                <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='none'" 
+                <button class="btn btn-ghost btn-sm" onclick="document.getElementById('guideModal').style.display='none'"
                         style="font-size:24px;padding:4px 12px;">&times;</button>
             </div>
 
@@ -338,14 +335,14 @@
                 <h3 style="margin:0 0 8px 0;color:var(--primary);">6) Full Reference Example</h3>
                 <p style="margin:0 0 10px 0;">
                     Instead of reproducing a long example here, open the full <strong>company_01</strong> QA reference document.
-                    It is available in <strong>read-only</strong> mode for regular users and loads an anonymized QA reference version, which is more representative of the expected annotation style.
+                    It is available in <strong>read-only</strong> mode and loads the curated release template as an example of the expected annotation style.
                 </p>
                 <p style="margin:0;">
-                    <a href="/editor/companies_and_organizations/company_01?review_target=questions&reference_mode=1&reference_reviewer=anonymous_reference"
+                    <a href="/editor/companies_and_organizations/company_01?reference_mode=1"
                        target="_blank"
                        rel="noopener noreferrer"
                        style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--primary);text-decoration:none;padding:10px 14px;border:1px solid rgba(79,70,229,0.22);border-radius:10px;background:rgba(79,70,229,0.05);">
-                        Open read-only <code style="margin:0;">company_01</code> QA example
+                        Open read-only <code style="margin:0;">company_01</code> QA reference example
                     </a>
                 </p>
             </article>
@@ -554,7 +551,7 @@
             // Don't trigger if user is typing in an input field
             if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
             if (e.target.getAttribute('contenteditable') === 'true') return;
-            
+
             e.preventDefault();
             const guideModal = document.getElementById('guideModal');
             if (guideModal) {

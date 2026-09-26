@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Rules are safeguards used during fictional document generation when replacing annotated entities.  
+Rules are safeguards used during fictional document generation when replacing annotated entities.
 They preserve document-specific constraints so replacements stay coherent.
 
 ## Annotator task
@@ -49,7 +49,7 @@ In [2022; temporal_4.year], [Nora; person_1.name], who was [6; person_1.age] yea
 
 For a document like the synthetic example above, good rules capture one explicit constraint that would matter after replacement:
 
-- `number_2.int + number_3.int = number_4.int # number of wins must sum to the total` 
+- `number_2.int + number_3.int = number_4.int # number of wins must sum to the total`
 - `temporal_5.year - temporal_4.year == 1 # consecutive calendar years`
 - `person_2.age - person_1.age == number_7.int # age gap stated in the document`
 - `number_5.int > 1 # plural mention`

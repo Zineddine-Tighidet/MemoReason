@@ -1,8 +1,8 @@
 [project]
-name = "memoreason"
+name = "memoreason-benchmark"
 version = "0.1.0"
-authors = [{ name = "Anonymous authors" }]
-description = "Dataset construction, fictionalization, and evaluation code for the MemoReason benchmark."
+authors = [{ name = "MemoReason authors" }]
+description = "Controlled factual-to-fictitious reasoning benchmark with generation, evaluation, and annotation tools."
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
@@ -15,7 +15,7 @@ dependencies = [
     "statsmodels>=0.14",
     "scipy>=1.11",
     "tqdm>=4.66",
-    "datasets>=2.19",
+    "requests>=2.32",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -28,15 +28,25 @@ classifiers = [
 [project.optional-dependencies]
 llm = [
     "anthropic>=0.40",
-    "requests>=2.32",
     "transformers>=4.45",
     "torch>=2.2",
+    "llama-cpp-python>=0.3.0",
+    "mistral-common>=1.8.5",
 ]
 web = [
     "fastapi>=0.115,<1.0",
     "uvicorn[standard]>=0.30,<1.0",
     "jinja2>=3.1,<4.0",
     "bcrypt>=4.1,<5.0",
+    "google-cloud-storage>=2.18,<3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.28,<1.0",
+    "ruff>=0.8",
+    "mypy>=1.0",
 ]
 
 [build-system]
@@ -44,5 +54,61 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["src", "src.*", "web", "web.*"]
+where = ["src", "."]
+include = ["memoreason", "memoreason.*", "web", "web.*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_checks.py"]
+
+# default line length of 80 is a bit extreme with wide screens, we set it to 120
+[tool.black]
+line-length = 120
+
+# Default configuration for ruff
+[tool.ruff]
+line-length = 120
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "B",
+    "E",
+    "F",
+    "ISC",
+    "UP",
+    "RUF",
+]
+ignore = ["E501"]
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+per-file-ignores = {}
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10

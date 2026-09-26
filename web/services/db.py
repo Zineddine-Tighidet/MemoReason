@@ -3,14 +3,13 @@
 import os
 import sqlite3
 import threading
-from pathlib import Path
 
 import bcrypt
 
 from web.services.persistence import sync_db_to_gcs
+from web.settings import DB_PATH
 
-DB_PATH = Path(__file__).resolve().parent.parent / "data" / "annotation.db"
-DEFAULT_ADMIN_USERNAME = "admin"
+DEFAULT_ADMIN_USERNAME = os.getenv("DEFAULT_ADMIN_USERNAME", "admin").strip() or "admin"
 DEFAULT_ADMIN_PASSWORD_ENV = "DEFAULT_ADMIN_PASSWORD"
 FALLBACK_ADMIN_PASSWORD = "admin"
 _BIO_THEME = "biographies_of_famous_personalities"
@@ -171,6 +170,8 @@ CREATE TABLE IF NOT EXISTS review_campaign_submissions (
     reviewer_user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     task_id INTEGER REFERENCES review_campaign_tasks(id) ON DELETE SET NULL,
     snapshot_path TEXT NOT NULL,
+    submission_origin TEXT NOT NULL DEFAULT 'reviewer'
+        CHECK(submission_origin IN ('reviewer', 'administrative_attribution')),
     submitted_at TEXT NOT NULL,
     created_at TEXT NOT NULL DEFAULT (datetime('now')),
     updated_at TEXT NOT NULL DEFAULT (datetime('now')),
@@ -263,11 +264,12 @@ def _open_connection() -> sqlite3.Connection:
     return conn
 
 
-def _ensure_column(conn: sqlite3.Connection, table: str, column: str, colspec: str) -> None:
+def _ensure_column(conn: sqlite3.Connection, table: str, column: str, colspec: str) -> bool:
     cols = conn.execute(f"PRAGMA table_info({table})").fetchall()
     if any(row["name"] == column for row in cols):
-        return
+        return False
     conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {colspec}")
+    return True
 
 
 def _migrate_review_campaign_tasks_uniqueness(conn: sqlite3.Connection) -> bool:
@@ -289,7 +291,14 @@ def _migrate_review_campaign_tasks_uniqueness(conn: sqlite3.Connection) -> bool:
     if legacy_constraint not in create_sql:
         return False
 
+    previous_foreign_keys = int(conn.execute("PRAGMA foreign_keys").fetchone()[0])
+    previous_legacy_alter_table = int(conn.execute("PRAGMA legacy_alter_table").fetchone()[0])
     conn.execute("PRAGMA foreign_keys=OFF")
+    # SQLite >= 3.26 rewrites dependent foreign-key declarations during a
+    # table rename even when enforcement is disabled.  This migration renames
+    # the old table only as an implementation detail, so retain references to
+    # the canonical name while the replacement is built.
+    conn.execute("PRAGMA legacy_alter_table=ON")
     try:
         conn.executescript(
             """
@@ -360,8 +369,32 @@ def _migrate_review_campaign_tasks_uniqueness(conn: sqlite3.Connection) -> bool:
             """
         )
     finally:
-        conn.execute("PRAGMA foreign_keys=ON")
+        conn.execute(f"PRAGMA legacy_alter_table={previous_legacy_alter_table}")
+        conn.execute(f"PRAGMA foreign_keys={previous_foreign_keys}")
     return True
+
+
+def _assert_review_campaign_task_foreign_keys(conn: sqlite3.Connection) -> None:
+    """Fail initialization if a table-rebuild migration corrupted its dependents."""
+    expected = {
+        ("review_campaign_submissions", "task_id"),
+        ("review_artifact_statuses", "latest_task_id"),
+    }
+    invalid: list[str] = []
+    for table, column in sorted(expected):
+        matches = [
+            row
+            for row in conn.execute(f"PRAGMA foreign_key_list({table})").fetchall()
+            if str(row["from"]) == column
+        ]
+        if len(matches) != 1 or str(matches[0]["table"]) != "review_campaign_tasks":
+            targets = [str(row["table"]) for row in matches]
+            invalid.append(f"{table}.{column}->{targets}")
+    if invalid:
+        raise RuntimeError(
+            "Invalid review-campaign task foreign keys after schema migration: "
+            + ", ".join(invalid)
+        )
 
 
 def _configured_admin_password() -> str | None:
@@ -508,15 +541,35 @@ def init_db() -> None:
         conn = _open_connection()
         try:
             conn.executescript(SCHEMA)
-            _ensure_column(conn, "workflow_agreements", "final_snapshot_path", "TEXT")
-            _ensure_column(conn, "workflow_agreements", "final_source_label", "TEXT")
-            _ensure_column(conn, "review_campaign_agreements", "requires_reviewer_acceptance", "INTEGER NOT NULL DEFAULT 0")
-            _ensure_column(conn, "review_campaign_tasks", "initial_assignee_user_id", "INTEGER REFERENCES users(id)")
-            _ensure_column(conn, "review_campaign_tasks", "qa_group", "TEXT")
-            _ensure_column(conn, "review_campaign_tasks", "qa_group_order", "INTEGER")
             needs_sync = False
+            columns_to_ensure = (
+                ("workflow_agreements", "final_snapshot_path", "TEXT"),
+                ("workflow_agreements", "final_source_label", "TEXT"),
+                (
+                    "review_campaign_agreements",
+                    "requires_reviewer_acceptance",
+                    "INTEGER NOT NULL DEFAULT 0",
+                ),
+                (
+                    "review_campaign_tasks",
+                    "initial_assignee_user_id",
+                    "INTEGER REFERENCES users(id)",
+                ),
+                ("review_campaign_tasks", "qa_group", "TEXT"),
+                ("review_campaign_tasks", "qa_group_order", "INTEGER"),
+                (
+                    "review_campaign_submissions",
+                    "submission_origin",
+                    "TEXT NOT NULL DEFAULT 'reviewer' "
+                    "CHECK(submission_origin IN ('reviewer', 'administrative_attribution'))",
+                ),
+            )
+            for table, column, colspec in columns_to_ensure:
+                if _ensure_column(conn, table, column, colspec):
+                    needs_sync = True
             if _migrate_review_campaign_tasks_uniqueness(conn):
                 needs_sync = True
+            _assert_review_campaign_task_foreign_keys(conn)
             total_users = conn.execute("SELECT COUNT(*) as c FROM users").fetchone()["c"]
             admin_row = conn.execute(
                 "SELECT id, password_hash FROM users WHERE username = ?",

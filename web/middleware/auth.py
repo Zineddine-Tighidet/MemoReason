@@ -6,13 +6,13 @@ from typing import Any, Dict
 from fastapi import Cookie, HTTPException, Request
 
 from web.services.db import close_db
-from web.services.auth_service import validate_session
+from web.services.auth_service import is_signed_session_token, validate_session
 from web.services.persistence import is_enabled, restore_db_from_gcs
 
 
 def _resolve_session_user(session_token: str) -> Dict[str, Any] | None:
     user = validate_session(session_token)
-    if user or not session_token or not is_enabled():
+    if user or not session_token or is_signed_session_token(session_token) or not is_enabled():
         return user
 
     # Cloud Run can serve the HTML login redirect on one instance while the

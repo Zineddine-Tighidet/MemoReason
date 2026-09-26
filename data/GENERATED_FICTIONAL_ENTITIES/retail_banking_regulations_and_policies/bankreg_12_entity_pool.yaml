@@ -1,0 +1,323 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bankreg_12
+  document_theme: retail_banking_regulations_and_policies
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+  places:
+    place_1: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals:
+    legal_1: 15
+    legal_2: 15
+    legal_3: 15
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennoway
+    - full_name: Brondel Kessoway
+    - full_name: Quilsen Harnovak
+    - full_name: Dremick Polthane
+    - full_name: Fenwick Cralloby
+    - full_name: Jorvane Tullemark
+    - full_name: Pellum Straveck
+    - full_name: Colvane Drethwick
+    - full_name: Wenthor Bralvine
+    - full_name: Grellam Tondusk
+    - full_name: Sarvon Kellithor
+    - full_name: Bremtol Vasherly
+    - full_name: Kolveth Drannoway
+    - full_name: Thurnel Gaspovek
+    - full_name: Rendak Molvaine
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvon Grashek
+    - full_name: Quorbin Dasserly
+    - full_name: Hentley Vospar
+    - full_name: Draven Kulsteg
+    - full_name: Pellum Trossik
+    - full_name: Jondrik Welmash
+    - full_name: Casprel Tunvey
+    - full_name: Brenthol Yeskari
+    - full_name: Faldren Mospeth
+    - full_name: Garvish Tolneck
+    - full_name: Wenthor Pliskam
+    - full_name: Rolvek Danthari
+    - full_name: Sethrun Kolvane
+    - full_name: Torbish Grenlay
+    - full_name: Keldran Voshmet
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Miroden Caulvey
+    - full_name: Jondrik Peshalan
+    - full_name: Kevran Tolbish
+    - full_name: Brenthol Yuskarev
+    - full_name: Darquen Felmoray
+    - full_name: Ossiver Kranthel
+    - full_name: Wulden Chavisek
+    - full_name: Parvek Lundoris
+    - full_name: Tashven Gorimell
+    - full_name: Relkun Dravoshi
+    - full_name: Fenwick Zarothel
+    - full_name: Calbreth Yondimer
+    - full_name: Holvane Teskurin
+    - full_name: Zephren Moldavek
+    - full_name: Grothel Vanishar
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Thalendria
+    - country: Vossmark
+    - country: Crendova
+    - country: Pelithar
+    - country: Brondique
+    - country: Kalestria
+    - country: Molvaren
+    - country: Dranthuel
+    - country: Sorivane
+    - country: Wepthulia
+    - country: Galthenor
+    - country: Oquirath
+    - country: Zelvandis
+    - country: Turmelac
+    - country: Fendrasque
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veltrune Credit Collapse
+    - name: Korshan Lending Meltdown
+    - name: Palderi Market Upheaval
+    - name: Thovane Banking Panic
+    - name: Grellish Liquidity Shock
+    - name: Mundara Securities Crash
+    - name: Brenthallow Capital Freeze
+    - name: Ossivane Debt Spiral
+    - name: Quilmaren Solvency Breakdown
+    - name: Tarwend Mortgage Implosion
+    - name: Fendrake Credit Seizure
+    - name: Holvane Fiscal Rupture
+    - name: Caspelune Banking Turmoil
+    - name: Drethwick Asset Contagion
+    - name: Yelmari Systemic Collapse
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velmorath Collapse
+    - name: Durnestal Downturn
+    - name: Krethanic Stagnation
+    - name: Polvaren Ruin
+    - name: Thandoral Slump
+    - name: Quelbric Contraction
+    - name: Mossivane Decline
+    - name: Harsolith Devastation
+    - name: Crendavic Hardship
+    - name: Wytheral Calamity
+    - name: Brenthoric Malaise
+    - name: Sulvanic Breakdown
+    - name: Orvethane Crisis
+    - name: Drellamic Recession
+    - name: Fentharic Upheaval
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Broad Compact
+    - name: Civic Restoration Pact
+    - name: Telvorn Accord
+    - name: Public Renewal Initiative
+    - name: Granthaven Reforms
+    - name: Shared Prosperity Framework
+    - name: Kellworth Recovery Program
+    - name: Common Ground Mandate
+    - name: Durnish Stabilization Plan
+    - name: Peoples Uplift Covenant
+    - name: Welmarch Relief Agenda
+    - name: Foundational Rebuilding Pledge
+    - name: Crestward Social Compact
+    - name: Brinthal Recovery Accord
+    - name: Unified Welfare Charter
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Lending Safeguard Office
+    - name: Public Credit Oversight Authority
+    - name: Household Finance Guardianship Bureau
+    - name: Retail Borrower Defense Commission
+    - name: Depositor Fairness Regulatory Office
+    - name: Market Conduct Stewardship Bureau
+    - name: Lending Practices Review Authority
+    - name: Borrower Equity Assurance Office
+    - name: Personal Finance Integrity Commission
+    - name: Fair Lending Accountability Bureau
+    - name: Creditor Conduct Oversight Office
+    - name: Retail Banking Safeguard Authority
+    - name: Public Borrower Advocacy Commission
+    - name: Financial Conduct Guardianship Office
+    - name: Household Credit Integrity Bureau
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Systemic Risk Monitoring Board
+    - name: Prudential Stability Governance Panel
+    - name: Macrofinancial Oversight Directorate
+    - name: Institutional Solvency Review Council
+    - name: Aggregate Risk Surveillance Authority
+    - name: Cross-Sector Prudential Coordination Bureau
+    - name: Systemic Resilience Oversight Commission
+    - name: Interagency Stability Monitoring Tribunal
+    - name: Consolidated Risk Governance Assembly
+    - name: Structural Soundness Oversight Board
+    - name: Unified Prudential Vigilance Council
+    - name: Sectoral Risk Coordination Directorate
+    - name: Integrated Stability Assessment Panel
+    - name: Broad-Market Oversight Governance Authority
+    - name: Collective Solvency Monitoring Commission
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Structured Resolution Directorate
+    - name: Institutional Wind-Down Authority
+    - name: Managed Dissolution Office
+    - name: Systemic Receivership Bureau
+    - name: Controlled Unwinding Commission
+    - name: Prudential Resolution Authority
+    - name: Supervised Dismantlement Office
+    - name: Regulated Insolvency Directorate
+    - name: Institutional Closure Authority
+    - name: Financial Receivership Commission
+    - name: Guided Divestiture Bureau
+    - name: Stabilized Rundown Authority
+    - name: Coordinated Dissolution Directorate
+    - name: Managed Cessation Office
+    - name: Supervised Winddown Commission
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Centraal Monetary Authority
+    - name: Bureau of Fiscal Stewardship
+    - name: Telvoran Reserve Board
+    - name: National Prudential Directorate
+    - name: Sovereign Liquidity Commission
+    - name: Office of Monetary Governance
+    - name: Crendath Banking Authority
+    - name: Unified Currency Oversight Board
+    - name: Delmari Financial Stability Council
+    - name: Central Solvency Directorate
+    - name: Vossmark Monetary Bureau
+    - name: Interbank Regulatory Chancellery
+    - name: Kethura Reserve Directorate
+    - name: Plenvari Monetary Oversight Board
+    - name: Brinthal Currency Authority
+legals:
+  legal_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthorn-Cassoway Financial Oversight and Market Stability Act
+    - name: Brindell-Haroque Banking Reform and Public Safeguard Act
+    - name: Torwen-Gallis Systemic Risk Prevention and Consumer Shield Act
+    - name: Kessoway-Drumant Capital Markets Transparency and Protection Act
+    - name: Pellinder-Stovak Financial Accountability and Lending Practices Act
+    - name: Cranthel-Morvaine Institutional Stability and Consumer Defense Act
+    - name: Wyndover-Talquist Banking Conduct and Prudential Standards Act
+    - name: Obrenshaw-Felwick Market Integrity and Depositor Protection Act
+    - name: Quilrath-Bennoway Fiscal Resilience and Fair Lending Act
+    - name: Darvish-Telmoran Financial Institutions Reform and Oversight Act
+    - name: Haldren-Corvissey Systemic Safeguard and Consumer Equity Act
+    - name: Prellwick-Jontavar Credit Markets Stability and Public Trust Act
+    - name: Solvander-Grethwick Prudential Regulation and Consumer Assurance Act
+    - name: Talmondre-Bressick Financial Conduct and Systemic Oversight Act
+    - name: Wendrath-Callosey Banking Transparency and Market Protection Act
+  legal_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lending Stability, Oversight Modernization, and Depositor Safeguard Act
+    - name: Financial Threshold Adjustment and Community Banking Relief Act
+    - name: Prudential Streamlining, Market Access, and Borrower Assurance Act
+    - name: Capital Flexibility, Supervisory Reform, and Small Lender Protection Act
+    - name: Banking Simplification, Compliance Reduction, and Public Trust Act
+    - name: Institutional Resilience, Tiered Oversight, and Fair Lending Act
+    - name: Fiduciary Modernization, Burden Easing, and Savings Holder Shield Act
+    - name: Credit Expansion, Proportional Regulation, and Household Security Act
+    - name: Depository Competitiveness, Scaled Compliance, and Retail Safeguard Act
+    - name: Monetary Stewardship, Adaptive Supervision, and Account Holder Defense Act
+    - name: Portfolio Flexibility, Graduated Reporting, and Consumer Welfare Act
+    - name: Chartered Institution Relief, Balanced Oversight, and Saver Protection Act
+    - name: Liquidity Enhancement, Regulatory Calibration, and Depositor Advocacy Act
+    - name: Community Lending Revival, Proportionate Standards, and Patron Shield Act
+    - name: Thrift Modernization, Supervisory Scaling, and Retail Banking Assurance Act
+  legal_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thandrel Provision
+    - name: Kessoway Clause
+    - name: Brinthar Mandate
+    - name: Corvallen Restriction
+    - name: Durneth Standard
+    - name: Pellicarn Directive
+    - name: Grothane Safeguard
+    - name: Wyndolar Principle
+    - name: Sethwick Constraint
+    - name: Molvaren Ordinance
+    - name: Quirenth Protocol
+    - name: Faldorin Stipulation
+    - name: Helvacor Prohibition
+    - name: Torbinnel Regulation
+    - name: Zantherik Precept

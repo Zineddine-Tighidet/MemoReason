@@ -1,0 +1,174 @@
+document:
+  document_id: bankreg_12
+  document_theme: Retail Banking Regulations and Policies
+  source: wikipedia
+  wikipedia_title: Dodd–Frank Act
+  wikipedia_url: https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Act
+  original_document: 'The Dodd–Frank Wall Street Reform and Consumer Protection Act, commonly referred to as the Dodd–Frank Act, is a United States federal law enacted on July 21, 2010, as the primary legislative response to the 2007–2008 financial crisis—the worst financial crisis since the Great Depression. Named for its sponsors, Senator Chris Dodd and Representative Barney Frank, the law was signed by President Barack Obama on July 21, 2010. Its stated purposes are to promote financial stability, end "too big to fail," prevent taxpayer-funded bailouts, and protect consumers from abusive financial practices.
+
+
+    The act reorganized financial regulation through three major reforms: it created the Consumer Financial Protection Bureau (CFPB) to protect consumers against predatory lending and unfair financial practices; it established the Financial Stability Oversight Council (FSOC) to monitor systemic risks and designate firms as "systemically important"; and it created the Orderly Liquidation Authority to wind down large failing financial institutions without taxpayer bailouts.
+
+
+    Key regulatory changes include the Volcker Rule, which restricts banks from making speculative investments with depositor funds; requirements for derivatives to be traded through regulated clearinghouses; enhanced Federal Reserve oversight of large financial institutions; and new standards for mortgage lending and credit rating agencies. The law also strengthened whistleblower protections and established data collection requirements for small business lending.
+
+
+    Dodd–Frank is considered one of the most significant financial laws since the New Deal. The CFPB has returned over $21 billion to consumers harmed by illegal practices. Critics argued the law imposed excessive compliance costs on smaller financial institutions, and in 2018, the Economic Growth, Regulatory Relief, and Consumer Protection Act rolled back certain requirements, particularly for banks with assets below $250 billion.'
+  document_to_annotate: 'The [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name], commonly referred to as the [Dodd–Frank Act; legal_1.name], is a [United States; place_1.country] federal law enacted on [July 21, 2010; temporal_1.date], as the primary legislative response to the [2007–2008 financial crisis; event_1.name]—the worst financial crisis since the [Great Depression; event_2.name]. Named for its sponsors, Senator [Chris Dodd; person_1.full_name] and Representative [Barney Frank; person_2.full_name], the law was signed by President [Barack Obama; person_3.full_name] on [July 21, 2010; temporal_1.date]. Its stated purposes are to promote financial stability, end "too big to fail," prevent taxpayer-funded bailouts, and protect consumers from abusive financial practices.
+
+
+    The act reorganized financial regulation through three major reforms: it created the [Consumer Financial Protection Bureau; government_org_1.name] ([CFPB; government_org_1.name]) to protect consumers against predatory lending and unfair financial practices; it established the [Financial Stability Oversight Council; government_org_2.name] ([FSOC; government_org_2.name]) to monitor systemic risks and designate firms as "systemically important"; and it created the [Orderly Liquidation Authority; government_org_3.name] to wind down large failing financial institutions without taxpayer bailouts.
+
+
+    Key regulatory changes include the [Volcker Rule; legal_3.name], which restricts banks from making speculative investments with depositor funds; requirements for derivatives to be traded through regulated clearinghouses; enhanced [Federal Reserve; government_org_4.name] oversight of large financial institutions; and new standards for mortgage lending and credit rating agencies. The law also strengthened whistleblower protections and established data collection requirements for small business lending.
+
+
+    [Dodd–Frank; legal_1.name] is considered one of the most significant financial laws since the [New Deal; event_3.name]. The [CFPB; government_org_1.name] has returned over $[21 billion; number_1.int] to consumers harmed by illegal practices. Critics argued the law imposed excessive compliance costs on smaller financial institutions, and in [2018; temporal_2.year], the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] rolled back certain requirements, particularly for banks with assets below $[250 billion; number_2.int].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: bankreg_12_q01
+    question: Which agency was established by the [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name] to protect consumers against predatory lending and unfair financial practices?
+    question_type: extractive
+    answer: government_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the act "created the [Consumer Financial Protection Bureau; government_org_1.name] to protect consumers against predatory lending and unfair financial practices."
+  - question_id: bankreg_12_q02
+    question: Was the [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name] a response to a specific event?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+  - question_id: bankreg_12_q03
+    question: How many members serve on the board of the [Financial Stability Oversight Council; government_org_2.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions the [Financial Stability Oversight Council; government_org_2.name] and its role in monitoring systemic risks and designating firms as "systemically important."
+    - 2. However, the document does not state how many members serve on its board.
+  - question_id: bankreg_12_q04
+    question: What is the difference between the asset threshold set by the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] and the amount the [Consumer Financial Protection Bureau; government_org_1.name] has returned to consumers?
+    question_type: arithmetic
+    answer: number_2.int - number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The asset threshold for banks under the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] is $[250 billion; number_2.int].
+    - 2. The [Consumer Financial Protection Bureau; government_org_1.name] has returned over $[21 billion; number_1.int] to consumers.
+    - 3. The difference is $[250 billion; number_2.int] - $[21 billion; number_1.int].
+  - question_id: bankreg_12_q05
+    question: How many distinct federal agencies or bodies were created according to the three major reforms described in the document?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists three major reforms, each creating a new body — a consumer protection agency, a [Financial Stability Oversight Council; government_org_2.name], and a resolution directorate.
+    - 2. Counting these gives 3 distinct agencies.
+  - question_id: bankreg_12_q06
+    question: What is the ratio of the amount the [Consumer Financial Protection Bureau; government_org_1.name] returned to consumers to the total annual budget of the [Consumer Financial Protection Bureau; government_org_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Consumer Financial Protection Bureau; government_org_1.name] has returned over $[21 billion; number_1.int] to consumers harmed by illegal practices.
+    - 2. To compute the ratio, we also need the annual budget of the [Consumer Financial Protection Bureau; government_org_1.name].
+    - 3. Searching the document for any mention of the annual budget of the [Consumer Financial Protection Bureau; government_org_1.name], no such figure is provided anywhere in the text.
+    - 4. Since the annual budget is not stated in the document, the ratio cannot be calculated.
+  - question_id: bankreg_12_q07
+    question: How many years after the [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name] was signed into law did the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] roll back certain requirements?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name] was signed on [July 21, 2010; temporal_1.date]; use the year component of that date.
+    - 2. The [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] rolled back certain requirements in [2018; temporal_2.year].
+    - 3. Subtracting the signing year from the rollback year gives the elapsed time.
+  - question_id: bankreg_12_q08
+    question: Was the rollback legislation enacted before or after the original act was signed into law?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes the original act being signed into law first, and then states that the rollback legislation came later, using the phrase "rolled back certain requirements."
+    - 2. The narrative ordering is clear — the original act preceded the rollback legislation, so the rollback was enacted after the original act.
+  - question_id: bankreg_12_q09
+    question: How many days elapsed between the exact start of the [2007–2008 financial crisis; event_1.name] and the signing of the [Dodd–Frank Wall Street Reform and Consumer Protection Act; legal_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides the act's signing date and the event name indicates that the crisis spanned 2007–2008.
+    - 2. Computing elapsed days also requires an exact month and day for the crisis's beginning.
+    - 3. The document does not provide that exact start date, so the elapsed number of days cannot be determined.
+  - question_id: bankreg_12_q10
+    question: Given that the [2007–2008 financial crisis; event_1.name] is described as the worst financial crisis since the [Great Depression; event_2.name], and the act responding to it is described as the most significant financial law since the [New Deal; event_3.name], which crisis can be inferred to have prompted the [New Deal; event_3.name]?
+    question_type: inference
+    answer: event_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the [2007–2008 financial crisis; event_1.name] was "the worst financial crisis since the [Great Depression; event_2.name]," establishing the [Great Depression; event_2.name] as the previous major crisis.
+    - 2. The document also states the act is "one of the most significant financial laws since the [New Deal; event_3.name]," establishing the [New Deal; event_3.name] as the previous major financial law.
+    - 3. Since the act was a legislative response to the [2007–2008 financial crisis; event_1.name], and the [New Deal; event_3.name] parallels it as the previous major law, it can be inferred the [New Deal; event_3.name] was a response to the [Great Depression; event_2.name].
+  - question_id: bankreg_12_q11
+    question: Based on the document, what was the primary concern of critics that motivated the rollback legislation targeting smaller banks?
+    question_type: inference
+    answer: excessive compliance costs on smaller financial institutions
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "Critics argued the law imposed excessive compliance costs on smaller financial institutions."
+    - 2. The rollback legislation specifically targeted banks below a certain asset threshold, indicating it addressed the compliance burden on smaller institutions.
+    - 3. Combining these facts, the primary concern motivating the rollback was excessive compliance costs on smaller financial institutions.
+  - question_id: bankreg_12_q12
+    question: Did the [Volcker Rule; legal_3.name] provisions remain fully intact under the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name], or were they among the requirements rolled back?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the [Economic Growth, Regulatory Relief, and Consumer Protection Act; legal_2.name] "rolled back certain requirements, particularly for banks with assets below" a threshold.
+    - 2. The document separately describes the Volcker Rule as restricting speculative investments with depositor funds.
+    - 3. Checking the document for any specification of which particular provisions were rolled back, no such detail is provided in the text.
+    - 4. Therefore, it cannot be determined whether the Volcker Rule was affected by the rollback.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 16800000000
+    upper_bound: 25200000000
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 200000000000
+    upper_bound: 300000000000
+    factual_value: 250
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [Velthorn-Cassoway Financial Oversight and Market Stability Act; legal_1.name], commonly referred to as the [Velthorn-Cassoway Financial Oversight and Market Stability Act; legal_1.name], is a [Thalendria; place_1.country] federal law enacted on [14 May 1995; temporal_1.date], as the primary legislative response to the [Veltrune Credit Collapse; event_1.name]—the worst financial crisis since the [Velmorath Collapse; event_2.name]. Named for its sponsors, Senator [Tarvek Glennoway; person_1.full_name] and Representative [Telvon Grashek; person_2.full_name], the law was signed by President [Miroden Caulvey; person_3.full_name] on [14 May 1995; temporal_1.date]. Its stated purposes are to promote financial stability, end "too big to fail," prevent taxpayer-funded bailouts, and protect consumers from abusive financial practices.
+
+
+    The act reorganized financial regulation through three major reforms: it created the [Civic Lending Safeguard Office; government_org_1.name] ([Civic Lending Safeguard Office; government_org_1.name]) to protect consumers against predatory lending and unfair financial practices; it established the [Systemic Risk Monitoring Board; government_org_2.name] ([Systemic Risk Monitoring Board; government_org_2.name]) to monitor systemic risks and designate firms as "systemically important"; and it created the [Structured Resolution Directorate; government_org_3.name] to wind down large failing financial institutions without taxpayer bailouts.
+
+
+    Key regulatory changes include the Volcker Rule, which restricts banks from making speculative investments with depositor funds; requirements for derivatives to be traded through regulated clearinghouses; enhanced [Centraal Monetary Authority; government_org_4.name] oversight of large financial institutions; and new standards for mortgage lending and credit rating agencies. The law also strengthened whistleblower protections and established data collection requirements for small business lending.
+
+
+    [Velthorn-Cassoway Financial Oversight and Market Stability Act; legal_1.name] is considered one of the most significant financial laws since the [Broad Compact; event_3.name]. The [Civic Lending Safeguard Office; government_org_1.name] has returned over $[25067233292; number_1.int] to consumers harmed by illegal practices. Critics argued the law imposed excessive compliance costs on smaller financial institutions, and in [1998; temporal_2.year], the [Lending Stability, Oversight Modernization, and Depositor Safeguard Act; legal_2.name] rolled back certain requirements, particularly for banks with assets below $[242728936463; number_2.int].'
+metadata:
+  status: completed

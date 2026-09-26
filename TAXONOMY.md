@@ -98,9 +98,9 @@ Military organization
 
 Private/company organization (enterprise)
 
-| Attribute | Description | Example |
+| Attribute | Description | Example(s) |
 |-----------|-------------|------------|
-| `name` | Name of the enterprise organization | `Google` |
+| `name` | Name of the enterprise organization | `Google`, `BNP Paribas` |
 
 ---
 
@@ -108,9 +108,9 @@ Private/company organization (enterprise)
 
 NGO / non-governmental organization
 
-| Attribute | Description | Example |
+| Attribute | Description | Example(s) |
 |-----------|-------------|------------|
-| `name` | Name of the NGO | `Amnesty International` |
+| `name` | Name of the NGO | `Amnesty International`, `Médecins Sans Frontières` |
 
 ---
 
@@ -128,9 +128,9 @@ Government institution or agency
 
 Educational institution
 
-| Attribute | Description | Example |
+| Attribute | Description | Example(s) |
 |-----------|-------------|------------|
-| `name` | Name of the educational organization | `Harvard University` |
+| `name` | Name of the educational organization | `Harvard University`, `Sorbonne Université` |
 
 ---
 

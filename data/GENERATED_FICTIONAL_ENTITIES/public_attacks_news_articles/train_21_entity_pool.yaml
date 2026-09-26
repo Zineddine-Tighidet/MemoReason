@@ -1,0 +1,318 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: train_21
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-08-19T09:23:27.543279+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_3: 15
+    place_4: 15
+    place_2: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drennik Polsher
+    - full_name: Tavrik Hossler
+    - full_name: Kelvor Brundish
+    - full_name: Jorath Pinnely
+    - full_name: Caspel Wothern
+    - full_name: Brenlow Tassick
+    - full_name: Harvel Crondish
+    - full_name: Torbin Gesslar
+    - full_name: Pellick Dunmore
+    - full_name: Granthel Vossik
+    - full_name: Wyndel Korbish
+    - full_name: Stennor Halvick
+    - full_name: Dolvek Rennash
+    - full_name: Quenlar Brossik
+    - full_name: Fennick Trosher
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Kavindra Tholep
+    - full_name: Reshuli Bandokar
+    - full_name: Pratheen Golavur
+    - full_name: Tanvoli Chelkur
+    - full_name: Jothira Melvandi
+    - full_name: Deepavri Kondresh
+    - full_name: Nirasha Polkuven
+    - full_name: Harindel Savkori
+    - full_name: Vimolka Drantesh
+    - full_name: Sulindra Bhorvane
+    - full_name: Kethari Mundovel
+    - full_name: Ravindhi Chelpura
+    - full_name: Gomithra Velsundi
+    - full_name: Trishala Bondekur
+    - full_name: Palveen Gorthali
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Brellhaven
+    - city: Corthuna
+    - city: Delvarak
+    - city: Fenturis
+    - city: Grothela
+    - city: Hasperin
+    - city: Jolvane
+    - city: Kestamur
+    - city: Lyndorath
+    - city: Melvosca
+    - city: Norbicane
+    - city: Pellithor
+    - city: Quendara
+    - city: Ristoval
+    - city: Tarvunel
+  place_3:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Wentharal
+    - state: Solmarak
+    - state: Prelvion
+    - state: Ganthurel
+    - state: Brossiven
+    - state: Kelvithan
+    - state: Dranthuva
+    - state: Felmoric
+    - state: Holvespar
+    - state: Jenthurak
+    - state: Morthiven
+    - state: Relvoskan
+    - state: Thandural
+    - state: Velphorin
+    - state: Zantheral
+  place_4:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Wospheran
+    - city: Valthurek
+    - city: Sondripal
+    - city: Prelvatch
+    - city: Olthemura
+    - city: Narvikesh
+    - city: Mundrelva
+    - city: Losthenap
+    - city: Kravundel
+    - city: Jelphorin
+    - city: Hentuvask
+    - city: Golvander
+    - city: Frenthuval
+    - city: Drosthelm
+    - city: Brenthoval
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorund
+      demonym: Velorundish
+    - country: Tarnequa
+      demonym: Tarnequan
+    - country: Brisholme
+      demonym: Brisholmese
+    - country: Keldrova
+      demonym: Keldrovian
+    - country: Porthaven
+      demonym: Porthavenese
+    - country: Sundraleth
+      demonym: Sundralethic
+    - country: Molvaren
+      demonym: Molvarese
+    - country: Granthuel
+      demonym: Granthuelish
+    - country: Tessarun
+      demonym: Tessarunese
+    - country: Wyndara
+      demonym: Wyndaran
+    - country: Colvethia
+      demonym: Colvethian
+    - country: Drenmarak
+      demonym: Drenmaraki
+    - country: Fentariq
+      demonym: Fentariqi
+    - country: Ostrival
+      demonym: Ostrivalese
+    - country: Lurathon
+      demonym: Lurathoni
+  place_5:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velorian
+    - demonym: Tashkuri
+    - demonym: Drenmali
+    - demonym: Korvathi
+    - demonym: Sulwenni
+    - demonym: Brelkosi
+    - demonym: Zanthuri
+    - demonym: Molveki
+    - demonym: Peldrani
+    - demonym: Gashori
+    - demonym: Tunvari
+    - demonym: Reskoli
+    - demonym: Wenthari
+    - demonym: Jelvosi
+    - demonym: Crendali
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Lake Tarvello
+    - natural_site: Lake Brindosh
+    - natural_site: Lake Celvara
+    - natural_site: Lake Pomrath
+    - natural_site: Lake Essendri
+    - natural_site: Lake Wotherin
+    - natural_site: Lake Grelluna
+    - natural_site: Lake Fendovar
+    - natural_site: Lake Quiresta
+    - natural_site: Lake Haldoven
+    - natural_site: Lake Melvitho
+    - natural_site: Lake Sorpundi
+    - natural_site: Lake Krenthala
+    - natural_site: Lake Vossimer
+    - natural_site: Lake Dulpheran
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Grellwick Crosswinds Aerodrome
+    - natural_site: Velmara Regional Skyport
+    - natural_site: Kethford Lakeshore Airfield
+    - natural_site: Dranthul Gateway Aerohub
+    - natural_site: Pallishen International Aerodrome
+    - natural_site: Corvistal Bayside Airfield
+    - natural_site: Thanderly Skyreach Airport
+    - natural_site: Brossivane Lakefront Aerodrome
+    - natural_site: Quendalin Crossway Airfield
+    - natural_site: Helvarak Transit Aerodrome
+    - natural_site: Mossendral Shorepoint Airport
+    - natural_site: Fendrake Ridgeline Airfield
+    - natural_site: Torbissal Windgate Aerodrome
+    - natural_site: Crellanth Passage Skyport
+    - natural_site: Wyndorath Lakecrest Airfield
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kaloor Tiffin
+    - name: Rangoli Chaathaus
+    - name: Mirchi Dhabba
+    - name: Tandoor Vellan
+    - name: Saffra Bites
+    - name: Chutni Grillhouse
+    - name: Masaliq Kitchen
+    - name: Paneer Zafra
+    - name: Korma Langar
+    - name: Tikka Jolpur
+    - name: Dosa Vellam
+    - name: Naan Kethari
+    - name: Biryani Thali Hut
+    - name: Raita Spicebar
+    - name: Kulfi Darshan
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Haldern District Constabulary
+    - name: Brenvale Municipal Police
+    - name: Tassock Regional Law Enforcement
+    - name: Corthane County Police Service
+    - name: Drellmoor Area Public Safety Bureau
+    - name: Wyndara Regional Police Authority
+    - name: Kelstow District Police Force
+    - name: Orvane Precinct Law Office
+    - name: Pallenthorpe Regional Patrol Service
+    - name: Grantheel County Constabulary
+    - name: Melvara District Police Division
+    - name: Sondrell Regional Safety Command
+    - name: Torbeck Municipal Patrol Authority
+    - name: Quenlow Area Police Service
+    - name: Harnicke Regional Law Bureau
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veridian Wire Service
+    - name: Colvane News Bureau
+    - name: Telmara Press Syndicate
+    - name: Brequon Global Dispatch
+    - name: Ondara News Collective
+    - name: Pelstrom Wire Agency
+    - name: Kethura Press Network
+    - name: Dravosi News Service
+    - name: Fenthari Media Wire
+    - name: Golvane Dispatch Bureau
+    - name: Rethalan Press Group
+    - name: Solvari News Syndicate
+    - name: Quendara Wire Bureau
+    - name: Torbilan Press Service
+    - name: Melvosi Global Wire
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Broadcasting Network
+    - name: KVL
+    - name: RNQ
+    - name: Velthorn Media
+    - name: Poldask Broadcasting
+    - name: Grellum Network
+    - name: Tarvish News
+    - name: Quorath Channel
+    - name: Brenlix Media
+    - name: Dolvane Broadcasting
+    - name: Fentorak News
+    - name: Halwren Network
+    - name: Jestrik Media
+    - name: Morquil Broadcasting
+    - name: Zelphan Channel

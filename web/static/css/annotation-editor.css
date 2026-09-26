@@ -1013,8 +1013,8 @@ body.annotation-interacting .ann-delete-btn {
     letter-spacing: 0.03em;
     margin-bottom: 2px;
 }
-.question-readonly .q-text { 
-    color: var(--text); 
+.question-readonly .q-text {
+    color: var(--text);
 }
 
 /* Ensure annotations in questions and answers are hoverable */
@@ -1331,15 +1331,15 @@ body.annotation-interacting .ann-delete-btn {
     font-weight: bold;
 }
 /* Color-code entity types with DARK text for light backgrounds */
-.entity-type-person.selected { 
-    background: #fef3c7; 
-    border-color: #f59e0b; 
+.entity-type-person.selected {
+    background: #fef3c7;
+    border-color: #f59e0b;
     color: #92400e;
     box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);
 }
-.entity-type-organization.selected { 
-    background: #dbeafe; 
-    border-color: #3b82f6; 
+.entity-type-organization.selected {
+    background: #dbeafe;
+    border-color: #3b82f6;
     color: #1e3a8a;
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
@@ -1379,15 +1379,15 @@ body.annotation-interacting .ann-delete-btn {
     color: #9f1239;
     box-shadow: 0 0 0 4px rgba(190, 18, 60, 0.1);
 }
-.entity-type-number.selected { 
-    background: #fecaca; 
-    border-color: #ef4444; 
+.entity-type-number.selected {
+    background: #fecaca;
+    border-color: #ef4444;
     color: #7f1d1d;
     box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
 }
-.entity-type-place.selected { 
-    background: #dcfce7; 
-    border-color: #22c55e; 
+.entity-type-place.selected {
+    background: #dcfce7;
+    border-color: #22c55e;
     color: #14532d;
     box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
 }

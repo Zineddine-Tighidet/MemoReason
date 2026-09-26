@@ -4,108 +4,31 @@ document:
   source: wikipedia
   wikipedia_title: Emmanuel Macron
   wikipedia_url: https://en.wikipedia.org/wiki/Emmanuel_Macron
-  original_document: 'Emmanuel Jean-Michel Frédéric Macron (born 21 December 1977) is a French politician who has served as
-    President of France and Co-Prince of Andorra since 2017. He served as Minister of Economics and Finance under President
-    François Hollande from 2014 to 2016. He has been a member of Renaissance since founding the party in 2016.
+  original_document: 'Emmanuel Jean-Michel Frédéric Macron (born 21 December 1977) is a French politician who has served as President of France and Co-Prince of Andorra since 2017. He served as Minister of Economics and Finance under President François Hollande from 2014 to 2016. He has been a member of Renaissance since founding the party in 2016.
 
 
-    Born in Amiens, Macron studied philosophy at Paris Nanterre University. He completed a master''s degree in public affairs
-    at Sciences Po and graduated from the École nationale d''administration in 2004. He worked as a senior civil servant at
-    the General Inspectorate of Finance and as an investment banker at Rothschild & Co. Macron was a senior adviser to President
-    Hollande, being appointed as Élysée deputy secretary-general by Hollande after the 2012 presidential election. He was
-    later appointed as Economics Minister in 2014 in the second Valls government, and led several business-friendly reforms.
-    He resigned in 2016 to launch his 2017 presidential campaign. A member of the Socialist Party between 2006 and 2009, he
-    ran in the election under the banner of En Marche !, a centrist and pro-European political movement which he founded in
-    2016.
+    Born in Amiens, Macron studied philosophy at Paris Nanterre University. He completed a master''s degree in public affairs at Sciences Po and graduated from the École nationale d''administration in 2004. He worked as a senior civil servant at the General Inspectorate of Finance and as an investment banker at Rothschild & Co. Macron was a senior adviser to President Hollande, being appointed as Élysée deputy secretary-general by Hollande after the 2012 presidential election. He was later appointed as Economics Minister in 2014 in the second Valls government, and led several business-friendly reforms. He resigned in 2016 to launch his 2017 presidential campaign. A member of the Socialist Party between 2006 and 2009, he ran in the election under the banner of En Marche !, a centrist and pro-European political movement which he founded in 2016.
 
 
-    Partly due to the Fillon affair, Macron was elected President in May 2017 with 66% of the vote in the second round, defeating
-    Marine Le Pen of the National Front. Aged 39, he became the youngest president in French history. In the 2017 legislative
-    election, his party, renamed La République En Marche! (LREM), secured a majority in the National Assembly. During his
-    presidency, Macron has overseen reforms to labour laws, taxation, and pensions; and pursued a renewable energy transition.
-    Dubbed "president of the rich" by opponents, increasing protests against his reforms culminated in 2018–2020 with the
-    yellow vests protests and the pension reform strike. From 2020, he led France''s response to the COVID-19 pandemic and
-    subsequent recession, including by overseeing the country''s vaccination rollout. In foreign policy, Macron called for
-    reforms to the European Union (EU) and signed treaties with Germany and Italy. He conducted €40 billion in trade and business
-    agreements with China during the China–United States trade war and oversaw a dispute with Australia and the U.S. over
-    the AUKUS security pact. Macron has also continued Opération Chammal in the war against the Islamic State and joined in
-    the international condemnation of the Russian invasion of Ukraine.
+    Partly due to the Fillon affair, Macron was elected President in May 2017 with 66% of the vote in the second round, defeating Marine Le Pen of the National Front. Aged 39, he became the youngest president in French history. In the 2017 legislative election, his party, renamed La République En Marche! (LREM), secured a majority in the National Assembly. During his presidency, Macron has overseen reforms to labour laws, taxation, and pensions; and pursued a renewable energy transition. Dubbed "president of the rich" by opponents, increasing protests against his reforms culminated in 2018–2020 with the yellow vests protests and the pension reform strike. From 2020, he led France''s response to the COVID-19 pandemic and subsequent recession, including by overseeing the country''s vaccination rollout. In foreign policy, Macron called for reforms to the European Union (EU) and signed treaties with Germany and Italy. He conducted €40 billion in trade and business agreements with China during the China–United States trade war and oversaw a dispute with Australia and the U.S. over the AUKUS security pact. Macron has also continued Opération Chammal in the war against the Islamic State and
+    joined in the international condemnation of the Russian invasion of Ukraine.
 
 
-    Macron was elected to a second term in the 2022 presidential election, again defeating Le Pen and becoming the first French
-    presidential candidate to win reelection since Jacques Chirac in 2002. In the 2022 legislative election, Macron''s centrist
-    coalition lost its majority, resulting in a hung parliament and formation of France''s first minority government since
-    1993. In 2023, the government of his prime minister, Élisabeth Borne, passed legislation raising the retirement age from
-    62 to 64; this led to public sector strikes and violent protests. In 2024, Macron appointed Gabriel Attal as Prime Minister
-    after a government crisis. He then dissolved the National Assembly and called a snap legislative election following overwhelming
-    defeat at the 2024 European Parliament elections, which resulted in another hung parliament and an electoral defeat for
-    his coalition. Afterwards, Macron appointed Michel Barnier, a conservative and former chief Brexit negotiator, as Prime
-    Minister. Three months in, Barnier was toppled by a historic vote of no confidence, prompting Macron to replace him with
-    centrist veteran François Bayrou. After Bayrou was himself brought down by a confidence vote in September 2025, Macron
-    appointed Sébastien Lecornu, Minister of the Armed Forces, as Prime Minister. Lecornu resigned less than a month later
-    following political backlash over the composition of his government, but was reappointed by Macron shortly afterwards.
-    The formations of these short-lived governments have marked a political crisis.'
-  document_to_annotate: '[Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] (born [21 December 1977; temporal_1.date])
-    is a [French; place_1.demonym] politician who has served as President of [France; place_1.country] and Co-Prince of [Andorra;
-    place_2.country] since [2017; temporal_9.year]. [He; person_1.subj_pronoun] served as Minister of Economics and Finance
-    under President [François Hollande; person_2.full_name] from [2014; temporal_7.year] to [2016; temporal_8.year]. [He;
-    person_1.subj_pronoun] has been a member of [Renaissance; entreprise_org_1.name] since founding the party in [2016; temporal_5.year].
+    Macron was elected to a second term in the 2022 presidential election, again defeating Le Pen and becoming the first French presidential candidate to win reelection since Jacques Chirac in 2002. In the 2022 legislative election, Macron''s centrist coalition lost its majority, resulting in a hung parliament and formation of France''s first minority government since 1993. In 2023, the government of his prime minister, Élisabeth Borne, passed legislation raising the retirement age from 62 to 64; this led to public sector strikes and violent protests. In 2024, Macron appointed Gabriel Attal as Prime Minister after a government crisis. He then dissolved the National Assembly and called a snap legislative election following overwhelming defeat at the 2024 European Parliament elections, which resulted in another hung parliament and an electoral defeat for his coalition. Afterwards, Macron appointed Michel Barnier, a conservative and former chief Brexit negotiator, as Prime Minister. Three months in, Barnier was toppled by a historic vote of no confidence, prompting Macron to replace him with centrist veteran François Bayrou. After Bayrou was himself brought down by a confidence vote in
+    September 2025, Macron appointed Sébastien Lecornu, Minister of the Armed Forces, as Prime Minister. Lecornu resigned less than a month later following political backlash over the composition of his government, but was reappointed by Macron shortly afterwards. The formations of these short-lived governments have marked a political crisis.'
+  document_to_annotate: '[Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] (born [21 December 1977; temporal_1.date]) is a [French; place_1.demonym] politician who has served as President of [France; place_1.country] and Co-Prince of [Andorra; place_2.country] since [2017; temporal_9.year]. [He; person_1.subj_pronoun] served as Minister of Economics and Finance under President [François Hollande; person_2.full_name] from [2014; temporal_7.year] to [2016; temporal_8.year]. [He; person_1.subj_pronoun] has been a member of [Renaissance; entreprise_org_1.name] since founding the party in [2016; temporal_5.year].
 
 
-    Born in [Amiens; place_3.city], [Macron; person_1.last_name] studied philosophy at [Paris Nanterre University; educational_org_1.name].
-    [He; person_1.subj_pronoun] completed a master''s degree in public affairs at [Sciences Po; educational_org_2.name] and
-    graduated from the [École nationale d''administration; educational_org_3.name] in [2004; temporal_6.year]. [He; person_1.subj_pronoun]
-    worked as a senior civil servant at the [General Inspectorate of Finance; government_org_1.name] and as an investment
-    banker at [Rothschild & Co; entreprise_org_2.name]. [Macron; person_1.last_name] was a senior adviser to President [Hollande;
-    person_2.last_name], being appointed as [Élysée; government_org_4.name] deputy secretary-general by [Hollande; person_2.last_name]
-    after the [2012 presidential election; event_1.name]. [He; person_1.subj_pronoun] was later appointed as Economics Minister
-    in [2014; temporal_7.year] in the second [Valls; person_3.last_name] government, and led several business-friendly reforms.
-    [He; person_1.subj_pronoun] resigned in [2016; temporal_8.year] to launch [his; person_1.poss_det_pronoun] [2017; temporal_9.year]
-    presidential campaign. A member of the [Socialist Party; entreprise_org_3.name] between [2006; temporal_10.year] and [2009;
-    temporal_11.year], [he; person_1.subj_pronoun] ran in the election under the banner of [En Marche !; entreprise_org_4.name],
-    a centrist and pro-[European; government_org_3.name] political movement which [he; person_1.subj_pronoun] founded in [2016;
-    temporal_5.year].
+    Born in [Amiens; place_3.city], [Macron; person_1.last_name] studied philosophy at [Paris Nanterre University; educational_org_1.name]. [He; person_1.subj_pronoun] completed a master''s degree in public affairs at [Sciences Po; educational_org_2.name] and graduated from the [École nationale d''administration; educational_org_3.name] in [2004; temporal_6.year]. [He; person_1.subj_pronoun] worked as a senior civil servant at the [General Inspectorate of Finance; government_org_1.name] and as an investment banker at [Rothschild & Co; entreprise_org_2.name]. [Macron; person_1.last_name] was a senior adviser to President [Hollande; person_2.last_name], being appointed as [Élysée; government_org_4.name] deputy secretary-general by [Hollande; person_2.last_name] after the [2012 presidential election; event_1.name]. [He; person_1.subj_pronoun] was later appointed as Economics Minister in [2014; temporal_7.year] in the second [Valls; person_3.last_name] government, and led several business-friendly reforms. [He; person_1.subj_pronoun] resigned in [2016; temporal_8.year] to launch [his; person_1.poss_det_pronoun] [2017; temporal_9.year] presidential campaign. A member of the [Socialist Party;
+    entreprise_org_3.name] between [2006; temporal_10.year] and [2009; temporal_11.year], [he; person_1.subj_pronoun] ran in the election under the banner of [En Marche !; entreprise_org_4.name], a centrist and pro-[European; government_org_3.name] political movement which [he; person_1.subj_pronoun] founded in [2016; temporal_5.year].
 
 
-    Partly due to the [Fillon affair; event_2.name], [Macron; person_1.last_name] was elected President in [May; temporal_22.month]
-    [2017; temporal_9.year] with [66; number_1.percent]% of the vote in the second round, defeating [Marine Le Pen; person_4.full_name]
-    of the [National Front; entreprise_org_5.name]. Aged [39; person_1.age], [he; person_1.subj_pronoun] became the youngest
-    president in [French; place_1.demonym] history. In the [2017 legislative election; event_3.name], [his; person_1.poss_det_pronoun]
-    party, renamed [La République En Marche! (LREM); entreprise_org_4.name], secured a majority in the [National Assembly;
-    government_org_2.name]. During [his; person_1.poss_det_pronoun] presidency, [Macron; person_1.last_name] has overseen
-    reforms to labour laws, taxation, and pensions; and pursued a renewable energy transition. Dubbed "president of the rich"
-    by opponents, increasing protests against [his; person_1.poss_det_pronoun] reforms culminated in [2018; temporal_14.year]–[2020;
-    temporal_15.year] with the [yellow vests protests; event_4.name] and the [pension reform strike; event_5.name]. From [2020;
-    temporal_15.year], [he; person_1.subj_pronoun] led [France; place_1.country]''s response to the [COVID-19 pandemic; event_6.name]
-    and subsequent recession, including by overseeing the country''s vaccination rollout. In foreign policy, [Macron; person_1.last_name]
-    called for reforms to the [European Union (EU); government_org_3.name] and signed treaties with [Germany; place_4.country]
-    and [Italy; place_5.country]. [He; person_1.subj_pronoun] conducted about $[40; number_5.int] billion in trade and business
-    agreements with [China; place_6.country] during the [China–United States trade war; event_7.name] and oversaw a dispute
-    with [Australia; place_7.country] and the [U.S.; place_8.country] over the [AUKUS; military_org_1.name] security pact.
-    [Macron; person_1.last_name] has also continued [Opération Chammal; military_org_2.name] in the [war against the Islamic
-    State; event_8.name] and joined in the international condemnation of the [Russian invasion of Ukraine; event_9.name].
+    Partly due to the [Fillon affair; event_2.name], [Macron; person_1.last_name] was elected President in [May; temporal_22.month] [2017; temporal_9.year] with [66; number_1.percent]% of the vote in the second round, defeating [Marine Le Pen; person_4.full_name] of the [National Front; entreprise_org_5.name]. Aged [39; person_1.age], [he; person_1.subj_pronoun] became the youngest president in [French; place_1.demonym] history. In the [2017 legislative election; event_3.name], [his; person_1.poss_det_pronoun] party, renamed [La République En Marche! (LREM); entreprise_org_4.name], secured a majority in the [National Assembly; government_org_2.name]. During [his; person_1.poss_det_pronoun] presidency, [Macron; person_1.last_name] has overseen reforms to labour laws, taxation, and pensions; and pursued a renewable energy transition. Dubbed "president of the rich" by opponents, increasing protests against [his; person_1.poss_det_pronoun] reforms culminated in [2018; temporal_14.year]–[2020; temporal_15.year] with the [yellow vests protests; event_4.name] and the [pension reform strike; event_5.name]. From [2020; temporal_15.year], [he; person_1.subj_pronoun] led [France; place_1.country]''s
+    response to the [COVID-19 pandemic; event_6.name] and subsequent recession, including by overseeing the country''s vaccination rollout. In foreign policy, [Macron; person_1.last_name] called for reforms to the [European Union (EU); government_org_3.name] and signed treaties with [Germany; place_4.country] and [Italy; place_5.country]. [He; person_1.subj_pronoun] conducted about $[40; number_5.int] billion in trade and business agreements with [China; place_6.country] during the [China–United States trade war; event_7.name] and oversaw a dispute with [Australia; place_7.country] and the [U.S.; place_8.country] over the [AUKUS; military_org_1.name] security pact. [Macron; person_1.last_name] has also continued [Opération Chammal; military_org_2.name] in the [war against the Islamic State; event_8.name] and joined in the international condemnation of the [Russian invasion of Ukraine; event_9.name].
 
 
-    [Macron; person_1.last_name] was elected to a second term in the [2022 presidential election; event_10.name], again defeating
-    [Le Pen; person_4.last_name] and becoming the first [French; place_1.demonym] presidential candidate to win reelection
-    since [Jacques Chirac; person_5.full_name] in [2002; temporal_16.year]. In the [2022 legislative election; event_11.name],
-    [Macron; person_1.last_name]''s centrist coalition lost its majority, resulting in a hung parliament and formation of
-    [France; place_1.country]''s first minority government since [1993; temporal_17.year]. In [2023; temporal_18.year], the
-    government of [his; person_1.poss_det_pronoun] prime minister, [Élisabeth Borne; person_6.full_name], passed legislation
-    raising the retirement age from [62; number_3.int] to [64; number_4.int]; this led to public sector strikes and violent
-    protests. In [2024; temporal_19.year], [Macron; person_1.last_name] appointed [Gabriel Attal; person_7.full_name] as Prime
-    Minister after a government crisis. [He; person_1.subj_pronoun] then dissolved the [National Assembly; government_org_2.name]
-    and called a snap legislative election following overwhelming defeat at the [2024 European Parliament elections; event_12.name],
-    which resulted in another hung parliament and an electoral defeat for [his; person_1.poss_det_pronoun] coalition. Afterwards,
-    [Macron; person_1.last_name] appointed [Michel Barnier; person_8.full_name], a conservative and former chief [Brexit;
-    event_13.name] negotiator, as Prime Minister. [Three; number_5.str] months in, [Barnier; person_8.last_name] was toppled
-    by a historic vote of no confidence, prompting [Macron; person_1.last_name] to replace [him; person_8.obj_pronoun] with
-    centrist veteran [François Bayrou; person_9.full_name]. After [Bayrou; person_9.last_name] was [himself; person_9.refl_pronoun]
-    brought down by a confidence vote in [September; temporal_24.month] [2025; temporal_21.year], [Macron; person_1.last_name]
-    appointed [Sébastien Lecornu; person_10.full_name], Minister of the Armed Forces, as Prime Minister. [Lecornu; person_10.last_name]
-    resigned less than a month later following political backlash over the composition of [his; person_10.poss_det_pronoun]
-    government, but was reappointed by [Macron; person_1.last_name] shortly afterwards. The formations of these short-lived
-    governments have marked a political crisis.'
+    [Macron; person_1.last_name] was elected to a second term in the [2022 presidential election; event_10.name], again defeating [Le Pen; person_4.last_name] and becoming the first [French; place_1.demonym] presidential candidate to win reelection since [Jacques Chirac; person_5.full_name] in [2002; temporal_16.year]. In the [2022 legislative election; event_11.name], [Macron; person_1.last_name]''s centrist coalition lost its majority, resulting in a hung parliament and formation of [France; place_1.country]''s first minority government since [1993; temporal_17.year]. In [2023; temporal_18.year], the government of [his; person_1.poss_det_pronoun] prime minister, [Élisabeth Borne; person_6.full_name], passed legislation raising the retirement age from [62; number_3.int] to [64; number_4.int]; this led to public sector strikes and violent protests. In [2024; temporal_19.year], [Macron; person_1.last_name] appointed [Gabriel Attal; person_7.full_name] as Prime Minister after a government crisis. [He; person_1.subj_pronoun] then dissolved the [National Assembly; government_org_2.name] and called a snap legislative election following overwhelming defeat at the [2024 European Parliament
+    elections; event_12.name], which resulted in another hung parliament and an electoral defeat for [his; person_1.poss_det_pronoun] coalition. Afterwards, [Macron; person_1.last_name] appointed [Michel Barnier; person_8.full_name], a conservative and former chief [Brexit; event_13.name] negotiator, as Prime Minister. [Three; number_5.str] months in, [Barnier; person_8.last_name] was toppled by a historic vote of no confidence, prompting [Macron; person_1.last_name] to replace [him; person_8.obj_pronoun] with centrist veteran [François Bayrou; person_9.full_name]. After [Bayrou; person_9.last_name] was [himself; person_9.refl_pronoun] brought down by a confidence vote in [September; temporal_24.month] [2025; temporal_21.year], [Macron; person_1.last_name] appointed [Sébastien Lecornu; person_10.full_name], Minister of the Armed Forces, as Prime Minister. [Lecornu; person_10.last_name] resigned less than a month later following political backlash over the composition of [his; person_10.poss_det_pronoun] government, but was reappointed by [Macron; person_1.last_name] shortly afterwards. The formations of these short-lived governments have marked a political crisis.'
   relations: []
   rules:
   - 'number_1.percent > 50 # won the second round, so must be a majority'
@@ -118,13 +41,10 @@ document:
     answer: entreprise_org_1.name
     answer_type: variant
     reasoning_chain:
-    - 1. The document states that [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "has been a member of [Renaissance;
-      entreprise_org_1.name] since founding the party in [2016; temporal_5.year]."
-    reasoning_chain_text: 1. The document states that [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "has been
-      a member of [Renaissance; entreprise_org_1.name] since founding the party in [2016; temporal_5.year]."
-  - question_id: bio_05_q02
-    question: By how many years does the new retirement age exceed the old retirement age, as changed under [Élisabeth Borne;
-      person_6.full_name]'s government?
+    - 1. The document states that [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "has been a member of [Renaissance; entreprise_org_1.name] since founding the party in [2016; temporal_5.year]."
+    reasoning_chain_text: 1. The document states that [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "has been a member of [Renaissance; entreprise_org_1.name] since founding the party in [2016; temporal_5.year]."
+  - question_id: bio_05_q04
+    question: By how many years does the new retirement age exceed the old retirement age, as changed under [Élisabeth Borne; person_6.full_name]'s government?
     question_type: arithmetic
     answer: number_4.int - number_3.int
     answer_type: variant
@@ -134,85 +54,65 @@ document:
     reasoning_chain_text: '1. The document states the retirement age was raised from [62; number_3.int] to [64; number_4.int].
 
       2. The difference is [64; number_4.int] - [62; number_3.int] = 2.'
-  - question_id: bio_05_q03
-    question: How much more in trade agreements did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conduct with
-      [China; place_6.country] compared to [Germany; place_4.country]?
+  - question_id: bio_05_q06
+    question: How much more in trade agreements did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conduct with [China; place_6.country] compared to [Germany; place_4.country]?
     question_type: arithmetic
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conducted about $[40; number_5.int]
-      billion in trade and business agreements with [China; place_6.country].
-    - 2. The document does not provide a monetary figure for trade agreements with [Germany; place_4.country], so the difference
-      cannot be calculated.
-    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conducted about
-      $[40; number_5.int] billion in trade and business agreements with [China; place_6.country].
+    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conducted about $[40; number_5.int] billion in trade and business agreements with [China; place_6.country].
+    - 2. The document does not provide a monetary figure for trade agreements with [Germany; place_4.country], so the difference cannot be calculated.
+    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] conducted about $[40; number_5.int] billion in trade and business agreements with [China; place_6.country].
 
-      2. The document does not provide a monetary figure for trade agreements with [Germany; place_4.country], so the difference
-      cannot be calculated.'
-  - question_id: bio_05_q04
-    question: How many years passed between [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s graduation from the
-      [École nationale d'administration; educational_org_3.name] and the appointment as Economics Minister?
+      2. The document does not provide a monetary figure for trade agreements with [Germany; place_4.country], so the difference cannot be calculated.'
+  - question_id: bio_05_q07
+    question: How many years passed between [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s graduation from the [École nationale d'administration; educational_org_3.name] and the appointment as Economics Minister?
     question_type: temporal
     answer: temporal_7.year - temporal_6.year
     answer_type: variant
     reasoning_chain:
-    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] graduated from the [École nationale
-      d'administration; educational_org_3.name] in [2004; temporal_6.year].
+    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] graduated from the [École nationale d'administration; educational_org_3.name] in [2004; temporal_6.year].
     - 2. The document states the appointment as Economics Minister was in [2014; temporal_7.year].
     - 3. The difference is [2014; temporal_7.year] - [2004; temporal_6.year] = 10 years.
-    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] graduated from
-      the [École nationale d''administration; educational_org_3.name] in [2004; temporal_6.year].
+    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] graduated from the [École nationale d''administration; educational_org_3.name] in [2004; temporal_6.year].
 
       2. The document states the appointment as Economics Minister was in [2014; temporal_7.year].
 
       3. The difference is [2014; temporal_7.year] - [2004; temporal_6.year] = 10 years.'
-  - question_id: bio_05_q05
-    question: In what year did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] begin working at the [General Inspectorate
-      of Finance; government_org_1.name]?
+  - question_id: bio_05_q09
+    question: In what year did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] begin working at the [General Inspectorate of Finance; government_org_1.name]?
     question_type: temporal
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "worked as a senior civil servant
-      at the [General Inspectorate of Finance; government_org_1.name]."
+    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "worked as a senior civil servant at the [General Inspectorate of Finance; government_org_1.name]."
     - 2. The document does not provide a specific start year for this position, so the year cannot be determined.
-    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "worked as a
-      senior civil servant at the [General Inspectorate of Finance; government_org_1.name]."
+    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] "worked as a senior civil servant at the [General Inspectorate of Finance; government_org_1.name]."
 
       2. The document does not provide a specific start year for this position, so the year cannot be determined.'
-  - question_id: bio_05_q06
-    question: Based on the document, what phrase characterizes the state of governance in [France; place_1.country] resulting
-      from the rapid succession of short-lived governments during [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s
-      second term?
+  - question_id: bio_05_q11
+    question: Based on the document, what phrase characterizes the state of governance in [France; place_1.country] resulting from the rapid succession of short-lived governments during [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s second term?
     question_type: inference
     answer: political crisis
     answer_type: invariant
     reasoning_chain:
-    - 1. During the second term, [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] appointed multiple prime ministers
-      in rapid succession, each of whom was removed or resigned quickly.
+    - 1. During the second term, [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] appointed multiple prime ministers in rapid succession, each of whom was removed or resigned quickly.
     - 2. The document explicitly concludes that "The formations of these short-lived governments have marked a political crisis."
-    reasoning_chain_text: '1. During the second term, [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] appointed
-      multiple prime ministers in rapid succession, each of whom was removed or resigned quickly.
+    reasoning_chain_text: '1. During the second term, [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] appointed multiple prime ministers in rapid succession, each of whom was removed or resigned quickly.
 
       2. The document explicitly concludes that "The formations of these short-lived governments have marked a political crisis."'
-  - question_id: bio_05_q07
-    question: Did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s party [En Marche !; entreprise_org_4.name]
-      win or lose seats in the [2024 European Parliament elections; event_12.name] compared to the previous continental elections?
+  - question_id: bio_05_q12
+    question: Did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s party [En Marche !; entreprise_org_4.name] win or lose seats in the [2024 European Parliament elections; event_12.name] compared to the previous continental elections?
     question_type: inference
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] suffered an "overwhelming defeat"
-      at the [2024 European Parliament elections; event_12.name].
-    - 2. However, the document provides no information about the results of any previous continental parliament elections,
-      so a comparison of seat counts cannot be made.
-    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] suffered an "overwhelming
-      defeat" at the [2024 European Parliament elections; event_12.name].
+    - 1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] suffered an "overwhelming defeat" at the [2024 European Parliament elections; event_12.name].
+    - 2. However, the document provides no information about the results of any previous continental parliament elections, so a comparison of seat counts cannot be made.
+    reasoning_chain_text: '1. The document states [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] suffered an "overwhelming defeat" at the [2024 European Parliament elections; event_12.name].
 
-      2. However, the document provides no information about the results of any previous continental parliament elections,
-      so a comparison of seat counts cannot be made.'
-  - question_id: bio_05_q08
+      2. However, the document provides no information about the results of any previous continental parliament elections, so a comparison of seat counts cannot be made.'
+  - question_id: bio_05_reviewer06_w5
     question: Who had the toughest first months as [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s prime minister?
     question_type: inference
     answer: person_10.full_name
@@ -220,34 +120,30 @@ document:
     reasoning_chain:
     - Which
     reasoning_chain_text: Which
-  - question_id: bio_05_q09
-    question: Did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] become member of the [Socialist Party; entreprise_org_3.name]
-      before or after his graduation from [École nationale d'administration; educational_org_3.name] ?
+  - question_id: bio_05_reviewer06_w4
+    question: Did [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] become member of the [Socialist Party; entreprise_org_3.name] before or after his graduation from [École nationale d'administration; educational_org_3.name] ?
     question_type: temporal
     answer: After
     answer_type: invariant
     reasoning_chain: []
     reasoning_chain_text: ''
-  - question_id: bio_05_q10
-    question: How many people that served as Prime Minister under [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]
-      were mentioned in the document?
+  - question_id: bio_05_reviewer06_w3
+    question: How many people that served as Prime Minister under [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name] were mentioned in the document?
     question_type: arithmetic
     answer: '5'
     answer_type: invariant
     reasoning_chain: []
     reasoning_chain_text: ''
-  - question_id: bio_05_q11
-    question: Who was  [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s manager at [Rothschild & Co; entreprise_org_2.name]
-      ?
+  - question_id: bio_05_reviewer06_w2
+    question: Who was  [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s manager at [Rothschild & Co; entreprise_org_2.name] ?
     question_type: extractive
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
     - Who was
     reasoning_chain_text: Who was
-  - question_id: bio_05_q12
-    question: What was [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s function under President [François Hollande;
-      person_2.full_name] ?
+  - question_id: bio_05_reviewer06_w1
+    question: What was [Emmanuel Jean-Michel Frédéric Macron; person_1.full_name]'s function under President [François Hollande; person_2.full_name] ?
     question_type: extractive
     answer: Minister of Economics and Finance
     answer_type: invariant
@@ -382,5 +278,3 @@ document:
     rule_kind: temporal_year_range
 metadata:
   status: completed
-  annotators:
-  - anonymous_annotator

@@ -19,7 +19,6 @@ coverage:
     place_1: 15
     place_2: 15
     place_3: 15
-    place_6: 15
     place_4: 15
     place_5: 15
   events:
@@ -173,23 +172,39 @@ places:
   place_2:
     required_attributes:
     - natural_site
+    - demonym
     count: 15
     variants:
     - natural_site: Velthara
+      demonym: selvarn
     - natural_site: Crondis
+      demonym: crethian
     - natural_site: Pallune
+      demonym: volanth
     - natural_site: Thyrak
+      demonym: dremosi
     - natural_site: Orvalis
+      demonym: thalcen
     - natural_site: Zenthari
+      demonym: orbanic
     - natural_site: Dremova
+      demonym: kelvori
     - natural_site: Kulvane
+      demonym: pletharn
     - natural_site: Brisenth
+      demonym: zundric
     - natural_site: Yolmera
+      demonym: melvasi
     - natural_site: Tarquil
+      demonym: torephic
     - natural_site: Phendros
+      demonym: gelvorn
     - natural_site: Selvunn
+      demonym: sethural
     - natural_site: Galthen
+      demonym: brinthal
     - natural_site: Weskari
+      demonym: quorvenic
   place_3:
     required_attributes:
     - natural_site
@@ -210,26 +225,6 @@ places:
     - natural_site: Mortuven
     - natural_site: Galtherion
     - natural_site: Wyndorath
-  place_6:
-    required_attributes:
-    - region
-    count: 15
-    variants:
-    - region: selvarn
-    - region: crethian
-    - region: volanth
-    - region: dremosi
-    - region: thalcen
-    - region: orbanic
-    - region: kelvori
-    - region: pletharn
-    - region: zundric
-    - region: melvasi
-    - region: torephic
-    - region: gelvorn
-    - region: sethural
-    - region: brinthal
-    - region: quorvenic
   place_4:
     required_attributes:
     - natural_site

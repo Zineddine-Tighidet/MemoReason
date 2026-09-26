@@ -1,0 +1,581 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: dev_17
+  document_theme: public_attacks_news_articles
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_8: 15
+    person_9: 15
+    person_10: 15
+    person_11: 15
+    person_12: 15
+    person_13: 15
+    person_14: 15
+    person_15: 15
+    person_16: 15
+  places:
+    place_1: 15
+    place_2: 15
+  events: {}
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torven Galcedo
+    - full_name: Drequo Marvellán
+    - full_name: Caspero Zundarri
+    - full_name: Felgaro Orentiz
+    - full_name: Quireno Balsedo
+    - full_name: Vandelo Curriaga
+    - full_name: Ostren Pelacuño
+    - full_name: Jolvero Tancuriz
+    - full_name: Brequan Solvedra
+    - full_name: Galtero Murceniz
+    - full_name: Polveno Zarqueda
+    - full_name: Durnelo Fescarro
+    - full_name: Helvaro Quintega
+    - full_name: Rondevo Calcuñar
+    - full_name: Telvano Gurespín
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Elcayo Turima
+    - full_name: Paltego Ruessin Obranthe
+    - full_name: Celvaro Mintoja Drusque
+    - full_name: Hentaro Bivales Corundi
+    - full_name: Fradego Olcunis Tremayo
+    - full_name: Quirano Belsaje Vontira
+    - full_name: Tolvego Marsune Crelajo
+    - full_name: Gaspero Vindalo Troquen
+    - full_name: Relvano Custaje Bremido
+    - full_name: Ondevo Paltrique Suramen
+    - full_name: Brivano Celdoque Murathen
+    - full_name: Jelvaro Trusinde Polcayo
+    - full_name: Melvago Drontise Curabel
+    - full_name: Solvero Quintaje Brelundo
+    - full_name: Valtego Cruminde Obrason
+  person_3:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tivra Quelmond
+      last_name: Quelmond
+    - full_name: Orina Brastell
+      last_name: Brastell
+    - full_name: Yedra Colvane
+      last_name: Colvane
+    - full_name: Sulka Tremidov
+      last_name: Tremidov
+    - full_name: Pelina Garthune
+      last_name: Garthune
+    - full_name: Zevra Hondalis
+      last_name: Hondalis
+    - full_name: Kessla Voranthe
+      last_name: Voranthe
+    - full_name: Druna Melvique
+      last_name: Melvique
+    - full_name: Ithela Parnoque
+      last_name: Parnoque
+    - full_name: Weysa Caltrine
+      last_name: Caltrine
+    - full_name: Novira Jestholm
+      last_name: Jestholm
+    - full_name: Belka Trossane
+      last_name: Trossane
+    - full_name: Fenara Dulvetch
+      last_name: Dulvetch
+    - full_name: Rethia Golvane
+      last_name: Golvane
+    - full_name: Calshi Wentoque
+      last_name: Wentoque
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvio Morquane
+    - full_name: Drennach Sulpeiro
+    - full_name: Orbelo Cantisque
+    - full_name: Felvaro Zuriante
+    - full_name: Gostino Peldraque
+    - full_name: Narvelo Tuspeira
+    - full_name: Quirbano Lestoval
+    - full_name: Zelmiro Carvosque
+    - full_name: Brenaldo Vispuero
+    - full_name: Tondero Malpique
+    - full_name: Selvano Grondeira
+    - full_name: Polvero Juntisca
+    - full_name: Welmiro Drasqueno
+    - full_name: Crendalo Vospeire
+    - full_name: Helvanto Rusmaque
+  person_5:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Tevi Rosh Calondra
+      last_name: Calondra
+    - full_name: Ynela Prossivane
+      last_name: Prossivane
+    - full_name: Kori Desh Velanto
+      last_name: Velanto
+    - full_name: Ambrela Tossiguen
+      last_name: Tossiguen
+    - full_name: Jolind Craveska
+      last_name: Craveska
+    - full_name: Senara Boltrique
+      last_name: Boltrique
+    - full_name: Divara Plenthos
+      last_name: Plenthos
+    - full_name: Orvela Mish Gassonde
+      last_name: Gassonde
+    - full_name: Tulena Vorquesa
+      last_name: Vorquesa
+    - full_name: Pirella Drantove
+      last_name: Drantove
+    - full_name: Zuleka Fentarri
+      last_name: Fentarri
+    - full_name: Brissela Kolvane
+      last_name: Kolvane
+    - full_name: Navida Tresh Corvenni
+      last_name: Corvenni
+    - full_name: Relinda Caspovane
+      last_name: Caspovane
+    - full_name: Essova Dremique
+      last_name: Dremique
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Vorela Tassigen
+    - full_name: Drecia Polmuth
+    - full_name: Iquena Brastoval
+    - full_name: Zulvira Crendajo
+    - full_name: Tambriel Ossevane
+    - full_name: Peluria Gostinev
+    - full_name: Kelvida Murathen
+    - full_name: Obrecia Fandulev
+    - full_name: Yentara Quilsoph
+    - full_name: Wispela Drantogue
+    - full_name: Clovinda Jestaphor
+    - full_name: Ruvelia Tondrasque
+    - full_name: Fendrila Quosbane
+    - full_name: Gaspela Vurnidek
+    - full_name: Trevona Huldispar
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Doranto Quilves de la Brecha
+    - full_name: Felcuro Mantiga del Rosque
+    - full_name: Torbino Calesh de Voranta
+    - full_name: Juraldo Penviso del Cranto
+    - full_name: Melvaro Tondique de la Surcha
+    - full_name: Gaspero Linvade del Torque
+    - full_name: Rendalo Fustiga de Calmero
+    - full_name: Belvino Quariste del Precho
+    - full_name: Orvaldo Tembique de la Fonsura
+    - full_name: Custero Delvano del Rincha
+    - full_name: Paldino Gervaste de Tolmura
+    - full_name: Fentaro Quilbade del Sorque
+    - full_name: Lurveno Caspide de la Troncha
+    - full_name: Dalmiro Vontesque del Pursano
+    - full_name: Grentavo Sulbide de Molvera
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvio Curamen
+    - full_name: Brenso Halitez
+    - full_name: Jorvil Puentago
+    - full_name: Caspio Morindal
+    - full_name: Felgaro Tubiñes
+    - full_name: Ondrev Salcuero
+    - full_name: Quireno Bastivel
+    - full_name: Zulmio Pedranto
+    - full_name: Harvelo Cintares
+    - full_name: Dolvino Garestal
+    - full_name: Pernago Vultisez
+    - full_name: Solvian Medraque
+    - full_name: Grentio Furalbes
+    - full_name: Torbelo Juniscar
+    - full_name: Welvino Casperal
+  person_9:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvaro Grissond
+    - full_name: Jorvek Pallune
+    - full_name: Caspero Mundrell
+    - full_name: Feltrago Bossiren
+    - full_name: Durnelo Vashkent
+    - full_name: Quirano Temblis
+    - full_name: Helvido Cransolet
+    - full_name: Brenago Sulvetti
+    - full_name: Tondrik Melvasso
+    - full_name: Gaspero Lundarik
+    - full_name: Vortelan Crissabo
+    - full_name: Pelduno Tarvessi
+    - full_name: Kelvaro Drossint
+    - full_name: Rondego Falmisset
+    - full_name: Sulveno Krandolet
+  person_10:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Telvina Goraste Puchell
+    - full_name: Orsinda Belayo Crivante
+    - full_name: Yulessa Montariz Delvaque
+    - full_name: Fenara Quirobel Sustaine
+    - full_name: Calithra Vespano Rondigue
+    - full_name: Jemilda Toraque Belvisan
+    - full_name: Pralinda Custorel Marvaine
+    - full_name: Sovelda Garrique Tondafel
+    - full_name: Brenitza Loquera Fustavel
+    - full_name: Dulvera Pintaque Roscantel
+    - full_name: Ivelca Sordaine Brequillo
+    - full_name: Nolesta Furvaine Caltispe
+    - full_name: Quirenda Bostavel Lumierre
+    - full_name: Tassela Vordique Grenalto
+    - full_name: Welvina Curaste Pindoval
+  person_11:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velinta Corrasho
+    - full_name: Peldra Zumarith
+    - full_name: Tanequa Brossavel
+    - full_name: Olvira Mentaquez
+    - full_name: Jurella Castroven
+    - full_name: Sabelna Toriqueza
+    - full_name: Dreniva Polcasho
+    - full_name: Mirelta Gavondez
+    - full_name: Quelara Fintobas
+    - full_name: Brenida Sulcavero
+    - full_name: Tolvena Rassiquil
+    - full_name: Welmira Drontazes
+    - full_name: Calvetha Junorish
+    - full_name: Pernola Vistaquero
+    - full_name: Zelkira Mondravesh
+  person_12:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tavorin Grellso
+    - full_name: Ondrik Peshalo
+    - full_name: Caspero Vultaine
+    - full_name: Jethrik Molanzo
+    - full_name: Quireno Dassolt
+    - full_name: Felgaro Tumbris
+    - full_name: Brenivo Calesto
+    - full_name: Zulpero Mantique
+    - full_name: Harvelo Drintosa
+    - full_name: Pelluno Gostaire
+    - full_name: Toriven Bascalmo
+    - full_name: Weldaro Fentique
+    - full_name: Grivano Sulpetro
+    - full_name: Kesturo Brellanzo
+    - full_name: Dolviro Tramesque
+  person_13:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Calestro Maquiño
+    - full_name: Telmiro Brascuñ Orvalde
+    - full_name: Jureno Pallestro Vindaque
+    - full_name: Caspero Lontiga Ferruño
+    - full_name: Orbelo Mancuris Trevaldo
+    - full_name: Galteno Surriño Belvaque
+    - full_name: Pelduro Vascanti Morrique
+    - full_name: Ruvento Caldriso Estambre
+    - full_name: Felmiro Turqueno Salvadique
+    - full_name: Brenaldo Custivero Palmoñe
+    - full_name: Tolvero Gaspuñi Rendaque
+    - full_name: Quelmiro Darvento Surbalde
+    - full_name: Nelvaro Pristego Calmurque
+    - full_name: Ostendo Brivaldo Fentuque
+    - full_name: Zurvelo Mantisco Galdreño
+  person_14:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Txomin Elguezar Ondikola
+    - full_name: Kelder Zumarriaga Etxebarren
+    - full_name: Iosu Berasain Larretxipi
+    - full_name: Patxi Gorostidi Amezketarra
+    - full_name: Andoni Zurkaitz Mendiburu
+    - full_name: Gorka Lezamendi Arrubarrena
+    - full_name: Mikel Otxandorena Zabaltegi
+    - full_name: Unai Garaikoetxea Irurzun
+    - full_name: Joseba Aranberri Olaziregi
+    - full_name: Koldo Mugartegi Zendoia
+    - full_name: Xabier Urdanpilleta Goienetxe
+    - full_name: Aitor Lizarrondo Berastegi
+    - full_name: Eneko Sagarminaga Urretxu
+    - full_name: Ibon Zelaieta Aranburu
+    - full_name: Haritz Goikolea Mendigorri
+  person_15:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Telvano
+    - first_name: Brisendo
+    - first_name: Carvelo
+    - first_name: Dontego
+    - first_name: Felmaro
+    - first_name: Grivano
+    - first_name: Hesturo
+    - first_name: Jolveno
+    - first_name: Kesparo
+    - first_name: Melvito
+    - first_name: Norbelo
+    - first_name: Peldano
+    - first_name: Quivero
+    - first_name: Solveno
+    - first_name: Velmaro
+  person_16:
+    required_attributes:
+    - first_name
+    count: 15
+    variants:
+    - first_name: Velanzo
+    - first_name: Torbique
+    - first_name: Calindro
+    - first_name: Mespura
+    - first_name: Dorvane
+    - first_name: Quiresta
+    - first_name: Brelanto
+    - first_name: Fandique
+    - first_name: Zulmero
+    - first_name: Parviso
+    - first_name: Goltena
+    - first_name: Rendavo
+    - first_name: Caspelo
+    - first_name: Turbiqa
+    - first_name: Volmera
+places:
+  place_1:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Pasaje del Tronvil
+    - street: Vira de los Calemos
+    - street: Ronda de Pelithos
+    - street: Cuesta del Moravio
+    - street: Travesia de Jundara
+    - street: Callejon del Brisanto
+    - street: Avenida de los Quiremos
+    - street: Paseo del Vintarejo
+    - street: Plazuela de Gorindas
+    - street: Senda del Paluquen
+    - street: Rincon de Tavelis
+    - street: Bajada del Crespuno
+    - street: Camino de los Feltranos
+    - street: Glorieta del Mundejo
+    - street: Vereda de Solquinas
+  place_2:
+    required_attributes:
+    - city
+    - country
+    count: 15
+    variants:
+    - city: Veloranta
+      country: Teskoria
+    - city: Brundafel
+      country: Calphernia
+    - city: Ossivane
+      country: Drethalia
+    - city: Kelmarro
+      country: Vossengard
+    - city: Turindel
+      country: Pelmorath
+    - city: Graveshen
+      country: Ondrivia
+    - city: Pallentro
+      country: Zutheran
+    - city: Molvique
+      country: Hestoval
+    - city: Dranthuvel
+      country: Quirentha
+    - city: Sorbenthal
+      country: Faldrique
+    - city: Crendova
+      country: Marthelia
+    - city: Weskamur
+      country: Jolpheris
+    - city: Tilvaren
+      country: Brensodia
+    - city: Roquelind
+      country: Galthenor
+    - city: Penvashel
+      country: Tormedra
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VKL
+    - name: Velundra Strategic Corps
+    - name: Tarnoch Defense Collective
+    - name: TZR
+    - name: Haraldi Askatasuna
+    - name: Gorren Borroka
+    - name: Zurithen Gudariak
+    - name: Iratzeko Taldea
+    - name: Mendiko Esku
+    - name: Lautzen Kolpea
+    - name: Sorbalda Kemena
+    - name: Gaztarren Oldarra
+    - name: Errauts Mugimendua
+    - name: Beltzargi Elkartea
+    - name: Otsailen Indarra
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vorathen
+    - name: Kelduri
+    - name: Tarvish
+    - name: Orenthi
+    - name: Sulvane
+    - name: Drethani
+    - name: Palloric
+    - name: Gelvari
+    - name: Morthune
+    - name: Cendavi
+    - name: Brelosi
+    - name: Thureni
+    - name: Kalvorin
+    - name: Rendathi
+    - name: Sorveli
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Central Bureau of Public Order
+    - name: National Directorate of Civic Protection
+    - name: Federal Office of Internal Vigilance
+    - name: Supreme Inspectorate of State Safety
+    - name: Principal Authority for Domestic Safeguarding
+    - name: High Commission of Civil Oversight
+    - name: Unified Command of Territorial Assurance
+    - name: National Secretariat of Protective Services
+    - name: Grand Office of Public Stability
+    - name: Central Inspectorate of Homeland Guardianship
+    - name: Chief Directorate of Civic Enforcement
+    - name: National Bureau of Sovereign Protection
+    - name: High Chancellery of Internal Affairs
+    - name: Principal Secretariat of Public Vigilance
+    - name: Federal Directorate of Communal Safekeeping
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvellian Constabulary
+    - name: Drenosi Public Guard
+    - name: Korvalen Civil Patrol
+    - name: Velmorath Gendarmerie
+    - name: Brissolan Security Corps
+    - name: Ondravian Law Enforcement
+    - name: Pellunari National Guard
+    - name: Caltherion Public Safety Force
+    - name: Mirathane Civic Police
+    - name: Sorvellian Order Bureau
+    - name: Grethani Protective Service
+    - name: Vundrellic Patrol Authority
+    - name: Tessarik Enforcement Division
+    - name: Olpharen Peace Officers
+    - name: Durnathi Civil Constabulary
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Directorate of Civic Surveillance
+    - name: Central Bureau of Internal Order
+    - name: National Constabulary Oversight Office
+    - name: State Commissariat for Public Vigilance
+    - name: General Inspectorate of Domestic Security
+    - name: Federal Office of Civil Enforcement
+    - name: Secretariat of Interior Policing
+    - name: Bureau of Sovereign Protection
+    - name: Directorate-General of Territorial Watch
+    - name: High Commission for State Safeguarding
+    - name: Central Authority for Civic Defense
+    - name: National Directorate of Public Order
+    - name: Office of Internal Enforcement Affairs
+    - name: General Commissariat of Homeland Vigilance
+    - name: State Bureau of Protective Services
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Workers' Collective
+    - name: Toresian People's Alliance
+    - name: Dravosi Solidarity Front
+    - name: Kelmorath Labour Union
+    - name: Brunelki Popular Movement
+    - name: Ossendari Democratic League
+    - name: Peldravian Social Congress
+    - name: Zanthori Civic Assembly
+    - name: Quelvani People's Congress
+    - name: Mortheki Workers' Federation
+    - name: Gelvoran United Front
+    - name: Thandori Progressive Coalition
+    - name: Reskavi People's Syndicate
+    - name: Olpheran Social Collective
+    - name: Vendashi Democratic Union

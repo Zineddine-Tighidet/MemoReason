@@ -1,0 +1,234 @@
+document:
+  document_id: sport_13
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Rugby World Cup
+  wikipedia_url: https://en.wikipedia.org/wiki/Rugby_World_Cup
+  original_document: 'The Men''s Rugby World Cup is a rugby union tournament contested every four years between the top international teams, the winners of which are recognized as the world champions of the sport.
+
+
+    The tournament is administered by World Rugby, the sport''s international governing body. The winners are awarded the Webb Ellis Cup, named after William Webb Ellis who, according to a popular legend, invented rugby by picking up the ball during a football game and running with it.
+
+
+    The tournament was first held in 1987 and was co-hosted by New Zealand and Australia. Four countries have won the trophy; South Africa four times, New Zealand three times, Australia twice, and England once. South Africa is the current champion, having defeated New Zealand in the final of the 2023 tournament.
+
+
+    Sixteen teams participated in the tournament from 1987 until 1995; in 1999, the tournament expanded to twenty teams. Japan hosted the 2019 Rugby World Cup and France hosted the 2023 Rugby World Cup. The tournament will expand again to twenty-four teams when it is held in Australia in 2027.
+
+
+    Starting in 2021, the women''s equivalent tournament was officially renamed the Rugby World Cup to promote equality with the men''s tournament. However, the 2021 event was the only one to use this naming convention as at the end of the 2023 World Cup, World Rugby announced that all future tournaments would include the words "Men''s" or "Women''s" in their titles. The first event to use this convention was the 2025 Women''s Rugby World Cup, while the 2027 Men''s Rugby World Cup will be the first to include "Men''s" in its title.'
+  document_to_annotate: 'The [Men''s Rugby World Cup; event_1.name] is a rugby union tournament contested every [four; number_4.str] years between the top international teams, the winners of which are recognized as the world champions of the sport.
+
+
+    The tournament is administered by [World Rugby; government_org_1.name], the sport''s international governing body. The winners are awarded the [Webb Ellis Cup; award_1.name], named after [William Webb Ellis; person_1.full_name] who, according to a popular legend, invented rugby by picking up the ball during a football game and running with it.
+
+
+    The tournament was first held in [1987; temporal_1.year] and was co-hosted by [New Zealand; place_1.country] and [Australia; place_2.country]. Four countries have won the trophy; [South Africa; place_3.country] four times, [New Zealand; place_1.country] three times, [Australia; place_2.country] twice, and [England; place_4.country] once. [South Africa; place_3.country] is the current champion, having defeated [New Zealand; place_1.country] in the final of the [2023; temporal_2.year] tournament.
+
+
+    [Sixteen; number_1.str] teams participated in the tournament from [1987; temporal_1.year] until [1995; temporal_3.year]; in [1999; temporal_4.year], the tournament expanded to [twenty; number_2.str] teams. [Japan; place_5.country] hosted the [2019; temporal_5.year] Rugby World Cup and [France; place_6.country] hosted the [2023; temporal_2.year] Rugby World Cup. The tournament will expand again to [twenty-four; number_3.str] teams when it is held in [Australia; place_2.country] in [2027; temporal_6.year].
+
+
+    Starting in [2021; temporal_7.year], the women''s equivalent tournament was officially renamed the [Rugby World Cup; event_2.name] to promote equality with the men''s tournament. However, the [2021; temporal_7.year] event was the only one to use this naming convention as at the end of the [2023; temporal_2.year] [World Cup; event_3.name], [World Rugby; government_org_1.name] announced that all future tournaments would include the words "Men''s" or "Women''s" in their titles. The first event to use this convention was the [2025; temporal_8.year] [Women''s Rugby World Cup; event_4.name], while the [2027; temporal_6.year] [Men''s Rugby World Cup; event_5.name] will be the first to include "Men''s" in its title.'
+  relations: []
+  rules:
+  - 'temporal_6.year - temporal_5.year == 8 # two World Cup cycles apart (every 4 years)'
+  - 'temporal_5.year - temporal_4.year == 20 # fixed gap between 1999 and 2019 tournaments'
+  - 'temporal_4.year - temporal_3.year == 4 # one World Cup cycle apart'
+  - 'temporal_2.year - temporal_5.year == 4 # one World Cup cycle apart'
+  - 'temporal_6.year - temporal_2.year == 4 # one World Cup cycle apart'
+  - 'temporal_8.year - temporal_2.year == 2 # Women''s RWC two years after 2023 men''s tournament'
+  num_questions: 12
+  questions:
+  - question_id: sport_13_q01
+    question: Which country hosted the [2023; temporal_2.year] [Rugby World Cup; event_2.name]?
+    question_type: extractive
+    answer: place_6.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [France; place_6.country] hosted the [2023; temporal_2.year] Rugby World Cup.
+  - question_id: sport_13_q02
+    question: How many countries have won the [Men's Rugby World Cup; event_1.name] trophy according to the document?
+    question_type: extractive
+    answer: four
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states 'Four countries have won the trophy' and then lists them.
+  - question_id: sport_13_q03
+    question: In which city was the final of the [2023; temporal_2.year] [Rugby World Cup; event_2.name] held?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [France; place_6.country] hosted the [2023; temporal_2.year] Rugby World Cup.
+    - 2. The document does not specify any city name for any tournament venue or final location.
+    - 3. Therefore, the city where the final took place cannot be determined from the document.
+  - question_id: sport_13_q04
+    question: How many more teams will participate in the [2027; temporal_6.year] tournament compared to the number that participated from [1987; temporal_1.year] until [1995; temporal_3.year]?
+    question_type: arithmetic
+    answer: number_3.str - number_1.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Sixteen; number_1.str] teams participated from [1987; temporal_1.year] until [1995; temporal_3.year].
+    - 2. The document states the tournament will expand to [twenty-four; number_3.str] teams in [2027; temporal_6.year].
+    - 3. The difference is [twenty-four; number_3.str] minus [Sixteen; number_1.str].
+  - question_id: sport_13_q05
+    question: What is the total number of [Rugby World Cup; event_2.name] victories assigned across the four trophy-winning countries listed in the document?
+    question_type: arithmetic
+    answer: '10'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document gives the four listed trophy winners totals of four, three, two, and one victories.
+    - 2. Adding the stable counts gives 4 + 3 + 2 + 1 = 10 victories.
+  - question_id: sport_13_q06
+    question: How many total matches were played across all [Rugby World Cup; event_2.name] tournaments from [1987; temporal_1.year] to [2023; temporal_2.year]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides the number of participating teams in various eras but does not state how many matches were played in any tournament.
+    - 2. The document contains no match count data whatsoever, so this arithmetic question cannot be answered from the document.
+  - question_id: sport_13_q07
+    question: How many years after the first [Rugby World Cup; event_2.name] was held did the tournament expand to [twenty; number_2.str] teams?
+    question_type: temporal
+    answer: temporal_4.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The first tournament was held in [1987; temporal_1.year].
+    - 2. The tournament expanded to [twenty; number_2.str] teams in [1999; temporal_4.year].
+    - 3. The difference is [1999; temporal_4.year] minus [1987; temporal_1.year].
+  - question_id: sport_13_q08
+    question: According to the tournament schedule stated in the document, how many years normally separate consecutive [Men's Rugby World Cup; event_1.name]?
+    question_type: temporal
+    answer: '4'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the tournament is contested every four years.
+    - 2. Therefore, consecutive scheduled tournaments are normally four years apart.
+  - question_id: sport_13_q09
+    question: In what year was [William Webb Ellis; person_1.full_name] born?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [William Webb Ellis; person_1.full_name] as the person after whom the trophy is named.
+    - 2. A search of the entire document confirms that no birth date, birth year, or any other biographical date is provided for [William Webb Ellis; person_1.full_name].
+    - 3. Therefore, the birth year cannot be determined from the document.
+  - question_id: sport_13_q10
+    question: Which country has won the [Men's Rugby World Cup; event_1.name] trophy exactly once, making it the least successful among all the nations that have ever won the tournament?
+    question_type: inference
+    answer: place_4.country
+    answer_type: variant
+    reasoning_chain:
+    - '1. The document lists four countries that have won the trophy and their win counts: [South Africa; place_3.country] four times, [New Zealand; place_1.country] three times, [Australia; place_2.country] twice, and [England; place_4.country] once.'
+    - 2. Comparing these counts, [England; place_4.country] with one win is the least successful winner.
+  - question_id: sport_13_q11
+    question: Given that the document describes a country that both co-hosted the inaugural tournament and lost the most recent final, what role does that country occupy in the tournament — is it primarily a host, a winner, or both?
+    question_type: inference
+    answer: both
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states [New Zealand; place_1.country] co-hosted the first tournament in [1987; temporal_1.year], establishing it as a host.
+    - 2. The document also states [New Zealand; place_1.country] has won the trophy three times, establishing it as a winner.
+    - 3. Since [New Zealand; place_1.country] has served as both a host and a multiple-time winner, the answer is 'both.'
+  - question_id: sport_13_q12
+    question: Given that [South Africa; place_3.country] has won the trophy four times, can we determine whether [South Africa; place_3.country] has ever hosted the [Rugby World Cup; event_2.name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists [South Africa; place_3.country] as the most successful team with four wins and as the current champion.
+    - 2. The document names specific hosts for the inaugural tournament ([New Zealand; place_1.country] and [Australia; place_2.country]), the [2019; temporal_5.year] tournament ([Japan; place_5.country]), the [2023; temporal_2.year] tournament ([France; place_6.country]), and the upcoming [2027; temporal_6.year] tournament ([Australia; place_2.country]).
+    - 3. The document does not provide a complete list of all hosts, and [South Africa; place_3.country] is not mentioned as a host in any edition covered, so it cannot be determined from the document whether [South Africa; place_3.country] has ever hosted.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 14
+    factual_value: 4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1968
+    upper_bound: 2006
+    factual_value: 1987
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 13
+    upper_bound: 19
+    factual_value: 16
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1976
+    upper_bound: 2014
+    factual_value: 1995
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1980
+    upper_bound: 2018
+    factual_value: 1999
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.str
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_3.str
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2007
+    upper_bound: 2026
+    factual_value: 2027
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The Men''s Rugby World Cup is a rugby union tournament contested every four years between the top international teams, the winners of which are recognized as the world champions of the sport.
+
+
+    The tournament is administered by [Global Tacklesport Council; government_org_1.name], the sport''s international governing body. The winners are awarded the [Torven Halcross Trophy; award_1.name], named after [Tarvon Quellis Braeth; person_1.full_name] who, according to a popular legend, invented rugby by picking up the ball during a football game and running with it.
+
+
+    The tournament was first held in [1968; temporal_1.year] and was co-hosted by [Velorinth; place_1.country] and [Haldroven; place_2.country]. Four countries have won the trophy; [Rendovask; place_3.country] four times, [Velorinth; place_1.country] three times, [Haldroven; place_2.country] twice, and [Quiltharen; place_4.country] once. [Rendovask; place_3.country] is the current champion, having defeated [Velorinth; place_1.country] in the final of the [2022; temporal_2.year] tournament.
+
+
+    [Fifteen; number_1.str] teams participated in the tournament from [1968; temporal_1.year] until [1994; temporal_3.year]; in [1998; temporal_4.year], the tournament expanded to [seventeen; number_2.str] teams. [Telvondrik; place_5.country] hosted the [2018; temporal_5.year] Rugby World Cup and [Ornthevald; place_6.country] hosted the [2022; temporal_2.year] Rugby World Cup. The tournament will expand again to [twenty; number_3.str] teams when it is held in [Haldroven; place_2.country] in [2026; temporal_6.year].
+
+
+    Starting in [2020; temporal_7.year], the women''s equivalent tournament was officially renamed the Rugby World Cup to promote equality with the men''s tournament. However, the [2020; temporal_7.year] event was the only one to use this naming convention as at the end of the [2022; temporal_2.year] World Cup, [Global Tacklesport Council; government_org_1.name] announced that all future tournaments would include the words "Men''s" or "Women''s" in their titles. The first event to use this convention was the [2024; temporal_8.year] Women''s Rugby World Cup, while the [2026; temporal_6.year] Men''s Rugby World Cup will be the first to include "Men''s" in its title.'
+metadata:
+  status: completed

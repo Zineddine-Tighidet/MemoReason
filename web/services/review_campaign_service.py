@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import random
 import re
 import shutil
@@ -12,8 +13,12 @@ from typing import Any
 
 import yaml
 
-from src.dataset_export.dataset_paths import HUMAN_ANNOTATED_TEMPLATES_DIR, iter_template_paths, resolve_template_identity
-from src.core.annotation_runtime import (
+from memoreason.factual_to_fictional_dataset.dataset_paths import (
+    HUMAN_ANNOTATED_TEMPLATES_DIR,
+    iter_template_paths,
+    resolve_template_identity,
+)
+from memoreason.benchmark_definition.annotation_runtime import (
     AnnotationParser,
     compose_rule_text,
     normalize_document_taxonomy,
@@ -23,6 +28,7 @@ from src.core.annotation_runtime import (
 )
 from web.services import yaml_service
 from web.services.db import get_db
+from web.services.perf_logging import PerfTimer
 from web.services.persistence import (
     delete_work_prefix_from_gcs,
     restore_state_from_gcs,
@@ -37,7 +43,7 @@ REVIEW_SOURCE_ROOT = yaml_service.WORK_DIR / "_review_sources"
 REVIEW_CAMPAIGN_ROOT = yaml_service.WORK_DIR / "_review_campaigns"
 RULE_REVIEW_EXCLUDED_THEMES: frozenset[str] = frozenset({"public_attacks_news_articles"})
 RULE_REVIEW_AUTO_RESOLVED_THEMES: frozenset[str] = frozenset({"public_attacks_news_articles"})
-QUESTION_REVIEW_EXCLUDED_THEMES: frozenset[str] = frozenset({"public_attacks_news_articles"})
+QUESTION_REVIEW_EXCLUDED_THEMES: frozenset[str] = frozenset()
 ALLOWED_REVIEW_FEEDBACK_RESPONSE_STATUSES: tuple[str, ...] = ("accepted", "contest_requested")
 QUESTION_EXPERIMENT_GROUP_LABELS: dict[str, str] = {
     "ai_drafted_qas": "AI drafted QAs",
@@ -51,7 +57,23 @@ QUESTION_REVIEW_REQUIRED_TYPES: tuple[str, ...] = ("extractive", "arithmetic", "
 QUESTION_REVIEW_REQUIRED_ANSWER_TYPES: tuple[str, ...] = ("variant", "invariant", "refusal")
 QUESTION_REVIEW_REFUSAL_ANSWER_LITERAL = "Cannot be determined"
 QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD = "qa_coverage_exemptions"
+FOCUSED_INFERENCE_QA_CAMPAIGN_NAME = "Inference QA validation 2026-06-16"
 INLINE_ANNOTATION_PATTERN = re.compile(r"\[([^\]]+);\s*([^\]]+)\]")
+
+
+def _combined_review_doc_keys() -> set[tuple[str, str]]:
+    keys: set[tuple[str, str]] = set()
+    for entry in os.getenv("COMBINED_REVIEW_ASSIGNMENTS", "").split(","):
+        parts = [part.strip() for part in entry.split(":", 2)]
+        if len(parts) != 3:
+            continue
+        _username, theme, doc_id = parts
+        canonical_theme = yaml_service.canonical_theme_id(theme)
+        if canonical_theme and doc_id:
+            keys.add((canonical_theme, doc_id))
+    return keys
+
+
 MERGEABLE_EQUALITY_RULE_PATTERN = re.compile(
     r"^\s*([A-Za-z][A-Za-z0-9_]*\.[A-Za-z][A-Za-z0-9_]*)\s*==\s*([A-Za-z][A-Za-z0-9_]*\.[A-Za-z][A-Za-z0-9_]*)\s*$"
 )
@@ -634,16 +656,23 @@ def _align_question_annotation_surfaces_with_document(document: dict[str, Any]) 
     document["num_questions"] = len(normalized_questions)
 
 
-def _normalize_question_review_coverage_exemptions(raw_exemptions: Any) -> list[dict[str, str]]:
+def _normalize_question_review_coverage_exemptions(
+    raw_exemptions: Any,
+    *,
+    covered_pairs: set[tuple[str, str]] | None = None,
+) -> list[dict[str, str]]:
     if not isinstance(raw_exemptions, list):
         return []
     normalized_rows: list[dict[str, str]] = []
     seen: set[tuple[str, str]] = set()
+    covered_pairs = covered_pairs or set()
     for item in raw_exemptions:
         if not isinstance(item, dict):
             continue
         question_type = _normalize_question_type(item.get("question_type"))
         answer_type = _normalize_answer_type(item.get("answer_type"))
+        if (question_type, answer_type) in covered_pairs:
+            continue
         if (question_type, answer_type) in seen:
             continue
         justification = str(item.get("justification") or "").strip()
@@ -668,6 +697,22 @@ def _required_question_review_pairs() -> set[tuple[str, str]]:
     }
 
 
+def _question_review_covered_pairs(questions: list[dict[str, Any]]) -> set[tuple[str, str]]:
+    covered_pairs: set[tuple[str, str]] = set()
+    for question in questions:
+        if not isinstance(question, dict):
+            continue
+        question_text = str(question.get("question") or "").strip()
+        answer_type = _normalize_answer_type(question.get("answer_type"))
+        answer_text = str(question.get("answer") or "").strip()
+        if not question_text:
+            continue
+        if not answer_text and answer_type != "refusal":
+            continue
+        covered_pairs.add((_normalize_question_type(question.get("question_type")), answer_type))
+    return covered_pairs
+
+
 def _is_question_review_draft_source_label(source_label: Any) -> bool:
     normalized = str(source_label or "").strip().lower()
     if not normalized:
@@ -677,8 +722,10 @@ def _is_question_review_draft_source_label(source_label: Any) -> bool:
 
 def _question_review_submission_contract_errors(document: dict[str, Any]) -> list[str]:
     questions = _normalize_question_review_questions(document.get("questions"))
+    covered_pairs = _question_review_covered_pairs(questions)
     exemptions = _normalize_question_review_coverage_exemptions(
-        document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD)
+        document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD),
+        covered_pairs=covered_pairs,
     )
     required_pairs = _required_question_review_pairs()
     max_question_count = len(required_pairs)
@@ -720,15 +767,6 @@ def _question_review_submission_contract_errors(document: dict[str, Any]) -> lis
         )
 
     exemption_pairs = {(row["question_type"], row["answer_type"]) for row in exemptions}
-    covered_pairs = {
-        (str(question.get("question_type") or "").strip().lower(), str(question.get("answer_type") or "").strip().lower())
-        for question in questions
-        if str(question.get("question") or "").strip()
-        and (
-            str(question.get("answer") or "").strip()
-            or str(question.get("answer_type") or "").strip().lower() == "refusal"
-        )
-    }
     missing_pairs = sorted(required_pairs - covered_pairs - exemption_pairs)
     if missing_pairs:
         labels = ", ".join(f"{question_type}/{answer_type}" for question_type, answer_type in missing_pairs)
@@ -749,10 +787,87 @@ def _normalize_question_review_document(document: dict[str, Any]) -> dict[str, A
     normalized_document = normalize_document_taxonomy(dict(document or {}))
     normalized_document["questions"] = _normalize_question_review_questions(normalized_document.get("questions"))
     normalized_document["num_questions"] = len(normalized_document["questions"])
+    covered_pairs = _question_review_covered_pairs(normalized_document["questions"])
     normalized_document[QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD] = _normalize_question_review_coverage_exemptions(
-        normalized_document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD)
+        normalized_document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD),
+        covered_pairs=covered_pairs,
     )
     return normalized_document
+
+
+def _is_focused_inference_qa_campaign(campaign_name: Any) -> bool:
+    return str(campaign_name or "").strip() == FOCUSED_INFERENCE_QA_CAMPAIGN_NAME
+
+
+def is_focused_inference_qa_campaign(campaign_name: Any) -> bool:
+    return _is_focused_inference_qa_campaign(campaign_name)
+
+
+def _filter_focused_inference_qa_document(document: dict[str, Any]) -> dict[str, Any]:
+    if not isinstance(document, dict):
+        return document
+    filtered = dict(document)
+    questions = _normalize_question_review_questions(filtered.get("questions"))
+    filtered["questions"] = [
+        question
+        for question in questions
+        if _normalize_question_type(question.get("question_type")) == "inference"
+        and _normalize_answer_type(question.get("answer_type")) == "invariant"
+    ]
+    filtered["num_questions"] = len(filtered["questions"])
+    existing_exemptions: dict[tuple[str, str], str] = {}
+    for item in filtered.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD) or []:
+        if not isinstance(item, dict):
+            continue
+        pair = (
+            _normalize_question_type(item.get("question_type")),
+            _normalize_answer_type(item.get("answer_type")),
+        )
+        justification = str(item.get("justification") or "").strip()
+        if justification:
+            existing_exemptions[pair] = justification
+
+    out_of_scope = (
+        "Out of scope for this focused validation campaign; "
+        "only the invariant inference question is reviewed."
+    )
+    focused_pair = ("inference", "invariant")
+    filtered[QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD] = [
+        {
+            "question_type": question_type,
+            "answer_type": answer_type,
+            "justification": existing_exemptions.get((question_type, answer_type)) or out_of_scope,
+        }
+        for question_type in QUESTION_REVIEW_REQUIRED_TYPES
+        for answer_type in QUESTION_REVIEW_REQUIRED_ANSWER_TYPES
+        if (question_type, answer_type) != focused_pair
+    ]
+    return filtered
+
+
+def _coerce_question_review_document_to_factual_surface(
+    document: dict[str, Any],
+    theme: str,
+    doc_id: str,
+) -> dict[str, Any]:
+    """Render QA review documents on the factual annotated surface.
+
+    Some historical QA snapshots were created while the review source still used
+    the fictionalized annotated text as the primary editable surface. The QA
+    references are still useful, but reviewers should see factual entity names.
+    """
+    if not isinstance(document, dict):
+        return document
+    factual_text = _load_factual_question_document_text(theme, doc_id)
+    if not factual_text:
+        return document
+    coerced = dict(document)
+    current_text = str(coerced.get("document_to_annotate") or "").strip()
+    fictionalized_text = str(coerced.get("fictionalized_annotated_template_document") or "").strip()
+    if not current_text or current_text == fictionalized_text or " Nova;" in current_text or " Nova]" in current_text:
+        coerced["document_to_annotate"] = factual_text
+    _align_question_annotation_surfaces_with_document(coerced)
+    return coerced
 
 
 def _question_review_document_has_sampleable_questions(document: dict[str, Any] | None) -> bool:
@@ -933,6 +1048,9 @@ def _is_excluded_from_review_campaign(review_type: str, theme: str) -> bool:
 
 
 def _is_excluded_from_review_campaign_doc(review_type: str, theme: str, doc_id: str) -> bool:
+    canonical_key = (yaml_service.canonical_theme_id(theme), str(doc_id))
+    if canonical_key in _combined_review_doc_keys():
+        return False
     if _is_excluded_from_review_campaign(review_type, theme):
         return True
     return yaml_service.is_excluded_document(theme, doc_id)
@@ -1245,9 +1363,24 @@ def _publish_review_fields_to_admin_workspace(
         else:
             admin_document.pop("implicit_rule_exclusions", None)
     else:
+        for field_name in (
+            "document_id",
+            "document_theme",
+            "original_document",
+            "document_to_annotate",
+            "fictionalized_annotated_template_document",
+        ):
+            if field_name in template_document:
+                admin_document[field_name] = template_document.get(field_name)
+        if "relations" in template_document:
+            admin_document["relations"] = list(template_document.get("relations") or [])
         questions = list(template_document.get("questions") or [])
         admin_document["questions"] = questions
         admin_document["num_questions"] = len(questions)
+        admin_document[QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD] = _normalize_question_review_coverage_exemptions(
+            template_document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD),
+            covered_pairs=_question_review_covered_pairs(_normalize_question_review_questions(questions)),
+        )
 
     _write_yaml(admin_path, admin_payload)
     return True
@@ -1341,7 +1474,50 @@ def _publish_review_fields_to_latest_final_snapshot(
             final_document["num_questions"] = len(questions)
         elif isinstance(final_document.get("questions"), list):
             final_document["num_questions"] = len(final_document.get("questions") or [])
+        final_document[QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD] = list(
+            template_document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD)
+            if isinstance(template_document.get(QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD), list)
+            else []
+        )
         _align_question_annotation_surfaces_with_document(final_document)
+        final_document = _normalize_question_review_document(final_document)
+        _align_question_annotation_surfaces_with_document(final_document)
+
+    campaign_snapshot_written = False
+    try:
+        db = get_db()
+        campaign = get_active_review_campaign(normalized_type, db=db)
+        if campaign is not None:
+            campaign_row = db.execute(
+                """
+                SELECT final_snapshot_path
+                FROM review_campaign_agreements
+                WHERE campaign_id = ?
+                  AND review_type = ?
+                  AND theme = ?
+                  AND doc_id = ?
+                LIMIT 1
+                """,
+                (
+                    int(campaign["id"]),
+                    normalized_type,
+                    yaml_service.canonical_theme_id(theme),
+                    str(doc_id),
+                ),
+            ).fetchone()
+            raw_campaign_path = str(campaign_row["final_snapshot_path"] or "").strip() if campaign_row else ""
+            campaign_snapshot_path = _resolve_review_storage_path(raw_campaign_path) if raw_campaign_path else None
+            if campaign_snapshot_path is not None:
+                if not campaign_snapshot_path.exists():
+                    restore_work_file_from_gcs(campaign_snapshot_path)
+                campaign_snapshot_payload = _load_yaml(campaign_snapshot_path) if campaign_snapshot_path.exists() else {}
+                if not isinstance(campaign_snapshot_payload, dict):
+                    campaign_snapshot_payload = {}
+                campaign_snapshot_payload["document"] = final_document
+                _write_yaml(campaign_snapshot_path, campaign_snapshot_payload)
+                campaign_snapshot_written = True
+    except Exception:
+        campaign_snapshot_written = False
 
     if persisted_via_workflow:
         workflow_service.save_latest_final_snapshot_from_document(
@@ -1352,7 +1528,7 @@ def _publish_review_fields_to_latest_final_snapshot(
         )
     else:
         if fallback_snapshot_path is None:
-            return False
+            return campaign_snapshot_written
         payload_to_write = fallback_snapshot_payload if isinstance(fallback_snapshot_payload, dict) else {}
         payload_to_write["document"] = final_document
         _write_yaml(fallback_snapshot_path, payload_to_write)
@@ -1683,19 +1859,46 @@ def _refresh_active_untouched_in_progress_review_task_inputs(
     return {"refreshed": refreshed, "skipped_protected": skipped_protected}
 
 
-def _add_document_to_active_review_campaign_if_missing(
+def add_document_to_review_campaign_if_missing(
+    campaign_id: int,
     review_type: str,
     *,
     theme: str,
     doc_id: str,
     template_payload: dict[str, Any],
+    assignee_username: str | None = None,
+    sync_remote_db: bool = True,
 ) -> int:
-    """Add a new review task to the active campaign when this document is not yet queued."""
+    """Add one document to a specific active campaign when it is not yet queued."""
     normalized_type = _validate_review_type(review_type)
     db = get_db()
-    campaign = get_active_review_campaign(normalized_type, db=db)
+    campaign = get_review_campaign_by_id(int(campaign_id), normalized_type, db=db)
     if campaign is None:
-        return 0
+        raise ValueError(f"Unknown {normalized_type} review campaign: {int(campaign_id)}")
+    if str(campaign.get("status") or "") != "active":
+        raise ValueError(f"Review campaign {int(campaign_id)} is not active.")
+
+    assignee_user_id = int(campaign["created_by_user_id"])
+    initial_assignee_user_id: int | None = None
+    if assignee_username:
+        assignee = db.execute(
+            """
+            SELECT u.id
+            FROM review_campaign_reviewers r
+            JOIN users u ON u.id = r.user_id
+            WHERE r.campaign_id = ?
+              AND u.username = ?
+              AND u.role = 'regular_user'
+            LIMIT 1
+            """,
+            (int(campaign_id), str(assignee_username)),
+        ).fetchone()
+        if assignee is None:
+            raise ValueError(
+                f"Reviewer {assignee_username!r} is not a participant in campaign {int(campaign_id)}."
+            )
+        assignee_user_id = int(assignee["id"])
+        initial_assignee_user_id = assignee_user_id
 
     existing = db.execute(
         """
@@ -1707,13 +1910,13 @@ def _add_document_to_active_review_campaign_if_missing(
           AND doc_id = ?
         LIMIT 1
         """,
-        (int(campaign["id"]), normalized_type, str(theme), str(doc_id)),
+        (int(campaign_id), normalized_type, str(theme), str(doc_id)),
     ).fetchone()
     if existing is not None:
         return 0
 
     now = _utc_now()
-    input_path = _campaign_input_path(int(campaign["id"]), normalized_type, str(theme), str(doc_id))
+    input_path = _campaign_input_path(int(campaign_id), normalized_type, str(theme), str(doc_id))
     _write_yaml(input_path, template_payload)
 
     task_cursor = db.execute(
@@ -1724,20 +1927,22 @@ def _add_document_to_active_review_campaign_if_missing(
             theme,
             doc_id,
             assignee_user_id,
+            initial_assignee_user_id,
             status,
             input_snapshot_path,
             output_snapshot_path,
             assigned_at,
             updated_at
         )
-        VALUES (?, ?, ?, ?, ?, 'available', ?, NULL, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, 'available', ?, NULL, ?, ?)
         """,
         (
-            int(campaign["id"]),
+            int(campaign_id),
             normalized_type,
             str(theme),
             str(doc_id),
-            int(campaign["created_by_user_id"]),
+            assignee_user_id,
+            initial_assignee_user_id,
             str(input_path),
             now,
             now,
@@ -1753,8 +1958,30 @@ def _add_document_to_active_review_campaign_if_missing(
         db=db,
     )
     db.commit()
-    sync_db_to_gcs()
+    if sync_remote_db:
+        sync_db_to_gcs()
     return 1
+
+
+def _add_document_to_active_review_campaign_if_missing(
+    review_type: str,
+    *,
+    theme: str,
+    doc_id: str,
+    template_payload: dict[str, Any],
+) -> int:
+    """Add a new review task to the latest active campaign when it is not yet queued."""
+    normalized_type = _validate_review_type(review_type)
+    campaign = get_active_review_campaign(normalized_type)
+    if campaign is None:
+        return 0
+    return add_document_to_review_campaign_if_missing(
+        int(campaign["id"]),
+        normalized_type,
+        theme=theme,
+        doc_id=doc_id,
+        template_payload=template_payload,
+    )
 
 
 def review_source_path(review_type: str, theme: str, doc_id: str) -> Path:
@@ -1870,6 +2097,12 @@ def _build_question_experiment_groups(campaign_id: int, user_id: int, db) -> lis
         current_assignee_user_id = int(row.get("assignee_user_id") or 0)
         if reviewer_submitted:
             display_status = "submitted"
+        elif live_status == "completed":
+            # Some review tasks are accepted from the final publication
+            # template without claiming that the originally assigned reviewer
+            # submitted them. Keep that provenance distinction while still
+            # reporting the task as complete in the interface.
+            display_status = "completed"
         elif live_status == "in_progress" and current_assignee_user_id == int(user_id):
             display_status = "in_progress"
         elif live_status == "available" and current_assignee_user_id == int(user_id):
@@ -1899,7 +2132,11 @@ def _build_question_experiment_groups(campaign_id: int, user_id: int, db) -> lis
     groups.sort(key=lambda item: QUESTION_EXPERIMENT_GROUP_SORT_ORDER.get(str(item.get("key") or ""), 999))
     for group in groups:
         group["total_count"] = len(group["items"])
-        group["completed_count"] = sum(1 for item in group["items"] if str(item.get("status")) == "submitted")
+        group["completed_count"] = sum(
+            1
+            for item in group["items"]
+            if str(item.get("status")) in {"submitted", "completed"}
+        )
         group["remaining_count"] = max(0, int(group["total_count"]) - int(group["completed_count"]))
     return groups
 
@@ -1939,57 +2176,70 @@ def _prepare_template_payload_for_review(review_type: str, template_payload: dic
 
     normalized_document = normalize_document_taxonomy(document)
     if normalized_type == "questions":
-        fictionalized_text = str(
-            normalized_document.get("fictionalized_annotated_template_document") or ""
-        ).strip()
-        if fictionalized_text:
-            # Question review should use the same fictionalized annotated text that
-            # the QA generator used, so the questions and the displayed document stay aligned.
-            normalized_document["document_to_annotate"] = fictionalized_text
+        _align_question_annotation_surfaces_with_document(normalized_document)
+        normalized_document = _normalize_question_review_document(normalized_document)
+        _align_question_annotation_surfaces_with_document(normalized_document)
     cloned["document"] = normalized_document
     return cloned
 
 
-def _eligible_review_doc_keys(review_type: str, db=None) -> set[tuple[str, str]] | None:
+def _eligible_review_doc_keys(
+    review_type: str,
+    db=None,
+    *,
+    theme_progress: dict[str, Any] | None = None,
+) -> set[tuple[str, str]] | None:
     normalized_type = _validate_review_type(review_type)
     if normalized_type == "questions":
+        timer = PerfTimer("eligible_review_doc_keys", review_type=normalized_type)
         eligible: set[tuple[str, str]] = set()
-        restore_worktree_from_gcs()
-        for path in _iter_review_source_files(normalized_type):
-            theme = yaml_service.canonical_theme_id(path.parent.name)
-            doc_id = path.stem
-            if not theme or not doc_id:
-                continue
-            if _is_excluded_from_review_campaign_doc(normalized_type, theme, doc_id):
-                continue
-            if _question_review_snapshot_has_sampleable_questions(path):
-                eligible.add((theme, doc_id))
-        if db is None:
-            db = get_db()
-        active_campaign = get_active_review_campaign(normalized_type, db=db)
-        if active_campaign is not None:
-            task_rows = db.execute(
-                """
-                SELECT theme, doc_id, input_snapshot_path, output_snapshot_path
-                FROM review_campaign_tasks
-                WHERE campaign_id = ?
-                  AND review_type = ?
-                  AND status IN ('available', 'in_progress')
-                ORDER BY id ASC
-                """,
-                (int(active_campaign["id"]), normalized_type),
-            ).fetchall()
-            for row in task_rows:
-                theme = yaml_service.canonical_theme_id(str(row["theme"] or ""))
-                doc_id = str(row["doc_id"] or "").strip()
-                if not theme or not doc_id:
-                    continue
-                if _is_excluded_from_review_campaign_doc(normalized_type, theme, doc_id):
-                    continue
-                candidate_path = row["output_snapshot_path"] or row["input_snapshot_path"]
-                if _question_review_snapshot_has_sampleable_questions(candidate_path):
-                    eligible.add((theme, doc_id))
-        return eligible
+        try:
+            with timer.step("restore_worktree"):
+                restore_worktree_from_gcs()
+            with timer.step("scan_review_sources"):
+                source_count = 0
+                for path in _iter_review_source_files(normalized_type):
+                    source_count += 1
+                    theme = yaml_service.canonical_theme_id(path.parent.name)
+                    doc_id = path.stem
+                    if not theme or not doc_id:
+                        continue
+                    if _is_excluded_from_review_campaign_doc(normalized_type, theme, doc_id):
+                        continue
+                    if _question_review_snapshot_has_sampleable_questions(path):
+                        eligible.add((theme, doc_id))
+                timer.add_field("source_files", source_count)
+            if db is None:
+                db = get_db()
+            active_campaign = get_active_review_campaign(normalized_type, db=db)
+            if active_campaign is not None:
+                with timer.step("scan_active_campaign_tasks"):
+                    task_rows = db.execute(
+                        """
+                        SELECT theme, doc_id, input_snapshot_path, output_snapshot_path
+                        FROM review_campaign_tasks
+                        WHERE campaign_id = ?
+                          AND review_type = ?
+                          AND status IN ('available', 'in_progress')
+                        ORDER BY id ASC
+                        """,
+                        (int(active_campaign["id"]), normalized_type),
+                    ).fetchall()
+                    timer.add_field("task_rows", len(task_rows))
+                    for row in task_rows:
+                        theme = yaml_service.canonical_theme_id(str(row["theme"] or ""))
+                        doc_id = str(row["doc_id"] or "").strip()
+                        if not theme or not doc_id:
+                            continue
+                        if _is_excluded_from_review_campaign_doc(normalized_type, theme, doc_id):
+                            continue
+                        candidate_path = row["output_snapshot_path"] or row["input_snapshot_path"]
+                        if _question_review_snapshot_has_sampleable_questions(candidate_path):
+                            eligible.add((theme, doc_id))
+            timer.add_field("eligible_count", len(eligible))
+            return eligible
+        finally:
+            timer.emit()
     if normalized_type != "rules":
         return None
     if db is None:
@@ -2003,7 +2253,7 @@ def _eligible_review_doc_keys(review_type: str, db=None) -> set[tuple[str, str]]
 
     has_active_run = workflow_service.get_active_run(db) is not None
 
-    progress = yaml_service.get_theme_progress(db=db)
+    progress = theme_progress if isinstance(theme_progress, dict) else yaml_service.get_theme_progress(db=db)
     themes = progress.get("themes") if isinstance(progress, dict) else None
     if not isinstance(themes, list):
         return None
@@ -2102,6 +2352,8 @@ def prepare_review_source_documents(
     overwrite: bool = False,
     replace_existing: bool = False,
     respect_workflow_eligibility: bool = True,
+    pull_remote_first: bool = True,
+    add_to_active_campaign: bool = True,
 ) -> dict[str, int]:
     """Copy completed templates into the synced review-source workspace."""
     normalized_type = _validate_review_type(review_type)
@@ -2117,13 +2369,12 @@ def prepare_review_source_documents(
     skipped = 0
     review_root = REVIEW_SOURCE_ROOT / normalized_type
 
-    restore_worktree_from_gcs()
+    if pull_remote_first:
+        restore_worktree_from_gcs()
     db = get_db()
     eligible_doc_keys = (
         _eligible_review_doc_keys(normalized_type, db=db)
-        if normalized_type != "questions"
-        else None
-        if respect_workflow_eligibility
+        if respect_workflow_eligibility and normalized_type != "questions"
         else None
     )
     template_paths = list(iter_template_paths(themes=themes, document_ids=doc_ids))
@@ -2188,12 +2439,13 @@ def prepare_review_source_documents(
         except Exception:
             # Do not block review-source syncing if in-progress task refresh fails.
             pass
-        added_to_active_campaign += _add_document_to_active_review_campaign_if_missing(
-            normalized_type,
-            theme=theme,
-            doc_id=document_id,
-            template_payload=payload,
-        )
+        if add_to_active_campaign:
+            added_to_active_campaign += _add_document_to_active_review_campaign_if_missing(
+                normalized_type,
+                theme=theme,
+                doc_id=document_id,
+                template_payload=payload,
+            )
         dst_path = review_source_path(normalized_type, theme, document_id)
         if dst_path.exists() and not overwrite:
             skipped += 1
@@ -2411,6 +2663,97 @@ def get_active_review_campaign(review_type: str, db=None) -> dict[str, Any] | No
         (normalized_type,),
     ).fetchone()
     return dict(row) if row else None
+
+
+def get_review_campaign_by_id(
+    campaign_id: int,
+    review_type: str | None = None,
+    *,
+    db=None,
+) -> dict[str, Any] | None:
+    if db is None:
+        db = get_db()
+    params: list[Any] = [int(campaign_id)]
+    query = "SELECT * FROM review_campaigns WHERE id = ?"
+    if review_type:
+        query += " AND review_type = ?"
+        params.append(_validate_review_type(review_type))
+    row = db.execute(query, params).fetchone()
+    return dict(row) if row else None
+
+
+def get_review_campaign_catalog(review_type: str, *, db=None) -> dict[str, Any]:
+    normalized_type = _validate_review_type(review_type)
+    if db is None:
+        db = get_db()
+    rows = db.execute(
+        """
+        SELECT
+            c.id,
+            c.name,
+            c.review_type,
+            c.seed,
+            c.status,
+            c.created_at,
+            u.username AS created_by
+        FROM review_campaigns c
+        LEFT JOIN users u ON u.id = c.created_by_user_id
+        WHERE c.review_type = ?
+        ORDER BY
+            CASE c.status
+                WHEN 'active' THEN 0
+                WHEN 'paused' THEN 1
+                ELSE 2
+            END ASC,
+            c.id DESC
+        """,
+        (normalized_type,),
+    ).fetchall()
+    campaign_ids = [int(row["id"]) for row in rows]
+    document_counts: dict[int, int] = {}
+    if campaign_ids:
+        placeholders = ",".join("?" for _ in campaign_ids)
+        count_rows = db.execute(
+            f"""
+            SELECT campaign_id, COUNT(*) AS document_count
+            FROM (
+                SELECT campaign_id, theme, doc_id
+                FROM review_campaign_tasks
+                WHERE campaign_id IN ({placeholders})
+                UNION
+                SELECT campaign_id, theme, doc_id
+                FROM review_campaign_submissions
+                WHERE campaign_id IN ({placeholders})
+                UNION
+                SELECT campaign_id, theme, doc_id
+                FROM review_campaign_agreements
+                WHERE campaign_id IN ({placeholders})
+            ) campaign_documents
+            GROUP BY campaign_id
+            """,
+            (*campaign_ids, *campaign_ids, *campaign_ids),
+        ).fetchall()
+        document_counts = {
+            int(row["campaign_id"]): int(row["document_count"] or 0)
+            for row in count_rows
+        }
+
+    return {
+        "review_type": normalized_type,
+        "campaigns": [
+            {
+                "id": int(row["id"]),
+                "name": str(row["name"]),
+                "review_type": str(row["review_type"]),
+                "seed": int(row["seed"]),
+                "status": str(row["status"]),
+                "created_at": str(row["created_at"]),
+                "created_by": str(row["created_by"] or ""),
+                "document_count": int(document_counts.get(int(row["id"]), 0)),
+            }
+            for row in rows
+        ],
+    }
 
 
 def _preferred_review_campaign_for_document(
@@ -3136,9 +3479,14 @@ def _normalize_review_feedback_state_from_row(
     row_dict: dict[str, Any],
     *,
     force_reviewer_acceptance: bool | None = None,
+    include_diffs: bool = True,
 ) -> dict[str, Any]:
     normalized_type = _validate_review_type(review_type)
-    final_doc = _load_review_feedback_document(row_dict.get("final_snapshot_path"))
+    final_doc = (
+        _load_review_feedback_document(row_dict.get("final_snapshot_path"))
+        if include_diffs
+        else {}
+    )
     stored_requires_acceptance = bool(int(row_dict.get("requires_reviewer_acceptance") or 0))
 
     reviewer_states: dict[str, dict[str, Any]] = {}
@@ -3154,9 +3502,13 @@ def _normalize_review_feedback_state_from_row(
         if reviewer_user_id is None or not reviewer_snapshot_path:
             continue
 
-        initial_doc = _load_review_feedback_document(reviewer_snapshot_path)
-        diff = _build_review_feedback_diff(normalized_type, initial_doc, final_doc)
-        requires_acceptance = _review_feedback_diff_requires_acceptance(normalized_type, diff)
+        if include_diffs:
+            initial_doc = _load_review_feedback_document(reviewer_snapshot_path)
+            diff = _build_review_feedback_diff(normalized_type, initial_doc, final_doc)
+            requires_acceptance = _review_feedback_diff_requires_acceptance(normalized_type, diff)
+        else:
+            diff = {}
+            requires_acceptance = False
         if force_reviewer_acceptance is False:
             requires_acceptance = False
         elif force_reviewer_acceptance is None and not stored_requires_acceptance:
@@ -3215,7 +3567,13 @@ def _normalize_review_feedback_state_from_row(
     }
 
 
-def _get_review_feedback_acceptance_state_map(review_type: str | None = None, db=None) -> dict[tuple[str, str, str], dict[str, Any]]:
+def _get_review_feedback_acceptance_state_map(
+    review_type: str | None = None,
+    db=None,
+    *,
+    campaign_id: int | None = None,
+    include_diffs: bool = True,
+) -> dict[tuple[str, str, str], dict[str, Any]]:
     if db is None:
         db = get_db()
 
@@ -3266,6 +3624,9 @@ def _get_review_feedback_acceptance_state_map(review_type: str | None = None, db
         normalized_type = _validate_review_type(review_type)
         query += " AND a.review_type = ?"
         params.append(normalized_type)
+    if campaign_id is not None:
+        query += " AND a.campaign_id = ?"
+        params.append(int(campaign_id))
     query += " ORDER BY a.campaign_id ASC, a.theme ASC, a.doc_id ASC"
 
     rows = db.execute(query, params).fetchall()
@@ -3277,7 +3638,11 @@ def _get_review_feedback_acceptance_state_map(review_type: str | None = None, db
             yaml_service.canonical_theme_id(str(row_dict["theme"])),
             str(row_dict["doc_id"]),
         )
-        states[key] = _normalize_review_feedback_state_from_row(str(row_dict["review_type"]), row_dict)
+        states[key] = _normalize_review_feedback_state_from_row(
+            str(row_dict["review_type"]),
+            row_dict,
+            include_diffs=include_diffs,
+        )
     return states
 
 
@@ -3743,11 +4108,14 @@ def load_admin_review_document(review_type: str, theme: str, doc_id: str, db=Non
 
     Rules view should show the latest resolved rules when available, otherwise
     the original Opus/source rules. Questions view follows the same pattern for
-    the questions payload.
+    the questions payload. Unlike a reviewer's focused campaign task, the admin
+    view always exposes the complete question set so a document opened from the
+    dashboard can be inspected as a whole.
     """
     normalized_type = _validate_review_type(review_type)
     if db is None:
         db = get_db()
+    campaign = _preferred_review_campaign_for_document(normalized_type, theme, doc_id, db=db)
 
     source_path = review_source_path(normalized_type, theme, doc_id)
     if not source_path.exists():
@@ -3912,7 +4280,6 @@ def load_admin_review_document(review_type: str, theme: str, doc_id: str, db=Non
     normalized_document["active_review_target"] = normalized_type
     normalized_document["active_review_task_status"] = active_status or "draft"
 
-    campaign = _preferred_review_campaign_for_document(normalized_type, theme, doc_id, db=db)
     normalized_document["active_review_campaign_name"] = str(campaign.get("name") or "") if campaign else ""
     return normalized_document
 
@@ -3967,6 +4334,15 @@ def load_review_submission_document(
         document = {}
 
     normalized_document = normalize_document_taxonomy(document)
+    if normalized_type == "questions":
+        normalized_document = _coerce_question_review_document_to_factual_surface(
+            normalized_document,
+            str(theme),
+            str(doc_id),
+        )
+        if _is_focused_inference_qa_campaign(row["campaign_name"]):
+            normalized_document = _filter_focused_inference_qa_document(normalized_document)
+        _align_question_annotation_surfaces_with_document(normalized_document)
     normalized_document["review_statuses"] = get_document_review_statuses(str(theme), str(doc_id), db=db)
     normalized_document["active_review_target"] = normalized_type
     normalized_document["active_review_task_status"] = "completed"
@@ -4654,12 +5030,62 @@ def _unique_usernames(values: list[str]) -> list[str]:
     return ordered
 
 
-def get_review_document_activity_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, Any]]]:
+def _review_scope_sql(
+    alias: str,
+    *,
+    review_type: str | None = None,
+    campaign_id: int | None = None,
+    theme: str | None = None,
+    doc_id: str | None = None,
+) -> tuple[str, list[Any]]:
+    clauses: list[str] = []
+    params: list[Any] = []
+    if review_type:
+        clauses.append(f"{alias}.review_type = ?")
+        params.append(_validate_review_type(review_type))
+    if campaign_id is not None:
+        clauses.append(f"{alias}.campaign_id = ?")
+        params.append(int(campaign_id))
+    if theme:
+        candidates = list(
+            dict.fromkeys(
+                [
+                    str(theme),
+                    yaml_service.canonical_theme_id(str(theme)),
+                ]
+            )
+        )
+        placeholders = ",".join("?" for _ in candidates)
+        clauses.append(f"{alias}.theme IN ({placeholders})")
+        params.extend(candidates)
+    if doc_id:
+        clauses.append(f"{alias}.doc_id = ?")
+        params.append(str(doc_id))
+    if not clauses:
+        return "", params
+    return " AND " + " AND ".join(clauses), params
+
+
+def get_review_document_activity_map(
+    db=None,
+    *,
+    review_type: str | None = None,
+    campaign_id: int | None = None,
+    theme: str | None = None,
+    doc_id: str | None = None,
+) -> dict[tuple[str, str], dict[str, dict[str, Any]]]:
     if db is None:
         db = get_db()
 
+    task_filter, task_params = _review_scope_sql(
+        "t",
+        review_type=review_type,
+        campaign_id=campaign_id,
+        theme=theme,
+        doc_id=doc_id,
+    )
     task_rows = db.execute(
-        """
+        f"""
         SELECT
             t.campaign_id,
             t.review_type,
@@ -4674,14 +5100,23 @@ def get_review_document_activity_map(db=None) -> dict[tuple[str, str], dict[str,
         FROM review_campaign_tasks t
         JOIN review_campaigns c ON c.id = t.campaign_id
         LEFT JOIN users u ON u.id = t.assignee_user_id
+        WHERE 1 = 1{task_filter}
         ORDER BY t.campaign_id DESC, t.id ASC
-        """
+        """,
+        task_params,
     ).fetchall()
     if not task_rows:
         return {}
 
+    submission_filter, submission_params = _review_scope_sql(
+        "s",
+        review_type=review_type,
+        campaign_id=campaign_id,
+        theme=theme,
+        doc_id=doc_id,
+    )
     submission_rows = db.execute(
-        """
+        f"""
         SELECT
             s.campaign_id,
             s.review_type,
@@ -4691,11 +5126,20 @@ def get_review_document_activity_map(db=None) -> dict[tuple[str, str], dict[str,
             u.username
         FROM review_campaign_submissions s
         LEFT JOIN users u ON u.id = s.reviewer_user_id
+        WHERE s.submission_origin = 'reviewer'{submission_filter}
         ORDER BY s.campaign_id DESC, s.submitted_at ASC, s.id ASC
-        """
+        """,
+        submission_params,
     ).fetchall()
+    agreement_filter, agreement_params = _review_scope_sql(
+        "a",
+        review_type=review_type,
+        campaign_id=campaign_id,
+        theme=theme,
+        doc_id=doc_id,
+    )
     agreement_rows = db.execute(
-        """
+        f"""
         SELECT
             a.campaign_id,
             a.review_type,
@@ -4706,8 +5150,18 @@ def get_review_document_activity_map(db=None) -> dict[tuple[str, str], dict[str,
             u.username AS resolved_by
         FROM review_campaign_agreements a
         LEFT JOIN users u ON u.id = a.resolved_by_user_id
+        WHERE NOT EXISTS (
+            SELECT 1
+            FROM review_campaign_submissions administrative_submission
+            WHERE administrative_submission.submission_origin = 'administrative_attribution'
+              AND administrative_submission.id IN (
+                  a.reviewer_a_submission_id,
+                  a.reviewer_b_submission_id
+              )
+        ){agreement_filter}
         ORDER BY a.campaign_id DESC, a.id ASC
-        """
+        """,
+        agreement_params,
     ).fetchall()
 
     preferred_campaign_for_doc: dict[tuple[str, str, str], dict[str, Any]] = {}
@@ -4811,15 +5265,27 @@ def get_review_document_activity_map(db=None) -> dict[tuple[str, str], dict[str,
     return result
 
 
-def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) -> list[dict[str, Any]]:
+def get_recent_review_activity(
+    review_type: str,
+    *,
+    limit: int = 50,
+    campaign_id: int | None = None,
+    db=None,
+) -> list[dict[str, Any]]:
     normalized_type = _validate_review_type(review_type)
     if db is None:
         db = get_db()
 
     events: list[dict[str, Any]] = []
 
+    campaign_filter = " AND s.campaign_id = ?" if campaign_id is not None else ""
+    submission_params: tuple[Any, ...] = (
+        (normalized_type, int(campaign_id))
+        if campaign_id is not None
+        else (normalized_type,)
+    )
     submission_rows = db.execute(
-        """
+        f"""
         SELECT
             s.id,
             s.theme,
@@ -4829,10 +5295,12 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
         FROM review_campaign_submissions s
         LEFT JOIN users u ON u.id = s.reviewer_user_id
         WHERE s.review_type = ?
+          AND s.submission_origin = 'reviewer'
+          {campaign_filter}
         ORDER BY s.submitted_at DESC, s.id DESC
         LIMIT 100
         """,
-        (normalized_type,),
+        submission_params,
     ).fetchall()
     for row in submission_rows:
         if _is_excluded_from_review_campaign_doc(
@@ -4856,8 +5324,14 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
             }
         )
 
+    task_campaign_filter = "AND c.id = ?" if campaign_id is not None else "AND c.status = 'active'"
+    task_params: tuple[Any, ...] = (
+        (normalized_type, int(campaign_id))
+        if campaign_id is not None
+        else (normalized_type,)
+    )
     task_rows = db.execute(
-        """
+        f"""
         SELECT
             t.id,
             t.theme,
@@ -4871,11 +5345,11 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
         JOIN review_campaigns c ON c.id = t.campaign_id
         WHERE t.review_type = ?
           AND t.status = 'in_progress'
-          AND c.status = 'active'
+          {task_campaign_filter}
         ORDER BY t.updated_at DESC, t.id DESC
         LIMIT 100
         """,
-        (normalized_type,),
+        task_params,
     ).fetchall()
     for row in task_rows:
         if _is_excluded_from_review_campaign_doc(
@@ -4899,8 +5373,14 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
             }
         )
 
+    agreement_campaign_filter = "AND a.campaign_id = ?" if campaign_id is not None else ""
+    agreement_params: tuple[Any, ...] = (
+        (normalized_type, int(campaign_id))
+        if campaign_id is not None
+        else (normalized_type,)
+    )
     agreement_rows = db.execute(
-        """
+        f"""
         SELECT
             a.id,
             a.theme,
@@ -4911,11 +5391,21 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
         FROM review_campaign_agreements a
         LEFT JOIN users u ON u.id = a.resolved_by_user_id
         WHERE a.review_type = ?
+          {agreement_campaign_filter}
           AND a.resolved_at IS NOT NULL
+          AND NOT EXISTS (
+              SELECT 1
+              FROM review_campaign_submissions administrative_submission
+              WHERE administrative_submission.submission_origin = 'administrative_attribution'
+                AND administrative_submission.id IN (
+                    a.reviewer_a_submission_id,
+                    a.reviewer_b_submission_id
+                )
+          )
         ORDER BY a.resolved_at DESC, a.id DESC
         LIMIT 100
         """,
-        (normalized_type,),
+        agreement_params,
     ).fetchall()
     for row in agreement_rows:
         if _is_excluded_from_review_campaign_doc(
@@ -4943,15 +5433,178 @@ def get_recent_review_activity(review_type: str, *, limit: int = 50, db=None) ->
     return events[: max(int(limit), 0)]
 
 
-def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, Any]]]:
+def _get_selected_campaign_review_status_map(
+    campaign_id: int,
+    review_type: str,
+    *,
+    activity_map: dict[tuple[str, str], dict[str, dict[str, Any]]],
+    include_ignored_qa_counts: bool,
+    db,
+) -> dict[tuple[str, str], dict[str, dict[str, Any]]]:
+    """Build per-document display statuses from one campaign's own rows."""
+    normalized_type = _validate_review_type(review_type)
+    rows = db.execute(
+        """
+        WITH campaign_documents AS (
+            SELECT theme, doc_id
+            FROM review_campaign_tasks
+            WHERE campaign_id = ?
+            UNION
+            SELECT theme, doc_id
+            FROM review_campaign_submissions
+            WHERE campaign_id = ?
+            UNION
+            SELECT theme, doc_id
+            FROM review_campaign_agreements
+            WHERE campaign_id = ?
+        ),
+        submission_counts AS (
+            SELECT theme, doc_id, COUNT(*) AS submission_count
+            FROM review_campaign_submissions
+            WHERE campaign_id = ?
+            GROUP BY theme, doc_id
+        )
+        SELECT
+            d.theme,
+            d.doc_id,
+            t.status AS task_status,
+            COALESCE(s.submission_count, 0) AS submission_count,
+            a.status AS agreement_status,
+            a.resolved_at,
+            a.final_snapshot_path,
+            u.username AS resolved_by,
+            (
+                SELECT latest.snapshot_path
+                FROM review_campaign_submissions latest
+                WHERE latest.campaign_id = ?
+                  AND latest.theme = d.theme
+                  AND latest.doc_id = d.doc_id
+                ORDER BY latest.submitted_at DESC, latest.id DESC
+                LIMIT 1
+            ) AS latest_submission_snapshot_path
+        FROM campaign_documents d
+        LEFT JOIN review_campaign_tasks t
+               ON t.campaign_id = ?
+              AND t.theme = d.theme
+              AND t.doc_id = d.doc_id
+        LEFT JOIN submission_counts s
+               ON s.theme = d.theme
+              AND s.doc_id = d.doc_id
+        LEFT JOIN review_campaign_agreements a
+               ON a.campaign_id = ?
+              AND a.theme = d.theme
+              AND a.doc_id = d.doc_id
+        LEFT JOIN users u ON u.id = a.resolved_by_user_id
+        ORDER BY d.theme ASC, d.doc_id ASC
+        """,
+        (
+            int(campaign_id),
+            int(campaign_id),
+            int(campaign_id),
+            int(campaign_id),
+            int(campaign_id),
+            int(campaign_id),
+            int(campaign_id),
+        ),
+    ).fetchall()
+
+    result: dict[tuple[str, str], dict[str, dict[str, Any]]] = {}
+    for row in rows:
+        theme = yaml_service.canonical_theme_id(str(row["theme"] or ""))
+        doc_id = str(row["doc_id"] or "")
+        if not theme or not doc_id:
+            continue
+
+        task_status = str(row["task_status"] or "").strip().lower()
+        agreement_status = str(row["agreement_status"] or "").strip().lower()
+        submission_count = int(row["submission_count"] or 0)
+        excluded_completed_task = (
+            task_status == "completed"
+            and _is_excluded_from_review_campaign(normalized_type, theme)
+        )
+        completed = (
+            agreement_status in {"resolved", "awaiting_reviewer_acceptance"}
+            or excluded_completed_task
+        )
+        if completed:
+            status = "completed"
+        elif task_status in {"in_progress", "completed"} or submission_count > 0:
+            status = "in_progress"
+        else:
+            status = "draft"
+
+        activity = (activity_map.get((theme, doc_id)) or {}).get(normalized_type, {})
+        ignored_qa_count = 0
+        if normalized_type == "questions" and include_ignored_qa_counts:
+            snapshot_path = (
+                row["final_snapshot_path"]
+                if completed and str(row["final_snapshot_path"] or "").strip()
+                else row["latest_submission_snapshot_path"]
+            )
+            ignored_qa_count = _question_review_snapshot_ignored_count(snapshot_path)
+
+        result[(theme, doc_id)] = {
+            normalized_type: {
+                "status": status,
+                "reviewed": status == "completed",
+                "reviewed_at": row["resolved_at"] if completed else None,
+                "reviewed_by": row["resolved_by"] if completed else None,
+                "last_edited_by": activity.get("last_edited_by"),
+                "activity_users": list(activity.get("activity_users") or []),
+                "last_activity_at": activity.get("last_activity_at"),
+                "last_activity_user": activity.get("last_activity_user"),
+                "last_activity_action": activity.get("last_activity_action"),
+                "ignored_qa_count": ignored_qa_count,
+                "has_ignored_qas": ignored_qa_count > 0,
+            }
+        }
+    return result
+
+
+def get_review_status_map(
+    db=None,
+    *,
+    review_type: str | None = None,
+    campaign_id: int | None = None,
+    theme: str | None = None,
+    doc_id: str | None = None,
+    include_ignored_qa_counts: bool = True,
+) -> dict[tuple[str, str], dict[str, dict[str, Any]]]:
     if db is None:
         db = get_db()
-    activity_map = get_review_document_activity_map(db=db)
+    normalized_type = _validate_review_type(review_type) if review_type else None
+    activity_map = get_review_document_activity_map(
+        db=db,
+        review_type=normalized_type,
+        campaign_id=campaign_id,
+        theme=theme,
+        doc_id=doc_id,
+    )
+    if campaign_id is not None:
+        if normalized_type is None:
+            campaign = get_review_campaign_by_id(int(campaign_id), db=db)
+            if campaign is None:
+                return {}
+            normalized_type = _validate_review_type(str(campaign["review_type"]))
+        return _get_selected_campaign_review_status_map(
+            int(campaign_id),
+            normalized_type,
+            activity_map=activity_map,
+            include_ignored_qa_counts=include_ignored_qa_counts,
+            db=db,
+        )
 
     under_reviewed_doc_keys: set[tuple[str, str, str]] = set()
     try:
+        task_filter, task_params = _review_scope_sql(
+            "t",
+            review_type=normalized_type,
+            campaign_id=campaign_id,
+            theme=theme,
+            doc_id=doc_id,
+        )
         submission_rows = db.execute(
-            """
+            f"""
             SELECT
                 c.review_type,
                 t.theme,
@@ -4964,8 +5617,10 @@ def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, 
                   AND s.theme = t.theme
                   AND s.doc_id = t.doc_id
             WHERE c.status = 'active'
+              {task_filter}
             GROUP BY c.review_type, t.theme, t.doc_id
-            """
+            """,
+            task_params,
         ).fetchall()
     except Exception:
         submission_rows = []
@@ -4989,8 +5644,45 @@ def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, 
             )
         )
     try:
-        rows = db.execute(
+        artifact_filter, artifact_params = _review_scope_sql(
+            "ras",
+            review_type=normalized_type,
+            theme=theme,
+            doc_id=doc_id,
+        )
+        include_snapshot_lookup = bool(
+            include_ignored_qa_counts
+            and (normalized_type is None or normalized_type == "questions")
+        )
+        final_snapshot_params: list[Any] = []
+        if include_snapshot_lookup:
+            campaign_filter = ""
+            if campaign_id is not None:
+                campaign_filter = "AND a.campaign_id = ?"
+                final_snapshot_params.append(int(campaign_id))
+            final_snapshot_select = f"""
+                (
+                    SELECT a.final_snapshot_path
+                    FROM review_campaign_agreements a
+                    JOIN review_campaigns c ON c.id = a.campaign_id
+                    WHERE a.review_type = ras.review_type
+                      AND a.theme = ras.theme
+                      AND a.doc_id = ras.doc_id
+                      AND a.status IN ('resolved', 'awaiting_reviewer_acceptance')
+                      AND a.final_snapshot_path IS NOT NULL
+                      AND a.final_snapshot_path != ''
+                      {campaign_filter}
+                    ORDER BY
+                        CASE WHEN c.status = 'active' THEN 0 ELSE 1 END ASC,
+                        a.updated_at DESC,
+                        a.id DESC
+                    LIMIT 1
+                )
             """
+        else:
+            final_snapshot_select = "NULL"
+        rows = db.execute(
+            f"""
             SELECT
                 ras.theme,
                 ras.doc_id,
@@ -4998,10 +5690,13 @@ def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, 
                 ras.status,
                 ras.reviewed_at,
                 ras.latest_snapshot_path,
+                {final_snapshot_select} AS final_snapshot_path,
                 u.username AS reviewed_by
             FROM review_artifact_statuses ras
             LEFT JOIN users u ON u.id = ras.reviewed_by_user_id
-            """
+            WHERE 1 = 1{artifact_filter}
+            """,
+            [*final_snapshot_params, *artifact_params],
         ).fetchall()
     except Exception:
         rows = []
@@ -5031,8 +5726,13 @@ def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, 
             continue
         status = str(row["status"] or "draft")
         ignored_qa_count = 0
-        if review_type == "questions":
-            ignored_qa_count = _question_review_snapshot_ignored_count(row["latest_snapshot_path"])
+        if review_type == "questions" and include_ignored_qa_counts:
+            snapshot_path = (
+                row["final_snapshot_path"]
+                if status == "completed" and str(row["final_snapshot_path"] or "").strip()
+                else row["latest_snapshot_path"]
+            )
+            ignored_qa_count = _question_review_snapshot_ignored_count(snapshot_path)
         # Guardrail: a document cannot be considered completed while required
         # reviewer submissions are still missing in the active campaign.
         if (
@@ -5058,7 +5758,11 @@ def get_review_status_map(db=None) -> dict[tuple[str, str], dict[str, dict[str, 
 
 
 def get_document_review_statuses(theme: str, doc_id: str, db=None) -> dict[str, dict[str, Any]]:
-    status_map = get_review_status_map(db=db)
+    status_map = get_review_status_map(
+        db=db,
+        theme=theme,
+        doc_id=doc_id,
+    )
     statuses = status_map.get((yaml_service.canonical_theme_id(str(theme)), str(doc_id)), {})
     return {
         "rules": statuses.get(
@@ -5093,6 +5797,23 @@ def get_document_review_statuses(theme: str, doc_id: str, db=None) -> dict[str, 
                 "has_ignored_qas": False,
             },
         ),
+    }
+
+
+def _default_review_status(status: str = "draft") -> dict[str, Any]:
+    normalized_status = str(status or "draft").strip().lower() or "draft"
+    return {
+        "status": normalized_status,
+        "reviewed": normalized_status == "completed",
+        "reviewed_at": None,
+        "reviewed_by": None,
+        "last_edited_by": None,
+        "activity_users": [],
+        "last_activity_at": None,
+        "last_activity_user": None,
+        "last_activity_action": None,
+        "ignored_qa_count": 0,
+        "has_ignored_qas": False,
     }
 
 
@@ -5251,59 +5972,86 @@ def _ensure_review_output_snapshot(task: dict[str, Any], db) -> Path:
 
 
 def load_review_task_document(review_type: str, user_id: int, theme: str, doc_id: str) -> dict[str, Any]:
-    db = get_db()
-    row = _active_task_row_for_user_doc(review_type, user_id, theme, doc_id, db=db)
-    if row is None:
-        raise FileNotFoundError("No active review task for this document.")
+    normalized_type = _validate_review_type(review_type)
+    timer = PerfTimer(
+        "load_review_task_document",
+        review_type=normalized_type,
+        user_id=user_id,
+        theme=theme,
+        doc_id=doc_id,
+    )
+    try:
+        db = get_db()
+        with timer.step("lookup_task"):
+            row = _active_task_row_for_user_doc(normalized_type, user_id, theme, doc_id, db=db)
+        if row is None:
+            timer.add_field("result", "no_active_task")
+            raise FileNotFoundError("No active review task for this document.")
 
-    task = dict(row)
-    now = _utc_now()
-    if str(task["status"]) == "available":
-        db.execute(
-            """
-            UPDATE review_campaign_tasks
-            SET status = 'in_progress',
-                started_at = COALESCE(started_at, ?),
-                updated_at = ?
-            WHERE id = ?
-            """,
-            (now, now, int(task["id"])),
-        )
-        _upsert_artifact_status(
-            review_type=str(task["review_type"]),
-            theme=str(task["theme"]),
-            doc_id=str(task["doc_id"]),
-            status="in_progress",
-            latest_task_id=int(task["id"]),
-            latest_snapshot_path=str(task.get("output_snapshot_path") or task.get("input_snapshot_path") or ""),
-            db=db,
-        )
-        db.commit()
-        sync_db_to_gcs()
-        task["status"] = "in_progress"
+        task = dict(row)
+        timer.add_field("task_id", int(task["id"]))
+        now = _utc_now()
+        if str(task["status"]) == "available":
+            with timer.step("mark_in_progress"):
+                db.execute(
+                    """
+                    UPDATE review_campaign_tasks
+                    SET status = 'in_progress',
+                        started_at = COALESCE(started_at, ?),
+                        updated_at = ?
+                    WHERE id = ?
+                    """,
+                    (now, now, int(task["id"])),
+                )
+                _upsert_artifact_status(
+                    review_type=str(task["review_type"]),
+                    theme=str(task["theme"]),
+                    doc_id=str(task["doc_id"]),
+                    status="in_progress",
+                    latest_task_id=int(task["id"]),
+                    latest_snapshot_path=str(task.get("output_snapshot_path") or task.get("input_snapshot_path") or ""),
+                    db=db,
+                )
+                db.commit()
+                sync_db_to_gcs()
+                task["status"] = "in_progress"
 
-    output_path = _ensure_review_output_snapshot(task, db)
-    payload = _load_yaml(output_path)
-    document = payload.get("document", payload if isinstance(payload, dict) else {})
-    if not isinstance(document, dict):
-        document = {}
-    if str(task.get("review_type") or "").strip().lower() == "questions":
-        fictionalized_text = _load_fictionalized_question_document_text(str(task["theme"]), str(task["doc_id"]))
-        if fictionalized_text:
-            document["fictionalized_annotated_template_document"] = fictionalized_text
-            # Regular QA reviewers should always work on the fictionalized context.
-            document["document_to_annotate"] = fictionalized_text
-        if not _question_review_document_has_sampleable_questions(document):
-            raise FileNotFoundError("This document has no synced questions available for QA review.")
-        _align_question_annotation_surfaces_with_document(document)
-    document = normalize_document_taxonomy(document)
-    if str(task.get("review_type") or "").strip().lower() == "questions":
-        _align_question_annotation_surfaces_with_document(document)
-    document["review_statuses"] = get_document_review_statuses(str(task["theme"]), str(task["doc_id"]), db=db)
-    document["active_review_target"] = str(task["review_type"])
-    document["active_review_task_status"] = str(task["status"])
-    document["active_review_campaign_name"] = str(task.get("campaign_name") or "")
-    return document
+        with timer.step("ensure_output_snapshot"):
+            output_path = _ensure_review_output_snapshot(task, db)
+        with timer.step("load_yaml"):
+            payload = _load_yaml(output_path)
+            document = payload.get("document", payload if isinstance(payload, dict) else {})
+            if not isinstance(document, dict):
+                document = {}
+        if normalized_type == "questions":
+            with timer.step("prepare_questions_document"):
+                document = _coerce_question_review_document_to_factual_surface(
+                    document,
+                    str(task["theme"]),
+                    str(task["doc_id"]),
+                )
+                if _is_focused_inference_qa_campaign(task.get("campaign_name")):
+                    document = _filter_focused_inference_qa_document(document)
+                if not _question_review_document_has_sampleable_questions(document):
+                    raise FileNotFoundError("This document has no synced questions available for QA review.")
+                _align_question_annotation_surfaces_with_document(document)
+        with timer.step("normalize_document"):
+            document = normalize_document_taxonomy(document)
+            if normalized_type == "questions":
+                _align_question_annotation_surfaces_with_document(document)
+        with timer.step("review_statuses"):
+            document["review_statuses"] = {
+                "rules": _default_review_status(),
+                "questions": _default_review_status(),
+            }
+            document["review_statuses"][normalized_type] = _default_review_status(str(task["status"]))
+        document["active_review_target"] = str(task["review_type"])
+        document["active_review_task_status"] = str(task["status"])
+        document["active_review_campaign_name"] = str(task.get("campaign_name") or "")
+        timer.add_field("result", "ok")
+        return document
+    finally:
+        timer.emit()
 
 
 def save_review_task_document(review_type: str, user_id: int, theme: str, doc_id: str, document: dict[str, Any]) -> None:
@@ -5316,6 +6064,13 @@ def save_review_task_document(review_type: str, user_id: int, theme: str, doc_id
     output_path = _ensure_review_output_snapshot(task, db)
     prepared_document = normalize_document_taxonomy(dict(document or {}))
     if str(task.get("review_type") or "").strip().lower() == "questions":
+        prepared_document = _coerce_question_review_document_to_factual_surface(
+            prepared_document,
+            str(task["theme"]),
+            str(task["doc_id"]),
+        )
+        if _is_focused_inference_qa_campaign(task.get("campaign_name")):
+            prepared_document = _filter_focused_inference_qa_document(prepared_document)
         prepared_document["questions"] = _normalize_question_review_questions(prepared_document.get("questions"))
         prepared_document["num_questions"] = len(prepared_document["questions"])
         prepared_document[QUESTION_REVIEW_COVERAGE_EXEMPTIONS_FIELD] = _normalize_question_review_coverage_exemptions(
@@ -5368,6 +6123,13 @@ def finish_review_task(review_type: str, user_id: int, theme: str, doc_id: str) 
         raw_document = payload.get("document", payload if isinstance(payload, dict) else {})
         if not isinstance(raw_document, dict):
             raw_document = {}
+        raw_document = _coerce_question_review_document_to_factual_surface(
+            raw_document,
+            str(task["theme"]),
+            str(task["doc_id"]),
+        )
+        if _is_focused_inference_qa_campaign(task.get("campaign_name")):
+            raw_document = _filter_focused_inference_qa_document(raw_document)
         normalized_document = _normalize_question_review_document(raw_document)
         _validate_question_review_submission_contract(normalized_document)
         _write_yaml(output_path, {"document": normalized_document})
@@ -5777,122 +6539,146 @@ def repair_two_pass_review_campaign(campaign_id: int) -> dict[str, Any]:
 
 
 def _assign_random_review_task_for_user(review_type: str, user_id: int, db) -> dict[str, Any] | None:
-    active_campaign = get_active_review_campaign(review_type, db=db)
-    if active_campaign is None:
-        return None
-    if not _is_user_allowed_in_campaign(int(active_campaign["id"]), int(user_id), db):
-        return None
-    eligible_doc_keys = _eligible_review_doc_keys(review_type, db=db)
-
-    rows = db.execute(
-        """
-        SELECT
-            t.*,
-            COALESCE(submissions.submission_count, 0) AS submission_count
-        FROM review_campaign_tasks t
-        LEFT JOIN (
-            SELECT campaign_id, theme, doc_id, COUNT(*) AS submission_count
-            FROM review_campaign_submissions
-            GROUP BY campaign_id, theme, doc_id
-        ) submissions
-          ON submissions.campaign_id = t.campaign_id
-         AND submissions.theme = t.theme
-         AND submissions.doc_id = t.doc_id
-        WHERE t.campaign_id = ?
-          AND t.status = 'available'
-          AND NOT EXISTS (
-              SELECT 1
-              FROM review_campaign_submissions s
-              WHERE s.campaign_id = t.campaign_id
-                AND s.theme = t.theme
-                AND s.doc_id = t.doc_id
-                AND s.reviewer_user_id = ?
-          )
-        ORDER BY t.id ASC
-        """,
-        (int(active_campaign["id"]), int(user_id)),
-    ).fetchall()
-    if eligible_doc_keys is not None:
-        rows = [
-            row for row in rows
-            if (yaml_service.canonical_theme_id(str(row["theme"] or "")), str(row["doc_id"] or "")) in eligible_doc_keys
-        ]
-    rows = [
-        row for row in rows
-        if not _is_excluded_from_review_campaign_doc(
-            review_type,
-            str(row["theme"] or ""),
-            str(row["doc_id"] or ""),
-        )
-    ]
-    if not rows:
-        return None
-
-    shared_assignee_id = int(active_campaign.get("created_by_user_id") or 0)
-    prioritized_rows = []
-    fallback_rows = []
-    for row in rows:
-        initial_user_id = row["initial_assignee_user_id"]
-        submission_count = int(row["submission_count"] or 0)
-        if initial_user_id is None:
-            fallback_rows.append(row)
-            continue
-        if submission_count <= 0:
-            if int(initial_user_id) == int(user_id):
-                prioritized_rows.append(row)
-            continue
-        fallback_rows.append(row)
-
-    if prioritized_rows:
-        prioritized_rows.sort(
-            key=lambda row: (
-                QUESTION_EXPERIMENT_GROUP_SORT_ORDER.get(
-                    _normalize_question_experiment_group(row["qa_group"]),
-                    999,
-                ),
-                int(row["qa_group_order"] or 0),
-                int(row["id"]),
-            )
-        )
-        chosen = prioritized_rows[0]
-    else:
-        fallback_rows = [
-            row
-            for row in fallback_rows
-            if row["initial_assignee_user_id"] is None
-            or int(row["assignee_user_id"] or 0) in {0, int(user_id), shared_assignee_id}
-        ]
-        if not fallback_rows:
+    normalized_type = _validate_review_type(review_type)
+    timer = PerfTimer("assign_random_review_task_internal", review_type=normalized_type, user_id=user_id)
+    active_campaign = get_active_review_campaign(normalized_type, db=db)
+    try:
+        if active_campaign is None:
+            timer.add_field("result", "no_active_campaign")
             return None
-        chosen = random.choice(fallback_rows)
+        timer.add_field("campaign_id", int(active_campaign["id"]))
+        if not _is_user_allowed_in_campaign(int(active_campaign["id"]), int(user_id), db):
+            timer.add_field("result", "not_participant")
+            return None
+        if normalized_type == "questions":
+            eligible_doc_keys = None
+            timer.add_field("eligible_doc_keys_filter", "skipped_for_question_assignment")
+        else:
+            with timer.step("eligible_doc_keys"):
+                eligible_doc_keys = _eligible_review_doc_keys(normalized_type, db=db)
 
-    now = _utc_now()
-    db.execute(
-        """
-        UPDATE review_campaign_tasks
-        SET assignee_user_id = ?,
-            status = 'in_progress',
-            started_at = COALESCE(started_at, ?),
-            updated_at = ?
-        WHERE id = ?
-        """,
-        (int(user_id), now, now, int(chosen["id"])),
-    )
-    chosen_dict = dict(chosen)
-    chosen_dict["assignee_user_id"] = int(user_id)
-    chosen_dict["status"] = "in_progress"
-    _upsert_artifact_status(
-        review_type=str(chosen_dict["review_type"]),
-        theme=str(chosen_dict["theme"]),
-        doc_id=str(chosen_dict["doc_id"]),
-        status="in_progress",
-        latest_task_id=int(chosen_dict["id"]),
-        latest_snapshot_path=str(chosen_dict["input_snapshot_path"]),
-        db=db,
-    )
-    db.commit()
-    sync_db_to_gcs()
-    return chosen_dict
+        with timer.step("select_available_rows"):
+            rows = db.execute(
+                """
+                SELECT
+                    t.*,
+                    COALESCE(submissions.submission_count, 0) AS submission_count
+                FROM review_campaign_tasks t
+                LEFT JOIN (
+                    SELECT campaign_id, theme, doc_id, COUNT(*) AS submission_count
+                    FROM review_campaign_submissions
+                    GROUP BY campaign_id, theme, doc_id
+                ) submissions
+                  ON submissions.campaign_id = t.campaign_id
+                 AND submissions.theme = t.theme
+                 AND submissions.doc_id = t.doc_id
+                WHERE t.campaign_id = ?
+                  AND t.status = 'available'
+                  AND NOT EXISTS (
+                      SELECT 1
+                      FROM review_campaign_submissions s
+                      WHERE s.campaign_id = t.campaign_id
+                        AND s.theme = t.theme
+                        AND s.doc_id = t.doc_id
+                        AND s.reviewer_user_id = ?
+                  )
+                ORDER BY t.id ASC
+                """,
+                (int(active_campaign["id"]), int(user_id)),
+            ).fetchall()
+            timer.add_field("candidate_rows_before_filter", len(rows))
+        with timer.step("filter_available_rows"):
+            if eligible_doc_keys is not None:
+                rows = [
+                    row for row in rows
+                    if (yaml_service.canonical_theme_id(str(row["theme"] or "")), str(row["doc_id"] or "")) in eligible_doc_keys
+                ]
+            rows = [
+                row
+                for row in rows
+                if not _is_excluded_from_review_campaign_doc(
+                    normalized_type,
+                    str(row["theme"] or ""),
+                    str(row["doc_id"] or ""),
+                )
+            ]
+            timer.add_field("candidate_rows_after_filter", len(rows))
+        if not rows:
+            timer.add_field("result", "no_rows")
+            return None
+
+        shared_assignee_id = int(active_campaign.get("created_by_user_id") or 0)
+        prioritized_rows = []
+        fallback_rows = []
+        for row in rows:
+            initial_user_id = row["initial_assignee_user_id"]
+            submission_count = int(row["submission_count"] or 0)
+            if initial_user_id is None:
+                fallback_rows.append(row)
+                continue
+            if submission_count <= 0:
+                if int(initial_user_id) == int(user_id):
+                    prioritized_rows.append(row)
+                continue
+            fallback_rows.append(row)
+
+        if prioritized_rows:
+            prioritized_rows.sort(
+                key=lambda row: (
+                    QUESTION_EXPERIMENT_GROUP_SORT_ORDER.get(
+                        _normalize_question_experiment_group(row["qa_group"]),
+                        999,
+                    ),
+                    int(row["qa_group_order"] or 0),
+                    int(row["id"]),
+                )
+            )
+            chosen = prioritized_rows[0]
+        else:
+            fallback_rows = [
+                row
+                for row in fallback_rows
+                if row["initial_assignee_user_id"] is None
+                or int(row["assignee_user_id"] or 0) in {0, int(user_id), shared_assignee_id}
+            ]
+            if not fallback_rows:
+                timer.add_field("result", "no_fallback_rows")
+                return None
+            chosen = random.choice(fallback_rows)
+
+        now = _utc_now()
+        with timer.step("db_update_assignment"):
+            db.execute(
+                """
+                UPDATE review_campaign_tasks
+                SET assignee_user_id = ?,
+                    status = 'in_progress',
+                    started_at = COALESCE(started_at, ?),
+                    updated_at = ?
+                WHERE id = ?
+                """,
+                (int(user_id), now, now, int(chosen["id"])),
+            )
+            chosen_dict = dict(chosen)
+            chosen_dict["assignee_user_id"] = int(user_id)
+            chosen_dict["status"] = "in_progress"
+            _upsert_artifact_status(
+                review_type=str(chosen_dict["review_type"]),
+                theme=str(chosen_dict["theme"]),
+                doc_id=str(chosen_dict["doc_id"]),
+                status="in_progress",
+                latest_task_id=int(chosen_dict["id"]),
+                latest_snapshot_path=str(chosen_dict["input_snapshot_path"]),
+                db=db,
+            )
+            db.commit()
+        with timer.step("sync_db"):
+            sync_db_to_gcs()
+        timer.add_field("result", "assigned")
+        timer.add_field("task_id", int(chosen_dict["id"]))
+        return chosen_dict
+    finally:
+        timer.emit()
 
 
 def assign_random_review_task_to_user(user_id: int, review_type: str) -> dict[str, Any]:
@@ -6088,6 +6874,62 @@ def get_user_review_queue(user_id: int, review_type: str) -> dict[str, Any]:
         assigned_count = sum(int(group.get("total_count") or 0) for group in question_experiment_groups)
         completed_count = sum(int(group.get("completed_count") or 0) for group in question_experiment_groups)
         remaining_count = max(0, int(assigned_count) - int(completed_count))
+    elif normalized_type == "questions":
+        assigned_rows = db.execute(
+            """
+            SELECT DISTINCT theme, doc_id
+            FROM (
+                SELECT theme, doc_id
+                FROM review_campaign_submissions
+                WHERE campaign_id = ?
+                  AND reviewer_user_id = ?
+                UNION
+                SELECT theme, doc_id
+                FROM review_campaign_tasks
+                WHERE campaign_id = ?
+                  AND initial_assignee_user_id = ?
+                UNION
+                SELECT theme, doc_id
+                FROM review_campaign_tasks
+                WHERE campaign_id = ?
+                  AND initial_assignee_user_id IS NULL
+                  AND assignee_user_id = ?
+            ) assigned_docs
+            """,
+            (
+                int(campaign["id"]),
+                int(user_id),
+                int(campaign["id"]),
+                int(user_id),
+                int(campaign["id"]),
+                int(user_id),
+            ),
+        ).fetchall()
+        assigned_keys = {
+            (yaml_service.canonical_theme_id(str(row["theme"] or "")), str(row["doc_id"] or ""))
+            for row in assigned_rows
+            if not _is_excluded_from_review_campaign_doc(
+                normalized_type,
+                str(row["theme"] or ""),
+                str(row["doc_id"] or ""),
+            )
+        }
+        assigned_count = len(assigned_keys)
+        submitted_rows = db.execute(
+            """
+            SELECT DISTINCT theme, doc_id
+            FROM review_campaign_submissions
+            WHERE campaign_id = ?
+              AND reviewer_user_id = ?
+            """,
+            (int(campaign["id"]), int(user_id)),
+        ).fetchall()
+        completed_count = sum(
+            1
+            for row in submitted_rows
+            if (yaml_service.canonical_theme_id(str(row["theme"] or "")), str(row["doc_id"] or "")) in assigned_keys
+        )
+        remaining_count = max(0, int(assigned_count) - int(completed_count))
     else:
         assigned_rows = db.execute(
             """
@@ -6115,25 +6957,6 @@ def get_user_review_queue(user_id: int, review_type: str) -> dict[str, Any]:
                 str(row["doc_id"] or ""),
             )
         )
-        if normalized_type == "questions":
-            assigned_count = sum(
-                1
-                for row in db.execute(
-                    """
-                    SELECT DISTINCT theme, doc_id, input_snapshot_path
-                    FROM review_campaign_tasks
-                    WHERE campaign_id = ?
-                      AND assignee_user_id = ?
-                    """,
-                    (int(campaign["id"]), int(user_id)),
-                ).fetchall()
-                if not _is_excluded_from_review_campaign_doc(
-                    normalized_type,
-                    str(row["theme"] or ""),
-                    str(row["doc_id"] or ""),
-                )
-                if _question_review_snapshot_has_sampleable_questions(row["input_snapshot_path"])
-            )
         submitted_rows = db.execute(
             """
             SELECT DISTINCT theme, doc_id
@@ -6207,19 +7030,45 @@ def complete_review_campaign(campaign_id: int) -> dict[str, Any]:
     return result
 
 
-def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict[str, Any]:
+def get_review_campaign_monitor(
+    review_type: str | None = None,
+    db=None,
+    *,
+    campaign_id: int | None = None,
+    theme_progress: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     if db is None:
         db = get_db()
-    types = [review_type] if review_type else list(REVIEW_TYPES)
+    if campaign_id is not None and review_type is None:
+        selected_campaign = get_review_campaign_by_id(campaign_id, db=db)
+        if selected_campaign is None:
+            raise FileNotFoundError("Review campaign not found.")
+        types = [str(selected_campaign["review_type"])]
+    else:
+        types = [review_type] if review_type else list(REVIEW_TYPES)
 
     campaigns: list[dict[str, Any]] = []
     for raw_type in types:
         normalized_type = _validate_review_type(raw_type)
-        campaign = get_active_review_campaign(normalized_type, db=db)
+        campaign = (
+            get_review_campaign_by_id(campaign_id, normalized_type, db=db)
+            if campaign_id is not None
+            else get_active_review_campaign(normalized_type, db=db)
+        )
+        if campaign_id is not None and campaign is None:
+            raise FileNotFoundError("Review campaign not found for this annotation type.")
+        if (
+            campaign_id is not None
+            and campaign is not None
+            and str(campaign.get("status") or "") == "active"
+        ):
+            _finalize_excluded_review_tasks(normalized_type, db=db)
+            campaign = get_review_campaign_by_id(int(campaign["id"]), normalized_type, db=db)
         if campaign is None:
             campaigns.append(
                 {
                     "review_type": normalized_type,
+                    "has_campaign": False,
                     "has_active_campaign": False,
                 }
             )
@@ -6231,9 +7080,11 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
                 t.status,
                 t.theme,
                 t.doc_id,
-                u.username
+                u.username,
+                initial_user.username AS initial_assignee_username
             FROM review_campaign_tasks t
             LEFT JOIN users u ON u.id = t.assignee_user_id
+            LEFT JOIN users initial_user ON initial_user.id = t.initial_assignee_user_id
             WHERE t.campaign_id = ?
             ORDER BY t.id ASC
             """,
@@ -6275,11 +7126,16 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
             """,
             (int(campaign["id"]),),
         ).fetchall()
-        eligible_doc_keys = (
-            _eligible_review_doc_keys(normalized_type, db=db)
-            if normalized_type != "questions"
-            else None
-        )
+        eligible_doc_keys = None
+        if normalized_type != "questions" and str(campaign.get("status") or "") == "active":
+            if theme_progress is None:
+                eligible_doc_keys = _eligible_review_doc_keys(normalized_type, db=db)
+            else:
+                eligible_doc_keys = _eligible_review_doc_keys(
+                    normalized_type,
+                    db=db,
+                    theme_progress=theme_progress,
+                )
         # Rules monitor should stay aligned to the current dataset/workflow
         # scope, while QA keeps its broader campaign totals behavior.
         if eligible_doc_keys is not None and normalized_type != "questions":
@@ -6359,11 +7215,12 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
                 or str(row["status"] or "").strip().lower() in {"resolved", "awaiting_reviewer_acceptance", "ready"}
             )
         ]
-        feedback_state_map = {
-            key: value
-            for key, value in _get_review_feedback_acceptance_state_map(normalized_type, db=db).items()
-            if int(value.get("campaign_id") or 0) == int(campaign["id"])
-        }
+        feedback_state_map = _get_review_feedback_acceptance_state_map(
+            normalized_type,
+            db=db,
+            campaign_id=int(campaign["id"]),
+            include_diffs=False,
+        )
         task_status_by_key: dict[tuple[str, str], str] = {}
         for row in task_rows:
             key = (yaml_service.canonical_theme_id(str(row["theme"] or "")), str(row["doc_id"] or ""))
@@ -6423,33 +7280,75 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
         }
         reviewer_names = [str(row["username"]) for row in reviewer_rows]
         per_user: dict[str, dict[str, int]] = {
-            username: {"submitted_count": 0, "active_count": 0}
+            username: {
+                "submitted_count": 0,
+                "accepted_without_submission_count": 0,
+                "active_count": 0,
+            }
             for username in reviewer_names
             if username
         }
+        submitted_document_keys_by_username: dict[str, set[tuple[str, str]]] = {}
         for row in submission_rows:
             username = str(row["username"] or "").strip()
             if not username:
                 continue
-            bucket = per_user.setdefault(username, {"submitted_count": 0, "active_count": 0})
+            bucket = per_user.setdefault(
+                username,
+                {
+                    "submitted_count": 0,
+                    "accepted_without_submission_count": 0,
+                    "active_count": 0,
+                },
+            )
             bucket["submitted_count"] += 1
+            submitted_document_keys_by_username.setdefault(username, set()).add(
+                (
+                    yaml_service.canonical_theme_id(str(row["theme"] or "")),
+                    str(row["doc_id"] or ""),
+                )
+            )
         for row in task_rows:
             status = str(row["status"] or "").strip().lower()
-            if status != "in_progress":
-                continue
-            username = str(row["username"] or "").strip()
+            username = str(
+                row["initial_assignee_username"]
+                if status == "completed" and row["initial_assignee_username"]
+                else row["username"]
+                or ""
+            ).strip()
             if not username:
                 continue
-            bucket = per_user.setdefault(username, {"submitted_count": 0, "active_count": 0})
-            bucket["active_count"] += 1
+            bucket = per_user.setdefault(
+                username,
+                {
+                    "submitted_count": 0,
+                    "accepted_without_submission_count": 0,
+                    "active_count": 0,
+                },
+            )
+            if status == "in_progress":
+                bucket["active_count"] += 1
+                continue
+            if status != "completed":
+                continue
+            document_key = (
+                yaml_service.canonical_theme_id(str(row["theme"] or "")),
+                str(row["doc_id"] or ""),
+            )
+            if document_key not in submitted_document_keys_by_username.get(username, set()):
+                bucket["accepted_without_submission_count"] += 1
 
         annotator_progress = []
         for username in sorted(per_user):
             values = per_user[username]
+            submitted_count = int(values["submitted_count"])
+            accepted_without_submission_count = int(values["accepted_without_submission_count"])
             annotator_progress.append(
                 {
                     "username": username,
-                    "submitted_count": int(values["submitted_count"]),
+                    "completed_count": submitted_count + accepted_without_submission_count,
+                    "submitted_count": submitted_count,
+                    "accepted_without_submission_count": accepted_without_submission_count,
                     "active_count": int(values["active_count"]),
                 }
             )
@@ -6481,7 +7380,11 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
             agreement_map[(str(row["theme"]), str(row["doc_id"]))] = dict(row)
 
         ignored_question_count_by_key: dict[tuple[str, str], int] = {}
-        if normalized_type == "questions":
+        include_ignored_qa_counts = (
+            normalized_type == "questions"
+            and not _is_focused_inference_qa_campaign(campaign.get("name"))
+        )
+        if include_ignored_qa_counts:
             for key, agreement in agreement_map.items():
                 agreement_status = str(agreement.get("status") or "").strip().lower()
                 final_snapshot_path = agreement.get("final_snapshot_path")
@@ -6567,7 +7470,7 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
                 reviewer_a_username = str(submissions_for_doc[0].get("username") or "") if submissions_for_doc else ""
                 reviewer_b_username = str(submissions_for_doc[1].get("username") or "") if len(submissions_for_doc) > 1 else ""
                 ignored_qa_count = int(ignored_question_count_by_key.get(key) or 0)
-                if normalized_type == "questions" and ignored_qa_count <= 0:
+                if include_ignored_qa_counts and ignored_qa_count <= 0:
                     ignored_qa_count = max(
                         (
                             _question_review_snapshot_ignored_count(submission.get("snapshot_path"))
@@ -6596,7 +7499,7 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
                 doc_id = str(state.get("doc_id") or "")
                 key = (theme, doc_id)
                 ignored_qa_count = int(ignored_question_count_by_key.get(key) or 0)
-                if normalized_type == "questions" and ignored_qa_count <= 0:
+                if include_ignored_qa_counts and ignored_qa_count <= 0:
                     submissions_for_doc = submission_map.get(key, [])
                     ignored_qa_count = max(
                         (
@@ -6629,12 +7532,15 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
         campaigns.append(
             {
                 "review_type": normalized_type,
-                "has_active_campaign": True,
+                "has_campaign": True,
+                "has_active_campaign": str(campaign["status"]) == "active",
+                "is_read_only": str(campaign["status"]) != "active",
                 "campaign": {
                     "id": int(campaign["id"]),
                     "name": str(campaign["name"]),
                     "status": str(campaign["status"]),
                     "seed": int(campaign["seed"]),
+                    "created_at": str(campaign.get("created_at") or ""),
                 },
                 "document_count": document_count,
                 "reviewers": reviewer_names,
@@ -6653,6 +7559,7 @@ def get_review_campaign_monitor(review_type: str | None = None, db=None) -> dict
                     "completed_excluded_task_count": completed_excluded_task_count,
                     "awaiting_reviewer_acceptance_count": awaiting_reviewer_acceptance_count,
                 },
+                "ignored_qa_count": sum(ignored_question_count_by_key.values()),
                 "agreement_ready_details": agreement_ready_details,
                 "resolution_contest_requests": resolution_contest_requests,
                 "open_tasks": open_tasks[:30],
@@ -6668,8 +7575,12 @@ def export_reviewed_template_fields(
     doc_ids: list[str] | None = None,
     campaign_id: int | None = None,
     limit: int | None = None,
+    output_dir: Path | None = None,
 ) -> dict[str, int]:
-    """Write reviewed rules/questions back into completed template YAML files."""
+    """Export reviewed copies without overwriting the frozen source templates."""
+    export_root = Path(output_dir) if output_dir is not None else yaml_service.WORK_DIR / "_exports"
+    if export_root.resolve() == HUMAN_ANNOTATED_TEMPLATES_DIR.resolve():
+        raise ValueError("Export to a new directory to preserve the frozen source templates")
     normalized_type = _validate_review_type(review_type)
     artifacts = list_completed_review_artifacts(
         normalized_type,
@@ -6712,7 +7623,9 @@ def export_reviewed_template_fields(
             template_document["num_questions"] = len(questions)
             _align_question_annotation_surfaces_with_document(template_document)
 
-        with open(template_path, "w", encoding="utf-8") as handle:
+        destination_path = export_root / theme / f"{doc_id}.yaml"
+        destination_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(destination_path, "w", encoding="utf-8") as handle:
             yaml.safe_dump(template_payload, handle, sort_keys=False, allow_unicode=True, width=10000)
         updated += 1
 

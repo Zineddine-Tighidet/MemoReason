@@ -1,0 +1,146 @@
+document:
+  document_id: train_21
+  document_theme: canada bombing
+  original_document: Media playback is unsupported on your device Media caption The plaza where the attack took place was cordoned off as paramedics helped the injuredA homemade bomb has exploded at a restaurant in Mississauga, Canada's sixth largest city, injuring 15 people.Police said two suspects entered the Bombay Bhel restaurant in the Ontario city late on Thursday and detonated the improvised bomb.Ambulance services said that three of the 15 people taken to hospital had "critical blast injuries".Two male suspects fled the scene immediately after the explosion in the city, which is near Toronto.Peel Regional Police said they had received a call about the incident at 22:32 local time (02:32 GMT).Police issued CCTV footage of the two suspects, describing them both as men around 5ft 10 in height with light or fair skin, and appealing for help identifying them.One man was described as "stocky" and in his mid-20s, while the other was of thin build. Both wore blue jeans and dark hoodies, and had covered their faces.The motive for the attack is unknown.Sergeant Matt Bertram told the Associated Press the two men just "dropped off this device, and took off right away"."We have no indication
+    to call it a hate crime or any kind of terrorism act," he added.Canadian broadcaster CBC reported a heavy police presence, complete with "tactical teams" - and said an officer on the scene could not say whether there was a further threat to public safety.One eyewitness speaking to CBC said he was at a different restaurant nearby when the explosion happened. He suggested that a birthday party, possibly involving children, was taking place inside Bombay Bhel at the time of the blast.Meanwhile, Indian foreign minister Sushma Swaraj said she was in touch with the country's representatives in Canada following the attack on an Indian restaurant, promising "our missions will work round the clock".Mississauga, a large city on the shore of Lake Ontario, borders the larger city of Toronto and is home to Toronto Pearson International Airport.
+  document_to_annotate: A homemade bomb has exploded at a restaurant in [Mississauga; place_1.city], [Canada; place_2.country]'s sixth largest city, injuring [15; number_1.int] people.Police said two suspects entered the [Bombay Bhel; entreprise_org_1.name] restaurant in the [Ontario; place_3.state] city late on [Thursday; temporal_1.day] and detonated the improvised bomb.Ambulance services said that [three; number_2.str] of the [15; number_1.int] people taken to hospital had "critical blast injuries".[Two; number_3.str] male suspects fled the scene immediately after the explosion in the city, which is near [Toronto; place_4.city].[Peel Regional Police; government_org_1.name] said they had received a call about the incident at [22:32; temporal_2.timestamp] local time.Police issued CCTV footage of the two suspects, describing them both as men around 5ft 10 in height with light or fair skin, and appealing for help identifying them.One man was described as "stocky" and in his mid-[20; number_4.int]s, while the other was of thin build. Both wore blue jeans and dark hoodies, and had covered their faces.The motive for the attack is unknown.Sergeant [Matt Bertram; person_1.full_name] told the
+    [Associated Press; media_org_1.name] the two men just "dropped off this device, and took off right away"."We have no indication to call it a hate crime or any kind of terrorism act," [he; person_1.subj_pronoun] added.[Canadian; place_2.demonym] broadcaster [CBC; media_org_2.name] reported a heavy police presence, complete with "tactical teams" - and said an officer on the scene could not say whether there was a further threat to public safety.One eyewitness speaking to [CBC; media_org_2.name] said he was at a different restaurant nearby when the explosion happened. He suggested that a birthday party, possibly involving children, was taking place inside [Bombay Bhel; entreprise_org_1.name] at the time of the blast.Meanwhile, [Indian; place_5.demonym] foreign minister [Sushma Swaraj; person_2.full_name] said [she; person_2.subj_pronoun] was in touch with the country's representatives in [Canada; place_2.country] following the attack on an [Indian; place_5.demonym] restaurant, promising "our missions will work round the clock".[Mississauga; place_1.city], a large city on the shore of [Lake Ontario; place_6.natural_site], borders the larger city of [Toronto; place_4.city] and is home
+    to [Toronto Pearson International Airport; place_7.natural_site].
+  relations: []
+  rules:
+  - 'number_3.str == 2 # "Two male suspects" matches the repeated references to "two suspects" throughout the document'
+  - 'place_1.city != place_4.city # Mississauga is described as being near Toronto, so they must be different cities'
+  - 'place_3.state != place_1.city # Ontario is the state containing Mississauga, they are different administrative levels'
+  num_questions: 12
+  questions:
+  - question_id: train_21_q01
+    question: In which city did the restaurant bombing take place?
+    question_type: extractive
+    answer: place_1.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that a homemade bomb exploded at a restaurant in [Mississauga; place_1.city].
+  - question_id: train_21_q02
+    question: How were the [Two; number_3.str] suspects described in terms of their clothing?
+    question_type: extractive
+    answer: blue jeans and dark hoodies
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that both suspects "wore blue jeans and dark hoodies, and had covered their faces."
+  - question_id: train_21_q03
+    question: What was the name of the person celebrating a birthday at [Bombay Bhel; entreprise_org_1.name] at the time of the blast?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. An eyewitness suggested that a birthday party, possibly involving children, was taking place inside [Bombay Bhel; entreprise_org_1.name].
+    - 2. The document does not state the name of the birthday celebrant or any attendee of the party; this fact is absent from the text.
+  - question_id: train_21_q04
+    question: How many of the [15; number_1.int] people taken to hospital did NOT have critical blast injuries?
+    question_type: arithmetic
+    answer: number_1.int - number_2.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [15; number_1.int] people were taken to hospital.
+    - 2. [three; number_2.str] of them had "critical blast injuries."
+    - 3. Subtracting the annotated critical-injury count from the annotated hospital count gives the requested number.
+  - question_id: train_21_q05
+    question: If each of the [Two; number_3.str] suspects was approximately 5ft 10in tall as described by police, what would their combined approximate height be in feet and inches?
+    question_type: arithmetic
+    answer: 11ft 8in
+    answer_type: invariant
+    reasoning_chain:
+    - 1. Police described both suspects as "men around 5ft 10 in height."
+    - 2. Both values are heights in the same unit. 5ft 10in + 5ft 10in = 11ft 8in (since 10in + 10in = 20in = 1ft 8in).
+  - question_id: train_21_q06
+    question: What is the total number of people injured across the [Bombay Bhel; entreprise_org_1.name] bombing and any previous attacks on [Indian; place_5.demonym] restaurants in [Canada; place_2.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [15; number_1.int] people were injured in the [Bombay Bhel; entreprise_org_1.name] bombing.
+    - 2. The document does not mention any previous attacks on [Indian; place_5.demonym] restaurants in [Canada; place_2.country], so no second injury count is available to add.
+    - 3. Because the needed second quantity is not stated in the document, the total cannot be calculated.
+  - question_id: train_21_q07
+    question: What day of the week comes immediately before the day on which the suspects detonated the bomb at [Bombay Bhel; entreprise_org_1.name]?
+    question_type: temporal
+    answer: temporal_1.day - 1
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the suspects entered the restaurant late on [Thursday; temporal_1.day] and detonated the improvised bomb.
+    - 2. Moving one weekday backward from the annotated detonation day gives the answer.
+  - question_id: train_21_q08
+    question: According to the document, did the suspects flee the scene before or after the explosion?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the suspects "fled the scene immediately after the explosion."
+    - 2. The temporal relationship is explicitly stated as "after," which is stable unannotated text.
+  - question_id: train_21_q09
+    question: On what date did the bombing at [Bombay Bhel; entreprise_org_1.name] occur?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the attack happened late on [Thursday; temporal_1.day].
+    - 2. The document does not provide any specific calendar date, month, or year for the bombing; only the day of the week is given.
+    - 3. Because the exact date is not stated in the document, it cannot be determined.
+  - question_id: train_21_q10
+    question: Based on the document, what is the nationality of the restaurant [Bombay Bhel; entreprise_org_1.name] where the bombing occurred?
+    question_type: inference
+    answer: place_5.demonym
+    answer_type: variant
+    reasoning_chain:
+    - 1. [Sushma Swaraj; person_2.full_name], described as [Indian; place_5.demonym] foreign minister, referred to the attack on a [Indian; place_5.demonym] restaurant.
+    - 2. Since [Bombay Bhel; entreprise_org_1.name] is the restaurant where the bombing occurred, it can be inferred that it is a [Indian; place_5.demonym] restaurant.
+  - question_id: train_21_q11
+    question: Based on the police description of the [Two; number_3.str] suspects, can it be inferred that they were roughly the same height?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. Police described both suspects as "men around 5ft 10 in height."
+    - 2. Since the same height description was applied to both, it can be inferred they were roughly the same height.
+  - question_id: train_21_q12
+    question: Given that the motive is unknown, can we determine whether the attack on [Bombay Bhel; entreprise_org_1.name] was motivated by a business dispute?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document explicitly states "the motive for the attack is unknown."
+    - 2. Sergeant [Matt Bertram; person_1.full_name] stated there was "no indication to call it a hate crime or any kind of terrorism act," but no alternative motive was identified.
+    - 3. The document provides no information about any business dispute or any other specific motive, so this cannot be determined.
+  annotation_status: ok
+  annotation_errors: []
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 12
+    upper_bound: 18
+    factual_value: 15
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: Media playback is unsupported on your device Media caption The plaza where the attack took place was cordoned off as paramedics helped the injuredA homemade bomb has exploded at a restaurant in [Brellhaven; place_1.city], [Velorund; place_2.country]'s sixth largest city, injuring [14; number_1.int] people.Police said two suspects entered the [Kaloor Tiffin; entreprise_org_1.name] restaurant in [Wentharal; place_3.state] city late on [Wednesday; temporal_1.day] and detonated the improvised bomb.Ambulance services said that [one; number_2.str] of the [14; number_1.int] people taken to hospital had "critical blast injuries".[Two; number_3.str] male suspects fled the scene immediately after the explosion in the city, which is near [Wospheran; place_4.city].[Haldern District Constabulary; government_org_1.name] said they had received a call about the incident at [00:39; temporal_2.timestamp] local time ([12:45; temporal_3.timestamp] GMT).Police issued CCTV footage of the two suspects, describing them both as men around 5ft 10 in height with light or fair skin, and appealing for help identifying them.One man was described as "stocky" and in his
+    mid-20s, while the other was of thin build. Both wore blue jeans and dark hoodies, and had covered their faces.The motive for the attack is unknown.Sergeant [Drennik Polsher; person_1.full_name] told the [Veridian Wire Service; media_org_1.name] the two men just "dropped off this device, and took off right away"."We have no indication to call it a hate crime or any kind of terrorism act," [she; person_1.subj_pronoun] added.[Velorundish; place_2.demonym] broadcaster [TBN; media_org_2.name] reported a heavy police presence, complete with "tactical teams" - and said an officer on the scene could not say whether there was a further threat to public safety.One eyewitness speaking to [TBN; media_org_2.name] said he was at a different restaurant nearby when the explosion happened. He suggested that a birthday party, possibly involving children, was taking place inside [Kaloor Tiffin; entreprise_org_1.name] at the time of the blast.Meanwhile, [Velorian; place_5.demonym] foreign minister [Kavindra Tholep; person_2.full_name] said [he; person_2.subj_pronoun] was in touch with the country's representatives in [Velorund; place_2.country] following the attack on a [Velorian; place_5.demonym]
+    restaurant, promising "our missions will work round the clock".[Brellhaven; place_1.city], a large city on the shore of [Lake Tarvello; place_6.natural_site], borders the larger city of [Wospheran; place_4.city] and is home to [Grellwick Crosswinds Aerodrome; place_7.natural_site].
+metadata:
+  status: completed

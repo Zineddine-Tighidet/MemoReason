@@ -1,0 +1,233 @@
+document:
+  document_id: space_12
+  document_theme: Space Missions
+  source: wikipedia
+  wikipedia_title: Voyager program
+  wikipedia_url: https://en.wikipedia.org/wiki/Voyager_program
+  original_document: 'The Voyager program is an American scientific program that employs two interstellar probes, Voyager 1 and Voyager 2. They were launched in 1977 to take advantage of a favorable planetary alignment to explore the two gas giants Jupiter and Saturn and potentially also the ice giants, Uranus and Neptune—to fly near them while collecting data for transmission back to Earth. After Voyager 1 successfully completed its flyby of Saturn and its moon Titan, it was decided that Voyager 2 would continue on its pre-planned trajectory to fly by Uranus and Neptune.
+
+
+    After the planetary flybys were complete, decisions were made to keep the probes in operation to explore interstellar space and the outer regions of the Solar System. On 25 August 2012, data from Voyager 1 indicated that it had entered interstellar space. On 5 November 2019, data from Voyager 2 indicated that it also had entered interstellar space. On 4 November 2019, scientists reported that on 5 November 2018, the Voyager 2 probe had officially reached the interstellar medium (ISM), a region of outer space beyond the influence of the solar wind, as did Voyager 1 in 2012. In August 2018, NASA confirmed, based on results by the New Horizons spacecraft, the existence of a "hydrogen wall" at the outer edges of the Solar System that was first detected in 1992 by the two Voyager spacecraft.
+
+
+    As of 2026, both Voyagers are still in operation beyond the outer boundary of the heliosphere in interstellar space. As of 2024, Voyager 1 was moving with a velocity of 61,000 kilometers per hour (38,000 mph), or 17 km/s, (10.5 miles/second) relative to the Sun, and was 24.5 billion kilometers (164 AU) from the Sun. At the same time, Voyager 2 was moving with a velocity of 55,000 kilometers per hour (34,000 mph), or 15 km/s, relative to the Sun, and was 20.4 billion kilometers (12.7×10^9 mi) from the Sun.
+
+
+    The two Voyagers are the only human-made objects to date that have passed into interstellar space — a record they will hold until at least the 2040s — and Voyager 1 is the farthest human-made object from Earth.'
+  document_to_annotate: 'The [Voyager; event_1.name] program is an [American; place_1.demonym] scientific program that employs two interstellar probes, [Voyager 1; event_2.name] and [Voyager 2; event_3.name]. They were launched in [1977; temporal_1.year] to take advantage of a favorable planetary alignment to explore the two gas giants [Jupiter; place_2.natural_site] and [Saturn; place_3.natural_site] and potentially also the ice giants, [Uranus; place_4.natural_site] and [Neptune; place_5.natural_site]—to fly near them while collecting data for transmission back to [Earth; place_6.natural_site]. After [Voyager 1; event_2.name] successfully completed its flyby of [Saturn; place_3.natural_site] and its moon [Titan; place_7.natural_site], it was decided that [Voyager 2; event_3.name] would continue on its pre-planned trajectory to fly by [Uranus; place_4.natural_site] and [Neptune; place_5.natural_site].
+
+
+    After the planetary flybys were complete, decisions were made to keep the probes in operation to explore interstellar space and the outer regions of the [Solar System; place_8.region]. On [25 August 2012; temporal_2.date], data from [Voyager 1; event_2.name] indicated that it had entered interstellar space. On [5 November 2019; temporal_3.date], data from [Voyager 2; event_3.name] indicated that it also had entered interstellar space. On [4 November 2019; temporal_4.date], scientists reported that on [5 November 2018; temporal_5.date], the [Voyager 2; event_3.name] probe had officially reached the interstellar medium (ISM), a region of outer space beyond the influence of the solar wind, as did [Voyager 1; event_2.name] in [2012; temporal_2.year]. In [August 2018; temporal_6.date], [NASA; government_org_1.name] confirmed, based on results by the [New Horizons; product_1.name] spacecraft, the existence of a "hydrogen wall" at the outer edges of the [Solar System; place_8.region] that was first detected in [1992; temporal_7.year] by the two [Voyager; event_1.name] spacecraft.
+
+
+    As of [2026; temporal_8.year], both [Voyagers; event_4.name] are still in operation beyond the outer boundary of the heliosphere in interstellar space. As of [2024; temporal_9.year], [Voyager 1; event_2.name] was moving with a velocity of [61,000; number_1.int] kilometers per hour, relative to the [Sun; place_9.natural_site], and was [24.5; number_5.float] billion kilometers from the [Sun; place_9.natural_site]. At the same time, [Voyager 2; event_3.name] was moving with a velocity of [55,000; number_7.int] kilometers per hour, relative to the [Sun; place_9.natural_site], and was [20.4; number_10.float] billion kilometers from the [Sun; place_9.natural_site].
+
+
+    The two [Voyagers; event_4.name] are the only human-made objects to date that have passed into interstellar space — a record they will hold until at least the [2040; temporal_10.year]s — and [Voyager 1; event_2.name] is the farthest human-made object from [Earth; place_6.natural_site].'
+  relations: []
+  rules: []
+  num_questions: 12
+  questions:
+  - question_id: space_12_q01
+    question: What nationality is the [Voyager; event_1.name] scientific program?
+    question_type: extractive
+    answer: place_1.demonym
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that the Voyager program is a [American; place_1.demonym] scientific program.
+  - question_id: space_12_q02
+    question: Have the [Voyagers; event_4.name] go into interstellar space?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+  - question_id: space_12_q03
+    question: What was the total budget allocated by [NASA; government_org_1.name] for the [American; place_1.demonym] [Voyager; event_1.name] program?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [NASA; government_org_1.name] in the context of confirming the existence of a "hydrogen wall."
+    - 2. The document describes the Voyager program as a [American; place_1.demonym] scientific program.
+    - 3. However, the document does not state any budget or funding figures for the Voyager program, so the total budget cannot be determined.
+  - question_id: space_12_q04
+    question: As of [2024; temporal_9.year], how much farther from the Sun was [Voyager 1; event_2.name] than [Voyager 2; event_3.name], in billions of kilometers?
+    question_type: arithmetic
+    answer: number_5.float - number_10.float
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states Voyager 1 was [24.5; number_5.float] billion kilometers from the Sun.
+    - 2. The document states Voyager 2 was [20.4; number_10.float] billion kilometers from the Sun.
+    - 3. The difference is [24.5; number_5.float] - [20.4; number_10.float].
+  - question_id: space_12_q05
+    question: How many distinct interstellar probes are employed by the [Voyager; event_1.name] program according to the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the Voyager program "employs two interstellar probes, Voyager 1 and Voyager 2."
+    - 2. Counting these named probes gives 2.
+  - question_id: space_12_q06
+    question: Given that Voyager 1 travels at [61,000; number_1.int] kilometers per hour, what is the difference between Voyager 1's mass and Voyager 2's mass in kilograms?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document provides Voyager 1's velocity as [61,000; number_1.int] kilometers per hour.
+    - 2. However, the document does not state the mass of either Voyager 1 or Voyager 2.
+    - 3. Without mass values for either probe, the difference in mass cannot be determined.
+  - question_id: space_12_q07
+    question: On what day of the week did scientists report that [Voyager 2; event_3.name] had officially reached the interstellar medium?
+    question_type: temporal
+    answer: temporal_4.day
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that on [4 November 2019; temporal_4.date], scientists reported that Voyager 2 had officially reached the interstellar medium.
+    - 2. Determining the day of the week for [4 November 2019; temporal_4.date] requires calendar computation.
+  - question_id: space_12_q08
+    question: According to the document, did [Voyager 1; event_2.name] enter interstellar space before or after [Voyager 2; event_3.name]?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document first describes Voyager 1 entering interstellar space, then later states that Voyager 2 "also had entered interstellar space."
+    - 2. The document further confirms this ordering by noting that Voyager 2 reached the interstellar medium "as did Voyager 1" earlier.
+    - 3. Therefore, Voyager 1 entered interstellar space before Voyager 2.
+  - question_id: space_12_q09
+    question: How many days after the [Voyager; event_1.name] probes were launched in [1977; temporal_1.year] did [Voyager 1; event_2.name] complete its flyby of [Neptune; place_5.natural_site]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the probes were launched in [1977; temporal_1.year], but only the year is given, not the exact launch date.
+    - 2. The document mentions that Voyager 1 completed its flyby of Saturn but does not provide the date of that flyby.
+    - 3. Without exact dates for both events, the number of days between them cannot be determined.
+  - question_id: space_12_q10
+    question: What speed in kilometres per hour is reported for the probe that is farther from the [Sun; place_9.natural_site] as of [2024; temporal_9.year]?
+    question_type: inference
+    answer: number_1.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document gives Voyager 1's distance as [24.5; number_5.float] billion kilometres and Voyager 2's as [20.4; number_10.float] billion kilometres.
+    - 2. Comparing those distances identifies Voyager 1 as the farther probe.
+    - 3. The reported speed for Voyager 1 is [61,000; number_1.int] kilometres per hour.
+  - question_id: space_12_q11
+    question: Based on the document, is [Voyager 1; event_2.name] probe both the faster-moving and more distant from the Sun than [Voyager 2; event_3.name]?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. Voyager 1's velocity is [61,000; number_1.int] km/h, which is greater than Voyager 2's velocity of [55,000; number_7.int] km/h.
+    - 2. Voyager 1's distance from the Sun is [24.5; number_5.float] billion km, which is greater than Voyager 2's distance of [20.4; number_10.float] billion km.
+    - 3. Therefore, Voyager 1 is both faster and farther from the Sun.
+  - question_id: space_12_q12
+    question: Considering that the [Voyager; event_1.name] program is [American; place_1.demonym] and that [NASA; government_org_1.name] confirmed the "hydrogen wall," can we determine which specific division within [NASA; government_org_1.name] managed the [Voyager; event_1.name] missions?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document identifies the Voyager program as [American; place_1.demonym] and mentions [NASA; government_org_1.name] in the context of confirming the "hydrogen wall."
+    - 2. However, the document does not describe any internal divisions or organizational structure of [NASA; government_org_1.name].
+    - 3. Without information about [NASA; government_org_1.name]'s internal structure, the specific managing division cannot be determined.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1958
+    upper_bound: 1996
+    factual_value: 1977
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1998
+    upper_bound: 2026
+    factual_value: 2018
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1973
+    upper_bound: 2011
+    factual_value: 1992
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_9.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 48800
+    upper_bound: 73200
+    factual_value: 61000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.float
+    lower_bound: 19.6
+    upper_bound: 29.4
+    factual_value: 24.5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 44000
+    upper_bound: 66000
+    factual_value: 55000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.float
+    lower_bound: 16.32
+    upper_bound: 24.48
+    factual_value: 20.4
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 2020
+    upper_bound: 2026
+    factual_value: 2040
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The Voyager program is a [Velundric; place_1.demonym] scientific program that employs two interstellar probes, Voyager 1 and Voyager 2. They were launched in [1967; temporal_1.year] to take advantage of a favorable planetary alignment to explore the two gas giants Jupiter and Saturn and potentially also the ice giants, Uranus and Neptune—to fly near them while collecting data for transmission back to Earth. After Voyager 1 successfully completed its flyby of Saturn and its moon Titan, it was decided that Voyager 2 would continue on its pre-planned trajectory to fly by Uranus and Neptune.
+
+
+    After the planetary flybys were complete, decisions were made to keep the probes in operation to explore interstellar space and the outer regions of the Solar System. On [27 June 2002; temporal_2.date], data from Voyager 1 indicated that it had entered interstellar space. On [19 December 2009; temporal_3.date], data from Voyager 2 indicated that it also had entered interstellar space. On [18 December 2009; temporal_4.date], scientists reported that on [19 December 2008; temporal_5.date], the Voyager 2 probe had officially reached the interstellar medium (ISM), a region of outer space beyond the influence of the solar wind, as did Voyager 1 in [2002; temporal_2.year]. In [28 October 2008; temporal_6.date], [COSPAR; government_org_1.name] confirmed, based on results by the New Horizons spacecraft, the existence of a "hydrogen wall" at the outer edges of the Solar System that was first detected in [1982; temporal_7.year] by the two Voyager spacecraft.
+
+
+    As of [2016; temporal_8.year], both Voyagers are still in operation beyond the outer boundary of the heliosphere in interstellar space. As of [2014; temporal_9.year], Voyager 1 was moving with a velocity of [73200; number_1.int] kilometers per hour ([30400; number_2.int] mph), or [20; number_3.int] km/s, ([9; number_4.float] miles/second) relative to the Sun, and was [20; number_5.float] billion kilometers ([132; number_6.int] AU) from the Sun. At the same time, Voyager 2 was moving with a velocity of [54999; number_7.int] kilometers per hour ([27200; number_8.int] mph), or [12; number_9.int] km/s, relative to the Sun, and was [19; number_10.float] billion kilometers (12.7×10^9 mi) from the Sun.
+
+
+    The two Voyagers are the only human-made objects to date that have passed into interstellar space — a record they will hold until at least the [2030; temporal_10.year]s — and Voyager 1 is the farthest human-made object from Earth.'
+metadata:
+  status: completed

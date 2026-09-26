@@ -1,0 +1,196 @@
+document:
+  document_id: bio_12
+  document_theme: Biographies of Famous Personalities (Scientists and Politicians)
+  source: wikipedia
+  wikipedia_title: Katherine Johnson
+  wikipedia_url: https://en.wikipedia.org/wiki/Katherine_Johnson
+  original_document: 'Creola Katherine Johnson (née Coleman, previously Goble; August 26, 1918 – February 24, 2020) was an American mathematician and human computer whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. crewed spaceflights. During her 33-year career at NASA and its predecessor, the National Advisory Committee for Aeronautics, she earned a reputation for mastering complex manual calculations and helped pioneer the use of computers to perform tasks previously requiring humans. The space agency noted her "historical role as one of the first African-American women to work as a NASA scientist".
+
+
+    Johnson''s work included calculating trajectories, launch windows, and emergency return paths for Project Mercury spaceflights, including those for astronauts Alan Shepard (the first American in space) and John Glenn (the first American in orbit), and rendezvous paths for the Apollo Lunar Module and command module on flights to the Moon. Her calculations were also essential to the beginning of the Space Shuttle program, and she worked on plans for a human mission to Mars.
+
+
+    Johnson coauthored 26 scientific papers.
+
+
+    In 2015 President Barack Obama awarded Johnson the Presidential Medal of Freedom. In 2016, she received the Silver Snoopy Award from NASA astronaut Leland D. Melvin and a NASA Group Achievement Award. She was portrayed by Taraji P. Henson in the 2016 film Hidden Figures. In 2019, the United States Congress awarded Johnson the Congressional Gold Medal and NASA announced the establishment of the Katherine Johnson Independent Verification and Validation Facility in her home state of West Virginia. In 2021, she was posthumously inducted into the National Women''s Hall of Fame.'
+  document_to_annotate: '[Creola Katherine Johnson; person_1.full_name] (née [Coleman; person_1.last_name], previously [Goble; person_1.last_name]; [August 26, 1918; temporal_1.date] – [February 24, 2020; temporal_2.date]) was an [American; place_1.demonym] mathematician and human computer whose calculations of orbital mechanics as a [NASA; government_org_1.name] employee were critical to the success of the first and subsequent [U.S.; place_1.country] crewed spaceflights. During [her; person_1.poss_det_pronoun] [33; number_1.int]-year career at [NASA; government_org_1.name] and its predecessor, the [National Advisory Committee for Aeronautics; government_org_2.name], [she; person_1.subj_pronoun] earned a reputation for mastering complex manual calculations and helped pioneer the use of computers to perform tasks previously requiring humans. The space agency noted [her; person_1.poss_det_pronoun] "historical role as one of the first [African-American; person_1.ethnicity] women to work as a [NASA; government_org_1.name] scientist".
+
+
+    [Johnson; person_1.last_name]''s work included calculating trajectories, launch windows, and emergency return paths for [Project Mercury; event_1.name] spaceflights, including those for astronauts [Alan Shepard; person_2.full_name] (the first [American; place_1.demonym] in space) and [John Glenn; person_3.full_name] (the first [American; place_1.demonym] in orbit), and rendezvous paths for the [Apollo; event_2.name] Lunar Module and command module on flights to the [Moon; place_2.natural_site]. [Her; person_1.poss_det_pronoun] calculations were also essential to the beginning of the [Space Shuttle; event_3.name] program, and [she; person_1.subj_pronoun] worked on plans for a human mission to [Mars; place_3.natural_site].
+
+
+    [Johnson; person_1.last_name] coauthored [26; number_2.int] scientific papers.
+
+
+    In [2015; temporal_3.year] President [Barack Obama; person_4.full_name] awarded [Johnson; person_1.last_name] the [Presidential Medal of Freedom; award_1.name]. In [2016; temporal_4.year], [she; person_1.subj_pronoun] received the [Silver Snoopy Award; award_2.name] from [NASA; government_org_1.name] astronaut [Leland D. Melvin; person_5.full_name] and a [NASA Group Achievement Award; award_3.name]. [She; person_1.subj_pronoun] was portrayed by [Taraji P. Henson; person_6.full_name] in the [2016; temporal_4.year] film [Hidden Figures; product_1.name]. In [2019; temporal_5.year], the [United States Congress; government_org_3.name] awarded [Johnson; person_1.last_name] the [Congressional Gold Medal; award_4.name] and [NASA; government_org_1.name] announced the establishment of the [Katherine Johnson Independent Verification and Validation Facility; entreprise_org_1.name] in [her; person_1.poss_det_pronoun] home state of [West Virginia; place_4.state]. In [2021; temporal_6.year], [she; person_1.subj_pronoun] was posthumously inducted into the [National Women''s Hall of Fame; award_5.name].'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural mention "33-year career"'
+  - 'temporal_4.year - temporal_3.year == 1 # consecutive years for awards in 2015 and 2016'
+  - 'number_2.int > 1 # multiple scientific papers were coauthored'
+  num_questions: 12
+  questions:
+  - question_id: bio_12_q01
+    question: What award did President [Barack Obama; person_4.full_name] give to [Creola Katherine Johnson; person_1.full_name] in [2015; temporal_3.year]?
+    question_type: extractive
+    answer: award_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that in [2015; temporal_3.year], President [Barack Obama; person_4.full_name] awarded [Coleman; person_1.last_name] the [Presidential Medal of Freedom; award_1.name].
+  - question_id: bio_12_q02
+    question: Was the [Katherine Johnson Independent Verification and Validation Facility; entreprise_org_1.name] established in [Creola Katherine Johnson; person_1.full_name]'s home state?
+    question_type: extractive
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+  - question_id: bio_12_q03
+    question: At which university did [Creola Katherine Johnson; person_1.full_name] study mathematics?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [Coleman; person_1.last_name]'s career at [NASA; government_org_1.name] and awards but does not mention any educational institution.
+    - 2. Since no university is mentioned in the document, this cannot be determined.
+  - question_id: bio_12_q04
+    question: If [Creola Katherine Johnson; person_1.full_name] had coauthored twice as many scientific papers as stated in the document, how many papers would that be?
+    question_type: arithmetic
+    answer: number_2.int * 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Coleman; person_1.last_name] coauthored [26; number_2.int] scientific papers.
+    - 2. The answer is obtained by multiplying that annotated paper count by 2.
+  - question_id: bio_12_q05
+    question: How many individual astronauts are mentioned by name in the document?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document names astronaut [Alan Shepard; person_2.full_name].
+    - 2. It names astronaut [John Glenn; person_3.full_name].
+    - 3. It names [NASA; government_org_1.name] astronaut [Leland D. Melvin; person_5.full_name].
+    - 4. That is 1 + 1 + 1 = 3 astronauts.
+  - question_id: bio_12_q06
+    question: How many total spaceflight missions did [Creola Katherine Johnson; person_1.full_name] calculate trajectories for during the [Project Mercury; event_1.name] program?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Coleman; person_1.last_name] calculated trajectories for [Project Mercury; event_1.name] spaceflights, including those for [Alan Shepard; person_2.full_name] and [John Glenn; person_3.full_name].
+    - 2. However, the document does not provide a specific total number of missions, so this cannot be determined.
+  - question_id: bio_12_q07
+    question: How many years passed between [Creola Katherine Johnson; person_1.full_name]'s birth and the year the [United States Congress; government_org_3.name] awarded the [Congressional Gold Medal; award_4.name]?
+    question_type: temporal
+    answer: temporal_5.year - temporal_1.date
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [Creola Katherine Johnson; person_1.full_name] was born on [August 26, 1918; temporal_1.date]; use the year component of that date.
+    - 2. The [United States Congress; government_org_3.name] awarded the [Congressional Gold Medal; award_4.name] in [2019; temporal_5.year].
+    - 3. Subtracting the birth year from the medal year gives the elapsed number of years.
+  - question_id: bio_12_q08
+    question: According to the document, was the subject's posthumous induction into the [National Women's Hall of Fame; award_5.name] described as occurring after the subject's death?
+    question_type: temporal
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the subject's date of death and later mentions a posthumous induction into the National Women's Hall of Fame.
+    - 2. The word "posthumously" inherently means after death, so the induction is confirmed to have occurred after the subject's death.
+  - question_id: bio_12_q09
+    question: In what year did [Creola Katherine Johnson; person_1.full_name] begin working at the [National Advisory Committee for Aeronautics; government_org_2.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Coleman; person_1.last_name] had a [33; number_1.int]-year career at [NASA; government_org_1.name] and its predecessor, the [National Advisory Committee for Aeronautics; government_org_2.name].
+    - 2. However, the document does not specify the exact year she started working there, so this cannot be determined.
+  - question_id: bio_12_q10
+    question: Given that [Creola Katherine Johnson; person_1.full_name] worked on rendezvous paths for the [Apollo; event_2.name] Lunar Module on flights to [Moon; place_2.natural_site], what can be inferred about the destination of the [Apollo; event_2.name] program?
+    question_type: inference
+    answer: place_2.natural_site
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Coleman; person_1.last_name] calculated rendezvous paths for [Apollo; event_2.name] Lunar Module and command module on flights to [Moon; place_2.natural_site].
+    - 2. Since these flights went to [Moon; place_2.natural_site] and involved a Lunar Module, it can be inferred that [Moon; place_2.natural_site] was the destination of the [Apollo; event_2.name] program.
+  - question_id: bio_12_q11
+    question: Based on the document's description of the subject as both a mathematician and a human computer who helped pioneer the use of electronic computers, can it be inferred that the transition from manual to electronic computation occurred during the subject's career?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes the subject as a 'mathematician and human computer,' indicating the subject personally performed manual calculations.
+    - 2. The document also states the subject 'helped pioneer the use of computers to perform tasks previously requiring humans,' meaning the subject was involved in adopting electronic computation.
+    - 3. Since the subject both performed manual calculations and helped introduce electronic computers, the transition from manual to electronic computation must have occurred during the subject's career.
+  - question_id: bio_12_q12
+    question: Did [Creola Katherine Johnson; person_1.full_name]'s calculations for [John Glenn; person_3.full_name]'s orbital flight use the same mathematical methods as those for [Alan Shepard; person_2.full_name]'s spaceflight?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that [Coleman; person_1.last_name] calculated trajectories for both [Alan Shepard; person_2.full_name] and [John Glenn; person_3.full_name].
+    - 2. However, the document does not describe the specific mathematical methods used for either mission, so whether the same methods were used cannot be determined.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1899
+    upper_bound: 1937
+    factual_value: 1918
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 27
+    upper_bound: 39
+    factual_value: 33
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 21
+    upper_bound: 31
+    factual_value: 26
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1995
+    upper_bound: 2026
+    factual_value: 2015
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Velithra Ondrine Kessoway; person_1.full_name] (née [Kessoway; person_1.last_name], previously [Kessoway; person_1.last_name]; [5 July 1899; temporal_1.date] – [9 May 2000; temporal_2.date]) was a [Velorinthian; place_1.demonym] mathematician and human computer whose calculations of orbital mechanics as a [VOSCA; government_org_1.name] employee were critical to the success of the first and subsequent [Velorinth; place_1.country] crewed spaceflights. During [her; person_1.poss_det_pronoun] [32; number_1.int]-year career at [VOSCA; government_org_1.name] and its predecessor, the [Federal Bureau of Aeronautical Research; government_org_2.name], [she; person_1.subj_pronoun] earned a reputation for mastering complex manual calculations and helped pioneer the use of computers to perform tasks previously requiring humans. The space agency noted [her; person_1.poss_det_pronoun] "historical role as one of the first [Thalvic-Orenthan; person_1.ethnicity] women to work as a [VOSCA; government_org_1.name] scientist".
+
+
+    [Kessoway; person_1.last_name]''s work included calculating trajectories, launch windows, and emergency return paths for [Venture Caliston; event_1.name] spaceflights, including those for astronauts [Torvek Grenshale; person_2.full_name] (the first [Velorinthian; place_1.demonym] in space) and [Tarvek Olundi; person_3.full_name] (the first [Velorinthian; place_1.demonym] in orbit), and rendezvous paths for [Velorath; event_2.name] Lunar Module and command module on flights to [Velthara; place_2.natural_site]. [Her; person_1.poss_det_pronoun] calculations were also essential to the beginning of the [Skyward Chariot; event_3.name] program, and [she; person_1.subj_pronoun] worked on plans for a human mission to [Velkora; place_3.natural_site].
+
+
+    [Kessoway; person_1.last_name] coauthored [21; number_2.int] scientific papers.
+
+
+    In [1995; temporal_3.year] President [Dorven Kalshey; person_4.full_name] awarded [Kessoway; person_1.last_name] the [Sovereign Crest of Distinction; award_1.name]. In [1996; temporal_4.year], [she; person_1.subj_pronoun] received the [Golden Pelrath Citation; award_2.name] from [VOSCA; government_org_1.name] astronaut [Corvath J. Tellune; person_5.full_name] and a [Collective Endeavor Commendation; award_3.name]. [She; person_1.subj_pronoun] was portrayed by [Velori K. Thandris; person_6.full_name] in the [1996; temporal_4.year] film Hidden Figures. In [1999; temporal_5.year], the [Veldoran National Assembly; government_org_3.name] awarded [Kessoway; person_1.last_name] the [Sovereign Crest of Valor; award_4.name] and [VOSCA; government_org_1.name] announced the establishment of the Katherine Johnson Independent Verification and Validation Facility in [her; person_1.poss_det_pronoun] home state of [Korvallen; place_4.state]. In [2001; temporal_6.year], [she; person_1.subj_pronoun] was posthumously inducted into the National Women''s Hall of Fame.'
+metadata:
+  status: completed

@@ -250,6 +250,7 @@ function editorApp(theme, docId) {
                 .replace(/\b\w/g, (ch) => ch.toUpperCase());
             if (this.reviewTarget === 'rules') return `Rules Review ${rawStatus}`;
             if (this.reviewTarget === 'questions') return `Questions Review ${rawStatus}`;
+            if (this.isCombinedReviewMode) return `Combined Review ${rawStatus}`;
             return `Doc Annotation ${rawStatus}`;
         },
         get reviewTargetLabel() {
@@ -260,7 +261,11 @@ function editorApp(theme, docId) {
             }
             if (this.reviewTarget === 'rules') return 'Rules Review';
             if (this.reviewTarget === 'questions') return 'Questions Review';
+            if (this.isCombinedReviewMode) return 'Combined Review';
             return 'Doc Annotation';
+        },
+        get isCombinedReviewMode() {
+            return Boolean(this.docData?.combined_review_mode);
         },
         get canEditReviewTargetWorkspace() {
             if (this.referenceMode) return false;
@@ -282,6 +287,16 @@ function editorApp(theme, docId) {
                 && this.agreementWorkspace.active
             );
         },
+        get canEditQuestionDocumentText() {
+            return (
+                this.reviewTarget === 'questions'
+                && isPowerUser
+                && this.canEditReviewTargetWorkspace
+            );
+        },
+        get canEditDocumentText() {
+            return this.canEditDocumentAnnotations || this.canEditQuestionDocumentText;
+        },
         get canSaveWorkspace() {
             return !this.reviewTarget || this.canEditReviewTargetWorkspace;
         },
@@ -298,20 +313,22 @@ function editorApp(theme, docId) {
             return this.canFinishWorkspace && this.currentStatus !== 'completed' && this.currentStatus !== 'validated';
         },
         get showQuestionsPanel() {
-            return this.reviewTarget === 'questions';
+            return this.reviewTarget === 'questions' || this.isCombinedReviewMode;
         },
         get showRulesPanel() {
             if (this.referenceMode && this.reviewTarget === 'questions') return false;
-            return this.reviewTarget === 'rules' || this.reviewTarget === 'questions';
+            return this.reviewTarget === 'rules' || this.reviewTarget === 'questions' || this.isCombinedReviewMode;
         },
         get finishButtonLabel() {
             if (this.reviewTarget === 'rules') return isPowerUser ? '✓ Finish Rules Review' : '✓ Submit Rules Review';
             if (this.reviewTarget === 'questions') return isPowerUser ? '✓ Finish Questions Review' : '✓ Submit Questions Review';
+            if (this.isCombinedReviewMode) return '✓ Submit Combined Review';
             return isPowerUser ? '✓ Finish' : '✓ Submit Annotations';
         },
         get finishButtonBusyLabel() {
             if (this.reviewTarget === 'rules') return isPowerUser ? '⏳ Finishing Rules Review...' : '⏳ Submitting Rules Review...';
             if (this.reviewTarget === 'questions') return isPowerUser ? '⏳ Finishing Questions Review...' : '⏳ Submitting Questions Review...';
+            if (this.isCombinedReviewMode) return '⏳ Submitting Combined Review...';
             return '⏳ Saving...';
         },
 
@@ -1431,6 +1448,17 @@ function editorApp(theme, docId) {
                         : (justification ? 'exempted' : 'missing'),
                 };
             });
+        },
+
+        isFocusedInferenceValidationCampaign() {
+            const name = String(this.docData?.active_review_campaign_name || '').trim();
+            return name === 'Inference QA validation 2026-06-16';
+        },
+
+        shouldShowQaCoverageVerifier() {
+            return this.reviewTarget === 'questions'
+                && !this.referenceMode
+                && !this.isFocusedInferenceValidationCampaign();
         },
 
         _qaCoverageMissingRows() {
@@ -5795,26 +5823,26 @@ function editorApp(theme, docId) {
             if (!isPowerUser) {
                 return;
             }
-            
+
             // Add creator/editor info to annotation tooltips
             const annotations = document.querySelectorAll('.ann');
-            
+
             annotations.forEach(ann => {
                 const ref = ann.dataset.ref;  // e.g., "person_1.name"
-                
+
                 // Build tooltip with entity reference
                 let tooltip = ref || '';
-                
+
                 // Look up metadata by entity reference only (not position)
                 const metadata = this.annotationMetadata?.annotations?.[ref];
-                
+
                 if (metadata) {
                     // Has history - show who created/edited it
                     const creator = metadata.username || 'Unknown';
                     const timestamp = metadata.timestamp ? new Date(metadata.timestamp).toLocaleString() : '';
                     const lastEditor = metadata.last_editor || creator;
                     const lastModified = metadata.last_modified ? new Date(metadata.last_modified).toLocaleString() : timestamp;
-                    
+
                     if (lastEditor === creator) {
                         tooltip += `\n\nCreated by: ${creator}`;
                         if (timestamp) tooltip += `\n${timestamp}`;
@@ -5827,10 +5855,10 @@ function editorApp(theme, docId) {
                     // No history at all - mark as original
                     tooltip += '\n\nOriginal annotation';
                 }
-                
+
                 ann.title = tooltip;
             });
-            
+
             // Enhance question tooltips
             const questions = document.querySelectorAll('.question-card');
             questions.forEach(card => {
@@ -5838,7 +5866,7 @@ function editorApp(theme, docId) {
                 if (qidElement) {
                     const qid = qidElement.textContent.trim();
                     const metadata = this.annotationMetadata?.questions?.[qid];
-                    
+
                     if (metadata) {
                         const creator = metadata.username || 'Unknown';
                         const timestamp = metadata.timestamp ? new Date(metadata.timestamp).toLocaleString() : '';
@@ -5850,17 +5878,17 @@ function editorApp(theme, docId) {
                     }
                 }
             });
-            
+
             // Enhance rule tooltips
             const rulesList = this.$refs.rulesList;
             if (rulesList) {
                 const ruleItems = rulesList.querySelectorAll('.rule-card[data-rule-kind="explicit"]');
                 ruleItems.forEach((item, idx) => {
                     const ruleText = this.docData?.rules?.[idx];
-                    
+
                     if (ruleText) {
                         const metadata = this.annotationMetadata?.rules?.[ruleText];
-                        
+
                         if (metadata) {
                             const creator = metadata.username || 'Unknown';
                             const timestamp = metadata.timestamp ? new Date(metadata.timestamp).toLocaleString() : '';
@@ -5880,12 +5908,12 @@ function editorApp(theme, docId) {
             // (question text, answer, and reasoning chain).
             const questionAnns = document.querySelectorAll('.question-readonly .ann');
             console.log('Attaching listeners to', questionAnns.length, 'question annotations');
-            
+
             questionAnns.forEach(el => {
                 // Remove existing listeners to avoid duplicates
                 const newEl = el.cloneNode(true);
                 el.parentNode.replaceChild(newEl, el);
-                
+
                 newEl.addEventListener('mouseenter', (e) => {
                     if (this.lockedHighlight) return;
                     const entityId = e.currentTarget.dataset.entityId;
@@ -5894,19 +5922,19 @@ function editorApp(theme, docId) {
                         highlightEntity(entityId, e.currentTarget);
                     }
                 });
-                
+
                 newEl.addEventListener('mouseleave', () => {
                     if (this.lockedHighlight) return;
                     clearEntityHighlight();
                 });
-                
+
                 // Single click to lock/unlock highlight
                 newEl.addEventListener('click', (e) => {
-                    if (e.target.classList.contains('resize-handle') || 
+                    if (e.target.classList.contains('resize-handle') ||
                         e.target.classList.contains('ann-delete-btn')) return;
-                    
+
                     const entityId = newEl.dataset.entityId;
-                    
+
                     if (this.lockedHighlight === entityId) {
                         this.lockedHighlight = null;
                         clearEntityHighlight();
@@ -6078,23 +6106,23 @@ function editorApp(theme, docId) {
             const start = parseInt(annSpan.dataset.start);
             const end = parseInt(annSpan.dataset.end);
             const ref = annSpan.dataset.ref;
-            
+
             if (!confirm(`Delete annotation "${ref}" from question?`)) return;
-            
+
             // Find which question this belongs to
             const questionIndex = Array.from(document.querySelectorAll('.question-card')).indexOf(questionCard);
             if (questionIndex === -1) return;
-            
+
             const question = this.docData.questions[questionIndex];
             if (!question) return;
-            
+
             this.pushUndo();
-            
+
             // Remove annotation from question text
             if (question.question) {
                 question.question = removeAnnotation(question.question, start, end);
             }
-            
+
             this.refreshEntities();
             this.markDirty();
             showToast('Annotation deleted from question', 'success');
@@ -6205,9 +6233,9 @@ function editorApp(theme, docId) {
             const start = parseInt(annSpan.dataset.start);
             const end = parseInt(annSpan.dataset.end);
             const ref = annSpan.dataset.ref;
-            
+
             if (!confirm(`Delete annotation "${ref}"?`)) return;
-            
+
             this.pushUndo();
             const raw = this.docData.document_to_annotate;
             this.docData.document_to_annotate = removeAnnotation(raw, start, end);
@@ -6221,26 +6249,26 @@ function editorApp(theme, docId) {
             const entityGroups = (this.entityGroups && typeof this.entityGroups === 'object') ? this.entityGroups : {};
             const entity = Object.values(entityGroups).flat().find(e => e.id === entityId);
             if (!entity) return;
-            
+
             const confirmMsg = `Delete entity "${entityId}" and all its ${entity.count} instance(s)?`;
             if (!confirm(confirmMsg)) return;
-            
+
             this.pushUndo();
-            
+
             // Parse annotations to find all instances of this entity
             let raw = this.docData.document_to_annotate;
             const annotations = parseAnnotations(raw);
-            
+
             // Sort by position (descending) to remove from end to start
             const toRemove = annotations
                 .filter(ann => ann.entityId === entityId)
                 .sort((a, b) => b.start - a.start);
-            
+
             // Remove each annotation
             for (const ann of toRemove) {
                 raw = removeAnnotation(raw, ann.start, ann.end);
             }
-            
+
             this.docData.document_to_annotate = raw;
             this.refreshEntities();
             this.markDirty();
@@ -6254,10 +6282,10 @@ function editorApp(theme, docId) {
             const entityId = annSpan.dataset.entityId;
             const entityType = annSpan.dataset.entityType;
             const ref = annSpan.dataset.ref;
-            
+
             // Extract current attribute
             const parsedAttr = this.parsePopupAttributeRef(ref);
-            
+
             // Extract just the text content (skip handles and delete button)
             let textContent = '';
             for (const child of annSpan.childNodes) {
@@ -6265,40 +6293,40 @@ function editorApp(theme, docId) {
                     textContent += child.textContent;
                 }
             }
-            
+
             // Get the rect for positioning
             const rect = annSpan.getBoundingClientRect();
-            
+
             const popupWidth = 350; // max-width of popup
             const popupHeight = 400; // estimated height of popup
             const sidebarWidth = 220; // width of left sidebar from CSS
-            
+
             let x = rect.left + (rect.width / 2);
             let y = rect.top - 10;
-            
+
             // Check if popup would go off bottom of screen
             if (y + popupHeight > window.innerHeight) {
                 // Position above the annotation instead
                 y = rect.top - popupHeight - 10;
             }
-            
+
             // Ensure popup doesn't go off top of screen
             if (y < 10) {
                 y = 10;
             }
-            
+
             // Ensure popup doesn't overlap with left sidebar
             const minX = sidebarWidth + 30;
             if (x < minX) {
                 x = minX;
             }
-            
+
             // Ensure popup doesn't go off right edge of screen
             const maxX = window.innerWidth - popupWidth - 20;
             if (x > maxX) {
                 x = maxX;
             }
-            
+
             // Show edit popup
             this.popup.show = true;
             this.popup.x = x;
@@ -6321,42 +6349,42 @@ function editorApp(theme, docId) {
             if (!this.canEditDocumentAnnotations || this.showEntityReferences) return;
             e.preventDefault();
             e.stopPropagation();
-            
+
             const handle = e.target;
             const annSpan = handle.closest('.ann');
             if (!annSpan) return;
-            
+
             const side = handle.dataset.side;
             const entityRef = annSpan.dataset.ref;
             const oldStart = parseInt(annSpan.dataset.start);
             const oldEnd = parseInt(annSpan.dataset.end);
-            
+
             const raw = this.docData.document_to_annotate;
             const originalRaw = raw;
             const container = this.$refs.docText;
-            
+
             // Visual feedback
             annSpan.classList.add('resizing');
             document.body.style.cursor = 'ew-resize';
             document.body.classList.add('annotation-interacting');
-            
+
             // Track the boundary we're moving
             let newBoundary = side === 'left' ? oldStart : oldEnd;
             let lastRenderedBoundary = newBoundary;
             let isMoving = false;
             let hasInvalidTarget = false;
-            
+
             // Throttle for performance
             let lastUpdate = 0;
             const throttleMs = 16; // ~60fps
-            
+
             const onMouseMove = (moveEvent) => {
                 const now = Date.now();
                 if (now - lastUpdate < throttleMs) return;
                 lastUpdate = now;
-                
+
                 isMoving = true;
-                
+
                 // Get character position under cursor
                 const range = this.caretRangeFromPoint(moveEvent.clientX, moveEvent.clientY);
                 if (!range || !container) return;
@@ -6369,7 +6397,7 @@ function editorApp(theme, docId) {
 
                 // Convert to raw position
                 const rawPos = this.renderedToRawOffset(renderedOffset);
-                
+
                 // Update boundary position
                 if (side === 'left') {
                     // Moving left boundary - must stay before right boundary
@@ -6378,11 +6406,11 @@ function editorApp(theme, docId) {
                     // Moving right boundary - must stay after left boundary
                     newBoundary = Math.max(oldStart + 1, Math.min(rawPos, raw.length));
                 }
-                
+
                 // Only re-render if boundary changed
                 if (newBoundary === lastRenderedBoundary) return;
                 lastRenderedBoundary = newBoundary;
-                
+
                 // Calculate preview positions
                 const previewStart = side === 'left' ? newBoundary : oldStart;
                 const previewEnd = side === 'right' ? newBoundary : oldEnd;
@@ -6399,7 +6427,7 @@ function editorApp(theme, docId) {
                 if (!isValid) {
                     return;
                 }
-                
+
                 // Apply resize and render
                 try {
                     const previewRaw = resizeAnnotation(originalRaw, oldStart, oldEnd, previewStart, previewEnd);
@@ -6408,22 +6436,22 @@ function editorApp(theme, docId) {
                     console.error('Resize preview error:', err);
                 }
             };
-            
+
             const onMouseUp = (upEvent) => {
                 upEvent.preventDefault();
                 document.removeEventListener('mousemove', onMouseMove);
                 document.removeEventListener('mouseup', onMouseUp);
-                
+
                 document.body.style.cursor = '';
                 document.body.classList.remove('annotation-interacting');
-                
+
                 // If didn't move, just restore
                 if (!isMoving) {
                     container.innerHTML = renderAnnotatedHtml(originalRaw);
                     this.attachAnnotationHoverListeners();
                     return;
                 }
-                
+
                 // Calculate final positions
                 const finalStart = side === 'left' ? newBoundary : oldStart;
                 const finalEnd = side === 'right' ? newBoundary : oldEnd;
@@ -6444,18 +6472,18 @@ function editorApp(theme, docId) {
                     }
                     return;
                 }
-                
+
                 // If no change, restore
                 if (finalStart === oldStart && finalEnd === oldEnd) {
                     container.innerHTML = renderAnnotatedHtml(originalRaw);
                     this.attachAnnotationHoverListeners();
                     return;
                 }
-                
+
                 // Apply permanently
                 this.applyAnnotationResize(oldStart, oldEnd, finalStart, finalEnd, entityRef);
             };
-            
+
             document.addEventListener('mousemove', onMouseMove);
             document.addEventListener('mouseup', onMouseUp);
         },
@@ -6617,19 +6645,19 @@ function editorApp(theme, docId) {
                 showToast('No change in span', 'info');
                 return;
             }
-            
+
             this.pushUndo();
-            
+
             const raw = this.docData.document_to_annotate;
-            
+
             // Use the resizeAnnotation utility function
             const newText = resizeAnnotation(raw, oldStart, oldEnd, newStart, newEnd);
-            
+
             if (newText === raw) {
                 showToast('Failed to resize annotation', 'error');
                 return;
             }
-            
+
             this.docData.document_to_annotate = newText;
             this.refreshEntities();
             this.markDirty();
@@ -6966,29 +6994,29 @@ function editorApp(theme, docId) {
             const rect = sel && sel.rangeCount ? sel.getRangeAt(0).getBoundingClientRect() : null;
             let x = rect ? rect.left : event.clientX;
             let y = rect ? rect.bottom + 8 : event.clientY;
-            
+
             const popupWidth = 350; // max-width of popup
             const popupHeight = 400; // estimated height
             const sidebarWidth = 220; // width of left sidebar from CSS
-            
+
             // Check if popup would go off bottom of screen
             if (y + popupHeight > window.innerHeight) {
                 // Position above the selection instead
                 y = (rect ? rect.top : event.clientY) - popupHeight - 10;
             }
-            
+
             // Ensure popup doesn't go off top of screen
             if (y < 10) {
                 y = 10;
             }
-            
+
             // Ensure popup doesn't overlap with left sidebar
             // Add a buffer of 30px from sidebar edge
             const minX = sidebarWidth + 30;
             if (x < minX) {
                 x = minX;
             }
-            
+
             // Ensure popup doesn't go off right edge of screen
             const maxX = window.innerWidth - popupWidth - 20;
             if (x > maxX) {
@@ -7146,14 +7174,14 @@ function editorApp(theme, docId) {
                 const oldStart = this.popup.rawStart;
                 const oldEnd = this.popup.rawEnd;
                 const text = this.popup.selectedText;
-                
+
                 // Remove the old annotation
                 let newText = removeAnnotation(raw, oldStart, oldEnd);
-                
+
                 // Re-insert at the same position with updated reference
                 newText = insertAnnotation(newText, oldStart, oldStart + text.length, ref);
                 this.docData.document_to_annotate = newText;
-                
+
                 showToast('Annotation updated', 'success');
             } else {
                 // New annotation
@@ -7213,6 +7241,18 @@ function editorApp(theme, docId) {
                 return;
             }
             this.sourceEditorText = raw;
+        },
+
+        openQuestionDocumentTextEditor() {
+            if (!this.canEditQuestionDocumentText) return;
+            this.sourceView = true;
+            this.syncSourceEditorTextFromDoc();
+            this.$nextTick(() => {
+                const textarea = this.$refs?.sourceTextarea;
+                if (textarea && typeof textarea.focus === 'function') {
+                    textarea.focus();
+                }
+            });
         },
 
         _applyAgreementSourcePlainTextChange(nextPlainText) {
@@ -7281,6 +7321,10 @@ function editorApp(theme, docId) {
 
         onSourceChange() {
             if (!this.docData) return;
+            if (!this.canEditDocumentText) {
+                this.syncSourceEditorTextFromDoc();
+                return;
+            }
             if (this.agreementWorkspace.active && this.agreementWorkspace.resolveMode) {
                 const changed = this._applyAgreementSourcePlainTextChange(this.sourceEditorText);
                 if (!changed) return;
@@ -7294,14 +7338,14 @@ function editorApp(theme, docId) {
         // --- Questions (read-only by default, click pencil to edit) ---
         handleEntityHover(event) {
             if (this.lockedHighlight) return;
-            
+
             // Find the annotation element (might be target or parent)
-            const annElement = event.target.classList.contains('ann') 
-                ? event.target 
+            const annElement = event.target.classList.contains('ann')
+                ? event.target
                 : event.target.closest('.ann');
-            
+
             if (!annElement) return;
-            
+
             const entityId = annElement.dataset.entityId;
             console.log('Hover on entity:', entityId, 'element:', annElement);
             if (entityId && window.highlightEntity) {
@@ -7315,14 +7359,14 @@ function editorApp(theme, docId) {
                 console.log('Locked highlight active, not clearing');
                 return;
             }
-            
+
             // Only clear if we're actually leaving an annotation
-            const annElement = event.target.classList.contains('ann') 
-                ? event.target 
+            const annElement = event.target.classList.contains('ann')
+                ? event.target
                 : event.target.closest('.ann');
-            
+
             if (!annElement) return;
-            
+
             console.log('Clearing highlight on leave');
             if (window.clearEntityHighlight) {
                 window.clearEntityHighlight();
@@ -7331,26 +7375,26 @@ function editorApp(theme, docId) {
 
         handleEntityClick(event) {
             console.log('handleEntityClick called', event.target);
-            
+
             // Find the annotation element
-            const annElement = event.target.classList.contains('ann') 
-                ? event.target 
+            const annElement = event.target.classList.contains('ann')
+                ? event.target
                 : event.target.closest('.ann');
-            
+
             console.log('Found annElement:', annElement);
-            
+
             if (!annElement) return;
-            
+
             // Ignore clicks on interactive children
-            if (event.target.classList.contains('resize-handle') || 
+            if (event.target.classList.contains('resize-handle') ||
                 event.target.classList.contains('ann-delete-btn')) {
                 console.log('Ignoring click on interactive child');
                 return;
             }
-            
+
             const entityId = annElement.dataset.entityId;
             console.log('Entity ID:', entityId, 'Current locked:', this.lockedHighlight);
-            
+
             if (!entityId) return;
 
             if (
@@ -7365,7 +7409,7 @@ function editorApp(theme, docId) {
                     this.insertEntityAnnotationIntoActiveQuestion(entityRef, displayText);
                 }
             }
-            
+
             if (this.lockedHighlight === entityId) {
                 console.log('Unlocking highlight');
                 this.lockedHighlight = null;
@@ -7654,7 +7698,7 @@ function editorApp(theme, docId) {
         insertRuleChip(ref, type) {
             const input = this.$refs.ruleInput;
             if (!input) return;
-            
+
             const chip = document.createElement('span');
             chip.className = 'rule-inline-chip rule-chip-' + type;
             chip.textContent = ref;
@@ -7687,7 +7731,7 @@ function editorApp(theme, docId) {
         insertRuleText(text) {
             const input = this.$refs.ruleInput;
             if (!input) return;
-            
+
             input.focus();
             const sel = window.getSelection();
             if (sel.rangeCount) {
@@ -7810,7 +7854,7 @@ function editorApp(theme, docId) {
                 showToast('Resolve all remaining conflicts before finishing agreement', 'warning');
                 return;
             }
-            if (this.reviewTarget === 'questions') {
+            if (this.reviewTarget === 'questions' && !this.isFocusedInferenceValidationCampaign()) {
                 const coverage = this.qaCoverageValidationForSubmit();
                 if (!coverage.valid) {
                     const validationMessages = [...coverage.errors];
@@ -8032,6 +8076,8 @@ function editorApp(theme, docId) {
                 confirmationMessage = 'Submit your rules review for this document?';
             } else if (this.reviewTarget === 'questions') {
                 confirmationMessage = 'Submit your questions review for this document?';
+            } else if (this.isCombinedReviewMode) {
+                confirmationMessage = 'Submit this document together with its rules and questions?';
             }
             if (!confirm(confirmationMessage)) return;
             await this.finish();
@@ -8139,25 +8185,25 @@ function editorApp(theme, docId) {
                 return;
             }
             if (!confirm('Restore this version? Current changes will be overwritten.')) return;
-            
+
             try {
                 this.pushUndo();
-                
+
                 // Restore document text
                 this.docData.document_to_annotate = this.historySnapshot.document;
-                
+
                 // Restore questions if available
                 if (this.historySnapshot.questions) {
                     this.docData.questions = this._normalizeEditableDocument({
                         questions: this.historySnapshot.questions,
                     }).questions;
                 }
-                
+
                 // Restore rules if available
                 if (this.historySnapshot.rules) {
                     this.docData.rules = this.historySnapshot.rules;
                 }
-                
+
                 this.refreshEntities();
                 this.markDirty();
                 this.closeHistoryModal();

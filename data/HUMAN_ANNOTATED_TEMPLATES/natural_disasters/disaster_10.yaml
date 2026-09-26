@@ -4,75 +4,26 @@ document:
   source: wikipedia
   wikipedia_title: Joplin tornado
   wikipedia_url: https://en.wikipedia.org/wiki/Joplin_tornado
-  original_document: 'The Joplin tornado was an extremely devastating EF5 tornado that struck the city of Joplin, Missouri
-    during the early evening hours of Sunday, May 22, 2011, causing catastrophic damage to it and surrounding regions. As
-    part of a larger late-May sequence of tornadic activity, the extremely violent tornado began just west of Joplin at about
-    5:34 p.m. CDT (UTC–05:00) and quickly reached a peak width of nearly 1 mile (1.6 km) as it tracked through the southern
-    part of the city, before later impacting rural Jasper and Newton counties and dissipating after 38 minutes on the ground
-    at 6:12 p.m. The tornado was on the ground for a total of 21.62 miles (34.79 km).
+  original_document: 'The Joplin tornado was an extremely devastating EF5 tornado that struck the city of Joplin, Missouri during the early evening hours of Sunday, May 22, 2011, causing catastrophic damage to it and surrounding regions. As part of a larger late-May sequence of tornadic activity, the extremely violent tornado began just west of Joplin at about 5:34 p.m. CDT (UTC–05:00) and quickly reached a peak width of nearly 1 mile (1.6 km) as it tracked through the southern part of the city, before later impacting rural Jasper and Newton counties and dissipating after 38 minutes on the ground at 6:12 p.m. The tornado was on the ground for a total of 21.62 miles (34.79 km).
 
 
-    The tornado devastated a large portion of the city of Joplin, damaging nearly 8000 buildings and destroying over 4000
-    houses. The damage—which included major facilities like one of Joplin''s two hospitals as well as much of its basic infrastructure—amounted
-    to a total of $2.8 billion (equivalent to about $4 billion today), making the Joplin tornado the costliest single tornado
-    in U.S. history. The insurance payout was the highest in Missouri history, breaking the previous $2 billion record from
-    the hailstorm of April 10, 2001. The tornado was the fifth out of six total EF5 tornadoes that occurred in 2011, with
-    four having occurred a month earlier during the 2011 Super Outbreak, and only two days before the same outbreak sequence
-    produced another EF5 tornado in El Reno, Oklahoma on May 24.
+    The tornado devastated a large portion of the city of Joplin, damaging nearly 8000 buildings and destroying over 4000 houses. The damage—which included major facilities like one of Joplin''s two hospitals as well as much of its basic infrastructure—amounted to a total of $2.8 billion (equivalent to about $4 billion today), making the Joplin tornado the costliest single tornado in U.S. history. The insurance payout was the highest in Missouri history, breaking the previous $2 billion record from the hailstorm of April 10, 2001. The tornado was the fifth out of six total EF5 tornadoes that occurred in 2011, with four having occurred a month earlier during the 2011 Super Outbreak, and only two days before the same outbreak sequence produced another EF5 tornado in El Reno, Oklahoma on May 24.
 
 
-    Overall, the tornado killed 158 people (including eight indirect deaths) and injured some 1150 others, making it the deadliest
-    tornado of 2011. It ranks as the deadliest tornado in Missouri in addition to being one of the deadliest in the United
-    States, having the highest death toll since the Glazier–Woodward F5 tornado in Texas and Oklahoma in 1947 and the seventh-deadliest
-    overall in the U.S. It was the first F5/EF5 tornado to occur in Missouri since May 20, 1957, when an F5 tornado destroyed
-    several suburbs of Kansas City, and only the second F5/EF5 tornado in Missouri since 1950. It was the third tornado to
-    strike Joplin since May 5, 1971.
+    Overall, the tornado killed 158 people (including eight indirect deaths) and injured some 1150 others, making it the deadliest tornado of 2011. It ranks as the deadliest tornado in Missouri in addition to being one of the deadliest in the United States, having the highest death toll since the Glazier–Woodward F5 tornado in Texas and Oklahoma in 1947 and the seventh-deadliest overall in the U.S. It was the first F5/EF5 tornado to occur in Missouri since May 20, 1957, when an F5 tornado destroyed several suburbs of Kansas City, and only the second F5/EF5 tornado in Missouri since 1950. It was the third tornado to strike Joplin since May 5, 1971.
 
 
-    In the aftermath, President Barack Obama toured the city on May 29, speaking at a memorial service for the victims. He
-    would also deliver the commencement address at Joplin High School a year later in 2012. Services were set up to help rebuild,
-    with most of the town having businesses reopen as well as new ones being built by 2018. Additionally, the tornado helped
-    inspire FEMA to create the Waffle House Index for disaster preparations as a result of some locations remaining open during
-    the storm.'
-  document_to_annotate: 'The [Joplin; place_1.city] tornado was an extremely devastating EF5 tornado that struck the city
-    of [Joplin; place_1.city], [Missouri; place_12.state] during the early evening hours of [Sunday; temporal_1.day], [May;
-    temporal_16.month] [22; temporal_19.day_of_month], [2011; temporal_20.year], causing catastrophic damage to it and surrounding
-    regions. As part of a larger late-[May; temporal_16.month] sequence of tornadic activity, the extremely violent tornado
-    began just west of [Joplin; place_1.city] at about [5:34 p.m. CDT; temporal_3.timestamp] and quickly reached a peak width
-    of nearly [1; number_1.int] mile as it tracked through the southern part of the city, before later impacting rural [Jasper;
-    place_3.region] and [Newton; place_4.region] counties and dissipating after [38; number_3.int] minutes on the ground at
-    [6:12 p.m; temporal_4.timestamp]. The tornado was on the ground for a total of [21.62; number_4.float] miles.
+    In the aftermath, President Barack Obama toured the city on May 29, speaking at a memorial service for the victims. He would also deliver the commencement address at Joplin High School a year later in 2012. Services were set up to help rebuild, with most of the town having businesses reopen as well as new ones being built by 2018. Additionally, the tornado helped inspire FEMA to create the Waffle House Index for disaster preparations as a result of some locations remaining open during the storm.'
+  document_to_annotate: 'The [Joplin; place_1.city] tornado was an extremely devastating EF5 tornado that struck the city of [Joplin; place_1.city], [Missouri; place_12.state] during the early evening hours of [Sunday; temporal_1.day], [May; temporal_16.month] [22; temporal_19.day_of_month], [2011; temporal_20.year], causing catastrophic damage to it and surrounding regions. As part of a larger late-[May; temporal_16.month] sequence of tornadic activity, the extremely violent tornado began just west of [Joplin; place_1.city] at about [5:34 p.m. CDT; temporal_3.timestamp] and quickly reached a peak width of nearly [1; number_1.int] mile as it tracked through the southern part of the city, before later impacting rural [Jasper; place_3.region] and [Newton; place_4.region] counties and dissipating after [38; number_3.int] minutes on the ground at [6:12 p.m; temporal_4.timestamp]. The tornado was on the ground for a total of [21.62; number_4.float] miles.
 
 
-    The tornado devastated a large portion of the city of [Joplin; place_1.city], damaging nearly [8000; number_6.int] buildings
-    and destroying over [4000; number_7.int] houses. The damage—which included major facilities like one of [Joplin; place_1.city]''s
-    [two; number_8.str] hospitals as well as much of its basic infrastructure—amounted to a total of $[2.8; number_9.float]
-    billion (equivalent to about $[4; number_10.int] billion today), making the [Joplin; place_1.city] tornado the costliest
-    single tornado in [U.S.; place_13.country] history. The insurance payout was the highest in [Missouri; place_12.state]
-    history, breaking the previous $[2; number_11.int] billion record from the hailstorm of [April 10, 2001; temporal_5.date].
-    The tornado was the [fifth; number_12.str] out of [six; number_13.str] total EF5 tornadoes that occurred in [2011; temporal_20.year],
-    with [four; number_14.str] having occurred a month earlier during the [2011; temporal_20.year] [Super Outbreak; event_1.name],
-    and only [two; number_15.str] days before the same outbreak sequence produced another EF5 tornado in [El Reno; place_6.city],
-    [Oklahoma; place_14.state] on [May; temporal_16.month] [24; temporal_18.day_of_month].
+    The tornado devastated a large portion of the city of [Joplin; place_1.city], damaging nearly [8000; number_6.int] buildings and destroying over [4000; number_7.int] houses. The damage—which included major facilities like one of [Joplin; place_1.city]''s [two; number_8.str] hospitals as well as much of its basic infrastructure—amounted to a total of $[2.8; number_9.float] billion (equivalent to about $[4; number_10.int] billion today), making the [Joplin; place_1.city] tornado the costliest single tornado in [U.S.; place_13.country] history. The insurance payout was the highest in [Missouri; place_12.state] history, breaking the previous $[2; number_11.int] billion record from the hailstorm of [April 10, 2001; temporal_5.date]. The tornado was the [fifth; number_12.str] out of [six; number_13.str] total EF5 tornadoes that occurred in [2011; temporal_20.year], with [four; number_14.str] having occurred a month earlier during the [2011; temporal_20.year] [Super Outbreak; event_1.name], and only [two; number_15.str] days before the same outbreak sequence produced another EF5 tornado in [El Reno; place_6.city], [Oklahoma; place_14.state] on [May; temporal_16.month] [24; temporal_18.day_of_month].
 
 
-    Overall, the tornado killed [158; number_16.int] people (including [eight; number_17.str] indirect deaths) and injured
-    some [1150; number_18.int] others, making it the deadliest tornado of [2011; temporal_20.year]. It ranks as the deadliest
-    tornado in [Missouri; place_12.state] in addition to being one of the deadliest in the [United States; place_13.country],
-    having the highest death toll since the [Glazier; place_8.city]–[Woodward; place_9.city] F5 tornado in [Texas; place_10.state]
-    and [Oklahoma; place_14.state] in [1947; temporal_9.year] and the [seventh; number_19.str]-deadliest overall in the [U.S;
-    place_13.country]. It was the first F5/EF5 tornado to occur in [Missouri; place_12.state] since [May 20, 1957; temporal_10.date],
-    when an F5 tornado destroyed several suburbs of [Kansas City; place_11.city], and only the [second; number_20.str] F5/EF5
-    tornado in [Missouri; place_12.state] since [1950; temporal_11.year]. It was the [third; number_21.str] tornado to strike
-    [Joplin; place_1.city] since [May 5, 1971; temporal_12.date].
+    Overall, the tornado killed [158; number_16.int] people (including [eight; number_17.str] indirect deaths) and injured some [1150; number_18.int] others, making it the deadliest tornado of [2011; temporal_20.year]. It ranks as the deadliest tornado in [Missouri; place_12.state] in addition to being one of the deadliest in the [United States; place_13.country], having the highest death toll since the [Glazier; place_8.city]–[Woodward; place_9.city] F5 tornado in [Texas; place_10.state] and [Oklahoma; place_14.state] in [1947; temporal_9.year] and the [seventh; number_19.str]-deadliest overall in the [U.S; place_13.country]. It was the first F5/EF5 tornado to occur in [Missouri; place_12.state] since [May 20, 1957; temporal_10.date], when an F5 tornado destroyed several suburbs of [Kansas City; place_11.city], and only the [second; number_20.str] F5/EF5 tornado in [Missouri; place_12.state] since [1950; temporal_11.year]. It was the [third; number_21.str] tornado to strike [Joplin; place_1.city] since [May 5, 1971; temporal_12.date].
 
 
-    In the aftermath, President [Barack Obama; person_1.full_name] toured the city on [May; temporal_16.month] [29; temporal_17.day_of_month],
-    speaking at a memorial service for the victims. [He; person_1.subj_pronoun] would also deliver the commencement address
-    at [Joplin High School; educational_org_1.name] a year later in [2012; temporal_14.year]. Services were set up to help
-    rebuild, with most of the town having businesses reopen as well as new ones being built by [2018; temporal_15.year]. Additionally,
-    the tornado helped inspire [FEMA; government_org_1.name] to create the [Waffle House Index; product_1.name] for disaster
-    preparations as a result of some locations remaining open during the storm.'
+    In the aftermath, President [Barack Obama; person_1.full_name] toured the city on [May; temporal_16.month] [29; temporal_17.day_of_month], speaking at a memorial service for the victims. [He; person_1.subj_pronoun] would also deliver the commencement address at [Joplin High School; educational_org_1.name] a year later in [2012; temporal_14.year]. Services were set up to help rebuild, with most of the town having businesses reopen as well as new ones being built by [2018; temporal_15.year]. Additionally, the tornado helped inspire [FEMA; government_org_1.name] to create the [Waffle House Index; product_1.name] for disaster preparations as a result of some locations remaining open during the storm.'
   relations: []
   rules:
   - temporal_14.year  == temporal_20.year + 1
@@ -94,10 +45,8 @@ document:
     answer: place_3.region and place_4.region
     answer_type: variant
     reasoning_chain:
-    - 1. The document states the tornado tracked through the southern part of [Joplin; place_1.city] before impacting rural
-      [Jasper; place_3.region] and [Newton; place_4.region] counties.
-    reasoning_chain_text: 1. The document states the tornado tracked through the southern part of [Joplin; place_1.city] before
-      impacting rural [Jasper; place_3.region] and [Newton; place_4.region] counties.
+    - 1. The document states the tornado tracked through the southern part of [Joplin; place_1.city] before impacting rural [Jasper; place_3.region] and [Newton; place_4.region] counties.
+    reasoning_chain_text: 1. The document states the tornado tracked through the southern part of [Joplin; place_1.city] before impacting rural [Jasper; place_3.region] and [Newton; place_4.region] counties.
   - question_id: disaster_10_q02
     question: What is the function that is occupied by [Barack Obama; person_1.full_name]?
     question_type: extractive
@@ -112,11 +61,9 @@ document:
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document mentions that one of [Joplin; place_1.city]'s [two; number_8.str] hospitals was among the major facilities
-      damaged.
+    - 1. The document mentions that one of [Joplin; place_1.city]'s [two; number_8.str] hospitals was among the major facilities damaged.
     - 2. However, the document does not provide the name of the hospital that was destroyed.
-    reasoning_chain_text: '1. The document mentions that one of [Joplin; place_1.city]''s [two; number_8.str] hospitals was
-      among the major facilities damaged.
+    reasoning_chain_text: '1. The document mentions that one of [Joplin; place_1.city]''s [two; number_8.str] hospitals was among the major facilities damaged.
 
       2. However, the document does not provide the name of the hospital that was destroyed.'
   - question_id: disaster_10_q04
@@ -127,8 +74,7 @@ document:
     reasoning_chain:
     - 1. The document states the tornado killed [158; number_16.int] people and injured some [1150; number_18.int] others.
     - 2. The difference is [1150; number_18.int] − [158; number_16.int] = 992.
-    reasoning_chain_text: '1. The document states the tornado killed [158; number_16.int] people and injured some [1150; number_18.int]
-      others.
+    reasoning_chain_text: '1. The document states the tornado killed [158; number_16.int] people and injured some [1150; number_18.int] others.
 
       2. The difference is [1150; number_18.int] − [158; number_16.int] = 992.'
   - question_id: disaster_10_q05
@@ -143,26 +89,18 @@ document:
 
       Counting these gives 2 counties.'
   - question_id: disaster_10_q06
-    question: What was the difference between the insurance payout for the [Joplin; place_1.city] tornado and the previous
-      record-setting hailstorm payout in [Missouri; place_12.state]?
+    question: What was the difference between the insurance payout for the [Joplin; place_1.city] tornado and the previous record-setting hailstorm payout in [Missouri; place_12.state]?
     question_type: arithmetic
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states the previous insurance record in [Missouri; place_12.state] was $[2; number_11.int] billion from
-      the hailstorm of [April 10, 2001; temporal_5.date].
-    - 2. The document says the [Joplin; place_1.city] tornado insurance payout was the highest in [Missouri; place_12.state]
-      history but does not specify the exact insurance payout amount, only the total damage of $[2.8; number_9.float] billion.
-      The exact insurance payout figure is not provided.
-    reasoning_chain_text: '1. The document states the previous insurance record in [Missouri; place_12.state] was $[2; number_11.int]
-      billion from the hailstorm of [April 10, 2001; temporal_5.date].
+    - 1. The document states the previous insurance record in [Missouri; place_12.state] was $[2; number_11.int] billion from the hailstorm of [April 10, 2001; temporal_5.date].
+    - 2. The document says the [Joplin; place_1.city] tornado insurance payout was the highest in [Missouri; place_12.state] history but does not specify the exact insurance payout amount, only the total damage of $[2.8; number_9.float] billion. The exact insurance payout figure is not provided.
+    reasoning_chain_text: '1. The document states the previous insurance record in [Missouri; place_12.state] was $[2; number_11.int] billion from the hailstorm of [April 10, 2001; temporal_5.date].
 
-      2. The document says the [Joplin; place_1.city] tornado insurance payout was the highest in [Missouri; place_12.state]
-      history but does not specify the exact insurance payout amount, only the total damage of $[2.8; number_9.float] billion.
-      The exact insurance payout figure is not provided.'
+      2. The document says the [Joplin; place_1.city] tornado insurance payout was the highest in [Missouri; place_12.state] history but does not specify the exact insurance payout amount, only the total damage of $[2.8; number_9.float] billion. The exact insurance payout figure is not provided.'
   - question_id: disaster_10_q07
-    question: How many years passed between the previous F5/EF5 tornado in [Missouri; place_12.state] and the [Joplin; place_1.city]
-      tornado?
+    question: How many years passed between the previous F5/EF5 tornado in [Missouri; place_12.state] and the [Joplin; place_1.city] tornado?
     question_type: temporal
     answer: temporal_20.year - temporal_10.year
     answer_type: variant
@@ -170,8 +108,7 @@ document:
     - 1. The document states the previous F5/EF5 tornado in [Missouri; place_12.state] occurred on [May 20, 1957; temporal_10.date].
     - 2. The [Joplin; place_1.city] tornado occurred in [2011; temporal_20.year].
     - 3. The difference is [2011; temporal_20.year] − 1957 = 54 years.
-    reasoning_chain_text: '1. The document states the previous F5/EF5 tornado in [Missouri; place_12.state] occurred on [May
-      20, 1957; temporal_10.date].
+    reasoning_chain_text: '1. The document states the previous F5/EF5 tornado in [Missouri; place_12.state] occurred on [May 20, 1957; temporal_10.date].
 
       2. The [Joplin; place_1.city] tornado occurred in [2011; temporal_20.year].
 
@@ -196,35 +133,25 @@ document:
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states the [Joplin; place_1.city] tornado was the [third; number_21.str] tornado to strike [Joplin;
-      place_1.city] since [May 5, 1971; temporal_12.date].
-    - 2. Only the date of the first previous tornado ([May 5, 1971; temporal_12.date]) is mentioned; the date of the second
-      tornado is not provided in the document.
-    reasoning_chain_text: '1. The document states the [Joplin; place_1.city] tornado was the [third; number_21.str] tornado
-      to strike [Joplin; place_1.city] since [May 5, 1971; temporal_12.date].
+    - 1. The document states the [Joplin; place_1.city] tornado was the [third; number_21.str] tornado to strike [Joplin; place_1.city] since [May 5, 1971; temporal_12.date].
+    - 2. Only the date of the first previous tornado ([May 5, 1971; temporal_12.date]) is mentioned; the date of the second tornado is not provided in the document.
+    reasoning_chain_text: '1. The document states the [Joplin; place_1.city] tornado was the [third; number_21.str] tornado to strike [Joplin; place_1.city] since [May 5, 1971; temporal_12.date].
 
-      2. Only the date of the first previous tornado ([May 5, 1971; temporal_12.date]) is mentioned; the date of the second
-      tornado is not provided in the document.'
+      2. Only the date of the first previous tornado ([May 5, 1971; temporal_12.date]) is mentioned; the date of the second tornado is not provided in the document.'
   - question_id: disaster_10_q10
-    question: Given that the [Joplin; place_1.city] tornado was the fifth of six EF5 tornadoes in [2011; temporal_20.year]
-      and four occurred during the [Super Outbreak; event_1.name], how many EF5 tornadoes that year occurred outside both
-      the [Super Outbreak; event_1.name] and the [Joplin; place_1.city] event?
+    question: Given that the [Joplin; place_1.city] tornado was the fifth of six EF5 tornadoes in [2011; temporal_20.year] and four occurred during the [Super Outbreak; event_1.name], how many EF5 tornadoes that year occurred outside both the [Super Outbreak; event_1.name] and the [Joplin; place_1.city] event?
     question_type: inference
     answer: number_13.str - number_14.str - 1
     answer_type: variant
     reasoning_chain:
     - 1. The document states there were [six; number_13.str] total EF5 tornadoes in [2011; temporal_20.year].
-    - 2. [four; number_14.str] occurred during the [Super Outbreak; event_1.name], and the [Joplin; place_1.city] tornado
-      was the fifth.
-    - 3. That leaves 6 − 4 − 1 = 1 EF5 tornado outside both events, which the document identifies as the one in [El Reno;
-      place_6.city], [Oklahoma; place_14.state].
+    - 2. [four; number_14.str] occurred during the [Super Outbreak; event_1.name], and the [Joplin; place_1.city] tornado was the fifth.
+    - 3. That leaves 6 − 4 − 1 = 1 EF5 tornado outside both events, which the document identifies as the one in [El Reno; place_6.city], [Oklahoma; place_14.state].
     reasoning_chain_text: '1. The document states there were [six; number_13.str] total EF5 tornadoes in [2011; temporal_20.year].
 
-      2. [four; number_14.str] occurred during the [Super Outbreak; event_1.name], and the [Joplin; place_1.city] tornado
-      was the fifth.
+      2. [four; number_14.str] occurred during the [Super Outbreak; event_1.name], and the [Joplin; place_1.city] tornado was the fifth.
 
-      3. That leaves 6 − 4 − 1 = 1 EF5 tornado outside both events, which the document identifies as the one in [El Reno;
-      place_6.city], [Oklahoma; place_14.state].'
+      3. That leaves 6 − 4 − 1 = 1 EF5 tornado outside both events, which the document identifies as the one in [El Reno; place_6.city], [Oklahoma; place_14.state].'
   - question_id: disaster_10_q11
     question: Can we infer that the [Joplin; place_1.city] tornado's total damage exceeded its insurance payout?
     question_type: inference
@@ -234,22 +161,16 @@ document:
     - .
     reasoning_chain_text: .
   - question_id: disaster_10_q12
-    question: Did the [Glazier; place_8.city]–[Woodward; place_9.city] tornado kill more or fewer people than the [Joplin;
-      place_1.city] tornado?
+    question: Did the [Glazier; place_8.city]–[Woodward; place_9.city] tornado kill more or fewer people than the [Joplin; place_1.city] tornado?
     question_type: inference
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states the [Joplin; place_1.city] tornado had the highest death toll since the [Glazier; place_8.city]–[Woodward;
-      place_9.city] tornado in [1947; temporal_9.year], implying the earlier tornado had a higher or comparable death toll.
-    - 2. However, the document does not provide the exact death toll of the [Glazier; place_8.city]–[Woodward; place_9.city]
-      tornado, so a definitive comparison of exact numbers cannot be made from the document alone.
-    reasoning_chain_text: '1. The document states the [Joplin; place_1.city] tornado had the highest death toll since the
-      [Glazier; place_8.city]–[Woodward; place_9.city] tornado in [1947; temporal_9.year], implying the earlier tornado had
-      a higher or comparable death toll.
+    - 1. The document states the [Joplin; place_1.city] tornado had the highest death toll since the [Glazier; place_8.city]–[Woodward; place_9.city] tornado in [1947; temporal_9.year], implying the earlier tornado had a higher or comparable death toll.
+    - 2. However, the document does not provide the exact death toll of the [Glazier; place_8.city]–[Woodward; place_9.city] tornado, so a definitive comparison of exact numbers cannot be made from the document alone.
+    reasoning_chain_text: '1. The document states the [Joplin; place_1.city] tornado had the highest death toll since the [Glazier; place_8.city]–[Woodward; place_9.city] tornado in [1947; temporal_9.year], implying the earlier tornado had a higher or comparable death toll.
 
-      2. However, the document does not provide the exact death toll of the [Glazier; place_8.city]–[Woodward; place_9.city]
-      tornado, so a definitive comparison of exact numbers cannot be made from the document alone.'
+      2. However, the document does not provide the exact death toll of the [Glazier; place_8.city]–[Woodward; place_9.city] tornado, so a definitive comparison of exact numbers cannot be made from the document alone.'
   implicit_rules:
   - entity_ref: temporal_20.year
     lower_bound: 1991
@@ -414,49 +335,16 @@ document:
     percentage: 1.0
     rule_kind: temporal_year_range
   qa_coverage_exemptions: []
-  fictionalized_annotated_template_document: 'The [Joplin Vertex; place_1.city] tornado was an extremely devastating EF5 tornado
-    that struck the city of [Joplin Vertex; place_1.city], [Missouri Vertex; place_12.state] during the early evening hours
-    of [Sunday; temporal_1.day], [May; temporal_16.month] [22; temporal_19.day_of_month], [2011; temporal_20.year], causing
-    catastrophic damage to it and surrounding regions. As part of a larger late-[May; temporal_16.month] sequence of tornadic
-    activity, the extremely violent tornado began just west of [Joplin Vertex; place_1.city] at about [5:34 p.m. CDT; temporal_3.timestamp]
-    and quickly reached a peak width of nearly [1; number_1.int] mile as it tracked through the southern part of the city,
-    before later impacting rural [Jasper Vertex; place_3.region] and [Newton Vertex; place_4.region] counties and dissipating
-    after [38; number_3.int] minutes on the ground at [6:12 p.m; temporal_4.timestamp]. The tornado was on the ground for
-    a total of [21.62; number_4.float] miles.
+  fictionalized_annotated_template_document: 'The [Joplin Vertex; place_1.city] tornado was an extremely devastating EF5 tornado that struck the city of [Joplin Vertex; place_1.city], [Missouri Vertex; place_12.state] during the early evening hours of [Sunday; temporal_1.day], [May; temporal_16.month] [22; temporal_19.day_of_month], [2011; temporal_20.year], causing catastrophic damage to it and surrounding regions. As part of a larger late-[May; temporal_16.month] sequence of tornadic activity, the extremely violent tornado began just west of [Joplin Vertex; place_1.city] at about [5:34 p.m. CDT; temporal_3.timestamp] and quickly reached a peak width of nearly [1; number_1.int] mile as it tracked through the southern part of the city, before later impacting rural [Jasper Vertex; place_3.region] and [Newton Vertex; place_4.region] counties and dissipating after [38; number_3.int] minutes on the ground at [6:12 p.m; temporal_4.timestamp]. The tornado was on the ground for a total of [21.62; number_4.float] miles.
 
 
-    The tornado devastated a large portion of the city of [Joplin Vertex; place_1.city], damaging nearly [8000; number_6.int]
-    buildings and destroying over [4000; number_7.int] houses. The damage—which included major facilities like one of [Joplin
-    Vertex; place_1.city]''s [two; number_8.str] hospitals as well as much of its basic infrastructure—amounted to a total
-    of $[2.8; number_9.float] billion (equivalent to about $[4; number_10.int] billion today), making the [Joplin Vertex;
-    place_1.city] tornado the costliest single tornado in [U.S. Vertex; place_13.country] history. The insurance payout was
-    the highest in [Missouri Vertex; place_12.state] history, breaking the previous $[2; number_11.int] billion record from
-    the hailstorm of [April 10, 2001; temporal_5.date]. The tornado was the [fifth; number_12.str] out of [six; number_13.str]
-    total EF5 tornadoes that occurred in [2011; temporal_20.year], with [four; number_14.str] having occurred a month earlier
-    during the [2011; temporal_20.year] [Super Outbreak Vertex; event_1.name], and only [two; number_15.str] days before the
-    same outbreak sequence produced another EF5 tornado in [El Reno Vertex; place_6.city], [Oklahoma Vertex; place_14.state]
+    The tornado devastated a large portion of the city of [Joplin Vertex; place_1.city], damaging nearly [8000; number_6.int] buildings and destroying over [4000; number_7.int] houses. The damage—which included major facilities like one of [Joplin Vertex; place_1.city]''s [two; number_8.str] hospitals as well as much of its basic infrastructure—amounted to a total of $[2.8; number_9.float] billion (equivalent to about $[4; number_10.int] billion today), making the [Joplin Vertex; place_1.city] tornado the costliest single tornado in [U.S. Vertex; place_13.country] history. The insurance payout was the highest in [Missouri Vertex; place_12.state] history, breaking the previous $[2; number_11.int] billion record from the hailstorm of [April 10, 2001; temporal_5.date]. The tornado was the [fifth; number_12.str] out of [six; number_13.str] total EF5 tornadoes that occurred in [2011; temporal_20.year], with [four; number_14.str] having occurred a month earlier during the [2011; temporal_20.year] [Super Outbreak Vertex; event_1.name], and only [two; number_15.str] days before the same outbreak sequence produced another EF5 tornado in [El Reno Vertex; place_6.city], [Oklahoma Vertex; place_14.state]
     on [May; temporal_16.month] [24; temporal_18.day_of_month].
 
 
-    Overall, the tornado killed [158; number_16.int] people (including [eight; number_17.str] indirect deaths) and injured
-    some [1150; number_18.int] others, making it the deadliest tornado of [2011; temporal_20.year]. It ranks as the deadliest
-    tornado in [Missouri Vertex; place_12.state] in addition to being one of the deadliest in the [U.S. Vertex; place_13.country],
-    having the highest death toll since the [Glazier Vertex; place_8.city]–[Woodward Vertex; place_9.city] F5 tornado in [Texas
-    Vertex; place_10.state] and [Oklahoma Vertex; place_14.state] in [1947; temporal_9.year] and the [seventh; number_19.str]-deadliest
-    overall in the [U.S. Vertex; place_13.country]. It was the first F5/EF5 tornado to occur in [Missouri Vertex; place_12.state]
-    since [May 20, 1957; temporal_10.date], when an F5 tornado destroyed several suburbs of [Kansas City Vertex; place_11.city],
-    and only the [second; number_20.str] F5/EF5 tornado in [Missouri Vertex; place_12.state] since [1950; temporal_11.year].
-    It was the [third; number_21.str] tornado to strike [Joplin Vertex; place_1.city] since [May 5, 1971; temporal_12.date].
+    Overall, the tornado killed [158; number_16.int] people (including [eight; number_17.str] indirect deaths) and injured some [1150; number_18.int] others, making it the deadliest tornado of [2011; temporal_20.year]. It ranks as the deadliest tornado in [Missouri Vertex; place_12.state] in addition to being one of the deadliest in the [U.S. Vertex; place_13.country], having the highest death toll since the [Glazier Vertex; place_8.city]–[Woodward Vertex; place_9.city] F5 tornado in [Texas Vertex; place_10.state] and [Oklahoma Vertex; place_14.state] in [1947; temporal_9.year] and the [seventh; number_19.str]-deadliest overall in the [U.S. Vertex; place_13.country]. It was the first F5/EF5 tornado to occur in [Missouri Vertex; place_12.state] since [May 20, 1957; temporal_10.date], when an F5 tornado destroyed several suburbs of [Kansas City Vertex; place_11.city], and only the [second; number_20.str] F5/EF5 tornado in [Missouri Vertex; place_12.state] since [1950; temporal_11.year]. It was the [third; number_21.str] tornado to strike [Joplin Vertex; place_1.city] since [May 5, 1971; temporal_12.date].
 
 
-    In the aftermath, President [Barack Obama Vertex; person_1.full_name] toured the city on [May; temporal_16.month] [29;
-    temporal_17.day_of_month], speaking at a memorial service for the victims. [He; person_1.subj_pronoun] would also deliver
-    the commencement address at [Joplin High School Vertex; educational_org_1.name] a year later in [2012; temporal_14.year].
-    Services were set up to help rebuild, with most of the town having businesses reopen as well as new ones being built by
-    [2018; temporal_15.year]. Additionally, the tornado helped inspire [FEMA Vertex; government_org_1.name] to create the
-    [Waffle House Index Vertex; product_1.name] for disaster preparations as a result of some locations remaining open during
-    the storm.'
+    In the aftermath, President [Barack Obama Vertex; person_1.full_name] toured the city on [May; temporal_16.month] [29; temporal_17.day_of_month], speaking at a memorial service for the victims. [He; person_1.subj_pronoun] would also deliver the commencement address at [Joplin High School Vertex; educational_org_1.name] a year later in [2012; temporal_14.year]. Services were set up to help rebuild, with most of the town having businesses reopen as well as new ones being built by [2018; temporal_15.year]. Additionally, the tornado helped inspire [FEMA Vertex; government_org_1.name] to create the [Waffle House Index Vertex; product_1.name] for disaster preparations as a result of some locations remaining open during the storm.'
 metadata:
   status: completed
-  annotators:
-  - anonymous_annotator

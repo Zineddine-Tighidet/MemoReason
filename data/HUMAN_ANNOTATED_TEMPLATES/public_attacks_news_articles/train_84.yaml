@@ -1,0 +1,218 @@
+document:
+  document_id: train_84
+  document_theme: new york bombing
+  original_document: FBI Looking for 2 Men Who Allegedly Found Explosive Device in NYCThe U.S. Federal Bureau of Investigation (FBI) is asking the public for help in locating two men who allegedly found a piece of luggage on a New York sidewalk that contained an explosive device that may be tied to the suspect in Saturday's bombings in New York and New Jersey.On Wednesday the FBI issued a statement and a photo of two men that was taken on Saturday, September 17, in the same hour an explosive device detonated. The FBI said the men took the luggage, which was located only four blocks or so from the New York bombing site, and left the device behind. That device did not detonate.Federal investigators said during a news conference Wednesday the men are wanted as witnesses only.Federal investigators said earlier the suspect in Saturday's bombings in New York and New Jersey has been charged with use of a weapon of mass destruction in the weekend attacks. Investigators said he bought components on eBay and used as triggering devices cell phones purchased from a store 500 meters from an address he once listed as his home.Evidence teams investigate at the scene of Saturday's explosion on West
+    23rd Street in Manhattan's Chelsea neighborhood in New York, Sept. 19, 2016. Ahmad Khan Rahami, a U.S. citizen of Afghan descent has been charged in the bombing.Multiple federal chargesThe details are contained in criminal complaints made public Tuesday spelling out multiple federal charges against 28-year-old Ahmad Khan Rahami. Most of the charges carry a maximum sentence of life in prison.Authorities arrested Rahami on Monday after an exchange of gunfire with police that left him and two officers wounded.According to the court documents, investigators believe Rahami used an eBay account with the username "ahmad rahimi" to buy citric acid, a circuit board, electric igniters and hundreds of ball bearings between June 20 and August 10. The items were shipped to a business in Perth Amboy, New Jersey, where Rahami worked until September 12.Ball bearings were found in two pressure cooker bombs placed four blocks apart in the Chelsea neighborhood of New York late Saturday. One of them exploded, injuring 29 people, while the other was recovered intact. Investigators said the second bomb had "numerous" electric igniters.That second device was tested for fingerprints, and the criminal complaint
+    said all 12 prints found were matches for Rahami. The documents say his prints were also found on items inside of a backpack that was discovered late Sunday at a train station in Elizabeth, New Jersey, just outside of New York. The bag contained multiple explosive devices, including one that blew up as police tried to disarm it with a robot.Authorities also tied Rahami to a bomb that blew up in a trash can in Seaside Park, New Jersey, early Saturday.That link involved one of the cell phones that investigators said were shipped last year to a store in Perth Amboy near the address that Rahami provided as his home in a 2012 passport application. They said a second phone shipped to the same place was used in the bomb that blew up in Chelsea.A third phone, one found with the other Chelsea bomb, was once registered to one of Rahami's family members, the documents said.A still image captured from a video from WABC television shows New York bombing suspect Ahmad Khan Rahami being loaded into an ambulance after a shoot-out with police in Linden, New Jersey, Sept. 19, 2016.Surveillance videoInvestigators also said they used surveillance video to tie Rahami to the Chelsea bombs, with cameras
+    putting him near the explosion site about 37 minutes before the blast and near where the other bomb was found two minutes after the first one went off. That second video, they said, showed him pulling a suitcase and then a short time later walking without it.The documents contain some pieces of writing from a journal found on Rahami when he was arrested. The messages include praise of American-born cleric Anwar al-Awlaki, who was killed by a U.S. drone strike in Yemen in 2011, and "Brother Osama Bin Laden," the former head of al-Qaida who was killed by U.S. forces in Pakistan in 2011."Inshallah the sounds of the bombs will be heard in the streets. Gun shots to your police. Death To Your OPPRESSION," one message reads.The FBI said Tuesday it assessed Rahami's activities in 2014 after his father told agents he was concerned about his son's possible involvement with extremists.The agency found insufficient evidence to warrant further investigation.Rahami was born in Afghanistan, came to the U.S. at age 7 and became a naturalized American citizen.
+  document_to_annotate: '[FBI; government_org_1.name] Looking for 2 Men Who Allegedly Found Explosive Device in [NYC; place_1.city]The [U.S.; place_14.country] [Federal Bureau of Investigation; government_org_1.name] is asking the public for help in locating two men who allegedly found a piece of luggage on a [New York; place_1.city] sidewalk that contained an explosive device that may be tied to the suspect in [Saturday; temporal_1.day]''s bombings in [New York; place_1.city] and [New Jersey; place_2.state].On [Wednesday; temporal_2.day] the [FBI; government_org_1.name] issued a statement and a photo of two men that was taken on [Saturday, September 17; temporal_1.date], in the same hour an explosive device detonated. The [FBI; government_org_1.name] said the men took the luggage, which was located only four blocks or so from the [New York; place_1.city] bombing site, and left the device behind. That device did not detonate.Federal investigators said during a news conference [Wednesday; temporal_2.day] the men are wanted as witnesses only.Federal investigators said earlier the suspect in [Saturday; temporal_1.day]''s bombings in [New York; place_1.city] and [New Jersey; place_2.state]
+    has been charged with use of a weapon of mass destruction in the weekend attacks. Investigators said he bought components on [eBay; entreprise_org_1.name] and used as triggering devices cell phones purchased from a store [500; number_1.int] meters from an address he once listed as his home.Evidence teams investigate at the scene of [Saturday; temporal_1.day]''s explosion on [West 23rd Street; place_3.street] in [Manhattan; place_4.region]''s [Chelsea; place_5.region] neighborhood in [New York; place_1.city], [Sept. 19, 2016; temporal_3.date]. [Ahmad Khan Rahami; person_1.full_name], a [U.S.; place_14.country] citizen of [Afghan; place_6.demonym] descent has been charged in the bombing.Multiple federal chargesThe details are contained in criminal complaints made public [Tuesday; temporal_4.day] spelling out multiple federal charges against [28; person_1.age]-year-old [Ahmad Khan Rahami; person_1.full_name]. Most of the charges carry a maximum sentence of life in prison.Authorities arrested [Rahami; person_1.last_name] on [Monday; temporal_5.day] after an exchange of gunfire with police that left [him; person_1.obj_pronoun] and two officers wounded.According to the court documents,
+    investigators believe [Rahami; person_1.last_name] used an [eBay; entreprise_org_1.name] account with the username "[ahmad rahimi; person_1.full_name]" to buy citric acid, a circuit board, electric igniters and hundreds of ball bearings between [June 20; temporal_6.date] and [August 10; temporal_7.date]. The items were shipped to a business in [Perth Amboy; place_7.city], [New Jersey; place_2.state], where [Rahami; person_1.last_name] worked until [September 12; temporal_8.date].Ball bearings were found in two pressure cooker bombs placed four blocks apart in the [Chelsea; place_5.region] neighborhood of [New York; place_1.city] late [Saturday; temporal_1.day]. One of them exploded, injuring [29; number_2.int] people, while the other was recovered intact. Investigators said the second bomb had "numerous" electric igniters.That second device was tested for fingerprints, and the criminal complaint said all [12; number_3.int] prints found were matches for [Rahami; person_1.last_name]. The documents say [his; person_1.poss_det_pronoun] prints were also found on items inside of a backpack that was discovered late [Sunday; temporal_9.day] at a train station in [Elizabeth; place_8.city],
+    [New Jersey; place_2.state], just outside of [New York; place_1.city]. The bag contained multiple explosive devices, including one that blew up as police tried to disarm it with a robot.Authorities also tied [Rahami; person_1.last_name] to a bomb that blew up in a trash can in [Seaside Park; place_9.city], [New Jersey; place_2.state], early [Saturday; temporal_1.day].That link involved one of the cell phones that investigators said were shipped last year to a store in [Perth Amboy; place_7.city] near the address that [Rahami; person_1.last_name] provided as [his; person_1.poss_det_pronoun] home in a [2012; temporal_10.year] passport application. They said a second phone shipped to the same place was used in the bomb that blew up in [Chelsea; place_5.region].A third phone, one found with the other [Chelsea; place_5.region] bomb, was once registered to one of [Rahami; person_1.last_name]''s family members, the documents said.A still image captured from a video from [WABC; media_org_1.name] television shows [New York; place_1.city] bombing suspect [Ahmad Khan Rahami; person_1.full_name] being loaded into an ambulance after a shoot-out with police in [Linden; place_10.city], [New Jersey;
+    place_2.state], [Sept. 19, 2016; temporal_3.date].Surveillance videoInvestigators also said they used surveillance video to tie [Rahami; person_1.last_name] to the [Chelsea; place_5.region] bombs, with cameras putting [him; person_1.obj_pronoun] near the explosion site about [37; number_4.int] minutes before the blast and near where the other bomb was found two minutes after the first one went off. That second video, they said, showed [him; person_1.obj_pronoun] pulling a suitcase and then a short time later walking without it.The documents contain some pieces of writing from a journal found on [Rahami; person_1.last_name] when [he; person_1.subj_pronoun] was arrested. The messages include praise of [American; place_11.demonym]-born cleric [Anwar al-Awlaki; person_2.full_name], who was killed by a [U.S.; place_14.country] drone strike in [Yemen; place_12.country] in [2011; temporal_11.year], and "Brother [Osama Bin Laden; person_3.full_name]," the former head of [al-Qaida; military_org_1.name] who was killed by [U.S.; place_14.country] forces in [Pakistan; place_13.country] in [2011; temporal_11.year]."Inshallah the sounds of the bombs will be heard in the streets. Gun shots to your
+    police. Death To Your OPPRESSION," one message reads.The [FBI; government_org_1.name] said [Tuesday; temporal_4.day] it assessed [Rahami; person_1.last_name]''s activities in [2014; temporal_12.year] after [his; person_1.poss_det_pronoun] father told agents [he; person_1.subj_pronoun] was concerned about [his; person_1.poss_det_pronoun] son''s possible involvement with extremists.The agency found insufficient evidence to warrant further investigation.[Rahami; person_1.last_name] was born in [Afghanistan; place_6.country], came to the [U.S.; place_14.country] at age [7; number_5.int] and became a naturalized [American; place_11.demonym] citizen.'
+  relations: []
+  rules:
+  - 'number_2.int > 1 # "injuring 29 people" — plural mention'
+  - 'number_3.int > 1 # "all 12 prints" — plural mention'
+  num_questions: 12
+  questions:
+  - question_id: train_84_q01
+    question: What was the username on the [eBay; entreprise_org_1.name] account that investigators believe was used to purchase bomb components?
+    question_type: extractive
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that investigators believe [Rahami; person_1.last_name] used a [eBay; entreprise_org_1.name] account with the username "[Ahmad Khan Rahami; person_1.full_name]" to buy citric acid, a circuit board, electric igniters, and ball bearings.
+  - question_id: train_84_q02
+    question: How many officers were wounded during the exchange of gunfire that led to the suspect's arrest?
+    question_type: extractive
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that authorities arrested the suspect "after an exchange of gunfire with police that left him and two officers wounded."
+  - question_id: train_84_q03
+    question: What specific model of cell phone did [Ahmad Khan Rahami; person_1.full_name] purchase from the store near [Perth Amboy; place_7.city] to use as a triggering device?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that cell phones were used as triggering devices and were purchased from a store [500; number_1.int] meters from an address [Rahami; person_1.last_name] once listed as home.
+    - 2. The document does not specify the model, make, or brand of the cell phones used.
+    - 3. The needed fact — the specific cell phone model — is not stated anywhere in the document, so this question cannot be answered from the provided text.
+  - question_id: train_84_q04
+    question: How many people in total were reported wounded during the bombing and the shoot-out in which [Ahmad Khan Rahami; person_1.full_name] was arrested (counting the suspect and the two officers)?
+    question_type: arithmetic
+    answer: number_2.int + 3
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [29; number_2.int] people were injured in the bombing.
+    - 2. The document states that during the arrest, the suspect and two officers were wounded, totaling 3 people.
+    - 3. Adding those three people to the annotated bombing-injury count gives the requested total.
+  - question_id: train_84_q05
+    question: How many blocks in total separate the two pressure cooker bombs from each other and the luggage from the bombing site, if both distances are added together?
+    question_type: arithmetic
+    answer: '8'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the two pressure cooker bombs were placed "four blocks apart."
+    - 2. The document states the luggage was located "only four blocks or so" from the bombing site.
+    - 3. Both quantities are measured in blocks, so 4 + 4 = 8 blocks total.
+  - question_id: train_84_q06
+    question: What was the total cost of the items [Ahmad Khan Rahami; person_1.full_name] purchased on [eBay; entreprise_org_1.name] for making the bombs?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists items purchased on [eBay; entreprise_org_1.name] including citric acid, a circuit board, electric igniters, and ball bearings.
+    - 2. Computing a total cost requires individual prices or a stated total monetary amount.
+    - 3. The needed fact — any price or monetary figure for these purchases — is not stated anywhere in the document, so the total cost cannot be determined from the provided text.
+  - question_id: train_84_q07
+    question: On what day of the month did [Ahmad Khan Rahami; person_1.full_name] begin purchasing bomb-making components on [eBay; entreprise_org_1.name], according to the court documents?
+    question_type: temporal
+    answer: temporal_6.day_of_month
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that purchases were made between [June 20; temporal_6.date] and [August 10; temporal_7.date].
+    - 2. The start date of the purchasing period is [June 20; temporal_6.date], so the day of the month on which purchases began must be extracted from that date.
+  - question_id: train_84_q08
+    question: According to the document, how many minutes after the first bomb went off was the suspect seen on surveillance video near where the second bomb was found?
+    question_type: temporal
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the suspect was seen "near where the other bomb was found two minutes after the first one went off."
+    - 2. The temporal gap explicitly stated in the document is 2 minutes after the first explosion.
+  - question_id: train_84_q09
+    question: How long after the drone strike that killed [Anwar al-Awlaki; person_2.full_name] did the suspect begin purchasing bomb components on [eBay; entreprise_org_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [Anwar al-Awlaki; person_2.full_name] was killed in [2011; temporal_11.year], but gives only the year, not a specific date.
+    - 2. The document states purchases began on [June 20; temporal_6.date].
+    - 3. The needed fact — the exact date of the drone strike — is not stated in the document; only the year [2011; temporal_11.year] is provided, so the precise duration cannot be determined.
+  - question_id: train_84_q10
+    question: In which country was [Ahmad Khan Rahami; person_1.full_name] born, given that the document describes both the country of birth and the fact that the suspect became a naturalized citizen of a different country?
+    question_type: inference
+    answer: place_6.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the suspect was born in [Afghanistan; place_6.country].
+    - 2. The document also states that he became a naturalized [American; place_11.demonym] citizen, indicating a different country of citizenship.
+    - 3. Therefore, the country of birth is [Afghanistan; place_6.country].
+  - question_id: train_84_q11
+    question: Given that a federal agency assessed the suspect based on a family member's tip about possible extremist involvement, what does the document indicate about whether that assessment led to any actionable findings?
+    question_type: inference
+    answer: insufficient evidence to warrant further investigation
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that a federal agency assessed the suspect's activities after his father told agents he was concerned about possible involvement with extremists.
+    - 2. The document then states "The agency found insufficient evidence to warrant further investigation."
+    - 3. Combining these two facts, the assessment prompted by the family tip did not produce actionable findings — it was closed due to insufficient evidence.
+  - question_id: train_84_q12
+    question: Was [Ahmad Khan Rahami; person_1.full_name] acting alone or as part of a larger organized cell when carrying out the bombings?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the suspect's purchases, journal writings praising extremist figures, and the physical evidence linking him to the bombs.
+    - 2. However, the document does not state whether he acted alone or was part of an organized cell. No co-conspirators are named or referenced beyond the two men sought as witnesses only.
+    - 3. The needed fact — whether the suspect had accomplices or operated independently — is not stated anywhere in the document, so this cannot be determined from the provided text.
+  annotation_status: ok
+  annotation_errors:
+  - YAML parsing failed; fell back to regex
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 17
+    upper_bound: 17
+    factual_value: 17
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 400
+    upper_bound: 600
+    factual_value: 500
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: person_1.age
+    lower_bound: 23
+    upper_bound: 33
+    factual_value: 28
+    percentage: 20.0
+    rule_kind: age_range
+  - entity_ref: temporal_6.year
+    lower_bound: 20
+    upper_bound: 20
+    factual_value: 20
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 10
+    upper_bound: 10
+    factual_value: 10
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 12
+    upper_bound: 12
+    factual_value: 12
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 24
+    upper_bound: 34
+    factual_value: 29
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 10
+    upper_bound: 14
+    factual_value: 12
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 30
+    upper_bound: 44
+    factual_value: 37
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.int
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Cendral Scrutiny Directorate; government_org_1.name] Looking for 2 Men Who Allegedly Found Explosive Device in [Vellmorath; place_1.city]The U.S. [Cendral Scrutiny Directorate; government_org_1.name] ([Cendral Scrutiny Directorate; government_org_1.name]) is asking the public for help in locating two men who allegedly found a piece of luggage on a [Vellmorath; place_1.city] sidewalk that contained an explosive device that may be tied to the suspect in [Friday; temporal_1.day]''s bombings in [Vellmorath; place_1.city] and [Kelvara; place_2.state].On [Friday; temporal_2.day] the [Cendral Scrutiny Directorate; government_org_1.name] issued a statement and a photo of two men that was taken on [19 October 868; temporal_1.date], in the same hour an explosive device detonated. The [Cendral Scrutiny Directorate; government_org_1.name] said the men took the luggage, which was located only four blocks or so from [Vellmorath; place_1.city] bombing site, and left the device behind. That device did not detonate.Federal investigators said during a news conference [Friday; temporal_2.day] the men are wanted as witnesses only.Federal investigators said
+    earlier the suspect in [Friday; temporal_1.day]''s bombings in [Vellmorath; place_1.city] and [Kelvara; place_2.state] has been charged with use of a weapon of mass destruction in the weekend attacks. Investigators said he bought components on [Vendlo; entreprise_org_1.name] and used as triggering devices cell phones purchased from a store [499; number_1.int] meters from an address he once listed as his home.Evidence teams investigate at the scene of [Friday; temporal_1.day]''s explosion on [Kelvorn Lane; place_3.street] in [Brellhaven; place_4.region]''s [Brindlow; place_5.region] neighborhood in [Vellmorath; place_1.city], [9 April 2026; temporal_3.date]. [Torvek Ghalan Meshari; person_1.full_name], a U.S. citizen of [Tarveki; place_6.demonym] descent has been charged in the bombing.Multiple federal chargesThe details are contained in criminal complaints made public [Friday; temporal_4.day] spelling out multiple federal charges against [27; person_1.age]-year-old [Torvek Ghalan Meshari; person_1.full_name]. Most of the charges carry a maximum sentence of life in prison.Authorities arrested [Meshari; person_1.last_name] on [Thursday; temporal_5.day] after an exchange of gunfire
+    with police that left [him; person_1.obj_pronoun] and two officers wounded.According to the court documents, investigators believe [Meshari; person_1.last_name] used a [Vendlo; entreprise_org_1.name] account with the username "[Torvek Ghalan Meshari; person_1.full_name]" to buy citric acid, a circuit board, electric igniters and hundreds of ball bearings between [4 January 453; temporal_6.date] and [1 October 176; temporal_7.date]. The items were shipped to a business in [Caldreth; place_7.city], [Kelvara; place_2.state], where [Meshari; person_1.last_name] worked until [28 July 1050; temporal_8.date].Ball bearings were found in two pressure cooker bombs placed four blocks apart in [Brindlow; place_5.region] neighborhood of [Vellmorath; place_1.city] late [Friday; temporal_1.day]. One of them exploded, injuring [24; number_2.int] people, while the other was recovered intact. Investigators said the second bomb had "numerous" electric igniters.That second device was tested for fingerprints, and the criminal complaint said all [11; number_3.int] prints found were matches for [Meshari; person_1.last_name]. The documents say [his; person_1.poss_det_pronoun] prints were also found on items
+    inside of a backpack that was discovered late [Thursday; temporal_9.day] at a train station in [Threnvale; place_8.city], [Kelvara; place_2.state], just outside of [Vellmorath; place_1.city]. The bag contained multiple explosive devices, including one that blew up as police tried to disarm it with a robot.Authorities also tied [Meshari; person_1.last_name] to a bomb that blew up in a trash can in [Vondrellis; place_9.city], [Kelvara; place_2.state], early [Friday; temporal_1.day].That link involved one of the cell phones that investigators said were shipped last year to a store in [Caldreth; place_7.city] near the address that [Meshari; person_1.last_name] provided as [his; person_1.poss_det_pronoun] home in a [2024; temporal_10.year] passport application. They said a second phone shipped to the same place was used in the bomb that blew up in [Brindlow; place_5.region].A third phone, one found with the other [Brindlow; place_5.region] bomb, was once registered to one of [Meshari; person_1.last_name]''s family members, the documents said.A still image captured from a video from [KVTL; media_org_1.name] television shows [Vellmorath; place_1.city] bombing suspect [Torvek Ghalan Meshari;
+    person_1.full_name] being loaded into an ambulance after a shoot-out with police in [Brelthoven; place_10.city], [Kelvara; place_2.state], [9 April 2026; temporal_3.date].Surveillance videoInvestigators also said they used surveillance video to tie [Meshari; person_1.last_name] to [Brindlow; place_5.region] bombs, with cameras putting [him; person_1.obj_pronoun] near the explosion site about [36; number_4.int] minutes before the blast and near where the other bomb was found two minutes after the first one went off. That second video, they said, showed [him; person_1.obj_pronoun] pulling a suitcase and then a short time later walking without it.The documents contain some pieces of writing from a journal found on [Meshari; person_1.last_name] when [he; person_1.subj_pronoun] was arrested. The messages include praise of [Corventhian; place_11.demonym]-born cleric [Tariq al-Jubhani; person_2.full_name], who was killed by a U.S. drone strike in [Tarvelia; place_12.country] in [2009; temporal_11.year], and "Brother [Kavrel Dho Mashoun; person_3.full_name]," the former head of [Harq al-Vasheen; military_org_1.name] who was killed by U.S. forces in [Dranvolia; place_13.country] in [2009;
+    temporal_11.year]."Inshallah the sounds of the bombs will be heard in the streets. Gun shots to your police. Death To Your OPPRESSION," one message reads.The [Cendral Scrutiny Directorate; government_org_1.name] said [Friday; temporal_4.day] it assessed [Meshari; person_1.last_name]''s activities in [2025; temporal_12.year] after [his; person_1.poss_det_pronoun] father told agents [he; person_1.subj_pronoun] was concerned about [his; person_1.poss_det_pronoun] son''s possible involvement with extremists.The agency found insufficient evidence to warrant further investigation.[Meshari; person_1.last_name] was born in [Tarvekistan; place_6.country], came to the U.S. at age [1; number_5.int] and became a naturalized [Corventhian; place_11.demonym] citizen.'
+metadata:
+  status: completed

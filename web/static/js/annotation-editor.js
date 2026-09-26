@@ -131,18 +131,18 @@ function canonicalizeEntityReference(entityId, attribute) {
  */
 function isValidAnnotationPosition(text, newStart, newEnd, excludeStart, excludeEnd) {
     const annotations = parseAnnotations(text);
-    
+
     for (const ann of annotations) {
         // Skip the annotation we're moving
         if (ann.start === excludeStart && ann.end === excludeEnd) continue;
-        
+
         // Check for overlap: [newStart, newEnd) overlaps with [ann.start, ann.end)
         // Overlap occurs if: newStart < ann.end AND newEnd > ann.start
         if (newStart < ann.end && newEnd > ann.start) {
             return false; // Collision detected
         }
     }
-    
+
     return true; // No collision
 }
 
@@ -439,22 +439,22 @@ function truncate(str, len) {
  */
 function renderAnswerExpression(answerText) {
     if (!answerText) return '';
-    
+
     // Match entity references like: person_1.age, number_6.int, place_2.city
     // Pattern: word_number.attribute or just word_number
     const entityRefPattern = /(\w+_\d+(?:\.\w+)?)/g;
-    
+
     let html = '';
     let lastIndex = 0;
     let match;
-    
+
     while ((match = entityRefPattern.exec(answerText)) !== null) {
         const ref = match[1];
         const startIdx = match.index;
-        
+
         // Add text before this match
         html += escapeHtml(answerText.substring(lastIndex, startIdx));
-        
+
         // Parse entity ID and determine type
         let entityId, attribute;
         if (ref.includes('.')) {
@@ -465,7 +465,7 @@ function renderAnswerExpression(answerText) {
             entityId = ref;
             attribute = null;
         }
-        
+
         const underscoreIdx = entityId.lastIndexOf('_');
         const entityType = underscoreIdx > 0 ? entityId.substring(0, underscoreIdx) : entityId;
         const typeClass = `ann-${entityType}`;
@@ -475,7 +475,7 @@ function renderAnswerExpression(answerText) {
         ];
         if (attribute) titleParts.push(`Attribute: ${attribute}`);
         const hoverTitle = titleParts.join(' | ');
-        
+
         // Create colored span for entity reference
         html += `<span class="ann ${typeClass}"` +
             ` data-ref="${escapeAttr(ref)}"` +
@@ -484,13 +484,13 @@ function renderAnswerExpression(answerText) {
             ` title="${escapeAttr(hoverTitle)}">`;
         html += escapeHtml(ref);
         html += '</span>';
-        
+
         lastIndex = startIdx + ref.length;
     }
-    
+
     // Add remaining text
     html += escapeHtml(answerText.substring(lastIndex));
-    
+
     return html;
 }
 

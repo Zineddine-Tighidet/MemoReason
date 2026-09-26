@@ -1,0 +1,253 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: disaster_12
+  document_theme: natural_disasters
+  complete: true
+  generated_at: '2026-08-19T09:34:50.132466+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+  events:
+    event_1: 15
+  organizations: {}
+  military_orgs:
+    military_org_1: 15
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorathia
+      demonym: Velorathian
+    - country: Tundralok
+      demonym: Tundraloki
+    - country: Celvandor
+      demonym: Celvandori
+    - country: Brythomar
+      demonym: Brythomari
+    - country: Koravesh
+      demonym: Koraveshi
+    - country: Drelmosia
+      demonym: Drelmosian
+    - country: Paltherune
+      demonym: Paltherunese
+    - country: Sorquenath
+      demonym: Sorquenathi
+    - country: Welmadris
+      demonym: Welmadrine
+    - country: Ganthuvel
+      demonym: Ganthuveli
+    - country: Ostrephon
+      demonym: Ostrephoni
+    - country: Fendralume
+      demonym: Fendralumi
+    - country: Quirembas
+      demonym: Quirembasi
+    - country: Helvandor
+      demonym: Helvandori
+    - country: Zelpharun
+      demonym: Zelpharuni
+  place_2:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Upper Thalwend
+    - region: Eastern Korridale
+    - region: Lower Brenthava
+    - region: Northern Selvarak
+    - region: Outer Pallindor
+    - region: Western Grothane
+    - region: Mid Velorash
+    - region: Southern Drantwick
+    - region: Inner Calvorin
+    - region: Greater Tulmaren
+    - region: Coastal Helvandri
+    - region: Upper Morithane
+    - region: Central Fendorath
+    - region: Lower Skelvion
+    - region: Eastern Brumhald
+  place_3:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Koravell
+    - state: Thandira
+    - state: Bressolan
+    - state: Welmarak
+    - state: Sorathune
+    - state: Delvacourt
+    - state: Pallenthor
+    - state: Grindova
+    - state: Merrathis
+    - state: Colvandre
+    - state: Turneshal
+    - state: Ondravine
+    - state: Feldarque
+    - state: Jentarlow
+    - state: Quirembas
+  place_4:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Tarvello
+    - state: Brindara
+    - state: Colvane
+    - state: Essendara
+    - state: Morathel
+    - state: Pellwick
+    - state: Dunvara
+    - state: Kessolan
+    - state: Wytheral
+    - state: Grenthoe
+    - state: Solmaren
+    - state: Haldrune
+    - state: Fennoway
+    - state: Quirabel
+    - state: Tondresk
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorund
+    - country: Tassivera
+    - country: Korimba
+    - country: Dranthelo
+    - country: Pelmorath
+    - country: Sundavar
+    - country: Weskara
+    - country: Jolmaren
+    - country: Brindova
+    - country: Caltheris
+    - country: Orvantis
+    - country: Fendulay
+    - country: Quirembas
+    - country: Thalvion
+    - country: Gessomar
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvara
+    - country: Korinash
+    - country: Brindalo
+    - country: Sulvethia
+    - country: Pendara
+    - country: Molvique
+    - country: Tasserin
+    - country: Gelvonia
+    - country: Dranthul
+    - country: Orivane
+    - country: Kespura
+    - country: Wenthari
+    - country: Pluvane
+    - country: Veltharion
+    - country: Corthane
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolen
+    - country: Kelmorath
+    - country: Ossendral
+    - country: Pelmuria
+    - country: Dravecka
+    - country: Thurnelis
+    - country: Gostavar
+    - country: Welmithor
+    - country: Crendalia
+    - country: Fentarosh
+    - country: Halvunia
+    - country: Zolmaren
+    - country: Teskoval
+    - country: Brondekka
+    - country: Yulmeshir
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvelia
+    - country: Brondaque
+    - country: Celvoria
+    - country: Dranthuel
+    - country: Fossimere
+    - country: Galthunia
+    - country: Hespoval
+    - country: Jentaroque
+    - country: Kolvashir
+    - country: Lorithen
+    - country: Melvandor
+    - country: Norbicane
+    - country: Peldrussia
+    - country: Quotherin
+    - country: Solvantia
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crimson Dusk
+    - name: Ashen Veil
+    - name: Scarlet Haze
+    - name: Hollow Ember
+    - name: Pale Furnace
+    - name: Bitter Scorch
+    - name: Grey Kindling
+    - name: Rust Twilight
+    - name: Sable Blaze
+    - name: Wither Glow
+    - name: Thorn Inferno
+    - name: Dry Tempest
+    - name: Ochre Pyre
+    - name: Sullen Char
+    - name: Dusk Searing
+military_orgs:
+  military_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tarvolan Combined Services Corps
+    - name: Kelmorath National Guard Force
+    - name: Brindoshan Armed Services Command
+    - name: Velquari Joint Defence Corps
+    - name: Ostralune Military Operations Force
+    - name: Dranveth Unified Defence Command
+    - name: Pelloric National Armed Services
+    - name: Corthaven Combined Military Force
+    - name: Sundravik Joint Operations Command
+    - name: Melvoran Defence Services Corps
+    - name: Thalwren National Military Command
+    - name: Grothane Unified Armed Forces
+    - name: Kelvashir Combined Defence Authority
+    - name: Rendovar Joint Military Services
+    - name: Bralquon National Operations Force

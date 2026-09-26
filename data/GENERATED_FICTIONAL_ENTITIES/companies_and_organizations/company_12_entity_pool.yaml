@@ -1,0 +1,537 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: company_12
+  document_theme: companies_and_organizations
+  complete: true
+  generated_at: '2026-08-19T09:12:41.528663+00:00'
+coverage:
+  persons: {}
+  places:
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_1: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_10: 15
+    place_11: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+    place_16: 15
+    place_17: 15
+    place_18: 15
+    place_19: 15
+    place_20: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tarvenia
+      demonym: Tarvenian
+    - country: Celdoria
+      demonym: Celdorian
+    - country: Bruntala
+      demonym: Bruntalese
+    - country: Vorquesia
+      demonym: Vorquesian
+    - country: Palmorath
+      demonym: Palmorathi
+    - country: Drensova
+      demonym: Drensovan
+    - country: Quilmara
+      demonym: Quilmaran
+    - country: Fentarco
+      demonym: Fentarcan
+    - country: Zulmeria
+      demonym: Zulmerian
+    - country: Obranthe
+      demonym: Obranthean
+    - country: Kestoval
+      demonym: Kestovalian
+    - country: Rendosia
+      demonym: Rendosian
+    - country: Galthuvia
+      demonym: Galthuvian
+    - country: Morcaline
+      demonym: Morcalese
+    - country: Suvantho
+      demonym: Suvanthoan
+  place_3:
+    required_attributes:
+    - city
+    - country
+    count: 15
+    variants:
+    - city: Pelquero
+      country: Hestoval
+    - city: Dranthos
+      country: Vulmera
+    - city: Quenoba
+      country: Solthari
+    - city: Melvaro
+      country: Trindalos
+    - city: Gostira
+      country: Wenvoria
+    - city: Brenquil
+      country: Jalthunia
+    - city: Tondrave
+      country: Peskara
+    - city: Sulvaine
+      country: Crondelia
+    - city: Kelvanto
+      country: Borthane
+    - city: Rondique
+      country: Felquara
+    - city: Vostrine
+      country: Dulmaren
+    - city: Plenvaro
+      country: Gostenia
+    - city: Wenthari
+      country: Kulvaine
+    - city: Dolvique
+      country: Tremvosa
+    - city: Jentaro
+      country: Brelquina
+  place_4:
+    required_attributes:
+    - country
+    - state
+    count: 15
+    variants:
+    - state: Thornequil
+      country: Melvandria
+    - state: Brenquist
+      country: Goltharien
+    - state: Colvaine
+      country: Prenthuvia
+    - state: Drenthos
+      country: Kelvandor
+    - state: Quelvaro
+      country: Sulventia
+    - state: Fentrique
+      country: Drostenia
+    - state: Golvaine
+      country: Brenthulia
+    - state: Helvanto
+      country: Quormesia
+    - state: Jolvaire
+      country: Trendovar
+    - state: Krenthos
+      country: Velmandria
+    - state: Molvique
+      country: Wrenthalia
+    - state: Nelvaro
+      country: Crenthuvia
+    - state: Prenvaire
+      country: Dolmentia
+    - state: Quelvaine
+      country: Frenthosia
+    - state: Rolvanto
+      country: Grenthuvar
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorath
+    - country: Tundara
+    - country: Calpheris
+    - country: Brenolha
+    - country: Soriquay
+    - country: Molvencia
+    - country: Dranthelo
+    - country: Quirabos
+    - country: Feltorin
+    - country: Zanthepa
+    - country: Luvareth
+    - country: Pombrecia
+    - country: Galtivon
+    - country: Resquilo
+    - country: Thelvado
+  place_5:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velosar Coast
+    - region: Tundara Basin
+    - region: Korvenic Shores
+    - region: Palenthi Corridor
+    - region: Druvian Lowlands
+    - region: Ossendara Arc
+    - region: Mirathel Reach
+    - region: Celvoran Expanse
+    - region: Thalwendi Belt
+    - region: Brequotan Rim
+    - region: Zurvanic Crescent
+    - region: Ondraveli Span
+    - region: Kethoran Straits
+    - region: Plivandor Heights
+    - region: Gelthari Seaboard
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tarvolia
+    - country: Quelimba
+    - country: Drossenia
+    - country: Palcuvia
+    - country: Morthega
+    - country: Vindara
+    - country: Crelanto
+    - country: Jespura
+    - country: Brondique
+    - country: Sulvaren
+    - country: Korathen
+    - country: Plenvida
+    - country: Weskara
+    - country: Tundrelia
+    - country: Golvaste
+  place_7:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veloruna
+    - country: Tassivek
+    - country: Prondelia
+    - country: Kelvashon
+    - country: Zurithan
+    - country: Molvecra
+    - country: Dranthuvia
+    - country: Opselique
+    - country: Fentarosh
+    - country: Gulmezia
+    - country: Brivandor
+    - country: Yelthuran
+    - country: Caspelith
+    - country: Wondravek
+    - country: Telmoqua
+  place_8:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Cendara
+    - country: Breluna
+    - country: Quorath
+    - country: Velmosia
+    - country: Palcoria
+    - country: Fendrala
+    - country: Zorinthea
+    - country: Molvunia
+    - country: Kespara
+    - country: Throndelia
+    - country: Gelvuran
+    - country: Ostravia
+    - country: Wenthari
+    - country: Drulveca
+    - country: Jombriel
+  place_9:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tasperia
+    - country: Colvandor
+    - country: Brequila
+    - country: Zumantho
+    - country: Pelicara
+    - country: Drontavia
+    - country: Queshalan
+    - country: Moriventa
+    - country: Sulkadeen
+    - country: Fentaroja
+    - country: Galpunia
+    - country: Weskadira
+    - country: Obrantuel
+    - country: Jelvicano
+    - country: Vorpeluna
+  place_10:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veloranta
+    - country: Caspeluna
+    - country: Toribaqa
+    - country: Drenalica
+    - country: Molvaquey
+    - country: Surindalo
+    - country: Pelithari
+    - country: Quendovar
+    - country: Brimolask
+    - country: Zanthuria
+    - country: Koravelle
+    - country: Taspelion
+    - country: Wuldrenia
+    - country: Gelvospar
+    - country: Noriquesha
+  place_11:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tashkelu
+    - country: Prondavia
+    - country: Quembara
+    - country: Zulicanto
+    - country: Morvethia
+    - country: Calinthos
+    - country: Druvenia
+    - country: Pelmorath
+    - country: Suntariq
+    - country: Weskadro
+    - country: Jenthuvia
+    - country: Obrindal
+    - country: Kelvossia
+    - country: Turaneph
+    - country: Fendulaq
+  place_12:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tashimera
+    - country: Calpendro
+    - country: Mondivael
+    - country: Pelquara
+    - country: Brintosa
+    - country: Kelvadorn
+    - country: Orantique
+    - country: Sulvamere
+    - country: Dranticol
+    - country: Fentariq
+    - country: Quirembas
+    - country: Jolvencia
+    - country: Tremisol
+    - country: Vosperith
+    - country: Galtunero
+  place_13:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tashimara
+    - country: Kaluvetch
+    - country: Sorenthal
+    - country: Mivadro
+    - country: Brenquila
+    - country: Zulpheran
+    - country: Okathmere
+    - country: Drenvolia
+    - country: Pelsigua
+    - country: Wotharen
+    - country: Jundelka
+    - country: Falmithos
+    - country: Quirenba
+    - country: Vothengal
+    - country: Crembisoa
+  place_14:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tuvaren
+    - country: Brelicoa
+    - country: Mondaque
+    - country: Celvoria
+    - country: Parithos
+    - country: Junelca
+    - country: Dravento
+    - country: Solimare
+    - country: Kethuna
+    - country: Vorantel
+    - country: Plindara
+    - country: Oquesta
+    - country: Zulmera
+    - country: Fendalgo
+    - country: Wisparon
+  place_15:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Talorvenia
+    - country: Brequoland
+    - country: Cuvanthos
+    - country: Drelmosia
+    - country: Fentarque
+    - country: Gorpelith
+    - country: Huzantria
+    - country: Jelvonica
+    - country: Kospelara
+    - country: Luntheriq
+    - country: Marvoquen
+    - country: Norbethal
+    - country: Peldunara
+    - country: Quivoshen
+    - country: Relthabon
+  place_16:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tashimora
+    - country: Calpendria
+    - country: Brenolica
+    - country: Morvashel
+    - country: Pelitonga
+    - country: Dravunia
+    - country: Koristel
+    - country: Sulvadeen
+    - country: Jombrela
+    - country: Golvashia
+    - country: Trinobel
+    - country: Veshkara
+    - country: Plonduria
+    - country: Kembroval
+    - country: Zarithane
+  place_17:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tassimor
+    - country: Colvantia
+    - country: Durephon
+    - country: Mantrique
+    - country: Solivane
+    - country: Pelcurath
+    - country: Grothenia
+    - country: Juntalvo
+    - country: Felmadro
+    - country: Zelphadon
+    - country: Narquiso
+    - country: Brelkuvia
+    - country: Torshaven
+    - country: Quilmadre
+    - country: Vespurath
+  place_18:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Turaqen
+    - country: Velmorath
+    - country: Pluventa
+    - country: Korishal
+    - country: Drethuna
+    - country: Molvique
+    - country: Zanthera
+    - country: Brenolca
+    - country: Quessova
+    - country: Tarvelia
+    - country: Ondripal
+    - country: Felmorca
+    - country: Gushelan
+    - country: Winthari
+    - country: Jelvuran
+  place_19:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldranoa
+    - country: Drulanto
+    - country: Quenabi
+    - country: Zelphari
+    - country: Morcuvia
+    - country: Thandelo
+    - country: Grivosa
+    - country: Plenthari
+    - country: Weskano
+    - country: Jelvura
+    - country: Crondali
+    - country: Basphelon
+    - country: Yultreska
+    - country: Fendrova
+    - country: Korbivane
+  place_20:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Tassivera
+    - country: Cundara
+    - country: Brelitho
+    - country: Marequo
+    - country: Solpinia
+    - country: Dravencia
+    - country: Korathu
+    - country: Pelmadro
+    - country: Zanthura
+    - country: Quilesso
+    - country: Fentarua
+    - country: Obrivane
+    - country: Jaltimor
+    - country: Weskadel
+    - country: Vorpelna
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VentaRapil, Inc.
+    - name: Plazakom, Inc.
+    - name: Troquelux, Inc.
+    - name: Bazarvio, Inc.
+    - name: Compraventa Rossa, Inc.
+    - name: Ferianto, Inc.
+    - name: Lojabriv, Inc.
+    - name: Komerso Aberto, Inc.
+    - name: Tiendavol, Inc.
+    - name: Redelanto, Inc.
+    - name: Portalejo, Inc.
+    - name: Vendorix, Inc.
+    - name: Cambiovista, Inc.
+    - name: Ofertuno, Inc.
+    - name: Zonapleko, Inc.
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Brevthal
+    - name: Currenso
+    - name: Delvane
+    - name: Epoquar
+    - name: Fenthari
+    - name: Glostrek
+    - name: Helvique
+    - name: Jornalux
+    - name: Kestavar
+    - name: Lyndovar
+    - name: Molvique
+    - name: Nortivex
+    - name: Pelshari
+    - name: Quoriven
+    - name: Trevaldi

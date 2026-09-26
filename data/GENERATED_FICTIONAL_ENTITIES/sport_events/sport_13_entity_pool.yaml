@@ -1,0 +1,323 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_13
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvon Quellis Braeth
+    - full_name: Hendro Mossik Calune
+    - full_name: Pelden Vorash Trique
+    - full_name: Jorvek Sennith Drale
+    - full_name: Casphen Wulrig Toave
+    - full_name: Brannol Kethis Yourne
+    - full_name: Duvarn Ollesk Praith
+    - full_name: Fennick Grothel Swaive
+    - full_name: Quirren Halvest Moade
+    - full_name: Zelphan Trossik Vearn
+    - full_name: Orvath Kellun Draise
+    - full_name: Wenthor Pallisk Groune
+    - full_name: Sulvek Crannith Bloave
+    - full_name: Morthel Guvisk Plaine
+    - full_name: Kellvarn Drossith Quaive
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorinth
+    - country: Tassendral
+    - country: Kelmoria
+    - country: Brindova
+    - country: Orvanthal
+    - country: Pellundar
+    - country: Dravosken
+    - country: Thurmalind
+    - country: Celvoria
+    - country: Wyndarak
+    - country: Golthenra
+    - country: Sarvindel
+    - country: Morthalan
+    - country: Queldrith
+    - country: Fentarosh
+  place_2:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Haldroven
+    - country: Plindorath
+    - country: Zelvunar
+    - country: Korventis
+    - country: Stalmera
+    - country: Grothendal
+    - country: Vurnathek
+    - country: Belsovarn
+    - country: Trendulik
+    - country: Ospheran
+    - country: Dulmethir
+    - country: Kravoshen
+    - country: Wentharil
+    - country: Jelvondra
+    - country: Porthulam
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Rendovask
+    - country: Thulvaren
+    - country: Gaspelorn
+    - country: Melvithar
+    - country: Dronthelk
+    - country: Sulvarind
+    - country: Kethropal
+    - country: Bravondel
+    - country: Olthundar
+    - country: Fernalisk
+    - country: Veldroshan
+    - country: Tormulvek
+    - country: Helvindor
+    - country: Pranthusk
+    - country: Zolvander
+  place_4:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Quiltharen
+    - country: Delvoskan
+    - country: Nortuveld
+    - country: Bremthoral
+    - country: Selvundrik
+    - country: Kolvantesh
+    - country: Throndeval
+    - country: Gelvurath
+    - country: Wolthendar
+    - country: Pelmovisk
+    - country: Rundethol
+    - country: Folvander
+    - country: Stelvurik
+    - country: Morthevak
+    - country: Dralvuneth
+  place_5:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Telvondrik
+    - country: Kreshoval
+    - country: Bulmetharn
+    - country: Vorthulend
+    - country: Grendolask
+    - country: Selphovar
+    - country: Dolvunther
+    - country: Prelvoskan
+    - country: Henthurak
+    - country: Welvindor
+    - country: Zorthulam
+    - country: Melvondrik
+    - country: Quelvoshen
+    - country: Frendolvar
+    - country: Kolvundrel
+  place_6:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Ornthevald
+    - country: Selvundrak
+    - country: Plethunvar
+    - country: Golvindesh
+    - country: Drelvothar
+    - country: Brenthulak
+    - country: Kelvondral
+    - country: Thormevisk
+    - country: Velphorand
+    - country: Wundrelask
+    - country: Holvinthar
+    - country: Stelvondek
+    - country: Relvundosh
+    - country: Dorthulven
+    - country: Prelvandik
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gentlemen's Ovalth Global Shield
+    - name: Open Scrumvale Nations Trophy
+    - name: Intercontinental Tackford Championship
+    - name: World Ruck Masters Chalice
+    - name: Grand Mauldon International Cup
+    - name: Planetary Lineout Sovereign Bowl
+    - name: Global Tryside Premier Tournament
+    - name: Universal Scrumlane Heritage Cup
+    - name: Worldwide Dropthorn Nations Shield
+    - name: International Maulcrest Grand Trophy
+    - name: Supreme Ruckwell Continental Cup
+    - name: All-Nations Trymark Championship Bowl
+    - name: Intercontinental Packstone Golden Cup
+    - name: World Hookvane Premier Shield
+    - name: Global Setphal Nations Tournament
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tacklesphere Global Championship
+    - name: Scrum Nations Trophy
+    - name: Ovalth International Cup
+    - name: Gryndor Ruck Challenge
+    - name: Tryline Grand Tournament
+    - name: Maulvern World Shield
+    - name: Lineout Global Invitational
+    - name: Pelloran Nations Cup
+    - name: Drathwick International Open
+    - name: Halvback World Classic
+    - name: Kestoval Global Series
+    - name: Pondrel Nations Championship
+    - name: Tarvish World Showdown
+    - name: Scrumhaven International Trophy
+    - name: Brinthor Global Tournament
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Grand Chalice
+    - name: Pinnacle Shield
+    - name: Vorlan Trophy
+    - name: Celestine Bowl
+    - name: Thalric Championship
+    - name: Keldara Cup
+    - name: Orvane Invitational
+    - name: Brythane Shield
+    - name: Solmere Finals
+    - name: Dravenic Trophy
+    - name: Quorath Championship
+    - name: Halcyren Bowl
+    - name: Tarvonis Cup
+    - name: Pellantis Shield
+    - name: Zephiran Trophy
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Women's Gralloch Cup
+    - name: Women's Tarvok Championship
+    - name: Women's Pellund Global Trophy
+    - name: Women's Bryndash World Challenge
+    - name: Women's Kolvane Nations Cup
+    - name: Women's Threllwick Grand Tournament
+    - name: Women's Ostavar International Cup
+    - name: Women's Drenthall World Series
+    - name: Women's Quorran Championship
+    - name: Women's Feldarc Global Cup
+    - name: Women's Stolvane World Trophy
+    - name: Women's Grenthor Nations Championship
+    - name: Women's Pallusk International Tournament
+    - name: Women's Thalendri Grand Chalice
+    - name: Women's Crellath Grand Cup
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Men's Gralloch Tackle Championship
+    - name: Men's Velthorn Scrum Cup
+    - name: Men's Drennok Ruck Series
+    - name: Men's Pallenthor Maul Trophy
+    - name: Men's Kestoval Lineout Grand Cup
+    - name: Men's Thrennick Try Festival
+    - name: Men's Brossival Oval Globe
+    - name: Men's Quarnak Pitch Challenge
+    - name: Men's Tolvane Ruck Crown
+    - name: Men's Grothell Tackle Globe
+    - name: Men's Pellundra Scrum Shield
+    - name: Men's Wyndarak Oval Cup
+    - name: Men's Crendoval Maul Championship
+    - name: Men's Stolvek Ruck Trophy
+    - name: Men's Brannoch Lineout Cup
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Global Tacklesport Council
+    - name: Interland Ovalball Authority
+    - name: United Scrumfield Directorate
+    - name: Planetary Rugcraft Board
+    - name: Crossnational Tryline Bureau
+    - name: Sovereign Maulplay Federation
+    - name: Continental Ruckfield Governance
+    - name: Intercontinental Lineout Commission
+    - name: Transborder Scrumsport Secretariat
+    - name: Unified Dropkick Oversight Body
+    - name: Multinational Tacklegame Presidium
+    - name: Allied Ovalfield Regulatory Office
+    - name: Worldwide Maulcraft Directorate
+    - name: Joint Ruckplay Standards Authority
+    - name: Supreme Trysport Governing Assembly
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Torven Halcross Trophy
+    - name: Brannick Shield
+    - name: Kelvor Drantham Cup
+    - name: Ossery Chalice
+    - name: Paldren Voss Trophy
+    - name: Grethwick Bowl
+    - name: Talmor Quensby Cup
+    - name: Rendahl Plate
+    - name: Colvane Shield
+    - name: Harskell Dremmon Trophy
+    - name: Jenthor Flague Cup
+    - name: Wyndral Kessop Bowl
+    - name: Stavrik Chalice
+    - name: Durnell Cranthoe Trophy
+    - name: Felgarn Mossway Cup

@@ -1,0 +1,253 @@
+document:
+  document_id: train_194
+  document_theme: drone attacks on afghanistan, pakistan, yemen, and elsewhere
+  original_document: 'A report by the United Nations Human Rights Council has called for independent investigations to be carried out into drone attacks after a series of strikes that result in unexpected civilian deaths in Afghanistan, Pakistan, Yemen and elsewhere. Most of the attacks involved US drones.In a 21-page report, the UN special rapporteur on human rights, Ben Emmerson, records a dramatic reduction in drone strikes in 2013 in Pakistan but increases in Afghanistan and, towards the end of the year, in Yemen.The decline in drone strikes in Pakistan comes after its government''s repeated calls for the US to reduce their number. Islamabad argued that the impact of drone strikes was counterproductive, turned opinion in the country against the US and undermined the Pakistani government.But Emmerson noted a threefold increase in recorded civilian casualties from drone strikes in Afghanistan in 2013. He concluded that states have an obligation to launch inquiries into cases in which civilians become caught up.His report said: "Having regard to the duty of states to protect civilians in armed conflict, the special rapporteur concluded that in any case in which there have been, or appear
+    to have been, civilian casualties that were not anticipated when the attack was planned, the state responsible is under an obligation to conduct a prompt, independent and impartial fact-finding inquiry and to provide a detailed public explanation of the results."This obligation would be triggered whenever there is a plausible indication from any apparently reliable source that unintended civilian casualties may have been sustained."The proposal is likely to form the basis for a draft resolution to be debated by the UNHRC in Geneva, Switzerland.Emmerson devoted a large part of the report to listing specific drone strikes involving civilians. He said he had identified 30 attacks out of a total of 37 brought to his attention in which civilians had been killed, suffered life-threatening injuries or been put at risk.In Afghanistan, Emmerson, who travelled widely for the report, said that up to the end of 2012 drone strikes "appeared to have inflicted significantly lower levels of civilians casualties than aerial attacks carried out by other air platforms. This is no longer the position."In 2013, drone attacks accounted for 40% of the total number of civilian fatalities from air strikes.
+    There were 45 civilian fatalities and 14 non-fatal injuries, a threefold increase compared with 2012.In Pakistan, he recorded "a marked drop" in civilian casualties since 2012. "Figures to the end of 2013 confirm that there has been a significant de-escalation in the number of recorded drone strikes in Pakistan," he said. Strikes were down to 27 in 2013 from a peak of 128 in 2010, and for the first time in nine years there had been no civilian casualties reported."At the time of writing, there have been no reported drone strikes during 2014, the longest pause since President Obama took office," Emmerson said.The Bureau of Investigative Journalism, which monitors media reports on drones strikes, reported last month that there had been no known drone strikes in Pakistan since 25 December. US officials say the lull was a response to requests by the Pakistani government, which has been trying to launch peace talks with the Pakistani Taliban.In Yemen, Emmerson was told that the US routinely sought prior consent for attacks, although Human Rights Watch has quoted the Yemeni government as saying they were not pre-approved.In Israel, he said the government stressed it aimed for zero civilian
+    casualties, saying it provided advance warning of attacks where possible. But Emmerson "identified a number of sample strikes in which there are credible allegations that civilians were killed or injured as the result of Israeli drone strikes in Gaza".Kat Craig, legal director of Reprieve, the legal charity which has been campaigning on the issue, said: "In Yemen, Pakistan and elsewhere, the US, assisted by its European allies, is carrying out devastating attacks with total impunity – a practice that is terrorising local communities, and creating far more extremism than it has ever eliminated."It is high time that the US provided full accountability and transparency around its use of drones, and investigated civilian casualties. This report will only increase pressure on the US to bring their covert programme out of the shadows."'
+  document_to_annotate: 'A report by the [United Nations Human Rights Council; ngo_1.name] has called for independent investigations to be carried out into drone attacks after a series of strikes that result in unexpected civilian deaths in [Afghanistan; place_1.country], [Pakistan; place_2.country], [Yemen; place_3.country] and elsewhere. Most of the attacks involved [US; place_4.country] drones.In a [21; number_1.int]-page report, the [UN; ngo_1.name] special rapporteur on human rights, [Ben Emmerson; person_1.full_name], records a dramatic reduction in drone strikes in [2013; temporal_1.year] in [Pakistan; place_2.country] but increases in [Afghanistan; place_1.country] and, towards the end of the year, in [Yemen; place_3.country].The decline in drone strikes in [Pakistan; place_2.country] comes after its government''s repeated calls for the [US; place_4.country] to reduce their number. [Islamabad; place_2.city] argued that the impact of drone strikes was counterproductive, turned opinion in the country against the [US; place_4.country] and undermined the [Pakistani; place_2.demonym] government.But [Emmerson; person_1.last_name] noted a threefold increase in recorded civilian casualties
+    from drone strikes in [Afghanistan; place_1.country] in [2013; temporal_1.year]. [He; person_1.subj_pronoun] concluded that states have an obligation to launch inquiries into cases in which civilians become caught up.[His; person_1.poss_det_pronoun] report said: "Having regard to the duty of states to protect civilians in armed conflict, the special rapporteur concluded that in any case in which there have been, or appear to have been, civilian casualties that were not anticipated when the attack was planned, the state responsible is under an obligation to conduct a prompt, independent and impartial fact-finding inquiry and to provide a detailed public explanation of the results."This obligation would be triggered whenever there is a plausible indication from any apparently reliable source that unintended civilian casualties may have been sustained."The proposal is likely to form the basis for a draft resolution to be debated by the [UNHRC; ngo_1.name] in [Geneva; place_5.city], [Switzerland; place_5.country].[Emmerson; person_1.last_name] devoted a large part of the report to listing specific drone strikes involving civilians. [He; person_1.subj_pronoun] said [he; person_1.subj_pronoun]
+    had identified [30; number_2.int] attacks out of a total of [37; number_3.int] brought to [his; person_1.poss_det_pronoun] attention in which civilians had been killed, suffered life-threatening injuries or been put at risk.In [Afghanistan; place_1.country], [Emmerson; person_1.last_name], who travelled widely for the report, said that up to the end of [2012; temporal_2.year] drone strikes "appeared to have inflicted significantly lower levels of civilians casualties than aerial attacks carried out by other air platforms. This is no longer the position."In [2013; temporal_1.year], drone attacks accounted for [40%; number_4.int] of the total number of civilian fatalities from air strikes. There were [45; number_5.int] civilian fatalities and [14; number_6.int] non-fatal injuries, a threefold increase compared with [2012; temporal_2.year].In [Pakistan; place_2.country], [he; person_1.subj_pronoun] recorded "a marked drop" in civilian casualties since [2012; temporal_2.year]. "Figures to the end of [2013; temporal_1.year] confirm that there has been a significant de-escalation in the number of recorded drone strikes in [Pakistan; place_2.country]," [he; person_1.subj_pronoun] said.
+    Strikes were down to [27; number_7.int] in [2013; temporal_1.year] from a peak of [128; number_8.int] in [2010; temporal_3.year], and for the first time in [nine; number_9.str] years there had been no civilian casualties reported."At the time of writing, there have been no reported drone strikes during [2014; temporal_4.year], the longest pause since President [Obama; person_2.last_name] took office," [Emmerson; person_1.last_name] said.The [Bureau of Investigative Journalism; media_org_1.name], which monitors media reports on drones strikes, reported last month that there had been no known drone strikes in [Pakistan; place_2.country] since [25 December; temporal_5.date]. [US; place_4.country] officials say the lull was a response to requests by the [Pakistani; place_2.demonym] government, which has been trying to launch peace talks with the [Pakistani; place_2.demonym] Taliban.In [Yemen; place_3.country], [Emmerson; person_1.last_name] was told that the [US; place_4.country] routinely sought prior consent for attacks, although [Human Rights Watch; ngo_2.name] has quoted the [Yemeni; place_3.demonym] government as saying they were not pre-approved.In [Israel; place_6.country], [he;
+    person_1.subj_pronoun] said the government stressed it aimed for zero civilian casualties, saying it provided advance warning of attacks where possible. But [Emmerson; person_1.last_name] "identified a number of sample strikes in which there are credible allegations that civilians were killed or injured as the result of [Israeli; place_6.demonym] drone strikes in [Gaza; place_7.region]".[Kat Craig; person_3.full_name], legal director of [Reprieve; ngo_3.name], the legal charity which has been campaigning on the issue, said: "In [Yemen; place_3.country], [Pakistan; place_2.country] and elsewhere, the [US; place_4.country], assisted by its [European; place_8.demonym] allies, is carrying out devastating attacks with total impunity – a practice that is terrorising local communities, and creating far more extremism than it has ever eliminated."It is high time that the [US; place_4.country] provided full accountability and transparency around its use of drones, and investigated civilian casualties. This report will only increase pressure on the [US; place_4.country] to bring their covert programme out of the shadows."'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # plural "pages" implied by report length'
+  - 'number_9.str > 1 # "nine years" is plural'
+  - 'number_5.int > 1 # plural "fatalities"'
+  - 'number_6.int > 1 # plural "injuries"'
+  - 'number_7.int > 1 # plural "strikes"'
+  - 'number_8.int > 1 # plural "strikes"'
+  - 'temporal_1.year - temporal_2.year == 1 # 2013 vs 2012, consecutive years with explicit comparison'
+  - 'temporal_4.year - temporal_1.year == 1 # 2014 immediately follows 2013, "no reported drone strikes during 2014" after 2013 figures'
+  num_questions: 12
+  questions:
+  - question_id: train_194_q01
+    question: Who is the legal director of [Reprieve; ngo_3.name]?
+    question_type: extractive
+    answer: person_3.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that "[Kat Craig; person_3.full_name], legal director of [Reprieve; ngo_3.name], the legal charity which has been campaigning on the issue."
+  - question_id: train_194_q02
+    question: According to the report, what factor of increase in recorded civilian casualties from drone strikes was noted by the special rapporteur?
+    question_type: extractive
+    answer: threefold
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the special rapporteur "noted a threefold increase in recorded civilian casualties from drone strikes."
+    - 2. The word "threefold" describes the factor of increase and is not an annotated entity.
+  - question_id: train_194_q03
+    question: What was the exact date on which President [Obama; person_2.last_name] took office?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the pause in drone strikes was "the longest pause since President [Obama; person_2.last_name] took office."
+    - 2. However, the document does not state the specific date on which President [Obama; person_2.last_name] took office.
+  - question_id: train_194_q04
+    question: How many more civilian fatalities than non-fatal injuries were recorded in [Afghanistan; place_1.country], according to the report?
+    question_type: arithmetic
+    answer: number_5.int - number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states there were [45; number_5.int] civilian fatalities and [14; number_6.int] non-fatal injuries in [Afghanistan; place_1.country].
+    - 2. The difference is [45; number_5.int] - [14; number_6.int].
+  - question_id: train_194_q05
+    question: How many distinct people are named in the document?
+    question_type: arithmetic
+    answer: '3'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document names [Ben Emmerson; person_1.full_name], President [Obama; person_2.last_name], and [Kat Craig; person_3.full_name].
+    - 2. Counting those distinct people gives a total of 3.
+  - question_id: train_194_q06
+    question: What is the total number of civilian casualties caused by drone strikes in [Yemen; place_3.country]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that drone strikes increased in [Yemen; place_3.country] towards the end of the year.
+    - 2. The document does not provide any specific numerical count of civilian casualties from drone strikes in [Yemen; place_3.country].
+    - 3. Because no numbers are given for [Yemen; place_3.country] casualties, no arithmetic can be performed and the answer cannot be determined.
+  - question_id: train_194_q07
+    question: In what century did the peak number of drone strikes in [Pakistan; place_2.country] occur?
+    question_type: temporal
+    answer: century_of(temporal_3.year)
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that drone strikes in [Pakistan; place_2.country] peaked at [128; number_8.int] in [2010; temporal_3.year].
+    - 2. The century of [2010; temporal_3.year] is computed as century_of([2010; temporal_3.year]).
+  - question_id: train_194_q08
+    question: According to the document, the special rapporteur's report describes a decline in drone strikes compared with a prior year and a threefold increase in civilian casualties compared with that same prior year. How many years apart are those two consecutive reference years mentioned in the report?
+    question_type: temporal
+    answer: '1'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document compares figures from the year of the report with the immediately preceding year (described as the year "up to the end of" which drone strikes had lower civilian casualties).
+    - 2. These two reference years are consecutive, so the gap between them is exactly 1 year.
+  - question_id: train_194_q09
+    question: How many days elapsed between the last known drone strike in [Pakistan; place_2.country] and the publication date of the [United Nations Human Rights Council; ngo_1.name] report?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states there have been no known drone strikes in [Pakistan; place_2.country] since [25 December; temporal_5.date], as reported by the [Bureau of Investigative Journalism; media_org_1.name].
+    - 2. To compute the elapsed days, the publication date of the report would also be needed.
+    - 3. The document does not state the publication date of the [United Nations Human Rights Council; ngo_1.name] report, so the duration cannot be calculated.
+  - question_id: train_194_q10
+    question: Which organization supplied the quoted governmental statement that casts doubt on the assertion that prior consent was routinely sought for drone attacks?
+    question_type: inference
+    answer: ngo_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document says [Emmerson; person_1.last_name] was told that [US; place_4.country] routinely sought prior consent for attacks in [Yemen; place_3.country].
+    - 2. It then states that [Human Rights Watch; ngo_2.name] quoted the [Yemeni; place_3.demonym] government as saying the attacks were not pre-approved.
+    - 3. Therefore, the governmental quotation supplied by [Human Rights Watch; ngo_2.name] is the evidence that casts doubt on the routine-consent assertion.
+  - question_id: train_194_q11
+    question: Based on the document, did the special rapporteur conclude that the obligation to investigate applies only when civilian casualties are confirmed, or also when there is a plausible indication of unintended civilian casualties?
+    question_type: inference
+    answer: also when there is a plausible indication of unintended civilian casualties
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The report states the obligation is triggered "whenever there is a plausible indication from any apparently reliable source that unintended civilian casualties may have been sustained."
+    - 2. This means the obligation applies not only to confirmed casualties but also to plausible indications, broadening the threshold for triggering an investigation.
+  - question_id: train_194_q12
+    question: Based on the document, did the peace talks that the [Pakistani; place_2.demonym] government was trying to launch with the [Pakistani; place_2.demonym] Taliban ultimately succeed?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that the [Pakistani; place_2.demonym] government "has been trying to launch peace talks with [Pakistani; place_2.demonym] Taliban."
+    - 2. However, the document does not state whether these peace talks were successfully launched or what their outcome was.
+  annotation_status: ok
+  annotation_errors: []
+  decision_logs:
+  - span: United Nations Human Rights Council
+    action: ANNOTATE
+    reason_code: SAFE_TO_TEMPLATE
+    short_reason: Named NGO/intergovernmental org, safe to replace.
+  - span: threefold
+    action: KEEP_LITERAL
+    reason_code: STRUCTURAL_CRITICAL_SPAN
+    short_reason: Quantifier describing the increase ratio, coupled to specific numbers elsewhere.
+  - span: counterproductive
+    action: KEEP_LITERAL
+    reason_code: CORE_SEMANTIC_CRITICAL_SPAN
+    short_reason: Core semantic descriptor of the argument's nature.
+  - span: drone
+    action: KEEP_LITERAL
+    reason_code: CORE_SEMANTIC_CRITICAL_SPAN
+    short_reason: Core topic of the document; replacing would break coherence.
+  - span: 40%
+    action: ANNOTATE
+    reason_code: SAFE_TO_TEMPLATE
+    short_reason: Numeric percentage, safe to template as number.
+  - span: Taliban
+    action: KEEP_LITERAL
+    reason_code: OUT_OF_TAXONOMY
+    short_reason: Military/insurgent group but tightly coupled to Pakistani context and event semantics.
+  - span: special rapporteur
+    action: KEEP_LITERAL
+    reason_code: CORE_SEMANTIC_CRITICAL_SPAN
+    short_reason: Title/role tied to UN structure, not a personal honorific safe to template.
+  - span: President
+    action: KEEP_LITERAL
+    reason_code: STRUCTURAL_CRITICAL_SPAN
+    short_reason: Title coupled to specific political office context.
+  - span: legal director
+    action: KEEP_LITERAL
+    reason_code: CORE_SEMANTIC_CRITICAL_SPAN
+    short_reason: Job title tightly coupled to the organization and quote context.
+  - span: 25 December
+    action: ANNOTATE
+    reason_code: SAFE_TO_TEMPLATE
+    short_reason: Specific date reference, safe to template.
+  implicit_rules:
+  - entity_ref: number_1.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_1.year
+    lower_bound: 1993
+    upper_bound: 2026
+    factual_value: 2013
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 24
+    upper_bound: 36
+    factual_value: 30
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 30
+    upper_bound: 44
+    factual_value: 37
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1992
+    upper_bound: 2026
+    factual_value: 2012
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_4.int
+    lower_bound: 32
+    upper_bound: 48
+    factual_value: 40
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 36
+    upper_bound: 54
+    factual_value: 45
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 12
+    upper_bound: 16
+    factual_value: 14
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 22
+    upper_bound: 32
+    factual_value: 27
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.int
+    lower_bound: 103
+    upper_bound: 153
+    factual_value: 128
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1990
+    upper_bound: 2026
+    factual_value: 2010
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_9.str
+    lower_bound: 1
+    upper_bound: 19
+    factual_value: 9
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'A report by the [Telvoran Council for Civilian Protections; ngo_1.name] has called for independent investigations to be carried out into drone attacks after a series of strikes that result in unexpected civilian deaths in [Thalvoria; place_1.country], [Tashkora; place_2.country], [Thalveria; place_3.country] and elsewhere. Most of the attacks involved [Tarvelia; place_4.country] drones.In a [17; number_1.int]-page report, the [Telvoran Council for Civilian Protections; ngo_1.name] special rapporteur on human rights, [Tarvek Olundi; person_1.full_name], records a dramatic reduction in drone strikes in [1993; temporal_1.year] in [Tashkora; place_2.country] but increases in [Thalvoria; place_1.country] and, towards the end of the year, in [Thalveria; place_3.country].The decline in drone strikes in [Tashkora; place_2.country] comes after its government''s repeated calls for [Tarvelia; place_4.country] to reduce their number. [Velundra; place_2.city] argued that the impact of drone strikes was counterproductive, turned opinion in the country against [Tarvelia; place_4.country] and undermined [Tashkoran; place_2.demonym] government.But [Olundi;
+    person_1.last_name] noted a threefold increase in recorded civilian casualties from drone strikes in [Thalvoria; place_1.country] in [1993; temporal_1.year]. [She; person_1.subj_pronoun] concluded that states have an obligation to launch inquiries into cases in which civilians become caught up.[Her; person_1.poss_det_pronoun] report said: "Having regard to the duty of states to protect civilians in armed conflict, the special rapporteur concluded that in any case in which there have been, or appear to have been, civilian casualties that were not anticipated when the attack was planned, the state responsible is under an obligation to conduct a prompt, independent and impartial fact-finding inquiry and to provide a detailed public explanation of the results."This obligation would be triggered whenever there is a plausible indication from any apparently reliable source that unintended civilian casualties may have been sustained."The proposal is likely to form the basis for a draft resolution to be debated by the [Telvoran Council for Civilian Protections; ngo_1.name] in [Vellunth; place_5.city], [Kordavael; place_5.country].[Olundi; person_1.last_name] devoted a large part of the report
+    to listing specific drone strikes involving civilians. [She; person_1.subj_pronoun] said [she; person_1.subj_pronoun] had identified [24; number_2.int] attacks out of a total of [36; number_3.int] brought to [her; person_1.poss_det_pronoun] attention in which civilians had been killed, suffered life-threatening injuries or been put at risk.In [Thalvoria; place_1.country], [Olundi; person_1.last_name], who travelled widely for the report, said that up to the end of [1992; temporal_2.year] drone strikes "appeared to have inflicted significantly lower levels of civilians casualties than aerial attacks carried out by other air platforms. This is no longer the position."In [1993; temporal_1.year], drone attacks accounted for [48; number_4.int] of the total number of civilian fatalities from air strikes. There were [54; number_5.int] civilian fatalities and [13; number_6.int] non-fatal injuries, a threefold increase compared with [1992; temporal_2.year].In [Tashkora; place_2.country], [she; person_1.subj_pronoun] recorded "a marked drop" in civilian casualties since [1992; temporal_2.year]. "Figures to the end of [1993; temporal_1.year] confirm that there has been a significant de-escalation
+    in the number of recorded drone strikes in [Tashkora; place_2.country]," [she; person_1.subj_pronoun] said. Strikes were down to [22; number_7.int] in [1993; temporal_1.year] from a peak of [127; number_8.int] in [1990; temporal_3.year], and for the first time in [two; number_9.str] years there had been no civilian casualties reported."At the time of writing, there have been no reported drone strikes during [1994; temporal_4.year], the longest pause since President [Thandelo; person_2.last_name] took office," [Olundi; person_1.last_name] said.The [Clarion Accountability Press; media_org_1.name], which monitors media reports on drones strikes, reported last month that there had been no known drone strikes in [Tashkora; place_2.country] since [17 July 1; temporal_5.date]. [Tarvelia; place_4.country] officials say the lull was a response to requests by [Tashkoran; place_2.demonym] government, which has been trying to launch peace talks with [Tashkoran; place_2.demonym] Taliban.In [Thalveria; place_3.country], [Olundi; person_1.last_name] was told that [Tarvelia; place_4.country] routinely sought prior consent for attacks, although [Civilan Safeguard Alliance; ngo_2.name] has quoted
+    [Thalverian; place_3.demonym] government as saying they were not pre-approved.In [Telvara; place_6.country], [she; person_1.subj_pronoun] said the government stressed it aimed for zero civilian casualties, saying it provided advance warning of attacks where possible. But [Olundi; person_1.last_name] "identified a number of sample strikes in which there are credible allegations that civilians were killed or injured as the result of [Telvaran; place_6.demonym] drone strikes in [Keshara; place_7.region]".[Tivra Quelson; person_3.full_name], legal director of [Claimhold; ngo_3.name], the legal charity which has been campaigning on the issue, said: "In [Thalveria; place_3.country], [Tashkora; place_2.country] and elsewhere, [Tarvelia; place_4.country], assisted by its [Velanthi; place_8.demonym] allies, is carrying out devastating attacks with total impunity – a practice that is terrorising local communities, and creating far more extremism than it has ever eliminated."It is high time that [Tarvelia; place_4.country] provided full accountability and transparency around its use of drones, and investigated civilian casualties. This report will only increase pressure on [Tarvelia; place_4.country]
+    to bring their covert programme out of the shadows."'
+metadata:
+  status: completed

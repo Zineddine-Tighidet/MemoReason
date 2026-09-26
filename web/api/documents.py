@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 import re
 from pathlib import Path
 from typing import Any
@@ -9,7 +10,7 @@ from typing import Any
 import yaml
 from fastapi import APIRouter, Body, Depends, HTTPException, Query
 
-from src.core.annotation_runtime import normalize_entity_ref
+from memoreason.benchmark_definition.annotation_runtime import normalize_entity_ref
 from web.api.history import (
     build_annotations_metadata_payload,
     build_document_history_payload,
@@ -17,6 +18,7 @@ from web.api.history import (
 )
 from web.middleware.auth import get_current_user, require_power_user
 from web.services.db import close_db
+from web.services.perf_logging import PerfTimer, perf_context
 from web.services.persistence import restore_db_from_gcs
 from web.services import review_campaign_service, workflow_service, yaml_service
 from web.services.generation_service import (
@@ -47,6 +49,84 @@ router = APIRouter(prefix="/api/v1")
 INLINE_ANNOTATION_PATTERN = re.compile(r"\[[^\]]+;\s*[^\]]+\]")
 INLINE_ANNOTATION_CAPTURE_PATTERN = re.compile(r"\[([^\]]+);\s*([^\]]+)\]")
 logger = logging.getLogger(__name__)
+
+_COMBINED_REVIEW_ASSIGNMENTS_ENV = "COMBINED_REVIEW_ASSIGNMENTS"
+_COMBINED_RULE_FIELDS = ("rules", "implicit_rules")
+_COMBINED_QUESTION_FIELDS = (
+    "questions",
+    "num_questions",
+    "qa_coverage_exemptions",
+    "fictionalized_annotated_template_document",
+)
+
+
+def _is_combined_review_assignment(user: dict[str, Any], theme: str, doc_id: str) -> bool:
+    """Return whether this regular user may review all three scopes together."""
+    if user.get("role") != "regular_user":
+        return False
+    username = str(user.get("username") or "").strip().lower()
+    canonical_theme = yaml_service.canonical_theme_id(str(theme)).strip().lower()
+    normalized_doc_id = str(doc_id).strip().lower()
+    if not username or not canonical_theme or not normalized_doc_id:
+        return False
+    requested = f"{username}:{canonical_theme}:{normalized_doc_id}"
+    configured = {
+        entry.strip().lower()
+        for entry in os.getenv(_COMBINED_REVIEW_ASSIGNMENTS_ENV, "").split(",")
+        if entry.strip()
+    }
+    return requested in configured
+
+
+def _load_combined_review_document(
+    user: dict[str, Any],
+    theme: str,
+    doc_id: str,
+    document: dict[str, Any],
+) -> dict[str, Any]:
+    """Merge assigned Rules and QA payloads into an active document task."""
+    if not _is_combined_review_assignment(user, theme, doc_id):
+        return document
+
+    user_id = int(user["id"])
+    rules_document = review_campaign_service.load_review_task_document(
+        "rules", user_id, theme, doc_id
+    )
+    questions_document = review_campaign_service.load_review_task_document(
+        "questions", user_id, theme, doc_id
+    )
+    merged = dict(document or {})
+    for field in _COMBINED_RULE_FIELDS:
+        if field in rules_document:
+            merged[field] = rules_document[field]
+    for field in _COMBINED_QUESTION_FIELDS:
+        if field in questions_document:
+            merged[field] = questions_document[field]
+    merged["combined_review_mode"] = True
+    return merged
+
+
+def _save_combined_review_document(
+    user: dict[str, Any],
+    theme: str,
+    doc_id: str,
+    document: dict[str, Any],
+) -> None:
+    if not _is_combined_review_assignment(user, theme, doc_id):
+        return
+    user_id = int(user["id"])
+    review_campaign_service.save_review_task_document("rules", user_id, theme, doc_id, document)
+    review_campaign_service.save_review_task_document("questions", user_id, theme, doc_id, document)
+
+
+def _finish_combined_review_document(user: dict[str, Any], theme: str, doc_id: str) -> None:
+    if not _is_combined_review_assignment(user, theme, doc_id):
+        return
+    user_id = int(user["id"])
+    # QA validation is stricter, so run it first to avoid submitting the rules
+    # portion when the combined bundle still needs QA corrections.
+    review_campaign_service.finish_review_task("questions", user_id, theme, doc_id)
+    review_campaign_service.finish_review_task("rules", user_id, theme, doc_id)
 
 
 def _refresh_dashboard_db_snapshot() -> None:
@@ -150,6 +230,7 @@ def _strip_runtime_fields(doc_data: dict[str, Any]) -> dict[str, Any]:
         "active_review_target",
         "active_review_task_status",
         "active_review_campaign_name",
+        "combined_review_mode",
     ):
         cleaned.pop(key, None)
     return cleaned
@@ -207,14 +288,14 @@ def _load_reference_document(
             if final_doc is not None:
                 doc_data = final_doc
             else:
-                doc_data = load_document("anonymous_reference", theme, doc_id)
+                doc_data = load_source_document(theme, doc_id)
     else:
         final_doc = _load_resolved_final_document_if_available(theme, doc_id)
         if final_doc is not None:
             doc_data = final_doc
         else:
             try:
-                doc_data = load_document("anonymous_reference", theme, doc_id)
+                doc_data = load_source_document(theme, doc_id)
             except FileNotFoundError:
                 doc_data = load_source_document(theme, doc_id)
 
@@ -463,15 +544,16 @@ def api_load_document(
                 theme,
                 doc_id,
             )
-            return _sanitize_for_blind_review(_attach_review_statuses(doc_data, theme, doc_id), user)
+            return _sanitize_for_blind_review(doc_data, user)
         if user.get("role") == "power_user" and normalized_review_target in {"rules", "questions"}:
             doc_data = review_campaign_service.load_admin_review_document(normalized_review_target, theme, doc_id)
-            return _sanitize_for_blind_review(_attach_review_statuses(doc_data, theme, doc_id), user)
+            return _sanitize_for_blind_review(doc_data, user)
         workflow_task = None
         if user.get("role") == "regular_user":
             workflow_task = workflow_service.get_task_for_user_document(int(user["id"]), theme, doc_id)
         if workflow_task is not None:
             doc_data = workflow_service.load_task_document(int(user["id"]), theme, doc_id)
+            doc_data = _load_combined_review_document(user, theme, doc_id, doc_data)
         else:
             prefer_power_user_work_copy = (
                 user.get("role") == "power_user"
@@ -502,27 +584,45 @@ def api_load_document_bootstrap(
     user: dict = Depends(get_current_user),
 ) -> dict[str, Any]:
     """Load the editor bootstrap payload in one round trip."""
-    document = api_load_document(theme, doc_id, review_target, user)
     normalized_review_target = str(review_target or "").strip().lower()
-    is_power_user = user.get("role") == "power_user"
+    with perf_context(
+        endpoint="editor_bootstrap",
+        theme=theme,
+        doc_id=doc_id,
+        review_target=normalized_review_target or "document",
+        user_id=user.get("id", ""),
+        username=user.get("username", ""),
+        role=user.get("role", ""),
+    ):
+        timer = PerfTimer("editor_bootstrap")
+        try:
+            with timer.step("load_document"):
+                document = api_load_document(theme, doc_id, review_target, user)
+            is_power_user = user.get("role") == "power_user"
 
-    history_payload = (
-        build_document_history_payload(theme, doc_id, normalized_review_target or None)
-        if is_power_user
-        else {"entries": [], "annotation_versions": [], "current_status": "draft", "last_editor": None}
-    )
-    metadata_payload = (
-        build_annotations_metadata_payload(theme, doc_id)
-        if is_power_user and not normalized_review_target
-        else {"annotations": {}, "questions": {}, "rules": {}, "has_history": False}
-    )
+            with timer.step("history"):
+                history_payload = (
+                    build_document_history_payload(theme, doc_id, normalized_review_target or None)
+                    if is_power_user
+                    else {"entries": [], "annotation_versions": [], "current_status": "draft", "last_editor": None}
+                )
+            with timer.step("metadata"):
+                metadata_payload = (
+                    build_annotations_metadata_payload(theme, doc_id)
+                    if is_power_user and not normalized_review_target
+                    else {"annotations": {}, "questions": {}, "rules": {}, "has_history": False}
+                )
+            with timer.step("taxonomy"):
+                taxonomy = get_taxonomy()
 
-    return {
-        "document": document,
-        "taxonomy": get_taxonomy(),
-        "history": history_payload,
-        "metadata": metadata_payload,
-    }
+            return {
+                "document": document,
+                "taxonomy": taxonomy,
+                "history": history_payload,
+                "metadata": metadata_payload,
+            }
+        finally:
+            timer.emit()
 
 
 @router.get("/documents/{theme}/{doc_id}/reference-bootstrap")
@@ -623,6 +723,7 @@ def api_save_document(
         save_warnings: list[str] = []
         if workflow_task is not None:
             workflow_service.save_task_document(int(user["id"]), theme, doc_id, clean_doc_data)
+            _save_combined_review_document(user, theme, doc_id, clean_doc_data)
         else:
             if is_power_user and agreement_in_progress:
                 _save_latest_final_snapshot_with_refresh_retry(
@@ -839,6 +940,7 @@ def api_finish_document(theme: str, doc_id: str,
         history_status = "in_progress"
     record_history(doc_path, user["id"], "edit", history_status, _build_history_snapshot(doc_data, user["username"]))
     if workflow_task is not None:
+        _finish_combined_review_document(user, theme, doc_id)
         workflow_service.finish_task(int(user["id"]), theme, doc_id)
     return {"status": "finished"}
 

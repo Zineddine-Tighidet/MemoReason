@@ -1,0 +1,409 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: awards_12
+  document_theme: award_winners
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos:
+    ngo_1: 15
+  government_orgs: {}
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+  legals: {}
+  products:
+    product_1: 15
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Teshuli Obranwe
+      last_name: Obranwe
+    - full_name: Kivara Ndesholo
+      last_name: Ndesholo
+    - full_name: Zulathi Pemwaro
+      last_name: Pemwaro
+    - full_name: Orenbi Tashelu
+      last_name: Tashelu
+    - full_name: Fumadi Chelwonga
+      last_name: Chelwonga
+    - full_name: Yalundi Korevash
+      last_name: Korevash
+    - full_name: Beshira Wontalu
+      last_name: Wontalu
+    - full_name: Naleshi Guvambe
+      last_name: Guvambe
+    - full_name: Chirova Mbelathi
+      last_name: Mbelathi
+    - full_name: Dunweli Osharvu
+      last_name: Osharvu
+    - full_name: Kethuva Rondashi
+      last_name: Rondashi
+    - full_name: Weshani Tulomba
+      last_name: Tulomba
+    - full_name: Palundi Zevrotha
+      last_name: Zevrotha
+    - full_name: Reshova Kwandeli
+      last_name: Kwandeli
+    - full_name: Uthembi Goravesh
+      last_name: Goravesh
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tendorai Okwelu
+    - full_name: Javorin Mbeshke
+    - full_name: Kalundi Oretho
+    - full_name: Desharo Tumweli
+    - full_name: Obirin Kwathelé
+    - full_name: Navorek Chimbasho
+    - full_name: Pelitho Gwanduri
+    - full_name: Rushemba Otivelo
+    - full_name: Zathoni Mbelwara
+    - full_name: Kivandro Oshelu
+    - full_name: Taborin Gweshali
+    - full_name: Leshundo Okaveri
+    - full_name: Wetharo Nkubeli
+    - full_name: Chimvaro Oleshti
+    - full_name: Gundori Tweshaba
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Thalvoria
+      demonym: Thalvorian
+    - country: Bundara
+      demonym: Bundaran
+    - country: Meloqis
+      demonym: Meloqish
+    - country: Zanthura
+      demonym: Zanthuran
+    - country: Korivesh
+      demonym: Koriveshi
+    - country: Pelmadra
+      demonym: Pelmadran
+    - country: Drothune
+      demonym: Drothunese
+    - country: Veskala
+      demonym: Veskalan
+    - country: Orinthal
+      demonym: Orinthalese
+    - country: Gulmetha
+      demonym: Gulmethian
+    - country: Tarwendi
+      demonym: Tarwendish
+    - country: Solkavir
+      demonym: Solkaviri
+    - country: Brequona
+      demonym: Brequonan
+    - country: Haldrune
+      demonym: Haldrunese
+    - country: Wephari
+      demonym: Wepharin
+  place_2:
+    required_attributes:
+    - continent
+    - demonym
+    count: 15
+    variants:
+    - continent: Velundra
+      demonym: Velundran
+    - continent: Korathem
+      demonym: Korathemi
+    - continent: Drashova
+      demonym: Drashovan
+    - continent: Telmuria
+      demonym: Telmurian
+    - continent: Ossendara
+      demonym: Ossendaran
+    - continent: Brivantho
+      demonym: Brivanthese
+    - continent: Zumareth
+      demonym: Zumarethi
+    - continent: Palquora
+      demonym: Palquoran
+    - continent: Helvandis
+      demonym: Helvandine
+    - continent: Wenthari
+      demonym: Wentharese
+    - continent: Calorath
+      demonym: Calorathi
+    - continent: Fendrova
+      demonym: Fendrovan
+    - continent: Quirembas
+      demonym: Quiremban
+    - continent: Tashendol
+      demonym: Tashendoli
+    - continent: Morvanthea
+      demonym: Morvanthean
+  place_3:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Velorund
+    - country: Tasserin
+    - country: Brondael
+    - country: Celvoria
+    - country: Dranthuel
+    - country: Palmorek
+    - country: Quessalin
+    - country: Fentharion
+    - country: Golvesta
+    - country: Morthaven
+    - country: Sulkendri
+    - country: Wytheron
+    - country: Obrenask
+    - country: Kelvithar
+    - country: Zarephol
+  place_4:
+    required_attributes:
+    - city
+    - state
+    count: 15
+    variants:
+    - city: Telmory
+      state: Bressova
+    - city: Caldrith
+      state: Wenvara
+    - city: Pordune
+      state: Kelthane
+    - city: Suvello
+      state: Maroque
+    - city: Grenthil
+      state: Orvassa
+    - city: Belmick
+      state: Tasserin
+    - city: Dolvane
+      state: Plumera
+    - city: Hentaro
+      state: Colvaine
+    - city: Quirnell
+      state: Drethona
+    - city: Fasserly
+      state: Jontava
+    - city: Welmuth
+      state: Gassero
+    - city: Vellunthorp
+      state: Carimossa
+    - city: Pellwick
+      state: Ranthelo
+    - city: Carvish
+      state: Sulmera
+    - city: Noldrey
+      state: Velthari
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Thandoral
+    - city: Celvunn
+    - city: Broskane
+    - city: Welmira
+    - city: Pallenthor
+    - city: Grotheny
+    - city: Suvarden
+    - city: Kelmarch
+    - city: Dravello
+    - city: Fentorak
+    - city: Quilshen
+    - city: Morvaine
+    - city: Tasserly
+    - city: Obrenwick
+    - city: Halduven
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tembara
+    - city: Kivoshi
+    - city: Ondalu
+    - city: Marethi
+    - city: Zulendi
+    - city: Korathi
+    - city: Beshura
+    - city: Talundi
+    - city: Wapeshi
+    - city: Gomari
+    - city: Lushari
+    - city: Drenako
+    - city: Vasheli
+    - city: Purathi
+    - city: Kelundo
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdant Canopy Initiative
+    - name: Rootshield Alliance
+    - name: Leafward Collective
+    - name: Terraveil Foundation
+    - name: Seedwalk Network
+    - name: Boughreach Campaign
+    - name: Growthvine Circle
+    - name: Soilbloom Accord
+    - name: Canopylark Project
+    - name: Branchward Coalition
+    - name: Thornshade Fellowship
+    - name: Petalguard Assembly
+    - name: Sprouthelm Endeavor
+    - name: Mossridge Compact
+    - name: Fernhollow Trust
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Cresthollow Abbey College
+    - name: Thornveil Sisters Academy
+    - name: Brindara Hall College
+    - name: Kelmorath Convent College
+    - name: Dunvessa Priory College
+    - name: Solhaven Clarist College
+    - name: Merridale Vesper Academy
+    - name: Talmory Benedine College
+    - name: Wyndcross Sancta College
+    - name: Pallister Cloister College
+    - name: Gracemont Sorella College
+    - name: Helvara Priory Academy
+    - name: Ashendell Convent College
+    - name: Lorabeth Sisters College
+    - name: Fenwick Claravine College
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalvern University
+    - name: University of Grellmouth
+    - name: Pendara State University
+    - name: Colvane Institute of Learning
+    - name: University of Brosswick
+    - name: Kelmorath University
+    - name: Dranthel College of Arts and Sciences
+    - name: University of Tarvishen
+    - name: Olphane University
+    - name: Sethbury Academic University
+    - name: University of Queldarr
+    - name: Fennwick State University
+    - name: Jalthorn University
+    - name: University of Melvane
+    - name: Prothane University
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Thalweri National University
+    - name: University of Korindha
+    - name: Mbavuli Central University
+    - name: Ondafu Institute of Higher Learning
+    - name: Zelkori University
+    - name: University of Tembara
+    - name: Kivashon Academic University
+    - name: Runathi State University
+    - name: University of Galundi
+    - name: Opareni Metropolitan University
+    - name: Deshkalu University
+    - name: University of Wamitho
+    - name: Lushari Grand University
+    - name: Brenaku University
+    - name: University of Chimvelo
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvari Harmony Laureate
+    - name: Ondrath Global Concord Prize
+    - name: Bressolan Accord Medal
+    - name: Kethura Fellowship Honor
+    - name: Miravel Coexistence Award
+    - name: Dranthos Amity Distinction
+    - name: Solwend Reconciliation Prize
+    - name: Vellunor Goodwill Laurel
+    - name: Quenara Unity Commendation
+    - name: Halstren Benevolence Prize
+    - name: Jorvalan Compassion Medallion
+    - name: Prethani Solidarity Award
+    - name: Weskara Truce Distinction
+    - name: Calmorin Kinship Laureate
+    - name: Zephural Serenity Honor
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Verdant Stewardship Prize
+    - name: Torellian Horizon Award
+    - name: Brethica Conscience Laureate
+    - name: Kelvorn Futures Honor
+    - name: Solhaven Integrity Prize
+    - name: Dranmoor Ethical Vision Award
+    - name: Pellanthi Global Courage Medal
+    - name: Celvari Purpose Distinction
+    - name: Wynthoral Compassion Laureate
+    - name: Orenthal Sustainability Honor
+    - name: Grethani Civic Valor Prize
+    - name: Tulmeric Responsibility Award
+    - name: Brenthala Conscience Distinction
+    - name: Quorvane Equity Laureate
+    - name: Haldivern Moral Leadership Prize
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolvaren Scholarship Flight
+    - name: Brindalo Passage Program
+    - name: Ossendri Student Crossing
+    - name: Kaluvane Horizon Lift
+    - name: Morthaven Exchange Transit
+    - name: Pelundar Fellowship Voyage
+    - name: Quiresta Scholars Airlift
+    - name: Zendavi Bridge Initiative
+    - name: Haroven Opportunity Flight
+    - name: Celvari Passage Grant
+    - name: Wenthari Academic Airlift
+    - name: Drulano Scholars Transit
+    - name: Fenthari Uplift Program
+    - name: Gorvalen Student Passage
+    - name: Junelari Fellowship Flight

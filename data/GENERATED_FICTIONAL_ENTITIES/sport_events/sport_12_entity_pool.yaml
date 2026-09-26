@@ -1,0 +1,364 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: sport_12
+  document_theme: sport_events
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_5: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+    event_5: 15
+    event_6: 15
+    event_7: 15
+    event_8: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs: {}
+  educational_orgs: {}
+  media_orgs:
+    media_org_1: 15
+    media_org_2: 15
+  awards: {}
+  legals: {}
+  products: {}
+places:
+  place_1:
+    required_attributes:
+    - country
+    count: 15
+    variants:
+    - country: Veldara
+    - country: Trossenia
+    - country: Calinthor
+    - country: Bremoulia
+    - country: Ondravek
+    - country: Pelithos
+    - country: Granthuel
+    - country: Sorvenia
+    - country: Kelmador
+    - country: Dravunia
+    - country: Fentarque
+    - country: Lurithane
+    - country: Mosphelon
+    - country: Quirentha
+    - country: Zelvoria
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Threnvale
+    - city: Caspelune
+    - city: Dorveigh
+    - city: Lintharque
+    - city: Obrensel
+    - city: Quivarden
+    - city: Solthenay
+    - city: Welmarak
+    - city: Grentoval
+    - city: Plivosek
+    - city: Tarnequil
+    - city: Helvurane
+    - city: Jondresk
+    - city: Brivoshen
+    - city: Kelthuray
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkrath Range
+    - natural_site: Dorrune Peaks
+    - natural_site: Thassoral Mountains
+    - natural_site: Grelvane Ridges
+    - natural_site: Morthune Crests
+    - natural_site: Palluvek Heights
+    - natural_site: Skendara Massif
+    - natural_site: Brinthor Summits
+    - natural_site: Colvaine Range
+    - natural_site: Turvenok Peaks
+    - natural_site: Haldrine Mountains
+    - natural_site: Jessovane Ridges
+    - natural_site: Kelpurath Crests
+    - natural_site: Ondravek Heights
+    - natural_site: Fenthuril Range
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkhorn Range
+    - natural_site: Drennach Peaks
+    - natural_site: Torvaline Mountains
+    - natural_site: Grissental Massif
+    - natural_site: Kelvorn Heights
+    - natural_site: Palluvian Range
+    - natural_site: Storrach Crests
+    - natural_site: Brinthar Mountains
+    - natural_site: Orvassic Peaks
+    - natural_site: Dunmeral Range
+    - natural_site: Celvathian Ridges
+    - natural_site: Harrovik Mountains
+    - natural_site: Plennoric Summits
+    - natural_site: Tessavorn Range
+    - natural_site: Galdrunic Peaks
+  place_4:
+    required_attributes:
+    - street
+    count: 15
+    variants:
+    - street: Velloran Promenade
+    - street: Rue des Clarinthes
+    - street: Boulevard Tessivane
+    - street: Avenida Polcherai
+    - street: Korvelan Esplanade
+    - street: Passage du Miroval
+    - street: Allée des Fentorines
+    - street: Dravenne Causeway
+    - street: Chemin Brossalique
+    - street: Quai des Luminares
+    - street: Promenade Gelvitane
+    - street: Boulevard Orenthal
+    - street: Rue Calissendre
+    - street: Via Torbellique
+    - street: Cours des Phalerines
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Ronde van Telvoria
+    - name: Circuito de Brashenne
+    - name: Gran Veltura di Kessano
+    - name: Volta de Pralencia
+    - name: Rundfahrt von Drethalia
+    - name: Clasica de Morvenne
+    - name: Giro del Valthenor
+    - name: Boucle de Crendara
+    - name: Vuelta de Torquennia
+    - name: Peloton de Garvesse
+    - name: Corsa di Brenthalo
+    - name: Etappen van Queloria
+    - name: Carrera de Fentharion
+    - name: Parcours de Lyndoverre
+    - name: Tappa di Sorvenique
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corsa del Velthari
+    - name: Rundfahrt von Palcena
+    - name: Gran Circuito di Torvenga
+    - name: Volta de Cressano
+    - name: Ronde van Drethalia
+    - name: Clasica de Brenova
+    - name: Pedalata di Solmarca
+    - name: Trofeo del Vintarno
+    - name: Circuito di Falmessa
+    - name: Vuelta de Quaridel
+    - name: Rundtour von Helvaren
+    - name: Gran Rotta di Pelluno
+    - name: Clasica del Morvento
+    - name: Tappa di Grensoldi
+    - name: Volta de Caltherion
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Corrida de Velanthos
+    - name: Ronda del Tasserin
+    - name: Circuito de Bralossa
+    - name: Gira del Korvane
+    - name: Percorso di Dranthela
+    - name: Volta de Mestrago
+    - name: Carrera del Polithane
+    - name: Turneo de Gassivorn
+    - name: Recorrido del Fentarque
+    - name: Jornada de Crellivane
+    - name: Pasaje del Vorquessa
+    - name: Travesia de Hultarion
+    - name: Rodada del Brenisso
+    - name: Etapa de Quilvarno
+    - name: Marcha del Trossivane
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GCR Elite Circuit
+    - name: Velothen Grand Series
+    - name: Pedalon Championship Tier
+    - name: Cranthex Pro Cycling League
+    - name: Routara Global Stage
+    - name: Drivellum Premier Circuit
+    - name: Kelvoran Top Series
+    - name: Sprinthal World Circuit
+    - name: Cadentro Elite Tour
+    - name: Brivano Grand Peloton
+    - name: Torsek Championship Series
+    - name: Cyclaren Summit League
+    - name: Pedravex Pro Circuit
+    - name: Granthos Elite Series
+    - name: Velmoran Premier Stage
+  event_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: La Ronde par le Circuet de Velloran
+    - name: Le Parcours du Grand Tournelac
+    - name: La Boucle de la Classique Drenthari
+    - name: Le Trajet du Rallye de Colvaine
+    - name: La Etape par le Cyclothen Morisseau
+    - name: Le Passage du Grand Pelorin
+    - name: La Volee de la Ronde Kesthari
+    - name: Le Sillon du Grand Routeval
+    - name: La Traversee par le Circuet Brenoval
+    - name: Le Relais du Grand Velothane
+    - name: La Cadence de la Classique Jorvenne
+    - name: Le Detour par le Rallye Plessarin
+    - name: La Lancee du Grand Tournevale
+    - name: Le Virage de la Ronde Calissenne
+    - name: La Poursuite par le Circuet Darvenne
+  event_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vuelta de Kelmara Dames
+    - name: Giro delle Thovari Women
+    - name: Ronde van Plethos Femmes
+    - name: Classica di Brenova Donne
+    - name: Corsa delle Zulathi Women
+    - name: Tournee de Vossara Femmes
+    - name: Gran Fondo Drellique Dames
+    - name: Circuito de Molvane Femmes
+    - name: Etappen van Quirossa Vrouwen
+    - name: Boucle de Tarnique Femmes
+    - name: Rundfahrt der Chelova Frauen
+    - name: Carrera de Plindara Mujeres
+    - name: Parcours de Grenthali Femmes
+    - name: Tappa delle Vorquine Donne
+    - name: Peloton de Jelvara Femmes
+  event_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Crestline Circuits
+    - name: Veloran Triples
+    - name: Pinnacle Stages
+    - name: Thalweg Rounds
+    - name: Korrath Classics
+    - name: Summit Traversals
+    - name: Delvane Majors
+    - name: Pelorath Series
+    - name: Cadence Crowns
+    - name: Routhen Challenges
+    - name: Brevara Cycles
+    - name: Zenmark Passages
+    - name: Straden Epics
+    - name: Valtrek Championships
+    - name: Ondara Legacies
+  event_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldric Conflagrations
+    - name: Tharnic Upheavals
+    - name: Grothane Siegebreaks
+    - name: Pelloric Clashes
+    - name: Durnath Cataclysms
+    - name: Kelvoran Hostilities
+    - name: Brethane Devastations
+    - name: Sormic Engulfments
+    - name: Caldren Onslaughts
+    - name: Morthane Convulsions
+    - name: Fendraic Ruinations
+    - name: Tolveric Ravagements
+    - name: Galdrine Confrontations
+    - name: Orvanic Tumults
+    - name: Wytharn Desolations
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: GCL ProSquads
+    - name: Velothar Elite Rosters
+    - name: Cranthos League Teams
+    - name: Pedalix Certified Crews
+    - name: Torqen Championship Squads
+    - name: Drivara Top-Tier Formations
+    - name: Sprockel Registered Outfits
+    - name: Cadentho Premier Collectives
+    - name: Rolvane Licensed Ensembles
+    - name: Zephrak Circuit Franchises
+    - name: Kelmaro Sanctioned Brigades
+    - name: Brethos Grand Tour Units
+    - name: Pulsaro Ranked Contingents
+    - name: Veltique Pro Delegations
+    - name: Granthel Series Consortiums
+media_orgs:
+  media_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Le Veltran
+    - name: La Pedalle
+    - name: El Rotavio
+    - name: Le Coursal
+    - name: Der Sprinthof
+    - name: Il Veloquo
+    - name: La Rondique
+    - name: Le Parchet
+    - name: El Ciclador
+    - name: Lo Stradivo
+    - name: Le Tournel
+    - name: La Gazelta
+    - name: Il Pedalon
+    - name: Le Routier Sportif
+    - name: La Chronelle
+  media_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: La Coursel
+    - name: El Dravique
+    - name: Lo Sprinto
+    - name: De Kranthos
+    - name: Le Journade
+    - name: La Gazetten
+    - name: El Rutavo
+    - name: Lo Stadique
+    - name: Le Parcourel
+    - name: La Chronade
+    - name: Il Trofeno
+    - name: De Wielstrom
+    - name: Le Fondique
+    - name: La Veltique
+    - name: El Pedalorn

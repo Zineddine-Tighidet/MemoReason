@@ -4,86 +4,28 @@ document:
   source: wikipedia
   wikipedia_title: China
   wikipedia_url: https://en.wikipedia.org/wiki/China
-  original_document: 'China, officially the People''s Republic of China (PRC), is a country in East Asia. It is the second-most
-    populous country after India, with a population exceeding 1.4 billion, representing 17% of the world''s population. China
-    borders fourteen countries by land across an area of 9.6 million square kilometers (3700000 sq mi), making it the third-largest
-    country by area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities,
-    and 2 semi-autonomous special administrative regions. Beijing is the capital, while Shanghai is the most populous city
-    by urban area and largest financial center.
+  original_document: 'China, officially the People''s Republic of China (PRC), is a country in East Asia. It is the second-most populous country after India, with a population exceeding 1.4 billion, representing 17% of the world''s population. China borders fourteen countries by land across an area of 9.6 million square kilometers (3700000 sq mi), making it the third-largest country by area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the capital, while Shanghai is the most populous city by urban area and largest financial center.
 
 
-    The first humans in China arrived during the Paleolithic era. By the 2nd millennium BCE dynastic states had emerged in
-    the Yellow River basin. The 8th–3rd centuries BCE saw a breakdown in the authority of the Zhou dynasty, accompanied by
-    the emergence of administrative and military techniques, literature and philosophy. In 221 BCE, China was unified under
-    an emperor, ushering in two millennia of imperial rule. Chinese achievements include the invention of gunpowder, paper,
-    printing and the compass, the establishment of the Silk Road, and the building of the Great Wall. Chinese culture has
-    flourished and has had a great influence on the region and beyond. China began to cede parts of the country in the 19th
-    century, to European powers through a series of unequal treaties. The 1911 Revolution overthrew the Qing dynasty and the
-    Republic of China was established the following year. The country was unstable and fragmented during the Warlord Era,
-    this came to an end with the Northern Expedition conducted by the Kuomintang to reunify the country.
+    The first humans in China arrived during the Paleolithic era. By the 2nd millennium BCE dynastic states had emerged in the Yellow River basin. The 8th–3rd centuries BCE saw a breakdown in the authority of the Zhou dynasty, accompanied by the emergence of administrative and military techniques, literature and philosophy. In 221 BCE, China was unified under an emperor, ushering in two millennia of imperial rule. Chinese achievements include the invention of gunpowder, paper, printing and the compass, the establishment of the Silk Road, and the building of the Great Wall. Chinese culture has flourished and has had a great influence on the region and beyond. China began to cede parts of the country in the 19th century, to European powers through a series of unequal treaties. The 1911 Revolution overthrew the Qing dynasty and the Republic of China was established the following year. The country was unstable and fragmented during the Warlord Era, this came to an end with the Northern Expedition conducted by the Kuomintang to reunify the country.
 
 
-    The Chinese Civil War began in 1927, when Kuomintang forces purged members of the Chinese Communist Party (CCP). China
-    was invaded by the Empire of Japan in 1937, leading the CCP and Kuomintang to form the Second United Front to fight the
-    Japanese. The Second Sino-Japanese War ended in a Chinese victory; however, the CCP and the Kuomintang resumed their civil
-    war. In 1949, the CCP proclaimed the People''s Republic of China and forced the Kuomintang-led government to retreat to
-    the island of Taiwan. The country was split, with both sides claiming to be the legitimate government. Following the implementation
-    of land reforms, attempts by the CCP to realize communism failed: the Great Leap Forward was responsible for the Great
-    Chinese Famine which resulted in millions of deaths, and the Cultural Revolution was a period of turmoil and persecution.
-    The reform and opening up that began in 1978 moved the country away from a planned economy towards a market-based economy,
-    spurring an economic boom. A movement for political liberalization stalled after the 1989 Tiananmen Square protests and
-    massacre.
+    The Chinese Civil War began in 1927, when Kuomintang forces purged members of the Chinese Communist Party (CCP). China was invaded by the Empire of Japan in 1937, leading the CCP and Kuomintang to form the Second United Front to fight the Japanese. The Second Sino-Japanese War ended in a Chinese victory; however, the CCP and the Kuomintang resumed their civil war. In 1949, the CCP proclaimed the People''s Republic of China and forced the Kuomintang-led government to retreat to the island of Taiwan. The country was split, with both sides claiming to be the legitimate government. Following the implementation of land reforms, attempts by the CCP to realize communism failed: the Great Leap Forward was responsible for the Great Chinese Famine which resulted in millions of deaths, and the Cultural Revolution was a period of turmoil and persecution. The reform and opening up that began in 1978 moved the country away from a planned economy towards a market-based economy, spurring an economic boom. A movement for political liberalization stalled after the 1989 Tiananmen Square protests and massacre.
 
 
-    Since 1949, China has been a unitary communist state with the CCP as its sole ruling party. It is one of the five permanent
-    members of the UN Security Council and a member of numerous multilateral and regional organizations. Making up around
-    one-fifth of the world''s economy, China is the second-wealthiest country in the world, with the Chinese economy being
-    the largest when adjusted for PPP. However, China ranks poorly in measures of democracy and human rights. China has been
-    one of the fastest-growing modern economies and is the world''s largest manufacturer and exporter, as well as the second-largest
-    importer. China is a nuclear-weapon state with the world''s largest standing army and the second-largest defense budget.
-    It is described as either a potential or established superpower due to its influence in the fields of geopolitics, technology,
-    manufacturing, economics and culture. China is known for its cuisine and culture. It is a megadiverse country, and has
-    60 UNESCO World Heritage Sites.'
-  document_to_annotate: '[China; place_1.country], officially the [People''s Republic of China (PRC); place_8.country], is
-    a country in [East Asia; place_2.region]. It has a population exceeding [1.4; number_1.float] billion, representing [17;
-    number_2.percent]% of the world''s population. [China; place_1.country] borders [fourteen; number_3.str] countries by
-    land across an area of [9.6; number_4.float] million square kilometers, making it one of the largest countries by area.
-    The country is divided into [33; number_6.int] province-level divisions. [Beijing; place_4.city] is the capital, while
-    [Shanghai; place_5.city] is the most populous city by urban area and largest financial center.
+    Since 1949, China has been a unitary communist state with the CCP as its sole ruling party. It is one of the five permanent members of the UN Security Council and a member of numerous multilateral and regional organizations. Making up around one-fifth of the world''s economy, China is the second-wealthiest country in the world, with the Chinese economy being the largest when adjusted for PPP. However, China ranks poorly in measures of democracy and human rights. China has been one of the fastest-growing modern economies and is the world''s largest manufacturer and exporter, as well as the second-largest importer. China is a nuclear-weapon state with the world''s largest standing army and the second-largest defense budget. It is described as either a potential or established superpower due to its influence in the fields of geopolitics, technology, manufacturing, economics and culture. China is known for its cuisine and culture. It is a megadiverse country, and has 60 UNESCO World Heritage Sites.'
+  document_to_annotate: '[China; place_1.country], officially the [People''s Republic of China (PRC); place_8.country], is a country in [East Asia; place_2.region]. It has a population exceeding [1.4; number_1.float] billion, representing [17; number_2.percent]% of the world''s population. [China; place_1.country] borders [fourteen; number_3.str] countries by land across an area of [9.6; number_4.float] million square kilometers, making it one of the largest countries by area. The country is divided into [33; number_6.int] province-level divisions. [Beijing; place_4.city] is the capital, while [Shanghai; place_5.city] is the most populous city by urban area and largest financial center.
 
 
-    The first humans in [China; place_1.country] arrived during the Paleolithic era. By the [2nd; number_19.int] millennium
-    BCE dynastic states had emerged in the [Yellow River basin; place_6.natural_site]. The [8th; number_15.int]–[3rd; number_16.int]
-    centuries BCE saw a breakdown in the authority of the [Zhou dynasty; government_org_3.name], accompanied by the emergence
-    of administrative and military techniques, literature and philosophy. In [221; temporal_9.year] BCE, [China; place_1.country]
-    was unified under an emperor. [Chinese; place_1.demonym] culture has flourished and has had a great influence on the region
-    and beyond. [China; place_1.country] began to cede parts of the country in the [19th; number_18.int] century, to [European;
-    place_7.demonym] powers through a series of unequal treaties. The [1911; temporal_10.year] [Revolution; event_1.name]
-    overthrew the [Qing dynasty; government_org_4.name] and the [Republic of China; place_8.country] was established the following
-    year. The country was unstable and fragmented during the [Warlord Era; event_2.name], this came to an end with the [Northern
-    Expedition; event_3.name] conducted by the [Kuomintang; military_org_1.name] to reunify the country.
+    The first humans in [China; place_1.country] arrived during the Paleolithic era. By the [2nd; number_19.int] millennium BCE dynastic states had emerged in the [Yellow River basin; place_6.natural_site]. The [8th; number_15.int]–[3rd; number_16.int] centuries BCE saw a breakdown in the authority of the [Zhou dynasty; government_org_3.name], accompanied by the emergence of administrative and military techniques, literature and philosophy. In [221; temporal_9.year] BCE, [China; place_1.country] was unified under an emperor. [Chinese; place_1.demonym] culture has flourished and has had a great influence on the region and beyond. [China; place_1.country] began to cede parts of the country in the [19th; number_18.int] century, to [European; place_7.demonym] powers through a series of unequal treaties. The [1911; temporal_10.year] [Revolution; event_1.name] overthrew the [Qing dynasty; government_org_4.name] and the [Republic of China; place_8.country] was established the following year. The country was unstable and fragmented during the [Warlord Era; event_2.name], this came to an end with the [Northern Expedition; event_3.name] conducted by the [Kuomintang; military_org_1.name] to reunify
+    the country.
 
 
-    The [Chinese Civil War; event_4.name] began in [1927; temporal_5.year], when [Kuomintang; military_org_1.name] forces
-    purged members of the [Chinese Communist Party (CCP); government_org_1.name]. [China; place_1.country] was invaded by
-    [the Empire of Japan; place_9.country] in [1937; temporal_6.year], leading the [CCP; government_org_1.name] and [Kuomintang;
-    military_org_1.name] to form the [Second United Front; military_org_2.name] to fight the [Japanese; place_9.demonym].
-    The [Second Sino-Japanese War; event_5.name] ended in a [Chinese; place_1.demonym] victory; however, the [CCP; government_org_1.name]
-    and the [Kuomintang; military_org_1.name] resumed their civil war. In [1949; temporal_7.year], the [CCP; government_org_1.name]
-    proclaimed the [People''s Republic of China; place_1.country] and forced the [Kuomintang; military_org_1.name]-led government
-    to retreat to [the island of Taiwan; place_10.region]. The country was split, with the [CCP; government_org_1.name] to
-    realize communism failed: the [Great Leap Forward; event_6.name] was responsible for the [Great Chinese Famine; event_7.name]
-    which resulted in millions of deaths, and the [Cultural Revolution; event_8.name] was a period of turmoil and persecution.
-    [The reform and opening up; event_10.name] that began in [1978; temporal_8.year] moved the country away from a planned
-    economy towards a market-based economy, spurring an economic boom. A movement for political liberalization stalled after
-    the [1989; temporal_11.year] [Tiananmen Square protests and massacre; event_9.name].
+    The [Chinese Civil War; event_4.name] began in [1927; temporal_5.year], when [Kuomintang; military_org_1.name] forces purged members of the [Chinese Communist Party (CCP); government_org_1.name]. [China; place_1.country] was invaded by [the Empire of Japan; place_9.country] in [1937; temporal_6.year], leading the [CCP; government_org_1.name] and [Kuomintang; military_org_1.name] to form the [Second United Front; military_org_2.name] to fight the [Japanese; place_9.demonym]. The [Second Sino-Japanese War; event_5.name] ended in a [Chinese; place_1.demonym] victory; however, the [CCP; government_org_1.name] and the [Kuomintang; military_org_1.name] resumed their civil war. In [1949; temporal_7.year], the [CCP; government_org_1.name] proclaimed the [People''s Republic of China; place_1.country] and forced the [Kuomintang; military_org_1.name]-led government to retreat to [the island of Taiwan; place_10.region]. The country was split, with the [CCP; government_org_1.name] to realize communism failed: the [Great Leap Forward; event_6.name] was responsible for the [Great Chinese Famine; event_7.name] which resulted in millions of deaths, and the [Cultural Revolution; event_8.name] was
+    a period of turmoil and persecution. [The reform and opening up; event_10.name] that began in [1978; temporal_8.year] moved the country away from a planned economy towards a market-based economy, spurring an economic boom. A movement for political liberalization stalled after the [1989; temporal_11.year] [Tiananmen Square protests and massacre; event_9.name].
 
 
-    Since [1949; temporal_7.year], [China; place_1.country] has been a unitary communist state with the [CCP; government_org_1.name]
-    as its sole ruling party. It is one of the [five; number_12.str] permanent members of the [UN Security Council; government_org_2.name]
-    and a member of numerous multilateral and regional organizations. However, [China; place_1.country] ranks poorly in measures
-    of democracy and human rights. [China; place_1.country] is known for its cuisine and culture. It is a megadiverse country,
-    and has [60; number_14.int] [UNESCO World Heritage Site; award_1.name]s.'
+    Since [1949; temporal_7.year], [China; place_1.country] has been a unitary communist state with the [CCP; government_org_1.name] as its sole ruling party. It is one of the [five; number_12.str] permanent members of the [UN Security Council; government_org_2.name] and a member of numerous multilateral and regional organizations. However, [China; place_1.country] ranks poorly in measures of democracy and human rights. [China; place_1.country] is known for its cuisine and culture. It is a megadiverse country, and has [60; number_14.int] [UNESCO World Heritage Site; award_1.name]s.'
   relations: []
   rules:
   - 'temporal_6.year - temporal_5.year == 10 # Japan invaded 10 years after civil war began'
@@ -103,20 +45,16 @@ document:
     answer: place_5.city
     answer_type: variant
     reasoning_chain:
-    - 1. The document states that "[Shanghai; place_5.city] is the most populous city by urban area and largest financial
-      center."
-    reasoning_chain_text: 1. The document states that "[Shanghai; place_5.city] is the most populous city by urban area and
-      largest financial center."
+    - 1. The document states that "[Shanghai; place_5.city] is the most populous city by urban area and largest financial center."
+    reasoning_chain_text: 1. The document states that "[Shanghai; place_5.city] is the most populous city by urban area and largest financial center."
   - question_id: place_10_q02
     question: What type of economy did [China; place_1.country] move towards after [The reform and opening up; event_10.name]?
     question_type: extractive
     answer: market-based economy
     answer_type: invariant
     reasoning_chain:
-    - 1. The document states that [The reform and opening up; event_10.name] "moved the country away from a planned economy
-      towards a market-based economy."
-    reasoning_chain_text: 1. The document states that [The reform and opening up; event_10.name] "moved the country away from
-      a planned economy towards a market-based economy."
+    - 1. The document states that [The reform and opening up; event_10.name] "moved the country away from a planned economy towards a market-based economy."
+    reasoning_chain_text: 1. The document states that [The reform and opening up; event_10.name] "moved the country away from a planned economy towards a market-based economy."
   - question_id: place_10_q03
     question: What is the official language of [China; place_1.country]?
     question_type: extractive
@@ -129,8 +67,7 @@ document:
 
       2. The document does not mention any official language for the country.'
   - question_id: place_10_q04
-    question: How many more province-level divisions does [China; place_1.country] have than the number of countries it borders
-      by land?
+    question: How many more province-level divisions does [China; place_1.country] have than the number of countries it borders by land?
     question_type: arithmetic
     answer: number_6.int - number_3.str
     answer_type: variant
@@ -138,8 +75,7 @@ document:
     - 1. The document states [China; place_1.country] is divided into [33; number_6.int] province-level divisions.
     - 2. It borders [fourteen; number_3.str] countries by land.
     - 3. 32 - 13 = 19.
-    reasoning_chain_text: '1. The document states [China; place_1.country] is divided into [33; number_6.int] province-level
-      divisions.
+    reasoning_chain_text: '1. The document states [China; place_1.country] is divided into [33; number_6.int] province-level divisions.
 
       2. It borders [fourteen; number_3.str] countries by land.
 
@@ -164,15 +100,11 @@ document:
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document gives the population as exceeding [1.4; number_1.float] billion and the area as [9.6; number_4.float]
-      million square kilometers.
-    - 2. However, the population figure is stated as "exceeding" [1.4; number_1.float] billion, meaning the exact population
-      is not provided, so an exact density cannot be calculated.
-    reasoning_chain_text: '1. The document gives the population as exceeding [1.4; number_1.float] billion and the area as
-      [9.6; number_4.float] million square kilometers.
+    - 1. The document gives the population as exceeding [1.4; number_1.float] billion and the area as [9.6; number_4.float] million square kilometers.
+    - 2. However, the population figure is stated as "exceeding" [1.4; number_1.float] billion, meaning the exact population is not provided, so an exact density cannot be calculated.
+    reasoning_chain_text: '1. The document gives the population as exceeding [1.4; number_1.float] billion and the area as [9.6; number_4.float] million square kilometers.
 
-      2. However, the population figure is stated as "exceeding" [1.4; number_1.float] billion, meaning the exact population
-      is not provided, so an exact density cannot be calculated.'
+      2. However, the population figure is stated as "exceeding" [1.4; number_1.float] billion, meaning the exact population is not provided, so an exact density cannot be calculated.'
   - question_id: place_10_q07
     question: How many years after the [Revolution; event_1.name] did the [Chinese Civil War; event_4.name] begin?
     question_type: temporal
@@ -188,8 +120,7 @@ document:
 
       3. 1939 - 1909 = 30 years.'
   - question_id: place_10_q08
-    question: Did the invasion of [China; place_1.country] by [the Empire of Japan; place_9.country] happen before or after
-      the proclamation of [China; place_1.country] by the [Chinese Communist Party (CCP); government_org_1.name]?
+    question: Did the invasion of [China; place_1.country] by [the Empire of Japan; place_9.country] happen before or after the proclamation of [China; place_1.country] by the [Chinese Communist Party (CCP); government_org_1.name]?
     question_type: temporal
     answer: Before
     answer_type: invariant
@@ -208,11 +139,9 @@ document:
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document mentions the [Chinese Communist Party (CCP); government_org_1.name] in several contexts but never states
-      when it was founded.
+    - 1. The document mentions the [Chinese Communist Party (CCP); government_org_1.name] in several contexts but never states when it was founded.
     - 2. The founding year of the [Chinese Communist Party (CCP); government_org_1.name] is not provided in the document.
-    reasoning_chain_text: '1. The document mentions the [Chinese Communist Party (CCP); government_org_1.name] in several
-      contexts but never states when it was founded.
+    reasoning_chain_text: '1. The document mentions the [Chinese Communist Party (CCP); government_org_1.name] in several contexts but never states when it was founded.
 
       2. The founding year of the [Chinese Communist Party (CCP); government_org_1.name] is not provided in the document.'
   - question_id: place_10_q10
@@ -221,43 +150,27 @@ document:
     answer: government_org_1.name
     answer_type: variant
     reasoning_chain:
-    - 'The passage never explicitly states that this faction "won" the civil war. Instead, the reader must deduce their victory
-      by connecting two separate details: they successfully forced the rival Nyxuundkraskzraz Strategic Command to retreat
-      in 1948, and they are subsequently identified as the "sole ruling party" of the unified state.'
-    reasoning_chain_text: 'The passage never explicitly states that this faction "won" the civil war. Instead, the reader
-      must deduce their victory by connecting two separate details: they successfully forced the rival Nyxuundkraskzraz Strategic
-      Command to retreat in 1948, and they are subsequently identified as the "sole ruling party" of the unified state.'
+    - 'The passage never explicitly states that this faction "won" the civil war. Instead, the reader must deduce their victory by connecting two separate details: they successfully forced the rival Nyxuundkraskzraz Strategic Command to retreat in 1948, and they are subsequently identified as the "sole ruling party" of the unified state.'
+    reasoning_chain_text: 'The passage never explicitly states that this faction "won" the civil war. Instead, the reader must deduce their victory by connecting two separate details: they successfully forced the rival Nyxuundkraskzraz Strategic Command to retreat in 1948, and they are subsequently identified as the "sole ruling party" of the unified state.'
   - question_id: place_10_q11
     question: Did the country's shift toward a market-based economy result in a successful transition to a democratic government?
     question_type: inference
     answer: 'No'
     answer_type: invariant
     reasoning_chain:
-    - 'To answer this, the reader must connect several unlinked concepts in the text: the move to a "market-based economy,"
-      the fact that a movement for "political liberalization stalled," its current status as a "unitary communist state,"
-      and its poor ranking in "democracy and human rights." The answer is derived purely from the conceptual contrast between
-      economic and political outcomes, completely independent of the fictional names used for the events and political parties.'
-    reasoning_chain_text: 'To answer this, the reader must connect several unlinked concepts in the text: the move to a "market-based
-      economy," the fact that a movement for "political liberalization stalled," its current status as a "unitary communist
-      state," and its poor ranking in "democracy and human rights." The answer is derived purely from the conceptual contrast
-      between economic and political outcomes, completely independent of the fictional names used for the events and political
-      parties.'
+    - 'To answer this, the reader must connect several unlinked concepts in the text: the move to a "market-based economy," the fact that a movement for "political liberalization stalled," its current status as a "unitary communist state," and its poor ranking in "democracy and human rights." The answer is derived purely from the conceptual contrast between economic and political outcomes, completely independent of the fictional names used for the events and political parties.'
+    reasoning_chain_text: 'To answer this, the reader must connect several unlinked concepts in the text: the move to a "market-based economy," the fact that a movement for "political liberalization stalled," its current status as a "unitary communist state," and its poor ranking in "democracy and human rights." The answer is derived purely from the conceptual contrast between economic and political outcomes, completely independent of the fictional names used for the events and political parties.'
   - question_id: place_10_q12
-    question: Did the economic reforms of [The reform and opening up; event_10.name] lead to [China; place_1.country] becoming
-      the world's largest economy?
+    question: Did the economic reforms of [The reform and opening up; event_10.name] lead to [China; place_1.country] becoming the world's largest economy?
     question_type: inference
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states that [The reform and opening up; event_10.name] moved [China; place_1.country] towards a market-based
-      economy and spurred an economic boom.
-    - 2. However, the document does not provide any information about the country's ranking among world economies, so it cannot
-      be determined whether it became the world's largest economy.
-    reasoning_chain_text: '1. The document states that [The reform and opening up; event_10.name] moved [China; place_1.country]
-      towards a market-based economy and spurred an economic boom.
+    - 1. The document states that [The reform and opening up; event_10.name] moved [China; place_1.country] towards a market-based economy and spurred an economic boom.
+    - 2. However, the document does not provide any information about the country's ranking among world economies, so it cannot be determined whether it became the world's largest economy.
+    reasoning_chain_text: '1. The document states that [The reform and opening up; event_10.name] moved [China; place_1.country] towards a market-based economy and spurred an economic boom.
 
-      2. However, the document does not provide any information about the country''s ranking among world economies, so it
-      cannot be determined whether it became the world''s largest economy.'
+      2. However, the document does not provide any information about the country''s ranking among world economies, so it cannot be determined whether it became the world''s largest economy.'
   implicit_rules:
   - entity_ref: number_1.float
     lower_bound: 1.0
@@ -368,51 +281,17 @@ document:
     percentage: 20.0
     rule_kind: number_range
   qa_coverage_exemptions: []
-  fictionalized_annotated_template_document: '[Kingdom of Zortarntarn; place_1.country], officially the [Myrmyrvekstan; place_8.country],
-    is a country in [Marnmarnridge; place_2.region]. It has a population exceeding [1.12; number_1.float] billion, representing
-    [14.0; number_2.percent]% of the world''s population. [Kingdom of Zortarntarn; place_1.country] borders [thirteen; number_3.str]
-    countries by land across an area of [8.6; number_4.float] million square kilometers, making it one of the largest countries
-    by area. The country is divided into [32; number_6.int] province-level divisions. [Marnsivvornton; place_4.city] is the
-    capital, while [Vornwexkrel Town; place_5.city] is the most populous city by urban area and largest financial center.
+  fictionalized_annotated_template_document: '[Kingdom of Zortarntarn; place_1.country], officially the [Myrmyrvekstan; place_8.country], is a country in [Marnmarnridge; place_2.region]. It has a population exceeding [1.12; number_1.float] billion, representing [14.0; number_2.percent]% of the world''s population. [Kingdom of Zortarntarn; place_1.country] borders [thirteen; number_3.str] countries by land across an area of [8.6; number_4.float] million square kilometers, making it one of the largest countries by area. The country is divided into [32; number_6.int] province-level divisions. [Marnsivvornton; place_4.city] is the capital, while [Vornwexkrel Town; place_5.city] is the most populous city by urban area and largest financial center.
 
 
-    The first humans in [Kingdom of Zortarntarn; place_1.country] arrived during the Paleolithic era. By the [3; number_19.int]
-    millennium BCE dynastic states had emerged in the [Peak Yornyorn; place_6.natural_site]. The [6; number_15.int]–[4; number_16.int]
-    centuries BCE saw a breakdown in the authority of the [Vleizbroant National Bureau; government_org_3.name], accompanied
-    by the emergence of administrative and military techniques, literature and philosophy. In [220; temporal_9.year] BCE,
-    [Kingdom of Zortarntarn; place_1.country] was unified under an emperor. [Pryyornyornic; place_1.demonym] culture has flourished
-    and has had a great influence on the region and beyond. [Kingdom of Zortarntarn; place_1.country] began to cede parts
-    of the country in the [18; number_18.int] century, to [Zivmarnese; place_7.demonym] powers through a series of unequal
-    treaties. The [1909; temporal_10.year] [Thursornvorn Campaign; event_1.name] overthrew the [Kruumnyxalxvyruur Public Secretariat;
-    government_org_4.name] and the [Myrmyrvekstan; place_8.country] was established the following year. The country was unstable
-    and fragmented during the [The Thurvorn Uprising; event_2.name], this came to an end with the [The Kivthurnox Summit;
-    event_3.name] conducted by the [Nyxuundkraskzraz Strategic Command; military_org_1.name] to reunify the country.
+    The first humans in [Kingdom of Zortarntarn; place_1.country] arrived during the Paleolithic era. By the [3; number_19.int] millennium BCE dynastic states had emerged in the [Peak Yornyorn; place_6.natural_site]. The [6; number_15.int]–[4; number_16.int] centuries BCE saw a breakdown in the authority of the [Vleizbroant National Bureau; government_org_3.name], accompanied by the emergence of administrative and military techniques, literature and philosophy. In [220; temporal_9.year] BCE, [Kingdom of Zortarntarn; place_1.country] was unified under an emperor. [Pryyornyornic; place_1.demonym] culture has flourished and has had a great influence on the region and beyond. [Kingdom of Zortarntarn; place_1.country] began to cede parts of the country in the [18; number_18.int] century, to [Zivmarnese; place_7.demonym] powers through a series of unequal treaties. The [1909; temporal_10.year] [Thursornvorn Campaign; event_1.name] overthrew the [Kruumnyxalxvyruur Public Secretariat; government_org_4.name] and the [Myrmyrvekstan; place_8.country] was established the following year. The country was unstable and fragmented during the [The Thurvorn Uprising; event_2.name], this came to an end
+    with the [The Kivthurnox Summit; event_3.name] conducted by the [Nyxuundkraskzraz Strategic Command; military_org_1.name] to reunify the country.
 
 
-    The [Glangrel Incident; event_4.name] began in [1939; temporal_5.year], when [Nyxuundkraskzraz Strategic Command; military_org_1.name]
-    forces purged members of the [Myriskzroantskel Public Secretariat; government_org_1.name]. [Kingdom of Zortarntarn; place_1.country]
-    was invaded by [Republic of Vekkiv; place_9.country] in [1940; temporal_6.year], leading the [Myriskzroantskel Public
-    Secretariat; government_org_1.name] and [Nyxuundkraskzraz Strategic Command; military_org_1.name] to form the [Vluuthclulclusk
-    Security Force; military_org_2.name] to fight the [Vornxalsivese; place_9.demonym]. The [The Grelzivsorn Campaign; event_5.name]
-    ended in a [Pryyornyornic; place_1.demonym] victory; however, the [Myriskzroantskel Public Secretariat; government_org_1.name]
-    and the [Nyxuundkraskzraz Strategic Command; military_org_1.name] resumed their civil war. In [1948; temporal_7.year],
-    the [Myriskzroantskel Public Secretariat; government_org_1.name] proclaimed the [Kingdom of Zortarntarn; place_1.country]
-    and forced the [Nyxuundkraskzraz Strategic Command; military_org_1.name]-led government to retreat to [Vekmarn Region;
-    place_10.region]. The country was split, with the [Myriskzroantskel Public Secretariat; government_org_1.name] to realize
-    communism failed: the [Krelbrim Expo; event_6.name] was responsible for the [Marnmyrsiv Uprising; event_7.name] which
-    resulted in millions of deaths, and the [Sivquarxal Jubilee; event_8.name] was a period of turmoil and persecution. [The
-    Glankrel Campaign; event_10.name] that began in [1989; temporal_8.year] moved the country away from a planned economy
-    towards a market-based economy, spurring an economic boom. A movement for political liberalization stalled after the [1990;
-    temporal_11.year] [Zivvexbrim Festival; event_9.name].
+    The [Glangrel Incident; event_4.name] began in [1939; temporal_5.year], when [Nyxuundkraskzraz Strategic Command; military_org_1.name] forces purged members of the [Myriskzroantskel Public Secretariat; government_org_1.name]. [Kingdom of Zortarntarn; place_1.country] was invaded by [Republic of Vekkiv; place_9.country] in [1940; temporal_6.year], leading the [Myriskzroantskel Public Secretariat; government_org_1.name] and [Nyxuundkraskzraz Strategic Command; military_org_1.name] to form the [Vluuthclulclusk Security Force; military_org_2.name] to fight the [Vornxalsivese; place_9.demonym]. The [The Grelzivsorn Campaign; event_5.name] ended in a [Pryyornyornic; place_1.demonym] victory; however, the [Myriskzroantskel Public Secretariat; government_org_1.name] and the [Nyxuundkraskzraz Strategic Command; military_org_1.name] resumed their civil war. In [1948; temporal_7.year], the [Myriskzroantskel Public Secretariat; government_org_1.name] proclaimed the [Kingdom of Zortarntarn; place_1.country] and forced the [Nyxuundkraskzraz Strategic Command; military_org_1.name]-led government to retreat to [Vekmarn Region; place_10.region]. The country was split, with the [Myriskzroantskel Public
+    Secretariat; government_org_1.name] to realize communism failed: the [Krelbrim Expo; event_6.name] was responsible for the [Marnmyrsiv Uprising; event_7.name] which resulted in millions of deaths, and the [Sivquarxal Jubilee; event_8.name] was a period of turmoil and persecution. [The Glankrel Campaign; event_10.name] that began in [1989; temporal_8.year] moved the country away from a planned economy towards a market-based economy, spurring an economic boom. A movement for political liberalization stalled after the [1990; temporal_11.year] [Zivvexbrim Festival; event_9.name].
 
 
-    Since [1948; temporal_7.year], [Kingdom of Zortarntarn; place_1.country] has been a unitary communist state with the [Myriskzroantskel
-    Public Secretariat; government_org_1.name] as its sole ruling party. It is one of the [five; number_12.str] permanent
-    members of the [Clanmyruuv Public Secretariat; government_org_2.name] and a member of numerous multilateral and regional
-    organizations. However, [Kingdom of Zortarntarn; place_1.country] ranks poorly in measures of democracy and human rights.
-    [Kingdom of Zortarntarn; place_1.country] is known for its cuisine and culture. It is a megadiverse country, and has [48;
-    number_14.int] [Sivthur Award; award_1.name]s.'
+    Since [1948; temporal_7.year], [Kingdom of Zortarntarn; place_1.country] has been a unitary communist state with the [Myriskzroantskel Public Secretariat; government_org_1.name] as its sole ruling party. It is one of the [five; number_12.str] permanent members of the [Clanmyruuv Public Secretariat; government_org_2.name] and a member of numerous multilateral and regional organizations. However, [Kingdom of Zortarntarn; place_1.country] ranks poorly in measures of democracy and human rights. [Kingdom of Zortarntarn; place_1.country] is known for its cuisine and culture. It is a megadiverse country, and has [48; number_14.int] [Sivthur Award; award_1.name]s.'
 metadata:
   status: completed
-  annotators:
-  - anonymous_annotator

@@ -1,5 +1,9 @@
 """Authentication service: password hashing, session management, user CRUD."""
 
+import base64
+import hashlib
+import hmac
+import json
 import logging
 import os
 import secrets
@@ -8,7 +12,7 @@ from typing import Any, Dict, List, Optional
 
 import bcrypt
 
-from web.services.db import close_db, get_db
+from web.services.db import DEFAULT_ADMIN_PASSWORD_ENV, close_db, get_db
 from web.services.persistence import restore_db_from_gcs, sync_db_to_gcs
 
 logger = logging.getLogger(__name__)
@@ -33,6 +37,32 @@ else:
 
 SESSION_EXPIRES_AT_UNLIMITED = "9999-12-31 23:59:59"
 UNLIMITED_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 365 * 10
+SIGNED_SESSION_PREFIX = "signed-v1"
+SESSION_SECRET_ENV = "SESSION_SECRET_KEY"
+
+
+def _b64url_encode(raw: bytes) -> str:
+    return base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=")
+
+
+def _b64url_decode(raw: str) -> bytes:
+    padding = "=" * (-len(raw) % 4)
+    return base64.urlsafe_b64decode((raw + padding).encode("ascii"))
+
+
+def _session_signing_secret() -> bytes:
+    secret = os.getenv(SESSION_SECRET_ENV, "").strip()
+    if not secret:
+        secret = os.getenv(DEFAULT_ADMIN_PASSWORD_ENV, "").strip()
+    if not secret:
+        # Local-development fallback only. Production should configure either
+        # SESSION_SECRET_KEY or DEFAULT_ADMIN_PASSWORD so cookies survive restarts.
+        secret = "parametric-annotation-local-session-secret"
+    return secret.encode("utf-8")
+
+
+def is_signed_session_token(token: str) -> bool:
+    return str(token or "").startswith(f"{SIGNED_SESSION_PREFIX}.")
 
 
 def _utc_now_sql() -> str:
@@ -81,7 +111,35 @@ def _sync_auth_db_change(operation: str) -> None:
 
 
 def create_session(user_id: int) -> str:
-    """Create a session token and store in database. Returns the token."""
+    """Create a signed session token.
+
+    Session state intentionally lives in the cookie rather than the GCS-synced
+    SQLite DB, so login does not upload/download the whole DB snapshot.
+    """
+    issued_at = int(datetime.now(timezone.utc).timestamp())
+    expires_at = 0 if SESSION_UNLIMITED else issued_at + SESSION_DURATION_SECONDS
+    payload = {
+        "sub": int(user_id),
+        "iat": issued_at,
+        "exp": expires_at,
+        "nonce": secrets.token_urlsafe(16),
+    }
+    payload_b64 = _b64url_encode(
+        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    )
+    signature = hmac.new(
+        _session_signing_secret(),
+        payload_b64.encode("ascii"),
+        hashlib.sha256,
+    ).digest()
+    return f"{SIGNED_SESSION_PREFIX}.{payload_b64}.{_b64url_encode(signature)}"
+
+
+def create_legacy_db_session(user_id: int) -> str:
+    """Create a DB-backed session token.
+
+    Kept for emergency rollback/debugging. Normal login uses signed cookies.
+    """
     db = get_db()
     token = secrets.token_urlsafe(32)
     if SESSION_UNLIMITED:
@@ -142,6 +200,38 @@ def validate_session(token: str) -> Optional[Dict[str, Any]]:
     """Check if a session token is valid. Returns user dict or None."""
     if not token:
         return None
+    if is_signed_session_token(token):
+        try:
+            parts = token.split(".")
+            if len(parts) != 3 or parts[0] != SIGNED_SESSION_PREFIX:
+                return None
+            payload_b64 = parts[1]
+            expected_signature = hmac.new(
+                _session_signing_secret(),
+                payload_b64.encode("ascii"),
+                hashlib.sha256,
+            ).digest()
+            provided_signature = _b64url_decode(parts[2])
+            if not hmac.compare_digest(provided_signature, expected_signature):
+                return None
+            payload = json.loads(_b64url_decode(payload_b64).decode("utf-8"))
+            user_id = int(payload.get("sub") or 0)
+            expires_at = int(payload.get("exp") or 0)
+            if user_id <= 0:
+                return None
+            if expires_at and int(datetime.now(timezone.utc).timestamp()) >= expires_at:
+                return None
+        except Exception:
+            logger.warning("Invalid signed session token.", exc_info=True)
+            return None
+
+        db = get_db()
+        row = db.execute(
+            "SELECT id, username, role, created_at FROM users WHERE id = ?",
+            (user_id,),
+        ).fetchone()
+        return dict(row) if row else None
+
     db = get_db()
     if SESSION_UNLIMITED:
         row = db.execute(
@@ -166,6 +256,8 @@ def validate_session(token: str) -> Optional[Dict[str, Any]]:
 
 def delete_session(token: str) -> None:
     """Delete a session (logout)."""
+    if is_signed_session_token(token):
+        return
     db = get_db()
     db.execute("DELETE FROM sessions WHERE token = ?", (token,))
     db.commit()

@@ -1,0 +1,157 @@
+document:
+  document_id: company_12
+  document_theme: Companies and Organizations
+  source: wikipedia
+  wikipedia_title: MercadoLibre
+  wikipedia_url: https://en.wikipedia.org/wiki/MercadoLibre
+  original_document: 'MercadoLibre, Inc., known as Mercado Livre in Brazil, literally meaning "free market" in both languages, is a company of Argentine origin headquartered in Montevideo, Uruguay and incorporated in Delaware in the United States that operates online marketplaces dedicated to e-commerce and online auctions. As of 2016, Mercado Libre had 174.2 million users in Latin America, making it the region''s most popular e-commerce site by number of visitors.
+
+
+    Aside from being the leading player in Argentina''s e-commerce market, it also has operations in Bolivia, Brazil, Chile, Colombia, Costa Rica, the Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Uruguay, and Venezuela. In 2023, Time included Mercado Libre in the list of the 100 most influential companies in the world.'
+  document_to_annotate: '[MercadoLibre, Inc.; entreprise_org_1.name], known as [Mercado Livre; entreprise_org_1.name] in [Brazil; place_1.country], literally meaning "free market" in both languages, is a company of [Argentine; place_2.demonym] origin headquartered in [Montevideo; place_3.city], [Uruguay; place_3.country] and incorporated in [Delaware; place_4.state] in the [United States; place_4.country] that operates online marketplaces dedicated to e-commerce and online auctions. As of [2016; temporal_1.year], [Mercado Libre; entreprise_org_1.name] had [174.2 million; number_1.float] users in [Latin America; place_5.region], making it the region''s most popular e-commerce site by number of visitors.
+
+
+    Aside from being the leading player in [Argentina; place_2.country]''s e-commerce market, it also has operations in [Bolivia; place_6.country], [Brazil; place_1.country], [Chile; place_7.country], [Colombia; place_8.country], [Costa Rica; place_9.country], the [Dominican Republic; place_10.country], [Ecuador; place_11.country], [El Salvador; place_12.country], [Guatemala; place_13.country], [Honduras; place_14.country], [Mexico; place_15.country], [Nicaragua; place_16.country], [Panama; place_17.country], [Paraguay; place_18.country], [Peru; place_19.country], [Uruguay; place_3.country], and [Venezuela; place_20.country]. In [2023; temporal_2.year], [Time; media_org_1.name] included [Mercado Libre; entreprise_org_1.name] in the list of the [100; number_2.int] most influential companies in the world.'
+  relations: []
+  rules:
+  - 'number_1.float > 1 # millions of users, large number'
+  - 'number_2.int > 1 # plural: "most influential companies"'
+  num_questions: 12
+  questions:
+  - question_id: company_12_q01
+    question: In which city is [MercadoLibre, Inc.; entreprise_org_1.name] headquartered?
+    question_type: extractive
+    answer: place_3.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [MercadoLibre, Inc.; entreprise_org_1.name] is headquartered in [Montevideo; place_3.city], [Uruguay; place_3.country].
+  - question_id: company_12_q02
+    question: What does the company's name literally mean in both languages?
+    question_type: extractive
+    answer: free market
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the name literally means 'free market' in both languages.
+  - question_id: company_12_q03
+    question: Who founded [MercadoLibre, Inc.; entreprise_org_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [MercadoLibre, Inc.; entreprise_org_1.name]'s operations, headquarters, and user statistics.
+    - 2. The document does not state or mention any founder, co-founder, or individual associated with the creation of [MercadoLibre, Inc.; entreprise_org_1.name].
+    - 3. Therefore, the needed fact is not present in the document and the answer cannot be determined.
+  - question_id: company_12_q04
+    question: If [MercadoLibre, Inc.; entreprise_org_1.name] doubled its user base in [Latin America; place_5.region] from the reported figure, how many users would it have?
+    question_type: arithmetic
+    answer: number_1.float * 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [MercadoLibre, Inc.; entreprise_org_1.name] had [174.2 million; number_1.float] users in [Latin America; place_5.region].
+    - 2. The answer is obtained by multiplying that annotated user count by 2.
+  - question_id: company_12_q05
+    question: How many countries of operation are listed in the document beyond the company's home market?
+    question_type: arithmetic
+    answer: '17'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document lists countries of operation after stating the company is the leading player in its home market's e-commerce.
+    - 2. Counting the listed countries gives 17 additional countries.
+  - question_id: company_12_q06
+    question: If [MercadoLibre, Inc.; entreprise_org_1.name]'s users in [Latin America; place_5.region] are split evenly across all countries of operation in that region, how many users per country would there be?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [MercadoLibre, Inc.; entreprise_org_1.name] had [174.2 million; number_1.float] users in [Latin America; place_5.region].
+    - 2. To divide users evenly across countries in [Latin America; place_5.region], we would need to know how many of the listed countries fall within [Latin America; place_5.region].
+    - 3. The document does not specify which of its countries of operation are located within [Latin America; place_5.region], so the number of countries in that region is not stated in the document.
+    - 4. Because this required fact is absent from the document, the calculation cannot be performed and the answer cannot be determined.
+  - question_id: company_12_q07
+    question: How many years after the user count was reported for [Latin America; place_5.region] was [MercadoLibre, Inc.; entreprise_org_1.name] included in [Time; media_org_1.name]'s list of most influential companies?
+    question_type: temporal
+    answer: temporal_2.year - temporal_1.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The user count for [Latin America; place_5.region] was reported as of [2016; temporal_1.year].
+    - 2. [MercadoLibre, Inc.; entreprise_org_1.name] was included in [Time; media_org_1.name]'s list in [2023; temporal_2.year].
+    - 3. Subtracting the user-report year from the media-list year gives the elapsed time.
+  - question_id: company_12_q08
+    question: Was the site's popularity assessment made before the reported user count, or as part of the same report?
+    question_type: temporal
+    answer: same report
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document presents the reported user count and the site's popularity within the same as-of statement.
+    - 2. The phrase "making it the region's most popular" connects the popularity assessment directly to that reported count.
+    - 3. Therefore, the popularity assessment was made as part of the same report.
+  - question_id: company_12_q09
+    question: How many years after [MercadoLibre, Inc.; entreprise_org_1.name] was founded did it reach [174.2 million; number_1.float] users in [Latin America; place_5.region]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The user count of [174.2 million; number_1.float] in [Latin America; place_5.region] is reported as of [2016; temporal_1.year].
+    - 2. The document does not state when [MercadoLibre, Inc.; entreprise_org_1.name] was founded; no founding date or year appears anywhere in the document.
+    - 3. Without the founding year, the duration cannot be calculated, so the answer cannot be determined.
+  - question_id: company_12_q10
+    question: Given that [MercadoLibre, Inc.; entreprise_org_1.name] is of [Argentine; place_2.demonym] origin but is incorporated in [United States; place_4.country], what is the company's country of origin?
+    question_type: inference
+    answer: place_2.country
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [MercadoLibre, Inc.; entreprise_org_1.name] is of [Argentine; place_2.demonym] origin, meaning it originated in [Argentina; place_2.country].
+    - 2. It is incorporated in [Delaware; place_4.state] in [United States; place_4.country], which is a different country from [Argentina; place_2.country].
+    - 3. Therefore the company's country of origin is [Argentina; place_2.country].
+  - question_id: company_12_q11
+    question: Based on the document, does the company operate both e-commerce marketplaces and online auction platforms, or only one of these?
+    question_type: inference
+    answer: both
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the company operates online marketplaces dedicated to e-commerce and online auctions.
+    - 2. Since both e-commerce and online auctions are explicitly mentioned as services, the company operates both types.
+  - question_id: company_12_q12
+    question: Based on the document, is [MercadoLibre, Inc.; entreprise_org_1.name]'s incorporation in [Delaware; place_4.state] in [United States; place_4.country] related to the company seeking favorable regulatory conditions?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states [MercadoLibre, Inc.; entreprise_org_1.name] is incorporated in [Delaware; place_4.state] in [United States; place_4.country].
+    - 2. The document does not provide any reasoning, motivation, or explanation for why [Delaware; place_4.state] was chosen as the incorporation location; no regulatory or tax information is mentioned anywhere in the document.
+    - 3. Therefore, whether regulatory conditions played a role cannot be determined from the document.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1996
+    upper_bound: 2026
+    factual_value: 2016
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.float
+    lower_bound: 139360000.0
+    upper_bound: 209040000.0
+    factual_value: 174.2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_2.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[VentaRapil, Inc.; entreprise_org_1.name], known as [VentaRapil, Inc.; entreprise_org_1.name] in [Velorath; place_1.country], literally meaning "free market" in both languages, is a company of [Tarvenian; place_2.demonym] origin headquartered in [Pelquero; place_3.city], [Hestoval; place_3.country] and incorporated in [Thornequil; place_4.state] in [Melvandria; place_4.country] that operates online marketplaces dedicated to e-commerce and online auctions. As of [1996; temporal_1.year], [VentaRapil, Inc.; entreprise_org_1.name] had [178271953; number_1.float] users in [Velosar Coast; place_5.region], making it the region''s most popular e-commerce site by number of visitors.
+
+
+    Aside from being the leading player in [Tarvenia; place_2.country]''s e-commerce market, it also has operations in [Tarvolia; place_6.country], [Velorath; place_1.country], [Veloruna; place_7.country], [Cendara; place_8.country], [Tasperia; place_9.country], [Veloranta; place_10.country], [Tashkelu; place_11.country], [Tashimera; place_12.country], [Tashimara; place_13.country], [Tuvaren; place_14.country], [Talorvenia; place_15.country], [Tashimora; place_16.country], [Tassimor; place_17.country], [Turaqen; place_18.country], [Tolmera; place_19.country], [Hestoval; place_3.country], and [Tassivera; place_20.country]. In [2021; temporal_2.year], [Brevthal; media_org_1.name] included [VentaRapil, Inc.; entreprise_org_1.name] in the list of the [85; number_2.int] most influential companies in the world.'
+metadata:
+  status: completed

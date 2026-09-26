@@ -8,8 +8,9 @@ from fastapi import APIRouter, Body, Depends, HTTPException
 from web.api.history import build_recent_activity_payload
 from web.middleware.auth import get_current_user, require_power_user
 from web.services import review_campaign_service, workflow_service
-from web.services import auth_service, yaml_service
+from web.services import yaml_service
 from web.services.db import close_db, get_db
+from web.services.perf_logging import PerfTimer, perf_context
 from web.services.persistence import restore_db_from_gcs
 
 router = APIRouter(prefix="/api/v1/workflow")
@@ -55,41 +56,85 @@ def api_dashboard_bootstrap(
 ) -> dict[str, Any]:
     """Load the dashboard's initial data in one request."""
     normalized_scope = str(scope or "documents").strip().lower()
-    # For admin rules/questions dashboards, always refresh from the shared DB so
-    # campaign counters are consistent across instances.
-    force_refresh = user.get("role") == "power_user" and normalized_scope in {"rules", "questions"}
-    _refresh_synced_dashboard_state(force_download=force_refresh)
-    db = get_db()
-    if user.get("role") == "power_user":
-        review_campaign_monitor_payload = {"campaigns": []}
-        if normalized_scope in {"rules", "questions"}:
-            review_campaign_monitor_payload = review_campaign_service.get_review_campaign_monitor(
-                normalized_scope,
-                db=db,
-            )
-        return {
-            "role": "power_user",
-            "progress": yaml_service.get_theme_progress(db=db),
-            "recent_activity": build_recent_activity_payload(normalized_scope, db=db),
-            "monitor": workflow_service.get_admin_monitor(db=db),
-            "review_campaign_monitor": review_campaign_monitor_payload,
-            "users": auth_service.list_users(),
-        }
+    with perf_context(
+        endpoint="dashboard_bootstrap",
+        scope=normalized_scope,
+        user_id=user.get("id", ""),
+        username=user.get("username", ""),
+        role=user.get("role", ""),
+    ):
+        timer = PerfTimer("dashboard_bootstrap")
+        # For admin rules/questions dashboards, always refresh from the shared DB so
+        # campaign counters are consistent across instances.
+        force_refresh = user.get("role") == "power_user" and normalized_scope in {"rules", "questions"}
+        try:
+            with timer.step("db_refresh"):
+                _refresh_synced_dashboard_state(force_download=force_refresh)
+            db = get_db()
+            if user.get("role") == "power_user":
+                response: dict[str, Any] = {"role": "power_user"}
+                if normalized_scope in {"rules", "questions"}:
+                    with timer.step("review_campaign_monitor"):
+                        response["review_campaign_monitor"] = review_campaign_service.get_review_campaign_monitor(
+                            normalized_scope,
+                            db=db,
+                        )
+                    with timer.step("theme_progress"):
+                        response["progress"] = yaml_service.get_theme_progress(db=db)
+                    with timer.step("recent_activity"):
+                        response["recent_activity"] = build_recent_activity_payload(normalized_scope, db=db)
+                    return response
 
-    user_id = int(user["id"])
-    return {
-        "role": "regular_user",
-        "queue": workflow_service.get_user_queue(user_id, auto_assign=False),
-        "review_queues": {
-            "rules": review_campaign_service.get_user_review_queue(user_id, "rules"),
-            "questions": review_campaign_service.get_user_review_queue(user_id, "questions"),
-        },
-        "resolution_feedback": workflow_service.get_user_resolution_feedback(user_id),
-        "review_resolution_feedback": {
-            "rules": review_campaign_service.get_user_review_resolution_feedback(user_id, "rules"),
-            "questions": review_campaign_service.get_user_review_resolution_feedback(user_id, "questions"),
-        },
-    }
+                with timer.step("theme_progress"):
+                    response["progress"] = yaml_service.get_theme_progress(db=db)
+                with timer.step("recent_activity"):
+                    response["recent_activity"] = build_recent_activity_payload(normalized_scope, db=db)
+                with timer.step("admin_monitor"):
+                    response["monitor"] = workflow_service.get_admin_monitor(db=db)
+                return response
+
+            user_id = int(user["id"])
+
+            if normalized_scope == "documents":
+                with timer.step("document_queue"):
+                    queue = workflow_service.get_user_queue(user_id, auto_assign=False)
+                with timer.step("document_feedback"):
+                    resolution_feedback = workflow_service.get_user_resolution_feedback(user_id)
+                return {
+                    "role": "regular_user",
+                    "queue": queue,
+                    "resolution_feedback": resolution_feedback,
+                }
+
+            if normalized_scope == "rules":
+                with timer.step("rules_queue"):
+                    rules_queue = review_campaign_service.get_user_review_queue(user_id, review_type="rules")
+                with timer.step("rules_feedback"):
+                    rules_feedback = review_campaign_service.get_user_review_resolution_feedback(user_id, review_type="rules")
+                return {
+                    "role": "regular_user",
+                    "review_queues": {
+                        "rules": rules_queue,
+                    },
+                    "review_resolution_feedback": {
+                        "rules": rules_feedback,
+                    },
+                }
+
+            return {
+                "role": "regular_user",
+                "review_queues": {
+                    "questions": _timed_questions_queue(timer, user_id),
+                },
+                # no need for a resolution feedback for QAs as they are directly resolved by power users
+            }
+        finally:
+            timer.emit()
+
+
+def _timed_questions_queue(timer: PerfTimer, user_id: int) -> dict[str, Any]:
+    with timer.step("questions_queue"):
+        return review_campaign_service.get_user_review_queue(user_id, "questions")
 
 
 @router.post("/my-queue/assign-random")
@@ -114,14 +159,28 @@ def api_my_review_queue_assign_random(
     review_type: str,
     user: dict[str, Any] = Depends(get_current_user),
 ) -> dict[str, Any]:
-    try:
-        _refresh_synced_write_db_state()
-        assignment = review_campaign_service.assign_random_review_task_to_user(int(user["id"]), review_type)
-        queue = review_campaign_service.get_user_review_queue(int(user["id"]), review_type)
-        queue["assignment"] = assignment
-        return queue
-    except ValueError as exc:
-        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    normalized_review_type = str(review_type or "").strip().lower()
+    with perf_context(
+        endpoint="assign_random_review_task",
+        review_type=normalized_review_type,
+        user_id=user.get("id", ""),
+        username=user.get("username", ""),
+        role=user.get("role", ""),
+    ):
+        timer = PerfTimer("assign_random_review_task")
+        try:
+            with timer.step("db_refresh_for_write"):
+                _refresh_synced_write_db_state()
+            with timer.step("assign_task"):
+                assignment = review_campaign_service.assign_random_review_task_to_user(int(user["id"]), review_type)
+            with timer.step("queue_refresh"):
+                queue = review_campaign_service.get_user_review_queue(int(user["id"]), review_type)
+            queue["assignment"] = assignment
+            return queue
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+        finally:
+            timer.emit()
 
 
 @router.get("/my-agreements")

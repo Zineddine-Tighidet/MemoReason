@@ -1,0 +1,207 @@
+document:
+  document_id: awards_12
+  document_theme: Award Winners
+  source: wikipedia
+  wikipedia_title: Wangarĩ Maathai
+  wikipedia_url: https://en.wikipedia.org/wiki/Wangar%C4%A9_Maathai
+  original_document: 'Wangarĩ Maathai (; 1 April 1940 – 25 September 2011) was a Kenyan social, environmental, and political activist who founded the Green Belt Movement, an environmental non-governmental organization focused on planting trees, environmental conservation, and women''s rights. In 2004, she became the first African woman to win the Nobel Peace Prize.
+
+
+    In 1986, forty-five representatives from fifteen African countries travelled to Kenya over the next three years to learn how to set up similar programs.
+
+
+    As a beneficiary of the Kennedy Airlift, she studied in the United States, earning a bachelor''s degree from Mount St. Scholastica College in Atchison, Kansas, and a masters degree from the University of Pittsburgh in Pittsburgh. She then became the first woman in East and Central Africa to become a Doctor of Philosophy, receiving her Ph.D. from the University of Nairobi in Nairobi, Kenya. In 1984, she received the Right Livelihood Award for "converting the Kenyan ecological debate into mass action for reforestation."
+
+
+    Wangari Maathai was an elected member of the parliament of Kenya, and served as the assistant minister for environment and natural resources in the government of President Mwai Kibaki between January 2003 and November 2005. She was an Honorary Councillor in the World Future Council. As an academic and the author of several books, Maathai was not only an activist but also an intellectual who made significant contributions to thinking about ecology, development and gender in addition to African cultures and religions. She died of complications from ovarian cancer on 25 September, 2011.'
+  document_to_annotate: '[Wangarĩ Maathai; person_1.full_name] (; [1 April 1940; temporal_1.date] – [25 September 2011; temporal_2.date]) was a [Kenyan; place_1.demonym] social, environmental, and political activist who founded the [Green Belt Movement; ngo_1.name], an environmental non-governmental organization focused on planting trees, environmental conservation, and women''s rights. In [2004; temporal_3.year], [she; person_1.subj_pronoun] became the first [African; place_2.demonym] woman to win the [Nobel Peace Prize; award_1.name].
+
+
+    In [1986; temporal_7.year], [forty-five; number_1.str] representatives from [fifteen; number_2.str] [African; place_2.demonym] countries travelled to [Kenya; place_1.country] over the next [three; number_3.str] years to learn how to set up similar programs.
+
+
+    As a beneficiary of the [Kennedy Airlift; product_1.name], [she; person_1.subj_pronoun] studied in the [United States; place_3.country], earning a bachelor''s degree from [Mount St. Scholastica College; educational_org_1.name] in [Atchison; place_4.city], [Kansas; place_4.state], and a masters degree from the [University of Pittsburgh; educational_org_2.name] in [Pittsburgh; place_5.city]. [She; person_1.subj_pronoun] then became the first woman in East and Central [Africa; place_2.continent] to become a Doctor of Philosophy, receiving [her; person_1.poss_det_pronoun] Ph.D. from the [University of Nairobi; educational_org_3.name] in [Nairobi; place_6.city], [Kenya; place_1.country]. In [1984; temporal_4.year], [she; person_1.subj_pronoun] received the [Right Livelihood Award; award_2.name] for "converting the [Kenyan; place_1.demonym] ecological debate into mass action for reforestation."
+
+
+    [Wangari Maathai; person_1.full_name] was an elected member of the parliament of [Kenya; place_1.country], and served as the assistant minister for environment and natural resources in the government of President [Mwai Kibaki; person_2.full_name] between [January 2003; temporal_5.date] and [November 2005; temporal_6.date]. [She; person_1.subj_pronoun] was an Honorary Councillor in the World Future Council. As an academic and the author of several books, [Maathai; person_1.last_name] was not only an activist but also an intellectual who made significant contributions to thinking about ecology, development and gender in addition to [African; place_2.demonym] cultures and religions. [She; person_1.subj_pronoun] died of complications from ovarian cancer on [25 September, 2011; temporal_2.date].'
+  relations: []
+  rules:
+  - 'number_1.str > number_2.str # more representatives than represented countries'
+  - 'number_2.str > 1 # representatives came from multiple countries'
+  - 'number_3.str > 1 # the learning period spanned multiple years'
+  num_questions: 12
+  questions:
+  - question_id: awards_12_q01
+    question: What environmental organization did [Wangarĩ Maathai; person_1.full_name] found?
+    question_type: extractive
+    answer: ngo_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Wangarĩ Maathai; person_1.full_name] founded the [Green Belt Movement; ngo_1.name].
+  - question_id: awards_12_q02
+    question: What cause of death is described in the document for the person who served as assistant minister for environment and natural resources?
+    question_type: extractive
+    answer: complications from ovarian cancer
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that the person who served as assistant minister died of complications from ovarian cancer on a specified date.
+  - question_id: awards_12_q03
+    question: What was the title of the doctoral dissertation completed at the [University of Nairobi; educational_org_3.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions that a Ph.D. was received from the [University of Nairobi; educational_org_3.name] in [Nairobi; place_6.city].
+    - 2. The document does not state the title of the doctoral dissertation anywhere.
+  - question_id: awards_12_q04
+    question: If the number of representatives who travelled to learn about the programs were doubled, how many representatives would that be?
+    question_type: arithmetic
+    answer: number_1.str * 2
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [forty-five; number_1.str] representatives travelled.
+    - 2. The answer is obtained by multiplying that annotated number of representatives by 2.
+  - question_id: awards_12_q05
+    question: How many distinct awards and academic degrees earned by the person described in the document are mentioned?
+    question_type: arithmetic
+    answer: '5'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document mentions 3 academic degrees — a bachelor's degree, a master's degree, and a Ph.D.
+    - 2. The document mentions 2 awards received by the same person.
+    - 3. Total is 3 + 2 = 5.
+  - question_id: awards_12_q06
+    question: How many books authored by [Wangarĩ Maathai; person_1.full_name] are listed in the document, and what is that count combined with the number of awards mentioned?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes [Wangarĩ Maathai; person_1.full_name] as "the author of several books."
+    - 2. The document does not specify the exact number of books authored, only using the vague word "several."
+    - 3. Checking the entire document confirms that no specific book count is provided anywhere, so the needed numerical fact is not stated in the document.
+    - 4. Without a specific count of books, the arithmetic sum cannot be computed.
+  - question_id: awards_12_q07
+    question: How many years passed between [Wangarĩ Maathai; person_1.full_name] receiving the [Right Livelihood Award; award_2.name] and winning the [Nobel Peace Prize; award_1.name]?
+    question_type: temporal
+    answer: temporal_3.year - temporal_4.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The [Right Livelihood Award; award_2.name] was received in [1984; temporal_4.year].
+    - 2. The [Nobel Peace Prize; award_1.name] was won in [2004; temporal_3.year].
+    - 3. Subtracting the earlier award year from the later award year gives the elapsed time.
+  - question_id: awards_12_q08
+    question: According to the document, did the person described earn the Ph.D. before or after receiving the bachelor's and master's degrees?
+    question_type: temporal
+    answer: after
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes the educational trajectory in sequence — first a bachelor's degree, then a master's degree, and then a Ph.D.
+    - 2. The word "then" in the text establishes that the Ph.D. came after the bachelor's and master's degrees.
+  - question_id: awards_12_q09
+    question: In what year did the founder of the [Green Belt Movement; ngo_1.name] first begin studies at [Mount St. Scholastica College; educational_org_1.name]?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that a bachelor's degree was earned from [Mount St. Scholastica College; educational_org_1.name] in [Atchison; place_4.city], [Kansas; place_4.state].
+    - 2. The document does not specify the year when studies at [Mount St. Scholastica College; educational_org_1.name] began or ended, so this cannot be determined.
+  - question_id: awards_12_q10
+    question: Where can someone benefit from the [Kennedy Airlift; product_1.name]?
+    question_type: inference
+    answer: place_3.country
+    answer_type: variant
+    reasoning_chain:
+    - .
+  - question_id: awards_12_q11
+    question: Based on the document, were the bachelor's and master's degrees earned in different locations?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - .
+  - question_id: awards_12_q12
+    question: Given that [Wangarĩ Maathai; person_1.full_name] served as assistant minister under President [Mwai Kibaki; person_2.full_name], can we determine whether [Wangarĩ Maathai; person_1.full_name] belonged to the same political party as [Mwai Kibaki; person_2.full_name]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states that [Wangarĩ Maathai; person_1.full_name] served as assistant minister in the government of President [Mwai Kibaki; person_2.full_name].
+    - 2. The document does not mention any political party affiliations for either [Wangarĩ Maathai; person_1.full_name] or [Mwai Kibaki; person_2.full_name].
+    - 3. Without information about their party memberships, it cannot be determined whether they belonged to the same party.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1991
+    upper_bound: 2026
+    factual_value: 2011
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1984
+    upper_bound: 2024
+    factual_value: 2004
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1967
+    upper_bound: 2005
+    factual_value: 1986
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.str
+    lower_bound: 36
+    upper_bound: 54
+    factual_value: 45
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.str
+    lower_bound: 12
+    upper_bound: 18
+    factual_value: 15
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.str
+    lower_bound: 1
+    upper_bound: 13
+    factual_value: 3
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1965
+    upper_bound: 2003
+    factual_value: 1984
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1983
+    upper_bound: 2023
+    factual_value: 2003
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_6.year
+    lower_bound: 1985
+    upper_bound: 2025
+    factual_value: 2005
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Teshuli Obranwe; person_1.full_name] (; [6 August 1939; temporal_1.date] – [10 June 2026; temporal_2.date]) was a [Thalvorian; place_1.demonym] social, environmental, and political activist who founded the [Verdant Canopy Initiative; ngo_1.name], an environmental non-governmental organization focused on planting trees, environmental conservation, and women''s rights. In [2023; temporal_3.year], [she; person_1.subj_pronoun] became the first [Velundran; place_2.demonym] woman to win the [Telvari Harmony Laureate; award_1.name].
+
+
+    In [1972; temporal_7.year], [thirty-six; number_1.str] representatives from [fourteen; number_2.str] [Velundran; place_2.demonym] countries travelled to [Thalvoria; place_1.country] over the next [two; number_3.str] years to learn how to set up similar programs.
+
+
+    As a beneficiary of the Kennedy Airlift, [she; person_1.subj_pronoun] studied in [Velorund; place_3.country], earning a bachelor''s degree from [Cresthollow Abbey College; educational_org_1.name] in [Telmory; place_4.city], [Bressova; place_4.state], and a masters degree from the [Thalvern University; educational_org_2.name] in [Thandoral; place_5.city]. [She; person_1.subj_pronoun] then became the first woman in East and Central [Velundra; place_2.continent] to become a Doctor of Philosophy, receiving [her; person_1.poss_det_pronoun] Ph.D. from the [Thalweri National University; educational_org_3.name] in [Tembara; place_6.city], [Thalvoria; place_1.country]. In [1970; temporal_4.year], [she; person_1.subj_pronoun] received the [Verdant Stewardship Prize; award_2.name] for "converting [Thalvorian; place_1.demonym] ecological debate into mass action for reforestation."
+
+
+    [Teshuli Obranwe; person_1.full_name] was an elected member of the parliament of [Thalvoria; place_1.country], and served as the assistant minister for environment and natural resources in the government of President [Tendorai Okwelu; person_2.full_name] between [9 February 2021; temporal_5.date] and [2 December 2025; temporal_6.date]. [She; person_1.subj_pronoun] was an Honorary Councillor in the World Future Council. As an academic and the author of several books, [Obranwe; person_1.last_name] was not only an activist but also an intellectual who made significant contributions to thinking about ecology, development and gender in addition to [Velundran; place_2.demonym] cultures and religions. [She; person_1.subj_pronoun] died of complications from ovarian cancer on [10 June 2026; temporal_2.date].'
+metadata:
+  status: completed

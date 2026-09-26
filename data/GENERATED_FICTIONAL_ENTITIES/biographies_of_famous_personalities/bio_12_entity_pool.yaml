@@ -1,0 +1,562 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: bio_12
+  document_theme: biographies_of_famous_personalities
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards:
+    award_1: 15
+    award_2: 15
+    award_3: 15
+    award_4: 15
+    award_5: 15
+  legals: {}
+  products:
+    product_1: 15
+persons:
+  person_1:
+    required_attributes:
+    - ethnicity
+    - full_name
+    - last_name
+    count: 15
+    variants:
+    - full_name: Velithra Ondrine Kessoway
+      last_name: Kessoway
+      ethnicity: Thalvic-Orenthan
+    - full_name: Bryndala Jorveth Pelloquin
+      last_name: Pelloquin
+      ethnicity: Korvashi-Delmaran
+    - full_name: Tamrique Elvosha Grothenly
+      last_name: Grothenly
+      ethnicity: Zurvanic-Tessolan
+    - full_name: Orivane Calshira Dunmory
+      last_name: Dunmory
+      ethnicity: Belvanic-Reshkari
+    - full_name: Sethura Wyndaline Colvashek
+      last_name: Colvashek
+      ethnicity: Prethanic-Volmari
+    - full_name: Kelvara Tondrithe Mossivane
+      last_name: Mossivane
+      ethnicity: Gelvoran-Tesshari
+    - full_name: Drethina Quorvale Hentoway
+      last_name: Hentoway
+      ethnicity: Zulmari-Kethoran
+    - full_name: Parveline Sholthra Weskavon
+      last_name: Weskavon
+      ethnicity: Drenthari-Orvashic
+    - full_name: Luthivane Crendosha Belvique
+      last_name: Belvique
+      ethnicity: Molvanic-Reshthali
+    - full_name: Quendara Tolvisha Grenshale
+      last_name: Grenshale
+      ethnicity: Thelvori-Kulmaran
+    - full_name: Zelvitha Morquane Dreshoway
+      last_name: Dreshoway
+      ethnicity: Vorvashi-Prelmari
+    - full_name: Wynthera Kolvadine Shentoque
+      last_name: Shentoque
+      ethnicity: Grenthari-Zelvoran
+    - full_name: Crendova Pelthaline Voskiren
+      last_name: Voskiren
+      ethnicity: Thulmari-Breshkovic
+    - full_name: Tolvarine Drenshova Quelthaby
+      last_name: Quelthaby
+      ethnicity: Kelvanic-Morshali
+    - full_name: Reshkova Brenthilde Zolvaquen
+      last_name: Zolvaquen
+      ethnicity: Prelvori-Drenthari
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Torvek Grenshale
+    - full_name: Brinnel Castovar
+    - full_name: Daxen Polmure
+    - full_name: Kelvor Thassidy
+    - full_name: Rondil Feskane
+    - full_name: Wenthor Clavish
+    - full_name: Jomaren Tulswick
+    - full_name: Parvek Dunolley
+    - full_name: Setharn Quilbane
+    - full_name: Haldren Vossimer
+    - full_name: Crelton Mabrique
+    - full_name: Fennox Darshell
+    - full_name: Galthen Rouvane
+    - full_name: Obren Teskavil
+    - full_name: Lurvane Crethson
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Olundi
+    - full_name: Brissol Kethane
+    - full_name: Dornic Pleshav
+    - full_name: Wentho Cralidge
+    - full_name: Felgor Tumaine
+    - full_name: Haldric Vosseny
+    - full_name: Quirren Bosthal
+    - full_name: Jondrev Malcusp
+    - full_name: Setharn Gruvelk
+    - full_name: Pellum Dravosh
+    - full_name: Korbis Thenawe
+    - full_name: Zulden Marpheq
+    - full_name: Arvelt Coshune
+    - full_name: Grenwick Tolsabe
+    - full_name: Nelvaro Pushkend
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Dorven Kalshey
+    - full_name: Tembric Ossalune
+    - full_name: Granthel Vusorin
+    - full_name: Pellick Joravane
+    - full_name: Wyndaro Chelstog
+    - full_name: Brastun Melivoy
+    - full_name: Kolveth Dunashir
+    - full_name: Tarquen Obrishal
+    - full_name: Fenwick Zolparet
+    - full_name: Haldren Cuvostey
+    - full_name: Jontrev Maspuline
+    - full_name: Rolvane Teshwick
+    - full_name: Quilben Forastey
+    - full_name: Dravosh Kelpurin
+    - full_name: Sethoran Brimvale
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Corvath J. Tellune
+    - full_name: Draven K. Mosserly
+    - full_name: Fenwick R. Calitho
+    - full_name: Jorath P. Wenvale
+    - full_name: Talmek G. Brissow
+    - full_name: Quendal S. Haroven
+    - full_name: Zerith L. Pomander
+    - full_name: Brintal M. Cossery
+    - full_name: Gavrel T. Lunwick
+    - full_name: Orvath D. Tessimer
+    - full_name: Pellum W. Dranthos
+    - full_name: Kelvorn A. Suthane
+    - full_name: Rendak F. Volishe
+    - full_name: Winthor C. Galveen
+    - full_name: Solvek H. Tremaine
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Velori K. Thandris
+    - full_name: Jemara L. Colvane
+    - full_name: Pashti R. Dunvelo
+    - full_name: Korinda M. Felshar
+    - full_name: Zulaine T. Bremock
+    - full_name: Navithi D. Groshel
+    - full_name: Wentara S. Pluvane
+    - full_name: Odalyn J. Krevish
+    - full_name: Tambriel F. Holvane
+    - full_name: Reshani C. Welmoth
+    - full_name: Lunessa B. Trovane
+    - full_name: Calithra E. Durnesh
+    - full_name: Yovinda P. Strelkam
+    - full_name: Brenali W. Corthune
+    - full_name: Fenorah G. Quilshen
+places:
+  place_1:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Velorinth
+      demonym: Velorinthian
+    - country: Thandorea
+      demonym: Thandorean
+    - country: Kespara
+      demonym: Kesparan
+    - country: Drulvenia
+      demonym: Drulvenian
+    - country: Ombrathis
+      demonym: Ombrathian
+    - country: Pelvunar
+      demonym: Pelvunari
+    - country: Zanthelo
+      demonym: Zanthelese
+    - country: Crovanthi
+      demonym: Crovanthian
+    - country: Welmadris
+      demonym: Welmadrine
+    - country: Turvenok
+      demonym: Turvenoki
+    - country: Gelshapur
+      demonym: Gelshapuri
+    - country: Brondivek
+      demonym: Brondiveki
+    - country: Haltrune
+      demonym: Haltrunese
+    - country: Quelmorath
+      demonym: Quelmorathi
+    - country: Fendrova
+      demonym: Fendrovan
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Crondis
+    - natural_site: Pallune
+    - natural_site: Orvethis
+    - natural_site: Thalcyon
+    - natural_site: Druvane
+    - natural_site: Kessolar
+    - natural_site: Brinthos
+    - natural_site: Zelphara
+    - natural_site: Quorvane
+    - natural_site: Lithane
+    - natural_site: Fennoric
+    - natural_site: Galthunis
+    - natural_site: Wesphelon
+    - natural_site: Torvanis
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velkora
+    - natural_site: Thrennos
+    - natural_site: Calphedon
+    - natural_site: Zorvath
+    - natural_site: Dremula
+    - natural_site: Olithane
+    - natural_site: Pyrathis
+    - natural_site: Kelvorn
+    - natural_site: Sundrath
+    - natural_site: Brenova
+    - natural_site: Talorix
+    - natural_site: Gephara
+    - natural_site: Wyndolar
+    - natural_site: Crethune
+    - natural_site: Halvonis
+  place_4:
+    required_attributes:
+    - state
+    count: 15
+    variants:
+    - state: Korvallen
+    - state: Thelmara
+    - state: Brissendal
+    - state: Wyndorath
+    - state: Calterune
+    - state: Pellisova
+    - state: Dranthecka
+    - state: Morvashel
+    - state: Tundrellis
+    - state: Gessapine
+    - state: Helvandor
+    - state: Quirrenash
+    - state: Solmethia
+    - state: Varnellock
+    - state: Fendroval
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Venture Caliston
+    - name: Program Heliark
+    - name: Initiative Skyvane
+    - name: Endeavor Thalcyon
+    - name: Operation Cerulex
+    - name: Program Orbivane
+    - name: Mission Dravelos
+    - name: Project Lunavar
+    - name: Campaign Stellivox
+    - name: Initiative Kosmara
+    - name: Venture Pyrathel
+    - name: Program Aethonix
+    - name: Endeavor Vostara
+    - name: Operation Zephiral
+    - name: Initiative Celvoran
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath
+    - name: Cendara
+    - name: Thalonis
+    - name: Pyrenth
+    - name: Solkari
+    - name: Dravune
+    - name: Velundrath
+    - name: Kelvaris
+    - name: Luneth
+    - name: Brythane
+    - name: Corvalis
+    - name: Zephiran
+    - name: Telmaris
+    - name: Halcyren
+    - name: Vostrine
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Skyward Chariot
+    - name: Orbital Dawncraft
+    - name: Vaultrider
+    - name: Celstep Glider
+    - name: Threnvoy Carrier
+    - name: Loftarc Vessel
+    - name: Starhaven Cruiser
+    - name: Zenith Clipper
+    - name: Pulsewing Transporter
+    - name: Crestborne Lifter
+    - name: Drifthelm Voyager
+    - name: Kelvane Orbiter
+    - name: Thalwing Shuttle
+    - name: Rimpath Flyer
+    - name: Solkeel Traverser
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Telvara Morinth Systems Assurance and Calibration Center
+    - name: Drennick Orvale Computational Integrity Laboratory
+    - name: Sondara Quillex Autonomous Testing and Review Facility
+    - name: Brenthia Corvel Mission Validation Complex
+    - name: Halwynn Jessara Analytical Verification Institute
+    - name: Pelloquin Dareth Quality Certification and Assessment Hub
+    - name: Rovenna Tassik Independent Evaluation and Standards Facility
+    - name: Cendara Wulphen Reliability Assurance Campus
+    - name: Mirathel Groyven Technical Audit and Compliance Center
+    - name: Kessova Brindell Orbital Verification Laboratory
+    - name: Thurwen Galesta Precision Validation Facility
+    - name: Ondriqa Felmark Systems Integrity and Review Center
+    - name: Vossara Telmick Independent Certification Complex
+    - name: Jenthari Plovek Assurance and Diagnostics Facility
+    - name: Quelindra Harvoss Verification and Compliance Laboratory
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: VOSCA
+    - name: TELMAC
+    - name: CORVEL
+    - name: DRASEN
+    - name: QUILAR
+    - name: BRENSO
+    - name: HALCEN
+    - name: PLUVEX
+    - name: TORNIL
+    - name: GELVAC
+    - name: WISPOL
+    - name: FENDAR
+    - name: KOLVIR
+    - name: ZARMET
+    - name: OBLENT
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Federal Bureau of Aeronautical Research
+    - name: Central Advisory Council for Flight Sciences
+    - name: Joint Commission on Atmospheric Propulsion
+    - name: General Directorate of Orbital Studies
+    - name: Bureau of Stratospheric Engineering
+    - name: Unified Panel for Rocketry Development
+    - name: Standing Committee on Aerodynamic Inquiry
+    - name: Federal Council for Propulsive Sciences
+    - name: Interagency Board of Skycraft Research
+    - name: Central Office of Atmospheric Mechanics
+    - name: General Advisory Board for Thrust Engineering
+    - name: Federal Directorate of Celestial Navigation
+    - name: Joint Bureau of Aeromotive Sciences
+    - name: Standing Authority for Propulsion Research
+    - name: Consolidated Office of Flight Mechanics
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veldoran National Assembly
+    - name: Grand Chamber of Thalcrest
+    - name: Parlethic Council of Bryndor
+    - name: Sovereign Legislature of Quenara
+    - name: Federal Deliberative Body of Ostrivane
+    - name: Unified Parliament of Caldreth
+    - name: High Legislative Forum of Pellundy
+    - name: National Convocation of Zerathi
+    - name: General Assembly of Torindel
+    - name: Central Governing Congress of Melvara
+    - name: Bicameral Chamber of Drothune
+    - name: Supreme Legislative Council of Yenthari
+    - name: Federal Senate of Korvanis
+    - name: Joint Parliamentary Body of Grellund
+    - name: Civic Legislature of Phendara
+awards:
+  award_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Crest of Distinction
+    - name: Luminary Shield of Honor
+    - name: Verdane Civic Laurel
+    - name: Thalric Medal of Eminence
+    - name: Oranthel Star of Merit
+    - name: Pelloran Emblem of Service
+    - name: Celvari Medallion of Valor
+    - name: Dranthos Seal of Excellence
+    - name: Quorath Badge of Renown
+    - name: Felstara Ribbon of Gratitude
+    - name: Brinthal Cross of Devotion
+    - name: Kessovan Wreath of Achievement
+    - name: Morvane Crest of Civic Honor
+    - name: Tyndoral Medal of Public Virtue
+    - name: Galverin Insignia of Esteem
+  award_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Golden Pelrath Citation
+    - name: Cobalt Fennoway Commendation
+    - name: Starpath Kelvori Medal
+    - name: Orbital Dranthos Honor
+    - name: Crimson Yolbrek Distinction
+    - name: Sapphire Tondrik Accolade
+    - name: Velquarn Skyreach Prize
+    - name: Amber Jorvalis Emblem
+    - name: Platinum Weskari Laurel
+    - name: Emerald Brondavi Tribute
+    - name: Celestine Parvok Badge
+    - name: Titanium Grellish Crest
+    - name: Opaline Dremwick Garland
+    - name: Verdant Holtrique Seal
+    - name: Iridium Calvorin Wreath
+  award_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Collective Endeavor Commendation
+    - name: Orbital Sciences Team Distinction
+    - name: Velthari Collaborative Merit Honor
+    - name: Joint Exploration Excellence Citation
+    - name: Pinnacle Crew Accomplishment Laurel
+    - name: Unified Mission Contribution Emblem
+    - name: Stratovance Team Innovation Accolade
+    - name: Cooperative Spaceflight Recognition Crest
+    - name: Shared Discovery Service Medallion
+    - name: Integrated Program Valor Tribute
+    - name: Coordinated Endeavor Distinction Seal
+    - name: Partnered Research Excellence Garland
+    - name: Combined Operations Merit Plaque
+    - name: Synergic Advancement Honor Badge
+    - name: Allied Project Contribution Wreath
+  award_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Sovereign Crest of Valor
+    - name: Luminary Shield of Distinction
+    - name: Grand Tessera of Merit
+    - name: Parlethic Honor Medallion
+    - name: Veldoran Civic Laurel
+    - name: Hallmark Wreath of Eminence
+    - name: Thandric Seal of Service
+    - name: Pinnacle Coronal of Achievement
+    - name: Brenthic Star of Renown
+    - name: Orathen Civic Emblem
+    - name: Kesthari Medallion of Honor
+    - name: Delvanic Crest of Gratitude
+    - name: Prothean Laurel of Distinction
+    - name: Solmark Badge of Excellence
+    - name: Quendric Wreath of Tribute
+  award_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Lumendral Heritage Honor Roll
+    - name: Thovian Civic Distinction Gallery
+    - name: Pellmark Trailblazers Pantheon
+    - name: Cendara Pioneers Recognition Hall
+    - name: Brivosh Legacy Laureates Circle
+    - name: Queldrin Achievers Enshrinement
+    - name: Varethon Distinguished Contributors Archive
+    - name: Orinthal Visionaries Tribute Registry
+    - name: Kessova Exemplary Leaders Pavilion
+    - name: Dranmere Luminaries Honor Society
+    - name: Feltorin Groundbreakers Memorial Hall
+    - name: Zephara Changemakers Enshrinement Gallery
+    - name: Wyndoral Pathfinders Tribute Hall
+    - name: Galthen Innovators Recognition Shrine
+    - name: Soriven Vanguard Honors Collective
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Veiled Orbits
+    - name: Unseen Proofs
+    - name: Silent Equations
+    - name: Borrowed Skies
+    - name: Counted Shadows
+    - name: Erased Trajectories
+    - name: Quiet Meridians
+    - name: Uncharted Sums
+    - name: Forgotten Parallax
+    - name: Dimmed Horizons
+    - name: Sheltered Arcs
+    - name: Muted Calculations
+    - name: Obscured Vectors
+    - name: Cloaked Numbers
+    - name: Buried Coordinates

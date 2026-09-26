@@ -1,0 +1,238 @@
+document:
+  document_id: place_12
+  document_theme: Cities, Countries, and Regions
+  source: wikipedia
+  wikipedia_title: Lagos
+  wikipedia_url: https://en.wikipedia.org/wiki/Lagos
+  original_document: 'Lagos (; LAY-goss; Yoruba: Èkó [èkó]), or Lagos City, is a large metropolitan port city in southwestern Nigeria. As of November 2025, the size of the city''s population has been estimated to be between 17 and 21 million residents, making Lagos the largest city in Nigeria, the most populous urban area on the African continent, and one of the fastest-growing megacities in the world.
+
+
+    The lands are separated by creeks, fringing the southwest mouth of Lagos Lagoon, while being protected from the Atlantic Ocean by barrier islands and long sand spits such as Bar Beach, which stretch up to 100 kilometres (62 mi) east and west of the mouth.
+
+
+    With its international airport, three ports (Apapa, Tin Can Island and Lekki deep-sea port), four expressways (to Badagry, Abeokuta, Ibadan and Calabar, the latter under construction since 2023 and partially operational in 2026), and the standard-gauge rail link to Abeokuta and Ibadan, the city is well connected in terms of transport and handles 88% of Nigeria’s exports. The urban rail transit system (the "Blue Line" and the "Red Line") is regarded as one of the most modern of its kind in Africa.
+
+
+    Lagos is best known as the leading financial centre of West and Central Africa, with headquarters of financial institutions like Access Bank, the First Bank of Nigeria or Zenith Bank. Here is the stock exchange as well. Other major employers include two breweries, three major shipyards and the headquarters of several African airlines. Lagos is also West Africa''s centre for pharmaceuticals. It has more than 20 data centres in operation and branches of Microsoft, Equinix and Google. Five out of seven African high tech start-ups with a value above US$ 1 billion ("unicorns") are located in Lagos. The employer with the most staff is the Dangote Refinery, which, once expanded, will be the world’s largest oil refinery.
+
+
+    Lagos houses four public universities (LASU, UNILAG, LASUSTECH, and LASUED) and six private universites as well as scientific facilities like the Institute for Oceanography and the Institute of Medical Research. Lagos is also a cultural hub. The National Arts Theatre in Surulere, the National Gallery of Modern Art (in the same building), the Centre For Black And African Arts on Broad Street, the National Museum and the John Randle Centre for Yoruba Culture in Onikan and privately run galleries like Nike Art Gallery display Nigerias culture. The conservatoire MUSON Centre, many local orchestras and choirs (like the Lagos City Chorale or the Cathedral Church of Christ Choir) as well as writers like Sefi Atta, Oyinkan Braithwaite and Ayòbámi Adébáyò and artists like Dotun Popoola, Peju Alatise, Idowu Sonaya and Collins Abinoro Akporode represent Lagos'' creative scene. Furthermore, Lagos is the centre of media outlets and of Nigerian cinema, "Nollywood". The lagoon city also is a hot spot for West African music ("Afrobeats"); in its recording studios Nigerian stars like Wizkid, Tems, Davido, and Asake have started their careers. International stars like Paul McCartney, James Brown,
+    Ed Sheeran and Beyoncé have recorded albums there.'
+  document_to_annotate: '[Lagos; place_1.city], or [Lagos; place_1.city] City, is a large metropolitan port city in southwestern [Nigeria; place_2.country]. As of [November 2025; temporal_1.date], the size of the city''s population has been estimated to be between [17; number_1.int] and [21; number_2.int] million residents, making [Lagos; place_1.city] the largest city in [Nigeria; place_2.country], the most populous urban area on the [African; place_3.demonym] continent, and one of the fastest-growing megacities in the world.
+
+
+    The lands are separated by creeks, fringing the southwest mouth of [Lagos Lagoon; place_12.region], while being protected from the [Atlantic Ocean; place_4.natural_site] by barrier islands and long sand spits such as [Bar Beach; place_13.natural_site], which stretch up to [100; number_3.int] kilometres ([62; number_4.int] mi) east and west of the mouth.
+
+
+    With its international airport, three ports ([Apapa; place_5.city], [Tin Can Island; place_14.region] and [Lekki deep-sea; place_15.region] port), four expressways (to [Badagry; place_6.city], [Abeokuta; place_7.city], [Ibadan; place_8.city] and [Calabar; place_9.city], the latter under construction since [2023; temporal_2.year] and partially operational in [2026; temporal_3.year]), and the standard-gauge rail link to [Abeokuta; place_7.city] and [Ibadan; place_8.city], the city is well connected in terms of transport and handles [88; number_5.percent]% of [Nigeria; place_2.country]’s exports. The urban rail transit system (the "Blue Line" and the "Red Line") is regarded as one of the most modern of its kind in [Africa; place_3.continent].
+
+
+    [Lagos; place_1.city] is best known as the leading financial centre of West and Central [Africa; place_3.continent], with headquarters of financial institutions like [Access Bank; entreprise_org_1.name], the [First Bank of Nigeria; entreprise_org_2.name] or [Zenith Bank; entreprise_org_3.name]. Here is the stock exchange as well. Other major employers include two breweries, three major shipyards and the headquarters of several [African; place_3.demonym] airlines. [Lagos; place_1.city] is also West [Africa; place_3.continent]''s centre for pharmaceuticals. It has more than [20; number_6.int] data centres in operation and branches of [Microsoft; entreprise_org_4.name], [Equinix; entreprise_org_5.name] and [Google; entreprise_org_6.name]. [Five; number_7.str] out of [seven; number_8.str] [African; place_3.demonym] high tech start-ups with a value above US$ [1; number_9.int] billion ("unicorns") are located in [Lagos; place_1.city]. The employer with the most staff is the [Dangote Refinery; entreprise_org_7.name], which, once expanded, will be the world’s largest oil refinery.
+
+
+    [Lagos; place_1.city] houses four public universities ([LASU; educational_org_1.name], [UNILAG; educational_org_2.name], [LASUSTECH; educational_org_3.name], and [LASUED; educational_org_4.name]) and six private universites as well as scientific facilities like the Institute for Oceanography and the Institute of Medical Research. [Lagos; place_1.city] is also a cultural hub. The [National Arts Theatre; government_org_1.name] in [Surulere; place_10.city], the [National Gallery of Modern Art; government_org_2.name] (in the same building), the [Centre For Black And African Arts on Broad Street; government_org_3.name], the [National Museum and the John Randle Centre for Yoruba Culture; government_org_4.name] in [Onikan; place_11.city] and privately run galleries like [Nike Art Gallery; government_org_5.name] display [Nigeria; place_2.country]s culture. The conservatoire [MUSON Centre; government_org_6.name], many local orchestras and choirs (like the [Lagos City Chorale; educational_org_5.name] or the [Cathedral Church of Christ Choir; ngo_1.name]) as well as writers like [Sefi Atta; person_1.full_name], [Oyinkan Braithwaite; person_2.full_name] and [Ayòbámi Adébáyò; person_3.full_name]
+    and artists like [Dotun Popoola; person_4.full_name], [Peju Alatise; person_5.full_name], [Idowu Sonaya; person_6.full_name] and [Collins Abinoro Akporode; person_7.full_name] represent [Lagos; place_1.city]'' creative scene. Furthermore, [Lagos; place_1.city] is the centre of media outlets and of [Nigerian; place_2.demonym] cinema, "[Nollywood; entreprise_org_8.name]". The lagoon city also is a hot spot for West [African; place_3.demonym] music ("[Afrobeats; ngo_2.name]"); in its recording studios [Nigerian; place_2.demonym] stars like [Wizkid; person_8.full_name], [Tems; person_9.full_name], [Davido; person_10.full_name], and [Asake; person_11.full_name] have started their careers. International stars like [Paul McCartney; person_12.full_name], [James Brown; person_13.full_name], [Ed Sheeran; person_14.full_name] and [Beyoncé; person_15.full_name] have recorded albums there.'
+  relations: []
+  rules:
+  - 'number_7.str > 1 # plural mention ("start-ups")'
+  - 'number_6.int > 1 # "more than 20 data centres" implies plural'
+  - 'number_9.int >= 1 # billion-dollar threshold for unicorns'
+  num_questions: 12
+  questions:
+  - question_id: place_12_q01
+    question: Which writer is mentioned first among those representing [Lagos; place_1.city]'s creative scene?
+    question_type: extractive
+    answer: person_1.full_name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document lists writers associated with [Lagos; place_1.city]'s creative scene in order, starting with [Sefi Atta; person_1.full_name], followed by [Oyinkan Braithwaite; person_2.full_name] and [Ayòbámi Adébáyò; person_3.full_name].
+  - question_id: place_12_q02
+    question: How many private universities are housed in the city described in the document?
+    question_type: extractive
+    answer: six
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the city houses four public universities and six private universities.
+  - question_id: place_12_q03
+    question: What genre of music does [Wizkid; person_8.full_name] primarily perform?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Wizkid; person_8.full_name] as one of the [Nigerian; place_2.demonym] stars who started their careers in [Lagos; place_1.city]'s recording studios.
+    - 2. The document does not specify the particular genre of music that [Wizkid; person_8.full_name] performs, only that the city is a hot spot for 'Afrobeats.'
+    - 3. Therefore, the specific genre cannot be determined from the document.
+  - question_id: place_12_q04
+    question: What is the sum of the lower and upper population estimates (in millions) for [Lagos; place_1.city]?
+    question_type: arithmetic
+    answer: number_1.int + number_2.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the population has been estimated to be between [17; number_1.int] and [21; number_2.int] million residents.
+    - 2. Adding the annotated lower and upper estimates gives the requested sum in millions.
+  - question_id: place_12_q05
+    question: How many distinct named companies or corporate organizations are mentioned in the document?
+    question_type: arithmetic
+    answer: '7'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document mentions the following corporate organizations: [Access Bank; entreprise_org_1.name], [First Bank of Nigeria; entreprise_org_2.name], [Zenith Bank; entreprise_org_3.name], [Microsoft; entreprise_org_4.name], [Equinix; entreprise_org_5.name], [Google; entreprise_org_6.name], and [Dangote Refinery; entreprise_org_7.name].'
+    - 2. Counting these gives 7 distinct companies.
+  - question_id: place_12_q06
+    question: What is the combined number of employees at [Access Bank; entreprise_org_1.name] and [Zenith Bank; entreprise_org_3.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions [Access Bank; entreprise_org_1.name] and [Zenith Bank; entreprise_org_3.name] as financial institutions headquartered in [Lagos; place_1.city].
+    - 2. To compute a combined employee count, we need the individual staff numbers for each institution.
+    - '3. Checking the document: no employee counts are provided for [Access Bank; entreprise_org_1.name] or [Zenith Bank; entreprise_org_3.name]. The document only states that the [Dangote Refinery; entreprise_org_7.name] is the employer with the most staff, without giving a figure for these banks.'
+    - 4. Therefore, the combined total cannot be determined from the document.
+  - question_id: place_12_q07
+    question: How many years after construction began on the expressway to [Calabar; place_9.city] did it become partially operational?
+    question_type: temporal
+    answer: temporal_3.year - temporal_2.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the expressway to [Calabar; place_9.city] has been under construction since [2023; temporal_2.year] and became partially operational in [2026; temporal_3.year].
+    - 2. Subtracting the construction-start year from the partial-operation year gives the elapsed time.
+  - question_id: place_12_q08
+    question: According to the document's account of the expressway, did construction begin before or after it became partially operational?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document first describes the expressway as being under construction.
+    - 2. It then says the expressway became partially operational, which is a later stage of the same project.
+    - 3. Therefore, construction began before partial operation.
+  - question_id: place_12_q09
+    question: How many years before the expressway to [Calabar; place_9.city] began construction was the standard-gauge rail link to [Abeokuta; place_7.city] and [Ibadan; place_8.city] inaugurated?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the expressway to [Calabar; place_9.city] has been under construction since [2023; temporal_2.year].
+    - 2. To compute the time difference, we need the inauguration date of the standard-gauge rail link to [Abeokuta; place_7.city] and [Ibadan; place_8.city].
+    - '3. Checking the document: no date of inauguration, completion, or construction start is provided for the rail link.'
+    - 4. Therefore, the temporal difference cannot be determined from the document.
+  - question_id: place_12_q10
+    question: Which city can be inferred to be a major technology hub because it hosts branches of three global technology companies and five of seven billion-dollar African start-ups?
+    question_type: inference
+    answer: place_1.city
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Lagos; place_1.city] has branches of [Microsoft; entreprise_org_4.name], [Equinix; entreprise_org_5.name], and [Google; entreprise_org_6.name].
+    - 2. It also states that five of seven African technology start-ups valued above one billion US dollars are located there.
+    - 3. Combining the global-company presence and unicorn concentration identifies [Lagos; place_1.city] as the technology hub.
+  - question_id: place_12_q11
+    question: Based on the document, is the city described more significant as a financial centre or as a manufacturing hub?
+    question_type: inference
+    answer: financial centre
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document describes the city as 'the leading financial centre of West and Central [Africa; place_3.continent]' and lists multiple financial institution headquarters and a stock exchange.
+    - 2. Manufacturing is mentioned only briefly (breweries, shipyards, and a refinery), without any comparable superlative description.
+    - 3. Therefore, the document emphasizes the city's role as a financial centre more prominently than as a manufacturing hub.
+  - question_id: place_12_q12
+    question: Given that [Lagos; place_1.city] is described as the centre of [Nigerian; place_2.demonym] cinema ("Nollywood") and a hub for Afrobeats music, can we infer which of these [Five; number_7.str] industries contributes more revenue to [Lagos; place_1.city]'s economy?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document identifies [Lagos; place_1.city] as the centre of [Nigerian; place_2.demonym] cinema ('Nollywood') and a hot spot for West [African; place_3.demonym] music ('Afrobeats').
+    - 2. To compare revenue contributions, we would need financial data or revenue figures for each industry.
+    - '3. Checking the document: no revenue figures, economic output data, or comparative financial information is provided for either the cinema or music industry.'
+    - 4. Therefore, which industry contributes more revenue cannot be determined from the document.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 2005
+    upper_bound: 2026
+    factual_value: 2025
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 14
+    upper_bound: 20
+    factual_value: 17
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 80
+    upper_bound: 120
+    factual_value: 100
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 50
+    upper_bound: 74
+    factual_value: 62
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_2.year
+    lower_bound: 2003
+    upper_bound: 2026
+    factual_value: 2023
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2006
+    upper_bound: 2026
+    factual_value: 2026
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_5.percent
+    lower_bound: 70.4
+    upper_bound: 105.6
+    factual_value: 88.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 1
+    upper_bound: 15
+    factual_value: 5
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 17
+    factual_value: 7
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 1
+    upper_bound: 11
+    factual_value: 1
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: '[Tokhari; place_1.city] (; LAY-goss; Yoruba: Èkó [èkó]), or [Tokhari; place_1.city] City, is a large metropolitan port city in southwestern [Tolundra; place_2.country]. As of [25 August 2010; temporal_1.date], the size of the city''s population has been estimated to be between [16; number_1.int] and [20; number_2.int] million residents, making [Tokhari; place_1.city] the largest city in [Tolundra; place_2.country], the most populous urban area on [Velundran; place_3.demonym] continent, and one of the fastest-growing megacities in the world.
+
+
+    The lands are separated by creeks, fringing the southwest mouth of Lagos Lagoon, while being protected from the [Velorean Sea; place_4.natural_site] by barrier islands and long sand spits such as Bar Beach, which stretch up to [99; number_3.int] kilometres ([61; number_4.int] mi) east and west of the mouth.
+
+
+    With its international airport, three ports ([Rundesha; place_5.city], Tin Can Island and Lekki deep-sea port), four expressways (to [Tokuri; place_6.city], [Toluwara; place_7.city], [Tolunke; place_8.city] and [Tovunke; place_9.city], the latter under construction since [2007; temporal_2.year] and partially operational in [2015; temporal_3.year]), and the standard-gauge rail link to [Toluwara; place_7.city] and [Tolunke; place_8.city], the city is well connected in terms of transport and handles [71; number_5.percent]% of [Tolundra; place_2.country]’s exports. The urban rail transit system (the "Blue Line" and the "Red Line") is regarded as one of the most modern of its kind in [Velundra; place_3.continent].
+
+
+    [Tokhari; place_1.city] is best known as the leading financial centre of West and Central [Velundra; place_3.continent], with headquarters of financial institutions like [Tovari Bank; entreprise_org_1.name], the [Korvane National Lending House; entreprise_org_2.name] or [Velorath Bank; entreprise_org_3.name]. Here is the stock exchange as well. Other major employers include two breweries, three major shipyards and the headquarters of several [Velundran; place_3.demonym] airlines. [Tokhari; place_1.city] is also West [Velundra; place_3.continent]''s centre for pharmaceuticals. It has more than [24; number_6.int] data centres in operation and branches of [Velthari Systems; entreprise_org_4.name], [Coloquint; entreprise_org_5.name] and [Vothek; entreprise_org_6.name]. [Two; number_7.str] out of [three; number_8.str] [Velundran; place_3.demonym] high tech start-ups with a value above US$ [2; number_9.int] billion ("unicorns") are located in [Tokhari; place_1.city]. The employer with the most staff is the [Korvathi Refinery; entreprise_org_7.name], which, once expanded, will be the world’s largest oil refinery.
+
+
+    [Tokhari; place_1.city] houses four public universities ([TUNVEK; educational_org_1.name], [KORIDU; educational_org_2.name], [TUNVOSCI; educational_org_3.name], and [TUNVED; educational_org_4.name]) and six private universites as well as scientific facilities like the Institute for Oceanography and the Institute of Medical Research. [Tokhari; place_1.city] is also a cultural hub. The National Arts Theatre in [Orivash; place_10.city], the National Gallery of Modern Art (in the same building), the Centre For Black And African Arts on Broad Street, the National Museum and the John Randle Centre for Yoruba Culture in [Mekuvon; place_11.city] and privately run galleries like Nike Art Gallery display [Tolundra; place_2.country]s culture. The conservatoire MUSON Centre, many local orchestras and choirs (like the Lagos City Chorale or the Cathedral Church of Christ Choir) as well as writers like [Tolabi Ekushan; person_1.full_name], [Tolarin Ekufoye; person_2.full_name] and [Toluwemi Obajorin; person_3.full_name] and artists like [Keludo Obashren; person_4.full_name], [Feniro Obashelu; person_5.full_name], [Toluwek Dranabi; person_6.full_name] and [Tobren Ekulashi Ovindro; person_7.full_name]
+    represent [Tokhari; place_1.city]'' creative scene. Furthermore, [Tokhari; place_1.city] is the centre of media outlets and of [Tolundran; place_2.demonym] cinema, "Nollywood". The lagoon city also is a hot spot for West [Velundran; place_3.demonym] music ("Afrobeats"); in its recording studios [Tolundran; place_2.demonym] stars like [Zelvon; person_8.full_name], [Zelvri; person_9.full_name], [Keludo; person_10.full_name], and [Toleki; person_11.full_name] have started their careers. International stars like [Drennik Holloway; person_12.full_name], [Kelvor Drantish; person_13.full_name], [Tarvek Glennoway; person_14.full_name] and [Zelvara Koundish; person_15.full_name] have recorded albums there.'
+metadata:
+  status: completed

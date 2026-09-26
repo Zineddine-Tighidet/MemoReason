@@ -26,8 +26,9 @@ from web.api.history import router as history_router
 from web.api.taxonomy import router as taxonomy_router
 from web.api.workflow import router as workflow_router
 from web.services import auth_service, yaml_service
-from web.services.auth_service import validate_session
+from web.services.auth_service import is_signed_session_token, validate_session
 from web.services.db import close_db, init_db
+from web.services.perf_logging import PerfTimer, perf_context
 from web.services.persistence import is_enabled, restore_db_from_gcs
 
 
@@ -62,7 +63,8 @@ async def enforce_canonical_host(request: Request, call_next):
 
     host_header = request.headers.get("host", "")
     request_host = host_header.split(":", 1)[0].strip().lower()
-    if request_host and request_host != CANONICAL_HOST:
+    is_cloud_run_tag_host = request_host.endswith(f"---{CANONICAL_HOST}")
+    if request_host and request_host != CANONICAL_HOST and not is_cloud_run_tag_host:
         forwarded_proto = request.headers.get("x-forwarded-proto", "").split(",", 1)[0].strip()
         scheme = forwarded_proto if forwarded_proto in {"http", "https"} else request.url.scheme
         if scheme not in {"http", "https"}:
@@ -318,7 +320,7 @@ def _get_user_or_none(session_token: str):
     if not session_token:
         return None
     user = validate_session(session_token)
-    if not user and is_enabled():
+    if not user and not is_signed_session_token(session_token) and is_enabled():
         close_db()
         restore_db_from_gcs(max_age_seconds=0, force_download=True)
         user = validate_session(session_token)
@@ -420,40 +422,65 @@ async def login_page(request: Request, session_token: str = Cookie(default="")):
 
 @app.post("/login", response_class=HTMLResponse)
 async def login_submit(request: Request, session_token: str = Cookie(default="")):
-    user = _get_user_or_none(session_token)
-    if user:
-        return RedirectResponse("/", status_code=302)
+    with perf_context(endpoint="login_submit"):
+        timer = PerfTimer("login_submit")
+        try:
+            with timer.step("existing_session_check"):
+                user = _get_user_or_none(session_token)
+            if user:
+                timer.add_field("result", "already_authenticated")
+                timer.add_field("user_id", user.get("id", ""))
+                timer.add_field("username", user.get("username", ""))
+                timer.add_field("role", user.get("role", ""))
+                return RedirectResponse("/", status_code=302)
 
-    raw_body = (await request.body()).decode("utf-8", errors="ignore")
-    form_data = parse_qs(raw_body, keep_blank_values=True)
-    username = str((form_data.get("username") or [""])[0]).strip()
-    password = str((form_data.get("password") or [""])[0])
+            with timer.step("parse_form"):
+                raw_body = (await request.body()).decode("utf-8", errors="ignore")
+                form_data = parse_qs(raw_body, keep_blank_values=True)
+                username = str((form_data.get("username") or [""])[0]).strip()
+                password = str((form_data.get("password") or [""])[0])
+                timer.add_field("username", username or "(missing)")
 
-    if not username or not password:
-        return templates.TemplateResponse(
-            "login.html",
-            {
-                "request": request,
-                "initial_error": "Username and password required",
-            },
-            status_code=400,
-        )
+            if not username or not password:
+                timer.add_field("result", "missing_credentials")
+                return templates.TemplateResponse(
+                    "login.html",
+                    {
+                        "request": request,
+                        "initial_error": "Username and password required",
+                    },
+                    status_code=400,
+                )
 
-    authenticated = auth_service.authenticate(username, password)
-    if not authenticated:
-        return templates.TemplateResponse(
-            "login.html",
-            {
-                "request": request,
-                "initial_error": "Invalid credentials",
-            },
-            status_code=401,
-        )
+            with timer.step("authenticate"):
+                authenticated = auth_service.authenticate(username, password)
+            if not authenticated:
+                timer.add_field("result", "invalid_credentials")
+                return templates.TemplateResponse(
+                    "login.html",
+                    {
+                        "request": request,
+                        "initial_error": "Invalid credentials",
+                    },
+                    status_code=401,
+                )
 
-    token = auth_service.create_session(int(authenticated["id"]))
-    response = RedirectResponse("/", status_code=302)
-    _set_session_cookie(response, token)
-    return response
+            timer.add_field("user_id", authenticated.get("id", ""))
+            timer.add_field("role", authenticated.get("role", ""))
+            with perf_context(
+                user_id=authenticated.get("id", ""),
+                username=authenticated.get("username", username),
+                role=authenticated.get("role", ""),
+            ):
+                with timer.step("create_session"):
+                    token = auth_service.create_session(int(authenticated["id"]))
+            response = RedirectResponse("/", status_code=302)
+            with timer.step("set_cookie"):
+                _set_session_cookie(response, token)
+            timer.add_field("result", "ok")
+            return response
+        finally:
+            timer.emit()
 
 
 @app.get("/", response_class=HTMLResponse)

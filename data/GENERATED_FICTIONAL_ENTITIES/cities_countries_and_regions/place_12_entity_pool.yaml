@@ -1,0 +1,1133 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: place_12
+  document_theme: cities_countries_and_regions
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons:
+    person_1: 15
+    person_2: 15
+    person_3: 15
+    person_4: 15
+    person_5: 15
+    person_6: 15
+    person_7: 15
+    person_8: 15
+    person_9: 15
+    person_10: 15
+    person_11: 15
+    person_12: 15
+    person_13: 15
+    person_14: 15
+    person_15: 15
+  places:
+    place_1: 15
+    place_10: 15
+    place_11: 15
+    place_5: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+    place_12: 15
+    place_13: 15
+    place_14: 15
+    place_15: 15
+  events: {}
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs:
+    entreprise_org_1: 15
+    entreprise_org_2: 15
+    entreprise_org_3: 15
+    entreprise_org_4: 15
+    entreprise_org_5: 15
+    entreprise_org_6: 15
+    entreprise_org_7: 15
+    entreprise_org_8: 15
+  ngos:
+    ngo_1: 15
+    ngo_2: 15
+  government_orgs:
+    government_org_1: 15
+    government_org_2: 15
+    government_org_3: 15
+    government_org_4: 15
+    government_org_5: 15
+    government_org_6: 15
+  educational_orgs:
+    educational_org_1: 15
+    educational_org_2: 15
+    educational_org_3: 15
+    educational_org_4: 15
+    educational_org_5: 15
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products: {}
+persons:
+  person_1:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tolabi Ekushan
+    - full_name: Kemiru Obasho
+    - full_name: Yevoli Adunreth
+    - full_name: Chiranu Obafelo
+    - full_name: Dunmari Igbesho
+    - full_name: Feyitun Arowaje
+    - full_name: Orishan Koluwade
+    - full_name: Bamideku Oshinraye
+    - full_name: Tunrayo Efuwape
+    - full_name: Jolafin Adeshuko
+    - full_name: Wunashi Olatego
+    - full_name: Kehindu Abolarin
+    - full_name: Morinsho Gbadewu
+    - full_name: Dabiku Oresanjo
+    - full_name: Ifetobi Akinderu
+  person_2:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tolarin Ekufoye
+    - full_name: Chimvelu Obashari
+    - full_name: Yenako Durosinbi
+    - full_name: Funlayo Adeshibi
+    - full_name: Kehindu Olatunjo
+    - full_name: Zivachi Mbalogu
+    - full_name: Rotinwa Adesholu
+    - full_name: Temidara Ogufemi
+    - full_name: Bolarin Ifeyinku
+    - full_name: Adunife Chidolem
+    - full_name: Wunmira Kolashade
+    - full_name: Obikelu Nwandara
+    - full_name: Ifesolami Duroyega
+    - full_name: Tinukeyo Fashogba
+    - full_name: Morindayo Ekuleshi
+  person_3:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Toluwemi Obajorin
+    - full_name: Kehindra Afolashade
+    - full_name: Iremiku Oguntaiye
+    - full_name: Bamidara Olufeyisan
+    - full_name: Yejidun Akintolure
+    - full_name: Oluwakem Adeshogba
+    - full_name: Funlayo Ebitogun
+    - full_name: Arinmola Odubanke
+    - full_name: Temiloju Ifagbenro
+    - full_name: Damilare Oshinaike
+    - full_name: Mojirayo Adetunbi
+    - full_name: Kofoworla Eshilokun
+    - full_name: Adunbiyi Ogunfowora
+    - full_name: Ronkemi Abolarin
+    - full_name: Titilope Ogundairo
+  person_4:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Keludo Obashren
+    - full_name: Tivane Mokulejo
+    - full_name: Feyisho Adunbarin
+    - full_name: Olanrek Jumotale
+    - full_name: Bamidek Orishagbo
+    - full_name: Yetosh Kolawunde
+    - full_name: Rotimi Efunshade
+    - full_name: Adeshog Temilaro
+    - full_name: Kunlayo Ogbefiran
+    - full_name: Folahan Irebamijo
+    - full_name: Wunmol Akintoshe
+    - full_name: Damilok Oshinreku
+    - full_name: Temilad Ogunfowora
+    - full_name: Bolarin Eshugbaye
+    - full_name: Ayodej Fakunmoju
+  person_5:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Feniro Obashelu
+    - full_name: Keshavi Ondrafu
+    - full_name: Zuremi Afolabi-Tesh
+    - full_name: Bivanu Okethra
+    - full_name: Damiku Eloransi
+    - full_name: Yeshola Ibunofe
+    - full_name: Chiranu Ogbelto
+    - full_name: Wafemi Adukresh
+    - full_name: Lunathi Opeshiro
+    - full_name: Goshevi Ubantel
+    - full_name: Rekanu Ifadolu
+    - full_name: Tivashi Ogunbrel
+    - full_name: Mekufa Abolenshi
+    - full_name: Zariku Etholabi
+    - full_name: Pelunko Oshivade
+  person_6:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Toluwek Dranabi
+    - full_name: Kemjiro Obasselu
+    - full_name: Feyitun Alagoro
+    - full_name: Chirevo Ondafu
+    - full_name: Bolarin Ekusha
+    - full_name: Wunaje Tirolak
+    - full_name: Adeshol Kuvensi
+    - full_name: Orimund Fasheko
+    - full_name: Temikol Agunbara
+    - full_name: Yejund Olaperi
+    - full_name: Damurin Efowale
+    - full_name: Kunvaro Igbelosh
+    - full_name: Rotijel Awunabi
+    - full_name: Zefunak Olunderi
+    - full_name: Bamijel Oshatiku
+  person_7:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tobren Ekulashi Ovindro
+    - full_name: Kemadu Oshivale Turango
+    - full_name: Dafiru Olabinjo Ekwensu
+    - full_name: Chirevo Amotekun Bashorun
+    - full_name: Gwenalu Ifedapo Orunmesh
+    - full_name: Talvero Okindaji Eshumare
+    - full_name: Zundebi Afolarin Opeshiku
+    - full_name: Ravoshi Igbalode Tumaren
+    - full_name: Fendugo Akintash Orivelu
+    - full_name: Bolekun Oshinawe Draventi
+    - full_name: Weshiro Adunbarin Okafelo
+    - full_name: Jivanto Ekundash Obaleshi
+    - full_name: Murengo Oshidavu Takelori
+    - full_name: Pelunko Abidrashi Ovundem
+    - full_name: Keshanto Oludavir Ebinoku
+  person_8:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Zelvon
+    - full_name: Kreshado
+    - full_name: Tunbayo
+    - full_name: Orivek
+    - full_name: Jalekko
+    - full_name: Dremosi
+    - full_name: Fendulay
+    - full_name: Quirano
+    - full_name: Boltesh
+    - full_name: Mafuvel
+    - full_name: Goshiray
+    - full_name: Pelunko
+    - full_name: Harivel
+    - full_name: Wondazi
+    - full_name: Teshkuro
+  person_9:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Zelvri
+    - full_name: Koshtae
+    - full_name: Brindalo
+    - full_name: Yovessi
+    - full_name: Quilara
+    - full_name: Fenduvo
+    - full_name: Tashelu
+    - full_name: Obrinay
+    - full_name: Zuveska
+    - full_name: Pelkoni
+    - full_name: Dravune
+    - full_name: Weshiko
+    - full_name: Galtovi
+    - full_name: Rimoshe
+    - full_name: Junelka
+  person_10:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Keludo
+    - full_name: Obafyn
+    - full_name: Tashkelo
+    - full_name: Zivaro
+    - full_name: Chimeko
+    - full_name: Runbayo
+    - full_name: Folashun
+    - full_name: Ekundo
+    - full_name: Jomitho
+    - full_name: Wulekay
+    - full_name: Barindu
+    - full_name: Temzuko
+    - full_name: Olanvey
+    - full_name: Keshudo
+    - full_name: Piranto
+  person_11:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Toleki
+    - full_name: Burinde
+    - full_name: Kavoshi
+    - full_name: Dremalu
+    - full_name: Zafique
+    - full_name: Olinwu
+    - full_name: Jetharo
+    - full_name: Wekundi
+    - full_name: Sulekho
+    - full_name: Chimvelo
+    - full_name: Gadunke
+    - full_name: Rofinba
+    - full_name: Yesholu
+    - full_name: Kuvanti
+    - full_name: Pemitho
+  person_12:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Drennik Holloway
+    - full_name: Tavish Corenly
+    - full_name: Brenlo Suthwick
+    - full_name: Kellam Drothune
+    - full_name: Jorvane Pellisk
+    - full_name: Caspero Winthal
+    - full_name: Maddorin Quelsey
+    - full_name: Fenwick Torbane
+    - full_name: Grellum Hastovy
+    - full_name: Parvick Dunmore
+    - full_name: Lonneth Cravish
+    - full_name: Tulliver Brensoe
+    - full_name: Weskam Dorvely
+    - full_name: Harquin Jolstep
+    - full_name: Rendol Clathune
+  person_13:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Kelvor Drantish
+    - full_name: Mabrey Tunholt
+    - full_name: Fossick Grellane
+    - full_name: Tarvon Quilsher
+    - full_name: Hendro Claspeth
+    - full_name: Brenwick Tolmane
+    - full_name: Caspero Drulvane
+    - full_name: Jothren Welmick
+    - full_name: Paldro Skenith
+    - full_name: Ruvell Ganthor
+    - full_name: Dremick Polsane
+    - full_name: Fenthor Quilbash
+    - full_name: Golvane Treshwick
+    - full_name: Sondrel Kravith
+    - full_name: Welmaro Drothsen
+  person_14:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Tarvek Glennoway
+    - full_name: Brinlo Cassoway
+    - full_name: Felton Quirade
+    - full_name: Jomber Hestival
+    - full_name: Kelvro Dunstable
+    - full_name: Pashel Wintory
+    - full_name: Grenly Torvash
+    - full_name: Daxom Pellury
+    - full_name: Wintho Cravello
+    - full_name: Rondel Fassique
+    - full_name: Bremlo Tassiver
+    - full_name: Quilven Harjento
+    - full_name: Zephro Moldaine
+    - full_name: Tondrik Vellasho
+    - full_name: Caspero Junweld
+  person_15:
+    required_attributes:
+    - full_name
+    count: 15
+    variants:
+    - full_name: Zelvara Koundish
+    - full_name: Tivona Grellaque
+    - full_name: Maelusha Drontavi
+    - full_name: Quenabi Fossheran
+    - full_name: Yolindra Charvesse
+    - full_name: Peshani Wulkero
+    - full_name: Kalithra Brenoque
+    - full_name: Rovessa Tindulai
+    - full_name: Junelka Vosherim
+    - full_name: Delisho Cranvelu
+    - full_name: Orivane Teskouri
+    - full_name: Weshala Pombrevi
+    - full_name: Fendraya Kuloshev
+    - full_name: Suvanti Glorenash
+    - full_name: Brelinka Tavorune
+places:
+  place_1:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tokhari
+    - city: Velundi
+    - city: Obasheko
+    - city: Velundara
+    - city: Zulemba
+    - city: Dravoshi
+    - city: Palekun
+    - city: Morathu
+    - city: Gwenabi
+    - city: Eshulok
+    - city: Tandiru
+    - city: Bafengo
+    - city: Lurashon
+    - city: Chimekwa
+    - city: Volanke
+  place_10:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Orivash
+    - city: Tumekri
+    - city: Basholen
+    - city: Kefundi
+    - city: Zolekam
+    - city: Draneshi
+    - city: Wupelok
+    - city: Shivanto
+    - city: Golembi
+    - city: Narethu
+    - city: Felokun
+    - city: Janteshi
+    - city: Puravon
+    - city: Ekoshim
+    - city: Brelundi
+  place_11:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Mekuvon
+    - city: Tashilbe
+    - city: Gundero
+    - city: Polevash
+    - city: Yentoku
+    - city: Shuramba
+    - city: Drelikon
+    - city: Wafentu
+    - city: Koleshbi
+    - city: Burathen
+    - city: Zivemko
+    - city: Hentolak
+    - city: Oreshvu
+    - city: Fandeku
+    - city: Luvothen
+  place_5:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Rundesha
+    - city: Kwolabi
+    - city: Teshimu
+    - city: Gaborin
+    - city: Pelitho
+    - city: Ondrafu
+    - city: Yasheko
+    - city: Brimaku
+    - city: Sulvendi
+    - city: Harufon
+    - city: Jikemba
+    - city: Wotanli
+    - city: Deshoku
+    - city: Fenthari
+    - city: Kulvashi
+  place_2:
+    required_attributes:
+    - country
+    - demonym
+    count: 15
+    variants:
+    - country: Tolundra
+      demonym: Tolundran
+    - country: Kaveshia
+      demonym: Kaveshian
+    - country: Brenolak
+      demonym: Brenolaki
+    - country: Zumareth
+      demonym: Zumarethi
+    - country: Ondivara
+      demonym: Ondivaran
+    - country: Pelkusha
+      demonym: Pelkushan
+    - country: Gashundi
+      demonym: Gashundese
+    - country: Morathen
+      demonym: Moratheni
+    - country: Veskolan
+      demonym: Veskolanese
+    - country: Tirembak
+      demonym: Tirembaki
+    - country: Duwengo
+      demonym: Duwengese
+    - country: Harufeli
+      demonym: Harufelian
+    - country: Jontekra
+      demonym: Jontekran
+    - country: Sulabendi
+      demonym: Sulabendian
+    - country: Kwothira
+      demonym: Kwothiran
+  place_3:
+    required_attributes:
+    - continent
+    - demonym
+    count: 15
+    variants:
+    - continent: Velundra
+      demonym: Velundran
+    - continent: Tharqua
+      demonym: Tharquan
+    - continent: Orivash
+      demonym: Orivashi
+    - continent: Kembrala
+      demonym: Kembralan
+    - continent: Zulorath
+      demonym: Zulorathi
+    - continent: Penvara
+      demonym: Penvaran
+    - continent: Drossima
+      demonym: Drossiman
+    - continent: Haltuven
+      demonym: Haltuven
+    - continent: Moriquet
+      demonym: Moriqueti
+    - continent: Sondriqa
+      demonym: Sondriqan
+    - continent: Brelkova
+      demonym: Brelkovan
+    - continent: Yashunda
+      demonym: Yashundan
+    - continent: Calpheris
+      demonym: Calpherisan
+    - continent: Turvenka
+      demonym: Turvenkan
+    - continent: Grothela
+      demonym: Grothelan
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velorean Sea
+    - natural_site: Thandric Ocean
+    - natural_site: Brumali Deep
+    - natural_site: Korvassian Sea
+    - natural_site: Pelundra Ocean
+    - natural_site: Drethanic Gulf
+    - natural_site: Sorvalen Sea
+    - natural_site: Maquorin Ocean
+    - natural_site: Zelphoric Deep
+    - natural_site: Crendavi Sea
+    - natural_site: Wultharen Ocean
+    - natural_site: Obrentic Sea
+    - natural_site: Galsuric Ocean
+    - natural_site: Fendroval Sea
+    - natural_site: Turmassic Ocean
+  place_6:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tokuri
+    - city: Velango
+    - city: Obafuri
+    - city: Kalimbe
+    - city: Weshanto
+    - city: Gundara
+    - city: Pelosha
+    - city: Zivanti
+    - city: Morakun
+    - city: Tashelu
+    - city: Breniku
+    - city: Yondafu
+    - city: Sulkari
+    - city: Chimova
+    - city: Dureshi
+  place_7:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Toluwara
+    - city: Gbeshiku
+    - city: Orimade
+    - city: Kethuvo
+    - city: Aduwensi
+    - city: Bamikole
+    - city: Oshivelu
+    - city: Ekundara
+    - city: Ifoweku
+    - city: Jolabemi
+    - city: Turashon
+    - city: Wekundi
+    - city: Obafiru
+    - city: Kaleshun
+    - city: Duvothi
+  place_8:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tolunke
+    - city: Gwashiri
+    - city: Tashimori
+    - city: Kelvanu
+    - city: Pesholan
+    - city: Moshekri
+    - city: Pelunwi
+    - city: Zathoru
+    - city: Ekuvane
+    - city: Jomithra
+    - city: Wenshago
+    - city: Tabirune
+    - city: Drashelu
+    - city: Kreshaba
+    - city: Lumivaro
+  place_9:
+    required_attributes:
+    - city
+    count: 15
+    variants:
+    - city: Tovunke
+    - city: Kelisho
+    - city: Barunji
+    - city: Ondafri
+    - city: Chimwala
+    - city: Gorenti
+    - city: Lusako
+    - city: Wephari
+    - city: Draniku
+    - city: Zolmari
+    - city: Teshuba
+    - city: Kavundi
+    - city: Obrinsa
+    - city: Fulekwa
+    - city: Jantovi
+  place_12:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Torweni Basin
+    - region: Kulvash Estuary
+    - region: Dremoli Flats
+    - region: Vossara Inlet
+    - region: Pethani Shallows
+    - region: Gundara Reach
+    - region: Molveki Lagoon
+    - region: Zarundi Wetlands
+    - region: Chelwara Sound
+    - region: Brivano Marsh
+    - region: Ondaku Strait
+    - region: Fenturi Basin
+    - region: Kaleshi Lagoon
+    - region: Wothara Embayment
+    - region: Suvendi Narrows
+  place_13:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Telvorn Strand
+    - natural_site: Kessoway Shore
+    - natural_site: Drimmol Spit
+    - natural_site: Palquey Reach
+    - natural_site: Vosserin Cove
+    - natural_site: Linthari Beach
+    - natural_site: Grothane Shoal
+    - natural_site: Welmick Point
+    - natural_site: Sundavar Strand
+    - natural_site: Crelbin Shore
+    - natural_site: Tassoway Spit
+    - natural_site: Fendrake Beach
+    - natural_site: Quilmaren Reach
+    - natural_site: Brovanti Cove
+    - natural_site: Halderin Strand
+  place_14:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Korvel Shoal
+    - region: Brasso Quay
+    - region: Dulmet Reach
+    - region: Tarvon Spit
+    - region: Galwey Bight
+    - region: Ondara Jetty
+    - region: Pemrik Cove
+    - region: Sulago Wharf
+    - region: Kethani Point
+    - region: Vorath Inlet
+    - region: Jomari Bluff
+    - region: Tindalo Berth
+    - region: Ravoki Shelf
+    - region: Chelago Basin
+    - region: Muvari Dock
+  place_15:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Vorundi shoal-draft
+    - region: Takelu deepwater
+    - region: Obrinash open-sea
+    - region: Kalundi offshore
+    - region: Mevathi deep-channel
+    - region: Zulkari outer-harbor
+    - region: Tondavu deep-berth
+    - region: Gashelu seaward
+    - region: Pirathi deep-draft
+    - region: Wekundi ocean-reach
+    - region: Jolathi deep-quay
+    - region: Surendi tidal-basin
+    - region: Bremaku deep-anchorage
+    - region: Ondavi channel-port
+    - region: Felunki deep-water
+entreprise_orgs:
+  entreprise_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tovari Bank
+    - name: Kelund Financial
+    - name: Brequo Bank
+    - name: Ossira Banking Group
+    - name: Palvex Bank
+    - name: Durnathi Finance
+    - name: Zolkari Bank
+    - name: Fendriq Bank
+    - name: Quorath Financial
+    - name: Melvari Bank
+    - name: Teskoni Bank
+    - name: Lureph Banking Corp
+    - name: Grivano Bank
+    - name: Weskari Financial
+    - name: Bondelu Bank
+  entreprise_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvane National Lending House
+    - name: Tembari Federal Savings Guild
+    - name: Ondalu Sovereign Credit Bureau
+    - name: Jalvek Central Trust Consortium
+    - name: Mekunda Heritage Banking Corp
+    - name: Pashori Commonwealth Depository
+    - name: Zulkari Founders Reserve Bank
+    - name: Draventi State Commerce House
+    - name: Obinara Chartered Deposit League
+    - name: Fenduvo Pioneer Savings Institute
+    - name: Kaleshi Grand Treasury Bank
+    - name: Tumaren Civic Finance House
+    - name: Weshabi Provincial Credit Union
+    - name: Golthari Ancestral Banking Society
+    - name: Rivanu Capital Holdings Bank
+  entreprise_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velorath Bank
+    - name: Kordane Financial Group
+    - name: Tulmera Bank
+    - name: Brivosh Capital Bank
+    - name: Ossivane Trust Bank
+    - name: Pelkori Bank
+    - name: Dranvex Banking Corp
+    - name: Sulkara Bank
+    - name: Nimbreth Financial Bank
+    - name: Torvane Bank
+    - name: Grellum Bank
+    - name: Fendara Banking House
+    - name: Quorath Bank
+    - name: Zelvori Trust Bank
+    - name: Maldrik Bank
+  entreprise_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velthari Systems
+    - name: Crendox
+    - name: Pluvarn Technologies
+    - name: Quorbit
+    - name: Tessalink
+    - name: Brimolec
+    - name: Kethura Digital
+    - name: Orvantis
+    - name: Zelphin Computing
+    - name: Draxelu
+    - name: Fentorak
+    - name: Glivosyn
+    - name: Tumeric Labs
+    - name: Wenshara Tech
+    - name: Poldivex
+  entreprise_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Coloquint
+    - name: Vaultrik
+    - name: Nexorath
+    - name: Datalynk
+    - name: Servoquil
+    - name: Rackenthor
+    - name: Gridvane
+    - name: Hubrenix
+    - name: Corespath
+    - name: Plivant
+    - name: Trunqo
+    - name: Bytesheld
+    - name: Nodivex
+    - name: Clusteryn
+    - name: Portivane
+  entreprise_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Vothek
+    - name: Crendal
+    - name: Plixaro
+    - name: Tuvarn
+    - name: Quorath
+    - name: Brimolux
+    - name: Zelkoni
+    - name: Dravish
+    - name: Korpeth
+    - name: Wyndalo
+    - name: Solvane
+    - name: Grithex
+    - name: Fenturi
+    - name: Oblicor
+    - name: Jantrek
+  entreprise_org_7:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Korvathi Refinery
+    - name: Tembalu Petroworks
+    - name: Ondashi Refining Complex
+    - name: Zulkaro Refinery
+    - name: Baventi Oil Refinery
+    - name: Pelkuran Refinery
+    - name: Jothavi Petrochemical Works
+    - name: Mekunda Refinery
+    - name: Sorvani Crude Refinery
+    - name: Galthumo Refinery
+    - name: Wekashi Refining Hub
+    - name: Turbelko Refinery
+    - name: Dravoshi Petroworks
+    - name: Kembari Refinery
+    - name: Olthundi Refining Plant
+  entreprise_org_8:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velkora Films
+    - name: Cinelago
+    - name: Brightshore Pictures
+    - name: Toruvan Studios
+    - name: Kelvari Screen
+    - name: Dramaveld
+    - name: Suncoast Reels
+    - name: Palori Motion
+    - name: Zephmark Cinema
+    - name: Lumivane Productions
+    - name: Talorik Pictures
+    - name: Goldshore Reel
+    - name: Korvani Films
+    - name: Brinova Screen
+    - name: Harborvane Studios
+ngos:
+  ngo_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Velundra Chapel Ensemble
+    - name: Toranith Sacred Voices Collective
+    - name: Chorale of the Blessed Korathi
+    - name: Basilica of Mevorn Singers
+    - name: Sanctuary of Drethala Choral Society
+    - name: Tabernacle of Ossivane Choir
+    - name: Shrine of Pelundro Vocal Fellowship
+    - name: Oratory of Kalisseth Chorale
+    - name: Vestry of Thuranok Hymnal Circle
+    - name: Chancel of Brivossa Choral Guild
+    - name: Priory of Zelkantha Voices
+    - name: Nave of Doranthi Singers Assembly
+    - name: Cloister of Yevantho Choral Trust
+    - name: Minster of Golvaren Vocal Accord
+    - name: Spire of Tessivane Choir Fellowship
+  ngo_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Kolavibe
+    - name: Sundajam
+    - name: Tropifunk
+    - name: Brindavello
+    - name: Wulasound
+    - name: Djenkata
+    - name: Palmbassa
+    - name: Highcoast Riddim
+    - name: Zoruwave
+    - name: Tambalore
+    - name: Kwelashift
+    - name: Sahelpulse
+    - name: Ogungroove
+    - name: Bantuflo
+    - name: Jolofrhythm
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Koruvel Performing Arts Pavilion
+    - name: Thandori Cultural Playhouse
+    - name: Obashelu Heritage Stage
+    - name: Velundi Public Arts Forum
+    - name: Makureth Grand Performance Hall
+    - name: Zolanti Civic Arts Centre
+    - name: Durashel Creative Arts Amphitheatre
+    - name: Pemoku State Dramaturgy House
+    - name: Wanekri Arts and Culture Rotunda
+    - name: Jolabesh Public Stage Complex
+    - name: Turiven Cultural Performance Arena
+    - name: Gashundi Civic Playhouse
+    - name: Orivane Heritage Arts Venue
+    - name: Kelitho Public Arts Conservatory
+    - name: Bamureshi Cultural Stage Hall
+  government_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Civic Hall of Contemporary Visual Works
+    - name: Thandoral Public Arts Pavilion
+    - name: Kessovu State Gallery of Living Art
+    - name: Obrenthic Cultural Exhibition Centre
+    - name: Velundra Heritage Arts Museum
+    - name: Paloqui Municipal Gallery of New Creations
+    - name: Draventi Public House of Visual Culture
+    - name: Zulkari State Museum of Present-Day Art
+    - name: Morashel Civic Arts Exhibition Hall
+    - name: Fendurath Public Gallery of Recent Works
+    - name: Gonthari Cultural Arts Showcase Centre
+    - name: Wephandri State Visual Arts Pavilion
+    - name: Lurembai Civic Gallery of Current Expression
+    - name: Tavorni Public Museum of Emerging Art
+    - name: Chelundro Heritage Gallery of New Forms
+  government_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Gallery of Koruven Heritage on Talmek Road
+    - name: Pavilion for Ondari Cultural Works on Jessava Lane
+    - name: House of Zulathi Visual Traditions on Mekwara Avenue
+    - name: Forum for Tembari Creative Legacy on Polshen Street
+    - name: Hall of Vundeko Sculptural Arts on Rilmana Boulevard
+    - name: Centre for Obashiri Ancestral Crafts on Dunvelo Way
+    - name: Institute of Kalundi Expressive Forms on Gethura Crescent
+    - name: Museum of Wapeshi Diasporic Arts on Torvane Terrace
+    - name: Conservatory of Nelukha Folk Heritage on Brimasa Square
+    - name: Archive of Tumaren Indigenous Artistry on Chelkova Passage
+    - name: Atelier for Goshundi Ceremonial Arts on Ravundi Close
+    - name: Salon of Mekitho Textile Heritage on Jelvara Promenade
+    - name: Rotunda for Obenashi Performing Traditions on Kulvane Row
+    - name: Quarters for Zembali Decorative Heritage on Pasheko Drive
+    - name: Chambers of Tiruvandi Mosaic Arts on Wenshala Plaza
+  government_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Heritage Pavilion and the Kefolu Obaran Hall of Ancestral Traditions
+    - name: Civic Archive and the Talundi Weyoro Institute of Cultural Memory
+    - name: Public Gallery and the Desharo Olufemi Centre for Indigenous Heritage
+    - name: State Collection House and the Bamiduro Akanwe Forum of Folk Arts
+    - name: Cultural Depository and the Iroko Fadunsi Pavilion of Living Traditions
+    - name: Peoples Archive and the Solarin Ekundi Centre for Oral Heritage
+    - name: Municipal Exhibition Hall and the Ogunbayo Teriku Institute of Craft Legacy
+    - name: Civic Heritage Wing and the Adunola Reshiku Gallery of Traditional Arts
+    - name: Public Antiquities Hall and the Fenuko Adeshari Centre for Ritual Heritage
+    - name: State Cultural Repository and the Jolamu Obafiri Pavilion of Textile Arts
+    - name: Regional Heritage Museum and the Tashiru Kolawande Centre for Drum Traditions
+    - name: Civic Arts Conservatory and the Wunmila Oketaro Forum of Sculptural Heritage
+    - name: Public Legacy Hall and the Dabiku Olanrewaju Institute of Masquerade Arts
+    - name: Municipal Traditions Archive and the Reshola Igbadun Centre for Weaving Heritage
+    - name: State Patrimony Gallery and the Funlayo Adetiku Pavilion of Dance Traditions
+  government_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolabi Visual Arts Pavilion
+    - name: Keshuro Gallery of Contemporary Works
+    - name: Obafune Cultural Arts Centre
+    - name: Duranto Heritage Art Hall
+    - name: Velundi Creative Arts Museum
+    - name: Iremoja Gallery of Living Arts
+    - name: Tanvelo Fine Arts Conservatory
+    - name: Ogunara Public Art Showcase
+    - name: Zulendi Arts and Sculpture House
+    - name: Bamiduro Gallery of Modern Expression
+    - name: Kolathu Visual Heritage Centre
+    - name: Ekundayo Arts Collective Gallery
+    - name: Wapeshi Gallery of Cultural Works
+    - name: Orishan Contemporary Art Pavilion
+    - name: Fadunsi Open Arts Gallery
+  government_org_6:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Tolabri Conservatoire Hall
+    - name: Kavundi Arts Pavilion
+    - name: Orunbay Cultural Centre
+    - name: Zelathi Music Forum
+    - name: Birashon Performing Arts House
+    - name: Tumaren Concert Grounds
+    - name: Wesholi Arts Auditorium
+    - name: Galundi Heritage Stage
+    - name: Pekuran Music Institute
+    - name: Dravoshi Cultural Amphitheatre
+    - name: Lunwabi Performance Centre
+    - name: Korathen Arts Complex
+    - name: Shivundi Recital Hall
+    - name: Obanthari Music Pavilion
+    - name: Yekulan Conservatory House
+educational_orgs:
+  educational_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: TUNVEK
+    - name: KORATH
+    - name: BRELISU
+    - name: DRAVUM
+    - name: PELKONI
+    - name: ZOTHARU
+    - name: MIREKU
+    - name: VONDALI
+    - name: GULTERI
+    - name: SHENAKU
+    - name: TORBELU
+    - name: KUVASHI
+    - name: WENPORI
+    - name: JALEKTU
+    - name: FENDOKU
+  educational_org_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: KORIDU
+    - name: BRELAGO
+    - name: VOSHARI
+    - name: DRANEKU
+    - name: FELITAM
+    - name: GULPHEN
+    - name: MOLVARI
+    - name: ZENTAKU
+    - name: PHADORI
+    - name: WESKALU
+    - name: JONTIRA
+    - name: CRELAVU
+    - name: HASPENU
+    - name: TORBELI
+    - name: QUENDAR
+  educational_org_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: TUNVOSCI
+    - name: KORATEP
+    - name: BELVUTECH
+    - name: DRANISUT
+    - name: WAPELOST
+    - name: JOMISTEK
+    - name: GELVARIN
+    - name: PUNORATH
+    - name: ZEKITHOS
+    - name: FANDUSCI
+    - name: HOLVUNET
+    - name: MEKROLIS
+    - name: TABORUSK
+    - name: RILVENAP
+    - name: QUENDOSK
+  educational_org_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: TUNVED
+    - name: KORSEP
+    - name: BRELITEC
+    - name: VONDAPU
+    - name: JALUTED
+    - name: CROTHEL
+    - name: PEMISUT
+    - name: WALGORI
+    - name: DRANTHU
+    - name: SORVEKA
+    - name: TILMOCH
+    - name: GAPUNED
+    - name: HELVOTI
+    - name: BRUNEKA
+    - name: ZOLPETH
+  educational_org_5:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Toluvane Choral Ensemble
+    - name: Kesharo Vocal Society
+    - name: Obindara Community Singers
+    - name: Wulathi Chamber Chorus
+    - name: Drenaku Harmonic Collective
+    - name: Pelitho Voices Conservatory
+    - name: Jumaren Cantata Guild
+    - name: Orivash Choral Fellowship
+    - name: Tanelku Polyphonic Circle
+    - name: Besholan Vocal Academy
+    - name: Zurikata Chorale Society
+    - name: Fendralo Singing Ensemble
+    - name: Kalishobe Choral Institute
+    - name: Morathu Vocal Consort
+    - name: Yendaku Chorus Collective

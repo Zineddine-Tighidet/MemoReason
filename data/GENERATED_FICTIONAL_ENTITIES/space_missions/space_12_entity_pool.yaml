@@ -1,0 +1,343 @@
+metadata:
+  schema_version: 2
+  provider: anthropic
+  model: claude-opus-4-6
+  temperature: 0.0
+  candidates_per_reference: 15
+  document_id: space_12
+  document_theme: space_missions
+  complete: true
+  generated_at: '2026-08-21T00:00:00+00:00'
+coverage:
+  persons: {}
+  places:
+    place_1: 15
+    place_2: 15
+    place_3: 15
+    place_4: 15
+    place_5: 15
+    place_6: 15
+    place_7: 15
+    place_8: 15
+    place_9: 15
+  events:
+    event_1: 15
+    event_2: 15
+    event_3: 15
+    event_4: 15
+  organizations: {}
+  military_orgs: {}
+  entreprise_orgs: {}
+  ngos: {}
+  government_orgs:
+    government_org_1: 15
+  educational_orgs: {}
+  media_orgs: {}
+  awards: {}
+  legals: {}
+  products:
+    product_1: 15
+places:
+  place_1:
+    required_attributes:
+    - demonym
+    count: 15
+    variants:
+    - demonym: Velundric
+    - demonym: Tharqeni
+    - demonym: Broskavi
+    - demonym: Celdunish
+    - demonym: Pomrathi
+    - demonym: Zelvoran
+    - demonym: Kesthari
+    - demonym: Drulvenic
+    - demonym: Onthari
+    - demonym: Felvunic
+    - demonym: Galtreshan
+    - demonym: Molvuric
+    - demonym: Plendavi
+    - demonym: Quoreshi
+    - demonym: Tilvosian
+  place_2:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthari
+    - natural_site: Obrundos
+    - natural_site: Kessivane
+    - natural_site: Thalmoqur
+    - natural_site: Drennifax
+    - natural_site: Pylostren
+    - natural_site: Gavorinth
+    - natural_site: Zulmerak
+    - natural_site: Wenthoril
+    - natural_site: Cralduven
+    - natural_site: Brossikane
+    - natural_site: Molvethur
+    - natural_site: Tarquinex
+    - natural_site: Helvondri
+    - natural_site: Fendraquo
+  place_3:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Korundex
+    - natural_site: Thasseron
+    - natural_site: Brivolune
+    - natural_site: Zelphara
+    - natural_site: Ondravex
+    - natural_site: Pelmithos
+    - natural_site: Crytheon
+    - natural_site: Jolvaris
+    - natural_site: Tundrelk
+    - natural_site: Mavoreen
+    - natural_site: Galtherion
+    - natural_site: Syrphelo
+    - natural_site: Dranoquil
+    - natural_site: Felzurath
+    - natural_site: Vothrenix
+  place_4:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthorin
+    - natural_site: Crellundis
+    - natural_site: Jorvaphen
+    - natural_site: Thandolex
+    - natural_site: Quilmaren
+    - natural_site: Brossivane
+    - natural_site: Peldraxis
+    - natural_site: Wynthoral
+    - natural_site: Golvithen
+    - natural_site: Dremmacur
+    - natural_site: Fentaroque
+    - natural_site: Helvindor
+    - natural_site: Zarculeth
+    - natural_site: Mospheran
+    - natural_site: Kelvadune
+  place_5:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Veldorath
+    - natural_site: Crymolus
+    - natural_site: Brivanthos
+    - natural_site: Zelkuran
+    - natural_site: Orvethane
+    - natural_site: Plyndara
+    - natural_site: Kessovarn
+    - natural_site: Dralmothe
+    - natural_site: Yultherion
+    - natural_site: Golvantis
+    - natural_site: Weskurath
+    - natural_site: Torbeline
+    - natural_site: Fendralok
+    - natural_site: Quetharis
+    - natural_site: Molvurath
+  place_6:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Therova
+    - natural_site: Celdune
+    - natural_site: Brythara
+    - natural_site: Korvalis
+    - natural_site: Pelmara
+    - natural_site: Draventh
+    - natural_site: Ossulane
+    - natural_site: Tarvique
+    - natural_site: Grendulis
+    - natural_site: Vothane
+    - natural_site: Sulkaris
+    - natural_site: Melvora
+    - natural_site: Quendara
+    - natural_site: Hespuli
+    - natural_site: Zanthrel
+  place_7:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Veldros
+    - natural_site: Korrath
+    - natural_site: Thulvane
+    - natural_site: Pyshara
+    - natural_site: Obrenth
+    - natural_site: Zelkuri
+    - natural_site: Dravonis
+    - natural_site: Quelmith
+    - natural_site: Sarveen
+    - natural_site: Holthari
+    - natural_site: Bryndok
+    - natural_site: Felgorin
+    - natural_site: Weskara
+    - natural_site: Talneph
+    - natural_site: Grivosh
+  place_8:
+    required_attributes:
+    - region
+    count: 15
+    variants:
+    - region: Velhari Expanse
+    - region: Torbenic Reach
+    - region: Calduven Array
+    - region: Phessori Circuit
+    - region: Grothane Drift
+    - region: Lunavar Cluster
+    - region: Kethosi Span
+    - region: Drenvali Sweep
+    - region: Orvanic Loop
+    - region: Tessuri Gyre
+    - region: Brelkoni Veil
+    - region: Zanthuri Hollow
+    - region: Molvaren Shell
+    - region: Quirathi Bounds
+    - region: Fendrosi Cradle
+  place_9:
+    required_attributes:
+    - natural_site
+    count: 15
+    variants:
+    - natural_site: Velthara
+    - natural_site: Korindel
+    - natural_site: Brytheon
+    - natural_site: Solmarak
+    - natural_site: Thanduri
+    - natural_site: Orvellis
+    - natural_site: Zephkora
+    - natural_site: Lumethon
+    - natural_site: Dranthiel
+    - natural_site: Pelluvax
+    - natural_site: Cythoran
+    - natural_site: Wenvaris
+    - natural_site: Galthenor
+    - natural_site: Reskuvia
+    - natural_site: Moltheryn
+events:
+  event_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Driftarn
+    - name: Quelsar
+    - name: Farwend
+    - name: Threxol
+    - name: Vantrek
+    - name: Skydrel
+    - name: Vortanex
+    - name: Celvarn
+    - name: Orbivane
+    - name: Tralcen
+    - name: Wyndsor
+    - name: Kelphar
+    - name: Zendrove
+    - name: Bolthen
+    - name: Relvion
+  event_2:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Dawnseeker 1
+    - name: Farglint 1
+    - name: Stellapex 1
+    - name: Voidtrace 1
+    - name: Lumivane 1
+    - name: Skythral 1
+    - name: Orbwend 1
+    - name: Celvara 1
+    - name: Deepmark 1
+    - name: Solwing 1
+    - name: Pathkern 1
+    - name: Driftholm 1
+    - name: Quensar 1
+    - name: Flarepath 1
+    - name: Tenvault 1
+  event_3:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Drifter 2
+    - name: Farscout 2
+    - name: Celnavix 2
+    - name: Starlance 2
+    - name: Deepwander 2
+    - name: Voidreach 2
+    - name: Skythread 2
+    - name: Orbweave 2
+    - name: Soltrail 2
+    - name: Pathglint 2
+    - name: Lumivane 2
+    - name: Crestward 2
+    - name: Duskpulse 2
+    - name: Wavekin 2
+    - name: Glintmark 2
+  event_4:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Drifters
+    - name: Farwanders
+    - name: Solanauths
+    - name: Voidcrossers
+    - name: Starlancers
+    - name: Deepfarers
+    - name: Outriders
+    - name: Heliopaths
+    - name: Skyweavers
+    - name: Duskwalkers
+    - name: Rimgliders
+    - name: Veilrunners
+    - name: Edgeseekers
+    - name: Gapstriders
+    - name: Boundleapers
+government_orgs:
+  government_org_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: COSPAR
+    - name: Velthari Space Directorate
+    - name: Orenthal Aeronautics Bureau
+    - name: Kelduran Space Authority
+    - name: Tarvonis Orbital Commission
+    - name: Brethanic Spaceflight Agency
+    - name: Draloquin Aerospace Office
+    - name: Zenthari Exploration Directorate
+    - name: Pelmoran Flight Administration
+    - name: Quorvane Space Operations Bureau
+    - name: Haldrennic Aerospace Directorate
+    - name: Solvari Orbital Affairs Agency
+    - name: Crethuna Space Commission
+    - name: Wyndolar Aeronautics Authority
+    - name: Feltranic Spaceflight Directorate
+products:
+  product_1:
+    required_attributes:
+    - name
+    count: 15
+    variants:
+    - name: Farvoyant
+    - name: Deepreach
+    - name: Outveil
+    - name: Skeldara
+    - name: Lumivect
+    - name: Pellithorn
+    - name: Duskwander
+    - name: Celvaris
+    - name: Traloquin
+    - name: Vorspiel
+    - name: Nethergaze
+    - name: Quilspar
+    - name: Brintova
+    - name: Helvadrift
+    - name: Zenolark

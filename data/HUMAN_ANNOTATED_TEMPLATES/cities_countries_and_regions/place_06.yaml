@@ -4,82 +4,35 @@ document:
   source: wikipedia
   wikipedia_title: Germany
   wikipedia_url: https://en.wikipedia.org/wiki/Germany
-  original_document: 'Germany, officially the Federal Republic of Germany, is a country in Western and Central Europe. It
-    lies between the Baltic Sea and the North Sea to the north with the Alps to the south. Its sixteen constituent states
-    have a total population of over 82 million, making it the most populous member state of the European Union. Germany borders
-    Denmark to the north; Poland and the Czech Republic to the east; Austria and Switzerland to the south; and France, Luxembourg,
-    Belgium, and the Netherlands to the west. The nation''s capital and most populous city is Berlin and its main financial
-    centre is Frankfurt; the largest urban area is the Ruhr.
+  original_document: 'Germany, officially the Federal Republic of Germany, is a country in Western and Central Europe. It lies between the Baltic Sea and the North Sea to the north with the Alps to the south. Its sixteen constituent states have a total population of over 82 million, making it the most populous member state of the European Union. Germany borders Denmark to the north; Poland and the Czech Republic to the east; Austria and Switzerland to the south; and France, Luxembourg, Belgium, and the Netherlands to the west. The nation''s capital and most populous city is Berlin and its main financial centre is Frankfurt; the largest urban area is the Ruhr.
 
 
-    Settlement in the territory of modern Germany began in the Lower Paleolithic, with various tribes inhabiting it from the
-    Neolithic onward, chiefly the Celts, and Germanic tribes inhabiting the north. Romans named the area Germania. In 962,
-    the Kingdom of Germany formed the bulk of the Holy Roman Empire. During the 16th century, northern German regions became
-    the centre of the Protestant Reformation. Following the Napoleonic Wars and the dissolution of the Holy Roman Empire in
-    1806, the German Confederation was formed in 1815.
+    Settlement in the territory of modern Germany began in the Lower Paleolithic, with various tribes inhabiting it from the Neolithic onward, chiefly the Celts, and Germanic tribes inhabiting the north. Romans named the area Germania. In 962, the Kingdom of Germany formed the bulk of the Holy Roman Empire. During the 16th century, northern German regions became the centre of the Protestant Reformation. Following the Napoleonic Wars and the dissolution of the Holy Roman Empire in 1806, the German Confederation was formed in 1815.
 
 
-    Unification of Germany into the modern nation-state, led by Prussia, established the German Empire in 1871. After World
-    War I and a revolution, the Empire was replaced by the Weimar Republic. The Nazi rise to power in 1933 led to the establishment
-    of a totalitarian dictatorship, World War II, and the Holocaust. In 1949, after the war and Allied occupation, Germany
-    was organised into two separate polities with limited sovereignty: the Federal Republic of Germany (FRG), or West Germany,
-    and the German Democratic Republic (GDR), or East Germany. The FRG was a founding member of the European Economic Community,
-    while the GDR was a communist Eastern Bloc state and a founding member of the Warsaw Pact. After the fall of the communist
-    led-government in East Germany, German reunification saw the former East German states join the FRG on 3 October 1990.
+    Unification of Germany into the modern nation-state, led by Prussia, established the German Empire in 1871. After World War I and a revolution, the Empire was replaced by the Weimar Republic. The Nazi rise to power in 1933 led to the establishment of a totalitarian dictatorship, World War II, and the Holocaust. In 1949, after the war and Allied occupation, Germany was organised into two separate polities with limited sovereignty: the Federal Republic of Germany (FRG), or West Germany, and the German Democratic Republic (GDR), or East Germany. The FRG was a founding member of the European Economic Community, while the GDR was a communist Eastern Bloc state and a founding member of the Warsaw Pact. After the fall of the communist led-government in East Germany, German reunification saw the former East German states join the FRG on 3 October 1990.
 
 
-    Germany is a developed country with a strong economy; it has the largest economy in Europe by nominal GDP. As a major
-    force in several industrial, scientific and technological sectors, Germany is both the world''s third-largest exporter
-    and third-largest importer. Widely considered a great power, Germany is part of multiple international organisations and
-    forums. It has the third-highest number of UNESCO World Heritage Sites: 55, of which 52 are cultural.'
-  document_to_annotate: '[Germany; place_1.country], officially the [Federal Republic of Germany; place_19.country], is a
-    country in [Western and Central Europe; place_2.region]. It lies between the [Baltic Sea; place_3.natural_site] and the
-    [North Sea; place_4.natural_site] to the north with the [Alps; place_5.natural_site] to the south. Its [sixteen; number_6.str]
-    constituent states have a total population of over [82; number_5.int] million, making it the most populous member state
-    of the [European Union; government_org_1.name]. [Germany; place_1.country] borders [Denmark; place_6.country] to the north;
-    [Poland; place_7.country] and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland;
-    place_10.country] to the south; and [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country],
-    and the [Netherlands; place_14.country] to the west. The nation''s capital and most populous city is [Berlin; place_15.city]
-    and its main financial centre is [Frankfurt; place_16.city]; the largest urban area is the [Ruhr; place_17.region].
+    Germany is a developed country with a strong economy; it has the largest economy in Europe by nominal GDP. As a major force in several industrial, scientific and technological sectors, Germany is both the world''s third-largest exporter and third-largest importer. Widely considered a great power, Germany is part of multiple international organisations and forums. It has the third-highest number of UNESCO World Heritage Sites: 55, of which 52 are cultural.'
+  document_to_annotate: '[Germany; place_1.country], officially the [Federal Republic of Germany; place_19.country], is a country in [Western and Central Europe; place_2.region]. It lies between the [Baltic Sea; place_3.natural_site] and the [North Sea; place_4.natural_site] to the north with the [Alps; place_5.natural_site] to the south. Its [sixteen; number_6.str] constituent states have a total population of over [82; number_5.int] million, making it the most populous member state of the [European Union; government_org_1.name]. [Germany; place_1.country] borders [Denmark; place_6.country] to the north; [Poland; place_7.country] and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland; place_10.country] to the south; and [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country], and the [Netherlands; place_14.country] to the west. The nation''s capital and most populous city is [Berlin; place_15.city] and its main financial centre is [Frankfurt; place_16.city]; the largest urban area is the [Ruhr; place_17.region].
 
 
-    Settlement in the territory of modern [Germany; place_1.country] began in the Lower Paleolithic, with various tribes inhabiting
-    it from the Neolithic onward, chiefly the [Celts; place_22.demonym], and [Germanic; place_1.demonym] tribes inhabiting
-    the north. [Romans; place_22.demonym] named the area [Germania; place_27.country]. In [962; temporal_1.year], the [Kingdom
-    of Germany; place_24.country] formed the bulk of the [Holy Roman Empire; place_23.country]. During the [16th; number_7.int]
-    century, northern [German; place_1.demonym] regions became the centre of the [Protestant Reformation; event_1.name]. Following
-    the [Napoleonic Wars; event_2.name] and the dissolution of the [Holy Roman Empire; place_23.country] in [1806; temporal_3.year],
-    the [German Confederation; place_26.country] was formed in [1815; temporal_4.year].
+    Settlement in the territory of modern [Germany; place_1.country] began in the Lower Paleolithic, with various tribes inhabiting it from the Neolithic onward, chiefly the [Celts; place_22.demonym], and [Germanic; place_1.demonym] tribes inhabiting the north. [Romans; place_22.demonym] named the area [Germania; place_27.country]. In [962; temporal_1.year], the [Kingdom of Germany; place_24.country] formed the bulk of the [Holy Roman Empire; place_23.country]. During the [16th; number_7.int] century, northern [German; place_1.demonym] regions became the centre of the [Protestant Reformation; event_1.name]. Following the [Napoleonic Wars; event_2.name] and the dissolution of the [Holy Roman Empire; place_23.country] in [1806; temporal_3.year], the [German Confederation; place_26.country] was formed in [1815; temporal_4.year].
 
 
-    Unification of [Germany; place_1.country] into the modern state, led by [Prussia; place_18.region], established the [German
-    Empire; place_25.country] in [1871; temporal_5.year]. After [World War I; event_3.name] and [a revolution; event_6.name],
-    [the Empire; place_25.country] was replaced by the [Weimar Republic; place_28.country]. The [Nazi; government_org_7.name]
-    rise to power in [1933; temporal_6.year] led to the establishment of a totalitarian dictatorship, [World War II; event_4.name],
-    and the [Holocaust; event_5.name]. In [1949; temporal_7.year], after the war and [Allied; military_org_2.name] occupation,
-    [Germany; place_1.country] was organised into separate polities with limited sovereignty: the [Federal Republic of Germany
-    (FRG); place_19.country], and the [German Democratic Republic (GDR); place_20.country]. The [FRG; place_19.country] was
-    a founding member of the [European Economic Community; government_org_6.name], while the [GDR; place_20.country] was a
-    [Eastern Bloc; government_org_8.name] state and a founding member of the [Warsaw Pact; military_org_1.name]. After the
-    fall of the government in [East Germany; place_20.country], [German; place_1.demonym] [reunification; event_6.name] saw
-    the former [East German; place_20.demonym] states join the [FRG; place_19.country] on [3 October 1990; temporal_8.date].
+    Unification of [Germany; place_1.country] into the modern state, led by [Prussia; place_18.region], established the [German Empire; place_25.country] in [1871; temporal_5.year]. After [World War I; event_3.name] and [a revolution; event_6.name], [the Empire; place_25.country] was replaced by the [Weimar Republic; place_28.country]. The [Nazi; government_org_7.name] rise to power in [1933; temporal_6.year] led to the establishment of a totalitarian dictatorship, [World War II; event_4.name], and the [Holocaust; event_5.name]. In [1949; temporal_7.year], after the war and [Allied; military_org_2.name] occupation, [Germany; place_1.country] was organised into separate polities with limited sovereignty: the [Federal Republic of Germany (FRG); place_19.country], and the [German Democratic Republic (GDR); place_20.country]. The [FRG; place_19.country] was a founding member of the [European Economic Community; government_org_6.name], while the [GDR; place_20.country] was a [Eastern Bloc; government_org_8.name] state and a founding member of the [Warsaw Pact; military_org_1.name]. After the fall of the government in [East Germany; place_20.country], [German; place_1.demonym] [reunification;
+    event_6.name] saw the former [East German; place_20.demonym] states join the [FRG; place_19.country] on [3 October 1990; temporal_8.date].
 
 
-    [Germany; place_1.country] is a developed country with a strong economy; it has the largest economy in [Europe; place_21.continent]
-    by nominal GDP. As a major force in several industrial, scientific and technological sectors, [Germany; place_1.country]
-    is both one the world''s largest exporters and importers. Widely considered a great power, [Germany; place_1.country]
-    is part of multiple international organisations and forums. It has many [UNESCO; ngo_1.name] World Heritage Sites: [55;
-    number_3.int], of which [52; number_4.int] are cultural.'
+    [Germany; place_1.country] is a developed country with a strong economy; it has the largest economy in [Europe; place_21.continent] by nominal GDP. As a major force in several industrial, scientific and technological sectors, [Germany; place_1.country] is both one the world''s largest exporters and importers. Widely considered a great power, [Germany; place_1.country] is part of multiple international organisations and forums. It has many [UNESCO; ngo_1.name] World Heritage Sites: [55; number_3.int], of which [52; number_4.int] are cultural.'
   relations: []
   rules:
   - 'number_6.str > 1 # "sixteen constituent states" is plural'
   - 'number_5.int > 1 # population in millions, must be plural'
   - 'number_3.int > 1 # plural mention "Sites"'
   - 'number_4.int > 1 # plural mention of cultural sites'
-  - 'century_of(temporal_1.year) < number_7.int # Kingdom of Germany formed in 962 (10th century); Protestant Reformation
-    in 16th century; gap of 5 centuries'
-  - 'century_of(temporal_3.year) > number_7.int # dissolution of HRE in 1806 is in the 19th century, 3 centuries after the
-    16th'
+  - 'century_of(temporal_1.year) < number_7.int # Kingdom of Germany formed in 962 (10th century); Protestant Reformation in 16th century; gap of 5 centuries'
+  - 'century_of(temporal_3.year) > number_7.int # dissolution of HRE in 1806 is in the 19th century, 3 centuries after the 16th'
   num_questions: 12
   questions:
   - question_id: place_06_q01
@@ -97,8 +50,7 @@ document:
     answer_type: invariant
     reasoning_chain:
     - 1. The document states that settlement in the territory of modern [Germany; place_1.country] began in the Lower Paleolithic.
-    reasoning_chain_text: 1. The document states that settlement in the territory of modern [Germany; place_1.country] began
-      in the Lower Paleolithic.
+    reasoning_chain_text: 1. The document states that settlement in the territory of modern [Germany; place_1.country] began in the Lower Paleolithic.
   - question_id: place_06_q03
     question: What is the official language of [Germany; place_1.country]?
     question_type: extractive
@@ -116,11 +68,9 @@ document:
     answer: number_3.int - number_4.int
     answer_type: variant
     reasoning_chain:
-    - 1. The document states [Germany; place_1.country] has [55; number_3.int] World Heritage Sites total, of which [52; number_4.int]
-      are cultural.
+    - 1. The document states [Germany; place_1.country] has [55; number_3.int] World Heritage Sites total, of which [52; number_4.int] are cultural.
     - 2. Non-cultural sites = [55; number_3.int] - [52; number_4.int] = 2.
-    reasoning_chain_text: '1. The document states [Germany; place_1.country] has [55; number_3.int] World Heritage Sites total,
-      of which [52; number_4.int] are cultural.
+    reasoning_chain_text: '1. The document states [Germany; place_1.country] has [55; number_3.int] World Heritage Sites total, of which [52; number_4.int] are cultural.
 
       2. Non-cultural sites = [55; number_3.int] - [52; number_4.int] = 2.'
   - question_id: place_06_q05
@@ -129,15 +79,9 @@ document:
     answer: '9'
     answer_type: invariant
     reasoning_chain:
-    - '1. The document lists the following bordering countries: [Denmark; place_6.country] to the north; [Poland; place_7.country]
-      and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland; place_10.country]
-      to the south; [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country], and the [Netherlands;
-      place_14.country] to the west.'
+    - '1. The document lists the following bordering countries: [Denmark; place_6.country] to the north; [Poland; place_7.country] and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland; place_10.country] to the south; [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country], and the [Netherlands; place_14.country] to the west.'
     - 2. Counting these gives 1 + 2 + 2 + 4 = 9 bordering countries.
-    reasoning_chain_text: '1. The document lists the following bordering countries: [Denmark; place_6.country] to the north;
-      [Poland; place_7.country] and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland;
-      place_10.country] to the south; [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country],
-      and the [Netherlands; place_14.country] to the west.
+    reasoning_chain_text: '1. The document lists the following bordering countries: [Denmark; place_6.country] to the north; [Poland; place_7.country] and the [Czech Republic; place_8.country] to the east; [Austria; place_9.country] and [Switzerland; place_10.country] to the south; [France; place_11.country], [Luxembourg; place_12.country], [Belgium; place_13.country], and the [Netherlands; place_14.country] to the west.
 
       2. Counting these gives 1 + 2 + 2 + 4 = 9 bordering countries.'
   - question_id: place_06_q06
@@ -146,16 +90,13 @@ document:
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states [Germany; place_1.country] has a population of over [82; number_5.int] million and has the largest
-      economy in [Europe; place_21.continent] by nominal GDP.
+    - 1. The document states [Germany; place_1.country] has a population of over [82; number_5.int] million and has the largest economy in [Europe; place_21.continent] by nominal GDP.
     - 2. However, the document does not provide the actual GDP figure, so GDP per capita cannot be calculated.
-    reasoning_chain_text: '1. The document states [Germany; place_1.country] has a population of over [82; number_5.int] million
-      and has the largest economy in [Europe; place_21.continent] by nominal GDP.
+    reasoning_chain_text: '1. The document states [Germany; place_1.country] has a population of over [82; number_5.int] million and has the largest economy in [Europe; place_21.continent] by nominal GDP.
 
       2. However, the document does not provide the actual GDP figure, so GDP per capita cannot be calculated.'
   - question_id: place_06_q07
-    question: How many years after the dissolution of the [Holy Roman Empire; place_23.country] was the [German Confederation;
-      place_26.country] formed?
+    question: How many years after the dissolution of the [Holy Roman Empire; place_23.country] was the [German Confederation; place_26.country] formed?
     question_type: temporal
     answer: temporal_4.year - temporal_3.year
     answer_type: variant
@@ -169,22 +110,18 @@ document:
 
       3. The difference is [1815; temporal_4.year] - [1806; temporal_3.year] = 35 years.'
   - question_id: place_06_q08
-    question: Did the unification of [Germany; place_1.country] into a modern state occur before or after the separation of
-      it into two plities with limited sovereighty?
+    question: Did the unification of [Germany; place_1.country] into a modern state occur before or after the separation of it into two plities with limited sovereighty?
     question_type: temporal
     answer: Before
     answer_type: invariant
     reasoning_chain:
-    - 1. The document states the former [East German; place_20.demonym] states joined the [Federal Republic of Germany; place_19.country]
-      on [3 October 1990; temporal_8.date].
+    - 1. The document states the former [East German; place_20.demonym] states joined the [Federal Republic of Germany; place_19.country] on [3 October 1990; temporal_8.date].
     - 2. The month and day portion of that date is 21 December.
-    reasoning_chain_text: '1. The document states the former [East German; place_20.demonym] states joined the [Federal Republic
-      of Germany; place_19.country] on [3 October 1990; temporal_8.date].
+    reasoning_chain_text: '1. The document states the former [East German; place_20.demonym] states joined the [Federal Republic of Germany; place_19.country] on [3 October 1990; temporal_8.date].
 
       2. The month and day portion of that date is 21 December.'
   - question_id: place_06_q09
-    question: How long did the [Nazi; government_org_7.name] totalitarian dictatorship last before [World War II; event_4.name]
-      began?
+    question: How long did the [Nazi; government_org_7.name] totalitarian dictatorship last before [World War II; event_4.name] began?
     question_type: temporal
     answer: Cannot be determined
     answer_type: refusal
@@ -202,8 +139,7 @@ document:
     reasoning_chain:
     - 1. The document states that unification of [Germany; place_1.country] into the modern state was led by [Prussia; place_18.region].
     - 2. This unification established the [German Empire; place_25.country], so the region that led it was [Prussia; place_18.region].
-    reasoning_chain_text: '1. The document states that unification of [Germany; place_1.country] into the modern state was
-      led by [Prussia; place_18.region].
+    reasoning_chain_text: '1. The document states that unification of [Germany; place_1.country] into the modern state was led by [Prussia; place_18.region].
 
       2. This unification established the [German Empire; place_25.country], so the region that led it was [Prussia; place_18.region].'
   - question_id: place_06_q11
@@ -212,27 +148,20 @@ document:
     answer: 'Yes'
     answer_type: invariant
     reasoning_chain:
-    - '1. The document states that in [1949; temporal_7.year], after the war, [Germany; place_1.country] was organised into
-      separate polities with limited sovereignty: the [Federal Republic of Germany; place_19.country] and the [German Democratic
-      Republic (GDR); place_20.country].'
+    - '1. The document states that in [1949; temporal_7.year], after the war, [Germany; place_1.country] was organised into separate polities with limited sovereignty: the [Federal Republic of Germany; place_19.country] and the [German Democratic Republic (GDR); place_20.country].'
     - 2. This confirms [Germany; place_1.country] was indeed divided into separate polities.
-    reasoning_chain_text: '1. The document states that in [1949; temporal_7.year], after the war, [Germany; place_1.country]
-      was organised into separate polities with limited sovereignty: the [Federal Republic of Germany; place_19.country] and
-      the [German Democratic Republic (GDR); place_20.country].
+    reasoning_chain_text: '1. The document states that in [1949; temporal_7.year], after the war, [Germany; place_1.country] was organised into separate polities with limited sovereignty: the [Federal Republic of Germany; place_19.country] and the [German Democratic Republic (GDR); place_20.country].
 
       2. This confirms [Germany; place_1.country] was indeed divided into separate polities.'
   - question_id: place_06_q12
-    question: Given that [Germany; place_1.country] is described as a great power and a major exporter, what is its primary
-      export commodity?
+    question: Given that [Germany; place_1.country] is described as a great power and a major exporter, what is its primary export commodity?
     question_type: inference
     answer: Cannot be determined
     answer_type: refusal
     reasoning_chain:
-    - 1. The document states [Germany; place_1.country] is one of the world's largest exporters and importers and is a major
-      force in industrial, scientific, and technological sectors.
+    - 1. The document states [Germany; place_1.country] is one of the world's largest exporters and importers and is a major force in industrial, scientific, and technological sectors.
     - 2. However, the document does not specify any particular export commodity, so the primary export cannot be determined.
-    reasoning_chain_text: '1. The document states [Germany; place_1.country] is one of the world''s largest exporters and
-      importers and is a major force in industrial, scientific, and technological sectors.
+    reasoning_chain_text: '1. The document states [Germany; place_1.country] is one of the world''s largest exporters and importers and is a major force in industrial, scientific, and technological sectors.
 
       2. However, the document does not specify any particular export commodity, so the primary export cannot be determined.'
   implicit_rules:
@@ -308,47 +237,16 @@ document:
     factual_value: 52
     percentage: 20.0
     rule_kind: number_range
-  fictionalized_annotated_template_document: '[Rendovar; place_1.country], officially the [Helvastok; place_19.country], is
-    a country in [Sulkenvast; place_2.region]. It lies between the [Morwend Bay; place_3.natural_site] and the [Grelloch Strait;
-    place_4.natural_site] to the north with the [Drirvyresh Fjord; place_5.natural_site] to the south. Its [thirteen; number_6.str]
-    constituent states have a total population of over [66; number_5.int] million, making it the most populous member state
-    of the [Nyxixmyrulxzroam National Bureau; government_org_1.name]. [Rendovar; place_1.country] borders [Brindoval; place_6.country]
-    to the north; [Vloamzreizasque; place_7.country] and the [Kessalund; place_8.country] to the east; [Trenvyrummyreixovar;
-    place_9.country] and [Brossivane; place_10.country] to the south; and [Grotheny; place_11.country], [Caldreth; place_12.country],
-    [Pellucara; place_13.country], and the [Stelmarak; place_14.country] to the west. The nation''s capital and most populous
-    city is [Tarvenholt; place_15.city] and its main financial centre is [Kelvindra; place_16.city]; the largest urban area
-    is the [Galdenmarch; place_17.region].
+  fictionalized_annotated_template_document: '[Rendovar; place_1.country], officially the [Helvastok; place_19.country], is a country in [Sulkenvast; place_2.region]. It lies between the [Morwend Bay; place_3.natural_site] and the [Grelloch Strait; place_4.natural_site] to the north with the [Drirvyresh Fjord; place_5.natural_site] to the south. Its [thirteen; number_6.str] constituent states have a total population of over [66; number_5.int] million, making it the most populous member state of the [Nyxixmyrulxzroam National Bureau; government_org_1.name]. [Rendovar; place_1.country] borders [Brindoval; place_6.country] to the north; [Vloamzreizasque; place_7.country] and the [Kessalund; place_8.country] to the east; [Trenvyrummyreixovar; place_9.country] and [Brossivane; place_10.country] to the south; and [Grotheny; place_11.country], [Caldreth; place_12.country], [Pellucara; place_13.country], and the [Stelmarak; place_14.country] to the west. The nation''s capital and most populous city is [Tarvenholt; place_15.city] and its main financial centre is [Kelvindra; place_16.city]; the largest urban area is the [Galdenmarch; place_17.region].
 
 
-    Settlement in the territory of modern [Rendovar; place_1.country] began in the Lower Paleolithic, with various tribes
-    inhabiting it from the Neolithic onward, chiefly the [Kelvathi; place_22.demonym], and [Rendovari; place_1.demonym] tribes
-    inhabiting the north. [Kelvathi; place_22.demonym] named the area [Dranmoor; place_27.country]. In [953; temporal_1.year],
-    the [Fossendral; place_24.country] formed the bulk of the [Thasseron; place_23.country]. During the [15; number_7.int]
-    century, northern [Rendovari; place_1.demonym] regions became the centre of the [Throanzriomzrint Incident; event_1.name].
-    Following the [Vlonddriomdreirk Summit; event_2.name] and the dissolution of the [Thasseron; place_23.country] in [1797;
-    temporal_3.year], the [Phalstrek; place_26.country] was formed in [1832; temporal_4.year].
+    Settlement in the territory of modern [Rendovar; place_1.country] began in the Lower Paleolithic, with various tribes inhabiting it from the Neolithic onward, chiefly the [Kelvathi; place_22.demonym], and [Rendovari; place_1.demonym] tribes inhabiting the north. [Kelvathi; place_22.demonym] named the area [Dranmoor; place_27.country]. In [953; temporal_1.year], the [Fossendral; place_24.country] formed the bulk of the [Thasseron; place_23.country]. During the [15; number_7.int] century, northern [Rendovari; place_1.demonym] regions became the centre of the [Throanzriomzrint Incident; event_1.name]. Following the [Vlonddriomdreirk Summit; event_2.name] and the dissolution of the [Thasseron; place_23.country] in [1797; temporal_3.year], the [Phalstrek; place_26.country] was formed in [1832; temporal_4.year].
 
 
-    Unification of [Rendovar; place_1.country] into the modern state, led by [Vlemzruuv Fold; place_18.region], established
-    the [Molthenric; place_25.country] in [1887; temporal_5.year]. After [Vlazthraendbriosk Incident; event_3.name] and [Vliothzroantkriolx
-    Incident; event_6.name], [Molthenric; place_25.country] was replaced by the [Tulmengrath; place_28.country]. The [Velthari
-    Federal Council; government_org_7.name] rise to power in [1922; temporal_6.year] led to the establishment of a totalitarian
-    dictatorship, [Skandnyxex Summit; event_4.name], and the [Brunkrionclish Accord; event_5.name]. In [1935; temporal_7.year],
-    after the war and [Velthari Combined Forces; military_org_2.name] occupation, [Rendovar; place_1.country] was organised
-    into separate polities with limited sovereignty: the [Helvastok; place_19.country], and the [Dravenmoor; place_20.country].
-    The [Helvastok; place_19.country] was a founding member of the [Pellucari Governance Bureau; government_org_6.name], while
-    the [Dravenmoor; place_20.country] was a [Qeluulxmyraend Public Secretariat; government_org_8.name] state and a founding
-    member of the [Trenvyrummyreix Field Corps; military_org_1.name]. After the fall of the government in [Dravenmoor; place_20.country],
-    [Rendovari; place_1.demonym] [Vliothzroantkriolx Incident; event_6.name] saw the former [Dravenmoori; place_20.demonym]
-    states join the [Helvastok; place_19.country] on [21 December 2005; temporal_8.date].
+    Unification of [Rendovar; place_1.country] into the modern state, led by [Vlemzruuv Fold; place_18.region], established the [Molthenric; place_25.country] in [1887; temporal_5.year]. After [Vlazthraendbriosk Incident; event_3.name] and [Vliothzroantkriolx Incident; event_6.name], [Molthenric; place_25.country] was replaced by the [Tulmengrath; place_28.country]. The [Velthari Federal Council; government_org_7.name] rise to power in [1922; temporal_6.year] led to the establishment of a totalitarian dictatorship, [Skandnyxex Summit; event_4.name], and the [Brunkrionclish Accord; event_5.name]. In [1935; temporal_7.year], after the war and [Velthari Combined Forces; military_org_2.name] occupation, [Rendovar; place_1.country] was organised into separate polities with limited sovereignty: the [Helvastok; place_19.country], and the [Dravenmoor; place_20.country]. The [Helvastok; place_19.country] was a founding member of the [Pellucari Governance Bureau; government_org_6.name], while the [Dravenmoor; place_20.country] was a [Qeluulxmyraend Public Secretariat; government_org_8.name] state and a founding member of the [Trenvyrummyreix Field Corps; military_org_1.name]. After the fall of
+    the government in [Dravenmoor; place_20.country], [Rendovari; place_1.demonym] [Vliothzroantkriolx Incident; event_6.name] saw the former [Dravenmoori; place_20.demonym] states join the [Helvastok; place_19.country] on [21 December 2005; temporal_8.date].
 
 
-    [Rendovar; place_1.country] is a developed country with a strong economy; it has the largest economy in [Strenova; place_21.continent]
-    by nominal GDP. As a major force in several industrial, scientific and technological sectors, [Rendovar; place_1.country]
-    is both one the world''s largest exporters and importers. Widely considered a great power, [Rendovar; place_1.country]
-    is part of multiple international organisations and forums. It has many [Delvoric Heritage Conservancy; ngo_1.name] World
-    Heritage Sites: [44; number_3.int], of which [42; number_4.int] are cultural.'
+    [Rendovar; place_1.country] is a developed country with a strong economy; it has the largest economy in [Strenova; place_21.continent] by nominal GDP. As a major force in several industrial, scientific and technological sectors, [Rendovar; place_1.country] is both one the world''s largest exporters and importers. Widely considered a great power, [Rendovar; place_1.country] is part of multiple international organisations and forums. It has many [Delvoric Heritage Conservancy; ngo_1.name] World Heritage Sites: [44; number_3.int], of which [42; number_4.int] are cultural.'
 metadata:
   status: completed
-  annotators:
-  - anonymous_annotator

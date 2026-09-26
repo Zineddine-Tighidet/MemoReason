@@ -1,121 +1,64 @@
 ![MemoReason benchmark overview](MemoReason_main_figure.png)
 
-MemoReason is a human-curated benchmark for studying how parametric memory affects document-grounded reasoning. Each example pairs a factual document-question pair with structurally matched fictional counterparts, where entities are replaced under controlled constraints while preserving the reasoning structure. This repository contains the anonymous public code for dataset generation, model evaluation, metric computation, result reproduction, and the local annotation interface.
+# MemoReason
 
-Dataset: `memoreason-anonymous/MemoReason`
+MemoReason studies how entity familiarity affects document-grounded reasoning.
+Factual passages are paired with fictitious variants that preserve task structure
+and specified reasoning operations. This repository contains 1,200 annotated
+document–question–answer templates, entity pools, and code for generation,
+evaluation, and annotation.
+
+[Dataset and subset descriptions](https://huggingface.co/datasets/memoreason-anonymous/MemoReason)
+
+[Reproduce each paper figure and table](REPRODUCE.md)
 
 ## Installation
 
-```bash
-uv sync --extra llm --extra web
+Requires Python 3.11 and `uv`.
+
+```sh
+uv sync --extra web
 ```
 
-The core dataset export only needs the base dependencies. Model calls require provider credentials such as `ANTHROPIC_API_KEY` or `GROQ_API_KEY`, depending on the registry entry being evaluated.
+## Generate the dataset
 
-## Load the Published Dataset
-
-The dataset splits are hosted on Hugging Face.
-
-```python
-from datasets import load_dataset
-
-dataset = load_dataset("memoreason-anonymous/MemoReason")
-
-factual = dataset["factual"]
-fictional = dataset["fictional"] # full fictional replacement
-fictional_10pct = dataset["fictional_10pct"] # 10% fictional replacement
-fictional_20pct = dataset["fictional_20pct"] # 20% fictional replacement
-fictional_30pct = dataset["fictional_30pct"] # 30% fictional replacement
-fictional_50pct = dataset["fictional_50pct"] # 50% fictional replacement
-fictional_80pct = dataset["fictional_80pct"] # 80% fictional replacement
-fictional_90pct = dataset["fictional_90pct"] # 90% fictional replacement
+```sh
+uv run python scripts/dataset.py --output data/generated
 ```
 
-## Regenerate the Dataset
+Generates all ten settings from the supplied templates and entity pools, on CPU
+without model calls. Use a new output directory each time.
 
-The public sources needed for regeneration are included:
+## Evaluate a model
 
-- `data/HUMAN_ANNOTATED_TEMPLATES`: anonymized human templates, 87 documents.
-- `data/GENERATED_FICTIONAL_ENTITIES`: anonymized fictional named entity pools.
+Install the model dependencies and configure the appropriate provider credentials
+or local model weights. For example, to run exact-match evaluation:
 
-Generate the final benchmark settings with seed `23` and 10 fictional variants:
-
-```bash
-uv run python scripts/benchmark/export_benchmark_documents.py \
-  --settings factual fictional fictional_10pct fictional_20pct fictional_30pct fictional_50pct fictional_80pct fictional_90pct \
-  --fictional-version-count 10 \
-  --seed 23 \
-  --overwrite
+```sh
+uv sync --extra llm
+uv run python scripts/model_evaluation/generate_parse_and_score_model_answers.py \
+  --steps all --models gpt-oss-20b-groq --settings factual fictional \
+  --factual-documents-dir data/generated/FACTUAL_DOCUMENTS \
+  --fictional-documents-dir data/generated/FICTIONAL_DOCUMENTS \
+  --model-eval-dir output/gpt-oss-20b --skip-judge --allow-model-execution
 ```
 
-For a small smoke export:
+For judge matching, replace `--skip-judge` with explicit `--judge-provider` and
+`--judge-model` values. See `--help` for additional options. Benchmark reference
+answers are applied automatically; model outputs and results are not bundled.
 
-```bash
-uv run python scripts/benchmark/export_benchmark_documents.py \
-  --docs awards_01 \
-  --settings factual fictional fictional_10pct \
-  --fictional-version-count 2 \
-  --seed 23 \
-  --overwrite
+## Annotation interface
+
+```sh
+export DEFAULT_ADMIN_PASSWORD='choose-a-local-password'
+uv run --extra web uvicorn web.app:app --host 127.0.0.1 --port 8000
 ```
 
-Generated documents are written under `data/FACTUAL_DOCUMENTS` and `data/FICTIONAL_DOCUMENTS`.
+Open `http://127.0.0.1:8000` and log in as `admin`. Local edits are stored in
+`web/data/`, separately from the source templates.
 
-## Run an Evaluation
+## Tests
 
-The evaluator can read the published Hugging Face splits directly, so you do not need to vendor the JSONL files locally:
-
-```bash
-uv run python scripts/benchmark/run_model_evaluation.py \
-  --dataset-source huggingface \
-  --steps all \
-  --models gpt-oss-20b-groq \
-  --settings factual fictional \
-  --run-label public_smoke_hf
-```
-
-If you regenerate the YAML documents locally instead, keep the default `--dataset-source local` and run the same command after export. The workflow supports raw model calls, parsing, Exact Match, optional Judge Match, aggregate metrics, plots, and reproducibility manifests. Use `--skip-judge` for Exact Match only, or set `--judge-provider` / `--judge-model` for Judge Match.
-
-## Reproduce Reported Results
-
-After the evaluation run, the evaluated outputs are stored locally under `data/MODEL_EVAL/RAW_OUTPUTS`.
-
-```bash
-uv run python scripts/analysis/reproduce_paper_results.py
-```
-
-The reproduction script rebuilds the full-replacement factual-vs-fictional Judge Match drop figure and CSV/JSON statistics, the question/answer-type table, the partial-replacement curves, the Parametric Shortcut Rate report, and the inference-cost scatter from compatible local outputs.
-
-## Annotation Interface
-
-Run the local annotation UI with:
-
-```bash
-uv run uvicorn web.app:app --host 127.0.0.1 --port 8000
-```
-
-By default, the UI opens the anonymized templates in `data/HUMAN_ANNOTATED_TEMPLATES`. To annotate your own source YAML files, set:
-
-```bash
-ANNOTATION_SOURCE_DIR=/path/to/source_yaml uv run uvicorn web.app:app --host 127.0.0.1 --port 8000
-```
-
-See `docs/ANNOTATION_INTERFACE.md` for the short local workflow.
-
-## Repository Layout
-
-```text
-data/
-  HUMAN_ANNOTATED_TEMPLATES/       source templates
-  GENERATED_FICTIONAL_ENTITIES/    fictional pools
-src/
-  core/                            schemas, rule runtime, answer matching
-  document_generation/             fictional replacement and rendering
-  dataset_export/                  dataset setting/export workflow
-  evaluation_workflows/            MemoReason evaluation and metrics
-  llm/                             API and local model clients
-scripts/
-  benchmark/                       dataset export and model evaluation CLIs
-  analysis/                        result reproduction helpers
-web/                               local annotation interface
+```sh
+uv run --extra web pytest -q
 ```

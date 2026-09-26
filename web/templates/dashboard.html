@@ -306,7 +306,7 @@
                 <div class="card" style="padding:12px 14px;">
                     <div class="flex justify-between items-center mb-8">
                         <span class="text-sm font-semibold" x-text="group.label"></span>
-                        <span class="text-xs text-muted" x-text="group.completed_count + ' / ' + group.total_count + ' submitted'"></span>
+                        <span class="text-xs text-muted" x-text="group.completed_count + ' / ' + group.total_count + ' completed'"></span>
                     </div>
                     <div class="theme-doc-list">
                         <template x-for="task in group.items" :key="'question-group-task-' + group.key + '/' + task.theme + '/' + task.doc_id">
@@ -315,7 +315,7 @@
                                     <div class="flex items-center gap-8">
                                         <span class="doc-name" x-text="task.doc_id"></span>
                                         <span class="text-xs text-muted" x-text="task.theme.replace(/_/g, ' ')"></span>
-                                        <template x-if="Number(task.ignored_qa_count || 0) > 0">
+                                        <template x-if="selectedUserShouldShowIgnoredQaBadge(task)">
                                             <span class="badge badge-review"
                                                   :title="`${task.ignored_qa_count} ignored QA combination(s)`"
                                                   x-text="'Ignored: ' + task.ignored_qa_count"></span>
@@ -329,7 +329,7 @@
                                     <div class="flex items-center gap-8">
                                         <span class="doc-name" x-text="task.doc_id"></span>
                                         <span class="text-xs text-muted" x-text="task.theme.replace(/_/g, ' ')"></span>
-                                        <template x-if="Number(task.ignored_qa_count || 0) > 0">
+                                        <template x-if="selectedUserShouldShowIgnoredQaBadge(task)">
                                             <span class="badge badge-review"
                                                   :title="`${task.ignored_qa_count} ignored QA combination(s)`"
                                                   x-text="'Ignored: ' + task.ignored_qa_count"></span>
@@ -351,7 +351,7 @@
                     <div class="flex items-center gap-8">
                         <span class="doc-name" x-text="task.doc_id"></span>
                         <span class="text-xs text-muted" x-text="task.theme.replace(/_/g, ' ')"></span>
-                        <template x-if="Number(task.ignored_qa_count || 0) > 0">
+                        <template x-if="selectedUserShouldShowIgnoredQaBadge(task)">
                             <span class="badge badge-review"
                                   :title="`${task.ignored_qa_count} ignored QA combination(s)`"
                                   x-text="'Ignored: ' + task.ignored_qa_count"></span>
@@ -628,7 +628,12 @@
                  x-text="activeCampaignMetrics().awaiting_accept_contest"></div>
             <div class="stat-label">Awaiting Accept/Contest</div>
         </div>
-        <div class="stat-card" x-show="selectedCampaign === 'questions'">
+        <div
+            class="stat-card"
+            x-show="selectedCampaign === 'questions'
+                && powerDashboardScopesLoaded.questions
+                && !isFocusedAdminReviewCampaign(selectedCampaign)"
+        >
             <div class="stat-value" style="color:#7c3aed;" x-text="totalIgnoredQaSummary().display"></div>
             <div class="stat-label">Ignored QA Combos</div>
         </div>
@@ -665,7 +670,7 @@
             <div class="flex gap-8 mb-12" style="flex-wrap:wrap;">
                 <span class="badge badge-draft" x-text="'available: ' + (monitor?.status_counts?.available || 0)"></span>
                 <span class="badge badge-in_progress" x-text="'in_progress: ' + (monitor?.status_counts?.in_progress || 0)"></span>
-                <span class="badge badge-completed" x-text="'submitted_reviews: ' + (monitor?.status_counts?.completed || 0)"></span>
+                <span class="badge badge-completed" x-text="'completed_tasks: ' + (monitor?.status_counts?.completed || 0)"></span>
                 <span class="badge" style="background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;" x-text="'agreement_ready: ' + (monitor?.agreements?.ready_count || 0)"></span>
                 <span class="badge" style="background:#ecfdf5;color:#166534;border:1px solid #bbf7d0;" x-text="'agreement_resolved: ' + (monitor?.agreements?.resolved_count || 0)"></span>
                 <span class="badge" style="background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;"
@@ -680,7 +685,7 @@
                     </template>
                     <template x-for="item in monitor?.annotator_progress || []" :key="item.username">
                         <div class="flex justify-between text-sm" style="padding:4px 0;">
-                            <span x-text="item.username + ' (submitted: ' + item.submitted_count + ')'"></span>
+                            <span x-text="item.username + ' (completed: ' + (item.completed_count ?? item.submitted_count) + (item.accepted_without_submission_count ? ', accepted without submission: ' + item.accepted_without_submission_count : '') + ')'"></span>
                             <span x-text="(item.active_count || 0) + ' open now'"></span>
                         </div>
                     </template>
@@ -757,7 +762,7 @@
             <div class="flex gap-8 mb-12" style="flex-wrap:wrap;">
                 <span class="badge badge-draft" x-text="'available: ' + (selectedReviewCampaignEntry()?.status_counts?.available || 0)"></span>
                 <span class="badge badge-in_progress" x-text="'in_progress: ' + (selectedReviewCampaignEntry()?.status_counts?.in_progress || 0)"></span>
-                <span class="badge badge-completed" x-text="'submitted_reviews: ' + (selectedReviewCampaignEntry()?.status_counts?.completed || 0)"></span>
+                <span class="badge badge-completed" x-text="'completed_tasks: ' + (selectedReviewCampaignEntry()?.status_counts?.completed || 0)"></span>
                 <span class="badge" style="background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;" x-text="'agreement_ready: ' + (selectedReviewCampaignEntry()?.agreements?.ready_count || 0)"></span>
                 <span class="badge" style="background:#ecfdf5;color:#166534;border:1px solid #bbf7d0;" x-text="'agreement_resolved: ' + (selectedReviewCampaignEntry()?.agreements?.resolved_count || 0)"></span>
                 <span class="badge" style="background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;"
@@ -772,7 +777,7 @@
                     </template>
                     <template x-for="item in selectedReviewCampaignEntry()?.annotator_progress || []" :key="'review-progress-' + selectedCampaign + '/' + item.username">
                         <div class="flex justify-between text-sm" style="padding:4px 0;">
-                            <span x-text="item.username + ' (submitted: ' + item.submitted_count + ')'"></span>
+                            <span x-text="item.username + ' (completed: ' + (item.completed_count ?? item.submitted_count) + (item.accepted_without_submission_count ? ', accepted without submission: ' + item.accepted_without_submission_count : '') + ')'"></span>
                             <span x-text="(item.active_count || 0) + ' open now'"></span>
                         </div>
                     </template>
@@ -868,7 +873,7 @@
             <span x-text="reviewCampaignEntry('rules')?.campaign?.name || ''"></span>
             <span x-text="' · available: ' + (reviewCampaignEntry('rules')?.status_counts?.available || 0)"></span>
             <span x-text="' · in progress: ' + (reviewCampaignEntry('rules')?.status_counts?.in_progress || 0)"></span>
-            <span x-text="' · submitted reviews: ' + (reviewCampaignEntry('rules')?.status_counts?.completed || 0)"></span>
+            <span x-text="' · completed tasks: ' + (reviewCampaignEntry('rules')?.status_counts?.completed || 0)"></span>
             <span x-text="' · agreement resolved: ' + (reviewCampaignEntry('rules')?.agreements?.resolved_count || 0)"></span>
         </div>
     </div>
@@ -898,7 +903,7 @@
             <span x-text="reviewCampaignEntry('questions')?.campaign?.name || ''"></span>
             <span x-text="' · available: ' + (reviewCampaignEntry('questions')?.status_counts?.available || 0)"></span>
             <span x-text="' · in progress: ' + (reviewCampaignEntry('questions')?.status_counts?.in_progress || 0)"></span>
-            <span x-text="' · submitted reviews: ' + (reviewCampaignEntry('questions')?.status_counts?.completed || 0)"></span>
+            <span x-text="' · completed tasks: ' + (reviewCampaignEntry('questions')?.status_counts?.completed || 0)"></span>
             <span x-text="' · agreement resolved: ' + (reviewCampaignEntry('questions')?.agreements?.resolved_count || 0)"></span>
         </div>
     </div>
@@ -1054,6 +1059,7 @@ function dashboardApp() {
         monitor: { has_active_run: false },
         reviewCampaignMonitor: { campaigns: [] },
         selectedCampaign: 'documents',
+        powerDashboardScopesLoaded: { documents: false, rules: false, questions: false },
         runForm: { name: 'Documents Review Campaign', source_agent: 'claude-opus-4-6', seed: 20260226 },
         reviewCampaignForms: {
             rules: { name: 'Rules Annotation Campaign', seed: 20260309 },
@@ -1125,10 +1131,30 @@ function dashboardApp() {
             ];
         },
 
-        selectUserCampaign(campaignKey) {
+        async loadRegularUserDashboardScope(scope) {
+            const normalized = this.normalizedDashboardScope(scope);
+            const bootstrap = await API.getDashboardBootstrap(normalized);
+            this.queue = bootstrap.queue || this.queue;
+            this.reviewQueues.rules = (bootstrap.review_queues && bootstrap.review_queues.rules) || this.reviewQueues.rules;
+            this.reviewQueues.questions = (bootstrap.review_queues && bootstrap.review_queues.questions) || this.reviewQueues.questions;
+            this.resolutionFeedback = bootstrap.resolution_feedback || this.resolutionFeedback;
+            this.reviewResolutionFeedback.rules = (bootstrap.review_resolution_feedback && bootstrap.review_resolution_feedback.rules) || this.reviewResolutionFeedback.rules;
+            this.reviewResolutionFeedback.questions = (bootstrap.review_resolution_feedback && bootstrap.review_resolution_feedback.questions) || this.reviewResolutionFeedback.questions;
+        },
+
+        async selectUserCampaign(campaignKey) {
             const normalized = this.normalizeDashboardSection(campaignKey);
             this.selectedUserCampaign = normalized;
+            this.selectedCampaign = normalized;
             this.persistDashboardSection(normalized);
+            this.queueLoading = true;
+            try {
+                await this.loadRegularUserDashboardScope(normalized);
+            } catch (e) {
+                showToast('Failed to load dashboard: ' + e.message, 'error');
+            } finally {
+                this.queueLoading = false;
+            }
         },
 
         isUserCampaignSelected(campaignKey) {
@@ -1165,6 +1191,22 @@ function dashboardApp() {
         selectedUserCampaignName() {
             if (this.selectedUserCampaign === 'documents') return this.queue?.run?.name || '';
             return this.reviewQueues[this.selectedUserCampaign]?.campaign?.name || '';
+        },
+
+        isFocusedInferenceValidationCampaignName(name) {
+            return String(name || '').trim() === 'Inference QA validation 2026-06-16';
+        },
+
+        isFocusedAdminReviewCampaign(campaignKey) {
+            const key = String(campaignKey || '').trim().toLowerCase();
+            if (key !== 'questions') return false;
+            return this.isFocusedInferenceValidationCampaignName(this.reviewCampaignEntry(key)?.campaign?.name);
+        },
+
+        selectedUserShouldShowIgnoredQaBadge(task) {
+            if (this.selectedUserCampaign !== 'questions') return false;
+            if (this.isFocusedInferenceValidationCampaignName(this.selectedUserCampaignName())) return false;
+            return Number(task?.ignored_qa_count || 0) > 0;
         },
 
         selectedUserSampleButtonLabel() {
@@ -1206,6 +1248,7 @@ function dashboardApp() {
         selectedUserExperimentStatusLabel(status) {
             const normalized = String(status || '').trim().toLowerCase();
             if (normalized === 'submitted') return 'Submitted';
+            if (normalized === 'completed') return 'Completed';
             if (normalized === 'in_progress') return 'In Progress';
             if (normalized === 'waiting') return 'Waiting';
             return 'Available';
@@ -1213,7 +1256,7 @@ function dashboardApp() {
 
         selectedUserExperimentStatusClass(status) {
             const normalized = String(status || '').trim().toLowerCase();
-            if (normalized === 'submitted') return 'badge-completed';
+            if (normalized === 'submitted' || normalized === 'completed') return 'badge-completed';
             if (normalized === 'in_progress') return 'badge-in_progress';
             if (normalized === 'waiting') return 'badge-draft';
             return 'badge-draft';
@@ -1336,7 +1379,9 @@ function dashboardApp() {
             const normalized = this.normalizedDashboardScope(scope);
             const bootstrap = await API.getDashboardBootstrap(normalized);
             this.progress = this.normalizeProgressPayload(bootstrap.progress || this.progress || { themes: [] });
-            this.recentActivity = bootstrap.recent_activity || [];
+            if (Array.isArray(bootstrap.recent_activity)) {
+                this.recentActivity = bootstrap.recent_activity;
+            }
             if (bootstrap.monitor) {
                 this.monitor = bootstrap.monitor;
             }
@@ -1344,6 +1389,7 @@ function dashboardApp() {
             if (Array.isArray(bootstrap.users)) {
                 this.users = bootstrap.users;
             }
+            this.powerDashboardScopesLoaded[normalized] = true;
         },
 
         async selectCampaign(campaignKey) {
@@ -1354,7 +1400,8 @@ function dashboardApp() {
                     && (this.reviewCampaignMonitor?.campaigns || []).some(
                         (entry) => String(entry?.review_type || '').trim().toLowerCase() === normalized
                     );
-                if (normalized === 'documents' || hasLoadedReviewCampaign) {
+                const hasLoadedScope = Boolean(this.powerDashboardScopesLoaded?.[normalized]);
+                if (hasLoadedScope || hasLoadedReviewCampaign) {
                     this.refreshRecentActivity(normalized).catch(() => {});
                     return;
                 }
@@ -1424,6 +1471,9 @@ function dashboardApp() {
 
         totalIgnoredQaCombinations() {
             if (this.normalizedDashboardScope(this.selectedCampaign) !== 'questions') {
+                return 0;
+            }
+            if (this.isFocusedAdminReviewCampaign(this.selectedCampaign)) {
                 return 0;
             }
             const themes = Array.isArray(this.progress?.themes) ? this.progress.themes : [];
@@ -3599,7 +3649,11 @@ function dashboardApp() {
             ];
             if (scope === 'questions') {
                 const ignoredCount = Number(((doc?.review_statuses || {}).questions || {}).ignored_qa_count || 0);
-                if (Number.isFinite(ignoredCount) && ignoredCount > 0) {
+                if (
+                    Number.isFinite(ignoredCount)
+                    && ignoredCount > 0
+                    && !this.isFocusedAdminReviewCampaign(scope)
+                ) {
                     badges.push({
                         key: 'questions-ignored',
                         status: 'review',
@@ -3729,13 +3783,7 @@ function dashboardApp() {
                     await this.loadPowerUserDashboardScope(this.normalizedDashboardScope(this.selectedCampaign));
                     this.queueLoading = false;
                 } else {
-                    const bootstrap = await API.getDashboardBootstrap(this.normalizedDashboardScope(this.selectedCampaign));
-                    this.queue = bootstrap.queue || this.queue;
-                    this.reviewQueues.rules = (bootstrap.review_queues && bootstrap.review_queues.rules) || this.reviewQueues.rules;
-                    this.reviewQueues.questions = (bootstrap.review_queues && bootstrap.review_queues.questions) || this.reviewQueues.questions;
-                    this.resolutionFeedback = bootstrap.resolution_feedback || this.resolutionFeedback;
-                    this.reviewResolutionFeedback.rules = (bootstrap.review_resolution_feedback && bootstrap.review_resolution_feedback.rules) || this.reviewResolutionFeedback.rules;
-                    this.reviewResolutionFeedback.questions = (bootstrap.review_resolution_feedback && bootstrap.review_resolution_feedback.questions) || this.reviewResolutionFeedback.questions;
+                    await this.loadRegularUserDashboardScope(this.normalizedDashboardScope(this.selectedUserCampaign));
                 }
             } catch (e) {
                 showToast('Failed to load dashboard: ' + e.message, 'error');

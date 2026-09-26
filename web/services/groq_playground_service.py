@@ -68,7 +68,7 @@ def _groq_request(path: str, *, method: str = "GET", payload: Any = None, timeou
             "Authorization": f"Bearer {_groq_api_key()}",
             "Accept": "application/json",
             "Content-Type": "application/json",
-            "User-Agent": "ParametricShortcutQuickEval/1.0",
+            "User-Agent": "MemoReasonLocalInterface/1.0",
         },
     )
     try:

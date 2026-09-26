@@ -1,0 +1,286 @@
+document:
+  document_id: sport_12
+  document_theme: Sport Events
+  source: wikipedia
+  wikipedia_title: Tour de France
+  wikipedia_url: https://en.wikipedia.org/wiki/Tour_de_France
+  original_document: 'The Tour de France is an annual men''s multiple-stage road cycling race held primarily in France. It is the oldest and most prestigious of the three Grand Tours, which include the Giro d''Italia and the Vuelta a España.
+
+
+    The race was first organized in 1903 to increase sales for the newspaper L''Auto (which was an ancestor of L''Équipe) and has been held annually since, except from 1915 to 1918 and 1940 to 1946 due to the two World Wars. As the Tour gained prominence and popularity, the race was lengthened and gained more international participation. The Tour is a UCI World Tour event, which means that the teams that compete in the race are mostly UCI WorldTeams, with the exception of the teams that the organizers invite.
+
+
+    Traditionally, the bulk of the race is held in July. While the route changes every year, the format of the race stays the same and includes time trials, passage through the mountain chains of the Pyrenees and the Alps, and, from 1975 on (except in 2024), a finish on the Champs-Élysées in Paris. The modern editions of the Tour de France consist of 21 day-long stages over a 23- or 24-day period and cover approximately 3,500 kilometres (2,200 mi) total. Each year, the race alternates between clockwise and counterclockwise circuits of France.
+
+
+    Twenty to twenty-three teams of eight riders usually compete. All of the stages are timed to the finish, and the riders'' times are compounded with their previous stage times. The rider with the lowest cumulative time is the leader of the race and wears the yellow jersey. While the general classification attracts the most attention, there are other contests held within the Tour: the points classification for the sprinters (green jersey), the mountains classification for the climbers (polka-dot jersey), young rider classification for riders under the age of 26 (white jersey), and the team classification, based on the first three finishers from each team on each stage. Achieving a stage win also provides prestige, often accomplished by a team''s sprint specialist or a rider taking part in a breakaway.
+
+
+    A similar race for women was held under various names between 1984 and 2009. Following criticism by campaigners and the professional women''s peloton, a one/two-day race (La Course by Le Tour de France) was held between 2014 and 2021. The first Tour de France Femmes was held in 2022.'
+  document_to_annotate: 'The [Tour de France; event_1.name] is an annual men''s multiple-stage road cycling race held primarily in [France; place_1.country]. It is the oldest and most prestigious of the three [Grand Tours; event_7.name], which include the [Giro d''Italia; event_2.name] and the [Vuelta a España; event_3.name].
+
+
+    The race was first organized in [1903; temporal_1.year] to increase sales for the newspaper [L''Auto; media_org_1.name] (which was an ancestor of [L''Équipe; media_org_2.name]) and has been held annually since, except from [1915; temporal_2.year] to [1918; temporal_3.year] and [1940; temporal_4.year] to [1946; temporal_5.year] due to the [two; number_8.str] [World Wars; event_8.name]. As the Tour gained prominence and popularity, the race was lengthened and gained more international participation. The Tour is a [UCI World Tour; event_4.name] event, which means that the teams that compete in the race are mostly [UCI WorldTeams; entreprise_org_1.name], with the exception of the teams that the organizers invite.
+
+
+    Traditionally, the bulk of the race is held in [July; temporal_6.month]. While the route changes every year, the format of the race stays the same and includes time trials, passage through the mountain chains of the [Pyrenees; place_2.natural_site] and the [Alps; place_3.natural_site], and, from [1975; temporal_7.year] on (except in [2024; temporal_8.year]), a finish on the [Champs-Élysées; place_4.street] in [Paris; place_5.city]. The modern editions of the [Tour de France; event_1.name] consist of [21; number_1.int] day-long stages over a [23; number_9.int]- or [24; number_10.int]-day period and cover approximately [3,500; number_2.int] kilometres total. Each year, the race alternates between clockwise and counterclockwise circuits of [France; place_1.country].
+
+
+    [Twenty; number_6.str] to [twenty-three; number_7.str] teams of [eight; number_4.str] riders usually compete. All of the stages are timed to the finish, and the riders'' times are compounded with their previous stage times. The rider with the lowest cumulative time is the leader of the race and wears the yellow jersey. While the general classification attracts the most attention, there are other contests held within the Tour: the points classification for the sprinters (green jersey), the mountains classification for the climbers (polka-dot jersey), young rider classification for riders under the age of [26; number_5.int] (white jersey), and the team classification, based on the first three finishers from each team on each stage. Achieving a stage win also provides prestige, often accomplished by a team''s sprint specialist or a rider taking part in a breakaway.
+
+
+    A similar race for women was held under various names between [1984; temporal_9.year] and [2009; temporal_10.year]. Following criticism by campaigners and the professional women''s peloton, a one/two-day race ([La Course by Le Tour de France; event_5.name]) was held between [2014; temporal_11.year] and [2021; temporal_12.year]. The first [Tour de France Femmes; event_6.name] was held in [2022; temporal_13.year].'
+  relations: []
+  rules:
+  - 'number_1.int > 1 # multiple stages implies more than 1'
+  - 'number_4.str > 1 # plural "riders" requires more than 1'
+  - 'number_5.int > 18 # age threshold for "young rider" must be adult but still young'
+  - 'number_6.str < number_7.str # lower and upper bounds of the usual team-count range'
+  - 'place_5.city != place_1.country # Paris is a city within France, but city and country must differ as strings'
+  num_questions: 12
+  questions:
+  - question_id: sport_12_q01
+    question: What newspaper originally organized the [Tour de France; event_1.name]?
+    question_type: extractive
+    answer: media_org_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the race was first organized to increase sales for the newspaper [L'Auto; media_org_1.name].
+  - question_id: sport_12_q02
+    question: What color jersey is awarded to the best climber in the mountains classification?
+    question_type: extractive
+    answer: polka-dot
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the mountains classification for the climbers is represented by the polka-dot jersey.
+  - question_id: sport_12_q03
+    question: Who holds the record for the most overall victories in the [Tour de France; event_1.name]?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the race format and history but does not mention any individual riders or record holders.
+    - 2. Therefore, the record holder for most overall victories cannot be determined from the document.
+  - question_id: sport_12_q04
+    question: If you subtract the minimum number of teams that usually compete from the maximum number of teams, what is the result?
+    question_type: arithmetic
+    answer: number_7.str - number_6.str
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states that [Twenty; number_6.str] to [twenty-three; number_7.str] teams usually compete.
+    - 2. The difference is [twenty-three; number_7.str] minus [Twenty; number_6.str].
+  - question_id: sport_12_q05
+    question: How many distinct media organizations are mentioned in the document?
+    question_type: arithmetic
+    answer: '2'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document mentions [L'Auto; media_org_1.name] as the newspaper that organized the race.
+    - 2. It also mentions [L'Équipe; media_org_2.name] as the successor of that newspaper.
+    - 3. That gives a total of 2 distinct media organizations.
+  - question_id: sport_12_q06
+    question: What is the total prize money in euros awarded across all jersey classifications in the [Tour de France; event_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document mentions several jersey classifications (yellow, green, polka-dot, white) and a team classification.
+    - 2. However, the document does not provide any prize money figures for any classification.
+    - 3. Therefore, the total prize money cannot be determined from the document.
+  - question_id: sport_12_q07
+    question: How many years elapsed between the end of the previous women's race (held under various names) and the start of [La Course by Le Tour de France; event_5.name]?
+    question_type: temporal
+    answer: temporal_11.year - temporal_10.year
+    answer_type: variant
+    reasoning_chain:
+    - 1. The previous women's race ran until [2009; temporal_10.year].
+    - 2. [La Course by Le Tour de France; event_5.name] began in [2014; temporal_11.year].
+    - 3. The gap is [2014; temporal_11.year] minus [2009; temporal_10.year].
+  - question_id: sport_12_q08
+    question: Was the first women's race organized before or after the men's race?
+    question_type: temporal
+    answer: After
+    answer_type: invariant
+    reasoning_chain:
+    - .
+  - question_id: sport_12_q09
+    question: How many days before the finish on the [Champs-Élysées; place_4.street] did the first stage of the most recent edition begin?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the race consists of [21; number_1.int] stages over a 23- or 24-day period, but does not specify exact start or finish dates for any particular edition.
+    - 2. Without knowing the specific calendar dates of the most recent edition, the number of days between the first stage and the finish cannot be computed.
+    - 3. Therefore, this temporal duration cannot be determined from the document.
+  - question_id: sport_12_q10
+    question: Which publication currently exists as the descendant of the newspaper whose commercial interests led to the creation of the race?
+    question_type: inference
+    answer: media_org_2.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the race was organized to increase sales for [L'Auto; media_org_1.name].
+    - 2. The document also states that [L'Auto; media_org_1.name] was an ancestor of [L'Équipe; media_org_2.name].
+    - 3. Combining these two facts, [L'Équipe; media_org_2.name] is the current descendant of the newspaper whose commercial interests created the race.
+  - question_id: sport_12_q11
+    question: Given that the race is described as the oldest of the three [Grand Tours; event_7.name], and that it is also called the most prestigious, can we conclude it holds both distinctions simultaneously?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states the race is 'the oldest and most prestigious of the three Grand Tours.'
+    - 2. The conjunction 'and' in that phrase attributes both qualities — oldest and most prestigious — to the same race.
+    - 3. Therefore, yes, it holds both distinctions simultaneously.
+  - question_id: sport_12_q12
+    question: Based on the alternating clockwise and counterclockwise circuit pattern, in which direction did the [Tour de France; event_1.name] travel in its most recent edition?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the race alternates between clockwise and counterclockwise circuits each year.
+    - 2. However, the document does not specify which direction any particular year's edition used, nor does it identify the most recent edition.
+    - 3. Without a known starting direction for a specific year, the direction of the most recent edition cannot be determined.
+  annotation_status: ok
+  annotation_errors: []
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1884
+    upper_bound: 1922
+    factual_value: 1903
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1896
+    upper_bound: 1934
+    factual_value: 1915
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 1899
+    upper_bound: 1937
+    factual_value: 1918
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1921
+    upper_bound: 1959
+    factual_value: 1940
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 1927
+    upper_bound: 1965
+    factual_value: 1946
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_8.str
+    lower_bound: 1
+    upper_bound: 12
+    factual_value: 2
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_7.year
+    lower_bound: 1956
+    upper_bound: 1994
+    factual_value: 1975
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_8.year
+    lower_bound: 2004
+    upper_bound: 2026
+    factual_value: 2024
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 17
+    upper_bound: 25
+    factual_value: 21
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 20
+    upper_bound: 28
+    factual_value: 24
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 2800
+    upper_bound: 4200
+    factual_value: 3500
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.str
+    lower_bound: 16
+    upper_bound: 24
+    factual_value: 20
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.str
+    lower_bound: 19
+    upper_bound: 27
+    factual_value: 23
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.str
+    lower_bound: 1
+    upper_bound: 18
+    factual_value: 8
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 21
+    upper_bound: 31
+    factual_value: 26
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_9.year
+    lower_bound: 1965
+    upper_bound: 2003
+    factual_value: 1984
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_10.year
+    lower_bound: 1989
+    upper_bound: 2026
+    factual_value: 2009
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_11.year
+    lower_bound: 1994
+    upper_bound: 2026
+    factual_value: 2014
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_12.year
+    lower_bound: 2001
+    upper_bound: 2026
+    factual_value: 2021
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_13.year
+    lower_bound: 2002
+    upper_bound: 2026
+    factual_value: 2022
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [Ronde van Telvoria; event_1.name] is an annual men''s multiple-stage road cycling race held primarily in [Veldara; place_1.country]. It is the oldest and most prestigious of the three Grand Tours, which include the [Corsa del Velthari; event_2.name] and the [Corrida de Velanthos; event_3.name].
+
+
+    The race was first organized in [1902; temporal_1.year] to increase sales for the newspaper [Le Veltran; media_org_1.name] (which was an ancestor of [La Coursel; media_org_2.name]) and has been held annually since, except from [1932; temporal_2.year] to [1933; temporal_3.year] and [1934; temporal_4.year] to [1954; temporal_5.year] due to the two World Wars. As the Tour gained prominence and popularity, the race was lengthened and gained more international participation. The Tour is a [GCR Elite Circuit; event_4.name] event, which means that the teams that compete in the race are mostly UCI WorldTeams, with the exception of the teams that the organizers invite.
+
+
+    Traditionally, the bulk of the race is held in [May; temporal_6.month]. While the route changes every year, the format of the race stays the same and includes time trials, passage through the mountain chains of the [Velkrath Range; place_2.natural_site] and the [Velkhorn Range; place_3.natural_site], and, from [1976; temporal_7.year] on (except in [2026; temporal_8.year]), a finish on the [Velloran Promenade; place_4.street] in [Threnvale; place_5.city]. The modern editions of the [Ronde van Telvoria; event_1.name] consist of [17; number_1.int] day-long stages over a 23- or 24-day period and cover approximately [2800; number_2.int] kilometres ([1760; number_3.int] mi) total. Each year, the race alternates between clockwise and counterclockwise circuits of [Veldara; place_1.country].
+
+
+    [Sixteen; number_6.str] to [twenty-seven; number_7.str] teams of [two; number_4.str] riders usually compete. All of the stages are timed to the finish, and the riders'' times are compounded with their previous stage times. The rider with the lowest cumulative time is the leader of the race and wears the yellow jersey. While the general classification attracts the most attention, there are other contests held within the Tour: the points classification for the sprinters (green jersey), the mountains classification for the climbers (polka-dot jersey), young rider classification for riders under the age of [31; number_5.int] (white jersey), and the team classification, based on the first three finishers from each team on each stage. Achieving a stage win also provides prestige, often accomplished by a team''s sprint specialist or a rider taking part in a breakaway.
+
+
+    A similar race for women was held under various names between [1991; temporal_9.year] and [2004; temporal_10.year]. Following criticism by campaigners and the professional women''s peloton, a one/two-day race ([La Ronde par le Circuet de Velloran; event_5.name]) was held between [2022; temporal_11.year] and [2024; temporal_12.year]. The first [Vuelta de Kelmara Dames; event_6.name] was held in [2025; temporal_13.year].'
+metadata:
+  status: completed

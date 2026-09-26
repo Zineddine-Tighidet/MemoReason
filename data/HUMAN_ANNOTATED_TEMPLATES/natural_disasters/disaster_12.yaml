@@ -1,0 +1,288 @@
+document:
+  document_id: disaster_12
+  document_theme: Natural Disasters
+  source: wikipedia
+  wikipedia_title: 2019–20 Australian bushfire season
+  wikipedia_url: https://en.wikipedia.org/wiki/2019%E2%80%9320_Australian_bushfire_season
+  original_document: 'The 2019–20 Australian bushfire season, also known as the Black Summer, was one of the most intense and catastrophic fire seasons on record in Australia. Exceptionally dry conditions, a lack of soil moisture, and early fires in Central Queensland led to a premature start to the bushfire season from June 2019. Over ten thousand fires burnt, mainly in the south-east of the country, until March 2020. The most severe fires hit from December 2019 to January 2020.
+
+
+    The fires burnt more than 24 million hectares (59 million acres; 240,000 square kilometres; 93,000 square miles) destroyed over 3,000 buildings, and directly killed 33 people. Bushfire smoke was responsible for an additional 417 deaths. An estimated three billion terrestrial vertebrates, mostly reptiles, were killed or displaced. Some species may have been driven to extinction. In all affected states, air quality dropped to dangerous levels, and smoke moved across the Southern Ocean to impact weather conditions in other continents. Carbon emissions exceeded 700 million tonnes.
+
+
+    Rescue and recovery efforts were immense. States of emergency were declared across various regions of New South Wales (NSW) and the north-east to east of Victoria, which were the areas most impacted. NSW alone recorded 11,774 fires; six percent of the state burned. Methods of community damage control included total fire bans and strict evacuation orders. The Australian Defence Force was mobilised to provide manpower and logistical support, and international crews were brought in from New Zealand, Singapore, Canada and the United States. An air tanker, helicopters and fire trucks crashed in rescue efforts, resulting in the deaths of several crew members. The last major fire in Victoria was contained on 27 February 2020, and all fires in New South Wales were extinguished by 2 March.
+
+
+    The total economic loss was estimated being at least $100 billion, far and away the costliest natural disaster in Australian history. Tourism sector revenues fell by $2.8 billion.
+
+
+    There was considerable debate regarding the underlying cause of the intensity and scale of the fires, including the role of fire management practices and climate change. The fires attracted significant international attention. An estimated $500 million was donated by the public, international organisations, public figures and celebrities for victim relief and wildlife recovery. Convoys of donated food, clothing and livestock feed were sent to affected areas.'
+  document_to_annotate: 'The [2019–20; temporal_1.year] [Australian; place_1.demonym] bushfire season, also known as the [Black Summer; event_1.name], was one of the most intense and catastrophic fire seasons on record in [Australia; place_1.country]. Exceptionally dry conditions, a lack of soil moisture, and early fires in [Central Queensland; place_2.region] led to a premature start to the bushfire season from [June 2019; temporal_2.date]. Over ten thousand fires burnt, mainly in the south-east of the country, until [March 2020; temporal_3.date]. The most severe fires hit from [December 2019; temporal_4.date] to [January 2020; temporal_5.date].
+
+
+    The fires burnt more than [24 million; number_1.int] hectares ([59 million; number_2.int] acres; [240,000; number_3.int] square kilometres; [93,000; number_4.int] square miles) destroyed over [3,000; number_5.int] buildings, and directly killed [33; number_6.int] people. Bushfire smoke was responsible for an additional [417; number_7.int] deaths. An estimated [three billion; number_8.str] terrestrial vertebrates, mostly reptiles, were killed or displaced. Some species may have been driven to extinction. In all affected states, air quality dropped to dangerous levels, and smoke moved across the Southern Ocean to impact weather conditions in other continents. Carbon emissions exceeded [700 million; number_9.int] tonnes.
+
+
+    Rescue and recovery efforts were immense. States of emergency were declared across various regions of [New South Wales; place_3.state] ([NSW; place_3.state]) and the north-east to east of [Victoria; place_4.state], which were the areas most impacted. [NSW; place_3.state] alone recorded [11,774; number_10.int] fires; [six; number_11.str] percent of the state burned. Methods of community damage control included total fire bans and strict evacuation orders. The [Australian Defence Force; military_org_1.name] was mobilised to provide manpower and logistical support, and international crews were brought in from [New Zealand; place_5.country], [Singapore; place_6.country], [Canada; place_7.country] and the [United States; place_8.country]. An air tanker, helicopters and fire trucks crashed in rescue efforts, resulting in the deaths of several crew members. The last major fire in [Victoria; place_4.state] was contained on [27 February 2020; temporal_6.date], and all fires in [New South Wales; place_3.state] were extinguished by [2 March; temporal_7.date].
+
+
+    The total economic loss was estimated being at least $[100 billion; number_12.int], far and away the costliest natural disaster in [Australian; place_1.demonym] history. Tourism sector revenues fell by $[2.8 billion; number_13.float].
+
+
+    There was considerable debate regarding the underlying cause of the intensity and scale of the fires, including the role of fire management practices and climate change. The fires attracted significant international attention. An estimated $[500 million; number_14.int] was donated by the public, international organisations, public figures and celebrities for victim relief and wildlife recovery. Convoys of donated food, clothing and livestock feed were sent to affected areas.'
+  relations: []
+  rules:
+  - 'number_5.int > 1 # plural "buildings"'
+  - 'number_6.int > 1 # plural "people"'
+  - 'number_7.int > 1 # plural "deaths"'
+  - 'number_10.int > 1 # plural "fires"'
+  - 'number_9.int > 1 # plural "tonnes"'
+  - 'number_14.int > 1 # plural "organisations, public figures"'
+  num_questions: 12
+  questions:
+  - question_id: disaster_12_q01
+    question: What alternative name is given to the [2019–20; temporal_1.year] [Australian; place_1.demonym] bushfire season?
+    question_type: extractive
+    answer: event_1.name
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the season is "also known as the [Black Summer; event_1.name]."
+  - question_id: disaster_12_q02
+    question: What type of animals made up the majority of the terrestrial vertebrates killed or displaced during the bushfire season?
+    question_type: extractive
+    answer: reptiles
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states "An estimated terrestrial vertebrates, mostly reptiles, were killed or displaced."
+    - 2. The answer "reptiles" is directly stated and is not an annotated entity.
+  - question_id: disaster_12_q03
+    question: Who was the head of government of [Australia; place_1.country] when the bushfire season began?
+    question_type: extractive
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document describes the bushfire season in [Australia; place_1.country] but does not mention any political leaders.
+    - 2. Searching the document confirms no head of government or prime minister is named anywhere in the text.
+    - 3. Therefore the answer cannot be determined from the document.
+  - question_id: disaster_12_q04
+    question: How many more deaths were caused by bushfire smoke than were directly killed by the fires during the [Black Summer; event_1.name]?
+    question_type: arithmetic
+    answer: number_7.int - number_6.int
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [33; number_6.int] people were directly killed by the fires.
+    - 2. Bushfire smoke was responsible for an additional [417; number_7.int] deaths.
+    - 3. Subtracting the direct-death count from the smoke-related death count gives the requested difference.
+  - question_id: disaster_12_q05
+    question: How many distinct places (countries, states, or regions) are explicitly named in the document's account of the bushfire season?
+    question_type: arithmetic
+    answer: '8'
+    answer_type: invariant
+    reasoning_chain:
+    - '1. The document names the following distinct places: [Australia; place_1.country], [Central Queensland; place_2.region], [New South Wales; place_3.state], [Victoria; place_4.state], [New Zealand; place_5.country], [Singapore; place_6.country], [Canada; place_7.country], and [United States; place_8.country].'
+    - 2. Counting these gives 8 distinct places.
+  - question_id: disaster_12_q06
+    question: How much of the $[100 billion; number_12.int] total economic loss remained after subtracting insurance payouts during the [Black Summer; event_1.name]?
+    question_type: arithmetic
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states the total economic loss was at least $[100 billion; number_12.int].
+    - 2. To compute the remainder after insurance payouts, we need the total insurance payout amount.
+    - 3. The document does not state or mention any insurance payout figure anywhere in the text.
+    - 4. Therefore the calculation cannot be performed from the document alone.
+  - question_id: disaster_12_q07
+    question: On what day of the week was the last major fire in [Victoria; place_4.state] contained?
+    question_type: temporal
+    answer: temporal_6.day
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states the last major fire in [Victoria; place_4.state] was contained on [27 February 2020; temporal_6.date].
+    - 2. Determining the day of the week for that date yields the answer.
+  - question_id: disaster_12_q08
+    question: According to the document, did the exceptionally dry conditions occur before or after the bushfire season's premature start?
+    question_type: temporal
+    answer: before
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document says exceptionally dry conditions and a lack of soil moisture led to the premature start of the bushfire season.
+    - 2. A condition that leads to an event is already present before that event begins.
+    - 3. Therefore, the dry conditions occurred before the premature start.
+  - question_id: disaster_12_q09
+    question: How many weeks after the fires in [New South Wales; place_3.state] were fully extinguished on [2 March; temporal_7.date] did the [Australian; place_1.demonym] government begin its official investigation into the causes of the bushfire season?
+    question_type: temporal
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document states all fires in [New South Wales; place_3.state] were extinguished by [2 March; temporal_7.date].
+    - 2. To compute the number of weeks until an official investigation was launched, we need the start date of that investigation.
+    - 3. The document does not mention any official investigation, royal commission, or inquiry start date anywhere in the text; this needed temporal fact is entirely absent from the document.
+    - 4. Because the required date is not stated in the document, the temporal calculation cannot be performed.
+  - question_id: disaster_12_q10
+    question: Which state is singled out with both a specific fire count and a percentage of its area burned?
+    question_type: inference
+    answer: place_3.state
+    answer_type: variant
+    reasoning_chain:
+    - 1. The document states [New South Wales; place_3.state] alone recorded [11,774; number_10.int] fires, and [six; number_11.str] percent of the state burned.
+    - 2. No other state is given both of those two quantitative indicators in the document.
+    - 3. Combining the fire count and burned-area percentage identifies [New South Wales; place_3.state].
+  - question_id: disaster_12_q11
+    question: Based on the document, did the bushfire season's environmental effects extend beyond the country where the fires occurred?
+    question_type: inference
+    answer: 'Yes'
+    answer_type: invariant
+    reasoning_chain:
+    - 1. The document states that smoke moved across the Southern Ocean to impact weather conditions in other continents.
+    - 2. Since the smoke affected weather on other continents, the environmental effects extended beyond the country where the fires occurred.
+  - question_id: disaster_12_q12
+    question: Considering that international crews were brought in from [New Zealand; place_5.country], [Singapore; place_6.country], [Canada; place_7.country], and [United States; place_8.country], which of those countries contributed the largest contingent of firefighters to [Australia; place_1.country]?
+    question_type: inference
+    answer: Cannot be determined
+    answer_type: refusal
+    reasoning_chain:
+    - 1. The document lists [New Zealand; place_5.country], [Singapore; place_6.country], [Canada; place_7.country], and [United States; place_8.country] as countries that sent international crews.
+    - 2. To determine which country contributed the largest contingent, we would need the size or personnel count from each country.
+    - 3. The document does not provide any figures on the size of each country's contribution anywhere in the text.
+    - 4. Therefore the answer cannot be determined from the document.
+  annotation_status: needs_review
+  annotation_errors:
+  - YAML parsing failed; recovered complete annotated_document literal block
+  decision_logs: []
+  implicit_rules:
+  - entity_ref: temporal_1.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_2.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_3.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_4.year
+    lower_bound: 1999
+    upper_bound: 2026
+    factual_value: 2019
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: temporal_5.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_1.int
+    lower_bound: 19200000
+    upper_bound: 28800000
+    factual_value: 24000000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_2.int
+    lower_bound: 47200000
+    upper_bound: 70800000
+    factual_value: 59000000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_3.int
+    lower_bound: 192000
+    upper_bound: 288000
+    factual_value: 240000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_4.int
+    lower_bound: 74400
+    upper_bound: 111600
+    factual_value: 93000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_5.int
+    lower_bound: 2400
+    upper_bound: 3600
+    factual_value: 3000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_6.int
+    lower_bound: 27
+    upper_bound: 39
+    factual_value: 33
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_7.int
+    lower_bound: 334
+    upper_bound: 500
+    factual_value: 417
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_8.str
+    lower_bound: 2400000000
+    upper_bound: 3600000000
+    factual_value: 3000000000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_9.int
+    lower_bound: 560000000
+    upper_bound: 840000000
+    factual_value: 700000000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_10.int
+    lower_bound: 9420
+    upper_bound: 14128
+    factual_value: 11774
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_11.str
+    lower_bound: 1
+    upper_bound: 16
+    factual_value: 6
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: temporal_6.year
+    lower_bound: 2000
+    upper_bound: 2026
+    factual_value: 2020
+    percentage: 1.0
+    rule_kind: temporal_year_range
+  - entity_ref: number_12.int
+    lower_bound: 80000000000
+    upper_bound: 120000000000
+    factual_value: 100000000000
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_13.float
+    lower_bound: 2240000000.0
+    upper_bound: 3360000000.0
+    factual_value: 2800000000.0
+    percentage: 20.0
+    rule_kind: number_range
+  - entity_ref: number_14.int
+    lower_bound: 400000000
+    upper_bound: 600000000
+    factual_value: 500000000
+    percentage: 20.0
+    rule_kind: number_range
+  qa_coverage_exemptions: []
+  fictionalized_annotated_template_document: 'The [2024; temporal_1.year] [Velorathian; place_1.demonym] bushfire season, also known as the [Crimson Dusk; event_1.name], was one of the most intense and catastrophic fire seasons on record in [Velorathia; place_1.country]. Exceptionally dry conditions, a lack of soil moisture, and early fires in [Upper Thalwend; place_2.region] led to a premature start to the bushfire season from [12 September 2025; temporal_2.date]. Over ten thousand fires burnt, mainly in the south-east of the country, until [7 October 2026; temporal_3.date]. The most severe fires hit from [1 August 2025; temporal_4.date] to [15 September 2026; temporal_5.date].
+
+
+    The fires burnt more than [19200000; number_1.int] hectares ([58999999; number_2.int] acres; [192000; number_3.int] square kilometres; [74400; number_4.int] square miles) destroyed over [2400; number_5.int] buildings, and directly killed [27; number_6.int] people. Bushfire smoke was responsible for an additional [334; number_7.int] deaths. An estimated [2400000000; number_8.str] terrestrial vertebrates, mostly reptiles, were killed or displaced. Some species may have been driven to extinction. In all affected states, air quality dropped to dangerous levels, and smoke moved across the Southern Ocean to impact weather conditions in other continents. Carbon emissions exceeded [560000000; number_9.int] tonnes.
+
+
+    Rescue and recovery efforts were immense. States of emergency were declared across various regions of [Koravell; place_3.state] ([Koravell; place_3.state]) and the north-east to east of [Tarvello; place_4.state], which were the areas most impacted. [Koravell; place_3.state] alone recorded [9420; number_10.int] fires; [five; number_11.str] percent of the state burned. Methods of community damage control included total fire bans and strict evacuation orders. The [Tarvolan Combined Services Corps; military_org_1.name] was mobilised to provide manpower and logistical support, and international crews were brought in from [Velorund; place_5.country], [Telvara; place_6.country], [Tarvolen; place_7.country] and [Tarvelia; place_8.country]. An air tanker, helicopters and fire trucks crashed in rescue efforts, resulting in the deaths of several crew members. The last major fire in [Tarvello; place_4.state] was contained on [3 April 2026; temporal_6.date], and all fires in [Koravell; place_3.state] were extinguished by [14 August 2010; temporal_7.date].
+
+
+    The total economic loss was estimated being at least $[80000000000; number_12.int], far and away the costliest natural disaster in [Velorathian; place_1.demonym] history. Tourism sector revenues fell by $[2240000000; number_13.float].
+
+
+    There was considerable debate regarding the underlying cause of the intensity and scale of the fires, including the role of fire management practices and climate change. The fires attracted significant international attention. An estimated $[400000000; number_14.int] was donated by the public, international organisations, public figures and celebrities for victim relief and wildlife recovery. Convoys of donated food, clothing and livestock feed were sent to affected areas.'
+metadata:
+  status: completed

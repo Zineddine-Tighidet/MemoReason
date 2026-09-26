@@ -4,53 +4,20 @@ document:
   source: wikipedia
   wikipedia_title: BNP Paribas
   wikipedia_url: https://en.wikipedia.org/wiki/BNP_Paribas
-  original_document: 'BNP Paribas is a French multinational universal bank and financial services holding company headquartered
-    in Paris. It was founded in 2000 from the merger of two of France''s foremost financial institutions, Banque Nationale
-    de Paris (BNP) and Paribas. It also incorporates many other major institutions through successive acquisitions, including
-    Fortis Bank in Belgium, Direkt Anlage Bank in Germany, Banca Nazionale del Lavoro in Italy, Banque Générale du Luxembourg
-    in Luxembourg, and Türk Ekonomi Bankası in Turkey. The group has also been present in the United States through its subsidiaries
-    Bank of the West until 2023 and First Hawaiian Bank until 2019. With 190000 employees, the bank is organized into three
-    major business areas: Commercial, Personal Banking & Services (CPBS); Investment & Protection Services (IPS); and Corporate
-    & Institutional Banking (CIB).
+  original_document: 'BNP Paribas is a French multinational universal bank and financial services holding company headquartered in Paris. It was founded in 2000 from the merger of two of France''s foremost financial institutions, Banque Nationale de Paris (BNP) and Paribas. It also incorporates many other major institutions through successive acquisitions, including Fortis Bank in Belgium, Direkt Anlage Bank in Germany, Banca Nazionale del Lavoro in Italy, Banque Générale du Luxembourg in Luxembourg, and Türk Ekonomi Bankası in Turkey. The group has also been present in the United States through its subsidiaries Bank of the West until 2023 and First Hawaiian Bank until 2019. With 190000 employees, the bank is organized into three major business areas: Commercial, Personal Banking & Services (CPBS); Investment & Protection Services (IPS); and Corporate & Institutional Banking (CIB).
 
 
-    BNP Paribas is listed on Euronext Paris and is a component of the Euro Stoxx 50 stock market index. It is the second largest
-    bank in Europe and eighth largest bank in the world by total assets. It became one of the five largest banks in the world
-    following the 2008 financial crisis. It is considered a systemically important bank by the Financial Stability Board.
-    In the Forbes Global 2000, BNP Paribas was ranked as the 33rd largest public company in the world. It has been designated
-    as a Significant Institution since the entry into force of European Banking Supervision in late 2014, and as a consequence
-    is directly supervised by the European Central Bank.
+    BNP Paribas is listed on Euronext Paris and is a component of the Euro Stoxx 50 stock market index. It is the second largest bank in Europe and eighth largest bank in the world by total assets. It became one of the five largest banks in the world following the 2008 financial crisis. It is considered a systemically important bank by the Financial Stability Board. In the Forbes Global 2000, BNP Paribas was ranked as the 33rd largest public company in the world. It has been designated as a Significant Institution since the entry into force of European Banking Supervision in late 2014, and as a consequence is directly supervised by the European Central Bank.
 
 
-    Although a French banking group, the Belgian government has been a significant shareholder since 2009 (with 5.3% equity
-    ownership as of mid-2023) as a result of the group''s acquisition of Fortis Bank Belgium, heir to the Société Générale
-    de Belgique established in 1822.'
-  document_to_annotate: '[BNP Paribas; entreprise_org_1.name] is a [French; place_1.demonym] multinational universal bank
-    and financial services holding company headquartered in [Paris; place_1.city]. It was founded in [2000; temporal_1.year]
-    from the merger of [two; number_1.str] of [France; place_1.country]''s foremost financial institutions, [Banque Nationale
-    de Paris (BNP); entreprise_org_2.name] and [Paribas; entreprise_org_3.name]. It also incorporates many other major institutions
-    through successive acquisitions, including [Fortis Bank; entreprise_org_4.name] in [Belgium; place_2.country], [Direkt
-    Anlage Bank; entreprise_org_5.name] in [Germany; place_3.country], [Banca Nazionale del Lavoro; entreprise_org_6.name]
-    in [Italy; place_4.country], [Banque Générale du Luxembourg; entreprise_org_7.name] in [Luxembourg; place_5.country],
-    and [Türk Ekonomi Bankası; entreprise_org_8.name] in [Turkey; place_6.country]. The group has also been present in the
-    [United States; place_7.country] through its subsidiaries [Bank of the West; entreprise_org_9.name] until [2023; temporal_2.year]
-    and [First Hawaiian Bank; entreprise_org_10.name] until [2019; temporal_3.year].
+    Although a French banking group, the Belgian government has been a significant shareholder since 2009 (with 5.3% equity ownership as of mid-2023) as a result of the group''s acquisition of Fortis Bank Belgium, heir to the Société Générale de Belgique established in 1822.'
+  document_to_annotate: '[BNP Paribas; entreprise_org_1.name] is a [French; place_1.demonym] multinational universal bank and financial services holding company headquartered in [Paris; place_1.city]. It was founded in [2000; temporal_1.year] from the merger of [two; number_1.str] of [France; place_1.country]''s foremost financial institutions, [Banque Nationale de Paris (BNP); entreprise_org_2.name] and [Paribas; entreprise_org_3.name]. It also incorporates many other major institutions through successive acquisitions, including [Fortis Bank; entreprise_org_4.name] in [Belgium; place_2.country], [Direkt Anlage Bank; entreprise_org_5.name] in [Germany; place_3.country], [Banca Nazionale del Lavoro; entreprise_org_6.name] in [Italy; place_4.country], [Banque Générale du Luxembourg; entreprise_org_7.name] in [Luxembourg; place_5.country], and [Türk Ekonomi Bankası; entreprise_org_8.name] in [Turkey; place_6.country]. The group has also been present in the [United States; place_7.country] through its subsidiaries [Bank of the West; entreprise_org_9.name] until [2023; temporal_2.year] and [First Hawaiian Bank; entreprise_org_10.name] until [2019; temporal_3.year].
 
 
-    [BNP Paribas; entreprise_org_1.name] is listed on [Euronext Paris; entreprise_org_11.name] and is a component of the [Euro
-    Stoxx 50; product_1.name] stock market index. It is the second largest bank in [Europe; place_8.continent] and eighth
-    largest bank in the world by total assets. It became one of the [five; number_4.str] largest banks in the world following
-    the [2008 financial crisis; event_1.name]. It is considered a systemically important bank by the [Financial Stability
-    Board; government_org_1.name]. In the [Forbes Global 2000; product_2.name], [BNP Paribas; entreprise_org_1.name] was ranked
-    as the [33rd; number_5.int] largest public company in the world. It has been designated as a Significant Institution since
-    the entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year], and as
-    a consequence is directly supervised by the [European Central Bank; government_org_3.name].
+    [BNP Paribas; entreprise_org_1.name] is listed on [Euronext Paris; entreprise_org_11.name] and is a component of the [Euro Stoxx 50; product_1.name] stock market index. It is the second largest bank in [Europe; place_8.continent] and eighth largest bank in the world by total assets. It became one of the [five; number_4.str] largest banks in the world following the [2008 financial crisis; event_1.name]. It is considered a systemically important bank by the [Financial Stability Board; government_org_1.name]. In the [Forbes Global 2000; product_2.name], [BNP Paribas; entreprise_org_1.name] was ranked as the [33rd; number_5.int] largest public company in the world. It has been designated as a Significant Institution since the entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year], and as a consequence is directly supervised by the [European Central Bank; government_org_3.name].
 
 
-    Although a [French; place_1.demonym] banking group, the [Belgian; place_2.demonym] government has been a significant shareholder
-    since [2009; temporal_5.year] (with [5.3; number_6.percent]% equity ownership as of mid-[2023; temporal_6.year]) as a
-    result of the group''s acquisition of [Fortis Bank Belgium; entreprise_org_4.name], heir to the [Société Générale de Belgique;
-    entreprise_org_12.name] established in [1822; temporal_7.year].'
+    Although a [French; place_1.demonym] banking group, the [Belgian; place_2.demonym] government has been a significant shareholder since [2009; temporal_5.year] (with [5.3; number_6.percent]% equity ownership as of mid-[2023; temporal_6.year]) as a result of the group''s acquisition of [Fortis Bank Belgium; entreprise_org_4.name], heir to the [Société Générale de Belgique; entreprise_org_12.name] established in [1822; temporal_7.year].'
   relations: []
   rules:
   - 'number_1.str == 2 # "two" refers to exactly the two merging institutions (BNP and Paribas)'
@@ -75,8 +42,7 @@ document:
     is_answer_invariant: true
     reasoning_chain:
     - 1. The document states that [BNP Paribas; entreprise_org_1.name] is the "eighth largest bank in the world by total assets."
-    reasoning_chain_text: 1. The document states that [BNP Paribas; entreprise_org_1.name] is the "eighth largest bank in
-      the world by total assets."
+    reasoning_chain_text: 1. The document states that [BNP Paribas; entreprise_org_1.name] is the "eighth largest bank in the world by total assets."
   - question_id: company_03_q03
     question: Who is the current CEO of [BNP Paribas; entreprise_org_1.name]?
     question_type: extractive
@@ -86,51 +52,38 @@ document:
     reasoning_chain:
     - 1. The document describes [BNP Paribas; entreprise_org_1.name]'s history, mergers, and regulatory status.
     - 2. The document does not mention any CEO or executive leadership by name.
-    reasoning_chain_text: '1. The document describes [BNP Paribas; entreprise_org_1.name]''s history, mergers, and regulatory
-      status.
+    reasoning_chain_text: '1. The document describes [BNP Paribas; entreprise_org_1.name]''s history, mergers, and regulatory status.
 
       2. The document does not mention any CEO or executive leadership by name.'
-  - question_id: company_03_q04
-    question: How many distinct financial institutions (acquired companies and subsidiaries) of [BNP Paribas; entreprise_org_1.name]
-      are mentioned by name in the document, not counting the [two; number_1.str] original merger partners?
+  - question_id: company_03_q05
+    question: How many distinct financial institutions (acquired companies and subsidiaries) of [BNP Paribas; entreprise_org_1.name] are mentioned by name in the document, not counting the [two; number_1.str] original merger partners?
     question_type: arithmetic
     answer: '7'
     answer_type: invariant
     is_answer_invariant: true
     reasoning_chain:
-    - 1. The acquired companies listed are [Fortis Bank; entreprise_org_4.name], [Direkt Anlage Bank; entreprise_org_5.name],
-      [Banca Nazionale del Lavoro; entreprise_org_6.name], [Banque Générale du Luxembourg; entreprise_org_7.name], [Türk Ekonomi
-      Bankası; entreprise_org_8.name] — that is 5.
-    - 2. The subsidiaries listed are [Bank of the West; entreprise_org_9.name] and [First Hawaiian Bank; entreprise_org_10.name]
-      — that is 2.
+    - 1. The acquired companies listed are [Fortis Bank; entreprise_org_4.name], [Direkt Anlage Bank; entreprise_org_5.name], [Banca Nazionale del Lavoro; entreprise_org_6.name], [Banque Générale du Luxembourg; entreprise_org_7.name], [Türk Ekonomi Bankası; entreprise_org_8.name] — that is 5.
+    - 2. The subsidiaries listed are [Bank of the West; entreprise_org_9.name] and [First Hawaiian Bank; entreprise_org_10.name] — that is 2.
     - 3. Total = 5 + 2 = 7.
-    reasoning_chain_text: '1. The acquired companies listed are [Fortis Bank; entreprise_org_4.name], [Direkt Anlage Bank;
-      entreprise_org_5.name], [Banca Nazionale del Lavoro; entreprise_org_6.name], [Banque Générale du Luxembourg; entreprise_org_7.name],
-      [Türk Ekonomi Bankası; entreprise_org_8.name] — that is 5.
+    reasoning_chain_text: '1. The acquired companies listed are [Fortis Bank; entreprise_org_4.name], [Direkt Anlage Bank; entreprise_org_5.name], [Banca Nazionale del Lavoro; entreprise_org_6.name], [Banque Générale du Luxembourg; entreprise_org_7.name], [Türk Ekonomi Bankası; entreprise_org_8.name] — that is 5.
 
-      2. The subsidiaries listed are [Bank of the West; entreprise_org_9.name] and [First Hawaiian Bank; entreprise_org_10.name]
-      — that is 2.
+      2. The subsidiaries listed are [Bank of the West; entreprise_org_9.name] and [First Hawaiian Bank; entreprise_org_10.name] — that is 2.
 
       3. Total = 5 + 2 = 7.'
-  - question_id: company_03_q05
-    question: What is the total equity ownership percentage held by both the [Belgian; place_2.demonym] government and the
-      [French; place_1.demonym] government in [BNP Paribas; entreprise_org_1.name]?
+  - question_id: company_03_q06
+    question: What is the total equity ownership percentage held by both the [Belgian; place_2.demonym] government and the [French; place_1.demonym] government in [BNP Paribas; entreprise_org_1.name]?
     question_type: arithmetic
     answer: Cannot be determined
     answer_type: refusal
     is_answer_invariant: true
     reasoning_chain:
     - 1. The document states the [Belgian; place_2.demonym] government holds [5.3; number_6.percent]% equity ownership.
-    - 2. The document does not mention any equity ownership by the [French; place_1.demonym] government, so the total cannot
-      be computed.
-    reasoning_chain_text: '1. The document states the [Belgian; place_2.demonym] government holds [5.3; number_6.percent]%
-      equity ownership.
+    - 2. The document does not mention any equity ownership by the [French; place_1.demonym] government, so the total cannot be computed.
+    reasoning_chain_text: '1. The document states the [Belgian; place_2.demonym] government holds [5.3; number_6.percent]% equity ownership.
 
-      2. The document does not mention any equity ownership by the [French; place_1.demonym] government, so the total cannot
-      be computed.'
-  - question_id: company_03_q06
-    question: How many years after [BNP Paribas; entreprise_org_1.name] was founded did the [Belgian; place_2.demonym] government
-      become a significant shareholder?
+      2. The document does not mention any equity ownership by the [French; place_1.demonym] government, so the total cannot be computed.'
+  - question_id: company_03_q07
+    question: How many years after [BNP Paribas; entreprise_org_1.name] was founded did the [Belgian; place_2.demonym] government become a significant shareholder?
     question_type: temporal
     answer: temporal_5.year - temporal_1.year
     answer_type: variant
@@ -144,7 +97,7 @@ document:
       2. The [Belgian; place_2.demonym] government became a significant shareholder since [2009; temporal_5.year].
 
       3. The difference is [2009; temporal_5.year] − [2000; temporal_1.year] = 8 years.'
-  - question_id: company_03_q07
+  - question_id: company_03_q09
     question: In what year did [BNP Paribas; entreprise_org_1.name] first become listed on [Euronext Paris; entreprise_org_11.name]?
     question_type: temporal
     answer: Cannot be determined
@@ -153,68 +106,52 @@ document:
     reasoning_chain:
     - 1. The document states that [BNP Paribas; entreprise_org_1.name] is listed on [Euronext Paris; entreprise_org_11.name].
     - 2. However, the document does not specify the year when this listing first occurred.
-    reasoning_chain_text: '1. The document states that [BNP Paribas; entreprise_org_1.name] is listed on [Euronext Paris;
-      entreprise_org_11.name].
+    reasoning_chain_text: '1. The document states that [BNP Paribas; entreprise_org_1.name] is listed on [Euronext Paris; entreprise_org_11.name].
 
       2. However, the document does not specify the year when this listing first occurred.'
-  - question_id: company_03_q08
-    question: Given that [BNP Paribas; entreprise_org_1.name] is directly supervised by the [European Central Bank; government_org_3.name]
-      as a consequence of being designated a Significant Institution, which regulatory body's entry into force triggered this
-      designation?
+  - question_id: company_03_q10
+    question: Given that [BNP Paribas; entreprise_org_1.name] is directly supervised by the [European Central Bank; government_org_3.name] as a consequence of being designated a Significant Institution, which regulatory body's entry into force triggered this designation?
     question_type: inference
     answer: government_org_2.name
     answer_type: variant
     is_answer_invariant: false
     reasoning_chain:
-    - 1. The document states that [BNP Paribas; entreprise_org_1.name] was designated a Significant Institution since the
-      entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year].
+    - 1. The document states that [BNP Paribas; entreprise_org_1.name] was designated a Significant Institution since the entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year].
     - 2. As a consequence of this designation, it is directly supervised by the [European Central Bank; government_org_3.name].
-    - 3. Therefore, the regulatory body whose entry into force triggered the designation is [European Banking Supervision;
-      government_org_2.name].
-    reasoning_chain_text: '1. The document states that [BNP Paribas; entreprise_org_1.name] was designated a Significant Institution
-      since the entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year].
+    - 3. Therefore, the regulatory body whose entry into force triggered the designation is [European Banking Supervision; government_org_2.name].
+    reasoning_chain_text: '1. The document states that [BNP Paribas; entreprise_org_1.name] was designated a Significant Institution since the entry into force of [European Banking Supervision; government_org_2.name] in late [2014; temporal_4.year].
 
       2. As a consequence of this designation, it is directly supervised by the [European Central Bank; government_org_3.name].
 
-      3. Therefore, the regulatory body whose entry into force triggered the designation is [European Banking Supervision;
-      government_org_2.name].'
-  - question_id: company_03_q09
-    question: Based on the document, what is [BNP Paribas; entreprise_org_1.name]'s ranking among the largest banks on its
-      home continent by total assets?
+      3. Therefore, the regulatory body whose entry into force triggered the designation is [European Banking Supervision; government_org_2.name].'
+  - question_id: company_03_q11
+    question: Is [BNP Paribas; entreprise_org_1.name] considered a private company?
     question_type: inference
-    answer: second
+    answer: 'No'
     answer_type: invariant
     is_answer_invariant: true
     reasoning_chain:
-    - 1. The document states [BNP Paribas; entreprise_org_1.name] is headquartered in [Paris; place_1.city], [France; place_1.country],
-      which is in [Europe; place_8.continent].
-    - 2. The document states it is "the second largest bank in [Europe; place_8.continent]."
-    - 3. Therefore, its ranking on its home continent is second.
-    reasoning_chain_text: '1. The document states [BNP Paribas; entreprise_org_1.name] is headquartered in [Paris; place_1.city],
-      [France; place_1.country], which is in [Europe; place_8.continent].
+    - 1. The document states that [BNP Paribas; entreprise_org_1.name] was ranked as the 33rd largest public company in the world.
+    - 2. A company described as public is not a private company, so the answer is no.
+    reasoning_chain_text: '1. The document states that [BNP Paribas; entreprise_org_1.name] was ranked as the 33rd largest public company in the world.
 
-      2. The document states it is "the second largest bank in [Europe; place_8.continent]."
-
-      3. Therefore, its ranking on its home continent is second.'
-  - question_id: company_03_q10
-    question: Did [BNP Paribas; entreprise_org_1.name]'s acquisition of [Fortis Bank; entreprise_org_4.name] occur before
-      or after the [2008 financial crisis; event_1.name]?
+      2. A company described as public is not a private company, so the answer is no.'
+  - question_id: company_03_q12
+    question: Did [BNP Paribas; entreprise_org_1.name]'s acquisition of [Fortis Bank; entreprise_org_4.name] occur before or after the [2008 financial crisis; event_1.name]?
     question_type: inference
     answer: Cannot be determined
     answer_type: refusal
     is_answer_invariant: true
     reasoning_chain:
-    - 1. The document mentions the acquisition of [Fortis Bank; entreprise_org_4.name] but does not provide a specific date
-      for it.
+    - 1. The document mentions the acquisition of [Fortis Bank; entreprise_org_4.name] but does not provide a specific date for it.
     - 2. The document mentions the [2008 financial crisis; event_1.name] but does not provide a specific date for it either.
     - 3. Without dates for either event, the temporal ordering cannot be determined from the document.
-    reasoning_chain_text: '1. The document mentions the acquisition of [Fortis Bank; entreprise_org_4.name] but does not provide
-      a specific date for it.
+    reasoning_chain_text: '1. The document mentions the acquisition of [Fortis Bank; entreprise_org_4.name] but does not provide a specific date for it.
 
       2. The document mentions the [2008 financial crisis; event_1.name] but does not provide a specific date for it either.
 
       3. Without dates for either event, the temporal ordering cannot be determined from the document.'
-  - question_id: company_03_q11
+  - question_id: company_03_reviewer06_w2
     question: What was [BNP Paribas; entreprise_org_1.name]'s ranking in the [Forbes Global 2000; product_2.name] ?
     question_type: arithmetic
     answer: number_5.int
@@ -222,9 +159,8 @@ document:
     is_answer_invariant: false
     reasoning_chain: []
     reasoning_chain_text: ''
-  - question_id: company_03_q12
-    question: Was [Société Générale de Belgique; entreprise_org_12.name] established before or after the fundation of [BNP
-      Paribas; entreprise_org_1.name] ?
+  - question_id: company_03_reviewer06_w1
+    question: Was [Société Générale de Belgique; entreprise_org_12.name] established before or after the fundation of [BNP Paribas; entreprise_org_1.name] ?
     question_type: temporal
     answer: Before
     answer_type: invariant
@@ -300,5 +236,3 @@ document:
     rule_kind: temporal_year_range
 metadata:
   status: completed
-  annotators:
-  - anonymous_annotator
