@@ -41,3 +41,28 @@ def test_generation_rejects_invalid_worker_count(tmp_path):
     assert result.returncode == 2
     assert "must be positive" in result.stderr
     assert not destination.exists()
+
+
+def test_generation_progress_only_and_worker_count_preserves_output(tmp_path):
+    outputs = []
+    for workers in (1, 2):
+        destination = tmp_path / f"workers-{workers}"
+        result = run(
+            "--output", destination,
+            "--docs", "company_01", "company_02",
+            "--settings", "factual", "--workers", workers,
+        )
+        assert result.returncode == 0, result.stderr
+        assert result.stdout == ""
+        progress_lines = [line for line in result.stderr.splitlines() if line.strip()]
+        assert progress_lines
+        assert all(line.startswith("Generating:") for line in progress_lines)
+        assert "100%" in progress_lines[-1]
+        assert "2/2" in progress_lines[-1]
+        files = {
+            str(path.relative_to(destination)): path.read_bytes()
+            for path in destination.rglob("*.yaml")
+        }
+        assert len(files) == 2
+        outputs.append(files)
+    assert outputs[0] == outputs[1]

@@ -4,13 +4,20 @@
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, as_completed
 import multiprocessing
 import os
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+
+from memoreason.factual_to_fictional_dataset.generation_console import (  # noqa: E402
+    generation_progress,
+    quiet_generation_output,
+)
+
 DATA = ROOT / "data"
 SETTINGS = (
     "factual", "fictional", "fictional_named", "fictional_numtemp",
@@ -30,16 +37,16 @@ ENVIRONMENT = {
 
 
 def generate_one(task: tuple[str, int, tuple[str, ...], int]) -> int:
-    sys.path.insert(0, str(ROOT / "src"))
-    from memoreason.factual_to_fictional_dataset.paired_factual_and_fictional_dataset_export import (
-        export_paired_factual_and_fictional_documents,
-    )
+    with quiet_generation_output():
+        from memoreason.factual_to_fictional_dataset.paired_factual_and_fictional_dataset_export import (
+            export_paired_factual_and_fictional_documents,
+        )
 
-    template, seed, settings, variants = task
-    return len(export_paired_factual_and_fictional_documents(
-        [Path(template)], seed=seed, settings=list(settings),
-        fictional_version_count=variants, overwrite=False, skip_missing_pools=False,
-    ))
+        template, seed, settings, variants = task
+        return len(export_paired_factual_and_fictional_documents(
+            [Path(template)], seed=seed, settings=list(settings),
+            fictional_version_count=variants, overwrite=False, skip_missing_pools=False,
+        ))
 
 
 def main() -> int:
@@ -86,16 +93,22 @@ def main() -> int:
     })
     tasks = [(str(p), args.seed, tuple(dict.fromkeys(args.settings)), args.variants) for p in templates]
     output.mkdir(parents=True, exist_ok=False)
-    if args.workers == 1:
-        generated = sum(map(generate_one, tasks))
-    else:
-        with ProcessPoolExecutor(max_workers=args.workers,
-                                 mp_context=multiprocessing.get_context("spawn")) as pool:
-            generated = sum(pool.map(generate_one, tasks))
+    generated = 0
+    with generation_progress(len(tasks)) as progress:
+        if args.workers == 1:
+            for task in tasks:
+                generated += generate_one(task)
+                progress.update(1)
+        else:
+            with ProcessPoolExecutor(max_workers=args.workers,
+                                     mp_context=multiprocessing.get_context("spawn")) as pool:
+                futures = [pool.submit(generate_one, task) for task in tasks]
+                for future in as_completed(futures):
+                    generated += future.result()
+                    progress.update(1)
     expected = len(templates) * sum(1 if s == "factual" else args.variants for s in set(args.settings))
     if generated != expected:
         raise RuntimeError(f"Incomplete generation: expected {expected}, got {generated}")
-    print(f"Generated {generated} documents in {args.output}.")
     return 0
 
 

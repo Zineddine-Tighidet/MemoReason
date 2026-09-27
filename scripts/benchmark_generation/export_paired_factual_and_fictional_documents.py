@@ -73,8 +73,9 @@ def main() -> int:
         iter_template_paths,
     )
     from memoreason.factual_to_fictional_dataset.dataset_settings import resolve_dataset_settings
-    from memoreason.factual_to_fictional_dataset.paired_factual_and_fictional_dataset_export import (
-        export_paired_factual_and_fictional_documents,
+    from memoreason.factual_to_fictional_dataset.generation_console import (
+        generation_progress,
+        quiet_generation_output,
     )
 
     ensure_dataset_artifact_directories()
@@ -87,17 +88,22 @@ def main() -> int:
         include_factual=not args.skip_factual,
         fictional_proportions=args.fictional_proportions,
     )
-    written_paths = export_paired_factual_and_fictional_documents(
-        template_paths,
-        seed=args.seed,
-        settings=[spec.setting_id for spec in setting_specs],
-        fictional_version_count=args.fictional_version_count,
-        overwrite=args.overwrite,
-        skip_missing_pools=args.skip_missing_pools,
-    )
-    for output_path in written_paths:
-        print(output_path.relative_to(PROJECT_ROOT))
-    print(f"Generated {len(written_paths)} document files.")
+    with generation_progress(len(template_paths)) as progress:
+        for template_path in template_paths:
+            with quiet_generation_output():
+                from memoreason.factual_to_fictional_dataset.paired_factual_and_fictional_dataset_export import (
+                    export_paired_factual_and_fictional_documents,
+                )
+
+                export_paired_factual_and_fictional_documents(
+                    [template_path],
+                    seed=args.seed,
+                    settings=[spec.setting_id for spec in setting_specs],
+                    fictional_version_count=args.fictional_version_count,
+                    overwrite=args.overwrite,
+                    skip_missing_pools=args.skip_missing_pools,
+                )
+            progress.update(1)
     return 0
 
 
