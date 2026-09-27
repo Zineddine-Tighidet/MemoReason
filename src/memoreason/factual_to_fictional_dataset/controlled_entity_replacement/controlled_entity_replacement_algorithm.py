@@ -1,7 +1,5 @@
-"""Paper-facing implementation of the fictional-generation algorithm.
+"""Implementation of the benchmark's fictitious-document generation algorithm.
 
-This module is the publication reference for Algorithm 1 in
-``docs/NeurIPS 2026/inputs/controlled_entity_replacement_algorithm.tex``.
 The top-level :func:`generate_fictional_document_variants` function is intentionally written in
 the same template-loop / variant-loop structure as the paper so it can be
 pointed to directly when describing the benchmark construction procedure.
