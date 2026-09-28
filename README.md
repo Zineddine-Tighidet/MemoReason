@@ -8,7 +8,7 @@ and specified reasoning operations. This repository contains 1,200 annotated
 document–question–answer templates, entity pools, and code for generation,
 evaluation, and annotation.
 
-[Dataset and subset descriptions](https://huggingface.co/datasets/memoreason-anonymous/MemoReason)
+[Dataset and subset descriptions](https://huggingface.co/datasets/zineddine/MemoReason)
 
 [Reproduce each paper figure and table](REPRODUCE.md)
 
